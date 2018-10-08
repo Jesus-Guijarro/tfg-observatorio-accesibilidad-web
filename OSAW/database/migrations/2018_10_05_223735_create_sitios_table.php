@@ -15,10 +15,10 @@ class CreateSitiosTable extends Migration
     {
         Schema::create('sitios', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre', 25);
+            $table->string('nombre', 25)->unique();
             $table->text('URL_principal');
             $table->string('periodicidad',20);
-            $table->integer('numero_paginas',4);
+            $table->integer('numero_paginas');
             $table->json('herramientas');
 
             $table->integer('categoria_id')->unsigned()->nullable();
