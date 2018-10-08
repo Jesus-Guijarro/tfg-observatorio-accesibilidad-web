@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nombre_usuario', 'email', 'password',
     ];
 
     /**
@@ -27,4 +27,16 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function rol() {
+        return $this->belongsTo('App\Rol');
+    }
+
+    #Análisis manual
+    public function paginas() {
+        return $this->belongsToMany('App\Pagina')
+        ->withPivot('informe','fecha_test','revisado','porcentaje_comprensible',
+        'porcentaje_operable','porcentaje_perceptible','porcentaje_robusto',
+        'num_errores_a','num_errores_aa','num_errores_aaa')->withTimestamps();
+    }
 }

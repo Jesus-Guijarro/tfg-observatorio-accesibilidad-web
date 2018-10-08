@@ -15,6 +15,19 @@ class CreateAccessmonitortestsTable extends Migration
     {
         Schema::create('accessmonitortests', function (Blueprint $table) {
             $table->increments('id');
+            $table->float('puntuacion');
+            $table->integer('num_errores_a');
+            $table->integer('num_errores_aa');
+            $table->integer('num_errores_aaa');
+            $table->integer('num_avisos_a');
+            $table->integer('num_avisos_aa');
+            $table->integer('num_avisos_aaa');
+            $table->text('datos_problemas');
+            $table->date('fecha_test');
+
+            $table->integer('pagina_id')->unsigned()->nullable();
+            $table->foreign('pagina_id')->references('id')->on('paginas')->onDelete("set null");
+
             $table->timestamps();
         });
     }

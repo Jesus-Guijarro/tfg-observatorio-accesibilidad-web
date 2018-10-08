@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUpstestsTable extends Migration
+class CreateUserPaginaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,23 @@ class CreateUpstestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('upstests', function (Blueprint $table) {
+        Schema::create('user_pagina', function (Blueprint $table) {
             $table->increments('id');
+            $table->json('informe');
+            $table->date('fecha_test');
+            $table->boolean('revisado');
             $table->float('porcentaje_comprensible');
             $table->float('porcentaje_operable');
             $table->float('porcentaje_perceptible');
             $table->float('porcentaje_robusto');
-            $table->text('datos_problemas');
-            $table->date('fecha_test');
-            
+            $table->integer('num_errores_a');
+            $table->integer('num_errores_aa');
+            $table->integer('num_errores_aaa');
+
+
+            $table->integer('user_id')->unsigned()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete("set null");
+
             $table->integer('pagina_id')->unsigned()->nullable();
             $table->foreign('pagina_id')->references('id')->on('paginas')->onDelete("set null");
 
@@ -36,6 +44,6 @@ class CreateUpstestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('upstests');
+        Schema::dropIfExists('user_pagina');
     }
 }
