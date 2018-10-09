@@ -16,8 +16,8 @@ class CreatePaginasTable extends Migration
         Schema::create('paginas', function (Blueprint $table) {
             $table->increments('id');
             $table->text('URL');
-            $table->text('HTML_archivo');
-            $table->char('hash',32);
+            $table->text('HTML_archivo')->nullable();
+            $table->char('hash',32)->nullable();
 
             $table->integer('sitio_id')->unsigned()->nullable();
             $table->foreign('sitio_id')->references('id')->on('sitios')->onDelete("set null");
