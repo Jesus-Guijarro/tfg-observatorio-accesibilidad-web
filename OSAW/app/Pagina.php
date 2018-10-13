@@ -28,9 +28,6 @@ class Pagina extends Model
     public function eiiicheckertests() {
         return $this->hasMany('App\Eiiicheckertest');
     }
-    public function examinatortests() {
-        return $this->hasMany('App\Examinatortest');
-    }
     public function upstests() {
         return $this->hasMany('App\Upstest');
     }

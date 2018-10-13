@@ -18,6 +18,9 @@ class CreateEiiicheckertestsTable extends Migration
             $table->float('puntuacion');
             $table->integer('num_pruebas_correctas');
             $table->integer('num_pruebas_falladas');
+            $table->integer('num_errores_a');
+            $table->integer('num_errores_aa');
+            $table->integer('num_errores_aaa');
             $table->text('datos_problemas');
             $table->date('fecha_test');
 
