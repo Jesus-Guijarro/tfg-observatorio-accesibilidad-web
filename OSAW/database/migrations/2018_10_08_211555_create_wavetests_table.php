@@ -16,10 +16,10 @@ class CreateWavetestsTable extends Migration
         Schema::create('wavetests', function (Blueprint $table) {
             $table->increments('id');
             $table->float('puntuacion');
-            $table->integer('num_errores');
-            $table->integer('num_avisos');
+            $table->integer('num_problemas');
+            $table->integer('num_advertencias');
             $table->integer('num_caracteristicas');
-            $table->integer('num_errores_contraste');
+            $table->integer('num_problemas_contraste');
             $table->text('datos_problemas');
             $table->date('fecha_test');
 

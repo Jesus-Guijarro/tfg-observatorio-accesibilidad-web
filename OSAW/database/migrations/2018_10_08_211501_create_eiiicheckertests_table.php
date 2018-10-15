@@ -16,11 +16,11 @@ class CreateEiiicheckertestsTable extends Migration
         Schema::create('eiiicheckertests', function (Blueprint $table) {
             $table->increments('id');
             $table->float('puntuacion');
-            $table->integer('num_pruebas_correctas');
-            $table->integer('num_pruebas_falladas');
-            $table->integer('num_errores_a');
-            $table->integer('num_errores_aa');
-            $table->integer('num_errores_aaa');
+            $table->integer('num_problemas');
+            $table->integer('num_aciertos');
+            $table->integer('num_problemas_a');
+            $table->integer('num_problemas_aa');
+            $table->integer('num_problemas_aaa');
             $table->text('datos_problemas');
             $table->date('fecha_test');
 

@@ -16,12 +16,12 @@ class CreateAccessmonitortestsTable extends Migration
         Schema::create('accessmonitortests', function (Blueprint $table) {
             $table->increments('id');
             $table->float('puntuacion');
-            $table->integer('num_errores_a');
-            $table->integer('num_errores_aa');
-            $table->integer('num_errores_aaa');
-            $table->integer('num_avisos_a');
-            $table->integer('num_avisos_aa');
-            $table->integer('num_avisos_aaa');
+            $table->integer('num_problemas_a');
+            $table->integer('num_problemas_aa');
+            $table->integer('num_problemas_aaa');
+            $table->integer('num_advertencias_a');
+            $table->integer('num_advertencias_aa');
+            $table->integer('num_advertencias_aaa');
             $table->text('datos_problemas');
             $table->date('fecha_test');
 
