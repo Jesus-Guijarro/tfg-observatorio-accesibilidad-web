@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUpstestsTable extends Migration
+class CreateAcheckersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,19 @@ class CreateUpstestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('upstests', function (Blueprint $table) {
+        Schema::create('acheckers', function (Blueprint $table) {
             $table->increments('id');
-            $table->float('porcentaje_comprensible');
-            $table->float('porcentaje_operable');
-            $table->float('porcentaje_perceptible');
-            $table->float('porcentaje_robusto');
+            $table->integer('num_problemas_conocidos');
+            $table->integer('num_problemas_potenciales');
+            $table->integer('num_problemas_conocidos_a');
+            $table->integer('num_problemas_conocidos_aa');
+            $table->integer('num_problemas_conocidos_aaa');
+            $table->integer('num_problemas_potenciales_a');
+            $table->integer('num_problemas_potenciales_aa');
+            $table->integer('num_problemas_potenciales_aaa');
             $table->text('datos_problemas');
             $table->date('fecha_test');
-            
+
             $table->integer('pagina_id')->unsigned()->nullable();
             $table->foreign('pagina_id')->references('id')->on('paginas')->onDelete("set null");
 
@@ -36,6 +40,6 @@ class CreateUpstestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('upstests');
+        Schema::dropIfExists('acheckers');
     }
 }

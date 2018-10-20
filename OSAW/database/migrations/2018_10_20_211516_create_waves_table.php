@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVamolatestsTable extends Migration
+class CreateWavesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,13 @@ class CreateVamolatestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('vamolatests', function (Blueprint $table) {
+        Schema::create('waves', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('num_problemas_conocidos');
-            $table->integer('num_problemas_potenciales');
-            $table->integer('num_problemas_conocidos_a');
-            $table->integer('num_problemas_conocidos_aa');
-            $table->integer('num_problemas_conocidos_aaa');
-            $table->integer('num_problemas_potenciales_a');
-            $table->integer('num_problemas_potenciales_aa');
-            $table->integer('num_problemas_potenciales_aaa');
+            $table->float('puntuacion');
+            $table->integer('num_problemas');
+            $table->integer('num_advertencias');
+            $table->integer('num_caracteristicas');
+            $table->integer('num_problemas_contraste');
             $table->text('datos_problemas');
             $table->date('fecha_test');
 
@@ -40,6 +37,6 @@ class CreateVamolatestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vamolatests');
+        Schema::dropIfExists('waves');
     }
 }

@@ -19,7 +19,7 @@ class CreateSitiosTable extends Migration
             $table->text('URL_principal');
             $table->string('periodicidad_analisis',20);
             $table->integer('numero_paginas');
-            $table->json('herramientas')->nullable();
+            $table->json('herramientas');
 
             $table->integer('categoria_id')->unsigned()->nullable();
             $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete("set null");

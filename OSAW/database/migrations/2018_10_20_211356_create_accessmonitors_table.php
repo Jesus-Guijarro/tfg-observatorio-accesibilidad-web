@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAcheckertestsTable extends Migration
+class CreateAccessmonitorsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,15 @@ class CreateAcheckertestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('acheckertests', function (Blueprint $table) {
+        Schema::create('accessmonitors', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('num_problemas_conocidos');
-            $table->integer('num_problemas_potenciales');
-            $table->integer('num_problemas_conocidos_a');
-            $table->integer('num_problemas_conocidos_aa');
-            $table->integer('num_problemas_conocidos_aaa');
-            $table->integer('num_problemas_potenciales_a');
-            $table->integer('num_problemas_potenciales_aa');
-            $table->integer('num_problemas_potenciales_aaa');
+            $table->float('puntuacion');
+            $table->integer('num_problemas_a');
+            $table->integer('num_problemas_aa');
+            $table->integer('num_problemas_aaa');
+            $table->integer('num_advertencias_a');
+            $table->integer('num_advertencias_aa');
+            $table->integer('num_advertencias_aaa');
             $table->text('datos_problemas');
             $table->date('fecha_test');
 
@@ -40,6 +39,6 @@ class CreateAcheckertestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('acheckertests');
+        Schema::dropIfExists('accessmonitors');
     }
 }

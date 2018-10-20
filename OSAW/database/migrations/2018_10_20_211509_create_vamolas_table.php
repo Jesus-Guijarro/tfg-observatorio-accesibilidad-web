@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAccessmonitortestsTable extends Migration
+class CreateVamolasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,16 @@ class CreateAccessmonitortestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('accessmonitortests', function (Blueprint $table) {
+        Schema::create('vamolas', function (Blueprint $table) {
             $table->increments('id');
-            $table->float('puntuacion');
-            $table->integer('num_problemas_a');
-            $table->integer('num_problemas_aa');
-            $table->integer('num_problemas_aaa');
-            $table->integer('num_advertencias_a');
-            $table->integer('num_advertencias_aa');
-            $table->integer('num_advertencias_aaa');
+            $table->integer('num_problemas_conocidos');
+            $table->integer('num_problemas_potenciales');
+            $table->integer('num_problemas_conocidos_a');
+            $table->integer('num_problemas_conocidos_aa');
+            $table->integer('num_problemas_conocidos_aaa');
+            $table->integer('num_problemas_potenciales_a');
+            $table->integer('num_problemas_potenciales_aa');
+            $table->integer('num_problemas_potenciales_aaa');
             $table->text('datos_problemas');
             $table->date('fecha_test');
 
@@ -39,6 +40,6 @@ class CreateAccessmonitortestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('accessmonitortests');
+        Schema::dropIfExists('vamolas');
     }
 }

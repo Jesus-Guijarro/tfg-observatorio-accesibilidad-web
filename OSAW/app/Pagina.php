@@ -19,22 +19,22 @@ class Pagina extends Model
     }
 
     #Herramientas
-    public function accessmonitortests() {
-        return $this->hasMany('App\Accessmonitortest');
+    public function accessmonitors() {
+        return $this->hasMany('App\Accessmonitor');
     }
-    public function acheckertests() {
-        return $this->hasMany('App\Acheckertest');
+    public function acheckers() {
+        return $this->hasMany('App\Achecker');
     }
-    public function eiiicheckertests() {
-        return $this->hasMany('App\Eiiicheckertest');
+    public function eiiicheckers() {
+        return $this->hasMany('App\Eiiichecker');
     }
-    public function upstests() {
-        return $this->hasMany('App\Upstest');
+    public function upss() {
+        return $this->hasMany('App\Ups');
     }
-    public function vamolatests() {
-        return $this->hasMany('App\Vamolatest');
+    public function vamolas() {
+        return $this->hasMany('App\Vamola');
     }
-    public function wavetests() {
-        return $this->hasMany('App\Wavetest');
+    public function waves() {
+        return $this->hasMany('App\Wave');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEiiicheckertestsTable extends Migration
+class CreateUpsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,15 @@ class CreateEiiicheckertestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('eiiicheckertests', function (Blueprint $table) {
+        Schema::create('ups', function (Blueprint $table) {
             $table->increments('id');
-            $table->float('puntuacion');
-            $table->integer('num_problemas');
-            $table->integer('num_aciertos');
-            $table->integer('num_problemas_a');
-            $table->integer('num_problemas_aa');
-            $table->integer('num_problemas_aaa');
+            $table->float('porcentaje_comprensible');
+            $table->float('porcentaje_operable');
+            $table->float('porcentaje_perceptible');
+            $table->float('porcentaje_robusto');
             $table->text('datos_problemas');
             $table->date('fecha_test');
-
+            
             $table->integer('pagina_id')->unsigned()->nullable();
             $table->foreign('pagina_id')->references('id')->on('paginas')->onDelete("set null");
 
@@ -38,6 +36,6 @@ class CreateEiiicheckertestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('eiiicheckertests');
+        Schema::dropIfExists('ups');
     }
 }
