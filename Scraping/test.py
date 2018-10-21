@@ -1,20 +1,8 @@
-import io
-from selenium import webdriver
+import codecs
 
-options = webdriver.ChromeOptions()
+ruta_archivo="../OSAW/public/storage/paginas/default.html"
 
-options.binary_location = '/usr/bin/google-chrome'
-options.add_argument('headless')
+f=codecs.open(ruta_archivo, 'r', encoding="utf8")
+contenido=f.read()
 
-#Pruebas
-#options.add_argument('window-size=1200x600')
-
-driver = webdriver.Chrome(chrome_options=options)
-
-#Accedemos a la web de la herramienta de evaluacion
-driver.get('https://sede.mjusticia.gob.es/cs/Satellite/Sede/es/inicio')
-
-
-#Guardamos la informacion obtenida en un archivo html resultado
-with io.open('file1.html', 'w') as f:
-    f.write(driver.page_source)
+print(contenido)

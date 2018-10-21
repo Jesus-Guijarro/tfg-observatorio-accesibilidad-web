@@ -44,37 +44,43 @@ def checkHTML(pagina_id):
     driver.get(URL)
     driver.implicitly_wait(1)
 
+    #Para poder acceder a las rutas de los archivos desde pytho es necesario poner:
+    cabecera_ruta="../OSAW/public"
+
     ruta_archivo_nuevo="/storage/paginas/"+pagina_id+"2.html"
 
-    with io.open(ruta_archivo_nuevo, 'w') as f:
+    #Guardamos el contenido de la página web
+    with io.open(cabecera_ruta+ruta_archivo_nuevo, 'w') as f:
         f.write(driver.page_source)
 
-    hash_nuevo=crearHASH(ruta_archivo_nuevo)
+    #Obtenemos el hash del nuevo contenido
+    hash_nuevo=crearHASH(cabecera_ruta+ruta_archivo_nuevo)
 
+    #Si no es la primera vez que se evalua la página
     if hash_antiguo!=0:
+        #Si los hash tienen valores distintos
         if hash_antiguo != hash_nuevo:
-            os.remove(ruta_archivo_antiguo)
-            os.rename(ruta_archivo_nuevo,ruta_archivo_antiguo)
-
+            #Borramos el archivo anterior
+            os.remove(cabecera_ruta+ruta_archivo_antiguo)
+            #Cambiamos el nombre del archivo nuevo para tener el nombre del antiguo
+            os.rename(cabecera_ruta+ruta_archivo_nuevo,ruta_archivo_antiguo)
+            #Actualizamos la pagina con su nuevo valor hash
             cursor.execute("update paginas set hash=%s where id=%s",(hash_nuevo,pagina_id,))
 
-            return False
-        else
-            os.remove(ruta_archivo_nuevo)
+            return False #Devolvemos falso indicando que es necesario evaluar la pagina
+        else:
+            #Si no hay ningun cambio borramos el archivo creado
+            os.remove(cabecera_ruta+ruta_archivo_nuevo)
     else:
-        os.rename(ruta_archivo_nuevo,"/storage/paginas/"+pagina_id+".html")
+        #Como es la primera vez que se evalua la página se guarda el contenido y el hash obtenido
+        os.rename(cabecera_ruta+ruta_archivo_nuevo,"/storage/paginas/"+pagina_id+".html")
+
         cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_archivo_nuevo,pagina_id,))
 
     driver.quit()
 
     return True
     
-
-
-
-
-
-
 #Pruebas
-pagina_web="http://www.googlecom"
+pagina_web="http://www.google.com"
 print(checkAcceso(pagina_web))
