@@ -1,11 +1,8 @@
-import json
-import io
-import subprocess
-import sys
-import mysql.connector
+import io, json, mysql.connector, subprocess, sys
 
 from selenium import webdriver
 from conexiones import *
+from checkPagina import *
 
 #Método para llamar las herramientas
 def evaluarPagina(am,ac,e,u,v,w,pagina_web):
@@ -55,11 +52,13 @@ filas = cursor.fetchall()
 for fila in filas:
     #Llamada a crawler: comprobar acceso y copia HTML
     if False:
-        evaluarPagina(herramientas["accessmonitor"],herramientas["achecker"],herramientas["eiiichecker"],herramientas["ups"],
-        herramientas["vamola"],herramientas["wave"],fila.__getitem__(1))
+        #evaluarPagina(herramientas["accessmonitor"],herramientas["achecker"],herramientas["eiiichecker"],herramientas["ups"],
+        #herramientas["vamola"],herramientas["wave"],fila.__getitem__(1))
 
 
 print(fila.__getitem__(1))
+
+desconexionBD(conexion,cursor)
 
 '''
 #BASE DE DATOS
