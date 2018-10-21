@@ -1,5 +1,5 @@
 
-import io, mysql.connector, requests
+import io, mysql.connector, os, requests
 
 from conexiones import *
 from hashHTML import *
@@ -18,9 +18,6 @@ def checkAcceso(pagina_web):
     except requests.ConnectionError:
         return False
 
-
-
-
 #Comprobar contenido HTML
 def checkHTML(pagina_id):
 
@@ -30,6 +27,13 @@ def checkHTML(pagina_id):
     conexion= parametros[0]
     cursor = parametros[1]
 
+    cursor.execute("select URL, archivo_HTML, hash from paginas where id = %s", (pagina_id,))
+    pagina = cursor.fetchone()
+    
+    URL=pagina.__getitem__(0)
+    ruta_archivo_antiguo=pagina.__getitem__(1)
+    hash_antiguo=pagina.__getitem__(2)
+
     #Headless browser
     options = webdriver.ChromeOptions()
     options.binary_location = '/usr/bin/google-chrome'
@@ -37,19 +41,33 @@ def checkHTML(pagina_id):
 
     driver = webdriver.Chrome(chrome_options=options)
 
-    cursor.execute("select URL, archivo_HTML, hash from paginas where id = %s", (pagina_id,))
-    #
-    pagina = cursor.fetchone()
-    
-    URL=pagina.__getitem__(0)
-    archivo_HTML_antiguo=pagina.__getitem__(1)
-    hash_antiguo=pagina.__getitem__(2)
+    driver.get(URL)
+    driver.implicitly_wait(1)
 
-    driver.get(pagina.__getitem__(0))
+    ruta_archivo_nuevo="/storage/paginas/"+pagina_id+"2.html"
 
-    hash_nuevo=crearHASH(archivo_HTML_nuevo)
+    with io.open(ruta_archivo_nuevo, 'w') as f:
+        f.write(driver.page_source)
 
+    hash_nuevo=crearHASH(ruta_archivo_nuevo)
 
+    if hash_antiguo!=0:
+        if hash_antiguo != hash_nuevo:
+            os.remove(ruta_archivo_antiguo)
+            os.rename(ruta_archivo_nuevo,ruta_archivo_antiguo)
+
+            cursor.execute("update paginas set hash=%s where id=%s",(hash_nuevo,pagina_id,))
+
+            return False
+        else
+            os.remove(ruta_archivo_nuevo)
+    else:
+        os.rename(ruta_archivo_nuevo,"/storage/paginas/"+pagina_id+".html")
+        cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_archivo_nuevo,pagina_id,))
+
+    driver.quit()
+
+    return True
     
 
 

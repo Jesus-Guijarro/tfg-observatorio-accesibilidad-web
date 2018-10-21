@@ -81,7 +81,9 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
+                <div>
+                    <iframe src="{{URL::to('/')}}/storage/paginas/default.html"></iframe>
+                </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
