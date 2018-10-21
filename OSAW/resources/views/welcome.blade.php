@@ -83,11 +83,10 @@
                 </div>
                 <div>
                     <iframe src="{{URL::to('/')}}/storage/paginas/default.html"></iframe>
-                    
                 </div>
                 <?php 
                     $command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/Scraping/evaluar.py 1");
-                    $output=shell_exec($command);
+                    shell_exec($command);
                 ?>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
