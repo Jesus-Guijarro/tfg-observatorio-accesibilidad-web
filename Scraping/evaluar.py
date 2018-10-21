@@ -46,7 +46,7 @@ cursor.execute("select periodicidad_analisis, herramientas from sitios where id 
 sitio = cursor.fetchone()
 
 periodicidad=sitio.__getitem__(0)
-herramientas=sitio.__getitem__(1)
+herramientas=json.loads(sitio.__getitem__(1)) #Se decodifica el JSON
 
 #Comprobamos las páginas web en caso de que sea necesario analizarlas o no
 cursor.execute("select * from paginas where sitio_id = %s", (id_sitio,))
@@ -54,9 +54,13 @@ filas = cursor.fetchall()
 
 for fila in filas:
     #Llamada a crawler: comprobar acceso y copia HTML
-    print(fila.__getitem__(0))
+    if False:
+        evaluarPagina(herramientas["accessmonitor"],herramientas["achecker"],herramientas["eiiichecker"],herramientas["ups"],
+        herramientas["vamola"],herramientas["wave"],fila.__getitem__(1))
 
-   
+
+print(fila.__getitem__(1))
+
 '''
 #BASE DE DATOS
 url="http://accesibilidadweb.dlsi.ua.es/"
