@@ -12,6 +12,7 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
         print(comando)
         #subprocess.run(comando, shell=True, check=True)
 
+#Listado con los nombres de las herramientas
 lista_herramientas=["accessmonitor","achecker","eiiichecker","ups","vamola","wave"]
 
 #Argumento sys.argv[1] -> id del sitio web
@@ -49,7 +50,6 @@ for pagina in paginas:
     else:
         #Añadir error en log.txt
         print("URL no accesible")
-
 
 
 desconexionBD(conexion,cursor)

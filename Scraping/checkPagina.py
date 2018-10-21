@@ -27,12 +27,11 @@ def checkHTML(pagina_id):
     conexion= parametros[0]
     cursor = parametros[1]
 
-    cursor.execute("select URL, archivo_HTML, hash from paginas where id = %s", (pagina_id,))
+    cursor.execute("select URL, hash from paginas where id = %s", (pagina_id,))
     pagina = cursor.fetchone()
     
     URL=pagina.__getitem__(0)
-    ruta_archivo_antiguo=pagina.__getitem__(1)
-    hash_antiguo=pagina.__getitem__(2)
+    hash_antiguo=pagina.__getitem__(1)
 
     #Headless browser
     options = webdriver.ChromeOptions()
@@ -44,43 +43,45 @@ def checkHTML(pagina_id):
     driver.get(URL)
     driver.implicitly_wait(1)
 
-    #Para poder acceder a las rutas de los archivos desde pytho es necesario poner:
-    cabecera_ruta="../OSAW/public"
+    #Rutas para guardar el archivo desde la carpeta Scraping en la del proyecto Laravel:
 
-    ruta_archivo_nuevo="/storage/paginas/"+pagina_id+"2.html"
+    ruta_archivo_antiguo="../OSAW/public/storage/paginas/"+str(pagina_id)+".html"
+    ruta_archivo_nuevo="../OSAW/public/storage/paginas/"+str(pagina_id)+"_nuevo.html"
 
     #Guardamos el contenido de la página web
-    with io.open(cabecera_ruta+ruta_archivo_nuevo, 'w') as f:
+    with io.open(ruta_archivo_nuevo, 'w') as f:
         f.write(driver.page_source)
 
     #Obtenemos el hash del nuevo contenido
-    hash_nuevo=crearHASH(cabecera_ruta+ruta_archivo_nuevo)
+    hash_nuevo=crearHASH(ruta_archivo_nuevo)
 
     #Si no es la primera vez que se evalua la página
-    if hash_antiguo!=0:
+    if hash_antiguo!="0":
         #Si los hash tienen valores distintos
         if hash_antiguo != hash_nuevo:
             #Borramos el archivo anterior
-            os.remove(cabecera_ruta+ruta_archivo_antiguo)
+            os.remove(ruta_archivo_antiguo)
             #Cambiamos el nombre del archivo nuevo para tener el nombre del antiguo
-            os.rename(cabecera_ruta+ruta_archivo_nuevo,ruta_archivo_antiguo)
+            os.rename(ruta_archivo_nuevo,ruta_archivo_antiguo)
             #Actualizamos la pagina con su nuevo valor hash
             cursor.execute("update paginas set hash=%s where id=%s",(hash_nuevo,pagina_id,))
+            conexion.commit()
 
+            driver.quit()
+            desconexionBD(conexion,cursor)
             return False #Devolvemos falso indicando que es necesario evaluar la pagina
         else:
             #Si no hay ningun cambio borramos el archivo creado
-            os.remove(cabecera_ruta+ruta_archivo_nuevo)
+            os.remove(ruta_archivo_nuevo)
     else:
         #Como es la primera vez que se evalua la página se guarda el contenido y el hash obtenido
-        os.rename(cabecera_ruta+ruta_archivo_nuevo,"/storage/paginas/"+pagina_id+".html")
+        os.rename(ruta_archivo_nuevo,ruta_archivo_antiguo)
 
-        cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_archivo_nuevo,pagina_id,))
+        ruta_BD="/storage/paginas/"+str(pagina_id)+".html"
+
+        cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_BD,pagina_id,))
+        conexion.commit()
 
     driver.quit()
-
+    desconexionBD(conexion,cursor)
     return True
-    
-#Pruebas
-pagina_web="http://www.google.com"
-print(checkAcceso(pagina_web))
