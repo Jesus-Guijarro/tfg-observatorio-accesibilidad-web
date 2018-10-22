@@ -43,9 +43,10 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
  
         #Eliminamos duplicados y ordenamos la lista
         lista_paginas=list(sorted(set(lista_paginas)))
+        lista_paginas.append(sitio_url)#Guardamos la pagina principal
+
 
         lista_final=[] #lista para guardar los enlaces que se van a almacenar en la BD
-        lista_final.append(sitio_url)#Guardamos la pagina principal
         
         i = 1 #Contador
 
@@ -66,20 +67,17 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
                 cursor.execute("insert into paginas(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
         
         conexion.commit()
+        driver.quit()
 
         #Recursividad del crawler
         '''
         if i < num_paginas:
                 for url in lista_final:
                         if obtenerPaginas(sitio_id,url,i):
-                                break
+                                return True
         else:
                 return True
         '''
-        
-
-        driver.quit()
-
 
 obtenerPaginas(sitio_id,sitio_url,num_paginas)
 
