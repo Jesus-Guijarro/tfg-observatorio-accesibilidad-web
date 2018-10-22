@@ -1,4 +1,3 @@
-
 import io, mysql.connector, os, requests
 
 from conexiones import *

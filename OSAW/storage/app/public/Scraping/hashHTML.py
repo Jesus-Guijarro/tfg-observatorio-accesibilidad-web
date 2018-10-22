@@ -13,3 +13,4 @@ def crearHASH(ruta_archivo):
     valor_hash= hash.hexdigest()
 
     return valor_hash
+    

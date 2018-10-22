@@ -1,79 +1,84 @@
+import sys, requests, mysql.connector
+
 from selenium import webdriver
-from random import randint
 from conexiones import *
-
-import io
-import sys
-import requests
-import mysql.connector
-
-#Se pasa la URL del sitio por argumento
-url= sys.argv[1]
-
-#Headless mode
-options = webdriver.ChromeOptions()
-
-options.binary_location = '/usr/bin/google-chrome'
-options.add_argument('headless')
-
-driver = webdriver.Chrome(chrome_options=options)
-
-driver.get(url)
-
-enlaces = driver.find_elements_by_tag_name("a")
-
-#Recuento
-#print(len(enlaces))
-
-#Lista para almacenar las páginas web
-paginas = []
-
-for enlace in enlaces:
-    href = enlace.get_attribute("href")
-
-    #Comprobamos primero que la referencia es un string
-    if isinstance(href, str) == True:
-        #Comprobamos la referencia tiene un formato: http://dominio/... y que no incluye el símbolo /# de menús y submenús de navegación
-        if href.find(url)!=-1 and href.find(url,0,len(url))!=-1 and '#' not in href:
-            paginas.append(href)
-
- 
-#Eliminamos duplicados y ordenamos la lista
-paginas=list(sorted(set(paginas)))
-
-for pagina in paginas:
-    r = requests.get(pagina)
-    if r.status_code != 200:
-        paginas.remove(pagina)
-
-
-#Lista para guardar las páginas a analizar del sitio
-sitio = []
-
-#Guardamos la dirección principal
-sitio.append(url)
-
-#Obtenemos 
-for i in range(9):
-
-    num=randint(0, len(paginas))
-    #Añadimos el elemento
-    sitio.append(paginas.__getitem__(num))
-    #Para evitar que se repita el elemento lo eliminamos de la lista
-    paginas.remove(paginas.__getitem__(num))
+from checkPagina import checkAcceso
 
 parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
+sitio_id=sys.argv[1]
+sitio_url=sys.argv[2]
+num_paginas=sys.argv[3]
+
+def obtenerPaginas(sitio_id,sitio_url,num_paginas):
+
+        #Modo Headless 
+        opciones = webdriver.ChromeOptions()
+
+        opciones.binary_location = '/usr/bin/google-chrome'
+        opciones.add_argument('headless')
+
+        driver = webdriver.Chrome(chrome_options=opciones)
+
+        driver.get(sitio_url)
+
+        lista_enlaces = driver.find_elements_by_tag_name("a")
+
+        #Lista para almacenar las urls de las páginas web
+        lista_paginas = []
+
+        #Comprobaciones para obtener enlaces correctos del sitio web
+        for enlace in lista_enlaces:
+                #Guardamos el valor del atributo "href" de cada enlace
+                href = enlace.get_attribute("href")
+
+                #Comprobamos primero que la referencia es un string
+                if isinstance(href, str) == True:
+                        #Comprobamos la referencia tiene un formato: http://dominio/... y que no incluye el símbolo /# de menús y submenús de navegación
+                        if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1 and '#' not in href:
+                                lista_paginas.append(href)
+
+ 
+        #Eliminamos duplicados y ordenamos la lista
+        lista_paginas=list(sorted(set(lista_paginas)))
+
+        lista_final=[] #lista para guardar los enlaces que se van a almacenar en la BD
+        
+        i = 0 #Contador
+
+        #Segunda parte de comprobaciones para no duplicar paginas ya almacenadas en la base de datos y que sean accesibles
+        for pagina in lista_paginas:
+                if i > num_paginas:
+                        break
+                cursor.execute("select count(*) from paginas where URL = %s", (pagina,))
+                resultado = cursor.fetchone()
+                cantidad=resultado.__getitem__(0)
+                if cantidad==0:
+                        if checkAcceso(pagina): 
+                                lista_final.append(pagina)
+                                i = i+1
+        
+
+        for pagina in lista_final:
+                cursor.execute("insert into paginas(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
+        
+        conexion.commit()
+
+        #Recursividad del crawler
+        '''
+        if i < num_paginas:
+                for url in lista_final:
+                        if obtenerPaginas(sitio_id,url,i):
+                                break
+        else:
+                return True
+        '''
+        
+
+        driver.quit()
 
 
-for pagina in sitio:
-    cursor.execute("insert into paginas(idSitio,url) values(1,%s)",(pagina,))
-
-#print(cursor.rowcount, "record inserted.")
-
-desconexionBD(conexion,cursor)
-
-driver.quit()
+obtenerPaginas(sitio_id,sitio_url,num_paginas)
 
