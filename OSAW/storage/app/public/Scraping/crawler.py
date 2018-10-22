@@ -10,7 +10,7 @@ cursor = parametros[1]
 
 sitio_id=sys.argv[1]
 sitio_url=sys.argv[2]
-num_paginas=sys.argv[3]
+num_paginas=int(sys.argv[3])
 
 def obtenerPaginas(sitio_id,sitio_url,num_paginas):
 
@@ -45,12 +45,13 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
         lista_paginas=list(sorted(set(lista_paginas)))
 
         lista_final=[] #lista para guardar los enlaces que se van a almacenar en la BD
+        lista_final.append(sitio_url)#Guardamos la pagina principal
         
-        i = 0 #Contador
+        i = 1 #Contador
 
         #Segunda parte de comprobaciones para no duplicar paginas ya almacenadas en la base de datos y que sean accesibles
         for pagina in lista_paginas:
-                if i > num_paginas:
+                if i >= num_paginas:
                         break
                 cursor.execute("select count(*) from paginas where URL = %s", (pagina,))
                 resultado = cursor.fetchone()
