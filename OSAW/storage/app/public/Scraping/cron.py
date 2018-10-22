@@ -5,7 +5,7 @@ from datetime import datetime
 
 #Argumentos
 
-operacion=int(sys.argv[1]) # Crear = 1; Modificar = 2; Eliminar = 3
+operacion=str(sys.argv[1]) # crear = c; modificar = m; eliminar = e
 sitio_id=sys.argv[2]
 herramienta=sys.argv[3]
 periodicidad=int(sys.argv[4]) # Diaria : 1; Semanal : 2; Quincenal : 3; Mensual : 4
@@ -50,21 +50,20 @@ def crear(sitio_id,herramienta,periodicidad,hora_dia,dia):
     tarea.minute.on(int(minuto))
     tarea.hour.on(int(hora))
 
-    if periodicidad == 2:
+    if periodicidad == 2: #Semanal
         tarea.dow.on(dia)
-    elif periodicidad == 3:
-        tarea.day.on(dia)
+    elif periodicidad == 3: #Quincenal
         tarea.day.every(14)
-    elif periodicidad == 4:
+    elif periodicidad == 4: # Mensual
         tarea.day.on(dia)
 
     cron.write() 
 
 #Método para ejecutar la operacion solicitada
 def realizarOperacion(operacion):
-    if operacion == 1:
+    if operacion == "c":
         crear(sitio_id,herramienta,periodicidad,hora_dia,dia)
-    elif operacion == 2:
+    elif operacion == "m":
         eliminar(sitio_id,herramienta)
         crear(sitio_id,herramienta,periodicidad,hora_dia,dia)
     else: 
