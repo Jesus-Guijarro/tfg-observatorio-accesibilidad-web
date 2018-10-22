@@ -13,7 +13,7 @@ class PaginasTableSeeder extends Seeder
     {
         DB::table('paginas')->delete();
 
-        
+        #Ministerio de Justicia
         DB::table('paginas')->insert([
             'URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/inicio',
             'sitio_id' => '1']);
@@ -54,5 +54,8 @@ class PaginasTableSeeder extends Seeder
         DB::table('paginas')->insert([
             'URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/justicia-espana/organizacion',
             'sitio_id' => '1']);
+
+        #
+
     }
 }

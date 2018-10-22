@@ -20,7 +20,15 @@ class SitiosTableSeeder extends Seeder
         
         DB::table('sitios')->insert([
             'nombre' => 'Ministerio de Justicia',
-            'URL_principal' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/inicio',
+            'URL_principal' => 'http://www.mjusticia.gob.es/',
+            'periodicidad_analisis' => 'Semanal',
+            'numero_paginas' => '10',
+            'categoria_id' => '1',
+            'herramientas' => "$json"]);
+
+        DB::table('sitios')->insert([
+            'nombre' => 'Agencia Estatal de Administración Tributaria',
+            'URL_principal' => 'https://www.agenciatributaria.es/',
             'periodicidad_analisis' => 'Semanal',
             'numero_paginas' => '10',
             'categoria_id' => '1',

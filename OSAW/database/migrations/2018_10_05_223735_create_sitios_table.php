@@ -15,9 +15,9 @@ class CreateSitiosTable extends Migration
     {
         Schema::create('sitios', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre', 25)->unique();
+            $table->string('nombre', 50)->unique();
             $table->text('URL_principal');
-            $table->string('periodicidad_analisis',20);
+            $table->string('periodicidad_analisis');
             $table->integer('numero_paginas');
             $table->json('herramientas');
 
