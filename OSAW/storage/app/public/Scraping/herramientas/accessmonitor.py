@@ -22,25 +22,24 @@ options.add_argument('headless')
 #options.add_argument('window-size=1200x600')
 
 driver = webdriver.Chrome(chrome_options=options)
-
-#Accedemos a la web de la herramienta de evaluacion
-#driver.get('http://www.acessibilidade.gov.pt/accessmonitor/')
-driver.get("file:///home/jesus/Desktop/test.html")
-
 '''
+#Accedemos a la web de la herramienta de evaluacion
+driver.get('http://www.acessibilidade.gov.pt/accessmonitor/')
+
+
 wait = WebDriverWait(driver, 20)
 elem =wait.until(EC.title_is(("AccessMonitor")))
     
 enlace = driver.find_element_by_css_selector('#uri')
 
 enlace.clear()
-enlace.send_keys('http://accesibilidadweb.dlsi.ua.es/')
+#enlace.send_keys('http://accesibilidadweb.dlsi.ua.es/')
+enlace.send_keys('https://www.elmundo.es/internacional.html')
 
 botonWCAG2= driver.find_element_by_css_selector("#form1 > form > fieldset > div.center > input:nth-child(3)")
 botonWCAG2.click()
 
 elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagina > div.corpo > h2:nth-child(7)")))
-'''
 
 puntuacion = driver.find_element_by_css_selector("#webaxscore > span")
 print(float(puntuacion.text))
@@ -70,14 +69,13 @@ datos=driver.find_elements_by_tag_name('h5')
 
 #Datos de las pruebas y traducción
 translator = Translator()
-translator.translate('안녕하세요.', dest='ja')
 
 for dato in datos:
     texto=dato.get_attribute('textContent')
-    print(translator.translate(texto, dest='es').text)
+    print(translator.translate(texto, dest='es', src='pt').text)
 
 driver.quit()
-
+'''
 
 
 

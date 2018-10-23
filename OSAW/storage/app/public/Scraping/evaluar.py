@@ -1,18 +1,17 @@
 import io, json, mysql.connector, subprocess, sys
 
 from selenium import webdriver
-from conexiones import *
-from checkPagina import *
+from herramientas.conexiones import *
+from comprobarPagina import *
 
 
 #Método para llamar las herramientas
 def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
     if herramienta_eval == True:
         comando="python3 herramientas/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
-        print(comando)
+        myFile = open('/home/jesus/Documents/file.txt', 'a')  
+        myFile.write(str(comando)) 
         #subprocess.run(comando, shell=True, check=True)
-
-
 
 #Argumento sys.argv[1] -> id del sitio web
 sitio_id=sys.argv[1]
@@ -43,10 +42,10 @@ for pagina in paginas:
     pagina_archivo_HTML=pagina.__getitem__(2)
 
     #Comprobar acceso a la URL de la página web
-    if checkAcceso(pagina_url):
+    if comprobarAcceso(pagina_url):
         #Comprobar cambios en la página web por si es necesario evaluar
-        if checkHTML(pagina_id):
-        #if checkHTML(pagina_id,pagina_url):
+        if comprobarHTML(pagina_id):
+        #if comprobarHTML(pagina_id,pagina_url):
             for l in lista_herramientas:
                 ejecutarHerramienta(herramientas[l],l,pagina_url,pagina_id)
     else:

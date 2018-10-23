@@ -9,13 +9,14 @@ operacion=str(sys.argv[1]) # Crear -> C; Actualizar -> A; Eliminar -> E
 sitio_id=sys.argv[2]
 periodicidad=str(sys.argv[3]) # Diaria -> D; Semanal -> S;  Mensual -> M
 hora_dia=sys.argv[4]
-dia=sys.argv[5] #Día del mes o de la semana - Valor 0 en caso de no necesitar
+dia=sys.argv[5] #Día del mes o de la semana
 
 #Inicializamos crontab
 cron = CronTab(user='jesus')
 
 #Método para eliminar una tarea
 def eliminar(sitio_id):
+    comentario="evaluar-sitio:"+str(sitio_id)
     tareas=cron.find_comment(comentario)  
 
     for tarea in tareas:
@@ -34,7 +35,7 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
     ruta_evaluar=directorio+"/storage/Scraping/evaluar.py " + sitio_id
 
     #Comando y comentario asignado a la tarea
-    comando="/usr/bin/python3 "+ ruta_evaluar
+    comando="python3 "+ ruta_evaluar
     comentario="evaluar-sitio:"+str(sitio_id)
 
     tarea= cron.new(command=comando, comment=comentario)  

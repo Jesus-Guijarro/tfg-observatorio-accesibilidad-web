@@ -1,11 +1,11 @@
 import io, mysql.connector, os, requests
 
-from conexiones import *
+from herramientas.conexiones import *
 from crearHash import *
 from selenium import webdriver
 
 #Comprobar acceso URL
-def checkAcceso(pagina_web):
+def comprobarAcceso(pagina_web):
     try:
         request = requests.get(pagina_web)
 
@@ -17,7 +17,7 @@ def checkAcceso(pagina_web):
         return False
 
 #Comprobar contenido HTML
-def checkHTML(pagina_id):
+def comprobarHTML(pagina_id):
 
     #Conexión base de datos
     parametros = conexionBD()

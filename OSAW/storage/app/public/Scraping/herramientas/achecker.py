@@ -23,7 +23,7 @@ document.add_heading('Document Title', 0)
 options = webdriver.ChromeOptions()
 
 options.binary_location = '/usr/bin/google-chrome'
-options.add_argument('headless')
+#options.add_argument('headless')
 
 #Pruebas
 options.add_argument('window-size=1200x600')
@@ -31,8 +31,8 @@ options.add_argument('window-size=1200x600')
 driver = webdriver.Chrome(chrome_options=options)
 
 #Accedemos a la web de la herramienta de evaluacion
-#driver.get('https://achecker.ca/checker/index.php')
-driver.get("file:///home/jesus/Desktop/testACHECKER.html")
+driver.get('https://achecker.ca/checker/index.php')
+#driver.get("file:///home/jesus/Desktop/testACHECKER.html")
 
 
 #Clase para crear condicion de espera a la hora exportar
@@ -52,7 +52,7 @@ class element_has_value(object):
 
 wait = WebDriverWait(driver, 200)
 
-'''
+
 elem =wait.until(EC.title_is(("IDI Web Accessibility Checker : Web Accessibility Checker")))
 
 #Introducir URL
@@ -72,7 +72,7 @@ opcionWCAG2.click()
 #Evaluar
 boton= driver.find_element_by_css_selector("#validate_uri")
 boton.click()
-'''
+
 
 #Resultado
 elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#report_file > div > label:nth-child(1)")))
@@ -86,13 +86,13 @@ print(int(numProbables.text))
 numPotenciales=driver.find_element_by_css_selector("#AC_num_of_potential")
 print(int(numPotenciales.text))
 
-'''
+
 #Generar reporte
 exportar = driver.find_element_by_css_selector("#validate_file_button")
 exportar.click()
 
 element = wait.until(element_has_value((By.CSS_SELECTOR, "#validate_file_button"), "Get File"))
-'''
+
 
 
 #Comprobar si hay errores de X tipo o no

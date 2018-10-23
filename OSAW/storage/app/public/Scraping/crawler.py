@@ -1,8 +1,8 @@
 import sys, requests, mysql.connector
 
 from selenium import webdriver
-from conexiones import *
-from checkPagina import checkAcceso
+from herramientas.conexiones import *
+from comprobarPagina import comprobarAcceso
 
 parametros = conexionBD()
 conexion= parametros[0]
@@ -57,7 +57,7 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
         resultado = cursor.fetchone()
         cantidad=resultado.__getitem__(0)
         if cantidad==0:
-            if checkAcceso(pagina): 
+            if comprobarAcceso(pagina): 
                 lista_final.append(pagina)
                 i = i+1
         
