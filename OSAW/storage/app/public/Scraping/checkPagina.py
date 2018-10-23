@@ -1,7 +1,7 @@
 import io, mysql.connector, os, requests
 
 from conexiones import *
-from hashHTML import *
+from crearHash import *
 from selenium import webdriver
 
 #Comprobar acceso URL
@@ -55,7 +55,7 @@ def checkHTML(pagina_id):
         f.write(driver.page_source)
 
     #Obtenemos el hash del nuevo contenido
-    hash_nuevo=crearHASH(ruta_archivo_nuevo)
+    hash_nuevo=hashArchivo(ruta_archivo_nuevo)
 
     #Si no es la primera vez que se evalua la página (valor en default)
     if hash_antiguo!="default":
@@ -87,5 +87,3 @@ def checkHTML(pagina_id):
     driver.quit()
     desconexionBD(conexion,cursor)
     return True
-
-checkHTML(1)

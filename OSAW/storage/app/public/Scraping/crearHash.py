@@ -2,7 +2,7 @@
 import hashlib
 import codecs
 
-def crearHASH(ruta_archivo):
+def hashArchivo(ruta_archivo):
     #Se obtiene el contenido del archivo html
     f=codecs.open(ruta_archivo, 'r', encoding="utf8")
     contenido=f.read()
@@ -13,4 +13,5 @@ def crearHASH(ruta_archivo):
     valor_hash= hash.hexdigest()
 
     return valor_hash
+
     
