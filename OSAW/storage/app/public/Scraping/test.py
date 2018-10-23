@@ -20,14 +20,43 @@ datos = str(content)
 
 datos_json=json.loads(datos)
 
-print(datos_json["oaw"]["resultado"]["resumen"]["totalComprensible"])
-print(datos_json["oaw"]["resultado"]["resumen"]["totalOperable"])
-print(datos_json["oaw"]["resultado"]["resumen"]["totalPerceptible"])
-print(datos_json["oaw"]["resultado"]["resumen"]["totalRobusto"])
+lista=datos_json["oaw"]["resultado"]["principios"]
 
-print(datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["errores"])
-print(datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["advertencias"])
 
+for l in lista:
+    #print(l["numero"])
+    #print(l["titulo"])
+    #print(l["descripcion"])
+    pautas=l["pautas"]
+    if isinstance(pautas, list):
+        for p in pautas:
+            #print(p["numero"])
+            #print(p["descripcion"])
+            #print(p["titulo"])
+            try:
+                criterios=p["criterios"]
+                if isinstance(criterios, list):
+                    for c in criterios:
+                        try:
+                            tecnicas= c["tecnicas"]
+                            if isinstance(tecnicas, list):
+                                for t in tecnicas:
+                                    print(t["codigo"])
+                                    print(t["criticidad"])
+                                    print(t["titulo"])
+                                    print(t["errores"])
+                                    print(t["observacion"])
+                                    print(t["recomendacion"])
+                        except Exception as e:
+                            pass
+            except Exception as e:
+                pass        
+    else:
+        #print(l["pautas"]["numero"])
+        #print(l["pautas"]["descripcion"])
+        #print(l["pautas"]["titulo"])
+        criterios=p["criterios"]
+    
 
 
 '''
