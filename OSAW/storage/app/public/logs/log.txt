@@ -1,0 +1,1 @@
+Archivo para guardar logs de errores durante la parte de Scraping
