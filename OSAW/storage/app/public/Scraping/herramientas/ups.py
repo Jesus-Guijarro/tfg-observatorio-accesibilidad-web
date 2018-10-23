@@ -29,19 +29,28 @@ try:
     url_request="http://observatorioweb.ups.edu.ec/oaw/srv/wcag/json/conformidad/?url="+pagina_url+"&key="+key
     
     r = requests.get(url=url_request)
-    
-    #Encontrar los problemas: errores y advertencias segun el nivel
-    datos_string=str(r.content.decode('utf-8'))
-    problemas_A=datos_string.count('"nivel":"A"')
-    problemas_AA=datos_string.count('"nivel":"AA"')
-    problemas_AAA=datos_string.count('"nivel":"AAA"')
-
-    problemas_AAA=problemas_AAA - 1 # Se debe de quitar uno porque al principio se indica que se evalua a nivel AAA
-
 
     datos_json=json.loads(r.content.decode('utf-8'))
 
-    print(datos_json["oaw"]["fecha"])
+    #Número de problemas y advertencias por principio
+    problemas_comprensible=datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["errores"]
+    advertencias_comprensible=datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["advertencias"
+    ]
+    problemas_operable=datos_json["oaw"]["resultado"]["resumen"]["operable"]["errores"]
+    advertencias_operable=datos_json["oaw"]["resultado"]["resumen"]["operable"]["advertencias"]
+
+    problemas_perceptible=datos_json["oaw"]["resultado"]["resumen"]["perceptible"]["errores"]
+    advertencias_perceptible=datos_json["oaw"]["resultado"]["resumen"]["perceptible"]["advertencias"]
+
+    problemas_robusto=datos_json["oaw"]["resultado"]["resumen"]["robusto"]["errores"]
+    advertencias_robusto=datos_json["oaw"]["resultado"]["resumen"]["robusto"]["advertencias"]
+
+
+    #Porcentajes principios
+    porcentaje_comprensible=datos_json["oaw"]["resultado"]["resumen"]["totalComprensible"]
+    porcentaje_operable=datos_json["oaw"]["resultado"]["resumen"]["totalOperable"]
+    porcentaje_perceptible=datos_json["oaw"]["resultado"]["resumen"]["totalPerceptible"]
+    porcentaje_robusto=datos_json["oaw"]["resultado"]["resumen"]["totalRobusto"]
 
     ruta_archivo_datos=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+fecha
     

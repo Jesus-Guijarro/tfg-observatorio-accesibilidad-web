@@ -20,8 +20,22 @@ datos = str(content)
 
 datos_json=json.loads(datos)
 
-print(datos_json["oaw"]["fecha"])
+print(datos_json["oaw"]["resultado"]["resumen"]["totalComprensible"])
+print(datos_json["oaw"]["resultado"]["resumen"]["totalOperable"])
+print(datos_json["oaw"]["resultado"]["resumen"]["totalPerceptible"])
+print(datos_json["oaw"]["resultado"]["resumen"]["totalRobusto"])
 
+print(datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["errores"])
+print(datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["advertencias"])
+
+
+
+'''
+d = datos_json["categories"]["error"]["items"]
+
+valores = d.values()
+claves = d.keys()
+'''
 
 
 

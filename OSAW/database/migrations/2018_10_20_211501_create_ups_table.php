@@ -19,9 +19,14 @@ class CreateUpsTable extends Migration
             $table->float('porcentaje_operable');
             $table->float('porcentaje_perceptible');
             $table->float('porcentaje_robusto');
-            $table->integer('num_problemas_a');
-            $table->integer('num_problemas_aa');
-            $table->integer('num_problemas_aaa');
+            $table->integer('num_problemas_comprensible');
+            $table->integer('num_problemas_operable');
+            $table->integer('num_problemas_perceptible');
+            $table->integer('num_problemas_robusto');
+            $table->integer('num_advertencias_comprensible');
+            $table->integer('num_advertencias_operable');
+            $table->integer('num_advertencias_perceptible');
+            $table->integer('num_advertencias_robusto');
             $table->text('datos_problemas');
             $table->date('fecha_test');
             
