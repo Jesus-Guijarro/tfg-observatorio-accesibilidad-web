@@ -8,9 +8,13 @@ from comprobarPagina import *
 #Método para llamar las herramientas
 def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
     if herramienta_eval == True:
-        comando="python3 herramientas/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
-        myFile = open('/home/jesus/Documents/file.txt', 'a')  
-        myFile.write(str(comando)) 
+        
+        #Primero se obtiene el directorio actual para crear el comando a ejecutar
+        directorio = os.path.dirname(os.path.abspath(__file__))
+        directorio=directorio.replace("/Scraping","")
+        directorio=directorio.replace("/storage/app","")
+
+        comando="/usr/bin/python3 "+directorio+"/herramientas/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
         #subprocess.run(comando, shell=True, check=True)
 
 #Argumento sys.argv[1] -> id del sitio web

@@ -41,8 +41,7 @@ def comprobarHTML(pagina_id):
     driver.get(URL)
 
     #Rutas para guardar el archivo desde la carpeta Scraping en la del proyecto Laravel:
-    
-    directorio = str(os.getcwd())
+    directorio = os.path.dirname(os.path.abspath(__file__))
     directorio=directorio.replace("/Scraping","")
     directorio=directorio.replace("/storage/app","")
 

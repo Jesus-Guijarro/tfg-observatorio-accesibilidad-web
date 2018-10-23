@@ -1,15 +1,13 @@
 from datetime import datetime
+import os
 
-from herramientas.conexiones import *
 '''
 myFile = open('/home/jesus/Documents/file.txt', 'a')  
-myFile.write('\nAccessed on ' + str(datetime.now().date()))  
+myFile.write(str(datetime.now().date()))  
 '''
+print(os.path.dirname(os.path.abspath(__file__)))
 
-parametros = conexionBD()
 
-conexion= parametros[0]
-cursor = parametros[1]
 
 
 
