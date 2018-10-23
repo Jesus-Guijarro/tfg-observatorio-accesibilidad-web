@@ -37,25 +37,58 @@ for l in lista:
                 criterios=p["criterios"]
                 if isinstance(criterios, list):
                     for c in criterios:
+                        #print(c["numero"])
+                        #print(c["nivel"])
+                        #print(c["titulo"])
                         try:
                             tecnicas= c["tecnicas"]
                             if isinstance(tecnicas, list):
                                 for t in tecnicas:
+                                    pass
                                     print(t["codigo"])
-                                    print(t["criticidad"])
-                                    print(t["titulo"])
-                                    print(t["errores"])
-                                    print(t["observacion"])
-                                    print(t["recomendacion"])
+                                    #print(t["criticidad"])
+                                    #print(t["titulo"])
+                                    #print(t["errores"])
+                                    #print(t["observacion"])
+                                    #print(t["recomendacion"])
+                            else:
+                                print(c["tecnicas"]["codigo"])
+                                #print(c["tecnicas"]["criticidad"])
+                                #print(c["tecnicas"]["titulo"])
+                                #print(c["tecnicas"]["errores"])
+                                #print(c["tecnicas"]t["observacion"])
+                                #print(c["tecnicas"]["recomendacion"])
+
                         except Exception as e:
                             pass
+                else:
+                    #print(p["criterios"]["numero"])
+                    #print(p["criterios"]["nivel"])
+                    #print(p["criterios"]["titulo"])
+                    try:
+                        tecnicas= p["criterios"]["tecnicas"]
+                        if isinstance(tecnicas, list):
+                            for t in tecnicas:
+                                pass
+                                print(t["codigo"])
+                                #print(t["criticidad"])
+                                #print(t["titulo"])
+                                #print(t["errores"])
+                                #print(t["observacion"])
+                                #print(t["recomendacion"])
+                    except Exception as e:
+                        pass
+
+
             except Exception as e:
                 pass        
     else:
         #print(l["pautas"]["numero"])
         #print(l["pautas"]["descripcion"])
         #print(l["pautas"]["titulo"])
-        criterios=p["criterios"]
+        criterios=l["pautas"]["criterios"]
+
+        
     
 
 
