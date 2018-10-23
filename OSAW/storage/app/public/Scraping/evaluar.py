@@ -15,7 +15,6 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
         directorio=directorio.replace("/storage/app","")
 
         comando="/usr/bin/python3 "+directorio+"/herramientas/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
-        print(comando)
         #subprocess.run(comando, shell=True, check=True)
 
 #Argumento sys.argv[1] -> id del sitio web
