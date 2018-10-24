@@ -16,12 +16,9 @@ conexion= parametros[0]
 cursor = parametros[1]
 
 #Ruta del directorio actual
-directorio = os.path.dirname(os.path.abspath(__file__))
+directorio = getDirectorio()
 
-directorio=directorio.replace("/Scraping","")
-directorio=directorio.replace("/storage/app","")
-
-fecha_test=str(datetime.now().date())
+fecha_test=getFecha(True)
 
 url_request='http://wave.webaim.org/api/request?key={yourAPIkey}&url={url}&format=json&reporttype=2'
 

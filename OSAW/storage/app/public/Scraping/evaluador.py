@@ -14,11 +14,9 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
     if herramienta_eval == True:
         
         #Primero se obtiene el directorio actual para crear el comando a ejecutar
-        directorio = os.path.dirname(os.path.abspath(__file__))
-        directorio=directorio.replace("/Scraping","")
-        directorio=directorio.replace("/storage/app","")
+        directorio = getDirectorio()
 
-        comando="/usr/bin/python3 "+directorio+"/storage/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
+        comando="/usr/bin/python3 "+getRutaComando(directorio,herramienta,pagina_web,pagina_id)
         print(comando)
         #subprocess.run(comando, shell=True, check=True)
 
@@ -59,15 +57,8 @@ for pagina in paginas:
                 ejecutarHerramienta(herramientas[l],l,pagina_url,pagina_id)
     else:
         #Añadir error en log.txt
-        directorio = os.path.dirname(os.path.abspath(__file__))
-
-        directorio=directorio.replace("/Scraping","")
-        directorio=directorio.replace("/storage/app","")
-
-        ruta_archivo_logs=directorio+"/storage/logs/log.txt"
-        log = open(ruta_archivo_logs, 'a')  
-        log.write("[03]Error accesso página web: " + pagina_url + " ----- Fecha: "+ fecha_test + "\n")
-
+        directorio = getDirectorio()
+        errorLog(directorio,3,fecha_test,"",pagina_url)
 
 desconexionBD(conexion,cursor)
 

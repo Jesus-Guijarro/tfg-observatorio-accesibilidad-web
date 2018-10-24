@@ -62,6 +62,12 @@ def getRutaCopiaHTML(directorio,pagina_id, nuevo):
 
     return ruta
 
+def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
+
+    ruta=directorio+"/storage/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
+
+    return str(ruta)
+
 #Método para escribir el archivo logs.txt el error encontrado
 def errorLog(directorio,tipo,fecha_test,herramienta,pagina_url):
 
@@ -71,4 +77,4 @@ def errorLog(directorio,tipo,fecha_test,herramienta,pagina_url):
     if tipo==1: 
         log.write("[01]\tError herramienta: " + herramienta + "\t\tFecha: "+ fecha_test+"\t\tPagina web: " + pagina_url + ".\n")
     else:
-        log.write("[03]\tError accesso página web: " + pagina_url + "\t\tFecha: "+ fecha_test + ".\n")
+        log.write("[03]\tError accesso página web: " + pagina_url + "\t\tFecha: "+ fecha_test + "\n")
