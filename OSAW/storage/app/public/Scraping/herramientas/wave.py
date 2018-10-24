@@ -1,11 +1,33 @@
-import json
-import requests
-import io
+import json, requests, io, sys, os
 
+from datetime import datetime
+from conexiones import *
 
-r = requests.get(url='http://axe.wtkollen.tingtun.no/export-jsonld/pagecheck2.0/?url=http://accesibilidadweb.dlsi.ua.es/')
+#Argumentos URL e ID de la página web
+pagina_url=sys.argv[1]
+pagina_id=sys.argv[2]
 
-datos= json.loads(r.content.decode('utf-8'))
+herramienta="wave"
+key="qbw26Imi1068"
+
+#Conexión base de datos
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
+
+#Ruta del directorio actual
+directorio = os.path.dirname(os.path.abspath(__file__))
+
+directorio=directorio.replace("/Scraping/herramientas","")
+directorio=directorio.replace("/storage/app","")
+
+fecha_test=str(datetime.now().date())
+
+url_request='http://wave.webaim.org/api/request?key={yourAPIkey}&url={url}&format=json&reporttype=2'
+
+request = requests.get(url=url_request)
+
+datos= json.loads(request.content.decode('utf-8'))
 
 #print(datos["status"]["success"])
 

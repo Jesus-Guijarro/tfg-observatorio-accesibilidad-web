@@ -1,7 +1,11 @@
 from datetime import datetime
-import os, json
+import os,sys,json
 
 '''
+from test2 import *
+p1 = Person("John", 36)
+p1.myfunc()
+
 myFile = open('/home/jesus/Documents/file.txt', 'a')  
 myFile.write(str(datetime.now().date()))  
 '''
@@ -47,7 +51,7 @@ data = {
          }
       },
       "alert":{
-         "description":"Errors",
+         "description":"Alerts",
          "count":5,
          "items":{
             "h1_missing":{
@@ -139,27 +143,40 @@ data = {
    }
 }
 
-data_string = json.dumps(data)
+datos_string = json.dumps(data)
 
-decode = json.loads(data_string)
+datos_json = json.loads(datos_string)
 
-d = decode["categories"]["error"]["items"]
+num_problemas = datos_json["categories"]["error"]["count"]
+num_advertencias= datos_json["categories"]["alert"]["count"]
+num_caracteristicas= datos_json["categories"]["feature"]["count"]
+num_elem_ARIA= datos_json["categories"]["html5"]["count"]
+num_problemas_contraste= datos_json["categories"]["contrast"]["count"]
 
-valores = d.values()
-claves = d.keys()
+def obtenerDatos(datos):
+    valores = datos.values()
+    #claves = datos.keys()
+    for v in valores:
+        print(str(v["description"]) +" -- "+ str(v["count"]))
 
-for v in valores:
-    print(str(v["description"]) +" -- "+ str(v["count"]))
+obtenerDatos(datos_json["categories"]["error"]["items"])
+obtenerDatos(datos_json["categories"]["alert"]["items"])
+obtenerDatos(datos_json["categories"]["feature"]["items"])
+obtenerDatos(datos_json["categories"]["contrast"]["items"])
 
 
+directorio = os.path.dirname(os.path.abspath(__file__))
 
+directorio=directorio.replace("/Scraping/herramientas","")
+directorio=directorio.replace("/storage/app","")
 
-'''
-d = datos_json["categories"]["error"]["items"]
+fecha_test=str(datetime.now().date())
 
-valores = d.values()
-claves = d.keys()
-'''
+ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
+ruta_BD="/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
+
+#Crear reporte
+reporte = open(ruta_reporte, 'a')
 
 
 

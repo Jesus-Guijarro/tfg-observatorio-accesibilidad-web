@@ -46,15 +46,11 @@ try:
 
 
     #Porcentajes de los principios
-    porcentaje_comprensible=datos_json["oaw"]["resultado"]["resumen"]["totalComprensible"]
-    porcentaje_operable=datos_json["oaw"]["resultado"]["resumen"]["totalOperable"]
-    porcentaje_perceptible=datos_json["oaw"]["resultado"]["resumen"]["totalPerceptible"]
-    porcentaje_robusto=datos_json["oaw"]["resultado"]["resumen"]["totalRobusto"]
-
-    porcentaje_comprensible=float(porcentaje_comprensible.replace("%",""))
-    porcentaje_operable=float(porcentaje_operable.replace("%",""))
-    porcentaje_perceptible=float(porcentaje_perceptible.replace("%",""))
-    porcentaje_robusto=float(porcentaje_robusto.replace("%",""))
+    
+    porcentaje_comprensible=float(datos_json["oaw"]["resultado"]["resumen"]["totalComprensible"].replace("%",""))
+    porcentaje_operable=float(datos_json["oaw"]["resultado"]["resumen"]["totalOperable"].replace("%",""))
+    porcentaje_perceptible=float(datos_json["oaw"]["resultado"]["resumen"]["totalPerceptible"].replace("%",""))
+    porcentaje_robusto=float(datos_json["oaw"]["resultado"]["resumen"]["totalRobusto"].replace("%",""))
 
     #Rutas para guardar el archivo y el acceso desde la BD
     ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
@@ -184,5 +180,5 @@ except Exception as e:
     ruta_archivo_logs=directorio+"/storage/logs/log.txt"
 
     log = open(ruta_archivo_logs, 'a')  
-    log.write("[3]Error herramienta: " + herramienta + " ----- Fecha: "+ fecha_test+" --- Pagina web: " + pagina_url + "\n")
+    log.write("[03]Error herramienta: " + herramienta + " ----- Fecha: "+ fecha_test+" --- Pagina web: " + pagina_url + "\n")
 

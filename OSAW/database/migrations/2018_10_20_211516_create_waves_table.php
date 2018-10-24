@@ -19,6 +19,7 @@ class CreateWavesTable extends Migration
             $table->integer('num_problemas');
             $table->integer('num_advertencias');
             $table->integer('num_caracteristicas');
+            $table->integer('num_elem_ARIA');
             $table->integer('num_problemas_contraste');
             $table->text('datos_problemas');
             $table->date('fecha_test');

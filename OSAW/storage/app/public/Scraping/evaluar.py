@@ -4,6 +4,8 @@ from selenium import webdriver
 from herramientas.conexiones import *
 from comprobarPagina import *
 
+from datetime import datetime
+
 #Listado con las herramientas disponibles para ser usadas
 lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
 
@@ -22,6 +24,9 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
 
 #Argumento sys.argv[1] -> id del sitio web
 sitio_id=sys.argv[1]
+
+#Fecha
+fecha_test=str(datetime.now().date())
 
 #Conexión base de datos
 parametros = conexionBD()
@@ -54,7 +59,14 @@ for pagina in paginas:
                 ejecutarHerramienta(herramientas[l],l,pagina_url,pagina_id)
     else:
         #Añadir error en log.txt
-        print("URL no accesible")
+        directorio = os.path.dirname(os.path.abspath(__file__))
+
+        directorio=directorio.replace("/Scraping","")
+        directorio=directorio.replace("/storage/app","")
+
+        ruta_archivo_logs=directorio+"/storage/logs/log.txt"
+        log = open(ruta_archivo_logs, 'a')  
+        log.write("[03]Error accesso página web: " + pagina_url + " ----- Fecha: "+ fecha_test + "\n")
 
 
 desconexionBD(conexion,cursor)
