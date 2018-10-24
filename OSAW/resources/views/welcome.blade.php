@@ -85,7 +85,7 @@
                     <iframe src="{{URL::to('/')}}/storage/paginas/default.html"></iframe>
                 </div>
                 <?php 
-                    $command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/Scraping/evaluar.py 1");
+                    $command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/Scraping/evaluador.py 1");
                     shell_exec($command);
                 ?>
                 <div class="links">

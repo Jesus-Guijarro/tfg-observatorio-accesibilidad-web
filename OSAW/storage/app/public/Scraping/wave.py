@@ -18,7 +18,7 @@ cursor = parametros[1]
 #Ruta del directorio actual
 directorio = os.path.dirname(os.path.abspath(__file__))
 
-directorio=directorio.replace("/Scraping/herramientas","")
+directorio=directorio.replace("/Scraping","")
 directorio=directorio.replace("/storage/app","")
 
 fecha_test=str(datetime.now().date())

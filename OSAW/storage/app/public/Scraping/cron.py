@@ -32,11 +32,11 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
     directorio=directorio.replace("/Scraping","")
     directorio=directorio.replace("/storage/app","")
 
-    #ruta_evaluar=directorio+"/storage/Scraping/test.py " + sitio_id
-    ruta_evaluar=directorio+"/storage/Scraping/evaluar.py " + sitio_id
+    #ruta_evaluador=directorio+"/storage/Scraping/test.py " + sitio_id
+    ruta_evaluador=directorio+"/storage/Scraping/evaluador.py " + sitio_id
 
     #Comando y comentario asignado a la tarea
-    comando="/usr/bin/python3 "+ ruta_evaluar
+    comando="/usr/bin/python3 "+ ruta_evaluador
     comentario="evaluar-sitio:"+ sitio_id
 
     tarea= cron.new(command=comando, comment=comentario)  

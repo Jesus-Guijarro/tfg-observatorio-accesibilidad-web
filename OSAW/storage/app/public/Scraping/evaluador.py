@@ -1,8 +1,8 @@
 import io, json, mysql.connector, subprocess, sys
 
 from selenium import webdriver
-from herramientas.conexiones import *
-from comprobarPagina import *
+from conexiones import *
+from comprobador import *
 
 from datetime import datetime
 
@@ -18,7 +18,7 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
         directorio=directorio.replace("/Scraping","")
         directorio=directorio.replace("/storage/app","")
 
-        comando="/usr/bin/python3 "+directorio+"/herramientas/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
+        comando="/usr/bin/python3 "+directorio+"/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
         print(comando)
         #subprocess.run(comando, shell=True, check=True)
 
@@ -51,7 +51,7 @@ for pagina in paginas:
     pagina_archivo_HTML=pagina.__getitem__(2)
 
     #Comprobar acceso a la URL de la página web
-    if comprobarAcceso(pagina_url):
+    if comprobarAccesoyTipo(pagina_url):
         #Comprobar cambios en la página web por si es necesario evaluar
         if comprobarHTML(pagina_id):
         #if comprobarHTML(pagina_id,pagina_url):

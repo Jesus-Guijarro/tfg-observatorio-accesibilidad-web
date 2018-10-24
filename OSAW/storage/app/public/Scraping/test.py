@@ -1,5 +1,5 @@
 from datetime import datetime
-from herramientas.conexiones import *
+from conexiones import *
 
 import os,sys,json
 
@@ -159,7 +159,6 @@ num_problemas_contraste= datos_json["categories"]["contrast"]["count"]
 directorio = os.path.dirname(os.path.abspath(__file__))
 
 pagina_id=1
-#directorio=directorio.replace("/Scraping/herramientas","")
 directorio=directorio.replace("/Scraping","")
 directorio=directorio.replace("/storage/app","")
 

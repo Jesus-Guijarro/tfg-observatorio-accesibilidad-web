@@ -1,20 +1,27 @@
 import io, mysql.connector, os, requests
 
-from herramientas.conexiones import *
-from crearHash import *
+from conexiones import *
+from hasher import *
 from selenium import webdriver
 
 #Comprobar acceso URL
-def comprobarAcceso(pagina_web):
+def comprobarAccesoyTipo(pagina_web):
     try:
         request = requests.get(pagina_web)
+        tipo = request.headers.get('content-type')
 
-        if request.status_code == 200:
+        #Formato: text/html;charset=utf-8
+        tipo = tipo.lower()
+        tipo = tipo.replace(' ','')
+
+        if request.status_code == 200 and tipo == "text/html;charset=utf-8":
             return True
         else:
             return False
     except requests.ConnectionError:
         return False
+
+
 
 #Comprobar contenido HTML
 def comprobarHTML(pagina_id):
@@ -86,3 +93,7 @@ def comprobarHTML(pagina_id):
     driver.quit()
     desconexionBD(conexion,cursor)
     return True
+
+comprobarAccesoyTipo("https://www.reddit.com/")
+comprobarAccesoyTipo("http://www.mjusticia.gob.es/cs/Satellite/Portal/1292428816672?blobheader=application%2Fpdf&blobheadername1=Content-Disposition&blobheadervalue1=attachment%3B+filename%3DPremios_Foro_Justicia_y_Discapacidad_2018.PDF")
+
