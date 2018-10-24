@@ -17,12 +17,9 @@ conexion= parametros[0]
 cursor = parametros[1]
 
 #Ruta del directorio actual
-directorio = os.path.dirname(os.path.abspath(__file__))
+directorio = getDirectorio()
 
-directorio=directorio.replace("/Scraping","")
-directorio=directorio.replace("/storage/app","")
-
-fecha_test=str(datetime.now().date())
+fecha_test=getFecha(True)
 
 try:
     #Formato de la URL para utilizar la API de la herramienta
@@ -54,8 +51,8 @@ try:
     porcentaje_robusto=float(datos_json["oaw"]["resultado"]["resumen"]["totalRobusto"].replace("%",""))
 
     #Rutas para guardar el archivo y el acceso desde la BD
-    ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
-    ruta_BD="/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
+    ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
+    ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
     
     #Crear reporte
     reporte = open(ruta_reporte, 'a')

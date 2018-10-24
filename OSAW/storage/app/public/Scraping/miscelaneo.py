@@ -32,11 +32,11 @@ class element_has_value(object):
 
 #Devolver la fecha en formato: 'YYYY-MM-DD'
 def getFecha(st):
-    fecha = datetime.now().date()
+    fecha_test = datetime.now().date()
     #Se devuelve en string si se pide
     if st:
-        fecha = str(fecha)
-    return fecha
+        fecha_test = str(fecha_test)
+    return fecha_test
 
 #Indicar ruta para guardar el archivo. 
 #Para copias html y documentos de texto con los datos de las evaluaciones
@@ -46,15 +46,12 @@ def getDirectorio():
     directorio=directorio.replace("/Scraping","")
     directorio=directorio.replace("/storage/app","")
 
-    directorio=directorio
-
     return directorio
 
-
 #Ruta para guardar rutas de reportes
-def getRutaReporte(directorio,herramienta,pagina_id,fecha):
+def getRutaReporte(directorio,herramienta,pagina_id,fecha_test):
     #Directorio vacio si es para la BD
-    ruta = directorio+"/storage/"+herramienta+"/"+str(pagina_id)+"_"+str(fecha)+".txt"
+    ruta = directorio+"/storage/"+herramienta+"/"+str(pagina_id)+"_"+str(fecha_test)+".txt"
     
     return ruta
 
@@ -66,12 +63,12 @@ def getRutaCopiaHTML(directorio,pagina_id, nuevo):
     return ruta
 
 #Método para escribir el archivo logs.txt el error encontrado
-def errorLog(directorio,tipo,fecha,herramienta,pagina_url):
+def errorLog(directorio,tipo,fecha_test,herramienta,pagina_url):
 
     ruta_archivo_logs=directorio+"/storage/logs/log.txt"
 
     log = open(ruta_archivo_logs, 'a') 
     if tipo==1: 
-        log.write("[01]\tError herramienta: " + herramienta + "\t\tFecha: "+ fecha+"\t\tPagina web: " + pagina_url + ".\n")
+        log.write("[01]\tError herramienta: " + herramienta + "\t\tFecha: "+ fecha_test+"\t\tPagina web: " + pagina_url + ".\n")
     else:
-        log.write("[03]\tError accesso página web: " + pagina_url + "\t\tFecha: "+ fecha + ".\n")
+        log.write("[03]\tError accesso página web: " + pagina_url + "\t\tFecha: "+ fecha_test + ".\n")
