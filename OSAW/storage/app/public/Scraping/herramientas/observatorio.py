@@ -26,7 +26,7 @@ fecha_test=str(datetime.now().date())
 try:
     #Formato de la URL para utilizar la API de la herramienta
     url_request="http://observatorioweb.ups.edu.ec/oaw/srv/wcag/json/conformidad/?url="+pagina_url+"&key="+key
-    
+
     r = requests.get(url=url_request)
 
     datos_json=json.loads(r.content.decode('utf-8'))
@@ -58,9 +58,9 @@ try:
 
     #Crear reporte
     ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
-    '''
-    reporte = open(ruta_reporte, 'a')
     
+    reporte = open(ruta_reporte, 'a')
+
     #Obtenemos la lista de principios que es la única correcta 
     lista_principios=datos_json["oaw"]["resultado"]["principios"]
 
@@ -169,12 +169,12 @@ try:
                         pass
             except Exception as e:
                 pass
-    '''
+    
     #Guardamos los datos en la BD
     cursor.close() 
-    cursor = connexion.cursor() 
+    cursor = conexion.cursor() 
 
-    cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test') values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_reporte,fecha_test,))
+    cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_reporte,fecha_test,))
     conexion.commit()
 
 except Exception as e:
