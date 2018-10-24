@@ -28,7 +28,7 @@ class Pagina extends Model
     public function eiiicheckers() {
         return $this->hasMany('App\Eiiichecker');
     }
-    public function upss() {
+    public function ups() {
         return $this->hasMany('App\Ups');
     }
     public function vamolas() {

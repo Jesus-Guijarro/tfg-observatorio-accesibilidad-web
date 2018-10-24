@@ -52,12 +52,12 @@ try:
     porcentaje_perceptible=datos_json["oaw"]["resultado"]["resumen"]["totalPerceptible"]
     porcentaje_robusto=datos_json["oaw"]["resultado"]["resumen"]["totalRobusto"]
 
-    
-    
     #Crear reporte
     ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha)+".txt"
+
     reporte = open(ruta_reporte, 'a')
-    
+
+    '''
     #Obtenemos la lista de principios que es la única correcta 
     lista=datos_json["oaw"]["resultado"]["principios"]
 
@@ -166,6 +166,11 @@ try:
                         pass
             except Exception as e:
                 pass
+
+'''
+
+    #Guardamos los datos en la BD
+    cursor.execute("insert into upss(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
 
 except Exception as e:
 
