@@ -45,7 +45,7 @@ try:
     num_advertencias_robusto=datos_json["oaw"]["resultado"]["resumen"]["robusto"]["advertencias"]
 
 
-    #Porcentajes principios
+    #Porcentajes de los principios
     porcentaje_comprensible=datos_json["oaw"]["resultado"]["resumen"]["totalComprensible"]
     porcentaje_operable=datos_json["oaw"]["resultado"]["resumen"]["totalOperable"]
     porcentaje_perceptible=datos_json["oaw"]["resultado"]["resumen"]["totalPerceptible"]
@@ -56,9 +56,11 @@ try:
     porcentaje_perceptible=float(porcentaje_perceptible.replace("%",""))
     porcentaje_robusto=float(porcentaje_robusto.replace("%",""))
 
-    #Crear reporte
+    #Rutas para guardar el archivo y el acceso desde la BD
     ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
+    ruta_BD="/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
     
+    #Crear reporte
     reporte = open(ruta_reporte, 'a')
 
     #Obtenemos la lista de principios que es la única correcta 
@@ -174,7 +176,7 @@ try:
     cursor.close() 
     cursor = conexion.cursor() 
 
-    cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_reporte,fecha_test,))
+    cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_BD,fecha_test,))
     conexion.commit()
 
 except Exception as e:
