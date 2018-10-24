@@ -9,7 +9,7 @@ def comprobarAccesoyTipo(pagina_web):
     try:
         request = requests.get(pagina_web)
         tipo = request.headers.get('content-type')
-        
+
         #Formato: text/html;charset=utf-8
         tipo = tipo.lower()
         tipo = tipo.replace(' ','')

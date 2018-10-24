@@ -16,9 +16,26 @@ def modoHeadless():
 
     return driver
 
+#Clase para validar elementos durante el modo headless 
+class element_has_value(object):
+ 
+  def __init__(self, locator, value):
+    self.locator = locator
+    self.value = value
+
+  def __call__(self, driver):
+    element = driver.find_element(*self.locator)   
+    if self.value in element.get_attribute("value"):
+        return element
+    else:
+        return False
+
 #Devolver la fecha en formato: 'YYYY-MM-DD'
-def getFecha():
+def getFecha(s):
     fecha = datetime.now().date()
+    #Se devuelve en string si se pide
+    if s:
+        fecha = str(fecha)
     return fecha
 
 #Indicar ruta para guardar el archivo. 
@@ -45,3 +62,14 @@ def setRutaCopiaHTML(pagina_id, nuevo):
     ruta="/storage/paginas/"+str(pagina_id)+nuevo+".html"
 
     return ruta
+
+#Método para escribir el archivo logs.txt el error encontrado
+def errorLog(directorio,tipo,fecha,herramienta,pagina_url):
+
+    ruta_archivo_logs=directorio+"/storage/logs/log.txt"
+
+    log = open(ruta_archivo_logs, 'a') 
+    if tipo==1: 
+        log.write("[01]\tError herramienta: " + herramienta + "\t\tFecha: "+ fecha+"\t\tPagina web: " + pagina_url + ".\n")
+    else:
+        log.write("[03]\tError accesso página web: " + pagina_url + "\t\tFecha: "+ fecha + ".\n")

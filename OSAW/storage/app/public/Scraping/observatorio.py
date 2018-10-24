@@ -2,6 +2,7 @@ import json, requests, io, sys, os
 
 from datetime import datetime
 from conexiones import *
+from miscelaneo import *
 
 #Argumentos URL e ID de la página web
 pagina_url=sys.argv[1]
@@ -18,7 +19,7 @@ cursor = parametros[1]
 #Ruta del directorio actual
 directorio = os.path.dirname(os.path.abspath(__file__))
 
-directorio=directorio.replace("/Scraping/","")
+directorio=directorio.replace("/Scraping","")
 directorio=directorio.replace("/storage/app","")
 
 fecha_test=str(datetime.now().date())
@@ -169,16 +170,10 @@ try:
                 pass
     
     #Guardamos los datos en la BD
-    cursor.close() 
-    cursor = conexion.cursor() 
-
-    cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_BD,fecha_test,))
-    conexion.commit()
+    cursor = cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_BD,fecha_test,))
+    desconexionBD(conexion,cursor)
+    
 
 except Exception as e:
-
-    ruta_archivo_logs=directorio+"/storage/logs/log.txt"
-
-    log = open(ruta_archivo_logs, 'a')  
-    log.write("[03]Error herramienta: " + herramienta + " ----- Fecha: "+ fecha_test+" --- Pagina web: " + pagina_url + "\n")
+    errorLog(directorio,1,getFecha(True),herramienta,pagina_url)
 
