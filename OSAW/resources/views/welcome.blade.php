@@ -85,8 +85,9 @@
                     <iframe src="{{URL::to('/')}}/storage/paginas/default.html"></iframe>
                 </div>
                 <?php 
-                    $command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/Scraping/evaluador.py 1");
-                    shell_exec($command);
+                    #$command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/Scraping/evaluador.py 1");
+                    $command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/Scraping/test2.py");
+                   echo shell_exec($command);
                 ?>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>

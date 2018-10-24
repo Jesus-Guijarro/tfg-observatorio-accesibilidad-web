@@ -18,7 +18,7 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
         directorio=directorio.replace("/Scraping","")
         directorio=directorio.replace("/storage/app","")
 
-        comando="/usr/bin/python3 "+directorio+"/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
+        comando="/usr/bin/python3 "+directorio+"/storage/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
         print(comando)
         #subprocess.run(comando, shell=True, check=True)
 

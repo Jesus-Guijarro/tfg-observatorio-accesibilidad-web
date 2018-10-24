@@ -1,6 +1,6 @@
 import json, requests, io, sys, os
 
-from datetime import datetime
+from miscelaneo import *
 from conexiones import *
 
 #Argumentos URL e ID de la página web

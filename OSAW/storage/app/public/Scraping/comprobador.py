@@ -3,6 +3,7 @@ import io, mysql.connector, os, requests
 from conexiones import *
 from hasher import *
 from selenium import webdriver
+from miscelaneo import *
 
 #Comprobar acceso y el tipo de la URL
 def comprobarAccesoyTipo(pagina_web):
@@ -46,12 +47,10 @@ def comprobarHTML(pagina_id):
     driver.get(URL)
 
     #Rutas para guardar el archivo desde la carpeta Scraping en la del proyecto Laravel:
-    directorio = os.path.dirname(os.path.abspath(__file__))
-    directorio=directorio.replace("/Scraping","")
-    directorio=directorio.replace("/storage/app","")
+    directorio = getDirectorio()
 
-    ruta_archivo_antiguo=directorio+"/storage/paginas/"+str(pagina_id)+".html"
-    ruta_archivo_nuevo=directorio+"/storage/paginas/"+str(pagina_id)+"_nuevo.html"
+    ruta_archivo_antiguo=getRutaCopiaHTML(directorio,pagina_id, "")
+    ruta_archivo_nuevo=getRutaCopiaHTML(directorio,pagina_id, "_")
     
     #Guardamos el contenido de la página web
     with io.open(ruta_archivo_nuevo, 'w') as f:
@@ -81,8 +80,8 @@ def comprobarHTML(pagina_id):
     else:
         #Como es la primera vez que se evalua la página se guarda el contenido y el hash obtenido
         os.rename(ruta_archivo_nuevo,ruta_archivo_antiguo)
-
-        ruta_BD="/storage/paginas/"+str(pagina_id)+".html"
+        
+        ruta_BD=getRutaCopiaHTML("",pagina_id, "")
 
         cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_BD,pagina_id,))
         conexion.commit()
@@ -90,3 +89,4 @@ def comprobarHTML(pagina_id):
     driver.quit()
     desconexionBD(conexion,cursor)
     return True
+

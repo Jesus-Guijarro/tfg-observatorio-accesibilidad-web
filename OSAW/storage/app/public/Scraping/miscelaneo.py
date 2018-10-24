@@ -31,35 +31,37 @@ class element_has_value(object):
         return False
 
 #Devolver la fecha en formato: 'YYYY-MM-DD'
-def getFecha(s):
+def getFecha(st):
     fecha = datetime.now().date()
     #Se devuelve en string si se pide
-    if s:
+    if st:
         fecha = str(fecha)
     return fecha
 
 #Indicar ruta para guardar el archivo. 
 #Para copias html y documentos de texto con los datos de las evaluaciones
-def setRutaArchivo(carpeta):
+def getDirectorio():
     #Directorio actual del archivo en ejecución
     directorio = os.path.dirname(os.path.abspath(__file__))
-
-    directorio=directorio.replace("/Scraping/","")
+    directorio=directorio.replace("/Scraping","")
     directorio=directorio.replace("/storage/app","")
 
-    ruta = directorio+"/storage/"+carpeta+"/"
+    directorio=directorio
 
-    return ruta
+    return directorio
 
-#Ruta para guardar rutas de reportes en la BD y ser accesibles desde Laravel
-def setRutaReporte(herramienta,pagina_id,fecha):
-    ruta = "/storage/"+herramienta+"/"+str(pagina_id)+"_"+str(fecha)+".txt"
+
+#Ruta para guardar rutas de reportes
+def getRutaReporte(directorio,herramienta,pagina_id,fecha):
+    #Directorio vacio si es para la BD
+    ruta = directorio+"/storage/"+herramienta+"/"+str(pagina_id)+"_"+str(fecha)+".txt"
     
     return ruta
 
-#Ruta para guardar rutas de copias HTML en la BD y ser accesibles desde Laravel
-def setRutaCopiaHTML(pagina_id, nuevo):
-    ruta="/storage/paginas/"+str(pagina_id)+nuevo+".html"
+#Ruta para guardar rutas de copias HTML
+def getRutaCopiaHTML(directorio,pagina_id, nuevo):
+    #Directorio vacio si es para la BD
+    ruta=directorio+"/storage/paginas/"+str(pagina_id)+nuevo+".html"
 
     return ruta
 
