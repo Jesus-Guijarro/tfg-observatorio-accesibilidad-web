@@ -1,0 +1,66 @@
+Missing form label -- 1
+Empty link -- 1
+Document language missing -- 1
+Spacer image missing alternative text -- 1
+Missing first level heading -- 1
+Redundant title text -- 1
+Unlabeled form element with title -- 1
+Skipped heading level -- 1
+Suspicious link text -- 1
+Linked image with alternative text -- 1
+Very Low Contrast -- 2
+Empty link -- 1
+Spacer image missing alternative text -- 1
+Missing form label -- 1
+Document language missing -- 1
+Redundant title text -- 1
+Missing first level heading -- 1
+Skipped heading level -- 1
+Unlabeled form element with title -- 1
+Suspicious link text -- 1
+Linked image with alternative text -- 1
+Very Low Contrast -- 2
+Spacer image missing alternative text -- 1
+Missing form label -- 1
+Empty link -- 1
+Document language missing -- 1
+Suspicious link text -- 1
+Missing first level heading -- 1
+Skipped heading level -- 1
+Unlabeled form element with title -- 1
+Redundant title text -- 1
+Linked image with alternative text -- 1
+Very Low Contrast -- 2
+Empty link -- 1
+Missing form label -- 1
+Document language missing -- 1
+Spacer image missing alternative text -- 1
+Skipped heading level -- 1
+Suspicious link text -- 1
+Missing first level heading -- 1
+Unlabeled form element with title -- 1
+Redundant title text -- 1
+Linked image with alternative text -- 1
+Very Low Contrast -- 2
+Spacer image missing alternative text -- 1
+Empty link -- 1
+Document language missing -- 1
+Missing form label -- 1
+Redundant title text -- 1
+Missing first level heading -- 1
+Suspicious link text -- 1
+Skipped heading level -- 1
+Unlabeled form element with title -- 1
+Linked image with alternative text -- 1
+Very Low Contrast -- 2
+Spacer image missing alternative text -- 1
+Document language missing -- 1
+Missing form label -- 1
+Empty link -- 1
+Suspicious link text -- 1
+Unlabeled form element with title -- 1
+Missing first level heading -- 1
+Skipped heading level -- 1
+Redundant title text -- 1
+Linked image with alternative text -- 1
+Very Low Contrast -- 2

@@ -15,7 +15,6 @@ class CreateWavesTable extends Migration
     {
         Schema::create('waves', function (Blueprint $table) {
             $table->increments('id');
-            $table->float('puntuacion');
             $table->integer('num_problemas');
             $table->integer('num_advertencias');
             $table->integer('num_caracteristicas');

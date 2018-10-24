@@ -1,4 +1,6 @@
 from datetime import datetime
+from herramientas.conexiones import *
+
 import os,sys,json
 
 '''
@@ -153,30 +155,47 @@ num_caracteristicas= datos_json["categories"]["feature"]["count"]
 num_elem_ARIA= datos_json["categories"]["html5"]["count"]
 num_problemas_contraste= datos_json["categories"]["contrast"]["count"]
 
+
+directorio = os.path.dirname(os.path.abspath(__file__))
+
+pagina_id=1
+#directorio=directorio.replace("/Scraping/herramientas","")
+directorio=directorio.replace("/Scraping","")
+directorio=directorio.replace("/storage/app","")
+
+fecha_test=str(datetime.now().date())
+
+ruta_reporte=directorio+"/storage/wave/1_"+str(fecha_test)+".txt"
+#ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
+ruta_BD="/storage/test.txt"
+
+#Crear reporte
+reporte = open(ruta_reporte, 'a')
+
 def obtenerDatos(datos):
     valores = datos.values()
     #claves = datos.keys()
     for v in valores:
-        print(str(v["description"]) +" -- "+ str(v["count"]))
+        reporte.write(str(v["description"]) +" -- "+ str(v["count"])+"\n")
 
 obtenerDatos(datos_json["categories"]["error"]["items"])
 obtenerDatos(datos_json["categories"]["alert"]["items"])
 obtenerDatos(datos_json["categories"]["feature"]["items"])
 obtenerDatos(datos_json["categories"]["contrast"]["items"])
 
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
 
-directorio = os.path.dirname(os.path.abspath(__file__))
+cursor.close() 
+cursor = conexion.cursor() 
 
-directorio=directorio.replace("/Scraping/herramientas","")
-directorio=directorio.replace("/storage/app","")
+num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste
 
-fecha_test=str(datetime.now().date())
+cursor.execute("insert into waves(pagina_id,datos_problemas,fecha_test,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),ruta_BD,fecha_test,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,))
+conexion.commit()
 
-ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
-ruta_BD="/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
 
-#Crear reporte
-reporte = open(ruta_reporte, 'a')
 
 
 
