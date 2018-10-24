@@ -4,12 +4,12 @@ from conexiones import *
 from hasher import *
 from selenium import webdriver
 
-#Comprobar acceso URL
+#Comprobar acceso y el tipo de la URL
 def comprobarAccesoyTipo(pagina_web):
     try:
         request = requests.get(pagina_web)
         tipo = request.headers.get('content-type')
-
+        
         #Formato: text/html;charset=utf-8
         tipo = tipo.lower()
         tipo = tipo.replace(' ','')
@@ -20,8 +20,6 @@ def comprobarAccesoyTipo(pagina_web):
             return False
     except requests.ConnectionError:
         return False
-
-
 
 #Comprobar contenido HTML
 def comprobarHTML(pagina_id):
@@ -55,7 +53,6 @@ def comprobarHTML(pagina_id):
     ruta_archivo_antiguo=directorio+"/storage/paginas/"+str(pagina_id)+".html"
     ruta_archivo_nuevo=directorio+"/storage/paginas/"+str(pagina_id)+"_nuevo.html"
     
-
     #Guardamos el contenido de la página web
     with io.open(ruta_archivo_nuevo, 'w') as f:
         f.write(driver.page_source)
@@ -93,7 +90,3 @@ def comprobarHTML(pagina_id):
     driver.quit()
     desconexionBD(conexion,cursor)
     return True
-
-comprobarAccesoyTipo("https://www.reddit.com/")
-comprobarAccesoyTipo("http://www.mjusticia.gob.es/cs/Satellite/Portal/1292428816672?blobheader=application%2Fpdf&blobheadername1=Content-Disposition&blobheadervalue1=attachment%3B+filename%3DPremios_Foro_Justicia_y_Discapacidad_2018.PDF")
-

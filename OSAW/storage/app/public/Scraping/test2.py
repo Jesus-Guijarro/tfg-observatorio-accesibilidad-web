@@ -1,13 +1,4 @@
-import os,sys
+from miscelaneo import *
 
-from crontab import CronTab
-from datetime import datetime  
-
-#Argumentos
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
-
-  def myfunc(self):
-    print("Hello my name is " + self.name)
+print(setRutaCopiaHTML(1, "_n"))
+print(setRutaReporte("herramienta",1,getFecha()))
