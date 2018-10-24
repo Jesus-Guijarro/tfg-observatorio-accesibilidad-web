@@ -24,6 +24,7 @@ def getFecha():
 #Indicar ruta para guardar el archivo. 
 #Para copias html y documentos de texto con los datos de las evaluaciones
 def setRutaArchivo(carpeta):
+    #Directorio actual del archivo en ejecución
     directorio = os.path.dirname(os.path.abspath(__file__))
 
     directorio=directorio.replace("/Scraping/","")
