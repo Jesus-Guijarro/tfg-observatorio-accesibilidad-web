@@ -22,10 +22,10 @@ options.add_argument('headless')
 #options.add_argument('window-size=1200x600')
 
 driver = webdriver.Chrome(chrome_options=options)
-'''
+
 #Accedemos a la web de la herramienta de evaluacion
 driver.get('http://www.acessibilidade.gov.pt/accessmonitor/')
-
+'''
 
 wait = WebDriverWait(driver, 20)
 elem =wait.until(EC.title_is(("AccessMonitor")))
@@ -73,9 +73,9 @@ translator = Translator()
 for dato in datos:
     texto=dato.get_attribute('textContent')
     print(translator.translate(texto, dest='es', src='pt').text)
-
-driver.quit()
 '''
+driver.quit()
+
 
 
 

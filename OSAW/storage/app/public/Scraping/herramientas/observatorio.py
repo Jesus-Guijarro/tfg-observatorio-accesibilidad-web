@@ -10,7 +10,6 @@ pagina_id=sys.argv[2]
 herramienta="observatorio"
 key="b83e8400-5431-4b2b-8de8-4806a90fc418"
 
-
 #Conexión base de datos
 parametros = conexionBD()
 conexion= parametros[0]
@@ -22,7 +21,7 @@ directorio = os.path.dirname(os.path.abspath(__file__))
 directorio=directorio.replace("/Scraping/herramientas","")
 directorio=directorio.replace("/storage/app","")
 
-fecha=str(datetime.now().date())
+fecha_test=str(datetime.now().date())
 
 try:
     #Formato de la URL para utilizar la API de la herramienta
@@ -33,17 +32,17 @@ try:
     datos_json=json.loads(r.content.decode('utf-8'))
 
     #Número de problemas y advertencias por principio
-    problemas_comprensible=datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["errores"]
-    advertencias_comprensible=datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["advertencias"
-    ]
-    problemas_operable=datos_json["oaw"]["resultado"]["resumen"]["operable"]["errores"]
-    advertencias_operable=datos_json["oaw"]["resultado"]["resumen"]["operable"]["advertencias"]
+    num_problemas_comprensible=datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["errores"]
+    num_advertencias_comprensible=datos_json["oaw"]["resultado"]["resumen"]["comprensible"]["advertencias"]
 
-    problemas_perceptible=datos_json["oaw"]["resultado"]["resumen"]["perceptible"]["errores"]
-    advertencias_perceptible=datos_json["oaw"]["resultado"]["resumen"]["perceptible"]["advertencias"]
+    num_problemas_operable=datos_json["oaw"]["resultado"]["resumen"]["operable"]["errores"]
+    num_advertencias_operable=datos_json["oaw"]["resultado"]["resumen"]["operable"]["advertencias"]
 
-    problemas_robusto=datos_json["oaw"]["resultado"]["resumen"]["robusto"]["errores"]
-    advertencias_robusto=datos_json["oaw"]["resultado"]["resumen"]["robusto"]["advertencias"]
+    num_problemas_perceptible=datos_json["oaw"]["resultado"]["resumen"]["perceptible"]["errores"]
+    num_advertencias_perceptible=datos_json["oaw"]["resultado"]["resumen"]["perceptible"]["advertencias"]
+
+    num_problemas_robusto=datos_json["oaw"]["resultado"]["resumen"]["robusto"]["errores"]
+    num_advertencias_robusto=datos_json["oaw"]["resultado"]["resumen"]["robusto"]["advertencias"]
 
 
     #Porcentajes principios
@@ -52,20 +51,24 @@ try:
     porcentaje_perceptible=datos_json["oaw"]["resultado"]["resumen"]["totalPerceptible"]
     porcentaje_robusto=datos_json["oaw"]["resultado"]["resumen"]["totalRobusto"]
 
+    porcentaje_comprensible=float(porcentaje_comprensible.replace("%",""))
+    porcentaje_operable=float(porcentaje_operable.replace("%",""))
+    porcentaje_perceptible=float(porcentaje_perceptible.replace("%",""))
+    porcentaje_robusto=float(porcentaje_robusto.replace("%",""))
+
     #Crear reporte
-    ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha)+".txt"
-
+    ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
+    '''
     reporte = open(ruta_reporte, 'a')
-
     
     #Obtenemos la lista de principios que es la única correcta 
-    lista=datos_json["oaw"]["resultado"]["principios"]
+    lista_principios=datos_json["oaw"]["resultado"]["principios"]
 
     #Los isinstance para comprar que el elemento es una lista
     #Los try para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón
     #Cuatro niveles: 1.Principios, 2.Pautas, 3.Criterios, 4.Ténicas
-    reporte.write('Reporte de la página web: ' + pagina_url+ '\t\t'+"Fecha: "+ fecha+'\n')
-    for l in lista:
+    reporte.write('Reporte de la página web: ' + pagina_url+ '\t\t'+"Fecha: "+ fecha_test+'\n')
+    for l in lista_principios:
         reporte.write('\nPrincipio: '+str(l["numero"])+'.'+str(l["titulo"])+'\n') 
         reporte.write('Descripcion: ' + str(l["descripcion"])+'\n\n')
         pautas=l["pautas"]
@@ -166,16 +169,18 @@ try:
                         pass
             except Exception as e:
                 pass
-
-
-
+    '''
     #Guardamos los datos en la BD
-    #cursor.execute("insert into upss(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
+    cursor.close() 
+    cursor = connexion.cursor() 
+
+    cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test') values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_reporte,fecha_test,))
+    conexion.commit()
 
 except Exception as e:
 
     ruta_archivo_logs=directorio+"/storage/logs/log.txt"
 
     log = open(ruta_archivo_logs, 'a')  
-    log.write("[3]Error herramienta: " + herramienta + "- Fecha: "+ fecha+"- Pagina web: " + pagina_url)
+    log.write("[3]Error herramienta: " + herramienta + " ----- Fecha: "+ fecha_test+" --- Pagina web: " + pagina_url + "\n")
 

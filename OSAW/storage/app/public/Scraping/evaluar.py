@@ -4,6 +4,8 @@ from selenium import webdriver
 from herramientas.conexiones import *
 from comprobarPagina import *
 
+#Listado con las herramientas disponibles para ser usadas
+lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
 
 #Método para llamar las herramientas
 def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
@@ -20,9 +22,6 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
 
 #Argumento sys.argv[1] -> id del sitio web
 sitio_id=sys.argv[1]
-
-#Listado con los nombres de las herramientas
-lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
 
 #Conexión base de datos
 parametros = conexionBD()
