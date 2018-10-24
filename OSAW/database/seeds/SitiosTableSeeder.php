@@ -13,7 +13,7 @@ class SitiosTableSeeder extends Seeder
     {
         DB::table('sitios')->delete();
         
-        $herramientas = array('accessmonitor' => true, 'achecker' => true, 'eiiichecker' => true, 'ups' => true, 
+        $herramientas = array('accessmonitor' => true, 'achecker' => true, 'eiiichecker' => true, 'observatorio' => true, 
             'vamola' => true,'wave' => true);
 
         $json= json_encode($herramientas);

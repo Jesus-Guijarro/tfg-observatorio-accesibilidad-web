@@ -15,13 +15,14 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
         directorio=directorio.replace("/storage/app","")
 
         comando="/usr/bin/python3 "+directorio+"/herramientas/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
+        print(comando)
         #subprocess.run(comando, shell=True, check=True)
 
 #Argumento sys.argv[1] -> id del sitio web
 sitio_id=sys.argv[1]
 
 #Listado con los nombres de las herramientas
-lista_herramientas=["accessmonitor","achecker","eiiichecker","ups","vamola","wave"]
+lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
 
 #Conexión base de datos
 parametros = conexionBD()

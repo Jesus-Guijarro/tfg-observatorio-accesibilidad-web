@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUpsTable extends Migration
+class CreateObservatoriosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateUpsTable extends Migration
      */
     public function up()
     {
-        Schema::create('ups', function (Blueprint $table) {
+        Schema::create('observatorios', function (Blueprint $table) {
             $table->increments('id');
             $table->float('porcentaje_comprensible');
             $table->float('porcentaje_operable');
@@ -44,6 +44,6 @@ class CreateUpsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ups');
+        Schema::dropIfExists('observatorios');
     }
 }

@@ -7,7 +7,7 @@ from conexiones import *
 pagina_url=sys.argv[1]
 pagina_id=sys.argv[2]
 
-herramienta="ups"
+herramienta="observatorio"
 key="b83e8400-5431-4b2b-8de8-4806a90fc418"
 
 
@@ -57,7 +57,7 @@ try:
 
     reporte = open(ruta_reporte, 'a')
 
-    '''
+    
     #Obtenemos la lista de principios que es la única correcta 
     lista=datos_json["oaw"]["resultado"]["principios"]
 
@@ -167,10 +167,10 @@ try:
             except Exception as e:
                 pass
 
-'''
+
 
     #Guardamos los datos en la BD
-    cursor.execute("insert into upss(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
+    #cursor.execute("insert into upss(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
 
 except Exception as e:
 
