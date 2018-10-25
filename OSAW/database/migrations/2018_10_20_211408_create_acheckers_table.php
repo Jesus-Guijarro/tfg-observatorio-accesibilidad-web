@@ -15,14 +15,14 @@ class CreateAcheckersTable extends Migration
     {
         Schema::create('acheckers', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('num_problemas_conocidos');
-            $table->integer('num_problemas_potenciales');
-            $table->integer('num_problemas_conocidos_a');
-            $table->integer('num_problemas_conocidos_aa');
-            $table->integer('num_problemas_conocidos_aaa');
-            $table->integer('num_problemas_potenciales_a');
-            $table->integer('num_problemas_potenciales_aa');
-            $table->integer('num_problemas_potenciales_aaa');
+            $table->integer('num_problemas_conocidos')->default(0);
+            $table->integer('num_problemas_potenciales')->default(0);
+            $table->integer('num_problemas_conocidos_a')->default(0);
+            $table->integer('num_problemas_conocidos_aa')->default(0);
+            $table->integer('num_problemas_conocidos_aaa')->default(0);
+            $table->integer('num_problemas_potenciales_a')->default(0);
+            $table->integer('num_problemas_potenciales_aa')->default(0);
+            $table->integer('num_problemas_potenciales_aaa')->default(0);
             $table->text('datos_problemas');
             $table->date('fecha_test');
 

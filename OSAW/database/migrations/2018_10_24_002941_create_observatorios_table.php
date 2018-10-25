@@ -15,18 +15,18 @@ class CreateObservatoriosTable extends Migration
     {
         Schema::create('observatorios', function (Blueprint $table) {
             $table->increments('id');
-            $table->float('porcentaje_comprensible');
-            $table->float('porcentaje_operable');
-            $table->float('porcentaje_perceptible');
-            $table->float('porcentaje_robusto');
-            $table->integer('num_problemas_comprensible');
-            $table->integer('num_problemas_operable');
-            $table->integer('num_problemas_perceptible');
-            $table->integer('num_problemas_robusto');
-            $table->integer('num_advertencias_comprensible');
-            $table->integer('num_advertencias_operable');
-            $table->integer('num_advertencias_perceptible');
-            $table->integer('num_advertencias_robusto');
+            $table->float('porcentaje_comprensible')->default(0);
+            $table->float('porcentaje_operable')->default(0);
+            $table->float('porcentaje_perceptible')->default(0);
+            $table->float('porcentaje_robusto')->default(0);
+            $table->integer('num_problemas_comprensible')->default(0);
+            $table->integer('num_problemas_operable')->default(0);
+            $table->integer('num_problemas_perceptible')->default(0);
+            $table->integer('num_problemas_robusto')->default(0);
+            $table->integer('num_advertencias_comprensible')->default(0);
+            $table->integer('num_advertencias_operable')->default(0);
+            $table->integer('num_advertencias_perceptible')->default(0);
+            $table->integer('num_advertencias_robusto')->default(0);
             $table->text('datos_problemas');
             $table->date('fecha_test');
             

@@ -48,8 +48,10 @@ def getURL(dominio):
 #Devolver la fecha en formato: 'YYYY-MM-DD'
 def getFecha():
     fecha_test = datetime.now().date()
+    
     #Se devuelve en string
     fecha_test = str(fecha_test)
+
     return fecha_test
 
 #Indicar ruta para guardar el archivo. 

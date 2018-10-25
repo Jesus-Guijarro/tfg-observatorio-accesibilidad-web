@@ -1,6 +1,5 @@
-import json, requests, io, sys, os
+import json, requests, sys
 
-from datetime import datetime
 from conexiones import *
 from miscelaneo import *
 

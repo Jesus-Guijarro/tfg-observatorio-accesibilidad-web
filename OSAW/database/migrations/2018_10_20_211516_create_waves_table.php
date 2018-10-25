@@ -15,11 +15,11 @@ class CreateWavesTable extends Migration
     {
         Schema::create('waves', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('num_problemas');
-            $table->integer('num_advertencias');
-            $table->integer('num_caracteristicas');
-            $table->integer('num_elem_ARIA');
-            $table->integer('num_problemas_contraste');
+            $table->integer('num_problemas')->default(0);
+            $table->integer('num_advertencias')->default(0);
+            $table->integer('num_caracteristicas')->default(0);
+            $table->integer('num_elem_ARIA')->default(0);
+            $table->integer('num_problemas_contraste')->default(0);
             $table->text('datos_problemas');
             $table->date('fecha_test');
 

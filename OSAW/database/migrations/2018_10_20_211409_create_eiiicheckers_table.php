@@ -15,12 +15,12 @@ class CreateEiiicheckersTable extends Migration
     {
         Schema::create('eiiicheckers', function (Blueprint $table) {
             $table->increments('id');
-            $table->float('puntuacion');
-            $table->integer('num_problemas');
-            $table->integer('num_aciertos');
-            $table->integer('num_problemas_a');
-            $table->integer('num_problemas_aa');
-            $table->integer('num_problemas_aaa');
+            $table->float('puntuacion')->default(0);
+            $table->integer('num_problemas')->default(0);
+            $table->integer('num_aciertos')->default(0);
+            $table->integer('num_problemas_a')->default(0);
+            $table->integer('num_problemas_aa')->default(0);
+            $table->integer('num_problemas_aaa')->default(0);
             $table->text('datos_problemas');
             $table->date('fecha_test');
 

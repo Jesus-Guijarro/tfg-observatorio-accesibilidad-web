@@ -16,7 +16,7 @@ from googletrans import Translator
 options = webdriver.ChromeOptions()
 
 options.binary_location = '/usr/bin/google-chrome'
-#options.add_argument('headless')
+options.add_argument('headless')
 
 #Pruebas
 options.add_argument('window-size=1200x600')
@@ -35,10 +35,10 @@ enlace = driver.find_element_by_css_selector('#uri')
 
 enlace.clear()
 #enlace.send_keys('http://accesibilidadweb.dlsi.ua.es/')
-enlace.send_keys('https://www.elmundo.es/internacional.html')
+enlace.send_keys('https://www.elmundo.es')
 
 botonWCAG2= driver.find_element_by_css_selector("#form1 > form > fieldset > div.center > input:nth-child(3)")
-'''botonWCAG2.click()
+#botonWCAG2.click()
 
 elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagina > div.corpo > h2:nth-child(7)")))
 
@@ -74,7 +74,7 @@ translator = Translator()
 for dato in datos:
     texto=dato.get_attribute('textContent')
     print(translator.translate(texto, dest='es', src='pt').text)
-'''
+
 driver.quit()
 
 

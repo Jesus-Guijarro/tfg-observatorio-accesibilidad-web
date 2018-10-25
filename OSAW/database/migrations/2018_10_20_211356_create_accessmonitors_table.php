@@ -15,13 +15,13 @@ class CreateAccessmonitorsTable extends Migration
     {
         Schema::create('accessmonitors', function (Blueprint $table) {
             $table->increments('id');
-            $table->float('puntuacion');
-            $table->integer('num_problemas_a');
-            $table->integer('num_problemas_aa');
-            $table->integer('num_problemas_aaa');
-            $table->integer('num_advertencias_a');
-            $table->integer('num_advertencias_aa');
-            $table->integer('num_advertencias_aaa');
+            $table->float('puntuacion')->default(0);
+            $table->integer('num_problemas_a')->default(0);
+            $table->integer('num_problemas_aa')->default(0);
+            $table->integer('num_problemas_aaa')->default(0);
+            $table->integer('num_advertencias_a')->default(0);
+            $table->integer('num_advertencias_aa')->default(0);
+            $table->integer('num_advertencias_aaa')->default(0);
             $table->text('datos_problemas');
             $table->date('fecha_test');
 

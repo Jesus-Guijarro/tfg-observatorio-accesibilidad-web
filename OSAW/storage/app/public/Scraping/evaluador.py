@@ -48,7 +48,7 @@ for pagina in paginas:
     pagina_id=str(pagina.__getitem__(1))
     pagina_archivo_HTML=pagina.__getitem__(2)
 
-    #Comprobar acceso a la URL de la página web
+    #Comprobar acceso a la página web
     if comprobarAccesoyTipo(pagina_url):
         #Comprobar cambios en la página web por si es necesario evaluar
         if comprobarHTML(pagina_id):
