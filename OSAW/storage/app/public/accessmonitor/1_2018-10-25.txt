@@ -1,0 +1,70 @@
+Reporte de la página web: http://accesibilidadweb.dlsi.ua.es/		Fecha: 2018-10-25
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 7 elementos de encabezado
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se han encontrado 3 enlaces para eludir bloques de contenido
+No hay errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+Reporte de la página web: http://accesibilidadweb.dlsi.ua.es/		Fecha: 2018-10-25
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 7 elementos de encabezado
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se han encontrado 3 enlaces para eludir bloques de contenido
+No hay errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+Reporte de la página web: http://accesibilidadweb.dlsi.ua.es/		Fecha: 2018-10-25
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 7 elementos de encabezado
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se han encontrado 3 enlaces para eludir bloques de contenido
+No hay errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+Reporte de la página web: http://accesibilidadweb.dlsi.ua.es/		Fecha: 2018-10-25
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 7 elementos de encabezado
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se han encontrado 3 enlaces para eludir bloques de contenido
+No hay errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+Reporte de la página web: http://accesibilidadweb.dlsi.ua.es/		Fecha: 2018-10-25
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 7 elementos de encabezado
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se han encontrado 3 enlaces para eludir bloques de contenido
+No hay errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+Reporte de la página web: http://accesibilidadweb.dlsi.ua.es/		Fecha: 2018-10-25
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 7 elementos de encabezado
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se han encontrado 3 enlaces para eludir bloques de contenido
+No hay errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+Reporte de la página web: http://accesibilidadweb.dlsi.ua.es/		Fecha: 2018-10-25
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 7 elementos de encabezado
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se han encontrado 3 enlaces para eludir bloques de contenido
+No hay errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"

@@ -1,6 +1,6 @@
 #AccessMonitor
 
-import sys, os
+import sys
 
 from conexiones import *
 from miscelaneo import *
@@ -18,6 +18,16 @@ pagina_id=sys.argv[2]
 
 herramienta="accessmonitor"
 
+#Conexion base de datos
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
+
+#Ruta del directorio actual
+directorio = getDirectorio()
+
+fecha_test=getFecha()
+
 try:
     #Activamos el modo headless
     driver=modoHeadless()
@@ -34,6 +44,7 @@ try:
     try:
         elem =wait.until(EC.title_is(("AccessMonitor")))
     except:
+        driver.quit()
         raise Exception('No se ha podido acceder a la herramienta')
         
     #Elemento input en el que se introduce la url de la pagina a evaluar
@@ -48,48 +59,78 @@ try:
     botonWCAG2= driver.find_element_by_css_selector("#form1 > form > fieldset > div.center > input:nth-child(3)")
     botonWCAG2.click()
 
+    #Pausa de máximo 1 minuto
+    wait = WebDriverWait(driver, 60)
     #Se espera hasta que se haya evaluado y ofrecido el resultado
     try:
         elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagina > div.corpo > h2:nth-child(7)")))
     except:
+        driver.quit()
         raise Exception('No se ha podido realizar la evaluación')
     
 
-    puntuacion = driver.find_element_by_css_selector("#webaxscore > span")
-    print(float(puntuacion.text))
+    #Puntuación
+    puntuacion = float(driver.find_element_by_css_selector("#webaxscore > span").text)
 
+    #Se usan try's debido a que es posible que de algún nivel no se pueda obtener los elementos
     #Nivel A
-    numErroresA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td.txfail")
-    print(int(numErroresA.text))
-
-    numAvisosA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td:nth-child(4)")
-    print(int(numAvisosA.text))
+    num_problemas_a = 0
+    num_advertencias_a = 0
+    num_problemas_aa = 0
+    num_advertencias_aa = 0
+    num_problemas_aaa = 0
+    num_advertencias_aaa = 0
+    try:
+        num_problemas_a= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td.txfail").text)
+        num_advertencias_a= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td:nth-child(4)").text)
+    except Exception as e:
+        pass
 
     #Nivel AA
-    numErroresAA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td.txfail")
-    print(int(numErroresAA.text))
-
-    numAvisosAA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td:nth-child(4)")
-    print(int(numAvisosAA.text))
+    try:
+        num_problemas_aa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td.txfail").text)
+        num_advertencias_aa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td:nth-child(4)").text)
+    except Exception as e:
+        pass
 
     #Nivel AAA
-    numErroresAAA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td.txfail")
-    print(int(numErroresAAA.text))
+    try:
+        num_problemas_aaa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td.txfail").text)
+        num_advertencias_aaa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td:nth-child(4)").text)
+    except Exception as e:
+        pass
 
-    numAvisosAAA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td:nth-child(4)")
-    print(int(numAvisosAAA.text))
-
+    #Obtenemos los datos generales del reporte
     datos=driver.find_elements_by_tag_name('h5')
 
-    #Datos de las pruebas y traducción
+    
+
+    #Rutas para guardar el archivo y el acceso desde la BD
+    ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
+    ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
+
+    #Crear reporte
+    reporte = open(ruta_reporte, 'a')
+    reporte.write('Reporte de la página web: ' + pagina_url+ '\t\t'+"Fecha: "+ fecha_test+'\n')
+    
+    #Usamos un traductor para la información que se encuentra en portugués
     translator = Translator()
 
     for dato in datos:
         texto=dato.get_attribute('textContent')
-        print(translator.translate(texto, dest='es', src='pt').text)
+        traduccion=str(translator.translate(texto, dest='es', src='pt').text + "\n")
+        reporte.write(traduccion)
+
+    #Guardamos los datos en la BD
+    try:
+        cursor = cursor.execute("insert into accessmonitors(pagina_id,puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,ruta_BD,fecha_test,))
+    except Exception as e:
+        print(e)
+    desconexionBD(conexion,cursor)
+    
 
 except Exception as e:
-    print(repr(e))
+    errorLog(directorio,1,getFecha(),herramienta,pagina_id)
 
 
 driver.quit()
