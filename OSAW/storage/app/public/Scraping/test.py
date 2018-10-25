@@ -1,81 +1,81 @@
-from datetime import datetime
+#AccessMonitor
+import io
 from conexiones import *
 
-import os,sys,json
+from selenium import webdriver
 
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+from googletrans import Translator
+
+
+#Se virtualiza una ventana de navegacion de Chrome
+
+options = webdriver.ChromeOptions()
+
+options.binary_location = '/usr/bin/google-chrome'
+#options.add_argument('headless')
+
+#Pruebas
+options.add_argument('window-size=1200x600')
+
+driver = webdriver.Chrome(chrome_options=options)
+
+#Accedemos a la web de la herramienta de evaluacion
+driver.get('file:///home/jesus/TFG/OSAW/storage/app/public/Scraping/tests/htmls/am1.html')
+#driver.get('http://www.acessibilidade.gov.pt/accessmonitor/')
+
+
+wait = WebDriverWait(driver, 20)
+elem =wait.until(EC.title_is(("AccessMonitor")))
+    
+enlace = driver.find_element_by_css_selector('#uri')
+
+enlace.clear()
+#enlace.send_keys('http://accesibilidadweb.dlsi.ua.es/')
+enlace.send_keys('https://www.elmundo.es/internacional.html')
+
+botonWCAG2= driver.find_element_by_css_selector("#form1 > form > fieldset > div.center > input:nth-child(3)")
+'''botonWCAG2.click()
+
+elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagina > div.corpo > h2:nth-child(7)")))
+
+puntuacion = driver.find_element_by_css_selector("#webaxscore > span")
+print(float(puntuacion.text))
+
+#Nivel A
+numErroresA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td.txfail")
+print(int(numErroresA.text))
+
+numAvisosA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td:nth-child(4)")
+print(int(numAvisosA.text))
+
+#Nivel AA
+numErroresAA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td.txfail")
+print(int(numErroresAA.text))
+
+numAvisosAA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td:nth-child(4)")
+print(int(numAvisosAA.text))
+
+#Nivel AAA
+numErroresAAA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td.txfail")
+print(int(numErroresAAA.text))
+
+numAvisosAAA= driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td:nth-child(4)")
+print(int(numAvisosAAA.text))
+
+datos=driver.find_elements_by_tag_name('h5')
+
+#Datos de las pruebas y traducción
+translator = Translator()
+
+for dato in datos:
+    texto=dato.get_attribute('textContent')
+    print(translator.translate(texto, dest='es', src='pt').text)
 '''
-from test2 import *
-p1 = Person("John", 36)
-p1.myfunc()
-
-myFile = open('/home/jesus/Documents/file.txt', 'a')  
-myFile.write(str(datetime.now().date()))  
-'''
-
-data = {"status":{"success":True,"httpstatuscode":200},"statistics":{"pagetitle":"Inicio - Ministerio de Educación, Cultura y Deporte","pageurl":"https:\/\/www.mecd.gob.es\/portada-mecd\/",
-"time":"2.51","creditsremaining":7998,"allitemcount":194,"totalelements":740,"waveurl":"http:\/\/wave.webaim.org\/report?url=https:\/\/www.mecd.gob.es\/portada-mecd\/"},
-"categories":{"error":{"description":"Errors","count":3,"items":{"button_empty":{"count":1,"description":"Empty button","id":"button_empty"},"link_empty":{"count":2,"description":
-"Empty link","id":"link_empty"}}},"contrast":{"description":"Contrast Errors","count":1,"items":{"contrast":{"count":1,"description":"Very Low Contrast","id":"contrast"}}},
-"alert":{"description":"Alerts","count":48,"items":{"alt_long":{"count":2,"description":"Long alternative text","id":"alt_long"},"alt_redundant":{"count":1,"description":
-"Redundant alternative text","id":"alt_redundant"},"link_internal_broken":{"count":12,"description":"Broken same-page link","id":"link_internal_broken"},"link_pdf":{"count":4,
-"description":"Link to PDF document","id":"link_pdf"},"link_redundant":{"count":1,"description":"Redundant link","id":"link_redundant"},"noscript":{"count":1,"description":
-"Noscript element","id":"noscript"},"text_justified":{"count":9,"description":"Justified text","id":"text_justified"},"title_redundant":{"count":18,"description":"Redundant title text",
-"id":"title_redundant"}}},"feature":{"description":"Features","count":100,"items":{"alt":{"count":9,"description":"Alternative text","id":"alt"},"alt_link":{"count":80,"description":
-"Linked image with alternative text","id":"alt_link"},"alt_null":{"count":1,"description":"Null or empty alternative text","id":"alt_null"},"alt_spacer":{"count":2,"description":
-"Null or empty alternative text on spacer","id":"alt_spacer"},"fieldset":{"count":1,"description":"Fieldset","id":"fieldset"},"label":{"count":1,"description":"Form label","id":"label"},
-"lang":{"count":6,"description":"Element language","id":"lang"}}},"structure":{"description":"Structural Elements","count":40,"items":{"h1":{"count":2,"description":"Heading level 1",
-"id":"h1"},"h2":{"count":7,"description":"Heading level 2","id":"h2"},"h3":{"count":4,"description":"Heading level 3","id":"h3"},"iframe":{"count":4,"description":"Inline Frame","id":
-"iframe"},"ul":{"count":23,"description":"Unordered list","id":"ul"}}},"html5":{"description":"HTML5 and ARIA","count":2,"items":{"aria":{"count":2,"description":"ARIA","id":"aria"}}}}}
-
-datos_string = json.dumps(data)
-
-datos_json = json.loads(datos_string)
-
-datos_json.get("categories")
-
-num_problemas = datos_json["categories"]["error"]["count"]
-num_advertencias= datos_json["categories"]["alert"]["count"]
-num_caracteristicas= datos_json["categories"]["feature"]["count"]
-num_elem_ARIA= datos_json["categories"]["html5"]["count"]
-num_problemas_contraste= datos_json["categories"]["contrast"]["count"]
-
-
-directorio = os.path.dirname(os.path.abspath(__file__))
-
-pagina_id=1
-directorio=directorio.replace("/Scraping","")
-directorio=directorio.replace("/storage/app","")
-
-fecha_test=str(datetime.now().date())
-
-ruta_reporte=directorio+"/storage/wave/1_"+str(fecha_test)+".txt"
-#ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
-ruta_BD="/storage/test.txt"
-
-#Crear reporte
-reporte = open(ruta_reporte, 'a')
-
-
-def obtenerDatos(categoria,datos):
-    valores = datos.values()
-    #claves = datos.keys()
-    reporte.write(categoria+"\n")
-    for v in valores:
-        reporte.write(str(v["description"]) +"\t Cantidad: "+ str(v["count"])+"\n")
-    reporte.write("-------------------------------------------------------------------\n")
-
-
-obtenerDatos("Problemas",datos_json["categories"]["error"]["items"])
-obtenerDatos("Alertas",datos_json["categories"]["alert"]["items"])
-obtenerDatos("Caracteristicas",datos_json["categories"]["feature"]["items"])
-obtenerDatos("Problemas de contraste",datos_json["categories"]["contrast"]["items"])
-
-parametros = conexionBD()
-conexion= parametros[0]
-cursor = parametros[1]
-
-cursor.execute("insert into waves(pagina_id,datos_problemas,fecha_test,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),ruta_BD,fecha_test,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,))
-desconexionBD(conexion,cursor)
+driver.quit()
 
 
 
