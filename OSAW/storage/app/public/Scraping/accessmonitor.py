@@ -72,38 +72,33 @@ try:
     #Puntuación
     puntuacion = float(driver.find_element_by_css_selector("#webaxscore > span").text)
 
-    #Se usan try's debido a que es posible que de algún nivel no se pueda obtener los elementos
+
+    #En ocasiones los elementos  de algún nivel de conformidad no se muestran  
     #Nivel A
-    num_problemas_a = 0
-    num_advertencias_a = 0
-    num_problemas_aa = 0
-    num_advertencias_aa = 0
-    num_problemas_aaa = 0
-    num_advertencias_aaa = 0
     try:
         num_problemas_a= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td.txfail").text)
         num_advertencias_a= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td:nth-child(4)").text)
     except Exception as e:
-        pass
+        num_problemas_a = 0
+        num_advertencias_a = 0
 
     #Nivel AA
     try:
         num_problemas_aa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td.txfail").text)
         num_advertencias_aa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td:nth-child(4)").text)
     except Exception as e:
-        pass
-
+        num_problemas_aa = 0
+        num_advertencias_aa = 0
     #Nivel AAA
     try:
         num_problemas_aaa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td.txfail").text)
         num_advertencias_aaa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td:nth-child(4)").text)
     except Exception as e:
-        pass
+        num_problemas_aaa = 0
+        num_advertencias_aaa = 0
 
     #Obtenemos los datos generales del reporte
     datos=driver.find_elements_by_tag_name('h5')
-
-    
 
     #Rutas para guardar el archivo y el acceso desde la BD
     ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
