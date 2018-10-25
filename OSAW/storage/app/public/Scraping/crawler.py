@@ -9,8 +9,12 @@ conexion= parametros[0]
 cursor = parametros[1]
 
 sitio_id=sys.argv[1]
-sitio_url=sys.argv[2]
-num_paginas=int(sys.argv[3])
+num_paginas=int(sys.argv[2])
+
+#Obtenemos la URL principal del sitio -> protocolo + dominio
+cursor.execute("select dominio from sitios where id = %s", (sitio_id,))
+sitio = cursor.fetchone()
+sitio_url=sitio.__getitem__(0)
 
 def obtenerPaginas(sitio_id,sitio_url,num_paginas):
 
@@ -18,7 +22,7 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
     opciones = webdriver.ChromeOptions()
 
     opciones.binary_location = '/usr/bin/google-chrome'
-    opciones.add_argument('headless')
+    #opciones.add_argument('headless')
 
     driver = webdriver.Chrome(chrome_options=opciones)
 
@@ -33,10 +37,9 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
     for enlace in lista_enlaces:
         #Guardamos el valor del atributo "href" de cada enlace
         href = enlace.get_attribute("href")
-
         #Comprobamos primero que la referencia es un string
         if isinstance(href, str) == True:
-            #Comprobamos la referencia tiene un formato: http://dominio/... y que no incluye el símbolo /# de menús y submenús de navegación
+            #Comprobamos la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
             if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1 and '#' not in href:
                 lista_paginas.append(href)
     

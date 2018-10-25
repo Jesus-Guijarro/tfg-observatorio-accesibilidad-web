@@ -24,7 +24,7 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
 sitio_id=sys.argv[1]
 
 #Fecha
-fecha_test=str(datetime.now().date())
+fecha_test=getFecha()
 
 #Conexión base de datos
 parametros = conexionBD()

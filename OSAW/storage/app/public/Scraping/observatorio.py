@@ -19,7 +19,7 @@ cursor = parametros[1]
 #Ruta del directorio actual
 directorio = getDirectorio()
 
-fecha_test=getFecha(True)
+fecha_test=getFecha()
 
 try:
     #Formato de la URL para utilizar la API de la herramienta
@@ -172,5 +172,5 @@ try:
     
 
 except Exception as e:
-    errorLog(directorio,1,getFecha(True),herramienta,pagina_id)
+    errorLog(directorio,1,getFecha(),herramienta,pagina_id)
 

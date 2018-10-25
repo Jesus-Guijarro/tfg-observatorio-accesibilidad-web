@@ -1,8 +1,24 @@
-import os
+import os, requests
 
 from selenium import webdriver
 from datetime import datetime
 
+#Obtenemos la url principal de un dominio.
+# Necesario por si la web en cuestión cambia el protocolo de http a https
+def getURL(dominio):
+    
+    cabecera="http://"
+    request = requests.get(cabecera+dominio)
+    url = request.url
+    
+    #Comprobamos si el protocolo es https
+    if "https" in url:
+        cabecera = "https://"
+
+
+    url = cabecera + dominio
+    
+    return url
 
 #Activar el modo headless
 def modoHeadless():
@@ -31,11 +47,10 @@ class element_has_value(object):
         return False
 
 #Devolver la fecha en formato: 'YYYY-MM-DD'
-def getFecha(st):
+def getFecha():
     fecha_test = datetime.now().date()
-    #Se devuelve en string si se pide
-    if st:
-        fecha_test = str(fecha_test)
+    #Se devuelve en string
+    fecha_test = str(fecha_test)
     return fecha_test
 
 #Indicar ruta para guardar el archivo. 
@@ -70,7 +85,7 @@ def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
 
 #Método para escribir el archivo logs.txt el error encontrado
 #   Tipo 1 -> Error provocado durante la ejecución de una herramienta
-#   Tipo 3 -> Error provocado por no poder acceder a cierta web
+#   Tipo 3 -> Error provocado al no poder acceder a una web
 #   Herramienta vacio en caso de ser tipo 3
 def errorLog(directorio,tipo,fecha_test,herramienta,pagina_id):
 
@@ -78,6 +93,6 @@ def errorLog(directorio,tipo,fecha_test,herramienta,pagina_id):
 
     log = open(ruta_archivo_logs, 'a') 
     if tipo==1: 
-        log.write("[01]\tError herramienta: " + herramienta + "\t\tFecha: "+ fecha_test+"\t\tPagina web: " + pagina_id + ".\n")
+        log.write('[01]\tError herramienta: "' + herramienta + '"\t\tFecha: "'+ fecha_test+'"\t\tPagina web: "' + pagina_id + '"\n')
     else:
-        log.write("[03]\tError accesso página web: " + pagina_id + "\t\tFecha: "+ fecha_test + "\n")
+        log.write('[03]\tError accesso página web: "' + pagina_id + '"\t\tFecha: "'+ fecha_test +'" \n')

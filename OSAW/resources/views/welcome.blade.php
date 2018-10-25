@@ -83,11 +83,25 @@
                 </div>
                 <div>
                     <iframe src="{{URL::to('/')}}/storage/paginas/default.html"></iframe>
+                    <!--<iframe src="{{URL::to('/')}}/storage/observatorio/1_2018-10-25.txt"></iframe> -->
+                    
                 </div>
                 <?php 
                     #$command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/Scraping/evaluador.py 1");
+                    
+                    function echoScriptPath() {
+                        list($scriptPath) = get_included_files();
+                        echo $scriptPath;
+                        echo "<br/>";
+                        return $scriptPath;
+                    }
+                    $ruta = echoScriptPath();
+                    $ruta=str_replace("/server.php","/public/storage/Scraping",$ruta);
+                    echo $ruta;
+                    /*
                     $command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/Scraping/test2.py");
-                   echo shell_exec($command);
+                    shell_exec($command);
+                    */
                 ?>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>

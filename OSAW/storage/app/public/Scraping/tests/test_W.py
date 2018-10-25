@@ -3,15 +3,6 @@ from conexiones import *
 
 import os,sys,json
 
-'''
-from test2 import *
-p1 = Person("John", 36)
-p1.myfunc()
-
-myFile = open('/home/jesus/Documents/file.txt', 'a')  
-myFile.write(str(datetime.now().date()))  
-'''
-
 data = {"status":{"success":True,"httpstatuscode":200},"statistics":{"pagetitle":"Inicio - Ministerio de Educación, Cultura y Deporte","pageurl":"https:\/\/www.mecd.gob.es\/portada-mecd\/",
 "time":"2.51","creditsremaining":7998,"allitemcount":194,"totalelements":740,"waveurl":"http:\/\/wave.webaim.org\/report?url=https:\/\/www.mecd.gob.es\/portada-mecd\/"},
 "categories":{"error":{"description":"Errors","count":3,"items":{"button_empty":{"count":1,"description":"Empty button","id":"button_empty"},"link_empty":{"count":2,"description":

@@ -10,7 +10,7 @@ pagina_id=sys.argv[2]
 herramienta="wave"
 key="qbw26Imi1068"
 
-fecha_test=getFecha(True)
+fecha_test=getFecha()
 
 #Conexión base de datos
 parametros = conexionBD()
