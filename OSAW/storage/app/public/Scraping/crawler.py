@@ -45,29 +45,31 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
             #Comprobamos que la referencia tiene un formato correcto
             if comprobarReferencia(href, sitio_url):
                 lista_paginas.append(href)
-            #En caso de que la referencia no incluya el dominio al principio:
             
     
-    #Guardamos la pagina principal
-    lista_paginas.append(sitio_url)
+    #Contador
+    i = 0
+
     #Eliminamos duplicados y ordenamos la lista
     lista_paginas=list(sorted(set(lista_paginas)))
-    
+
     lista_final=[] #lista para guardar los enlaces que se van a almacenar en la BD
     
-    i = 1 #Contador
+    
 
     #Segunda parte de comprobaciones para no duplicar paginas ya almacenadas en la base de datos y que sean accesibles
     for pagina in lista_paginas:
-        if i > num_paginas:
+        if i >= num_paginas:
             break
-        cursor.execute("select count(*) from paginas where URL = %s", (pagina,))
+        #Mirar posible mejora de rendimiento
+        cursor.execute("select count(*) from paginas where URL=%s",(pagina,))
         resultado = cursor.fetchone()
         cantidad=resultado.__getitem__(0)
+        #Si el resultado es 0 se comprueba y se añade en caso de ser valida
         if cantidad==0:
             if comprobarAccesoyTipo(pagina): 
-                lista_final.append(pagina)
-                i = i+1
+                    lista_final.append(pagina)
+                    i = i+1
         
     for pagina in lista_final:
         cursor.execute("insert into paginas(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
@@ -78,11 +80,11 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
     #Recursividad del crawler
     if i < num_paginas:
         for url in lista_final:
-            if obtenerPaginas(sitio_id,url,i):
-                return True
-        return False
+            if obtenerPaginas(sitio_id,url,i) == 0:
+                return 0
+        return i
     else:
-        return True
+        return i
         
 
 obtenerPaginas(sitio_id,sitio_url,num_paginas)

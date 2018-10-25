@@ -15,7 +15,7 @@ def comprobarAccesoyTipo(pagina_web):
         tipo = tipo.lower()
         tipo = tipo.replace(' ','')
 
-        if request.status_code == 200 and tipo in "text/html":
+        if request.status_code == 200 and "text/html" in tipo:
             return True
         else:
             return False
@@ -92,6 +92,6 @@ def comprobarHTML(pagina_id):
 
 #Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
 def comprobarReferencia(href, sitio_url):
-    if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1 and '#' not in href:
+    if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1:
         return True
     return False
