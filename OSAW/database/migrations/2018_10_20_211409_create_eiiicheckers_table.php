@@ -20,7 +20,6 @@ class CreateEiiicheckersTable extends Migration
             $table->integer('num_aciertos')->default(0);
             $table->integer('num_problemas_a')->default(0);
             $table->integer('num_problemas_aa')->default(0);
-            $table->integer('num_problemas_aaa')->default(0);
             $table->text('datos_problemas');
             $table->date('fecha_test');
 
