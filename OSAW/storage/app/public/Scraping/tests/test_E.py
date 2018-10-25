@@ -54,7 +54,7 @@ try:
     enlace.clear()
 
     #Indicamos la url
-    enlace.send_keys('http://www.elmundo.es/internacional.html')
+    enlace.send_keys(pagina_url)
 
     #Se selecciona el botón de "check" para obtener el análisis 
     check =  driver.find_element_by_css_selector('#page_checker > div > input[type="submit"]')
