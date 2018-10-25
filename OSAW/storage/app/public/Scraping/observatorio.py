@@ -172,5 +172,5 @@ try:
     
 
 except Exception as e:
-    errorLog(directorio,1,getFecha(True),herramienta,pagina_url)
+    errorLog(directorio,1,getFecha(True),herramienta,pagina_id)
 

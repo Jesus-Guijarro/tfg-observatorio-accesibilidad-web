@@ -69,12 +69,15 @@ def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
     return str(ruta)
 
 #Método para escribir el archivo logs.txt el error encontrado
-def errorLog(directorio,tipo,fecha_test,herramienta,pagina_url):
+#   Tipo 1 -> Error provocado durante la ejecución de una herramienta
+#   Tipo 3 -> Error provocado por no poder acceder a cierta web
+#   Herramienta vacio en caso de ser tipo 3
+def errorLog(directorio,tipo,fecha_test,herramienta,pagina_id):
 
     ruta_archivo_logs=directorio+"/storage/logs/log.txt"
 
     log = open(ruta_archivo_logs, 'a') 
     if tipo==1: 
-        log.write("[01]\tError herramienta: " + herramienta + "\t\tFecha: "+ fecha_test+"\t\tPagina web: " + pagina_url + ".\n")
+        log.write("[01]\tError herramienta: " + herramienta + "\t\tFecha: "+ fecha_test+"\t\tPagina web: " + pagina_id + ".\n")
     else:
-        log.write("[03]\tError accesso página web: " + pagina_url + "\t\tFecha: "+ fecha_test + "\n")
+        log.write("[03]\tError accesso página web: " + pagina_id + "\t\tFecha: "+ fecha_test + "\n")

@@ -12,142 +12,26 @@ myFile = open('/home/jesus/Documents/file.txt', 'a')
 myFile.write(str(datetime.now().date()))  
 '''
 
-data = {
-   "status":{
-      "success":True,
-      "httpstatuscode":200
-   },
-   "statistics":{
-      "pagetitle":"Google",
-      "pageurl":"google.com",
-      "time":1.27,
-      "allitemcount":31,
-      "totalelements":178,
-      "waveurl":"http:\/\/wave.webaim.org\/report?url=http:\/\/google.com\/"
-   },
-   "categories":{
-      "error":{
-         "description":"Errors",
-         "count":4,
-         "items":{
-            "language_missing":{
-               "id":"language_missing",
-               "description":"Document language missing",
-               "count":1
-            },
-            "alt_spacer_missing":{
-               "id":"alt_spacer_missing",
-               "description":"Spacer image missing alternative text",
-               "count":1
-            },
-            "link_empty":{
-               "id":"link_empty",
-               "description":"Empty link",
-               "count":1
-            },
-            "label_missing":{
-               "id":"label_missing",
-               "description":"Missing form label",
-               "count":1
-            }
-         }
-      },
-      "alert":{
-         "description":"Alerts",
-         "count":5,
-         "items":{
-            "h1_missing":{
-               "id":"h1_missing",
-               "description":"Missing first level heading",
-               "count":1
-            },
-            "title_redundant":{
-               "id":"title_redundant",
-               "description":"Redundant title text",
-               "count":1
-            },
-            "label_title":{
-               "id":"label_title",
-               "description":"Unlabeled form element with title",
-               "count":1
-            },
-            "link_suspicious":{
-               "id":"link_suspicious",
-               "description":"Suspicious link text",
-               "count":1
-            },
-            "heading_skipped":{
-               "id":"heading_skipped",
-               "description":"Skipped heading level",
-               "count":1
-            }
-         }
-      },
-      "feature":{
-         "description":"Features",
-         "count":1,
-         "items":{
-            "alt_link":{
-               "id":"alt_link",
-               "description":"Linked image with alternative text",
-               "count":1
-            }
-         }
-      },
-      "structure":{
-         "description":"Structural Elements",
-         "count":5,
-         "items":{
-            "table_layout":{
-               "id":"table_layout",
-               "description":"Layout table",
-               "count":2
-            },
-            "ol":{
-               "id":"ol",
-               "description":"Ordered list",
-               "count":1
-            },
-            "h2":{
-               "id":"h2",
-               "description":"Heading level 2",
-               "count":1
-            },
-            "iframe":{
-               "id":"iframe",
-               "description":"Inline Frame",
-               "count":1
-            }
-         }
-      },
-      "html5":{
-         "description":"HTML5 and ARIA",
-         "count":4,
-         "items":{
-            "aria":{
-               "id":"aria",
-               "description":"ARIA",
-               "count":4
-            }
-         }
-      },
-      "contrast":{
-         "description":"Contrast Errors",
-         "count":2,
-         "items":{
-            "contrast":{
-               "id":"contrast",
-               "description":"Very Low Contrast",
-               "count":2
-            }
-         }
-      }
-   }
-}
+data = {"status":{"success":True,"httpstatuscode":200},"statistics":{"pagetitle":"Inicio - Ministerio de Educación, Cultura y Deporte","pageurl":"https:\/\/www.mecd.gob.es\/portada-mecd\/",
+"time":"2.51","creditsremaining":7998,"allitemcount":194,"totalelements":740,"waveurl":"http:\/\/wave.webaim.org\/report?url=https:\/\/www.mecd.gob.es\/portada-mecd\/"},
+"categories":{"error":{"description":"Errors","count":3,"items":{"button_empty":{"count":1,"description":"Empty button","id":"button_empty"},"link_empty":{"count":2,"description":
+"Empty link","id":"link_empty"}}},"contrast":{"description":"Contrast Errors","count":1,"items":{"contrast":{"count":1,"description":"Very Low Contrast","id":"contrast"}}},
+"alert":{"description":"Alerts","count":48,"items":{"alt_long":{"count":2,"description":"Long alternative text","id":"alt_long"},"alt_redundant":{"count":1,"description":
+"Redundant alternative text","id":"alt_redundant"},"link_internal_broken":{"count":12,"description":"Broken same-page link","id":"link_internal_broken"},"link_pdf":{"count":4,
+"description":"Link to PDF document","id":"link_pdf"},"link_redundant":{"count":1,"description":"Redundant link","id":"link_redundant"},"noscript":{"count":1,"description":
+"Noscript element","id":"noscript"},"text_justified":{"count":9,"description":"Justified text","id":"text_justified"},"title_redundant":{"count":18,"description":"Redundant title text",
+"id":"title_redundant"}}},"feature":{"description":"Features","count":100,"items":{"alt":{"count":9,"description":"Alternative text","id":"alt"},"alt_link":{"count":80,"description":
+"Linked image with alternative text","id":"alt_link"},"alt_null":{"count":1,"description":"Null or empty alternative text","id":"alt_null"},"alt_spacer":{"count":2,"description":
+"Null or empty alternative text on spacer","id":"alt_spacer"},"fieldset":{"count":1,"description":"Fieldset","id":"fieldset"},"label":{"count":1,"description":"Form label","id":"label"},
+"lang":{"count":6,"description":"Element language","id":"lang"}}},"structure":{"description":"Structural Elements","count":40,"items":{"h1":{"count":2,"description":"Heading level 1",
+"id":"h1"},"h2":{"count":7,"description":"Heading level 2","id":"h2"},"h3":{"count":4,"description":"Heading level 3","id":"h3"},"iframe":{"count":4,"description":"Inline Frame","id":
+"iframe"},"ul":{"count":23,"description":"Unordered list","id":"ul"}}},"html5":{"description":"HTML5 and ARIA","count":2,"items":{"aria":{"count":2,"description":"ARIA","id":"aria"}}}}}
 
 datos_string = json.dumps(data)
 
 datos_json = json.loads(datos_string)
+
+datos_json.get("categories")
 
 num_problemas = datos_json["categories"]["error"]["count"]
 num_advertencias= datos_json["categories"]["alert"]["count"]
@@ -171,28 +55,27 @@ ruta_BD="/storage/test.txt"
 #Crear reporte
 reporte = open(ruta_reporte, 'a')
 
-def obtenerDatos(datos):
+
+def obtenerDatos(categoria,datos):
     valores = datos.values()
     #claves = datos.keys()
+    reporte.write(categoria+"\n")
     for v in valores:
-        reporte.write(str(v["description"]) +" -- "+ str(v["count"])+"\n")
+        reporte.write(str(v["description"]) +"\t Cantidad: "+ str(v["count"])+"\n")
+    reporte.write("-------------------------------------------------------------------\n")
 
-obtenerDatos(datos_json["categories"]["error"]["items"])
-obtenerDatos(datos_json["categories"]["alert"]["items"])
-obtenerDatos(datos_json["categories"]["feature"]["items"])
-obtenerDatos(datos_json["categories"]["contrast"]["items"])
+
+obtenerDatos("Problemas",datos_json["categories"]["error"]["items"])
+obtenerDatos("Alertas",datos_json["categories"]["alert"]["items"])
+obtenerDatos("Caracteristicas",datos_json["categories"]["feature"]["items"])
+obtenerDatos("Problemas de contraste",datos_json["categories"]["contrast"]["items"])
 
 parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
-cursor.close() 
-cursor = conexion.cursor() 
-
-num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste
-
 cursor.execute("insert into waves(pagina_id,datos_problemas,fecha_test,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),ruta_BD,fecha_test,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,))
-conexion.commit()
+desconexionBD(conexion,cursor)
 
 
 

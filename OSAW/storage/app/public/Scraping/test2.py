@@ -2,12 +2,16 @@ from miscelaneo import *
 
 import os
 
-directorio = os.path.dirname(os.path.abspath(__file__))
-print(directorio)
-directorio=directorio.replace("/Scraping","")
-directorio=directorio.replace("/storage/app","")
-print(directorio)
+try:
+    print(delete)
+except Exception as e:
+    print(e)
+
+try:
+    print("A")
+except:
+    pass
 
 
-print(getDirectorio())
+
 
