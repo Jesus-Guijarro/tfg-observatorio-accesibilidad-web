@@ -3,23 +3,6 @@ import os, requests
 from selenium import webdriver
 from datetime import datetime
 
-#Obtenemos la url principal de un dominio.
-# Necesario por si la web en cuestión cambia el protocolo de http a https
-def getURL(dominio):
-    
-    cabecera="http://"
-    request = requests.get(cabecera+dominio)
-    url = request.url
-    
-    #Comprobamos si el protocolo es https
-    if "https" in url:
-        cabecera = "https://"
-
-
-    url = cabecera + dominio
-    
-    return url
-
 #Activar el modo headless
 def modoHeadless():
 
@@ -45,6 +28,22 @@ class element_has_value(object):
         return element
     else:
         return False
+
+#Obtenemos la url principal de un dominio.
+# Necesario por si la web en cuestión cambia el protocolo de http a https
+def getURL(dominio):
+    
+    cabecera="http://"
+    request = requests.get(cabecera+dominio)
+    url = request.url
+    
+    #Comprobamos si el protocolo es https
+    if "https://" in url:
+        cabecera = "https://"
+
+    url = cabecera + dominio
+    
+    return url
 
 #Devolver la fecha en formato: 'YYYY-MM-DD'
 def getFecha():

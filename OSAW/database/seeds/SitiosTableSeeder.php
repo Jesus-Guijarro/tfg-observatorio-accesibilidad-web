@@ -20,7 +20,7 @@ class SitiosTableSeeder extends Seeder
         
         DB::table('sitios')->insert([
             'nombre' => 'Ministerio de Justicia',
-            'dominio' => 'http://www.mjusticia.gob.es/',
+            'dominio' => 'www.mjusticia.gob.es',
             'periodicidad_analisis' => 'Semanal',
             'num_paginas' => '10',
             'categoria_id' => '1',
@@ -28,11 +28,14 @@ class SitiosTableSeeder extends Seeder
 
         DB::table('sitios')->insert([
             'nombre' => 'Agencia Estatal de Administración Tributaria',
-            'dominio' => 'www.agenciatributaria.es/',
+            'dominio' => 'www.agenciatributaria.es',
             'periodicidad_analisis' => 'Semanal',
             'num_paginas' => '10',
             'categoria_id' => '1',
             'herramientas' => "$json"]);
+
+
+        #SIN BARRAS en el dominio
         
     }
 }

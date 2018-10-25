@@ -1,2 +1,0 @@
-[01]	Error herramienta: observatorio		Fecha: 2018-10-25		Pagina web: 1.
-[01]	Error herramienta: "observatorio"		Fecha: "2018-10-25"		Pagina web: "1"

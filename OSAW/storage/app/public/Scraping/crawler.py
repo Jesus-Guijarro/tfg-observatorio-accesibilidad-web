@@ -2,7 +2,8 @@ import sys, requests, mysql.connector
 
 from selenium import webdriver
 from conexiones import *
-from comprobador import comprobarAccesoyTipo
+from miscelaneo import *
+from comprobador import *
 
 parametros = conexionBD()
 conexion= parametros[0]
@@ -13,8 +14,10 @@ num_paginas=int(sys.argv[2])
 
 #Obtenemos la URL principal del sitio -> protocolo + dominio
 cursor.execute("select dominio from sitios where id = %s", (sitio_id,))
-sitio = cursor.fetchone()
-sitio_url=sitio.__getitem__(0)
+r = cursor.fetchone()
+dominio=r.__getitem__(0)
+
+sitio_url=getURL(dominio)
 
 def obtenerPaginas(sitio_id,sitio_url,num_paginas):
 
@@ -22,7 +25,7 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
     opciones = webdriver.ChromeOptions()
 
     opciones.binary_location = '/usr/bin/google-chrome'
-    #opciones.add_argument('headless')
+    opciones.add_argument('headless')
 
     driver = webdriver.Chrome(chrome_options=opciones)
 
@@ -39,9 +42,11 @@ def obtenerPaginas(sitio_id,sitio_url,num_paginas):
         href = enlace.get_attribute("href")
         #Comprobamos primero que la referencia es un string
         if isinstance(href, str) == True:
-            #Comprobamos la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
-            if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1 and '#' not in href:
+            #Comprobamos que la referencia tiene un formato correcto
+            if comprobarReferencia(href, sitio_url):
                 lista_paginas.append(href)
+            #En caso de que la referencia no incluya el dominio al principio:
+            
     
     #Guardamos la pagina principal
     lista_paginas.append(sitio_url)

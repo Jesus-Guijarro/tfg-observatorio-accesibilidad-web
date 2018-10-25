@@ -11,11 +11,11 @@ def comprobarAccesoyTipo(pagina_web):
         request = requests.get(pagina_web)
         tipo = request.headers.get('content-type')
 
-        #Formato: text/html;charset=utf-8
+        #Tipo de contenido html -> text/html
         tipo = tipo.lower()
         tipo = tipo.replace(' ','')
 
-        if request.status_code == 200 and tipo == "text/html;charset=utf-8":
+        if request.status_code == 200 and tipo in "text/html":
             return True
         else:
             return False
@@ -90,3 +90,8 @@ def comprobarHTML(pagina_id):
     desconexionBD(conexion,cursor)
     return True
 
+#Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
+def comprobarReferencia(href, sitio_url):
+    if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1 and '#' not in href:
+        return True
+    return False
