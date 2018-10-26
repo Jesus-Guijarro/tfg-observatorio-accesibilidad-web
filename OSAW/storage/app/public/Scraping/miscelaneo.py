@@ -15,6 +15,20 @@ def modoHeadless():
 
     return driver
 
+#Transformar datos de problemas para guardarlos en archivos de texto
+def transformarDatos(datos):
+    #No son simples saltos de linea , son lineas con espacios en blanco, tabulados, etc
+    datos=datos.replace('  ','')
+    datos=datos.replace('\n','')
+    datos=datos.replace('        ','\n\n')
+    datos=datos.replace('Success Criteria','\n\nCriterio de conformidad: ')
+    datos=datos.replace('Check','\n\n\tRevisar: ')
+    datos=datos.replace('Repair','\n\n\tReparar: ')
+    datos=datos.replace('Line','\n\n\t\tLínea: ')
+    datos=datos.replace('\t\t\t','')
+
+    return datos
+
 #Clase para validar elementos durante el modo headless 
 class element_has_value(object):
  

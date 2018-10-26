@@ -76,74 +76,68 @@ try:
         raise Exception('No se ha podido realizar la evaluación')
 
 
-num_problemas_conocidos=driver.find_element_by_css_selector("#AC_num_of_errors")
-print(int(num_problemas_conocidos.text))
+    num_problemas_conocidos=int(driver.find_element_by_css_selector("#AC_num_of_errors").text)
+    print(num_problemas_conocidos)
 
-num_problemas_probables=driver.find_element_by_css_selector("#AC_num_of_likely")
-print(int(numProbables.text))
+    #num_problemas_probables=driver.find_element_by_css_selector("#AC_num_of_likely")
+    #print(int(num_probables.text))
 
-numPotenciales=driver.find_element_by_css_selector("#AC_num_of_potential")
-print(int(numPotenciales.text))
+    num_problemas_potenciales=int(driver.find_element_by_css_selector("#AC_num_of_potential").text)
+    print(num_problemas_potenciales)
 
+    #Inicializamos las variables para hacer el recuento de problemas segun nivel
+    num_problemas_conocidos_a = 0
+    num_problemas_conocidos_aa = 0
+    num_problemas_conocidos_aaa = 0
+    num_problemas_potenciales_a = 0
+    num_problemas_potenciales_aa = 0
+    num_problemas_potenciales_aaa = 0
 
-#Generar reporte
-exportar = driver.find_element_by_css_selector("#validate_file_button")
-exportar.click()
+    #Rutas para guardar el archivo y el acceso desde la BD
+    ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
+    ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
-element = wait.until(element_has_value((By.CSS_SELECTOR, "#validate_file_button"), "Get File"))
+    #Crear reporte
+    reporte = open(ruta_reporte, 'a')
+    reporte.write('Reporte de la página web: ' + pagina_url+ '\t\t'+"Fecha: "+ fecha_test+'\n')
 
+    #Datos problemas y calculo de número de problemas según nivel
+    def datoProblema(tipo_problema):
+        try:
+            problemas=driver.find_element_by_id(tipo_problema)
 
+            datos=str(problemas.get_attribute('textContent'))
+            datos=transformarDatos(datos)
 
-#Comprobar si hay errores de X tipo o no
-'''
+            if tipo_problema == "AC_errors":
+                reporte.write("PROBLEMAS CONOCIDOS\n")
 
-if EC.presence_of_element_located((By.CSS_SELECTOR, "#AC_congrats_msg_for_errors > img")) == False:
-    erroresConocidos=driver.find_element_by_id("AC_errors")
-if EC.presence_of_element_located((By.CSS_SELECTOR, "#AC_congrats_msg_for_likely > img")) == False:
-    erroresPosibles=driver.find_element_by_id("AC_likely_problems")
-if EC.presence_of_element_located((By.CSS_SELECTOR, "#AC_congrats_msg_for_potential > img")) == False:
+                num_problemas_conocidos_a = int(datos.count("(A)"))
+                num_problemas_conocidos_aa = int(datos.count("(AA)"))
+                num_problemas_conocidos_aaa = int(datos.count("(AAA)"))
 
-'''
+                reporte.write(datos + "\n\n ------------------------------------------------------ \n\n")
+            else:
+                reporte.write("PROBLEMAS POTENCIALES\n")
 
-if EC.presence_of_element_located((By.ID, "AC_errors")):
-    erroresConocidos=driver.find_element_by_id("AC_errors")
-if EC.presence_of_element_located((By.ID, "AC_likely_problems")):
-    erroresPosibles=driver.find_element_by_id("AC_likely_problems")
-if EC.presence_of_element_located((By.ID, "AC_potential_problems")):
-    erroresPotenciales=driver.find_element_by_id("AC_potential_problems")
+                num_problemas_potenciales_a = int(datos.count("(A)"))
+                num_problemas_potenciales_aa = int(datos.count("(AA)"))
+                num_problemas_potenciales_aaa = int(datos.count("(AAA)"))
 
-datosConocidos=str(erroresConocidos.get_attribute('textContent'))
-datosPosibles=str(erroresPosibles.get_attribute('textContent'))
-datosPotenciales=str(erroresPotenciales.get_attribute('textContent'))
+                reporte.write(datos + "\n")
 
-#No son simples saltos de linea , son lineas con espacios en blanco diferentes, tabulados, etc
-datosConocidos=datosConocidos.replace('  ','')
-datosConocidos=datosConocidos.replace('\n','')
-datosConocidos=datosConocidos.replace('        ','\n\n')
-datosConocidos=datosConocidos.replace('Success Criteria','\n\nSuccess Criteria')
-datosConocidos=datosConocidos.replace('Check','\n\n\tCheck')
-datosConocidos=datosConocidos.replace('Repair','\n\n\tRepair')
-datosConocidos=datosConocidos.replace('Line','\n\n\t\tLine')
-datosConocidos=datosConocidos.replace('\t\t\t','')			
+        except Exception as e:
+            pass
 
+    #Obtenemos los datos para errores conocidos y potenciales
+    datoProblema("AC_errors")
+    datoProblema("AC_potential_problems")
 
-datosPotenciales=datosPotenciales.replace('  ','')
-datosPotenciales=datosPotenciales.replace('\n','')
-datosPotenciales=datosPotenciales.replace('        ','\n\n')
-datosPotenciales=datosPotenciales.replace('Success Criteria','\n\nSuccess Criteria')
-datosPotenciales=datosPotenciales.replace('Check','\n\n\tCheck')
-datosPotenciales=datosPotenciales.replace('Repair','\n\n\tRepair')
-datosPotenciales=datosPotenciales.replace('Line','\n\n\t\tLine')
-datosPotenciales=datosPotenciales.replace('\t\t\t','')	
+    cursor = cursor.execute("insert into achecker(pagina_id,puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,ruta_BD,fecha_test,))
+    desconexionBD(conexion,cursor)
 
-with io.open('/home/jesus/pruebas/archivoACHECKER.text', 'w') as f:
-    f.write(datosConocidos +'\n')
-    #f.write(datosPosibles +"\n")
-    f.write(datosPotenciales+"\n")
+except Exception as e:
+    errorLog(directorio,1,getFecha(),herramienta,pagina_id)
 
 
-document.add_paragraph(datosConocidos)
-
-document.save('dem2o.docx')
-
-driver.close()
+driver.quit()

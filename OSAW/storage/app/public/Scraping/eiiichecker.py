@@ -77,7 +77,7 @@ try:
     print(num_problemas)
 
     num_aciertos =  int(driver.find_element_by_css_selector('#ul-appliedtests > li:nth-child(4) > strong > span').text.replace('Pass: ',''))
-    print( num_aciertos )
+    print(num_aciertos)
 
     
 
