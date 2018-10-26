@@ -64,23 +64,16 @@ try:
     wait = WebDriverWait(driver, 120)
     #Se espera hasta que se haya evaluado y ofrecido el resultado
     try:
-        elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#resultSummary > form > ul > li:nth-child(1) > label > strong")))
+        elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#resultsByTest > div > div.tabArea")))
     except:
         driver.quit()
         raise Exception('No se ha podido realizar la evaluación')
 
 
     puntuacion = float(driver.find_element_by_css_selector('#resultSummary > form > ul > li:nth-child(4) > div > span > span').text)
-    print(puntuacion)
-
     num_problemas =  int(driver.find_element_by_css_selector('#ul-appliedtests > li:nth-child(2) > strong > span').text.replace('Fail: ',''))
-    print(num_problemas)
-
     num_aciertos =  int(driver.find_element_by_css_selector('#ul-appliedtests > li:nth-child(4) > strong > span').text.replace('Pass: ',''))
-    print(num_aciertos)
-
     
-
     #Inicializamos las variables para hacer el recuento de problemas segun nivel
     num_problemas_a = 0
     num_problemas_aa = 0
@@ -94,34 +87,36 @@ try:
     reporte.write(cabeceraReporte(pagina_url,fecha_test))
 
     #Datos problemas y calculo de número de problemas según nivel
-    def datoProblema(frase,problema, nivel):
+    def datosProblema(frase,problema,reporte,driver):
         try:
-            problema=int(driver.find_element_by_id(problema))
-            reporte.write(frase+'\t Veces encontrado: '+ problema+'\n')
-            if nivel=="A":
-                num_problemas_a = num_problemas_a + problema
-            elif nivel =="AA":
-                num_problemas_aa = num_problemas_aa + problema
+            veces=int(driver.find_element_by_id(problema).text)
+            reporte.write(frase+'\t\t VECES ENCONTRADO: '+ veces+'\n')
+
+            return veces
+
         except Exception as e:
-            pass
+            return 0
         
-    datoProblema("Uso de <alt> en elementos <img> [1.1.1]","icon_alt-on-img_rstFail", "A")
-    datoProblema("Uso de color [1.4.1]","icon_use-color_rstFail", "A")
-    datoProblema("Uso de controladores de eventos específicos del dispositivo señalador únicamente [2.1.1]","icon_pointing-device-events_rstFail", "A")
-    datoProblema("Se proporcionan títulos descriptivos para las páginas web [2.4.2]","icon_title-not-descriptive_rstFail", "A")
-    datoProblema("Se Proporcionan enlaces para navegar a páginas web relacionadas [2.4.5]","icon_links-webpages_rstFail", "AA")
-    datoProblema("Se roporcionan encabezados descriptivos [2.4.6]","icon_descriptive-headings_rstFail", "AA")
-    datoProblema("Lenguaje principal de la página indicado [3.1.1]","icon_language-determine_rstFail", "A")
-    datoProblema("Idioma de las partes [3.1.2]","icon_language-attributes-page_rstFail", "AA")
-    datoProblema("Enviar formularios sin enviar botones [3.2.2]","icon_forms-without-buttons_rstFail", "A")
-    datoProblema("Se proporciona un botón de enviar para iniciar un cambio de contexto [3.2.2]","icon_submit-buttons_rstFail", "AA")
-    datoProblema("Etiquetar grupos de elementos de formulario [3.3.2]","icon_h71-sturcture_rstFail", "A")
-    datoProblema("Elementos de referencia [4.1.1]","icon_referencing-element_rstFail", "A")
-    datoProblema("Definir identificadores para elementos [4.1.1]","icon_id-unique-value_rstFail", "A")
-    datoProblema("Usar <title> para los elementos frame e iframe [4.1.2]","icon_title-frame-iframe_rstFail", "A")
-    datoProblema("Nombre accesible para imágenes con enlace [4.1.2]","icon_null-alt-image_rstFail", "A")
-    datoProblema("Se utilizan los controles y enlaces de formulario HTML [4.1.2]","icon_form-controls-links_rstFail", "A")
-    datoProblema("Se proporciona el nombre del rol para <div> / <span> con el controlador de eventos [4.1.2]","icon_script-ui-control_rstFail", "A")
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       TÉCNICA H37: Uso de <alt> en elementos <img>","icon_alt-on-img_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 1.4.1: Uso del color ","icon_use-color_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función","icon_pointing-device-events_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 2.4.2: Titulado de páginas       FALLO F25: Fallo del Criterio de Conformidad 2.4.2 debido al título de una página web que no identifica los contenidos","icon_title-not-descriptive_rstFail", reporte,driver)
+    num_problemas_aa+=datosProblema("CRITERIO DE CONFORMIDAD: 2.4.5: Múltiples vías       TÉCNICA G125: Proporcionar enlaces para navegar a páginas web relacionadas","icon_links-webpages_rstFail", reporte,driver)
+    num_problemas_aa+=datosProblema("CRITERIO DE CONFORMIDAD: 2.4.6: Encabezados y etiquetas       TÉCNICA G130: Proporcionar encabezados descriptivos","icon_descriptive-headings_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 3.1.1: Idioma de la página      ","icon_language-determine_rstFail", reporte,driver)
+    num_problemas_aa+=datosProblema("CRITERIO DE CONFORMIDAD: 3.1.2: Idioma de las partes      ","icon_language-attributes-page_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      TÉCNICA G13: Describir lo que sucederá antes de que se realice un cambio en un control de formulario que cause que ocurra un cambio de contexto","icon_forms-without-buttons_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      TÉCNICA H32: Proporcionar botones de envío de formulario","icon_submit-buttons_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <fieldset> y <legend>","icon_h71-sturcture_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G167: Usar un botón adyacente para etiquetar el propósito de un campo","icon_button-form-control_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G131: Proporcionar etiquetas descriptivas","icon_descriptive-labels_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      ","icon_referencing-element_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      ","icon_id-unique-value_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H64: Usando el atributo <title> de los elementos <frame> y <iframe>","icon_title-frame-iframe_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H65: Usar el atributo <title> para identificar los controles de formulario cuando no se puede usar el elemento <label>","icon_title-attribute-form-control_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      FALLO F89: Fallo de los Criterios de Conformidad 2.4.4, 2.4.9 y 4.1.2 debido a que no se proporciona un nombre accesible para una imagen que es el único contenido en un enlace","icon_null-alt-image_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H91: Usar controles de formulario HTML y enlaces","icon_form-controls-links_rstFail", reporte,driver)
+    num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      FALLO F59: Fallo del Criterio de Conformidad 4.1.2 debido al uso de secuencias de comandos para hacer que los elementos <div> o <span> sean un control de la interfaz de usuario en HTML sin proporcionar una función para el control","icon_script-ui-control_rstFail", reporte,driver)
     
 
     cursor = cursor.execute("insert into eiiicheckers(pagina_id,puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,ruta_BD,fecha_test,))

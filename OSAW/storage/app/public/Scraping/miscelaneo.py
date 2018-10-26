@@ -120,6 +120,6 @@ def errorLog(directorio,tipo,fecha_test,herramienta,pagina_id,error):
 
     log = open(ruta_archivo_logs, 'a') 
     if tipo==1: 
-        log.write('[01]\tERROR HERRAMIENTA: "' + herramienta + '"\t\tFECHA: "'+ fecha_test+'"\t\tPAGINA WEB: "' + pagina_id +"\t\tDESCRIPCION: "+repr(error)+ '"\n')
+        log.write('[01]\tERROR HERRAMIENTA: "' + herramienta + '"\t\tFECHA: "'+ fecha_test+'"\t\tPAGINA WEB: "' + pagina_id +'"\t\tDESCRIPCION: "'+repr(error)+ '"\n')
     else:
         log.write('[03]\tERROR ACCESSO PAGINA WEB: "' + pagina_id + '"\t\tFECHA: "'+ fecha_test +'" \n')
