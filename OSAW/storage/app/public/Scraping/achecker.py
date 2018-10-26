@@ -92,41 +92,21 @@ try:
     ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
     ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
-    #Crear reporte
+    #Crear reporte y cálculo de los problemas por nivel de adecuación
     reporte = open(ruta_reporte, 'a')
     reporte.write('Reporte de la página web: ' + pagina_url+ '\t\t'+"Fecha: "+ fecha_test+'\n')
 
-    #Datos problemas y calculo de número de problemas según nivel
-    def datoProblema(tipo_problema):
-        try:
-            problemas=driver.find_element_by_id(tipo_problema)
+    datos=datosProblema("AC_errors",reporte,driver)
+    if datos:
+        num_problemas_conocidos_a = int(datos.count("(A)"))
+        num_problemas_conocidos_aa = int(datos.count("(AA)"))
+        num_problemas_conocidos_aaa = int(datos.count("(AAA)"))
 
-            datos=str(problemas.get_attribute('textContent'))
-            datos=transformarDatos(datos)
-
-            if tipo_problema == "AC_errors":
-                reporte.write("PROBLEMAS CONOCIDOS\n")
-
-                num_problemas_conocidos_a = int(datos.count("(A)"))
-                num_problemas_conocidos_aa = int(datos.count("(AA)"))
-                num_problemas_conocidos_aaa = int(datos.count("(AAA)"))
-
-                reporte.write(datos + "\n\n ------------------------------------------------------ \n\n")
-            else:
-                reporte.write("PROBLEMAS POTENCIALES\n")
-
-                num_problemas_potenciales_a = int(datos.count("(A)"))
-                num_problemas_potenciales_aa = int(datos.count("(AA)"))
-                num_problemas_potenciales_aaa = int(datos.count("(AAA)"))
-
-                reporte.write(datos + "\n")
-
-        except Exception as e:
-            pass
-
-    #Obtenemos los datos para errores conocidos y potenciales
-    datoProblema("AC_errors")
-    datoProblema("AC_potential_problems")
+    datos=datosProblema("AC_potential_problems",reporte,driver)
+    if datos:
+        num_problemas_potenciales_a = int(datos.count("(A)"))
+        num_problemas_potenciales_aa = int(datos.count("(AA)"))
+        num_problemas_potenciales_aaa = int(datos.count("(AAA)"))
 
     cursor = cursor.execute("insert into acheckers(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
     desconexionBD(conexion,cursor)

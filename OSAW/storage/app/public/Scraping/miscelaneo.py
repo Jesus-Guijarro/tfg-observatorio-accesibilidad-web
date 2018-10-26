@@ -29,18 +29,26 @@ def transformarDatos(datos):
 
     return datos
 
-#Clase para validar elementos durante el modo headless 
-class element_has_value(object):
- 
-  def __init__(self, locator, value):
-    self.locator = locator
-    self.value = value
+#Herramientas: Achecker y Vamolà
+#Escribir y obtener los datos de los problemas
+def datosProblema(tipo_problema,reporte,driver):
+    try:
+        problemas=driver.find_element_by_id(tipo_problema)
 
-  def __call__(self, driver):
-    element = driver.find_element(*self.locator)   
-    if self.value in element.get_attribute("value"):
-        return element
-    else:
+        datos=str(problemas.get_attribute('textContent'))
+        datos=transformarDatos(datos)
+        
+        if tipo_problema == "AC_errors":
+            reporte.write("PROBLEMAS CONOCIDOS\n")
+            reporte.write(datos + "\n\n ------------------------------------------------------ \n\n")
+        else:
+            reporte.write("PROBLEMAS POTENCIALES\n")
+            reporte.write(datos + "\n")
+        
+        return datos
+
+    except Exception as e:
+        print(e)
         return False
 
 #Obtenemos la url principal de un dominio.
