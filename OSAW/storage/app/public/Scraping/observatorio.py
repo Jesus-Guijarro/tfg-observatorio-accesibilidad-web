@@ -43,7 +43,6 @@ try:
 
 
     #Porcentajes de los principios
-    
     porcentaje_comprensible=float(datos_json["oaw"]["resultado"]["resumen"]["totalComprensible"].replace("%",""))
     porcentaje_operable=float(datos_json["oaw"]["resultado"]["resumen"]["totalOperable"].replace("%",""))
     porcentaje_perceptible=float(datos_json["oaw"]["resultado"]["resumen"]["totalPerceptible"].replace("%",""))
@@ -60,8 +59,8 @@ try:
     #Obtenemos la lista de principios que es la única correcta 
     lista_principios=datos_json["oaw"]["resultado"]["principios"]
 
-    #Los isinstance para comprar que el elemento es una lista
-    #Los try para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón
+    #Los "isinstance" son para comprobar que el elemento es una lista o un elemento único
+    #Los try son para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón
     #Cuatro niveles: 1.Principios, 2.Pautas, 3.Criterios, 4.Ténicas
     reporte.write(cabeceraReporte(pagina_url,fecha_test))
     for l in lista_principios:

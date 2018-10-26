@@ -46,7 +46,7 @@ try:
         #claves = datos.keys()
         reporte.write(categoria+"\n")
         for v in valores:
-            reporte.write(str(v["description"]) +"\t Cantidad: "+ str(v["count"])+"\n")
+            reporte.write(str(v["description"]) +"\t  VECES ENCONTRADO: "+ str(v["count"])+"\n")
         reporte.write("-------------------------------------------------------------------\n")
 
     #En algunas ocasiones una o varias de las categorias no tiene elementos accesibles

@@ -61,7 +61,7 @@ def comprobarCopiaHTML(pagina_id):
     hash_nuevo=hashArchivo(ruta_archivo_nuevo)
 
     #Si no es la primera vez que se evalua la página (valor:"manual")
-    if hash_antiguo!="manual":
+    if hash_antiguo!="default":
         #Si los hash tienen valores distintos
         if hash_antiguo != hash_nuevo:
             #Borramos el archivo anterior

@@ -17,7 +17,7 @@ class CreatePaginasTable extends Migration
             $table->increments('id');
             $table->text('URL');
             $table->text('archivo_HTML')->nullable();
-            $table->char('hash',16)->default('manual');
+            $table->char('hash',16)->default('default');
 
             $table->integer('sitio_id')->unsigned()->nullable();
             $table->foreign('sitio_id')->references('id')->on('sitios')->onDelete("set null");
