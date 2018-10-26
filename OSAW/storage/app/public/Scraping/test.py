@@ -1,6 +1,12 @@
 
 from miscelaneo import getDirectorio
 
-n="ABCD"
+lista=['A','B','C','D','E','F']
 
-print(n[0:2])
+def test(lista):
+
+    for l in lista:
+        if l == 'F'
+
+
+f(3)

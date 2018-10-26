@@ -16,7 +16,6 @@ class CreatePaginasTable extends Migration
         Schema::create('paginas', function (Blueprint $table) {
             $table->increments('id');
             $table->text('URL');
-            $table->char('hash_url',16)->default('manual');
             $table->text('archivo_HTML')->nullable();
             $table->char('hash',16)->default('manual');
 

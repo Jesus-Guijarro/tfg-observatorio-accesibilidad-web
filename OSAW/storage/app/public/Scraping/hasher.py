@@ -17,16 +17,4 @@ def hashArchivo(ruta_archivo):
 
     return valor_hash
 
-def hashURL(url):
-    #Se transforma el contenido con el algoritmo críptográfico MD5
-
-    hash = hashlib.md5()
-    hash.update(('%s' % (url)).encode('utf-8'))
-    valor_hash= hash.hexdigest()
-
-    #Sólo los 16 primeros caracteres del hash
-    valor_hash= valor_hash[0:16]
-
-    return valor_hash
-
     

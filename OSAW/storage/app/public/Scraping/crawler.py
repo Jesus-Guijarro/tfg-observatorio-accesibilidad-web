@@ -27,8 +27,8 @@ def obtenerPaginas(sitio_id,url,num_paginas,profundidad):
 
     #Límite de profundidad del crawler a 2
     #Si se ha alcanzado el número de paginas no es necesario realizar el proceso
-    if profundidad > 2 or num_paginas==0: 
-        return True
+    if profundidad > 2 or num_paginas==0:
+        return num_paginas
 
     #Conexion Base de datos
     parametros = conexionBD()
@@ -65,29 +65,30 @@ def obtenerPaginas(sitio_id,url,num_paginas,profundidad):
     for pagina in lista_paginas:
         if num_paginas == 0:
             break
-
-        #Valor hash de la URL. Sólo los 10 primeros caracteres
-        hash_url = hashURL(pagina)
-
-        #Buscamos si ya se encuentra en la BD
-        cursor.execute("select count(*) from paginas where hash_url=%s",(hash_url,))
+        cursor.execute("select count(*) from paginas where URL=%s",(pagina,))
         resultado = cursor.fetchone()
         cantidad=resultado.__getitem__(0)
         #Si el resultado es 0 se comprueba y se añade en caso de que se pueda acceder a ella
         if cantidad==0:
             if comprobarAccesoyTipo(pagina): 
-                    #Se guardan las páginas que han pasado los filtros
-                    cursor.execute("insert into paginas(sitio_id,URL,hash_url) values(%s,%s,%s)",(sitio_id,pagina,hash_url,))
-                    num_paginas -= 1 #Se reduce el número de páginas a buscar
-                    lista_final.append(pagina)
-
-    #Llamada recursiva
-    for pagina in lista_final:
-        if obtenerPaginas(sitio_id,pagina,num_paginas,profundidad+1):
-            break
-
+                #Se guardan las páginas que han pasado los filtros
+                cursor.execute("insert into paginas(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
+                lista_final.append(pagina)
+                num_paginas = num_paginas - 1 #Se reduce el número de páginas a buscar
+    
+    #Realizamos el proceso de desconexión de la base de datos y cerramos el driver del modo headless
     desconexionBD(conexion,cursor)
     driver.quit()
 
+
+    #Llamada recursiva
+    for pagina in lista_final:
+        if num_paginas == 0:
+            return 0
+        else:
+            num_paginas= obtenerPaginas(sitio_id,pagina,num_paginas,profundidad+1)
+
+    return num_paginas
+        
 obtenerPaginas(sitio_id,url,num_paginas,0)
 
