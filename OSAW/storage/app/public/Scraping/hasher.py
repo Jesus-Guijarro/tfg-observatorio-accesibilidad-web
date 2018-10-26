@@ -12,6 +12,9 @@ def hashArchivo(ruta_archivo):
     hash.update(('%s' % (contenido)).encode('utf-8'))
     valor_hash= hash.hexdigest()
 
+    #16 de los 32 caracteres
+    valor_hash= valor_hash[0:16]
+
     return valor_hash
 
 def hashURL(url):
@@ -21,8 +24,8 @@ def hashURL(url):
     hash.update(('%s' % (url)).encode('utf-8'))
     valor_hash= hash.hexdigest()
 
-    #Sólo los 10 primeros caracteres del hash
-    valor_hash= valor_hash[0:10]
+    #Sólo los 16 primeros caracteres del hash
+    valor_hash= valor_hash[0:16]
 
     return valor_hash
 

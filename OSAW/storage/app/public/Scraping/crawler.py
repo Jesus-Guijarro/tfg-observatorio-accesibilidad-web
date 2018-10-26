@@ -66,9 +66,9 @@ def obtenerPaginas(sitio_id,url,num_paginas,profundidad):
         if num_paginas == 0:
             break
 
-        #Valor hash
+        #Valor hash de la URL. Sólo los 10 primeros caracteres
         hash_url = hashURL(pagina)
-        print(hash_url)
+
         #Buscamos si ya se encuentra en la BD
         cursor.execute("select count(*) from paginas where hash_url=%s",(hash_url,))
         resultado = cursor.fetchone()
