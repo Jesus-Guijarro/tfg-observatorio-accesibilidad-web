@@ -1,9 +1,0 @@
-REPORTE PÁGINA WEB: http://accesibilidadweb.dlsi.ua.es/		FECHA EVALUACIÓN: 2018-10-26
-
-ALERTAS
-Unlabeled form element with title	 Cantidad: 1
--------------------------------------------------------------------
-CARACTERISTICAS
-Linked image with alternative text	 Cantidad: 7
-Element language	 Cantidad: 2
--------------------------------------------------------------------

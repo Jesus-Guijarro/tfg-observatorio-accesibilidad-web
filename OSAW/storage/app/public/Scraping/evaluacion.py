@@ -10,6 +10,7 @@ sitio_id=sys.argv[1]
 
 #Listado con las herramientas disponibles para ser usadas
 lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
+#lista_herramientas=["achecker"]
 
 #Método para llamar las herramientas
 def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
@@ -19,8 +20,7 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
         directorio = getDirectorio()
 
         comando="/usr/bin/python3 "+getRutaComando(directorio,herramienta,pagina_web,pagina_id)
-        print(comando)
-        #subprocess.run(comando, shell=True, check=True)
+        subprocess.run(comando, shell=True, check=True)
 
 #Conexión base de datos
 parametros = conexionBD()

@@ -37,7 +37,6 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
 
     #Creación de la tarea
     tarea= cron.new(command=comando, comment=comentario)  
-
     #En general es necesario indicar el minuto y la hora
     hora_dia=hora_dia.split(":")
     hora=hora_dia[0]
@@ -63,5 +62,6 @@ def realizarOperacion(operacion):
     elif operacion == "E": #Eliminar
         eliminar(sitio_id)
     else:
-        #Error en log.txt
         return False
+
+realizarOperacion(operacion)
