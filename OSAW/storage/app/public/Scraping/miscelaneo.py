@@ -21,10 +21,10 @@ def transformarDatos(datos):
     datos=datos.replace('  ','')
     datos=datos.replace('\n','')
     datos=datos.replace('        ','\n\n')
-    datos=datos.replace('Success Criteria','\n\nCriterio de conformidad: ')
-    datos=datos.replace('Check','\n\n\tRevisar: ')
-    datos=datos.replace('Repair','\n\n\tReparar: ')
-    datos=datos.replace('Line','\n\n\t\tLínea: ')
+    datos=datos.replace('Success Criteria','\n\nCriterio de conformidad:')
+    datos=datos.replace('Check','\n\n\tRevisar:')
+    datos=datos.replace('Repair','\n\n\tReparar:')
+    datos=datos.replace('Line','\n\n\t\tLínea:')
     datos=datos.replace('\t\t\t','')
 
     return datos

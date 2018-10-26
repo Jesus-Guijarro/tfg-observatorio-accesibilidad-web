@@ -77,13 +77,8 @@ try:
 
 
     num_problemas_conocidos=int(driver.find_element_by_css_selector("#AC_num_of_errors").text)
-    print(num_problemas_conocidos)
-
     #num_problemas_probables=driver.find_element_by_css_selector("#AC_num_of_likely")
-    #print(int(num_probables.text))
-
     num_problemas_potenciales=int(driver.find_element_by_css_selector("#AC_num_of_potential").text)
-    print(num_problemas_potenciales)
 
     #Inicializamos las variables para hacer el recuento de problemas segun nivel
     num_problemas_conocidos_a = 0
@@ -133,11 +128,10 @@ try:
     datoProblema("AC_errors")
     datoProblema("AC_potential_problems")
 
-    cursor = cursor.execute("insert into achecker(pagina_id,puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,ruta_BD,fecha_test,))
+    cursor = cursor.execute("insert into acheckers(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
     desconexionBD(conexion,cursor)
 
 except Exception as e:
     errorLog(directorio,1,getFecha(),herramienta,pagina_id)
-
 
 driver.quit()

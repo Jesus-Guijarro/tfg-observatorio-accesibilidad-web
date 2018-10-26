@@ -1,84 +1,137 @@
-#Vamolà
-from selenium import webdriver
+#AChecker
+import sys
 
+from conexiones import *
+from miscelaneo import *
+
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-import io
+#Argumentos
+pagina_url=sys.argv[1]
+pagina_id=sys.argv[2]
 
-#Se virtualiza una ventana de navegacion de Chrome
+herramienta="achecker"
 
-options = webdriver.ChromeOptions()
+#Conexion base de datos
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
 
-options.binary_location = '/usr/bin/google-chrome'
-options.add_argument('headless')
+#Ruta del directorio actual
+directorio = getDirectorio()
 
-#Pruebas
-options.add_argument('window-size=1200x600')
-
-driver = webdriver.Chrome(chrome_options=options)
-
-#Accedemos a la web de la herramienta de evaluacion
-#driver.get('http://www.validatore.it/vamola_validator/checker/index.php')
-driver.get("file:///home/jesus/Desktop/testVAMOLA1.html")
+fecha_test=getFecha()
 
 
-wait = WebDriverWait(driver, 200)
-'''
-elem =wait.until(EC.title_is(("Vamolà, validatore e monitor per l'accessibilità : Web Accessibility Checker")))
+try:
+    #Activamos el modo headless
+    driver=modoHeadless()
 
-#Introducir URL
-enlace = driver.find_element_by_css_selector('#checkuri')
-enlace.clear()
-enlace.send_keys('http://www.elmundo.es/deportes.html')
+    #Accedemos a la web de la herramienta de evaluacion
+    driver.get('https://achecker.ca/checker/index.php')
 
-#Seleccionar opcion
-opcionWCAG2 = driver.find_element_by_css_selector('#radio_gid_9')
-opcionWCAG2.click()
+    #Pausa explicita de 30 segundos
+    #Se pausa hasta que se encuentra el elemento
+    wait = WebDriverWait(driver, 30) 
 
-#Evaluar
-check = driver.find_element_by_css_selector('#validate_uri')
-check.click()
-
-
-elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,"#tabresults > ul > li.ui-state-default.ui-corner-top.ui-tabs-selected.ui-state-active > a")))
-'''
-
-numErroresConocidos=driver.find_element_by_css_selector('#AC_num_of_errors')
-print(int(numErroresConocidos.text))
-
-numErroresPotenciales=driver.find_element_by_css_selector('#AC_num_of_potential')
-print(int(numErroresPotenciales.text))
+    #Esperamos hasta que accedemos a la web de la herramienta
+    #En caso negativo se cancela el análisis y se cierra el driver
+    try:
+        elem =wait.until(EC.title_is(("IDI Web Accessibility Checker : Web Accessibility Checker")))
+    except:
+        driver.quit()
+        raise Exception('No se ha podido acceder a la herramienta')
 
 
-erroresConocidos=driver.find_element_by_id("AC_errors")
-erroresPotenciales=driver.find_element_by_id("AC_warnings")
+    #Introducir URL
+    enlace = driver.find_element_by_css_selector('#checkuri')
+    enlace.clear()
+    enlace.send_keys(pagina_url)
 
-datosConocidos=str(erroresConocidos.get_attribute('textContent'))
-datosPotenciales=str(erroresPotenciales.get_attribute('textContent'))
+    #Se abren las opciones de evaluación
+    opciones=  driver.find_element_by_css_selector("#center-content > table > tbody > tr > td > div > form > div > fieldset > div:nth-child(6) > h2 > a")
+    opciones.click()
 
-datosConocidos=datosConocidos.replace('  ','')
-datosConocidos=datosConocidos.replace('\n','')
-datosConocidos=datosConocidos.replace('        ','\n\n')
-datosConocidos=datosConocidos.replace('Success Criteria','\n\nSuccess Criteria')
-datosConocidos=datosConocidos.replace('Check','\n\n\tCheck')
-datosConocidos=datosConocidos.replace('Repair','\n\n\tRepair')
-datosConocidos=datosConocidos.replace('Line','\n\n\t\tLine')
-datosConocidos=datosConocidos.replace('\t\t\t','')	
+    #Se selecciona opción WCAG 2.0
+    #Es necesario esperar ya que las opciones se generan con javascript
+    elem = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,"#radio_gid_9"))) 
+    opcionWCAG2=  driver.find_element_by_css_selector("#radio_gid_9")
+    opcionWCAG2.click()
 
-datosPotenciales=datosPotenciales.replace('  ','')
-datosPotenciales=datosPotenciales.replace('\n','')
-datosPotenciales=datosPotenciales.replace('        ','\n\n')
-datosPotenciales=datosPotenciales.replace('Success Criteria','\n\nSuccess Criteria')
-datosPotenciales=datosPotenciales.replace('Check','\n\n\tCheck')
-datosPotenciales=datosPotenciales.replace('Repair','\n\n\tRepair')
-datosPotenciales=datosPotenciales.replace('Line','\n\n\t\tLine')
-datosPotenciales=datosPotenciales.replace('\t\t\t','')
-	
+    #Se selecciona el botón para evaluar
+    boton= driver.find_element_by_css_selector("#validate_uri")
+    boton.click()
 
-with io.open('/home/jesus/pruebas/archivoVAMOLA.txt', 'w') as f:
-    f.write(datosConocidos +"\n")
-    f.write(datosPotenciales)
 
-driver.close()
+    #Pausa de máximo 2 minuto
+    wait = WebDriverWait(driver, 120)
+    #Se espera hasta que se haya evaluado y ofrecido el resultado
+    try:
+        elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#report_file > div > label:nth-child(1)")))
+    except:
+        driver.quit()
+        raise Exception('No se ha podido realizar la evaluación')
+
+
+    num_problemas_conocidos=int(driver.find_element_by_css_selector("#AC_num_of_errors").text)
+    #num_problemas_probables=driver.find_element_by_css_selector("#AC_num_of_likely")
+    num_problemas_potenciales=int(driver.find_element_by_css_selector("#AC_num_of_potential").text)
+
+    #Inicializamos las variables para hacer el recuento de problemas segun nivel
+    num_problemas_conocidos_a = 0
+    num_problemas_conocidos_aa = 0
+    num_problemas_conocidos_aaa = 0
+    num_problemas_potenciales_a = 0
+    num_problemas_potenciales_aa = 0
+    num_problemas_potenciales_aaa = 0
+
+    #Rutas para guardar el archivo y el acceso desde la BD
+    ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
+    ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
+
+    #Crear reporte
+    reporte = open(ruta_reporte, 'a')
+    reporte.write('Reporte de la página web: ' + pagina_url+ '\t\t'+"Fecha: "+ fecha_test+'\n')
+
+    #Datos problemas y calculo de número de problemas según nivel
+    def datoProblema(tipo_problema):
+        try:
+            problemas=driver.find_element_by_id(tipo_problema)
+
+            datos=str(problemas.get_attribute('textContent'))
+            datos=transformarDatos(datos)
+
+            if tipo_problema == "AC_errors":
+                reporte.write("PROBLEMAS CONOCIDOS\n")
+
+                num_problemas_conocidos_a = int(datos.count("(A)"))
+                num_problemas_conocidos_aa = int(datos.count("(AA)"))
+                num_problemas_conocidos_aaa = int(datos.count("(AAA)"))
+
+                reporte.write(datos + "\n\n ------------------------------------------------------ \n\n")
+            else:
+                reporte.write("PROBLEMAS POTENCIALES\n")
+
+                num_problemas_potenciales_a = int(datos.count("(A)"))
+                num_problemas_potenciales_aa = int(datos.count("(AA)"))
+                num_problemas_potenciales_aaa = int(datos.count("(AAA)"))
+
+                reporte.write(datos + "\n")
+
+        except Exception as e:
+            pass
+
+    #Obtenemos los datos para errores conocidos y potenciales
+    datoProblema("AC_errors")
+    datoProblema("AC_potential_problems")
+
+    cursor = cursor.execute("insert into acheckers(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
+    desconexionBD(conexion,cursor)
+
+except Exception as e:
+    errorLog(directorio,1,getFecha(),herramienta,pagina_id)
+
+driver.quit()
