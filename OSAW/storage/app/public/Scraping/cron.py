@@ -1,13 +1,13 @@
 import os,sys
 
 from crontab import CronTab
-from datetime import datetime  
+from miscelaneo import *
 
 #Argumentos
 
-operacion=str(sys.argv[1]) # Crear -> C; Actualizar -> A; Eliminar -> E
+operacion=str(sys.argv[1]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
 sitio_id=str(sys.argv[2])
-periodicidad=str(sys.argv[3]) # Diaria -> D; Semanal -> S;  Mensual -> M
+periodicidad=str(sys.argv[3]) # Diaria -> 'D'; Semanal -> 'S';  Mensual -> 'M'
 hora_dia=sys.argv[4]
 dia=sys.argv[5] #Día del mes o de la semana
 
@@ -28,20 +28,17 @@ def eliminar(sitio_id):
 def crear(sitio_id,periodicidad,hora_dia,dia):
 
     #Rutas
-    directorio = os.path.dirname(os.path.abspath(__file__))
-    directorio=directorio.replace("/Scraping","")
-    directorio=directorio.replace("/storage/app","")
-
+    directorio = getDirectorio()
     ruta_evaluacion=directorio+"/storage/Scraping/evaluacion.py " + sitio_id
 
     #Comando y comentario asignado a la tarea
     comando="/usr/bin/python3 "+ ruta_evaluacion
     comentario="evaluar-sitio:"+ sitio_id
 
+    #Creación de la tarea
     tarea= cron.new(command=comando, comment=comentario)  
 
     #En general es necesario indicar el minuto y la hora
-
     hora_dia=hora_dia.split(":")
     hora=hora_dia[0]
     minuto=hora_dia[1]
@@ -58,15 +55,13 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
 
 #Método para ejecutar la operacion solicitada
 def realizarOperacion(operacion):
-    if operacion == "C":
+    if operacion == "C": #Crear
         crear(sitio_id,periodicidad,hora_dia,dia)
-    elif operacion == "U":
+    elif operacion == "A": # Actualizar
         eliminar(sitio_id)
         crear(sitio_id,periodicidad,hora_dia,dia)
-    elif operacion == "E":
+    elif operacion == "E": #Eliminar
         eliminar(sitio_id)
     else:
         #Error en log.txt
         return False
-
-realizarOperacion(operacion)

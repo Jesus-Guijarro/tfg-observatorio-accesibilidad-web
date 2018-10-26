@@ -67,10 +67,8 @@ try:
         driver.quit()
         raise Exception('No se ha podido realizar la evaluación')
     
-
     #Puntuación
     puntuacion = float(driver.find_element_by_css_selector("#webaxscore > span").text)
-
 
     #En ocasiones los elementos  de algún nivel de conformidad no se muestran 
     #Función para obtener los errores como las advertencias
@@ -93,7 +91,6 @@ try:
     num_problemas_aaa= getValor("#block > table > tbody > tr.lev_AAA > td.txfail",driver)
     num_advertencias_aaa= getValor("#block > table > tbody > tr.lev_AAA > td:nth-child(4)",driver)
    
-
     #Obtenemos los datos generales del reporte
     datos=driver.find_elements_by_tag_name('h5')
 
@@ -118,7 +115,6 @@ try:
     cursor = cursor.execute("insert into accessmonitors(pagina_id,puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,ruta_BD,fecha_test,))
     desconexionBD(conexion,cursor)
     
-
 except Exception as e:
     errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
 

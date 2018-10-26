@@ -1,4 +1,6 @@
 
 from miscelaneo import getDirectorio
 
-print(getDirectorio())
+n="ABCD"
+
+print(n[0:2])

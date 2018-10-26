@@ -49,7 +49,7 @@ try:
             reporte.write(str(v["description"]) +"\t Cantidad: "+ str(v["count"])+"\n")
         reporte.write("-------------------------------------------------------------------\n")
 
-    #En algunos casos alguna de las categorias no tiene elementos
+    #En algunas ocasiones una o varias de las categorias no tiene elementos accesibles
     try:
         getDatos("PROBLEMAS",datos_json["categories"]["error"]["items"])
     except Exception as e:
