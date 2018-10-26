@@ -5,16 +5,22 @@ from hasher import *
 from selenium import webdriver
 from miscelaneo import *
 
+#Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
+def comprobarReferencia(href, sitio_url):
+    if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1:
+        return True
+    return False
+
 #Comprobar acceso y el tipo de la URL
 def comprobarAccesoyTipo(pagina_web):
     try:
         request = requests.get(pagina_web)
         tipo = request.headers.get('content-type')
 
-        #Tipo de contenido html -> text/html
-        tipo = tipo.lower()
-        tipo = tipo.replace(' ','')
+        #Tipo de contenido buscado -> "text/html"
+        tipo = tipo.lower().replace(' ','')
 
+        #Comprobamos si obtenemos respuesta satisfactoria y el tipo del contenido es text/html
         if request.status_code == 200 and "text/html" in tipo:
             return True
         else:
@@ -23,34 +29,29 @@ def comprobarAccesoyTipo(pagina_web):
         return False
 
 #Comprobar contenido HTML
-def comprobarHTML(pagina_id):
+def comprobarCopiaHTML(pagina_id):
 
     #Conexión base de datos
     parametros = conexionBD()
-
     conexion= parametros[0]
     cursor = parametros[1]
 
+    #Buscamos la URL y Hash actual de la página web
     cursor.execute("select URL, hash from paginas where id = %s", (pagina_id,))
     pagina = cursor.fetchone()
     
     URL=pagina.__getitem__(0)
     hash_antiguo=pagina.__getitem__(1)
 
-    #Headless browser
-    options = webdriver.ChromeOptions()
-    options.binary_location = '/usr/bin/google-chrome'
-    options.add_argument('headless')
-
-    driver = webdriver.Chrome(chrome_options=options)
-
+    #Activamos el modo headless browser
+    driver=modoHeadless()
+    #Accedemos a la página web
     driver.get(URL)
 
     #Rutas para guardar el archivo desde la carpeta Scraping en la del proyecto Laravel:
     directorio = getDirectorio()
-
     ruta_archivo_antiguo=getRutaCopiaHTML(directorio,pagina_id, "")
-    ruta_archivo_nuevo=getRutaCopiaHTML(directorio,pagina_id, "_")
+    ruta_archivo_nuevo=getRutaCopiaHTML(directorio,pagina_id, "_") #Se añade el carácter '_' para no sobrescribir la copia HTML antigua
     
     #Guardamos el contenido de la página web
     with io.open(ruta_archivo_nuevo, 'w') as f:
@@ -84,14 +85,7 @@ def comprobarHTML(pagina_id):
         ruta_BD=getRutaCopiaHTML("",pagina_id, "")
 
         cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_BD,pagina_id,))
-        conexion.commit()
 
     driver.quit()
     desconexionBD(conexion,cursor)
     return True
-
-#Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
-def comprobarReferencia(href, sitio_url):
-    if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1:
-        return True
-    return False

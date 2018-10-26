@@ -80,7 +80,7 @@ def getFecha():
 
     return fecha_test
 
-#Indicar ruta para guardar el archivo. 
+#Obtener directorio ../OSAW/public 
 #Para copias html y documentos de texto con los datos de las evaluaciones
 def getDirectorio():
     #Directorio actual del archivo en ejecución
@@ -106,9 +106,9 @@ def getRutaCopiaHTML(directorio,pagina_id, nuevo):
 
 def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
 
-    ruta=directorio+"/storage/"+herramienta+".py " + str(pagina_web)+" "+ pagina_id
+    ruta=directorio+"/storage/Scraping/"+herramienta+".py " + str(pagina_web)+" "+ str(pagina_id)
 
-    return str(ruta)
+    return ruta
 
 #Método para escribir el archivo logs.txt el error encontrado
 #   Tipo 1 -> Error provocado durante la ejecución de una herramienta

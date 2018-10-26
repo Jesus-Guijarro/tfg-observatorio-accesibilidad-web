@@ -72,29 +72,27 @@ try:
     puntuacion = float(driver.find_element_by_css_selector("#webaxscore > span").text)
 
 
-    #En ocasiones los elementos  de algún nivel de conformidad no se muestran  
+    #En ocasiones los elementos  de algún nivel de conformidad no se muestran 
+    #Función para obtener los errores como las advertencias
+    def getValor(css_selector,driver):
+        try:
+            valor=int(driver.find_element_by_css_selector(css_selector).text)
+            return valor
+
+        except Exception as e:
+            return 0
+
     #Nivel A
-    try:
-        num_problemas_a= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td.txfail").text)
-        num_advertencias_a= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_A > td:nth-child(4)").text)
-    except Exception as e:
-        num_problemas_a = 0
-        num_advertencias_a = 0
+    num_problemas_a= getValor("#block > table > tbody > tr.lev_A > td.txfail",driver)
+    num_advertencias_a= getValor("#block > table > tbody > tr.lev_A > td:nth-child(4)",driver)
 
     #Nivel AA
-    try:
-        num_problemas_aa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td.txfail").text)
-        num_advertencias_aa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AA > td:nth-child(4)").text)
-    except Exception as e:
-        num_problemas_aa = 0
-        num_advertencias_aa = 0
+    num_problemas_aa= getValor("#block > table > tbody > tr.lev_AA > td.txfail",driver)
+    num_advertencias_aa= getValor("#block > table > tbody > tr.lev_AA > td:nth-child(4)",driver)
     #Nivel AAA
-    try:
-        num_problemas_aaa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td.txfail").text)
-        num_advertencias_aaa= int(driver.find_element_by_css_selector("#block > table > tbody > tr.lev_AAA > td:nth-child(4)").text)
-    except Exception as e:
-        num_problemas_aaa = 0
-        num_advertencias_aaa = 0
+    num_problemas_aaa= getValor("#block > table > tbody > tr.lev_AAA > td.txfail",driver)
+    num_advertencias_aaa= getValor("#block > table > tbody > tr.lev_AAA > td:nth-child(4)",driver)
+   
 
     #Obtenemos los datos generales del reporte
     datos=driver.find_elements_by_tag_name('h5')
@@ -107,7 +105,7 @@ try:
     reporte = open(ruta_reporte, 'a')
     reporte.write(cabeceraReporte(pagina_url,fecha_test))
     
-    #Usamos un traductor para la información que se encuentra en portugués
+    #Usamos un traductor debido a que la información del reporte está en portugués
     translator = Translator()
 
     for dato in datos:

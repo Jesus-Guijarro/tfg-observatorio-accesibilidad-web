@@ -3,15 +3,17 @@ import io, json, mysql.connector, subprocess, sys
 from selenium import webdriver
 from conexiones import *
 from comprobador import *
+from miscelaneo import *
 
-from datetime import datetime
+#Argumento sys.argv[1] -> id del sitio web
+sitio_id=sys.argv[1]
 
 #Listado con las herramientas disponibles para ser usadas
 lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
 
 #Método para llamar las herramientas
 def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
-    if herramienta_eval == True:
+    if herramienta_eval:
         
         #Primero se obtiene el directorio actual para crear el comando a ejecutar
         directorio = getDirectorio()
@@ -19,12 +21,6 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
         comando="/usr/bin/python3 "+getRutaComando(directorio,herramienta,pagina_web,pagina_id)
         print(comando)
         #subprocess.run(comando, shell=True, check=True)
-
-#Argumento sys.argv[1] -> id del sitio web
-sitio_id=sys.argv[1]
-
-#Fecha
-fecha_test=getFecha()
 
 #Conexión base de datos
 parametros = conexionBD()
@@ -51,13 +47,14 @@ for pagina in paginas:
     #Comprobar acceso a la página web
     if comprobarAccesoyTipo(pagina_url):
         #Comprobar cambios en la página web por si es necesario evaluar
-        if comprobarHTML(pagina_id):
-        #if comprobarHTML(pagina_id,pagina_url):
+        if comprobarCopiaHTML(pagina_id):
             for l in lista_herramientas:
                 ejecutarHerramienta(herramientas[l],l,pagina_url,pagina_id)
     else:
         #Añadir error en log.txt
         directorio = getDirectorio()
+        fecha_test=getFecha()
+        
         errorLog(directorio,3,fecha_test,"",pagina_id,"")
 
 desconexionBD(conexion,cursor)
