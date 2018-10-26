@@ -105,7 +105,7 @@ try:
 
     #Crear reporte
     reporte = open(ruta_reporte, 'a')
-    reporte.write('Reporte de la página web: ' + pagina_url+ '\t\t'+"Fecha: "+ fecha_test+'\n')
+    reporte.write(cabeceraReporte(pagina_url,fecha_test))
     
     #Usamos un traductor para la información que se encuentra en portugués
     translator = Translator()
@@ -122,7 +122,7 @@ try:
     
 
 except Exception as e:
-    errorLog(directorio,1,getFecha(),herramienta,pagina_id)
+    errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
 
 
 driver.quit()

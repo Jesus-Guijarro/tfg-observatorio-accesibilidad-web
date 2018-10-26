@@ -15,16 +15,20 @@ def modoHeadless():
 
     return driver
 
+def cabeceraReporte(pagina_url,fecha_test):
+    cabecera='REPORTE PÁGINA WEB: ' + pagina_url+ '\t\t'+"FECHA EVALUACIÓN: "+ fecha_test+'\n\n'
+    return cabecera
+
 #Transformar datos de problemas para guardarlos en archivos de texto
 def transformarDatos(datos):
     #No son simples saltos de linea , son lineas con espacios en blanco, tabulados, etc
     datos=datos.replace('  ','')
     datos=datos.replace('\n','')
     datos=datos.replace('        ','\n\n')
-    datos=datos.replace('Success Criteria','\n\nCriterio de conformidad:')
-    datos=datos.replace('Check','\n\n\tRevisar:')
-    datos=datos.replace('Repair','\n\n\tReparar:')
-    datos=datos.replace('Line','\n\n\t\tLínea:')
+    datos=datos.replace('Success Criteria','\n\nCRITERIO DE CONFORMIDAD:')
+    datos=datos.replace('Check','\n\n\tREVISAR:')
+    datos=datos.replace('Repair','\n\n\tREPARAR:')
+    datos=datos.replace('Line','\n\n\t\tLINEA:')
     datos=datos.replace('\t\t\t','')
 
     return datos
@@ -48,8 +52,8 @@ def datosProblema(tipo_problema,reporte,driver):
         return datos
 
     except Exception as e:
-        print(e)
         return False
+
 
 #Obtenemos la url principal de un dominio.
 # Necesario por si la web en cuestión cambia el protocolo de http a https
@@ -110,12 +114,12 @@ def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
 #   Tipo 1 -> Error provocado durante la ejecución de una herramienta
 #   Tipo 3 -> Error provocado al no poder acceder a una web
 #   Herramienta vacio en caso de ser tipo 3
-def errorLog(directorio,tipo,fecha_test,herramienta,pagina_id):
+def errorLog(directorio,tipo,fecha_test,herramienta,pagina_id,error):
 
     ruta_archivo_logs=directorio+"/storage/logs/log.txt"
 
     log = open(ruta_archivo_logs, 'a') 
     if tipo==1: 
-        log.write('[01]\tError herramienta: "' + herramienta + '"\t\tFecha: "'+ fecha_test+'"\t\tPagina web: "' + pagina_id + '"\n')
+        log.write('[01]\tERROR HERRAMIENTA: "' + herramienta + '"\t\tFECHA: "'+ fecha_test+'"\t\tPAGINA WEB: "' + pagina_id +"\t\tDESCRIPCION: "+repr(error)+ '"\n')
     else:
-        log.write('[03]\tError accesso página web: "' + pagina_id + '"\t\tFecha: "'+ fecha_test +'" \n')
+        log.write('[03]\tERROR ACCESSO PAGINA WEB: "' + pagina_id + '"\t\tFECHA: "'+ fecha_test +'" \n')

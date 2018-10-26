@@ -58,7 +58,7 @@ for pagina in paginas:
     else:
         #Añadir error en log.txt
         directorio = getDirectorio()
-        errorLog(directorio,3,fecha_test,"",pagina_id)
+        errorLog(directorio,3,fecha_test,"",pagina_id,"")
 
 desconexionBD(conexion,cursor)
 

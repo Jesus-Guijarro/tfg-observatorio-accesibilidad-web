@@ -55,6 +55,7 @@ try:
     
     #Crear reporte
     reporte = open(ruta_reporte, 'a')
+    reporte.write(cabeceraReporte(pagina_url,fecha_test))
 
     #Obtenemos la lista de principios que es la única correcta 
     lista_principios=datos_json["oaw"]["resultado"]["principios"]
@@ -62,7 +63,7 @@ try:
     #Los isinstance para comprar que el elemento es una lista
     #Los try para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón
     #Cuatro niveles: 1.Principios, 2.Pautas, 3.Criterios, 4.Ténicas
-    reporte.write('Reporte de la página web: ' + pagina_url+ '\t\t'+"Fecha: "+ fecha_test+'\n')
+    reporte.write(cabeceraReporte(pagina_url,fecha_test))
     for l in lista_principios:
         reporte.write('\nPrincipio: '+str(l["numero"])+'.'+str(l["titulo"])+'\n') 
         reporte.write('Descripcion: ' + str(l["descripcion"])+'\n\n')
@@ -171,5 +172,5 @@ try:
     
 
 except Exception as e:
-    errorLog(directorio,1,getFecha(),herramienta,pagina_id)
+    errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
 

@@ -94,7 +94,7 @@ try:
 
     #Crear reporte y cálculo de los problemas por nivel de adecuación
     reporte = open(ruta_reporte, 'a')
-    reporte.write('Reporte de la página web: ' + pagina_url+ '\t\t'+"Fecha: "+ fecha_test+'\n')
+    reporte.write(cabeceraReporte(pagina_url,fecha_test))
 
     datos=datosProblema("AC_errors",reporte,driver)
     if datos:
@@ -112,6 +112,6 @@ try:
     desconexionBD(conexion,cursor)
 
 except Exception as e:
-    errorLog(directorio,1,getFecha(),herramienta,pagina_id)
+    errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
 
 driver.quit()
