@@ -90,13 +90,14 @@ try:
     def datosProblema(frase,problema,reporte,driver):
         try:
             veces=int(driver.find_element_by_id(problema).text)
-            reporte.write(frase+'\t\t VECES ENCONTRADO: '+ veces+'\n')
-
+            reporte.write(frase+"\t\t VECES ENCONTRADO: "+ str(veces)+"\n")
+            
             return veces
 
         except Exception as e:
             return 0
         
+
     num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       TÉCNICA H37: Uso de <alt> en elementos <img>","icon_alt-on-img_rstFail", reporte,driver)
     num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 1.4.1: Uso del color ","icon_use-color_rstFail", reporte,driver)
     num_problemas_a+=datosProblema("CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función","icon_pointing-device-events_rstFail", reporte,driver)
