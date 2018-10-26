@@ -1,0 +1,2257 @@
+REPORTE PÁGINA WEB: https://docs.python.org/2/library/json.html		FECHA EVALUACIÓN: 2018-10-26
+
+PROBLEMAS CONOCIDOS
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 57: input element, type of "text", missing an associated label.  
+
+	REPARAR::> Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.      
+
+		LINEA: 705, Column 7: <input type="text" name="q" />
+
+  
+
+	REVISAR: 213: input element, type of "text", has no text in label.  
+
+	REPARAR::> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 705, Column 7: <input type="text" name="q" />
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 307: The contrast between the colour of visited link text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR::> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+
+		LINEA: 42, Column 11: <a href="../genindex.html" title="General Index" accesskey="I">index</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 45, Column 11: <a href="../py-modindex.html" title="Python Module Index" >modules</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 48, Column 11: <a href="mailcap.html" title="18.3. mailcap — Mailcap file handling" accesskey="N">ne ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 51, Column 11: <a href="email-examples.html" title="18.1.11. email: Examples" accesskey="P">previous</ ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 55, Column 13: <a href="https://www.python.org/">Python</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 59, Column 11: <a href="../index.html">Documentation</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 62, Column 43: <a href="index.html" >The Python Standard Library</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 63, Column 43: <a href="netdata.html" accesskey="U">18. Internet Data Handling</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 77, Column 4: <a class="reference external" href="http://json.org">JSON (JavaScript Object Notation)</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}    
+
+		LINEA: 79, Column 1: <a class="reference external" href="http://www.ecma-international.org/publications/standards/Ecma-40 ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}    
+
+		LINEA: 81, Column 1: <a class="reference external" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}    
+
+		LINEA: 82, Column 51: <a class="footnote-reference" href="#rfc-errata" id="id1">[1]</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}    
+
+		LINEA: 175, Column 37: <a class="reference external" href="http://yaml.org/">YAML</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}    
+
+		LINEA: 181, Column 24: <a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a>    Fixed size example: color contrast exampleReal size example (14.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body h2{		div.body h1,div.body h2,div.body h3,div.body h4,div.body h5,font-family:'Trebuchet MS', sans-serif;	background-color:#f2f2f2;	font-weight:normal;	color:#20435c;	border-bottom:1px solid #ccc;	margin:20px -20px 10px -20px;	padding:3px 0 3px 10px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 184, Column 459: <a class="headerlink" href="#json.dump" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 240, Column 446: <a class="headerlink" href="#json.dumps" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 259, Column 830: <a class="headerlink" href="#json.load" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 271, Column 36: <a class="reference external" href="http://www.jsonrpc.org">JSON-RPC</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}    
+
+		LINEA: 305, Column 829: <a class="headerlink" href="#json.loads" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 317, Column 34: <a class="headerlink" href="#encoders-and-decoders" title="Permalink to this headline">¶</a>    Fixed size example: color contrast exampleReal size example (14.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body h2{		div.body h1,div.body h2,div.body h3,div.body h4,div.body h5,font-family:'Trebuchet MS', sans-serif;	background-color:#f2f2f2;	font-weight:normal;	color:#20435c;	border-bottom:1px solid #ccc;	margin:20px -20px 10px -20px;	padding:3px 0 3px 10px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 320, Column 775: <a class="headerlink" href="#json.JSONDecoder" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 401, Column 119: <a class="headerlink" href="#json.JSONDecoder.decode" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 408, Column 119: <a class="headerlink" href="#json.JSONDecoder.raw_decode" title="Permalink to this definition">¶</a ...    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 420, Column 928: <a class="headerlink" href="#json.JSONEncoder" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 504, Column 119: <a class="headerlink" href="#json.JSONEncoder.default" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 525, Column 119: <a class="headerlink" href="#json.JSONEncoder.encode" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 536, Column 119: <a class="headerlink" href="#json.JSONEncoder.iterencode" title="Permalink to this definition">¶</a ...    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 549, Column 53: <a class="headerlink" href="#standard-compliance-and-interoperability" title="Permalink to this head ...    Fixed size example: color contrast exampleReal size example (14.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body h2{		div.body h1,div.body h2,div.body h3,div.body h4,div.body h5,font-family:'Trebuchet MS', sans-serif;	background-color:#f2f2f2;	font-weight:normal;	color:#20435c;	border-bottom:1px solid #ccc;	margin:20px -20px 10px -20px;	padding:3px 0 3px 10px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 551, Column 1: <a class="reference external" href="http://www.ecma-international.org/publications/standards/Ecma-40 ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}    
+
+		LINEA: 566, Column 34: <a class="headerlink" href="#character-encodings" title="Permalink to this headline">¶</a>    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body h3{		div.body h1,div.body h2,div.body h3,div.body h4,div.body h5,font-family:'Trebuchet MS', sans-serif;	background-color:#f2f2f2;	font-weight:normal;	color:#20435c;	border-bottom:1px solid #ccc;	margin:20px -20px 10px -20px;	padding:3px 0 3px 10px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 589, Column 45: <a class="headerlink" href="#infinite-and-nan-number-values" title="Permalink to this headline">¶</ ...    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body h3{		div.body h1,div.body h2,div.body h3,div.body h4,div.body h5,font-family:'Trebuchet MS', sans-serif;	background-color:#f2f2f2;	font-weight:normal;	color:#20435c;	border-bottom:1px solid #ccc;	margin:20px -20px 10px -20px;	padding:3px 0 3px 10px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 610, Column 46: <a class="headerlink" href="#repeated-names-within-an-object" title="Permalink to this headline">¶< ...    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body h3{		div.body h1,div.body h2,div.body h3,div.body h4,div.body h5,font-family:'Trebuchet MS', sans-serif;	background-color:#f2f2f2;	font-weight:normal;	color:#20435c;	border-bottom:1px solid #ccc;	margin:20px -20px 10px -20px;	padding:3px 0 3px 10px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 623, Column 53: <a class="headerlink" href="#top-level-non-object-non-array-values" title="Permalink to this headlin ...    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body h3{		div.body h1,div.body h2,div.body h3,div.body h4,div.body h5,font-family:'Trebuchet MS', sans-serif;	background-color:#f2f2f2;	font-weight:normal;	color:#20435c;	border-bottom:1px solid #ccc;	margin:20px -20px 10px -20px;	padding:3px 0 3px 10px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 634, Column 41: <a class="headerlink" href="#implementation-limitations" title="Permalink to this headline">¶</a>    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body h3{		div.body h1,div.body h2,div.body h3,div.body h4,div.body h5,font-family:'Trebuchet MS', sans-serif;	background-color:#f2f2f2;	font-weight:normal;	color:#20435c;	border-bottom:1px solid #ccc;	margin:20px -20px 10px -20px;	padding:3px 0 3px 10px;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 655, Column 23: <a class="fn-backref" href="#id1">[1]</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}    
+
+		LINEA: 655, Column 85: <a class="reference external" href="https://www.rfc-editor.org/errata_search.php?rfc=7159">the errat ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}    
+
+		LINEA: 671, Column 7: <a href="../contents.html">Table of Contents</a>    Fixed size example: color contrast exampleReal size example (16.8 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}		 div.sphinxsidebar h3{		font-family:'Trebuchet MS', sans-serif;	color:#ffffff;	font-size:1.4em;	font-weight:normal;	margin:0;	padding:0;	}    
+
+		LINEA: 673, Column 5: <a class="reference internal" href="#">18.2. <code class="docutils literal notranslate"><span class= ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 674, Column 5: <a class="reference internal" href="#basic-usage">18.2.1. Basic Usage</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 675, Column 5: <a class="reference internal" href="#encoders-and-decoders">18.2.2. Encoders and Decoders</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 676, Column 5: <a class="reference internal" href="#standard-compliance-and-interoperability">18.2.3. Standard Comp ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 677, Column 5: <a class="reference internal" href="#character-encodings">18.2.3.1. Character Encodings</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 678, Column 5: <a class="reference internal" href="#infinite-and-nan-number-values">18.2.3.2. Infinite and NaN Numb ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 679, Column 5: <a class="reference internal" href="#repeated-names-within-an-object">18.2.3.3. Repeated Names Withi ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 680, Column 5: <a class="reference internal" href="#top-level-non-object-non-array-values">18.2.3.4. Top-level Non- ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 681, Column 5: <a class="reference internal" href="#implementation-limitations">18.2.3.5. Implementation Limitation ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 689, Column 22: <a href="email-examples.html"title="previous chapter">18.1.11. <code class= ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 692, Column 22: <a href="mailcap.html"title="next chapter">18.3. <code class="docutils lite ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 697, Column 11: <a href="../_sources/library/json.rst.txt"rel="nofollow">Show Source</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.document{		background-color:#1c4e63;	}    
+
+		LINEA: 721, Column 11: <a href="../genindex.html" title="General Index" >index</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 724, Column 11: <a href="../py-modindex.html" title="Python Module Index" >modules</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 727, Column 11: <a href="mailcap.html" title="18.3. mailcap — Mailcap file handling" >next</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 730, Column 11: <a href="email-examples.html" title="18.1.11. email: Examples" >previous</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 734, Column 13: <a href="https://www.python.org/">Python</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 738, Column 11: <a href="../index.html">Documentation</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 741, Column 43: <a href="index.html" >The Python Standard Library</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 742, Column 43: <a href="netdata.html" >18. Internet Data Handling</a>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.related{		background-color:#133f52;	line-height:30px;	color:#ffffff;	}    
+
+		LINEA: 746, Column 12: <a href="../copyright.html">Copyright</a>    Fixed size example: color contrast exampleReal size example (9 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.footer{		color:#ffffff;	width:100%;	padding:9px 0 9px 0;	text-align:center;	font-size:75%;	}    
+
+		LINEA: 749, Column 5: <a href="https://www.python.org/psf/donations/">Please donate.</a>    Fixed size example: color contrast exampleReal size example (9 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.footer{		color:#ffffff;	width:100%;	padding:9px 0 9px 0;	text-align:center;	font-size:75%;	}    
+
+		LINEA: 752, Column 5: <a href="../bugs.html">Found a bug</a>    Fixed size example: color contrast exampleReal size example (9 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.footer{		color:#ffffff;	width:100%;	padding:9px 0 9px 0;	text-align:center;	font-size:75%;	}    
+
+		LINEA: 754, Column 19: <a href="http://sphinx.pocoo.org/">Sphinx</a>    Fixed size example: color contrast exampleReal size example (9 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a:visited{		color:#355f7c;	text-decoration:none;	}		 div.footer{		color:#ffffff;	width:100%;	padding:9px 0 9px 0;	text-align:center;	font-size:75%;	}      
+
+	REVISAR: 309: The contrast between the colour of selected link text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR::> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+
+		LINEA: 181, Column 24: <a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a>    Fixed size example: color contrast exampleReal size example (14.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 184, Column 459: <a class="headerlink" href="#json.dump" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 240, Column 446: <a class="headerlink" href="#json.dumps" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 259, Column 830: <a class="headerlink" href="#json.load" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 305, Column 829: <a class="headerlink" href="#json.loads" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 317, Column 34: <a class="headerlink" href="#encoders-and-decoders" title="Permalink to this headline">¶</a>    Fixed size example: color contrast exampleReal size example (14.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 320, Column 775: <a class="headerlink" href="#json.JSONDecoder" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 401, Column 119: <a class="headerlink" href="#json.JSONDecoder.decode" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 408, Column 119: <a class="headerlink" href="#json.JSONDecoder.raw_decode" title="Permalink to this definition">¶</a ...    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 420, Column 928: <a class="headerlink" href="#json.JSONEncoder" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 504, Column 119: <a class="headerlink" href="#json.JSONEncoder.default" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 525, Column 119: <a class="headerlink" href="#json.JSONEncoder.encode" title="Permalink to this definition">¶</a>    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 536, Column 119: <a class="headerlink" href="#json.JSONEncoder.iterencode" title="Permalink to this definition">¶</a ...    Fixed size example: color contrast exampleReal size example (9.6 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 549, Column 53: <a class="headerlink" href="#standard-compliance-and-interoperability" title="Permalink to this head ...    Fixed size example: color contrast exampleReal size example (14.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 566, Column 34: <a class="headerlink" href="#character-encodings" title="Permalink to this headline">¶</a>    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 589, Column 45: <a class="headerlink" href="#infinite-and-nan-number-values" title="Permalink to this headline">¶</ ...    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 610, Column 46: <a class="headerlink" href="#repeated-names-within-an-object" title="Permalink to this headline">¶< ...    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 623, Column 53: <a class="headerlink" href="#top-level-non-object-non-array-values" title="Permalink to this headlin ...    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}    
+
+		LINEA: 634, Column 41: <a class="headerlink" href="#implementation-limitations" title="Permalink to this headline">¶</a>    Fixed size example: color contrast exampleReal size example (11.23 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 a.headerlink:hover{		background-color:#c60f0f;	color:white;	}		 a.headerlink{		color:#c60f0f;	font-size:0.8em;	padding:0 4px 0 4px;	text-decoration:none;	}      
+
+	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR::> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+
+		LINEA: 78, Column 124: <strong>RFC 7159</strong>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 78, Column 294: <strong>RFC 4627</strong>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 83, Column 103: <code class="xref py py-mod docutils literal notranslate"><span class="pre">json</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 84, Column 165: <code class="xref py py-mod docutils literal notranslate"><span class="pre">marshal</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 84, Column 385: <code class="xref py py-mod docutils literal notranslate"><span class="pre">pickle</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 147, Column 94: <code class="xref py py-class docutils literal notranslate"><span class="pre">JSONEncoder</span></co ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 186, Column 77: <span class="xref std std-term">file-like object</span>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 186, Column 204: <span class="std std-ref">conversion table</span>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 188, Column 86: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 188, Column 249: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 188, Column 404: <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 188, Column 561: <code class="xref py py-class docutils literal notranslate"><span class="pre">long</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 189, Column 73: <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 189, Column 230: <code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 190, Column 104: <code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 193, Column 69: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 195, Column 77: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 197, Column 100: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 197, Column 284: <code class="xref py py-func docutils literal notranslate"><span class="pre">codecs.getwriter()</spa ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 201, Column 130: <code class="xref py py-exc docutils literal notranslate"><span class="pre">OverflowError</span></co ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 203, Column 106: <code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 203, Column 288: <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 223, Column 126: <code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 223, Column 333: <code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 227, Column 100: <code class="xref py py-class docutils literal notranslate"><span class="pre">JSONEncoder</span></co ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 229, Column 111: <code class="xref py py-class docutils literal notranslate"><span class="pre">JSONEncoder</span></co ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 232, Column 156: <code class="xref py py-mod docutils literal notranslate"><span class="pre">pickle</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 232, Column 408: <code class="xref py py-mod docutils literal notranslate"><span class="pre">marshal</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 233, Column 123: <code class="xref py py-func docutils literal notranslate"><span class="pre">dump()</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 241, Column 119: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 241, Column 271: <span class="std std-ref">conversiontable</span>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 243, Column 136: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 245, Column 112: <code class="xref py py-func docutils literal notranslate"><span class="pre">dump()</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 248, Column 140: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 260, Column 187: <span class="xref std std-term">file-like object</span>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 261, Column 114: <span class="std std-ref">conversiontable</span>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 267, Column 82: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 267, Column 257: <code class="xref py py-func docutils literal notranslate"><span class="pre">loads()</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 269, Column 100: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 270, Column 119: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 276, Column 70: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 278, Column 111: <code class="xref py py-func docutils literal notranslate"><span class="pre">collections.OrderedDict ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 286, Column 97: <code class="xref py py-class docutils literal notranslate"><span class="pre">decimal.Decimal</span> ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 290, Column 79: <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 298, Column 100: <code class="xref py py-class docutils literal notranslate"><span class="pre">JSONDecoder</span></co ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 299, Column 98: <code class="xref py py-class docutils literal notranslate"><span class="pre">JSONDecoder</span></co ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 306, Column 102: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 306, Column 267: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 307, Column 96: <span class="std std-ref">conversion table</span>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 308, Column 91: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 311, Column 110: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 312, Column 118: <code class="xref py py-func docutils literal notranslate"><span class="pre">load()</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 362, Column 136: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 364, Column 77: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 366, Column 119: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 369, Column 70: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 373, Column 125: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 376, Column 111: <code class="xref py py-func docutils literal notranslate"><span class="pre">collections.OrderedDict ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 384, Column 97: <code class="xref py py-class docutils literal notranslate"><span class="pre">decimal.Decimal</span> ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 388, Column 79: <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 398, Column 106: <code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 402, Column 126: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 403, Column 77: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 409, Column 118: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 409, Column 283: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 458, Column 97: <code class="xref py py-meth docutils literal notranslate"><span class="pre">default()</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 460, Column 114: <code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 461, Column 165: <code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 466, Column 69: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 467, Column 127: <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 472, Column 164: <code class="xref py py-exc docutils literal notranslate"><span class="pre">OverflowError</span></co ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 477, Column 154: <code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 497, Column 126: <code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 497, Column 333: <code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 507, Column 104: <code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 550, Column 159: <strong>RFC 7159</strong>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 553, Column 97: <code class="xref py py-class docutils literal notranslate"><span class="pre">JSONEncoder</span></co ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 553, Column 267: <code class="xref py py-class docutils literal notranslate"><span class="pre">JSONDecoder</span></co ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 580, Column 165: <code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 586, Column 69: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 624, Column 177: <strong>RFC 4627</strong>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 626, Column 78: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 627, Column 159: <strong>RFC 7159</strong>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.body{		background-color:#ffffff;	color:#000000;	padding:0 20px 30px 20px;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 648, Column 93: <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 650, Column 91: <code class="xref py py-class docutils literal notranslate"><span class="pre">decimal.Decimal</span> ...    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 a{		color:#355f7c;	text-decoration:none;	}    
+
+		LINEA: 673, Column 50: <code class="docutils literal notranslate"><span class="pre">json</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 div.sphinxsidebar a{		color:#98dbcc;	}    
+
+		LINEA: 690, Column 59: <code class="docutils literal notranslate"><span class="pre">email</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 div.sphinxsidebar a{		color:#98dbcc;	}    
+
+		LINEA: 693, Column 52: <code class="docutils literal notranslate"><span class="pre">mailcap</span></code>    Fixed size example: color contrast exampleReal size example (11.4 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 code{		background-color:#ecf0f3;	padding:0 1px 0 1px;	font-size:0.95em;	}		 div.sphinxsidebar a{		color:#98dbcc;	}    
+
+		LINEA: 745, Column 5: <div class="footer">&copy; <a href="../copyright.html">Copyright</a> 1990-2018, Python Software ...    Fixed size example: color contrast exampleReal size example (9 points): color contrast exampleCSS rules for the element: 	External CSS (https://docs.python.org/2/library/../_static/classic.css):		 div.footer{		color:#ffffff;	width:100%;	padding:9px 0 9px 0;	text-align:center;	font-size:75%;	}    3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)  
+
+	REVISAR: 48: Document language not identified.  
+
+	REPARAR::> For HTML documents add the lang attribute and a valid ISO-639-1 two letter language code to the opening HTML element. For XHTML documents add both the lang and xmllang attributes with a valid ISO-639-1 two letter language code to the opening HTML element.      
+
+		LINEA: 5, Column 1: <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="X-UA-Compatible" content= ...
+
+  
+
+	REVISAR: 49: Document has invalid language code.  
+
+	REPARAR::> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
+
+		LINEA: 5, Column 1: <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="X-UA-Compatible" content= ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR::> Add text to the label element.      
+
+		LINEA: 705, Column 7: <input type="text" name="q" />
+
+
+
+ ------------------------------------------------------ 
+
+PROBLEMAS POTENCIALES
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 84: ASCII art possibly missing a skipover link.
+
+ 
+
+		LINEA: 86, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 105, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 111, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 121, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 133, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 148, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 165, Column 64: <pre><span></span>$ echo &#39;{&quot;json&quot;:&quot;obj&quot;}&#39; | python -m json.tool{&q ...
+
+
+
+		LINEA: 510, Column 66: <pre><span></span><span class="k">def</span> <span class="nf">default</span><span class="p">(</span> ...
+
+
+
+		LINEA: 528, Column 66: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">JSONEncoder</span><span class ...
+
+
+
+		LINEA: 539, Column 66: <pre><span></span><span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> ...
+
+
+
+		LINEA: 593, Column 66: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Neither of these calls rai ...
+
+
+
+		LINEA: 615, Column 66: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">weird_json</span> <span class ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 42, Column 11: <a href="../genindex.html" title="General Index" accesskey="I">index</a>
+
+
+
+		LINEA: 45, Column 11: <a href="../py-modindex.html" title="Python Module Index" >modules</a>
+
+
+
+		LINEA: 48, Column 11: <a href="mailcap.html" title="18.3. mailcap — Mailcap file handling" accesskey="N">ne ...
+
+
+
+		LINEA: 51, Column 11: <a href="email-examples.html" title="18.1.11. email: Examples" accesskey="P">previous</ ...
+
+
+
+		LINEA: 55, Column 13: <a href="https://www.python.org/">Python</a>
+
+
+
+		LINEA: 59, Column 11: <a href="../index.html">Documentation</a>
+
+
+
+		LINEA: 62, Column 43: <a href="index.html" >The Python Standard Library</a>
+
+
+
+		LINEA: 63, Column 43: <a href="netdata.html" accesskey="U">18. Internet Data Handling</a>
+
+
+
+		LINEA: 73, Column 59: <a class="reference internal" href="#module-json" title="json: Encode and decode the JSON format.">< ...
+
+
+
+		LINEA: 73, Column 270: <a class="headerlink" href="#module-json" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 77, Column 4: <a class="reference external" href="http://json.org">JSON (JavaScript Object Notation)</a>
+
+
+
+		LINEA: 78, Column 42: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc7159.html"><strong>RFC 7159</ ...
+
+
+
+		LINEA: 78, Column 212: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc4627.html"><strong>RFC 4627</ ...
+
+
+
+		LINEA: 79, Column 1: <a class="reference external" href="http://www.ecma-international.org/publications/standards/Ecma-40 ...
+
+
+
+		LINEA: 81, Column 1: <a class="reference external" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
+
+
+
+		LINEA: 82, Column 51: <a class="footnote-reference" href="#rfc-errata" id="id1">[1]</a>
+
+
+
+		LINEA: 83, Column 4: <a class="reference internal" href="#module-json" title="json: Encode and decode the JSON format.">< ...
+
+
+
+		LINEA: 84, Column 1: <a class="reference internal" href="marshal.html#module-marshal" title="marshal: Convert Python obje ...
+
+
+
+		LINEA: 84, Column 253: <a class="reference internal" href="pickle.html#module-pickle" title="pickle: Convert Python objects ...
+
+
+
+		LINEA: 147, Column 14: <a class="reference internal" href="#json.JSONEncoder" title="json.JSONEncoder"><code class="xref py ...
+
+
+
+		LINEA: 175, Column 37: <a class="reference external" href="http://yaml.org/">YAML</a>
+
+
+
+		LINEA: 181, Column 24: <a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 184, Column 459: <a class="headerlink" href="#json.dump" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 186, Column 1: <a class="reference internal" href="../glossary.html#term-file-like-object"><span class="xref std st ...
+
+
+
+		LINEA: 186, Column 149: <a class="reference internal" href="#py-to-json-table"><span class="std std-ref">conversion table</s ...
+
+
+
+		LINEA: 188, Column 18: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 188, Column 173: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 188, Column 336: <a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class do ...
+
+
+
+		LINEA: 188, Column 491: <a class="reference internal" href="functions.html#long" title="long"><code class="xref py py-class...
+
+
+
+		LINEA: 189, Column 1: <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-clas ...
+
+
+
+		LINEA: 189, Column 160: <a class="reference internal" href="functions.html#bool" title="bool"><code class="xref py py-class...
+
+
+
+		LINEA: 190, Column 1: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 193, Column 1: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 195, Column 1: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 197, Column 24: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 197, Column 193: <a class="reference internal" href="codecs.html#codecs.getwriter" title="codecs.getwriter"><code cla ...
+
+
+
+		LINEA: 201, Column 19: <a class="reference internal" href="exceptions.html#exceptions.OverflowError" title="exceptions.Over ...
+
+
+
+		LINEA: 203, Column 1: <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueEr ...
+
+
+
+		LINEA: 203, Column 216: <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-clas ...
+
+
+
+		LINEA: 223, Column 23: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 223, Column 230: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 227, Column 20: <a class="reference internal" href="#json.JSONEncoder" title="json.JSONEncoder"><code class="xref py ...
+
+
+
+		LINEA: 229, Column 31: <a class="reference internal" href="#json.JSONEncoder" title="json.JSONEncoder"><code class="xref py ...
+
+
+
+		LINEA: 232, Column 24: <a class="reference internal" href="pickle.html#module-pickle" title="pickle: Convert Python objects ...
+
+
+
+		LINEA: 232, Column 244: <a class="reference internal" href="marshal.html#module-marshal" title="marshal: Convert Python obje ...
+
+
+
+		LINEA: 233, Column 57: <a class="reference internal" href="#json.dump" title="json.dump"><code class="xref py py-func docut ...
+
+
+
+		LINEA: 240, Column 446: <a class="headerlink" href="#json.dumps" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 241, Column 51: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 241, Column 216: <a class="reference internal" href="#py-to-json-table"><span class="std std-ref">conversiontable</s ...
+
+
+
+		LINEA: 243, Column 60: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 245, Column 46: <a class="reference internal" href="#json.dump" title="json.dump"><code class="xref py py-func docut ...
+
+
+
+		LINEA: 248, Column 72: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 259, Column 830: <a class="headerlink" href="#json.load" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 260, Column 111: <a class="reference internal" href="../glossary.html#term-file-like-object"><span class="xref std st ...
+
+
+
+		LINEA: 261, Column 59: <a class="reference internal" href="#json-to-py-table"><span class="std std-ref">conversiontable</s ...
+
+
+
+		LINEA: 267, Column 6: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 267, Column 189: <a class="reference internal" href="#json.loads" title="json.loads"><code class="xref py py-func doc ...
+
+
+
+		LINEA: 269, Column 31: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 270, Column 50: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 271, Column 36: <a class="reference external" href="http://www.jsonrpc.org">JSON-RPC</a>
+
+
+
+		LINEA: 276, Column 1: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 278, Column 1: <a class="reference internal" href="collections.html#collections.OrderedDict" title="collections.Ord ...
+
+
+
+		LINEA: 286, Column 7: <a class="reference internal" href="decimal.html#decimal.Decimal" title="decimal.Decimal"><code clas ...
+
+
+
+		LINEA: 290, Column 7: <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-clas ...
+
+
+
+		LINEA: 298, Column 20: <a class="reference internal" href="#json.JSONDecoder" title="json.JSONDecoder"><code class="xref py ...
+
+
+
+		LINEA: 299, Column 18: <a class="reference internal" href="#json.JSONDecoder" title="json.JSONDecoder"><code class="xref py ...
+
+
+
+		LINEA: 305, Column 829: <a class="headerlink" href="#json.loads" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 306, Column 34: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 306, Column 191: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 307, Column 41: <a class="reference internal" href="#json-to-py-table"><span class="std std-ref">conversion table</s ...
+
+
+
+		LINEA: 308, Column 23: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 311, Column 34: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 312, Column 52: <a class="reference internal" href="#json.load" title="json.load"><code class="xref py py-func docut ...
+
+
+
+		LINEA: 317, Column 34: <a class="headerlink" href="#encoders-and-decoders" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 320, Column 775: <a class="headerlink" href="#json.JSONDecoder" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 362, Column 68: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 364, Column 1: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 366, Column 43: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 369, Column 1: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 373, Column 56: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 376, Column 1: <a class="reference internal" href="collections.html#collections.OrderedDict" title="collections.Ord ...
+
+
+
+		LINEA: 384, Column 7: <a class="reference internal" href="decimal.html#decimal.Decimal" title="decimal.Decimal"><code clas ...
+
+
+
+		LINEA: 388, Column 7: <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-clas ...
+
+
+
+		LINEA: 398, Column 1: <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueEr ...
+
+
+
+		LINEA: 401, Column 119: <a class="headerlink" href="#json.JSONDecoder.decode" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 402, Column 58: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 403, Column 1: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 408, Column 119: <a class="headerlink" href="#json.JSONDecoder.raw_decode" title="Permalink to this definition">¶</a ...
+
+
+
+		LINEA: 409, Column 50: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 409, Column 207: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 420, Column 928: <a class="headerlink" href="#json.JSONEncoder" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 458, Column 1: <a class="reference internal" href="#json.JSONEncoder.default" title="json.JSONEncoder.default"><cod ...
+
+
+
+		LINEA: 460, Column 11: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 461, Column 62: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 466, Column 1: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 467, Column 51: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 472, Column 53: <a class="reference internal" href="exceptions.html#exceptions.OverflowError" title="exceptions.Over ...
+
+
+
+		LINEA: 477, Column 49: <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueEr ...
+
+
+
+		LINEA: 497, Column 23: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 497, Column 230: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 504, Column 119: <a class="headerlink" href="#json.JSONEncoder.default" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 507, Column 1: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 525, Column 119: <a class="headerlink" href="#json.JSONEncoder.encode" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 536, Column 119: <a class="headerlink" href="#json.JSONEncoder.iterencode" title="Permalink to this definition">¶</a ...
+
+
+
+		LINEA: 549, Column 53: <a class="headerlink" href="#standard-compliance-and-interoperability" title="Permalink to this head ...
+
+
+
+		LINEA: 550, Column 77: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc7159.html"><strong>RFC 7159</ ...
+
+
+
+		LINEA: 551, Column 1: <a class="reference external" href="http://www.ecma-international.org/publications/standards/Ecma-40 ...
+
+
+
+		LINEA: 553, Column 17: <a class="reference internal" href="#json.JSONEncoder" title="json.JSONEncoder"><code class="xref py ...
+
+
+
+		LINEA: 553, Column 187: <a class="reference internal" href="#json.JSONDecoder" title="json.JSONDecoder"><code class="xref py ...
+
+
+
+		LINEA: 566, Column 34: <a class="headerlink" href="#character-encodings" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 580, Column 60: <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueEr ...
+
+
+
+		LINEA: 586, Column 1: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 589, Column 45: <a class="headerlink" href="#infinite-and-nan-number-values" title="Permalink to this headline">¶</ ...
+
+
+
+		LINEA: 610, Column 46: <a class="headerlink" href="#repeated-names-within-an-object" title="Permalink to this headline">¶< ...
+
+
+
+		LINEA: 623, Column 53: <a class="headerlink" href="#top-level-non-object-non-array-values" title="Permalink to this headlin ...
+
+
+
+		LINEA: 624, Column 95: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc4627.html"><strong>RFC 4627</ ...
+
+
+
+		LINEA: 626, Column 9: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 627, Column 77: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc7159.html"><strong>RFC 7159</ ...
+
+
+
+		LINEA: 634, Column 41: <a class="headerlink" href="#implementation-limitations" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 648, Column 25: <a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class do ...
+
+
+
+		LINEA: 650, Column 1: <a class="reference internal" href="decimal.html#decimal.Decimal" title="decimal.Decimal"><code clas ...
+
+
+
+		LINEA: 655, Column 23: <a class="fn-backref" href="#id1">[1]</a>
+
+
+
+		LINEA: 655, Column 85: <a class="reference external" href="https://www.rfc-editor.org/errata_search.php?rfc=7159">the errat ...
+
+
+
+		LINEA: 671, Column 7: <a href="../contents.html">Table of Contents</a>
+
+
+
+		LINEA: 673, Column 5: <a class="reference internal" href="#">18.2. <code class="docutils literal notranslate"><span class= ...
+
+
+
+		LINEA: 674, Column 5: <a class="reference internal" href="#basic-usage">18.2.1. Basic Usage</a>
+
+
+
+		LINEA: 675, Column 5: <a class="reference internal" href="#encoders-and-decoders">18.2.2. Encoders and Decoders</a>
+
+
+
+		LINEA: 676, Column 5: <a class="reference internal" href="#standard-compliance-and-interoperability">18.2.3. Standard Comp ...
+
+
+
+		LINEA: 677, Column 5: <a class="reference internal" href="#character-encodings">18.2.3.1. Character Encodings</a>
+
+
+
+		LINEA: 678, Column 5: <a class="reference internal" href="#infinite-and-nan-number-values">18.2.3.2. Infinite and NaN Numb ...
+
+
+
+		LINEA: 679, Column 5: <a class="reference internal" href="#repeated-names-within-an-object">18.2.3.3. Repeated Names Withi ...
+
+
+
+		LINEA: 680, Column 5: <a class="reference internal" href="#top-level-non-object-non-array-values">18.2.3.4. Top-level Non- ...
+
+
+
+		LINEA: 681, Column 5: <a class="reference internal" href="#implementation-limitations">18.2.3.5. Implementation Limitation ...
+
+
+
+		LINEA: 689, Column 22: <a href="email-examples.html"title="previous chapter">18.1.11. <code class= ...
+
+
+
+		LINEA: 692, Column 22: <a href="mailcap.html"title="next chapter">18.3. <code class="docutils lite ...
+
+
+
+		LINEA: 697, Column 11: <a href="../_sources/library/json.rst.txt"rel="nofollow">Show Source</a>
+
+
+
+		LINEA: 721, Column 11: <a href="../genindex.html" title="General Index" >index</a>
+
+
+
+		LINEA: 724, Column 11: <a href="../py-modindex.html" title="Python Module Index" >modules</a>
+
+
+
+		LINEA: 727, Column 11: <a href="mailcap.html" title="18.3. mailcap — Mailcap file handling" >next</a>
+
+
+
+		LINEA: 730, Column 11: <a href="email-examples.html" title="18.1.11. email: Examples" >previous</a>
+
+
+
+		LINEA: 734, Column 13: <a href="https://www.python.org/">Python</a>
+
+
+
+		LINEA: 738, Column 11: <a href="../index.html">Documentation</a>
+
+
+
+		LINEA: 741, Column 43: <a href="index.html" >The Python Standard Library</a>
+
+
+
+		LINEA: 742, Column 43: <a href="netdata.html" >18. Internet Data Handling</a>
+
+
+
+		LINEA: 746, Column 12: <a href="../copyright.html">Copyright</a>
+
+
+
+		LINEA: 749, Column 5: <a href="https://www.python.org/psf/donations/">Please donate.</a>
+
+
+
+		LINEA: 752, Column 5: <a href="../bugs.html">Found a bug</a>
+
+
+
+		LINEA: 754, Column 19: <a href="http://sphinx.pocoo.org/">Sphinx</a>
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 53, Column 13: <img src="../_static/py.png" alt="" style="vertical-align: middle; margin-top: -1px ...
+
+
+
+		LINEA: 732, Column 13: <img src="../_static/py.png" alt="" style="vertical-align: middle; margin-top: -1px ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 705, Column 7: <input type="text" name="q" />
+
+  
+
+	REVISAR: 154: pre element may be misused to create tabular layout.
+
+ 
+
+		LINEA: 86, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 105, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 111, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 121, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 133, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 148, Column 67: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="n ...
+
+
+
+		LINEA: 165, Column 64: <pre><span></span>$ echo &#39;{&quot;json&quot;:&quot;obj&quot;}&#39; | python -m json.tool{&q ...
+
+
+
+		LINEA: 510, Column 66: <pre><span></span><span class="k">def</span> <span class="nf">default</span><span class="p">(</span> ...
+
+
+
+		LINEA: 528, Column 66: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">JSONEncoder</span><span class ...
+
+
+
+		LINEA: 539, Column 66: <pre><span></span><span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> ...
+
+
+
+		LINEA: 593, Column 66: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Neither of these calls rai ...
+
+
+
+		LINEA: 615, Column 66: <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">weird_json</span> <span class ...
+
+  
+
+	REVISAR: 111: Table may require a summary.
+
+ 
+
+		LINEA: 323, Column 1: <table border="1" class="docutils" id="json-to-py-table"><colgroup><col width="44%" /><col width= ...
+
+
+
+		LINEA: 423, Column 1: <table border="1" class="docutils" id="py-to-json-table"><colgroup><col width="56%" /><col width= ...
+
+  
+
+	REVISAR: 136: Data table may require th elements.
+
+ 
+
+		LINEA: 652, Column 1: <table class="docutils footnote" frame="void" id="rfc-errata" rules="none"><colgroup><col class="la ...
+
+  
+
+	REVISAR: 137: Layout table may be misusing th elements.
+
+ 
+
+		LINEA: 323, Column 1: <table border="1" class="docutils" id="json-to-py-table"><colgroup><col width="44%" /><col width= ...
+
+
+
+		LINEA: 423, Column 1: <table border="1" class="docutils" id="py-to-json-table"><colgroup><col width="56%" /><col width= ...
+
+  
+
+	REVISAR: 151: Data table may require a caption.
+
+ 
+
+		LINEA: 323, Column 1: <table border="1" class="docutils" id="json-to-py-table"><colgroup><col width="44%" /><col width= ...
+
+
+
+		LINEA: 423, Column 1: <table border="1" class="docutils" id="py-to-json-table"><colgroup><col width="56%" /><col width= ...
+
+  
+
+	REVISAR: 230: Table may require thead, tfoot and tbody elements to group repeated table row structures.
+
+ 
+
+		LINEA: 323, Column 1: <table border="1" class="docutils" id="json-to-py-table"><colgroup><col width="44%" /><col width= ...
+
+
+
+		LINEA: 423, Column 1: <table border="1" class="docutils" id="py-to-json-table"><colgroup><col width="56%" /><col width= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+  
+
+	REVISAR: 133: Layout table may not linearize.
+
+ 
+
+		LINEA: 652, Column 1: <table class="docutils footnote" frame="void" id="rfc-errata" rules="none"><colgroup><col class="la ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 53, Column 13: <img src="../_static/py.png" alt="" style="vertical-align: middle; margin-top: -1px ...
+
+
+
+		LINEA: 732, Column 13: <img src="../_static/py.png" alt="" style="vertical-align: middle; margin-top: -1px ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 705, Column 7: <input type="text" name="q" />
+
+
+
+		LINEA: 706, Column 7: <input type="submit" value="Go" />
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 13, Column 5: <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/docume ...
+
+
+
+		LINEA: 14, Column 5: <script type="text/javascript" src="../_static/jquery.js"></script>
+
+
+
+		LINEA: 15, Column 5: <script type="text/javascript" src="../_static/underscore.js"></script>
+
+
+
+		LINEA: 16, Column 5: <script type="text/javascript" src="../_static/doctools.js"></script>
+
+
+
+		LINEA: 17, Column 5: <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7 ...
+
+
+
+		LINEA: 19, Column 5: <script type="text/javascript" src="../_static/sidebar.js"></script>
+
+
+
+		LINEA: 32, Column 5: <script type="text/javascript" src="../_static/copybutton.js"></script>
+
+
+
+		LINEA: 33, Column 5: <script type="text/javascript" src="../_static/switchers.js"></script>
+
+
+
+		LINEA: 712, Column 1: <script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 53, Column 13: <img src="../_static/py.png" alt="" style="vertical-align: middle; margin-top: -1px ...
+
+
+
+		LINEA: 732, Column 13: <img src="../_static/py.png" alt="" style="vertical-align: middle; margin-top: -1px ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 13, Column 5: <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/docume ...
+
+
+
+		LINEA: 14, Column 5: <script type="text/javascript" src="../_static/jquery.js"></script>
+
+
+
+		LINEA: 15, Column 5: <script type="text/javascript" src="../_static/underscore.js"></script>
+
+
+
+		LINEA: 16, Column 5: <script type="text/javascript" src="../_static/doctools.js"></script>
+
+
+
+		LINEA: 17, Column 5: <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7 ...
+
+
+
+		LINEA: 19, Column 5: <script type="text/javascript" src="../_static/sidebar.js"></script>
+
+
+
+		LINEA: 32, Column 5: <script type="text/javascript" src="../_static/copybutton.js"></script>
+
+
+
+		LINEA: 33, Column 5: <script type="text/javascript" src="../_static/switchers.js"></script>
+
+
+
+		LINEA: 712, Column 1: <script type="text/javascript">$('#searchbox').show(0);</script>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 13, Column 5: <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/docume ...
+
+
+
+		LINEA: 14, Column 5: <script type="text/javascript" src="../_static/jquery.js"></script>
+
+
+
+		LINEA: 15, Column 5: <script type="text/javascript" src="../_static/underscore.js"></script>
+
+
+
+		LINEA: 16, Column 5: <script type="text/javascript" src="../_static/doctools.js"></script>
+
+
+
+		LINEA: 17, Column 5: <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7 ...
+
+
+
+		LINEA: 19, Column 5: <script type="text/javascript" src="../_static/sidebar.js"></script>
+
+
+
+		LINEA: 32, Column 5: <script type="text/javascript" src="../_static/copybutton.js"></script>
+
+
+
+		LINEA: 33, Column 5: <script type="text/javascript" src="../_static/switchers.js"></script>
+
+
+
+		LINEA: 712, Column 1: <script type="text/javascript">$('#searchbox').show(0);</script>
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 9, Column 5: <title>18.2. json — JSON encoder and decoder &#8212; Python 2.7.15 documentation</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 42, Column 11: <a href="../genindex.html" title="General Index" accesskey="I">index</a>
+
+
+
+		LINEA: 45, Column 11: <a href="../py-modindex.html" title="Python Module Index" >modules</a>
+
+
+
+		LINEA: 48, Column 11: <a href="mailcap.html" title="18.3. mailcap — Mailcap file handling" accesskey="N">ne ...
+
+
+
+		LINEA: 51, Column 11: <a href="email-examples.html" title="18.1.11. email: Examples" accesskey="P">previous</ ...
+
+
+
+		LINEA: 55, Column 13: <a href="https://www.python.org/">Python</a>
+
+
+
+		LINEA: 59, Column 11: <a href="../index.html">Documentation</a>
+
+
+
+		LINEA: 62, Column 43: <a href="index.html" >The Python Standard Library</a>
+
+
+
+		LINEA: 63, Column 43: <a href="netdata.html" accesskey="U">18. Internet Data Handling</a>
+
+
+
+		LINEA: 73, Column 59: <a class="reference internal" href="#module-json" title="json: Encode and decode the JSON format.">< ...
+
+
+
+		LINEA: 73, Column 270: <a class="headerlink" href="#module-json" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 77, Column 4: <a class="reference external" href="http://json.org">JSON (JavaScript Object Notation)</a>
+
+
+
+		LINEA: 78, Column 42: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc7159.html"><strong>RFC 7159</ ...
+
+
+
+		LINEA: 78, Column 212: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc4627.html"><strong>RFC 4627</ ...
+
+
+
+		LINEA: 79, Column 1: <a class="reference external" href="http://www.ecma-international.org/publications/standards/Ecma-40 ...
+
+
+
+		LINEA: 81, Column 1: <a class="reference external" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
+
+
+
+		LINEA: 82, Column 51: <a class="footnote-reference" href="#rfc-errata" id="id1">[1]</a>
+
+
+
+		LINEA: 83, Column 4: <a class="reference internal" href="#module-json" title="json: Encode and decode the JSON format.">< ...
+
+
+
+		LINEA: 84, Column 1: <a class="reference internal" href="marshal.html#module-marshal" title="marshal: Convert Python obje ...
+
+
+
+		LINEA: 84, Column 253: <a class="reference internal" href="pickle.html#module-pickle" title="pickle: Convert Python objects ...
+
+
+
+		LINEA: 147, Column 14: <a class="reference internal" href="#json.JSONEncoder" title="json.JSONEncoder"><code class="xref py ...
+
+
+
+		LINEA: 175, Column 37: <a class="reference external" href="http://yaml.org/">YAML</a>
+
+
+
+		LINEA: 181, Column 24: <a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 184, Column 459: <a class="headerlink" href="#json.dump" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 186, Column 1: <a class="reference internal" href="../glossary.html#term-file-like-object"><span class="xref std st ...
+
+
+
+		LINEA: 186, Column 149: <a class="reference internal" href="#py-to-json-table"><span class="std std-ref">conversion table</s ...
+
+
+
+		LINEA: 188, Column 18: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 188, Column 173: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 188, Column 336: <a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class do ...
+
+
+
+		LINEA: 188, Column 491: <a class="reference internal" href="functions.html#long" title="long"><code class="xref py py-class...
+
+
+
+		LINEA: 189, Column 1: <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-clas ...
+
+
+
+		LINEA: 189, Column 160: <a class="reference internal" href="functions.html#bool" title="bool"><code class="xref py py-class...
+
+
+
+		LINEA: 190, Column 1: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 193, Column 1: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 195, Column 1: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 197, Column 24: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 197, Column 193: <a class="reference internal" href="codecs.html#codecs.getwriter" title="codecs.getwriter"><code cla ...
+
+
+
+		LINEA: 201, Column 19: <a class="reference internal" href="exceptions.html#exceptions.OverflowError" title="exceptions.Over ...
+
+
+
+		LINEA: 203, Column 1: <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueEr ...
+
+
+
+		LINEA: 203, Column 216: <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-clas ...
+
+
+
+		LINEA: 223, Column 23: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 223, Column 230: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 227, Column 20: <a class="reference internal" href="#json.JSONEncoder" title="json.JSONEncoder"><code class="xref py ...
+
+
+
+		LINEA: 229, Column 31: <a class="reference internal" href="#json.JSONEncoder" title="json.JSONEncoder"><code class="xref py ...
+
+
+
+		LINEA: 232, Column 24: <a class="reference internal" href="pickle.html#module-pickle" title="pickle: Convert Python objects ...
+
+
+
+		LINEA: 232, Column 244: <a class="reference internal" href="marshal.html#module-marshal" title="marshal: Convert Python obje ...
+
+
+
+		LINEA: 233, Column 57: <a class="reference internal" href="#json.dump" title="json.dump"><code class="xref py py-func docut ...
+
+
+
+		LINEA: 240, Column 446: <a class="headerlink" href="#json.dumps" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 241, Column 51: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 241, Column 216: <a class="reference internal" href="#py-to-json-table"><span class="std std-ref">conversiontable</s ...
+
+
+
+		LINEA: 243, Column 60: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 245, Column 46: <a class="reference internal" href="#json.dump" title="json.dump"><code class="xref py py-func docut ...
+
+
+
+		LINEA: 248, Column 72: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 259, Column 830: <a class="headerlink" href="#json.load" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 260, Column 111: <a class="reference internal" href="../glossary.html#term-file-like-object"><span class="xref std st ...
+
+
+
+		LINEA: 261, Column 59: <a class="reference internal" href="#json-to-py-table"><span class="std std-ref">conversiontable</s ...
+
+
+
+		LINEA: 267, Column 6: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 267, Column 189: <a class="reference internal" href="#json.loads" title="json.loads"><code class="xref py py-func doc ...
+
+
+
+		LINEA: 269, Column 31: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 270, Column 50: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 271, Column 36: <a class="reference external" href="http://www.jsonrpc.org">JSON-RPC</a>
+
+
+
+		LINEA: 276, Column 1: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 278, Column 1: <a class="reference internal" href="collections.html#collections.OrderedDict" title="collections.Ord ...
+
+
+
+		LINEA: 286, Column 7: <a class="reference internal" href="decimal.html#decimal.Decimal" title="decimal.Decimal"><code clas ...
+
+
+
+		LINEA: 290, Column 7: <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-clas ...
+
+
+
+		LINEA: 298, Column 20: <a class="reference internal" href="#json.JSONDecoder" title="json.JSONDecoder"><code class="xref py ...
+
+
+
+		LINEA: 299, Column 18: <a class="reference internal" href="#json.JSONDecoder" title="json.JSONDecoder"><code class="xref py ...
+
+
+
+		LINEA: 305, Column 829: <a class="headerlink" href="#json.loads" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 306, Column 34: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 306, Column 191: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 307, Column 41: <a class="reference internal" href="#json-to-py-table"><span class="std std-ref">conversion table</s ...
+
+
+
+		LINEA: 308, Column 23: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 311, Column 34: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 312, Column 52: <a class="reference internal" href="#json.load" title="json.load"><code class="xref py py-func docut ...
+
+
+
+		LINEA: 317, Column 34: <a class="headerlink" href="#encoders-and-decoders" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 320, Column 775: <a class="headerlink" href="#json.JSONDecoder" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 362, Column 68: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 364, Column 1: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 366, Column 43: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 369, Column 1: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 373, Column 56: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 376, Column 1: <a class="reference internal" href="collections.html#collections.OrderedDict" title="collections.Ord ...
+
+
+
+		LINEA: 384, Column 7: <a class="reference internal" href="decimal.html#decimal.Decimal" title="decimal.Decimal"><code clas ...
+
+
+
+		LINEA: 388, Column 7: <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-clas ...
+
+
+
+		LINEA: 398, Column 1: <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueEr ...
+
+
+
+		LINEA: 401, Column 119: <a class="headerlink" href="#json.JSONDecoder.decode" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 402, Column 58: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 403, Column 1: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 408, Column 119: <a class="headerlink" href="#json.JSONDecoder.raw_decode" title="Permalink to this definition">¶</a ...
+
+
+
+		LINEA: 409, Column 50: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 409, Column 207: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 420, Column 928: <a class="headerlink" href="#json.JSONEncoder" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 458, Column 1: <a class="reference internal" href="#json.JSONEncoder.default" title="json.JSONEncoder.default"><cod ...
+
+
+
+		LINEA: 460, Column 11: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 461, Column 62: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 466, Column 1: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 467, Column 51: <a class="reference internal" href="functions.html#unicode" title="unicode"><code class="xref py py- ...
+
+
+
+		LINEA: 472, Column 53: <a class="reference internal" href="exceptions.html#exceptions.OverflowError" title="exceptions.Over ...
+
+
+
+		LINEA: 477, Column 49: <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueEr ...
+
+
+
+		LINEA: 497, Column 23: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 497, Column 230: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 504, Column 119: <a class="headerlink" href="#json.JSONEncoder.default" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 507, Column 1: <a class="reference internal" href="exceptions.html#exceptions.TypeError" title="exceptions.TypeErro ...
+
+
+
+		LINEA: 525, Column 119: <a class="headerlink" href="#json.JSONEncoder.encode" title="Permalink to this definition">¶</a>
+
+
+
+		LINEA: 536, Column 119: <a class="headerlink" href="#json.JSONEncoder.iterencode" title="Permalink to this definition">¶</a ...
+
+
+
+		LINEA: 549, Column 53: <a class="headerlink" href="#standard-compliance-and-interoperability" title="Permalink to this head ...
+
+
+
+		LINEA: 550, Column 77: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc7159.html"><strong>RFC 7159</ ...
+
+
+
+		LINEA: 551, Column 1: <a class="reference external" href="http://www.ecma-international.org/publications/standards/Ecma-40 ...
+
+
+
+		LINEA: 553, Column 17: <a class="reference internal" href="#json.JSONEncoder" title="json.JSONEncoder"><code class="xref py ...
+
+
+
+		LINEA: 553, Column 187: <a class="reference internal" href="#json.JSONDecoder" title="json.JSONDecoder"><code class="xref py ...
+
+
+
+		LINEA: 566, Column 34: <a class="headerlink" href="#character-encodings" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 580, Column 60: <a class="reference internal" href="exceptions.html#exceptions.ValueError" title="exceptions.ValueEr ...
+
+
+
+		LINEA: 586, Column 1: <a class="reference internal" href="functions.html#str" title="str"><code class="xref py py-class do ...
+
+
+
+		LINEA: 589, Column 45: <a class="headerlink" href="#infinite-and-nan-number-values" title="Permalink to this headline">¶</ ...
+
+
+
+		LINEA: 610, Column 46: <a class="headerlink" href="#repeated-names-within-an-object" title="Permalink to this headline">¶< ...
+
+
+
+		LINEA: 623, Column 53: <a class="headerlink" href="#top-level-non-object-non-array-values" title="Permalink to this headlin ...
+
+
+
+		LINEA: 624, Column 95: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc4627.html"><strong>RFC 4627</ ...
+
+
+
+		LINEA: 626, Column 9: <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class d ...
+
+
+
+		LINEA: 627, Column 77: <a class="rfc reference external" href="https://tools.ietf.org/html/rfc7159.html"><strong>RFC 7159</ ...
+
+
+
+		LINEA: 634, Column 41: <a class="headerlink" href="#implementation-limitations" title="Permalink to this headline">¶</a>
+
+
+
+		LINEA: 648, Column 25: <a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class do ...
+
+
+
+		LINEA: 650, Column 1: <a class="reference internal" href="decimal.html#decimal.Decimal" title="decimal.Decimal"><code clas ...
+
+
+
+		LINEA: 655, Column 23: <a class="fn-backref" href="#id1">[1]</a>
+
+
+
+		LINEA: 655, Column 85: <a class="reference external" href="https://www.rfc-editor.org/errata_search.php?rfc=7159">the errat ...
+
+
+
+		LINEA: 671, Column 7: <a href="../contents.html">Table of Contents</a>
+
+
+
+		LINEA: 673, Column 5: <a class="reference internal" href="#">18.2. <code class="docutils literal notranslate"><span class= ...
+
+
+
+		LINEA: 674, Column 5: <a class="reference internal" href="#basic-usage">18.2.1. Basic Usage</a>
+
+
+
+		LINEA: 675, Column 5: <a class="reference internal" href="#encoders-and-decoders">18.2.2. Encoders and Decoders</a>
+
+
+
+		LINEA: 676, Column 5: <a class="reference internal" href="#standard-compliance-and-interoperability">18.2.3. Standard Comp ...
+
+
+
+		LINEA: 677, Column 5: <a class="reference internal" href="#character-encodings">18.2.3.1. Character Encodings</a>
+
+
+
+		LINEA: 678, Column 5: <a class="reference internal" href="#infinite-and-nan-number-values">18.2.3.2. Infinite and NaN Numb ...
+
+
+
+		LINEA: 679, Column 5: <a class="reference internal" href="#repeated-names-within-an-object">18.2.3.3. Repeated Names Withi ...
+
+
+
+		LINEA: 680, Column 5: <a class="reference internal" href="#top-level-non-object-non-array-values">18.2.3.4. Top-level Non- ...
+
+
+
+		LINEA: 681, Column 5: <a class="reference internal" href="#implementation-limitations">18.2.3.5. Implementation Limitation ...
+
+
+
+		LINEA: 689, Column 22: <a href="email-examples.html"title="previous chapter">18.1.11. <code class= ...
+
+
+
+		LINEA: 692, Column 22: <a href="mailcap.html"title="next chapter">18.3. <code class="docutils lite ...
+
+
+
+		LINEA: 697, Column 11: <a href="../_sources/library/json.rst.txt"rel="nofollow">Show Source</a>
+
+
+
+		LINEA: 721, Column 11: <a href="../genindex.html" title="General Index" >index</a>
+
+
+
+		LINEA: 724, Column 11: <a href="../py-modindex.html" title="Python Module Index" >modules</a>
+
+
+
+		LINEA: 727, Column 11: <a href="mailcap.html" title="18.3. mailcap — Mailcap file handling" >next</a>
+
+
+
+		LINEA: 730, Column 11: <a href="email-examples.html" title="18.1.11. email: Examples" >previous</a>
+
+
+
+		LINEA: 734, Column 13: <a href="https://www.python.org/">Python</a>
+
+
+
+		LINEA: 738, Column 11: <a href="../index.html">Documentation</a>
+
+
+
+		LINEA: 741, Column 43: <a href="index.html" >The Python Standard Library</a>
+
+
+
+		LINEA: 742, Column 43: <a href="netdata.html" >18. Internet Data Handling</a>
+
+
+
+		LINEA: 746, Column 12: <a href="../copyright.html">Copyright</a>
+
+
+
+		LINEA: 749, Column 5: <a href="https://www.python.org/psf/donations/">Please donate.</a>
+
+
+
+		LINEA: 752, Column 5: <a href="../bugs.html">Found a bug</a>
+
+
+
+		LINEA: 754, Column 19: <a href="http://sphinx.pocoo.org/">Sphinx</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 73, Column 49: <h1>18.2. <a class="reference internal" href="#module-json" title="json: Encode and decode the JSON...
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 181, Column 1: <h2>18.2.1. Basic Usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline"> ...
+
+
+
+		LINEA: 317, Column 1: <h2>18.2.2. Encoders and Decoders<a class="headerlink" href="#encoders-and-decoders" title="Permalin ...
+
+
+
+		LINEA: 549, Column 1: <h2>18.2.3. Standard Compliance and Interoperability<a class="headerlink" href="#standard-compliance ...
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 39, Column 7: <h3>Navigation</h3>
+
+
+
+		LINEA: 566, Column 1: <h3>18.2.3.1. Character Encodings<a class="headerlink" href="#character-encodings" title="Permalink...
+
+
+
+		LINEA: 589, Column 1: <h3>18.2.3.2. Infinite and NaN Number Values<a class="headerlink" href="#infinite-and-nan-number-val ...
+
+
+
+		LINEA: 610, Column 1: <h3>18.2.3.3. Repeated Names Within an Object<a class="headerlink" href="#repeated-names-within-an-o ...
+
+
+
+		LINEA: 623, Column 1: <h3>18.2.3.4. Top-level Non-Object, Non-Array Values<a class="headerlink" href="#top-level-non-objec ...
+
+
+
+		LINEA: 634, Column 1: <h3>18.2.3.5. Implementation Limitations<a class="headerlink" href="#implementation-limitations" tit ...
+
+
+
+		LINEA: 671, Column 3: <h3><a href="../contents.html">Table of Contents</a></h3>
+
+
+
+		LINEA: 695, Column 5: <h3>This Page</h3>
+
+
+
+		LINEA: 702, Column 3: <h3>Quick search</h3>
+
+
+
+		LINEA: 718, Column 7: <h3>Navigation</h3>
+
+  
+
+	REVISAR: 45: h4 may be used for formatting.
+
+ 
+
+		LINEA: 688, Column 3: <h4>Previous topic</h4>
+
+
+
+		LINEA: 691, Column 3: <h4>Next topic</h4>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 704, Column 5: <form class="search" action="../search.html" method="get"><input type="text" name="q" /> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 37, Column 10: <body><div class="related" role="navigation" aria-label="related navigation"><h3>Navig ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 704, Column 5: <form class="search" action="../search.html" method="get"><input type="text" name="q" /> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 704, Column 5: <form class="search" action="../search.html" method="get"><input type="text" name="q" /> ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 706, Column 7: <input type="submit" value="Go" />
+
+
+
+		LINEA: 707, Column 7: <input type="hidden" name="check_keywords" value="yes" />
+
+
+
+		LINEA: 708, Column 7: <input type="hidden" name="area" value="default" />
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 704, Column 5: <form class="search" action="../search.html" method="get"><input type="text" name="q" /> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 704, Column 5: <form class="search" action="../search.html" method="get"><input type="text" name="q" /> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 704, Column 5: <form class="search" action="../search.html" method="get"><input type="text" name="q" /> ...
+
+
