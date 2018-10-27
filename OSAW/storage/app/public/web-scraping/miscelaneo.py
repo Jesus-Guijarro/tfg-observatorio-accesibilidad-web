@@ -85,7 +85,7 @@ def getFecha():
 def getDirectorio():
     #Directorio actual del archivo en ejecución
     directorio = os.path.dirname(os.path.abspath(__file__))
-    directorio=directorio.replace("/Scraping","")
+    directorio=directorio.replace("/web-scraping","")
     directorio=directorio.replace("/storage/app","")
 
     return directorio
@@ -106,7 +106,7 @@ def getRutaCopiaHTML(directorio,pagina_id, nuevo):
 
 def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
 
-    ruta=directorio+"/storage/Scraping/"+herramienta+".py " + str(pagina_web)+" "+ str(pagina_id)
+    ruta=directorio+"/storage/web-scraping/"+herramienta+".py " + str(pagina_web)+" "+ str(pagina_id)
 
     return ruta
 

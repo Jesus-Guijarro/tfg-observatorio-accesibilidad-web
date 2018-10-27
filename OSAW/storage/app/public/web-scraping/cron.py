@@ -29,7 +29,7 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
 
     #Rutas
     directorio = getDirectorio()
-    ruta_evaluacion=directorio+"/storage/Scraping/evaluacion.py " + sitio_id
+    ruta_evaluacion=directorio+"/storage/web-scraping/evaluacion.py " + sitio_id
 
     #Comando y comentario asignado a la tarea
     comando="/usr/bin/python3 "+ ruta_evaluacion

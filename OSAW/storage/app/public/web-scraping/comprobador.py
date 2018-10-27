@@ -48,7 +48,7 @@ def comprobarCopiaHTML(pagina_id):
     #Accedemos a la página web
     driver.get(URL)
 
-    #Rutas para guardar el archivo desde la carpeta Scraping en la del proyecto Laravel:
+    #Rutas para guardar el archivo desde la carpeta web-scraping en la del proyecto Laravel:
     directorio = getDirectorio()
     ruta_archivo_antiguo=getRutaCopiaHTML(directorio,pagina_id, "")
     ruta_archivo_nuevo=getRutaCopiaHTML(directorio,pagina_id, "_") #Se añade el carácter '_' para no sobrescribir la copia HTML antigua
