@@ -34,13 +34,12 @@ sitio = cursor.fetchone()
 herramientas=json.loads(sitio.__getitem__(0)) #Se decodifica el JSON
 
 #Comprobamos las páginas web en caso de que sea necesario analizarlas o no
-cursor.execute("select URL,id,archivo_HTML from paginas where sitio_id = %s", (sitio_id,))
+cursor.execute("select URL,id from paginas where sitio_id = %s", (sitio_id,))
 paginas = cursor.fetchall()
 
 for pagina in paginas:
     pagina_url=pagina.__getitem__(0)
     pagina_id=str(pagina.__getitem__(1))
-    pagina_archivo_HTML=pagina.__getitem__(2)
 
     #Comprobar acceso a la página web
     if comprobarAccesoyTipo(pagina_url):

@@ -72,5 +72,3 @@ try:
 
 except Exception as e:
         errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
-
-

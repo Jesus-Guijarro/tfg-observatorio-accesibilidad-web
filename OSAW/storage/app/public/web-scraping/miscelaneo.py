@@ -118,14 +118,19 @@ def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
 #   Tipo 1 -> Error provocado durante la ejecución de una herramienta
 #   Tipo 3 -> Error provocado al no poder acceder a una web
 #   Herramienta vacio en caso de ser tipo 3
-def errorLog(directorio,tipo,fecha_test,herramienta,pagina_id,error):
+def errorLog(directorio,tipo,fecha_test,herramienta,identificador,error):
 
     fecha_test
 
     ruta_archivo_logs=directorio+"/storage/logs/log_"+fecha_test+".txt"
 
+    #Para tener más información de la fecha obtenemos también los datos de hora, minutos y segundos
+    fecha_absoluta= str(datetime.now())
+
     log = open(ruta_archivo_logs, 'a') 
     if tipo==1: 
-        log.write('[01]\tERROR HERRAMIENTA: "' + herramienta + '"\t\tFECHA: "'+ fecha_test+'"\t\tPAGINA WEB: "' + pagina_id +'"\t\tDESCRIPCION: "'+repr(error)+ '"\n')
+        log.write('[01]\tERROR HERRAMIENTA: "' + herramienta + '"\t\tFECHA: "'+ fecha_absoluta+'"\t\tPAGINA WEB: "' + identificador +'"\t\tDESCRIPCION: "'+repr(error)+ '"\n')
+    if tipo==2: 
+        log.write('[02]\tERROR CRONTAB SITIO WEB: "'+identificador+'"\t\tFECHA: "'+ fecha_absoluta+'"\t\tDESCRIPCION: "'+repr(error)+ '"\n')
     else:
-        log.write('[03]\tERROR ACCESSO PAGINA WEB: "' + pagina_id + '"\t\tFECHA: "'+ fecha_test +'" \n')
+        log.write('[03]\tERROR ACCESSO PAGINA WEB: "' + identificador + '"\t\tFECHA: "'+ fecha_absoluta +'" \n')

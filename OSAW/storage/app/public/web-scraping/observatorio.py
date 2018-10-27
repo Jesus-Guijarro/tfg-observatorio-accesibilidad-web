@@ -54,7 +54,6 @@ try:
     
     #Crear reporte
     reporte = open(ruta_reporte, 'a')
-    reporte.write(cabeceraReporte(pagina_url,fecha_test))
 
     #Obtenemos la lista de principios que es la única correcta 
     lista_principios=datos_json["oaw"]["resultado"]["principios"]

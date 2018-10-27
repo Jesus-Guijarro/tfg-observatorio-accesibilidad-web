@@ -8,8 +8,8 @@ from miscelaneo import *
 operacion=str(sys.argv[1]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
 sitio_id=str(sys.argv[2])
 periodicidad=str(sys.argv[3]) # Diaria -> 'D'; Semanal -> 'S';  Mensual -> 'M'
-hora_dia=sys.argv[4]
-dia=sys.argv[5] #Día del mes o de la semana
+hora_dia=sys.argv[4] #Formato hh:mm
+dia=sys.argv[5] #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
 
 #Inicializamos crontab
 cron = CronTab(user='jesus')
@@ -42,15 +42,31 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
     hora=hora_dia[0]
     minuto=hora_dia[1]
 
+    dia = int(dia)
+
     tarea.minute.on(int(minuto))
     tarea.hour.on(int(hora))
 
-    if periodicidad == "S": #Semanal
-        tarea.dow.on(dia)
-    elif periodicidad == "M": # Mensual
-        tarea.day.on(dia)
+    directorio=getDirectorio()
 
-    cron.write() 
+    if periodicidad == "S": #Semanal
+        if dia<0 or dia>6:
+            error="Día de la semana incorrecto. Valores posibles: 0 - 6"
+            errorLog(directorio,2,getFecha(),"",sitio_id,error)
+        else:
+            tarea.dow.on(dia)
+            cron.write() 
+
+    elif periodicidad == "M": # Mensual
+        if dia<1 or dia>31:
+            error="Día del mes incorrecto. Valores posibles: 1 - 31"
+            errorLog(directorio,2,getFecha(),"",sitio_id,error)
+            
+        else:
+            tarea.day.on(dia)
+            cron.write()
+    else: #Diaria
+        cron.write() 
 
 #Método para ejecutar la operacion solicitada
 def realizarOperacion(operacion):
