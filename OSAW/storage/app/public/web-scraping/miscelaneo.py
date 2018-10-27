@@ -53,7 +53,11 @@ def datosProblema(tipo_problema,reporte,driver):
 
     except Exception as e:
         return False
-
+#Función para obtener el número de problemas segun el nivel
+def getNumProblemas(datos,nivel):
+    if datos:
+        return int(datos.count(nivel))
+    return 0
 
 #Obtenemos la url principal de un dominio.
 # Necesario por si la web en cuestión cambia el protocolo de http a https
@@ -116,7 +120,9 @@ def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
 #   Herramienta vacio en caso de ser tipo 3
 def errorLog(directorio,tipo,fecha_test,herramienta,pagina_id,error):
 
-    ruta_archivo_logs=directorio+"/storage/logs/log.txt"
+    fecha_test
+
+    ruta_archivo_logs=directorio+"/storage/logs/log_"+fecha_test+".txt"
 
     log = open(ruta_archivo_logs, 'a') 
     if tipo==1: 

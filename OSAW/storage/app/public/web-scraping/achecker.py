@@ -66,7 +66,7 @@ try:
     boton.click()
 
 
-    #Pausa de máximo 2 minuto
+    #Pausa de máximo 2 minutos
     wait = WebDriverWait(driver, 120)
     #Se espera hasta que se haya evaluado y ofrecido el resultado
     try:
@@ -80,13 +80,6 @@ try:
     #num_problemas_probables=driver.find_element_by_css_selector("#AC_num_of_likely")
     num_problemas_potenciales=int(driver.find_element_by_css_selector("#AC_num_of_potential").text)
 
-    #Inicializamos las variables para hacer el recuento de problemas segun nivel
-    num_problemas_conocidos_a = 0
-    num_problemas_conocidos_aa = 0
-    num_problemas_conocidos_aaa = 0
-    num_problemas_potenciales_a = 0
-    num_problemas_potenciales_aa = 0
-    num_problemas_potenciales_aaa = 0
 
     #Rutas para guardar el archivo y el acceso desde la BD
     ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
@@ -97,16 +90,14 @@ try:
     reporte.write(cabeceraReporte(pagina_url,fecha_test))
 
     datos=datosProblema("AC_errors",reporte,driver)
-    if datos:
-        num_problemas_conocidos_a = int(datos.count("(A)"))
-        num_problemas_conocidos_aa = int(datos.count("(AA)"))
-        num_problemas_conocidos_aaa = int(datos.count("(AAA)"))
+    num_problemas_conocidos_a = getNumProblemas(datos,'(A)')
+    num_problemas_conocidos_aa = getNumProblemas(datos,'(AA)')
+    num_problemas_conocidos_aaa = getNumProblemas(datos,'(AAA)')
 
     datos=datosProblema("AC_potential_problems",reporte,driver)
-    if datos:
-        num_problemas_potenciales_a = int(datos.count("(A)"))
-        num_problemas_potenciales_aa = int(datos.count("(AA)"))
-        num_problemas_potenciales_aaa = int(datos.count("(AAA)"))
+    num_problemas_potenciales_a = getNumProblemas(datos,'(A)')
+    num_problemas_potenciales_aa = getNumProblemas(datos,'(AA)')
+    num_problemas_potenciales_aaa = getNumProblemas(datos,'(AAA)')
 
     cursor = cursor.execute("insert into acheckers(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
     desconexionBD(conexion,cursor)

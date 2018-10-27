@@ -1299,3 +1299,1145 @@ CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)
 		LINEA: 182, Column 5: <form action="http://www.mjusticia.gob.es/cs/Satellite" method="post" name="buscador">	 ...
 
 	
+REPORTE PÁGINA WEB: http://www.google.com		FECHA EVALUACIÓN: 2018-10-27
+
+PROBLEMAS CONOCIDOS
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 252: All text colors are not set.  
+
+	REPARAR:: Ensure all the text colors or none of the text colors are set using attributes on the body element.     
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+
+		LINEA: 42, Column 6809: <p style="color:#767676;font-size:8pt">&copy; 2018 - <a href="/intl/en/policies/privacy/">Privacy</a ...
+
+	
+
+ ------------------------------------------------------ 
+
+PROBLEMAS POTENCIALES
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 136: Data table may require th elements.
+
+
+
+		LINEA: 42, Column 4698: <table cellpadding="0" cellspacing="0"><tr valign="top"><td width="25%">&nbsp;</td><td align="center ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 133: Layout table may not linearize.
+
+
+
+		LINEA: 42, Column 4698: <table cellpadding="0" cellspacing="0"><tr valign="top"><td width="25%">&nbsp;</td><td align="center ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 42, Column 5064: <input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class ...       
+
+		LINEA: 42, Column 5306: <input class="lsb" value="Google Search" name="btnG" type="submit">       
+
+		LINEA: 42, Column 5423: <input class="lsb" value="I'm Feeling Lucky" name="btnI" onclick="if(this.form.q.value)this.checked= ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 1, Column 272: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){window.google={kEI:'uC7UW8MOlqCPBNGWkbAB',kEXPI ...       
+
+		LINEA: 1, Column 336: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">var a=window.location,b=a.href.indexOf("#");if(0<=b){var c= ...       
+
+		LINEA: 4, Column 38: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){try{var e=this,aa=function(a){var b=typeof a;if ...       
+
+		LINEA: 39, Column 38: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo229.png';var iesg=fals ...       
+
+		LINEA: 42, Column 37: <script>window.gbar&&gbar.eli&&gbar.eli()</script>       
+
+		LINEA: 42, Column 4367: <script>window.gbar&&gbar.elp&&gbar.elp()</script>       
+
+		LINEA: 42, Column 5852: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var a,b="1";if(document&&document.getElementByI ...       
+
+		LINEA: 42, Column 6977: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){window.google.cdo={height:0,width:0};(function( ...       
+
+		LINEA: 42, Column 7077: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){google.ldi={};google.pim={};})();(function(){fu ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 1, Column 272: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){window.google={kEI:'uC7UW8MOlqCPBNGWkbAB',kEXPI ...       
+
+		LINEA: 1, Column 336: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">var a=window.location,b=a.href.indexOf("#");if(0<=b){var c= ...       
+
+		LINEA: 4, Column 38: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){try{var e=this,aa=function(a){var b=typeof a;if ...       
+
+		LINEA: 39, Column 38: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo229.png';var iesg=fals ...       
+
+		LINEA: 42, Column 37: <script>window.gbar&&gbar.eli&&gbar.eli()</script>       
+
+		LINEA: 42, Column 4367: <script>window.gbar&&gbar.elp&&gbar.elp()</script>       
+
+		LINEA: 42, Column 5852: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var a,b="1";if(document&&document.getElementByI ...       
+
+		LINEA: 42, Column 6977: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){window.google.cdo={height:0,width:0};(function( ...       
+
+		LINEA: 42, Column 7077: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){google.ldi={};google.pim={};})();(function(){fu ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 1, Column 272: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){window.google={kEI:'uC7UW8MOlqCPBNGWkbAB',kEXPI ...       
+
+		LINEA: 1, Column 336: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">var a=window.location,b=a.href.indexOf("#");if(0<=b){var c= ...       
+
+		LINEA: 4, Column 38: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){try{var e=this,aa=function(a){var b=typeof a;if ...       
+
+		LINEA: 39, Column 38: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo229.png';var iesg=fals ...       
+
+		LINEA: 42, Column 37: <script>window.gbar&&gbar.eli&&gbar.eli()</script>       
+
+		LINEA: 42, Column 4367: <script>window.gbar&&gbar.elp&&gbar.elp()</script>       
+
+		LINEA: 42, Column 5852: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var a,b="1";if(document&&document.getElementByI ...       
+
+		LINEA: 42, Column 6977: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){window.google.cdo={height:0,width:0};(function( ...       
+
+		LINEA: 42, Column 7077: <script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){google.ldi={};google.pim={};})();(function(){fu ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 1, Column 251: <title>Google</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 42, Column 154: <a onclick=gbar.logger.il(1,{t:1}); class="gbzt gbz0l gbp1" id=gb_1 href="https://www.google.ca/webh ...       
+
+		LINEA: 42, Column 342: <a onclick=gbar.logger.il(1,{t:2}); class=gbzt id=gb_2 href="http://www.google.ca/imghp?hl=en&tab=wi ...       
+
+		LINEA: 42, Column 522: <a onclick=gbar.logger.il(1,{t:8}); class=gbzt id=gb_8 href="http://maps.google.ca/maps?hl=en&tab=wl ...       
+
+		LINEA: 42, Column 700: <a onclick=gbar.logger.il(1,{t:78}); class=gbzt id=gb_78 href="https://play.google.com/?hl=en&tab=w8 ...       
+
+		LINEA: 42, Column 878: <a onclick=gbar.logger.il(1,{t:36}); class=gbzt id=gb_36 href="http://www.youtube.com/?gl=CA&tab=w1" ...       
+
+		LINEA: 42, Column 1058: <a onclick=gbar.logger.il(1,{t:5}); class=gbzt id=gb_5 href="http://news.google.ca/nwshp?hl=en&tab=w ...       
+
+		LINEA: 42, Column 1237: <a onclick=gbar.logger.il(1,{t:23}); class=gbzt id=gb_23 href="https://mail.google.com/mail/?tab=wm" ...       
+
+		LINEA: 42, Column 1415: <a onclick=gbar.logger.il(1,{t:49}); class=gbzt id=gb_49 href="https://drive.google.com/?tab=wo"><sp ...       
+
+		LINEA: 42, Column 1589: <a class=gbgt id=gbztm href="https://www.google.ca/intl/en/options/" onclick="gbar.tg(event,this)" a ...       
+
+		LINEA: 42, Column 1971: <a onclick=gbar.logger.il(1,{t:24}); class=gbmt id=gb_24 href="https://www.google.com/calendar?tab=w ...       
+
+		LINEA: 42, Column 2107: <a onclick=gbar.logger.il(1,{t:51}); class=gbmt id=gb_51 href="http://translate.google.ca/?hl=en&tab ...       
+
+		LINEA: 42, Column 2246: <a onclick=gbar.logger.il(1,{t:10}); class=gbmt id=gb_10 href="https://books.google.ca/bkshp?hl=en&t ...       
+
+		LINEA: 42, Column 2383: <a onclick=gbar.logger.il(1,{t:30}); class=gbmt id=gb_30 href="http://www.blogger.com/?tab=wj">Blogg ...       
+
+		LINEA: 42, Column 2510: <a onclick=gbar.logger.il(1,{t:27}); class=gbmt id=gb_27 href="http://www.google.ca/finance?tab=we"> ...       
+
+		LINEA: 42, Column 2642: <a onclick=gbar.logger.il(1,{t:31}); class=gbmt id=gb_31 href="https://photos.google.com/?tab=wq&pag ...       
+
+		LINEA: 42, Column 2783: <a onclick=gbar.logger.il(1,{t:12}); class=gbmt id=gb_12 href="http://video.google.ca/?hl=en&tab=wv" ...       
+
+		LINEA: 42, Column 2915: <a onclick=gbar.logger.il(1,{t:25}); class=gbmt id=gb_25 href="https://docs.google.com/document/?usp ...       
+
+		LINEA: 42, Column 3105: <a onclick=gbar.logger.il(1,{t:66}); href="https://www.google.ca/intl/en/options/" class=gbmt>Even m ...       
+
+		LINEA: 42, Column 3405: <a target=_top href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=http://www ...       
+
+		LINEA: 42, Column 3736: <a class=gbgt id=gbg5 href="http://www.google.ca/preferences?hl=en" title="Options" onclick="gbar.tg ...       
+
+		LINEA: 42, Column 4069: <aclass=gbmt href="/preferences?hl=en">Search settings</a>       
+
+		LINEA: 42, Column 4207: <a class=gbmt href="http://www.google.ca/history/optout?hl=en">Web History</a>       
+
+		LINEA: 42, Column 5645: <a href="/advanced_search?hl=en-CA&amp;authuser=0">Advanced search</a>       
+
+		LINEA: 42, Column 5715: <a href="/language_tools?hl=en-CA&amp;authuser=0">Language tools</a>       
+
+		LINEA: 42, Column 6134: <a href="http://www.google.com/setprefs?sig=0_AM6aHNTKS-oVOMLedA6gfEolZN0%3D&amp;hl=fr&amp;source=ho ...       
+
+		LINEA: 42, Column 6435:
+
+
+
+		LINEA: 42, Column 6483: <a href="/services/">Business Solutions</a>       
+
+		LINEA: 42, Column 6526: <a href="https://plus.google.com/108349337900676782287" rel="publisher">+Google</a>       
+
+		LINEA: 42, Column 6609: <a href="/intl/en/about.html">About Google</a>       
+
+		LINEA: 42, Column 6655: <a href="http://www.google.com/setprefdomain?prefdom=CA&amp;prev=http://www.google.ca/&amp;sig=K_5u4 ...       
+
+		LINEA: 42, Column 6862: <a href="/intl/en/policies/privacy/">Privacy</a>       
+
+		LINEA: 42, Column 6913: <a href="/intl/en/policies/terms/">Terms</a>
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 42, Column 154: <a onclick=gbar.logger.il(1,{t:1}); class="gbzt gbz0l gbp1" id=gb_1 href="https://www.google.ca/webh ...       
+
+		LINEA: 42, Column 342: <a onclick=gbar.logger.il(1,{t:2}); class=gbzt id=gb_2 href="http://www.google.ca/imghp?hl=en&tab=wi ...       
+
+		LINEA: 42, Column 522: <a onclick=gbar.logger.il(1,{t:8}); class=gbzt id=gb_8 href="http://maps.google.ca/maps?hl=en&tab=wl ...       
+
+		LINEA: 42, Column 700: <a onclick=gbar.logger.il(1,{t:78}); class=gbzt id=gb_78 href="https://play.google.com/?hl=en&tab=w8 ...       
+
+		LINEA: 42, Column 878: <a onclick=gbar.logger.il(1,{t:36}); class=gbzt id=gb_36 href="http://www.youtube.com/?gl=CA&tab=w1" ...       
+
+		LINEA: 42, Column 1058: <a onclick=gbar.logger.il(1,{t:5}); class=gbzt id=gb_5 href="http://news.google.ca/nwshp?hl=en&tab=w ...       
+
+		LINEA: 42, Column 1237: <a onclick=gbar.logger.il(1,{t:23}); class=gbzt id=gb_23 href="https://mail.google.com/mail/?tab=wm" ...       
+
+		LINEA: 42, Column 1415: <a onclick=gbar.logger.il(1,{t:49}); class=gbzt id=gb_49 href="https://drive.google.com/?tab=wo"><sp ...       
+
+		LINEA: 42, Column 1589: <a class=gbgt id=gbztm href="https://www.google.ca/intl/en/options/" onclick="gbar.tg(event,this)" a ...       
+
+		LINEA: 42, Column 1971: <a onclick=gbar.logger.il(1,{t:24}); class=gbmt id=gb_24 href="https://www.google.com/calendar?tab=w ...       
+
+		LINEA: 42, Column 2107: <a onclick=gbar.logger.il(1,{t:51}); class=gbmt id=gb_51 href="http://translate.google.ca/?hl=en&tab ...       
+
+		LINEA: 42, Column 2246: <a onclick=gbar.logger.il(1,{t:10}); class=gbmt id=gb_10 href="https://books.google.ca/bkshp?hl=en&t ...       
+
+		LINEA: 42, Column 2383: <a onclick=gbar.logger.il(1,{t:30}); class=gbmt id=gb_30 href="http://www.blogger.com/?tab=wj">Blogg ...       
+
+		LINEA: 42, Column 2510: <a onclick=gbar.logger.il(1,{t:27}); class=gbmt id=gb_27 href="http://www.google.ca/finance?tab=we"> ...       
+
+		LINEA: 42, Column 2642: <a onclick=gbar.logger.il(1,{t:31}); class=gbmt id=gb_31 href="https://photos.google.com/?tab=wq&pag ...       
+
+		LINEA: 42, Column 2783: <a onclick=gbar.logger.il(1,{t:12}); class=gbmt id=gb_12 href="http://video.google.ca/?hl=en&tab=wv" ...       
+
+		LINEA: 42, Column 2915: <a onclick=gbar.logger.il(1,{t:25}); class=gbmt id=gb_25 href="https://docs.google.com/document/?usp ...       
+
+		LINEA: 42, Column 3105: <a onclick=gbar.logger.il(1,{t:66}); href="https://www.google.ca/intl/en/options/" class=gbmt>Even m ...       
+
+		LINEA: 42, Column 3405: <a target=_top href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=http://www ...       
+
+		LINEA: 42, Column 3736: <a class=gbgt id=gbg5 href="http://www.google.ca/preferences?hl=en" title="Options" onclick="gbar.tg ...       
+
+		LINEA: 42, Column 4069: <aclass=gbmt href="/preferences?hl=en">Search settings</a>       
+
+		LINEA: 42, Column 4207: <a class=gbmt href="http://www.google.ca/history/optout?hl=en">Web History</a>       
+
+		LINEA: 42, Column 5645: <a href="/advanced_search?hl=en-CA&amp;authuser=0">Advanced search</a>       
+
+		LINEA: 42, Column 5715: <a href="/language_tools?hl=en-CA&amp;authuser=0">Language tools</a>       
+
+		LINEA: 42, Column 6134: <a href="http://www.google.com/setprefs?sig=0_AM6aHNTKS-oVOMLedA6gfEolZN0%3D&amp;hl=fr&amp;source=ho ...       
+
+		LINEA: 42, Column 6435:
+
+
+
+		LINEA: 42, Column 6483: <a href="/services/">Business Solutions</a>       
+
+		LINEA: 42, Column 6526: <a href="https://plus.google.com/108349337900676782287" rel="publisher">+Google</a>       
+
+		LINEA: 42, Column 6609: <a href="/intl/en/about.html">About Google</a>       
+
+		LINEA: 42, Column 6655: <a href="http://www.google.com/setprefdomain?prefdom=CA&amp;prev=http://www.google.ca/&amp;sig=K_5u4 ...       
+
+		LINEA: 42, Column 6862: <a href="/intl/en/policies/privacy/">Privacy</a>       
+
+		LINEA: 42, Column 6913: <a href="/intl/en/policies/terms/">Terms</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 42, Column 3316: <h2 class=gbxx>Account Options</h2>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.2 Language of Parts (AA)  
+
+	REVISAR: 110: Words or phrases that are not in the document's primary language may not be identified.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="geP1ZbGygBRUX4CBH/Ar0w==">(function(){var src='/images/nav_logo2 ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 42, Column 4810: <input name="ie" value="ISO-8859-1" type="hidden">       
+
+		LINEA: 42, Column 4860: <input value="en-CA" name="hl" type="hidden">       
+
+		LINEA: 42, Column 4905: <input name="source" type="hidden" value="hp">       
+
+		LINEA: 42, Column 4951: <input name="biw" type="hidden">       
+
+		LINEA: 42, Column 4983: <input name="bih" type="hidden">       
+
+		LINEA: 42, Column 5064: <input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class ...       
+
+		LINEA: 42, Column 5306: <input class="lsb" value="Google Search" name="btnG" type="submit">       
+
+		LINEA: 42, Column 5423: <input class="lsb" value="I'm Feeling Lucky" name="btnI" onclick="if(this.form.q.value)this.checked= ...       
+
+		LINEA: 42, Column 5801: <input id="gbv" name="gbv" type="hidden" value="1">
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+	
+REPORTE PÁGINA WEB: http://www.google.com		FECHA EVALUACIÓN: 2018-10-27
+
+PROBLEMAS CONOCIDOS
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 252: All text colors are not set.  
+
+	REPARAR:: Ensure all the text colors or none of the text colors are set using attributes on the body element.     
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+
+		LINEA: 42, Column 6809: <p style="color:#767676;font-size:8pt">&copy; 2018 - <a href="/intl/en/policies/privacy/">Privacy</a ...
+
+	
+
+ ------------------------------------------------------ 
+
+PROBLEMAS POTENCIALES
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 136: Data table may require th elements.
+
+
+
+		LINEA: 42, Column 4698: <table cellpadding="0" cellspacing="0"><tr valign="top"><td width="25%">&nbsp;</td><td align="center ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 133: Layout table may not linearize.
+
+
+
+		LINEA: 42, Column 4698: <table cellpadding="0" cellspacing="0"><tr valign="top"><td width="25%">&nbsp;</td><td align="center ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 42, Column 5064: <input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class ...       
+
+		LINEA: 42, Column 5306: <input class="lsb" value="Google Search" name="btnG" type="submit">       
+
+		LINEA: 42, Column 5423: <input class="lsb" value="I'm Feeling Lucky" name="btnI" onclick="if(this.form.q.value)this.checked= ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 1, Column 272: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){window.google={kEI:'ui_UW4mwB-ycjgTswpDgCg',kEX ...       
+
+		LINEA: 1, Column 336: <script nonce="Y0tNipoocJKXbfhKPytL7A==">var a=window.location,b=a.href.indexOf("#");if(0<=b){var c= ...       
+
+		LINEA: 4, Column 38: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){try{var e=this,aa=function(a){var b=typeof a;if ...       
+
+		LINEA: 39, Column 38: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo229.png';var iesg=fals ...       
+
+		LINEA: 42, Column 37: <script>window.gbar&&gbar.eli&&gbar.eli()</script>       
+
+		LINEA: 42, Column 4367: <script>window.gbar&&gbar.elp&&gbar.elp()</script>       
+
+		LINEA: 42, Column 5852: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var a,b="1";if(document&&document.getElementByI ...       
+
+		LINEA: 42, Column 6977: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){window.google.cdo={height:0,width:0};(function( ...       
+
+		LINEA: 42, Column 7077: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){function c(b){window.setTimeout(function(){var...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 42, Column 4459: <img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_ ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 1, Column 272: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){window.google={kEI:'ui_UW4mwB-ycjgTswpDgCg',kEX ...       
+
+		LINEA: 1, Column 336: <script nonce="Y0tNipoocJKXbfhKPytL7A==">var a=window.location,b=a.href.indexOf("#");if(0<=b){var c= ...       
+
+		LINEA: 4, Column 38: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){try{var e=this,aa=function(a){var b=typeof a;if ...       
+
+		LINEA: 39, Column 38: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo229.png';var iesg=fals ...       
+
+		LINEA: 42, Column 37: <script>window.gbar&&gbar.eli&&gbar.eli()</script>       
+
+		LINEA: 42, Column 4367: <script>window.gbar&&gbar.elp&&gbar.elp()</script>       
+
+		LINEA: 42, Column 5852: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var a,b="1";if(document&&document.getElementByI ...       
+
+		LINEA: 42, Column 6977: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){window.google.cdo={height:0,width:0};(function( ...       
+
+		LINEA: 42, Column 7077: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){function c(b){window.setTimeout(function(){var...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 1, Column 272: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){window.google={kEI:'ui_UW4mwB-ycjgTswpDgCg',kEX ...       
+
+		LINEA: 1, Column 336: <script nonce="Y0tNipoocJKXbfhKPytL7A==">var a=window.location,b=a.href.indexOf("#");if(0<=b){var c= ...       
+
+		LINEA: 4, Column 38: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){try{var e=this,aa=function(a){var b=typeof a;if ...       
+
+		LINEA: 39, Column 38: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo229.png';var iesg=fals ...       
+
+		LINEA: 42, Column 37: <script>window.gbar&&gbar.eli&&gbar.eli()</script>       
+
+		LINEA: 42, Column 4367: <script>window.gbar&&gbar.elp&&gbar.elp()</script>       
+
+		LINEA: 42, Column 5852: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var a,b="1";if(document&&document.getElementByI ...       
+
+		LINEA: 42, Column 6977: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){window.google.cdo={height:0,width:0};(function( ...       
+
+		LINEA: 42, Column 7077: <script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){function c(b){window.setTimeout(function(){var...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 1, Column 251: <title>Google</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 42, Column 154: <a onclick=gbar.logger.il(1,{t:1}); class="gbzt gbz0l gbp1" id=gb_1 href="https://www.google.ca/webh ...       
+
+		LINEA: 42, Column 342: <a onclick=gbar.logger.il(1,{t:2}); class=gbzt id=gb_2 href="http://www.google.ca/imghp?hl=en&tab=wi ...       
+
+		LINEA: 42, Column 522: <a onclick=gbar.logger.il(1,{t:8}); class=gbzt id=gb_8 href="http://maps.google.ca/maps?hl=en&tab=wl ...       
+
+		LINEA: 42, Column 700: <a onclick=gbar.logger.il(1,{t:78}); class=gbzt id=gb_78 href="https://play.google.com/?hl=en&tab=w8 ...       
+
+		LINEA: 42, Column 878: <a onclick=gbar.logger.il(1,{t:36}); class=gbzt id=gb_36 href="http://www.youtube.com/?gl=CA&tab=w1" ...       
+
+		LINEA: 42, Column 1058: <a onclick=gbar.logger.il(1,{t:5}); class=gbzt id=gb_5 href="http://news.google.ca/nwshp?hl=en&tab=w ...       
+
+		LINEA: 42, Column 1237: <a onclick=gbar.logger.il(1,{t:23}); class=gbzt id=gb_23 href="https://mail.google.com/mail/?tab=wm" ...       
+
+		LINEA: 42, Column 1415: <a onclick=gbar.logger.il(1,{t:49}); class=gbzt id=gb_49 href="https://drive.google.com/?tab=wo"><sp ...       
+
+		LINEA: 42, Column 1589: <a class=gbgt id=gbztm href="https://www.google.ca/intl/en/options/" onclick="gbar.tg(event,this)" a ...       
+
+		LINEA: 42, Column 1971: <a onclick=gbar.logger.il(1,{t:24}); class=gbmt id=gb_24 href="https://www.google.com/calendar?tab=w ...       
+
+		LINEA: 42, Column 2107: <a onclick=gbar.logger.il(1,{t:51}); class=gbmt id=gb_51 href="http://translate.google.ca/?hl=en&tab ...       
+
+		LINEA: 42, Column 2246: <a onclick=gbar.logger.il(1,{t:10}); class=gbmt id=gb_10 href="https://books.google.ca/bkshp?hl=en&t ...       
+
+		LINEA: 42, Column 2383: <a onclick=gbar.logger.il(1,{t:30}); class=gbmt id=gb_30 href="http://www.blogger.com/?tab=wj">Blogg ...       
+
+		LINEA: 42, Column 2510: <a onclick=gbar.logger.il(1,{t:27}); class=gbmt id=gb_27 href="http://www.google.ca/finance?tab=we"> ...       
+
+		LINEA: 42, Column 2642: <a onclick=gbar.logger.il(1,{t:31}); class=gbmt id=gb_31 href="https://photos.google.com/?tab=wq&pag ...       
+
+		LINEA: 42, Column 2783: <a onclick=gbar.logger.il(1,{t:12}); class=gbmt id=gb_12 href="http://video.google.ca/?hl=en&tab=wv" ...       
+
+		LINEA: 42, Column 2915: <a onclick=gbar.logger.il(1,{t:25}); class=gbmt id=gb_25 href="https://docs.google.com/document/?usp ...       
+
+		LINEA: 42, Column 3105: <a onclick=gbar.logger.il(1,{t:66}); href="https://www.google.ca/intl/en/options/" class=gbmt>Even m ...       
+
+		LINEA: 42, Column 3405: <a target=_top href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=http://www ...       
+
+		LINEA: 42, Column 3736: <a class=gbgt id=gbg5 href="http://www.google.ca/preferences?hl=en" title="Options" onclick="gbar.tg ...       
+
+		LINEA: 42, Column 4069: <aclass=gbmt href="/preferences?hl=en">Search settings</a>       
+
+		LINEA: 42, Column 4207: <a class=gbmt href="http://www.google.ca/history/optout?hl=en">Web History</a>       
+
+		LINEA: 42, Column 5645: <a href="/advanced_search?hl=en-CA&amp;authuser=0">Advanced search</a>       
+
+		LINEA: 42, Column 5715: <a href="/language_tools?hl=en-CA&amp;authuser=0">Language tools</a>       
+
+		LINEA: 42, Column 6134: <a href="http://www.google.com/setprefs?sig=0_VW2pAW6KtaYin8G_bDkQxqgN4UU%3D&amp;hl=fr&amp;source=ho ...       
+
+		LINEA: 42, Column 6435:
+
+
+
+		LINEA: 42, Column 6483: <a href="/services/">Business Solutions</a>       
+
+		LINEA: 42, Column 6526: <a href="https://plus.google.com/108349337900676782287" rel="publisher">+Google</a>       
+
+		LINEA: 42, Column 6609: <a href="/intl/en/about.html">About Google</a>       
+
+		LINEA: 42, Column 6655: <a href="http://www.google.com/setprefdomain?prefdom=CA&amp;prev=http://www.google.ca/&amp;sig=K_Hhx ...       
+
+		LINEA: 42, Column 6862: <a href="/intl/en/policies/privacy/">Privacy</a>       
+
+		LINEA: 42, Column 6913: <a href="/intl/en/policies/terms/">Terms</a>
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 42, Column 154: <a onclick=gbar.logger.il(1,{t:1}); class="gbzt gbz0l gbp1" id=gb_1 href="https://www.google.ca/webh ...       
+
+		LINEA: 42, Column 342: <a onclick=gbar.logger.il(1,{t:2}); class=gbzt id=gb_2 href="http://www.google.ca/imghp?hl=en&tab=wi ...       
+
+		LINEA: 42, Column 522: <a onclick=gbar.logger.il(1,{t:8}); class=gbzt id=gb_8 href="http://maps.google.ca/maps?hl=en&tab=wl ...       
+
+		LINEA: 42, Column 700: <a onclick=gbar.logger.il(1,{t:78}); class=gbzt id=gb_78 href="https://play.google.com/?hl=en&tab=w8 ...       
+
+		LINEA: 42, Column 878: <a onclick=gbar.logger.il(1,{t:36}); class=gbzt id=gb_36 href="http://www.youtube.com/?gl=CA&tab=w1" ...       
+
+		LINEA: 42, Column 1058: <a onclick=gbar.logger.il(1,{t:5}); class=gbzt id=gb_5 href="http://news.google.ca/nwshp?hl=en&tab=w ...       
+
+		LINEA: 42, Column 1237: <a onclick=gbar.logger.il(1,{t:23}); class=gbzt id=gb_23 href="https://mail.google.com/mail/?tab=wm" ...       
+
+		LINEA: 42, Column 1415: <a onclick=gbar.logger.il(1,{t:49}); class=gbzt id=gb_49 href="https://drive.google.com/?tab=wo"><sp ...       
+
+		LINEA: 42, Column 1589: <a class=gbgt id=gbztm href="https://www.google.ca/intl/en/options/" onclick="gbar.tg(event,this)" a ...       
+
+		LINEA: 42, Column 1971: <a onclick=gbar.logger.il(1,{t:24}); class=gbmt id=gb_24 href="https://www.google.com/calendar?tab=w ...       
+
+		LINEA: 42, Column 2107: <a onclick=gbar.logger.il(1,{t:51}); class=gbmt id=gb_51 href="http://translate.google.ca/?hl=en&tab ...       
+
+		LINEA: 42, Column 2246: <a onclick=gbar.logger.il(1,{t:10}); class=gbmt id=gb_10 href="https://books.google.ca/bkshp?hl=en&t ...       
+
+		LINEA: 42, Column 2383: <a onclick=gbar.logger.il(1,{t:30}); class=gbmt id=gb_30 href="http://www.blogger.com/?tab=wj">Blogg ...       
+
+		LINEA: 42, Column 2510: <a onclick=gbar.logger.il(1,{t:27}); class=gbmt id=gb_27 href="http://www.google.ca/finance?tab=we"> ...       
+
+		LINEA: 42, Column 2642: <a onclick=gbar.logger.il(1,{t:31}); class=gbmt id=gb_31 href="https://photos.google.com/?tab=wq&pag ...       
+
+		LINEA: 42, Column 2783: <a onclick=gbar.logger.il(1,{t:12}); class=gbmt id=gb_12 href="http://video.google.ca/?hl=en&tab=wv" ...       
+
+		LINEA: 42, Column 2915: <a onclick=gbar.logger.il(1,{t:25}); class=gbmt id=gb_25 href="https://docs.google.com/document/?usp ...       
+
+		LINEA: 42, Column 3105: <a onclick=gbar.logger.il(1,{t:66}); href="https://www.google.ca/intl/en/options/" class=gbmt>Even m ...       
+
+		LINEA: 42, Column 3405: <a target=_top href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=http://www ...       
+
+		LINEA: 42, Column 3736: <a class=gbgt id=gbg5 href="http://www.google.ca/preferences?hl=en" title="Options" onclick="gbar.tg ...       
+
+		LINEA: 42, Column 4069: <aclass=gbmt href="/preferences?hl=en">Search settings</a>       
+
+		LINEA: 42, Column 4207: <a class=gbmt href="http://www.google.ca/history/optout?hl=en">Web History</a>       
+
+		LINEA: 42, Column 5645: <a href="/advanced_search?hl=en-CA&amp;authuser=0">Advanced search</a>       
+
+		LINEA: 42, Column 5715: <a href="/language_tools?hl=en-CA&amp;authuser=0">Language tools</a>       
+
+		LINEA: 42, Column 6134: <a href="http://www.google.com/setprefs?sig=0_VW2pAW6KtaYin8G_bDkQxqgN4UU%3D&amp;hl=fr&amp;source=ho ...       
+
+		LINEA: 42, Column 6435:
+
+
+
+		LINEA: 42, Column 6483: <a href="/services/">Business Solutions</a>       
+
+		LINEA: 42, Column 6526: <a href="https://plus.google.com/108349337900676782287" rel="publisher">+Google</a>       
+
+		LINEA: 42, Column 6609: <a href="/intl/en/about.html">About Google</a>       
+
+		LINEA: 42, Column 6655: <a href="http://www.google.com/setprefdomain?prefdom=CA&amp;prev=http://www.google.ca/&amp;sig=K_Hhx ...       
+
+		LINEA: 42, Column 6862: <a href="/intl/en/policies/privacy/">Privacy</a>       
+
+		LINEA: 42, Column 6913: <a href="/intl/en/policies/terms/">Terms</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 42, Column 3316: <h2 class=gbxx>Account Options</h2>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.2 Language of Parts (AA)  
+
+	REVISAR: 110: Words or phrases that are not in the document's primary language may not be identified.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 39, Column 17: <body bgcolor="#fff"><script nonce="Y0tNipoocJKXbfhKPytL7A==">(function(){var src='/images/nav_logo2 ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 42, Column 4810: <input name="ie" value="ISO-8859-1" type="hidden">       
+
+		LINEA: 42, Column 4860: <input value="en-CA" name="hl" type="hidden">       
+
+		LINEA: 42, Column 4905: <input name="source" type="hidden" value="hp">       
+
+		LINEA: 42, Column 4951: <input name="biw" type="hidden">       
+
+		LINEA: 42, Column 4983: <input name="bih" type="hidden">       
+
+		LINEA: 42, Column 5064: <input style="color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" autocomplete="off" class ...       
+
+		LINEA: 42, Column 5306: <input class="lsb" value="Google Search" name="btnG" type="submit">       
+
+		LINEA: 42, Column 5423: <input class="lsb" value="I'm Feeling Lucky" name="btnI" onclick="if(this.form.q.value)this.checked= ...       
+
+		LINEA: 42, Column 5801: <input id="gbv" name="gbv" type="hidden" value="1">
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 42, Column 4666: <form action="/search" name="f"><table cellpadding="0" cellspacing="0"><tr valign="top"><td width="2 ...
+
+	

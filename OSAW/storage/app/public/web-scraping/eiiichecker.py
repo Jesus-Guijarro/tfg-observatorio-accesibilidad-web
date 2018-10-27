@@ -60,7 +60,7 @@ try:
     check =  driver.find_element_by_css_selector('#page_checker > div > input[type="submit"]')
     check.click()
 
-    #Pausa de máximo 2 minuto
+    #Pausa de máximo 2 minutos
     wait = WebDriverWait(driver, 120)
     #Se espera hasta que se haya evaluado y ofrecido el resultado
     try:

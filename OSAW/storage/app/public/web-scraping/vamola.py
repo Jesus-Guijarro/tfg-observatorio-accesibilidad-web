@@ -60,7 +60,7 @@ try:
     check.click()
 
 
-    #Pausa de máximo 2 minuto
+    #Pausa de máximo 2 minutos
     wait = WebDriverWait(driver, 120)
     #Se espera hasta que se haya evaluado y ofrecido el resultado
     try:
@@ -82,11 +82,6 @@ try:
     reporte = open(ruta_reporte, 'a')
     reporte.write(cabeceraReporte(pagina_url,fecha_test))
 
-    #Función para obtener el número de problemas segun el nivel
-    def getNumProblemas(datos,nivel):
-        if datos:
-            return int(datos.count(nivel))
-        return 0
 
     #Problemas conocidos
     datos=datosProblema("AC_errors",reporte,driver)
