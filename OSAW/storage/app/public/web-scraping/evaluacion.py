@@ -1,4 +1,4 @@
-import io, json, mysql.connector, subprocess, sys
+import io, json, mysql.connector, os, subprocess, sys
 
 from selenium import webdriver
 from conexiones import *
@@ -9,18 +9,19 @@ from miscelaneo import *
 sitio_id=sys.argv[1]
 
 #Listado con las herramientas disponibles para ser usadas
-lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
-#lista_herramientas=["achecker"]
+#lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
+lista_herramientas=["achecker"]
 
 #Método para llamar las herramientas
 def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
     if herramienta_eval:
-        
         #Primero se obtiene el directorio actual para crear el comando a ejecutar
         directorio = getDirectorio()
 
         comando="/usr/bin/python3 "+getRutaComando(directorio,herramienta,pagina_web,pagina_id)
         subprocess.run(comando, shell=True, check=True)
+
+
 
 #Conexión base de datos
 parametros = conexionBD()
@@ -47,6 +48,9 @@ for pagina in paginas:
         if comprobarCopiaHTML(pagina_id):
             for l in lista_herramientas:
                 ejecutarHerramienta(herramientas[l],l,pagina_url,pagina_id)
+        else:
+            pass
+                
     else:
         #Añadir error en log.txt
         directorio = getDirectorio()

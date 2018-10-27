@@ -1,4 +1,0 @@
-[01]	ERROR CRONTAB: " "		FECHA: "2018-10-27"		DESCRIPCION: "'Día de la semana incorrecto. Valores posibles: 0 - 6'"
-[01]	ERROR CRONTAB: "Sitio 1"		FECHA: "2018-10-27"		DESCRIPCION: "'Día de la semana incorrecto. Valores posibles: 0 - 6'"
-[02]	ERROR CRONTAB SITIO WEB: "1"		FECHA: "2018-10-27"		DESCRIPCION: "'Día de la semana incorrecto. Valores posibles: 0 - 6'"
-[02]	ERROR CRONTAB SITIO WEB: "1"		FECHA: "2018-10-27 13:11:01.314389"		DESCRIPCION: "'Día de la semana incorrecto. Valores posibles: 0 - 6'"

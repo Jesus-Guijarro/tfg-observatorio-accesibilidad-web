@@ -127,10 +127,13 @@ def errorLog(directorio,tipo,fecha_test,herramienta,identificador,error):
     #Para tener más información de la fecha obtenemos también los datos de hora, minutos y segundos
     fecha_absoluta= str(datetime.now())
 
-    log = open(ruta_archivo_logs, 'a') 
+    log = open(ruta_archivo_logs, 'a')
+     
     if tipo==1: 
         log.write('[01]\tERROR HERRAMIENTA: "' + herramienta + '"\t\tFECHA: "'+ fecha_absoluta+'"\t\tPAGINA WEB: "' + identificador +'"\t\tDESCRIPCION: "'+repr(error)+ '"\n')
     if tipo==2: 
         log.write('[02]\tERROR CRONTAB SITIO WEB: "'+identificador+'"\t\tFECHA: "'+ fecha_absoluta+'"\t\tDESCRIPCION: "'+repr(error)+ '"\n')
     else:
         log.write('[03]\tERROR ACCESSO PAGINA WEB: "' + identificador + '"\t\tFECHA: "'+ fecha_absoluta +'" \n')
+    
+    log.close()

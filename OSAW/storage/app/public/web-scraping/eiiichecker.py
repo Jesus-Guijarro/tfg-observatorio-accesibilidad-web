@@ -120,6 +120,7 @@ try:
     num_problemas_a+=datosErrores("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      FALLO F59: Fallo del Criterio de Conformidad 4.1.2 debido al uso de secuencias de comandos para hacer que los elementos <&div> o <&span> sean un control de la interfaz de usuario en HTML sin proporcionar una función para el control","icon_script-ui-control_rstFail", reporte,driver)
     
     cursor = cursor.execute("insert into eiiicheckers(pagina_id,puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,ruta_BD,fecha_test,))
+    reporte.close()
     desconexionBD(conexion,cursor)
 
 except Exception as e:
