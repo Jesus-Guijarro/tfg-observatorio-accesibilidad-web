@@ -9,8 +9,8 @@ from miscelaneo import *
 sitio_id=sys.argv[1]
 
 #Listado con las herramientas disponibles para ser usadas
-#lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
-lista_herramientas=["achecker"]
+lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
+#lista_herramientas=["accessmonitor","achecker"]
 
 #Método para llamar las herramientas
 def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
@@ -49,7 +49,7 @@ for pagina in paginas:
             for l in lista_herramientas:
                 ejecutarHerramienta(herramientas[l],l,pagina_url,pagina_id)
         else:
-            pass
+            copiarDatosAntiguos(herramientas[l],l,pagina_id,cursor)
                 
     else:
         #Añadir error en log.txt
