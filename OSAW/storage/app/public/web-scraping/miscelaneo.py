@@ -116,8 +116,9 @@ def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
 
 #Método para escribir el archivo logs.txt el error encontrado
 #   Tipo 1 -> Error provocado durante la ejecución de una herramienta
+#   Tipo 2 -> Error provocado al no poder crear una tarea con cron.py
 #   Tipo 3 -> Error provocado al no poder acceder a una web
-#   Herramienta vacio en caso de ser tipo 3
+#   Herramienta vacio en caso de ser tipo 2 ó 3
 def errorLog(directorio,tipo,fecha_test,herramienta,identificador,error):
 
     fecha_test
