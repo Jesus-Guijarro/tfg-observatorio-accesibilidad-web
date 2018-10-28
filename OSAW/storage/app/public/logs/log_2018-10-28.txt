@@ -1,0 +1,2 @@
+[01]	ERROR HERRAMIENTA: "accessmonitor"		FECHA: "2018-10-28 02:33:58.503220"		PAGINA WEB: "1"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"
+[03]	ERROR ACCESSO PAGINA WEB: "1"		FECHA: "2018-10-28 02:33:58.503220" 
