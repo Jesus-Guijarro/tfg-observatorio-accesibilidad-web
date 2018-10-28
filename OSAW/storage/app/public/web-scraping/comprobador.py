@@ -74,10 +74,11 @@ def comprobarCopiaHTML(pagina_id):
 
             driver.quit()
             desconexionBD(conexion,cursor)
-            return False #Devolvemos falso indicando que es necesario evaluar la pagina
+            return True #Devolvemos falso indicando que es necesario evaluar la pagina
         else:
             #Si no hay ningun cambio borramos el archivo creado
             os.remove(ruta_archivo_nuevo)
+            return False
     else:
         #Como es la primera vez que se evalua la página se guarda el contenido y el hash obtenido
         os.rename(ruta_archivo_nuevo,ruta_archivo_antiguo)

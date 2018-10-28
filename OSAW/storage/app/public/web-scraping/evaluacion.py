@@ -49,7 +49,8 @@ for pagina in paginas:
             for l in lista_herramientas:
                 ejecutarHerramienta(herramientas[l],l,pagina_url,pagina_id)
         else:
-            copiarDatosAntiguos(herramientas[l],l,pagina_id,cursor)
+            for l in lista_herramientas:
+                copiarDatosAntiguos(herramientas[l],l,pagina_id,cursor)
                 
     else:
         #Añadir error en log.txt
