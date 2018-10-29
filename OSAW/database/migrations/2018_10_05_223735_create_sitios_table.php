@@ -17,7 +17,9 @@ class CreateSitiosTable extends Migration
             $table->increments('id');
             $table->string('nombre', 50)->unique();
             $table->text('dominio');
-            $table->string('periodicidad_analisis');
+            $table->string('periodicidad');
+            $table->string("hora");
+            $table->integer("dia");
             $table->integer('num_paginas');
             $table->json('herramientas');
 

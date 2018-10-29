@@ -1,15 +1,25 @@
-import os,sys
+import sys
 
-from crontab import CronTab
+from conexiones import *
 from miscelaneo import *
+from crontab import CronTab
 
 #Argumentos
-
 operacion=str(sys.argv[1]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
 sitio_id=str(sys.argv[2])
-periodicidad=str(sys.argv[3]) # Diaria -> 'D'; Semanal -> 'S';  Mensual -> 'M'
-hora_dia=sys.argv[4] #Formato hh:mm
-dia=sys.argv[5] #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
+
+
+#Conexion base de datos
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
+
+cursor.execute("select periodicidad,hora,dia from sitios where id = %s", (sitio_id,))
+sitio = cursor.fetchone()
+
+periodicidad=sitio.__getitem__(0) # Diario; Semanal; Mensual
+hora=str(sitio.__getitem__(1)) #Formato hh:mm
+dia=int(sitio.__getitem__(2)) #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
 
 #Inicializamos crontab
 cron = CronTab(user='jesus')
@@ -25,7 +35,7 @@ def eliminar(sitio_id):
     cron.write()
 
 #Método para crear una tarea
-def crear(sitio_id,periodicidad,hora_dia,dia):
+def crear(sitio_id,periodicidad,hora,dia):
 
     #Rutas
     directorio = getDirectorio()
@@ -38,9 +48,10 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
     #Creación de la tarea
     tarea= cron.new(command=comando, comment=comentario)  
     #En general es necesario indicar el minuto y la hora
-    hora_dia=hora_dia.split(":")
-    hora=hora_dia[0]
-    minuto=hora_dia[1]
+    hora=hora.split(":")
+
+    minuto=hora[1]
+    hora=hora[0]
 
     dia = int(dia)
 
@@ -49,7 +60,7 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
 
     directorio=getDirectorio()
 
-    if periodicidad == "S": #Semanal
+    if periodicidad == "Semanal": #Semanal
         if dia<0 or dia>6:
             error="Día de la semana incorrecto. Valores posibles: 0 - 6"
             errorLog(directorio,2,getFecha(),"",sitio_id,error)
@@ -57,7 +68,7 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
             tarea.dow.on(dia)
             cron.write() 
 
-    elif periodicidad == "M": # Mensual
+    elif periodicidad == "Mensual": # Mensual
         if dia<1 or dia>31:
             error="Día del mes incorrecto. Valores posibles: 1 - 31"
             errorLog(directorio,2,getFecha(),"",sitio_id,error)
@@ -65,19 +76,21 @@ def crear(sitio_id,periodicidad,hora_dia,dia):
         else:
             tarea.day.on(dia)
             cron.write()
-    else: #Diaria
+    else: #Diario
         cron.write() 
 
 #Método para ejecutar la operacion solicitada
-def realizarOperacion(operacion):
+def realizarOperacion(operacion,periodicidad,hora,dia):
     if operacion == "C": #Crear
-        crear(sitio_id,periodicidad,hora_dia,dia)
+        crear(sitio_id,periodicidad,hora,dia)
     elif operacion == "A": # Actualizar
         eliminar(sitio_id)
-        crear(sitio_id,periodicidad,hora_dia,dia)
+        crear(sitio_id,periodicidad,hora,dia)
     elif operacion == "E": #Eliminar
         eliminar(sitio_id)
     else:
         return False
 
-realizarOperacion(operacion)
+realizarOperacion(operacion,periodicidad,hora,dia)
+
+desconexionBD(conexion,cursor)

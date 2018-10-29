@@ -9,8 +9,8 @@ from miscelaneo import *
 sitio_id=sys.argv[1]
 
 #Listado con las herramientas disponibles para ser usadas
-lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
-#lista_herramientas=["accessmonitor","vamola"]
+#lista_herramientas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
+lista_herramientas=["accessmonitor","vamola"]
 
 #Método para llamar las herramientas
 def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
