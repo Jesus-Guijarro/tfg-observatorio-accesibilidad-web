@@ -24,6 +24,7 @@ class SitiosTableSeeder extends Seeder
             'periodicidad' => 'Diario',
             'hora'=>'01:36',
             'dia' => '0',
+            'automatizado' => true, 
             'num_paginas' => '10',
             'categoria_id' => '1',
             'herramientas' => "$json"]);
@@ -34,6 +35,7 @@ class SitiosTableSeeder extends Seeder
             'periodicidad' => 'Semanal',
             'hora'=>'11:00',
             'dia' => '0',
+            'automatizado' => false, 
             'num_paginas' => '10',
             'categoria_id' => '1',
             'herramientas' => "$json"]);

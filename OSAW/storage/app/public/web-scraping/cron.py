@@ -4,29 +4,18 @@ from conexiones import *
 from miscelaneo import *
 from crontab import CronTab
 
-#Argumentos
-operacion=str(sys.argv[1]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
-sitio_id=str(sys.argv[2])
-
 
 #Conexion base de datos
 parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
-cursor.execute("select periodicidad,hora,dia from sitios where id = %s", (sitio_id,))
-sitio = cursor.fetchone()
-
-periodicidad=sitio.__getitem__(0) # Diario; Semanal; Mensual
-hora=str(sitio.__getitem__(1)) #Formato hh:mm
-dia=int(sitio.__getitem__(2)) #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
-
 #Inicializamos crontab
 cron = CronTab(user='jesus')
 
 #Método para eliminar una tarea
-def eliminar(sitio_id):
-    comentario="evaluar-sitio:"+sitio_id
+def eliminar(sitio_id,cursor):
+    comentario="evaluar-sitio:"+str(sitio_id)
     tareas=cron.find_comment(comentario)  
 
     for tarea in tareas:
@@ -34,22 +23,23 @@ def eliminar(sitio_id):
 
     cron.write()
 
+    actualizarCron("E",sitio_id,cursor)
+
 #Método para crear una tarea
-def crear(sitio_id,periodicidad,hora,dia):
+def crear(sitio_id,periodicidad,hora,dia,cursor):
 
     #Rutas
     directorio = getDirectorio()
-    ruta_evaluacion=directorio+"/storage/web-scraping/evaluacion.py " + sitio_id
+    ruta_evaluacion=directorio+"/storage/web-scraping/evaluacion.py " + str(sitio_id)
 
     #Comando y comentario asignado a la tarea
     comando="/usr/bin/python3 "+ ruta_evaluacion
-    comentario="evaluar-sitio:"+ sitio_id
+    comentario="evaluar-sitio:"+ str(sitio_id)
 
     #Creación de la tarea
     tarea= cron.new(command=comando, comment=comentario)  
     #En general es necesario indicar el minuto y la hora
     hora=hora.split(":")
-
     minuto=hora[1]
     hora=hora[0]
 
@@ -58,9 +48,11 @@ def crear(sitio_id,periodicidad,hora,dia):
     tarea.minute.on(int(minuto))
     tarea.hour.on(int(hora))
 
+    #Para el archivo logs
     directorio=getDirectorio()
 
     if periodicidad == "Semanal": #Semanal
+        #Verificacion de los dias disponibles de la semana
         if dia<0 or dia>6:
             error="Día de la semana incorrecto. Valores posibles: 0 - 6"
             errorLog(directorio,2,getFecha(),"",sitio_id,error)
@@ -69,28 +61,73 @@ def crear(sitio_id,periodicidad,hora,dia):
             cron.write() 
 
     elif periodicidad == "Mensual": # Mensual
+        #Comprobacion de los dias del mes posibles
         if dia<1 or dia>31:
             error="Día del mes incorrecto. Valores posibles: 1 - 31"
-            errorLog(directorio,2,getFecha(),"",sitio_id,error)
-            
+            errorLog(directorio,2,getFecha(),"",sitio_id,error)  
         else:
             tarea.day.on(dia)
             cron.write()
     else: #Diario
         cron.write() 
 
+    actualizarCron("C",sitio_id,cursor)
+
 #Método para ejecutar la operacion solicitada
-def realizarOperacion(operacion,periodicidad,hora,dia):
+def realizarOperacion(operacion,periodicidad,hora,dia,sitio_id,cursor):
     if operacion == "C": #Crear
-        crear(sitio_id,periodicidad,hora,dia)
+        crear(sitio_id,periodicidad,hora,dia,cursor)
     elif operacion == "A": # Actualizar
-        eliminar(sitio_id)
-        crear(sitio_id,periodicidad,hora,dia)
+        eliminar(sitio_id,cursor)
+        crear(sitio_id,periodicidad,hora,dia,cursor)
     elif operacion == "E": #Eliminar
-        eliminar(sitio_id)
+        eliminar(sitio_id,cursor)
     else:
         return False
 
-realizarOperacion(operacion,periodicidad,hora,dia)
+#Método para cambiar el estado de automatización de un sitio
+def actualizarCron(operacion,sitio_id,cursor):
+    #Si se crea, la automatiación se pone a cierto
+    if operacion == "C":
+        cursor.execute("update sitios set automatizado=%s where id=%s",(True,sitio_id,))
+        conexion.commit()
+    #En caso de que se elimine, la automatizacion del sitio se pone a falso
+    else:
+        cursor.execute("update sitios set automatizado=%s where id=%s",(False,sitio_id,))
+        conexion.commit()
+
+
+#Configuar la tarea de un sitio manualmente
+#Argumentos necesarios: 1. operacion a realizar y 2. identificador del sitio a gestionar
+if len(sys.argv) == 3:
+    operacion=str(sys.argv[1]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
+    sitio_id=str(sys.argv[2])
+
+    cursor.execute("select periodicidad,hora,dia,automatizado from sitios where id = %s", (sitio_id,))
+    sitio = cursor.fetchone()
+    periodicidad=sitio.__getitem__(0) # Diario; Semanal; Mensual
+    hora=str(sitio.__getitem__(1)) #Formato hh:mm
+    dia=int(sitio.__getitem__(2)) #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
+    automatizado=bool(sitio.__getitem__(3))
+    
+    realizarOperacion(operacion,periodicidad,hora,dia,sitio_id,cursor)
+
+#Asignar una tarea a cada sitio
+elif len(sys.argv) == 1:
+    cursor.execute("select id,periodicidad,hora,dia,automatizado from sitios")
+    sitios = cursor.fetchall()
+
+    for sitio in sitios:
+        sitio_id=sitio.__getitem__(0)
+        periodicidad=sitio.__getitem__(1) # Diario; Semanal; Mensual
+        hora=str(sitio.__getitem__(2)) #Formato hh:mm
+        dia=int(sitio.__getitem__(3)) #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
+        automatizado=bool(sitio.__getitem__(4))
+
+        # Si ya está automatizado se realiza la operación de actualización, en caso contrario se crea
+        if automatizado: 
+            realizarOperacion("A",periodicidad,hora,dia,sitio_id,cursor)
+        else:
+            realizarOperacion("C",periodicidad,hora,dia,sitio_id,cursor)
 
 desconexionBD(conexion,cursor)
