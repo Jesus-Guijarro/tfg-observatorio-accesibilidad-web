@@ -16,19 +16,19 @@ class UsersTableSeeder extends Seeder
 
         
         DB::table('users')->insert([
-        'nombre_usuario' => 'Colaborador' ,
+        'nombre' => 'Colaborador' ,
         'email' => 'col@osaw.com' ,
         'password' => 'password' ,
         'rol_id' => '1']);
 
         DB::table('users')->insert([
-        'nombre_usuario' => 'Experto' ,
+        'nombre' => 'Experto' ,
         'email' => 'expert@osaw.com' ,
         'password' => 'password' ,
         'rol_id' => '2']);
 
         DB::table('users')->insert([
-        'nombre_usuario' => 'Administrador' ,
+        'nombre' => 'Administrador' ,
         'email' => 'admin@osaw.com' ,
         'password' => 'password' ,
         'rol_id' => '3']);

@@ -18,9 +18,9 @@ class CreateUserPaginaTable extends Migration
             $table->json('informe');
             $table->date('fecha_test');
             $table->boolean('revisado');
-            $table->float('porcentaje_comprensible');
-            $table->float('porcentaje_operable');
             $table->float('porcentaje_perceptible');
+            $table->float('porcentaje_operable');
+            $table->float('porcentaje_comprensible');
             $table->float('porcentaje_robusto');
             $table->integer('num_errores_a');
             $table->integer('num_errores_aa');
