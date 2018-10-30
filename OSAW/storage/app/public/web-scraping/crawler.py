@@ -49,7 +49,10 @@ def obtenerPaginas(sitio_id,url,num_paginas,profundidad):
     #Comprobaciones para obtener enlaces correctos del sitio web
     for enlace in lista_enlaces:
         #Guardamos el valor del atributo "href" de cada enlace
-        href = enlace.get_attribute("href")
+        try:
+            href = enlace.get_attribute("href")
+        except Exception as e:
+            pass
         #Comprobamos primero que la referencia es un string
         if isinstance(href, str) == True:
             #Comprobamos que la referencia tiene un formato correcto

@@ -23,7 +23,7 @@ class SitiosTableSeeder extends Seeder
             [
                 'nombre' => 'Ministerio de Justicia',
                 'dominio' => 'www.mjusticia.gob.es',
-                'periodicidad' => 'Diario',
+                'periodicidad' => 'Semanal',
                 'hora'=>'13:00',
                 'dia' => '0',
                 'automatizado' => false, 
@@ -142,7 +142,7 @@ class SitiosTableSeeder extends Seeder
             [
                 'nombre' => 'Ministerio de Sanidad, Consumo y Bienestar Social',
                 'dominio' => 'www.mscbs.gob.es',
-                'periodicidad' => 'Diario',
+                'periodicidad' => 'Semanal',
                 'hora'=>'14:00',
                 'dia' => '3',
                 'automatizado' => false, 
@@ -218,7 +218,7 @@ class SitiosTableSeeder extends Seeder
             [
                 'nombre' => 'Ayuntamiento de San Vicente del Raspeig',
                 'dominio' => 'www.raspeig.es',
-                'periodicidad' => 'Diario',
+                'periodicidad' => 'Semanal',
                 'hora'=>'15:00',
                 'dia' => '2',
                 'automatizado' => false, 
@@ -250,7 +250,7 @@ class SitiosTableSeeder extends Seeder
             [
                 'nombre' => 'Instituto para la Diversificación y Ahorro de la Energía (IDAE)',
                 'dominio' => 'www.idae.es',
-                'periodicidad' => 'Diario',
+                'periodicidad' => 'Semanal',
                 'hora'=>'15:00',
                 'dia' => '4',
                 'automatizado' => false, 
@@ -283,7 +283,7 @@ class SitiosTableSeeder extends Seeder
             [
                 'nombre' => 'Universidad Miguel Hernández (UMH)',
                 'dominio' => 'www.umh.es',
-                'periodicidad' => 'Diario',
+                'periodicidad' => 'Semanal',
                 'hora'=>'15:00',
                 'dia' => '6',
                 'automatizado' => false, 
@@ -315,7 +315,7 @@ class SitiosTableSeeder extends Seeder
             [
                 'nombre' => 'Banco Santander',
                 'dominio' => 'www.bancosantander.es',
-                'periodicidad' => 'Diario',
+                'periodicidad' => 'Semanal',
                 'hora'=>'16:00',
                 'dia' => '1',
                 'automatizado' => false, 

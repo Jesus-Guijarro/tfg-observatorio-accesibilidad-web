@@ -54,6 +54,7 @@ def crear(sitio_id,periodicidad,hora,dia,cursor):
     if periodicidad == "Semanal": #Semanal
         #Verificacion de los dias disponibles de la semana
         if dia<0 or dia>6:
+            
             error="Día de la semana incorrecto. Valores posibles: 0 - 6"
             errorLog(directorio,2,getFecha(),"",sitio_id,error)
         else:
@@ -116,6 +117,8 @@ if len(sys.argv) == 3:
 elif len(sys.argv) == 1:
     cursor.execute("select id,periodicidad,hora,dia,automatizado from sitios")
     sitios = cursor.fetchall()
+
+    
 
     for sitio in sitios:
         sitio_id=sitio.__getitem__(0)
