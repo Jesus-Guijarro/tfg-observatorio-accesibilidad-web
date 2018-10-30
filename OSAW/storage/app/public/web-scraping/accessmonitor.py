@@ -58,8 +58,8 @@ try:
     botonWCAG2= driver.find_element_by_css_selector("#form1 > form > fieldset > div.center > input:nth-child(3)")
     botonWCAG2.click()
 
-    #Pausa de máximo 1 minuto
-    wait = WebDriverWait(driver, 60)
+    #Pausa de máximo 2 minutos
+    wait = WebDriverWait(driver, 120)
     #Se espera hasta que se haya evaluado y ofrecido el resultado
     try:
         elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagina > div.corpo > h2:nth-child(7)")))

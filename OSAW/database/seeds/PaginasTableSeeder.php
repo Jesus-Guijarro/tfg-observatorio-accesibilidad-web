@@ -15,7 +15,7 @@ class PaginasTableSeeder extends Seeder
 
         #Ministerio de Justicia
         DB::table('paginas')->insert([
-            ['URL' => 'http://www.mjusticia.gob.es',
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/inicio',
             'sitio_id' => '1'],
             ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano',
             'sitio_id' => '1'],
@@ -39,7 +39,7 @@ class PaginasTableSeeder extends Seeder
         
         #MAgencia Estatal de Administración Tributaria
         DB::table('paginas')->insert([
-            ['URL' => 'https://www.agenciatributaria.es/',
+            ['URL' => 'https://www.agenciatributaria.es',
             'sitio_id' => '2'],
             ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Renta.shtml',
             'sitio_id' => '2'],
@@ -63,7 +63,7 @@ class PaginasTableSeeder extends Seeder
             
         #Generalitat Valenciana: 
         DB::table('paginas')->insert([
-            ['URL' => 'http://www.gva.es',
+            ['URL' => 'http://www.gva.es/es/inicio/presentacion',
             'sitio_id' => '3'],
             ['URL' => 'http://www.gva.es/es/inicio/administraciones',
             'sitio_id' => '3'],
@@ -88,7 +88,7 @@ class PaginasTableSeeder extends Seeder
 
         #Ayuntamiento de Alicante: 
         DB::table('paginas')->insert([
-            ['URL' => 'http://www.alicante.es',
+            ['URL' => 'http://www.alicante.es/es',
             'sitio_id' => '4'],
             ['URL' => 'http://www.alicante.es/es/contenidos/servicios-emergencia',
             'sitio_id' => '4'],
@@ -180,7 +180,7 @@ class PaginasTableSeeder extends Seeder
             ]);
         #Universidad de Alicante (UA):  
         DB::table('paginas')->insert([
-            ['URL' => 'https://web.ua.es',
+            ['URL' => 'https://www.ua.es/es/',
             'sitio_id' => '8'],
             ['URL' => 'https://web.ua.es/es/estudia-en-la-ua.html',
             'sitio_id' => '8'],
@@ -249,7 +249,7 @@ class PaginasTableSeeder extends Seeder
             ]);
         #Banco Santander: 
         DB::table('paginas')->insert([
-            ['URL' => 'https://www.bancosantander.es',
+            ['URL' => 'https://www.bancosantander.es/es/particulares',
             'sitio_id' => '23'],
             ['URL' => 'https://www.bancosantander.es/es/particulares/prestamos',
             'sitio_id' => '23'],
