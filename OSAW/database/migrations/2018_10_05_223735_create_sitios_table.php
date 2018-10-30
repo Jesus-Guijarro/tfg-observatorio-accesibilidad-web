@@ -15,7 +15,7 @@ class CreateSitiosTable extends Migration
     {
         Schema::create('sitios', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre', 50)->unique();
+            $table->string('nombre', 70)->unique();
             $table->text('dominio');
             $table->string('periodicidad');
             $table->string('hora');
