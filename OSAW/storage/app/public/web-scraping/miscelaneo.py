@@ -234,7 +234,7 @@ def copiarDatosAntiguos(herramienta_eval,herramienta,pagina_id,cursor):
             resultado = cursor.fetchone()
             cantidad=resultado.__getitem__(0)
             
-                if cantidad>0:
+            if cantidad>0:
                 cursor.execute("select puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,datos_problemas,fecha_test from eiiicheckers where pagina_id = %s order by id desc limit 1", (pagina_id,))
                 
                 evaluacion = cursor.fetchone()
