@@ -1,4 +1,5 @@
 from comprobador import *
 
-print(comprobarAccesoyTipo("https://www.iberdrola.es/atencion-cliente"))
-print(comprobarAccesoyTipo("https://www.iberdrola.es/atencion-cliente#form-consultas"))
+print(comprobarAccesoyTipo("http://www.gva.es/es/inicio/presentacion"))
+print(comprobarAccesoyTipo("http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria"))
+
