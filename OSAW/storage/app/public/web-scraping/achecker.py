@@ -2,7 +2,7 @@
 import sys
 
 from conexiones import *
-from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, cabeceraReporte,getNumProblemas, errorLog
+from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, cabeceraReporte,datosProblemas,getNumProblemas, errorLog
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By

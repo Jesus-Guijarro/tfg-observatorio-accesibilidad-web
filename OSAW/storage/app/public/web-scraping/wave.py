@@ -29,47 +29,56 @@ try:
     #Decodificamos los datos obtenidos
     datos_json=json.loads(r.content.decode('utf-8'))
 
-    #Obtenemos los números de las distintas categorias
-    num_problemas = datos_json["categories"]["error"]["count"]
-    num_advertencias= datos_json["categories"]["alert"]["count"]
-    num_caracteristicas= datos_json["categories"]["feature"]["count"]
-    num_elem_ARIA= datos_json["categories"]["html5"]["count"]
-    num_problemas_contraste= datos_json["categories"]["contrast"]["count"]
+    #La API no sigue un esquema común para las URLs que se han podido analizar y las que no.
+    exito = True
 
-    #Creamos el reporte 
-    reporte = open(ruta_reporte, 'a')
-    reporte.write(cabeceraReporte(pagina_url,fecha_test))
-
-    #Obtenemos los datos a guardar en el reporte
-    def getDatos(categoria,datos):
-        valores = datos.values()
-        #claves = datos.keys()
-        reporte.write(categoria+"\n")
-        for v in valores:
-            reporte.write(str(v["description"]) +"\t  VECES ENCONTRADO: "+ str(v["count"])+"\n")
-        reporte.write("-------------------------------------------------------------------\n")
-
-    #En algunas ocasiones una o varias de las categorias no tiene elementos accesibles
     try:
-        getDatos("PROBLEMAS",datos_json["categories"]["error"]["items"])
-    except Exception as e:
-        pass
-    try:
-        getDatos("ALERTAS",datos_json["categories"]["alert"]["items"])
-    except Exception as e:
-        pass
-    try:
-        getDatos("CARACTERISTICAS",datos_json["categories"]["feature"]["items"])
-    except Exception as e:
-        pass
-    try:
-        getDatos("PROBLEMAS DE CONTRASTE",datos_json["categories"]["contrast"]["items"])
+        exito=datos_json["success"]
     except Exception as e:
         pass
 
-    cursor=cursor.execute("insert into waves(pagina_id,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,ruta_BD,fecha_test,))
-    reporte.close()
-    desconexionBD(conexion,cursor)
+    if exito :
+        #Obtenemos los números de las distintas categorias
+        num_problemas = datos_json["categories"]["error"]["count"]
+        num_advertencias= datos_json["categories"]["alert"]["count"]
+        num_caracteristicas= datos_json["categories"]["feature"]["count"]
+        num_elem_ARIA= datos_json["categories"]["html5"]["count"]
+        num_problemas_contraste= datos_json["categories"]["contrast"]["count"]
+
+        #Creamos el reporte 
+        reporte = open(ruta_reporte, 'a')
+        reporte.write(cabeceraReporte(pagina_url,fecha_test))
+
+        #Obtenemos los datos a guardar en el reporte
+        def getDatos(categoria,datos):
+            valores = datos.values()
+            #claves = datos.keys()
+            reporte.write(categoria+"\n")
+            for v in valores:
+                reporte.write(str(v["description"]) +"\t  VECES ENCONTRADO: "+ str(v["count"])+"\n")
+            reporte.write("-------------------------------------------------------------------\n")
+
+        #En algunas ocasiones una o varias de las categorias no tiene elementos accesibles
+        try:
+            getDatos("PROBLEMAS",datos_json["categories"]["error"]["items"])
+        except Exception as e:
+            pass
+        try:
+            getDatos("ALERTAS",datos_json["categories"]["alert"]["items"])
+        except Exception as e:
+            pass
+        try:
+            getDatos("CARACTERISTICAS",datos_json["categories"]["feature"]["items"])
+        except Exception as e:
+            pass
+        try:
+            getDatos("PROBLEMAS DE CONTRASTE",datos_json["categories"]["contrast"]["items"])
+        except Exception as e:
+            pass
+
+        cursor=cursor.execute("insert into waves(pagina_id,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,ruta_BD,fecha_test,))
+        reporte.close()
+        desconexionBD(conexion,cursor)
 
 except Exception as e:
         errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)

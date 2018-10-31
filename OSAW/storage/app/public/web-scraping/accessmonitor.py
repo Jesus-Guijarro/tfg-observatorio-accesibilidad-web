@@ -37,7 +37,7 @@ try:
 
     #Pausa explicita de 30 segundos
     #Se pausa hasta que se encuentra el elemento
-    wait = WebDriverWait(driver, 30) 
+    wait = WebDriverWait(driver, 60) 
 
     #Esperamos hasta que accedemos a la web de la herramienta
     #En caso negativo se cancela el análisis y se cierra el driver

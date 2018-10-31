@@ -1,18 +1,12 @@
 from comprobaciones import *
 from conexiones import *
 
-parametros = conexionBD()
-conexion= parametros[0]
-cursor = parametros[1]
+
+pagina_web="http://www.valencia.es/ayuntamiento/Mercados.nsf/vDocumentosTituloAux/Inicio?opendocument&lang=2&nivel=1"
+pagina_id=177
+
+print(comprobarAccesoyTipo(pagina_web))
+print(comprobarCopiaHTML(pagina_id))
 
 
-cursor.execute("select count(*) from waves where pagina_id = %s order by id desc limit 1", (22,))
-            
-resultado = cursor.fetchone()
-cantidad=resultado.__getitem__(0)
-#Si el resultado es 0 se comprueba y se añade en caso de que se pueda acceder a ella
-if cantidad>0:
-    print("A")
-
-desconexionBD(conexion,cursor)
 

@@ -7,7 +7,7 @@ from miscelaneo import modoHeadless, getDirectorio, getRutaCopiaHTML
 
 #Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
 def comprobarReferencia(href, sitio_url):
-    if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1:
+    if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1 and '#' not in href: #El '#' es por la herramienta observatorio.py
         return True
     return False
 
