@@ -4,8 +4,8 @@ import sys, requests, mysql.connector
 
 from selenium import webdriver
 from conexiones import *
-from miscelaneo import *
-from comprobador import *
+from miscelaneo import getURL,modoHeadless
+from comprobaciones import comprobarReferencia, comprobarAccesoyTipo
 
 sitio_id=sys.argv[1]
 num_paginas=int(sys.argv[2])

@@ -2,8 +2,8 @@ import io, json, mysql.connector, os, subprocess, sys
 
 from selenium import webdriver
 from conexiones import *
-from comprobador import *
-from miscelaneo import *
+from comprobaciones import comprobarAccesoyTipo, comprobarCopiaHTML
+from miscelaneo import getDirectorio, getRutaComando, copiarDatosAntiguos, getFecha, errorLog
 
 #Argumento sys.argv[1] -> id del sitio web
 sitio_id=sys.argv[1]
@@ -19,8 +19,6 @@ def ejecutarHerramienta(herramienta_eval,herramienta,pagina_web,pagina_id):
 
         comando="/usr/bin/python3 "+getRutaComando(directorio,herramienta,pagina_web,pagina_id)
         subprocess.run(comando, shell=True, check=True)
-
-
 
 #Conexión base de datos
 parametros = conexionBD()

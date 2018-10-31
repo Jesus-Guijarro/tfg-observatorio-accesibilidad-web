@@ -2,7 +2,7 @@
 import sys
 
 from conexiones import *
-from miscelaneo import *
+from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, cabeceraReporte,getNumProblemas, errorLog
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -89,12 +89,12 @@ try:
     reporte = open(ruta_reporte, 'a')
     reporte.write(cabeceraReporte(pagina_url,fecha_test))
 
-    datos=datosProblema("AC_errors",reporte,driver)
+    datos=datosProblemas("AC_errors",reporte,driver)
     num_problemas_conocidos_a = getNumProblemas(datos,'(A)')
     num_problemas_conocidos_aa = getNumProblemas(datos,'(AA)')
     num_problemas_conocidos_aaa = getNumProblemas(datos,'(AAA)')
 
-    datos=datosProblema("AC_potential_problems",reporte,driver)
+    datos=datosProblemas("AC_potential_problems",reporte,driver)
     num_problemas_potenciales_a = getNumProblemas(datos,'(A)')
     num_problemas_potenciales_aa = getNumProblemas(datos,'(AA)')
     num_problemas_potenciales_aaa = getNumProblemas(datos,'(AAA)')

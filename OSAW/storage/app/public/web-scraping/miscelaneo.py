@@ -15,9 +15,6 @@ def modoHeadless():
 
     return driver
 
-def cabeceraReporte(pagina_url,fecha_test):
-    cabecera='REPORTE PÁGINA WEB: ' + pagina_url+ '\t\t'+"FECHA EVALUACIÓN: "+ fecha_test+'\n\n'
-    return cabecera
 
 #Transformar datos de problemas para guardarlos en archivos de texto
 def transformarDatos(datos):
@@ -36,7 +33,7 @@ def transformarDatos(datos):
 
 #Herramientas: Achecker y Vamolà
 #Escribir y obtener los datos de los problemas
-def datosProblema(tipo_problema,reporte,driver):
+def datosProblemas(tipo_problema,reporte,driver):
     try:
         problemas=driver.find_element_by_id(tipo_problema)
 
@@ -94,6 +91,10 @@ def getDirectorio():
     directorio=directorio.replace("/storage/app","")
 
     return directorio
+
+def cabeceraReporte(pagina_url,fecha_test):
+    cabecera='REPORTE PÁGINA WEB: ' + pagina_url+ '\t\t'+"FECHA EVALUACIÓN: "+ fecha_test+'\n\n'
+    return cabecera
 
 #Ruta para guardar rutas de reportes
 def getRutaReporte(directorio,herramienta,pagina_id,fecha_test):

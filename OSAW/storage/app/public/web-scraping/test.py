@@ -1,4 +1,4 @@
-from comprobador import *
+from comprobaciones import *
 from conexiones import *
 
 parametros = conexionBD()
@@ -6,7 +6,7 @@ conexion= parametros[0]
 cursor = parametros[1]
 
 
-cursor.execute("select count(*) from waves where pagina_id = %s order by id desc limit 1", (3,))
+cursor.execute("select count(*) from waves where pagina_id = %s order by id desc limit 1", (22,))
             
 resultado = cursor.fetchone()
 cantidad=resultado.__getitem__(0)

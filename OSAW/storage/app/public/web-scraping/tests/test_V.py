@@ -90,14 +90,14 @@ try:
     reporte = open(ruta_reporte, 'a')
     reporte.write(cabeceraReporte(pagina_url,fecha_test))
 
-    datos=datosProblema("AC_errors",reporte,driver)
+    datos=datosProblemas("AC_errors",reporte,driver)
     
     if datos:
         num_problemas_conocidos_a = int(datos.count('(A)'))
         num_problemas_conocidos_aa = int(datos.count('(AA)'))
         num_problemas_conocidos_aaa = int(datos.count('(AAA)'))
 
-    datos=datosProblema("AC_warnings",reporte,driver)
+    datos=datosProblemas("AC_warnings",reporte,driver)
     if datos:
         num_problemas_potenciales_a = int(datos.count('(A)'))
         num_problemas_potenciales_aa = int(datos.count('(AA)'))

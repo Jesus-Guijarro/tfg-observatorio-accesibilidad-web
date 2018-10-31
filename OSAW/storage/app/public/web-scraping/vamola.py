@@ -2,7 +2,7 @@
 import sys
 
 from conexiones import *
-from miscelaneo import *
+from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, cabeceraReporte, getNumProblemas, errorLog
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -84,13 +84,13 @@ try:
 
 
     #Problemas conocidos
-    datos=datosProblema("AC_errors",reporte,driver)
+    datos=datosProblemas("AC_errors",reporte,driver)
     num_problemas_conocidos_a = getNumProblemas(datos,'(A)')
     num_problemas_conocidos_aa = getNumProblemas(datos,'(AA)')
     num_problemas_conocidos_aaa = getNumProblemas(datos,'(AAA)')
 
     #Problemas potenciales
-    datos=datosProblema("AC_warnings",reporte,driver)
+    datos=datosProblemas("AC_warnings",reporte,driver)
     num_problemas_potenciales_a = getNumProblemas(datos,'(A)')
     num_problemas_potenciales_aa = getNumProblemas(datos,'(AA)')
     num_problemas_potenciales_aaa = getNumProblemas(datos,'(AAA)')

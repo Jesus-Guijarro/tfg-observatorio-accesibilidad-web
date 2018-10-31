@@ -3,7 +3,7 @@
 import sys
 
 from conexiones import *
-from miscelaneo import *
+from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, cabeceraReporte, errorLog
 from googletrans import Translator
 
 

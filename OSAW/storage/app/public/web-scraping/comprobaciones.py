@@ -1,9 +1,9 @@
 import io, mysql.connector, os, requests
 
 from conexiones import *
-from hasher import *
+from hasher import hashArchivo
 from selenium import webdriver
-from miscelaneo import *
+from miscelaneo import modoHeadless, getDirectorio, getRutaCopiaHTML
 
 #Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
 def comprobarReferencia(href, sitio_url):

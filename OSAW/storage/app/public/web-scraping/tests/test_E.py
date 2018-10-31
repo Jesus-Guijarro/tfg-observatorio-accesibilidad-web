@@ -87,7 +87,7 @@ try:
     reporte.write(cabeceraReporte(pagina_url,fecha_test))
 
     #Datos problemas y calculo de número de problemas según nivel
-    def datosProblema(frase,problema, nivel,driver):
+    def datosProblemas(frase,problema, nivel,driver):
         try:
             problema=int(driver.find_element_by_id(problema))
             reporte.write(frase+'\t\t VECES ENCONTRADO: '+ problema+'\n')
@@ -98,26 +98,26 @@ try:
         except Exception as e:
             pass
         
-    datosProblema("CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       TÉCNICA H37: Uso de <alt> en elementos <img>","icon_alt-on-img_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 1.4.1: Uso del color ","icon_use-color_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función","icon_pointing-device-events_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 2.4.2: Titulado de páginas       FALLO F25: Fallo del Criterio de Conformidad 2.4.2 debido al título de una página web que no identifica los contenidos","icon_title-not-descriptive_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 2.4.5: Múltiples vías       TÉCNICA G125: Proporcionar enlaces para navegar a páginas web relacionadas","icon_links-webpages_rstFail", "AA",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 2.4.6: Encabezados y etiquetas       TÉCNICA G130: Proporcionar encabezados descriptivos","icon_descriptive-headings_rstFail", "AA",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 3.1.1: Idioma de la página      ","icon_language-determine_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 3.1.2: Idioma de las partes      ","icon_language-attributes-page_rstFail", "AA",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      TÉCNICA G13: Describir lo que sucederá antes de que se realice un cambio en un control de formulario que cause que ocurra un cambio de contexto","icon_forms-without-buttons_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      TÉCNICA H32: Proporcionar botones de envío de formulario","icon_submit-buttons_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <fieldset> y <legend>","icon_h71-sturcture_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G167: Usar un botón adyacente para etiquetar el propósito de un campo","icon_button-form-control_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G131: Proporcionar etiquetas descriptivas","icon_descriptive-labels_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      ","icon_referencing-element_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      ","icon_id-unique-value_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H64: Usando el atributo <title> de los elementos <frame> y <iframe>","icon_title-frame-iframe_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H65: Usar el atributo <title> para identificar los controles de formulario cuando no se puede usar el elemento <label>","icon_title-attribute-form-control_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      FALLO F89: Fallo de los Criterios de Conformidad 2.4.4, 2.4.9 y 4.1.2 debido a que no se proporciona un nombre accesible para una imagen que es el único contenido en un enlace","icon_null-alt-image_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H91: Usar controles de formulario HTML y enlaces","icon_form-controls-links_rstFail", "A",driver)
-    datosProblema("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      FALLO F59: Fallo del Criterio de Conformidad 4.1.2 debido al uso de secuencias de comandos para hacer que los elementos <div> o <span> sean un control de la interfaz de usuario en HTML sin proporcionar una función para el control","icon_script-ui-control_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       TÉCNICA H37: Uso de <alt> en elementos <img>","icon_alt-on-img_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 1.4.1: Uso del color ","icon_use-color_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función","icon_pointing-device-events_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 2.4.2: Titulado de páginas       FALLO F25: Fallo del Criterio de Conformidad 2.4.2 debido al título de una página web que no identifica los contenidos","icon_title-not-descriptive_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 2.4.5: Múltiples vías       TÉCNICA G125: Proporcionar enlaces para navegar a páginas web relacionadas","icon_links-webpages_rstFail", "AA",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 2.4.6: Encabezados y etiquetas       TÉCNICA G130: Proporcionar encabezados descriptivos","icon_descriptive-headings_rstFail", "AA",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 3.1.1: Idioma de la página      ","icon_language-determine_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 3.1.2: Idioma de las partes      ","icon_language-attributes-page_rstFail", "AA",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      TÉCNICA G13: Describir lo que sucederá antes de que se realice un cambio en un control de formulario que cause que ocurra un cambio de contexto","icon_forms-without-buttons_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      TÉCNICA H32: Proporcionar botones de envío de formulario","icon_submit-buttons_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <fieldset> y <legend>","icon_h71-sturcture_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G167: Usar un botón adyacente para etiquetar el propósito de un campo","icon_button-form-control_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G131: Proporcionar etiquetas descriptivas","icon_descriptive-labels_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      ","icon_referencing-element_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      ","icon_id-unique-value_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H64: Usando el atributo <title> de los elementos <frame> y <iframe>","icon_title-frame-iframe_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H65: Usar el atributo <title> para identificar los controles de formulario cuando no se puede usar el elemento <label>","icon_title-attribute-form-control_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      FALLO F89: Fallo de los Criterios de Conformidad 2.4.4, 2.4.9 y 4.1.2 debido a que no se proporciona un nombre accesible para una imagen que es el único contenido en un enlace","icon_null-alt-image_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H91: Usar controles de formulario HTML y enlaces","icon_form-controls-links_rstFail", "A",driver)
+    datosProblemas("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      FALLO F59: Fallo del Criterio de Conformidad 4.1.2 debido al uso de secuencias de comandos para hacer que los elementos <div> o <span> sean un control de la interfaz de usuario en HTML sin proporcionar una función para el control","icon_script-ui-control_rstFail", "A",driver)
    '''
     Uso de <alt> en elementos <img> [1.1.1]
     Uso del color [1.4.1] A

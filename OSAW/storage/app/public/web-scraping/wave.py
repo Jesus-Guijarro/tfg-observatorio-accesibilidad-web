@@ -1,7 +1,7 @@
-import json, requests, io, sys, os
+import json, requests, sys
 
-from miscelaneo import *
 from conexiones import *
+from miscelaneo import getDirectorio,getFecha, getRutaReporte, cabeceraReporte, errorLog
 
 #Argumentos URL e ID de la página web
 pagina_url=sys.argv[1]

@@ -1,7 +1,7 @@
 import sys
 
 from conexiones import *
-from miscelaneo import *
+from miscelaneo import getDirectorio, getFecha, errorLog
 from crontab import CronTab
 
 
@@ -117,8 +117,6 @@ if len(sys.argv) == 3:
 elif len(sys.argv) == 1:
     cursor.execute("select id,periodicidad,hora,dia,automatizado from sitios")
     sitios = cursor.fetchall()
-
-    
 
     for sitio in sitios:
         sitio_id=sitio.__getitem__(0)
