@@ -26,7 +26,7 @@ def transformarDatos(datos):
     datos=datos.replace('Check','\n\n\tREVISAR:')
     datos=datos.replace('Repair','\n\n\tREPARAR:')
     datos=datos.replace('Line','\n\n\t\tLINEA:')
-    datos=datos.replace('Column','\n\n\t\tCOLUMNA')
+    datos=datos.replace('Column','COLUMNA')
     datos=datos.replace('\t\t\t','')
 
     return datos
@@ -110,9 +110,10 @@ def getRutaCopiaHTML(directorio,pagina_id, nuevo):
 
     return ruta
 
-def getRutaComando(directorio,herramienta,pagina_web,pagina_id):
+#Obtenemos la ruta donde se encuentra la herramienta
+def getRutaHerramienta(directorio,herramienta):
 
-    ruta=directorio+"/storage/web-scraping/"+herramienta+".py " +'"' + str(pagina_web)+'"'+" "+ str(pagina_id)
+    ruta=directorio+"/storage/web-scraping/"+herramienta+".py"
 
     return ruta
 
