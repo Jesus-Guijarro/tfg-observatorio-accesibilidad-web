@@ -1,9 +1,8 @@
 import io, mysql.connector, os, requests
 
 from conexiones import *
-from hasher import hashArchivo
 from selenium import webdriver
-from miscelaneo import modoHeadless, getDirectorio, getRutaCopiaHTML
+from miscelaneo import hashArchivo, modoHeadless, getDirectorio, getRutaCopiaHTML
 
 #Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
 def comprobarReferencia(href, sitio_url):
@@ -75,12 +74,12 @@ def comprobarCopiaHTML(pagina_id):
             driver.quit()
             desconexionBD(conexion,cursor)
             return True #Devolvemos true indicando que es necesario evaluar la pagina
+        #Si no hay ningun cambio borramos el archivo creado
         else:
-            #Si no hay ningun cambio borramos el archivo creado
             os.remove(ruta_archivo_nuevo)
             return False
+    #Como es la primera vez que se evalua la página se guarda el contenido y el hash obtenido
     else:
-        #Como es la primera vez que se evalua la página se guarda el contenido y el hash obtenido
         os.rename(ruta_archivo_nuevo,ruta_archivo_antiguo)
         
         ruta_BD=getRutaCopiaHTML("",pagina_id, "")

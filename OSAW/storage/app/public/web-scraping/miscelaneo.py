@@ -1,7 +1,23 @@
-import os, requests
+import os, requests, hashlib,codecs
 
 from selenium import webdriver
 from datetime import datetime
+
+#Función para obtener el valor hash de una copia HTML
+def hashArchivo(ruta_archivo):
+    #Se obtiene el contenido del archivo html
+    f=codecs.open(ruta_archivo, 'r', encoding="utf8")
+    contenido=f.read()
+
+    #Se transforma el contenido con el algoritmo críptográfico MD5
+    hash = hashlib.md5()
+    hash.update(('%s' % (contenido)).encode('utf-8'))
+    valor_hash= hash.hexdigest()
+
+    #16 de los 32 caracteres
+    valor_hash= valor_hash[0:16]
+
+    return valor_hash
 
 #Activar el modo headless
 def modoHeadless():
@@ -135,7 +151,7 @@ def errorLog(directorio,tipo,fecha_test,herramienta,identificador,error):
      
     if tipo==1: 
         log.write('[01]\tERROR HERRAMIENTA: "' + herramienta + '"\t\tFECHA: "'+ fecha_absoluta+'"\t\tPAGINA WEB: "' + identificador +'"\t\tDESCRIPCION: "'+repr(error)+ '"\n')
-    if tipo==2: 
+    elif tipo==2: 
         log.write('[02]\tERROR CRONTAB SITIO WEB: "'+identificador+'"\t\tFECHA: "'+ fecha_absoluta+'"\t\tDESCRIPCION: "'+repr(error)+ '"\n')
     else:
         log.write('[03]\tERROR ACCESSO PAGINA WEB: "' + identificador + '"\t\tFECHA: "'+ fecha_absoluta +'" \n')
