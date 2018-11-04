@@ -1,7 +1,7 @@
 import json, requests, sys
 
 from conexiones import *
-from miscelaneo import getDirectorio,getFecha, getRutaReporte, cabeceraReporte, errorLog
+from miscelaneo import getDirectorio,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 
 #Argumentos URL e ID de la página web
 pagina_id=sys.argv[1]
@@ -24,7 +24,8 @@ def getDatos(categoria,datos,reporte):
         reporte.write(str(v["description"]) +"\t  VECES ENCONTRADO: "+ str(v["count"])+"\n")
     reporte.write("-------------------------------------------------------------------\n")
 
-def runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
+#Método para ejecutar el proceso de evaluación
+def ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
 
     directorio = getDirectorio()
     fecha_test=getFecha()
@@ -58,7 +59,7 @@ def runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
 
             #Creamos el reporte 
             reporte = open(ruta_reporte, 'a')
-            reporte.write(cabeceraReporte(pagina_url,fecha_test))
+            reporte.write(getCabeceraReporte(pagina_url,fecha_test))
 
             #En algunas ocasiones una o varias de las categorias no tiene elementos accesibles
             try:
@@ -87,4 +88,5 @@ def runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
     except Exception as e:
             errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
 
-runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor)
+ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor)
+desconexionBD(conexion)

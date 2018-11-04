@@ -1,7 +1,7 @@
 import json, requests, sys
 
 from conexiones import *
-from miscelaneo import getDirectorio,getFecha, getRutaReporte, cabeceraReporte, errorLog
+from miscelaneo import getDirectorio,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 
 #Argumentos URL e ID de la página web
 pagina_id=sys.argv[1]
@@ -92,7 +92,7 @@ def datosPautasElemento(l,reporte):
 def crearReporte(principios,ruta_reporte,pagina_url,fecha_test):
     reporte = open(ruta_reporte, 'a')
 
-    reporte.write(cabeceraReporte(pagina_url,fecha_test))
+    reporte.write(getCabeceraReporte(pagina_url,fecha_test))
     for p in principios:
         reporte.write('\nPrincipio: '+str(p["numero"])+'.'+str(p["titulo"])+'\n') 
         reporte.write('Descripcion: ' + str(p["descripcion"])+'\n\n')
@@ -104,7 +104,8 @@ def crearReporte(principios,ruta_reporte,pagina_url,fecha_test):
 
     reporte.close()
 
-def runObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
+#Método para ejecutar el proceso de evaluación
+def ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
 
     directorio = getDirectorio()
 
@@ -154,4 +155,5 @@ def runObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
     except Exception as e:
         errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
 
-runObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor)
+ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor)
+desconexionBD(conexion)

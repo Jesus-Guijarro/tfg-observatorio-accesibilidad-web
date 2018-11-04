@@ -3,7 +3,7 @@
 import sys
 
 from conexiones import *
-from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, cabeceraReporte, errorLog
+from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, getCabeceraReporte, errorLog
 from googletrans import Translator
 
 
@@ -33,7 +33,7 @@ def getValor(css_selector,driver):
 
 def crearReporte(ruta_reporte,datos,pagina_url,fecha_test):
     reporte = open(ruta_reporte, 'a')
-    reporte.write(cabeceraReporte(pagina_url,fecha_test))
+    reporte.write(getCabeceraReporte(pagina_url,fecha_test))
     
     #Usamos un traductor debido a que la información del reporte está en portugués
     translator = Translator()
@@ -45,8 +45,8 @@ def crearReporte(ruta_reporte,datos,pagina_url,fecha_test):
 
     reporte.close()
 
-
-def runAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
+#Método para ejecutar el proceso de evaluación
+def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
 
     directorio = getDirectorio()
     fecha_test=getFecha()
@@ -127,7 +127,8 @@ def runAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
 
 
-runAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor)
+ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor)
+desconexionBD(conexion)
 
 
 

@@ -76,7 +76,7 @@ def getDirectorio():
 
     return directorio
 
-def cabeceraReporte(pagina_url,fecha_test):
+def getCabeceraReporte(pagina_url,fecha_test):
     cabecera='REPORTE PÁGINA WEB: ' + pagina_url+ '\t\t'+"FECHA EVALUACIÓN: "+ fecha_test+'\n\n'
     return cabecera
 

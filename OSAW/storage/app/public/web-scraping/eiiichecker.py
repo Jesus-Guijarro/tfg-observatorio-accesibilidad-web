@@ -2,7 +2,7 @@
 import sys
 
 from conexiones import *
-from miscelaneo import getDirectorio,getFecha,modoHeadless, getRutaReporte, cabeceraReporte, errorLog
+from miscelaneo import getDirectorio,getFecha,modoHeadless, getRutaReporte, getCabeceraReporte, errorLog
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -31,7 +31,8 @@ def datosErrores(frase,problema,reporte,driver):
     except Exception as e:
         return 0
 
-def runEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
+#Método para ejecutar el proceso de evaluación
+def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
     directorio = getDirectorio()
 
     fecha_test=getFecha()
@@ -95,7 +96,7 @@ def runEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
 
         #Crear reporte
         reporte = open(ruta_reporte, 'a')
-        reporte.write(cabeceraReporte(pagina_url,fecha_test))
+        reporte.write(getCabeceraReporte(pagina_url,fecha_test))
             
         #Se obtiene el número de problemas por nivel al mismo tiempo que se crea el archivo con los datos del reporte
         num_problemas_a+=datosErrores("CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       TÉCNICA H37: Uso de <&alt> en elementos <&img>","icon_alt-on-img_rstFail", reporte,driver)
@@ -131,4 +132,5 @@ def runEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
 
     driver.quit()
 
-runEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor)
+ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor)
+desconexionBD(conexion)

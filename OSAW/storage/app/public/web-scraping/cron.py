@@ -147,6 +147,5 @@ def ejecutarCrontab(argumentos,conexion,cursor):
     elif len(argumentos) == 1:
         tareaAutomatico(conexion,cursor)
 
-    desconexionBD(conexion)
-
 ejecutarCrontab(argumentos,conexion,cursor)
+desconexionBD(conexion)

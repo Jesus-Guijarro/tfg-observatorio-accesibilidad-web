@@ -101,5 +101,3 @@ def comprobarCopiaHTML(pagina_id):
     driver.quit()
     desconexionBD(conexion)
     return True
-
-comprobarCopiaHTML(241)

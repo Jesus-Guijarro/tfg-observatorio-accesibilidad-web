@@ -2,7 +2,7 @@
 import sys
 
 from conexiones import *
-from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, cabeceraReporte,datosProblemas,getNumProblemas, errorLog
+from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, getCabeceraReporte,datosProblemas,getNumProblemas, errorLog
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -13,7 +13,6 @@ from selenium.webdriver.support import expected_conditions as EC
 pagina_id=sys.argv[1]
 pagina_url=sys.argv[2]
 
-
 herramienta="achecker"
 
 #Conexion base de datos
@@ -21,8 +20,8 @@ parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
-
-def runAchecker(pagina_id,pagina_url,herramienta,conexion,cursor):
+#Método para ejecutar el proceso de evaluación
+def ejecutarAchecker(pagina_id,pagina_url,herramienta,conexion,cursor):
 
     directorio = getDirectorio()
     fecha_test=getFecha()
@@ -84,7 +83,7 @@ def runAchecker(pagina_id,pagina_url,herramienta,conexion,cursor):
 
         #Crear reporte y cálculo de los problemas por nivel de adecuación
         reporte = open(ruta_reporte, 'a')
-        reporte.write(cabeceraReporte(pagina_url,fecha_test))
+        reporte.write(getCabeceraReporte(pagina_url,fecha_test))
 
         datos=datosProblemas("AC_errors",reporte,driver)
         num_problemas_conocidos_a = getNumProblemas(datos,'(A)')
@@ -107,4 +106,5 @@ def runAchecker(pagina_id,pagina_url,herramienta,conexion,cursor):
 
     driver.quit()
 
-runAchecker(pagina_id,pagina_url,herramienta,conexion,cursor)
+ejecutarAchecker(pagina_id,pagina_url,herramienta,conexion,cursor)
+desconexionBD(conexion)

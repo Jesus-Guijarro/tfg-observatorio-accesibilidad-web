@@ -61,6 +61,5 @@ def evaluar(sitio_id,herramientas_activas,conexion,cursor):
 
             errorLog(directorio,3,fecha_test,"",pagina_id,"")
 
-    desconexionBD(conexion)
-
 evaluar(sitio_id,herramientas_activas,conexion,cursor)
+desconexionBD(conexion)
