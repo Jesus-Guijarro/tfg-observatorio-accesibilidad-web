@@ -64,6 +64,6 @@ for pagina in paginas:
 
         errorLog(directorio,3,fecha_test,"",pagina_id,"")
 
-desconexionBD(conexion,cursor)
+desconexionBD(conexion)
 
 

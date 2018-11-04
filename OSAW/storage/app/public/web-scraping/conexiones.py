@@ -16,7 +16,7 @@ def conexionBD():
     return parametros
 
 #Se realizan los cambios y se cierra la BD
-def desconexionBD(conexion,cursor):
+def desconexionBD(conexion):
 
     conexion.commit()
     conexion.close()

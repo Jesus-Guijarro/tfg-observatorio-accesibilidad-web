@@ -1,14 +1,26 @@
-import io, mysql.connector, os, requests
+import io, mysql.connector, os, requests, hashlib, codecs
 
 from conexiones import *
 from selenium import webdriver
-from miscelaneo import hashArchivo, modoHeadless, getDirectorio, getRutaCopiaHTML
+from miscelaneo import  modoHeadless, getDirectorio, getRutaCopiaHTML
 
-#Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
-def comprobarReferencia(href, sitio_url):
-    if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1 and '#' not in href: #El '#' es por la herramienta observatorio.py
-        return True
-    return False
+
+#Función para obtener el valor hash de una copia HTML
+def hashArchivo(ruta_archivo):
+    #Se obtiene el contenido del archivo html
+    f=codecs.open(ruta_archivo, 'r', encoding="utf8")
+    contenido=f.read()
+
+    #Se transforma el contenido con el algoritmo críptográfico MD5
+    hash = hashlib.md5()
+    hash.update(('%s' % (contenido)).encode('utf-8'))
+    valor_hash= hash.hexdigest()
+
+    #16 de los 32 caracteres
+    valor_hash= valor_hash[0:16]
+
+    return valor_hash
+
 
 #Comprobar acceso y el tipo de la URL
 def comprobarAccesoyTipo(pagina_web):
@@ -72,7 +84,7 @@ def comprobarCopiaHTML(pagina_id):
             conexion.commit()
 
             driver.quit()
-            desconexionBD(conexion,cursor)
+            desconexionBD(conexion)
             return True #Devolvemos true indicando que es necesario evaluar la pagina
         #Si no hay ningun cambio borramos el archivo creado
         else:
@@ -87,5 +99,7 @@ def comprobarCopiaHTML(pagina_id):
         cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_BD,pagina_id,))
 
     driver.quit()
-    desconexionBD(conexion,cursor)
+    desconexionBD(conexion)
     return True
+
+comprobarCopiaHTML(241)

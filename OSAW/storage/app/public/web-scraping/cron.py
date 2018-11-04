@@ -4,6 +4,7 @@ from conexiones import *
 from miscelaneo import getDirectorio, getFecha, errorLog
 from crontab import CronTab
 
+argumentos=sys.argv
 
 #Conexion base de datos
 parametros = conexionBD()
@@ -14,7 +15,7 @@ cursor = parametros[1]
 cron = CronTab(user='jesus')
 
 #Método para eliminar una tarea
-def eliminar(sitio_id,cursor):
+def eliminarTarea(sitio_id,conexion,cursor):
     comentario="evaluar-sitio:"+str(sitio_id)
     tareas=cron.find_comment(comentario)  
 
@@ -23,10 +24,10 @@ def eliminar(sitio_id,cursor):
 
     cron.write()
 
-    actualizarCron("E",sitio_id,cursor)
+    actualizarCron("E",sitio_id,conexion,cursor)
 
 #Método para crear una tarea
-def crear(sitio_id,periodicidad,hora,dia,cursor):
+def crearTarea(sitio_id,periodicidad,hora,dia,cursor):
 
     #Rutas
     directorio = getDirectorio()
@@ -72,22 +73,22 @@ def crear(sitio_id,periodicidad,hora,dia,cursor):
     else: #Diario
         cron.write() 
 
-    actualizarCron("C",sitio_id,cursor)
+    actualizarCron("C",sitio_id,conexion,cursor)
 
 #Método para ejecutar la operacion solicitada
-def realizarOperacion(operacion,periodicidad,hora,dia,sitio_id,cursor):
+def realizarOperacion(operacion,periodicidad,hora,dia,sitio_id,conexion,cursor):
     if operacion == "C": #Crear
-        crear(sitio_id,periodicidad,hora,dia,cursor)
+        crearTarea(sitio_id,periodicidad,hora,dia,cursor)
     elif operacion == "A": # Actualizar
-        eliminar(sitio_id,cursor)
-        crear(sitio_id,periodicidad,hora,dia,cursor)
+        eliminarTarea(sitio_id,conexion,cursor)
+        crearTarea(sitio_id,periodicidad,hora,dia,cursor)
     elif operacion == "E": #Eliminar
-        eliminar(sitio_id,cursor)
+        eliminarTarea(sitio_id,conexion,cursor)
     else:
         return False
 
 #Método para cambiar el estado de automatización de un sitio
-def actualizarCron(operacion,sitio_id,cursor):
+def actualizarCron(operacion,sitio_id,conexion,cursor):
     #Si se crea, la automatiación se pone a cierto
     if operacion == "C":
         cursor.execute("update sitios set automatizado=%s where id=%s",(True,sitio_id,))
@@ -100,21 +101,22 @@ def actualizarCron(operacion,sitio_id,cursor):
 
 #Configuar la tarea de un sitio manualmente
 #Argumentos necesarios: 1. operacion a realizar y 2. identificador del sitio a gestionar
-if len(sys.argv) == 3:
-    operacion=str(sys.argv[1]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
-    sitio_id=str(sys.argv[2])
-
+def tareaManual(sitio_id,operacion,conexion,cursor):
+    
     cursor.execute("select periodicidad,hora,dia,automatizado from sitios where id = %s", (sitio_id,))
+    
     sitio = cursor.fetchone()
+
     periodicidad=sitio.__getitem__(0) # Diario; Semanal; Mensual
     hora=str(sitio.__getitem__(1)) #Formato hh:mm
     dia=int(sitio.__getitem__(2)) #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
     automatizado=bool(sitio.__getitem__(3))
     
-    realizarOperacion(operacion,periodicidad,hora,dia,sitio_id,cursor)
+    realizarOperacion(operacion,periodicidad,hora,dia,sitio_id,conexion,cursor)
 
 #Asignar una tarea a cada sitio
-elif len(sys.argv) == 1:
+def tareaAutomatico(conexion,cursor):
+
     cursor.execute("select id,periodicidad,hora,dia,automatizado from sitios")
     sitios = cursor.fetchall()
 
@@ -127,8 +129,24 @@ elif len(sys.argv) == 1:
 
         # Si ya está automatizado se realiza la operación de actualización, en caso contrario se crea
         if automatizado: 
-            realizarOperacion("A",periodicidad,hora,dia,sitio_id,cursor)
+            realizarOperacion("A",periodicidad,hora,dia,sitio_id,conexion,cursor)
         else:
-            realizarOperacion("C",periodicidad,hora,dia,sitio_id,cursor)
+            realizarOperacion("C",periodicidad,hora,dia,sitio_id,conexion,cursor)
 
-desconexionBD(conexion,cursor)
+
+def ejecutarCrontab(argumentos,conexion,cursor):
+
+    #Se elige la operación a realizar manualmente
+    if len(argumentos) == 3:
+        operacion=str(argumentos[1]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
+        sitio_id=str(argumentos[2])
+
+        tareaManual(sitio_id,operacion,conexion,cursor)
+
+    #Se asigna una tarea a cada sitio de la base de datos
+    elif len(argumentos) == 1:
+        tareaAutomatico(conexion,cursor)
+
+    desconexionBD(conexion)
+
+ejecutarCrontab(argumentos,conexion,cursor)

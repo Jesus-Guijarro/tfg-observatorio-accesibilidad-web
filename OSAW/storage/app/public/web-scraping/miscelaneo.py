@@ -1,23 +1,7 @@
-import os, requests, hashlib,codecs
+import os, requests
 
 from selenium import webdriver
 from datetime import datetime
-
-#Función para obtener el valor hash de una copia HTML
-def hashArchivo(ruta_archivo):
-    #Se obtiene el contenido del archivo html
-    f=codecs.open(ruta_archivo, 'r', encoding="utf8")
-    contenido=f.read()
-
-    #Se transforma el contenido con el algoritmo críptográfico MD5
-    hash = hashlib.md5()
-    hash.update(('%s' % (contenido)).encode('utf-8'))
-    valor_hash= hash.hexdigest()
-
-    #16 de los 32 caracteres
-    valor_hash= valor_hash[0:16]
-
-    return valor_hash
 
 #Activar el modo headless
 def modoHeadless():
@@ -72,22 +56,6 @@ def getNumProblemas(datos,nivel):
     if datos:
         return int(datos.count(nivel))
     return 0
-
-#Obtenemos la url principal de un dominio.
-# Necesario por si la web en cuestión cambia el protocolo de http a https
-def getURL(dominio):
-    
-    cabecera="http://"
-    request = requests.get(cabecera+dominio)
-    url = request.url
-    
-    #Comprobamos si el protocolo es https
-    if "https://" in url:
-        cabecera = "https://"
-
-    url = cabecera + dominio
-    
-    return url
 
 #Devolver la fecha en formato: 'YYYY-MM-DD'
 def getFecha():

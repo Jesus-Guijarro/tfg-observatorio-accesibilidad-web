@@ -4,8 +4,8 @@ import sys, requests, mysql.connector
 
 from selenium import webdriver
 from conexiones import *
-from miscelaneo import getURL,modoHeadless
-from comprobaciones import comprobarReferencia, comprobarAccesoyTipo
+from miscelaneo import modoHeadless
+from comprobaciones import comprobarAccesoyTipo
 
 sitio_id=sys.argv[1]
 num_paginas=int(sys.argv[2])
@@ -15,25 +15,39 @@ parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
-#Obtenemos la URL principal del sitio -> protocolo + dominio
-cursor.execute("select dominio from sitios where id = %s", (sitio_id,))
-d = cursor.fetchone()
-dominio=d.__getitem__(0)
-url=getURL(dominio) 
+#Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
+def comprobarReferencia(href, sitio_url):
+    if href.find(sitio_url)!=-1 and href.find(sitio_url,0,len(sitio_url))!=-1 and '#' not in href: #El '#' es por la herramienta observatorio.py
+        return True
+    return False
 
+
+#Obtenemos la URL principal del sitio -> protocolo + dominio
+def getURL(sitio_id,cursor):
+
+    cursor.execute("select dominio from sitios where id = %s", (sitio_id,))
+    d = cursor.fetchone()
+    dominio=d.__getitem__(0)
+
+    #Comprobamos si el protocolo es https
+    cabecera="http://"
+    request = requests.get(cabecera+dominio)
+    url = request.url
+    
+    if "https://" in url:
+        cabecera = "https://"
+
+    url = cabecera + dominio
+
+    return url
 
 #Método para obtener las paginas solicitadas
-def obtenerPaginas(sitio_id,url,num_paginas,profundidad):
+def obtenerPaginas(sitio_id,url,num_paginas,profundidad,conexion,cursor):
 
     #Límite de profundidad del crawler a 2
     #Si se ha alcanzado el número de paginas no es necesario realizar el proceso
     if profundidad > 2 or num_paginas==0:
         return num_paginas
-
-    #Conexion Base de datos
-    parametros = conexionBD()
-    conexion= parametros[0]
-    cursor = parametros[1]
 
     #Modo Headless 
     driver = modoHeadless()
@@ -41,13 +55,13 @@ def obtenerPaginas(sitio_id,url,num_paginas,profundidad):
     driver.get(url)
 
     #Almacenamos todos los enlaces de la página actual
-    lista_enlaces = driver.find_elements_by_tag_name("a")
+    enlaces = driver.find_elements_by_tag_name("a")
 
     #Lista para almacenar las referencias (atributo "href") que hemos considerado válidas
-    lista_paginas = []
+    paginas = []
 
     #Comprobaciones para obtener enlaces correctos del sitio web
-    for enlace in lista_enlaces:
+    for enlace in enlaces:
         #Guardamos el valor del atributo "href" de cada enlace
         try:
             href = enlace.get_attribute("href")
@@ -57,15 +71,15 @@ def obtenerPaginas(sitio_id,url,num_paginas,profundidad):
         if isinstance(href, str) == True:
             #Comprobamos que la referencia tiene un formato correcto
             if comprobarReferencia(href, url):
-                lista_paginas.append(href)
+                paginas.append(href)
             
     #Eliminamos duplicados y ordenamos la lista
-    lista_paginas=list(sorted(set(lista_paginas)))
+    paginas=list(sorted(set(paginas)))
 
-    lista_final=[] #lista para guardar los enlaces que pasan el segundo filtro y que se van a almacenar en la BD
+    paginas_validas=[] #lista para guardar los enlaces que pasan el segundo filtro y que se van a almacenar en la BD
     
     #Segunda parte de comprobaciones para no duplicar paginas ya almacenadas en la base de datos y que sean accesibles
-    for pagina in lista_paginas:
+    for pagina in paginas:
         if num_paginas == 0:
             break
         cursor.execute("select count(*) from paginas where URL=%s",(pagina,))
@@ -76,22 +90,25 @@ def obtenerPaginas(sitio_id,url,num_paginas,profundidad):
             if comprobarAccesoyTipo(pagina): 
                 #Se guardan las páginas que han pasado los filtros
                 cursor.execute("insert into paginas(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
-                lista_final.append(pagina)
+                paginas_validas.append(pagina)
                 num_paginas = num_paginas - 1 #Se reduce el número de páginas a buscar
     
     #Realizamos el proceso de desconexión de la base de datos y cerramos el driver del modo headless
-    desconexionBD(conexion,cursor)
+    conexion.commit()
     driver.quit()
 
-
     #Llamada recursiva
-    for pagina in lista_final:
+    for pagina in paginas_validas:
         if num_paginas == 0:
             return 0
         else:
-            num_paginas= obtenerPaginas(sitio_id,pagina,num_paginas,profundidad+1)
+            num_paginas= obtenerPaginas(sitio_id,pagina,num_paginas,profundidad+1,conexion,cursor)
 
     return num_paginas
-        
-obtenerPaginas(sitio_id,url,num_paginas,0)
+
+url=getURL(sitio_id,cursor)
+
+obtenerPaginas(sitio_id,url,num_paginas,0,conexion,cursor)
+
+desconexionBD(conexion)
 
