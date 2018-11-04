@@ -16,7 +16,7 @@ parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
-#Método para llamar las herramientas
+#Método para llamar a las herramientas
 def ejecutarHerramienta(seleccionada,herramienta,pagina_url,pagina_id):
     if seleccionada:
         #Primero se obtiene el directorio actual para crear el comando a ejecutar
@@ -28,7 +28,7 @@ def ejecutarHerramienta(seleccionada,herramienta,pagina_url,pagina_id):
             subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
         except Exception as e:
             pass
-
+#Método principal encargado de realizar la evaluación del sitio: Comprobaciones y llamadas a las herramientas
 def evaluar(sitio_id,herramientas_activas,conexion,cursor):
     #Obtenenemos las herramientas seleccionadas para evaluar el sitio web en cuestión
     cursor.execute("select herramientas from sitios where id = %s", (sitio_id,))

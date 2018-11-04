@@ -42,7 +42,7 @@ def getURL(sitio_id,cursor):
     return url
 
 #Método para obtener las paginas solicitadas
-def obtenerPaginas(sitio_id,url,num_paginas,profundidad,conexion,cursor):
+def getPaginas(sitio_id,url,num_paginas,profundidad,conexion,cursor):
 
     #Límite de profundidad del crawler a 2
     #Si se ha alcanzado el número de paginas no es necesario realizar el proceso
@@ -102,13 +102,13 @@ def obtenerPaginas(sitio_id,url,num_paginas,profundidad,conexion,cursor):
         if num_paginas == 0:
             return 0
         else:
-            num_paginas= obtenerPaginas(sitio_id,pagina,num_paginas,profundidad+1,conexion,cursor)
+            num_paginas= getPaginas(sitio_id,pagina,num_paginas,profundidad+1,conexion,cursor)
 
     return num_paginas
 
 url=getURL(sitio_id,cursor)
 
-obtenerPaginas(sitio_id,url,num_paginas,0,conexion,cursor)
+getPaginas(sitio_id,url,num_paginas,0,conexion,cursor)
 
 desconexionBD(conexion)
 

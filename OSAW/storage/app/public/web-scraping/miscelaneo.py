@@ -136,8 +136,19 @@ def copiarArchivoAntiguo(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test
     r1.close()
     r2.close()
 
-def copiarDatosAntiguos(herramienta_eval,herramienta,pagina_url,pagina_id,cursor):
-    if herramienta_eval:
+#Método para ejecutar la evaluación de la herramienta en caso de no encontrar un análisis anterior
+def ejecutarHerramienta(directorio,herramienta,pagina_id,pagina_url):
+
+    ruta_herramienta=getRutaHerramienta(directorio,herramienta)
+
+    try:
+        subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
+    except Exception as e:
+        pass
+
+#Método para realizar el copiado de los datos de un test anterior.
+def copiarDatosAntiguos(seleccionada,herramienta,pagina_url,pagina_id,cursor):
+    if seleccionada:
         fecha_test=getFecha()
         directorio = getDirectorio()
 
@@ -176,12 +187,7 @@ def copiarDatosAntiguos(herramienta_eval,herramienta,pagina_url,pagina_id,cursor
 
                 cursor = cursor.execute("insert into accessmonitors(pagina_id,puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,ruta_BD,fecha_test,))
             else:
-                ruta_herramienta=getRutaHerramienta(directorio,herramienta)
-
-                try:
-                    subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
-                except Exception as e:
-                    pass
+                ejecutarHerramienta(directorio,herramienta,pagina_id,pagina_url)
 
         #achecker
         elif herramienta == "achecker":
@@ -219,12 +225,7 @@ def copiarDatosAntiguos(herramienta_eval,herramienta,pagina_url,pagina_id,cursor
                 cursor = cursor.execute("insert into acheckers(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
             
             else:
-                ruta_herramienta=getRutaHerramienta(directorio,herramienta)
-
-                try:
-                    subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
-                except Exception as e:
-                    pass
+                ejecutarHerramienta(directorio,herramienta,pagina_id,pagina_url)
 
         #eiiichecker
         elif herramienta == "eiiichecker":
@@ -259,12 +260,7 @@ def copiarDatosAntiguos(herramienta_eval,herramienta,pagina_url,pagina_id,cursor
                 cursor = cursor.execute("insert into eiiicheckers(pagina_id,puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,ruta_BD,fecha_test,))
             
             else:
-                ruta_herramienta=getRutaHerramienta(directorio,herramienta)
-
-                try:
-                    subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
-                except Exception as e:
-                    pass
+                ejecutarHerramienta(directorio,herramienta,pagina_id,pagina_url)
 
         #observatorio
         elif herramienta == "observatorio":
@@ -305,12 +301,7 @@ def copiarDatosAntiguos(herramienta_eval,herramienta,pagina_url,pagina_id,cursor
                 cursor = cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_BD,fecha_test,))
             
             else:
-                ruta_herramienta=getRutaHerramienta(directorio,herramienta)
-
-                try:
-                    subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
-                except Exception as e:
-                    pass
+                ejecutarHerramienta(directorio,herramienta,pagina_id,pagina_url)
 
         #vamola
         elif herramienta == "vamola":
@@ -347,12 +338,7 @@ def copiarDatosAntiguos(herramienta_eval,herramienta,pagina_url,pagina_id,cursor
                 cursor = cursor.execute("insert into vamolas(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
             
             else:
-                ruta_herramienta=getRutaHerramienta(directorio,herramienta)
-
-                try:
-                    subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
-                except Exception as e:
-                    pass
+                ejecutarHerramienta(directorio,herramienta,pagina_id,pagina_url)
 
         #wave
         elif herramienta == "wave":
@@ -386,10 +372,5 @@ def copiarDatosAntiguos(herramienta_eval,herramienta,pagina_url,pagina_id,cursor
                 cursor=cursor.execute("insert into waves(pagina_id,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,ruta_BD,fecha_test,))
             
             else:
-                ruta_herramienta=getRutaHerramienta(directorio,herramienta)
-
-                try:
-                    subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
-                except Exception as e:
-                    pass
+                ejecutarHerramienta(directorio,herramienta,pagina_id,pagina_url)
                     
