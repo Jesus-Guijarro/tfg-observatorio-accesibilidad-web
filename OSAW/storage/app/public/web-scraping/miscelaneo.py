@@ -9,7 +9,7 @@ def modoHeadless():
     opciones = webdriver.ChromeOptions()
 
     opciones.binary_location = '/usr/bin/google-chrome'
-    #opciones.add_argument('headless')
+    opciones.add_argument('headless')
 
     driver = webdriver.Chrome(chrome_options=opciones)
 
