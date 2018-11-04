@@ -1,0 +1,24 @@
+REPORTE PÁGINA WEB: https://www.uv.es/master-ultimes-places/ca/normativa-basica/normativa-basica.html		FECHA EVALUACIÓN: 2018-11-04
+
+Se encontró 1 imagen que no tiene leyenda
+Se encontró 1 elemento <área> sin texto alternativo
+Se han encontrado 4 elementos encabezado
+Se han encontrado 2 enlaces con el mismo texto que apuntan a destinos diferentes
+Se identificaron 32 casos en los que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se ha encontrado 1 enlace para eludir bloques de contenido
+Se encontró 1 tabla de datos sin <caption> o summary
+Se ha identificado 1 control de formulario sin etiquetas asociadas y sin el atributo title
+Se constató que todos los formularios tienen un botón de envío
+Se encontró 1 control de formulario sin etiqueta asociada
+Se encontraron 37 valores repetidos del atributo id
+Se encontraron 1232 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que todos los atributos se expresan en unidades de medida relativas
+Se han encontrado 2 elementos <link> para navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "ca_ES"
+Se constató que el código "ca_ES" es incorrecto
+Se constató que los atributos lang y / o xml: lang se utilizan incorrectamente
+Se ha identificado una regla de CSS en la que no se especifica o el color de fondo o el color de fondo

@@ -52,7 +52,7 @@ def evaluar(sitio_id,herramientas_activas,conexion,cursor):
                     ejecutarHerramienta(herramientas[h],h,pagina_url,pagina_id)
             else:
                 for h in herramientas_activas:
-                    copiarDatosAntiguos(herramientas[h],h,pagina_id,cursor)
+                    copiarDatosAntiguos(herramientas[h],h,pagina_url,pagina_id,cursor)
                     
         else:
             #Añadir error en log.txt

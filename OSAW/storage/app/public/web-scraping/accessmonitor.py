@@ -6,7 +6,6 @@ from conexiones import *
 from miscelaneo import getDirectorio,getFecha, modoHeadless, getRutaReporte, getCabeceraReporte, errorLog
 from googletrans import Translator
 
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
