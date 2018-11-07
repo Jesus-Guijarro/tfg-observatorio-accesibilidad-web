@@ -26,7 +26,7 @@ def transformarDatos(datos):
     datos=datos.replace('Check','\n\n\tREVISAR:')
     datos=datos.replace('Repair','\n\n\tREPARAR:')
     datos=datos.replace('Line','\n\n\t\tLINEA:')
-    datos=datos.replace('Column','COLUMNA')
+    datos=datos.replace('Column','COLUMNA:')
     datos=datos.replace('\t\t\t','')
 
     return datos
@@ -107,8 +107,6 @@ def getRutaHerramienta(directorio,herramienta):
 #   Tipo 3 -> Error provocado al no poder acceder a una web
 #   Herramienta vacio en caso de ser tipo 2 ó 3
 def errorLog(directorio,tipo,fecha_test,herramienta,identificador,error):
-
-    fecha_test
 
     ruta_archivo_logs=directorio+"/storage/logs/log_"+fecha_test+".txt"
 
