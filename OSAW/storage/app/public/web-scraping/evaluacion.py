@@ -59,7 +59,7 @@ def evaluar(sitio_id,herramientas_activas,conexion,cursor):
             directorio = getDirectorio()
             fecha_test=getFecha()
 
-            errorLog(directorio,3,fecha_test,"",pagina_id,"")
+            errorLog(directorio,2,fecha_test,"",pagina_id,"")
 
 
 evaluar(sitio_id,herramientas_activas,conexion,cursor)

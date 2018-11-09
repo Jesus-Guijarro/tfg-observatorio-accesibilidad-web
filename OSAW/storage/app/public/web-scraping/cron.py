@@ -1,7 +1,7 @@
 import sys
 
 from conexiones import *
-from miscelaneo import getDirectorio, getFecha, errorLog
+from miscelaneo import getDirectorio, getFecha
 from crontab import CronTab
 
 argumentos=sys.argv
@@ -52,26 +52,34 @@ def crearTarea(sitio_id,periodicidad,hora,dia,cursor):
     #Para el archivo logs
     directorio=getDirectorio()
 
+    mensaje_tarea_creada ="Tarea creada correctamente para el sitio: " + str(sitio_id)
+    mensaje_error="No se ha podido crear la tarea para el sitio: "+ str(sitio_id)
+
     if periodicidad == "Semanal": #Semanal
         #Verificacion de los dias disponibles de la semana
         if dia<0 or dia>6:
             
-            error="Día de la semana incorrecto. Valores posibles: 0 - 6"
-            errorLog(directorio,2,getFecha(),"",sitio_id,error)
+            error=mensaje_error+"-ERROR: Día de la semana incorrecto. Valores posibles: 0 - 6"
+            print(error)
+            return error
         else:
             tarea.dow.on(dia)
             cron.write() 
+            return mensaje_tarea_creada
 
     elif periodicidad == "Mensual": # Mensual
         #Comprobacion de los dias del mes posibles
         if dia<1 or dia>31:
-            error="Día del mes incorrecto. Valores posibles: 1 - 31"
-            errorLog(directorio,2,getFecha(),"",sitio_id,error)  
+            error=mensaje_error+"-ERROR: Día del mes incorrecto. Valores posibles: 1 - 31"
+            print(error)
+            return error
         else:
             tarea.day.on(dia)
             cron.write()
+            return mensaje_tarea_creada
     else: #Diario
         cron.write() 
+        return mensaje_tarea_creada
 
     actualizarCron("C",sitio_id,conexion,cursor)
 
