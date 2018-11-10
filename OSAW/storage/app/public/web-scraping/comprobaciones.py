@@ -2,7 +2,7 @@ import io, mysql.connector, os, requests, hashlib, codecs
 
 from conexiones import *
 from selenium import webdriver
-from miscelaneo import  modoHeadless, getDirectorio, getRutaCopiaHTML
+from miscelaneo import  driverHeadlessBrowser, getDirectorio, getRutaCopiaHTML
 
 
 #Función para obtener el valor hash de una copia HTML
@@ -55,7 +55,7 @@ def comprobarCopiaHTML(pagina_id):
     hash_antiguo=pagina.__getitem__(1)
 
     #Activamos el modo headless browser
-    driver=modoHeadless()
+    driver=driverHeadlessBrowser()
     #Accedemos a la página web
     driver.get(URL)
 

@@ -4,15 +4,6 @@ from conexiones import *
 from miscelaneo import getDirectorio, getFecha
 from crontab import CronTab
 
-argumentos=sys.argv
-
-#Conexion base de datos
-parametros = conexionBD()
-conexion= parametros[0]
-cursor = parametros[1]
-
-#Inicializamos crontab
-cron = CronTab(user='jesus')
 
 #Método para eliminar una tarea
 def eliminarTarea(sitio_id,conexion,cursor):
@@ -155,5 +146,14 @@ def ejecutarCrontab(argumentos,conexion,cursor):
     elif len(argumentos) == 1:
         tareaAutomatico(conexion,cursor)
 
+#Conexion base de datos
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
+
+#Inicializamos crontab
+cron = CronTab(user='jesus')
+
+argumentos=sys.argv
 ejecutarCrontab(argumentos,conexion,cursor)
 desconexionBD(conexion)

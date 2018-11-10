@@ -2,23 +2,13 @@
 import sys
 
 from conexiones import *
-from miscelaneo import getDirectorio,getFecha,modoHeadless, getRutaReporte, getCabeceraReporte, errorLog
+from miscelaneo import getDirectorio,getFecha,driverHeadlessBrowser, getRutaReporte, getCabeceraReporte, errorLog
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-#Argumentos
-pagina_id=sys.argv[1]
-pagina_url=sys.argv[2]
-
-herramienta="eiiichecker"
-
-#Conexion base de datos
-parametros = conexionBD()
-conexion= parametros[0]
-cursor = parametros[1]
 
 #Datos problemas y calculo de número de problemas según nivel
 def datosErrores(frase,problema,reporte,driver):
@@ -39,7 +29,7 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
 
     try:
         #Activamos el modo headless
-        driver=modoHeadless()
+        driver=driverHeadlessBrowser()
 
         #Accedemos a la web de la herramienta de evaluacion
         driver.get('http://checkers.eiii.eu/en/pagecheck/')
@@ -131,6 +121,18 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
 
     driver.quit()
+
+
+#Argumentos
+pagina_id=sys.argv[1]
+pagina_url=sys.argv[2]
+
+herramienta="eiiichecker"
+
+#Conexion base de datos
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
 
 ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor)
 desconexionBD(conexion)

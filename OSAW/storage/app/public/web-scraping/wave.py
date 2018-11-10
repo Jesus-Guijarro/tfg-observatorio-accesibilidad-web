@@ -3,18 +3,6 @@ import json, requests, sys
 from conexiones import *
 from miscelaneo import getDirectorio,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 
-#Argumentos URL e ID de la página web
-pagina_id=sys.argv[1]
-pagina_url=sys.argv[2]
-
-herramienta="wave"
-key="qbw26Imi1068"
-
-#Conexión base de datos
-parametros = conexionBD()
-conexion= parametros[0]
-cursor = parametros[1]
-
 #Obtenemos los datos a guardar en el reporte
 def getDatos(categoria,datos,reporte):
     valores = datos.values()
@@ -87,6 +75,18 @@ def ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
 
     except Exception as e:
             errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
+
+#Argumentos URL e ID de la página web
+pagina_id=sys.argv[1]
+pagina_url=sys.argv[2]
+
+herramienta="wave"
+key="qbw26Imi1068"
+
+#Conexión base de datos
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
 
 ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor)
 desconexionBD(conexion)

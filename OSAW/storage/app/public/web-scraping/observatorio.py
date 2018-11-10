@@ -3,18 +3,6 @@ import json, requests, sys
 from conexiones import *
 from miscelaneo import getDirectorio,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 
-#Argumentos URL e ID de la página web
-pagina_id=sys.argv[1]
-pagina_url=sys.argv[2]
-
-herramienta="observatorio"
-key="b83e8400-5431-4b2b-8de8-4806a90fc418"
-
-#Conexión base de datos
-parametros = conexionBD()
-conexion= parametros[0]
-cursor = parametros[1]
-
 #Los "isinstance" son para comprobar que el elemento es una lista o un elemento único
 #Los try son para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón
 #Cuatro niveles: 1.Principios, 2.Pautas, 3.Criterios, 4.Ténicas
@@ -154,6 +142,19 @@ def ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
 
     except Exception as e:
         errorLog(directorio,1,getFecha(),herramienta,pagina_id,e)
+
+
+#Argumentos URL e ID de la página web
+pagina_id=sys.argv[1]
+pagina_url=sys.argv[2]
+
+herramienta="observatorio"
+key="b83e8400-5431-4b2b-8de8-4806a90fc418"
+
+#Conexión base de datos
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
 
 ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor)
 desconexionBD(conexion)

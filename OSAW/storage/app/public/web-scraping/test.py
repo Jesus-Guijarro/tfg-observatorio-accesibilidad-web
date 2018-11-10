@@ -1,6 +1,9 @@
-import sys
+def f(n):
+    return n*n
+
+a=f(3)
 
 
-print(len(sys.argv))
+
 
 

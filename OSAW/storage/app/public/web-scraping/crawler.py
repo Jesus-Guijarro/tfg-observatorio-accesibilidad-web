@@ -4,16 +4,9 @@ import sys, requests, mysql.connector
 
 from selenium import webdriver
 from conexiones import *
-from miscelaneo import modoHeadless
+from miscelaneo import driverHeadlessBrowser
 from comprobaciones import comprobarAccesoyTipo
 
-sitio_id=sys.argv[1]
-num_paginas=int(sys.argv[2])
-
-#Conexion Base de datos
-parametros = conexionBD()
-conexion= parametros[0]
-cursor = parametros[1]
 
 #Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
 def comprobarReferencia(href, sitio_url):
@@ -50,7 +43,7 @@ def getPaginas(sitio_id,url,num_paginas,profundidad,conexion,cursor):
         return num_paginas
 
     #Modo Headless 
-    driver = modoHeadless()
+    driver = driverHeadlessBrowser()
     #Accedemos al sitio
     driver.get(url)
 
@@ -105,6 +98,15 @@ def getPaginas(sitio_id,url,num_paginas,profundidad,conexion,cursor):
             num_paginas= getPaginas(sitio_id,pagina,num_paginas,profundidad+1,conexion,cursor)
 
     return num_paginas
+
+
+sitio_id=sys.argv[1]
+num_paginas=int(sys.argv[2])
+
+#Conexion Base de datos
+parametros = conexionBD()
+conexion= parametros[0]
+cursor = parametros[1]
 
 url=getURL(sitio_id,cursor)
 
