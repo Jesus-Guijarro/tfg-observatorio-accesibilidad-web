@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    
+<link rel="stylesheet" type="text/css" href="/static/css/index_page.css" />
+
+    
+<script>
+let got_premission = localStorage.getItem('storage_accepted', false);
+
+function check_accapt() {
+  if (got_premission) {
+    document.getElementById("premission_question").classList.add("hidden_element");
+    document.getElementById("page_checker").classList.remove("hidden_element");
+  }
+}
+function accapt_storage() {
+  localStorage.setItem('storage_accepted', true);
+  document.getElementById("premission_question").classList.add("hidden_element");
+  document.getElementById("page_checker").classList.remove("hidden_element");
+}
+
+function validateForm2() {
+  console.log('Running')
+  let checked_pages = JSON.parse(localStorage.getItem('checked_pages', 0));
+  localStorage.setItem('checked_pages', checked_pages+1);
+  return validateForm()
+}
+</script>
+
+
+    <link rel="stylesheet" type="text/css" media="screen, projection, print" href="/static/css/screen.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection, print" href="/static/css/screen_hacks.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection, print" href="/static/css/screen_css3.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection, print" href="/static/css/screen_testresults_all.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection, print" href="/static/css/checker2Init.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection, print" href="/static/css/checker2AccordionLoaded.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="/static/css/print.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/screen_js.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/screen_checker2.css" />
+    <link rel="shortcut icon" href="/static/images/favicons/favicon.ico" type="image/x-icon" />
+    <script src="/static/scripts/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/scripts/jquery-1.8.2_ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      function validateForm() {
+      var x = document.forms["urlform"]["url"].value;
+      if (x == null || x == "") {
+      alert('Please enter a valid URL');
+      return false;
+      }
+      }
+      // Show/hide searchbox keyboard operable tooltip
+      $(document).ready(function(){
+           $("#tip1").attr("aria-hidden","true");
+           $("#tip1").addClass("hidden");
+        $("input#searchbox").focus(function(){
+              $("#tip1").attr("aria-hidden","false");
+              $("#tip1").removeClass("hidden");
+        });
+          $("input#searchbox").mouseover(function(){
+              $("#tip1").attr("aria-hidden","false");
+              $("#tip1").removeClass("hidden");
+        });
+         // repeat for the keyboard accessibility for all buttons, enter makes it click...
+               $("input#searchbox").blur(function(){
+              $("#tip1").attr("aria-hidden","true");
+              $("#tip1").addClass("hidden");
+        });
+          $("input#searchbox").mouseleave(function(){
+              $("#tip1").attr("aria-hidden","true");
+              $("#tip1").addClass("hidden");
+        });
+              $("input#searchbox").keydown(function(ev){
+              if (ev.which ==27)  {
+                               $("#tip1").attr("aria-hidden","true");
+                               $("#tip1").addClass("hidden");
+                               ev.preventDefault();
+                               return false;
+                               }
+        });
+    });
+
+    $(window).load(function(){
+      var curPage="";
+      $("#rstTestlist a").click(function() {
+      if (curPage.length) {
+      $("#"+curPage).hide();
+      }
+      $( "#testlistIntro" ).hide();
+      curPage=$(this).data("page");
+      $("#"+curPage).show();
+      });
+    });
+
+   function getAutocompletUrl () {
+        var autocompleteurl = "http://search5.tingtun.no/autocomplete/?sites=";
+        return autocompleteurl + "accessibility.tingtun.no,eiii.eu,www.w3.org,hub.eaccessplus.eu";
+    }
+
+       function toggle_hidden_serp(clicker_id, ref_id)
+       {
+          var elems = document.getElementsByClassName("pnoshow");
+
+           for (var i=0; i<elems.length; i++) {
+                var elem_ref = elems[i].getAttribute("ref");
+                if (elem_ref == ref_id) {
+                    // Unhide this element
+                    elems[i].style.display = "block";
+                }
+            }
+
+          var clicker = document.getElementById("clicker" + clicker_id);
+          clicker.style.display = "none";
+
+         }
+
+
+       $(document).ready( function() {
+
+           $("#searchbox").autocomplete({source: getAutocompletUrl(), minLength: 2, autoFocus: true});
+       });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/screen_unifiedElements.css" />
+    <title>
+    
+    EIII Page Checker - Find Barriers in your Web Page         
+    
+</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/screen_js_finished.css" />
+  </head>
+
+  <body>
+    <div id="page_container">
+      <span class="user" style="color: #fff;">
+        
+            
+                <a style="color: #fff;" href="/accounts/login/">Login</a>
+            
+        
+        
+      </span>
+
+      <header role="banner">
+        <div id="skiptocontent">
+          <a href="#maincontent" class="skiptocontent">skip to main content</a>
+        </div>
+        <div class="f_classSet_jsActive tingtun-not-mark">
+          
+            <div id="header">
+              <div id="logo">
+                <div id="language_form">
+                  <form action="/i18n/setlang/" method="POST">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='O5aPGp4NzDR5ujZwOucmIbu8x9ih3r11PzIo1hBhvlPZUbgyCXroJL6T4O9L7V5S' />
+                      <label>Language:
+                        <select name="language" onchange="this.form.submit()">
+                          
+
+
+<option value="sv"
+        >
+  svenska (sv)
+</option>
+
+
+<option value="en"
+        selected="selected">
+  English (en)
+</option>
+
+
+                        </select>
+                      </label>
+                  </form>
+                </div>
+                <h1 class="header_h1">European Internet Inclusion Initiative</h1>
+              </div>
+            </div>
+          
+        </div>
+        <div class="searchbox">
+        
+        </div>
+      </header>
+
+      <div id="mainmenu">
+        <ul>
+          <li class="first active ">
+            <div>
+        <a href="/" title="Check a document for accessibility problems">eAccessibility</a>
+              <span class="none">.</span>
+            </div>
+          </li>
+          <li class="last">
+            <div>
+              <a href="/contact/" title="Contact us" target="_top">Contact</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="mainWrapper">
+        <div id="mainContainer">
+          <div id="submenuWrapper">
+            <div id="submenu_container">
+              <div class="submenu">
+                <div>
+                  <nav role="navigation" aria-labelledby="invNavHeading">
+                    <h2 id="invNavHeading" class="invisible">eAccessibility main menu</h2>
+                    <ul>
+                      <li class="first active current ">
+          <a href="/en/pagecheck/" title="You are here. Check a web page for accessibility problems following WCAG 2.0">
+                          <span>
+              Page Checker
+                          </span>
+                        </a>
+                        <span class="none">.</span>
+                      </li>
+                      <li class=" ">
+                        <a href="/en/pdfcheck/" title="Check a PDF for accessibility problems">
+                          <span>
+                            PDF Checker
+                          </span>
+                        </a>
+                        <span class="none">.</span>
+                      </li>
+                      <!--- <li class="">
+                        <a href="/en/sitecheck2.0/" title="Check a website for accessibility problems">
+                          <span>
+                            Site Checker
+                          </span>
+                        </a>
+                        <span class="none">.</span>
+                      </li>
+                      <li class="">
+                        <a href="/en/siteresults2.0/" title="View the eAccessiblity Site Checks of our partner websites">
+                          <span>
+                            Site Results
+                          </span>
+                        </a>
+                        <span class="none">.</span>
+                      </li> -->
+                      <li>
+                        <a href="/en/benchmarking/" title="See the latest benchmarking results">
+                          <span>
+                            Benchmarking
+                          </span>
+                        </a>
+                        <span class="none">.</span>
+                        <div>
+                          <ul>
+                            <li class="">
+                              <a href="/en/benchmarking/previous/" title="See all benchmarking results">
+                                <span>
+                                  Benchmarking Results
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="">
+                        <a href="/en/tests/" title="List of checkers Tests">
+                          <span>
+                            Checkers Tests
+                          </span>
+                        </a>
+                        <div>
+                          <ul>
+                            <li class="">
+                              <a href="/en/tests/">
+                                <span>
+                                Checker HTML Tests
+                                </span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="/en/pdftests/">
+                                <span>
+                                Checker PDF Tests
+                                </span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="/en/manualtests/">
+                                <span>
+                                Checker Manual Tests
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="">
+                        <a href="/en/faqs/" title="Frequently asked questions">
+                          <span>
+                            FAQ
+                          </span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="https://www.accessiblecheck.com/">
+                          <span>
+                            User testing tool (beta)
+                          </span>
+                        </a>
+                      </li>
+                      <li class="last">
+                        <a href="/weblog">
+                          <span>
+                            Dev Blog
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div> <!-- submenu -->
+            </div> <!-- submenu_container -->
+            <br>
+            
+            <hr class="invisible">
+          </div> <!-- submenuWrapper -->
+
+          <main id="maincontainer" role="main">
+            <div class="breadcrumbWrapper">
+              <div id="breadcrumbContainer">
+                <div id="breadcrumb" role="navigation" aria-label="You Are Here">
+                  <ul>
+                    
+
+                    <li class="">
+                      <a href="/" title="Check a document for accessibility problems">eAccessibility</a>/
+                    </li>
+                     <li class="last">Page Checker</li>
+
+                  </ul>
+                </div> <!-- breadcrumb -->
+              </div> <!-- breadcrumbContainer -->
+              <hr class="invisible">
+            </div> <!-- breadcrumbWrapper -->
+
+            <div id="maincontent">
+              <div class="f_classSet_jsActive">
+                <div id="content_container">
+                  <div id="content">
+                    
+        
+        <h1>Check the Accessibility of a Web Page</h1>
+<div class="f_unify">
+        <div class="test" id="premission_question">
+            <p>We can save your WTKollen checker data in your browser for a better user experience. <button onclick="accapt_storage()">I Accept</button> <a href="/privacy_statement/">Read more</a></p>
+        </div>
+        <form id="page_checker" name="urlform" class="area placedInside hidden_element" action="." method="POST" onsubmit="return validateForm2()">
+                        <div class="mainfieldset">
+                        <label for="id_url">Webpage address:</label>
+                        <div style="flex-grow:1;">
+                          <tr><th></th><td><input type="text" name="url" required aria-describedby="descriptionValidate" id="id_url" /><input type="hidden" name="checker" value="wam" id="id_checker" /></td></tr>
+                        </div>
+                        <input type="submit" value="Check" />
+                        </div>
+        </form>
+</div>
+<script>
+check_accapt();
+</script>
+
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                
+                <hr class="invisible">
+              </div>
+              <hr class="invisible">
+            </div>
+          </main>
+        </div> <!-- mainContainer -->
+      </div> <!-- mainWrapper -->
+      <div id="footerContainer" role="contentinfo">
+        <div id="footer">
+          <div>
+            <ul>
+              <li>
+                <a class="footer" href="/en/about/" title="About the eAccessibility Checker">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              </li>
+              <li>
+                <a class="footer" href="/contact/" title="Give us feedback">Feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              </li>
+              <li>
+                <a class="footer" href="/en/disclaimer/" title="About the data presented on this website">Disclaimer</a>
+              </li>
+              <!--- <li> <a href="http://www.egovmon.no/en/sitemap.html" title="Sitemap of eGovMon.no">Sitemap</a>    </li> -->
+            </ul>
+          </div>
+        </div> <!-- footer -->
+        <div id="footerLogo"></div>
+      </div> <!-- footerContainer -->
+    </div> <!-- page_container -->
+    
+      
+      <script src="https://glossary.tingtun.no/static/scripts/glossary.js" id="tingtunGlossary" data-glossary_id="eieuapky" type="text/javascript" charset="utf-8"></script>
+      
+    
+  </body>
+</html>
