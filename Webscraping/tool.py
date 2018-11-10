@@ -1,7 +1,19 @@
-import os, requests
+import os, requests, subprocess
 
 from selenium import webdriver
 from datetime import datetime
+
+#Método para llamar a las herramientas
+def runTool(seleccionada,herramienta,pagina_id,pagina_url):
+    if seleccionada:
+        #Ruta: ../Tools/ToolX.py
+        ruta_herramienta= str(os.path.dirname(os.path.abspath(__file__)))
+        ruta_herramienta= ruta_herramienta +"/Tools/"+ str(herramienta) + ".py"
+
+        try:
+            subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
+        except Exception as e:
+            pass
 
 #Activar el modo headless
 def driverHeadlessBrowser():
@@ -126,18 +138,6 @@ def copyOldDataFile(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_anti
         reporte.write(linea.replace(str(fecha_test_antiguo), fecha_test))
     reporte_antiguo.close()
     reporte.close()
-
-#Método para llamar a las herramientas
-def runTool(seleccionada,herramienta,pagina_id,pagina_url):
-    if seleccionada:
-        #Ruta: ../Tools/X.py
-        ruta_herramienta= str(os.path.dirname(os.path.abspath(__file__)))
-        ruta_herramienta= ruta_herramienta +"/Tools/"+ str(herramienta) + ".py"
-
-        try:
-            subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
-        except Exception as e:
-            pass
 
 
 #Método para realizar el copiado de los datos de un test anterior.

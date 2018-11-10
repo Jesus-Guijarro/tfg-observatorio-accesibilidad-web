@@ -99,7 +99,7 @@ def getPages(sitio_id,url,num_paginas,profundidad,conexion,cursor):
 
     return num_paginas
 
-
+#Argumentos
 sitio_id=sys.argv[1]
 num_paginas=int(sys.argv[2])
 

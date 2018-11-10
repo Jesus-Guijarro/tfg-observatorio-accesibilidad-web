@@ -87,7 +87,8 @@
                     
                 </div>
                 <?php 
-                    #$command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/web-scraping/evaluacion.py 1");
+                    $command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/Webscraping/test.py");
+                    shell_exec($command);
                     
                     function echoScriptPath() {
                         list($scriptPath) = get_included_files();

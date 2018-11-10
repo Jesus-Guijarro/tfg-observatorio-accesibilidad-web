@@ -5,7 +5,7 @@ def connectionDB():
 
     conexion = mysql.connector.connect(user='jesus', password='OSAW2018-',
                               host='127.0.0.1',
-                              database='TEST')
+                              database='OSAW')
     cursor = conexion.cursor()
 
     parametros = []

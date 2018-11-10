@@ -1,4 +1,4 @@
-import io, json, mysql.connector, os, subprocess, sys
+import io, json, mysql.connector, os, sys
 
 from selenium import webdriver
 from database import connectionDB,disconnectionDB
@@ -27,7 +27,7 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
             #Comprobar cambios en la página web por si es necesario evaluar
             if checkHTMLCopy(pagina_id):
                 for h in herramientas_activas:
-                    runTool(herramientas[h],h,pagina_url,pagina_id)
+                    runTool(herramientas[h],h,pagina_id,pagina_url)
             else:
                 for h in herramientas_activas:
                     copyOldData(herramientas[h],h,pagina_url,pagina_id,cursor)

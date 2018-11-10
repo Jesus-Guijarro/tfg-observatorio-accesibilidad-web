@@ -1,7 +1,7 @@
-import sys
+import sys, os
 
 from database import connectionDB,disconnectionDB
-from tools.herramienta import getDirectoryOSAW, getDate
+from tool import getDirectoryOSAW, getDate
 from crontab import CronTab
 
 
