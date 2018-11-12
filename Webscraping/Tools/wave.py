@@ -23,7 +23,7 @@ def runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
     try:
         #URL para la petición del informe a la API de WAVE
         url_request="http://wave.webaim.org/api/request?key="+key+"&url="+pagina_url+"&format=json&reporttype=2"
-        r = requests.get(url=url_request)
+        r = requests.get(url=url_request,timeout=60)
         #Decodificamos los datos obtenidos
         datos_json=json.loads(r.content.decode('utf-8'))
 
