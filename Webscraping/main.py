@@ -3,7 +3,7 @@ import io, json, mysql.connector, os, sys
 from selenium import webdriver
 from database import connectionDB,disconnectionDB
 from checker import checkAccessAndType, checkHTMLCopy
-from tool import copyOldData, getDate, errorLog, runTool
+from tool import copyOldData, getDate, getDirectoryOSAW, errorLog, runTool
 
 
 #Método principal encargado de realizar la evaluación del sitio: checker y llamadas a las herramientas
@@ -27,14 +27,14 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
             #Comprobar cambios en la página web por si es necesario evaluar
             if checkHTMLCopy(pagina_id):
                 for h in herramientas_activas:
-                    if int(pagina_id) == 225 or int(pagina_id) == 226 or int(pagina_id) == 227 or int(pagina_id) == 228 or int(pagina_id) == 229 or int(pagina_id) == 230:
-                        runTool(herramientas[h],h,pagina_id,pagina_url)
+                    runTool(herramientas[h],h,pagina_id,pagina_url)
             else:
                 for h in herramientas_activas:
                     copyOldData(herramientas[h],h,pagina_url,pagina_id,cursor)
                     
         else:
             fecha_test=getDate()
+            directorio=getDirectoryOSAW()
             errorLog(directorio,2,fecha_test,"",pagina_id,"")
 
 
