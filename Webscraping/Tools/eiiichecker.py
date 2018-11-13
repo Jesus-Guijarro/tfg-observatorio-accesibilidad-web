@@ -15,12 +15,12 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 #Datos problemas y calculo de número de problemas según nivel
-def getDataErrors(frase,problema,reporte,driver):
+def getDataErrors(mensaje,css_selector,reporte,driver):
     try:
-        veces=int(driver.find_element_by_id(problema).text)
-        reporte.write(frase+"\t\t VECES ENCONTRADO: "+ str(veces)+"\n")
+        veces_encontrado=int(driver.find_element_by_id(css_selector).text)
+        reporte.write(mensaje+"\t\t VECES ENCONTRADO: "+ str(veces_encontrado)+"\n")
         
-        return veces
+        return veces_encontrado
 
     except Exception as e:
         return 0
@@ -106,8 +106,9 @@ def runEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <&fieldset> y <&legend>","icon_h71-sturcture_rstFail", reporte,driver)
         num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G167: Usar un botón adyacente para etiquetar el propósito de un campo","icon_button-form-control_rstFail", reporte,driver)
         num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G131: Proporcionar etiquetas descriptivas","icon_descriptive-labels_rstFail", reporte,driver)
-        num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      ","icon_referencing-element_rstFail", reporte,driver)
-        num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      ","icon_id-unique-value_rstFail", reporte,driver)
+        num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      Cada elemento referido desde un atributo idref existe.","icon_referencing-element_rstFail", reporte,driver)
+        num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      Elementos con un atributo de identificación definido único","icon_id-unique-value_rstFail", reporte,driver)
+        num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      Elementos para los cuales el atributo accesskey está permitido y definido.","icon_SC4-1-1-accesskey_rstFail", reporte,driver)
         num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H64: Usando el atributo <&title> de los elementos <&frame> y <&iframe>","icon_title-frame-iframe_rstFail", reporte,driver)
         num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H65: Usar el atributo <&title> para identificar los controles de formulario cuando no se puede usar el elemento <&label>","icon_title-attribute-form-control_rstFail", reporte,driver)
         num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      FALLO F89: Fallo de los Criterios de Conformidad 2.4.4, 2.4.9 y 4.1.2 debido a que no se proporciona un nombre accesible para una imagen que es el único contenido en un enlace","icon_null-alt-image_rstFail", reporte,driver)
