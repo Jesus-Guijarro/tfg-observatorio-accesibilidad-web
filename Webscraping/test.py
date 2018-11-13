@@ -22,7 +22,7 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
         pagina_url=pagina.__getitem__(0)
         pagina_id=str(pagina.__getitem__(1))
 
-        if int(pagina_id)==25 or int(pagina_id)==26 or int(pagina_id)==27 or int(pagina_id)==28 or int(pagina_id)==29 or int(pagina_id)==30:
+        if int(pagina_id)==22 or int(pagina_id)==23 or int(pagina_id)==24 or int(pagina_id)==25 or int(pagina_id)==26 or int(pagina_id)==27 or int(pagina_id)==29 or int(pagina_id)==30:
             #Comprobar acceso a la página web
             if checkAccessAndType(pagina_url):
                 #Comprobar cambios en la página web por si es necesario evaluar
