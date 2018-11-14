@@ -123,7 +123,7 @@ def runEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         disconnectionDB(conexion)
 
     except Exception as e:
-        errorLog(directorio,1,getDate(),herramienta,pagina_id,e)
+        errorLog(directorio,1,fecha_test,herramienta,pagina_id,e)
 
     driver.quit()
 

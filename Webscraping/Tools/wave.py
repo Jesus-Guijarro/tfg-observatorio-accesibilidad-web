@@ -27,16 +27,14 @@ def runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Decodificamos los datos obtenidos
         datos_json=json.loads(r.content.decode('utf-8'))
 
-        #La API no sigue un esquema común para las URLs que se han podido analizar y las que no.
+        #Comprobamos que la respuesta tiene el formato correcto.
         exito = True
-
-        #El formato del JSON devuelto depende de si ha habido éxito o no. Sólo comprobamos si ha fallado
         try:
             exito=datos_json["success"]
         except Exception as e:
             pass
-
-        if exito :
+            
+        if exito:
             #Obtenemos los números de las distintas categorias
             num_problemas = datos_json["categories"]["error"]["count"]
             num_advertencias= datos_json["categories"]["alert"]["count"]
@@ -76,8 +74,11 @@ def runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
             
             disconnectionDB(conexion)
 
+        else:
+            raise Exception('No se ha podido realizar la evaluación. Formato de respuesta incorrecto')
+
     except Exception as e:
-            errorLog(directorio,1,getDate(),herramienta,pagina_id,e)
+        errorLog(directorio,1,fecha_test,herramienta,pagina_id,e)
 
 #Argumentos URL e ID de la página web
 pagina_id=sys.argv[1]

@@ -22,7 +22,7 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
         pagina_url=pagina.__getitem__(0)
         pagina_id=str(pagina.__getitem__(1))
 
-        if int(pagina_id)==27 or  int(pagina_id)==30:
+        if int(pagina_id)==172:
             #Comprobar acceso a la página web
             if checkAccessAndType(pagina_url):
                 #Comprobar cambios en la página web por si es necesario evaluar
@@ -43,7 +43,8 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
 sitio_id=sys.argv[1]
 
 #Listado con las herramientas disponibles para ser usadas
-herramientas_activas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
+#herramientas_activas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
+herramientas_activas=["eiiichecker"]
 
 #Conexión base de datos
 parametros = connectionDB()
