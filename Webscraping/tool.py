@@ -54,7 +54,7 @@ def dataProblems(tipo_problema,reporte,driver):
         
         if tipo_problema == "AC_errors":
             reporte.write("PROBLEMAS CONOCIDOS\n")
-            reporte.write(datos + "\n\n ------------------------------------------------------ \n\n")
+            reporte.write(datos + "\n\n -------------------------------------------------------------------------------------------------------------------------- \n\n")
         else:
             reporte.write("PROBLEMAS POTENCIALES\n")
             reporte.write(datos + "\n")

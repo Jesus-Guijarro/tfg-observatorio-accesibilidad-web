@@ -79,10 +79,6 @@ def runEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         puntuacion = float(driver.find_element_by_css_selector('#resultSummary > form > ul > li:nth-child(4) > div > span > span').text)
         num_problemas =  int(driver.find_element_by_css_selector('#ul-appliedtests > li:nth-child(2) > strong > span').text.replace('Fail: ',''))
         num_aciertos =  int(driver.find_element_by_css_selector('#ul-appliedtests > li:nth-child(4) > strong > span').text.replace('Pass: ',''))
-        
-        #Inicializamos las variables para hacer el recuento de problemas segun nivel
-        num_problemas_a = 0
-        num_problemas_aa = 0
 
         #Rutas para guardar el archivo y el acceso desde la BD
         ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
@@ -91,6 +87,10 @@ def runEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Crear reporte
         reporte = open(ruta_reporte, 'a')
         reporte.write(getReportHeader(pagina_url,fecha_test))
+
+        #Inicializamos las variables para hacer el recuento de problemas segun nivel de adecuación
+        num_problemas_a = 0
+        num_problemas_aa = 0
             
         #Se obtiene el número de problemas por nivel al mismo tiempo que se crea el archivo con los datos del reporte
         num_problemas_a+=getDataErrors("CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       TÉCNICA H37: Uso de <&alt> en elementos <&img>","icon_alt-on-img_rstFail", reporte,driver)
