@@ -1,0 +1,9 @@
+REPORTE PÁGINA WEB: https://www.uv.es/master-ultimes-places/ca/normativa-basica/normativa-basica.html		FECHA EVALUACIÓN: 2018-11-19
+
+Se constató que no hay encabezados marcados en la página
+Se constató que la página no tiene enlaces
+Se ha encontrado 1 error de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página no tiene el elemento <title>
+Se constató que el atributo lang se encuentra en falta

@@ -1,0 +1,9 @@
+REPORTE PÁGINA WEB: https://www.uv.es/master-ultimes-places/ca/admissio-master/admissio-ultimes-places/2-lliura-documentacio.html		FECHA EVALUACIÓN: 2018-11-19
+
+PROBLEMAS
+Missing or uninformative page title	  VECES ENCONTRADO: 1
+Document language missing	  VECES ENCONTRADO: 1
+-------------------------------------------------------------------
+ALERTAS
+No heading structure	  VECES ENCONTRADO: 1
+-------------------------------------------------------------------
