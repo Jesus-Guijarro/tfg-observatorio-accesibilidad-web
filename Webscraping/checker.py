@@ -4,24 +4,6 @@ from database import connectionDB,disconnectionDB
 from selenium import webdriver
 from tool import  driverHeadlessBrowser, getDirectoryOSAW, getCopyHTMLRoute
 
-
-#Función para obtener el valor hash de una copia HTML
-def getFileHash(ruta_archivo):
-    #Se obtiene el contenido del archivo html
-    f=codecs.open(ruta_archivo, 'r', encoding="utf8")
-    contenido=f.read()
-
-    #Se transforma el contenido con el algoritmo críptográfico MD5
-    hash = hashlib.md5()
-    hash.update(('%s' % (contenido)).encode('utf-8'))
-    valor_hash= hash.hexdigest()
-
-    #16 de los 32 caracteres
-    valor_hash= valor_hash[0:16]
-
-    return valor_hash
-
-
 #Comprobar acceso y el tipo de la URL
 def checkAccessAndType(pagina_web):
     try:
@@ -38,6 +20,22 @@ def checkAccessAndType(pagina_web):
             return False
     except requests.ConnectionError:
         return False
+
+#Función para obtener el valor hash de una copia HTML
+def getFileHash(ruta_archivo):
+    #Se obtiene el contenido del archivo html
+    f=codecs.open(ruta_archivo, 'r', encoding="utf8")
+    contenido=f.read()
+
+    #Se transforma el contenido con el algoritmo críptográfico MD5
+    hash = hashlib.md5()
+    hash.update(('%s' % (contenido)).encode('utf-8'))
+    valor_hash= hash.hexdigest()
+
+    #16 de los 32 caracteres
+    valor_hash= valor_hash[0:16]
+
+    return valor_hash
 
 #Comprobar contenido HTML
 def checkHTMLCopy(pagina_id):
