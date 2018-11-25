@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="es" style="" class=" js flexbox flexboxlegacy canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache js"><head><title>Ministerio de Justicia</title>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="es" style="" class=" js flexbox flexboxlegacy canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache js" data-dispo="tablet"><head><title>Ministerio de Justicia</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	
 	
@@ -102,7 +102,25 @@
 </script>
 <!-- End Google Tag Manager -->
 </head>
-	<body id="home"><div onclick="$('.cookieMsg').fadeOut('slow');" class="cookieMsg"><p class="cookieMsgTitulo">Información importante sobre cookies</p><p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="/cs/Satellite/Portal/es/aviso-legal#cookies">política de cookies</a>.</p></div>
+	<body id="home"><div class="bloqueBuscadorGeneralPortal noDesktop" id="busqueda" role="search"><div class="bloqueBuscadorTitulo">Buscar<img src="/estatico/csedi/portal/img/ico_cerrar.png" id="buscador_cerrar" /></div>
+				<form action="http://www.mjusticia.gob.es/cs/Satellite" method="post" name="buscador">
+					
+					<input name="pagename" type="hidden" value="eSEDE/SE_Layout" />
+					<input name="c" type="hidden" value="Page" />
+					<input name="cid" type="hidden" value="1288782227577" />
+					
+					<input name="childpagename" type="hidden" value="FW_ResultadosBusqueda" />
+					<input name="lang" type="hidden" value="es_es" />
+
+					<input name="access" type="hidden" value="p" />
+					<input name="output" type="hidden" value="xml_no_dtd" />
+					<input name="grupo" type="hidden" value="" />
+					<label for="buscar" class="oculto">Buscar</label>
+					<input type="text" id="buscar" name="q" value="" accesskey="b" class="cajaBuscador ui-autocomplete-input" title="Buscar" autocomplete="off" placeholder=" " /><input type="submit" value="Buscar" class="botonSubmit" />
+					<input type="submit" id="buscadorPortalBoton" class="buscarBoton" value="Buscar" style="cursor: pointer; display: none;" />
+					
+				</form>
+			</div><div onclick="$('.cookieMsg').fadeOut('slow');" class="cookieMsg"><p class="cookieMsgTitulo">Información importante sobre cookies</p><p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="/cs/Satellite/Portal/es/aviso-legal#cookies">política de cookies</a>.</p></div>
 
 					<a href="#contenido" accesskey="s" id="irContenido">Ir a Contenido</a>
 		<!--googleoff: all-->
@@ -110,7 +128,7 @@
 	<header>
 		<div id="cabecera">
 
-			<div id="cabeceraIzq" role="banner">
+			<div id="cabeceraIzq" role="banner"><img id="boton_menu_lateral" src="/estatico/csedi/portal/img/ico_menu_movil.png" /><div class="menu_txt">MENU</div>
 				<h1 class="oculto">Ministerio de Justicia</h1>
 				<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/inicio" accesskey="1" class="logoMinisterio" id="a1288775096598"><img src="/cs/Satellite/Portal/1292428895863?blobheader=image%2Fpng" alt="Ministerio de Justicia" width="256" height="72" /></a>
 			</div><!-- cabeceraIzq  -->
@@ -139,12 +157,7 @@
 
 				<div id="cabeceraDerinf">
 					<nav id="menuCabecera">
-				<ul class="menuCabecera">
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano">Atención al ciudadano <span class="oculto">del Ministerio de Justicia</span></a></li>
-						<li><a href="https://sede.mjusticia.gob.es" class="enlaceAviso" title="Este enlace se abre en una nueva pantalla">Sede electrónica <span class="oculto">del Ministerio de Justicia</span></a></li>
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/direcciones-telefonos">Direcciones y teléfonos <span class="oculto">del Ministerio de Justicia</span></a></li>
-						<li><a href="http://www.administraciondejusticia.gob.es/paj/privado/&amp;renew=true" class="enlaceAviso enlacePantallaNueva" title="Este enlace se abre en una nueva pantalla" target="_blank">Área Privada<span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
-				</ul>
+				
 
 					</nav>
 			<script type="text/javascript" id="autocompleteBuscador">
@@ -174,37 +187,24 @@
 				})
 				//]]&gt;
 			</script>
-				<div class="bloqueBuscadorGeneralPortal" id="busqueda" role="search">
-				<form action="http://www.mjusticia.gob.es/cs/Satellite" method="post" name="buscador">
-					
-					<input name="pagename" type="hidden" value="eSEDE/SE_Layout" />
-					<input name="c" type="hidden" value="Page" />
-					<input name="cid" type="hidden" value="1288782227577" />
-					
-					<input name="childpagename" type="hidden" value="FW_ResultadosBusqueda" />
-					<input name="lang" type="hidden" value="es_es" />
+				<!-- bloqueBuscadorGeneralPortal -->
 
-					<input name="access" type="hidden" value="p" />
-					<input name="output" type="hidden" value="xml_no_dtd" />
-					<input name="grupo" type="hidden" value="" />
-					<label for="buscar" class="oculto">Buscar</label>
-					<input type="text" id="buscar" name="q" value="" accesskey="b" class="cajaBuscador ui-autocomplete-input" title="Buscar" autocomplete="off" />
-					<input type="submit" id="buscadorPortalBoton" class="buscarBoton" value="Buscar" style="cursor: pointer;" />
-					
-				</form>
-			</div><!-- bloqueBuscadorGeneralPortal -->
-
-				</div>
+				<img id="buscador_boton2" src="/estatico/csedi/portal/img/ico_buscar.png" /></div>
 
 			
 
 			</div>
 		</div><!-- cabecera -->
-	</header>
+	</header><ul class="menuCabecera">
+						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano">Atención al ciudadano <span class="oculto">del Ministerio de Justicia</span></a></li>
+						<li><a href="https://sede.mjusticia.gob.es" class="enlaceAviso" title="Este enlace se abre en una nueva pantalla">Sede electrónica <span class="oculto">del Ministerio de Justicia</span></a></li>
+						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/direcciones-telefonos">Direcciones y teléfonos <span class="oculto">del Ministerio de Justicia</span></a></li>
+						<li><a href="http://www.administraciondejusticia.gob.es/paj/privado/&amp;renew=true" class="enlaceAviso enlacePantallaNueva" title="Este enlace se abre en una nueva pantalla" target="_blank">Área Privada<span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+				</ul>
 		
 	
 	<h2 class="oculto" id="ocultoMenuPrincipal">Menú principal</h2>
-	<nav id="menuPrincipal" role="navigation">
+	<nav id="menuPrincipalNoDesktop" role="navigation" style="height: 510px;">
 		<ul id="menuPrincipalInterior" class="menu">
 			<li class="menuPrincipalSeccion"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio" class="menuPrincipalSeccionTitulo">El Ministerio</a>
 					<div class="menuPrincipalContenido">
@@ -367,56 +367,56 @@
 
 		<div id="sliderActualidad" class="slider sliderActualidadJs">    
 						
-					<div class="sliderBloque selected" style="display: block;">
+					<div class="sliderBloque" style="display: block;">
 						<p>
-							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/huelga-funcionarios" title="La huelga de funcionarios de la Administración de Justicia se salda con una participación del 18,77%">
-								<span class="sliderTitulo"><span class="sliderTituloTxt">La huelga de funcionarios de la Administración de Justicia se salda con una participación del 18,77%</span></span>
+							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/seminario-anos-constitucion" title="Seminario 40 años de Constitución y Democracia: Miradas desde Europa">
+								<span class="sliderTitulo"><span class="sliderTituloTxt">Seminario 40 años de Constitución y Democracia: Miradas desde Europa</span></span>
 
 									<span class="sliderImagen">
-										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292428766907" class="foto" alt="Fachada del Ministerio de Justicia" />
+										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292428990561" class="foto" alt="Seminario 40 años de Constitución y Democracia: Miradas desde Europa" />
 									</span>
 
 							</a>
 						</p>
 					
 						<div class="sliderFecha">
-							<div class="sliderFechaTxt">16 nov</div>
+							<div class="sliderFechaTxt">22 nov</div>
 						</div>
 						<div class="compartirRedesIco"></div>                                                                                                              
 					</div><!--sliderBloque-->
 						
 					<div class="sliderBloque" style="display: none;">
 						<p>
-							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/ministra-reune-asociaciones" title="La ministra se reúne con asociaciones de médicos forenses">
-								<span class="sliderTitulo"><span class="sliderTituloTxt">La ministra se reúne con asociaciones de médicos forenses</span></span>
+							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/inauguracion-congreso" title="Inauguración del X Congreso de Academias Jurídicas de Iberoamérica">
+								<span class="sliderTitulo"><span class="sliderTituloTxt">Inauguración del X Congreso de Academias Jurídicas de Iberoamérica</span></span>
 
 									<span class="sliderImagen">
-										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292428968813" class="foto" alt="La ministra de Justicia, Dolores Delgado, durante su reunión con asociaciones de médicos forenses" />
+										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292428989834" class="foto" alt="© Casa de S.M. el Rey" />
 									</span>
 
 							</a>
 						</p>
 					
 						<div class="sliderFecha">
-							<div class="sliderFechaTxt">15 nov</div>
+							<div class="sliderFechaTxt">22 nov</div>
 						</div>
 						<div class="compartirRedesIco"></div>                                                                                                              
 					</div><!--sliderBloque-->
 						
 					<div class="sliderBloque" style="display: none;">
 						<p>
-							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/secretario-estado-justicia17" title="El secretario de Estado de Justicia comparece ante la Comisión de Justicia del Senado ">
-								<span class="sliderTitulo"><span class="sliderTituloTxt">El secretario de Estado de Justicia comparece ante la Comisión de Justicia del Senado </span></span>
+							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/secretario-estado-justicia18" title="El secretario de Estado de Justicia mantiene un encuentro con la fiscal general del Estado en materia de cooperación jurídica internacional">
+								<span class="sliderTitulo"><span class="sliderTituloTxt">El secretario de Estado de Justicia mantiene un encuentro con la fiscal general del Estado en materia de cooperación jurídica internacional</span></span>
 
 									<span class="sliderImagen">
-										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292428977125" class="foto" alt="l secretario de Estado de Justicia, Manuel Jesus Dolz, durante su comparecencia ante la Comisión de Justicia del Senado " />
+										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292428987659" class="foto" alt="Reunión del secretario de Estado de Justicia, Manuel Jesús Dolz, con la fiscal general del Estado, María José Segarra." />
 									</span>
 
 							</a>
 						</p>
 					
 						<div class="sliderFecha">
-							<div class="sliderFechaTxt">15 nov</div>
+							<div class="sliderFechaTxt">21 nov</div>
 						</div>
 						<div class="compartirRedesIco"></div>                                                                                                              
 					</div><!--sliderBloque-->
@@ -426,7 +426,7 @@
 					<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/gabinete-comunicacion/noticias-ministerio">Ver todas las noticias</a>                        
 
 				</div><!--sliderActualidadPieEnlace-->
-				<div class="sliderControles"><div class="control selected" rel="0"></div><div class="control" rel="1"></div><div class="control" rel="2"></div></div>
+				<div class="sliderControles"></div>
 			</div><!--sliderActualidadPie-->
 		</div><!-- slider  -->	
 
@@ -451,13 +451,13 @@
 					<div id="bloqueHome01DerContenido"><div class="serviciosCiudadanoSeparador"></div>
 
 				<ul id="serviciosCiudadano">
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/servicios-ciudadano/oficinas-asistencia-victimas" class="icoDatosAbiertos">Oficinas de asistencia a las víctimas de delitos violentos y contra la libertad sexual</a></li>
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/servicios-ciudadano/tramites-gestiones-personales" class="icoPapeles">Trámites y gestiones personales</a></li>
-						<li><a href="https://sede.mjusticia.gob.es/" class="icoOrdenador enlaceAviso enlacePantallaNueva" title="Este enlace se abre en una nueva pantalla" target="_blank">Trámites electrónicos<span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/areas-tematicas/estado-civil/registro-civil" class="icoEdicion">El Registro Civil</a></li>
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/servicios-ciudadano/empleo-publico" class="icoUser">Empleo Público</a></li>
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ciudadanos/registros/coordinacion-registro-catastro" class="icoPortalTransparencia">Coordinación Registro-Catastro</a></li>
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/areas-tematicas/recuperacion-gestion-activos/subastas-enajenaciones" class="icoSubastas">Oficina de Recuperación y Gestión de Activos. Subastas y enajenaciones en curso</a></li>
+						<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/servicios-ciudadano/oficinas-asistencia-victimas" class="icoDatosAbiertos">Oficinas de asistencia a las víctimas de delitos violentos y contra la libertad sexual</a></li>
+						<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/servicios-ciudadano/tramites-gestiones-personales" class="icoPapeles">Trámites y gestiones personales</a></li>
+						<li style="padding: 10px !important"><a href="https://sede.mjusticia.gob.es/" class="icoOrdenador enlaceAviso enlacePantallaNueva" title="Este enlace se abre en una nueva pantalla" target="_blank">Trámites electrónicos<span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+						<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/areas-tematicas/estado-civil/registro-civil" class="icoEdicion">El Registro Civil</a></li>
+						<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/servicios-ciudadano/empleo-publico" class="icoUser">Empleo Público</a></li>
+						<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ciudadanos/registros/coordinacion-registro-catastro" class="icoPortalTransparencia">Coordinación Registro-Catastro</a></li>
+						<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/areas-tematicas/recuperacion-gestion-activos/subastas-enajenaciones" class="icoSubastas">Oficina de Recuperación y Gestión de Activos. Subastas y enajenaciones en curso</a></li>
 				</ul>
 
 					</div>
@@ -478,7 +478,7 @@
 						<div id="bloqueHome02Izq">
 <!-- Avisos -->
 		<div id="sliderDestacados" class="slider sliderDestacadosJs sliderDestacados2"><a href="#" '="" class="controlCarrusel" data-slider="sliderDestacados"><span>Carrusel destacados</span></a>
-			<div class="sliderBloque selected" style="display: block;">
+			<div class="sliderBloque" style="display: block;">
 				<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/areas-tematicas/estado-civil/registro-civil">
 				
 					<div class="sliderTitulo"><h2>Registro Civil</h2><div class="bloqueCompartir"><div class="compartirRedesIco"></div></div></div>
@@ -502,7 +502,7 @@
 						</div>
 					</div></a>
 			</div>
-		<div class="sliderControles"><div class="control selected" rel="0"></div><div class="control" rel="1"></div></div>
+		<div class="sliderControles"></div>
 	</div><!-- sliderDestacados -->
 						</div>
 
@@ -513,17 +513,13 @@
 			<div id="bloqueHome02DerSupTitulo"><h2>Agenda</h2></div>
 
 		<div id="bloqueHome02DerSupContenido">
-			<div id="agendaFecha" style="height: 36px;">
-				<span id="agendaFechaDiaSemana">Lunes</span>
-				<span id="agendaFechaDia">19</span>
+			<div id="agendaFecha" style="height: 34px;">
+				<span id="agendaFechaDiaSemana">Domingo</span>
+				<span id="agendaFechaDia">25</span>
 				<span id="agendaFechaMes">Noviembre</span>
 			</div><!-- agendaFecha  -->
-			<div id="agendaListado" class="slider" style="height: 60px;">
-
-				<div class="sliderBloque" style="height: 60px; display: block;"><div class="agendaEvento">
-					<div class="agendaEventoTxt">VIAJE A ESTRASBURGO</div>
-					<div class="agendaEventoHora">9:00 h</div>
-				</div></div>
+			<div id="agendaListado" class="slider" style="height: 34px;">
+<p>No hay eventos para hoy</p>
 				<div class="sliderControles"></div>
 			</div><!-- agendaListado -->
 			
@@ -543,8 +539,8 @@
 					<div id="bloqueHome02DerContenido">
 
 				<ul id="Home_Multimedia">
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/galeria-fotos" class="icoGaleriaFotos">Galería de fotos</a></li>
-						<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/galeria-videos" class="icoGaleriaVideos">Galería de vídeos</a></li>
+						<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/galeria-fotos" class="icoGaleriaFotos">Galería de fotos</a></li>
+						<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/galeria-videos" class="icoGaleriaVideos">Galería de vídeos</a></li>
 				</ul>
 
 					</div>
@@ -565,17 +561,17 @@
 				<div class="slider" id="seccionesInteres">
 					<div id="seccionesInteresContenido">
 						
-							<div class="sliderBloque selected"><div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/servicios-ciudadano/tramites-gestiones-personales/certificado-antecedentes" id="a1288783969123"><div class="bloqueTitulo">Certificado de Antecedentes Penales</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295716?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div><div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/atencion-ciudadano" id="a1215327537339"><div class="bloqueTitulo">Centro de Atención al Ciudadano</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427614398?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div><div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/actividad-legislativa/comision-general-codificacion" id="a1288783496775"><div class="bloqueTitulo">Comisión General de Codificación</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427614244?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div><div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/ciudadanos/victimas" id="a1288780368497"><div class="bloqueTitulo">Víctimas</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295909?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div><div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/areas-tematicas/registros" id="a1288784206124"><div class="bloqueTitulo">Registro Civil</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295728?blobheader=image%2Fpng" alt="" width="284" height="137" /></div></a></div><div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/toxicologia-ciencias-forenses" id="a1288784194055"><div class="bloqueTitulo">Información Toxicológica</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428559224?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div><div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/areas-tematicas/area-internacional/tribunal-europeo-derechos" id="a1288775114915"><div class="bloqueTitulo">Tribunal Europeo de Derechos Humanos</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427614193?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div><div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/justicia-digital" id="a1288775115080"><div class="bloqueTitulo">Transformación digital de la Justicia</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295895?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div><div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/justicia-espana/proyectos-transformacion/oficina-judicial" id="a1215327537884"><div class="bloqueTitulo">Oficina Judicial</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295935?blobheader=image%2Fpng" alt="" width="284" height="137" /></div></a></div></div>
-							
-							
-							
-							
-							
-							
-							
-							
+							<div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/servicios-ciudadano/tramites-gestiones-personales/certificado-antecedentes" id="a1288783969123"><div class="bloqueTitulo">Certificado de Antecedentes Penales</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295716?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div>
+							<div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/atencion-ciudadano" id="a1215327537339"><div class="bloqueTitulo">Centro de Atención al Ciudadano</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427614398?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div>
+							<div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/actividad-legislativa/comision-general-codificacion" id="a1288783496775"><div class="bloqueTitulo">Comisión General de Codificación</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427614244?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div>
+							<div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/ciudadanos/victimas" id="a1288780368497"><div class="bloqueTitulo">Víctimas</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295909?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div>
+							<div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/areas-tematicas/registros" id="a1288784206124"><div class="bloqueTitulo">Registro Civil</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295728?blobheader=image%2Fpng" alt="" width="284" height="137" /></div></a></div>
+							<div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/toxicologia-ciencias-forenses" id="a1288784194055"><div class="bloqueTitulo">Información Toxicológica</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428559224?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div>
+							<div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/areas-tematicas/area-internacional/tribunal-europeo-derechos" id="a1288775114915"><div class="bloqueTitulo">Tribunal Europeo de Derechos Humanos</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427614193?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div>
+							<div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/justicia-digital" id="a1288775115080"><div class="bloqueTitulo">Transformación digital de la Justicia</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295895?blobheader=image%2Fjpeg" alt="" width="284" height="137" /></div></a></div>
+							<div class="bloqueseccionesInteres"><a href="/cs/Satellite/Portal/es/justicia-espana/proyectos-transformacion/oficina-judicial" id="a1215327537884"><div class="bloqueTitulo">Oficina Judicial</div><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428295935?blobheader=image%2Fpng" alt="" width="284" height="137" /></div></a></div>
 					</div>
-					<div class="sliderControles"><div class="control selected" rel="0"></div></div>
+					<div class="sliderControles"></div>
 				</div>
 
 				</div>
@@ -588,14 +584,14 @@
 				<div id="bloqueBannersInstitucionales">
 					<ul>
 						
-							<li><a href="http://transparencia.gob.es" class="enlacePantallaNueva" id="a1288789668717" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563758?blobheader=image%2Fpng" alt="Portal de la Transparencia" width="350" height="90" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
-							<li><a href="http://www.marcaespana.es" class="enlacePantallaNueva" id="a1288777829844" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563771?blobheader=image%2Fpng" alt="Conoce la nueva Web de Marca España" width="154" height="84" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
-							<li><a href="http://administracionelectronica.gob.es" class="enlacePantallaNueva" id="a1288775047186" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563667?blobheader=image%2Fpng" alt="Administración electrónica" width="227" height="114" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
-							<li><a href="http://www.e-codex.eu" class="enlacePantallaNueva" id="a1288775511988" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292346630834?blobheader=image%2Fjpeg" alt="Acceso al Proyecto E-Codex" width="190" height="76" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
-							<li><a href="http://administracion.gob.es" class="enlacePantallaNueva" id="a1288789471758" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563680?blobheader=image%2Fpng" alt="Conoce la nueva Web de Administracion.gob.es" width="229" height="67" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
-							<li><a href="http://yosoyoriginal.es" class="enlacePantallaNueva" id="a1288791408799" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563655?blobheader=image%2Fpng" alt="Yo Soy Original" width="317" height="104" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
-							<li><a href="https://e-justice.europa.eu" class="enlacePantallaNueva" id="a1288784218024" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428267315?blobheader=image%2Fjpeg" alt="Portal Europeo de Justicia" width="167" height="71" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
-							<li><a href="http://datos.gob.es/" class="enlacePantallaNueva" id="a1288784218038" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428267303?blobheader=image%2Fjpeg" alt="Datos abiertos" width="200" height="80" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+							<li style="padding: 10px !important"><a href="http://transparencia.gob.es" class="enlacePantallaNueva" id="a1288789668717" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563758?blobheader=image%2Fpng" alt="Portal de la Transparencia" width="350" height="90" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+							<li style="padding: 10px !important"><a href="http://www.marcaespana.es" class="enlacePantallaNueva" id="a1288777829844" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563771?blobheader=image%2Fpng" alt="Conoce la nueva Web de Marca España" width="154" height="84" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+							<li style="padding: 10px !important"><a href="http://administracionelectronica.gob.es" class="enlacePantallaNueva" id="a1288775047186" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563667?blobheader=image%2Fpng" alt="Administración electrónica" width="227" height="114" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+							<li style="padding: 10px !important"><a href="http://www.e-codex.eu" class="enlacePantallaNueva" id="a1288775511988" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292346630834?blobheader=image%2Fjpeg" alt="Acceso al Proyecto E-Codex" width="190" height="76" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+							<li style="padding: 10px !important"><a href="http://administracion.gob.es" class="enlacePantallaNueva" id="a1288789471758" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563680?blobheader=image%2Fpng" alt="Conoce la nueva Web de Administracion.gob.es" width="229" height="67" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+							<li style="padding: 10px !important"><a href="http://yosoyoriginal.es" class="enlacePantallaNueva" id="a1288791408799" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292427563655?blobheader=image%2Fpng" alt="Yo Soy Original" width="317" height="104" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+							<li style="padding: 10px !important"><a href="https://e-justice.europa.eu" class="enlacePantallaNueva" id="a1288784218024" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428267315?blobheader=image%2Fjpeg" alt="Portal Europeo de Justicia" width="167" height="71" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
+							<li style="padding: 10px !important"><a href="http://datos.gob.es/" class="enlacePantallaNueva" id="a1288784218038" target="_blank"><div class="bloqueImagen"><img src="/cs/Satellite/Portal/1292428267303?blobheader=image%2Fjpeg" alt="Datos abiertos" width="200" height="80" /></div><span class="oculto">Este enlace se abre en una nueva pantalla</span></a></li>
 					</ul>
 				</div>
 
@@ -654,7 +650,7 @@
 					<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/guia-navegacion" rel="nofollow" accesskey="4">Guía de Navegación</a></li>
 					<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/gabinete-comunicacion/canales" rel="nofollow" accesskey="5">Canales</a></li>
 					<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/enlaces-interes" rel="nofollow" accesskey="6">Enlaces de interés</a></li>
-					<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/accesibilidad" rel="nofollow" accesskey="7">Accesibilidad</a> <img src="/cs/Satellite/Portal/1292424753581?blobheader=image%2Fgif" width="80" height="15" alt="Icono que informa que las páginas de este sitio Web cumplen la marca AA según la Norma UNE 139803:2012" /></li>
+					<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/accesibilidad" rel="nofollow" accesskey="7">Accesibilidad</a> <img src="/cs/Satellite/Portal/1292424753581?blobheader=image%2Fgif" width="80" height="15" alt="Icono que informa que las páginas de este sitio Web cumplen la marca AA según la Norma UNE 139803:2012" style="" /></li>
 				</ul>
 					
 			</nav><!-- menuInfo -->
@@ -739,7 +735,14 @@
 	</div><!-- pie -->
 
 	<script src="http://www.mjusticia.gob.es/estatico/cs/portal/js/mkr.js" type="text/javascript"></script>
-		</footer>
+		<ul class="menuIdiomasMovil"><li><strong>Castellano</strong></li>
+				
+				<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/ca/inicio" lang="ca" xml:lang="ca" hreflang="ca">Català</a></li>
+				<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/eu/inicio" lang="eu" xml:lang="eu" hreflang="eu">Euskara</a></li>
+				<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/gl/inicio" lang="gl" xml:lang="gl" hreflang="gl">Galego</a></li>
+				<li><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/va/inicio" lang="ca-valencia" xml:lang="ca-valencia" hreflang="ca-valencia">Valencià</a></li>
+				<li class="ultimo"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/en/inicio" lang="en" xml:lang="en" hreflang="en">English</a></li>
+			</ul></footer>
 		<!--googleon: all-->
 
 
