@@ -4,11 +4,11 @@ from selenium import webdriver
 from datetime import datetime
 
 #Método para llamar a las herramientas
-def runTool(seleccionada,herramienta,pagina_id,pagina_url):
+def ejecutarHerramienta(seleccionada,herramienta,pagina_id,pagina_url):
     if seleccionada:
-        #Ruta: ../Tools/ToolX.py
+        #Ruta: ../Herramientas/ToolX.py
         ruta_herramienta= str(os.path.dirname(os.path.abspath(__file__)))
-        ruta_herramienta= ruta_herramienta +"/Tools/"+ str(herramienta) + ".py"
+        ruta_herramienta= ruta_herramienta +"/Herramientas/"+ str(herramienta) + ".py"
 
         try:
             subprocess.run(["/usr/bin/python3",ruta_herramienta,str(pagina_id),str(pagina_url)])
@@ -27,9 +27,8 @@ def driverHeadlessBrowser():
 
     return driver
 
-
 #Transformar datos de problemas para guardarlos en archivos de texto
-def processData(datos):
+def procesarDatos(datos):
     #No son simples saltos de linea , son lineas con espacios en blanco, tabulados, etc
     datos=datos.replace('  ','')
     datos=datos.replace('\n','')
@@ -45,12 +44,12 @@ def processData(datos):
 
 #Herramientas: Achecker y Vamolà
 #Escribir y obtener los datos de los problemas
-def dataProblems(tipo_problema,reporte,driver):
+def getDatosProblemas(tipo_problema,reporte,driver):
     try:
         problemas=driver.find_element_by_id(tipo_problema)
 
         datos=str(problemas.get_attribute('textContent'))
-        datos=processData(datos)
+        datos=procesarDatos(datos)
         
         if tipo_problema == "AC_errors":
             reporte.write("PROBLEMAS CONOCIDOS\n")
@@ -63,14 +62,15 @@ def dataProblems(tipo_problema,reporte,driver):
 
     except Exception as e:
         return False
+
 #Función para obtener el número de problemas segun el nivel
-def getNumProblems(datos,nivel):
+def getNumeroProblemas(datos,nivel):
     if datos:
         return int(datos.count(nivel))
     return 0
 
 #Devolver la fecha en formato: 'YYYY-MM-DD'
-def getDate():
+def getFecha():
     fecha_test = datetime.now().date()
     
     #Se devuelve en string
@@ -80,27 +80,27 @@ def getDate():
 
 #Obtener directorio ../OSAW/public 
 #Para copias html y documentos de texto con los datos de las evaluaciones
-def getDirectoryOSAW():
+def getDirectorioOSAW():
     #Directorio actual del archivo en ejecución
     directorio = os.path.dirname(os.path.abspath(__file__))
     #En caso de que se ejecute desde la carpeta Tools:
-    if directorio.find("/Webscraping/Tools")!= (-1):
-        directorio=directorio.replace("/Webscraping/Tools","/OSAW/public")
+    if directorio.find("/Webscraping/Herramientas")!= (-1):
+        directorio=directorio.replace("/Webscraping/Herramientas","/OSAW/public")
     else:
         directorio=directorio.replace("/Webscraping","/OSAW/public")
 
     return directorio
 
 #Ruta para guardar rutas de reportes
-def getReportRoute(directorio,herramienta,pagina_id,fecha_test):
+def getRutaReporte(directorio,herramienta,pagina_id,fecha_test):
     #Directorio vacio si es para la BD
     ruta = directorio+"/storage/"+herramienta+"/"+str(pagina_id)+"_"+str(fecha_test)+".txt"
     
     return ruta
 
 #Ruta para guardar rutas de copias HTML
-def getCopyHTMLRoute(directorio,pagina_id, nuevo):
-    #Directorio vacio si es para la BD
+def getRutaCopiaHTML(directorio,pagina_id, nuevo):
+    #El argumento directorio está vacio si es para la BD
     ruta=directorio+"/storage/paginas/"+str(pagina_id)+nuevo+".html"
 
     return ruta
@@ -126,12 +126,12 @@ def errorLog(directorio,tipo,fecha_test,herramienta,identificador,error):
     log.close()
 
 #Cabecera de los documentos con la información de los problemas encontrados
-def getReportHeader(pagina_url,fecha_test):
+def getCabeceraReporte(pagina_url,fecha_test):
     cabecera='REPORTE PÁGINA WEB: ' + pagina_url+ '\t\t'+"FECHA EVALUACIÓN: "+ fecha_test+'\n\n'
     return cabecera
 
 #Métodos para copiar archivos y datos antiguos de los reportes de evaluación
-def copyOldDataFile(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo):
+def copiarDatosArchivoAntiguo(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo):
     reporte_antiguo = open(ruta_reporte_antiguo, 'r')
     reporte = open(ruta_reporte, 'w')
     for linea in reporte_antiguo:
@@ -141,10 +141,10 @@ def copyOldDataFile(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_anti
 
 
 #Método para realizar el copiado de los datos de un test anterior.
-def copyOldData(seleccionada,herramienta,pagina_url,pagina_id,cursor):
+def copiarDatosAntiguos(seleccionada,herramienta,pagina_url,pagina_id,cursor):
     if seleccionada:
-        fecha_test=getDate()
-        directorio = getDirectoryOSAW()
+        fecha_test=getFecha()
+        directorio = getDirectorioOSAW()
 
         #accessmonitor
         if herramienta == "accessmonitor":
@@ -171,17 +171,17 @@ def copyOldData(seleccionada,herramienta,pagina_url,pagina_id,cursor):
                 ruta_reporte_antiguo=evaluacion.__getitem__(7)
                 fecha_test_antiguo=evaluacion.__getitem__(8)
 
-                ruta_BD=getReportRoute("",herramienta,pagina_id,fecha_test)
+                ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
-                ruta_reporte_antiguo=getReportRoute(directorio,herramienta,pagina_id,fecha_test_antiguo)
-                ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
+                ruta_reporte_antiguo=getRutaReporte(directorio,herramienta,pagina_id,fecha_test_antiguo)
+                ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
                 
                 #Copiar archivo datos del archivo antiguo cambiando sólo la fecha del análisis
-                copyOldDataFile(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
+                copiarDatosArchivoAntiguo(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
 
                 cursor = cursor.execute("insert into accessmonitors(pagina_id,puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,ruta_BD,fecha_test,))
             else:
-                runTool(seleccionada,herramienta,pagina_id,pagina_url)
+                ejecutarHerramienta(seleccionada,herramienta,pagina_id,pagina_url)
 
         #achecker
         elif herramienta == "achecker":
@@ -208,18 +208,18 @@ def copyOldData(seleccionada,herramienta,pagina_url,pagina_id,cursor):
                 ruta_reporte_antiguo=evaluacion.__getitem__(8)
                 fecha_test_antiguo=evaluacion.__getitem__(9)
 
-                ruta_BD=getReportRoute("",herramienta,pagina_id,fecha_test)
+                ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
-                ruta_reporte_antiguo=getReportRoute(directorio,herramienta,pagina_id,fecha_test_antiguo)
-                ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
+                ruta_reporte_antiguo=getRutaReporte(directorio,herramienta,pagina_id,fecha_test_antiguo)
+                ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
                 
                 #Copiar archivo datos del archivo antiguo cambiando sólo la fecha del análisis
-                copyOldDataFile(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
+                copiarDatosArchivoAntiguo(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
 
                 cursor = cursor.execute("insert into acheckers(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
             
             else:
-                runTool(seleccionada,herramienta,pagina_id,pagina_url)
+                ejecutarHerramienta(seleccionada,herramienta,pagina_id,pagina_url)
 
         #eiiichecker
         elif herramienta == "eiiichecker":
@@ -243,18 +243,18 @@ def copyOldData(seleccionada,herramienta,pagina_url,pagina_id,cursor):
                 ruta_reporte_antiguo=evaluacion.__getitem__(5)
                 fecha_test_antiguo=evaluacion.__getitem__(6)
 
-                ruta_BD=getReportRoute("",herramienta,pagina_id,fecha_test)
+                ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
-                ruta_reporte_antiguo=getReportRoute(directorio,herramienta,pagina_id,fecha_test_antiguo)
-                ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
+                ruta_reporte_antiguo=getRutaReporte(directorio,herramienta,pagina_id,fecha_test_antiguo)
+                ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
                 
                 #Copiar archivo datos del archivo antiguo cambiando sólo la fecha del análisis
-                copyOldDataFile(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
+                copiarDatosArchivoAntiguo(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
 
                 cursor = cursor.execute("insert into eiiicheckers(pagina_id,puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,ruta_BD,fecha_test,))
             
             else:
-                runTool(seleccionada,herramienta,pagina_id,pagina_url)
+                ejecutarHerramienta(seleccionada,herramienta,pagina_id,pagina_url)
 
         #observatorio
         elif herramienta == "observatorio":
@@ -284,18 +284,18 @@ def copyOldData(seleccionada,herramienta,pagina_url,pagina_id,cursor):
                 ruta_reporte_antiguo=evaluacion.__getitem__(12)
                 fecha_test_antiguo=evaluacion.__getitem__(13)
 
-                ruta_BD=getReportRoute("",herramienta,pagina_id,fecha_test)
+                ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
-                ruta_reporte_antiguo=getReportRoute(directorio,herramienta,pagina_id,fecha_test_antiguo)
-                ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
+                ruta_reporte_antiguo=getRutaReporte(directorio,herramienta,pagina_id,fecha_test_antiguo)
+                ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
                 
                 #Copiar archivo datos del archivo antiguo cambiando sólo la fecha del análisis
-                copyOldDataFile(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
+                copiarDatosArchivoAntiguo(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
 
                 cursor = cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_BD,fecha_test,))
             
             else:
-                runTool(seleccionada,herramienta,pagina_id,pagina_url)
+                ejecutarHerramienta(seleccionada,herramienta,pagina_id,pagina_url)
 
         #vamola
         elif herramienta == "vamola":
@@ -321,18 +321,18 @@ def copyOldData(seleccionada,herramienta,pagina_url,pagina_id,cursor):
                 ruta_reporte_antiguo=evaluacion.__getitem__(8)
                 fecha_test_antiguo=evaluacion.__getitem__(9)
 
-                ruta_BD=getReportRoute("",herramienta,pagina_id,fecha_test)
+                ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
-                ruta_reporte_antiguo=getReportRoute(directorio,herramienta,pagina_id,fecha_test_antiguo)
-                ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
+                ruta_reporte_antiguo=getRutaReporte(directorio,herramienta,pagina_id,fecha_test_antiguo)
+                ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
                 
                 #Copiar archivo datos del archivo antiguo cambiando sólo la fecha del análisis
-                copyOldDataFile(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
+                copiarDatosArchivoAntiguo(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
 
                 cursor = cursor.execute("insert into vamolas(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
             
             else:
-                runTool(seleccionada,herramienta,pagina_id,pagina_url)
+                ejecutarHerramienta(seleccionada,herramienta,pagina_id,pagina_url)
 
         #wave
         elif herramienta == "wave":
@@ -355,16 +355,16 @@ def copyOldData(seleccionada,herramienta,pagina_url,pagina_id,cursor):
                 ruta_reporte_antiguo=evaluacion.__getitem__(5)
                 fecha_test_antiguo=evaluacion.__getitem__(6)
 
-                ruta_BD=getReportRoute("",herramienta,pagina_id,fecha_test)
+                ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
-                ruta_reporte_antiguo=getReportRoute(directorio,herramienta,pagina_id,fecha_test_antiguo)
-                ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
+                ruta_reporte_antiguo=getRutaReporte(directorio,herramienta,pagina_id,fecha_test_antiguo)
+                ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
                 
                 #Copiar archivo datos del archivo antiguo cambiando sólo la fecha del análisis
-                copyOldDataFile(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
+                copiarDatosArchivoAntiguo(ruta_reporte,ruta_reporte_antiguo,fecha_test,fecha_test_antiguo)
 
                 cursor=cursor.execute("insert into waves(pagina_id,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,ruta_BD,fecha_test,))
             
             else:
-                runTool(seleccionada,herramienta,pagina_id,pagina_url)
+                ejecutarHerramienta(seleccionada,herramienta,pagina_id,pagina_url)
                     

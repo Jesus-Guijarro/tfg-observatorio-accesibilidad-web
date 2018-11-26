@@ -3,11 +3,11 @@
 import sys, os
 
 directorio_import = os.path.dirname(os.path.abspath(__file__))
-directorio_import = directorio_import.replace('/Tools','')
+directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from database import connectionDB,disconnectionDB
-from tool import getDirectoryOSAW,getDate, driverHeadlessBrowser, getReportRoute, getReportHeader, errorLog
+from conexionesBD import conexionBD,desconexionBD
+from herramienta import getDirectorioOSAW,getFecha, driverHeadlessBrowser, getRutaReporte, getCabeceraReporte, errorLog
 from googletrans import Translator
 
 from selenium import webdriver
@@ -15,7 +15,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-def getValue(css_selector,driver):
+def getValor(css_selector,driver):
     try:
         valor=int(driver.find_element_by_css_selector(css_selector).text)
         return valor
@@ -23,9 +23,9 @@ def getValue(css_selector,driver):
     except Exception as e:
         return 0
 
-def createReport(ruta_reporte,datos,pagina_url,fecha_test):
+def crearReporte(ruta_reporte,datos,pagina_url,fecha_test):
     reporte = open(ruta_reporte, 'a')
-    reporte.write(getReportHeader(pagina_url,fecha_test))
+    reporte.write(getCabeceraReporte(pagina_url,fecha_test))
     
     #Usamos un traductor debido a que la información del reporte está en portugués
     translator = Translator()
@@ -38,10 +38,10 @@ def createReport(ruta_reporte,datos,pagina_url,fecha_test):
     reporte.close()
 
 #Método para ejecutar el proceso de evaluación
-def runAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
+def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
 
-    directorio = getDirectoryOSAW()
-    fecha_test=getDate()
+    directorio = getDirectorioOSAW()
+    fecha_test=getFecha()
 
     try:
         #Activamos el modo headless
@@ -89,30 +89,30 @@ def runAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Función para obtener los errores como las advertencias
         
         #Nivel A
-        num_problemas_a= getValue("#block > table > tbody > tr.lev_A > td.txfail",driver)
-        num_advertencias_a= getValue("#block > table > tbody > tr.lev_A > td:nth-child(4)",driver)
+        num_problemas_a= getValor("#block > table > tbody > tr.lev_A > td.txfail",driver)
+        num_advertencias_a= getValor("#block > table > tbody > tr.lev_A > td:nth-child(4)",driver)
 
         #Nivel AA
-        num_problemas_aa= getValue("#block > table > tbody > tr.lev_AA > td.txfail",driver)
-        num_advertencias_aa= getValue("#block > table > tbody > tr.lev_AA > td:nth-child(4)",driver)
+        num_problemas_aa= getValor("#block > table > tbody > tr.lev_AA > td.txfail",driver)
+        num_advertencias_aa= getValor("#block > table > tbody > tr.lev_AA > td:nth-child(4)",driver)
         #Nivel AAA
-        num_problemas_aaa= getValue("#block > table > tbody > tr.lev_AAA > td.txfail",driver)
-        num_advertencias_aaa= getValue("#block > table > tbody > tr.lev_AAA > td:nth-child(4)",driver)
+        num_problemas_aaa= getValor("#block > table > tbody > tr.lev_AAA > td.txfail",driver)
+        num_advertencias_aaa= getValor("#block > table > tbody > tr.lev_AAA > td:nth-child(4)",driver)
     
         #Obtenemos los datos generales del reporte
         datos=driver.find_elements_by_tag_name('h5')
 
         #Rutas para guardar el archivo y el acceso desde la BD
-        ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
-        ruta_BD=getReportRoute("",herramienta,pagina_id,fecha_test)
+        ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
+        ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
         #Creamos el archivo con los datos de los problemas
-        createReport(ruta_reporte,datos,pagina_url,fecha_test)
+        crearReporte(ruta_reporte,datos,pagina_url,fecha_test)
 
         #Guardamos los datos en la BD
         cursor = cursor.execute("insert into accessmonitors(pagina_id,puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,ruta_BD,fecha_test,))
         
-        disconnectionDB(conexion)
+        desconexionBD(conexion)
         driver.quit()
         
     except Exception as e:
@@ -126,12 +126,12 @@ pagina_url=sys.argv[2]
 herramienta="accessmonitor"
 
 #Conexion base de datos
-parametros = connectionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
-runAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor)
-disconnectionDB(conexion)
+ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor)
+desconexionBD(conexion)
 
 
 

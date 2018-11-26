@@ -1,18 +1,18 @@
 import json, requests, sys, os
 
 directorio_import = os.path.dirname(os.path.abspath(__file__))
-directorio_import = directorio_import.replace('/Tools','')
+directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from database import connectionDB,disconnectionDB
-from tool import getDirectoryOSAW,getDate, getReportRoute, getReportHeader, errorLog
+from conexionesBD import conexionBD,desconexionBD
+from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 
 #Los "isinstance" son para comprobar que el elemento es una lista o un elemento único
 #Los try son para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón
 #Cuatro niveles: 1.Principios, 2.Pautas, 3.Criterios, 4.Ténicas
 #Debemos de crear hasta 6 métodos diferentes para realizar la escrita del archivo con los datos de la evaluación
 ###TECNICAS###
-def dataTechniquesList(tecnicas,reporte):
+def datosTecnicasLista(tecnicas,reporte):
     for t in tecnicas:
         reporte.write('\t\t\tCódigo: ' + str(t["codigo"])+'-'+ str(t["titulo"])+'\n')
         reporte.write('\t\t\tCriticidad: ' + str(t["criticidad"])+'\n')
@@ -20,7 +20,7 @@ def dataTechniquesList(tecnicas,reporte):
         reporte.write('\t\t\tRecomendación: ' + str(t["recomendacion"])+'\n')
         reporte.write('\t\t\tNúmero de errores: ' + str(t["errores"])+'\n\n')
 
-def dataTechniquesItem(c,reporte):
+def datosTecnicasElemento(c,reporte):
     reporte.write('\t\t\tCódigo: ' + str(c["tecnicas"]["codigo"])+'-'+ str(c["tecnicas"]["titulo"])+'\n')
     reporte.write('\t\t\tCriticidad: ' + str(c["tecnicas"]["criticidad"])+'\n')
     reporte.write('\t\t\tObservación: ' + str(c["tecnicas"]["observacion"])+'\n')
@@ -28,80 +28,80 @@ def dataTechniquesItem(c,reporte):
     reporte.write('\t\t\tNúmero de errores: ' + str(c["tecnicas"]["errores"])+'\n\n')
 
 ###CRITERIOS###
-def dataCriteriaList(criterios,reporte):
+def datosCriteriosLista(criterios,reporte):
     for c in criterios:
         reporte.write('\t\tCriterio: ' + str(c["numero"])+'.'+ str(c["titulo"])+'\n')
         reporte.write('\t\tNivel: ' + str(c["nivel"])+'\n\n')
         try:
             tecnicas= c["tecnicas"]
             if isinstance(tecnicas, list):
-                dataTechniquesList(tecnicas,reporte)
+                datosTecnicasLista(tecnicas,reporte)
             else:
-                dataTechniquesItem(c,reporte)
+                datosTecnicasElemento(c,reporte)
 
         except Exception as e:
             pass
 
-def dataCriteriaItem(p,reporte):
+def datosCriteriosElemento(p,reporte):
     reporte.write('\t\tCriterio: ' + str(p["criterios"]["numero"])+'.'+ str(p["criterios"]["titulo"])+'\n')
     reporte.write('\t\tNivel: ' + str(p["criterios"]["nivel"])+'\n\n')
     try:
         tecnicas= p["criterios"]["tecnicas"]
         if isinstance(tecnicas, list):
-            dataTechniquesList(tecnicas,reporte)
+            datosTecnicasLista(tecnicas,reporte)
         else:
-            dataTechniquesItem(tecnicas,reporte)
+            datosTecnicasElemento(tecnicas,reporte)
     except Exception as e:
         pass
 
 ###PAUTAS###
-def dataGuidelineList(pautas,reporte):
+def datosPautasLista(pautas,reporte):
     for p in pautas:
         reporte.write('\tPauta: ' + str(p["numero"])+'.'+ str(p["titulo"])+'\n')
         reporte.write('\tDescripcion: ' + str(p["descripcion"])+'\n\n')
         try:
             criterios=p["criterios"]
             if isinstance(criterios, list):
-                dataCriteriaList(criterios,reporte)
+                datosCriteriosLista(criterios,reporte)
             else:
-                dataCriteriaItem(p,reporte)
+                datosCriteriosElemento(p,reporte)
         except Exception as e:
             pass
 
-def dataGuidelineItem(l,reporte):
+def datosPautasElemento(l,reporte):
     reporte.write('\tPauta: '+str(l["pautas"]["numero"])+'.'+str(l["pautas"]["titulo"])+'\n') 
     reporte.write('Descripcion: ' + str(l["pautas"]["descripcion"])+'\n\n')
     try:
         criterios=l["pautas"]["criterios"]
         if isinstance(criterios, list):
-            dataCriteriaList(criterios,reporte)
+            datosCriteriosLista(criterios,reporte)
         else:
-            dataCriteriaItem(criterios,reporte)
+            datosCriteriosElemento(criterios,reporte)
     except Exception as e:
         pass
 
 #Crear reporte
-def createReport(principios,ruta_reporte,pagina_url,fecha_test):
+def crearReporte(principios,ruta_reporte,pagina_url,fecha_test):
     reporte = open(ruta_reporte, 'a')
 
-    reporte.write(getReportHeader(pagina_url,fecha_test))
+    reporte.write(getCabeceraReporte(pagina_url,fecha_test))
     for p in principios:
         reporte.write('\nPrincipio: '+str(p["numero"])+'.'+str(p["titulo"])+'\n') 
         reporte.write('Descripcion: ' + str(p["descripcion"])+'\n\n')
         pautas=p["pautas"]
         if isinstance(pautas, list):
-            dataGuidelineList(pautas,reporte)
+            datosPautasLista(pautas,reporte)
         else:
-            dataGuidelineItem(p,reporte)
+            datosPautasElemento(p,reporte)
 
     reporte.close()
 
 #Método para ejecutar el proceso de evaluación
-def runObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
+def ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
 
-    directorio = getDirectoryOSAW()
+    directorio = getDirectorioOSAW()
 
-    fecha_test=getDate()
+    fecha_test=getFecha()
 
     try:
         #Formato de la URL para utilizar la API de la herramienta
@@ -132,18 +132,18 @@ def runObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
         porcentaje_robusto=float(datos_json["oaw"]["resultado"]["resumen"]["totalRobusto"].replace("%",""))
 
         #Rutas para guardar el archivo y el acceso desde la BD
-        ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
-        ruta_BD=getReportRoute("",herramienta,pagina_id,fecha_test)
+        ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
+        ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
         #Obtenemos la lista de principios que es la única correcta 
         principios=datos_json["oaw"]["resultado"]["principios"]
 
-        createReport(principios,ruta_reporte,pagina_url,fecha_test)
+        crearReporte(principios,ruta_reporte,pagina_url,fecha_test)
         
         #Guardamos los datos en la BD
         cursor = cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_BD,fecha_test,))
         
-        disconnectionDB(conexion)
+        desconexionBD(conexion)
 
     except Exception as e:
         errorLog(directorio,1,fecha_test,herramienta,pagina_id,e)
@@ -157,9 +157,9 @@ herramienta="observatorio"
 key="b83e8400-5431-4b2b-8de8-4806a90fc418"
 
 #Conexión base de datos
-parametros = connectionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
-runObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor)
-disconnectionDB(conexion)
+ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor)
+desconexionBD(conexion)

@@ -1,5 +1,5 @@
 from datetime import datetime
-from database import connectionDB,disconnectionDB
+from conexionesBD import conexionBD,desconexionBD
 
 import os,sys,json
 
@@ -75,12 +75,12 @@ except Exception as e:
     pass
 
 
-parametros = connectionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
 cursor.execute("insert into waves(pagina_id,datos_problemas,fecha_test,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),ruta_BD,fecha_test,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,))
-disconnectionDB(conexion)
+desconexionBD(conexion)
 
 
 

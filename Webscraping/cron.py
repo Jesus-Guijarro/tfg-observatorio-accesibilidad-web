@@ -1,24 +1,22 @@
 import sys, os
 
-from database import connectionDB,disconnectionDB
-from tool import getDirectoryOSAW, getDate
+from conexionesBD import conexionBD,desconexionBD
+from herramienta import getDirectorioOSAW, getFecha
 from crontab import CronTab
 
-
-#Método para eliminar una tarea
-def deleteJob(sitio_id,conexion,cursor):
-    comentario="evaluar-sitio:"+str(sitio_id)
-    tareas=cron.find_comment(comentario)  
-
-    for tarea in tareas:
-        cron.remove(tarea)  
-
-    cron.write()
-
-    updateJob("E",sitio_id,conexion,cursor)
+#Método para cambiar el estado de automatización de un sitio
+def actualizarTarea(operacion,sitio_id,conexion,cursor):
+    #Si se crea, la automatiación se pone a cierto
+    if operacion == "C":
+        cursor.execute("update sitios set automatizado=%s where id=%s",(True,sitio_id,))
+        conexion.commit()
+    #En caso de que se elimine, la automatizacion del sitio se pone a falso
+    else:
+        cursor.execute("update sitios set automatizado=%s where id=%s",(False,sitio_id,))
+        conexion.commit()
 
 #Método para crear una tarea
-def createJob(sitio_id,periodicidad,hora,dia,cursor):
+def crearTarea(sitio_id,periodicidad,hora,dia,cursor):
 
     directorio = os.path.dirname(os.path.abspath(__file__))
     ruta_evaluacion=directorio+"/main.py " + str(sitio_id)
@@ -40,7 +38,7 @@ def createJob(sitio_id,periodicidad,hora,dia,cursor):
     tarea.hour.on(int(hora))
 
     #Para el archivo logs
-    directorio=getDirectoryOSAW()
+    directorio=getDirectorioOSAW()
 
     mensaje_tarea_creada ="Tarea creada correctamente para el sitio: " + str(sitio_id)
     mensaje_error="No se ha podido crear la tarea para el sitio: "+ str(sitio_id)
@@ -71,35 +69,35 @@ def createJob(sitio_id,periodicidad,hora,dia,cursor):
         cron.write() 
         return mensaje_tarea_creada
 
-    updateJob("C",sitio_id,conexion,cursor)
+    actualizarTarea("C",sitio_id,conexion,cursor)
+
+#Método para eliminar una tarea
+def eliminarTarea(sitio_id,conexion,cursor):
+    comentario="evaluar-sitio:"+str(sitio_id)
+    tareas=cron.find_comment(comentario)  
+
+    for tarea in tareas:
+        cron.remove(tarea)  
+
+    cron.write()
+
+    actualizarTarea("E",sitio_id,conexion,cursor)
 
 #Método para ejecutar la operacion solicitada
-def doOperation(operacion,periodicidad,hora,dia,sitio_id,conexion,cursor):
+def ejecutarOperacion(operacion,periodicidad,hora,dia,sitio_id,conexion,cursor):
     if operacion == "C": #Crear
-        createJob(sitio_id,periodicidad,hora,dia,cursor)
+        crearTarea(sitio_id,periodicidad,hora,dia,cursor)
     elif operacion == "A": # Actualizar
-        deleteJob(sitio_id,conexion,cursor)
-        createJob(sitio_id,periodicidad,hora,dia,cursor)
+        eliminarTarea(sitio_id,conexion,cursor)
+        crearTarea(sitio_id,periodicidad,hora,dia,cursor)
     elif operacion == "E": #Eliminar
-        deleteJob(sitio_id,conexion,cursor)
+        eliminarTarea(sitio_id,conexion,cursor)
     else:
         return False
 
-#Método para cambiar el estado de automatización de un sitio
-def updateJob(operacion,sitio_id,conexion,cursor):
-    #Si se crea, la automatiación se pone a cierto
-    if operacion == "C":
-        cursor.execute("update sitios set automatizado=%s where id=%s",(True,sitio_id,))
-        conexion.commit()
-    #En caso de que se elimine, la automatizacion del sitio se pone a falso
-    else:
-        cursor.execute("update sitios set automatizado=%s where id=%s",(False,sitio_id,))
-        conexion.commit()
-
-
-#Configuar la tarea de un sitio manualmente
+#Configuar la tarea de un sitio
 #Argumentos necesarios: 1. operacion a realizar y 2. identificador del sitio a gestionar
-def createManualJob(sitio_id,operacion,conexion,cursor):
+def asignarTareaSitio(sitio_id,operacion,conexion,cursor):
     
     cursor.execute("select periodicidad,hora,dia,automatizado from sitios where id = %s", (sitio_id,))
     
@@ -110,10 +108,10 @@ def createManualJob(sitio_id,operacion,conexion,cursor):
     dia=int(sitio.__getitem__(2)) #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
     automatizado=bool(sitio.__getitem__(3))
     
-    doOperation(operacion,periodicidad,hora,dia,sitio_id,conexion,cursor)
+    ejecutarOperacion(operacion,periodicidad,hora,dia,sitio_id,conexion,cursor)
 
 #Asignar una tarea a cada sitio
-def createJobs(conexion,cursor):
+def asignarTareasSitios(conexion,cursor):
 
     cursor.execute("select id,periodicidad,hora,dia,automatizado from sitios")
     sitios = cursor.fetchall()
@@ -127,26 +125,26 @@ def createJobs(conexion,cursor):
 
         # Si ya está automatizado se realiza la operación de actualización, en caso contrario se crea
         if automatizado: 
-            doOperation("A",periodicidad,hora,dia,sitio_id,conexion,cursor)
+            ejecutarOperacion("A",periodicidad,hora,dia,sitio_id,conexion,cursor)
         else:
-            doOperation("C",periodicidad,hora,dia,sitio_id,conexion,cursor)
+            ejecutarOperacion("C",periodicidad,hora,dia,sitio_id,conexion,cursor)
 
 
-def runCrontab(argumentos,conexion,cursor):
+def ejecutarCrontab(argumentos,conexion,cursor):
 
-    #Se elige la operación a realizar manualmente
+    #Se elige la operación a realizar para una única tarea
     if len(argumentos) == 3:
         operacion=str(argumentos[1]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
         sitio_id=str(argumentos[2])
 
-        createManualJob(sitio_id,operacion,conexion,cursor)
+        asignarTareaSitio(sitio_id,operacion,conexion,cursor)
 
     #Se asigna una tarea a cada sitio de la base de datos
     elif len(argumentos) == 1:
-        createJobs(conexion,cursor)
+        asignarTareasSitios(conexion,cursor)
 
 #Conexion base de datos
-parametros = connectionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
@@ -154,5 +152,5 @@ cursor = parametros[1]
 cron = CronTab(user='jesus')
 
 argumentos=sys.argv
-runCrontab(argumentos,conexion,cursor)
-disconnectionDB(conexion)
+ejecutarCrontab(argumentos,conexion,cursor)
+desconexionBD(conexion)

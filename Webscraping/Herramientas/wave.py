@@ -1,14 +1,14 @@
 import json, requests, sys, os
 
 directorio_import = os.path.dirname(os.path.abspath(__file__))
-directorio_import = directorio_import.replace('/Tools','')
+directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from database import connectionDB,disconnectionDB
-from tool import getDirectoryOSAW,getDate, getReportRoute, getReportHeader, errorLog
+from conexionesBD import conexionBD,desconexionBD
+from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 
 #Obtenemos los datos a guardar en el reporte
-def getData(categoria,datos,reporte):
+def getDatos(categoria,datos,reporte):
     valores = datos.values()
     reporte.write(categoria+"\n")
     for v in valores:
@@ -16,10 +16,10 @@ def getData(categoria,datos,reporte):
     reporte.write("-------------------------------------------------------------------\n")
 
 #Método para ejecutar el proceso de evaluación
-def runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
+def ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
 
-    directorio = getDirectoryOSAW()
-    fecha_test=getDate()
+    directorio = getDirectorioOSAW()
+    fecha_test=getFecha()
     try:
         #URL para la petición del informe a la API de WAVE
         url_request="http://wave.webaim.org/api/request?key="+key+"&url="+pagina_url+"&format=json&reporttype=2"
@@ -43,28 +43,28 @@ def runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
             num_problemas_contraste= datos_json["categories"]["contrast"]["count"]
 
             #Rutas para guardar el archivo y el acceso desde la BD
-            ruta_reporte=getReportRoute(directorio,herramienta,pagina_id,fecha_test)
-            ruta_BD=getReportRoute("",herramienta,pagina_id,fecha_test)
+            ruta_reporte=getRutaReporte(directorio,herramienta,pagina_id,fecha_test)
+            ruta_BD=getRutaReporte("",herramienta,pagina_id,fecha_test)
 
             #Creamos el reporte 
             reporte = open(ruta_reporte, 'a')
-            reporte.write(getReportHeader(pagina_url,fecha_test))
+            reporte.write(getCabeceraReporte(pagina_url,fecha_test))
 
             #En algunas ocasiones una o varias de las categorias no tiene elementos accesibles
             try:
-                getData("PROBLEMAS",datos_json["categories"]["error"]["items"],reporte)
+                getDatos("PROBLEMAS",datos_json["categories"]["error"]["items"],reporte)
             except Exception as e:
                 pass
             try:
-                getData("ALERTAS",datos_json["categories"]["alert"]["items"],reporte)
+                getDatos("ALERTAS",datos_json["categories"]["alert"]["items"],reporte)
             except Exception as e:
                 pass
             try:
-                getData("CARACTERISTICAS",datos_json["categories"]["feature"]["items"],reporte)
+                getDatos("CARACTERISTICAS",datos_json["categories"]["feature"]["items"],reporte)
             except Exception as e:
                 pass
             try:
-                getData("PROBLEMAS DE CONTRASTE",datos_json["categories"]["contrast"]["items"],reporte)
+                getDatos("PROBLEMAS DE CONTRASTE",datos_json["categories"]["contrast"]["items"],reporte)
             except Exception as e:
                 pass
 
@@ -72,7 +72,7 @@ def runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
 
             cursor=cursor.execute("insert into waves(pagina_id,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,ruta_BD,fecha_test,))
             
-            disconnectionDB(conexion)
+            desconexionBD(conexion)
 
         else:
             raise Exception('No se ha podido realizar la evaluación. Formato de respuesta incorrecto')
@@ -88,9 +88,9 @@ herramienta="wave"
 key="qbw26Imi1068"
 
 #Conexión base de datos
-parametros = connectionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
-runWAVE(pagina_id,pagina_url,herramienta,conexion,cursor)
-disconnectionDB(conexion)
+ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor)
+desconexionBD(conexion)

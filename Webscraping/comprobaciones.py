@@ -1,11 +1,11 @@
 import io, mysql.connector, os, requests, hashlib, codecs
 
-from database import connectionDB,disconnectionDB
+from conexionesBD import conexionBD,desconexionBD
 from selenium import webdriver
-from tool import  driverHeadlessBrowser, getDirectoryOSAW, getCopyHTMLRoute
+from herramienta import  driverHeadlessBrowser, getDirectorioOSAW, getRutaCopiaHTML
 
 #Comprobar acceso y el tipo de la URL
-def checkAccessAndType(pagina_web):
+def comprobarAccesoyTipo(pagina_web):
     try:
         request = requests.get(pagina_web)
         tipo = request.headers.get('content-type')
@@ -22,7 +22,7 @@ def checkAccessAndType(pagina_web):
         return False
 
 #Función para obtener el valor hash de una copia HTML
-def getFileHash(ruta_archivo):
+def getHASH(ruta_archivo):
     #Se obtiene el contenido del archivo html
     f=codecs.open(ruta_archivo, 'r', encoding="utf8")
     contenido=f.read()
@@ -38,10 +38,10 @@ def getFileHash(ruta_archivo):
     return valor_hash
 
 #Comprobar contenido HTML
-def checkHTMLCopy(pagina_id):
+def comprobarCopiaHTML(pagina_id):
 
     #Conexión base de datos
-    parametros = connectionDB()
+    parametros = conexionBD()
     conexion= parametros[0]
     cursor = parametros[1]
 
@@ -58,16 +58,16 @@ def checkHTMLCopy(pagina_id):
     driver.get(URL)
 
     #Rutas para guardar el archivo desde la carpeta Webscraping en la del proyecto Laravel:
-    directorio = getDirectoryOSAW()
-    ruta_archivo_antiguo=getCopyHTMLRoute(directorio,pagina_id, "")
-    ruta_archivo_nuevo=getCopyHTMLRoute(directorio,pagina_id, "_") #Se añade el carácter '_' para no sobrescribir la copia HTML antigua
+    directorio = getDirectorioOSAW()
+    ruta_archivo_antiguo=getRutaCopiaHTML(directorio,pagina_id, "")
+    ruta_archivo_nuevo=getRutaCopiaHTML(directorio,pagina_id, "_") #Se añade el carácter '_' para no sobrescribir la copia HTML antigua
     
     #Guardamos el contenido de la página web
     with io.open(ruta_archivo_nuevo, 'w') as f:
         f.write(driver.page_source)
 
     #Obtenemos el hash del nuevo contenido
-    hash_nuevo=getFileHash(ruta_archivo_nuevo)
+    hash_nuevo=getHASH(ruta_archivo_nuevo)
 
     #Si no es la primera vez que se evalua la página (valor:"manual")
     if hash_antiguo!="default":
@@ -82,7 +82,7 @@ def checkHTMLCopy(pagina_id):
             conexion.commit()
 
             driver.quit()
-            disconnectionDB(conexion)
+            desconexionBD(conexion)
             return True #Devolvemos true indicando que es necesario evaluar la pagina
         #Si no hay ningun cambio borramos el archivo creado
         else:
@@ -92,10 +92,10 @@ def checkHTMLCopy(pagina_id):
     else:
         os.rename(ruta_archivo_nuevo,ruta_archivo_antiguo)
         
-        ruta_BD=getCopyHTMLRoute("",pagina_id, "")
+        ruta_BD=getRutaCopiaHTML("",pagina_id, "")
 
         cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_BD,pagina_id,))
 
     driver.quit()
-    disconnectionDB(conexion)
+    desconexionBD(conexion)
     return True

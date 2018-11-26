@@ -1,9 +1,9 @@
 import io, json, mysql.connector, os, sys
 
 from selenium import webdriver
-from database import connectionDB,disconnectionDB
-from checker import checkAccessAndType, checkHTMLCopy
-from tool import copyOldData, getDate, getDirectoryOSAW, errorLog, runTool
+from conexionesBD import conexionBD,desconexionBD
+from comprobaciones import comprobarAccesoyTipo, comprobarCopiaHTML
+from herramienta import copiarDatosAntiguos, getFecha, getDirectorioOSAW, errorLog, ejecutarHerramienta
 
 
 #Método principal encargado de realizar la evaluación del sitio: checker y llamadas a las herramientas
@@ -24,18 +24,18 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
 
         if int(pagina_id)==25:
             #Comprobar acceso a la página web
-            if checkAccessAndType(pagina_url):
+            if comprobarAccesoyTipo(pagina_url):
                 #Comprobar cambios en la página web por si es necesario evaluar
-                if checkHTMLCopy(pagina_id):
+                if comprobarCopiaHTML(pagina_id):
                     for h in herramientas_activas:
-                        runTool(herramientas[h],h,pagina_id,pagina_url)
+                        ejecutarHerramienta(herramientas[h],h,pagina_id,pagina_url)
                 else:
                     for h in herramientas_activas:
-                        copyOldData(herramientas[h],h,pagina_url,pagina_id,cursor)
+                        copiarDatosAntiguos(herramientas[h],h,pagina_url,pagina_id,cursor)
                         
             else:
-                fecha_test=getDate()
-                directorio=getDirectoryOSAW()
+                fecha_test=getFecha()
+                directorio=getDirectorioOSAW()
                 errorLog(directorio,2,fecha_test,"",pagina_id,"")
 
 
@@ -47,9 +47,9 @@ herramientas_activas=["accessmonitor","achecker","eiiichecker","observatorio","v
 #herramientas_activas=["accessmonitor","achecker","observatorio","vamola","wave"]
 
 #Conexión base de datos
-parametros = connectionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
 run(sitio_id,herramientas_activas,conexion,cursor)
-disconnectionDB(conexion)
+desconexionBD(conexion)

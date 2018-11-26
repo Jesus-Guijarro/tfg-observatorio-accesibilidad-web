@@ -1,7 +1,7 @@
 import mysql.connector
 
 #Método para conectar a la BD
-def connectionDB():
+def conexionBD():
 
     conexion = mysql.connector.connect(user='jesus', password='OSAW2018-',
                               host='127.0.0.1',
@@ -16,7 +16,7 @@ def connectionDB():
     return parametros
 
 #Se realizan los cambios y se cierra la BD
-def disconnectionDB(conexion):
+def desconexionBD(conexion):
 
     conexion.commit()
     conexion.close()
