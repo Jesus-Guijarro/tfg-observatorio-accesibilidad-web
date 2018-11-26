@@ -91,7 +91,6 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Nivel A
         num_problemas_a= getValor("#block > table > tbody > tr.lev_A > td.txfail",driver)
         num_advertencias_a= getValor("#block > table > tbody > tr.lev_A > td:nth-child(4)",driver)
-
         #Nivel AA
         num_problemas_aa= getValor("#block > table > tbody > tr.lev_AA > td.txfail",driver)
         num_advertencias_aa= getValor("#block > table > tbody > tr.lev_AA > td:nth-child(4)",driver)

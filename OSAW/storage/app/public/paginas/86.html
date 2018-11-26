@@ -23,80 +23,103 @@
 	}
 	</script>
 
-<script>
-	console.log("[msg] SegmentManager - ics_var segment=" + 'Hogares');
+	<script>
+		console.log("[msg] SegmentManager - ics_var segment=" + 'Hogares');
 
-	document.addEventListener('indgWrappReady', function (event) {
-	    console.log("[msg] SegmentManager - indgWrappReady triggered");
-	    console.log("[msg] SegmentManager - Document Ready");
-		if(navigator.indigitall.notificationsActive()===true){
-		    var device_id = navigator.indigitall.getDeviceId();
-		    var segManagerEvt = new Event("segManagerReady");
-		    console.log('[msg] SegmentManager - User subscribed to notifications (device_id: ' + device_id + ')');
-		    console.log("[msg] SegmentManager - Current URL = " + window.location.href);
+		//$(document).ready(function() {
+		//document.addEventListener("DOMContentLoaded", function(event) {
+		document.addEventListener('indgWrappReady', function (event) {
+		    console.log("[msg] SegmentManager - indgWrappReady triggered");
+		    console.log("[msg] SegmentManager - Document Ready");
+			if(navigator.indigitall.notificationsActive()===true){
+			    var device_id = navigator.indigitall.getDeviceId();
+			    var segManagerEvt = new Event("segManagerReady");
+			    console.log('[msg] SegmentManager - User subscribed to notifications (device_id: ' + device_id + ')');
+			    console.log("[msg] SegmentManager - Current URL = " + window.location.href);
 
-		    console.log("[msg] SegmentManager - Comprobamos si el dispositivo esta registrado en el canal correspondiente al segmento actual -&gt; si no lo esta lo suscribimos");
+			    console.log("[msg] SegmentManager - Comprobamos si el dispositivo esta registrado en el canal correspondiente al segmento actual -&gt; si no lo esta lo suscribimos");
 
-            //var subscribed = false;
-            var subscribed = false;
+	            //var subscribed = false;
+	            var subscribed = false;
 
-            var navSegment = 'Hogares'.trim();
-            console.log("[msg] SegmentManager - icsVar_Segmento de navegacionnn: " + navSegment);
-            if(navSegment.includes('negocios')==true){
+	            var navSegment = 'Hogares'.trim();
+	            console.log("[msg] SegmentManager - icsVar_Segmento de navegacionnn: " + navSegment);
+	            if(navSegment.includes('negocios')==true){
 
-            	console.log("[msg] SegmentManager - replace segmento Negocios: " + navSegment);
-            	navSegment = "negocios";
-            	console.log("[msg] SegmentManager - icsVar_Segmento de navegacion: " + navSegment);
-            }
-            var currUrl = window.location.href;
+	            	console.log("[msg] SegmentManager - replace segmento Negocios: " + navSegment);
+	            	navSegment = "negocios";
+	            	console.log("[msg] SegmentManager - icsVar_Segmento de navegacion: " + navSegment);
+	            }
+	            var currUrl = window.location.href;
 
-              navigator.indigitall.getSubscriptions(function(result){
+	            //if(!currUrl.includes('notificaciones-endesa-clientes')){
+	            //  console.log("[msg] no land");
+	              navigator.indigitall.getSubscriptions(function(result){
 
-              	switch(navSegment) {
-                  case "Hogares":
-					navSegment = '008';
-					break;
-                  case "Empresas":
-					navSegment = '009';
-					break;
-                  case "negocios": // PequeÃ±os negocios
-					navSegment = '012';
-					break;
-                  case "Grandes empresas": // Grandes clientes
-					navSegment = '010';
-					break;
-                  case "Otros colectivos":
-                	navSegment = '011'; // Administradores de Fincas
-                	break;      
-                  default:
-					console.log("[msg] SegmentManager - Unknown Segment - Hogares selected");
-					navSegment = '008';
-				}
-                console.log("[msg] SegmentManager - user subscriptions: " + result.length);
-                for(i=0; i&lt;result.length; i++){
-                  // Comprobamos si esta suscrito a alguno de los canales gestionados por el wrapper
-                  if(result[i].tag_id === navSegment){
-                  	subscribed = true;
-                  }
-                }
-                var channels = [];
-                if(!subscribed){
-                  console.log("[msg] SegmentManager - Dispositivo no suscrito al canal del segmento actual -&gt; llamamos a indigitall.subscribe");
-                  channels.push(navSegment);
-                  subscribe(channels);
-                  
-                }else{
-                  console.log("[msg] SegmentManager - Dispositivo suscrito al canal " + navSegment + " -&gt; OK");
-                }
- 				document.dispatchEvent(segManagerEvt);
-              },
-              function(error){
-                console.log("[msg] SegmentManager - Error loading indigitall subscriptions: " + error);
-              });
-           
-		}
-	});
-</script>
+	              	var allSegments = '008,009,010,011,012';
+	              	var auxNotSub = '';
+	              	switch(navSegment) {
+                      case "Hogares":
+						navSegment = '008';
+						break;
+                      case "Empresas":
+						navSegment = '009';
+						break;
+                      case "negocios": // PequeÃ±os negocios
+						navSegment = '012';
+						break;
+                      case "Grandes empresas": // Grandes clientes
+						navSegment = '010';
+						break;
+                      case "Otros colectivos":
+                    	navSegment = '011'; // Administradores de Fincas
+                    	break;
+                      default:
+						console.log("[msg] SegmentManager - Unknown Segment - Hogares selected");
+						navSegment = '008';
+					}
+	                console.log("[msg] SegmentManager - user subscriptions: " + result.length);
+	                for(i=0; i&lt;result.length; i++){
+	                  // Comprobamos si esta suscrito a alguno de los canales gestionados por el wrapper
+	                  if(result[i].tag_id === navSegment){
+	                  	subscribed = true;
+	                  }
+	                }
+	                var channels = [];
+	                if(!subscribed){
+						console.log("[msg] SegmentManager - Dispositivo no suscrito al canal del segmento actual -&gt; lo dessuscribimos del resto de segmentos");
+						allSegments = allSegments.replace(navSegment, '');
+						console.log("[msg] Segments_Str_B4_Transformation=" + allSegments);
+						allSegments = allSegments.replace(/,,/gi, ',');
+						
+						if(allSegments.charAt(allSegments.length-1)===','){
+							allSegments = allSegments.substring(0, allSegments.length-1);
+						}
+						console.log("[msg] Segments_Str_Transformation=" + allSegments);
+						if(allSegments.charAt(0)===','){
+							allSegments = allSegments.substring(1, allSegments.length);
+						}
+						console.log("[msg] Segments_Str_Transformation=" + allSegments);
+						var segsList = allSegments.split(',');
+						console.log("[msg] segments_4Unsuscribe_List=" + segsList + ", pos1=" + segsList[0]);
+						unsubscribe(segsList);
+						console.log("[msg] SegmentManager - Dispositivo no suscrito al canal del segmento actual -&gt; llamamos a indigitall.subscribe");
+						channels.push(navSegment);
+						subscribe(channels);
+	                  
+	                }else{
+	                  console.log("[msg] SegmentManager - Dispositivo suscrito al canal " + navSegment + " -&gt; OK");
+	                }
+	              },
+	              function(error){
+	                console.log("[msg] SegmentManager - Error loading indigitall subscriptions: " + error);
+	              });
+	            //}
+	            document.dispatchEvent(segManagerEvt);
+			}
+		});
+		//});
+	</script>
 	
 <!-- USER-SEGMENTS: 1383296089135-->
 
@@ -109,7 +132,6 @@ if ( TOUCH === undefined ){
 var TOUCH = '';
 }
 </script>
-
 
 <script>
 	var isSVE=false;
@@ -410,14 +432,14 @@ var TOUCH = '';
 					return new Foundation.Reveal($(elem));
 				};
 				
-						var md_curr_window = init_FoundationModal("#modalWindow_1542616254730[data-reveal]", undefined, false);
+						var md_curr_window = init_FoundationModal("#modalWindow_1543202719833[data-reveal]", undefined, false);
 					
 			</script>
 		
   <div id="modulo-segmentador" data-module-segment="" style="display: none;">
     <div class="seg-container">
       <div class="left-site op-body-copy-tiny">Hogares y Negocios </div>
-      <div class="right-site"><a href="#" class="right-site-link op-body-copy-tiny" data-open="modalWindow_1542616254730">¿Eres una empresa? </a></div>
+      <div class="right-site"><a href="#" class="right-site-link op-body-copy-tiny" data-open="modalWindow_1543202719833">¿Eres una empresa? </a></div>
     </div>
     
     <div class="op-segment__lang show-for-large-only">
@@ -521,7 +543,7 @@ var TOUCH = '';
 
   
   <nav class="show-for-large op-header__drop">
-    <ul class="dropdown menu op-header__link-list op-reset op-header__drop" data-dropdown-menu="65ot67-dropdown-menu" data-close-on-click="false" data-closing-time="50" role="menubar">
+    <ul class="dropdown menu op-header__link-list op-reset op-header__drop" data-dropdown-menu="saf5zv-dropdown-menu" data-close-on-click="false" data-closing-time="50" role="menubar">
 
       <li class="op-header__drop op-header__link-container op-header__link-container--border is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="&#10;                  Contratar&#10;                ">
                 <a class="op-header__link op-header__link--small op-reset id_1383140687140" href="#" title="Contratar">
@@ -606,7 +628,11 @@ var TOUCH = '';
 								
     									<a class="op-drop__item-link" href="/facturas-lecturas/pagar-facturas" title="" target="_self" onclick="">Pagar tu factura</a>
 								
+    									<a class="op-drop__item-link" href="/facturas-lecturas/dar-lectura" title="" target="_self" onclick="">Introducir lectura</a>
+								
     									<a class="op-drop__item-link" href="/explicacion-factura.html" title="" target="_self" onclick="">Cómo entender tu factura</a>
+								
+    									<a class="op-drop__item-link" href="/como-entender-factura-estimada" title="" target="_self" onclick="">Facturas estimadas</a>
 								
     									<a class="op-drop__item-link" href="/factura-electronica.html" title="" target="_self" onclick="">Activa tu factura digital</a>
 								
@@ -629,12 +655,12 @@ var TOUCH = '';
 								
                     </li>
 				
-			<!-- ID-LVL2: 1383423160717 -->
+			<!-- ID-LVL2: 1500547393053 -->
 			
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Multimedia</p>
 						
-    									<a class="op-drop__item-link" href="/videos" title="" target="_self" onclick="">Vídeos</a>
+    									<a class="op-drop__item-link" href="/videos" title="" target="_self" onclick="">Videos</a>
 								
     									<a class="op-drop__item-link" href="/alexa-endesa" title="" target="_self" onclick="">Asistente por voz Alexa</a>
 								
@@ -770,7 +796,7 @@ var TOUCH = '';
       <img src="https://www.endesaclientes.com/static/iberia/open-power/img/icon/lupa-icon.png" alt="Buscar " class="op-icon op-icon__white" />
       <img src="https://www.endesaclientes.com/static/iberia/open-power/img/icon/lupa-icon-colored.svg" alt="Buscar " class="op-icon op-icon__colored" />
     </button>
-    <div id="Buscador-1500548168432" data-off-canvas="xqyomm-off-canvas" data-transition="overlap" class="op-search off-canvas position-top is-transition-overlap is-closed" aria-hidden="true">
+    <div id="Buscador-1500548168432" data-off-canvas="4j4m55-off-canvas" data-transition="overlap" class="op-search off-canvas position-top is-transition-overlap is-closed" aria-hidden="true">
       
 
     <div class="title-bar-left">
@@ -900,12 +926,12 @@ var TOUCH = '';
 
   </div>
   <!-- MENU DESPLEGABLE Buscar - pte-->
-  <div id="offCanvastopOverlap" data-off-canvas="x1gs6o-off-canvas" data-transition="overlap" class="off-canvas position-top is-transition-overlap is-closed" aria-hidden="true">
+  <div id="offCanvastopOverlap" data-off-canvas="fsgvns-off-canvas" data-transition="overlap" class="off-canvas position-top is-transition-overlap is-closed" aria-hidden="true">
     <!-- Your menu or Off-canvas content goes here-->
   </div><div class="js-off-canvas-overlay is-overlay-fixed"></div>
   <!-- MENU DESPLEGABLE Menu Lateral - pte-->
   <!-- outputdevice :  null -->
-  <div id="LateralMenu" data-off-canvas="fav4pe-off-canvas" data-transition="overlap" data-auto-focus="false" data-content-scroll="false" class="off-canvas position-right op-lateral-menu is-transition-overlap is-closed" aria-hidden="true"><h3 class="show-for-sr">Endesa - Luz, gas, personas </h3><div class="op-lateral-menu__container" id="UserAccess_Lateral_Menu">
+  <div id="LateralMenu" data-off-canvas="0br80m-off-canvas" data-transition="overlap" data-auto-focus="false" data-content-scroll="false" class="off-canvas position-right op-lateral-menu is-transition-overlap is-closed" aria-hidden="true"><h3 class="show-for-sr">Endesa - Luz, gas, personas </h3><div class="op-lateral-menu__container" id="UserAccess_Lateral_Menu">
   
   
   <nav>
@@ -945,11 +971,11 @@ var TOUCH = '';
       </ul>
     </div><div class="op-lateral-menu-scroll">
 	<div class="op-lateral-menu__segment">
-		<ul class="op-lateral-menu__list__drop vertical menu accordion-menu" data-accordion-menu="diqcka-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
+		<ul class="op-lateral-menu__list__drop vertical menu accordion-menu" data-accordion-menu="vy2fni-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
 			<li role="treeitem" class="is-accordion-submenu-parent has-submenu-toggle">
 				<a class="op-lateral-menu__segment__link__header chose-segment">
-							Hogares y Negocios </a><button id="nzrwls-acc-menu-link" class="submenu-toggle" aria-controls="id9tx5-acc-menu" aria-expanded="false" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
-				<ul class="op-lateral-menu__segment__container menu vertical nested submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="nzrwls-acc-menu-link" aria-hidden="true" id="id9tx5-acc-menu" style="display: none;">
+							Hogares y Negocios </a><button id="p05byz-acc-menu-link" class="submenu-toggle" aria-controls="fr1j4p-acc-menu" aria-expanded="false" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
+				<ul class="op-lateral-menu__segment__container menu vertical nested submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="p05byz-acc-menu-link" aria-hidden="true" id="fr1j4p-acc-menu" style="display: none;">
 								<li class="op-lateral-menu__segment__item is-submenu-item is-accordion-submenu-item" role="treeitem">
 									<a title="Empresas " href="/empresas/" class="op-lateral-menu__segment__link save-segment">
 										Empresas 
@@ -1004,12 +1030,12 @@ var TOUCH = '';
 
 
 <div class="op-lateral-menu__login" id="Login_Lateral_Menu">
-				<ul class="op-lateral-menu__list vertical menu accordion-menu" data-accordion-menu="y1334s-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
+				<ul class="op-lateral-menu__list vertical menu accordion-menu" data-accordion-menu="v58t3y-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
 						<li role="treeitem" class="is-accordion-submenu-parent has-submenu-toggle">
 							<a href="#" title="" class="op-lateral-menu__link">
 								ÁREA CLIENTE 
-							</a><button id="z1rcfh-acc-menu-link" class="submenu-toggle" aria-controls="uz5fa3-acc-menu" aria-expanded="true" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
-							<ul class="op-lateral-menu__login__content is-active submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="z1rcfh-acc-menu-link" aria-hidden="false" id="uz5fa3-acc-menu" style="">
+							</a><button id="n52ptl-acc-menu-link" class="submenu-toggle" aria-controls="6anu9f-acc-menu" aria-expanded="true" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
+							<ul class="op-lateral-menu__login__content is-active submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="n52ptl-acc-menu-link" aria-hidden="false" id="6anu9f-acc-menu" style="">
 								<li role="treeitem" class="is-submenu-item is-accordion-submenu-item">
 									
 
@@ -1207,13 +1233,13 @@ $(function(){
 
     <script>console.log('nametemplate: '+'/ProductMkt/TP_Detail/Catalog/ProductDetail_Hogares')</script>
 <div class="op-lateral-menu__sections">
-  <ul class="op-lateral-menu__list vertical menu accordion-menu" data-accordion-menu="kkvg8l-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
+  <ul class="op-lateral-menu__list vertical menu accordion-menu" data-accordion-menu="95vaw0-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
     <li role="treeitem" class="is-accordion-submenu-parent has-submenu-toggle">
-      <a class="op-lateral-menu__link">Descubre Endesa Clientes </a><button id="u8y113-acc-menu-link" class="submenu-toggle" aria-controls="rnst59-acc-menu" aria-expanded="false" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
+      <a class="op-lateral-menu__link">Descubre Endesa Clientes </a><button id="g4g9zi-acc-menu-link" class="submenu-toggle" aria-controls="5zi2z9-acc-menu" aria-expanded="false" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
 
       
 
-    <ul class="op-lateral-menu__section hide-for-large-only submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="u8y113-acc-menu-link" aria-hidden="true" id="rnst59-acc-menu" style="display: none;">
+    <ul class="op-lateral-menu__section hide-for-large-only submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="g4g9zi-acc-menu-link" aria-hidden="true" id="5zi2z9-acc-menu" style="display: none;">
       <li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem">
         
         <a class="op-lateral-menu__section__title id_1383138063631" data-link="/hogares.html" href="/hogares.html">
@@ -1223,7 +1249,7 @@ $(function(){
     </ul>
 
     
-            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="u8y113-acc-menu-link" aria-hidden="true" id="rnst59-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383140687140" data-link="/hogares/productos-servicios.html" href="/hogares/productos-servicios.html">
+            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="g4g9zi-acc-menu-link" aria-hidden="true" id="5zi2z9-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383140687140" data-link="/hogares/productos-servicios.html" href="/hogares/productos-servicios.html">
                 Contratar
               </a>
                                     <a class="op-lateral-menu__section__link id_1500547442836" href="/catalogo/luz.html" title="Luz">
@@ -1244,7 +1270,7 @@ $(function(){
                                   
                   </li>
                 </ul>
-            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="u8y113-acc-menu-link" aria-hidden="true" id="rnst59-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383138001881" data-link="/te-asesoramos.html" href="/te-asesoramos.html">
+            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="g4g9zi-acc-menu-link" aria-hidden="true" id="5zi2z9-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383138001881" data-link="/te-asesoramos.html" href="/te-asesoramos.html">
                 Te ayudamos
               </a>
                                     <a class="op-lateral-menu__section__link id_1383366619718" href="/facturas-lecturas" title="Facturas y lecturas">
@@ -1255,7 +1281,7 @@ $(function(){
                                       Gestiones y contratos
                                     </a>
                                   
-                                    <a class="op-lateral-menu__section__link id_1383423160717" href="/videos" title="Multimedia">
+                                    <a class="op-lateral-menu__section__link id_1500547393053" href="/videos" title="Multimedia">
                                       Multimedia
                                     </a>
                                   
@@ -1265,7 +1291,7 @@ $(function(){
                                   
                   </li>
                 </ul>
-            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="u8y113-acc-menu-link" aria-hidden="true" id="rnst59-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383359364161" data-link="#" href="#">
+            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="g4g9zi-acc-menu-link" aria-hidden="true" id="5zi2z9-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383359364161" data-link="#" href="#">
                 Conoce la energía
               </a>
                                     <a class="op-lateral-menu__section__link id_1399990851114" href="/blog" title="Blogavatios">
@@ -1286,7 +1312,7 @@ $(function(){
                                   
                   </li>
                 </ul>
-<ul class="op-lateral-menu__section hide-for-large-only submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="u8y113-acc-menu-link" aria-hidden="true" id="rnst59-acc-menu" style="display: none;">
+<ul class="op-lateral-menu__section hide-for-large-only submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="g4g9zi-acc-menu-link" aria-hidden="true" id="5zi2z9-acc-menu" style="display: none;">
       <li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem">
         
         <a class="op-lateral-menu__section__title id_1383138063631" data-link="/hogares/atencion-cliente.html" href="/hogares/atencion-cliente.html">
@@ -1764,7 +1790,7 @@ console.log("[header] display assistant");
 </style>
 
 
-		</header><div class="full reveal endesa-modal_op openpower op-modal__max op-segmentador__endesa without-overlay" id="modalWindow_1542616254730" title="" aria-labelledby="modalWindowHeader_1542616254730" data-reveal="66cne0-reveal" data-animation-in="fade-in fast" data-v-offset="0" role="dialog" aria-hidden="true" data-yeti-box="modalWindow_1542616254730" data-resize="modalWindow_1542616254730">
+		</header><div class="full reveal endesa-modal_op openpower op-modal__max op-segmentador__endesa without-overlay" id="modalWindow_1543202719833" title="" aria-labelledby="modalWindowHeader_1543202719833" data-reveal="4966b2-reveal" data-animation-in="fade-in fast" data-v-offset="0" role="dialog" aria-hidden="true" data-yeti-box="modalWindow_1543202719833" data-resize="modalWindow_1543202719833">
 				
 
   <div class="title-bar-left">
@@ -1777,10 +1803,10 @@ console.log("[header] display assistant");
     </div>
   </div>
   <div class="gen-modal--content_op op-modal__content">
-    <p id="modalWindowHeader_1542616254730" class="gen-modal--title_op op-modal__title op-modal__title--max">Elige el segmento de clientes al que perteneces </p>
+    <p id="modalWindowHeader_1543202719833" class="gen-modal--title_op op-modal__title op-modal__title--max">Elige el segmento de clientes al que perteneces </p>
     <p class="op-modal__text op-modal__text--max">Te ofrecemos distintos productos y servicios en función de si buscas soluciones para tu casa o tu empresa. </p>
 
-    <ul class="dropdown menu op-segmentador op-segmentador__item" data-dropdown-menu="gzibfj-dropdown-menu" data-segment-menu="" role="menubar">
+    <ul class="dropdown menu op-segmentador op-segmentador__item" data-dropdown-menu="dgfyxl-dropdown-menu" data-segment-menu="" role="menubar">
       <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-label="&#10;          &#10;            Escoge otro segmento &#10;          &#10;        ">
         <a href="#" class="dropdown-selected op-segmentador__link-secundary">
           <span>
@@ -2640,14 +2666,14 @@ function actualizarTelemetry(cups){
 
           <li class="op-footer__link-li">
             
-			<!-- Subcategoria: Contacto -->
-			<a class="op-footer__link" href="/hogares/mapa-web.html" title="Mapa del sitio">Mapa del sitio</a>
+			<!-- Subcategoria: Seguridad en internet -->
+			<a class="op-footer__link" href="/seguridad.html" title="Seguridad">Seguridad</a>
           </li> 
 
           <li class="op-footer__link-li">
             
 			<!-- Subcategoria: Seguridad en internet -->
-			<a class="op-footer__link" href="/seguridad.html" title="Seguridad">Seguridad</a>
+			<a class="op-footer__link" href="/hogares/mapa-web.html" title="Mapa del sitio">Mapa del sitio</a>
           </li> 
 
           <li class="op-footer__link-li">
@@ -2660,6 +2686,12 @@ function actualizarTelemetry(cups){
             
 			<!-- Subcategoria: Accesibilidad -->
 			<a class="op-footer__link" href="/algs" title="Aviso Legal">Aviso Legal</a>
+          </li> 
+
+          <li class="op-footer__link-li">
+            
+			<!-- Subcategoria: Accesibilidad -->
+			<a class="op-footer__link" href="/seleccion-proteccion-datos" title="Protección de datos">Protección de datos</a>
           </li> 
 
           <li class="op-footer__link-li">
@@ -2717,7 +2749,7 @@ function actualizarTelemetry(cups){
 
 
 <!-- modal de cookies -->
-<div id="cookies-wrap" data-off-canvas="r5cpko-off-canvas" data-content-overlay="false" data-transition="overlap" class="openpower modal_cookies off-canvas position-bottom is-transition-overlap is-open" aria-hidden="false">
+<div id="cookies-wrap" data-off-canvas="6ezkwv-off-canvas" data-content-overlay="false" data-transition="overlap" class="openpower modal_cookies off-canvas position-bottom is-transition-overlap is-open" aria-hidden="false">
   <h2 class="modal_cookies__title" id="modalTitle">Política de cookies :</h2>
   <p>
     Utilizamos cookies propias y de empresas colaboradoras para mejorar tu experiencia de usuario y ofrecerte los mejores servicios. Si navegas por nuestra página web, estarás aceptando el uso de las cookies en las condiciones establecidas en la presente  <a class="modal_cookies__link noPrivPol" href="/politica-cookies.html" title="Política de cookies " onclick="hideCookiesIb();"> Política de cookies </a>.
@@ -2804,18 +2836,17 @@ $(document).ready(function() {
 		</script>
 	
 
-<!--elaaeoweew01.risorse.enel - -->
+<!--elaaeoweew00.risorse.enel - -->
 
-<img src="https://www.endesaclientes.com/sites/CookieServer?name=variant-ab&amp;secure=null&amp;timeout=360000000&amp;url=%2F&amp;value=B" alt="" /><img src="https://www.endesaclientes.com/sites/CookieServer?name=idvis&amp;secure=null&amp;timeout=360000000&amp;url=%2F&amp;value=1501159711844" alt="" />
+<img src="https://www.endesaclientes.com/sites/CookieServer?name=variant-ab&amp;secure=null&amp;timeout=360000000&amp;url=%2F&amp;value=B" alt="" /><img src="https://www.endesaclientes.com/sites/CookieServer?name=idvis&amp;secure=null&amp;timeout=360000000&amp;url=%2F&amp;value=1501173493363" alt="" />
 <script type="text/javascript">
 	var csrftoken = (function(){
 	    var token;
-            var tokenUrl = '/sites/Satellite?pagename=SiteEntry/NEOL/Site/Page/WrapperPage/SendParameterAuthkey';
-            var consTokUrl = '/sites/Satellite?pagename=SiteEntry/NEOL/Site/Page/WrapperPage/GetCurrToken';
+        var tokenUrl = '/sites/Satellite?pagename=SiteEntry/NEOL/Site/Page/WrapperPage/SendParameterAuthkey';
+        var consTokUrl = '/sites/Satellite?pagename=SiteEntry/NEOL/Site/Page/WrapperPage/GetCurrToken';
 	    tokenUrl = tokenUrl.replace("/Satellite?", "/Satellite/?");
 
-
-           var validCall;
+		var validCall;
 	   $.ajax({
 	      type: "GET",
 	      url: tokenUrl,
@@ -2823,16 +2854,13 @@ $(document).ready(function() {
 	      dataType: "text",
 	      success : function(data) {
               token = data;
-
               $.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
                     options.url = options.url.replace("/Satellite?", "/Satellite/?");
-
                     if(options.url.indexOf('SiteEntry/NEOL/Site/Page/WrapperPage/GetCurrToken')!=-1){
-	   	  		validCall = false;
-	   	    }else{
-	   			validCall =  true;
-	   	    }
-
+			   	  		validCall = false;
+			   	    }else{
+			   			validCall =  true;
+			   	    }
                     
                     if(options.url.indexOf('Satellite')!=-1 &amp;&amp; validCall) {
                     
@@ -2886,7 +2914,6 @@ $(document).ready(function() {
 	        def.resolve(token);
 	      }
 	    });
-
 	    return def.promise();
 	}
 	$(function(){
@@ -2913,7 +2940,6 @@ $(document).ready(function() {
 					});
 					targetForm.append(oInput);
 				
-
 			}
 			return true;
 		});
@@ -2942,7 +2968,6 @@ $(document).ready(function() {
 		}
 	}
 </script>
-<!--<link rel="manifest" href="/indigitall/indigitall.json"/>-->
 <script type="text/javascript">
 
 	// Si el navegador es IE11 o inferior -&gt; no cargamos la libreria de indigitall 
@@ -2955,23 +2980,27 @@ $(document).ready(function() {
 
 		document.body.appendChild(js);
 	}
+
 	console.info("[msg] wrapperpage");
 	console.info("[msg] segment: " + 'Hogares');
 	console.info("[msg] curr_page: " + '1383366570702');
+	
 	console.info("[msg] IE?=" + isIE);
 
 	if((navigator.indigitall != null &amp;&amp; typeof navigator.indigitall !== "undefined") || isIE==false){
+
 		$(document).bind('indigitallReady', function() {
-			console.log("[msg] Indigitall Ready");
+			console.info("[msg] Indigitall Ready");
 			navigator.indigitall.loadIndigitall(function() {
-				console.log("[msg] Load Indigitall");
+				console.info("[msg] Load Indigitall");
 				if(navigator.indigitall.notificationsActive()===true){
 					var device_id = navigator.indigitall.getDeviceId();
-					console.log('WrapperPage_User subscribed to notifications (device_id: ' + device_id + ')');
-					console.log("[msg] WrapperPage_Logado? -&gt; " + 'null');
-					console.log("[msg] WrapperPage_Dispositivo = " + '');
-					console.log("[msg] WrapperPage_Idioma = " + '1383137899042');
-					console.log("[msg] WrapperPage_Current URL = " + window.location.href);
+					console.info('WrapperPage_User subscribed to notifications (device_id: ' + device_id + ')');
+					console.info("[msg] WrapperPage_Logado? -&gt; " + 'null');
+					console.info("[msg] WrapperPage_Dispositivo = " + '');
+					console.info("[msg] WrapperPage_Idioma = " + '1383137899042');
+					console.info("[msg] WrapperPage_Current URL = " + window.location.href);
+
 
 					//var subscribed = false;
 					var subsLang = false;
@@ -2997,7 +3026,7 @@ $(document).ready(function() {
 
 					var indigitallWrappEvt = new Event('indgWrappReady');
 					navigator.indigitall.getSubscriptions(function(result){
-						console.log("[msg] WrapperPage_user subscriptions: " + result.length);
+						console.info("[msg] WrapperPage_user subscriptions: " + result.length);
 
 						var devWidth = (window.innerWidth &gt; 0) ? window.innerWidth : screen.width;
 						if(devWidth&gt;767){
@@ -3007,58 +3036,75 @@ $(document).ready(function() {
 							devGroup = '007';
 							devGroupAux = '006';
 						}
-						console.log("[msg] WrapperPage_devGroup=" + devGroup + ", devGroupAux="+devGroupAux);
+						var allLang = '013,014,015';
+						console.info("[msg] WrapperPage_devGroup=" + devGroup + ", devGroupAux="+devGroupAux);
 						for(i=0; i&lt;result.length; i++){
 							// Comprobamos si esta suscrito a alguno de los canales gestionados por el wrapper
 							switch(result[i].tag_id){
 								case "004":
-									console.log("[msg] WrapperPage_Suscrito a No Registrado");
+									console.info("[msg] WrapperPage_Suscrito a No Registrado");
 									subsNoReg = true;
 									break;
 								case idiom:
-									console.log("[msg] WrapperPage_Suscrito al canal correspondiente al idioma -&gt; " + idiom);
+									console.info("[msg] WrapperPage_Suscrito al canal correspondiente al idioma -&gt; " + idiom);
 									subsLang = true;
 									break;
 								case devGroup:
-									console.log("[msg] WrapperPage_Suscrito al canal -&gt; " + devGroup);
+									console.info("[msg] WrapperPage_Suscrito al canal -&gt; " + devGroup);
 									subsDevice = true;
 									break;
 								case devGroupAux:
-									console.log("[msg] WrapperPage_Suscrito al canal -&gt; " + devGroupAux);
+									console.info("[msg] WrapperPage_Suscrito al canal -&gt; " + devGroupAux);
 									subsDevAux = true;
 									break;	
-								default:
-									console.log("IDK");
+							    default:
+									console.info("IDK");
 							}
 						}
 						var channels = [];
 
 						if(!subsNoReg){
-							console.log("[msg] WrapperPage_Dispositivo no suscrito al canal de No Registrado -&gt; llamamos a indigitall.subscribe");
+							console.info("[msg] WrapperPage_Dispositivo no suscrito al canal de No Registrado -&gt; llamamos a indigitall.subscribe");
 							channels.push("004");
 						}else{
-							console.log("[msg] WrapperPage_Dispositivo suscrito al canal No Registrado -&gt; OK");
+							console.info("[msg] WrapperPage_Dispositivo suscrito al canal No Registrado -&gt; OK");
 						}
 
 						if(!subsLang){
-							console.log("[msg] WrapperPage_Dispositivo no suscrito al canal del idioma -&gt; llamamos a indigitall.subscribe");
+							console.info("[msg] WrapperPage_Dispositivo no suscrito al canal del idioma actual -&gt; lo dessuscribimos del resto de idiomas");
+							allLang = allLang.replace(idiom, '');
+							console.info("[msg] WrapperPage_Langs_Str_B4_Transformation=" + allLang);
+							allLang = allLang.replace(/,,/gi, ',');
+							
+							if(allLang.charAt(allLang.length-1)===','){
+								allLang = allLang.substring(0, allLang.length-1);
+							}
+							console.info("[msg] WrapperPage_Langs_Str_Transformation=" + allLang);
+							if(allLang.charAt(0)===','){
+								allLang = allLang.substring(1, allLang.length);
+							}
+							console.info("[msg] WrapperPage_Langs_Str_Transformation=" + allLang);
+							var idiomList = allLang.split(',');
+							console.info("[msg] WrapperPage_Langs_4Unsuscribe_List=" + idiomList + ", pos1=" + idiomList[0]);
+							unsubscribe(idiomList);
+							console.info("[msg] WrapperPage_Dispositivo no suscrito al canal del idioma -&gt; llamamos a indigitall.subscribe");
 							channels.push(idiom);
 						}else{
-							console.log("[msg] WrapperPage_Dispositivo suscrito al canal " + idiom + " -&gt; OK");
+							console.info("[msg] WrapperPage_Dispositivo suscrito al canal " + idiom + " -&gt; OK");
 						}
 
 						if(!subsDevice &amp;&amp; !subsDevAux){
-							console.log("[msg] WrapperPage_Dispositivo no suscrito al canal correspondiente al tipo de dispositivo -&gt; " + devGroup);
+							console.info("[msg] WrapperPage_Dispositivo no suscrito al canal correspondiente al tipo de dispositivo -&gt; " + devGroup);
 							channels.push(devGroup);
 						}else if(!subsDevice &amp;&amp; subsDevAux){
-							console.log("[msg] WrapperPage_Dispositivo no suscrito al canal " + devGroup + " y suscrito al " + devGroupAux);
+							console.info("[msg] WrapperPage_Dispositivo no suscrito al canal " + devGroup + " y suscrito al " + devGroupAux);
 							channels.push(devGroup);
 							var unsubChannel = [];
 							unsubChannel.push(devGroupAux);
 							unsubscribe(unsubChannel);
 
 						}else{
-							console.log("[msg] WrapperPage_Dispositivo suscrito al canal " + devGroup + " -&gt; OK");
+							console.info("[msg] WrapperPage_Dispositivo suscrito al canal " + devGroup + " -&gt; OK");
 						}
 
 						// Si el array de subscripciones pendienes contiene valores -&gt; llamamos a indigitall.subscribe
@@ -3069,8 +3115,9 @@ $(document).ready(function() {
 						document.dispatchEvent(indigitallWrappEvt);
 					},
 					function(err){
-						console.log("[msg] WrapperPage_error obtaining indigitall subscriptions: " + err);
+						console.info("[msg] WrapperPage_error obtaining indigitall subscriptions: " + err);
 					});
+
 				}					
 			},
 			function(err){
@@ -3081,7 +3128,7 @@ $(document).ready(function() {
 		// Funcion para suscribir el dispositivo a un grupo de Indigitall
 		function subscribe(group){
 			navigator.indigitall.subscribe(group, function() {
-				console.log('[msg] User subscribed to group "' + group + '"');
+				console.info('[msg] User subscribed to group "' + group + '"');
 				//device_id = navigator.indigitall.getDeviceId();
 				// sendToYourBackend(device_id);
 			}, function(err) {
@@ -3092,13 +3139,13 @@ $(document).ready(function() {
 
 		// Funcion para dessuscribir el dispositivo de un grupo de Indigitall
 		function unsubscribe(group){
-			navigator.indigitall.unsubscribe(group, function() {
-				console.log('[msg] User unsubscribed to group "' + group + '"');
-			}, function(err) {
-				console.log('[msg] Error unsubscribing user to group "' + group + '"');
-				console.error(err);
-			});
-		}
+		    navigator.indigitall.unsubscribe(group, function() {
+		        console.info('[msg] User unsubscribed to group "' + group + '"');
+		    }, function(err) {
+		        console.info('[msg] Error unsubscribing user to group "' + group + '"');
+		        console.error(err);
+		    });
+	    }
 	}
 </script><script type="text/javascript" src="/indigitall/indigitall.min.js?v=3.1.12"></script>
 
