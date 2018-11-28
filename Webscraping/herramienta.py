@@ -1,4 +1,4 @@
-import os, requests, subprocess
+import os, requests, subprocess,mysql.connector
 
 from selenium import webdriver
 from datetime import datetime
