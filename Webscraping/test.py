@@ -44,7 +44,8 @@ sitio_id=sys.argv[1]
 
 #Listado con las herramientas disponibles para ser usadas
 herramientas_activas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
-#herramientas_activas=["accessmonitor","achecker","observatorio","vamola","wave"]
+#herramientas_activas=["accessmonitor"]
+#print("HERRAMIENTAS LISTADAS")
 
 #Conexión base de datos
 parametros = conexionBD()
@@ -53,3 +54,4 @@ cursor = parametros[1]
 
 run(sitio_id,herramientas_activas,conexion,cursor)
 desconexionBD(conexion)
+

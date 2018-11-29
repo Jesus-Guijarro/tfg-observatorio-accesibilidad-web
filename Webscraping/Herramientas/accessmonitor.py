@@ -28,12 +28,15 @@ def crearReporte(ruta_reporte,datos,pagina_url,fecha_test):
     reporte.write(getCabeceraReporte(pagina_url,fecha_test))
     
     #Usamos un traductor debido a que la información del reporte está en portugués
-    translator = Translator()
+    traductor = Translator()
 
     for dato in datos:
         texto=dato.get_attribute('textContent')
-        traduccion=str(translator.translate(texto, dest='es', src='pt').text + "\n")
-        reporte.write(traduccion)
+        try:
+            traduccion=str(traductor.translate(texto, dest='es', src='pt').text + "\n")
+            reporte.write(traduccion)
+        except Exception as e:
+            raise Exception('Error en la libreria del traductor de Google')
 
     reporte.close()
 
