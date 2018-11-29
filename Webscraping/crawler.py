@@ -3,7 +3,7 @@
 import sys, requests, mysql.connector
 
 from selenium import webdriver
-from conexionesBD import conexionBD,desconexionBD
+from database import conexion,desconexion
 from herramienta import driverHeadlessBrowser
 from comprobaciones import comprobarAccesoyTipo
 

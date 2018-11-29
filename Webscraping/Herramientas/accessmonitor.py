@@ -6,7 +6,7 @@ directorio_import = os.path.dirname(os.path.abspath(__file__))
 directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from conexionesBD import conexionBD,desconexionBD
+from database import conexion,desconexion
 from herramienta import getDirectorioOSAW,getFecha, driverHeadlessBrowser, getRutaReporte, getCabeceraReporte, errorLog
 from googletrans import Translator
 

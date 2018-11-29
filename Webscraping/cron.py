@@ -1,6 +1,6 @@
 import sys, os
 
-from conexionesBD import conexionBD,desconexionBD
+from database import conexion,desconexion
 from herramienta import getDirectorioOSAW, getFecha
 from crontab import CronTab
 
@@ -48,7 +48,6 @@ def crearTarea(sitio_id,periodicidad,hora,dia,cursor):
         if dia<0 or dia>6:
             
             error=mensaje_error+"-ERROR: Día de la semana incorrecto. Valores posibles: 0 - 6"
-            print(error)
             return error
         else:
             tarea.dow.on(dia)
@@ -59,7 +58,6 @@ def crearTarea(sitio_id,periodicidad,hora,dia,cursor):
         #Comprobacion de los dias del mes posibles
         if dia<1 or dia>31:
             error=mensaje_error+"-ERROR: Día del mes incorrecto. Valores posibles: 1 - 31"
-            print(error)
             return error
         else:
             tarea.day.on(dia)
@@ -134,8 +132,8 @@ def ejecutarCrontab(argumentos,conexion,cursor):
 
     #Se elige la operación a realizar para una única tarea
     if len(argumentos) == 3:
-        operacion=str(argumentos[1]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
-        sitio_id=str(argumentos[2])
+        sitio_id=str(argumentos[1])
+        operacion=str(argumentos[2]) # Crear -> 'C'; Actualizar -> 'A'; Eliminar -> 'E'
 
         asignarTareaSitio(sitio_id,operacion,conexion,cursor)
 

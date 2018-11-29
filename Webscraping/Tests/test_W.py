@@ -1,5 +1,5 @@
 from datetime import datetime
-from conexionesBD import conexionBD,desconexionBD
+from database import conexion,desconexion
 
 import os,sys,json
 

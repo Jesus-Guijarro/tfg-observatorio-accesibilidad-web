@@ -1,7 +1,7 @@
 import io, json, mysql.connector, os, sys
 
 from selenium import webdriver
-from conexionesBD import conexionBD,desconexionBD
+from database import conexion,desconexion
 from comprobaciones import comprobarAccesoyTipo, comprobarCopiaHTML
 from herramienta import copiarDatosAntiguos, getFecha, getDirectorioOSAW, errorLog, ejecutarHerramienta
 

@@ -4,7 +4,7 @@ directorio_import = os.path.dirname(os.path.abspath(__file__))
 directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from conexionesBD import conexionBD,desconexionBD
+from database import conexion,desconexion
 from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 
 #Obtenemos los datos a guardar en el reporte
@@ -85,7 +85,7 @@ pagina_id=sys.argv[1]
 pagina_url=sys.argv[2]
 
 herramienta="wave"
-key="qbw26Imi1068"
+key=WAVE_KEY
 
 #Conexión base de datos
 parametros = conexionBD()

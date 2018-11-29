@@ -1,6 +1,6 @@
 import io, mysql.connector, os, requests, hashlib, codecs
 
-from conexionesBD import conexionBD,desconexionBD
+from database import conexion,desconexion
 from selenium import webdriver
 from herramienta import  driverHeadlessBrowser, getDirectorioOSAW, getRutaCopiaHTML
 

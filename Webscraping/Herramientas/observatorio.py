@@ -4,9 +4,9 @@ directorio_import = os.path.dirname(os.path.abspath(__file__))
 directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from conexionesBD import conexionBD,desconexionBD
+from database import conexion,desconexion
 from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraReporte, errorLog
-
+from keys import OBSERVATORIO_KEY
 #Los "isinstance" son para comprobar que el elemento es una lista o un elemento único
 #Los try son para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón
 #Cuatro niveles: 1.Principios, 2.Pautas, 3.Criterios, 4.Ténicas
@@ -154,7 +154,7 @@ pagina_id=sys.argv[1]
 pagina_url=sys.argv[2]
 
 herramienta="observatorio"
-key="b83e8400-5431-4b2b-8de8-4806a90fc418"
+key=OBSERVATORIO_KEY
 
 #Conexión base de datos
 parametros = conexionBD()

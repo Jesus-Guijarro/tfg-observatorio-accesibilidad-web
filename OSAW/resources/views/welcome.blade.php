@@ -87,8 +87,8 @@
                     
                 </div>
                 <?php 
-                    $command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/Webscraping/test.py");
-                    shell_exec($command);
+                    #$command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/Webscraping/test.py");
+                    #shell_exec($command);
                     
                     function echoScriptPath() {
                         list($scriptPath) = get_included_files();
@@ -99,10 +99,6 @@
                     $ruta = echoScriptPath();
                     $ruta=str_replace("/server.php","/public/storage/web-scraping",$ruta);
                     echo $ruta;
-                    /*
-                    $command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/OSAW/public/storage/web-scraping/test2.py");
-                    shell_exec($command);
-                    */
                 ?>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>

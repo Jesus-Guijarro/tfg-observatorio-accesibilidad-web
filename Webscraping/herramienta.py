@@ -149,7 +149,7 @@ def copiarDatosAntiguos(seleccionada,herramienta,pagina_url,pagina_id,cursor):
         #accessmonitor
         if herramienta == "accessmonitor":
 
-            #Se comprueba que hay un reporte anterior
+            #Se comprueba que hay un reporte anterior, ya que es posible que se haya podido guardar la copia HTML pero no llegado a analizarla por error de la herramienta
             cursor.execute("select count(*) from accessmonitors where pagina_id = %s order by id desc limit 1", (pagina_id,))
             
             resultado = cursor.fetchone()

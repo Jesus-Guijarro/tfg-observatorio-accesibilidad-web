@@ -1,7 +1,7 @@
 import io, json, mysql.connector, os, sys
 
 from selenium import webdriver
-from conexionesBD import conexionBD,desconexionBD
+from database import conexion,desconexion
 from comprobaciones import comprobarAccesoyTipo, comprobarCopiaHTML
 from herramienta import copiarDatosAntiguos, getFecha, getDirectorioOSAW, errorLog, ejecutarHerramienta
 
@@ -22,7 +22,7 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
         pagina_url=pagina.__getitem__(0)
         pagina_id=str(pagina.__getitem__(1))
 
-        if int(pagina_id)==25:
+        if int(pagina_id)==40:
             #Comprobar acceso a la página web
             if comprobarAccesoyTipo(pagina_url):
                 #Comprobar cambios en la página web por si es necesario evaluar
@@ -44,7 +44,8 @@ sitio_id=sys.argv[1]
 
 #Listado con las herramientas disponibles para ser usadas
 herramientas_activas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
-#herramientas_activas=["accessmonitor","achecker","observatorio","vamola","wave"]
+#herramientas_activas=["accessmonitor"]
+#print("HERRAMIENTAS LISTADAS")
 
 #Conexión base de datos
 parametros = conexionBD()
@@ -53,3 +54,4 @@ cursor = parametros[1]
 
 run(sitio_id,herramientas_activas,conexion,cursor)
 desconexionBD(conexion)
+
