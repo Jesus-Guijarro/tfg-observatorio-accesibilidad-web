@@ -7,6 +7,10 @@ sys.path.append(directorio_import)
 from database import conexion,desconexion
 from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 from keys import OBSERVATORIO_KEY
+
+from timer import calcularTiemposAcceso
+from time import time
+
 #Los "isinstance" son para comprobar que el elemento es una lista o un elemento único
 #Los try son para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón
 #Cuatro niveles: 1.Principios, 2.Pautas, 3.Criterios, 4.Ténicas
@@ -108,7 +112,10 @@ def ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
         url_request="http://observatorioweb.ups.edu.ec/oaw/srv/wcag/json/conformidad/?url="+pagina_url+"&key="+key
 
         #Timeout de 120 segundos
+        t1=time()
         r = requests.get(url=url_request,timeout=60)
+        tiempo=time()-t1
+        calcularTiemposAcceso("observatorio",tiempo,"RESPUESTA API")
 
         datos_json=json.loads(r.content.decode('utf-8'))
 
@@ -143,7 +150,7 @@ def ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Guardamos los datos en la BD
         cursor = cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_BD,fecha_test,))
         
-        desconexionBD(conexion)
+        desconexion(conexion)
 
     except Exception as e:
         errorLog(directorio,1,fecha_test,herramienta,pagina_id,e)
@@ -157,9 +164,9 @@ herramienta="observatorio"
 key=OBSERVATORIO_KEY
 
 #Conexión base de datos
-parametros = conexionBD()
+parametros = conexion()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexionBD(conexion)
+desconexion(conexion)

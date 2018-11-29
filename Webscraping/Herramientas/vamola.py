@@ -13,6 +13,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from timer import calcularTiemposAcceso
+from time import time
+
 #Método para ejecutar el proceso de evaluación
 def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
 
@@ -33,7 +36,10 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
+            t1=time()
             elem =wait.until(EC.title_is(("Vamolà, validatore e monitor per l'accessibilità : Web Accessibility Checker")))
+            tiempo=time()-t1
+            calcularTiemposAcceso("vamola",tiempo,"ACCESO HERRAMIENTA")
         except:
             driver.quit()
             raise Exception('No se ha podido acceder a la herramienta')
@@ -55,7 +61,10 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
         wait = WebDriverWait(driver, 120)
         #Se espera hasta que se haya evaluado y ofrecido el resultado
         try:
+            t1=time()
             elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,"#tabresults > ul > li.ui-state-default.ui-corner-top.ui-tabs-selected.ui-state-active > a")))
+            tiempo=time()-t1
+            calcularTiemposAcceso("vamola",tiempo,"EVALUACIÓN")
         except:
             driver.quit()
             raise Exception('No se ha podido realizar la evaluación')
@@ -90,7 +99,7 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Se guarda en la BD
         cursor = cursor.execute("insert into vamolas(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
         
-        desconexionBD(conexion)
+        desconexion(conexion)
 
     except Exception as e:
         errorLog(directorio,1,fecha_test,herramienta,pagina_id,e)
@@ -104,9 +113,9 @@ pagina_url=sys.argv[2]
 herramienta="vamola"
 
 #Conexion base de datos
-parametros = conexionBD()
+parametros = conexion()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexionBD(conexion)
+desconexion(conexion)

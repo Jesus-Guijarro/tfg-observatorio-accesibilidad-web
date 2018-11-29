@@ -13,6 +13,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from timer import calcularTiemposAcceso
+from time import time
 
 #Datos problemas y calculo de número de problemas según nivel
 def getErrores(mensaje,css_selector,reporte,driver):
@@ -45,7 +47,10 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
+            t1=time()
             elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#logo > h1")))
+            tiempo=time()-t1
+            calcularTiemposAcceso("eiiichecker",tiempo,"ACCESO HERRAMIENTA")
         except:
             driver.quit()
             raise Exception('No se ha podido acceder a la herramienta')
@@ -70,7 +75,10 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         wait = WebDriverWait(driver, 180)
         #Se espera hasta que se haya evaluado y ofrecido el resultado
         try:
+            t1=time()
             elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#resultsByTest > div > div.tabArea")))
+            tiempo=time()-t1
+            calcularTiemposAcceso("eiiichecker",tiempo,"EVALUACIÓN")
         except:
             driver.quit()
             raise Exception('No se ha podido realizar la evaluación')
@@ -120,7 +128,7 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Guardamos los datos en la BD
         cursor = cursor.execute("insert into eiiicheckers(pagina_id,puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,ruta_BD,fecha_test,))
 
-        desconexionBD(conexion)
+        desconexion(conexion)
 
     except Exception as e:
         errorLog(directorio,1,fecha_test,herramienta,pagina_id,e)
@@ -134,9 +142,9 @@ pagina_url=sys.argv[2]
 herramienta="eiiichecker"
 
 #Conexion base de datos
-parametros = conexionBD()
+parametros = conexion()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexionBD(conexion)
+desconexion(conexion)

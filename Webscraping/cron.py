@@ -142,7 +142,7 @@ def ejecutarCrontab(argumentos,conexion,cursor):
         asignarTareasSitios(conexion,cursor)
 
 #Conexion base de datos
-parametros = conexionBD()
+parametros = conexion()
 conexion= parametros[0]
 cursor = parametros[1]
 
@@ -151,4 +151,4 @@ cron = CronTab(user='jesus')
 
 argumentos=sys.argv
 ejecutarCrontab(argumentos,conexion,cursor)
-desconexionBD(conexion)
+desconexion(conexion)

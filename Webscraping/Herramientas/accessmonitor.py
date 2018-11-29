@@ -15,6 +15,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from timer import calcularTiemposAcceso
+from time import time
+
 def getValor(css_selector,driver):
     try:
         valor=int(driver.find_element_by_css_selector(css_selector).text)
@@ -60,7 +63,10 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
+            t1=time()
             elem =wait.until(EC.title_is(("AccessMonitor")))
+            tiempo=time()-t1
+            calcularTiemposAcceso("accessmonitor",tiempo,"ACCESO HERRAMIENTA")
         except:
             driver.quit()
             raise Exception('No se ha podido acceder a la herramienta')
@@ -80,7 +86,10 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         wait = WebDriverWait(driver, 120)
         #Se espera hasta que se haya evaluado y ofrecido el resultado
         try:
+            t1=time()
             elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagina > div.corpo > h2:nth-child(7)")))
+            tiempo=time()-t1
+            calcularTiemposAcceso("accessmonitor",tiempo,"EVALUACIÓN")
         except:
             driver.quit()
             raise Exception('No se ha podido realizar la evaluación')
@@ -114,7 +123,7 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Guardamos los datos en la BD
         cursor = cursor.execute("insert into accessmonitors(pagina_id,puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,ruta_BD,fecha_test,))
         
-        desconexionBD(conexion)
+        desconexion(conexion)
         driver.quit()
         
     except Exception as e:
@@ -128,12 +137,12 @@ pagina_url=sys.argv[2]
 herramienta="accessmonitor"
 
 #Conexion base de datos
-parametros = conexionBD()
+parametros = conexion()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexionBD(conexion)
+desconexion(conexion)
 
 
 

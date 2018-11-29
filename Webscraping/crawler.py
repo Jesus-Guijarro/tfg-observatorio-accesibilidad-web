@@ -104,7 +104,7 @@ sitio_id=sys.argv[1]
 num_paginas=int(sys.argv[2])
 
 #Conexion Base de datos
-parametros = conexionBD()
+parametros = conexion()
 conexion= parametros[0]
 cursor = parametros[1]
 
@@ -112,5 +112,5 @@ url=getURL(sitio_id,cursor)
 
 getPaginas(sitio_id,url,num_paginas,0,conexion,cursor)
 
-desconexionBD(conexion)
+desconexion(conexion)
 

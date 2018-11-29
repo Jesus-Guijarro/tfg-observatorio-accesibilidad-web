@@ -7,6 +7,11 @@ sys.path.append(directorio_import)
 from database import conexion,desconexion
 from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 
+from keys import WAVE_KEY
+
+from timer import calcularTiemposAcceso
+from time import time
+
 #Obtenemos los datos a guardar en el reporte
 def getDatos(categoria,datos,reporte):
     valores = datos.values()
@@ -23,7 +28,12 @@ def ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
     try:
         #URL para la petición del informe a la API de WAVE
         url_request="http://wave.webaim.org/api/request?key="+key+"&url="+pagina_url+"&format=json&reporttype=2"
+        
+        t1=time()
         r = requests.get(url=url_request,timeout=60)
+        tiempo=time()-t1
+        calcularTiemposAcceso("wave",tiempo,"RESPUESTA API")
+
         #Decodificamos los datos obtenidos
         datos_json=json.loads(r.content.decode('utf-8'))
 
@@ -72,7 +82,7 @@ def ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
 
             cursor=cursor.execute("insert into waves(pagina_id,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,ruta_BD,fecha_test,))
             
-            desconexionBD(conexion)
+            desconexion(conexion)
 
         else:
             raise Exception('No se ha podido realizar la evaluación. Formato de respuesta incorrecto')
@@ -88,9 +98,9 @@ herramienta="wave"
 key=WAVE_KEY
 
 #Conexión base de datos
-parametros = conexionBD()
+parametros = conexion()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexionBD(conexion)
+desconexion(conexion)

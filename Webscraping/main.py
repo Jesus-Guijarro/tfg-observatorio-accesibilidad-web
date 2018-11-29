@@ -45,9 +45,9 @@ sitio_id=sys.argv[1]
 herramientas_activas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
 
 #Conexión base de datos
-parametros = conexionBD()
+parametros = conexion()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutar(sitio_id,herramientas_activas,conexion,cursor)
-desconexionBD(conexion)
+desconexion(conexion)

@@ -41,7 +41,7 @@ def getHASH(ruta_archivo):
 def comprobarCopiaHTML(pagina_id):
 
     #Conexión base de datos
-    parametros = conexionBD()
+    parametros = conexion()
     conexion= parametros[0]
     cursor = parametros[1]
 
@@ -82,7 +82,7 @@ def comprobarCopiaHTML(pagina_id):
             conexion.commit()
 
             driver.quit()
-            desconexionBD(conexion)
+            desconexion(conexion)
             return True #Devolvemos true indicando que es necesario evaluar la pagina
         #Si no hay ningun cambio borramos el archivo creado
         else:
@@ -97,5 +97,5 @@ def comprobarCopiaHTML(pagina_id):
         cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_BD,pagina_id,))
 
     driver.quit()
-    desconexionBD(conexion)
+    desconexion(conexion)
     return True

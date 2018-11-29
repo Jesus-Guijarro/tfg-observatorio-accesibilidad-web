@@ -48,10 +48,10 @@ herramientas_activas=["accessmonitor","achecker","eiiichecker","observatorio","v
 #print("HERRAMIENTAS LISTADAS")
 
 #Conexión base de datos
-parametros = conexionBD()
+parametros = conexion()
 conexion= parametros[0]
 cursor = parametros[1]
 
 run(sitio_id,herramientas_activas,conexion,cursor)
-desconexionBD(conexion)
+desconexion(conexion)
 
