@@ -127,7 +127,7 @@ def errorLog(directorio,tipo,fecha_test,herramienta,identificador,error):
 
 #Cabecera de los documentos con la información de los problemas encontrados
 def getCabeceraReporte(pagina_url,fecha_test):
-    cabecera='REPORTE PÁGINA WEB: ' + pagina_url+ '\t\t'+"FECHA EVALUACIÓN: "+ fecha_test+'\n\n'
+    cabecera='REPORTE PÁGINA WEB: ' + pagina_url+ '\n'+"FECHA EVALUACIÓN: "+ fecha_test+'\n\n'
     return cabecera
 
 #Métodos para copiar archivos y datos antiguos de los reportes de evaluación
