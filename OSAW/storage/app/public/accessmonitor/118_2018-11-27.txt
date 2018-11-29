@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.iberia.com/es/iberiaplus/condiciones/		FECHA EVALUACIÓN: 2018-11-27
+REPORTE PÁGINA WEB: https://www.iberia.com/es/iberiaplus/condiciones/
+FECHA EVALUACIÓN: 2018-11-27
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se encontraron 4 imágenes en las que la leyenda es un espacio vacío

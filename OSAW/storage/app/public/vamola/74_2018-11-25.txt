@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://web.ua.es/es/grados-oficiales.html		FECHA EVALUACIÓN: 2018-11-25
+REPORTE PÁGINA WEB: https://web.ua.es/es/grados-oficiales.html
+FECHA EVALUACIÓN: 2018-11-25
 
 PROBLEMAS CONOCIDOS
 1.1 Text Alternatives: Provide text alternatives for all non-text content

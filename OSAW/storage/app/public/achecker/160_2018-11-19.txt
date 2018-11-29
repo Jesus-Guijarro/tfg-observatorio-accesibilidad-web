@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.aemps.gob.es/home.htm		FECHA EVALUACIÓN: 2018-11-19
+REPORTE PÁGINA WEB: https://www.aemps.gob.es/home.htm
+FECHA EVALUACIÓN: 2018-11-19
 
 PROBLEMAS CONOCIDOS
 1.1 Text Alternatives: Provide text alternatives for all non-text content

@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.iberia.com/es/iberiaplus/condiciones/		FECHA EVALUACIÓN: 2018-11-06
+REPORTE PÁGINA WEB: https://www.iberia.com/es/iberiaplus/condiciones/
+FECHA EVALUACIÓN: 2018-11-06
 
 PROBLEMAS CONOCIDOS
 1.1 Text Alternatives: Provide text alternatives for all non-text content

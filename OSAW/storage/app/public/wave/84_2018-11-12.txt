@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/ver-factura		FECHA EVALUACIÓN: 2018-11-12
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/ver-factura
+FECHA EVALUACIÓN: 2018-11-12
 
 PROBLEMAS
 Empty heading	  VECES ENCONTRADO: 1

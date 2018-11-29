@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.icex.es/icex/es/Navegacion-zona-contacto/libreria-icex/index.html		FECHA EVALUACIÓN: 2018-11-16
+REPORTE PÁGINA WEB: https://www.icex.es/icex/es/Navegacion-zona-contacto/libreria-icex/index.html
+FECHA EVALUACIÓN: 2018-11-16
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se encontraron 10 imágenes en las que la leyenda es un espacio vacío

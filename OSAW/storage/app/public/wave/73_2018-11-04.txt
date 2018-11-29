@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://web.ua.es/es/orientacion-y-empleo.html		FECHA EVALUACIÓN: 2018-11-04
+REPORTE PÁGINA WEB: https://web.ua.es/es/orientacion-y-empleo.html
+FECHA EVALUACIÓN: 2018-11-04
 
 PROBLEMAS
 Missing alternative text	  VECES ENCONTRADO: 7

@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.iberia.com/es/autocheckin-online/?language=es&market=es/ibcose		FECHA EVALUACIÓN: 2018-11-06
+REPORTE PÁGINA WEB: https://www.iberia.com/es/autocheckin-online/?language=es&market=es/ibcose
+FECHA EVALUACIÓN: 2018-11-06
 
 Se constató que no hay encabezados marcados en la página
 Se constató que la página no tiene enlaces

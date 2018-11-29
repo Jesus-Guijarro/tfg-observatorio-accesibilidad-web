@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=6&MS=5&MN=1&r=1536*864		FECHA EVALUACIÓN: 2018-11-23
+REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=6&MS=5&MN=1&r=1536*864
+FECHA EVALUACIÓN: 2018-11-23
 
 PROBLEMAS CONOCIDOS
 3.3 Input Assistance: Help users avoid and correct mistakes.

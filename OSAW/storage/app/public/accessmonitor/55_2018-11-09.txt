@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=101&MS=821&MN=1&r=1536*864		FECHA EVALUACIÓN: 2018-11-09
+REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=101&MS=821&MN=1&r=1536*864
+FECHA EVALUACIÓN: 2018-11-09
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se constató que todos los botones gráficos tienen un título

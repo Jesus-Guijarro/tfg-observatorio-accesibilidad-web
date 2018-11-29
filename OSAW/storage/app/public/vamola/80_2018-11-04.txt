@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://web.ua.es/es/centro-de-apoyo-al-estudiante.html		FECHA EVALUACIÓN: 2018-11-04
+REPORTE PÁGINA WEB: https://web.ua.es/es/centro-de-apoyo-al-estudiante.html
+FECHA EVALUACIÓN: 2018-11-04
 
 PROBLEMAS CONOCIDOS
 1.1 Text Alternatives: Provide text alternatives for all non-text content

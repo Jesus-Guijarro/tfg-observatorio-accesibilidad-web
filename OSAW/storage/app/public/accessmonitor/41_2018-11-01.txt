@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.renfe.com		FECHA EVALUACIÓN: 2018-11-01
+REPORTE PÁGINA WEB: http://www.renfe.com
+FECHA EVALUACIÓN: 2018-11-01
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se encontraron 14 imágenes en las que la leyenda es un espacio vacío

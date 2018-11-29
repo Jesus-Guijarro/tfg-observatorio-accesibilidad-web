@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://web.ua.es/es/masteres-oficiales.html		FECHA EVALUACIÓN: 2018-11-25
+REPORTE PÁGINA WEB: https://web.ua.es/es/masteres-oficiales.html
+FECHA EVALUACIÓN: 2018-11-25
 
 PROBLEMAS
 Missing alternative text	  VECES ENCONTRADO: 4

@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/		FECHA EVALUACIÓN: 2018-11-02
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/
+FECHA EVALUACIÓN: 2018-11-02
 
 PROBLEMAS
 Empty button	  VECES ENCONTRADO: 4

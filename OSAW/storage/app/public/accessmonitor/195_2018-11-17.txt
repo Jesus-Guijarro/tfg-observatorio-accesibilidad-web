@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.umh.es/acc/		FECHA EVALUACIÓN: 2018-11-17
+REPORTE PÁGINA WEB: http://www.umh.es/acc/
+FECHA EVALUACIÓN: 2018-11-17
 
 Se encontraron 9 elementos de encabezado
 Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal

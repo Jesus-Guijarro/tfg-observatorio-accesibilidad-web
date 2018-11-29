@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/areas-cultura/cine.html		FECHA EVALUACIÓN: 2018-11-09
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/areas-cultura/cine.html
+FECHA EVALUACIÓN: 2018-11-09
 
 
 Principio: 1.Perceptible
@@ -740,7 +741,8 @@ ol"">     <img alt="Sello "Es Cine Español"" src="/dms/mecd/cultura-mecd/areas-
 			Recomendación: 
 			Número de errores: 0
 
-REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/areas-cultura/cine.html		FECHA EVALUACIÓN: 2018-11-09
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/areas-cultura/cine.html
+FECHA EVALUACIÓN: 2018-11-09
 
 
 Principio: 1.Perceptible

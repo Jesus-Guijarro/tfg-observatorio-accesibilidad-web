@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.iberia.com/es/horarios/		FECHA EVALUACIÓN: 2018-11-20
+REPORTE PÁGINA WEB: https://www.iberia.com/es/horarios/
+FECHA EVALUACIÓN: 2018-11-20
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se encontró un elemento <iframe> sin título

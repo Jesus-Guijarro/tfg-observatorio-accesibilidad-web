@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/dar-lectura		FECHA EVALUACIÓN: 2018-11-12
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/dar-lectura
+FECHA EVALUACIÓN: 2018-11-12
 
 CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       TÉCNICA H37: Uso de <&alt> en elementos <&img>		 VECES ENCONTRADO: 2
 CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <&fieldset> y <&legend>		 VECES ENCONTRADO: 2

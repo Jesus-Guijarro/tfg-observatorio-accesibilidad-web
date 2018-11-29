@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.raspeig.es/actualidad/arranca-en-las-calles-vicente-savall-y-alfonso-xiii-el-nuevo-plan-de-poda-de-ciudad/		FECHA EVALUACIÓN: 2018-11-06
+REPORTE PÁGINA WEB: http://www.raspeig.es/actualidad/arranca-en-las-calles-vicente-savall-y-alfonso-xiii-el-nuevo-plan-de-poda-de-ciudad/
+FECHA EVALUACIÓN: 2018-11-06
 
 CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <&fieldset> y <&legend>		 VECES ENCONTRADO: 1
 CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G131: Proporcionar etiquetas descriptivas		 VECES ENCONTRADO: 1

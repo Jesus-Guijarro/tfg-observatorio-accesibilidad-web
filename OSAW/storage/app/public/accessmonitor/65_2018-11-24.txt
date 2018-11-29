@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.upv.es/estudios/grado/index-es.html		FECHA EVALUACIÓN: 2018-11-24
+REPORTE PÁGINA WEB: https://www.upv.es/estudios/grado/index-es.html
+FECHA EVALUACIÓN: 2018-11-24
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se identificaron 5 casos en que se asocian eventos a elementos no interactivos

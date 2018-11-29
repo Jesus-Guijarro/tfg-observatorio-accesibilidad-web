@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/		FECHA EVALUACIÓN: 2018-11-09
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/
+FECHA EVALUACIÓN: 2018-11-09
 
 
 Principio: 1.Perceptible
@@ -740,7 +741,8 @@ mecd/va/"><span title="Valencià" xml:lang="va" lang="va">Benvin</xmp></li></ul>
 			Recomendación: 
 			Número de errores: 0
 
-REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/		FECHA EVALUACIÓN: 2018-11-09
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/
+FECHA EVALUACIÓN: 2018-11-09
 
 
 Principio: 1.Perceptible

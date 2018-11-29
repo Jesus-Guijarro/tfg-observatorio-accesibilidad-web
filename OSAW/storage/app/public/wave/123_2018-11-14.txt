@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.mscbs.gob.es/profesionales/portada/home.htm		FECHA EVALUACIÓN: 2018-11-14
+REPORTE PÁGINA WEB: http://www.mscbs.gob.es/profesionales/portada/home.htm
+FECHA EVALUACIÓN: 2018-11-14
 
 PROBLEMAS
 Empty button	  VECES ENCONTRADO: 4

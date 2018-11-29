@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/dar-lectura		FECHA EVALUACIÓN: 2018-11-19
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/dar-lectura
+FECHA EVALUACIÓN: 2018-11-19
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se encontraron 9 imágenes en las que la leyenda es un espacio vacío

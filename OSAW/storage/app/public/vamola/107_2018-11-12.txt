@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.bancosantander.es/es/particulares/banca-online		FECHA EVALUACIÓN: 2018-11-12
+REPORTE PÁGINA WEB: https://www.bancosantander.es/es/particulares/banca-online
+FECHA EVALUACIÓN: 2018-11-12
 
 PROBLEMAS CONOCIDOS
 1.1 Text Alternatives: Provide text alternatives for all non-text content

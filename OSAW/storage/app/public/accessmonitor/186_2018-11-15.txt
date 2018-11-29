@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia		FECHA EVALUACIÓN: 2018-11-15
+REPORTE PÁGINA WEB: http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia
+FECHA EVALUACIÓN: 2018-11-15
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se encontró una imagen en la que la leyenda es un espacio vacío

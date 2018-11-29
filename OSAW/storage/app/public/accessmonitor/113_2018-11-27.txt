@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.iberia.com/es/puente-aereo/		FECHA EVALUACIÓN: 2018-11-27
+REPORTE PÁGINA WEB: https://www.iberia.com/es/puente-aereo/
+FECHA EVALUACIÓN: 2018-11-27
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se encontró un elemento <iframe> sin título

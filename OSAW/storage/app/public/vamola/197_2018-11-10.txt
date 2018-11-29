@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.umh.es/contenido/Alumni/:none/datos_es.html		FECHA EVALUACIÓN: 2018-11-10
+REPORTE PÁGINA WEB: http://www.umh.es/contenido/Alumni/:none/datos_es.html
+FECHA EVALUACIÓN: 2018-11-10
 
 PROBLEMAS CONOCIDOS
 4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.

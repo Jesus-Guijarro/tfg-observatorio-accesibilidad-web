@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Vivienda/Vivienda.shtml		FECHA EVALUACIÓN: 2018-11-12
+REPORTE PÁGINA WEB: https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Vivienda/Vivienda.shtml
+FECHA EVALUACIÓN: 2018-11-12
 
 ALERTAS
 Unlabeled form element with title	  VECES ENCONTRADO: 1

@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/ca/index.htm		FECHA EVALUACIÓN: 2018-11-03
+REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/ca/index.htm
+FECHA EVALUACIÓN: 2018-11-03
 
 ALERTAS
 Redundant link	  VECES ENCONTRADO: 1

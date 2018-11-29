@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.idae.es/ahorra-energia/campanas-y-acciones-de-acompanamiento		FECHA EVALUACIÓN: 2018-11-08
+REPORTE PÁGINA WEB: http://www.idae.es/ahorra-energia/campanas-y-acciones-de-acompanamiento
+FECHA EVALUACIÓN: 2018-11-08
 
 CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función		 VECES ENCONTRADO: 1
 CRITERIO DE CONFORMIDAD: 3.1.1: Idioma de la página      		 VECES ENCONTRADO: 1

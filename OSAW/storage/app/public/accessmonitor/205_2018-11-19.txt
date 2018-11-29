@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.uv.es/master-ultimes-places/ca/admissio-master/admissio-ultimes-places/3-espera-notificacio-admissio-max-24h-.html		FECHA EVALUACIÓN: 2018-11-19
+REPORTE PÁGINA WEB: https://www.uv.es/master-ultimes-places/ca/admissio-master/admissio-ultimes-places/3-espera-notificacio-admissio-max-24h-.html
+FECHA EVALUACIÓN: 2018-11-19
 
 Se constató que no hay encabezados marcados en la página
 Se constató que la página no tiene enlaces

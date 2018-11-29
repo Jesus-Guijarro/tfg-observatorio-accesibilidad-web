@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.bancosantander.es/es/particulares/banca-online		FECHA EVALUACIÓN: 2018-11-05
+REPORTE PÁGINA WEB: https://www.bancosantander.es/es/particulares/banca-online
+FECHA EVALUACIÓN: 2018-11-05
 
 Se constató que todas las imágenes hacen uso del atributo alt
 Se encontraron 7 imágenes en las que la leyenda es un espacio vacío

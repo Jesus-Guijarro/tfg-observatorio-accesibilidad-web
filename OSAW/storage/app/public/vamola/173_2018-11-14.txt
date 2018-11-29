@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: http://www.valencia.es/Contratacion/pdc_universidad.nsf/fCategoriaVistaExpedientes?readForm&Vista=vLicitaciones_encursov&Categoria=Servici%20de%20Contractaci%F3&titulo=Licitacions%20en%20curs&lang=2&nivel=1		FECHA EVALUACIÓN: 2018-11-14
+REPORTE PÁGINA WEB: http://www.valencia.es/Contratacion/pdc_universidad.nsf/fCategoriaVistaExpedientes?readForm&Vista=vLicitaciones_encursov&Categoria=Servici%20de%20Contractaci%F3&titulo=Licitacions%20en%20curs&lang=2&nivel=1
+FECHA EVALUACIÓN: 2018-11-14
 
 PROBLEMAS CONOCIDOS
 Congratulations! No known problems.

@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/pagar-facturas		FECHA EVALUACIÓN: 2018-11-26
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/pagar-facturas
+FECHA EVALUACIÓN: 2018-11-26
 
 PROBLEMAS
 Missing form label	  VECES ENCONTRADO: 1

@@ -1,4 +1,5 @@
-REPORTE PÁGINA WEB: https://www.iberdrola.es/ahorrar-energia/calcular-potencia-electrica-optima		FECHA EVALUACIÓN: 2018-11-06
+REPORTE PÁGINA WEB: https://www.iberdrola.es/ahorrar-energia/calcular-potencia-electrica-optima
+FECHA EVALUACIÓN: 2018-11-06
 
 PROBLEMAS
 Missing form label	  VECES ENCONTRADO: 24
