@@ -9,10 +9,14 @@ Suspicious alternative text	  VECES ENCONTRADO: 1
 A nearby image has the same alternative text	  VECES ENCONTRADO: 2
 Redundant title text	  VECES ENCONTRADO: 3
 Redundant alternative text	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Element language	  VECES ENCONTRADO: 6
 Image button with alternative text	  VECES ENCONTRADO: 2
 Alternative text	  VECES ENCONTRADO: 16
 Linked image with alternative text	  VECES ENCONTRADO: 3
--------------------------------------------------------------------
+
+
+

@@ -11,11 +11,15 @@ Unlabeled form element with title	  VECES ENCONTRADO: 2
 Accesskey	  VECES ENCONTRADO: 8
 Link to PDF document	  VECES ENCONTRADO: 1
 Redundant title text	  VECES ENCONTRADO: 3
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Linked image with alternative text	  VECES ENCONTRADO: 7
 Image button with alternative text	  VECES ENCONTRADO: 2
 Alternative text	  VECES ENCONTRADO: 4
 Null or empty alternative text	  VECES ENCONTRADO: 9
 Element language	  VECES ENCONTRADO: 6
--------------------------------------------------------------------
+
+
+

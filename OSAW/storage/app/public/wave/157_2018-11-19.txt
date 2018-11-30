@@ -6,14 +6,20 @@ Justified text	  VECES ENCONTRADO: 24
 Redundant link	  VECES ENCONTRADO: 1
 Link to PDF document	  VECES ENCONTRADO: 4
 Long alternative text	  VECES ENCONTRADO: 3
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Element language	  VECES ENCONTRADO: 6
 Null or empty alternative text	  VECES ENCONTRADO: 11
 Null or empty alternative text on spacer	  VECES ENCONTRADO: 4
 Form label	  VECES ENCONTRADO: 1
 Linked image with alternative text	  VECES ENCONTRADO: 33
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 16
--------------------------------------------------------------------
+
+
+

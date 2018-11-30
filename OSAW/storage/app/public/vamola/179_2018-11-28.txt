@@ -1,7 +1,10 @@
 REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/WebCiudano.nsf/Registro?ReadForm&lang=2&id=0F3E93B421616BDEC1257F46002D260A&estado=0&nivel=2_2&bdorigen=ayuntamiento/ayuntamiento.nsf
 FECHA EVALUACIÓN: 2018-11-28
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
+
+
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 
 CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
@@ -14,9 +17,10 @@ CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)
 
  
 
- -------------------------------------------------------------------------------------------------------------------------- 
+ -------------- 
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -458,6 +462,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 317, COLUMNA: 1: <script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-11786303-1");pageTrack ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

@@ -9,10 +9,14 @@ Accesskey	  VECES ENCONTRADO: 8
 Suspicious alternative text	  VECES ENCONTRADO: 1
 Underlined text	  VECES ENCONTRADO: 1
 A nearby image has the same alternative text	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Element language	  VECES ENCONTRADO: 6
 Alternative text	  VECES ENCONTRADO: 3
 Image button with alternative text	  VECES ENCONTRADO: 2
 Linked image with alternative text	  VECES ENCONTRADO: 3
--------------------------------------------------------------------
+
+
+

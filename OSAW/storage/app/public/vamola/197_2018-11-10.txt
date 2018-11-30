@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.umh.es/contenido/Alumni/:none/datos_es.html
 FECHA EVALUACIÓN: 2018-11-10
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
 
 CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)  
@@ -14,9 +15,10 @@ CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)
 
 
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -2178,6 +2180,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 88, COLUMNA: 3: <script type="text/javascript">AudioPlayer.setup("/JSFiles/flash/player.swf", {width:300});		 ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

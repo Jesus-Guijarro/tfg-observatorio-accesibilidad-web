@@ -8,7 +8,9 @@ Empty link	  VECES ENCONTRADO: 10
 Empty button	  VECES ENCONTRADO: 4
 Linked image missing alternative text	  VECES ENCONTRADO: 7
 Missing alternative text	  VECES ENCONTRADO: 417
--------------------------------------------------------------------
+
+
+
 ALERTAS
 A nearby image has the same alternative text	  VECES ENCONTRADO: 4
 Missing fieldset	  VECES ENCONTRADO: 1
@@ -21,13 +23,19 @@ Suspicious alternative text	  VECES ENCONTRADO: 1
 Noscript element	  VECES ENCONTRADO: 5
 Accesskey	  VECES ENCONTRADO: 1
 Redundant title text	  VECES ENCONTRADO: 66
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Form label	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 2
 Linked image with alternative text	  VECES ENCONTRADO: 67
 Null or empty alternative text	  VECES ENCONTRADO: 15
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 34
--------------------------------------------------------------------
+
+
+

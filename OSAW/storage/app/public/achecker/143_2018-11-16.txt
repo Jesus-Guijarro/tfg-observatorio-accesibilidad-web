@@ -1,7 +1,10 @@
 REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/
 FECHA EVALUACIÓN: 2018-11-16
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
+
+
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 
 CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
@@ -16,9 +19,10 @@ CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)
 
 	
 
- -------------------------------------------------------------------------------------------------------------------------- 
+ -------------- 
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -682,6 +686,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 112, COLUMNA: 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
 
 		LINEA: 119, COLUMNA: 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

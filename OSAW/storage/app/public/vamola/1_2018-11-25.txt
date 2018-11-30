@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/inicio
 FECHA EVALUACIÓN: 2018-11-25
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
 
 CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
@@ -32,7 +33,9 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 		LINEA: 575, COLUMNA: 115: <div class="bloqueTitulo">Transformación digital de la Justicia</div>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mjusticia.gob.es/estatico/cs/portal/css/estilos.css?v=2):		.bloqueseccionesInteres.bloqueTitulo{		float:right;	width:70%;	box-sizing:border-box;	background:#fff;	color:#2874BF;	height:auto;	}    
 
-		LINEA: 576, COLUMNA: 156: <div class="bloqueTitulo">Oficina Judicial</div>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mjusticia.gob.es/estatico/cs/portal/css/estilos.css?v=2):		.bloqueseccionesInteres.bloqueTitulo{		float:right;	width:70%;	box-sizing:border-box;	background:#fff;	color:#2874BF;	height:auto;	}    2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+		LINEA: 576, COLUMNA: 156: <div class="bloqueTitulo">Oficina Judicial</div>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mjusticia.gob.es/estatico/cs/portal/css/estilos.css?v=2):		.bloqueseccionesInteres.bloqueTitulo{		float:right;	width:70%;	box-sizing:border-box;	background:#fff;	color:#2874BF;	height:auto;	}    
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 
 CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
 
@@ -72,9 +75,10 @@ CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)
 
 
 
- -------------------------------------------------------------------------------------------------------------------------- 
+ -------------- 
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -1364,6 +1368,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 741, COLUMNA: 2: <script src="http://www.mjusticia.gob.es/estatico/cs/portal/js/mkr.js" type="text/javascript"></scri ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

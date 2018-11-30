@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: https://www.upv.es/admision/traslados-e-intercambios/index-es.html
 FECHA EVALUACIÓN: 2018-11-10
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 3.1 Readable: Make text content readable and understandable
 
 CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)  
@@ -14,9 +15,10 @@ CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)
 
 	
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -366,6 +368,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 200, COLUMNA: 17: <script type="text/javascript">//<![CDATA[var idioma_va="va"; ...       
 
 		LINEA: 640, COLUMNA: 5: <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

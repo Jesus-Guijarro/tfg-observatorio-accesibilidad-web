@@ -4,7 +4,11 @@ FECHA EVALUACIÓN: 2018-11-19
 PROBLEMAS
 Document language missing	  VECES ENCONTRADO: 1
 Missing or uninformative page title	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 ALERTAS
 No heading structure	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+

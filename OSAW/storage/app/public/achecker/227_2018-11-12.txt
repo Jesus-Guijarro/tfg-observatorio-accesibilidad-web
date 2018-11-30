@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.aemet.es/es/conocenos/a_que_nos_dedicamos
 FECHA EVALUACIÓN: 2018-11-12
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -40,9 +41,10 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -584,6 +586,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 720, COLUMNA: 1: <script type="text/javascript">	var link1 = document.getElementById("link1_imprimir");	var link2 ...       
 
 		LINEA: 798, COLUMNA: 1: <script type="text/javascript">	function aceptaCookies() 	{ 		 $.cookie("accept_cookies", "ok" ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

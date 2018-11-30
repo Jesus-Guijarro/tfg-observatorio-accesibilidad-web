@@ -5,13 +5,19 @@ ALERTAS
 Device dependent event handler	  VECES ENCONTRADO: 1
 Redundant title text	  VECES ENCONTRADO: 5
 Accesskey	  VECES ENCONTRADO: 7
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Form label	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 2
 Linked image with alternative text	  VECES ENCONTRADO: 10
 Image button with alternative text	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+

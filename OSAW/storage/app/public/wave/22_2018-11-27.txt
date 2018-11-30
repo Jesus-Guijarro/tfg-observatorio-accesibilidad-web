@@ -9,10 +9,14 @@ Suspicious alternative text	  VECES ENCONTRADO: 1
 Redundant alternative text	  VECES ENCONTRADO: 6
 Redundant title text	  VECES ENCONTRADO: 11
 Unlabeled form element with title	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Element language	  VECES ENCONTRADO: 6
 Linked image with alternative text	  VECES ENCONTRADO: 3
 Alternative text	  VECES ENCONTRADO: 2
 Image button with alternative text	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+

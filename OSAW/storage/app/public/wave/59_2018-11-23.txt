@@ -7,13 +7,19 @@ Link to PDF document	  VECES ENCONTRADO: 1
 Accesskey	  VECES ENCONTRADO: 10
 Redundant title text	  VECES ENCONTRADO: 6
 Device dependent event handler	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Form label	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 3
 Linked image with alternative text	  VECES ENCONTRADO: 14
 Image button with alternative text	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 9
--------------------------------------------------------------------
+
+
+

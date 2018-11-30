@@ -8,7 +8,9 @@ Empty link	  VECES ENCONTRADO: 1
 Empty form label	  VECES ENCONTRADO: 1
 Empty button	  VECES ENCONTRADO: 2
 Missing form label	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+
 ALERTAS
 Unlabeled form element with title	  VECES ENCONTRADO: 1
 A nearby image has the same alternative text	  VECES ENCONTRADO: 5
@@ -18,14 +20,20 @@ Very small text	  VECES ENCONTRADO: 6
 Skipped heading level	  VECES ENCONTRADO: 1
 Redundant title text	  VECES ENCONTRADO: 18
 Possible heading	  VECES ENCONTRADO: 8
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Null or empty alternative text	  VECES ENCONTRADO: 7
 Fieldset	  VECES ENCONTRADO: 1
 Linked image with alternative text	  VECES ENCONTRADO: 2
 Form label	  VECES ENCONTRADO: 3
 Alternative text	  VECES ENCONTRADO: 7
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 22
--------------------------------------------------------------------
+
+
+

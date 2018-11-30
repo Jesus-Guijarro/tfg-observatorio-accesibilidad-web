@@ -1,12 +1,14 @@
 REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/funciones-estructura
 FECHA EVALUACIÓN: 2018-11-04
 
-PROBLEMAS CONOCIDOS
-		Congratulations! No known problems.		
+-PROBLEMAS CONOCIDOS-
 
- ------------------------------------------------------ 
+		Ningún problema conocido encontrado.		
 
-PROBLEMAS POTENCIALES
+  
+
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -218,6 +220,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 155, COLUMNA 4: <script type="text/javascript" id="autocompleteBuscador">//<![CDATA[	// autocomplete busca ...       
 
 		LINEA: 530, COLUMNA 2: <script src="http://www.mjusticia.gob.es/estatico/cs/portal/js/mkr.js" type="text/javascript"></scri ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

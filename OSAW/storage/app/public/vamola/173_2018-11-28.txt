@@ -1,12 +1,14 @@
 REPORTE PÁGINA WEB: http://www.valencia.es/Contratacion/pdc_universidad.nsf/fCategoriaVistaExpedientes?readForm&Vista=vLicitaciones_encursov&Categoria=Servici%20de%20Contractaci%F3&titulo=Licitacions%20en%20curs&lang=2&nivel=1
 FECHA EVALUACIÓN: 2018-11-28
 
-PROBLEMAS CONOCIDOS
-Congratulations! No known problems.
+-PROBLEMAS CONOCIDOS-
 
- ------------------------------------------------------ 
+Ningún problema conocido encontrado.
 
-PROBLEMAS POTENCIALES
+  
+
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -224,6 +226,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 105, COLUMNA: 1: <script src="/ayuntamiento/repositorio.nsf/funciones_doc.js" type="text/javascript"></script>
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

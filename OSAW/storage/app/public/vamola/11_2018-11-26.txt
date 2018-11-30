@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: https://www.agenciatributaria.es
 FECHA EVALUACIÓN: 2018-11-26
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -92,9 +93,10 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 		LINEA: 94, COLUMNA: 975: <span class='azul-negrita'>25-10-2018</span>    Fixed size example: color contrast exampleReal size example (10.8 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.agenciatributaria.es/common/css/internet.css):		.notas_prensa{		background-color:#FFFFFF;	border:1px solid #DFE8F0;	border-radius:0.3em;	box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);	margin-top:1em;	text-align:left;	}		.notas_prensa.azul-negrita{		margin-right:0.4em;	color:#767676 !important;	}		.azul-negrita{		font-weight:bold;	font-size:1em;	COLOR:#3376ac !important;	}		.notas_prensa ul li{		font-size:0.9em;	}    
 
- -------------------------------------------------------------------------------------------------------------------------- 
+ -------------- 
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
 
 CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
@@ -1494,6 +1496,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 146, COLUMNA: 1: <script>	checkJQ();		function checkJQ(){		try{if (!jQuery(document))	getScriptAEAT ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

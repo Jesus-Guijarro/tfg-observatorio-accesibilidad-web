@@ -1,12 +1,14 @@
 REPORTE PÁGINA WEB: https://www.endesaclientes.com/hogares/atencion-cliente.html
 FECHA EVALUACIÓN: 2018-11-12
 
-PROBLEMAS CONOCIDOS
-Congratulations! No known problems.
+-PROBLEMAS CONOCIDOS-
 
- ------------------------------------------------------ 
+Ningún problema conocido encontrado.
 
-PROBLEMAS POTENCIALES
+  
+
+-PROBLEMAS POTENCIALES-
+
 1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
 
 CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
@@ -330,6 +332,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 247, COLUMNA: 2: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

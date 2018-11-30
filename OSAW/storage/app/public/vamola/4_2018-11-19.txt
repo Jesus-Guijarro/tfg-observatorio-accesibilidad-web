@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/organismos-entidades
 FECHA EVALUACIÓN: 2018-11-19
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
 
 CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
@@ -14,9 +15,10 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 		LINEA: 473, COLUMNA 148: <span class="oculto">: Institutos de Medicina Legal y Ciencias Forenses</span>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mjusticia.gob.es/estatico/cs/portal/css/estilos.css?v=2):		.bloqueSubhomeTxt.bloqueSubhomeEnlace a{		display:block;	background:#2874BF;	color:#fff;	text-align:center;	}    
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -1010,6 +1012,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 618, COLUMNA 2: <script src="http://www.mjusticia.gob.es/estatico/cs/portal/js/mkr.js" type="text/javascript"></scri ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

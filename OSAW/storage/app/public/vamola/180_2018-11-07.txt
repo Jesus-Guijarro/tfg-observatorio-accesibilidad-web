@@ -1,12 +1,14 @@
 REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/agenda_accesible.nsf/Agenda/001E7DF55397BF5DC125830100429CBA?OpenDocument&lang=2&nivel=4&bdOrigen=ayuntamiento/laciudad.nsf
 FECHA EVALUACIÓN: 2018-11-07
 
-PROBLEMAS CONOCIDOS
-Congratulations! No known problems.
+-PROBLEMAS CONOCIDOS-
 
- ------------------------------------------------------ 
+Ningún problema conocido encontrado.
 
-PROBLEMAS POTENCIALES
+  
+
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -284,6 +286,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 135, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_menu.js" type="text/javascript"></script>
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

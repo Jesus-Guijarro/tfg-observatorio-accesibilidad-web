@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.ciencia.gob.es/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=25c55ef3677c4610VgnVCM1000001d04140aRCRD
 FECHA EVALUACIÓN: 2018-11-29
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 3.3 Input Assistance: Help users avoid and correct mistakes.
 
 CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
@@ -14,9 +15,10 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	
 
- -------------------------------------------------------------------------------------------------------------------------- 
+ -------------- 
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -540,6 +542,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 82, COLUMNA: 1: <script type="text/javascript">$(document).ready(function(){// SLIDE MAPA WEB //	//ocultamos c ...       
 
 		LINEA: 971, COLUMNA: 1: <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-9874985-1 ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

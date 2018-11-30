@@ -1,12 +1,14 @@
 REPORTE PÁGINA WEB: http://www.umh.es/acc/
 FECHA EVALUACIÓN: 2018-11-10
 
-PROBLEMAS CONOCIDOS
-Congratulations! No known problems.
+-PROBLEMAS CONOCIDOS-
 
- ------------------------------------------------------ 
+Ningún problema conocido encontrado.
 
-PROBLEMAS POTENCIALES
+  
+
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -316,6 +318,8 @@ CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)
  
 
 		LINEA: 22, COLUMNA: 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

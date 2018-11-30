@@ -39,6 +39,8 @@ def procesarDatos(datos):
     datos=datos.replace('Line','\n\n\t\tLINEA:')
     datos=datos.replace('Column','COLUMNA:')
     datos=datos.replace('\t\t\t','')
+    datos=datos.replace('Congratulations! No known problems.', 'Ningún problema conocido encontrado.')
+    datos=datos.replace('Congratulations! No potential problems.', 'Ningún problema potencial encontrado.')
 
     return datos
 
@@ -52,10 +54,10 @@ def getDatosProblemas(tipo_problema,reporte,driver):
         datos=procesarDatos(datos)
         
         if tipo_problema == "AC_errors":
-            reporte.write("PROBLEMAS CONOCIDOS\n")
-            reporte.write(datos + "\n\n -------------------------------------------------------------------------------------------------------------------------- \n\n")
+            reporte.write("-PROBLEMAS CONOCIDOS-\n")
+            reporte.write(datos + "\n\n\n\n")
         else:
-            reporte.write("PROBLEMAS POTENCIALES\n")
+            reporte.write("-PROBLEMAS POTENCIALES-\n")
             reporte.write(datos + "\n")
         
         return datos

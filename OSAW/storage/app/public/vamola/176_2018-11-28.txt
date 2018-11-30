@@ -1,12 +1,14 @@
 REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/ConsejosDisAct.nsf/fCategoriaVista2?readForm&Vista=vComisionesTodasVal&Categoria=Consejos&lang=2&nivel=3%5f5&nivelExpandido=1&bdorigen=ayuntamiento/ayuntamiento.nsf&idapoyo=9A0B3E8F6AB1CDBAC12582410042C735
 FECHA EVALUACIÓN: 2018-11-28
 
-PROBLEMAS CONOCIDOS
-Congratulations! No known problems.
+-PROBLEMAS CONOCIDOS-
 
- -------------------------------------------------------------------------------------------------------------------------- 
+Ningún problema conocido encontrado.
 
-PROBLEMAS POTENCIALES
+ -------------- 
+
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -396,6 +398,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 281, COLUMNA: 1: <script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-11786303-1");pageTrack ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/ca/index.htm
 FECHA EVALUACIÓN: 2018-11-10
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -56,9 +57,10 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 	
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -534,6 +536,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 1017, COLUMNA: 2: <script type="text/javascript">		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]| ...       
 
 		LINEA: 1031, COLUMNA: 1: <script type="text/javascript">/*<![CDATA[*/(function() {var sz = document.createElement('scrip ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

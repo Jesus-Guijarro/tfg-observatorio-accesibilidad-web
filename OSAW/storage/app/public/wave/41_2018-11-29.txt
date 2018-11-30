@@ -3,7 +3,9 @@ FECHA EVALUACIÓN: 2018-11-29
 
 PROBLEMAS
 Broken ARIA reference	  VECES ENCONTRADO: 11
--------------------------------------------------------------------
+
+
+
 ALERTAS
 Tabindex	  VECES ENCONTRADO: 1
 Very small text	  VECES ENCONTRADO: 16
@@ -14,7 +16,9 @@ Underlined text	  VECES ENCONTRADO: 1
 A nearby image has the same alternative text	  VECES ENCONTRADO: 1
 Missing fieldset	  VECES ENCONTRADO: 2
 Redundant title text	  VECES ENCONTRADO: 11
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Fieldset	  VECES ENCONTRADO: 4
 Linked image with alternative text	  VECES ENCONTRADO: 19
@@ -22,7 +26,11 @@ Element language	  VECES ENCONTRADO: 7
 Form label	  VECES ENCONTRADO: 18
 Alternative text	  VECES ENCONTRADO: 10
 Null or empty alternative text	  VECES ENCONTRADO: 12
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 21
--------------------------------------------------------------------
+
+
+

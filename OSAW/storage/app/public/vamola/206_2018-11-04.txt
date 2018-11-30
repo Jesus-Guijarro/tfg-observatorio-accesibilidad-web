@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: https://www.uv.es/master-ultimes-places/ca/masters-oficials.html
 FECHA EVALUACIÓN: 2018-11-04
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
 
 CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
@@ -112,9 +113,10 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -1932,6 +1934,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 976, COLUMNA 2: <script type="text/javascript">	// <![CDATA[ 	document.write("<a href='javascript:void(0);' styl ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

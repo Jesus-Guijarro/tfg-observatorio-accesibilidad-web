@@ -1,12 +1,14 @@
 REPORTE PÁGINA WEB: http://www.umh.es/contenido/Estudiantes/:Curso_Adaptacion_Grado/datos_es.html
 FECHA EVALUACIÓN: 2018-11-03
 
-PROBLEMAS CONOCIDOS
-Congratulations! No known problems.
+-PROBLEMAS CONOCIDOS-
 
- ------------------------------------------------------ 
+Ningún problema conocido encontrado.
 
-PROBLEMAS POTENCIALES
+  
+
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -2320,6 +2322,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 88, COLUMNA 3: <script type="text/javascript">AudioPlayer.setup("/JSFiles/flash/player.swf", {width:300});		 ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

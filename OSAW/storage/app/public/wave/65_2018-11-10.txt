@@ -5,10 +5,14 @@ ALERTAS
 Noscript element	  VECES ENCONTRADO: 2
 Redundant title text	  VECES ENCONTRADO: 19
 Device dependent event handler	  VECES ENCONTRADO: 5
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Element language	  VECES ENCONTRADO: 2
 Alternative text	  VECES ENCONTRADO: 14
 Linked image with alternative text	  VECES ENCONTRADO: 7
 Long description	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+

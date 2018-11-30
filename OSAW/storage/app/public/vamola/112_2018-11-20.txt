@@ -1,12 +1,14 @@
 REPORTE PÁGINA WEB: https://www.iberia.com/es/buscador-vuelos/
 FECHA EVALUACIÓN: 2018-11-20
 
-PROBLEMAS CONOCIDOS
-Congratulations! No known problems.
+-PROBLEMAS CONOCIDOS-
 
- -------------------------------------------------------------------------------------------------------------------------- 
+Ningún problema conocido encontrado.
 
-PROBLEMAS POTENCIALES
+ -------------- 
+
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -1638,6 +1640,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 2405, COLUMNA: 1: <script type="text/javascript" defer="defer" src="/ibcomv3/rbrand/scripts/libs/jquery.menu-aim.js?CF ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

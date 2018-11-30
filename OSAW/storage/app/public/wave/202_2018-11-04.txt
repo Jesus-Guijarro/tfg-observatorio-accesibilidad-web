@@ -6,7 +6,9 @@ Empty heading	  VECES ENCONTRADO: 1
 Linked image missing alternative text	  VECES ENCONTRADO: 1
 Missing alternative text	  VECES ENCONTRADO: 3
 Empty link	  VECES ENCONTRADO: 7
--------------------------------------------------------------------
+
+
+
 ALERTAS
 Accesskey	  VECES ENCONTRADO: 1
 Redundant title text	  VECES ENCONTRADO: 57
@@ -16,13 +18,19 @@ Redundant alternative text	  VECES ENCONTRADO: 1
 Noscript element	  VECES ENCONTRADO: 5
 Very small text	  VECES ENCONTRADO: 4
 Link to PDF document	  VECES ENCONTRADO: 9
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Linked image with alternative text	  VECES ENCONTRADO: 23
 Alternative text	  VECES ENCONTRADO: 3
 Form label	  VECES ENCONTRADO: 1
 Null or empty alternative text	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 11
--------------------------------------------------------------------
+
+
+

@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.gva.es/es/inicio/presentacion
 FECHA EVALUACIÓN: 2018-11-20
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -64,9 +65,10 @@ CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)
 
 
 
- -------------------------------------------------------------------------------------------------------------------------- 
+ -------------- 
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
@@ -1018,6 +1020,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 23, COLUMNA: 7755: <script type="text/javascript">/*<![CDATA[*/var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39216849- ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

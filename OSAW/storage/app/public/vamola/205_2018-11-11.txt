@@ -1,10 +1,12 @@
 REPORTE PÁGINA WEB: https://www.uv.es/master-ultimes-places/ca/admissio-master/admissio-ultimes-places/3-espera-notificacio-admissio-max-24h-.html
 FECHA EVALUACIÓN: 2018-11-11
 
-PROBLEMAS CONOCIDOS
-Congratulations! No known problems.
+-PROBLEMAS CONOCIDOS-
 
- ------------------------------------------------------ 
+Ningún problema conocido encontrado.
 
-PROBLEMAS POTENCIALES
-Congratulations! No potential problems.
+  
+
+-PROBLEMAS POTENCIALES-
+
+Ningún problema potencial encontrado.

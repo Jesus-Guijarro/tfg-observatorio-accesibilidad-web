@@ -8,7 +8,9 @@ Empty heading	  VECES ENCONTRADO: 11
 Linked image missing alternative text	  VECES ENCONTRADO: 35
 Image map area missing alternative text	  VECES ENCONTRADO: 1
 Empty link	  VECES ENCONTRADO: 151
--------------------------------------------------------------------
+
+
+
 ALERTAS
 Fieldset missing legend	  VECES ENCONTRADO: 1
 Redundant title text	  VECES ENCONTRADO: 63
@@ -18,12 +20,18 @@ Redundant link	  VECES ENCONTRADO: 159
 Long alternative text	  VECES ENCONTRADO: 1
 A nearby image has the same alternative text	  VECES ENCONTRADO: 10
 Suspicious alternative text	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Linked image with alternative text	  VECES ENCONTRADO: 141
 Image map with alternative text	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 180
--------------------------------------------------------------------
+
+
+

@@ -3,7 +3,9 @@ FECHA EVALUACIÓN: 2018-11-26
 
 PROBLEMAS
 Empty form label	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+
 ALERTAS
 Redundant title text	  VECES ENCONTRADO: 22
 Justified text	  VECES ENCONTRADO: 24
@@ -11,13 +13,19 @@ Device dependent event handler	  VECES ENCONTRADO: 1
 Long alternative text	  VECES ENCONTRADO: 1
 Accesskey	  VECES ENCONTRADO: 8
 Very small text	  VECES ENCONTRADO: 6
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Element language	  VECES ENCONTRADO: 14
 Linked image with alternative text	  VECES ENCONTRADO: 23
 Form label	  VECES ENCONTRADO: 2
 Alternative text	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 8
--------------------------------------------------------------------
+
+
+

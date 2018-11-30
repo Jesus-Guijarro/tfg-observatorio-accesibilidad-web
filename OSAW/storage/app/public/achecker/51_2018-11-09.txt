@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: https://www.cdti.es
 FECHA EVALUACIÓN: 2018-11-09
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 3.3 Input Assistance: Help users avoid and correct mistakes.
 
 CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
@@ -14,9 +15,10 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -424,6 +426,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 43, COLUMNA: 2: <script type="text/javascript" src="js/aplicaciones/destacadosportada.js"></script>       
 
 		LINEA: 43, COLUMNA: 100: <script type="text/javascript" src="js/calendario/calendario.js"></script>
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

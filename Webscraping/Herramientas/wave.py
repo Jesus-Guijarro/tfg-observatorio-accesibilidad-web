@@ -14,11 +14,13 @@ from time import time
 
 #Obtenemos los datos a guardar en el reporte
 def getDatos(categoria,datos,reporte):
-    valores = datos.values()
+    
     reporte.write(categoria+"\n")
+
+    valores = datos.values()
     for v in valores:
         reporte.write(str(v["description"]) +"\t  VECES ENCONTRADO: "+ str(v["count"])+"\n")
-    reporte.write("-------------------------------------------------------------------\n")
+    reporte.write("\n\n")
 
 #Método para ejecutar el proceso de evaluación
 def ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
@@ -62,19 +64,19 @@ def ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
 
             #En algunas ocasiones una o varias de las categorias no tiene elementos accesibles
             try:
-                getDatos("PROBLEMAS",datos_json["categories"]["error"]["items"],reporte)
+                getDatos("-PROBLEMAS-",datos_json["categories"]["error"]["items"],reporte)
             except Exception as e:
                 pass
             try:
-                getDatos("ALERTAS",datos_json["categories"]["alert"]["items"],reporte)
+                getDatos("-ALERTAS-",datos_json["categories"]["alert"]["items"],reporte)
             except Exception as e:
                 pass
             try:
-                getDatos("CARACTERISTICAS",datos_json["categories"]["feature"]["items"],reporte)
+                getDatos("-CARACTERISTICAS-",datos_json["categories"]["feature"]["items"],reporte)
             except Exception as e:
                 pass
             try:
-                getDatos("PROBLEMAS DE CONTRASTE",datos_json["categories"]["contrast"]["items"],reporte)
+                getDatos("-PROBLEMAS DE CONTRASTE-",datos_json["categories"]["contrast"]["items"],reporte)
             except Exception as e:
                 pass
 

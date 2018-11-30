@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.umh.es/
 FECHA EVALUACIÓN: 2018-11-03
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
 
 CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
@@ -106,9 +107,10 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 		LINEA: 317, COLUMNA 260: <span class="visible-md-inline visible-lg-inline">|</span>    Fixed size example: color contrast exampleReal size example (9.09 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.umh.es/assets/comun.css?vCache=r):		 footer{		display:block;	}		 article{		display:block;	}		 body{		background-color:#fff;	color:#000;	margin:2px;	min-height:100%;	word-wrap:break-word;	}		.cuerpo-footer-gris{		color:#666666;	font-family:Verdana,Arial,Helvetica,sans-serif;	font-size:12px;	letter-spacing:0;	line-height:15px;	text-align:justify;	text-decoration:none;	}    
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -2178,6 +2180,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 75, COLUMNA 2: <script type="text/javascript" src="/JSFiles/umhSlider.js"></script>
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=8&MS=128&MN=2&r=1536*864
 FECHA EVALUACIÓN: 2018-11-02
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 3.3 Input Assistance: Help users avoid and correct mistakes.
 
 CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
@@ -16,9 +17,10 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -438,6 +440,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 36, 
 
 		COLUMNA 2: <script type="text/javascript" src="/js/aplicaciones/jquery.cookie.js"></script>
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.aemet.es/es/conocenos
 FECHA EVALUACIÓN: 2018-11-19
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -23,6 +24,8 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 		LINEA: 160, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
 
 		LINEA: 172, COLUMNA: 27: <input class="checkbox_menu" type="checkbox" id="nav" />
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 
@@ -50,9 +53,10 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	
 
- -------------------------------------------------------------------------------------------------------------------------- 
+ -------------- 
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -628,6 +632,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 642, COLUMNA: 1: <script type="text/javascript">	var link1 = document.getElementById("link1_imprimir");	var link2 ...       
 
 		LINEA: 718, COLUMNA: 1: <script type="text/javascript">	function aceptaCookies() 	{ 		 $.cookie("accept_cookies", "ok" ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

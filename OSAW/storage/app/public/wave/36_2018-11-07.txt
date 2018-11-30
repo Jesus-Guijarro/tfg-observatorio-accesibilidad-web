@@ -5,7 +5,9 @@ PROBLEMAS
 Empty button	  VECES ENCONTRADO: 4
 Empty link	  VECES ENCONTRADO: 7
 Missing form label	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 ALERTAS
 A nearby image has the same alternative text	  VECES ENCONTRADO: 1
 Long alternative text	  VECES ENCONTRADO: 1
@@ -13,12 +15,18 @@ Redundant alternative text	  VECES ENCONTRADO: 6
 Justified text	  VECES ENCONTRADO: 282
 Redundant link	  VECES ENCONTRADO: 11
 Redundant title text	  VECES ENCONTRADO: 26
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Element language	  VECES ENCONTRADO: 2
 Alternative text	  VECES ENCONTRADO: 2
 Linked image with alternative text	  VECES ENCONTRADO: 24
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 44
--------------------------------------------------------------------
+
+
+

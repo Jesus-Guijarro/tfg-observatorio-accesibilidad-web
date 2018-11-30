@@ -3,12 +3,18 @@ FECHA EVALUACIÓN: 2018-10-31
 
 PROBLEMAS
 Missing or uninformative page title	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 ALERTAS
 Skipped heading level	  VECES ENCONTRADO: 1
 Redundant title text	  VECES ENCONTRADO: 9
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Alternative text	  VECES ENCONTRADO: 1
 Null or empty alternative text	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+

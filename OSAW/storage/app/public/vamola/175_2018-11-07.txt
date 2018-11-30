@@ -1,12 +1,14 @@
 REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/AInstitucional.nsf/fCategoriaVista2?readForm&nivel=8&Vista=vActivAIWv&Categoria=Actividades&lang=2&expand=2&nivelExpandido=1.1.1&bdorigen=ayuntamiento/ayuntamiento.nsf
 FECHA EVALUACIÓN: 2018-11-07
 
-PROBLEMAS CONOCIDOS
-Congratulations! No known problems.
+-PROBLEMAS CONOCIDOS-
 
- ------------------------------------------------------ 
+Ningún problema conocido encontrado.
 
-PROBLEMAS POTENCIALES
+  
+
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -456,6 +458,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 322, COLUMNA: 1: <script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-11786303-1");pageTrack ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

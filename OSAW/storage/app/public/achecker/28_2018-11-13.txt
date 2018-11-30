@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria
 FECHA EVALUACIÓN: 2018-11-13
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -24,9 +25,10 @@ CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)
 
 	
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -282,6 +284,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 18, COLUMNA: 8755: <script type="text/javascript"></script>(PORTLET_5_WAR_portalgvaportlet)       
 
 		LINEA: 18, COLUMNA: 8810: <script type="text/javascript">/*<![CDATA[*/var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39216849- ...(PORTLET_5_WAR_portalgvaportlet)
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

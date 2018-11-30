@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.renfe.com/viajeros/info/index.html
 FECHA EVALUACIÓN: 2018-11-15
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 3.3 Input Assistance: Help users avoid and correct mistakes.
 
 CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
@@ -14,9 +15,10 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -370,6 +372,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 945, COLUMNA: 1: <script language="JavaScript" type="text/javascript"><!--/* You may give each page an identifying n ...       
 
 		LINEA: 972, COLUMNA: 1: <script language="JavaScript" type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0 ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: https://www.iberia.com/es/iberiaplus/condiciones/
 FECHA EVALUACIÓN: 2018-11-27
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -54,6 +55,8 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 		LINEA: 436, COLUMNA: 75: <select id="idiomaMobile" name="idiomaMobile" data-selectmenu-edit="data-selectmenu-edit" data-place ...
 
+
+
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 
 CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
@@ -76,9 +79,10 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 
 
- -------------------------------------------------------------------------------------------------------------------------- 
+ -------------- 
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -1396,6 +1400,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 352, COLUMNA: 4419: <script type="text/javascript" src="//ayuda.iberia.com/av/jsonp/header_autocompleter.js"></script>
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

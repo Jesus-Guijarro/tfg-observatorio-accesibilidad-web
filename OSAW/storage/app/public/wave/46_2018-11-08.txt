@@ -5,14 +5,20 @@ ALERTAS
 Redundant link	  VECES ENCONTRADO: 1
 Noscript element	  VECES ENCONTRADO: 2
 Redundant title text	  VECES ENCONTRADO: 39
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Linked image with alternative text	  VECES ENCONTRADO: 15
 Image button with alternative text	  VECES ENCONTRADO: 1
 Form label	  VECES ENCONTRADO: 1
 Null or empty alternative text	  VECES ENCONTRADO: 2
 Fieldset	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 53
--------------------------------------------------------------------
+
+
+

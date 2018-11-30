@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: https://www.uv.es/master-ultimes-places/ca/normativa-basica/normativa-basica.html
 FECHA EVALUACIÓN: 2018-11-04
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -44,6 +45,8 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 		LINEA: 488, COLUMNA 49: <i class="fa fa-caret-left"></i>
 
+
+
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 
 CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
@@ -66,9 +69,10 @@ CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)
 
 
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.2 On Input (A)  
@@ -1444,6 +1448,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 1269, COLUMNA 2: <script type="text/javascript">	// <![CDATA[ 	document.write("<a href='javascript:void(0);' styl ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: https://www.agenciatributaria.es/AEAT.internet/Renta.shtml
 FECHA EVALUACIÓN: 2018-11-05
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -26,9 +27,10 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -802,6 +804,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 89, COLUMNA 5: <script>	checkJQ();		function checkJQ(){		try{if (!jQuery(document))	getScriptAEAT ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

@@ -11,11 +11,15 @@ Redundant title text	  VECES ENCONTRADO: 3
 Redundant link	  VECES ENCONTRADO: 1
 Accesskey	  VECES ENCONTRADO: 8
 Justified text	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Null or empty alternative text	  VECES ENCONTRADO: 10
 Image button with alternative text	  VECES ENCONTRADO: 2
 Linked image with alternative text	  VECES ENCONTRADO: 8
 Element language	  VECES ENCONTRADO: 6
 Alternative text	  VECES ENCONTRADO: 4
--------------------------------------------------------------------
+
+
+

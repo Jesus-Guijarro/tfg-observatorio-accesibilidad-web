@@ -6,7 +6,9 @@ Empty form label	  VECES ENCONTRADO: 2
 Linked image missing alternative text	  VECES ENCONTRADO: 1
 Missing form label	  VECES ENCONTRADO: 1
 Missing alternative text	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 ALERTAS
 Long alternative text	  VECES ENCONTRADO: 3
 Accesskey	  VECES ENCONTRADO: 8
@@ -23,13 +25,19 @@ Justified text	  VECES ENCONTRADO: 5
 Redundant alternative text	  VECES ENCONTRADO: 18
 Missing fieldset	  VECES ENCONTRADO: 2
 Skipped heading level	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Element language	  VECES ENCONTRADO: 14
 Form label	  VECES ENCONTRADO: 6
 Alternative text	  VECES ENCONTRADO: 3
 Linked image with alternative text	  VECES ENCONTRADO: 74
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 40
--------------------------------------------------------------------
+
+
+

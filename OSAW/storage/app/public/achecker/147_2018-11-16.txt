@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/areas-cultura/cine.html
 FECHA EVALUACIÓN: 2018-11-16
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -11,6 +12,8 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 	REPARAR:: Add an alt attribute to your img element.     
 
 		LINEA: 52, COLUMNA: 768: <img title="Ver vídeo en youtube" src="/docroot/microsites/genericos/img/overlay_videos.png"/>
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 
@@ -28,9 +31,10 @@ CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)
 
 	
 
- -------------------------------------------------------------------------------------------------------------------------- 
+ -------------- 
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -906,6 +910,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 29, COLUMNA: 11: <script type="text/javascript">		window.onload = function(){ExternalLinks.init();		} ...       
 
 		LINEA: 46, COLUMNA: 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

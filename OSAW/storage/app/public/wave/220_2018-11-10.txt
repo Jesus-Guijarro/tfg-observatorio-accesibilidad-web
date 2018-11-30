@@ -3,10 +3,14 @@ FECHA EVALUACIÓN: 2018-11-10
 
 ALERTAS
 Redundant link	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Element language	  VECES ENCONTRADO: 5
 Form label	  VECES ENCONTRADO: 1
 Image button with alternative text	  VECES ENCONTRADO: 1
 Linked image with alternative text	  VECES ENCONTRADO: 3
--------------------------------------------------------------------
+
+
+

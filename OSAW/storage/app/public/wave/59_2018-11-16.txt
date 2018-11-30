@@ -7,13 +7,19 @@ Redundant title text	  VECES ENCONTRADO: 6
 Accesskey	  VECES ENCONTRADO: 10
 Link to PDF document	  VECES ENCONTRADO: 1
 Device dependent event handler	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Image button with alternative text	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 3
 Linked image with alternative text	  VECES ENCONTRADO: 14
 Form label	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 9
--------------------------------------------------------------------
+
+
+

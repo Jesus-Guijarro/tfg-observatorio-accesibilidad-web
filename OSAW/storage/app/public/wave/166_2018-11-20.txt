@@ -4,7 +4,9 @@ FECHA EVALUACIÓN: 2018-11-20
 PROBLEMAS
 Empty link	  VECES ENCONTRADO: 2
 Missing form label	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+
 ALERTAS
 A nearby image has the same alternative text	  VECES ENCONTRADO: 2
 Redundant link	  VECES ENCONTRADO: 2
@@ -15,12 +17,18 @@ Fieldset missing legend	  VECES ENCONTRADO: 1
 Device dependent event handler	  VECES ENCONTRADO: 1
 Link to PDF document	  VECES ENCONTRADO: 1
 Long alternative text	  VECES ENCONTRADO: 3
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Alternative text	  VECES ENCONTRADO: 2
 Image button with alternative text	  VECES ENCONTRADO: 1
 Linked image with alternative text	  VECES ENCONTRADO: 5
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 11
--------------------------------------------------------------------
+
+
+

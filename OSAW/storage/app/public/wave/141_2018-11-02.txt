@@ -4,7 +4,9 @@ FECHA EVALUACIÓN: 2018-11-02
 PROBLEMAS
 Empty button	  VECES ENCONTRADO: 1
 Empty link	  VECES ENCONTRADO: 2
--------------------------------------------------------------------
+
+
+
 ALERTAS
 Link to PDF document	  VECES ENCONTRADO: 4
 Redundant link	  VECES ENCONTRADO: 3
@@ -13,7 +15,9 @@ Broken same-page link	  VECES ENCONTRADO: 12
 Noscript element	  VECES ENCONTRADO: 1
 Long alternative text	  VECES ENCONTRADO: 3
 Justified text	  VECES ENCONTRADO: 11
--------------------------------------------------------------------
+
+
+
 CARACTERISTICAS
 Fieldset	  VECES ENCONTRADO: 1
 Null or empty alternative text	  VECES ENCONTRADO: 1
@@ -22,7 +26,11 @@ Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
 Form label	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 9
 Element language	  VECES ENCONTRADO: 6
--------------------------------------------------------------------
+
+
+
 PROBLEMAS DE CONTRASTE
 Very Low Contrast	  VECES ENCONTRADO: 1
--------------------------------------------------------------------
+
+
+

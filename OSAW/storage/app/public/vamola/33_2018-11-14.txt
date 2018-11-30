@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: http://www.alicante.es/es/area-tematica/servicio-de-atencion-integral-a-la-ciudadania---saic
 FECHA EVALUACIÓN: 2018-11-14
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
 
 CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
@@ -98,9 +99,10 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 3.2 Predictable: Make Web pages appear and operate in predictable ways.
 
 CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
@@ -2458,6 +2460,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 
 
 		LINEA: 1126, COLUMNA: 1: <script type="text/javascript" src="http://www.alicante.es/sites/all/modules/eu_cookie_compliance/js ...
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 

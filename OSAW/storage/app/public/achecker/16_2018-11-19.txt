@@ -1,7 +1,8 @@
 REPORTE PÁGINA WEB: https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Discapacitados/Discapacitados.shtml
 FECHA EVALUACIÓN: 2018-11-19
 
-PROBLEMAS CONOCIDOS
+-PROBLEMAS CONOCIDOS-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -14,9 +15,10 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	
 
- ------------------------------------------------------ 
+  
 
-PROBLEMAS POTENCIALES
+-PROBLEMAS POTENCIALES-
+
 1.1 Text Alternatives: Provide text alternatives for all non-text content
 
 CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
@@ -318,6 +320,8 @@ CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)
 		LINEA: 46, COLUMNA 3: <script type="text/javascript" src="/AEAT.internet/Inicio/_componentes_/Enlaces_de_interes/Enlaces_d ...       
 
 		LINEA: 49, COLUMNA 2: <script type="text/javascript" src="/AEAT.internet/Inicio/_pie_/_pie_.js"></script>
+
+
 
 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
 
