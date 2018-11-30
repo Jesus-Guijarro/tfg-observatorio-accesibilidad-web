@@ -1,6 +1,6 @@
 import io, mysql.connector, os, requests, hashlib, codecs
 
-from database import conexion,desconexion
+from database import conexionDB,desconexionDB
 from selenium import webdriver
 from herramienta import  driverHeadlessBrowser, getDirectorioOSAW, getRutaCopiaHTML
 
@@ -41,7 +41,7 @@ def getHASH(ruta_archivo):
 def comprobarCopiaHTML(pagina_id):
 
     #Conexión base de datos
-    parametros = conexion()
+    parametros = conexionDB()
     conexion= parametros[0]
     cursor = parametros[1]
 
@@ -82,7 +82,7 @@ def comprobarCopiaHTML(pagina_id):
             conexion.commit()
 
             driver.quit()
-            desconexion(conexion)
+            desconexionDB(conexion)
             return True #Devolvemos true indicando que es necesario evaluar la pagina
         #Si no hay ningun cambio borramos el archivo creado
         else:
@@ -97,5 +97,5 @@ def comprobarCopiaHTML(pagina_id):
         cursor.execute("update paginas set hash=%s,archivo_html=%s where id=%s",(hash_nuevo,ruta_BD,pagina_id,))
 
     driver.quit()
-    desconexion(conexion)
+    desconexionDB(conexion)
     return True

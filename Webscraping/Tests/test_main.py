@@ -1,7 +1,7 @@
 import io, json, mysql.connector, os, sys
 
 from selenium import webdriver
-from database import conexion,desconexion
+from database import conexionDB,desconexionDB
 from comprobaciones import comprobarAccesoyTipo, comprobarCopiaHTML
 from herramienta import copiarDatosAntiguos, getFecha, getDirectorioOSAW, errorLog, ejecutarHerramienta
 
@@ -48,10 +48,10 @@ herramientas_activas=["accessmonitor","achecker","eiiichecker","observatorio","v
 #print("HERRAMIENTAS LISTADAS")
 
 #Conexión base de datos
-parametros = conexion()
+parametros = conexionDB()
 conexion= parametros[0]
 cursor = parametros[1]
 
 run(sitio_id,herramientas_activas,conexion,cursor)
-desconexion(conexion)
+desconexionDB(conexion)
 

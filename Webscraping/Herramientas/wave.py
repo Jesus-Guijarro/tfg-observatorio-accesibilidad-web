@@ -4,7 +4,7 @@ directorio_import = os.path.dirname(os.path.abspath(__file__))
 directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from database import conexion,desconexion
+from database import conexionDB,desconexionDB
 from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 
 from keys import WAVE_KEY
@@ -84,7 +84,7 @@ def ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):
 
             cursor=cursor.execute("insert into waves(pagina_id,num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas, num_advertencias, num_caracteristicas, num_elem_ARIA, num_problemas_contraste,ruta_BD,fecha_test,))
             
-            desconexion(conexion)
+            desconexionDB(conexion)
 
         else:
             raise Exception('No se ha podido realizar la evaluación. Formato de respuesta incorrecto')
@@ -100,9 +100,9 @@ herramienta="wave"
 key=WAVE_KEY
 
 #Conexión base de datos
-parametros = conexion()
+parametros = conexionDB()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexion(conexion)
+desconexionDB(conexion)

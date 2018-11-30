@@ -1,6 +1,6 @@
 import sys, os
 
-from database import conexion,desconexion
+from database import conexionDB,desconexionDB
 from herramienta import getDirectorioOSAW, getFecha
 from crontab import CronTab
 
@@ -40,32 +40,27 @@ def crearTarea(sitio_id,periodicidad,hora,dia,cursor):
     #Para el archivo logs
     directorio=getDirectorioOSAW()
 
-    mensaje_tarea_creada ="Tarea creada correctamente para el sitio: " + str(sitio_id)
     mensaje_error="No se ha podido crear la tarea para el sitio: "+ str(sitio_id)
 
     if periodicidad == "Semanal": #Semanal
         #Verificacion de los dias disponibles de la semana
         if dia<0 or dia>6:
-            
             error=mensaje_error+"-ERROR: Día de la semana incorrecto. Valores posibles: 0 - 6"
-            return error
+            raise Exception(mensaje_error)
         else:
             tarea.dow.on(dia)
             cron.write() 
-            return mensaje_tarea_creada
 
     elif periodicidad == "Mensual": # Mensual
         #Comprobacion de los dias del mes posibles
         if dia<1 or dia>31:
             error=mensaje_error+"-ERROR: Día del mes incorrecto. Valores posibles: 1 - 31"
-            return error
+            raise Exception(mensaje_error)
         else:
             tarea.day.on(dia)
             cron.write()
-            return mensaje_tarea_creada
     else: #Diario
         cron.write() 
-        return mensaje_tarea_creada
 
     actualizarTarea("C",sitio_id,conexion,cursor)
 
@@ -90,8 +85,6 @@ def ejecutarOperacion(operacion,periodicidad,hora,dia,sitio_id,conexion,cursor):
         crearTarea(sitio_id,periodicidad,hora,dia,cursor)
     elif operacion == "E": #Eliminar
         eliminarTarea(sitio_id,conexion,cursor)
-    else:
-        return False
 
 #Configuar la tarea de un sitio
 #Argumentos necesarios: 1. operacion a realizar y 2. identificador del sitio a gestionar
@@ -142,7 +135,7 @@ def ejecutarCrontab(argumentos,conexion,cursor):
         asignarTareasSitios(conexion,cursor)
 
 #Conexion base de datos
-parametros = conexion()
+parametros = conexionDB()
 conexion= parametros[0]
 cursor = parametros[1]
 
@@ -151,4 +144,4 @@ cron = CronTab(user='jesus')
 
 argumentos=sys.argv
 ejecutarCrontab(argumentos,conexion,cursor)
-desconexion(conexion)
+desconexionDB(conexion)

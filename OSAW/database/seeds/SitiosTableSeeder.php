@@ -333,6 +333,17 @@ class SitiosTableSeeder extends Seeder
                 'num_paginas' => '10',
                 'categoria_id' => '5',
                 'herramientas' => "$herramientas"
+            ],
+            [
+                'nombre' => 'Movistar',
+                'dominio' => 'www.movistar.es',
+                'periodicidad' => 'Semanal',
+                'hora'=>'14:30',
+                'dia' => '3',
+                'automatizado' => false, 
+                'num_paginas' => '10',
+                'categoria_id' => '5',
+                'herramientas' => "$herramientas"
             ]
             ]);
         

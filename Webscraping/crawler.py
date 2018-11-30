@@ -3,7 +3,7 @@
 import sys, requests, mysql.connector
 
 from selenium import webdriver
-from database import conexion,desconexion
+from database import conexionDB,desconexionDB
 from herramienta import driverHeadlessBrowser
 from comprobaciones import comprobarAccesoyTipo
 
@@ -104,7 +104,7 @@ sitio_id=sys.argv[1]
 num_paginas=int(sys.argv[2])
 
 #Conexion Base de datos
-parametros = conexion()
+parametros = conexionDB()
 conexion= parametros[0]
 cursor = parametros[1]
 
@@ -112,5 +112,5 @@ url=getURL(sitio_id,cursor)
 
 getPaginas(sitio_id,url,num_paginas,0,conexion,cursor)
 
-desconexion(conexion)
+desconexionDB(conexion)
 

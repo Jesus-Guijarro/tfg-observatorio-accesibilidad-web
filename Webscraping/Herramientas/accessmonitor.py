@@ -6,7 +6,7 @@ directorio_import = os.path.dirname(os.path.abspath(__file__))
 directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from database import conexion,desconexion
+from database import conexionDB,desconexionDB
 from herramienta import getDirectorioOSAW,getFecha, driverHeadlessBrowser, getRutaReporte, getCabeceraReporte, errorLog
 from googletrans import Translator
 
@@ -123,7 +123,7 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Guardamos los datos en la BD
         cursor = cursor.execute("insert into accessmonitors(pagina_id,puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas_a, num_problemas_aa,num_problemas_aaa,num_advertencias_a,num_advertencias_aa,num_advertencias_aaa,ruta_BD,fecha_test,))
         
-        desconexion(conexion)
+        desconexionDB(conexion)
         driver.quit()
         
     except Exception as e:
@@ -137,12 +137,12 @@ pagina_url=sys.argv[2]
 herramienta="accessmonitor"
 
 #Conexion base de datos
-parametros = conexion()
+parametros = conexionDB()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexion(conexion)
+desconexionDB(conexion)
 
 
 

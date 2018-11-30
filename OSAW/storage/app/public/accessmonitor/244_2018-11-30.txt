@@ -1,0 +1,29 @@
+REPORTE PÁGINA WEB: https://www.movistar.es/particulares/ofertas-movistar
+FECHA EVALUACIÓN: 2018-11-30
+
+Se encontró 1 imagen que no tiene leyenda
+Se encontraron 8 imágenes en las que la leyenda es un espacio vacío
+Se encontró un elemento <iframe> sin título
+Se encontró 1 elemento de encabezado
+Se encontró un enlace en el que el contenido se compone sólo de una imagen no subtitulada
+Se han encontrado 31 enlaces con el mismo texto que apuntan a destinos diferentes
+Se han identificado 116 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se identificó 1 formulario sin botón de envío
+Se encontró un elemento <label> sin contenido
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se encontró 1 valor repetido del atributo id
+Se han encontrado 109 errores de validación en el lenguaje de marcado
+Se han encontrado 9 elementos o atributos de HTML que se utilizan para controlar la presentación visual del texto
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificaron 10 casos en que se usan unidades de medida expresadas en valores absolutos en el tamaño de letra
+Se constató que en 1 caso, se hace uso de unidades de medida absolutas
+Se constató que todas las unidades de medida existentes en la CSS se expresan en valores relativos
+Se han encontrado 7 elementos <link> para la navegación
+El título de la página contiene 83 caracteres
+Se constató que se identifica el idioma principal de la página con el código "es_ES"
+Se constató que el código "es_ES" es incorrecto
+Se identificaron 10 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo
+Se ha encontrado 1 combinación de color cuya relación de contraste es inferior a 3: 1
