@@ -26,6 +26,8 @@ def ejecutarAchecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Activamos el modo headless
         driver=driverHeadlessBrowser()
 
+        t1=time()
+
         #Accedemos a la web de la herramienta de evaluacion
         driver.get('https://achecker.ca/checker/index.php')
 
@@ -36,7 +38,6 @@ def ejecutarAchecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
-            t1=time()
             elem =wait.until(EC.title_is(("IDI Web Accessibility Checker : Web Accessibility Checker")))
             tiempo=time()-t1
             calcularTiemposAcceso("achecker",tiempo,"ACCESO HERRAMIENTA")
@@ -61,13 +62,15 @@ def ejecutarAchecker(pagina_id,pagina_url,herramienta,conexion,cursor):
 
         #Se selecciona el botón para evaluar
         boton= driver.find_element_by_css_selector("#validate_uri")
+
+        t1=time()
+
         boton.click()
 
         #Pausa de máximo 2 minutos
         wait = WebDriverWait(driver, 120)
         #Se espera hasta que se haya evaluado y ofrecido el resultado
         try:
-            t1=time()
             elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#report_file > div > label:nth-child(1)")))
             tiempo=time()-t1
             calcularTiemposAcceso("achecker",tiempo,"EVALUACIÓN")

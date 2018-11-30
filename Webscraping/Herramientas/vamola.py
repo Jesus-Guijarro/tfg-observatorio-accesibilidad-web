@@ -26,6 +26,8 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Activamos el modo headless
         driver=driverHeadlessBrowser()
 
+        t1=time()
+
         #Accedemos a la web de la herramienta de evaluacion
         driver.get('http://www.validatore.it/vamola_validator/checker/index.php')
 
@@ -36,7 +38,6 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
-            t1=time()
             elem =wait.until(EC.title_is(("Vamolà, validatore e monitor per l'accessibilità : Web Accessibility Checker")))
             tiempo=time()-t1
             calcularTiemposAcceso("vamola",tiempo,"ACCESO HERRAMIENTA")
@@ -55,13 +56,15 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
 
         #Se selecciona el botón para evaluar
         check = driver.find_element_by_css_selector('#validate_uri')
+
+        t1=time()
+
         check.click()
 
         #Pausa de máximo 2 minutos
         wait = WebDriverWait(driver, 120)
         #Se espera hasta que se haya evaluado y ofrecido el resultado
         try:
-            t1=time()
             elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,"#tabresults > ul > li.ui-state-default.ui-corner-top.ui-tabs-selected.ui-state-active > a")))
             tiempo=time()-t1
             calcularTiemposAcceso("vamola",tiempo,"EVALUACIÓN")

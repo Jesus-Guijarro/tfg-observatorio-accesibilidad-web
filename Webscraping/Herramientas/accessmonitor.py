@@ -53,6 +53,7 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Activamos el modo headless
         driver=driverHeadlessBrowser()
 
+        t1=time()
         #Accedemos a la web de la herramienta de evaluacion
         driver.get('http://www.acessibilidade.gov.pt/accessmonitor/')
 
@@ -63,7 +64,6 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
-            t1=time()
             elem =wait.until(EC.title_is(("AccessMonitor")))
             tiempo=time()-t1
             calcularTiemposAcceso("accessmonitor",tiempo,"ACCESO HERRAMIENTA")
@@ -80,13 +80,15 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
 
         #Seleccionamos el análisis WCAG2.0
         botonWCAG2= driver.find_element_by_css_selector("#form1 > form > fieldset > div.center > input:nth-child(3)")
+        
+        t1=time()
+        
         botonWCAG2.click()
 
         #Pausa de máximo 2 minutos
         wait = WebDriverWait(driver, 120)
         #Se espera hasta que se haya evaluado y ofrecido el resultado
         try:
-            t1=time()
             elem = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#pagina > div.corpo > h2:nth-child(7)")))
             tiempo=time()-t1
             calcularTiemposAcceso("accessmonitor",tiempo,"EVALUACIÓN")
