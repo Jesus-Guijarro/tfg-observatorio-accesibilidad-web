@@ -7,7 +7,12 @@ from herramienta import  driverHeadlessBrowser, getDirectorioOSAW, getRutaCopiaH
 #Comprobar acceso y el tipo de la URL
 def comprobarAccesoyTipo(pagina_web):
     try:
-        request = requests.get(pagina_web)
+        #Se comprueba si se causa error por el certificado SSL de la web
+        try:
+            request = requests.get(pagina_web, verify=True, timeout=5)
+        except requests.exceptions.SSLError:
+            request = requests.get(pagina_web, verify=False, timeout=5)
+
         tipo = request.headers.get('content-type')
 
         #Tipo de contenido buscado -> "text/html"

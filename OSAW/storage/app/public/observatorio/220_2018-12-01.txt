@@ -1,0 +1,686 @@
+REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/es/extras/avisolegal.htm
+FECHA EVALUACIÓN: 2018-12-01
+
+
+Principio: 1.Perceptible
+Descripcion: La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+	Pauta: 1.1..Alternativas textuales
+	Descripcion: Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple
+
+		Criterio: 1.1.1..Contenido no textual
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H35-Proporcionando textos alternativos a elementos applet
+			Criticidad: Alta
+			Observación: No se han encontrado elementos applet en la p&aacute;gina.<br/>
+			Recomendación: Se recomienda colocar una alternativa textual a los elementos applet, para tener conocimiento de su funci&oacute;n.<br/>
+			Número de errores: 0
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H45-Usando longdesc
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado im&aacute;genes que usen el atributo longdesc para referirse a una larga descripci&oacute;n contenida en un recurso independiente, que sean necesarias como alternativa no textual para una im&aacute;gen.<br/>
+			Recomendación: Use el atributo longdesc en una im&aacute;gen cuando una alternativa textual breve no transmite adecuadamente la funci&oacute;n o la informaci&oacute;n proporcionada en la im&aacute;gen.<br/>
+			Número de errores: 0
+
+			Código: H37-Usando atributos alt en elementos img
+			Criticidad: Media
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong>, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img src="../img/HOME/cabecera/logoGdE.gif" alt="Gobierno de España. Ministerio de Trabajo, Migraciones y Seguridad Social"></xmp></li><li><xmp><img src="../img/banners/pnr.jpg" alt="Programa Nacional de Reformas. Estrategia de Lisboa"></xmp></li><li><xmp><img src="../img/banners/060.jpg" alt="administracion.gob.es"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H67-Usando texto alternativo nulo y no el atributo title en el elemento img para imágenes que AT puedan ignorar
+			Criticidad: Media
+			Observación: 3 im&aacute;genes en la p&aacute;gina tienen alternativas textuales, verifique que esten acorde al contenido de las mismas.<pre><ul><li><xmp><img src="../img/HOME/cabecera/logoGdE.gif" alt="Gobierno de España. Ministerio de Trabajo, Migraciones y Seguridad Social"></xmp></li><li><xmp><img src="../img/banners/pnr.jpg" alt="Programa Nacional de Reformas. Estrategia de Lisboa"></xmp></li><li><xmp><img src="../img/banners/060.jpg" alt="administracion.gob.es"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+			Código: C18-Usando reglas margin y padding en lugar de imágenes de espaciador para diseñar un layout
+			Criticidad: Baja
+			Observación: Existen 14 celdas de tablas que no consideran el separador de contenido de los bordes.<br/>
+			Recomendación: Se debe tener en cuenta la separaci&oacute;n del texto respecto a las celdas en las tablas.<br/>
+			Número de errores: 14
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H36-Usando atributos alt en imágenes que se utilizan como botones de envio
+			Criticidad: Alta
+			Observación: Los botones de tipo im&aacute;gen se han encontrado con textos alternativos, verifique que describan la funci&oacute;n del bot&oacute;n y no de la im&aacute;gen.<pre><ul><li><xmp><input type="image" id="buscar" name="buscar" src="../img/bg/lupa.gif" alt="Buscar" title="Realizar búsqueda" onclick="envio('q')"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de botones de tipo im&aacute;gen, estos deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la acci&oacute;n del bot&oacute;n)..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado enlaces adyacentes que redirecciones al mismo lugar causando redundancia o confusi&oacute;n de informaci&oacute;n..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: OAW1-Usando videos decorativos
+			Criticidad: Media
+			Observación: No se han encontrado videos en esta p&aacute;gina..<br/>
+			Recomendación: En caso de tener v&iacute;deos decorativos, es recomendable marcarlos como tal con atributos ARIA, esto evita que los usuarios con tecnolog&iacute;as de asistencia tengan dificultades al encontrar videos sin altenativas textuales..<br/>
+			Número de errores: 0
+
+			Código: H88-Usando HTML de acuerdo a la especificación
+			Criticidad: Alta
+			Observación: No se han encontrado elementos obsoletos dentro de la p&aacute;gina..<br/>
+			Recomendación: Ciertas etiquetas y atributos viejos de HTML han sido suspendidos para utilizar en su lugar alternativas m&aacute;s flexibles (como HTML o CSS). Es recomendable siempre adoptar los est&aacute;ndares HTML..<br/>
+			Número de errores: 0
+
+	Pauta: 1.2..Medios tempodependientes
+	Descripcion: Proporcionar alternativas para los medios tempodependientes
+
+		Criterio: 1.2.1..Sólo audio y sólo vídeo (grabado)
+		Nivel: A
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.4..Subtítulos (en directo)
+		Nivel: AA
+
+		Criterio: 1.2.3..Audiodescripción o Medio Alternativo (grabado)
+		Nivel: A
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.8..Medio alternativo (grabado)
+		Nivel: AAA
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.2..Subtítulos (grabados)
+		Nivel: A
+
+			Código: G87-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado videos en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los videos, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+			Código: G87B-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado audios en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los audios, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+	Pauta: 1.3..Adaptable
+	Descripcion: Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura
+
+		Criterio: 1.3.2..Secuencia con significado
+		Nivel: A
+
+			Código: C27A-Haciendo el DOM ordenado para marcar el orden visual: A) Elementos con posicionamiento flotante sin especificar
+			Criticidad: Media
+			Observación: De las 1312 reglas CSS en la p&aacute;gina, 181 de ellas usan declaraciones de elementos de forma flotante (float:inherit|none|left|rigth).<pre><ul><li><xmp>#menu-principal ul li { float: left; margin-top: 0%; margin-right: 0%; margin-bottom: 0%; margin-left: 1%; }</xmp></li><li><xmp>#menu-principal ul li a { float: left; color: rgb(54, 113, 171); text-align: center; text-decoration: none; background-image: url(http://www.mitramiss.gob.es/es/img/bg/menu-principal-lb.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; font-weight: bold; cursor: pointer; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#columna-1 { float: left; width: 70%; padding-left: 0.5%; }</xmp></li><li><xmp>#columna-1-0 { float: left; width: 41em; }</xmp></li><li><xmp>#columna-1-1 { float: left; width: 19.9em; }</xmp></li><li><xmp>#columna-1-2 { float: right; width: 19.9em; }</xmp></li><li><xmp>#columna-1.anchos-2 #columna-1-1, #columna-1.anchos-2 .columna-1-1 { width: 54%; float: left; }</xmp></li><li><xmp>#columna-1.anchos-2 #columna-1-2, #columna-1.anchos-2 .columna-1-2 { width: 45%; float: right; }</xmp></li><li><xmp>#columna-2 { float: right; width: 29.5%; font-size: 0.7em; }</xmp></li><li><xmp>#columna-1-home { float: left; width: 74.5%; padding-left: 0.5%; }</xmp></li><li><xmp>#columna-1-1-home { float: left; width: 22%; }</xmp></li><li><xmp>#columna-1-2-home { float: right; width: 66%; }</xmp></li><li><xmp>#columna-2-home { float: right; width: 25%; font-size: 0.7em; }</xmp></li><li><xmp>#columna-1-psa { float: left; width: 70%; padding-left: 0.5%; }</xmp></li><li><xmp>#columna-1-1-psa { float: left; width: 22%; padding-top: 0.4em; }</xmp></li><li><xmp>#columna-1-2-psa { float: right; width: 77%; }</xmp></li><li><xmp>#columnaest-1 { float: left; width: 98%; padding-left: 0.5%; }</xmp></li><li><xmp>#columna-1-1-est { float: left; width: 30%; }</xmp></li><li><xmp>#columna-1-2-est { float: right; width: 65%; }</xmp></li><li><xmp>#banners ul li { float: left; padding-left: 2em; }</xmp></li><li><xmp>#sede-electronica ul li { float: left; width: 48%; padding-left: 4px; min-height: 2.1em; }</xmp></li><li><xmp>#espacio-informacion h1 { width: 40%; float: left; }</xmp></li><li><xmp>#espacio-informacion ul { float: right; width: 58%; padding-top: 6px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#en-portada img.foto { float: left; margin-top: 28px; margin-right: 18px; margin-bottom: 10px; margin-left: 0px; }</xmp></li><li><xmp>#en-portada .enlace-pdf { float: left; padding-top: 4px; }</xmp></li><li><xmp>#en-portada .enlace-pdf img { float: none; vertical-align: middle; }</xmp></li><li><xmp>#en-portada .right { float: none; }</xmp></li><li><xmp>#actualidad .noticia { background-image: none !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 3px !important; padding-left: 0px !important; width: 48%; float: left; background-position: initial initial !important; background-repeat: initial initial !important; }</xmp></li><li><xmp>#actualidad .video { background-image: none !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; padding-top: 0em !important; padding-right: 0em !important; padding-bottom: 0em !important; padding-left: 0em !important; width: 50%; float: right; overflow-x: visible; overflow-y: visible; background-position: initial initial !important; background-repeat: initial initial !important; }</xmp></li><li><xmp>#actualidad.rss { float: right; margin-top: 1em; }</xmp></li><li><xmp>#informacion-relacionada-estadistica ul li { float: left; width: 98%; min-height: 3.2em; line-height: 1.2em; }</xmp></li><li><xmp>#informacion-relacionada ul li { float: left; width: 49%; min-height: 3em; line-height: 1.2em; }</xmp></li><li><xmp>#informacion-relacionada ul.columnas-3 li { float: left; width: 33%; min-height: 4.4em; }</xmp></li><li><xmp>#informacion-relacionada ul.columnas-3 li ul li { float: none; width: 100%; min-height: 2.5em; }</xmp></li><li><xmp>#informacion-relacionada ul.columnas-3 li ul.gris li a img { float: left; margin-top: 0em; margin-right: 0.2em; margin-bottom: 0.2em; margin-left: 0px; }</xmp></li><li><xmp>#secretariado p { color: rgb(59, 126, 190); font-weight: bold; width: 50%; float: left; }</xmp></li><li><xmp>#secretariado p.img-perfil { float: right; margin-bottom: 1em; margin-right: 0.5em; width: auto; }</xmp></li><li><xmp>#campanas-comunicacion div div div .campanas div { float: left; width: 60%; padding-top: 0.8em; padding-right: 0px; padding-bottom: 0.8em; padding-left: 0px; background-image: none !important; }</xmp></li><li><xmp>#campanas-comunicacion .video { padding-top: 8px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; float: right; }</xmp></li><li><xmp>#enlaces .column-izq { float: left; width: 46%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>#enlaces .column-der { float: right; width: 46%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>#secciones-desplegables.menu-rapido ul li { float: left; width: 28.5%; font-size: 1.2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; margin-left: 6px; }</xmp></li><li><xmp>#secciones-desplegables.menu-rapido1 ul li { float: left; width: 20%; font-size: 1.2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; margin-left: 6px; }</xmp></li><li><xmp>#secciones-desplegables.menu-rapido2 ul li { float: left; width: 22%; font-size: 0.8em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 15px; margin-left: 3px; }</xmp></li><li><xmp>#secciones-desplegables2.menu-rapido ul li { float: left; width: 28.5%; font-size: 1.2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; margin-left: 6px; }</xmp></li><li><xmp>#secciones-desplegables2.menu-rapido1 ul li { float: left; width: 20%; font-size: 1.2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; margin-left: 6px; }</xmp></li><li><xmp>#secciones-desplegables3.menu-rapido ul li { float: left; width: 28.5%; font-size: 1.2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; margin-left: 6px; }</xmp></li><li><xmp>#secciones-desplegables3.menu-rapido1 ul li { float: left; width: 20%; font-size: 1.2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; margin-left: 6px; }</xmp></li><li><xmp>#mtin-hoy div.col-1 { float: left; width: 60%; padding-top: 0em; padding-right: 0em; padding-bottom: 0em; padding-left: 0em; margin-top: 8px; position: static; background-image: none !important; }</xmp></li><li><xmp>#mtin-hoy div.col-2 { float: right; width: 36.53%; padding-top: 0em; padding-right: 0em; padding-bottom: 0em; padding-left: 0em; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>#encuesta .boton-input { float: right; margin-top: 3em; }</xmp></li><li><xmp>.caja .content-encuesta ul li div { min-height: 0px; height: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 8px; position: static; background-image: url(http://www.mitramiss.gob.es/es/img/bg/encuesta-left.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; float: right; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-position: 0% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.caja .content-encuesta ul li div div { background-image: url(http://www.mitramiss.gob.es/es/img/bg/encuesta-right.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; float: none; width: 12.2em; background-position: 100% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.caja .content-encuesta ul.star-rating li { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; float: left; }</xmp></li><li><xmp>#contactar .boton-input { float: right; }</xmp></li><li><xmp>#noticias ul { width: 42%; float: right; }</xmp></li><li><xmp>#noticias ul.ultimas-noticias { width: 54%; float: left; }</xmp></li><li><xmp>#noticias ul li a img { float: left; margin-right: 1em; }</xmp></li><li><xmp>#noticias .right { float: none; }</xmp></li><li><xmp>#canal-mtin-yt ul li { float: left; width: 49%; line-height: 1.2em; }</xmp></li><li><xmp>#canal-mtin-yt ul li img { float: left; margin-right: 0.5em; }</xmp></li><li><xmp>#convocatorias-prensa ul li { float: left; width: 41.5%; padding-top: 0px; padding-right: 5%; padding-bottom: 2.5em; padding-left: 10px; background-image: url(http://www.mitramiss.gob.es/es/img/bg/acceso-tematico-li.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; line-height: 1.2em; background-position: 0% 0.35em; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#convocatorias-prensa ul li a span { display: block; float: right; padding-top: 0.8em; padding-right: 2em; padding-bottom: 0.8em; padding-left: 2em; margin-top: 1.5em; color: rgb(40, 113, 185); }</xmp></li><li><xmp>#enlace-gabinete-comunicacion { background-image: url(http://www.mitramiss.gob.es/es/img/bg/enlaces-directos-lt.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; margin-bottom: 1em; float: right; margin-top: -3em; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#enlace-gabinete-virtual { float: right; margin-top: -2.4em; margin-right: 1em; font-family: Arial, Helvetica, sans-serif; background-image: url(http://www.mitramiss.gob.es/es/img/bg/gabinete-virtual-lb.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#noticia img { float: right; margin-top: 0.4em; margin-right: 0px; margin-bottom: 0.6em; margin-left: 1.2em; }</xmp></li><li><xmp>#listado-noticias img { float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; }</xmp></li><li><xmp>.volver a, #contenidos-mtin .volver a { background-image: url(http://www.mitramiss.gob.es/es/img/volver.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; float: right; margin-top: 10px; margin-right: 40px; margin-bottom: 0px; margin-left: 0px; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 25px; font-family: Verdana, Geneva, sans-serif; font-size: 1em; color: rgb(41, 113, 186); text-decoration: none; background-position: 0% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#opciones-noticia li.imagenes { float: left; padding-left: 54px; padding-right: 4px; background-image: url(http://www.mitramiss.gob.es/es/img/bg/imagenes.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; margin-right: 0.5em; background-position: 0% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#opciones-noticia li.audio { float: left; padding-left: 54px; padding-right: 4px; background-image: url(http://www.mitramiss.gob.es/es/img/bg/audio.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; margin-right: 0.5em; background-position: 0% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#opciones-noticia li.documentos { float: left; padding-left: 54px; padding-right: 4px; background-image: url(http://www.mitramiss.gob.es/es/img/bg/documentos.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#opciones-noticia li.enviar { float: right; padding-right: 54px; padding-left: 4px; background-image: url(http://www.mitramiss.gob.es/es/img/bg/enviar.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; margin-left: 0.5em; background-position: 100% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#opciones-noticia li.imprimir { float: right; padding-right: 54px; padding-left: 4px; background-image: url(http://www.mitramiss.gob.es/es/img/bg/imprimir.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 100% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.texto-caja #secretariado { float: right; width: 45%; margin-top: 0px; margin-right: 0px; margin-bottom: 12px; margin-left: 2em; }</xmp></li><li><xmp>.boton p { display: block; float: left; background-image: url(http://www.mitramiss.gob.es/es/img/bg/boton-lb.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; margin-top: 1em; margin-bottom: 0px !important; clear: both; font-family: Verdana, Geneva, sans-serif; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.boton-input { display: block; float: left; background-image: url(http://www.mitramiss.gob.es/es/img/bg/boton-lb.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; margin-top: 1em; margin-bottom: 0px !important; clear: both; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.boton-input-red { display: block; float: right; background-image: url(http://www.mitramiss.gob.es/es/img/bg/botonred-left.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; margin-top: 0.7em; margin-right: 0px; margin-bottom: 1.3em; margin-left: 0px; clear: both; padding-top: 0px; padding-right: 8px; padding-bottom: 0px; padding-left: 4px; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.boton.right p, .right { float: right; }</xmp></li><li><xmp>.boton.left p, .left { float: left; }</xmp></li><li><xmp>.rss { float: right; margin-top: 1em; }</xmp></li><li><xmp>#organigrama p.resultados { float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 8px; padding-bottom: 8px; padding-left: 9px; }</xmp></li><li><xmp>#buscar-consejerias label, #buscar-oficinas label { float: left; clear: both; width: 27%; text-align: right; padding-top: 3px; padding-right: 7px; padding-bottom: 8px; padding-left: 0px; color: rgb(41, 113, 186); font-weight: bold; }</xmp></li><li><xmp>#buscar-consejerias .boton-input, #buscar-oficinas .boton-input { display: block; float: right; background-image: url(http://www.mitramiss.gob.es/es/img/bg/boton-lb.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; margin-top: 0em; margin-bottom: 0px !important; clear: none; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#buscar-consejerias select, #buscar-oficinas select { color: rgb(41, 113, 186); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(41, 113, 186); border-right-color: rgb(41, 113, 186); border-bottom-color: rgb(41, 113, 186); border-left-color: rgb(41, 113, 186); font-size: 0.95em; margin-bottom: 8px; width: 16.9em; float: left; }</xmp></li><li><xmp>#buscar-oficinas .enlace-pdf, #buscar-consejerias .enlace-pdf { float: none; padding-bottom: 4px; padding-top: 0px; }</xmp></li><li><xmp>.fila .enlace-revista a img { float: left; margin-right: 4px; }</xmp></li><li><xmp>.enlaces-iconos ul li { background-image: url(http://www.mitramiss.gob.es/es/img/bg/acceso-tematico-li.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; padding-top: 0px; padding-right: 0px; padding-bottom: 1em; padding-left: 10px; float: left; width: 25%; margin-left: 6%; line-height: 1.2em; background-position: 0% 0.5em; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#revista-actualidad .right { float: none; }</xmp></li><li><xmp>#oficina-virtual .column-izq { float: left; width: 36%; }</xmp></li><li><xmp>#oficina-virtual .column-der { float: right; width: 60%; margin-left: 2%; }</xmp></li><li><xmp>#convocatorias-prensa .resultados li { background-image: none; text-align: right; float: right; clear: both; padding-top: 0px; padding-right: 0px; padding-bottom: 4px; padding-left: 0px; }</xmp></li><li><xmp>.lista-cajas li { background-image: url(http://www.mitramiss.gob.es/es/img/bg/lista-caja-lt.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; float: left; width: 45%; margin-left: 4.5%; margin-bottom: 14px; line-height: 1.2em; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal li, #contenidos-mtin ol.lista_horizontal li { padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 20px; float: left; width: 15%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_estadis li, #contenidos-mtin ol.lista_horizontal_estadis li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; float: left; width: 15%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_comunidades li, #contenidos-mtin ol.lista_horizontal_comunidades li { line-height: 1.1em; padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; float: left; width: 28%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_comunidades_ccncc li, #contenidos-mtin ol.lista_horizontal_comunidades_ccncc li { line-height: 1.1em; float: left; width: 28%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_coyuntura li, #contenidos-mtin ol.lista_horizontal_coyuntura li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; float: left; width: 20%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_estadistica li, #contenidos-mtin ol.lista_horizontal_estadistica li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 16px; float: left; width: 29%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_anuario li, #contenidos-mtin ol.lista_horizontal_anuario li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 16px; float: left; width: 22%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_oficinas li, #contenidos-mtin ol.lista_horizontal_oficinas li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 16px; float: left; width: 22%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_anos li, #contenidos-mtin ol.lista_anos li { padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 20px; float: left; width: 7%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal li, #contenidos-mtin ol.lista_horizontal li { padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 20px; float: left; width: 15%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_estadis li, #contenidos-mtin ol.lista_horizontal_estadis li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; float: left; width: 15%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_comunidades li, #contenidos-mtin ol.lista_horizontal_comunidades li { line-height: 1.1em; padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; float: left; width: 28%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_coyuntura li, #contenidos-mtin ol.lista_horizontal_coyuntura li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; float: left; width: 20%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_estadistica li, #contenidos-mtin ol.lista_horizontal_estadistica li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 16px; float: left; width: 29%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_anuario li, #contenidos-mtin ol.lista_horizontal_anuario li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 16px; float: left; width: 22%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_horizontal_oficinas li, #contenidos-mtin ol.lista_horizontal_oficinas li { padding-top: 10px; padding-right: 0px; padding-bottom: 0px; padding-left: 16px; float: left; width: 22%; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_anos li, #contenidos-mtin ol.lista_anos li { padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 20px; float: left; width: 7%; }</xmp></li><li><xmp>#contenidos-mtin ul.sin_flecha3 li { background-image: none; padding-top: 0px; padding-right: 0px; padding-bottom: 1em; padding-left: 2em; width: 45%; float: left; }</xmp></li><li><xmp>#contenidos-mtin ul.lista_baja li, #contenidos-mtin ol.lista_baja li { background-image: url(http://www.mitramiss.gob.es/es/img/bg/flecha-roja.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; font-family: Verdana, Arial, Helvetica, sans-serif; padding-top: 4px; padding-right: 0px; padding-bottom: 4px; padding-left: 20px; float: left; width: 90%; background-position: 0.8em 0.6em; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#presupuestos ul li, #presupuestos ol li, #presupuestos .enlacePresupuesto { background-image: url(http://www.mitramiss.gob.es/es/img/bg/flecha-roja.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 20px; float: left; width: 90%; background-position: 0.8em 1em; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#presupuestos .izq { float: left; }</xmp></li><li><xmp>#contacto h1 { color: rgb(185, 18, 10); font-family: Arial, Helvetica, sans-serif; font-size: 1.5em; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.8em; margin-left: 0.3em; float: left; }</xmp></li><li><xmp>.rosancho-texto img { float: left; margin-top: 10px; margin-right: 20px; margin-bottom: 30px; margin-left: 0px; }</xmp></li><li><xmp>.rosancho ul li { float: left; width: 49%; min-height: 1.8em; line-height: 0.9em; font-weight: bold; }</xmp></li><li><xmp>#busqueda label { font-weight: bold; float: left; }</xmp></li><li><xmp>#busqueda .boton { float: left; margin-left: 1em; clear: none; }</xmp></li><li><xmp>.anuario-texto img { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 40px; margin-left: 0px; padding-top: 0px; padding-right: 10px; padding-bottom: 10px; padding-left: 0px; }</xmp></li><li><xmp>.paginador .ant { background-image: url(http://www.mitramiss.gob.es/es/img/bg/bg_fleIzq.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; clear: both; float: left !important; padding-top: 0px; padding-right: 0px; padding-bottom: 3px; padding-left: 8px; margin-bottom: 18px; background-position: 0% 0.3em !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.paginador .sig { background-image: url(http://www.mitramiss.gob.es/es/img/bg/bg_fleDer.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; float: right; padding-top: 0px; padding-right: 8px; padding-bottom: 3px; padding-left: 0px; clear: none !important; margin-bottom: 18px; background-position: 100% 0.3em !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>#perfil img { float: right; margin-bottom: 20px; }</xmp></li><li><xmp>.mapa-web ul li { background-image: url(http://www.mitramiss.gob.es/es/img/bg/bullet-gris.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; float: left; line-height: 0.9em; margin-top: 0.2em; margin-right: 2em; margin-bottom: 1em; margin-left: 10px; padding-left: 8px; position: relative; width: 40%; background-position: 0% 0.6em; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#menuIzq-psa li { float: left; background-image: url(http://www.mitramiss.gob.es/es/img/bg/acceso-tematico-li.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; font-size: 0.8em; padding-bottom: 0.8em; padding-left: 8px; background-position: 0% 0.35em; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.analisisMercado li { display: block; margin-left: 1em; padding-top: 12px !important; padding-right: 12px !important; padding-bottom: 12px !important; padding-left: 12px !important; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: dashed; border-right-style: dashed; border-bottom-style: dashed; border-left-style: dashed; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); list-style-position: outside; list-style-type: none; list-style-image: none; background-image: none !important; font-family: Arial, Helvetica, sans-serif; color: rgb(41, 113, 186); font-size: 1.1em; float: left; width: 256px; margin-bottom: 1.2em; }</xmp></li><li><xmp>#encuesta .boton-input { float: right; margin-top: 3em; }</xmp></li><li><xmp>.caja .content-encuesta ul li div { min-height: 0px; height: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 8px; position: static; background-image: url(http://www.mitramiss.gob.es/es/img/bg/encuesta-left.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; float: right; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-position: 0% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.caja .content-encuesta ul li div div { background-image: url(http://www.mitramiss.gob.es/es/img/bg/encuesta-right.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; float: none; width: 12.2em; background-position: 100% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.caja .content-encuesta ul.star-rating li { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; float: left; }</xmp></li><li><xmp>#arialnormalizado .numManual > ol > li > span, #arialnormalizado .numManual > ol > li > h3 > span { float: left; width: 30px; margin-bottom: 15px; margin-right: 5px; font-weight: normal; font-size: 10pt !important; }</xmp></li><li><xmp>.etiquetas > ul > li { float: left; padding-top: 5px !important; padding-right: 0px !important; padding-bottom: 5px !important; padding-left: 0px !important; list-style-type: none !important; background-image: none !important; }</xmp></li><li><xmp>#formulario .label_form { clear: both; display: block; width: 20em; text-align: right; float: left; font-weight: bold; padding-right: 1%; margin-top: 1.2em; }</xmp></li><li><xmp>#formulario .label_form1 { clear: both; display: block; width: 20em; text-align: right; float: left; font-weight: bold; padding-right: 1%; margin-top: 0.5em; }</xmp></li><li><xmp>.flota_derecha { float: right; }</xmp></li><li><xmp>.imagen_izquierda { float: left; margin-bottom: 0.63em; margin-top: 0.63em; margin-right: 0.63em; }</xmp></li><li><xmp>.imagen_derecha { float: right; margin-bottom: 0.63em; margin-top: 0.63em; margin-left: 0.63em; }</xmp></li><li><xmp>.imagen_derecha_1 { float: right; margin-bottom: 0.63em; margin-left: 0.63em; margin-top: 0.63em; max-width: 270px; }</xmp></li><li><xmp>#buscador_new { float: right; text-align: left; background-image: url(http://www.mitramiss.gob.es/es/img/iconos/btns_laterales_r1_c5_new.gif); padding-right: 2em; padding-left: 1.3em; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.imagen_min { float: left; padding-top: 0.19em; padding-right: 0.63em; padding-left: 0.63em; padding-bottom: 0.63em; }</xmp></li><li><xmp>.texto_cabecera { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.7em; color: rgb(255, 255, 255); width: 70%; padding-top: 3.6em; padding-right: 1em; float: right; }</xmp></li><li><xmp>* html body .texto_cabecera { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.7em; color: rgb(255, 255, 255); padding-top: 3.6em; padding-right: 1em; float: right; }</xmp></li><li><xmp>.contenedor_barra { float: right; width: 17em; margin-right: -0.44em !important; margin-top: -0.63em; }</xmp></li><li><xmp>.contenedor_barra_new1 { float: right; width: 18.31em; margin-right: 1.25em !important; margin-top: 1.88em; }</xmp></li><li><xmp>.img_dcha { float: right; }</xmp></li><li><xmp>.imagen { margin-right: 0.63em !important; float: right; width: 10em; text-align: right; }</xmp></li><li><xmp>#contenido_new { float: left; width: 100%; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.7em; padding-top: 0em; padding-right: 0em; padding-bottom: 0em; padding-left: 0em; margin-bottom: 3em; }</xmp></li><li><xmp>#wai1 { float: left; font-weight: normal; font-family: 'Arial Narrow', Arial, sans-serif; font-size: 0.8em; color: rgb(0, 51, 153); width: 100%; }</xmp></li><li><xmp>.imgnew { float: left !important; margin-right: 1.56em !important; }</xmp></li><li><xmp>.imgobserva { float: left; margin-bottom: 6em; margin-right: 2em; margin-top: 0px; }</xmp></li><li><xmp>.imgtexto { float: left; margin-right: 0.63em; margin-bottom: 0.63em; }</xmp></li><li><xmp>.imgestadis { float: left; margin-right: 5.63em; margin-bottom: 6em; margin-top: 3em; }</xmp></li><li><xmp>.imgestadis2 { float: left; margin-right: 4.63em; margin-bottom: 2em; margin-top: 0em; }</xmp></li><li><xmp>.imgestadis3 { float: left; margin-right: 0.7em; margin-bottom: 2em; margin-top: 0em; }</xmp></li><li><xmp>#logo_new { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); float: left; width: 10.44em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.img_ministro_new { border-top-width: 0em; border-right-width: 0em; border-bottom-width: 0em; border-left-width: 0em; border-style: initial; border-color: initial; float: right !important; position: relative; padding-top: 0.1em !important; width: 4.8em; height: 5.2em; }</xmp></li><li><xmp>* html body .img_ministro_new { border-top-width: 0em; border-right-width: 0em; border-bottom-width: 0em; border-left-width: 0em; border-style: initial; border-color: initial; float: right !important; position: relative; width: 4.8em; height: 5.2em; }</xmp></li><li><xmp>#cont_cabecera_menu_new { margin-top: 0.5em; margin-left: 15.63em !important; float: left; width: 6.25em; padding-top: 0em; padding-right: 0em; padding-bottom: 0em; padding-left: 0em; font: normal normal normal small/normal Verdana, sans-serif; }</xmp></li><li><xmp>html > body #navbar_0_new { clear: right; float: left; width: 100%; text-align: right; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.7em; padding-top: 0em; padding-right: 0px; padding-left: 0px; margin-bottom: 0.63em; padding-bottom: 0.6em; border-top-width: 0.06em; border-right-width: 0.06em; border-bottom-width: 0.06em; border-left-width: 0.06em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(74, 140, 156); border-right-color: rgb(74, 140, 156); border-bottom-color: rgb(74, 140, 156); border-left-color: rgb(74, 140, 156); }</xmp></li><li><xmp>* html body #navbar_0_new { clear: right; float: left; width: 100%; text-align: right; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.7em; padding-top: 0em; padding-right: 0px; padding-left: 0px; margin-bottom: 0.63em; padding-bottom: 0.13em; border-top-width: 0.06em; border-right-width: 0.06em; border-bottom-width: 0.06em; border-left-width: 0.06em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(74, 140, 156); border-right-color: rgb(74, 140, 156); border-bottom-color: rgb(74, 140, 156); border-left-color: rgb(74, 140, 156); }</xmp></li><li><xmp>.alinear_left_new { margin-left: 1.5em; float: left; clear: both; text-align: left; padding-top: 0em; padding-right: 0em; padding-bottom: 0.2em; padding-left: 0em; margin-bottom: 0em; margin-top: 0em; margin-right: 0em; width: 70%; }</xmp></li><li><xmp>#footer_new { float: right; width: 100%; }</xmp></li><li><xmp>#footer_new .accesibilidad { padding-bottom: 0.25em; text-align: left; float: left; background-image: url(http://www.mitramiss.gob.es/es/img/iconos/btns_laterales_r1_c5_new.gif); padding-right: 2em; padding-left: 2em; padding-top: 0.13em; margin-left: 1em; margin-top: 0.13em; width: 30%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.iframe_br_new { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/iframe_1_new.png) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; float: right; width: 100%; height: 0.69em; background-position: 0% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.iframe_br2_new { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/iframe_2_new.png) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; float: right; width: 100%; height: 0.98em; background-position: 0% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>#contenido_new1 { float: left; width: 100%; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em; padding-top: 0em; padding-right: 0em; padding-bottom: 0em; padding-left: 0em; margin-bottom: 3em; }</xmp></li><li><xmp>div#izquierda_new { float: left; width: 18%; font-size: 1em; }</xmp></li><li><xmp>html > body div#izquierda_new { float: left; width: 18%; font-size: 1em; }</xmp></li><li><xmp>div#derecha_new { width: 14%; float: right; }</xmp></li><li><xmp>html > body div#derecha_new { width: 14%; float: right; }</xmp></li><li><xmp>div#contenido_centro_new2 { float: inherit; margin-left: 18% !important; width: 81% !important; }</xmp></li><li><xmp>#contenidos-mtin ul.org_lista li { float: left; width: 48%; padding-top: 8px; padding-right: 6px; padding-bottom: 8px; padding-left: 18px; }</xmp></li><li><xmp>#texto_cabecera_izquierda { float: left; width: 40%; padding-top: 1.06em; }</xmp></li><li><xmp>* html body #texto_cabecera_izquierda { float: left; width: 40%; padding-top: 1.06em; }</xmp></li><li><xmp>#columna-1-1-consejeria { float: left; width: 23%; }</xmp></li><li><xmp>#columna-1-2-consejeria { float: right; width: 76%; }</xmp></li><li><xmp>#columna-1-consejeria { float: right; width: 99%; }</xmp></li><li><xmp>#contenidos-mtin ul.columnas-4 li { float: left; width: 21.2%; }</xmp></li><li><xmp>#contenidos-mtin ul.columnas-3 li { float: left; width: 28%; }</xmp></li><li><xmp>#contenidos-mtin ul.columnas-2 li { float: left; width: 45%; }</xmp></li><li><xmp>div.ocms_de_bt, div.ocms_de_norm, div.ocms_de_over { position: static !important; min-height: 0px !important; height: auto !important; width: auto !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; float: none !important; overflow-x: hidden !important; overflow-y: hidden !important; margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 0px !important; }</xmp></li><li><xmp>* { background-color: rgb(255, 255, 255) !important; background-image: none !important; border-top-width: 0px !important; border-right-width: 0px !important; border-bottom-width: 0px !important; border-left-width: 0px !important; border-style: initial !important; border-color: initial !important; bottom: auto !important; float: none !important; height: auto !important; left: auto; margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 0.5em !important; margin-left: 0px !important; min-height: 1px !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; overflow-x: visible !important; overflow-y: visible !important; position: relative !important; right: auto !important; text-align: left !important; top: auto !important; width: auto !important; line-height: 1.3em; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 181
+
+			Código: H56-Usando el atributo dir en un elemento en linea para resolver problemas con secuencias direccionales anidadas 
+			Criticidad: Baja
+			Observación: Existen 5 segmentos de texto que declaran usar un idioma espec&iacute;fico. Verifique que estos textos corresponda al idioma que se indica, sea un valor valido y as&iacute; tambien que no se requiera indicar la dirrecci&oacute;n de lectura (dir=rtl).<pre><ul><li><xmp><a href="../index.htm" hreflang="es" xml:lang="es" lang="es" title="Castellano">Bienvenido</a></xmp></li><li><xmp><a href="../../ca/index.htm" hreflang="ca" xml:lang="ca" lang="ca" title="Catalá">Benvingut</a></xmp></li><li><xmp><a href="../../eu/index.htm" hreflang="eu" xml:lang="eu" lang="eu" title="Euskara">Ongi etorri</a></xmp></li><li><xmp><a href="../../gl/index.htm" hreflang="gl" xml:lang="gl" lang="gl" title="Galego">Benvido</a></xmp></li><li><xmp><a href="../../en/index.htm" hreflang="en" xml:lang="en" lang="en" title="English">Welcome</a></xmp></li></ul></pre>.<br/>
+			Recomendación: En caso de que un texto necesite ser leido en sentido contrario al de defecto (izquierda-derecha), se debe especificar utilizando el atributo dir.  Para mayor informaci&oacute;n refierase a <a haref="https://www.w3.org/TR/html4/struct/dirlang.html">Informaci&oacute;n sobre el idioma y la direcci&oacute;n de lectura de un texto</a>.<br/>
+			Número de errores: 5
+
+			Código: C6-Proporcionando contenido basado en marcadores estructurales
+			Criticidad: Baja
+			Observación: De las 1288 reglas CSS en la p&aacute;gina, 24 de ellas usan declaraciones de elementos de forma absoluta (position:asolute).<pre><ul><li><xmp>#pie { background-image: url(http://www.mitramiss.gob.es/es/img/bg/pie-lt.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; position: absolute; left: 0px; bottom: 0px; width: 100%; min-height: 40px; background-position: 0% 0%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#espacio-informacion ul li.fuera1 { position: absolute; left: 0.4em; top: 31%; }</xmp></li><li><xmp>#espacio-informacion ul li.fuera2 { position: absolute; left: 0.4em; top: 40%; }</xmp></li><li><xmp>#actualidad div div div div { overflow-x: visible; overflow-y: visible; background-image: none !important; position: static; min-height: 0px; height: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>#mtin-hoy div.col-1 { float: left; width: 60%; padding-top: 0em; padding-right: 0em; padding-bottom: 0em; padding-left: 0em; margin-top: 8px; position: static; background-image: none !important; }</xmp></li><li><xmp>#mtin-hoy div.col-1 span.boton-input { position: absolute; bottom: 1.8em; right: 1em; }</xmp></li><li><xmp>.caja .content-encuesta { min-height: 0px; height: auto; padding-top: 0px; padding-right: 12px; padding-bottom: 0px; padding-left: 0px; position: static; background-image: none !important; }</xmp></li><li><xmp>.caja .content-encuesta ul li div { min-height: 0px; height: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 8px; position: static; background-image: url(http://www.mitramiss.gob.es/es/img/bg/encuesta-left.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; float: right; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-position: 0% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.caja .content-encuesta ul.star-rating li a { display: block; width: 20px; height: 20px; text-decoration: none; text-indent: -9000px; z-index: 20; position: absolute; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.caja div div div div { overflow-x: visible; overflow-y: visible; background-image: none !important; position: static; min-height: 0px; height: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>.caja-rosa div div div div { overflow-x: visible; overflow-y: visible; background-image: none !important; position: static; }</xmp></li><li><xmp>.caja-gris div div div div { overflow-x: visible; overflow-y: visible; background-image: none !important; position: static; }</xmp></li><li><xmp>.tabla-oficinas a img { position: absolute; top: 0px; right: 0px; }</xmp></li><li><xmp>#buscar-oficinas .enlace-pdf img, #buscar-consejerias .enlace-pdf img { position: absolute; left: 0px; top: -2px; }</xmp></li><li><xmp>.lista-cajas li p a { color: rgb(186, 18, 10); font-size: 1.1em; background-image: url(http://www.mitramiss.gob.es/es/img/ico_procedimiento.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; display: block; padding-top: 6px; padding-right: 0px; padding-bottom: 6px; padding-left: 24px; text-decoration: none; position: absolute; bottom: 12px; right: 18px; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenidos-mtin .listaAnidada ol > li::before { content: counter(6.94637e-310), '. '; counter-increment: item 1; margin-left: -1.5em; position: absolute; }</xmp></li><li><xmp>#resultados-buscador ol li { color: rgb(204, 51, 0); font-size: 1.2em; list-style-type: decimal; list-style-position: outside; margin-top: 0em; margin-right: 0px; margin-bottom: 3em; margin-left: 25px; clear: both; font-weight: bold; }</xmp></li><li><xmp>.analisisMercado li { display: block; margin-left: 1em; padding-top: 12px !important; padding-right: 12px !important; padding-bottom: 12px !important; padding-left: 12px !important; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: dashed; border-right-style: dashed; border-bottom-style: dashed; border-left-style: dashed; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); list-style-position: outside; list-style-type: none; list-style-image: none; background-image: none !important; font-family: Arial, Helvetica, sans-serif; color: rgb(41, 113, 186); font-size: 1.1em; float: left; width: 256px; margin-bottom: 1.2em; }</xmp></li><li><xmp>.analisisMercado li a { list-style-position: outside; list-style-type: none; list-style-image: none; background-image: none !important; font-family: Arial, Helvetica, sans-serif; color: rgb(41, 113, 186); font-size: 1.1em; }</xmp></li><li><xmp>.caja .content-encuesta { min-height: 0px; height: auto; padding-top: 0px; padding-right: 12px; padding-bottom: 0px; padding-left: 0px; position: static; background-image: none !important; }</xmp></li><li><xmp>.caja .content-encuesta ul li div { min-height: 0px; height: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 8px; position: static; background-image: url(http://www.mitramiss.gob.es/es/img/bg/encuesta-left.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; float: right; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-position: 0% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.caja .content-encuesta ul.star-rating li a { display: block; width: 20px; height: 20px; text-decoration: none; text-indent: -9000px; z-index: 20; position: absolute; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.hidden { font-size: 0em; position: absolute; left: -600em; top: -600em; color: rgb(255, 255, 255); overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>div.ocms_de_bt, div.ocms_de_norm, div.ocms_de_over { position: static !important; min-height: 0px !important; height: auto !important; width: auto !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; float: none !important; overflow-x: hidden !important; overflow-y: hidden !important; margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 0px !important; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 24
+
+			Código: C8-Usando la propiedad letter-spacing de CSS para controlar el espacio dentro de una palabra
+			Criticidad: Baja
+			Observación: No se han detectado textos sospechosos en los que palabras se han formado usando espacios en blanco..<br/>
+			Recomendación: En el caso de requerir por efectos visuales el destarcar cada letra de una palabra por medio de separaciones, utilice la propiedad CSS <code>letter-spacing</code>.<br/>
+			Número de errores: 0
+
+			Código: C27B-Haciendo el DOM ordenado para marcar el orden visual: B) Elementos con posicionamiento absoluto
+			Criticidad: Media
+			Observación: De las 1277 reglas CSS en la p&aacute;gina, 35 de ellas usan declaraciones de elementos de forma absoluta (position:asolute|relative|fix).<pre><ul><li><xmp>#contenedor { position: relative; min-height: 100%; }</xmp></li><li><xmp>#buscador #formulario-busqueda { background-image: url(http://www.mitramiss.gob.es/es/img/bg/cabecera-rb.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; width: 100%; padding-right: 13px; position: relative; background-position: 100% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenidos { width: 58.5em; margin-top: 0.8em; margin-right: auto; margin-bottom: 0.8em; margin-left: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 100px; padding-left: 14px; position: relative; overflow-x: auto; overflow-y: auto; }</xmp></li><li><xmp>#pie { background-image: url(http://www.mitramiss.gob.es/es/img/bg/pie-lt.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; position: absolute; left: 0px; bottom: 0px; width: 100%; min-height: 40px; background-position: 0% 0%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#espacio-informacion ul li.fuera1 { position: absolute; left: 0.4em; top: 31%; }</xmp></li><li><xmp>#espacio-informacion ul li.fuera2 { position: absolute; left: 0.4em; top: 40%; }</xmp></li><li><xmp>#portales-asociados .redtrabaja a { background-image: url(http://www.mitramiss.gob.es/es/img/logo_redtrabaja.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; text-indent: -999em; position: relative; background-position: 0% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#mtin-hoy { position: relative; }</xmp></li><li><xmp>#mtin-hoy div.col-1 span.boton-input { position: absolute; bottom: 1.8em; right: 1em; }</xmp></li><li><xmp>.caja .content-encuesta ul.star-rating { list-style-type: none; list-style-position: initial; list-style-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 100px; height: 20px; position: relative; margin-top: -16px; margin-right: 6px; margin-bottom: 0px; margin-left: 32px; background-image: url(http://www.mitramiss.gob.es/es/img/star_rating.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 0%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.caja .content-encuesta ul.star-rating li a { display: block; width: 20px; height: 20px; text-decoration: none; text-indent: -9000px; z-index: 20; position: absolute; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.caja div div div { overflow-x: hidden; overflow-y: hidden; padding-top: 1.1em; padding-right: 1.3em; padding-bottom: 1.8em; padding-left: 1.3em; background-image: url(http://www.mitramiss.gob.es/es/img/bg/caja-rt.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; position: relative; min-height: 12em; background-position: 100% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.caja-rosa div div div { overflow-x: auto; overflow-y: auto; padding-top: 1.1em; padding-right: 1.3em; padding-bottom: 1.8em; padding-left: 1.3em; background-image: url(http://www.mitramiss.gob.es/es/img/bg/caja-rosa-rt.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; position: relative; background-position: 100% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.caja-gris div div div { overflow-x: auto; overflow-y: auto; padding-top: 1.1em; padding-right: 1.3em; padding-bottom: 1.8em; padding-left: 1.3em; background-image: url(http://www.mitramiss.gob.es/es/img/bg/caja-gris-rt.gif) !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; position: relative; background-position: 100% 0% !important; background-repeat: no-repeat no-repeat !important; }</xmp></li><li><xmp>.tabla-oficinas a { color: rgb(41, 113, 186); text-decoration: none; display: block; position: relative; padding-top: 0px; padding-right: 22px; padding-bottom: 6px; padding-left: 0px; }</xmp></li><li><xmp>.tabla-oficinas a img { position: absolute; top: 0px; right: 0px; }</xmp></li><li><xmp>#buscar-oficinas .enlace-pdf a, #buscar-consejerias .enlace-pdf a { position: relative; padding-top: 0px; padding-right: 0px; padding-bottom: 4px; padding-left: 22px; }</xmp></li><li><xmp>#buscar-oficinas .enlace-pdf img, #buscar-consejerias .enlace-pdf img { position: absolute; left: 0px; top: -2px; }</xmp></li><li><xmp>.lista-cajas li p .caja-interior span { background-image: url(http://www.mitramiss.gob.es/es/img/bg/lista-caja-rb.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; display: block; padding-top: 7px; padding-right: 10px; padding-bottom: 12px; padding-left: 7px; position: relative; min-height: 10.5em; background-position: 100% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.lista-cajas li p a { color: rgb(186, 18, 10); font-size: 1.1em; background-image: url(http://www.mitramiss.gob.es/es/img/ico_procedimiento.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; display: block; padding-top: 6px; padding-right: 0px; padding-bottom: 6px; padding-left: 24px; text-decoration: none; position: absolute; bottom: 12px; right: 18px; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenidos-mtin .listaAnidada ol > li::before { content: counter(6.94637e-310), '. '; counter-increment: item 1; margin-left: -1.5em; position: absolute; }</xmp></li><li><xmp>.sellos { margin-top: 20px; margin-right: auto; margin-bottom: 20px; margin-left: auto; overflow-x: hidden; overflow-y: hidden; padding-top: 50px; position: relative; width: 400px; }</xmp></li><li><xmp>.mapa-web div div div { overflow-x: hidden; overflow-y: hidden; padding-top: 30px; padding-right: 15px; padding-bottom: 20px; padding-left: 30px; position: relative; }</xmp></li><li><xmp>.mapa-web ul li { background-image: url(http://www.mitramiss.gob.es/es/img/bg/bullet-gris.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; float: left; line-height: 0.9em; margin-top: 0.2em; margin-right: 2em; margin-bottom: 1em; margin-left: 10px; padding-left: 8px; position: relative; width: 40%; background-position: 0% 0.6em; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.hvr-float-shadow { display: block; vertical-align: middle; box-shadow: transparent 0px 0px 1px; position: relative; }</xmp></li><li><xmp>.caja .content-encuesta ul.star-rating { list-style-type: none; list-style-position: initial; list-style-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 100px; height: 20px; position: relative; margin-top: -16px; margin-right: 6px; margin-bottom: 0px; margin-left: 32px; background-image: url(http://www.mitramiss.gob.es/es/img/star_rating.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 0%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.caja .content-encuesta ul.star-rating li a { display: block; width: 20px; height: 20px; text-decoration: none; text-indent: -9000px; z-index: 20; position: absolute; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.hidden { font-size: 0em; position: absolute; left: -600em; top: -600em; color: rgb(255, 255, 255); overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.img_ministro_new { border-top-width: 0em; border-right-width: 0em; border-bottom-width: 0em; border-left-width: 0em; border-style: initial; border-color: initial; float: right !important; position: relative; padding-top: 0.1em !important; width: 4.8em; height: 5.2em; }</xmp></li><li><xmp>* html body .img_ministro_new { border-top-width: 0em; border-right-width: 0em; border-bottom-width: 0em; border-left-width: 0em; border-style: initial; border-color: initial; float: right !important; position: relative; width: 4.8em; height: 5.2em; }</xmp></li><li><xmp>#menuderecha_new { position: relative; width: 100%; }</xmp></li><li><xmp>html > body #menuderecha_new { font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; font-size: 1em; color: rgb(0, 0, 0); padding-top: 0em; padding-right: 0em; padding-bottom: 0em; padding-left: 0em; text-decoration: none; list-style-image: none; list-style-type: none; margin-top: 0em; position: relative; width: 100%; }</xmp></li><li><xmp>#navbar_1_new { position: relative; width: 97%; }</xmp></li><li><xmp>* html body #navbar_1_new { width: 97%; position: relative; }</xmp></li><li><xmp>* { background-color: rgb(255, 255, 255) !important; background-image: none !important; border-top-width: 0px !important; border-right-width: 0px !important; border-bottom-width: 0px !important; border-left-width: 0px !important; border-style: initial !important; border-color: initial !important; bottom: auto !important; float: none !important; height: auto !important; left: auto; margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 0.5em !important; margin-left: 0px !important; min-height: 1px !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; overflow-x: visible !important; overflow-y: visible !important; position: relative !important; right: auto !important; text-align: left !important; top: auto !important; width: auto !important; line-height: 1.3em; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 35
+
+		Criterio: 1.3.1..Información y relaciones
+		Nivel: A
+
+			Código: G140-Separando la información y la estructura de la presentación para permitir diferentes presentaciones
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente separando la presentaci&oacute;n del contenido, pues no se ha encontrado atributos <code>style</code> dentro de las etiquetas HTML..<br/>
+			Recomendación: El separar el contenido de la presentaci&oacute;n facilita la adaptaci&oacute;n de los contenidos a diferentes dispositivos..<br/>
+			Número de errores: 0
+
+			Código: F87-Fallo en el criterio 1.3.1 debido a la inserción de contenidos no decorativos mediante el uso de :before y :after pseudo-elementos y la propiedad content de los CSS
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H39-Usando elementos caption para asociar títulos de las tablas de datos a los datos de la tabla
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas..<br/>
+			Recomendación: En el caso de hacer uso de tablas estas deben ser identificadas por medio del elemento caption, siempre que no sean utilizadas para maquetaci&oacute;n (layout)..<br/>
+			Número de errores: 0
+
+			Código: H63-Usando el atributo scope para asociar las celdas de encabezado con las celdas de datos en las tablas
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H73-Usando el atributo summary del elemento table para dar una visión general de las tablas de datos
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas con un atriuto summary..<br/>
+			Recomendación: En el caso de hacer uso de tablas e identificarlas con el atributo summary este debe ser valido para identificar la tabla o explicar su estructura en caso de tablas de datos complejas..<br/>
+			Número de errores: 0
+
+			Código: H48-Usando ol, ul y dl para listas o grupos de enlaces
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H85-Usando OPTIONGROUP para agrupar elementos OPTION dentro de un SELECT
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H49-Usando marcas semánticas para marcar textos enfatizados o textos especiales
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H51-Usando tabla de marcado para presentar información tabular
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Al utilizar tablas de datos para presentar informaci&oacute;n tabular use los elementos th (encabezados) y td (datos)..<br/>
+			Número de errores: 0
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Ministerio de Trabajo, Migraciones y Seguridad Social. Aviso legal y política de privacidad</li><li>[H1] [OK] 
+		
+		
+
+
+
+
+Aviso legal y política de privacidad
+
+		
+	</li><ul><li>[H2] [OK] AVISO LEGAL</li><li>[H2] [OK] AVISO POLÍTICA PRIVACIDAD</li></ul><ul><li>[H1] [OK] Actualidad</li><li>[H1] [OK] Destacados</li><ul><li>[H2] [OK] El Ministerio</li><li>[H2] [OK] Más Información</li><li>[H2] [OK] Enlaces</li></ul></ul><ul><li>[H1] [OK] De interés...</li><li>[H1] [OK] Pie de página</li></ul></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: OAW3-Usando elementos legend correctamente
+			Criticidad: Baja
+			Observación: No se han encontrado elementos <code>fieldset</code>.<br/>
+			Recomendación: Es importante que el primer elemento de un fieldset sea un elemento legend que describa el tipo de informaci&oacute;n que se est&aacute; agrupando..<br/>
+			Número de errores: 0
+
+			Código: OAW4-Comprobando el uso de cabeceras múltiples dentro de una fila
+			Criticidad: Media
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Los elementos <code>th</code> deben emplearse correctamente para que el usuario identifique sin dificultades los contenidos de las tablas.<br/>
+			Número de errores: 0
+
+			Código: OAW5-Comprobando la validez de los roles ARIA
+			Criticidad: Alta
+			Observación: No se han encontrado elementos con atributo role..<br/>
+			Recomendación: Es recomendable apegarse a la la especificaci&oacute;n WAI-ARIA, que define un conjunto de atributos HTML adicionales que se pueden aplicar a los elementos para proporcionar sem&aacute;ntica adicional y mejorar la accesibilidad donde sea que falte.<br/>
+			Número de errores: 0
+
+			Código: OAW6-Comprobando que las celdas de la tabla tengan datos
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Las celdas vac&iacute;as en las tablas suelen causar problemas para los usuarios que ocupan tecnolog&iacute;as de accesibilidad..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.3..Características sensoriales
+		Nivel: A
+
+	Pauta: 1.4..Distinguible
+	Descripcion: Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo
+
+		Criterio: 1.4.2..Control del audio
+		Nivel: A
+
+		Criterio: 1.4.4..Redimensionamiento del texto
+		Nivel: AA
+
+			Código: C28-Especificando el tamaño de un contenedor de texto usando unidades em
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C14-Usando unidades em para tamaños de fuente
+			Criticidad: Alta
+			Observación: De las 144 reglas CSS en la p&aacute;gina para definir el tamaño de letra (font-size), 47 de ellas usan declaraciones de elementos de forma absoluta (position:asolute) o tiene un valor incorrecto.<pre><ul><li><xmp>#buscador input#q { border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(41, 113, 186); border-right-color: rgb(41, 113, 186); border-bottom-color: rgb(41, 113, 186); border-left-color: rgb(41, 113, 186); width: 76%; font-size: 0.75em; }</xmp></li><li><xmp>#contenidos textarea { font-size: 1.15em; }</xmp></li><li><xmp>#rastro li { display: inline; font-size: 0.75em; line-height: 1.3em; vertical-align: middle; }</xmp></li><li><xmp>#pie ul li a { color: rgb(0, 63, 125); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 63, 125); padding-left: 0.6em; font-size: 0.65em; text-decoration: none; }</xmp></li><li><xmp>#acceso-tematico h2 { color: rgb(102, 102, 102); font-size: 1.25em; background-image: url(http://www.mitramiss.gob.es/es/img/bg/acceso-tematico-h2.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0.6em; padding-right: 0em; padding-bottom: 0.6em; padding-left: 18px; margin-left: 1em; background-position: 0% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#acceso-tematico .Categorias select { font-size: 0.95em; margin-top: 4px; margin-right: 6px; margin-bottom: 0px; margin-left: 0px; width: 80%; max-width: 87%; color: rgb(48, 117, 186); vertical-align: text-bottom; }</xmp></li><li><xmp>#acceso-tematico .Categorias ul { font-size: 0.95em; padding-top: 0px; padding-right: 1.5em; padding-bottom: 0px; padding-left: 1.2em; }</xmp></li><li><xmp>#en-portada p .resaltado { color: rgb(41, 113, 186); font-weight: bold; font-size: 1.05em; }</xmp></li><li><xmp>#informacion-relacionada h2 a { display: block; color: rgb(60, 126, 190); font-size: 0.85em; padding-top: 2px; }</xmp></li><li><xmp>#enlaces { font-size: x-small; }</xmp></li><li><xmp>#enlaces-directos ul li div div a span { display: block; font-size: 0.75em; color: rgb(41, 113, 186); margin-bottom: 2em; }</xmp></li><li><xmp>.caja .enlaces-banderas { font-size: x-small; margin-bottom: 7em; }</xmp></li><li><xmp>.caja .enlaces-banderas h2 { color: rgb(87, 87, 87); font-size: 1.15em; margin-top: 0px; margin-right: 0px; margin-bottom: 2px; margin-left: 0px; }</xmp></li><li><xmp>#enlace-gabinete-virtual p { background-image: url(http://www.mitramiss.gob.es/es/img/bg/gabinete-virtual-lt.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 1px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size: 1.25em; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.fila h1 span { color: rgb(54, 121, 190); display: block; font-size: 0.75em; }</xmp></li><li><xmp>.fila p.como_h3 { color: rgb(41, 113, 186); margin-bottom: 1em; font-size: 1.25em; font-family: Arial, Helvetica, sans-serif; }</xmp></li><li><xmp>.pagina-inicio .caja, .pagina-inicio .caja-gris { margin-bottom: 0px; font-size: 0.75em; }</xmp></li><li><xmp>.caja h3 { color: rgb(41, 113, 186); margin-bottom: 1em; font-size: 1.25em; font-family: Arial, Helvetica, sans-serif; }</xmp></li><li><xmp>.boton-input-red input { border-top-style: none !important; border-right-style: none !important; border-bottom-style: none !important; border-left-style: none !important; border-width: initial !important; border-color: initial !important; color: rgb(255, 255, 255); cursor: pointer; font-size: 0.95em; padding-top: 2px; padding-right: 8px; padding-bottom: 2px; padding-left: 4px; margin-top: 0em !important; margin-left: 0em !important; width: auto !important; overflow-x: visible; overflow-y: visible; background-image: url(http://www.mitramiss.gob.es/es/img/bg/botonred-right.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 100% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.tabla-oficinas thead th { color: rgb(41, 113, 186); font-family: Arial, Helvetica, sans-serif; font-size: 1.15em; padding-top: 0px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; }</xmp></li><li><xmp>.titulo-img a { display: block; color: rgb(60, 126, 190); font-size: 0.85em; padding-top: 2px; }</xmp></li><li><xmp>#buscar-consejerias select, #buscar-oficinas select { color: rgb(41, 113, 186); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(41, 113, 186); border-right-color: rgb(41, 113, 186); border-bottom-color: rgb(41, 113, 186); border-left-color: rgb(41, 113, 186); font-size: 0.95em; margin-bottom: 8px; width: 16.9em; float: left; }</xmp></li><li><xmp>#contenidos-mtin ul.estanu li, #contenidos-mtin ol.estanu li { background-image: url(http://www.mitramiss.gob.es/es/img/bg/flecha-roja.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.06em; padding-top: 0px; padding-right: 0px; padding-bottom: 10px; padding-left: 20px; background-position: 0.8em 0.3em; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenidos-mtin ul.estanu li, p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.06em; }</xmp></li><li><xmp>.calendario a { background-image: url(http://www.mitramiss.gob.es/es/img/calendario.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 7px; padding-right: 0px; padding-bottom: 6px; padding-left: 30px; color: rgb(0, 0, 0) !important; text-decoration: none; font-size: 1.05em; display: inline-block; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#menuIzq-psa li ul li { font-size: 0.85em; margin-top: 1px; margin-right: 4px; margin-bottom: 0px; margin-left: 10px; padding-top: 2px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px; }</xmp></li><li><xmp>#arialnormalizado, #arialnormalizado li, #arialnormalizado p, #arialnormalizado a { font-family: Arial, Helvetica, sans-serif !important; font-size: 10pt !important; line-height: 1.2em; }</xmp></li><li><xmp>#arialnormalizado h2 { font-family: Arial, Helvetica, sans-serif !important; font-size: 12pt !important; }</xmp></li><li><xmp>#arialnormalizado h3 { font-family: Arial, Helvetica, sans-serif !important; font-size: 11pt !important; color: rgb(85, 85, 85); }</xmp></li><li><xmp>#arialnormalizado .numManual > ol > li > span, #arialnormalizado .numManual > ol > li > h3 > span { float: left; width: 30px; margin-bottom: 15px; margin-right: 5px; font-weight: normal; font-size: 10pt !important; }</xmp></li><li><xmp>#contenido .bl { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/gris_bl.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; font-size: 0px; height: 0.19em; clear: both; background-position: 0px 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenido_new .bl { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/gris_bl.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; font-size: 0px; height: 0.19em; clear: both; background-position: 0px 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenido .br { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/gris_br.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; font-size: 0px; height: 0.19em; clear: both; background-position: 100% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenido_new .br { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/gris_br.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; font-size: 0px; height: 0.19em; clear: both; background-position: 100% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.Estilo1 { font-size: 0.56em; font-weight: bold; }</xmp></li><li><xmp>.Subscript { vertical-align: sub; font-size: smaller; }</xmp></li><li><xmp>.Superscript { vertical-align: super; font-size: smaller; }</xmp></li><li><xmp>.Font07 { font-size: 0.85em; }</xmp></li><li><xmp>#navbar_0_new .bl { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/azul_bl.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; font-size: 0px; height: 0.31em; background-position: 0px 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#navbar_0_new .br { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/azul_br.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; font-size: 0px; height: 0.31em; background-position: 100% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#navbar_1_new .bl { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/bl_new.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; width: 100%; font-size: 0px; background-position: 0px 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#footer_new .bl { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/bl_on_new.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); font-size: 0px; height: 0.19em; width: 100%; background-position: 0px 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#footer_new .br { background-image: url(http://www.mitramiss.gob.es/es/img/esquinas/br_on_new.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; font-size: 0px; height: 0.19em; width: 100%; background-position: 100% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.destacados_titulo { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.75em; color: rgb(69, 127, 138); text-decoration: none; }</xmp></li><li><xmp>div#cabeceera_new { clear: both; font-size: 0.88em; }</xmp></li><li><xmp>#texto_cabecera_izquierda .texto_blanco_inclinado { color: rgb(255, 255, 255); font-size: 0.88em; font-style: italic; font-family: Verdana, sans-serif; font-weight: bold; }</xmp></li><li><xmp>#texto_cabecera_izquierda .texto_blanco_inclinado a { font: normal normal normal small/normal Verdana, sans-serif; color: rgb(255, 255, 255); font-size: 0.88em; font-style: italic; font-weight: bold; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS para definir el tamaño de letra del contenido, utilice valores relativos por medio de unidades "em", % o valores  xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, o larger. Al usar medidas de fuente absolutas, se limita el contenido textual de la p&aacute;gina ya que no se podr&iacute;a adaptar a diferentes resoluciones de pantalla..<br/>
+			Número de errores: 47
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: Incrementando el tamaño del texto en un 200% <code>$('body').css('font-size', '200%');</code> la dimensi&oacute;n de ancho de la p&aacute;gina supera a la del navegador, haciendo necesario el uso del SCROLL HORIZONTAL para acceder a todo el contenido, as&iacute; tambi&eacute;n posiblemente algunos texto resulten incomprensibles..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 1
+
+			Código: C13-Usando tamaños de fuente nombrados
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C12-Usando porcentajes para tamaños de fuente
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 1.4.8..Presentación visual
+		Nivel: AAA
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: Incrementando el tamaño del texto en un 200% <code>$('body').css('font-size', '200%');</code> la dimensi&oacute;n de ancho de la p&aacute;gina supera a la del navegador, haciendo necesario el uso del SCROLL HORIZONTAL para acceder a todo el contenido, as&iacute; tambi&eacute;n posiblemente algunos texto resulten incomprensibles..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 1
+
+			Código: C20-Usando medidas relativas para establecer anchos de columna para que las líneas puedan promediar 80 caracteres o menos cuando se cambia el tamaño del navegador
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C19-Especificar la alineación, ya sea a la izquierda o a la derecha en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C21-Especificando espacio entre líneas en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 2.Operable
+Descripcion: Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+	Pauta: 2.1..Accesible por teclado
+	Descripcion: Proporcionar acceso a toda la funcionalidad mediante el teclado
+
+		Criterio: 2.1.1..Teclado
+		Nivel: A
+
+	Pauta: 2.2..Tiempo suficiente
+	Descripcion: Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido
+
+		Criterio: 2.2.2..Pausar, detener, ocultar
+		Nivel: A
+
+			Código: G11A-Creando contenido que parpadea al menos 5 segundos: A) Elementos con animación blink
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>blink</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: G11B-Creando contenido que parpadea al menos 5 segundos: B) Elementos con animación marquee
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>marquee</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+	Pauta: 2.3..Convulsiones
+	Descripcion: No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones
+
+	Pauta: 2.4..Navegable
+	Descripcion: Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran
+
+		Criterio: 2.4.1..Evitar bloques
+		Nivel: A
+
+		Criterio: 2.4.2..Páginas tituladas
+		Nivel: A
+
+			Código: G88-Proporcionar títulos descriptivos para páginas web
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H25-Proporcionando un título usando el elemento title
+			Criticidad: Alta
+			Observación: La p&aacute;gina tiene un t&iacute;tulo, aseg&uacute;rese que sea descriptivo y que est&eacute; acorde al contenido de la p&aacute;gina. <pre><ul><title>Aviso legal y política de privacidad. Ministerio de Trabajo, Migraciones y Seguridad Social</title></ul></pre>.<br/>
+			Recomendación: El t&iacute;tulo de la p&aacute;gina debe ser descriptivo y brindar una persepci&oacute;n del contenido de la misma..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.3..Orden del foco
+		Nivel: A
+
+			Código: H4-Creando un orden lógico en el orden del tabulador a través de los enlaces, controles de formulario, y objetos
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.4..Propósito de los enlaces (En contexto)
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H33-Complementando el texto del enlace con el atributo title
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C7-Usando CSS para ocultar una porcion de texto de un enlace
+			Criticidad: Baja
+			Observación: En la p&aacute;gina se est&aacute; utilizando en 495 ocaci&oacute;n(es) la opci&oacute;n para ocultar contenido, verifique que este sea relevante, o que sea facilmente accesible.<br/>
+			Recomendación: Al ocultar una parte de informaci&oacute;n de la p&aacute;gina, se puede llegar a confundir al usuario.<br/>
+			Número de errores: 495
+
+			Código: H30-Proporcionar un texto de enlace que describa el propósito del enlace para los elemtos de anclaje (a)
+			Criticidad: Alta
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong> diferente de nulo o vacio, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img src="../img/HOME/cabecera/logoGdE.gif" alt="Gobierno de España. Ministerio de Trabajo, Migraciones y Seguridad Social"></xmp></li><li><xmp><img src="../img/banners/pnr.jpg" alt="Programa Nacional de Reformas. Estrategia de Lisboa"></xmp></li><li><xmp><img src="../img/banners/060.jpg" alt="administracion.gob.es"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado enlaces adyacentes que redirecciones al mismo lugar causando redundancia o confusi&oacute;n de informaci&oacute;n..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.6..Encabezados y etiquetas
+		Nivel: AA
+
+			Código: G130-Proporcionar títulos descriptivos
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.5..Re-autentificación
+		Nivel: AA
+
+			Código: H59-Usando el elemneto link y herramientas de navegación
+			Criticidad: Alta
+			Observación: Los 9 links de relacion que tiene la p&aacute;gina se han definido correctamente.<br/>
+			Recomendación: Es importante colocar la etiqueta link &uacute;nicamente dentro del encabezado de la p&aacute;gina, e indicar la relaci&oacute;n que guarda con la misma.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.7..Foco visible
+		Nivel: AA
+
+			Código: C15-Usando CSS para cambiar la presentación de un componente de interfaz de usuario cuando recibe el foco
+			Criticidad: Baja
+			Observación: No se han detectado declaraciones del foco de teclado.<br/>
+			Recomendación: Verificar que el foco sea visible y que este en correcto posicionamiento en la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.10..Encabezados se sección
+		Nivel: AAA
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Ministerio de Trabajo, Migraciones y Seguridad Social. Aviso legal y política de privacidad</li><li>[H1] [OK] 
+		
+		
+
+
+
+
+Aviso legal y política de privacidad
+
+		
+	</li><ul><li>[H2] [OK] AVISO LEGAL</li><li>[H2] [OK] AVISO POLÍTICA PRIVACIDAD</li></ul><ul><li>[H1] [OK] Actualidad</li><li>[H1] [OK] Destacados</li><ul><li>[H2] [OK] El Ministerio</li><li>[H2] [OK] Más Información</li><li>[H2] [OK] Enlaces</li></ul></ul><ul><li>[H1] [OK] De interés...</li><li>[H1] [OK] Pie de página</li></ul></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+
+Principio: 3.Comprensible
+Descripcion: La información y el manejo de la interfaz de usuario deben ser comprensibles
+
+	Pauta: 3.1..Legible
+	Descripcion: Hacer que los contenidos textuales resulten legibles y comprensibles
+
+		Criterio: 3.1.1..Idioma de la página
+		Nivel: A
+
+			Código: H57-Usando el atributo language en el elemento html
+			Criticidad: Alta
+			Observación: La definici&oacute;n de lenguaje en la p&aacute;gina se ha realizado exitosamente.<br/>
+			Recomendación: Verificar la especificaci&oacute;n del lenguaje, es importante especificar en que idioma se est&aacute; presentando la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.3..Palabras inusuales
+		Nivel: AAA
+
+			Código: H60-Usando el elemento link para enlazar a un glosario
+			Criticidad: Baja
+			Observación: La p&aacute;gina podr&iacute;a requerir un link a un glosario de palabras complejas.<br/>
+			Recomendación: Cuando se utiliza palabras complejas es recomendable colocar un glosario que las defina.<br/>
+			Número de errores: 1
+
+			Código: H40-Usando listas de definición
+			Criticidad: Baja
+			Observación: No se han encontrado listas dentro de la p&aacute;gina.<br/>
+			Recomendación: La estructura de la lista de definici&oacute;n, deben ser empleadas correctamente, colocando cada uno de sus componentes sin descartar ninguno.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.6..Pronunciación
+		Nivel: AAA
+
+			Código: H62-Usando el elemento ruby
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado etiquetas ruby.<br/>
+			Recomendación: Es importante supervisar el correcto uso de esta etiqueta para caracteres especiales.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.4..Abreviaturas
+		Nivel: AAA
+
+			Código: H70-Usando elementos frame para agrupar bloques de material repetido
+			Criticidad: Alta
+			Observación: La p&aacute;gina no tiene etiquetas frame.<br/>
+			Recomendación: Los elementos frame no deben usarse para maquetar contenido en la p&aacute;gina, se debe utilizar hojas de estilo.<br/>
+			Número de errores: 0
+
+	Pauta: 3.2..Predecible
+	Descripcion: Hacer que las páginas web aparezcan y operen de manera predecible
+
+		Criterio: 3.2.2..Al introducir datos
+		Nivel: A
+
+			Código: H32-Proporcionar botones de envio
+			Criticidad: Media
+			Observación: Verificar que el formulario tenga m&eacute;todo de env&iacute;o.<br/>
+			Recomendación: De los 1 formularios de la p&aacute;gina, existen 1 que no tienen m&eacute;todo de env&iacute;o.<br/>
+			Número de errores: 1
+
+		Criterio: 3.2.5..Cambios a petición
+		Nivel: AAA
+
+			Código: H83-Usando el atributo target para abrir una nueva ventana a petición del usuario e indicando en ventana a petición del usuario e indicando en el texto de este enlace
+			Criticidad: Media
+			Observación: No se han encontrado enlaces en la p&aacute;gina que abran una nueva ventana..<br/>
+			Recomendación: En el caso de enlaces que se vayan a abrir en una nueva ventana, se debe informar al usuario de dicho comportamiento..<br/>
+			Número de errores: 0
+
+			Código: H76-Usando meta refresh para crear un redireccionamiento de cliente instantánea
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se ha detectado el uso de la etiqueta meta conjuntamente con el atributo refresh para actualizaci&oacute;n de la p&aacute;gina..<br/>
+			Recomendación: En el caso de quere hacer uso de la misma, considerar que la continua actualizaci&oacute;n de la p&aacute;gina no es recomendable, puede causar confusi&oacute;n en el usuario..<br/>
+			Número de errores: 0
+
+	Pauta: 3.3..Entrada de datos asistida
+	Descripcion: Ayudar a los usuarios a evitar y corregir los errores
+
+		Criterio: 3.3.1..Identificación de errores
+		Nivel: A
+
+		Criterio: 3.3.2..Etiquetas o instrucciones
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H71-Proporcionando una descripcion para grupos de controles de formularios usando los elementos fieldset y legend
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: OAW2-Proporcionando contenido en todos los elementos
+			Criticidad: Baja
+			Observación: No se encontraron elementos vac&iacute;os..<br/>
+			Recomendación: Es importante evitar declarar elementos sin contenido.<br/>
+			Número de errores: 0
+
+		Criterio: 3.3.5..Ayuda
+		Nivel: AAA
+
+			Código: G71-Proporcionando un enlace de ayuda en cada pagina web
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H89-Usando el atributo title para proporcionar ayuda contextual
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 4.Robusto
+Descripcion: El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+	Pauta: 4.1..Compatible
+Descripcion: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas
+
+		Criterio: 4.1.1..Procesamiento
+		Nivel: A
+
+			Código: G134-Validación de páginas web
+			Criticidad: Alta
+			Observación: <p>La pagina ha sido analizada en <a href='https://validator.w3.org/' target='_blank'>https://validator.w3.org/</a>, encontrandose <strong>2 errores</strong>.</p><pre><ul><li><xmp>Almost standards mode doctype. Expected “<!DOCTYPE html>”.:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html</xmp></li><li><xmp>The “profile” attribute on the “head” element is obsolete. To declare which “meta” terms are used in the document, instead register the names as meta extensions. To trigger specific UA behaviors, use a “link” element instead.:
+lang="es"> <head profile="http://www.w3.org/2000/08/w3c-synd/#">  <met</xmp></li></ul></pre><p>Para mayor información revise el siguiente enlace: <a href='https://validator.w3.org/nu/?doc=http://www.mitramiss.gob.es/es/extras/avisolegal.htm' target='_blank'>Validación W3C</a></p>.<br/>
+			Recomendación: .<br/>
+			Número de errores: 2
+
+		Criterio: 4.1.2..Nombre, función, valor
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H64-Usando el atributo title en los elementos frame e iframe 
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos frames..<br/>
+			Recomendación: En caso de usar elementos frame o iframe acompañelos por una descripci&oacute;n del mismo a travez del atributo <code>title</code>..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+

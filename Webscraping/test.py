@@ -1,16 +1,28 @@
-from time import time
+from database import conexionDB,desconexionDB
 
-def calcularTiemposAcceso(herramienta,tiempo,operacion):
-    ruta_archivo_tiempos="/home/jesus/TFG/Webscraping/tiempos/"+herramienta+".txt"
+import requests
+'''
+parametros = conexionDB()
+conexion= parametros[0]
+cursor = parametros[1]
 
-    tiempos = open(ruta_archivo_tiempos, 'a')
+cursor.execute("select descripcion from herramientas where activa = %s", (True,))
+herramientas = cursor.fetchall()
 
-    tiempos.write("Operación: " + operacion + '\tTiempo: ' + str(tiempo))
+herramientas_activas=[]
 
-    tiempos.close()
+for herramienta in herramientas:
+    herramientas_activas.append(str(herramienta.__getitem__(0)))
+    
+print(herramientas_activas[0])
 
-t1=time()
+desconexionDB(conexion)
 
-tiempo=time()-t1
+'''
+pagina_web="https://www.umh.es/"
+request = requests.get(pagina_web, verify=False, timeout=60)
 
-calcularTiemposAcceso("accessmonitor",tiempo,"acceso")
+print(request)
+
+
+

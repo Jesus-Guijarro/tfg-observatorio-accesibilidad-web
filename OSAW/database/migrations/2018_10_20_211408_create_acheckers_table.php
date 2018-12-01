@@ -29,7 +29,6 @@ class CreateAcheckersTable extends Migration
             $table->integer('pagina_id')->unsigned()->nullable();
             $table->foreign('pagina_id')->references('id')->on('paginas')->onDelete("set null");
 
-            $table->timestamps();
         });
     }
 

@@ -28,6 +28,13 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    /**
+     * The storage format of the model's date columns.
+     *
+     * @var string
+     */
+    protected $dateFormat = 'U';
+
     public function rol() {
         return $this->belongsTo('App\Rol');
     }
