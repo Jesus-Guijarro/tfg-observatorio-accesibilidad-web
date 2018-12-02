@@ -162,8 +162,8 @@ class SitiosTableSeeder extends Seeder
                 'herramientas' => "$herramientas"
             ],
             [
-                'nombre' => 'Ministerio de Educación, Cultura y Deporte',
-                'dominio' => 'www.mecd.gob.es',
+                'nombre' => 'Ministerio de Cultura y Deporte',
+                'dominio' => 'www.culturaydeporte.gob.es',
                 'periodicidad' => 'Semanal',
                 'hora'=>'13:30',
                 'dia' => '5',

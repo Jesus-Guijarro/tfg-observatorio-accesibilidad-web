@@ -7,11 +7,8 @@ from herramienta import  driverHeadlessBrowser, getDirectorioOSAW, getRutaCopiaH
 #Comprobar acceso y el tipo de la URL
 def comprobarAccesoyTipo(pagina_web):
     try:
-        #Se comprueba si se causa error por el certificado SSL de la web
-        try:
-            request = requests.get(pagina_web, verify=True, timeout=5)
-        except requests.exceptions.SSLError:
-            request = requests.get(pagina_web, verify=False, timeout=5)
+        #No se verifica el certificado SSL de la web - UMH
+        request = requests.get(pagina_web, verify=False, timeout=20)
 
         tipo = request.headers.get('content-type')
 
@@ -76,8 +73,8 @@ def comprobarCopiaHTML(pagina_id):
 
     #Si no es la primera vez que se evalua la página (valor:"manual")
     if hash_antiguo!="default":
-        #Si los hash tienen valores distintos
-        if hash_antiguo != hash_nuevo:
+        #Si los hash tienen valores distintos y no es una página vacia
+        if hash_antiguo != hash_nuevo or hash_nuevo != "1133275be55b1863":
             #Borramos el archivo anterior
             os.remove(ruta_archivo_antiguo)
             #Cambiamos el nombre del archivo nuevo para tener el nombre del antiguo

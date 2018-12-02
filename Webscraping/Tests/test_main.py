@@ -42,15 +42,21 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
 #Argumento sys.argv[1] -> id del sitio web
 sitio_id=sys.argv[1]
 
-#Listado con las herramientas disponibles para ser usadas
-herramientas_activas=["accessmonitor","achecker","eiiichecker","observatorio","vamola","wave"]
-#herramientas_activas=["accessmonitor"]
-#print("HERRAMIENTAS LISTADAS")
+
 
 #Conexión base de datos
 parametros = conexionDB()
 conexion= parametros[0]
 cursor = parametros[1]
+
+#Listado con las herramientas activas para ser usadas
+cursor.execute("select descripcion from herramientas where activa = %s", (True,))
+herramientas = cursor.fetchall()
+
+herramientas_activas=[]
+
+for herramienta in herramientas:
+    herramientas_activas.append(str(herramienta.__getitem__(0)))
 
 run(sitio_id,herramientas_activas,conexion,cursor)
 desconexionDB(conexion)
