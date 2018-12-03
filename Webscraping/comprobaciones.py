@@ -74,7 +74,8 @@ def comprobarCopiaHTML(pagina_id):
     #Si no es la primera vez que se evalua la página (valor:"manual")
     if hash_antiguo!="default":
         #Si los hash tienen valores distintos y no es una página vacia
-        if hash_antiguo != hash_nuevo or hash_nuevo != "1133275be55b1863":
+        
+        if hash_antiguo != hash_nuevo:
             #Borramos el archivo anterior
             os.remove(ruta_archivo_antiguo)
             #Cambiamos el nombre del archivo nuevo para tener el nombre del antiguo
