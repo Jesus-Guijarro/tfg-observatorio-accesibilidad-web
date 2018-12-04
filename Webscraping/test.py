@@ -1,24 +1,26 @@
 import requests
 
-#pagina_web="https://www.uv.es/master-ultimes-places/ca/admissio-master/admissio-ultimes-places/1-escull-master.html"
-#pagina_web = "http://www.mecd.gob.es/cultura-mecd/areas-cultura/archivos.html"
-pagina_web="https://www.umh.es/"
+pagina_web="http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_ir_al_medico"
 
+def comprobarAccesoyTipo(pagina_web):
+    try:
+        #No se verifica el certificado SSL de la web - UMH
+        request = requests.get(pagina_web, verify=False, timeout=20)
 
-request = requests.get(pagina_web)
+        tipo = request.headers.get('content-type')
 
-'''
-print(request.text)
-print(len(request.content))
+        print(tipo)
+        print(request.status_code)
 
-print(request.history)
+        #Tipo de contenido buscado -> "text/html"
+        tipo = tipo.lower().replace(' ','')
 
-if len(request.history) !=0:
-    print(request.url)
+        #Comprobamos si obtenemos respuesta satisfactoria y el tipo del contenido es text/html
+        if request.status_code == 200 and "text/html" in tipo:
+            return True
+        else:
+            return False
+    except requests.ConnectionError:
+        return False
 
-
-if request.text == '':
-    print("A")
-print(request.text)
-'''
-
+print(comprobarAccesoyTipo(pagina_web))
