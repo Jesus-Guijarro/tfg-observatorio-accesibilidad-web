@@ -1,6 +1,0 @@
-[01]	ERROR HERRAMIENTA: "eiiichecker"		FECHA: "2018-11-01 13:12:48.119122"		PAGINA WEB: "48"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"
-[03]	ERROR ACCESSO PAGINA WEB: "48"		FECHA: "2018-11-01 13:12:48.119122" 
-[01]	ERROR HERRAMIENTA: "eiiichecker"		FECHA: "2018-11-01 14:06:04.225467"		PAGINA WEB: "184"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"
-[03]	ERROR ACCESSO PAGINA WEB: "184"		FECHA: "2018-11-01 14:06:04.225467" 
-[01]	ERROR HERRAMIENTA: "eiiichecker"		FECHA: "2018-11-01 14:11:33.445861"		PAGINA WEB: "187"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"
-[03]	ERROR ACCESSO PAGINA WEB: "187"		FECHA: "2018-11-01 14:11:33.445861" 

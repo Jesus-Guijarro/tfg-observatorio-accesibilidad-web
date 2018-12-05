@@ -1,2 +1,0 @@
-[01]	ERROR HERRAMIENTA: "observatorio"		FECHA: "2018-11-16 14:07:31.377776"		PAGINA WEB: "51"		DESCRIPCION: "ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='observatorioweb.ups.edu.ec', port=80): Read timed out. (read timeout=60)",),)"
-[01]	ERROR HERRAMIENTA: "eiiichecker"		FECHA: "2018-11-16 14:18:42.621415"		PAGINA WEB: "237"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"

@@ -1,6 +1,0 @@
-[01]	ERROR HERRAMIENTA: "accessmonitor"		FECHA: "2018-11-29 13:00:16.480594"		PAGINA WEB: "41"		DESCRIPCION: "AttributeError("'NoneType' object has no attribute 'group'",)"
-[01]	ERROR HERRAMIENTA: "accessmonitor"		FECHA: "2018-11-29 13:01:56.808524"		PAGINA WEB: "42"		DESCRIPCION: "AttributeError("'NoneType' object has no attribute 'group'",)"
-[01]	ERROR HERRAMIENTA: "accessmonitor"		FECHA: "2018-11-29 13:03:15.527461"		PAGINA WEB: "43"		DESCRIPCION: "AttributeError("'NoneType' object has no attribute 'group'",)"
-[01]	ERROR HERRAMIENTA: "accessmonitor"		FECHA: "2018-11-29 13:04:48.643420"		PAGINA WEB: "49"		DESCRIPCION: "AttributeError("'NoneType' object has no attribute 'group'",)"
-[02]	ERROR ACCESSO PAGINA WEB: "138"		FECHA: "2018-11-29 13:36:10.739284" 
-[01]	ERROR HERRAMIENTA: "observatorio"		FECHA: "2018-11-29 19:21:01.191799"		PAGINA WEB: "1"		DESCRIPCION: "KeyError('resultado',)"

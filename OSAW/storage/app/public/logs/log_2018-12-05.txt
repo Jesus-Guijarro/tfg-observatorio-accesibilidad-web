@@ -1,5 +1,0 @@
-[01]	ERROR HERRAMIENTA: "eiiichecker"		FECHA: "2018-12-05 13:06:55.866512"		PAGINA WEB: "31"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"
-[01]	ERROR HERRAMIENTA: "vamola"		FECHA: "2018-12-05 14:33:28.374811"		PAGINA WEB: "241"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"
-[01]	ERROR HERRAMIENTA: "vamola"		FECHA: "2018-12-05 14:36:36.078060"		PAGINA WEB: "242"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"
-[01]	ERROR HERRAMIENTA: "eiiichecker"		FECHA: "2018-12-05 14:43:37.476341"		PAGINA WEB: "245"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"
-[01]	ERROR HERRAMIENTA: "eiiichecker"		FECHA: "2018-12-05 15:27:44.593630"		PAGINA WEB: "250"		DESCRIPCION: "Exception('No se ha podido realizar la evaluación',)"
