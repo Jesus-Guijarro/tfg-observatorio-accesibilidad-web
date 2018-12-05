@@ -111,11 +111,8 @@ def ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Formato de la URL para utilizar la API de la herramienta
         url_request="http://observatorioweb.ups.edu.ec/oaw/srv/wcag/json/conformidad/?url="+pagina_url+"&key="+key
 
-        #Timeout de 120 segundos
-        t1=time()
+        #Tiempo de espera de 60 segundos
         r = requests.get(url=url_request,timeout=60)
-        tiempo=time()-t1
-        calcularTiemposAcceso("observatorio",tiempo,"RESPUESTA API")
 
         datos_json=json.loads(r.content.decode('utf-8'))
 

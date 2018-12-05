@@ -37,22 +37,18 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Activamos el modo headless
         driver=driverHeadlessBrowser()
 
-        t1=time()
-
         #Accedemos a la web de la herramienta de evaluación
         driver.get('http://checkers.eiii.eu/en/pagecheck/')
 
-        #Pausa explicita de 30 segundos
+        #Pausa explicita de 17 segundos
         #Se pausa hasta que se encuentra el elemento
-        wait = WebDriverWait(driver, 30) 
+        wait = WebDriverWait(driver, 17) 
 
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
             
             elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#logo > h1")))
-            tiempo=time()-t1
-            calcularTiemposAcceso("eiiichecker",tiempo,"ACCESO HERRAMIENTA")
         except:
             driver.quit()
             raise Exception('No se ha podido acceder a la herramienta')
@@ -72,17 +68,13 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Se selecciona el botón de "check" para obtener el análisis 
         check =  driver.find_element_by_css_selector('#page_checker > div > input[type="submit"]')
         
-        t1=time()
-        
         check.click()
 
-        #Pausa de máximo 3 minutos
-        wait = WebDriverWait(driver, 180)
+        #Pausa de máximo 55 segundos
+        wait = WebDriverWait(driver, 54)
         #Se espera hasta que se haya evaluado y ofrecido el resultado
         try:
             elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#resultsByTest > div > div.tabArea")))
-            tiempo=time()-t1
-            calcularTiemposAcceso("eiiichecker",tiempo,"EVALUACIÓN")
         except:
             driver.quit()
             raise Exception('No se ha podido realizar la evaluación')
