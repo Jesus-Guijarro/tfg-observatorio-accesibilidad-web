@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -80,6 +83,24 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
+                </div>
+                <div class="container">
+                    <?php $users = DB::table('users')->SimplePaginate(1);
+                    ?>
+                    <table>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                        </tr>
+                        @foreach($users as $user)
+                            <tr>
+                                <td> {{$user->nombre}}</td>
+                                <td> {{$user->email}}</td>
+                            </tr>
+                        @endforeach
+                        
+                    </table>
+                    {{ $users->links() }}
                 </div>
                 <div>
                     <iframe src="{{URL::to('/')}}/storage/paginas/default.html"></iframe>
