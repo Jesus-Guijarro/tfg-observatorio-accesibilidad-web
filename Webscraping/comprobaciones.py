@@ -2,26 +2,90 @@ import io, mysql.connector, os, requests, hashlib, codecs
 
 from database import conexionDB,desconexionDB
 from selenium import webdriver
-from herramienta import  driverHeadlessBrowser, getDirectorioOSAW, getRutaCopiaHTML
+from herramienta import driverHeadlessBrowser,getFecha, getDirectorioOSAW, getRutaCopiaHTML
+from datetime import datetime
 
-#Comprobar acceso y el tipo de la URL
-def comprobarAccesoyTipo(pagina_web):
+def errorLog(pagina_web,pagina_id,error):
+    #Para que no se escriban logs durante la ejecución crawler.py se indica pagina_id=0 
+    if pagina_id !=0:
+        fecha_test=getFecha()
+        directorio=getDirectorioOSAW()
+        fecha_absoluta= str(datetime.now())
+
+        ruta_archivo_logs=directorio+"/storage/logs/log_paginas_"+fecha_test+".txt"
+
+        log = open(ruta_archivo_logs, 'a')
+
+        log.write('PAGINA: "' + pagina_web +'"\n\tIDENTIFICADOR: "'+str(pagina_id)+ '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tDESCRIPCION ERROR: "'+error+ '"\n\n')
+        
+        log.close()
+
+#Función para comprobar el tipo del contenido obtenido en la respuesta 
+#Realizada para el crawler
+def comprobarTipoContenido(tipo,pagina_web,pagina_id):
+    if "text/html" in tipo:
+        return True
+    else:
+        error="El tipo de contenido no es text/html"
+        errorLog(pagina_web,pagina_id,error)
+        return False
+
+def comprobarContenido(contenido,pagina_web,pagina_id):
+    contenido=str(contenido).replace(' ','')
+
+    if len(contenido) > 40:
+        return True
+    else:
+        if pagina_id !=0:
+            error="El tamaño del contenido es inferior al mínimo requerido (40) para ser evaluado"
+            errorLog(pagina_web,pagina_id,error)
+        return False
+
+
+#Función para comprobar el código de respuesta de la petición
+def comprobarCodigoRespuesta(codigo_respuesta,pagina_web,pagina_id):
+    if codigo_respuesta == 200:
+        return True
+
+    elif codigo_respuesta == 301: #Redireccion permanente
+        error="La pagina se ha redirigido permanentemente [301]"
+        errorLog(pagina_web,pagina_id,error)
+        return False
+
+    elif codigo_respuesta == 302: #Redirección temporal
+        error="La pagina se ha redirigido temporalmente [302]"
+        errorLog(pagina_web,pagina_id,error)
+        return False
+    else:
+        error="No ha habido éxito en la petición"
+        errorLog(pagina_web,pagina_id,error)
+        return False
+
+#Función principal para comprobar el estado de una URL
+def comprobarAccesoPagina(pagina_web,pagina_id):
     try:
         #No se verifica el certificado SSL de la web - UMH
-        request = requests.get(pagina_web, verify=False, timeout=20)
+        peticion = requests.get(pagina_web, verify=False, allow_redirects=False, timeout=20)
 
-        tipo = request.headers.get('content-type')
+        codigo_respuesta=peticion.status_code
 
-        #Tipo de contenido buscado -> "text/html"
-        tipo = tipo.lower().replace(' ','')
+        if comprobarCodigoRespuesta(codigo_respuesta,pagina_web,pagina_id):
 
-        #Comprobamos si obtenemos respuesta satisfactoria y el tipo del contenido es text/html
-        if request.status_code == 200 and "text/html" in tipo:
-            return True
+            tipo= peticion.headers.get('content-type')
+
+            contenido=peticion.text
+
+            if comprobarTipoContenido(tipo,pagina_web,pagina_id) and comprobarContenido(contenido,pagina_web,pagina_id):
+                return True
+            else:
+                return False
         else:
             return False
     except requests.ConnectionError:
+        error="No se puede acceder a la página"
+        errorLog(pagina_web,pagina_id,error)
         return False
+
 
 #Función para obtener el valor hash de una copia HTML
 def getHASH(ruta_archivo):

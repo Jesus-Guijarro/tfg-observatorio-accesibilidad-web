@@ -97,7 +97,7 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
         desconexionDB(conexion)
 
     except Exception as e:
-        errorLog(directorio,1,fecha_test,herramienta,pagina_id,e)
+        errorLog(directorio,fecha_test,herramienta,pagina_id,e)
 
     driver.quit()
 

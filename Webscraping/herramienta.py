@@ -107,23 +107,16 @@ def getRutaCopiaHTML(directorio,pagina_id, nuevo):
 
     return ruta
 
-#Método para escribir el archivo logs.txt el error encontrado
-#   Tipo 1 -> Error provocado durante la ejecución de una herramienta
-#   Tipo 2 -> Error provocado al no poder acceder a una web
-#   Herramienta vacio en caso de ser tipo 2 ó 3
-def errorLog(directorio,tipo,fecha_test,herramienta,identificador,error):
+#Método para escribir error producidos durante los análisis de las herramientas
+def errorLog(directorio,fecha_test,herramienta,identificador,error):
 
-    ruta_archivo_logs=directorio+"/storage/logs/log_"+fecha_test+".txt"
+    ruta_archivo_logs=directorio+"/storage/logs/log_herramientas_"+fecha_test+".txt"
 
     #Para tener más información de la fecha obtenemos también los datos de hora, minutos y segundos
     fecha_absoluta= str(datetime.now())
 
     log = open(ruta_archivo_logs, 'a')
-     
-    if tipo==1: 
-        log.write('[01]\tERROR HERRAMIENTA: "' + herramienta + '"\t\tFECHA: "'+ fecha_absoluta+'"\t\tPAGINA WEB: "' + identificador +'"\t\tDESCRIPCION: "'+repr(error)+ '"\n')
-    elif tipo==2:
-        log.write('[02]\tERROR ACCESSO PAGINA WEB: "' + identificador + '"\t\tFECHA: "'+ fecha_absoluta +'" \n')
+    log.write('HERRAMIENTA: "' + herramienta + '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tPAGINA WEB: "' + identificador +'"\n\tDESCRIPCION ERROR: "'+repr(error)+ '"\n\n')
     
     log.close()
 

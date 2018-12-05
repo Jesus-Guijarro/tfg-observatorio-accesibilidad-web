@@ -45,8 +45,8 @@ def crearTarea(sitio_id,periodicidad,hora,dia,cursor):
     if periodicidad == "Semanal": #Semanal
         #Verificacion de los dias disponibles de la semana
         if dia<0 or dia>6:
-            error=mensaje_error+"-ERROR: Día de la semana incorrecto. Valores posibles: 0 - 6"
-            raise Exception(mensaje_error)
+            error=mensaje_error+"- ERROR: Día de la semana incorrecto. Valores posibles: 0 - 6"
+            raise Exception(error)
         else:
             tarea.dow.on(dia)
             cron.write() 
@@ -54,8 +54,8 @@ def crearTarea(sitio_id,periodicidad,hora,dia,cursor):
     elif periodicidad == "Mensual": # Mensual
         #Comprobacion de los dias del mes posibles
         if dia<1 or dia>31:
-            error=mensaje_error+"-ERROR: Día del mes incorrecto. Valores posibles: 1 - 31"
-            raise Exception(mensaje_error)
+            error=mensaje_error+"- ERROR: Día del mes incorrecto. Valores posibles: 1 - 31"
+            raise Exception(error)
         else:
             tarea.day.on(dia)
             cron.write()

@@ -2,7 +2,7 @@ import io, json, mysql.connector, os, sys
 
 from selenium import webdriver
 from database import conexionDB,desconexionDB
-from comprobaciones import comprobarAccesoyTipo, comprobarCopiaHTML
+from comprobaciones import comprobarAccesoPagina, comprobarCopiaHTML
 from herramienta import copiarDatosAntiguos, getFecha, getDirectorioOSAW, errorLog, ejecutarHerramienta
 
 
@@ -24,7 +24,7 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
 
         if int(pagina_id)==250:
             #Comprobar acceso a la página web
-            if comprobarAccesoyTipo(pagina_url):
+            if comprobarAccesoPagina(pagina_url,pagina_id):
                 #Comprobar cambios en la página web por si es necesario evaluar
                 if comprobarCopiaHTML(pagina_id):
                     for h in herramientas_activas:

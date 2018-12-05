@@ -2,7 +2,7 @@ import io, json, mysql.connector, os, sys
 
 from selenium import webdriver
 from database import conexionDB,desconexionDB
-from comprobaciones import comprobarAccesoyTipo, comprobarCopiaHTML
+from comprobaciones import comprobarAccesoPagina, comprobarCopiaHTML
 from herramienta import copiarDatosAntiguos, getFecha, getDirectorioOSAW, errorLog, ejecutarHerramienta
 
 
@@ -23,7 +23,7 @@ def ejecutar(sitio_id,herramientas_activas,conexion,cursor):
         pagina_id=str(pagina.__getitem__(1))
 
         #Comprobar acceso a la página web
-        if comprobarAccesoyTipo(pagina_url):
+        if comprobarAccesoPagina(pagina_url,pagina_id):
             #Comprobar cambios en la página web por si es necesario evaluar
             if comprobarCopiaHTML(pagina_id):
                 for h in herramientas_activas:
@@ -32,10 +32,6 @@ def ejecutar(sitio_id,herramientas_activas,conexion,cursor):
                 for h in herramientas_activas:
                     copiarDatosAntiguos(herramientas[h],h,pagina_url,pagina_id,cursor)
                     
-        else:
-            fecha_test=getFecha()
-            directorio=getDirectorioOSAW()
-            errorLog(directorio,2,fecha_test,"",pagina_id,"")
 
 
 #Argumento sys.argv[1] -> id del sitio web

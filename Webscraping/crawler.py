@@ -5,7 +5,7 @@ import sys, requests, mysql.connector
 from selenium import webdriver
 from database import conexionDB,desconexionDB
 from herramienta import driverHeadlessBrowser
-from comprobaciones import comprobarAccesoyTipo
+from comprobaciones import comprobarAccesoPagina
 
 
 #Función para comprobar que la referencia tiene un formato: https://dominio... o http://dominio y que no incluye el símbolo /# de menús y submenús de navegación
@@ -80,7 +80,7 @@ def getPaginas(sitio_id,url,num_paginas,profundidad,conexion,cursor):
         cantidad=resultado.__getitem__(0)
         #Si el resultado es 0 se comprueba y se añade en caso de que se pueda acceder a ella
         if cantidad==0:
-            if comprobarAccesoyTipo(pagina): 
+            if comprobarAccesoPagina(pagina,0): 
                 #Se guardan las páginas que han pasado los filtros
                 cursor.execute("insert into paginas(sitio_id,URL) values(%s,%s)",(sitio_id,pagina,))
                 paginas_validas.append(pagina)
