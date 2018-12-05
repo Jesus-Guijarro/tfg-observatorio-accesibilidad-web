@@ -1,26 +1,66 @@
-import requests
+import io, json, mysql.connector, os, sys
 
-pagina_web="http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_ir_al_medico"
+from selenium import webdriver
+from database import conexionDB,desconexionDB
+from comprobaciones import comprobarAccesoyTipo, comprobarCopiaHTML
+from herramienta import copiarDatosAntiguos, getFecha, getDirectorioOSAW, errorLog, ejecutarHerramienta
 
-def comprobarAccesoyTipo(pagina_web):
-    try:
-        #No se verifica el certificado SSL de la web - UMH
-        request = requests.get(pagina_web, verify=False, timeout=20)
 
-        tipo = request.headers.get('content-type')
+#Método principal encargado de realizar la evaluación del sitio: checker y llamadas a las herramientas
+def run(sitio_id,herramientas_activas,conexion,cursor):
+    #Obtenenemos las herramientas seleccionadas para evaluar el sitio web en cuestión
+    cursor.execute("select herramientas from sitios where id = %s", (sitio_id,))
 
-        print(tipo)
-        print(request.status_code)
+    sitio = cursor.fetchone()
+    herramientas=json.loads(sitio.__getitem__(0)) #Se decodifica el JSON
 
-        #Tipo de contenido buscado -> "text/html"
-        tipo = tipo.lower().replace(' ','')
+    #Comprobamos las páginas web en caso de que sea necesario analizarlas o no
+    cursor.execute("select URL,id from paginas where sitio_id = %s", (sitio_id,))
+    paginas = cursor.fetchall()
 
-        #Comprobamos si obtenemos respuesta satisfactoria y el tipo del contenido es text/html
-        if request.status_code == 200 and "text/html" in tipo:
-            return True
-        else:
-            return False
-    except requests.ConnectionError:
-        return False
+    for pagina in paginas:
+        pagina_url=pagina.__getitem__(0)
+        pagina_id=str(pagina.__getitem__(1))
 
-print(comprobarAccesoyTipo(pagina_web))
+        if int(pagina_id)==250:
+            #Comprobar acceso a la página web
+            if comprobarAccesoyTipo(pagina_url):
+                #Comprobar cambios en la página web por si es necesario evaluar
+                if comprobarCopiaHTML(pagina_id):
+                    for h in herramientas_activas:
+                        ejecutarHerramienta(herramientas[h],h,pagina_id,pagina_url)
+                else:
+                    for h in herramientas_activas:
+                        copiarDatosAntiguos(herramientas[h],h,pagina_url,pagina_id,cursor)
+                        
+            else:
+                fecha_test=getFecha()
+                directorio=getDirectorioOSAW()
+                errorLog(directorio,2,fecha_test,"",pagina_id,"")
+
+
+#Argumento sys.argv[1] -> id del sitio web
+sitio_id=sys.argv[1]
+
+
+
+#Conexión base de datos
+parametros = conexionDB()
+conexion= parametros[0]
+cursor = parametros[1]
+
+#Listado con las herramientas activas para ser usadas
+'''
+cursor.execute("select descripcion from herramientas where activa = %s", (True,))
+herramientas = cursor.fetchall()
+
+herramientas_activas=[]
+
+for herramienta in herramientas:
+    herramientas_activas.append(str(herramienta.__getitem__(0)))
+'''
+herramientas_activas=["eiiichecker"]
+
+run(sitio_id,herramientas_activas,conexion,cursor)
+desconexionDB(conexion)
+

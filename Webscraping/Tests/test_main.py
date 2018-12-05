@@ -22,7 +22,7 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
         pagina_url=pagina.__getitem__(0)
         pagina_id=str(pagina.__getitem__(1))
 
-        if int(pagina_id)==40:
+        if int(pagina_id)==250:
             #Comprobar acceso a la página web
             if comprobarAccesoyTipo(pagina_url):
                 #Comprobar cambios en la página web por si es necesario evaluar
@@ -50,6 +50,7 @@ conexion= parametros[0]
 cursor = parametros[1]
 
 #Listado con las herramientas activas para ser usadas
+'''
 cursor.execute("select descripcion from herramientas where activa = %s", (True,))
 herramientas = cursor.fetchall()
 
@@ -57,6 +58,8 @@ herramientas_activas=[]
 
 for herramienta in herramientas:
     herramientas_activas.append(str(herramienta.__getitem__(0)))
+'''
+herramientas_activas=["eiiichecker"]
 
 run(sitio_id,herramientas_activas,conexion,cursor)
 desconexionDB(conexion)
