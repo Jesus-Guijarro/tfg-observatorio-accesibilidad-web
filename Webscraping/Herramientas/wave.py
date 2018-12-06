@@ -14,13 +14,16 @@ from time import time
 
 #Obtenemos los datos a guardar en el reporte
 def getDatos(categoria,datos,reporte):
-    
-    reporte.write(categoria+"\n")
+    try:
+        reporte.write(categoria+"\n")
 
-    valores = datos.values()
-    for v in valores:
-        reporte.write(str(v["description"]) +"\t  VECES ENCONTRADO: "+ str(v["count"])+"\n")
-    reporte.write("\n\n")
+        valores = datos.values()
+        
+        for v in valores:
+            reporte.write(str(v["description"]) +"\t  VECES ENCONTRADO: "+ str(v["count"])+"\n")
+        reporte.write("\n\n")
+    except Exception as e:
+        pass
 
 #Método para ejecutar el proceso de evaluación
 def ejecutarWAVE(pagina_id,pagina_url,herramienta,conexion,cursor):

@@ -81,8 +81,8 @@ def comprobarAccesoPagina(pagina_web,pagina_id):
         else:
             return False
 
-    except requests.ConnectionError:
-        error="No se puede acceder a la página"
+    except Exception as e:
+        error="No se puede acceder a la página. Excepción: " + repr(e)
         errorLog(pagina_web,pagina_id,error)
         return False
 
