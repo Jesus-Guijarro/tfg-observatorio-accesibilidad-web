@@ -1,0 +1,18 @@
+REPORTE PÁGINA WEB: http://www.renfe.com/viajeros/atendo/informacion_cliente.html
+FECHA EVALUACIÓN: 2018-12-06
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 4 imágenes en las que la leyenda es un espacio vacío
+Se constató que todos los botones gráficos tienen un título
+Se encontró 1 caso en que los encabezados no respetan la cadena jerárquica
+Se encontraron 13 elementos de encabezado
+Se identificaron 12 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se constató que todos los formularios tienen un botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se han encontrado 26 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es-ES"

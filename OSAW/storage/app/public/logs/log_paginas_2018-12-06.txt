@@ -1,0 +1,5 @@
+PAGINA: "http://www.ciencia.gob.es"
+	IDENTIFICADOR: "131"
+	FECHA: "2018-12-06 13:30:02.286962"
+	ERROR: "La pagina se ha redirigido temporalmente [302]"
+

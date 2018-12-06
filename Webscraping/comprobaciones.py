@@ -16,7 +16,7 @@ def errorLog(pagina_web,pagina_id,error):
 
         log = open(ruta_archivo_logs, 'a')
 
-        log.write('PAGINA: "' + pagina_web +'"\n\tIDENTIFICADOR: "'+str(pagina_id)+ '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tDESCRIPCION ERROR: "'+error+ '"\n\n')
+        log.write('PAGINA: "' + pagina_web +'"\n\tIDENTIFICADOR: "'+str(pagina_id)+ '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tERROR: "'+error+ '"\n\n')
         
         log.close()
 
@@ -46,7 +46,6 @@ def comprobarContenido(contenido,pagina_web,pagina_id):
 def comprobarCodigoRespuesta(codigo_respuesta,pagina_web,pagina_id):
     if codigo_respuesta == 200:
         return True
-
     elif codigo_respuesta == 301: #Redireccion permanente
         error="La pagina se ha redirigido permanentemente [301]"
         errorLog(pagina_web,pagina_id,error)
@@ -81,6 +80,7 @@ def comprobarAccesoPagina(pagina_web,pagina_id):
                 return False
         else:
             return False
+
     except requests.ConnectionError:
         error="No se puede acceder a la página"
         errorLog(pagina_web,pagina_id,error)

@@ -1,0 +1,681 @@
+REPORTE PÁGINA WEB: http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia
+FECHA EVALUACIÓN: 2018-12-06
+
+
+Principio: 1.Perceptible
+Descripcion: La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+	Pauta: 1.1..Alternativas textuales
+	Descripcion: Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple
+
+		Criterio: 1.1.1..Contenido no textual
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H35-Proporcionando textos alternativos a elementos applet
+			Criticidad: Alta
+			Observación: No se han encontrado elementos applet en la p&aacute;gina.<br/>
+			Recomendación: Se recomienda colocar una alternativa textual a los elementos applet, para tener conocimiento de su funci&oacute;n.<br/>
+			Número de errores: 0
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H45-Usando longdesc
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado im&aacute;genes que usen el atributo longdesc para referirse a una larga descripci&oacute;n contenida en un recurso independiente, que sean necesarias como alternativa no textual para una im&aacute;gen.<br/>
+			Recomendación: Use el atributo longdesc en una im&aacute;gen cuando una alternativa textual breve no transmite adecuadamente la funci&oacute;n o la informaci&oacute;n proporcionada en la im&aacute;gen.<br/>
+			Número de errores: 0
+
+			Código: H37-Usando atributos alt en elementos img
+			Criticidad: Media
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong>, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img src="/profiles/idae/themes/idae_static/logo-ga.jpg" alt="Gobierno de España" title="Gobierno de España" id="logo-ga"></xmp></li><li><xmp><img src="http://www.idae.es/profiles/idae/themes/idae_static/logo.png" alt="IDAE " title="IDAE " id="logo"></xmp></li><li><xmp><img src="http://www.idae.es/sites/default/files/styles/imagenes_news/public/imagenes/proyectos_de_excelencia/led02.jpg?itok=FsFE_Sli" width="293" height="195" alt="Iluminación Led" title=""></xmp></li><li><xmp><img src="http://www.idae.es/sites/default/files/styles/imagenes_news/public/imagenes/proyectos_de_excelencia/persianastoldos02.jpg?itok=QcAzxC9E" width="293" height="195" alt="" title="Persianas"></xmp></li><li><xmp><img src="http://www.idae.es/sites/default/files/styles/imagenes_news/public/imagenes/proyectos_de_excelencia/elctrodomesticos07.jpg?itok=rOkSDMYN" width="293" height="195" alt="Electrodomésticos eficientes" title=""></xmp></li><li><xmp><img src="/profiles/idae/themes/idae_static/logo-ue.svg" alt="Unión Europea" title="Unión Europea" id="logo-ue"></xmp></li><li><xmp><img src="/profiles/idae/themes/idae_static/images/logo-idae.png" alt="IDAE " title="IDAE " id="logo-idae"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H67-Usando texto alternativo nulo y no el atributo title en el elemento img para imágenes que AT puedan ignorar
+			Criticidad: Media
+			Observación: De un total de 7 im&aacute;genes que se encontraron en la p&aacute;gina con texto alternativo, 1 tienen un valor nulo o sin contenido. Verifique que correspondan a imagenes decorativas. <pre><ul><li><xmp><img src="http://www.idae.es/sites/default/files/styles/imagenes_news/public/imagenes/proyectos_de_excelencia/persianastoldos02.jpg?itok=QcAzxC9E" width="293" height="195" alt="" title="Persianas"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 1
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+			Código: C18-Usando reglas margin y padding en lugar de imágenes de espaciador para diseñar un layout
+			Criticidad: Baja
+			Observación: Las tablas estan correctamente estructuradas respecto a m&aacute;rgenes y separadores de texto de los bordes.<br/>
+			Recomendación: Se debe tener en cuenta la separaci&oacute;n del texto respecto a las celdas en las tablas.<br/>
+			Número de errores: 0
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H36-Usando atributos alt en imágenes que se utilizan como botones de envio
+			Criticidad: Alta
+			Observación: No se han encontrado botones de tipo im&aacute;gen en la p&aacute;gina..<br/>
+			Recomendación: En el caso de hacer uso de botones de tipo im&aacute;gen, estos deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la acci&oacute;n del bot&oacute;n)..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: OAW1-Usando videos decorativos
+			Criticidad: Media
+			Observación: No se han encontrado videos en esta p&aacute;gina..<br/>
+			Recomendación: En caso de tener v&iacute;deos decorativos, es recomendable marcarlos como tal con atributos ARIA, esto evita que los usuarios con tecnolog&iacute;as de asistencia tengan dificultades al encontrar videos sin altenativas textuales..<br/>
+			Número de errores: 0
+
+			Código: H88-Usando HTML de acuerdo a la especificación
+			Criticidad: Alta
+			Observación: No se han encontrado elementos obsoletos dentro de la p&aacute;gina..<br/>
+			Recomendación: Ciertas etiquetas y atributos viejos de HTML han sido suspendidos para utilizar en su lugar alternativas m&aacute;s flexibles (como HTML o CSS). Es recomendable siempre adoptar los est&aacute;ndares HTML..<br/>
+			Número de errores: 0
+
+	Pauta: 1.2..Medios tempodependientes
+	Descripcion: Proporcionar alternativas para los medios tempodependientes
+
+		Criterio: 1.2.1..Sólo audio y sólo vídeo (grabado)
+		Nivel: A
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.4..Subtítulos (en directo)
+		Nivel: AA
+
+		Criterio: 1.2.3..Audiodescripción o Medio Alternativo (grabado)
+		Nivel: A
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.8..Medio alternativo (grabado)
+		Nivel: AAA
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.2..Subtítulos (grabados)
+		Nivel: A
+
+			Código: G87-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado videos en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los videos, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+			Código: G87B-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado audios en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los audios, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+	Pauta: 1.3..Adaptable
+	Descripcion: Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura
+
+		Criterio: 1.3.2..Secuencia con significado
+		Nivel: A
+
+			Código: C27A-Haciendo el DOM ordenado para marcar el orden visual: A) Elementos con posicionamiento flotante sin especificar
+			Criticidad: Media
+			Observación: De las 274 reglas CSS en la p&aacute;gina, 15 de ellas usan declaraciones de elementos de forma flotante (float:inherit|none|left|rigth).<pre><ul><li><xmp>.stButton .stMainServices img, .stButton img { border-top-style: none !important; border-right-style: none !important; border-bottom-style: none !important; border-left-style: none !important; border-width: initial !important; border-color: initial !important; margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 0px !important; z-index: 100000 !important; background-image: none !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; float: none !important; background-position: initial initial !important; background-repeat: initial initial !important; }</xmp></li><li><xmp>.stCSSSprite { display: inline-block; vertical-align: top; background-image: url(https://ws.sharethis.com/secure/images/service-icons-sprite.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; height: 16px; width: 16px; margin-top: 3px; margin-right: 3px; margin-bottom: 3px; margin-left: 3px; float: left; line-height: 16px; background-position: initial initial; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp><div id="cboxTopLeft" style="float: left; "></div></xmp></li><li><xmp><div id="cboxTopCenter" style="float: left; "></div></xmp></li><li><xmp><div id="cboxTopRight" style="float: left; "></div></xmp></li><li><xmp><div id="cboxMiddleLeft" style="float: left; "></div></xmp></li><li><xmp><div id="cboxContent" style="float: left; "><div id="cboxTitle" style="float: left; "></div><div id="cboxCurrent" style="float: left; "></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left; "></div><div id="cboxLoadingGraphic" style="float: left; "></div></div></xmp></li><li><xmp><div id="cboxTitle" style="float: left; "></div></xmp></li><li><xmp><div id="cboxCurrent" style="float: left; "></div></xmp></li><li><xmp><div id="cboxLoadingOverlay" style="float: left; "></div></xmp></li><li><xmp><div id="cboxLoadingGraphic" style="float: left; "></div></xmp></li><li><xmp><div id="cboxMiddleRight" style="float: left; "></div></xmp></li><li><xmp><div id="cboxBottomLeft" style="float: left; "></div></xmp></li><li><xmp><div id="cboxBottomCenter" style="float: left; "></div></xmp></li><li><xmp><div id="cboxBottomRight" style="float: left; "></div></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 15
+
+			Código: H56-Usando el atributo dir en un elemento en linea para resolver problemas con secuencias direccionales anidadas 
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han segmentos de texto definidos en un idioma espec&iacute;fico..<br/>
+			Recomendación: En caso de que un texto en la p&aacute;gina se encuentre en un idioma distito al de la misma, se debe especificar el idioma y en caso de ser necesario la direcci&oacute;n de lectura por medio del atributo <code>dir</code>.  Para mayor informaci&oacute;n refierase a <a haref=https://www.w3.org/TR/html4/struct/dirlang.html>Informaci&oacute;n sobre el idioma y la direcci&oacute;n de lectura de un texto</a>.<br/>
+			Número de errores: 0
+
+			Código: C6-Proporcionando contenido basado en marcadores estructurales
+			Criticidad: Baja
+			Observación: De las 265 reglas CSS en la p&aacute;gina, 9 de ellas usan declaraciones de elementos de forma absoluta (position:asolute).<pre><ul><li><xmp>#stLframe { position: absolute; z-index: 1000020; left: 0px; top: 0px; background-color: rgb(237, 237, 237); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(213, 220, 220); border-right-color: rgb(213, 220, 220); border-bottom-color: rgb(213, 220, 220); border-left-color: rgb(213, 220, 220); border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; border-bottom-right-radius: 5px 5px; border-bottom-left-radius: 5px 5px; box-shadow: rgb(102, 102, 102) 0px 2px 2px; height: 100%; width: 100%; }</xmp></li><li><xmp>.stclose { z-index: 2000000; position: absolute; right: 3px; top: -2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: Helvetica, Arial, sans-serif; text-align: left; line-height: 1em; text-decoration: none; cursor: pointer; height: 28px; width: 26px; }</xmp></li><li><xmp>.stCloseNew2 { z-index: 2000000; position: absolute; right: 25px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: left; text-decoration: none; cursor: pointer; height: 25px; width: 30px; }</xmp></li><li><xmp>.stCloseNew { background-image: url(https://ws.sharethis.com/secure5x/images/widget-icons-sprite.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; cursor: pointer; display: inline-block; height: 30px; position: absolute; right: 26px; top: -10px; width: 30px; z-index: 2000000; background-position: -3px -131px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.stButton .stBubbleSmHoriz { background-image: url(https://ws.sharethis.com/images/bubble_sm_horiz.png); width: 36px; height: 25px; color: rgb(255, 255, 255); line-height: 16px; position: absolute; right: 30px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.stToolPop-absolute { position: absolute; }</xmp></li><li><xmp><iframe src="https://c.sharethis.mgr.consensu.org/v1.0/cmp/portal.html" id="st_gdpr_iframe" style="width: 0px; height: 0px; position: absolute; left: -5000px; "></iframe></xmp></li><li><xmp><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none; "></div></xmp></li><li><xmp><div id="stcpDiv" style="position: absolute; top: -1999px; left: -1988px; ">ShareThis Copy and Paste</div></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 9
+
+			Código: C8-Usando la propiedad letter-spacing de CSS para controlar el espacio dentro de una palabra
+			Criticidad: Baja
+			Observación: No se han detectado textos sospechosos en los que palabras se han formado usando espacios en blanco..<br/>
+			Recomendación: En el caso de requerir por efectos visuales el destarcar cada letra de una palabra por medio de separaciones, utilice la propiedad CSS <code>letter-spacing</code>.<br/>
+			Número de errores: 0
+
+			Código: C27B-Haciendo el DOM ordenado para marcar el orden visual: B) Elementos con posicionamiento absoluto
+			Criticidad: Media
+			Observación: De las 249 reglas CSS en la p&aacute;gina, 25 de ellas usan declaraciones de elementos de forma absoluta (position:asolute|relative|fix).<pre><ul><li><xmp>#stOverlay { height: 100%; width: 100%; background-color: rgb(0, 0, 0); opacity: 0.6; position: fixed; display: none; left: 0px; top: 0px; z-index: 89999990; }</xmp></li><li><xmp>.stwrapper { z-index: 89999999; position: fixed; top: 20%; left: 50%; }</xmp></li><li><xmp>#stLframe { position: absolute; z-index: 1000020; left: 0px; top: 0px; background-color: rgb(237, 237, 237); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(213, 220, 220); border-right-color: rgb(213, 220, 220); border-bottom-color: rgb(213, 220, 220); border-left-color: rgb(213, 220, 220); border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; border-bottom-right-radius: 5px 5px; border-bottom-left-radius: 5px 5px; box-shadow: rgb(102, 102, 102) 0px 2px 2px; height: 100%; width: 100%; }</xmp></li><li><xmp>.stclose { z-index: 2000000; position: absolute; right: 3px; top: -2px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: Helvetica, Arial, sans-serif; text-align: left; line-height: 1em; text-decoration: none; cursor: pointer; height: 28px; width: 26px; }</xmp></li><li><xmp>.stCloseNew2 { z-index: 2000000; position: absolute; right: 25px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: left; text-decoration: none; cursor: pointer; height: 25px; width: 30px; }</xmp></li><li><xmp>.stCloseNew { background-image: url(https://ws.sharethis.com/secure5x/images/widget-icons-sprite.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; cursor: pointer; display: inline-block; height: 30px; position: absolute; right: 26px; top: -10px; width: 30px; z-index: 2000000; background-position: -3px -131px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.stNativeButton { margin-left: 3px; margin-right: 3px; position: relative; top: 7px; }</xmp></li><li><xmp>.stTwitterFollow { top: 0px; text-decoration: none; color: rgb(0, 0, 0); display: inline-block; cursor: pointer; position: relative; margin-top: 3px; margin-right: 3px; margin-bottom: 0px; margin-left: 3px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-size: 11px; line-height: 16px; vertical-align: bottom; overflow-x: visible; overflow-y: visible; }</xmp></li><li><xmp>.stButton { position: relative; z-index: 1; text-decoration: none; color: rgb(0, 0, 0); display: inline-block; cursor: pointer; margin-right: 3px; margin-left: 3px; font-size: 11px; line-height: 16px; }</xmp></li><li><xmp>.stButton .stBubbleSmHoriz { background-image: url(https://ws.sharethis.com/images/bubble_sm_horiz.png); width: 36px; height: 25px; color: rgb(255, 255, 255); line-height: 16px; position: absolute; right: 30px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.stButton .stHBubble { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); margin-left: 3px; margin-right: 3px; position: relative; z-index: -1; display: none; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.stButton .stBubble_count { font-size: 14px; line-height: 18px; font-weight: bold; text-align: center; padding-top: 10px; width: 58px; height: 29px; font-family: Helvetica, sans-serif; color: rgb(85, 85, 85); position: relative; z-index: -1; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.stButton .st_fsIcon { position: relative; top: 1px; }</xmp></li><li><xmp>.stButton .stLarge { background-size: cover; display: inline-block; height: 32px; width: 32px; position: relative; }</xmp></li><li><xmp>.stButton .stHuge { display: inline-block; height: 64px; width: 64px; position: relative; }</xmp></li><li><xmp>.stButton .stSmall, .stButton .stSmall2 { display: inline-block; height: 16px; width: 16px; position: relative; }</xmp></li><li><xmp>.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices { background-image: url(https://ws.sharethis.com/images/2017/facebook_counter.png); background-size: cover; box-sizing: content-box !important; display: inline-block; white-space: nowrap; font-family: Verdana, Helvetica, sans-serif; font-size: 11px; height: 16px !important; min-height: 16px !important; padding-top: 3px; padding-bottom: 3px; line-height: 16px; width: auto; position: relative; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.stCSSHArrow { display: block; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 5px; border-top-style: solid; border-top-color: transparent; border-right-width: 5px; border-right-style: solid; border-right-color: rgb(238, 238, 238); border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: transparent; position: relative; top: -5px; left: 1px; }</xmp></li><li><xmp>.stCSSVArrow { width: 0px; height: 0px; border-top-width: 6px; border-top-style: solid; border-top-color: rgb(255, 255, 255); border-left-width: 6px; border-left-style: solid; border-left-color: transparent; border-right-width: 6px; border-right-style: solid; border-right-color: transparent; position: relative; top: -7px; left: -6px; z-index: 5; }</xmp></li><li><xmp>.st_fblike_fbLong { vertical-align: text-top; position: relative; top: -1px; }</xmp></li><li><xmp>.stToolPop-absolute { position: absolute; }</xmp></li><li><xmp>.stToolPop-fixed { position: fixed; }</xmp></li><li><xmp><iframe src="https://c.sharethis.mgr.consensu.org/v1.0/cmp/portal.html" id="st_gdpr_iframe" style="width: 0px; height: 0px; position: absolute; left: -5000px; "></iframe></xmp></li><li><xmp><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none; "></div></xmp></li><li><xmp><div id="stcpDiv" style="position: absolute; top: -1999px; left: -1988px; ">ShareThis Copy and Paste</div></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 25
+
+		Criterio: 1.3.1..Información y relaciones
+		Nivel: A
+
+			Código: G140-Separando la información y la estructura de la presentación para permitir diferentes presentaciones
+			Criticidad: Alta
+			Observación: El sitio se ha estructurado mezclando el contenido con la presentaci&oacute;n por medio de la definici&oacute;n de estilos CSS en el contenido HTML. Los componentes que presentan este problema son: <pre><code><ul><li><xmp><input class="form-text" id="edit-search-block-form--2" maxlength="128" name="text" size="15" style="width: 0px; " title="Escriba lo que quiere buscar." type="text" value=""></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first expanded menu-mlid-3400 nivel1 cerrado"><a href="/conozcanos">CONÓZCANOS</a><ul class="menu" style="height: 484px; "><li class="first expanded menu-mlid-3143 nivel2 cerrado"><a href="/conozcanos/quienes-somos">Quiénes somos</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3358"><a href="/conozcanos/quienes-somos/nuestra-historia">Historia</a></li><li class="leaf menu-mlid-3146 nivel3"><a href="/conozcanos/quienes-somos/nuestro-regimen-juridico">Régimen jurídico</a></li><li class="leaf menu-mlid-3147 nivel3"><a href="/conozcanos/quienes-somos/gobierno-corporativo" target="_blank">Gobierno corporativo</a></li><li class="leaf has-children menu-mlid-3239"><a href="/conozcanos/quienes-somos/nuestro-organigrama">Nuestro Organigrama</a></li><li class="last leaf menu-mlid-3359"><a href="/conozcanos/quienes-somos/donde-estamos">Dónde estamos</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3149 nivel3 cerrado"><a href="/conozcanos/recursos-humanos">Recursos humanos</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3476"><a href="/conozcanos/recursos-humanos/convocatorias">Convocatorias</a></li><li class="last leaf menu-mlid-3477"><a href="/conozcanos/recursos-humanos/resoluciones">Resoluciones</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3152 nivel3"><a href="/conozcanos/proyeccion-internacional">Proyección internacional</a></li><li class="leaf menu-mlid-3380"><a href="/conozcanos/hitos-idae">Hitos</a></li><li class="last leaf menu-mlid-3429"><a href="/conozcanos/proyectos-de-excelencia">Proyectos de excelencia</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3375 cerrado"><a href="/informacion-y-publicaciones">Información y Publicaciones</a><ul class="menu" style="height: 484px; "><li class="first leaf menu-mlid-3459"><a href="/noticias-grid">Noticias</a></li><li class="leaf menu-mlid-3495"><a href="/articulos-grid">Artículos técnicos</a></li><li class="leaf menu-mlid-3270"><a href="/eventos">Agenda</a></li><li class="leaf menu-mlid-3456"><a href="/publicaciones">Publicaciones</a></li><li class="leaf menu-mlid-4169"><a href="/bases-de-datosherramientas">Bases de Datos/Herramientas</a></li><li class="last leaf menu-mlid-4155"><a href="/estudios-informes-y-estadisticas">Estudios, informes y estadísticas</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3141 nivel1 cerrado"><a href="/ayudas-y-financiacion">Ayudas y financiación</a><ul class="menu" style="height: 484px; "><li class="first expanded menu-mlid-3217 cerrado"><a href="/ayudas-y-financiacion/fondo-europeo-de-desarrollo-regional-feder-0">Fondos FEDER</a><ul class="menu" style="height: auto; "><li class="first last leaf menu-mlid-3280"><a href="/ayudas-y-financiacion/fondos-feder/rebeca-red-de-economia-baja-en-carbono">REBECA. Red de Economía Baja en Carbono</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3361 cerrado"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica">Fondo Nacional de Eficiencia Energética</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-4171"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica/ingreso-aportaciones-al-fondo-nacional">Ingreso aportaciones al Fondo Nacional de Eficiencia Energética 2018</a></li><li class="leaf menu-mlid-4172"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica/ingreso-aportaciones-al-fondo-1">Ingreso aportaciones al Fondo Nacional de Eficiencia Energética 2017</a></li><li class="last leaf menu-mlid-3406"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica/ingreso-aportaciones-al-fondo-0">Ingreso aportaciones al Fondo Nacional de Eficiencia Energética 2016</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3367 cerrado"><a href="/ayudas-y-financiacion/programa-de-ayudas-para-la-rehabilitacion-energetica-de-edificios-existentes">Para rehabilitación de edificios (Programa PAREER)</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3518"><a href="/ayudas-y-financiacion/para-rehabilitacion-de-edificios-programa-pareer/segunda-convocatoria-del">Segunda Convocatoria del Programa de Ayudas para la Rehabilitación Energética de Edificios existentes (Programa PAREER II)</a></li><li class="last leaf menu-mlid-3521"><a href="/ayudas-y-financiacion/para-rehabilitacion-de-edificios-programa-pareer/programa-de-ayudas-para-la">Programa de Ayudas para la Rehabilitación Energética de Edificios existentes (Programa PAREER-CRECE)</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3468"><a href="/ayudas-y-financiacion/para-la-renovacion-de-alumbrado-exterior-fnee">Para la renovación de instalaciones de alumbrado exterior (FNEE)</a></li><li class="leaf menu-mlid-3497"><a href="/ayudas-y-financiacion/para-proyectos-de-inversion-que-favorezcan-el-paso-una-economia-baja-en">Para proyectos de inversión que favorezcan el paso a una economía baja en carbono (FEDER -POPE 2014-2020)</a></li><li class="leaf menu-mlid-3504"><a href="/ayudas-y-financiacion/para-la-renovacion-energetica-de-edificios-e-infraestructuras-existentes-de-la">Para la renovación energética de edificios e infraestructuras existentes de la Administración General del Estado  (FEDER -POPE 2014-2020)</a></li><li class="expanded menu-mlid-3211 cerrado"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos">Para movilidad y vehículos</a><ul class="menu" style="height: auto; "><li class="first leaf has-children menu-mlid-3515"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/plan-movalt-vehiculos">Plan MOVALT Vehículos</a></li><li class="leaf menu-mlid-3514"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/plan-movalt-infraestructura">Plan MOVALT Infraestructura</a></li><li class="leaf menu-mlid-3467"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/programa-de-ayudas-para-actuaciones-de-cambio-modal">Programa de ayudas para actuaciones de cambio modal y uso más eficiente de los modos de transporte (FNEE)</a></li><li class="leaf menu-mlid-3370"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/beneficiarios-ayudas-pive-movele">Vehículo eficiente (PIVE y MOVELE)</a></li><li class="last leaf menu-mlid-3465"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/programa-de-ayudas-para-actuaciones-de-eficiencia">Programa de Ayudas para actuaciones de eficiencia energética en el sector ferroviario (FNEE)</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3212 cerrado"><a href="/ayudas-y-financiacion/para-eficiencia-energetica-en-la-industria">Para eficiencia energética en la industria</a><ul class="menu" style="height: auto; "><li class="first last leaf menu-mlid-3482"><a href="/ayudas-y-financiacion/para-eficiencia-energetica-en-la-industria/programa-de-ayudas-para-actuaciones">Programa de ayudas para actuaciones de eficiencia energética en PYME y gran empresa del sector industrial (FNEE)</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3300"><a href="/ayudas-y-financiacion/programa-de-ayudas-para-actuaciones-de-eficiencia-energetica-en-desaladoras">Para desalación de agua (FNEE)</a></li><li class="leaf menu-mlid-3509"><a href="/ayudas-y-financiacion/linea-de-financiacion-ico-idae-eficiencia-energetica-2017-2018">Línea de financiación “ICO-IDAE Eficiencia Energética 2017-2018”</a></li><li class="expanded menu-mlid-3216 cerrado"><a href="/ayudas-y-financiacion/para-instalaciones-de-energias-renovables">Para instalaciones de energías renovables</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3287"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-solcasa">Solcasa</a></li><li class="leaf menu-mlid-3288"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-biomcasa-ii">Biomcasa II</a></li><li class="leaf menu-mlid-3289"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-geotcasa">Geotcasa</a></li><li class="last leaf menu-mlid-3290"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-git">GIT</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3286"><a href="/ayudas-y-financiacion/fondo-jessica-fidae">FONDO JESSICA-F.I.D.A.E. (2007/2013)</a></li><li class="expanded menu-mlid-3213 cerrado"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae">Otras fórmulas de financiación del IDAE</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3291"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae/financiacion-por-terceros-fpt">Financiación por Terceros (F.P.T.)</a></li><li class="leaf menu-mlid-3293"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae/otras-participaciones-financieras-del">Otras participaciones del IDAE en proyectos energéticos</a></li><li class="last leaf menu-mlid-3490"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae/financiacion-de-proyecto-y">Financiación de Proyecto y Arrendamiento de Servicios</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3294 cerrado"><a href="/ayudas-y-financiacion/ayudas-en-comunidades-autonomas">Ayudas en Comunidades Autónomas</a><ul class="menu" style="height: auto; "><li class="first last leaf menu-mlid-4170"><a href="/ayudas-y-financiacion/ayudas-en-comunidades-autonomas/donde-informarse-en-las-ccaa">Dónde informarse en las CC.AA.</a></li></ul><div class="view-more"></div></li><li class="last leaf menu-mlid-3475"><a href="/ayudas-y-financiacion/otros-programas-europeos">Otros Programas Europeos</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3139 nivel1 cerrado"><a href="/tecnologias">Tecnologías</a><ul class="menu" style="height: 484px; "><li class="first expanded menu-mlid-3168 cerrado"><a href="/tecnologias/eficiencia-energetica">Eficiencia energética</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3296"><a href="/tecnologias/eficiencia-energetica/industria">Industria</a></li><li class="leaf has-children menu-mlid-3306"><a href="/tecnologias/eficiencia-energetica/transporte">Transporte</a></li><li class="leaf has-children menu-mlid-3454"><a href="/tecnologias/eficiencia-energetica/edificacion">Edificación</a></li><li class="leaf has-children menu-mlid-3516"><a href="/tecnologias/eficiencia-energetica/servicios">Servicios</a></li><li class="leaf has-children menu-mlid-3297"><a href="/tecnologias/eficiencia-energetica/agricultura-y-pesca">Agricultura y Pesca</a></li><li class="leaf has-children menu-mlid-3305"><a href="/tecnologias/eficiencia-energetica/transformacion-de-la-energia">Transformación de la energía</a></li><li class="last leaf menu-mlid-3295"><a href="/tecnologias/eficiencia-energetica/plan-nacional-de-accion-de-eficiencia-energetica-2017-2020">Plan Nacional de Acción de Eficiencia Energética 2017-2020</a></li></ul><div class="view-more"></div></li><li class="last expanded menu-mlid-3169 cerrado"><a href="/tecnologias/energias-renovables">Energías renovables</a><ul class="menu" style="height: auto; "><li class="first leaf has-children menu-mlid-3372"><a href="/tecnologias/energias-renovables/uso-termico">Uso térmico</a></li><li class="leaf has-children menu-mlid-3373"><a href="/tecnologias/energias-renovables/uso-electrico">Uso eléctrico</a></li><li class="leaf menu-mlid-4255"><a href="/tecnologias/energias-renovables/autoconsumo">Autoconsumo</a></li><li class="last leaf menu-mlid-3321"><a href="/tecnologias/energias-renovables/plan-de-energias-renovables-2011-2020">Plan de Energías Renovables 2011-2020</a></li></ul><div class="view-more"></div></li></ul><div class="view-more"></div></li><li class="last expanded active-trail menu-mlid-3140 nivel1 cerrado"><a href="/ahorra-energia" class="active-trail">Ahorra energía</a><ul class="menu" style="height: 484px; "><li class="first leaf menu-mlid-3203"><a href="http://guiaenergia.idae.es/" target="_blank">Guía de la energía</a></li><li class="leaf menu-mlid-3204"><a href="/ahorra-energia/campanas-y-acciones-de-acompanamiento">Campañas y acciones de acompañamiento</a></li><li class="leaf active-trail active menu-mlid-3275"><a href="/ahorra-energia/aula-digital-aprende-ahorrar-energia" class="active-trail active">Aula digital aprende a ahorrar energía</a></li><li class="leaf menu-mlid-3517"><a href="/ahorra-energia/nuevo-reglamento-para-el-etiquetado-energetico">Etiquetado energético de aparatos consumidores de energía</a></li><li class="expanded menu-mlid-3205 cerrado"><a href="/ahorra-energia/uso-domestico">Renovables de uso doméstico</a><ul class="menu" style="height: auto; "><li class="first leaf has-children menu-mlid-3276"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-biomcasa-ii">Programa Biomcasa II</a></li><li class="leaf has-children menu-mlid-3277"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-geotcasa">Programa GEOTCASA</a></li><li class="leaf has-children menu-mlid-3279"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-git">Programa GIT</a></li><li class="last leaf has-children menu-mlid-3278"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-solcasa">Programa SOLCASA</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3208"><a href="https://laenergiadeluzia.es/" target="_blank">Blogs</a></li><li class="leaf menu-mlid-3209"><a href="/faq">FAQ</a></li><li class="leaf menu-mlid-3207"><a href="/glosario">Glosario</a></li><li class="last leaf menu-mlid-3407"><a href="/links-and-directories">Enlaces de interés</a></li></ul><div class="view-more"></div></li></ul></xmp></li><li><xmp><ul class="menu" style="height: 484px; "><li class="first expanded menu-mlid-3143 nivel2 cerrado"><a href="/conozcanos/quienes-somos">Quiénes somos</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3358"><a href="/conozcanos/quienes-somos/nuestra-historia">Historia</a></li><li class="leaf menu-mlid-3146 nivel3"><a href="/conozcanos/quienes-somos/nuestro-regimen-juridico">Régimen jurídico</a></li><li class="leaf menu-mlid-3147 nivel3"><a href="/conozcanos/quienes-somos/gobierno-corporativo" target="_blank">Gobierno corporativo</a></li><li class="leaf has-children menu-mlid-3239"><a href="/conozcanos/quienes-somos/nuestro-organigrama">Nuestro Organigrama</a></li><li class="last leaf menu-mlid-3359"><a href="/conozcanos/quienes-somos/donde-estamos">Dónde estamos</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3149 nivel3 cerrado"><a href="/conozcanos/recursos-humanos">Recursos humanos</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3476"><a href="/conozcanos/recursos-humanos/convocatorias">Convocatorias</a></li><li class="last leaf menu-mlid-3477"><a href="/conozcanos/recursos-humanos/resoluciones">Resoluciones</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3152 nivel3"><a href="/conozcanos/proyeccion-internacional">Proyección internacional</a></li><li class="leaf menu-mlid-3380"><a href="/conozcanos/hitos-idae">Hitos</a></li><li class="last leaf menu-mlid-3429"><a href="/conozcanos/proyectos-de-excelencia">Proyectos de excelencia</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3358"><a href="/conozcanos/quienes-somos/nuestra-historia">Historia</a></li><li class="leaf menu-mlid-3146 nivel3"><a href="/conozcanos/quienes-somos/nuestro-regimen-juridico">Régimen jurídico</a></li><li class="leaf menu-mlid-3147 nivel3"><a href="/conozcanos/quienes-somos/gobierno-corporativo" target="_blank">Gobierno corporativo</a></li><li class="leaf has-children menu-mlid-3239"><a href="/conozcanos/quienes-somos/nuestro-organigrama">Nuestro Organigrama</a></li><li class="last leaf menu-mlid-3359"><a href="/conozcanos/quienes-somos/donde-estamos">Dónde estamos</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3476"><a href="/conozcanos/recursos-humanos/convocatorias">Convocatorias</a></li><li class="last leaf menu-mlid-3477"><a href="/conozcanos/recursos-humanos/resoluciones">Resoluciones</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: 484px; "><li class="first leaf menu-mlid-3459"><a href="/noticias-grid">Noticias</a></li><li class="leaf menu-mlid-3495"><a href="/articulos-grid">Artículos técnicos</a></li><li class="leaf menu-mlid-3270"><a href="/eventos">Agenda</a></li><li class="leaf menu-mlid-3456"><a href="/publicaciones">Publicaciones</a></li><li class="leaf menu-mlid-4169"><a href="/bases-de-datosherramientas">Bases de Datos/Herramientas</a></li><li class="last leaf menu-mlid-4155"><a href="/estudios-informes-y-estadisticas">Estudios, informes y estadísticas</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: 484px; "><li class="first expanded menu-mlid-3217 cerrado"><a href="/ayudas-y-financiacion/fondo-europeo-de-desarrollo-regional-feder-0">Fondos FEDER</a><ul class="menu" style="height: auto; "><li class="first last leaf menu-mlid-3280"><a href="/ayudas-y-financiacion/fondos-feder/rebeca-red-de-economia-baja-en-carbono">REBECA. Red de Economía Baja en Carbono</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3361 cerrado"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica">Fondo Nacional de Eficiencia Energética</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-4171"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica/ingreso-aportaciones-al-fondo-nacional">Ingreso aportaciones al Fondo Nacional de Eficiencia Energética 2018</a></li><li class="leaf menu-mlid-4172"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica/ingreso-aportaciones-al-fondo-1">Ingreso aportaciones al Fondo Nacional de Eficiencia Energética 2017</a></li><li class="last leaf menu-mlid-3406"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica/ingreso-aportaciones-al-fondo-0">Ingreso aportaciones al Fondo Nacional de Eficiencia Energética 2016</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3367 cerrado"><a href="/ayudas-y-financiacion/programa-de-ayudas-para-la-rehabilitacion-energetica-de-edificios-existentes">Para rehabilitación de edificios (Programa PAREER)</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3518"><a href="/ayudas-y-financiacion/para-rehabilitacion-de-edificios-programa-pareer/segunda-convocatoria-del">Segunda Convocatoria del Programa de Ayudas para la Rehabilitación Energética de Edificios existentes (Programa PAREER II)</a></li><li class="last leaf menu-mlid-3521"><a href="/ayudas-y-financiacion/para-rehabilitacion-de-edificios-programa-pareer/programa-de-ayudas-para-la">Programa de Ayudas para la Rehabilitación Energética de Edificios existentes (Programa PAREER-CRECE)</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3468"><a href="/ayudas-y-financiacion/para-la-renovacion-de-alumbrado-exterior-fnee">Para la renovación de instalaciones de alumbrado exterior (FNEE)</a></li><li class="leaf menu-mlid-3497"><a href="/ayudas-y-financiacion/para-proyectos-de-inversion-que-favorezcan-el-paso-una-economia-baja-en">Para proyectos de inversión que favorezcan el paso a una economía baja en carbono (FEDER -POPE 2014-2020)</a></li><li class="leaf menu-mlid-3504"><a href="/ayudas-y-financiacion/para-la-renovacion-energetica-de-edificios-e-infraestructuras-existentes-de-la">Para la renovación energética de edificios e infraestructuras existentes de la Administración General del Estado  (FEDER -POPE 2014-2020)</a></li><li class="expanded menu-mlid-3211 cerrado"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos">Para movilidad y vehículos</a><ul class="menu" style="height: auto; "><li class="first leaf has-children menu-mlid-3515"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/plan-movalt-vehiculos">Plan MOVALT Vehículos</a></li><li class="leaf menu-mlid-3514"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/plan-movalt-infraestructura">Plan MOVALT Infraestructura</a></li><li class="leaf menu-mlid-3467"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/programa-de-ayudas-para-actuaciones-de-cambio-modal">Programa de ayudas para actuaciones de cambio modal y uso más eficiente de los modos de transporte (FNEE)</a></li><li class="leaf menu-mlid-3370"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/beneficiarios-ayudas-pive-movele">Vehículo eficiente (PIVE y MOVELE)</a></li><li class="last leaf menu-mlid-3465"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/programa-de-ayudas-para-actuaciones-de-eficiencia">Programa de Ayudas para actuaciones de eficiencia energética en el sector ferroviario (FNEE)</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3212 cerrado"><a href="/ayudas-y-financiacion/para-eficiencia-energetica-en-la-industria">Para eficiencia energética en la industria</a><ul class="menu" style="height: auto; "><li class="first last leaf menu-mlid-3482"><a href="/ayudas-y-financiacion/para-eficiencia-energetica-en-la-industria/programa-de-ayudas-para-actuaciones">Programa de ayudas para actuaciones de eficiencia energética en PYME y gran empresa del sector industrial (FNEE)</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3300"><a href="/ayudas-y-financiacion/programa-de-ayudas-para-actuaciones-de-eficiencia-energetica-en-desaladoras">Para desalación de agua (FNEE)</a></li><li class="leaf menu-mlid-3509"><a href="/ayudas-y-financiacion/linea-de-financiacion-ico-idae-eficiencia-energetica-2017-2018">Línea de financiación “ICO-IDAE Eficiencia Energética 2017-2018”</a></li><li class="expanded menu-mlid-3216 cerrado"><a href="/ayudas-y-financiacion/para-instalaciones-de-energias-renovables">Para instalaciones de energías renovables</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3287"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-solcasa">Solcasa</a></li><li class="leaf menu-mlid-3288"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-biomcasa-ii">Biomcasa II</a></li><li class="leaf menu-mlid-3289"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-geotcasa">Geotcasa</a></li><li class="last leaf menu-mlid-3290"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-git">GIT</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3286"><a href="/ayudas-y-financiacion/fondo-jessica-fidae">FONDO JESSICA-F.I.D.A.E. (2007/2013)</a></li><li class="expanded menu-mlid-3213 cerrado"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae">Otras fórmulas de financiación del IDAE</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3291"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae/financiacion-por-terceros-fpt">Financiación por Terceros (F.P.T.)</a></li><li class="leaf menu-mlid-3293"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae/otras-participaciones-financieras-del">Otras participaciones del IDAE en proyectos energéticos</a></li><li class="last leaf menu-mlid-3490"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae/financiacion-de-proyecto-y">Financiación de Proyecto y Arrendamiento de Servicios</a></li></ul><div class="view-more"></div></li><li class="expanded menu-mlid-3294 cerrado"><a href="/ayudas-y-financiacion/ayudas-en-comunidades-autonomas">Ayudas en Comunidades Autónomas</a><ul class="menu" style="height: auto; "><li class="first last leaf menu-mlid-4170"><a href="/ayudas-y-financiacion/ayudas-en-comunidades-autonomas/donde-informarse-en-las-ccaa">Dónde informarse en las CC.AA.</a></li></ul><div class="view-more"></div></li><li class="last leaf menu-mlid-3475"><a href="/ayudas-y-financiacion/otros-programas-europeos">Otros Programas Europeos</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first last leaf menu-mlid-3280"><a href="/ayudas-y-financiacion/fondos-feder/rebeca-red-de-economia-baja-en-carbono">REBECA. Red de Economía Baja en Carbono</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-4171"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica/ingreso-aportaciones-al-fondo-nacional">Ingreso aportaciones al Fondo Nacional de Eficiencia Energética 2018</a></li><li class="leaf menu-mlid-4172"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica/ingreso-aportaciones-al-fondo-1">Ingreso aportaciones al Fondo Nacional de Eficiencia Energética 2017</a></li><li class="last leaf menu-mlid-3406"><a href="/ayudas-y-financiacion/fondo-nacional-de-eficiencia-energetica/ingreso-aportaciones-al-fondo-0">Ingreso aportaciones al Fondo Nacional de Eficiencia Energética 2016</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3518"><a href="/ayudas-y-financiacion/para-rehabilitacion-de-edificios-programa-pareer/segunda-convocatoria-del">Segunda Convocatoria del Programa de Ayudas para la Rehabilitación Energética de Edificios existentes (Programa PAREER II)</a></li><li class="last leaf menu-mlid-3521"><a href="/ayudas-y-financiacion/para-rehabilitacion-de-edificios-programa-pareer/programa-de-ayudas-para-la">Programa de Ayudas para la Rehabilitación Energética de Edificios existentes (Programa PAREER-CRECE)</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf has-children menu-mlid-3515"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/plan-movalt-vehiculos">Plan MOVALT Vehículos</a></li><li class="leaf menu-mlid-3514"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/plan-movalt-infraestructura">Plan MOVALT Infraestructura</a></li><li class="leaf menu-mlid-3467"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/programa-de-ayudas-para-actuaciones-de-cambio-modal">Programa de ayudas para actuaciones de cambio modal y uso más eficiente de los modos de transporte (FNEE)</a></li><li class="leaf menu-mlid-3370"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/beneficiarios-ayudas-pive-movele">Vehículo eficiente (PIVE y MOVELE)</a></li><li class="last leaf menu-mlid-3465"><a href="/ayudas-y-financiacion/para-movilidad-y-vehiculos/programa-de-ayudas-para-actuaciones-de-eficiencia">Programa de Ayudas para actuaciones de eficiencia energética en el sector ferroviario (FNEE)</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first last leaf menu-mlid-3482"><a href="/ayudas-y-financiacion/para-eficiencia-energetica-en-la-industria/programa-de-ayudas-para-actuaciones">Programa de ayudas para actuaciones de eficiencia energética en PYME y gran empresa del sector industrial (FNEE)</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3287"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-solcasa">Solcasa</a></li><li class="leaf menu-mlid-3288"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-biomcasa-ii">Biomcasa II</a></li><li class="leaf menu-mlid-3289"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-geotcasa">Geotcasa</a></li><li class="last leaf menu-mlid-3290"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-git">GIT</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3291"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae/financiacion-por-terceros-fpt">Financiación por Terceros (F.P.T.)</a></li><li class="leaf menu-mlid-3293"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae/otras-participaciones-financieras-del">Otras participaciones del IDAE en proyectos energéticos</a></li><li class="last leaf menu-mlid-3490"><a href="/ayudas-y-financiacion/otras-formulas-de-financiacion-del-idae/financiacion-de-proyecto-y">Financiación de Proyecto y Arrendamiento de Servicios</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first last leaf menu-mlid-4170"><a href="/ayudas-y-financiacion/ayudas-en-comunidades-autonomas/donde-informarse-en-las-ccaa">Dónde informarse en las CC.AA.</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: 484px; "><li class="first expanded menu-mlid-3168 cerrado"><a href="/tecnologias/eficiencia-energetica">Eficiencia energética</a><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3296"><a href="/tecnologias/eficiencia-energetica/industria">Industria</a></li><li class="leaf has-children menu-mlid-3306"><a href="/tecnologias/eficiencia-energetica/transporte">Transporte</a></li><li class="leaf has-children menu-mlid-3454"><a href="/tecnologias/eficiencia-energetica/edificacion">Edificación</a></li><li class="leaf has-children menu-mlid-3516"><a href="/tecnologias/eficiencia-energetica/servicios">Servicios</a></li><li class="leaf has-children menu-mlid-3297"><a href="/tecnologias/eficiencia-energetica/agricultura-y-pesca">Agricultura y Pesca</a></li><li class="leaf has-children menu-mlid-3305"><a href="/tecnologias/eficiencia-energetica/transformacion-de-la-energia">Transformación de la energía</a></li><li class="last leaf menu-mlid-3295"><a href="/tecnologias/eficiencia-energetica/plan-nacional-de-accion-de-eficiencia-energetica-2017-2020">Plan Nacional de Acción de Eficiencia Energética 2017-2020</a></li></ul><div class="view-more"></div></li><li class="last expanded menu-mlid-3169 cerrado"><a href="/tecnologias/energias-renovables">Energías renovables</a><ul class="menu" style="height: auto; "><li class="first leaf has-children menu-mlid-3372"><a href="/tecnologias/energias-renovables/uso-termico">Uso térmico</a></li><li class="leaf has-children menu-mlid-3373"><a href="/tecnologias/energias-renovables/uso-electrico">Uso eléctrico</a></li><li class="leaf menu-mlid-4255"><a href="/tecnologias/energias-renovables/autoconsumo">Autoconsumo</a></li><li class="last leaf menu-mlid-3321"><a href="/tecnologias/energias-renovables/plan-de-energias-renovables-2011-2020">Plan de Energías Renovables 2011-2020</a></li></ul><div class="view-more"></div></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf menu-mlid-3296"><a href="/tecnologias/eficiencia-energetica/industria">Industria</a></li><li class="leaf has-children menu-mlid-3306"><a href="/tecnologias/eficiencia-energetica/transporte">Transporte</a></li><li class="leaf has-children menu-mlid-3454"><a href="/tecnologias/eficiencia-energetica/edificacion">Edificación</a></li><li class="leaf has-children menu-mlid-3516"><a href="/tecnologias/eficiencia-energetica/servicios">Servicios</a></li><li class="leaf has-children menu-mlid-3297"><a href="/tecnologias/eficiencia-energetica/agricultura-y-pesca">Agricultura y Pesca</a></li><li class="leaf has-children menu-mlid-3305"><a href="/tecnologias/eficiencia-energetica/transformacion-de-la-energia">Transformación de la energía</a></li><li class="last leaf menu-mlid-3295"><a href="/tecnologias/eficiencia-energetica/plan-nacional-de-accion-de-eficiencia-energetica-2017-2020">Plan Nacional de Acción de Eficiencia Energética 2017-2020</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf has-children menu-mlid-3372"><a href="/tecnologias/energias-renovables/uso-termico">Uso térmico</a></li><li class="leaf has-children menu-mlid-3373"><a href="/tecnologias/energias-renovables/uso-electrico">Uso eléctrico</a></li><li class="leaf menu-mlid-4255"><a href="/tecnologias/energias-renovables/autoconsumo">Autoconsumo</a></li><li class="last leaf menu-mlid-3321"><a href="/tecnologias/energias-renovables/plan-de-energias-renovables-2011-2020">Plan de Energías Renovables 2011-2020</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: 484px; "><li class="first leaf menu-mlid-3203"><a href="http://guiaenergia.idae.es/" target="_blank">Guía de la energía</a></li><li class="leaf menu-mlid-3204"><a href="/ahorra-energia/campanas-y-acciones-de-acompanamiento">Campañas y acciones de acompañamiento</a></li><li class="leaf active-trail active menu-mlid-3275"><a href="/ahorra-energia/aula-digital-aprende-ahorrar-energia" class="active-trail active">Aula digital aprende a ahorrar energía</a></li><li class="leaf menu-mlid-3517"><a href="/ahorra-energia/nuevo-reglamento-para-el-etiquetado-energetico">Etiquetado energético de aparatos consumidores de energía</a></li><li class="expanded menu-mlid-3205 cerrado"><a href="/ahorra-energia/uso-domestico">Renovables de uso doméstico</a><ul class="menu" style="height: auto; "><li class="first leaf has-children menu-mlid-3276"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-biomcasa-ii">Programa Biomcasa II</a></li><li class="leaf has-children menu-mlid-3277"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-geotcasa">Programa GEOTCASA</a></li><li class="leaf has-children menu-mlid-3279"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-git">Programa GIT</a></li><li class="last leaf has-children menu-mlid-3278"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-solcasa">Programa SOLCASA</a></li></ul><div class="view-more"></div></li><li class="leaf menu-mlid-3208"><a href="https://laenergiadeluzia.es/" target="_blank">Blogs</a></li><li class="leaf menu-mlid-3209"><a href="/faq">FAQ</a></li><li class="leaf menu-mlid-3207"><a href="/glosario">Glosario</a></li><li class="last leaf menu-mlid-3407"><a href="/links-and-directories">Enlaces de interés</a></li></ul></xmp></li><li><xmp><ul class="menu" style="height: auto; "><li class="first leaf has-children menu-mlid-3276"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-biomcasa-ii">Programa Biomcasa II</a></li><li class="leaf has-children menu-mlid-3277"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-geotcasa">Programa GEOTCASA</a></li><li class="leaf has-children menu-mlid-3279"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-git">Programa GIT</a></li><li class="last leaf has-children menu-mlid-3278"><a href="/ahorra-energia/renovables-de-uso-domestico/programa-solcasa">Programa SOLCASA</a></li></ul></xmp></li><li><xmp><span style="text-decoration: none; color: rgb(0, 0, 0); display: inline-block; cursor: pointer; padding-left: 0px; padding-right: 0px; width: 16px; " class="stButton"><span class="chicklets facebook">&nbsp;</span></span></xmp></li><li><xmp><span style="text-decoration: none; color: rgb(0, 0, 0); display: inline-block; cursor: pointer; padding-left: 0px; padding-right: 0px; width: 16px; " class="stButton"><span class="chicklets twitter">&nbsp;</span></span></xmp></li><li><xmp><span style="text-decoration: none; color: rgb(0, 0, 0); display: inline-block; cursor: pointer; padding-left: 0px; padding-right: 0px; width: 16px; " class="stButton"><span class="chicklets email">&nbsp;</span></span></xmp></li><li><xmp><iframe src="https://c.sharethis.mgr.consensu.org/v1.0/cmp/portal.html" id="st_gdpr_iframe" style="width: 0px; height: 0px; position: absolute; left: -5000px; "></iframe></xmp></li><li><xmp><div id="cboxOverlay" style="display: none; "></div></xmp></li><li><xmp><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none; "><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left; "></div><div id="cboxTopCenter" style="float: left; "></div><div id="cboxTopRight" style="float: left; "></div></div><div style="clear: left; "><div id="cboxMiddleLeft" style="float: left; "></div><div id="cboxContent" style="float: left; "><div id="cboxTitle" style="float: left; "></div><div id="cboxCurrent" style="float: left; "></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left; "></div><div id="cboxLoadingGraphic" style="float: left; "></div></div><div id="cboxMiddleRight" style="float: left; "></div></div><div style="clear: left; "><div id="cboxBottomLeft" style="float: left; "></div><div id="cboxBottomCenter" style="float: left; "></div><div id="cboxBottomRight" style="float: left; "></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none; "></div></div></xmp></li><li><xmp><div id="cboxTopLeft" style="float: left; "></div></xmp></li><li><xmp><div id="cboxTopCenter" style="float: left; "></div></xmp></li><li><xmp><div id="cboxTopRight" style="float: left; "></div></xmp></li><li><xmp><div style="clear: left; "><div id="cboxMiddleLeft" style="float: left; "></div><div id="cboxContent" style="float: left; "><div id="cboxTitle" style="float: left; "></div><div id="cboxCurrent" style="float: left; "></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left; "></div><div id="cboxLoadingGraphic" style="float: left; "></div></div><div id="cboxMiddleRight" style="float: left; "></div></div></xmp></li><li><xmp><div id="cboxMiddleLeft" style="float: left; "></div></xmp></li><li><xmp><div id="cboxContent" style="float: left; "><div id="cboxTitle" style="float: left; "></div><div id="cboxCurrent" style="float: left; "></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left; "></div><div id="cboxLoadingGraphic" style="float: left; "></div></div></xmp></li><li><xmp><div id="cboxTitle" style="float: left; "></div></xmp></li><li><xmp><div id="cboxCurrent" style="float: left; "></div></xmp></li><li><xmp><div id="cboxLoadingOverlay" style="float: left; "></div></xmp></li><li><xmp><div id="cboxLoadingGraphic" style="float: left; "></div></xmp></li><li><xmp><div id="cboxMiddleRight" style="float: left; "></div></xmp></li><li><xmp><div style="clear: left; "><div id="cboxBottomLeft" style="float: left; "></div><div id="cboxBottomCenter" style="float: left; "></div><div id="cboxBottomRight" style="float: left; "></div></div></xmp></li><li><xmp><div id="cboxBottomLeft" style="float: left; "></div></xmp></li><li><xmp><div id="cboxBottomCenter" style="float: left; "></div></xmp></li><li><xmp><div id="cboxBottomRight" style="float: left; "></div></xmp></li><li><xmp><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none; "></div></xmp></li><li><xmp><div id="stcpDiv" style="position: absolute; top: -1999px; left: -1988px; ">ShareThis Copy and Paste</div></xmp></li></ul></code></pre>.<br/>
+			Recomendación: El separar el contenido de la presentaci&oacute;n facilita la adaptaci&oacute;n de los contenidos a diferentes dispositivos. Se recomienda el uso de hojas de estilo para definir la presentaci&oacute;n de los componentes indicados..<br/>
+			Número de errores: 43
+
+			Código: F87-Fallo en el criterio 1.3.1 debido a la inserción de contenidos no decorativos mediante el uso de :before y :after pseudo-elementos y la propiedad content de los CSS
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H39-Usando elementos caption para asociar títulos de las tablas de datos a los datos de la tabla
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas..<br/>
+			Recomendación: En el caso de hacer uso de tablas estas deben ser identificadas por medio del elemento caption, siempre que no sean utilizadas para maquetaci&oacute;n (layout)..<br/>
+			Número de errores: 0
+
+			Código: H63-Usando el atributo scope para asociar las celdas de encabezado con las celdas de datos en las tablas
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H73-Usando el atributo summary del elemento table para dar una visión general de las tablas de datos
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas con un atriuto summary..<br/>
+			Recomendación: En el caso de hacer uso de tablas e identificarlas con el atributo summary este debe ser valido para identificar la tabla o explicar su estructura en caso de tablas de datos complejas..<br/>
+			Número de errores: 0
+
+			Código: H48-Usando ol, ul y dl para listas o grupos de enlaces
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H85-Usando OPTIONGROUP para agrupar elementos OPTION dentro de un SELECT
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H49-Usando marcas semánticas para marcar textos enfatizados o textos especiales
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H51-Usando tabla de marcado para presentar información tabular
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Al utilizar tablas de datos para presentar informaci&oacute;n tabular use los elementos th (encabezados) y td (datos)..<br/>
+			Número de errores: 0
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><ul><li>[H2] [OK] Su compra</li><li>[H2] [OK] Formulario de búsqueda</li></ul><ul><li>[H1] [OK] Aula digital aprende a ahorrar energía</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: OAW3-Usando elementos legend correctamente
+			Criticidad: Baja
+			Observación: No se han encontrado elementos <code>fieldset</code>.<br/>
+			Recomendación: Es importante que el primer elemento de un fieldset sea un elemento legend que describa el tipo de informaci&oacute;n que se est&aacute; agrupando..<br/>
+			Número de errores: 0
+
+			Código: OAW4-Comprobando el uso de cabeceras múltiples dentro de una fila
+			Criticidad: Media
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Los elementos <code>th</code> deben emplearse correctamente para que el usuario identifique sin dificultades los contenidos de las tablas.<br/>
+			Número de errores: 0
+
+			Código: OAW5-Comprobando la validez de los roles ARIA
+			Criticidad: Alta
+			Observación: Los elementos ARIA encontrados en la p&aacute;gina llevan roles v&aacute;lidos..<br/>
+			Recomendación: Es recomendable apegarse a la la especificaci&oacute;n WAI-ARIA, que define un conjunto de atributos HTML adicionales que se pueden aplicar a los elementos para proporcionar sem&aacute;ntica adicional y mejorar la accesibilidad donde sea que falte.<br/>
+			Número de errores: 0
+
+			Código: OAW6-Comprobando que las celdas de la tabla tengan datos
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Las celdas vac&iacute;as en las tablas suelen causar problemas para los usuarios que ocupan tecnolog&iacute;as de accesibilidad..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.3..Características sensoriales
+		Nivel: A
+
+	Pauta: 1.4..Distinguible
+	Descripcion: Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo
+
+		Criterio: 1.4.2..Control del audio
+		Nivel: A
+
+		Criterio: 1.4.4..Redimensionamiento del texto
+		Nivel: AA
+
+			Código: C28-Especificando el tamaño de un contenedor de texto usando unidades em
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C14-Usando unidades em para tamaños de fuente
+			Criticidad: Alta
+			Observación: De las 0 reglas CSS en la p&aacute;gina para definir el tamaño de letra (font-size), 11 de ellas usan declaraciones de elementos de forma absoluta (position:asolute) o tiene un valor incorrecto.<pre><ul><li><xmp>.stTwitterFollow { top: 0px; text-decoration: none; color: rgb(0, 0, 0); display: inline-block; cursor: pointer; position: relative; margin-top: 3px; margin-right: 3px; margin-bottom: 0px; margin-left: 3px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-size: 11px; line-height: 16px; vertical-align: bottom; overflow-x: visible; overflow-y: visible; }</xmp></li><li><xmp>.stButton { position: relative; z-index: 1; text-decoration: none; color: rgb(0, 0, 0); display: inline-block; cursor: pointer; margin-right: 3px; margin-left: 3px; font-size: 11px; line-height: 16px; }</xmp></li><li><xmp>.stButton .stBubble_count_sm { font-size: 10px; text-align: center; padding-top: 1px; width: 30px; font-family: Verdana, Helvetica, sans-serif; }</xmp></li><li><xmp>.stButton .stBubble_count { font-size: 14px; line-height: 18px; font-weight: bold; text-align: center; padding-top: 10px; width: 58px; height: 29px; font-family: Helvetica, sans-serif; color: rgb(85, 85, 85); position: relative; z-index: -1; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.stButton .stBubble_hcount { padding-left: 2px; padding-right: 2px; white-space: nowrap; font-family: Helvetica, sans-serif; font-size: 11px; height: 16px; line-height: 16px; font-weight: bold; color: rgb(85, 85, 85); }</xmp></li><li><xmp>.stButton .chicklets { background-size: contain; padding-left: 20px; padding-right: 0px; white-space: nowrap; font-family: Helvetica, sans-serif; font-size: 10px; display: inline-block; height: 16px; width: auto; line-height: 16px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.stButton .chicklets2 { background-image: url(https://ws.sharethis.com/secure/images/service-icons-sprite.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; padding-top: 0px; padding-right: 0px; padding-bottom: 2px; padding-left: 20px; white-space: nowrap; font-family: Verdana, Helvetica, sans-serif; font-size: 11px; background-position: 100% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices { background-image: url(https://ws.sharethis.com/images/2017/facebook_counter.png); background-size: cover; box-sizing: content-box !important; display: inline-block; white-space: nowrap; font-family: Verdana, Helvetica, sans-serif; font-size: 11px; height: 16px !important; min-height: 16px !important; padding-top: 3px; padding-bottom: 3px; line-height: 16px; width: auto; position: relative; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.stCSSText { display: inline-block; margin-top: 3px; margin-right: 3px; margin-bottom: 3px; margin-left: 4px; padding-right: 5px; vertical-align: top; font-size: 11px; font-family: sans-serif; font-weight: bold; }</xmp></li><li><xmp>.stCSSHBubble_count { display: inline-block; height: 16px; margin-top: 3px; margin-right: 3px; margin-bottom: 3px; margin-left: 3px; text-align: center; vertical-align: top; font-size: 11px; font-family: helvetica; font-weight: bold; color: rgb(85, 85, 85); }</xmp></li><li><xmp>.stCSSVBubble_count { font-size: 11px; font-family: helvetica; font-weight: bold; text-align: center; padding-top: 14px; color: rgb(85, 85, 85); height: 30px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(191, 191, 191); border-right-color: rgb(191, 191, 191); border-bottom-color: rgb(191, 191, 191); border-left-color: rgb(191, 191, 191); border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(213, 213, 213)), color-stop(0.48, rgb(239, 239, 239)), color-stop(0.94, rgb(255, 255, 255))); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS para definir el tamaño de letra del contenido, utilice valores relativos por medio de unidades "em", % o valores  xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, o larger. Al usar medidas de fuente absolutas, se limita el contenido textual de la p&aacute;gina ya que no se podr&iacute;a adaptar a diferentes resoluciones de pantalla..<br/>
+			Número de errores: 11
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C13-Usando tamaños de fuente nombrados
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C12-Usando porcentajes para tamaños de fuente
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 1.4.8..Presentación visual
+		Nivel: AAA
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C20-Usando medidas relativas para establecer anchos de columna para que las líneas puedan promediar 80 caracteres o menos cuando se cambia el tamaño del navegador
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C19-Especificar la alineación, ya sea a la izquierda o a la derecha en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C21-Especificando espacio entre líneas en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 2.Operable
+Descripcion: Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+	Pauta: 2.1..Accesible por teclado
+	Descripcion: Proporcionar acceso a toda la funcionalidad mediante el teclado
+
+		Criterio: 2.1.1..Teclado
+		Nivel: A
+
+	Pauta: 2.2..Tiempo suficiente
+	Descripcion: Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido
+
+		Criterio: 2.2.2..Pausar, detener, ocultar
+		Nivel: A
+
+			Código: G11A-Creando contenido que parpadea al menos 5 segundos: A) Elementos con animación blink
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>blink</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: G11B-Creando contenido que parpadea al menos 5 segundos: B) Elementos con animación marquee
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>marquee</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+	Pauta: 2.3..Convulsiones
+	Descripcion: No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones
+
+	Pauta: 2.4..Navegable
+	Descripcion: Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran
+
+		Criterio: 2.4.1..Evitar bloques
+		Nivel: A
+
+		Criterio: 2.4.2..Páginas tituladas
+		Nivel: A
+
+			Código: G88-Proporcionar títulos descriptivos para páginas web
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H25-Proporcionando un título usando el elemento title
+			Criticidad: Alta
+			Observación: La p&aacute;gina tiene un t&iacute;tulo, aseg&uacute;rese que sea descriptivo y que est&eacute; acorde al contenido de la p&aacute;gina. <pre><ul><title>Aula digital aprende a ahorrar energía | IDAE</title></ul></pre>.<br/>
+			Recomendación: El t&iacute;tulo de la p&aacute;gina debe ser descriptivo y brindar una persepci&oacute;n del contenido de la misma..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.3..Orden del foco
+		Nivel: A
+
+			Código: H4-Creando un orden lógico en el orden del tabulador a través de los enlaces, controles de formulario, y objetos
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.4..Propósito de los enlaces (En contexto)
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H33-Complementando el texto del enlace con el atributo title
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C7-Usando CSS para ocultar una porcion de texto de un enlace
+			Criticidad: Baja
+			Observación: En la p&aacute;gina se est&aacute; utilizando en 8 ocaci&oacute;n(es) la opci&oacute;n para ocultar contenido, verifique que este sea relevante, o que sea facilmente accesible.<br/>
+			Recomendación: Al ocultar una parte de informaci&oacute;n de la p&aacute;gina, se puede llegar a confundir al usuario.<br/>
+			Número de errores: 8
+
+			Código: H30-Proporcionar un texto de enlace que describa el propósito del enlace para los elemtos de anclaje (a)
+			Criticidad: Alta
+			Observación: En 1 im&aacute;gen(es) de las 7 que hay en la p&aacute;gina, tiene un valor nulo o vacio verifique que corresponda a im&aacute;genes decorativas.  Las im&aacute;genes que presentan este inconveniente son:<pre><ul><li><xmp><img src="http://www.idae.es/sites/default/files/styles/imagenes_news/public/imagenes/proyectos_de_excelencia/persianastoldos02.jpg?itok=QcAzxC9E" width="293" height="195" alt="" title="Persianas"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&aacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 1
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.6..Encabezados y etiquetas
+		Nivel: AA
+
+			Código: G130-Proporcionar títulos descriptivos
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.5..Re-autentificación
+		Nivel: AA
+
+			Código: H59-Usando el elemneto link y herramientas de navegación
+			Criticidad: Alta
+			Observación: Los 4 links de relacion que tiene la p&aacute;gina se han definido correctamente.<br/>
+			Recomendación: Es importante colocar la etiqueta link &uacute;nicamente dentro del encabezado de la p&aacute;gina, e indicar la relaci&oacute;n que guarda con la misma.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.7..Foco visible
+		Nivel: AA
+
+			Código: C15-Usando CSS para cambiar la presentación de un componente de interfaz de usuario cuando recibe el foco
+			Criticidad: Baja
+			Observación: No se han detectado declaraciones del foco de teclado.<br/>
+			Recomendación: Verificar que el foco sea visible y que este en correcto posicionamiento en la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.10..Encabezados se sección
+		Nivel: AAA
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><ul><li>[H2] [OK] Su compra</li><li>[H2] [OK] Formulario de búsqueda</li></ul><ul><li>[H1] [OK] Aula digital aprende a ahorrar energía</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+
+Principio: 3.Comprensible
+Descripcion: La información y el manejo de la interfaz de usuario deben ser comprensibles
+
+	Pauta: 3.1..Legible
+	Descripcion: Hacer que los contenidos textuales resulten legibles y comprensibles
+
+		Criterio: 3.1.1..Idioma de la página
+		Nivel: A
+
+			Código: H57-Usando el atributo language en el elemento html
+			Criticidad: Alta
+			Observación: La definici&oacute;n de lenguaje en la p&aacute;gina se ha realizado exitosamente.<br/>
+			Recomendación: Verificar la especificaci&oacute;n del lenguaje, es importante especificar en que idioma se est&aacute; presentando la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.3..Palabras inusuales
+		Nivel: AAA
+
+			Código: H60-Usando el elemento link para enlazar a un glosario
+			Criticidad: Baja
+			Observación: La p&aacute;gina podr&iacute;a requerir un link a un glosario de palabras complejas.<br/>
+			Recomendación: Cuando se utiliza palabras complejas es recomendable colocar un glosario que las defina.<br/>
+			Número de errores: 1
+
+			Código: H40-Usando listas de definición
+			Criticidad: Baja
+			Observación: No se han encontrado listas dentro de la p&aacute;gina.<br/>
+			Recomendación: La estructura de la lista de definici&oacute;n, deben ser empleadas correctamente, colocando cada uno de sus componentes sin descartar ninguno.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.6..Pronunciación
+		Nivel: AAA
+
+			Código: H62-Usando el elemento ruby
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado etiquetas ruby.<br/>
+			Recomendación: Es importante supervisar el correcto uso de esta etiqueta para caracteres especiales.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.4..Abreviaturas
+		Nivel: AAA
+
+			Código: H70-Usando elementos frame para agrupar bloques de material repetido
+			Criticidad: Alta
+			Observación: La p&aacute;gina no tiene etiquetas frame.<br/>
+			Recomendación: Los elementos frame no deben usarse para maquetar contenido en la p&aacute;gina, se debe utilizar hojas de estilo.<br/>
+			Número de errores: 0
+
+	Pauta: 3.2..Predecible
+	Descripcion: Hacer que las páginas web aparezcan y operen de manera predecible
+
+		Criterio: 3.2.2..Al introducir datos
+		Nivel: A
+
+			Código: H32-Proporcionar botones de envio
+			Criticidad: Media
+			Observación: Verificar que el formulario tenga m&eacute;todo de env&iacute;o.<br/>
+			Recomendación: Los 1 formularios tienen un m&eacute;todo de env&iacute;o.<br/>
+			Número de errores: 0
+
+		Criterio: 3.2.5..Cambios a petición
+		Nivel: AAA
+
+			Código: H83-Usando el atributo target para abrir una nueva ventana a petición del usuario e indicando en ventana a petición del usuario e indicando en el texto de este enlace
+			Criticidad: Media
+			Observación: 16 enlace(s) indica(n) como destino una nueva ventana, verifique que el enlace contiene informaci&oacute;n que indica que el enlace se abrir&aacute; en una nueva ventana. <pre><ul><li><xmp><a href="http://transparencia.gob.es/" target="_blank">Portal de la transparencia</a></xmp></li><li><xmp><a href="https://sede.idae.gob.es/lang/" target="_blank">Sede electrónica</a></xmp></li><li><xmp><a href="https://www.instagram.com/idaeenergia/" target="_blank">Instagram</a></xmp></li><li><xmp><a href="https://twitter.com/IDAEenergia" target="_blank">Twitter</a></xmp></li><li><xmp><a href="https://laenergiadeluzia.es/" target="_blank">Blog</a></xmp></li><li><xmp><a href="https://www.facebook.com/IDAEenergia" target="_blank">Facebook</a></xmp></li><li><xmp><a href="https://www.linkedin.com/company/idaeenergia/" target="_blank">Linkedin</a></xmp></li><li><xmp><a href="https://www.youtube.com/user/TVidae" target="_blank">YouTube</a></xmp></li><li><xmp><a href="/conozcanos/quienes-somos/gobierno-corporativo" target="_blank">Gobierno corporativo</a></xmp></li><li><xmp><a href="http://guiaenergia.idae.es/" target="_blank">Guía de la energía</a></xmp></li><li><xmp><a href="https://laenergiadeluzia.es/" target="_blank">Blogs</a></xmp></li><li><xmp><a href="http://www.aprendecomoahorrarenergia.es/ " target="_blank" title="Web aula digital del IDAE (abre en nueva ventana)">www.aprendecomoahorrarenergia.es</a></xmp></li><li><xmp><a href="http://www.aprendecomoahorrarenergia.es/ " target="_blank" title="Web aula digital del IDAE (abre en nueva ventana)">www.aprendecomoahorrarenergia.es</a></xmp></li><li><xmp><a href="http://www.aprendecomoahorrarenergia.es/ " target="_blank" title="Web aula digital del IDAE (abre en nueva ventana)">www.aprendecomoahorrarenergia.es</a></xmp></li><li><xmp><a href="http://www.aprendecomoahorrarenergia.es/" target="_blank">Acceso directo Aula aprende como ahorrar energía</a></xmp></li><li><xmp><a href="http://www.guiadelaenergia.idae.es/" title="Guía de la Energía" target="_blank">Guía de la Energía</a></xmp></li></ul></pre>.<br/>
+			Recomendación: Un ejemplo podr&iacute;a ser: <code><xmp><a href="ayuda.html" target="_blank">Mostrar ayuda (abre nueva ventana)</a></xmp></code>..<br/>
+			Número de errores: 16
+
+			Código: H76-Usando meta refresh para crear un redireccionamiento de cliente instantánea
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se ha detectado el uso de la etiqueta meta conjuntamente con el atributo refresh para actualizaci&oacute;n de la p&aacute;gina..<br/>
+			Recomendación: En el caso de quere hacer uso de la misma, considerar que la continua actualizaci&oacute;n de la p&aacute;gina no es recomendable, puede causar confusi&oacute;n en el usuario..<br/>
+			Número de errores: 0
+
+	Pauta: 3.3..Entrada de datos asistida
+	Descripcion: Ayudar a los usuarios a evitar y corregir los errores
+
+		Criterio: 3.3.1..Identificación de errores
+		Nivel: A
+
+		Criterio: 3.3.2..Etiquetas o instrucciones
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H71-Proporcionando una descripcion para grupos de controles de formularios usando los elementos fieldset y legend
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: OAW2-Proporcionando contenido en todos los elementos
+			Criticidad: Baja
+			Observación: En la p&aacute;gina existen 4 elementos sin contenido. <pre><ul><li><xmp><a id="main-content"></a></xmp></li><li><xmp><button type="button" id="cboxPrevious"></button></xmp></li><li><xmp><button type="button" id="cboxNext"></button></xmp></li><li><xmp><button type="button" id="cboxSlideshow"></button></xmp></li</ul></pre>.<br/>
+			Recomendación: Es importante evitar declarar elementos sin contenido.<br/>
+			Número de errores: 4
+
+		Criterio: 3.3.5..Ayuda
+		Nivel: AAA
+
+			Código: G71-Proporcionando un enlace de ayuda en cada pagina web
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H89-Usando el atributo title para proporcionar ayuda contextual
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 4.Robusto
+Descripcion: El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+	Pauta: 4.1..Compatible
+Descripcion: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas
+
+		Criterio: 4.1.1..Procesamiento
+		Nivel: A
+
+			Código: G134-Validación de páginas web
+			Criticidad: Alta
+			Observación: <p>La pagina ha sido analizada en <a href='https://validator.w3.org/' target='_blank'>https://validator.w3.org/</a>, encontrandose <strong>17 errores</strong>.</p><pre><ul><li><xmp>Legacy doctype. Expected “<!DOCTYPE html>”.:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"   "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"> <html</xmp></li><li><xmp>When the attribute “xml:lang” in no namespace is specified, the element must also have the attribute “lang” present with the same value.:
+fa-1.dtd"> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" version="XHTML+RDFa 1.0" dir="ltr">  <hea</xmp></li><li><xmp>The “version” attribute on the “html” element is obsolete. You can safely omit it.:
+fa-1.dtd"> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" version="XHTML+RDFa 1.0" dir="ltr">  <hea</xmp></li><li><xmp>The “profile” attribute on the “head” element is obsolete. To declare which “meta” terms are used in the document, instead register the names as meta extensions. To trigger specific UA behaviors, use a “link” element instead.:
+dir="ltr">  <head profile="http://www.w3.org/1999/xhtml/vocab">   <me</xmp></li><li><xmp>When the attribute “xml:lang” in no namespace is specified, the element must also have the attribute “lang” present with the same value.:
+t active"><a href="/ahorra-energia/aula-digital-aprende-ahorrar-energia" class="language-link active" xml:lang="es">es</a></xmp></li><li><xmp>When the attribute “xml:lang” in no namespace is specified, the element must also have the attribute “lang” present with the same value.:
+lass="ca"><a href="/ca/node/10700" class="language-link" xml:lang="ca">ca</a></xmp></li><li><xmp>When the attribute “xml:lang” in no namespace is specified, the element must also have the attribute “lang” present with the same value.:
+lass="eu"><a href="/eu/node/10700" class="language-link" xml:lang="eu">eu</a></xmp></li><li><xmp>When the attribute “xml:lang” in no namespace is specified, the element must also have the attribute “lang” present with the same value.:
+lass="gl"><a href="/gl/node/10700" class="language-link" xml:lang="gl">Gl</a></xmp></li><li><xmp>When the attribute “xml:lang” in no namespace is specified, the element must also have the attribute “lang” present with the same value.:
+"en last"><a href="/en/node/10700" class="language-link" xml:lang="en">en</a></xmp></li><li><xmp>Attribute “st_url” not allowed on element “span” at this point.:
+-wrapper"><span st_url="http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia" st_title="Aula digital aprende a ahorrar energía" class="st_facebook"></span</xmp></li><li><xmp>Attribute “st_title” not allowed on element “span” at this point.:
+-wrapper"><span st_url="http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia" st_title="Aula digital aprende a ahorrar energía" class="st_facebook"></span</xmp></li><li><xmp>Attribute “st_url” not allowed on element “span” at this point.:
+"></span> <span st_url="http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia" st_title="Aula digital aprende a ahorrar energía" class="st_twitter"></span</xmp></li><li><xmp>Attribute “st_title” not allowed on element “span” at this point.:
+"></span> <span st_url="http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia" st_title="Aula digital aprende a ahorrar energía" class="st_twitter"></span</xmp></li><li><xmp>Attribute “st_url” not allowed on element “span” at this point.:
+"></span> <span st_url="http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia" st_title="Aula digital aprende a ahorrar energía" class="st_email"></span</xmp></li><li><xmp>Attribute “st_title” not allowed on element “span” at this point.:
+"></span> <span st_url="http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia" st_title="Aula digital aprende a ahorrar energía" class="st_email"></span</xmp></li><li><xmp>End tag for  “body” seen, but there were unclosed elements.:
+</script> </body> </htm</xmp></li><li><xmp>Unclosed element “div”.:
+iv>       <div id="wrapper">     <</xmp></li></ul></pre><p>Para mayor información revise el siguiente enlace: <a href='https://validator.w3.org/nu/?doc=http://www.idae.es/ahorra-energia/aula-digital-aprende-ahorrar-energia' target='_blank'>Validación W3C</a></p>.<br/>
+			Recomendación: .<br/>
+			Número de errores: 17
+
+		Criterio: 4.1.2..Nombre, función, valor
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H64-Usando el atributo title en los elementos frame e iframe 
+			Criticidad: Alta
+			Observación: En 1 frames de los 1 que hay en la p&aacute;gina, no se han identificado con el atributo <code>title</code> para describir su contenido.  Los frame que presentan este inconveniente son:<pre><ul><li><xmp><iframe src="https://c.sharethis.mgr.consensu.org/v1.0/cmp/portal.html" id="st_gdpr_iframe" style="width: 0px; height: 0px; position: absolute; left: -5000px; "></iframe></xmp></li></ul></pre>.<br/>
+			Recomendación: En caso de usar elementos frame o iframe acompañelos por una descripci&oacute;n del mismo a travez del atributo <code>title</code>..<br/>
+			Número de errores: 1
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+

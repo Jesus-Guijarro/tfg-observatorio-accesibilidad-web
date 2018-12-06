@@ -116,7 +116,7 @@ def errorLog(directorio,fecha_test,herramienta,identificador,error):
     fecha_absoluta= str(datetime.now())
 
     log = open(ruta_archivo_logs, 'a')
-    log.write('HERRAMIENTA: "' + herramienta + '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tPAGINA WEB: "' + identificador +'"\n\tDESCRIPCION ERROR: "'+repr(error)+ '"\n\n')
+    log.write('HERRAMIENTA: "' + herramienta + '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tPAGINA WEB: "' + identificador +'"\n\tERROR: "'+repr(error)+ '"\n\n')
     
     log.close()
 
