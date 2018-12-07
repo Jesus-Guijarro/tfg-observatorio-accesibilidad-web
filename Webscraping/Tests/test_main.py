@@ -22,7 +22,7 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
         pagina_url=pagina.__getitem__(0)
         pagina_id=str(pagina.__getitem__(1))
 
-        if int(pagina_id)==250:
+        if int(pagina_id)==138 or int(pagina_id)==139 or int(pagina_id)==140:
             #Comprobar acceso a la página web
             if comprobarAccesoPagina(pagina_url,pagina_id):
                 #Comprobar cambios en la página web por si es necesario evaluar
@@ -33,10 +33,6 @@ def run(sitio_id,herramientas_activas,conexion,cursor):
                     for h in herramientas_activas:
                         copiarDatosAntiguos(herramientas[h],h,pagina_url,pagina_id,cursor)
                         
-            else:
-                fecha_test=getFecha()
-                directorio=getDirectorioOSAW()
-                errorLog(directorio,2,fecha_test,"",pagina_id,"")
 
 
 #Argumento sys.argv[1] -> id del sitio web
@@ -50,7 +46,7 @@ conexion= parametros[0]
 cursor = parametros[1]
 
 #Listado con las herramientas activas para ser usadas
-'''
+
 cursor.execute("select descripcion from herramientas where activa = %s", (True,))
 herramientas = cursor.fetchall()
 
@@ -58,8 +54,8 @@ herramientas_activas=[]
 
 for herramienta in herramientas:
     herramientas_activas.append(str(herramienta.__getitem__(0)))
-'''
-herramientas_activas=["eiiichecker"]
+
+#herramientas_activas=["eiiichecker"]
 
 run(sitio_id,herramientas_activas,conexion,cursor)
 desconexionDB(conexion)

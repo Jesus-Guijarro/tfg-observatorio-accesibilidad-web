@@ -12,7 +12,7 @@ def errorLog(pagina_web,pagina_id,error):
         directorio=getDirectorioOSAW()
         fecha_absoluta= str(datetime.now())
 
-        ruta_archivo_logs=directorio+"/storage/logs/log_paginas_"+fecha_test+".txt"
+        ruta_archivo_logs=directorio+"/storage/logs/log_paginas_"+fecha_test+".log"
 
         log = open(ruta_archivo_logs, 'a')
 

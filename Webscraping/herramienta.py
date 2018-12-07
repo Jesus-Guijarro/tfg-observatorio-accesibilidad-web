@@ -110,7 +110,7 @@ def getRutaCopiaHTML(directorio,pagina_id, nuevo):
 #Método para escribir error producidos durante los análisis de las herramientas
 def errorLog(directorio,fecha_test,herramienta,identificador,error):
 
-    ruta_archivo_logs=directorio+"/storage/logs/log_herramientas_"+fecha_test+".txt"
+    ruta_archivo_logs=directorio+"/storage/logs/log_herramientas_"+fecha_test+".log"
 
     #Para tener más información de la fecha obtenemos también los datos de hora, minutos y segundos
     fecha_absoluta= str(datetime.now())
