@@ -5,15 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
         <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
         <style>
             html, body {
                 background-color: #fff;
@@ -85,7 +83,7 @@
                     Laravel
                 </div>
                 <div class="container">
-                    <?php $users = DB::table('users')->SimplePaginate(1);
+                    <?php $users = DB::table('users')->paginate(1);
                     ?>
                     <table>
                         <tr>
@@ -131,5 +129,6 @@
                 </div>
             </div>
         </div>
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
     </body>
 </html>

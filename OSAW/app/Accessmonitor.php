@@ -10,6 +10,59 @@ class Accessmonitor extends Model
         return $this->belongsTo('App\Pagina');
     }
 
+    public function getAccessmonitor($id){
+        $accessmonitor=Accessmonitor::findOrFail($id);
+        return $accessmonitor;
+    }
+
+    public function getAccessmonitors(){
+        $accessmonitors = Accessmonitor::all();
+        return $accessmonitors;
+    }
+
+    public function crearAccessmonitor($descripcion){
+        
+        $accessmonitor = new Accessmonitor();
+
+        $accessmonitor->descripcion= $descripcion;
+
+        $accessmonitor->save();
+    }
+
+    public function actualizarAccessmonitor($id,$descripcion){
+
+        $accessmonitor = Accessmonitor::findOrFail($id);
+        
+        $accessmonitor->descripcion =$descripcion;
+
+        $accessmonitor -> save();
+    }
+
+    public function borrarAccessmonitor($id){
+        $accessmonitor = Accessmonitor::findOrFail($id);
+        $accessmonitor ->delete();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function getAnalisis($id){
 
         $analisis=Accessmonitor::findOrFail($id);
