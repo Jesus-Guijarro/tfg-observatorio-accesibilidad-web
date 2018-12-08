@@ -32,9 +32,9 @@ class Sitio extends Model
         return $sitio;
     }
 
-    public function getSitiosBusqueda($cadena){ # Cadena vacia -> Todos los sitios
+    public function getSitiosBusqueda($nombre){ # Cadena vacia -> Todos los sitios
         $sitios = Sitio::select('id','nombre','dominio','num_paginas')->
-            where('nombre','like','%'.$cadena.'%')->get();
+            where('nombre','like','%'.$nombre.'%')->get();
         return $sitios;
     }
 

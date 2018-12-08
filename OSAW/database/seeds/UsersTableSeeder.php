@@ -13,24 +13,23 @@ class UsersTableSeeder extends Seeder
     {
         
         DB::table('users')->delete();
-
         
         DB::table('users')->insert([
         'nombre' => 'Colaborador' ,
         'email' => 'col@osaw.com' ,
-        'password' => 'password' ,
+        'password' => bcrypt('password') ,
         'rol_id' => '1']);
 
         DB::table('users')->insert([
         'nombre' => 'Experto' ,
         'email' => 'expert@osaw.com' ,
-        'password' => 'password' ,
+        'password' => bcrypt('password') ,
         'rol_id' => '2']);
 
         DB::table('users')->insert([
         'nombre' => 'Administrador' ,
         'email' => 'admin@osaw.com' ,
-        'password' => 'password' ,
+        'password' => bcrypt('password') ,
         'rol_id' => '3']);
         
     }

@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'nombre_usuario', 'email', 'password',
+        'nombre', 'email', 'password',
     ];
 
     /**
@@ -38,7 +38,7 @@ class User extends Authenticatable
     public $timestamps = false;
 
     public function rol() {
-        return $this->belongsTo('App\Rol');
+        return $this->belongsTo('App\Usuario');
     }
 
     #Análisis manual
@@ -47,5 +47,49 @@ class User extends Authenticatable
         ->withPivot('informe','fecha_test','revisado','porcentaje_comprensible',
         'porcentaje_operable','porcentaje_perceptible','porcentaje_robusto',
         'num_errores_a','num_errores_aa','num_errores_aaa')->withTimestamps();
+    }
+
+    public function getUsuario($id){
+        $usuario=User::findOrFail($id);
+        return $usuario;
+    }
+
+    public function getUsuarios(){
+        $usuarios = User::all();
+        return $usuarios;
+    }
+
+    public function getUsuariosNombre($nombre){
+        $usuarios = User::select('id','nombre','avatar','rol_id')->
+        where('nombre','like','%'.$nombre.'%')->get();
+
+        return $usuarios;
+    }
+
+    public function actualizarUsuario($id,$nombre, $email, $password, $avatar, $biografia){
+
+        $usuario = User::findOrFail($id);
+
+        $usuario->nombre =$nombre;
+        $usuario->email =$email;
+        $usuario->password =$password;
+        $usuario->avatar =$avatar;
+        $usuario->biografia =$biografia;
+
+        $usuario -> save();
+    }
+
+    public function actualizarUsuarioRol($id,$rol_id){
+
+        $usuario = User::findOrFail($id);
+
+        $usuario->rol_id =$rol_id;
+
+        $usuario -> save();
+    }
+
+    public function borrarUsuario($id){
+        $usuario = User::findOrFail($id);
+        $usuario ->delete();
     }
 }
