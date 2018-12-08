@@ -13,11 +13,6 @@ class SitiosTableSeeder extends Seeder
     {
         DB::table('sitios')->delete();
         
-        $json = array('accessmonitor' => true, 'achecker' => true, 'eiiichecker' => true, 'observatorio' => true, 
-            'vamola' => true,'wave' => true);
-
-        $herramientas= json_encode($json);
-        
         #Sitios con todas las herramientas asignadas
         DB::table('sitios')->insert([
             [
@@ -28,8 +23,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '0',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '1',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '1'
+                
             ],
             [
                 'nombre' => 'Agencia Estatal de Administración Tributaria',
@@ -39,8 +34,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '1',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '1',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '1'
+                
             ],
             [
                 'nombre' => 'Generalitat Valenciana',
@@ -50,8 +45,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '2',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '2',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '2'
+                
             ],
             [
                 'nombre' => 'Ayuntamiento de Alicante',
@@ -61,8 +56,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '3',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '2',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '2'
+                
             ],
             [
                 'nombre' => 'Red Nacional de los Ferrocarriles Españoles (RENFE)',
@@ -72,8 +67,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '4',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '3',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '3'
+                
             ],
             [
                 'nombre' => 'Centro para el Desarrollo Tecnológico Industrial (CDTI)',
@@ -83,8 +78,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '5',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '3',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '3'
+                
             ],
             [
                 'nombre' => 'Universitat Politècnica de València (UPV)',
@@ -94,8 +89,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '6',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '4',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '4'
+                
             ],
             [
                 'nombre' => 'Universidad de Alicante (UA)',
@@ -105,8 +100,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '0',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '4',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '4'
+                
             ],
             [
                 'nombre' => 'Endesa',
@@ -116,8 +111,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '1',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '5',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '5'
+                
             ],
             [
                 'nombre' => 'Iberdrola',
@@ -127,17 +122,12 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '2',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '5',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '5'
+                
             ]
             ]);
         
         #Ministerios y agencias estatales
-        $json = array('accessmonitor' => false, 'achecker' => true, 'eiiichecker' => false, 
-        'observatorio' => true, 'vamola' => false,'wave' => true);
-
-        $herramientas= json_encode($json);
-
         DB::table('sitios')->insert([
             [
                 'nombre' => 'Ministerio de Sanidad, Consumo y Bienestar Social',
@@ -147,8 +137,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '3',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '1',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '1'
+                
             ],
             [
                 'nombre' => 'Ministerio de Ciencia, Innovación y Universidades',
@@ -158,8 +148,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '4',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '1',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '1'
+                
             ],
             [
                 'nombre' => 'Ministerio de Cultura y Deporte',
@@ -169,8 +159,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '5',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '1',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '1'
+                
             ],
             [
                 'nombre' => 'Ministerio de Trabajo, Migraciones y Seguridad Social',
@@ -180,8 +170,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '6',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '1',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '1'
+                
             ],
             [
                 'nombre' => 'Agencia Española de Medicamentos y Productos Sanitarios',
@@ -191,8 +181,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '0',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '1',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '1'
+                
             ],
             [
                 'nombre' => 'Agencia Estatal de Meterología',
@@ -202,17 +192,13 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '1',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '1',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '1'
+                
             ]
             ]);    
         
 
         #Entidades autonómicas y locales
-        $json = array('accessmonitor' => false, 'achecker' => false, 'eiiichecker' => true, 
-        'observatorio' => false, 'vamola' => true,'wave' => true);
-
-        $herramientas= json_encode($json);
 
         DB::table('sitios')->insert([
             [
@@ -223,8 +209,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '2',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '2',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '2'
+                
             ],
             [
                 'nombre' => 'Ayuntamiento de Valencia',
@@ -234,8 +220,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '3',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '2',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '2'
+                
             ]
             ]);
      
@@ -255,8 +241,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '4',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '3',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '3'
+                
             ],
             [
                 'nombre' => 'Instituto Español de Comercio Exterior (ICEX)',
@@ -266,18 +252,13 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '5',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '3',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '3'
+                
             ]
             ]);
         
 
         #Centros universitarios públicos 
-
-        $json = array('accessmonitor' => true, 'achecker' => false, 'eiiichecker' => false, 
-        'observatorio' => false, 'vamola' => true,'wave' => true);
-
-        $herramientas= json_encode($json);
 
         DB::table('sitios')->insert([
             [
@@ -288,8 +269,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '6',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '4',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '4'
+                
             ],
             [
                 'nombre' => 'Universitat de València (UV)',
@@ -299,17 +280,12 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '0',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '4',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '4'
+                
             ]
             ]);
 
         #Empresas privadas  
-
-        $json = array('accessmonitor' => true, 'achecker' => false, 'eiiichecker' => true, 
-        'observatorio' => true, 'vamola' => true,'wave' => false);
-
-        $herramientas= json_encode($json);
 
         DB::table('sitios')->insert([
             [
@@ -320,8 +296,8 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '1',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '5',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '5'
+                
             ],
             [
                 'nombre' => 'Iberia',
@@ -331,8 +307,7 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '2',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '5',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '5'   
             ],
             [
                 'nombre' => 'Movistar',
@@ -342,8 +317,7 @@ class SitiosTableSeeder extends Seeder
                 'dia' => '3',
                 'automatizado' => false, 
                 'num_paginas' => '10',
-                'categoria_id' => '5',
-                'herramientas' => "$herramientas"
+                'categoria_id' => '5'
             ]
             ]);
         

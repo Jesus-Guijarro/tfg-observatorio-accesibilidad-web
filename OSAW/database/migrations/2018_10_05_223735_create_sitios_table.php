@@ -22,7 +22,6 @@ class CreateSitiosTable extends Migration
             $table->integer('dia');
             $table ->boolean('automatizado');
             $table->integer('num_paginas');
-            $table->json('herramientas');
 
             $table->integer('categoria_id')->unsigned()->nullable();
             $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete("set null");

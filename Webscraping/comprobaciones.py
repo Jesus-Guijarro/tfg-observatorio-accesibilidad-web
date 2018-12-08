@@ -155,7 +155,7 @@ def comprobarCopiaHTML(pagina_id):
         else:
             os.remove(ruta_archivo_nuevo)
             return False
-    #Como es la primera vez que se evalua la página se guarda el contenido y el hash obtenido
+    #Como es la primera vez que se evalua la página, se guarda el contenido y el hash obtenidos
     else:
         os.rename(ruta_archivo_nuevo,ruta_archivo_antiguo)
         

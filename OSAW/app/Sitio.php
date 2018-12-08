@@ -19,8 +19,12 @@ class Sitio extends Model
         return $this->hasMany('App\Pagina');
     }
 
-    public function sitio() {
-        return $this->belongsTo('App\Sitio');
+    public function herramientas() {
+        return $this->belongsToMany('App\Herramienta')->withTimestamps();
+    }
+
+    public function categoria() {
+        return $this->belongsTo('App\Categoria');
     }
 
     public function getSitio($id){
@@ -46,7 +50,7 @@ class Sitio extends Model
     }
 
     public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,
-    $automatizado,$num_paginas,$herramientas,$categoria_id){
+    $automatizado,$num_paginas,$categoria_id){
         $sitio = new Sitio();
 
         $sitio->nombre =$nombre;
@@ -56,14 +60,13 @@ class Sitio extends Model
         $sitio->dia =$dia;
         $sitio->automatizado =$automatizado;
         $sitio->num_paginas =$num_paginas;
-        $sitio->herramientas =$herramientas;
         $sitio->categoria_id =$categoria_id;
 
         $sitio->save();
     }
 
     public function actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,
-    $automatizado,$num_paginas,$herramientas,$categoria_id){
+    $automatizado,$num_paginas,$categoria_id){
 
         $sitio = Sitio::findOrFail($id);
 
@@ -74,7 +77,6 @@ class Sitio extends Model
         $sitio->dia =$dia;
         $sitio->automatizado =$automatizado;
         $sitio->num_paginas =$num_paginas;
-        $sitio->herramientas =$herramientas;
         $sitio->categoria_id =$categoria_id;
 
         $sitio -> save();

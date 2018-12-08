@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Herramienta extends Model
 {
+
+    public function sitios() {
+        return $this->belongsToMany('App\Sitio')->withTimestamps();
+    }
+
     public $timestamps = false;
 
     public function getHerramienta($id){

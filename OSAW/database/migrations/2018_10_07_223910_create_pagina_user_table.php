@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserPaginaTable extends Migration
+class CreatePaginaUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateUserPaginaTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_pagina', function (Blueprint $table) {
+        Schema::create('pagina_user', function (Blueprint $table) {
             $table->increments('id');
             $table->json('informe');
             $table->date('fecha_test');
@@ -26,12 +26,11 @@ class CreateUserPaginaTable extends Migration
             $table->integer('num_errores_aa');
             $table->integer('num_errores_aaa');
 
+            $table->integer('pagina_id')->unsigned()->nullable();
+            $table->foreign('pagina_id')->references('id')->on('paginas')->onDelete("set null");
 
             $table->integer('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete("set null");
-
-            $table->integer('pagina_id')->unsigned()->nullable();
-            $table->foreign('pagina_id')->references('id')->on('paginas')->onDelete("set null");
 
             $table->timestamps();
         });
@@ -44,6 +43,6 @@ class CreateUserPaginaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_pagina');
+        Schema::dropIfExists('pagina_user');
     }
 }
