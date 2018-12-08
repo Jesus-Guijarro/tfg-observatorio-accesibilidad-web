@@ -37,4 +37,34 @@ class Pagina extends Model
     public function waves() {
         return $this->hasMany('App\Wave');
     }
+
+    #
+    public function getPagina($id){
+        $pagina=Pagina::findOrFail($id);
+        return $pagina;
+    }
+
+    public function getPaginasSitio($sitio_id){
+        $paginas = Pagina::select('id','URL')->where('sitio_id',$sitio_id)->get();
+        return $paginas;
+    }
+
+    public function crearPagina($URL){
+        $pagina = new Pagina();
+        $pagina->URL= $URL;
+        $pagina->save();
+    }
+
+    public function actualizarPagina($id,$URL){
+        $pagina = Pagina::findOrFail($id);
+        $pagina->URL =$URL;
+        $pagina -> save();
+    }
+
+    public function borrarPagina($id){
+        $pagina = Pagina::findOrFail($id);
+        $pagina ->delete();
+    }
+
+
 }

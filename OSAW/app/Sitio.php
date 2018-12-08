@@ -13,13 +13,76 @@ class Sitio extends Model
      */
     protected $dateFormat = 'U';
 
+    public $timestamps = false;
+
     public function paginas() {
         return $this->hasMany('App\Pagina');
     }
 
-    public function categoria() {
-        return $this->belongsTo('App\Categoria');
+    public function sitio() {
+        return $this->belongsTo('App\Sitio');
     }
 
+    public function getSitio($id){
+        $sitio=Sitio::findOrFail($id);
+        return $sitio;
+    }
+
+    public function getSitiosBusqueda($cadena){ # Cadena vacia -> Todos los sitios
+        $sitios = Sitio::select('id','nombre','dominio','num_paginas')->
+            where('nombre','like','%'.$cadena.'%')->get();
+        return $sitios;
+    }
+
+    public function getSitiosCategoria($categoria_id){
+        $sitios = Sitio::select('id','nombre','dominio','num_paginas')->
+            where('categoria_id',$categoria_id)->get();
+        return $sitios;
+    }
+
+    public function getSitios(){
+        $sitios = Sitio::all();
+        return $sitios;
+    }
+
+    public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,
+    $automatizado,$num_paginas,$herramientas,$categoria_id){
+        $sitio = new Sitio();
+
+        $sitio->nombre =$nombre;
+        $sitio->dominio =$dominio;
+        $sitio->periodicidad=$periodicidad;
+        $sitio->hora =$hora;
+        $sitio->dia =$dia;
+        $sitio->automatizado =$automatizado;
+        $sitio->num_paginas =$num_paginas;
+        $sitio->herramientas =$herramientas;
+        $sitio->categoria_id =$categoria_id;
+
+        $sitio->save();
+    }
+
+    public function actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,
+    $automatizado,$num_paginas,$herramientas,$categoria_id){
+
+        $sitio = Sitio::findOrFail($id);
+
+        $sitio->nombre =$nombre;
+        $sitio->dominio =$dominio;
+        $sitio->periodicidad=$periodicidad;
+        $sitio->hora =$hora;
+        $sitio->dia =$dia;
+        $sitio->automatizado =$automatizado;
+        $sitio->num_paginas =$num_paginas;
+        $sitio->herramientas =$herramientas;
+        $sitio->categoria_id =$categoria_id;
+
+        $sitio -> save();
+    }
+
+    public function borrarSitio($id){
+        $sitio = Sitio::findOrFail($id);
+        $sitio ->delete();
+    }
 
 }

@@ -1,5 +1,0 @@
-HERRAMIENTA: "eiiichecker"
-	FECHA: "2018-12-06 13:03:54.280218"
-	PAGINA WEB: "43"
-	ERROR: "Exception('No se ha podido realizar la evaluación',)"
-

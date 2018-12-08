@@ -35,6 +35,8 @@ class User extends Authenticatable
      */
     protected $dateFormat = 'U';
 
+    public $timestamps = false;
+
     public function rol() {
         return $this->belongsTo('App\Rol');
     }
