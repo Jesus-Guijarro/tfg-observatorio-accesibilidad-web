@@ -8,6 +8,7 @@ sys.path.append(directorio_import)
 
 from database import conexionDB,desconexionDB
 from herramienta import getDirectorioOSAW,getFecha, driverHeadlessBrowser, getRutaReporte, getCabeceraReporte, errorLog
+
 from googletrans import Translator
 
 from selenium import webdriver

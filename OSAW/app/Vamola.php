@@ -11,17 +11,6 @@ class Vamola extends Model
         return $this->belongsTo('App\Pagina');
     }
 
-
-
-
-
-
-
-
-
-
-
-
     public function getVamola($id){
         $vamola=Vamola::findOrFail($id);
         return $vamola;

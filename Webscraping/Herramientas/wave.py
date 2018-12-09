@@ -16,12 +16,11 @@ from time import time
 def getDatos(categoria,datos,reporte):
     try:
         reporte.write(categoria+"\n")
-
         valores = datos.values()
-        
         for v in valores:
             reporte.write(str(v["description"]) +"\t  VECES ENCONTRADO: "+ str(v["count"])+"\n")
         reporte.write("\n\n")
+        
     except Exception as e:
         pass
 

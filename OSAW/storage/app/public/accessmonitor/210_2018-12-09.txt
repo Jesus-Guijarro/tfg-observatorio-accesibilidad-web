@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: https://www.uv.es/uvweb/college/en/university-valencia-1285845048380.html
+FECHA EVALUACIÓN: 2018-12-09
+
+Se han encontrado 15 imágenes que no tienen leyenda
+Se encontraron 3 imágenes en las que la leyenda es un espacio vacío
+Se encontró 1 caso en que los encabezados no respetan la cadena jerárquica
+Se encontraron 38 elementos de encabezado
+Se han encontrado 7 enlaces en los que el contenido está compuesto sólo por una imagen no subtitulada
+Se han encontrado 13 enlaces con el mismo texto que apuntan a destinos diferentes
+Se identificaron 63 casos en los que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se encontró 1 grupo de enlaces compuesto por 10 o más enlaces no agrupados por elementos estructurales
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se ha encontrado 1 enlace para eludir bloques de contenido
+Se identificaron 11 controles de formulario sin etiquetas asociadas y sin el atributo title
+Se constató que todos los formularios tienen un botón de envío
+Se encontraron 11 controles de formulario sin etiqueta asociada
+Se encontraron 357 valores repetidos del atributo id
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se han encontrado 2 elementos <link> para navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "en_GB"
+Se constató que el código "en_GB" es incorrecto
+Se constató que los atributos lang y / o xml: lang se utilizan incorrectamente
+Se identificaron 13 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo
