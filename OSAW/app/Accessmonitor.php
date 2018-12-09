@@ -27,12 +27,12 @@ class Accessmonitor extends Model
         where('paginas.sitio_id',$sitio_id)->
         select(DB::raw('
             sum(accessmonitors.puntuacion)/count(*) as puntuacion,
-            sum(accessmonitors.num_problemas_a)/count(*) as num_problemas_a,
-            sum(accessmonitors.num_problemas_aa)/count(*) as num_problemas_aa,
-            sum(accessmonitors.num_problemas_aaa)/count(*) as num_problemas_aaa,
-            sum(accessmonitors.num_advertencias_a)/count(*) as num_advertencias_a,
-            sum(accessmonitors.num_advertencias_aa)/count(*) as num_advertencias_aa,
-            sum(accessmonitors.num_advertencias_aaa)/count(*) as num_advertencias_aaa,
+            CAST(sum(accessmonitors.num_problemas_a)/count(*) AS UNSIGNED) as num_problemas_a,
+            CAST(sum(accessmonitors.num_problemas_aa)/count(*) AS UNSIGNED) as num_problemas_aa,
+            CAST(sum(accessmonitors.num_problemas_aaa)/count(*) AS UNSIGNED) as num_problemas_aaa,
+            CAST(sum(accessmonitors.num_advertencias_a)/count(*) AS UNSIGNED) as num_advertencias_a,
+            CAST(sum(accessmonitors.num_advertencias_aa)/count(*) AS UNSIGNED) as num_advertencias_aa,
+            CAST(sum(accessmonitors.num_advertencias_aaa)/count(*) AS UNSIGNED) as num_advertencias_aaa,
             fecha_test'))->
         groupBy('accessmonitors.fecha_test')->orderBy('accessmonitors.fecha_test','asc')->get();
 
@@ -52,20 +52,18 @@ class Accessmonitor extends Model
         $accessmonitors = Accessmonitor::join('paginas','accessmonitors.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->
         select(DB::raw('
-            sum(accessmonitors.puntuacion)/count(*) as puntuacion,
-            sum(accessmonitors.num_problemas_a)/count(*) as num_problemas_a,
-            sum(accessmonitors.num_problemas_aa)/count(*) as num_problemas_aa,
-            sum(accessmonitors.num_problemas_aaa)/count(*) as num_problemas_aaa,
-            sum(accessmonitors.num_advertencias_a)/count(*) as num_advertencias_a,
-            sum(accessmonitors.num_advertencias_aa)/count(*) as num_advertencias_aa,
-            sum(accessmonitors.num_advertencias_aaa)/count(*) as num_advertencias_aaa,
+            sum(accessmonitors.puntuacion)/count(*)  as puntuacion,
+            CAST(sum(accessmonitors.num_problemas_a)/count(*) AS UNSIGNED) as num_problemas_a,
+            CAST(sum(accessmonitors.num_problemas_aa)/count(*) AS UNSIGNED) as num_problemas_aa,
+            CAST(sum(accessmonitors.num_problemas_aaa)/count(*) AS UNSIGNED) as num_problemas_aaa,
+            CAST(sum(accessmonitors.num_advertencias_a)/count(*) AS UNSIGNED) as num_advertencias_a,
+            CAST(sum(accessmonitors.num_advertencias_aa)/count(*) AS UNSIGNED) as num_advertencias_aa,
+            CAST(sum(accessmonitors.num_advertencias_aaa)/count(*) AS UNSIGNED) as num_advertencias_aaa,
             fecha_test'))->
         groupBy('accessmonitors.fecha_test')->orderBy('accessmonitors.fecha_test','asc')->get();
 
         return $accessmonitors;
     }
-
-    
 
     public function borrarAccessmonitor($id){
         $accessmonitor = Accessmonitor::findOrFail($id);

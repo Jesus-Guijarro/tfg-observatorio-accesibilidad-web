@@ -10,4 +10,77 @@ class Observatorio extends Model
     public function pagina() {
         return $this->belongsTo('App\Pagina');
     }
+
+    public function getObservatorio($id){
+        $observatorio=Observatorio::findOrFail($id);
+        return $observatorio;
+    }
+
+    public function getObservatorios(){
+        $observatorios = Observatorio::all();
+        return $observatorios;
+    }
+
+    #porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,
+    #num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,
+    #num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,
+    #num_advertencias_perceptible,num_advertencias_robusto,fecha_test
+
+    public function getObservatoriosSitioGraficos($sitio_id){
+        $observatorios = Observatorio::join('paginas','observatorios.pagina_id','=','paginas.id')->
+        where('paginas.sitio_id',$sitio_id)->
+        select(DB::raw('
+            CAST(sum(observatorios.porcentaje_comprensible)/count(*) AS UNSIGNED) as porcentaje_comprensible,
+            CAST(sum(observatorios.porcentaje_operable)/count(*) AS UNSIGNED) as porcentaje_operable,
+            CAST(sum(observatorios.porcentaje_perceptible)/count(*) AS UNSIGNED) as porcentaje_perceptible,
+            CAST(sum(observatorios.porcentaje_robusto)/count(*) AS UNSIGNED) as porcentaje_robusto,
+            CAST(sum(observatorios.num_problemas_comprensible)/count(*) AS UNSIGNED) as num_problemas_comprensible,
+            CAST(sum(observatorios.num_problemas_operable)/count(*) AS UNSIGNED) as num_problemas_operable,
+            CAST(sum(observatorios.num_problemas_perceptible)/count(*) AS UNSIGNED) as num_problemas_perceptible,
+            CAST(sum(observatorios.num_problemas_robusto)/count(*) AS UNSIGNED) as num_problemas_robusto,
+            CAST(sum(observatorios.num_advertencias_comprensible)/count(*) AS UNSIGNED) as num_advertencias_comprensible,
+            CAST(sum(observatorios.num_advertencias_operable)/count(*) AS UNSIGNED) as num_advertencias_operable,
+            CAST(sum(observatorios.num_advertencias_perceptible)/count(*) AS UNSIGNED) as num_advertencias_perceptible,
+            CAST(sum(observatorios.num_advertencias_robusto)/count(*) AS UNSIGNED) as num_advertencias_robusto,
+            fecha_test'))->
+        groupBy('observatorios.fecha_test')->orderBy('observatorios.fecha_test','asc')->get();
+
+        return $observatorios;
+    }
+
+    public function getObservatoriosPagina($pagina_id){
+
+        $observatorios = Observatorio::join('paginas','observatorios.pagina_id','=','paginas.id')->
+        where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->
+        orderBy('fecha_test','asc')->get();
+
+        return $observatorios;
+    }
+
+    public function getObservatoriosPaginaGraficos($pagina_id){
+        $observatorios = Observatorio::join('paginas','observatorios.pagina_id','=','paginas.id')->
+        where('paginas.id',$pagina_id)->
+        select(DB::raw('
+            CAST(sum(observatorios.porcentaje_comprensible)/count(*) AS UNSIGNED) as porcentaje_comprensible,
+            CAST(sum(observatorios.porcentaje_operable)/count(*) AS UNSIGNED) as porcentaje_operable,
+            CAST(sum(observatorios.porcentaje_perceptible)/count(*) AS UNSIGNED) as porcentaje_perceptible,
+            CAST(sum(observatorios.porcentaje_robusto)/count(*) AS UNSIGNED) as porcentaje_robusto,
+            CAST(sum(observatorios.num_problemas_comprensible)/count(*) AS UNSIGNED) as num_problemas_comprensible,
+            CAST(sum(observatorios.num_problemas_operable)/count(*) AS UNSIGNED) as num_problemas_operable,
+            CAST(sum(observatorios.num_problemas_perceptible)/count(*) AS UNSIGNED) as num_problemas_perceptible,
+            CAST(sum(observatorios.num_problemas_robusto)/count(*) AS UNSIGNED) as num_problemas_robusto,
+            CAST(sum(observatorios.num_advertencias_comprensible)/count(*) AS UNSIGNED) as num_advertencias_comprensible,
+            CAST(sum(observatorios.num_advertencias_operable)/count(*) AS UNSIGNED) as num_advertencias_operable,
+            CAST(sum(observatorios.num_advertencias_perceptible)/count(*) AS UNSIGNED) as num_advertencias_perceptible,
+            CAST(sum(observatorios.num_advertencias_robusto)/count(*) AS UNSIGNED) as num_advertencias_robusto,
+            fecha_test'))->
+        groupBy('observatorios.fecha_test')->orderBy('observatorios.fecha_test','asc')->get();
+
+        return $observatorios;
+    }
+
+    public function borrarObservatorio($id){
+        $observatorio = Observatorio::findOrFail($id);
+        $observatorio ->delete();
+    }
 }
