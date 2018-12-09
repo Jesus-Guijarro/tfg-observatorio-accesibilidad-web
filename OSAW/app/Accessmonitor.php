@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Accessmonitor extends Model
 {
@@ -20,150 +21,56 @@ class Accessmonitor extends Model
         return $accessmonitors;
     }
 
-    public function crearAccessmonitor($descripcion){
-        
-        $accessmonitor = new Accessmonitor();
 
-        $accessmonitor->descripcion= $descripcion;
+    public function getAccessmonitorsSitioGraficos($sitio_id){
+        $accessmonitors = Accessmonitor::join('paginas','accessmonitors.pagina_id','=','paginas.id')->
+        where('paginas.sitio_id',$sitio_id)->
+        select(DB::raw('
+            sum(accessmonitors.puntuacion)/count(*) as puntuacion,
+            sum(accessmonitors.num_problemas_a)/count(*) as num_problemas_a,
+            sum(accessmonitors.num_problemas_aa)/count(*) as num_problemas_aa,
+            sum(accessmonitors.num_problemas_aaa)/count(*) as num_problemas_aaa,
+            sum(accessmonitors.num_advertencias_a)/count(*) as num_advertencias_a,
+            sum(accessmonitors.num_advertencias_aa)/count(*) as num_advertencias_aa,
+            sum(accessmonitors.num_advertencias_aaa)/count(*) as num_advertencias_aaa,
+            fecha_test'))->
+        groupBy('accessmonitors.fecha_test')->orderBy('accessmonitors.fecha_test','asc')->get();
 
-        $accessmonitor->save();
+        return $accessmonitors;
     }
 
-    public function actualizarAccessmonitor($id,$descripcion){
+    public function getAccessmonitorsPagina($pagina_id){
 
-        $accessmonitor = Accessmonitor::findOrFail($id);
-        
-        $accessmonitor->descripcion =$descripcion;
+        $accessmonitors = Accessmonitor::join('paginas','accessmonitors.pagina_id','=','paginas.id')->
+        where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->
+        orderBy('fecha_test','asc')->get();
 
-        $accessmonitor -> save();
+        return $accessmonitors;
     }
+
+    public function getAccessmonitorsPaginaGraficos($pagina_id){
+        $accessmonitors = Accessmonitor::join('paginas','accessmonitors.pagina_id','=','paginas.id')->
+        where('paginas.id',$pagina_id)->
+        select(DB::raw('
+            sum(accessmonitors.puntuacion)/count(*) as puntuacion,
+            sum(accessmonitors.num_problemas_a)/count(*) as num_problemas_a,
+            sum(accessmonitors.num_problemas_aa)/count(*) as num_problemas_aa,
+            sum(accessmonitors.num_problemas_aaa)/count(*) as num_problemas_aaa,
+            sum(accessmonitors.num_advertencias_a)/count(*) as num_advertencias_a,
+            sum(accessmonitors.num_advertencias_aa)/count(*) as num_advertencias_aa,
+            sum(accessmonitors.num_advertencias_aaa)/count(*) as num_advertencias_aaa,
+            fecha_test'))->
+        groupBy('accessmonitors.fecha_test')->orderBy('accessmonitors.fecha_test','asc')->get();
+
+        return $accessmonitors;
+    }
+
+    
 
     public function borrarAccessmonitor($id){
         $accessmonitor = Accessmonitor::findOrFail($id);
         $accessmonitor ->delete();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public function getAnalisis($id){
-
-        $analisis=Accessmonitor::findOrFail($id);
-        
-        return $analisis;
-    }
-
-    #Función para obtener todos los analisis de una pagina web
-    public function getAnalisisPorPagina($pagina_id){
-
-        $analisis=Accessmonitor::where('pagina_id',$pagina_id)->get();
-
-        return $analisis;
-    }
-
-
-    #Función para obtener el reporte con los datos de un análisis
-    public function getDatosProblemas($id){
-
-        $reporte = Accessmonitor::where('id',$id)->get();
-
-        return $reporte;
-    }
-    
-    #DISTINTO
-    public function getPuntuacionesPagina($pagina_id){
-        
-        $puntuaciones=Accessmonitor::select('puntuacion','fecha_test')
-            ->where('pagina_id',$pagina_id)
-            ->groupBy('puntuacion', 'fecha_test')
-            ->orderBy('fecha_test')
-            ->get();
-
-        return $puntuaciones;
-    }
-
-    public function getNumProblemasAPagina($pagina_id){
-        
-        $num_problemas_a=Accessmonitor::select('num_problemas_a','fecha_test')
-            ->where('pagina_id',$pagina_id)
-            ->groupBy('num_problemas_a', 'fecha_test')
-            ->orderBy('fecha_test')
-            ->get();
-
-        return $num_problemas_a;
-    }
-
-    public function getNumProblemasAAPagina($pagina_id){
-        
-        $num_problemas_a=Accessmonitor::select('num_problemas_aa','fecha_test')
-            ->where('pagina_id',$pagina_id)
-            ->groupBy('num_problemas_aa', 'fecha_test')
-            ->orderBy('fecha_test')
-            ->get();
-
-        return $num_problemas_a;
-    }
-
-    public function getNumProblemasAAAPagina($pagina_id){
-        
-        $num_problemas_a=Accessmonitor::select('num_problemas_aaa','fecha_test')
-            ->where('pagina_id',$pagina_id)
-            ->groupBy('num_problemas_aaa', 'fecha_test')
-            ->orderBy('fecha_test')
-            ->get();
-
-        return $num_problemas_a;
-    }
-
-
-    public function getNumAdvertenciasAPagina($pagina_id){
-        
-        $num_problemas_a=Accessmonitor::select('num_advertencias_a','fecha_test')
-            ->where('pagina_id',$pagina_id)
-            ->groupBy('num_advertencias_a', 'fecha_test')
-            ->orderBy('fecha_test')
-            ->get();
-
-        return $num_problemas_a;
-    }
-
-    public function getNumAdvertenciasAAPagina($pagina_id){
-        
-        $num_problemas_a=Accessmonitor::select('num_advertencias_aa','fecha_test')
-            ->where('pagina_id',$pagina_id)
-            ->groupBy('num_advertencias_aa', 'fecha_test')
-            ->orderBy('fecha_test')
-            ->get();
-
-        return $num_problemas_a;
-    }
-
-    public function getNumAdvertenciasAAAPagina($pagina_id){
-        
-        $num_problemas_a=Accessmonitor::select('num_advertencias_aaa','fecha_test')
-            ->where('pagina_id',$pagina_id)
-            ->groupBy('num_advertencias_aaa', 'fecha_test')
-            ->orderBy('fecha_test')
-            ->get();
-
-        return $num_problemas_a;
-    }
 
 }
