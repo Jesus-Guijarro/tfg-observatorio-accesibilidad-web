@@ -1,4 +1,4 @@
-import os, requests, subprocess,mysql.connector
+import os, requests, subprocess,mysql.connector, logging
 
 from selenium import webdriver
 from datetime import datetime
@@ -84,7 +84,7 @@ def getFecha():
 def getDirectorioOSAW():
     #Directorio actual del archivo en ejecución
     directorio = os.path.dirname(os.path.abspath(__file__))
-    #En caso de que se ejecute desde la carpeta Tools:
+    #En caso de que se ejecute desde la carpeta Herramientas:
     if directorio.find("/Webscraping/Herramientas")!= (-1):
         directorio=directorio.replace("/Webscraping/Herramientas","/OSAW/public")
     else:
@@ -111,13 +111,13 @@ def errorLog(directorio,fecha_test,herramienta,identificador,error):
 
     ruta_archivo_logs=directorio+"/storage/logs/log_herramientas_"+fecha_test+".log"
 
+    logging.basicConfig(filename=ruta_archivo_logs,level=logging.ERROR)
+    logger = logging.getLogger("HERRAMIENTA")
+
     #Para tener más información de la fecha obtenemos también los datos de hora, minutos y segundos
     fecha_absoluta= str(datetime.now())
-
-    log = open(ruta_archivo_logs, 'a')
-    log.write('HERRAMIENTA: "' + herramienta + '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tPAGINA WEB: "' + identificador +'"\n\tERROR: "'+repr(error)+ '"\n\n')
     
-    log.close()
+    logger.error(herramienta + '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tPAGINA WEB: "' + str(identificador) +'"\n\tINFORMACION: "'+repr(error)+ '"\n')
 
 #Cabecera de los documentos con la información de los problemas encontrados
 def getCabeceraReporte(pagina_url,fecha_test):

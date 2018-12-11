@@ -1,4 +1,4 @@
-import io, mysql.connector, os, requests, hashlib, codecs
+import io, mysql.connector, os, requests, hashlib, codecs, logging
 
 from database import conexionDB,desconexionDB
 from selenium import webdriver
@@ -8,17 +8,18 @@ from datetime import datetime
 def errorLog(pagina_web,pagina_id,error):
     #Para que no se escriban logs durante la ejecución crawler.py se indica pagina_id=0 
     if pagina_id !=0:
+
         fecha_test=getFecha()
         directorio=getDirectorioOSAW()
-        fecha_absoluta= str(datetime.now())
 
         ruta_archivo_logs=directorio+"/storage/logs/log_paginas_"+fecha_test+".log"
 
-        log = open(ruta_archivo_logs, 'a')
+        logging.basicConfig(filename=ruta_archivo_logs,level=logging.ERROR)
+        logger = logging.getLogger("PAGINA_WEB")
 
-        log.write('PAGINA: "' + pagina_web +'"\n\tIDENTIFICADOR: "'+str(pagina_id)+ '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tERROR: "'+error+ '"\n\n')
-        
-        log.close()
+        fecha_absoluta= str(datetime.now())
+
+        logger.error(pagina_web +'"\n\tIDENTIFICADOR: "'+str(pagina_id)+ '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tINFORMACION: "'+error+ '"')
 
 #Función para comprobar el tipo del contenido obtenido en la respuesta 
 #Realizada para el crawler
