@@ -111,13 +111,11 @@ def errorLog(directorio,fecha_test,herramienta,identificador,error):
 
     ruta_archivo_logs=directorio+"/storage/logs/log_herramientas_"+fecha_test+".log"
 
-    logging.basicConfig(filename=ruta_archivo_logs,level=logging.ERROR)
-    logger = logging.getLogger("HERRAMIENTA")
-
-    #Para tener más información de la fecha obtenemos también los datos de hora, minutos y segundos
-    fecha_absoluta= str(datetime.now())
     
-    logger.error(herramienta + '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tPAGINA WEB: "' + str(identificador) +'"\n\tINFORMACION: "'+repr(error)+ '"\n')
+    logging.basicConfig(filename=ruta_archivo_logs,level=logging.ERROR,format='%(asctime)s - %(levelname)s - %(name)s\n\t%(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+    logger = logging.getLogger("EVALUACION_HERRAMIENTA")
+    
+    logger.error('HERRAMIENTA: "'+herramienta + '"\n\tPAGINA WEB: ' + str(identificador) +'\n\tINFORMACION: "'+repr(error)+ '"\n')
 
 #Cabecera de los documentos con la información de los problemas encontrados
 def getCabeceraReporte(pagina_url,fecha_test):

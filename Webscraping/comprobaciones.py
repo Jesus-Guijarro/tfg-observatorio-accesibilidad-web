@@ -14,12 +14,10 @@ def errorLog(pagina_web,pagina_id,error):
 
         ruta_archivo_logs=directorio+"/storage/logs/log_paginas_"+fecha_test+".log"
 
-        logging.basicConfig(filename=ruta_archivo_logs,level=logging.ERROR)
-        logger = logging.getLogger("PAGINA_WEB")
+        logging.basicConfig(filename=ruta_archivo_logs,level=logging.WARNING,format='%(asctime)s - %(levelname)s - %(name)s\n\t%(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+        logger = logging.getLogger("ACCESSO_PAGINA_WEB")
 
-        fecha_absoluta= str(datetime.now())
-
-        logger.error(pagina_web +'"\n\tIDENTIFICADOR: "'+str(pagina_id)+ '"\n\tFECHA: "'+ fecha_absoluta+'"\n\tINFORMACION: "'+error+ '"')
+        logger.warning('IDENTIFICADOR: '+str(pagina_id)+'\n\tPAGINA_WEB: '+pagina_web + '\n\tINFORMACION: "'+error+ '"')
 
 #Función para comprobar el tipo del contenido obtenido en la respuesta 
 #Realizada para el crawler
@@ -51,7 +49,6 @@ def comprobarCodigoRespuesta(codigo_respuesta,pagina_web,pagina_id):
         error="La pagina se ha redirigido permanentemente [301]"
         errorLog(pagina_web,pagina_id,error)
         return False
-
     elif codigo_respuesta == 302: #Redirección temporal
         error="La pagina se ha redirigido temporalmente [302]"
         errorLog(pagina_web,pagina_id,error)
@@ -83,7 +80,7 @@ def comprobarAccesoPagina(pagina_web,pagina_id):
             return False
 
     except Exception as e:
-        error="No se puede acceder a la página. Excepción: " + repr(e)
+        error="No se puede acceder a la página. Error: " + repr(e)
         errorLog(pagina_web,pagina_id,error)
         return False
 
