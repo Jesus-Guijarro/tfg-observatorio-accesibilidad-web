@@ -26,15 +26,39 @@ Route::get('/', function()
     return View::make('pages.home');
 });
 
-Route::get('about', function()
+#Sitios web
+Route::get('sitio/{id}', 'SitioController@mostrarSitio');
+
+Route::get('lista-sitios', function()
 {
-    return View::make('pages.about');
+    return View::make('pages.lista-sitios');
 });
-Route::get('projects', function()
+
+Route::get('busqueda-sitios/{nombre}', 'SitioController@busquedaSitio');
+
+
+#Pagina web
+Route::get('pagina/{id}', 'PaginaController@mostrarPagina');
+Route::get('pagina/{id}/reporte-automatico', 'PaginaController@mostrarReporteAutomatico');
+
+#Usuarios
+Route::get('usuario/{id}', 'UserController@mostrarPerfilUsuario');
+Route::post('usuario/{id}/modificar-perfil', 'UserController@modificarPerfilUsuario');
+
+#Gestión sitios web
+Route::get('gestionar-sitios', 'SitioController@gestionarSitios');
+Route::post('crear-sitio', 'SitioController@crearSitio');
+Route::post('modificar-sitio/{id}', 'SitioController@modificarSitio');
+
+
+#Sobre el observatorio
+Route::get('sobre-observatorio', function()
 {
-    return View::make('pages.projects');
+    return View::make('pages.sobre-observatorio');
 });
-Route::get('contacto', function()
+
+#Contacto
+Route::post('contacto', function()
 {
     return View::make('pages.contacto');
 });
