@@ -53,6 +53,10 @@ def comprobarCodigoRespuesta(codigo_respuesta,pagina_web,pagina_id):
         error="La pagina se ha redirigido temporalmente [302]"
         errorLog(pagina_web,pagina_id,error)
         return False
+    elif codigo_respuesta == 403: #Acceso prohibido
+        error="El acceso a la página no está permitido [403]"
+        errorLog(pagina_web,pagina_id,error)
+        return False
     else:
         error="No ha habido éxito en la petición"
         errorLog(pagina_web,pagina_id,error)
@@ -61,8 +65,12 @@ def comprobarCodigoRespuesta(codigo_respuesta,pagina_web,pagina_id):
 #Función principal para comprobar el estado de una URL
 def comprobarAccesoPagina(pagina_web,pagina_id):
     try:
+        
+        #Necesario indicar el User-Agent para no recibir respuesta 403
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36'}
         #No se verifica el certificado SSL de la web - UMH
-        peticion = requests.get(pagina_web, verify=False, allow_redirects=False, timeout=20)
+        #No se permiten las redirecciones
+        peticion = requests.get(pagina_web,headers=headers, verify=False, allow_redirects=False, timeout=20)
 
         codigo_respuesta=peticion.status_code
 
