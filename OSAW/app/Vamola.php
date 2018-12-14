@@ -66,6 +66,11 @@ class Vamola extends Model
         return $vamolas;
     }
 
+    public function getNumVamolas(){
+        $num_vamolas = Vamola::count();
+        return $num_vamolas;
+    }
+
     public function borrarVamola($id){
         $vamola = Vamola::findOrFail($id);
         $vamola ->delete();

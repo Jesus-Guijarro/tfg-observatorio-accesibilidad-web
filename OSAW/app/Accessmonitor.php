@@ -65,6 +65,11 @@ class Accessmonitor extends Model
         return $accessmonitors;
     }
 
+    public function getNumAccessmonitors(){
+        $num_accessmonitors = Accessmonitor::count();
+        return $num_accessmonitors;
+    }
+
     public function borrarAccessmonitor($id){
         $accessmonitor = Accessmonitor::findOrFail($id);
         $accessmonitor ->delete();

@@ -18,17 +18,14 @@ Route::get('/', function () {
 */
 Auth::routes();
 
-Route::get('/', function()
-{
-    return View::make('pages.inicio');
-});
+Route::get('/', 'HomeController@mostrarInicio');
 
 #Sitios web
 Route::get('sitio/{id}', 'SitioController@mostrarSitio');
 
 Route::get('lista-sitios', 'SitioController@listarSitios');
 
-Route::get('busqueda-sitios', 'SitioController@busquedaSitio')->name('busqueda-sitios');
+Route::get('busqueda-sitios', 'SitioController@busquedaSitio');
 
 
 

@@ -1,16 +1,4 @@
 
-/*clase*/
-.h1-m{
-	color:rgb(56, 136, 160);
-	font-size: 1.3em;
-}
-/*id*/
-#h1-m{
-	color:rgb(211, 109, 14);
-	font-size: 1.3em;
-}
-
-
 /*Enlaces*/
 .a-hf{
     color: white;
@@ -22,8 +10,8 @@
 
 /*Cabecera*/
 .cabecera{
-    background: #0b4264;
-    padding: 3em 3em;
+    background: #1f3653;
+    padding: 1.5em 1.5em;
     /*border-bottom: 0.25em solid black;*/
 }
 .nav-cabecera{
@@ -63,9 +51,9 @@
 
 /*Pie de pagina*/
 .pie{
-    background: #0b4264;
+    background: #1f3653;
     text-align: left;
-    padding: 3em 3em;
+    padding: 1.5em 1.5em;
 }
 
 .li-pie{
@@ -85,11 +73,12 @@
 
 /*titulo paginas*/
 .h1-titulo{
-    color:black;
+    color:rgb(34, 104, 184);
     font-size: 2.5em;
-    text-align: center;
-    text-decoration: underline;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 

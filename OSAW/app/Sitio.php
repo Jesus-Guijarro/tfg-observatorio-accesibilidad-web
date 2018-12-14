@@ -59,6 +59,12 @@ class Sitio extends Model
         return $sitios;
     }
 
+    public function getNumSitios(){
+        $num_sitios = Sitio::count();
+        return $num_sitios;
+    }
+
+
     public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,
     $automatizado,$num_paginas,$categoria_id){
         $sitio = new Sitio();
@@ -96,5 +102,7 @@ class Sitio extends Model
         $sitio = Sitio::findOrFail($id);
         $sitio ->delete();
     }
+
+
 
 }

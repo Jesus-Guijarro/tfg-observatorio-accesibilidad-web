@@ -62,6 +62,11 @@ class Eiiichecker extends Model
         return $eiiicheckers;
     }
 
+    public function getNumEiiicheckers(){
+        $num_eiiicheckers = Eiiichecker::count();
+        return $num_eiiicheckers;
+    }
+
     public function borrarEiiichecker($id){
         $eiiichecker = Eiiichecker::findOrFail($id);
         $eiiichecker ->delete();

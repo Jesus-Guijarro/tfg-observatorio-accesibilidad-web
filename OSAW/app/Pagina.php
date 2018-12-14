@@ -49,6 +49,11 @@ class Pagina extends Model
         return $paginas;
     }
 
+    public function getNumPaginas(){
+        $num_paginas = Pagina::count();
+        return $num_paginas;
+    }
+
     public function crearPagina($URL){
         $pagina = new Pagina();
         $pagina->URL= $URL;

@@ -3,15 +3,62 @@
 @section('titulo', 'Pagina de inicio')
 
 @section('content')
-<div class="container">
-    <div>
-        @if (session('status'))
-            <div class="alert alert-success" role="alert">
-                {{ session('status') }}
-            </div>
-        @endif
+<h1> ¡Bienvenido al Observatorio para el Seguimiento de la Accesibilidad Web (OSAW)!</h1>
+<p> En la actualidad el observatorio hace uso de las siguientes herramientas online gratuitas para realizar los análisis y seguimiento de los sitios institucionales:</p>
 
-        You are logged in!
-    </div>
-</div>
+<ul>
+    <a href="http://www.acessibilidade.gov.pt/accessmonitor/" target="_blank"><li>Accessmonitor</li></a>
+    <a href="https://achecker.ca/checker/index.php"target="_blank"><li>Achecher</li></a>
+    <a href="http://checkers.eiii.eu/en/pagecheck/"target="_blank"><li>EIII Page Checker </li></a>
+    <a href="http://observatorioweb.ups.edu.ec/oaw/index.jsf"target="_blank"><li>Observatorio de Accesibilidad Web de la Universidad Politécnica Salesiana de Ecuador </li></a>
+    <a href="http://www.validatore.it/vamola_validator/checker/index.php"target="_blank"><li>Vamolà</li></a>
+    <a href="https://wave.webaim.org/"target="_blank"><li>WAVE</li></a>
+</ul>
+
+<h2>Datos del observatorio</h2>
+
+<p>Número total de <strong>sitios web</strong> que se están siguiendo: <strong>{{$num_sitios}}</strong> <a href="/lista-sitios">Ver sitios webs analizados </a></p>
+
+<p>Número total de <strong>paginas web</strong> evaluándose: <strong>{{$num_paginas}}</strong></p>  
+
+<h3> Categorias Institucionales y de Organización contempladas </h3>
+<ul>
+@foreach ($categorias as $categoria)
+<li>{{$categoria->descripcion}}
+@endforeach
+</ul>
+
+<h3> Número de evaluaciones realizadas por cada herramienta </h3>
+
+<table>
+    <tr>
+        <th>Herramienta</th>
+        <th>Número de evaluaciones</th>
+    </tr>
+    <tr>
+        <td >Accessmonitor</td>
+        <td> {{$num_accessmonitors}}</td>
+    </tr>
+    <tr>
+        <td >Achecker</td>
+        <td> {{$num_acheckers}}</td>
+    </tr>
+    <tr>
+        <td >EIII Checker</td>
+        <td> {{$num_eiiicheckers}}</td>
+    </tr>
+    <tr>
+        <td >Observatorio de la UPS de Ecuador</td>
+        <td> {{$num_observatorios}}</td>
+    </tr>
+    <tr>
+        <td >Vamolà</td>
+        <td> {{$num_vamolas}}</td>
+    </tr>
+    <tr>
+        <td >WAVE</td>
+        <td> {{$num_waves}}</td>
+    </tr>
+</table>
+
 @endsection

@@ -66,6 +66,12 @@ class Achecker extends Model
         return $acheckers;
     }
 
+
+    public function getNumAcheckers(){
+        $num_acheckers = Achecker::count();
+        return $num_acheckers;
+    }
+
     public function borrarAchecker($id){
         $achecker = Achecker::findOrFail($id);
         $achecker ->delete();

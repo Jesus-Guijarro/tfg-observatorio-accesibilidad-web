@@ -6,12 +6,25 @@
     
     <h1 class="h1-titulo"> Listado completo de sitios webs evaluados</h1>
 
+    <div style="margin-bottom: 1.5em">
+        <form method="GET">
+                <label for="categoria" >Filtrar por Categoria Institucional:  </label>
+                <select>
+                    @foreach ($categorias as $categoria)
+                    <option value="{{$categoria->id}}">{{$categoria->descripcion}}</option>
+                    @endforeach
+                </select>
+                {{ csrf_field() }}
+        </form>
+    </div>
+
+
     <table>
         <tr>
             <th>Sitio web</th>
             <th>URL</th>
             <th>Páginas webs evaluadas</th>
-            <th>Categoria</th>
+            <th>Categoria Institucional</th>
         </tr>
         @foreach ($sitios as $sitio)
             <tr>

@@ -63,6 +63,11 @@ class Wave extends Model
         return $waves;
     }
 
+    public function getNumWaves(){
+        $num_waves = Wave::count();
+        return $num_waves;
+    }
+
     public function borrarWave($id){
         $wave = Wave::findOrFail($id);
         $wave ->delete();

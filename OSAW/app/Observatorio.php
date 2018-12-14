@@ -79,6 +79,11 @@ class Observatorio extends Model
         return $observatorios;
     }
 
+    public function getNumObservatorios(){
+        $num_observatorios = Observatorio::count();
+        return $num_observatorios;
+    }
+
     public function borrarObservatorio($id){
         $observatorio = Observatorio::findOrFail($id);
         $observatorio ->delete();
