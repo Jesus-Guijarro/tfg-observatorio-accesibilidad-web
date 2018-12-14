@@ -1,4 +1,9 @@
-@extends('layouts.default')
+@extends('layouts.master')
+
+@section('titulo', 'Sobre el Observatorio')
+
 @section('content')
-    i am the about page
-@stop
+    <div class="container">
+    Pagina Sobre el Observatorio
+    </div>
+@endsection

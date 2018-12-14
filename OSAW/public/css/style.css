@@ -1,0 +1,84 @@
+
+/*clase*/
+.h1-m{
+	color:rgb(56, 136, 160);
+	font-size: 1.3em;
+}
+/*id*/
+#h1-m{
+	color:rgb(211, 109, 14);
+	font-size: 1.3em;
+}
+
+
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
+
+/*Cabecera*/
+.cabecera{
+    background: steelblue;
+    padding: 1.25em 1.25em;
+    /*border-bottom: 0.25em solid black;*/
+}
+.nav-cabecera{
+    display: flex;
+}
+
+.ul-cabecera{
+    margin-left: auto !important;
+    margin-top: 1em;
+}
+
+.li-cabecera{
+    display: inline;
+    margin-right: 2.5em;
+}
+
+.osaw{
+    text-align: center;
+}
+
+.p-osaw{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+}
+
+.buscador{
+    text-align: right;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+/*Pie de pagina*/
+.pie{
+    background: steelblue;
+    text-align: left;
+    padding: 1.25em 1.25em;
+}
+
+.li-pie{
+    display: inline;
+    margin-right: 2.5em;
+}
+
+/*Contenido*/
+
+.contenido{
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+}
+
+body{
+    background: #FFFFFF;
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+}

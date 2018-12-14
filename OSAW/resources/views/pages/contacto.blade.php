@@ -1,4 +1,9 @@
-@extends('layouts.default')
+@extends('layouts.master')
+
+@section('titulo', 'Contacto')
+
 @section('content')
-    i am the contact page
-@stop
+    <div class="container">
+    Pagina Contacto
+    </div>
+@endsection

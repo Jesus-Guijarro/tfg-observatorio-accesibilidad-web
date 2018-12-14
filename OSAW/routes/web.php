@@ -58,7 +58,7 @@ Route::get('sobre-observatorio', function()
 });
 
 #Contacto
-Route::post('contacto', function()
+Route::get('contacto', function()
 {
     return View::make('pages.contacto');
 });
