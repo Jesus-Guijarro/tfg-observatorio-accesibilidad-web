@@ -4,6 +4,6 @@
 
 @section('content')
     <div class="container">
-        Usuario
+        Usuario {{$user->nombre}}
     </div>
 @endsection

@@ -18,11 +18,6 @@ Route::get('/', function () {
 */
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-
-
 Route::get('/', function()
 {
     return View::make('pages.inicio');
@@ -31,10 +26,7 @@ Route::get('/', function()
 #Sitios web
 Route::get('sitio/{id}', 'SitioController@mostrarSitio');
 
-Route::get('lista-sitios', function()
-{
-    return View::make('pages.lista-sitios');
-});
+Route::get('lista-sitios', 'SitioController@listarSitios');
 
 Route::get('busqueda-sitios/{nombre}', 'SitioController@busquedaSitio');
 
@@ -65,3 +57,7 @@ Route::get('contacto', function()
     return View::make('pages.contacto');
 });
 
+Route::get('ejemplo', function() {
+    $url = url('foo');
+    return $url ;
+    });

@@ -105,7 +105,7 @@ class SitiosTableSeeder extends Seeder
             ],
             [
                 'nombre' => 'Endesa',
-                'dominio' => '/www.endesaclientes.com',
+                'dominio' => 'www.endesaclientes.com',
                 'periodicidad' => 'Semanal',
                 'hora'=>'13:30',
                 'dia' => '1',
