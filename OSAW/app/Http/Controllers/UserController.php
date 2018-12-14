@@ -11,6 +11,6 @@ class UserController extends Controller
     public function mostrarPerfilUsuario($id){
         $user = new User();
         $usuario = $user->getUsuario($id);
-        return view('pages.usuario.perfil', array('user' =>  $usuario));
+        return view('pages.usuario.perfil', ['user' =>  $usuario]);
     }
 }

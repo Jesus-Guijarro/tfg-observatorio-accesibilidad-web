@@ -40,8 +40,9 @@
     </ul>
 </nav>
 <div class="buscador">
-    <form action="{{ url('foo/bar') }}" method="POST">
-        <input type="text" placeholder="Buscar sitio web..." name="buscador">
-        <button type="submit">Buscar</button>
+    <form action="{{ url('perfil/{id}') }}" method="GET">
+        <label class="label-buscador" for="nombreSitio" >Buscar Sitio Web: </label>
+        <input type="text" placeholder="Buscar sitio web..." id ="nombreSitio" name="nombreSitio" value="Ministerio" required>
+        {{ csrf_field() }}
     </form>
 </div>

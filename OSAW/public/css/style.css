@@ -57,6 +57,10 @@ a:hover{
     border: none;
 }
 
+.label-buscador{
+    color: white;
+}
+
 /*Pie de pagina*/
 .pie{
     background: steelblue;
@@ -76,4 +80,10 @@ a:hover{
     margin-bottom: 0.625em;
 }
 
-
+/*titulo paginas*/
+.h1-titulo{
+    color:black;
+    background-color: lightblue;
+    font-size: 1.5em;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+REPORTE PÁGINA WEB: https://www.icex.es/icex/es/Navegacion-zona-contacto/revista-el-exportador/index.html
+FECHA EVALUACIÓN: 2018-12-14
+
+Se encontró 1 imagen que no tiene leyenda
+Se encontró una imagen con una leyenda que no sirve de equivalente alternativo
+Se encontraron 8 imágenes en las que la leyenda es un espacio vacío
+Se encontró 1 caso en que los encabezados no respetan la cadena jerárquica
+Se han encontrado 307 elementos encabezados
+Se han encontrado 8 enlaces en los que el contenido está compuesto sólo por una imagen no subtitulada
+Se han localizado 224 enlaces con el mismo texto que apuntan a destinos diferentes
+Se encontró 1 grupo de enlaces compuesto por 10 o más enlaces no agrupados por elementos estructurales
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se identificaron 2 formularios sin botón de envío
+Se ha identificado 1 control de formulario sin etiquetas asociadas y sin el atributo title
+Se encontró 1 control de formulario sin etiqueta asociada
+Se encontró 1 valor repetido del atributo id
+Se encontraron 24 errores de validación en el lenguaje de marcado
+Se han encontrado 1 elementos o atributos de HTML que se utilizan para controlar la presentación visual del texto
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que en 1 caso, se hace uso de unidades de medida absolutas
+El título de la página contiene 74 caracteres
+Se constató que se identifica el idioma principal de la página con el código "es"

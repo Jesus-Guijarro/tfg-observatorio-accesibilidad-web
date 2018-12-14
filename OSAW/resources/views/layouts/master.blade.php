@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="{{App::getLocale()}}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,20 +23,20 @@
         
     </head>
     <body>
-    <div>
+        <div>
 
-        <header class="cabecera">
-            @include('includes.header')
-        </header>
+            <header class="cabecera">
+                @include('includes.header')
+            </header>
 
-        <div class="contenido">
-                @yield('content')
+            <div class="contenido">
+                    @yield('content')
+            </div>
+
+            <footer class="pie">
+                @include('includes.footer')
+            </footer>
         </div>
-
-        <footer class="pie">
-            @include('includes.footer')
-        </footer>
-    </div>
-    <script src="{{ asset('js/bootstrap.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
     </body>
 </html>
