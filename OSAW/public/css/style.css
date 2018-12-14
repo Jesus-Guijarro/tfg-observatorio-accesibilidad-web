@@ -11,7 +11,7 @@
 }
 
 
-
+/*Enlaces*/
 a{
     color: white;
 }
@@ -61,7 +61,7 @@ a:hover{
 .pie{
     background: steelblue;
     text-align: left;
-    padding: 1.25em 1.25em;
+    padding: 3em 3em;
 }
 
 .li-pie{
@@ -76,9 +76,4 @@ a:hover{
     margin-bottom: 0.625em;
 }
 
-body{
-    background: #FFFFFF;
-    max-width: 80em;
-    margin-left: auto;
-    margin-right: auto;
-}
+

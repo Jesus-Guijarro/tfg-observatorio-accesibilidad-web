@@ -1,4 +1,9 @@
 @extends('layouts.master')
+
+@section('titulo', 'Perfil usuario')
+
 @section('content')
-    Perfil usuario
-@stop
+    <div class="container">
+        Usuario
+    </div>
+@endsection

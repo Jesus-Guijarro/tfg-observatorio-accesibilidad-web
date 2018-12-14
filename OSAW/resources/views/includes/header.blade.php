@@ -22,7 +22,7 @@
             </li>
         @else
             <li class="li-cabecera">
-                <a href="#" >
+                <a href="/perfil/{{Auth::user()->id}}" >
                     {{ Auth::user()->nombre}}, Perfil de usuario
                 </a>
             </li>

@@ -21,9 +21,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+
+
 Route::get('/', function()
 {
-    return View::make('pages.home');
+    return View::make('pages.inicio');
 });
 
 #Sitios web
@@ -39,11 +41,11 @@ Route::get('busqueda-sitios/{nombre}', 'SitioController@busquedaSitio');
 
 #Pagina web
 Route::get('pagina/{id}', 'PaginaController@mostrarPagina');
-Route::get('pagina/{id}/reporte-automatico', 'PaginaController@mostrarReporteAutomatico');
+Route::get('reporte-automatico/{id}', 'PaginaController@mostrarReporteAutomatico');
 
 #Usuarios
-Route::get('usuario/{id}', 'UserController@mostrarPerfilUsuario');
-Route::post('usuario/{id}/modificar-perfil', 'UserController@modificarPerfilUsuario');
+Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario');
+Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
 
 #Gestión sitios web
 Route::get('gestionar-sitios', 'SitioController@gestionarSitios');
