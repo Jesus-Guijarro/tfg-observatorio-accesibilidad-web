@@ -28,7 +28,8 @@ Route::get('sitio/{id}', 'SitioController@mostrarSitio');
 
 Route::get('lista-sitios', 'SitioController@listarSitios');
 
-Route::get('busqueda-sitios/{nombre}', 'SitioController@busquedaSitio');
+Route::post('busqueda-sitios', 'SitioController@busquedaSitio')->name('busqueda-sitios');
+
 
 
 #Pagina web

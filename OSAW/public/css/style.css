@@ -22,7 +22,7 @@
 
 /*Cabecera*/
 .cabecera{
-    background: #013556;
+    background: #0b4264;
     padding: 3em 3em;
     /*border-bottom: 0.25em solid black;*/
 }
@@ -63,7 +63,7 @@
 
 /*Pie de pagina*/
 .pie{
-    background: #013556;
+    background: #0b4264;
     text-align: left;
     padding: 3em 3em;
 }
@@ -86,9 +86,9 @@
 /*titulo paginas*/
 .h1-titulo{
     color:black;
-    background-color: #518ab8;
     font-size: 2.5em;
     text-align: center;
+    text-decoration: underline;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -109,11 +109,10 @@ th, td{
     
 }
 th{
-    background-color: #218fe8;
+    background-color: #1b77c2;
     color: white;
-    
 }
 
 .div-links{
-    
+    float: right;
 }

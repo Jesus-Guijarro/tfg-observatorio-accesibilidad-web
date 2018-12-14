@@ -19,4 +19,15 @@ class SitioController extends Controller
 
         return view('pages.sitio', array('sitio' => $sitio));
     }
+
+    public function busquedaSitio(Request $request){
+
+        $nombre=$request->nombre;
+
+        $sitio = new Sitio();
+        $sitios = $sitio->getSitiosBusqueda($nombre);
+
+        return view('pages.busqueda-sitios', array('sitios' => $sitios));
+    }
+
 }

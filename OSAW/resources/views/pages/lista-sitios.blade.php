@@ -8,7 +8,7 @@
 
     <table>
         <tr>
-            <th>Nombre</th>
+            <th>Sitio web</th>
             <th>URL</th>
             <th>Páginas webs evaluadas</th>
             <th>Categoria</th>
@@ -26,6 +26,4 @@
         {{ $sitios->links() }}
     </div>
 
-
-    
 @endsection
