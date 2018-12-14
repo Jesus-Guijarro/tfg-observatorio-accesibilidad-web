@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Sitio;
+use Illuminate\Support\Facades\Input;
 
 class SitioController extends Controller
 {
@@ -20,9 +21,9 @@ class SitioController extends Controller
         return view('pages.sitio', array('sitio' => $sitio));
     }
 
-    public function busquedaSitio(Request $request){
+    public function busquedaSitio(){
 
-        $nombre=$request->nombre;
+        $nombre =  Input::get('nombre');
 
         $sitio = new Sitio();
         $sitios = $sitio->getSitiosBusqueda($nombre);

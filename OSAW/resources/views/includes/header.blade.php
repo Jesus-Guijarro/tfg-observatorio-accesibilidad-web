@@ -40,7 +40,7 @@
     </ul>
 </nav>
 <div class="buscador">
-    <form method="POST" action="{{ route('busqueda-sitios') }}">
+    <form method="GET" action="{{ action('SitioController@busquedaSitio') }}">
             <label class="label-buscador" for="nombre" >Buscar Sitio Web: </label>
             <input type="text" placeholder="Buscar sitio web..." id ="nombre" name="nombre" value="Ministerio" required autofocus>
             {{ csrf_field() }}
