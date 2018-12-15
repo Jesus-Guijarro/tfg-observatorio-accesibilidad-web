@@ -22,16 +22,14 @@ Route::get('/', 'HomeController@mostrarInicio');
 
 #Sitios web
 Route::get('sitio/{id}', 'SitioController@mostrarSitio');
-
 Route::get('lista-sitios', 'SitioController@listarSitios');
-
 Route::get('busqueda-sitios', 'SitioController@busquedaSitio');
-
-
 
 #Pagina web
 Route::get('pagina/{id}', 'PaginaController@mostrarPagina');
-Route::get('reporte-automatico/{id}', 'PaginaController@mostrarReporteAutomatico');
+
+#Reporte
+Route::get('reporte-automatico/{reporte}', 'PaginaController@mostrarReporteAutomatico');
 
 #Usuarios
 Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario');
@@ -41,7 +39,6 @@ Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
 Route::get('gestionar-sitios', 'SitioController@gestionarSitios');
 Route::post('crear-sitio', 'SitioController@crearSitio');
 Route::post('modificar-sitio/{id}', 'SitioController@modificarSitio');
-
 
 #Sobre el observatorio
 Route::get('sobre-observatorio', function()
@@ -54,8 +51,3 @@ Route::get('contacto', function()
 {
     return View::make('pages.contacto');
 });
-
-Route::get('ejemplo', function() {
-    $url = url('foo');
-    return $url ;
-    });

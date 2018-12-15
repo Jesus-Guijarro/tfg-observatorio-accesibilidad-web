@@ -64,6 +64,13 @@ class Sitio extends Model
         return $num_sitios;
     }
 
+    public function getPaginasSitio($id){
+        $paginas= Sitio::select('paginas.id','paginas.URL')->
+        join('paginas','paginas.sitio_id','=','sitios.id')->
+        where('sitios.id',$id)->get();
+
+        return $paginas;
+    }
 
     public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,
     $automatizado,$num_paginas,$categoria_id){

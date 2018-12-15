@@ -44,9 +44,12 @@ class Pagina extends Model
         return $pagina;
     }
 
-    public function getPaginasSitio($sitio_id){
-        $paginas = Pagina::select('id','URL')->where('sitio_id',$sitio_id)->get();
-        return $paginas;
+    public function getSitioPagina($id){
+        $sitio= Pagina::select('sitio.id','sitio.nombre')->
+        join('sitios','sitios.pagina_id','=','paginas.id')->
+        where('paginas.id',$id)->get();
+
+        return $sitio;
     }
 
     public function getNumPaginas(){
