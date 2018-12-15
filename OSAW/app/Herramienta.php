@@ -30,11 +30,17 @@ class Herramienta extends Model
     }
 
     public function getHerramientasSitio($id){
-        $herramientas = Herramienta::join('herramienta_sitio', 'herramientas.id', '=', 'herramienta_sitio.herramienta_id')->
+        $hs = Herramienta::join('herramienta_sitio', 'herramientas.id', '=', 'herramienta_sitio.herramienta_id')->
         where('herramienta_sitio.sitio_id','=',$id)->
         where('herramientas.activa',true)->
-        select('herramientas.id','herramientas.descripcion')->
+        select('herramientas.id')->
         get();
+
+        $herramientas = array();
+
+        foreach ($hs as $herramienta) {
+            array_push($herramientas,$herramienta["id"]);
+        }
         
         return $herramientas;
     }

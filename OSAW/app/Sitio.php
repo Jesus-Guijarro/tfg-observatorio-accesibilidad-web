@@ -75,9 +75,15 @@ class Sitio extends Model
     public function getDiaAnalisis($id){
         $sitio= Sitio::findOrFail($id);
 
-        $dias = array(0 => "Domingo",1 => "Lunes",2 => "Martes",3 => "Miércoles",4 => "Jueves",5 => "Viernes",6 => "Sábado");
+        if($sitio->periodicidad=="Semanal"){
 
-        $dia = $dias[$sitio->dia];
+            $dias = array(0 => "Domingo",1 => "Lunes",2 => "Martes",3 => "Miércoles",4 => "Jueves",5 => "Viernes",6 => "Sábado");
+
+            $dia = $dias[$sitio->dia];
+        }
+        else{
+            $dia = $sitio->dia;
+        }
 
         return $dia;
     }

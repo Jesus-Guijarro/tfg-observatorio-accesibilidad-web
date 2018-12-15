@@ -3,65 +3,54 @@
 @section('titulo', 'Sitio Web')
 @section('scripts')
 
-<script>
-google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(drawChart1);
-function drawChart1() {
-    var data = google.visualization.arrayToDataTable
-        ([['X', '1', '2', '3', '4', '5', '6'],
-            [1, 2, 3, 4, 5, 6, 7],
-            [2, 3, 4, 5, 6, 7, 8],
-            [3, 4, 5, 6, 7, 8, 9],
-            [4, 5, 6, 7, 20, 9, 10],
-            [5, 6, 7, 8, 9, 10, 11],
-            [6, 7, 8, 9, 10, 11, 12]
-    ]);
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
 
-    var options = {
-        legend: 'none',
-        series: {
-        0: { color: '#e2431e' },
-        1: { color: '#e7711b' },
-        2: { color: '#f1ca3a' },
-        3: { color: '#6f9654' },
-        4: { color: '#1c91c0' },
-        5: { color: '#43459d' },
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Day');
+      data.addColumn('number', 'Guardians of the Galaxy');
+      data.addColumn('number', 'The Avengers');
+      data.addColumn('number', 'Transformers: Age of Extinction');
+
+      data.addRows([
+        [1,  37.8, 80.8, 41.8],
+        [2,  30.9, 69.5, 32.4],
+        [3,  25.4,   57, 25.7],
+        [4,  11.7, 18.8, 10.5],
+        [5,  11.9, 17.6, 10.4],
+        [6,   8.8, 13.6,  7.7],
+        [7,   7.6, 12.3,  9.6],
+        [8,  12.3, 29.2, 10.6],
+        [9,  16.9, 42.9, 14.8],
+        [10, 12.8, 30.9, 11.6],
+        [11,  5.3,  7.9,  4.7],
+        [12,  6.6,  8.4,  5.2],
+        [13,  4.8,  6.3,  3.6],
+        [14,  4.2,  6.2,  3.4]
+      ]);
+
+      var options = {
+        chart: {
+          title: 'AccessMonitor',
+          subtitle: 'in millions of dollars (USD)'
+        },
+        width: 900,
+        height: 500,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
         }
-    };
+      };
 
-    var chart = new google.visualization.LineChart(document.getElementById('accessmonitor'));
-    chart.draw(data, options);
-}
+      var chart = new google.charts.Line(document.getElementById('accessmonitor'));
 
-google.charts.setOnLoadCallback(drawChart2);
-
-function drawChart2() {
-    var data = google.visualization.arrayToDataTable
-    ([['X', '1', '2', '3', '4', '5', '6'],
-        [1, 2, 3, 4, 5, 6, 7],
-        [2, 3, 4, 5, 6, 7, 8],
-        [3, 4, 5, 6, 7, 8, 9],
-        [4, 5, 6, 7, 20, 9, 10],
-        [5, 6, 7, 8, 9, 10, 11],
-]);
-
-var options = {
-    legend: 'none',
-    series: {
-    0: { color: '#e2431e' },
-    1: { color: '#e7711b' },
-    2: { color: '#f1ca3a' },
-    3: { color: '#6f9654' },
-    4: { color: '#1c91c0' },
+      chart.draw(data, google.charts.Line.convertOptions(options));
     }
-};
-    var chart = new google.visualization.LineChart(document.getElementById('wave'));
-    chart.draw(data, options);
-}
-
-console.log("{{$sitio->nombre}}")
-
-</script>
+  </script>
 
 @endsection
 
@@ -97,26 +86,34 @@ console.log("{{$sitio->nombre}}")
 
 <h2>Resultados de ejecución de las herramientas</h2>
 
+@if (in_array(1,$herramientas))
 <h3> AccessMonitor</h3>
 <div id="accessmonitor" style="width: 900px; height: 500px;"></div>
+@endif
 
+@if (in_array(2,$herramientas))
 <h3> Achecker </h3>
 <div id="achecker" style="width: 900px; height: 500px;"></div>
+@endif
 
+@if (in_array(3,$herramientas))
 <h3> EIII Page Checker </h3>
 <div id="eiiichecker" style="width: 900px; height: 500px;"></div>
+@endif
 
+@if (in_array(4,$herramientas))
 <h3> Observatorio de la UPS de Ecuador </h3>
 <div id="observatorio" style="width: 900px; height: 500px;"></div>
+@endif
 
+@if (in_array(5,$herramientas))
 <h3> Vamolà </h3>
 <div id="vamola" style="width: 900px; height: 500px;"></div>
+@endif
 
+@if (in_array(6,$herramientas))
 <h3> WAVE </h3>
 <div id="wave" style="width: 900px; height: 500px;"></div>
+@endif
 
-
-<div class="container">
-    Sitio -> {{$sitio->nombre}}
-</div>
 @endsection
