@@ -35,8 +35,24 @@ class SitioController extends Controller
         $ac = new Achecker();
         $acheckers = $ac->getAcheckersSitioGraficos($id);
 
+        $ei = new Eiiichecker();
+        $eiiicheckers = $ei->getEiiicheckersSitioGraficos($id);
+
+        $o = new Observatorio();
+        $observatorios = $o->getObservatoriosSitioGraficos($id);
+
+        $v = new Vamola();
+        $vamolas = $v->getVamolasSitioGraficos($id);
+
+        $w = new Wave();
+        $waves = $w->getWavesSitioGraficos($id);
+
         return view('pages.sitio', array('sitio' => $sitio, 'dia'=>$dia,'paginas' => $paginas,
-        'herramientas' => $herramientas, 'accessmonitors' => $accessmonitors,'acheckers' => $acheckers ));
+        'herramientas' => $herramientas, 
+        'accessmonitors' => $accessmonitors,'acheckers' => $acheckers,
+        'eiiicheckers' => $eiiicheckers,'observatorios' => $observatorios,
+        'vamolas' => $vamolas,'waves' => $waves
+     ));
     }
 
     public function listarSitios(){

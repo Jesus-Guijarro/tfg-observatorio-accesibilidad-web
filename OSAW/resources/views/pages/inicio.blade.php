@@ -44,7 +44,7 @@
         <td> {{$num_acheckers}}</td>
     </tr>
     <tr>
-        <td >EIII Checker</td>
+        <td >EIII Page Checker</td>
         <td> {{$num_eiiicheckers}}</td>
     </tr>
     <tr>

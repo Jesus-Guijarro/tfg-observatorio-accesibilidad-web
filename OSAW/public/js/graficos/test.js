@@ -1,58 +1,84 @@
+google.charts.load('current', {'packages':['line']});
+    google.charts.setOnLoadCallback(puntuacion);
+    google.charts.setOnLoadCallback(problemas);
+    google.charts.setOnLoadCallback(advertencias);
 
-google.charts.load("current", {packages:["corechart"]});
+    function puntuacion() {
 
-google.charts.setOnLoadCallback(drawChart1);
+        var data = new google.visualization.DataTable();
 
-function drawChart1() {
-    var data = google.visualization.arrayToDataTable
-        ([['X', '1', '2', '3', '4', '5', '6'],
-            [1, 2, 3, 4, 5, 6, 7],
-            [2, 3, 4, 5, 6, 7, 8],
-            [3, 4, 5, 6, 7, 8, 9],
-            [4, 5, 6, 7, 20, 9, 10],
-            [5, 6, 7, 8, 9, 10, 11],
-            [6, 7, 8, 9, 10, 11, 12]
-    ]);
+        data.addColumn('date', 'Fecha de la evaluación');
+        data.addColumn('number', 'Puntuación');
+        
 
-    var options = {
-        legend: 'none',
-        series: {
-        0: { color: '#e2431e' },
-        1: { color: '#e7711b' },
-        2: { color: '#f1ca3a' },
-        3: { color: '#6f9654' },
-        4: { color: '#1c91c0' },
-        5: { color: '#43459d' },
-        }
-    };
+        data.addRows([
+            @foreach ($accessmonitors as $accessmonitor)
+                [new Date('{{$accessmonitor->fecha_test}}'),
+                {{$accessmonitor->puntuacion}}],
+            @endforeach
+        ]);
 
-    var chart = new google.visualization.LineChart(document.getElementById('chart_div1'));
-    chart.draw(data, options);
-}
+        var options = {
+            title: 'AccessMonitor'
+        };
 
-google.charts.setOnLoadCallback(drawChart2);
+        var chart = new google.charts.Line(document.getElementById('accessmonitor_puntuacion'));
 
-function drawChart2() {
-    var data = google.visualization.arrayToDataTable
-    ([['X', '1', '2', '3', '4', '5', '6'],
-        [1, 2, 3, 4, 5, 6, 7],
-        [2, 3, 4, 5, 6, 7, 8],
-        [3, 4, 5, 6, 7, 8, 9],
-        [4, 5, 6, 7, 20, 9, 10],
-        [5, 6, 7, 8, 9, 10, 11],
-]);
-
-var options = {
-    legend: 'none',
-    series: {
-    0: { color: '#e2431e' },
-    1: { color: '#e7711b' },
-    2: { color: '#f1ca3a' },
-    3: { color: '#6f9654' },
-    4: { color: '#1c91c0' },
+        chart.draw(data, options);
     }
-};
 
-    var chart = new google.visualization.LineChart(document.getElementById('chart_div2'));
-    chart.draw(data, options);
-}
+    function problemas() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de la evaluación');
+        data.addColumn('number', 'Número de problemas de nivel A');
+        data.addColumn('number', 'Número de problemas de nivel AA');
+        data.addColumn('number', 'Número de problemas de nivel AAA');
+
+
+        data.addRows([
+            @foreach ($accessmonitors as $accessmonitor)
+                [new Date('{{$accessmonitor->fecha_test}}'),
+                {{$accessmonitor->num_problemas_a}},
+                {{$accessmonitor->num_problemas_aa}},
+                {{$accessmonitor->num_problemas_aaa}}],
+            @endforeach
+        ]);
+
+        var options = {
+            title: 'B'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('accessmonitor_problemas'));
+
+        chart.draw(data, options);
+    }
+    
+    function advertencias() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de la evaluación');
+        data.addColumn('number', 'Número de advertencias de nivel A');
+        data.addColumn('number', 'Número de advertencias de nivel AA');
+        data.addColumn('number', 'Número de advertencias de nivel AAA');
+
+
+        data.addRows([
+        @foreach ($accessmonitors as $accessmonitor)
+            [new Date('{{$accessmonitor->fecha_test}}'),
+            {{$accessmonitor->num_advertencias_a}},
+            {{$accessmonitor->num_advertencias_aa}},
+            {{$accessmonitor->num_advertencias_aaa}}],
+        @endforeach
+        ]);
+
+        var options = {
+            title: 'C'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('accessmonitor_advertencias'));
+
+        chart.draw(data, options);
+    }
