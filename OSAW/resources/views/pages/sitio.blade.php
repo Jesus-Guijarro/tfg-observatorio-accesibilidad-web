@@ -212,12 +212,177 @@
         google.charts.setOnLoadCallback(ei_problemas);
     @endif
 
+    function ei_puntuacion() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de evaluación');
+        data.addColumn('number', 'Puntuación');
+
+
+        data.addRows([
+        @foreach ($eiiicheckers as $eiiichecker)
+            [new Date('{{$eiiichecker->fecha_test}}'),
+            {{$eiiichecker->puntuacion}}],
+        @endforeach
+        ]);
+
+        var options = {
+            title: 'C'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('eiiichecker-puntuacion'));
+
+        chart.draw(data, options);
+    }
+
+    function ei_total() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de evaluación');
+        data.addColumn('number', 'Número de problemas');
+        data.addColumn('number', 'Número de aciertos');
+
+        data.addRows([
+        @foreach ($eiiicheckers as $eiiichecker)
+            [new Date('{{$eiiichecker->fecha_test}}'),
+            {{$eiiichecker->num_problemas}},
+            {{$eiiichecker->num_aciertos}}],
+        @endforeach
+        ]);
+
+        var options = {
+            title: 'C'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('eiiichecker-total'));
+
+        chart.draw(data, options);
+    }
+
+    function ei_problemas() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de evaluación');
+        data.addColumn('number', 'Número de problemas de nivel de adecuación A');
+        data.addColumn('number', 'Número de problemas de nivel de adecuación AA');
+
+        data.addRows([
+        @foreach ($eiiicheckers as $eiiichecker)
+            [new Date('{{$eiiichecker->fecha_test}}'),
+            {{$eiiichecker->num_problemas_a}},
+            {{$eiiichecker->num_problemas_aa}}],
+        @endforeach
+        ]);
+
+        var options = {
+            title: 'C'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('eiiichecker-problemas'));
+
+        chart.draw(data, options);
+    }
+
+
     /*Observatorio*/
     @if (in_array(4,$herramientas))
         google.charts.setOnLoadCallback(o_porcentajes);
         google.charts.setOnLoadCallback(o_problemas);
         google.charts.setOnLoadCallback(o_advertencias);
     @endif
+
+    function o_porcentajes() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de evaluación');
+        data.addColumn('number', 'Porcentaje Comprensible');
+        data.addColumn('number', 'Porcentaje Operable');
+        data.addColumn('number', 'Porcentaje Perceptible');
+        data.addColumn('number', 'Porcentaje Robusto');
+
+
+        data.addRows([
+        @foreach ($observatorios as $observatorio)
+            [new Date('{{$observatorio->fecha_test}}'),
+            {{$observatorio->porcentaje_comprensible}},
+            {{$observatorio->porcentaje_operable}},
+            {{$observatorio->porcentaje_perceptible}},
+            {{$observatorio->porcentaje_robusto}}],
+        @endforeach
+        ]);
+
+        var options = {
+            title: 'C'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('observatorio-porcentajes'));
+
+        chart.draw(data, options);
+    }
+
+    function o_problemas() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de evaluación');
+        data.addColumn('number', 'Número de problemas Comprensible');
+        data.addColumn('number', 'Número de problemas Operable');
+        data.addColumn('number', 'Número de problemas Perceptible');
+        data.addColumn('number', 'Número de problemas Robusto');
+
+
+        data.addRows([
+        @foreach ($observatorios as $observatorio)
+            [new Date('{{$observatorio->fecha_test}}'),
+            {{$observatorio->num_problemas_comprensible}},
+            {{$observatorio->num_problemas_operable}},
+            {{$observatorio->num_problemas_perceptible}},
+            {{$observatorio->num_problemas_robusto}}],
+        @endforeach
+        ]);
+
+        var options = {
+            title: 'C'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('observatorio-problemas'));
+
+        chart.draw(data, options);
+    }
+
+    function o_advertencias() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de evaluación');
+        data.addColumn('number', 'Número de advertencias Comprensible');
+        data.addColumn('number', 'Número de advertencias Operable');
+        data.addColumn('number', 'Número de advertencias Perceptible');
+        data.addColumn('number', 'Número de advertencias Robusto');
+
+
+        data.addRows([
+        @foreach ($observatorios as $observatorio)
+            [new Date('{{$observatorio->fecha_test}}'),
+            {{$observatorio->num_advertencias_comprensible}},
+            {{$observatorio->num_advertencias_operable}},
+            {{$observatorio->num_advertencias_perceptible}},
+            {{$observatorio->num_advertencias_robusto}}],
+        @endforeach
+        ]);
+
+        var options = {
+            title: 'C'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('observatorio-advertencias'));
+
+        chart.draw(data, options);
+    }
 
     /*Vamola*/
     @if (in_array(5,$herramientas))
@@ -338,10 +503,59 @@
         google.charts.setOnLoadCallback(w_caracteristicas_aria);
     @endif
     
+    function w_problemas_advertencias() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de evaluación');
+        data.addColumn('number', 'Número de problemas');
+        data.addColumn('number', 'Número de advertencias');
+        data.addColumn('number', 'Número de problemas de contraste');
 
 
-    
+        data.addRows([
+        @foreach ($waves as $wave)
+            [new Date('{{$wave->fecha_test}}'),
+            {{$wave->num_problemas}},
+            {{$wave->num_advertencias}},
+            {{$wave->num_problemas_contraste}}],
+        @endforeach
+        ]);
 
+        var options = {
+            title: 'C'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('wave-problemas'));
+
+        chart.draw(data, options);
+    }
+
+    function w_caracteristicas_aria() {
+
+        var data = new google.visualization.DataTable();
+
+        data.addColumn('date', 'Fecha de evaluación');
+        data.addColumn('number', 'Número de características');
+        data.addColumn('number', 'Número de elementos ARIA');
+
+
+        data.addRows([
+        @foreach ($waves as $wave)
+            [new Date('{{$wave->fecha_test}}'),
+            {{$wave->num_caracteristicas}},
+            {{$wave->num_elem_ARIA}}],
+        @endforeach
+        ]);
+
+        var options = {
+            title: 'C'
+        };
+
+        var chart = new google.charts.Line(document.getElementById('wave-caracteristicas'));
+
+        chart.draw(data, options);
+    }
   </script>
 
 
@@ -352,6 +566,34 @@
 
 @section('content')
 
+<h1> Sitio Web </h1>
+<p style="text-decoration: underline"> <strong>{{$sitio->nombre}} </strong></p>
+<p><strong> Dirección web:</strong> <a href="http://{{ $sitio->dominio }}" target="_blank">{{ $sitio->dominio }}</a>
+<p><strong>Número de páginas webs evaluadas: </strong> {{$sitio->num_paginas}}</p>
+
+<p><strong>Páginas web del sitio:</strong></p>
+
+@foreach ($paginas as $pagina)
+    <ul style="list-style-type: square;">
+        <li style="margin-left: 2em;"><a href="/pagina/{{ $pagina->id }}" style="color: black; text-decoration-line: underline">{{$pagina->URL}}</a></li>
+</ul>
+    @endforeach
+<div>
+    {{ $paginas->links() }}
+</div>
+
+<h2>Datos de horario de la evaluación</h2>
+<p><strong>Periodicidad: </strong>{{$sitio->periodicidad}}</p>
+
+@if ($sitio->periodicidad === "Semanal")
+<p><strong>Día de la semana: </strong>{{$dia}}</p>
+@elseif ($sitio->periodicidad === "Mensual")
+<p><strong>Día mensual: </strong>{{$sitio->dia}}</p>
+@endif
+
+<p><strong>Hora: </strong>{{$sitio->hora}}</p>
+
+<h2>Resultados de ejecución de las herramientas</h2>
 
 @if (in_array(1,$herramientas))
 <h3> AccessMonitor</h3>
@@ -395,36 +637,5 @@
 <div id="wave-problemas" style="width: 900px; height: 500px;"></div>
 <div id="wave-caracteristicas" style="width: 900px; height: 500px;"></div>
 @endif
-
-<h1> Sitio Web </h1>
-<p style="text-decoration: underline"> <strong>{{$sitio->nombre}} </strong></p>
-<p><strong> Dirección web:</strong> <a href="http://{{ $sitio->dominio }}" target="_blank">{{ $sitio->dominio }}</a>
-<p><strong>Número de páginas webs evaluadas: </strong> {{$sitio->num_paginas}}</p>
-
-<p><strong>Páginas web del sitio:</strong></p>
-
-@foreach ($paginas as $pagina)
-    <ul style="list-style-type: square;">
-        <li style="margin-left: 2em;"><a href="/pagina/{{ $pagina->id }}" style="color: black; text-decoration-line: underline">{{$pagina->URL}}</a></li>
-</ul>
-    @endforeach
-<div>
-    {{ $paginas->links() }}
-</div>
-
-<h2>Datos de horario de la evaluación</h2>
-<p><strong>Periodicidad: </strong>{{$sitio->periodicidad}}</p>
-
-@if ($sitio->periodicidad === "Semanal")
-<p><strong>Día de la semana: </strong>{{$dia}}</p>
-@elseif ($sitio->periodicidad === "Mensual")
-<p><strong>Día mensual: </strong>{{$sitio->dia}}</p>
-@endif
-
-<p><strong>Hora: </strong>{{$sitio->hora}}</p>
-
-<h2>Resultados de ejecución de las herramientas</h2>
-
-
 
 @endsection
