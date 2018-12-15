@@ -32,8 +32,11 @@ class SitioController extends Controller
         $am = new Accessmonitor();
         $accessmonitors = $am->getAccessmonitorsSitioGraficos($id);
 
+        $ac = new Achecker();
+        $acheckers = $ac->getAcheckersSitioGraficos($id);
+
         return view('pages.sitio', array('sitio' => $sitio, 'dia'=>$dia,'paginas' => $paginas,
-        'herramientas' => $herramientas, 'accessmonitors' => $accessmonitors));
+        'herramientas' => $herramientas, 'accessmonitors' => $accessmonitors,'acheckers' => $acheckers ));
     }
 
     public function listarSitios(){
