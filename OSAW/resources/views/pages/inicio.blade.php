@@ -7,7 +7,7 @@
 <p> En la actualidad el observatorio hace uso de las siguientes herramientas online gratuitas para realizar los análisis y seguimiento de los sitios institucionales:</p>
 
 <ul>
-    <a href="http://www.acessibilidade.gov.pt/accessmonitor/" target="_blank"><li>Accessmonitor</li></a>
+    <a href="http://www.acessibilidade.gov.pt/accessmonitor/" target="_blank"><li>AccessMonitor</li></a>
     <a href="https://achecker.ca/checker/index.php"target="_blank"><li>Achecher</li></a>
     <a href="http://checkers.eiii.eu/en/pagecheck/"target="_blank"><li>EIII Page Checker </li></a>
     <a href="http://observatorioweb.ups.edu.ec/oaw/index.jsf"target="_blank"><li>Observatorio de Accesibilidad Web de la Universidad Politécnica Salesiana de Ecuador </li></a>
@@ -36,7 +36,7 @@
         <th>Número de evaluaciones</th>
     </tr>
     <tr>
-        <td >Accessmonitor</td>
+        <td >AccessMonitor</td>
         <td> {{$num_accessmonitors}}</td>
     </tr>
     <tr>

@@ -22,8 +22,11 @@ class SitioController extends Controller
     public function mostrarSitio($id){
         $s = new Sitio();
         $sitio = $s->getSitio($id);
+        $dia = $s->getDiaAnalisis($id);
 
-        return view('pages.sitio', array('sitio' => $sitio));
+        $paginas = $s->getPaginasSitio($id);
+
+        return view('pages.sitio', array('sitio' => $sitio, 'dia'=>$dia,'paginas' => $paginas));
     }
 
     public function listarSitios(){

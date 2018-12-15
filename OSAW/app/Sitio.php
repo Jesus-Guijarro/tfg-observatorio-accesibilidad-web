@@ -67,9 +67,19 @@ class Sitio extends Model
     public function getPaginasSitio($id){
         $paginas= Sitio::select('paginas.id','paginas.URL')->
         join('paginas','paginas.sitio_id','=','sitios.id')->
-        where('sitios.id',$id)->get();
+        where('sitios.id',$id)->paginate(10);
 
         return $paginas;
+    }
+
+    public function getDiaAnalisis($id){
+        $sitio= Sitio::findOrFail($id);
+
+        $dias = array(0 => "Domingo",1 => "Lunes",2 => "Martes",3 => "Miércoles",4 => "Jueves",5 => "Viernes",6 => "Sábado");
+
+        $dia = $dias[$sitio->dia];
+
+        return $dia;
     }
 
     public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,

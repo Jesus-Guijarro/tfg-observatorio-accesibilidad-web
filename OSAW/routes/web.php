@@ -51,3 +51,8 @@ Route::get('contacto', function()
 {
     return View::make('pages.contacto');
 });
+
+Route::get('test', function()
+{
+    return View::make('test');
+});
