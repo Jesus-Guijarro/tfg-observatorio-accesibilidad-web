@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
 @section('titulo', 'Sitio Web')
-@section('scripts')
 
+@section('scripts')
 <script type="text/javascript">
     google.charts.load('current', {'packages':['line']});
 

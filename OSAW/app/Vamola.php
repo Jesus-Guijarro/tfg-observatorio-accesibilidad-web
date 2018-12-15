@@ -39,7 +39,7 @@ class Vamola extends Model
         return $vamolas;
     }
 
-    public function getVamolasPagina($pagina_id){
+    public function getVamolasPaginaReportes($pagina_id){
 
         $vamolas = Vamola::join('paginas','vamolas.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->

@@ -39,7 +39,7 @@ class Wave extends Model
         return $waves;
     }
 
-    public function getWavesPagina($pagina_id){
+    public function getWavesPaginaReportes($pagina_id){
 
         $waves = Wave::join('paginas','waves.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->

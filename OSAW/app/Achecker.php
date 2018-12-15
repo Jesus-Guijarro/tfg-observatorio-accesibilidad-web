@@ -39,7 +39,7 @@ class Achecker extends Model
         return $acheckers;
     }
 
-    public function getAcheckersPagina($pagina_id){
+    public function getAcheckersPaginaReportes($pagina_id){
 
         $acheckers = Achecker::join('paginas','acheckers.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->

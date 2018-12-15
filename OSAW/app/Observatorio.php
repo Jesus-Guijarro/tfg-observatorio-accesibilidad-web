@@ -48,7 +48,7 @@ class Observatorio extends Model
         return $observatorios;
     }
 
-    public function getObservatoriosPagina($pagina_id){
+    public function getObservatoriosPaginaReportes($pagina_id){
 
         $observatorios = Observatorio::join('paginas','observatorios.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->

@@ -39,7 +39,7 @@ class Accessmonitor extends Model
         return $accessmonitors;
     }
 
-    public function getAccessmonitorsPagina($pagina_id){
+    public function getAccessmonitorsPaginaReportes($pagina_id){
 
         $accessmonitors = Accessmonitor::join('paginas','accessmonitors.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->

@@ -45,9 +45,9 @@ class Pagina extends Model
     }
 
     public function getSitioPagina($id){
-        $sitio= Pagina::select('sitio.id','sitio.nombre')->
-        join('sitios','sitios.pagina_id','=','paginas.id')->
-        where('paginas.id',$id)->get();
+        $sitio= Pagina::join('sitios','sitios.id','=','paginas.sitio_id')->
+        where('paginas.id',$id)->
+        select('sitios.id','sitios.nombre')->first();
 
         return $sitio;
     }

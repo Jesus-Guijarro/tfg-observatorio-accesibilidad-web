@@ -38,7 +38,7 @@ class Eiiichecker extends Model
         return $eiiicheckers;
     }
 
-    public function getEiiicheckersPagina($pagina_id){
+    public function getEiiicheckersPaginaReportes($pagina_id){
 
         $eiiicheckers = Eiiichecker::join('paginas','eiiicheckers.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->
