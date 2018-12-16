@@ -9,10 +9,10 @@
 <hr>
 
 <div>
-   <p><strong>Descargar reporte: </strong><a href="{{$reporte}}" download="{{$reporte}}">{{$nombre_reporte}}</a></p>
+   <p><strong>Reporte: </strong><a href="{{$reporte}}" download="{{$reporte}}">{{$nombre_reporte}}</a></p>
 </div>
 
-<?php $contenido = File::get(storage_path('app/public/' . $reporte));?>
+<?php $contenido= Storage::get($reporte);?>
 
 <hr>
 <pre>{{$contenido}}</pre>
