@@ -16,10 +16,20 @@ class HerramientaController extends Controller
     }
 
     public function crearHerramienta(Request $request){
-        $s = new Herramienta();
-        $herramienta = $s->getHerramienta($id);
 
-        return view('pages.administrador.crear-herramienta', array('herramienta' => $herramienta));
+        $s = new Herramienta();
+
+        $this->validate($request, [
+            'nombre' => 'required|unique:herramientas|min:2|max:40',
+            'descripcion' => 'required|min:2|max:45'
+        ]);
+
+        $nombre=$request->nombre;
+        $descripcion=$request->descripcion;
+
+        $s->crearHerramienta($nombre,$descripcion);
+        
+        return redirect("/crear-herramienta")->with('mensaje', 'Herramienta añadida');
     }
 
     public function activarHerramienta($id){

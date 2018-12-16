@@ -108,7 +108,11 @@ th{
     float: right;
 }
 
+/*Alertas de validacion*/
 
+.strong-val{
+    color:red;
+}
 
 
     

@@ -80,7 +80,7 @@ class SitioController extends Controller
     }
 
 
-    ###
+    #   Administración de sitios
 
     public function gestionarSitios(){
 
@@ -92,16 +92,36 @@ class SitioController extends Controller
         return view('pages.administrador.gestionar-sitios', array('sitios' => $sitios));
     }
 
+    public function panelCrearSitio(){
+
+        $categoria = new Categoria();
+        $categorias = $categoria->getCategorias();
+
+        $herramienta = new Herramienta();
+        $herramientas = $herramienta->getHerramientasActivas();
+
+
+        return view('pages.administrador.crear-sitio', array('categorias' => $categorias,'herramientas' => $herramientas));
+    }
+
 
     public function crearSitio(Request $request){
-        $s = new Sitio();
-        $sitio = $s->getSitio($id);
 
-        return view('pages.administrador.crear-sitio', array('sitio' => $sitio));
+        $this->validate($request, [
+            'nombre' => 'required|unique:herramientas|min:2|max:40',
+            'descripcion' => 'required|min:2|max:45'
+        ]);
+
+        $nombre=$request->nombre;
+        $descripcion=$request->descripcion;
+
+        $s->crearHerramienta($nombre,$descripcion);
+
+        return redirect("/gestionar-sitios");
     }
 
     public function panelModificarSitio($id){
-        
+
         $s = new Sitio();
         $sitio = $s->getSitio($id);
 
@@ -119,6 +139,9 @@ class SitioController extends Controller
 
         $s = new Sitio();
         $sitio = $s->borrarSitio($id);
+
+        //'26', 'Test', 'test', 'Semanal', '14:30', '3', '1', '10', '5', NULL, NULL
+
 
         return redirect('gestionar-sitios');
     }

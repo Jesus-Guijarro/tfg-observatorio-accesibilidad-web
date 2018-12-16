@@ -46,7 +46,7 @@
         <td> {{$num_accessmonitors}}</td>
     </tr>
     <tr>
-        <td >Achecker</td>
+        <td >AChecker</td>
         <td> {{$num_acheckers}}</td>
     </tr>
     <tr>
@@ -54,7 +54,7 @@
         <td> {{$num_eiiicheckers}}</td>
     </tr>
     <tr>
-        <td >Observatorio de la UPS de Ecuador</td>
+        <td >Observatorio Accesibilidad Web UPS de Ecuador</td>
         <td> {{$num_observatorios}}</td>
     </tr>
     <tr>

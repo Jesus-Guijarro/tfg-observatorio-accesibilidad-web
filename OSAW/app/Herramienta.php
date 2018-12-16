@@ -45,8 +45,9 @@ class Herramienta extends Model
         return $herramientas;
     }
 
-    public function crearHerramienta($descripcion){
+    public function crearHerramienta($nombre,$descripcion){
         $herramienta = new Herramienta();
+        $herramienta->nombre= $nombre;
         $herramienta->descripcion= $descripcion;
         $herramienta->activa = false;
         $herramienta->save();

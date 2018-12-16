@@ -38,10 +38,7 @@ Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
 #Gestión sitios web
 Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios');
 
-Route::get('crear-sitio', function()
-{
-    return View::make('pages.administrador.crear-sitio');
-});
+Route::get('crear-sitio', 'SitioController@panelCrearSitio');
 Route::post('crear-sitio', 'SitioController@crearSitio');
 
 Route::get('modificar-sitio/{id}', 'SitioController@panelModificarSitio');
@@ -51,6 +48,7 @@ Route::get('eliminar-sitio/{id}', 'SitioController@eliminarSitio');
 
 #Gestión herramientas
 Route::get('gestionar-herramientas', 'HerramientaController@gestionarHerramientas');
+
 Route::get('crear-herramienta', function()
 {
     return View::make('pages.administrador.crear-herramienta');
@@ -61,7 +59,7 @@ Route::get('desactivar-herramienta/{id}', 'HerramientaController@desactivarHerra
 Route::get('activar-herramienta/{id}', 'HerramientaController@activarHerramienta');
 
 
-#Sobre el observatorio
+#Preguntas frecuentes
 Route::get('faq', function()
 {
     return View::make('pages.faq');
