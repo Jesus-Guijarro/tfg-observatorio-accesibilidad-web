@@ -568,7 +568,7 @@
 
 <h1> Página Web </h1>
 <p style="text-decoration: underline"> <strong><a href='{{$pagina->URL}}' target="_blank">{{$pagina->URL}}</a></strong></p>
-<p>Sitio web: <a href='{{url("sitio/$sitio->id")}}'>{{$sitio->nombre}}</a></p>
+<p><strong>Sitio web:</strong> <a href='{{url("sitio/$sitio->id")}}'>{{$sitio->nombre}}</a></p>
 <a href="{{$pagina->archivo_HTML}}" download="reporte-pagina-{{$pagina->id}}">Descargar copia HTML</a>
 
 

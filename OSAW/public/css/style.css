@@ -90,7 +90,7 @@ table{
 }
 th, td{
     padding: 15px;
-    text-align: center;
+    text-align: left;
     border-top: 0.0625em solid lightgray;
     border-bottom: 0.0625em solid lightgray;
     border-left: 0.0625em solid lightgray;

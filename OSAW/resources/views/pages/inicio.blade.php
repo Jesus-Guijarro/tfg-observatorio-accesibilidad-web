@@ -15,11 +15,15 @@
     <a href="https://wave.webaim.org/"target="_blank"><li>WAVE</li></a>
 </ul>
 
+<hr>
+
 <h2>Datos del observatorio</h2>
 
-<p>Número total de <strong>sitios web</strong> que se están siguiendo: <strong>{{$num_sitios}}</strong> <a href="/lista-sitios">Ver sitios webs analizados </a></p>
+<p>Número total de <strong>sitios web</strong> analizados: <strong>{{$num_sitios}}</strong> </p>
+<p><a href="/lista-sitios">Ver sitios webs analizados </a></p>
+<p>Número total de <strong>paginas web</strong> evaluadas: <strong>{{$num_paginas}}</strong></p>  
 
-<p>Número total de <strong>paginas web</strong> evaluándose: <strong>{{$num_paginas}}</strong></p>  
+<hr>
 
 <h3> Categorias Institucionales y de Organización contempladas </h3>
 <ul>
@@ -27,6 +31,8 @@
 <li>{{$categoria->descripcion}}
 @endforeach
 </ul>
+
+<hr>
 
 <h3> Número de evaluaciones realizadas por cada herramienta </h3>
 

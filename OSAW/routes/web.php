@@ -41,9 +41,9 @@ Route::post('crear-sitio', 'SitioController@crearSitio');
 Route::post('modificar-sitio/{id}', 'SitioController@modificarSitio');
 
 #Sobre el observatorio
-Route::get('sobre-observatorio', function()
+Route::get('faq', function()
 {
-    return View::make('pages.sobre-observatorio');
+    return View::make('pages.faq');
 });
 
 #Contacto

@@ -571,16 +571,19 @@
 <p><strong> Dirección web:</strong> <a href="http://{{ $sitio->dominio }}" target="_blank">{{ $sitio->dominio }}</a>
 <p><strong>Número de páginas webs evaluadas: </strong> {{$sitio->num_paginas}}</p>
 
-<p><strong>Páginas web del sitio:</strong></p>
-
-@foreach ($paginas as $pagina)
-    <ul style="list-style-type: square;">
-        <li style="margin-left: 2em;"><a href="/pagina/{{ $pagina->id }}" style="color: black; text-decoration-line: underline">{{$pagina->URL}}</a></li>
-</ul>
+<table style="text-align: left">
+    <tr>
+        <th>Páginas web</th>
+    </tr>
+    @foreach ($paginas as $pagina)
+    <tr>
+        <td>
+            <a href="/pagina/{{ $pagina->id }}" style="color: black; text-decoration-line: underline">{{$pagina->URL}}</a>
+        </td>
+    </tr>
     @endforeach
-<div>
-    {{ $paginas->links() }}
-</div>
+</table>
+
 
 <h2>Datos de horario de la evaluación</h2>
 <p><strong>Periodicidad: </strong>{{$sitio->periodicidad}}</p>

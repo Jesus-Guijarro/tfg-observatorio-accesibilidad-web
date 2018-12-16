@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
-@section('titulo', 'Sobre el Observatorio')
+@section('titulo', 'Preguntas Frecuentes')
 
 @section('content')
     <div class="container">
-    Pagina Sobre el Observatorio
+    FAQ
     </div>
 @endsection
