@@ -109,20 +109,64 @@ class SitioController extends Controller
 
         $this->validate($request, [
             'nombre' => 'required|unique:sitios|min:4|max:70',
-            'dominio' => ['required','regex:/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$'],
-            
-            
+            'dominio' => ['required','regex:/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/'],
+            'num_paginas' => 'min:0|max:20|integer',
+            'hora' => ['required','regex:/^([0-1][0-9]|[2][0-3]):([0-5][0-9])?$/'],
+            'dia' => 'required|min:0',
         ]);
 
         $nombre=$request->nombre;
+        $dominio=$request->dominio;
+        $categoria_id=$request->categoria;
 
+
+
+        //Herramientas
+        $accessmonitor=$request->accessmonitor;
+        $achecker=$request->achecker;
+        $eiiichecker=$request->eiiichecker;
+        $observatorio=$request->observatorio;
+        $vamola=$request->vamola;
+        $wave=$request->wave;
+
+        if($achecker==0){
+            $mensaje="Sin marcar";
+        }
+        else{
+            $mensaje="Marcado";
+        }
+
+
+        $paginas = explode("\n", $request->paginas);
+        //for $paginas
+
+
+        $num_paginas=$request->num_paginas;
+        //Llamada crawler
+
+        $periodicidad=$request->periodicidad;
+
+        $dia=$request->dia;
+
+        if ($periodicidad=="Semanal"){
+            if ($dia<0 or $dia>6){
+                return redirect("/crear-sitio")->withErrors(['dia'=>'El día debe de ser entre 0 y 6.']);
+            }
+        }
+        elseif($periodicidad=="Mensual"){
+            if ($dia<1 or $dia>31){
+                return redirect("/crear-sitio")->withErrors(['dia'=>'El día debe de ser entre 1 y 31.']);
+            }
+        }
+
+        $hora=$request->hora;
 
         //crearPagina($URL)
         //crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id)
 
         //crearSitioHerramienta($sitio_id,$herramienta_id) -> DB::table('herramienta_sitio')
 
-        return redirect("/crear-sitio")->with('mensaje', $nombre);
+        return redirect("/crear-sitio")->with('mensaje', $hora);
     }
 
     public function panelModificarSitio($id){

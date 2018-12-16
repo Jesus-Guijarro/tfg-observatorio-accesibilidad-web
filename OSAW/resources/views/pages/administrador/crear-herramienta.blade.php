@@ -32,7 +32,7 @@
         <label for="descripcion" class="col-md-4 col-form-label text-md-right">Descripción</label>
 
         <div class="col-md-8">
-            <input id="descripcion" type="text"  name="descripcion" value="{{ old('descripcion') }}" required autofocus>
+            <input id="descripcion" type="text"  name="descripcion" value="{{ old('descripcion') }}" required>
 
             @if ($errors->has('descripcion'))
                 <span>

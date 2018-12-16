@@ -24,7 +24,7 @@ class Herramienta extends Model
     }
 
     public function getHerramientasActivas(){
-        $herramientas = Herramienta::select('id','descripcion')->
+        $herramientas = Herramienta::select('id','descripcion','nombre')->
             where('activa',true)->get();
         return $herramientas;
     }

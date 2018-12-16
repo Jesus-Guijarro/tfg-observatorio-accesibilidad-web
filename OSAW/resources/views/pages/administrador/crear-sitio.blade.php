@@ -14,6 +14,8 @@
 
 <form method="POST" action="{{ action('SitioController@crearSitio') }}">
     @csrf
+
+    <!--Nombre del sitio -->
     <div class="form-group row">
         <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre sitio web</label>
 
@@ -28,11 +30,12 @@
         </div>
     </div>
 
+    <!--Dominio -->
     <div class="form-group row">
         <label for="dominio" class="col-md-4 col-form-label text-md-right">Dominio</label>
 
         <div class="col-md-8">
-            <input id="dominio" type="text"  name="dominio" value="{{ old('dominio') }}" required autofocus>
+            <input id="dominio" type="text"  name="dominio" value="{{ old('dominio') }}" required >
 
             @if ($errors->has('dominio'))
                 <span>
@@ -42,8 +45,7 @@
         </div>
     </div>
 
-<!--
-
+    <!--Categoria institucional -->
     <div class="form-group row">
         <label for="categoria" class="col-md-4 col-form-label text-md-right">Categoria</label>
 
@@ -62,13 +64,14 @@
             @endif
         </div>
     </div>
-    
+
+    <!--Herramientas -->
     <div class="form-group row">
         <label class="col-md-4 col-form-label text-md-right">Herramientas de evaluación</label>
         <div class="col-md-4">
 
             @foreach ($herramientas as $herramienta)
-                <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
+                <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}" checked> {{$herramienta->descripcion}}<br>
             @endforeach
         </div>
     </div>
@@ -77,7 +80,7 @@
         <label for="paginas" class="col-md-4 col-form-label text-md-right">Páginas web</label>
 
         <div class="col-md-8">
-            <textarea name="paginas" rows="10" cols="50" value="{{ old('paginas') }}" required autofocus></textarea>
+            <textarea name="paginas" rows="10" cols="50" value="{{ old('paginas') }}" ></textarea>
             @if ($errors->has('paginas'))
                 <span>
                     <strong class="strong-val">{{ $errors->first('paginas') }}</strong>
@@ -86,11 +89,12 @@
         </div>
     </div>
 
+    <!-- Número de páginas crawler -->
     <div class="form-group row">
         <label for="num_paginas" class="col-md-4 col-form-label text-md-right">Número de paginas a añadir con Crawler</label>
 
         <div class="col-md-8">
-            <input id="num_paginas" type="number"  name="num_paginas" value="{{ old('num_paginas') }}" required autofocus>
+            <input id="num_paginas" type="number"  name="num_paginas" value="0">
 
             @if ($errors->has('num_paginas'))
                 <span>
@@ -99,7 +103,7 @@
             @endif
         </div>
     </div>
-
+    <!--Periodicidad-->
     <div class="form-group row">
         <label for="periodicidad" class="col-md-4 col-form-label text-md-right">Periodicidad de la evaluación</label>
 
@@ -120,25 +124,12 @@
         </div>
     </div>
 
+    <!--Dia-->
     <div class="form-group row">
-        <label for="hora" class="col-md-4 col-form-label text-md-right">Hora</label>
+        <label for="dia" class="col-md-4 col-form-label text-md-right">Día de la semana/mes</label>
 
         <div class="col-md-8">
-            <input id="hora" type="text"  name="hora" value="{{ old('hora') }}" required autofocus>
-
-            @if ($errors->has('hora'))
-                <span>
-                    <strong class="strong-val">{{ $errors->first('hora') }}</strong>
-                </span>
-            @endif
-        </div>
-    </div>
-
-    <div class="form-group row">
-        <label for="dia" class="col-md-4 col-form-label text-md-right">Día de la semana o mes</label>
-
-        <div class="col-md-8">
-            <input id="dia" type="number"  name="dia" value="{{ old('dia') }}" required autofocus>
+            <input id="dia" type="number"  name="dia" value="{{ old('dia') }}" required >
 
             @if ($errors->has('dia'))
                 <span>
@@ -148,10 +139,22 @@
         </div>
     </div>
 
+    <!--Hora -->
+    <div class="form-group row">
+        <label for="hora" class="col-md-4 col-form-label text-md-right">Hora</label>
 
+        <div class="col-md-8">
+            <input id="hora" type="text"  name="hora" value="{{ old('hora') }}" required >
 
+            @if ($errors->has('hora'))
+                <span>
+                    <strong class="strong-val">{{ $errors->first('hora') }}</strong>
+                </span>
+            @endif
+        </div>
+    </div>
 
--->
+    
 
     <div class="form-group row mb-0">
         <div class="col-md-8 offset-md-4">
