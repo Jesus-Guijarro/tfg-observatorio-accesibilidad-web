@@ -43,7 +43,7 @@ class Wave extends Model
 
         $waves = Wave::join('paginas','waves.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->
-        orderBy('fecha_test','asc')->get();
+        orderBy('fecha_test','asc')->paginate(5);
 
         return $waves;
     }

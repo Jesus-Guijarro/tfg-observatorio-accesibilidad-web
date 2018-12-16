@@ -567,7 +567,9 @@
 @section('content')
 
 <h1> Página Web </h1>
-<p style="text-decoration: underline"> <strong>{{$sitio->nombre}} </strong></p>
+<p style="text-decoration: underline"> <strong><a href='{{$pagina->URL}}' target="_blank">{{$pagina->URL}}</a></strong></p>
+<p>Sitio web: <a href='{{url("sitio/$sitio->id")}}'>{{$sitio->nombre}}</a></p>
+<a href="{{$pagina->archivo_HTML}}" download="reporte-pagina-{{$pagina->id}}">Descargar copia HTML</a>
 
 
 <h2>Resultados de ejecución de las herramientas</h2>
@@ -577,6 +579,26 @@
 <div id="accessmonitor-puntuacion" style="width: 700px; height: 400px;"></div>
 <div id="accessmonitor-problemas" style="width: 700px; height: 400px;"></div>
 <div id="accessmonitor-advertencias" style="width: 700px; height: 400px;"></div>
+
+<table>
+    <tr>
+        <th>Reportes AccessMonitor</th>
+    </tr>
+    @foreach ($accessmonitors_reportes as $accessmonitors_reporte)
+        <tr>
+            @php
+                {{$reporte=str_replace("/","+",$accessmonitors_reporte->datos_problemas);}}
+                {{$reporte=str_replace("+storage+","",$reporte);}}
+            @endphp
+            <td>
+                <a href="/reporte-automatico/{{$reporte}}">{{$accessmonitors_reporte->fecha_test}}</a></td>
+        </tr>
+    @endforeach
+</table>
+<div >
+    {{ $accessmonitors_reportes->links() }}
+</div>
+
 @endif
 
 @if (in_array(2,$herramientas))
@@ -585,6 +607,25 @@
 <div id="achecker-total-potenciales" style="width: 900px; height: 500px;"></div>
 <div id="achecker-conocidos" style="width: 900px; height: 500px;"></div>
 <div id="achecker-potenciales" style="width: 900px; height: 500px;"></div>
+
+<table>
+    <tr>
+        <th>Reportes Achecker</th>
+    </tr>
+    @foreach ($acheckers_reportes as $acheckers_reporte)
+        <tr>
+            @php
+                {{$reporte=str_replace("/","+",$acheckers_reporte->datos_problemas);}}
+                {{$reporte=str_replace("+storage+","",$reporte);}}
+            @endphp
+            <td>
+                <a href="/reporte-automatico/{{$reporte}}">{{$acheckers_reporte->fecha_test}}</a></td>
+        </tr>
+    @endforeach
+</table>
+<div >
+    {{ $acheckers_reportes->links() }}
+</div>
 @endif
 
 @if (in_array(3,$herramientas))
@@ -592,6 +633,26 @@
 <div id="eiiichecker-puntuacion" style="width: 900px; height: 500px;"></div>
 <div id="eiiichecker-total" style="width: 900px; height: 500px;"></div>
 <div id="eiiichecker-problemas" style="width: 900px; height: 500px;"></div>
+
+<table>
+    <tr>
+        <th>Reportes EIII Page Checker</th>
+    </tr>
+    @foreach ($eiiicheckers_reportes as $eiiicheckers_reporte)
+        <tr>
+            @php
+                {{$reporte=str_replace("/","+",$eiiicheckers_reporte->datos_problemas);}}
+                {{$reporte=str_replace("+storage+","",$reporte);}}
+            @endphp
+        <td>
+            <a href="/reporte-automatico/{{$reporte}}">{{$eiiicheckers_reporte->fecha_test}}</a></td>
+        </tr>
+    @endforeach
+</table>
+<div >
+    {{ $eiiicheckers_reportes->links() }}
+</div>
+
 @endif
 
 @if (in_array(4,$herramientas))
@@ -599,6 +660,25 @@
 <div id="observatorio-porcentajes" style="width: 900px; height: 500px;"></div>
 <div id="observatorio-problemas" style="width: 900px; height: 500px;"></div>
 <div id="observatorio-advertencias" style="width: 900px; height: 500px;"></div>
+
+<table>
+    <tr>
+        <th>Reportes Observatorio de la UPS de Ecuador</th>
+    </tr>
+    @foreach ($observatorios_reportes as $observatorios_reporte)
+        <tr>
+            @php
+                {{$reporte=str_replace("/","+",$observatorios_reporte->datos_problemas);}}
+                {{$reporte=str_replace("+storage+","",$reporte);}}
+            @endphp
+        <td>
+            <a href="/reporte-automatico/{{$reporte}}">{{$observatorios_reporte->fecha_test}}</a></td>
+        </tr>
+    @endforeach
+</table>
+<div >
+    {{ $observatorios_reportes->links() }}
+</div>
 @endif
 
 @if (in_array(5,$herramientas))
@@ -607,12 +687,51 @@
 <div id="vamola-total-potenciales" style="width: 900px; height: 500px;"></div>
 <div id="vamola-conocidos" style="width: 900px; height: 500px;"></div>
 <div id="vamola-potenciales" style="width: 900px; height: 500px;"></div>
+
+<table>
+    <tr>
+        <th>Reportes Vamolà</th>
+    </tr>
+    @foreach ($vamolas_reportes as $vamolas_reporte)
+        <tr>
+            @php
+                {{$reporte=str_replace("/","+",$vamolas_reporte->datos_problemas);}}
+                {{$reporte=str_replace("+storage+","",$reporte);}}
+            @endphp
+        <td>
+            <a href="/reporte-automatico/{{$reporte}}">{{$vamolas_reporte->fecha_test}}</a></td>
+        </tr>
+    @endforeach
+</table>
+<div >
+    {{ $vamolas_reportes->links() }}
+</div>
 @endif
 
 @if (in_array(6,$herramientas))
 <h3> WAVE </h3>
 <div id="wave-problemas" style="width: 900px; height: 500px;"></div>
 <div id="wave-caracteristicas" style="width: 900px; height: 500px;"></div>
+
+<table>
+    <tr>
+        <th>Reportes WAVE</th>
+    </tr>
+    @foreach ($waves_reportes as $waves_reporte)
+        <tr>
+            @php
+                {{$reporte=str_replace("/","+",$waves_reporte->datos_problemas);}}
+                {{$reporte=str_replace("+storage+","",$reporte);}}
+            @endphp
+        <td>
+            <a href="/reporte-automatico/{{$reporte}}">{{$waves_reporte->fecha_test}}</a></td>
+        </tr>
+    @endforeach
+</table>
+<div >
+    {{ $waves_reportes->links() }}
+</div>
+
 @endif
 
 @endsection

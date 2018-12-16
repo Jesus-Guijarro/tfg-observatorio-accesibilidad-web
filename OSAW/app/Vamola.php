@@ -43,7 +43,7 @@ class Vamola extends Model
 
         $vamolas = Vamola::join('paginas','vamolas.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->
-        orderBy('fecha_test','asc')->get();
+        orderBy('fecha_test','asc')->paginate(5);
 
         return $vamolas;
     }

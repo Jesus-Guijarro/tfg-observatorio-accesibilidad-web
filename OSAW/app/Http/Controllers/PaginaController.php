@@ -13,6 +13,7 @@ use App\Eiiichecker;
 use App\Observatorio;
 use App\Vamola;
 use App\Wave;
+use Symfony\Component\HttpFoundation\File\File;
 
 
 class PaginaController extends Controller
@@ -62,6 +63,9 @@ class PaginaController extends Controller
     }
 
     public function mostrarReporteAutomatico($reporte){
+
+        $reporte=str_replace("+","/",$reporte);
+        $reporte="/storage/".$reporte;
 
         return view('pages.reporte.automatico', array('reporte' => $reporte));
     }

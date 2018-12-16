@@ -52,7 +52,7 @@ class Observatorio extends Model
 
         $observatorios = Observatorio::join('paginas','observatorios.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->
-        orderBy('fecha_test','asc')->get();
+        orderBy('fecha_test','asc')->paginate(5);
 
         return $observatorios;
     }
