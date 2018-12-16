@@ -108,16 +108,21 @@ class SitioController extends Controller
     public function crearSitio(Request $request){
 
         $this->validate($request, [
-            'nombre' => 'required|unique:herramientas|min:2|max:40',
-            'descripcion' => 'required|min:2|max:45'
+            'nombre' => 'required|unique:sitios|min:4|max:70',
+            'dominio' => ['required','regex:/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$'],
+            
+            
         ]);
 
         $nombre=$request->nombre;
-        $descripcion=$request->descripcion;
 
-        $s->crearHerramienta($nombre,$descripcion);
 
-        return redirect("/gestionar-sitios");
+        //crearPagina($URL)
+        //crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id)
+
+        //crearSitioHerramienta($sitio_id,$herramienta_id) -> DB::table('herramienta_sitio')
+
+        return redirect("/crear-sitio")->with('mensaje', $nombre);
     }
 
     public function panelModificarSitio($id){

@@ -23,14 +23,12 @@
         <tr>
             <th>Sitio web</th>
             <th>URL</th>
-            <th>Páginas webs evaluadas</th>
             <th>Categoria Institucional</th>
         </tr>
         @foreach ($sitios as $sitio)
             <tr>
                 <td > <a href="/sitio/{{ $sitio->id }}" style="color: black; text-decoration-line: underline">{{$sitio->nombre}}</a></td>
                 <td > <a href="http://{{ $sitio->dominio }}" target="_blank">{{$sitio->dominio}}</a></td>
-                <td > {{$sitio->num_paginas}}</td>
                 <td> {{$sitio->descripcion}}</td>
             </tr>
         @endforeach

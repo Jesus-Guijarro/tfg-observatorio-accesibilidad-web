@@ -78,7 +78,7 @@
     color:rgb(34, 104, 184);
     font-size: 2.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
@@ -86,7 +86,6 @@
 
 /*tablas*/
 table{
-    text-align: left;
     border-collapse: collapse;
     margin-bottom: 0.625em;
 }

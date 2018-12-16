@@ -33,7 +33,7 @@ class Sitio extends Model
     }
 
     public function getSitiosBusqueda($nombre){ # Cadena vacia -> Todos los sitios
-        $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','sitios.num_paginas','categorias.descripcion')->
+        $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','categorias.descripcion')->
         join('categorias','sitios.categoria_id','=','categorias.id')->
         where('nombre','like','%'.$nombre.'%')->
         orderBy('sitios.nombre','asc')->
@@ -42,7 +42,7 @@ class Sitio extends Model
     }
 
     public function getSitiosCategoria($categoria_id){
-        $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','sitios.num_paginas','categorias.descripcion')->
+        $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','categorias.descripcion')->
         join('categorias','sitios.categoria_id','=','categorias.id')->
         where('categoria_id',$categoria_id)->
         orderBy('sitios.nombre','asc')->
@@ -51,7 +51,7 @@ class Sitio extends Model
     }
 
     public function getSitios(){
-        $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','sitios.num_paginas','categorias.descripcion')->
+        $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','categorias.descripcion')->
         join('categorias','sitios.categoria_id','=','categorias.id')->
         orderBy('sitios.nombre','asc')->
         simplePaginate(15);
@@ -91,7 +91,7 @@ class Sitio extends Model
     }
 
     public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,
-    $automatizado,$num_paginas,$categoria_id){
+    $automatizado,$categoria_id){
         $sitio = new Sitio();
 
         $sitio->nombre =$nombre;
@@ -100,14 +100,13 @@ class Sitio extends Model
         $sitio->hora =$hora;
         $sitio->dia =$dia;
         $sitio->automatizado =$automatizado;
-        $sitio->num_paginas =$num_paginas;
         $sitio->categoria_id =$categoria_id;
 
         $sitio->save();
     }
 
     public function actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,
-    $automatizado,$num_paginas,$categoria_id){
+    $automatizado,$categoria_id){
 
         $sitio = Sitio::findOrFail($id);
 
@@ -117,7 +116,6 @@ class Sitio extends Model
         $sitio->hora =$hora;
         $sitio->dia =$dia;
         $sitio->automatizado =$automatizado;
-        $sitio->num_paginas =$num_paginas;
         $sitio->categoria_id =$categoria_id;
 
         $sitio -> save();

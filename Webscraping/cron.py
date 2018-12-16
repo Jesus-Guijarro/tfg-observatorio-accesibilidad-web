@@ -94,7 +94,7 @@ def asignarTareaSitio(sitio_id,operacion,conexion,cursor):
     
     sitio = cursor.fetchone()
 
-    periodicidad=sitio.__getitem__(0) # Diario; Semanal; Mensual
+    periodicidad=sitio.__getitem__(0) # Diaria; Semanal; Mensual
     hora=str(sitio.__getitem__(1)) #Formato hh:mm
     dia=int(sitio.__getitem__(2)) #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
     automatizado=bool(sitio.__getitem__(3))
@@ -109,7 +109,7 @@ def asignarTareasSitios(conexion,cursor):
 
     for sitio in sitios:
         sitio_id=sitio.__getitem__(0)
-        periodicidad=sitio.__getitem__(1) # Diario; Semanal; Mensual
+        periodicidad=sitio.__getitem__(1) # Diaria; Semanal; Mensual
         hora=str(sitio.__getitem__(2)) #Formato hh:mm
         dia=int(sitio.__getitem__(3)) #Día del mes o de la semana --- Semana: 0-Domingo, 6-Sábado
         automatizado=bool(sitio.__getitem__(4))

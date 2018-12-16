@@ -22,7 +22,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:00',
                 'dia' => '0',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '1'
                 
             ],
@@ -33,7 +32,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:00',
                 'dia' => '1',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '1'
                 
             ],
@@ -44,7 +42,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:00',
                 'dia' => '2',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '2'
                 
             ],
@@ -55,7 +52,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:00',
                 'dia' => '3',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '2'
                 
             ],
@@ -66,7 +62,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:00',
                 'dia' => '4',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '3'
                 
             ],
@@ -77,7 +72,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:00',
                 'dia' => '5',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '3'
                 
             ],
@@ -88,7 +82,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:00',
                 'dia' => '6',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '4'
                 
             ],
@@ -99,7 +92,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:30',
                 'dia' => '0',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '4'
                 
             ],
@@ -110,7 +102,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:30',
                 'dia' => '1',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '5'
                 
             ],
@@ -121,7 +112,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:30',
                 'dia' => '2',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '5'
                 
             ]
@@ -136,7 +126,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:30',
                 'dia' => '3',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '1'
                 
             ],
@@ -147,7 +136,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:30',
                 'dia' => '4',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '1'
                 
             ],
@@ -158,7 +146,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:30',
                 'dia' => '5',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '1'
                 
             ],
@@ -169,7 +156,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'13:30',
                 'dia' => '6',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '1'
                 
             ],
@@ -180,7 +166,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:00',
                 'dia' => '0',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '1'
                 
             ],
@@ -191,7 +176,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:00',
                 'dia' => '1',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '1'
                 
             ]
@@ -208,7 +192,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:00',
                 'dia' => '2',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '2'
                 
             ],
@@ -219,7 +202,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:00',
                 'dia' => '3',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '2'
                 
             ]
@@ -240,7 +222,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:00',
                 'dia' => '4',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '3'
                 
             ],
@@ -251,7 +232,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:00',
                 'dia' => '5',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '3'
                 
             ]
@@ -268,7 +248,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:00',
                 'dia' => '6',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '4'
                 
             ],
@@ -279,7 +258,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:30',
                 'dia' => '0',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '4'
                 
             ]
@@ -295,7 +273,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:30',
                 'dia' => '1',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '5'
                 
             ],
@@ -306,7 +283,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:30',
                 'dia' => '2',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '5'   
             ],
             [
@@ -316,7 +292,6 @@ class SitiosTableSeeder extends Seeder
                 'hora'=>'14:30',
                 'dia' => '3',
                 'automatizado' => false, 
-                'num_paginas' => '10',
                 'categoria_id' => '5'
             ]
             ]);

@@ -60,6 +60,7 @@ class Pagina extends Model
     public function crearPagina($URL){
         $pagina = new Pagina();
         $pagina->URL= $URL;
+        $pagina->hash="default";
         $pagina->save();
     }
 

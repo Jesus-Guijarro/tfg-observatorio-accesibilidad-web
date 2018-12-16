@@ -25,7 +25,7 @@
 
 <hr>
 
-<h3> Categorias Institucionales y de Organización contempladas </h3>
+<h3> Categorias Institucionales y de organización contempladas </h3>
 <ul>
 @foreach ($categorias as $categoria)
 <li>{{$categoria->descripcion}}
