@@ -13,17 +13,23 @@ class HerramientasTableSeeder extends Seeder
     {
         DB::table('herramientas')->delete();
 
-        DB::table('herramientas')->insert(['descripcion' => 'accessmonitor',
-            'activa' => true]);
-        DB::table('herramientas')->insert(['descripcion' => 'achecker',
-            'activa' => true]);
-        DB::table('herramientas')->insert(['descripcion' => 'eiiichecker',
-            'activa' => true]);
-        DB::table('herramientas')->insert(['descripcion' => 'observatorio',
-            'activa' => true]);
-        DB::table('herramientas')->insert(['descripcion' => 'vamola',
-            'activa' => true]);
-        DB::table('herramientas')->insert(['descripcion' => 'wave',
-            'activa' => true]);
+        DB::table('herramientas')->insert(['nombre' => 'accessmonitor',
+            'activa' => true,
+            'descripcion' => 'AccessMonitor']);
+        DB::table('herramientas')->insert(['nombre' => 'achecker',
+            'activa' => true,
+            'descripcion' => 'AChecker']);
+        DB::table('herramientas')->insert(['nombre' => 'eiiichecker',
+            'activa' => true,
+            'descripcion' => 'EIII Page Checker']);
+        DB::table('herramientas')->insert(['nombre' => 'observatorio',
+            'activa' => true,
+            'descripcion' => 'Observatorio Accesibilidad Web UPS de Ecuador']);
+        DB::table('herramientas')->insert(['nombre' => 'vamola',
+            'activa' => true,
+            'descripcion' => 'Vamolà']);
+        DB::table('herramientas')->insert(['nombre' => 'wave',
+            'activa' => true,
+            'descripcion' => 'WAVE']);
     }
 }

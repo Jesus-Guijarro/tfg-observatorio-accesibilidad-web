@@ -55,12 +55,12 @@ class Herramienta extends Model
     public function actualizarHerramienta($id,$descripcion,$activa){
         $herramienta = Herramienta::findOrFail($id);
         $herramienta->descripcion =$descripcion;
-        $herramienta ->activa = $activa;
-        $herramienta -> save();
+        $herramienta->activa = $activa;
+        $herramienta-> save();
     }
 
     public function borrarHerramienta($id){
         $herramienta = Herramienta::findOrFail($id);
-        $herramienta ->delete();
+        $herramienta->delete();
     }
 }

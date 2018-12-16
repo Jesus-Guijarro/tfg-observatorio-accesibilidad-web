@@ -36,7 +36,7 @@ conexion= parametros[0]
 cursor = parametros[1]
 
 #Listado con las herramientas activas para ser usadas
-cursor.execute("SELECT descripcion FROM herramienta_sitio hs, herramientas h where h.activa=%s and hs.sitio_id=%s and h.id=hs.herramienta_id", (True,sitio_id,))
+cursor.execute("SELECT nombre FROM herramienta_sitio hs, herramientas h where h.activa=%s and hs.sitio_id=%s and h.id=hs.herramienta_id", (True,sitio_id,))
 herramientas = cursor.fetchall()
 
 herramientas_sitio=[]

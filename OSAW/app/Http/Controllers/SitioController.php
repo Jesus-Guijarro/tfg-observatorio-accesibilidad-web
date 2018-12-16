@@ -84,6 +84,9 @@ class SitioController extends Controller
 
     public function gestionarSitios(){
 
+        $sitio = new Sitio();
+        $sitios = $sitio->getSitios();
+
         return view('pages.administrador.gestionar-sitios', array('sitios' => $sitios));
     }
 
@@ -99,6 +102,13 @@ class SitioController extends Controller
         $sitio = $s->getSitio($id);
 
         return view('pages.administrador.modificar-sitio', array('sitio' => $sitio));
+    }
+
+    public function eliminarSitio(Request $request){
+        $s = new Sitio();
+        $sitio = $s->getSitio($id);
+
+        return view('pages.administrador.eliminar-sitio', array('sitio' => $sitio));
     }
 
 }
