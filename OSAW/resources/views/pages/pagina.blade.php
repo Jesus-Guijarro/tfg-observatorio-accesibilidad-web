@@ -591,7 +591,7 @@
                 {{$reporte=str_replace("+storage+","",$reporte);}}
             @endphp
             <td>
-                <a href="/reporte-automatico/{{$reporte}}">{{$accessmonitors_reporte->fecha_test}}</a></td>
+                <a href="/reporte-automatico/{{$reporte}}">AccessMonitor-{{$accessmonitors_reporte->fecha_test}}</a></td>
         </tr>
     @endforeach
 </table>
@@ -619,7 +619,7 @@
                 {{$reporte=str_replace("+storage+","",$reporte);}}
             @endphp
             <td>
-                <a href="/reporte-automatico/{{$reporte}}">{{$acheckers_reporte->fecha_test}}</a></td>
+                <a href="/reporte-automatico/{{$reporte}}">Achecker-{{$acheckers_reporte->fecha_test}}</a></td>
         </tr>
     @endforeach
 </table>
@@ -645,7 +645,7 @@
                 {{$reporte=str_replace("+storage+","",$reporte);}}
             @endphp
         <td>
-            <a href="/reporte-automatico/{{$reporte}}">{{$eiiicheckers_reporte->fecha_test}}</a></td>
+            <a href="/reporte-automatico/{{$reporte}}">EIII Page Checker-{{$eiiicheckers_reporte->fecha_test}}</a></td>
         </tr>
     @endforeach
 </table>
@@ -672,7 +672,7 @@
                 {{$reporte=str_replace("+storage+","",$reporte);}}
             @endphp
         <td>
-            <a href="/reporte-automatico/{{$reporte}}">{{$observatorios_reporte->fecha_test}}</a></td>
+            <a href="/reporte-automatico/{{$reporte}}">Observatorio de la UPS de Ecuador-{{$observatorios_reporte->fecha_test}}</a></td>
         </tr>
     @endforeach
 </table>
@@ -699,7 +699,7 @@
                 {{$reporte=str_replace("+storage+","",$reporte);}}
             @endphp
         <td>
-            <a href="/reporte-automatico/{{$reporte}}">{{$vamolas_reporte->fecha_test}}</a></td>
+            <a href="/reporte-automatico/{{$reporte}}">Vamolà-{{$vamolas_reporte->fecha_test}}</a></td>
         </tr>
     @endforeach
 </table>
@@ -724,7 +724,7 @@
                 {{$reporte=str_replace("+storage+","",$reporte);}}
             @endphp
         <td>
-            <a href="/reporte-automatico/{{$reporte}}">{{$waves_reporte->fecha_test}}</a></td>
+            <a href="/reporte-automatico/{{$reporte}}">WAVE-{{$waves_reporte->fecha_test}}</a></td>
         </tr>
     @endforeach
 </table>

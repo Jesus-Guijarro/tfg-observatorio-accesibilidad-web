@@ -6,11 +6,18 @@
 
 <h1> Reporte automático</h1>
 
+<hr>
+
 <div>
-    <a href="{{$reporte}}" download="{{$reporte}}">Descargar reporte</a>
+   <p><strong>Descargar reporte: </strong><a href="{{$reporte}}" download="{{$reporte}}">{{$nombre_reporte}}</a></p>
 </div>
 
-<iframe src="{{URL::to('/')}}{{$reporte}}" width="100%" height="100%" ></iframe>
+<?php $contenido = File::get(storage_path('app/public/' . $reporte));?>
+
+<hr>
+<pre>{{$contenido}}</pre>
+
+
 
 
 @endsection

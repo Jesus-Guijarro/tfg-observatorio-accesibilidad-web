@@ -65,9 +65,11 @@ class PaginaController extends Controller
     public function mostrarReporteAutomatico($reporte){
 
         $reporte=str_replace("+","/",$reporte);
-        $reporte="/storage/".$reporte;
 
-        return view('pages.reporte.automatico', array('reporte' => $reporte));
+        $nombre_reporte=$reporte;
+
+
+        return view('pages.reporte.automatico', array('reporte' => $reporte,'nombre_reporte'=>$nombre_reporte));
     }
 
     
