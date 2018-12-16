@@ -59,6 +59,8 @@ class Sitio extends Model
         return $sitios;
     }
 
+    
+
     public function getNumSitios(){
         $num_sitios = Sitio::count();
         return $num_sitios;

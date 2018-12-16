@@ -3,6 +3,8 @@
 @section('titulo', 'Crear sitio web')
 
 @section('content')
+<h1 class="h1-titulo"> Añadir sitio web </h1>
+
 <form method="POST" action="{{ route('register') }}">
     @csrf
 

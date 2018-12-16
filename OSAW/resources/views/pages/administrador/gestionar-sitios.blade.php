@@ -11,9 +11,9 @@
 </div>
 
 <div style="margin-bottom: 1.5em">
-    <form method="GET" action="{{ action('SitioController@busquedaSitio') }}">
+    <form method="GET" action="{{ action('SitioController@gestionarSitios') }}">
             <label for="nombre" >Buscar Sitio Web:  </label>
-            <input type="text" id ="nombre" name="nombre" value="nombre" required autofocus>
+            <input type="text" id ="nombre" name="nombre" value="" required autofocus>
             {{ csrf_field() }}
     </form>
 </div>
@@ -25,9 +25,8 @@
     </tr>
     @foreach ($sitios as $sitio)
         <tr>
-            <td> <a href="/sitio/{{ $sitio['id'] }}" style="color: black; text-decoration-line: underline">{{$sitio->nombre}}</a></td>
-            <td><a href="/modificar-sitio/{{ $sitio['id'] }}">Modificar</a></td>
-            <td><a href="/sitio/{{ $sitio['id'] }}">Eliminar</a></td>
+            <td> <a href="/modificar-sitio/{{$sitio['id']}}">{{$sitio->nombre}}</a></td>
+            <!--<td><a href="/eliminar-sitio/{{$sitio['id']}}">Eliminar</a></td>-->
         </tr>
     @endforeach
 </table>

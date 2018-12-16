@@ -31,8 +31,6 @@ class HerramientaController extends Controller
         $herramienta->save();
 
         return redirect('gestionar-herramientas');
-
-        //return view('pages.administrador.gestionar-herramientas', array('herramientas' => $herramientas));
     }
 
     public function desactivarHerramienta($id){
@@ -44,8 +42,6 @@ class HerramientaController extends Controller
         $herramienta->save();
 
         return redirect('gestionar-herramientas');
-
-        //return view('pages.administrador.gestionar-herramientas', array('herramientas' => $herramientas));
     }
     
 }

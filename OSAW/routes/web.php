@@ -22,8 +22,8 @@ Route::get('/', 'HomeController@mostrarInicio');
 
 #Sitios web
 Route::get('sitio/{id}', 'SitioController@mostrarSitio');
-Route::get('lista-sitios', 'SitioController@listarSitios');
-Route::get('busqueda-sitios', 'SitioController@busquedaSitio');
+Route::get('lista-sitios/{categoria?}', 'SitioController@listarSitios');
+Route::get('busqueda-sitios/{categoria?}', 'SitioController@busquedaSitio');
 
 #Pagina web
 Route::get('pagina/{id}', 'PaginaController@mostrarPagina');
@@ -36,20 +36,26 @@ Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario');
 Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
 
 #Gestión sitios web
-Route::get('gestionar-sitios', 'SitioController@gestionarSitios');
+Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios');
+
 Route::get('crear-sitio', function()
 {
     return View::make('pages.administrador.crear-sitio');
 });
+Route::post('crear-sitio', 'SitioController@crearSitio');
+
+Route::get('modificar-sitio/{id}', 'SitioController@panelModificarSitio');
 Route::post('modificar-sitio/{id}', 'SitioController@modificarSitio');
-Route::post('eliminarr-sitio/{id}', 'SitioController@eliminarSitio');
 
+Route::get('eliminar-sitio/{id}', 'SitioController@eliminarSitio');
 
+#Gestión herramientas
 Route::get('gestionar-herramientas', 'HerramientaController@gestionarHerramientas');
 Route::get('crear-herramienta', function()
 {
     return View::make('pages.administrador.crear-herramienta');
 });
+Route::post('crear-herramienta', 'HerramientaController@crearHerramienta');
 
 Route::get('desactivar-herramienta/{id}', 'HerramientaController@desactivarHerramienta');
 Route::get('activar-herramienta/{id}', 'HerramientaController@activarHerramienta');
@@ -67,7 +73,3 @@ Route::get('contacto', function()
     return View::make('pages.contacto');
 });
 
-Route::get('test', function()
-{
-    return View::make('test');
-});

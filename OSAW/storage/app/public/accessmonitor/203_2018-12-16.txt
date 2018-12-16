@@ -1,0 +1,21 @@
+REPORTE PÁGINA WEB: https://www.uv.es/uvweb/universitat/ca/estudis-grau/oferta-graus/oferta-graus-1285846094474.html
+FECHA EVALUACIÓN: 2018-12-16
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 9 elementos de encabezado
+Se han encontrado 4 enlaces con el mismo texto que apuntan a destinos diferentes
+Se han identificado 45 casos en los que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se encontró 1 grupo de enlaces compuesto por 10 o más enlaces no agrupados por elementos estructurales
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se constató que todos los formularios tienen un botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se encontraron 25 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se han encontrado 2 elementos <link> para navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "ca_ES"
+Se constató que el código "ca_ES" es incorrecto
+Se constató que los atributos lang y / o xml: lang se utilizan incorrectamente
+Se ha identificado una regla de CSS en la que no se especifica o el color de fondo o el color de fondo
