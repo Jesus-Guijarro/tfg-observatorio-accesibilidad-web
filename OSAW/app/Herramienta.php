@@ -54,8 +54,9 @@ class Herramienta extends Model
 
     }
 
-    public function actualizarHerramienta($id,$descripcion,$activa){
+    public function actualizarHerramienta($id,$nombre,$descripcion,$activa){
         $herramienta = Herramienta::findOrFail($id);
+        $herramienta->nombre= $nombre;
         $herramienta->descripcion =$descripcion;
         $herramienta->activa = $activa;
         $herramienta-> save();

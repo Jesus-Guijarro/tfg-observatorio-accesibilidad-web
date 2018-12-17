@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('titulo', 'Panel modificar sitio web')
+@section('titulo', 'Modificar sitio web')
 
 @section('scripts')
 <script>
@@ -25,18 +25,8 @@ function mostrarEliminar() {
     </div>
 @endif
 
-<!--Eliminar Sitio-->
-<div style="margin-bottom: 1.5em">
-<button class="btn btn-danger" onclick="mostrarEliminar()">Eliminar Sitio Web</button>
-    <div id="eliminar" style="display: none">
-        <p>¿Estás seguro de que quieres eliminar el sitio web: <strong>{{$sitio->nombre}}</strong>? </p>
-        <a class="btn btn-primary" href="/eliminar-sitio/{{$sitio['id']}}" role="button">Sí</a>
-        <button class="btn" onclick="mostrarEliminar()">No</button>
-    </div>
-</div>
 
-
-<form method="POST" action="{{ action('SitioController@modificarSitio') }}">
+<form method="POST" action="<?php action('SitioController@modificarSitio', [$sitio]) ?>">
     @csrf
 
     <!--Nombre del sitio -->
@@ -44,7 +34,7 @@ function mostrarEliminar() {
         <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre sitio web</label>
 
         <div class="col-md-8">
-            <input id="nombre" type="text"  name="nombre" placeholder="Renfe" value="{{ old('nombre') }}" required autofocus>
+            <input id="nombre" type="text"  name="nombre" placeholder="Renfe" value="{{ $sitio->nombre }}" required autofocus>
 
             @if ($errors->has('nombre'))
                 <span>
@@ -59,7 +49,7 @@ function mostrarEliminar() {
         <label for="dominio" class="col-md-4 col-form-label text-md-right">Dominio</label>
 
         <div class="col-md-8">
-            <input id="dominio" type="text"  name="dominio" placeholder="www.renfe.com" value="{{ old('dominio') }}" required >
+            <input id="dominio" type="text"  name="dominio" placeholder="www.renfe.com" value="{{ $sitio->dominio }}" required >
 
             @if ($errors->has('dominio'))
                 <span>
@@ -77,7 +67,11 @@ function mostrarEliminar() {
 
             <select name="categoria">
             @foreach ($categorias as $categoria)
+              @if($categoria->id === $sitio->categoria_id)
+                  <option value="{{$categoria->id}}" selected="selected">{{$categoria->descripcion}}</option>
+              @else
                 <option value="{{$categoria->id}}">{{$categoria->descripcion}}</option>
+              @endif
             @endforeach
             </select>
             
@@ -100,9 +94,9 @@ function mostrarEliminar() {
         </div>
     </div>
 
-    <!--Lista de páginas-->
+    <!--Añadir páginas-->
     <div class="form-group row">
-        <label for="paginas" class="col-md-4 col-form-label text-md-right">Páginas web</label>
+        <label for="paginas" class="col-md-4 col-form-label text-md-right">Añadir páginas web</label>
 
         <div class="col-md-8">
             <textarea name="paginas" rows="10" cols="50" placeholder="Una dirección en cada línea: http://www.renfe.com" value="{{ old('paginas') }}" ></textarea>
@@ -113,6 +107,14 @@ function mostrarEliminar() {
             @endif
         </div>
     </div>
+
+    <div class="form-group row mb-0">
+      <div class="col-md-8 offset-md-4">
+        <a class="btn btn-primary" href="/gestionar-paginas/{{$sitio['id']}}" role="button">Gestionar páginas del sitio</a>
+      </div>
+    </div>
+
+    <br>
 
     <!-- Número de páginas crawler -->
     <div class="form-group row">
@@ -131,14 +133,11 @@ function mostrarEliminar() {
     <!--Periodicidad-->
     <div class="form-group row">
         <label for="periodicidad" class="col-md-4 col-form-label text-md-right">Periodicidad de la evaluación</label>
-
         <div class="col-md-8">
-
             <select name="periodicidad">
                 <option value="Diaria">Diaria</option>
                 <option value="Semanal">Semanal</option>
                 <option value="Mensual">Mensual</option>
-
             </select>
             
             @if ($errors->has('periodicidad'))
@@ -154,7 +153,7 @@ function mostrarEliminar() {
         <label for="dia" class="col-md-4 col-form-label text-md-right">Día de la semana/mes</label>
 
         <div class="col-md-8">
-            <input id="dia" type="number"  name="dia" value="0" required >
+            <input id="dia" type="number"  name="dia" value="{{ $sitio->dia }}" required >
 
             @if ($errors->has('dia'))
                 <span>
@@ -169,7 +168,7 @@ function mostrarEliminar() {
         <label for="hora" class="col-md-4 col-form-label text-md-right">Hora</label>
 
         <div class="col-md-8">
-            <input id="hora" type="text"  name="hora" placeholder="hh:mm" value="{{ old('hora') }}" required >
+            <input id="hora" type="text"  name="hora" placeholder="hh:mm" value="{{ $sitio->hora }}" required >
 
             @if ($errors->has('hora'))
                 <span>
@@ -179,17 +178,27 @@ function mostrarEliminar() {
         </div>
     </div>
 
-    
-
     <div class="form-group row mb-0">
         <div class="col-md-8 offset-md-4">
             <button type="submit" class="btn btn-primary">
-                Añadir sitio web
+                Modificar sitio web
             </button>
             <a class="btn btn-default" href="/gestionar-sitios" role="button">Cancelar</a>
             
         </div>
     </div>
 </form>
+
+<!--Eliminar Sitio-->
+<div class="form-group row mb-0">
+  <div class="col-md-8 offset-md-4">
+    <button class="btn btn-danger" onclick="mostrarEliminar()">Eliminar Sitio Web</button>
+    <div id="eliminar" style="display: none">
+        <p>¿Estás seguro de que quieres eliminar el sitio web: <strong>{{$sitio->nombre}}</strong>? </p>
+        <a class="btn btn-primary" href="/eliminar-sitio/{{$sitio['id']}}" role="button">Sí</a>
+        <button class="btn" onclick="mostrarEliminar()">No</button>
+    </div>
+  </div>
+</div>
 
 @endsection

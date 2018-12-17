@@ -242,7 +242,7 @@ class SitioController extends Controller
         $hora=$request->hora;
 
         $s = new Sitio();
-        $sitio_id= $s->crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id);
+        $sitio_id= $s->actualizarSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id);
 
         //Herramientas
         $sitio=$s->getSitio($sitio_id);
@@ -250,6 +250,9 @@ class SitioController extends Controller
         foreach($herramientas as $herramienta){
             if($herramienta!=0){
                 $sitio->herramientas()->attach($herramienta);
+            }
+            else{
+                $sitio->herramientas()->detach($herramienta);
             }
         }
        

@@ -46,6 +46,11 @@ Route::post('modificar-sitio/{id}', 'SitioController@modificarSitio');
 
 Route::get('eliminar-sitio/{id}', 'SitioController@eliminarSitio');
 
+#Gestión paginas web
+Route::get('gestionar-paginas/{id}', 'PaginaController@gestionarPaginas');
+Route::get('modificar-pagina/{id}', 'PaginaController@modificarPagina');
+Route::get('eliminar-pagina/{id}', 'PaginaController@eliminarPagina');
+
 #Gestión herramientas
 Route::get('gestionar-herramientas', 'HerramientaController@gestionarHerramientas');
 
