@@ -25,7 +25,7 @@ function mostrarEliminar() {
     </div>
 @endif
 
-<form method="POST" action="<?php action('SitioController@modificarSitio', $sitio['id']) ?>">
+<form method="POST" action="<?php action('SitioController@modificarSitio', [$sitio['id']]) ?>">
     @csrf
 
     <!--Nombre del sitio -->

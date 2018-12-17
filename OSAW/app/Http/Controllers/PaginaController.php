@@ -15,6 +15,9 @@ use App\Vamola;
 use App\Wave;
 use Symfony\Component\HttpFoundation\File\File;
 
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
+
 
 class PaginaController extends Controller
 {
@@ -74,14 +77,30 @@ class PaginaController extends Controller
 
     public function gestionarPaginas($sitio_id){
 
-        $sitio = new Sitio();
-        $paginas = $sitio->getPaginasSitio($sitio_id);
+        $url =  Input::get('url');
 
-        return view('pages.administrador.gestionar-paginas', array('paginas' => $paginas));
+        $sitio = new Sitio();
+        $paginas = $sitio->getPaginasSitioURL($sitio_id,$url);
+
+        return view('pages.administrador.gestionar-paginas', array('sitio_id'=>$sitio_id,'paginas' => $paginas));
     }
 
-    public function crearPagina($id){
-        return view('pages.administrador.gestionar-paginas', array('paginas' => $paginas));
+    public function crearPagina(Request $request, $sitio_id){
+
+        $url=$request->url;
+        $url=str_replace(array("\r\n","\r"," "),"",$url);
+
+        $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
+
+        $p = new Pagina();
+        if(preg_match($regex,$url)){
+            $nueva = $p->paginaNueva($url);
+                if($nueva){
+                    $p->crearPagina($url, $sitio_id);
+                }
+        }
+        
+        return back()->with('mensaje', 'La página se ha añadido con éxito');
     }
 
     public function modificarPagina($id){

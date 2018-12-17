@@ -72,6 +72,16 @@ class Sitio extends Model
         return $paginas;
     }
 
+    public function getPaginasSitioURL($id,$url){
+        $paginas= Sitio::select('paginas.id','paginas.URL')->
+        join('paginas','paginas.sitio_id','=','sitios.id')->
+        where('sitios.id',$id)->
+        where('paginas.URL','like','%'.$url.'%')->
+        paginate(10);
+
+        return $paginas;
+    }
+
     public function getDiaAnalisis($id){
         $sitio= Sitio::findOrFail($id);
 

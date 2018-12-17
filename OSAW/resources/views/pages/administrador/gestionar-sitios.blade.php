@@ -26,7 +26,6 @@
     @foreach ($sitios as $sitio)
         <tr>
             <td> <a href="/modificar-sitio/{{$sitio['id']}}">{{$sitio->nombre}}</a></td>
-            <!--<td><a href="/eliminar-sitio/{{$sitio['id']}}">Eliminar</a></td>-->
         </tr>
     @endforeach
 </table>

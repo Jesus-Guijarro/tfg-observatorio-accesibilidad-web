@@ -4,16 +4,12 @@
 
 @section('content')
 
-<h1 class="h1-titulo"> Gestionar sitios web </h1>
+<h1 class="h1-titulo"> Gestionar páginas web </h1>
 
 <div style="margin-bottom: 1.5em">
-    <a class="btn btn-primary" href="/crear-sitio" role="button">Añadir nuevo sitio web</a>
-</div>
-
-<div style="margin-bottom: 1.5em">
-    <form method="GET" action="{{ action('SitioController@gestionarSitios') }}">
-            <label for="nombre" >Buscar Sitio Web:  </label>
-            <input type="text" id ="nombre" name="nombre" value="" required autofocus>
+    <form method="GET" action="<?php action('PaginaController@gestionarPaginas', [$sitio_id]) ?>">
+            <label for="url" >Buscar Pagina Web:  </label>
+            <input type="text" id ="url" name="url" value="" required autofocus>
             {{ csrf_field() }}
     </form>
 </div>
@@ -25,8 +21,9 @@
     </tr>
     @foreach ($paginas as $pagina)
         <tr>
-            <td> <a href="/modificar-pagina/{{$pagina['id']}}">{{$pagina->URL}}</a></td>
-            
+            <!--<td > <input id="url" style="width: 100%" type="text"  name="url" value="{{ $pagina->URL }}" required></td>-->
+            <td> <a href="/modificar-pagina/{{$pagina['id']}}">Modificar Página</a></td>
+            <td> <a href="/eliminar-pagina/{{$pagina['id']}}">Eliminar Página</a></td>  
         </tr>
     @endforeach
 </table>
@@ -36,5 +33,23 @@
 @else
 <p style="text-align: center"> El sitio web no tiene ninguna página web asignada.</p>
 @endif
+
+@if(session()->has('mensaje'))
+    <div class="alert alert-success">
+        {{ session()->get('mensaje') }}
+    </div>
+@endif
+
+<div style="margin-bottom: 1.5em">
+    <form method="POST" action="<?php action('PaginaController@crearPagina', [$sitio_id])?>">
+        <label for="url" >Nueva página web:  </label>
+        <input type="text" id ="url" name="url"  required autofocus>
+
+            <button type="submit" class="btn btn-primary">
+               Añadir
+            </button>
+        {{ csrf_field() }}
+    </form>
+</div>
 
 @endsection
