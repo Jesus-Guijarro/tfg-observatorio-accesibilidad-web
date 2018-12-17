@@ -142,9 +142,21 @@ function mostrarEliminar() {
         <label for="periodicidad" class="col-md-4 col-form-label text-md-right">Periodicidad de la evaluación</label>
         <div class="col-md-8">
             <select name="periodicidad">
-                <option value="Diaria">Diaria</option>
+            @if($sitio->periodicidad === "Diaria")
+                <option value="Diaria" selected="selected">Diaria</option>
+            @else
+                <option value="Diaria" >Diaria</option>
+            @endif
+            @if($sitio->periodicidad === "Semanal")
+                <option value="Semanal" selected="selected">Semanal</option>
+            @else
                 <option value="Semanal">Semanal</option>
+            @endif
+            @if($sitio->periodicidad === "Mensual")
+                <option value="Mensual" selected="selected">Mensual</option>
+            @else
                 <option value="Mensual">Mensual</option>
+            @endif
             </select>
             
             @if ($errors->has('periodicidad'))

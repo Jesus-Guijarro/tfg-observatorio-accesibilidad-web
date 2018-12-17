@@ -77,10 +77,8 @@ class PaginaController extends Controller
 
     public function gestionarPaginas($sitio_id){
 
-        $url =  Input::get('url');
-
         $sitio = new Sitio();
-        $paginas = $sitio->getPaginasSitioURL($sitio_id,$url);
+        $paginas = $sitio->getPaginasSitio($sitio_id);
 
         return view('pages.administrador.gestionar-paginas', array('sitio_id'=>$sitio_id,'paginas' => $paginas));
     }
@@ -92,8 +90,9 @@ class PaginaController extends Controller
 
         $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
 
-        $p = new Pagina();
+        
         if(preg_match($regex,$url)){
+            $p = new Pagina();
             $nueva = $p->paginaNueva($url);
                 if($nueva){
                     $p->crearPagina($url, $sitio_id);
@@ -103,11 +102,38 @@ class PaginaController extends Controller
         return back()->with('mensaje', 'La página se ha añadido con éxito');
     }
 
-    public function modificarPagina($id){
+    public function panelModificarPagina($id){
+
+        $p = new Pagina();
+
+        $pagina = $p->getPagina($id);
+        
+        return view('pages.administrador.modificar-pagina',array('id'=>$id,'pagina'=>$pagina));
+
+        //return back()->with('mensaje', 'La página se ha modificado con éxito');
+        
+    }
+
+    public function modificarPagina(Request $request, $id){
+
+        $url =  $request->url;
+
+        $p = new Pagina();
+
+        $pagina = $p->getPagina($id);
+        $pagina->actualizarPagina($id,$url);
+
+        return back()->with('mensaje', 'La página se ha modificado con éxito');
         
     }
 
     public function eliminarPagina($id){
+
+        $p = new Pagina();
+
+        $pagina = $p->borrarPagina($id);
+
+        return back();
         
     }
     

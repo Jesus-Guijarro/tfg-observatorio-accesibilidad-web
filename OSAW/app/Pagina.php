@@ -78,7 +78,7 @@ class Pagina extends Model
     public function actualizarPagina($id,$URL){
         $pagina = Pagina::findOrFail($id);
         $pagina->URL =$URL;
-        $pagina -> save();
+        $pagina->save();
     }
 
     public function borrarPagina($id){
