@@ -106,20 +106,8 @@
                     
                 </div>
                 <?php 
-                    
-                    list($scriptPath) = get_included_files();
-                    $ruta = $scriptPath;
-                    $sitio_id=1;
-                    $num_paginas=2;
-                    $ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/crawler.py",$ruta);
-                    $comando="/usr/bin/python3 ".$ruta_webscraping." ".$sitio_id." ".$num_paginas;
-
-                    list($scriptPath) = get_included_files();
-        $ruta = $scriptPath;
-        $ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/",$ruta);
-
-        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$sitio_id." ".$num_paginas;
-                    echo $comando;
+                    $partes = explode(":", "X:2");
+                    echo $partes[1];
                 ?>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>

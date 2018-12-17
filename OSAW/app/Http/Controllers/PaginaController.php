@@ -72,5 +72,24 @@ class PaginaController extends Controller
         return view('pages.reporte.automatico', array('reporte' => $reporte,'nombre_reporte'=>$nombre_reporte));
     }
 
+    public function gestionarPaginas($sitio_id){
+
+        $sitio = new Sitio();
+        $paginas = $sitio->getPaginasSitio($sitio_id);
+
+        return view('pages.administrador.gestionar-paginas', array('paginas' => $paginas));
+    }
+
+    public function crearPagina($id){
+        return view('pages.administrador.gestionar-paginas', array('paginas' => $paginas));
+    }
+
+    public function modificarPagina($id){
+        
+    }
+
+    public function eliminarPagina($id){
+        
+    }
     
 }

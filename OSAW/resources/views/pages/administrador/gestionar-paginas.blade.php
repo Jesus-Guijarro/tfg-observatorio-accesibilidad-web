@@ -18,23 +18,23 @@
     </form>
 </div>
 
-@if( count($sitios) !== 0)
+@if( count($paginas) !== 0)
 <table style>
     <tr>
-        <th>Sitio web</th>
+        <th>URL</th>
     </tr>
-    @foreach ($sitios as $sitio)
+    @foreach ($paginas as $pagina)
         <tr>
-            <td> <a href="/modificar-sitio/{{$sitio['id']}}">{{$sitio->nombre}}</a></td>
-            <!--<td><a href="/eliminar-sitio/{{$sitio['id']}}">Eliminar</a></td>-->
+            <td> <a href="/modificar-pagina/{{$pagina['id']}}">{{$pagina->URL}}</a></td>
+            
         </tr>
     @endforeach
 </table>
 <div>
-    {{ $sitios->links() }}
+    {{ $paginas->links() }}
 </div>
 @else
-<p style="text-align: center"> No se ha podido encontrar ningún sitio web con el nombre buscado.</p>
+<p style="text-align: center"> El sitio web no tiene ninguna página web asignada.</p>
 @endif
 
 @endsection

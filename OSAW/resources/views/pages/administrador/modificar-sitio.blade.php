@@ -25,7 +25,7 @@ function mostrarEliminar() {
     </div>
 @endif
 
-<form method="POST" action="<?php action('SitioController@modificarSitio', [$sitio['id']],$herramientas_sitio) ?>">
+<form method="POST" action="<?php action('SitioController@modificarSitio', $sitio['id']) ?>">
     @csrf
 
     <!--Nombre del sitio -->
@@ -89,11 +89,14 @@ function mostrarEliminar() {
 
             @foreach ($herramientas as $herramienta)
                 @if (in_array($herramienta->id,$herramientas_sitio))
+                    <input type='hidden' name="{{$herramienta->nombre}}" value="H:{{$herramienta->id}}"> 
                     <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}" checked> {{$herramienta->descripcion}}<br>
+                    
                 @else
-                <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
+                    <input type='hidden' name="{{$herramienta->nombre}}" value="H:{{$herramienta->id}}"> 
+                    <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
+                    
                 @endif
-                <input type="hidden" name="{{$herramienta->nombre}}" value="0">
             @endforeach
         </div>
     </div>

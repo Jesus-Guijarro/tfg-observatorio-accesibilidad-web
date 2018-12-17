@@ -18,3 +18,8 @@
 	PAGINA WEB: 224
 	INFORMACION: "ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='observatorioweb.ups.edu.ec', port=80): Read timed out. (read timeout=60)",),)"
 
+12/17/2018 02:33:10 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 102
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+

@@ -59,8 +59,6 @@ class Sitio extends Model
         return $sitios;
     }
 
-    
-
     public function getNumSitios(){
         $num_sitios = Sitio::count();
         return $num_sitios;
@@ -88,6 +86,20 @@ class Sitio extends Model
         }
 
         return $dia;
+    }
+
+    public function getHerramientasSitio($id){
+        
+        $s = new Sitio();
+        $sitio = $s->getSitio($id);
+
+        $hs_sitio = $sitio->herramientas;
+        $herramientas_sitio = array();
+        foreach($hs_sitio as $h_sitio){
+            array_push($herramientas_sitio, $h_sitio['id']);
+        }
+
+        return $herramientas_sitio;
     }
 
     public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id){

@@ -85,7 +85,7 @@ class SitioController extends Controller
     }
 
 
-    #   Administración de sitios
+    //Administración de sitios
 
     public function gestionarSitios(){
 
@@ -97,6 +97,7 @@ class SitioController extends Controller
         return view('pages.administrador.gestionar-sitios', array('sitios' => $sitios));
     }
 
+    //CREAR SITIO
     public function panelCrearSitio(){
 
         $categoria = new Categoria();
@@ -219,17 +220,13 @@ class SitioController extends Controller
         return redirect("/crear-sitio")->with('mensaje', 'El sitio se ha creado con éxito');
     }
 
+    //MODIFICAR SITIO
     public function panelModificarSitio($id){
 
         $s = new Sitio();
         $sitio = $s->getSitio($id);
 
-        //Herramientas utilizadas por el sitio
-        $hs_sitio = $sitio->herramientas;
-        $herramientas_sitio = array();
-        foreach($hs_sitio as $h_sitio){
-            array_push($herramientas_sitio, $h_sitio['id']);
-        }
+        $herramientas_sitio = $sitio->getHerramientasSitio($id);
         
         $categoria = new Categoria();
         $categorias = $categoria->getCategorias();
@@ -242,7 +239,7 @@ class SitioController extends Controller
         return view('pages.administrador.modificar-sitio', array('sitio' => $sitio,'categorias' => $categorias,'herramientas' => $herramientas,'herramientas_sitio'=>$herramientas_sitio));
     }
 
-    public function modificarSitio(Request $request, $id, $herramientas_sitio){
+    public function modificarSitio(Request $request, $id){
         //Validaciones
         $this->validate($request, [
             'nombre' => 'required|min:2|max:70',
@@ -287,15 +284,29 @@ class SitioController extends Controller
         $s->actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id);
 
         //Herramientas
-        $sitio=$s->getSitio($id);
+        $sitio = $s->getSitio($id);
+
+        $herramientas_sitio = $sitio->getHerramientasSitio($id);
+
         $herramientas = [$request->accessmonitor,$request->achecker,$request->eiiichecker,$request->observatorio, $request->vamola,$request->wave];
         foreach($herramientas as $herramienta){
-            if($herramienta!=0){
-                $sitio->herramientas()->attach($herramienta);
+
+            if(is_numeric($herramienta)){
+                if(!in_array($herramienta, $herramientas_sitio)){
+                    $sitio->herramientas()->attach($herramienta);
+                }
             }
             else{
-                $sitio->herramientas()->detach($herramienta);
+                $partes = explode(":", $herramienta);
+                $herramienta_id=$partes[1];
+                if(in_array($herramienta_id, $herramientas_sitio)){
+                    $sitio->herramientas()->detach($herramienta_id);
+                }
+                
             }
+
+
+
         }
        
         //Páginas web
@@ -349,6 +360,7 @@ class SitioController extends Controller
 
     }
 
+    //ELIMINAR
     public function eliminarSitio($id){
 
         $s = new Sitio();
