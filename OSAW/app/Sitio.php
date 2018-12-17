@@ -90,7 +90,7 @@ class Sitio extends Model
         return $dia;
     }
 
-    public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id){
+    public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id){
         $sitio = new Sitio();
 
         $sitio->nombre =$nombre;
@@ -98,7 +98,7 @@ class Sitio extends Model
         $sitio->periodicidad=$periodicidad;
         $sitio->hora =$hora;
         $sitio->dia =$dia;
-        $sitio->automatizado =false;
+        $sitio->automatizado =$automatizado;
         $sitio->categoria_id =$categoria_id;
 
         $sitio->save();
@@ -108,7 +108,7 @@ class Sitio extends Model
         return $id;
     }
 
-    public function actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id){
+    public function actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id){
 
         $sitio = Sitio::findOrFail($id);
 
@@ -117,11 +117,10 @@ class Sitio extends Model
         $sitio->periodicidad=$periodicidad;
         $sitio->hora =$hora;
         $sitio->dia =$dia;
+        $sitio->automatizado =$automatizado;
         $sitio->categoria_id =$categoria_id;
 
         $sitio -> save();
-
-        return $sitio->id;
     }
 
     public function borrarSitio($id){

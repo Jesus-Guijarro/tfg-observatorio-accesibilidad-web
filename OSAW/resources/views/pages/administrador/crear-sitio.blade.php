@@ -130,7 +130,7 @@
         <label for="dia" class="col-md-4 col-form-label text-md-right">Día de la semana/mes</label>
 
         <div class="col-md-8">
-            <input id="dia" type="number"  name="dia" value="0" required >
+            <input id="dia" type="number"  name="dia" value="{{ old('dia') }}" required >
 
             @if ($errors->has('dia'))
                 <span>
@@ -152,6 +152,14 @@
                     <strong class="strong-val">{{ $errors->first('hora') }}</strong>
                 </span>
             @endif
+        </div>
+    </div>
+
+    <!--Automatización-->
+    <div class="form-group row">
+        <span class="col-md-4 col-form-label text-md-right"></span>
+        <div class="col-md-4">
+            <input type="checkbox" name="automatizado"> Realizar seguimiento <br>
         </div>
     </div>
 

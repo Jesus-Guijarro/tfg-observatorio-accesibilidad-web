@@ -25,8 +25,7 @@ function mostrarEliminar() {
     </div>
 @endif
 
-
-<form method="POST" action="<?php action('SitioController@modificarSitio', [$sitio]) ?>">
+<form method="POST" action="<?php action('SitioController@modificarSitio', [$sitio['id']],$herramientas_sitio) ?>">
     @csrf
 
     <!--Nombre del sitio -->
@@ -89,7 +88,12 @@ function mostrarEliminar() {
         <div class="col-md-4">
 
             @foreach ($herramientas as $herramienta)
+                @if (in_array($herramienta->id,$herramientas_sitio))
+                    <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}" checked> {{$herramienta->descripcion}}<br>
+                @else
                 <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
+                @endif
+                <input type="hidden" name="{{$herramienta->nombre}}" value="0">
             @endforeach
         </div>
     </div>
@@ -177,14 +181,25 @@ function mostrarEliminar() {
             @endif
         </div>
     </div>
+    <!--Automatización-->
+    <div class="form-group row">
+        <span class="col-md-4 col-form-label text-md-right"></span>
+        <div class="col-md-4">
+            @if($sitio->automatizado==true)
+                <input type="checkbox" name="automatizado" checked> Realizar seguimiento <br>
+            @else
+                <input type="checkbox" name="automatizado"> Realizar seguimiento <br>
+            @endif
+        </div>
+    </div>
+
 
     <div class="form-group row mb-0">
         <div class="col-md-8 offset-md-4">
             <button type="submit" class="btn btn-primary">
                 Modificar sitio web
             </button>
-            <a class="btn btn-default" href="/gestionar-sitios" role="button">Cancelar</a>
-            
+            <a class="btn btn-default" href="/gestionar-sitios" role="button">Cancelar</a>     
         </div>
     </div>
 </form>

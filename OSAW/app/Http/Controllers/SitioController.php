@@ -145,11 +145,21 @@ class SitioController extends Controller
         $categoria_id=$request->categoria;
         $hora=$request->hora;
 
+        
+        //Automatizado
+        $automatizado = true;
+        
+        if($request->automatizado!="on"){
+            $automatizado = false;
+        }
+
+        
+
         $s = new Sitio();
-        $sitio_id= $s->crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id);
+        $id= $s->crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id);
 
         //Herramientas
-        $sitio=$s->getSitio($sitio_id);
+        $sitio=$s->getSitio($id);
         $herramientas = [$request->accessmonitor,$request->achecker,$request->eiiichecker,$request->observatorio, $request->vamola,$request->wave];
         foreach($herramientas as $herramienta){
             if($herramienta!=0){
@@ -174,7 +184,7 @@ class SitioController extends Controller
                 if(preg_match($regex,$pagina)){
                     $nueva = $p->paginaNueva($pagina);
                     if($nueva){
-                        $p->crearPagina($pagina,$sitio_id);
+                        $p->crearPagina($pagina,$id);
                     }
                 }
             }
@@ -189,15 +199,22 @@ class SitioController extends Controller
         //Llamada crawler
         
         $num_paginas=$request->num_paginas;
-        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$sitio_id." ".$num_paginas;
+        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$id." ".$num_paginas;
 
         $crawler = new Process($comando);
         $crawler->run();
 
         //Llamada a cron
-        $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$sitio_id.' C';
-        $cron = new Process($comando);
-        $cron->run();
+        if($automatizado){
+            $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$id.' C';
+            $cron = new Process($comando);
+            $cron->run();
+        }
+        else{
+            $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$id.' E';
+            $cron = new Process($comando);
+            $cron->run();
+        }
         
         return redirect("/crear-sitio")->with('mensaje', 'El sitio se ha creado con éxito');
     }
@@ -207,16 +224,25 @@ class SitioController extends Controller
         $s = new Sitio();
         $sitio = $s->getSitio($id);
 
+        //Herramientas utilizadas por el sitio
+        $hs_sitio = $sitio->herramientas;
+        $herramientas_sitio = array();
+        foreach($hs_sitio as $h_sitio){
+            array_push($herramientas_sitio, $h_sitio['id']);
+        }
+        
         $categoria = new Categoria();
         $categorias = $categoria->getCategorias();
 
         $herramienta = new Herramienta();
         $herramientas = $herramienta->getHerramientasActivas();
 
-        return view('pages.administrador.modificar-sitio', array('sitio' => $sitio,'categorias' => $categorias,'herramientas' => $herramientas));
+        
+
+        return view('pages.administrador.modificar-sitio', array('sitio' => $sitio,'categorias' => $categorias,'herramientas' => $herramientas,'herramientas_sitio'=>$herramientas_sitio));
     }
 
-    public function modificarSitio(Request $request, $id){
+    public function modificarSitio(Request $request, $id, $herramientas_sitio){
         //Validaciones
         $this->validate($request, [
             'nombre' => 'required|min:2|max:70',
@@ -250,11 +276,18 @@ class SitioController extends Controller
         $categoria_id=$request->categoria;
         $hora=$request->hora;
 
+        //Automatizado
+        $automatizado = true;
+        
+        if($request->automatizado!="on"){
+            $automatizado = false;
+        }
+
         $s = new Sitio();
-        $sitio_id= $s->actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id);
+        $s->actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id);
 
         //Herramientas
-        $sitio=$s->getSitio($sitio_id);
+        $sitio=$s->getSitio($id);
         $herramientas = [$request->accessmonitor,$request->achecker,$request->eiiichecker,$request->observatorio, $request->vamola,$request->wave];
         foreach($herramientas as $herramienta){
             if($herramienta!=0){
@@ -282,7 +315,7 @@ class SitioController extends Controller
                 if(preg_match($regex,$pagina)){
                     $nueva = $p->paginaNueva($pagina);
                     if($nueva){
-                        $p->crearPagina($pagina,$sitio_id);
+                        $p->crearPagina($pagina,$id);
                     }
                 }
             }
@@ -294,21 +327,26 @@ class SitioController extends Controller
         $ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/",$ruta);
 
         //Llamada crawler
-        
         $num_paginas=$request->num_paginas;
-        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$sitio_id." ".$num_paginas;
-
+        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$id." ".$num_paginas;
         $crawler = new Process($comando);
         $crawler->run();
 
-        //Llamada a cron
-        $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$sitio_id.' A';
-        $cron = new Process($comando);
-        $cron->run();
         
+        //Llamada a cron
+        if($automatizado){
+            $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$id.' A';
+            $cron = new Process($comando);
+            $cron->run();
+        }
+        else{
+            $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$id.' E';
+            $cron = new Process($comando);
+            $cron->run();
+        }
+    
         return redirect('/modificar-sitio/'.$id)->with('mensaje', 'El sitio se ha modificado con éxito');
 
-        
     }
 
     public function eliminarSitio($id){

@@ -1,0 +1,674 @@
+REPORTE PÁGINA WEB: https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Certificados_tributarios/Certificados_tributarios.shtml
+FECHA EVALUACIÓN: 2018-12-17
+
+
+Principio: 1.Perceptible
+Descripcion: La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+	Pauta: 1.1..Alternativas textuales
+	Descripcion: Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple
+
+		Criterio: 1.1.1..Contenido no textual
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H35-Proporcionando textos alternativos a elementos applet
+			Criticidad: Alta
+			Observación: No se han encontrado elementos applet en la p&aacute;gina.<br/>
+			Recomendación: Se recomienda colocar una alternativa textual a los elementos applet, para tener conocimiento de su funci&oacute;n.<br/>
+			Número de errores: 0
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H45-Usando longdesc
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado im&aacute;genes que usen el atributo longdesc para referirse a una larga descripci&oacute;n contenida en un recurso independiente, que sean necesarias como alternativa no textual para una im&aacute;gen.<br/>
+			Recomendación: Use el atributo longdesc en una im&aacute;gen cuando una alternativa textual breve no transmite adecuadamente la funci&oacute;n o la informaci&oacute;n proporcionada en la im&aacute;gen.<br/>
+			Número de errores: 0
+
+			Código: H37-Usando atributos alt en elementos img
+			Criticidad: Media
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong>, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img alt="Logo Gobierno de España" title="Logotipo del Gobierno de España" src="/static_files/common/internet/img/escudo_gobierno.gif"></xmp></li><li><xmp><img alt="Logo Agencia Tributaria" title="Logo Agencia Tributaria" src="/static_files/common/internet/img/Logo_Agencia.png"></xmp></li><li><xmp><img alt="Logo 40 Aniversario de la Constitución Española" title="Logotipo del 40 Aniversario de la Constitución Española" src="/static_files/AEAT/Componentes_Home/imagenes/cabecera/constitucion_40_tr.png"></xmp></li><li><xmp><img src="/static_files/common/internet/img/tic_amarillo.png" alt=""></xmp></li><li><xmp><img src="/static_files/AEAT/Internet_DSM/imagenes_cabecera/ciudadanos_es_es.jpg" alt="Imagen Ciudadanos"></xmp></li><li><xmp><img src="/common/img/tic_amarillo.gif" alt="Búsqueda avanzada"></xmp></li><li><xmp><img alt="Acceso Sede Electrónica" src="/static_files/AEAT/Componentes_Home/imagenes/banners/acceso_sede_es_es.png"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/acceda.gif"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/sobre.gif"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/opine.gif"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/acceda.gif"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/popup.gif" title="Nueva ventana" alt="Nueva ventana"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/popup.gif" title="Nueva ventana" alt="Nueva ventana"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></xmp></li><li><xmp><img src="/common/img/dispositivo_movil_30.png" alt=""></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H67-Usando texto alternativo nulo y no el atributo title en el elemento img para imágenes que AT puedan ignorar
+			Criticidad: Media
+			Observación: De un total de 26 im&aacute;genes que se encontraron en la p&aacute;gina con texto alternativo, 6 tienen un valor nulo o sin contenido. Verifique que correspondan a imagenes decorativas. <pre><ul><li><xmp><img src="/static_files/common/internet/img/tic_amarillo.png" alt=""></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/acceda.gif"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/sobre.gif"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/opine.gif"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/acceda.gif"></xmp></li><li><xmp><img src="/common/img/dispositivo_movil_30.png" alt=""></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 6
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+			Código: C18-Usando reglas margin y padding en lugar de imágenes de espaciador para diseñar un layout
+			Criticidad: Baja
+			Observación: Existen 16 celdas de tablas que no consideran el separador de contenido de los bordes.<br/>
+			Recomendación: Se debe tener en cuenta la separaci&oacute;n del texto respecto a las celdas en las tablas.<br/>
+			Número de errores: 16
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H36-Usando atributos alt en imágenes que se utilizan como botones de envio
+			Criticidad: Alta
+			Observación: No se han encontrado botones de tipo im&aacute;gen en la p&aacute;gina..<br/>
+			Recomendación: En el caso de hacer uso de botones de tipo im&aacute;gen, estos deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la acci&oacute;n del bot&oacute;n)..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado enlaces adyacentes que redirecciones al mismo lugar causando redundancia o confusi&oacute;n de informaci&oacute;n..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: OAW1-Usando videos decorativos
+			Criticidad: Media
+			Observación: No se han encontrado videos en esta p&aacute;gina..<br/>
+			Recomendación: En caso de tener v&iacute;deos decorativos, es recomendable marcarlos como tal con atributos ARIA, esto evita que los usuarios con tecnolog&iacute;as de asistencia tengan dificultades al encontrar videos sin altenativas textuales..<br/>
+			Número de errores: 0
+
+			Código: H88-Usando HTML de acuerdo a la especificación
+			Criticidad: Alta
+			Observación: No se han encontrado elementos obsoletos dentro de la p&aacute;gina..<br/>
+			Recomendación: Ciertas etiquetas y atributos viejos de HTML han sido suspendidos para utilizar en su lugar alternativas m&aacute;s flexibles (como HTML o CSS). Es recomendable siempre adoptar los est&aacute;ndares HTML..<br/>
+			Número de errores: 0
+
+	Pauta: 1.2..Medios tempodependientes
+	Descripcion: Proporcionar alternativas para los medios tempodependientes
+
+		Criterio: 1.2.1..Sólo audio y sólo vídeo (grabado)
+		Nivel: A
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.4..Subtítulos (en directo)
+		Nivel: AA
+
+		Criterio: 1.2.3..Audiodescripción o Medio Alternativo (grabado)
+		Nivel: A
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.8..Medio alternativo (grabado)
+		Nivel: AAA
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.2..Subtítulos (grabados)
+		Nivel: A
+
+			Código: G87-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado videos en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los videos, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+			Código: G87B-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado audios en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los audios, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+	Pauta: 1.3..Adaptable
+	Descripcion: Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura
+
+		Criterio: 1.3.2..Secuencia con significado
+		Nivel: A
+
+			Código: C27A-Haciendo el DOM ordenado para marcar el orden visual: A) Elementos con posicionamiento flotante sin especificar
+			Criticidad: Media
+			Observación: De las 988 reglas CSS en la p&aacute;gina, 79 de ellas usan declaraciones de elementos de forma flotante (float:inherit|none|left|rigth).<pre><ul><li><xmp>.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin-top: 0.5em; margin-right: 0.2em; margin-bottom: 0.4em; margin-left: 0.2em; cursor: pointer; padding-top: 0.2em; padding-right: 0.6em; padding-bottom: 0.3em; padding-left: 0.6em; width: auto; overflow-x: visible; overflow-y: visible; }</xmp></li><li><xmp>.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float: left; }</xmp></li><li><xmp>.ui-datepicker-multi .ui-datepicker-group { float: left; }</xmp></li><li><xmp>.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }</xmp></li><li><xmp>.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current, .ui-datepicker-rtl .ui-datepicker-group { float: right; }</xmp></li><li><xmp>.ui-dialog .ui-dialog-title { float: left; margin-top: 0.1em; margin-right: 0px; margin-bottom: 0.1em; margin-left: 0px; white-space: nowrap; width: 90%; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; }</xmp></li><li><xmp>.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }</xmp></li><li><xmp>.ui-tabs .ui-tabs-nav li { list-style-type: none; list-style-position: initial; list-style-image: initial; float: left; position: relative; top: 0px; margin-top: 1px; margin-right: 0.2em; margin-bottom: 0px; margin-left: 0px; border-bottom-width: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; white-space: nowrap; }</xmp></li><li><xmp>.ui-tabs .ui-tabs-nav .ui-tabs-anchor { float: left; padding-top: 0.5em; padding-right: 1em; padding-bottom: 0.5em; padding-left: 1em; text-decoration: none; }</xmp></li><li><xmp>#contenedor { width: 100%; float: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 10em; padding-left: 0px; clear: both; min-width: 840px; height: 100%; }</xmp></li><li><xmp>#contenedorizq { float: left; width: 77%; }</xmp></li><li><xmp>#homeIzq { width: 78%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; float: left; }</xmp></li><li><xmp>#contenedorIzqHome { width: 27%; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#contenedorCentralHome { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 73%; }</xmp></li><li><xmp>#contenedorder { float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 22%; }</xmp></li><li><xmp>#contenedorizqsub { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#contenedorsub { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 73%; overflow-x: visible; overflow-y: visible; }</xmp></li><li><xmp>#topIzquierda { border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#topDerecha { border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; float: right; text-align: right; }</xmp></li><li><xmp>.menu_enlaces { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(229, 229, 229); clear: both; float: left; height: 2em; width: 78%; position: relative; z-index: 1; }</xmp></li><li><xmp>.menu_enlaces li { background-image: url(https://www.agenciatributaria.es/common/img/tic_azul.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; float: left; margin-top: 0.4em; margin-right: 2em; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 1em; background-position: 0% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.menu_segmento_wrapper { float: right; position: relative; width: 66%; margin-right: 0.3em; }</xmp></li><li><xmp>.menu_segmentos li { float: left; list-style-type: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 1.8em; padding-right: 0px; padding-bottom: 1.8em; padding-left: 0px; text-align: center; width: 20%; }</xmp></li><li><xmp>.bloqueCabecera > .menu_segmentos { float: right; position: relative; width: 65%; margin-right: 1em; }</xmp></li><li><xmp>.bloqueCabecera > .menu_segmentos > .segmento { float: right; }</xmp></li><li><xmp>.buscador { float: right; list-style-type: none; text-align: left; width: 22%; position: relative; z-index: 2; }</xmp></li><li><xmp>.accesos { float: right; text-align: center; width: 22%; clear: both; }</xmp></li><li><xmp>.segmento { box-sizing: border-box; float: left; padding-top: 0.2em; padding-right: 0.8em; padding-bottom: 0px; padding-left: 0.8em; width: 25%; }</xmp></li><li><xmp>.segmento .centro_gris { border-bottom-color: rgb(170, 170, 170); float: left; text-align: center; width: 93%; }</xmp></li><li><xmp>.segmento .centro_azul { border-bottom-color: rgb(51, 118, 172); float: left; text-align: center; width: 93%; }</xmp></li><li><xmp>.segmento .centro_rojo { border-bottom-color: rgb(224, 63, 58); float: left; text-align: center; width: 93%; }</xmp></li><li><xmp>.segmento .centro_amarillo { border-bottom-color: rgb(255, 183, 76); float: left; text-align: center; width: 93%; }</xmp></li><li><xmp>.izqComponente { display: none; background-image: url(https://www.agenciatributaria.es/common/img/borde_sup_izq.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; float: left; height: 7px; width: 7px; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.pieComponente .izq { background-image: url(https://www.agenciatributaria.es/common/img/box_bottom_left.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; float: left; height: 7px; width: 7px; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>span.desplegar { background-image: url(https://www.agenciatributaria.es/common/img/flecha_abajo.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; display: block; float: right; vertical-align: middle; height: 8px; position: absolute; right: 0.5em; top: 0.8em; width: 15px; background-position: 0px 0px; background-repeat: repeat repeat; }</xmp></li><li><xmp>#pie { bottom: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(51, 118, 172); clear: both; float: none; margin-top: 0px; margin-right: -0.7em; margin-bottom: 0px; margin-left: -0.7em; padding-top: 0.5em; padding-right: 0px; padding-bottom: 0.5em; padding-left: 0px; position: absolute; width: 100%; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#pie ul { float: left; border-left-width: 1px; border-left-style: solid; border-left-color: rgb(255, 255, 255); display: inline-block; height: auto; margin-top: 0.5em; margin-right: 0.5em; margin-bottom: 0.5em; margin-left: 0.5em; vertical-align: top; max-width: 12em; min-width: 6em; list-style-type: none; list-style-position: initial; list-style-image: initial; }</xmp></li><li><xmp>#pie ul.idiomasPie { float: right; text-align: right; min-width: 0px; max-width: 100%; }</xmp></li><li><xmp>#pie > div.pieD { float: right; max-width: 45%; width: auto; display: inline-block; }</xmp></li><li><xmp>#pie > div.pieI { float: left; max-width: 50%; width: auto; display: inline-block; }</xmp></li><li><xmp>#pie .icono-pie { cursor: pointer; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; float: right; text-align: center; min-width: 0px; max-width: 7em; display: inline-block; }</xmp></li><li><xmp>.top h2 { color: rgb(51, 118, 172); font-size: 1em; margin-left: 1em; padding-bottom: 0px; padding-top: 7px; float: left; line-height: 1.5em; }</xmp></li><li><xmp>.top .izq { background-image: url(https://www.agenciatributaria.es/common/img/borde_sup_izq.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; float: left; height: 7px; width: 7px; display: none; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.top .der { background-image: url(https://www.agenciatributaria.es/common/img/borde_sup_der.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; float: right; height: 7px; width: 7px; display: none; background-position: 100% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.novedades .dcha { float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>.historico_novedades h2 { color: rgb(0, 35, 76); font-size: 9pt; margin-left: 8px; padding-bottom: 0px; padding-top: 5px; float: left; }</xmp></li><li><xmp>.historico_novedades .dcha { float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>.notas_prensa .dcha { float: right; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }</xmp></li><li><xmp>.enlace_historico { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: right; float: right; margin-top: 0.6em; margin-right: 0.5em; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>.leer_mas img { margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 0.3em !important; float: none !important; }</xmp></li><li><xmp>.destacado_ultimahora img { float: left; margin-top: 1em; margin-right: 1em; margin-bottom: 0.5em; margin-left: 0px; }</xmp></li><li><xmp>.listado_iconos li { float: left; font-weight: bold; list-style-type: none; list-style-position: outside; list-style-image: none; margin-bottom: 2.6em; margin-right: 2.6em; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; text-align: center; }</xmp></li><li><xmp>.listado_iconos ul li ul li { height: 11em; width: 10em; border-top-width: medium; border-right-width: medium; border-bottom-width: medium; border-left-width: medium; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-color: initial; float: left; font-size: 0.9em; font-weight: normal; list-style-type: none; list-style-position: outside; list-style-image: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: center; }</xmp></li><li><xmp>.listaIcos { background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(223, 232, 240); border-right-color: rgb(223, 232, 240); border-bottom-color: rgb(223, 232, 240); border-left-color: rgb(223, 232, 240); border-top-left-radius: 0.3em 0.3em; border-top-right-radius: 0.3em 0.3em; border-bottom-right-radius: 0.3em 0.3em; border-bottom-left-radius: 0.3em 0.3em; float: left; margin-top: 0px; margin-right: 1em; margin-bottom: 1em; margin-left: 0px; box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 2px; text-align: center; }</xmp></li><li><xmp>.listaIcos .top_izq { display: none; background-image: url(https://www.agenciatributaria.es/common/img/borde_sup_izq.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; float: left; height: 7px; width: 7px; background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.listaIcos .top_der { display: none; background-image: url(https://www.agenciatributaria.es/common/img/borde_sup_der.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; float: right; height: 7px; width: 7px; background-position: 100% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.tituloListaIco > h2 { color: rgb(20, 78, 181); font-size: 9pt; margin-left: 0.5em; padding-bottom: 0px; padding-top: 7px; float: left; line-height: 1.5em; }</xmp></li><li><xmp>.promocionIco { float: left; margin-top: 0px; margin-right: 2em; margin-bottom: 0.5em; margin-left: 0px; }</xmp></li><li><xmp>.listadoModelosIzq { float: left; width: 31%; margin-top: 2em; padding-left: 2.5em !important; box-sizing: border-box; }</xmp></li><li><xmp>.listadoModelosDer { float: left; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 1.2em !important; width: 68%; margin-top: 2em; box-sizing: border-box; }</xmp></li><li><xmp>.listadoModelosDer ul { float: none; margin-top: 1em; width: 100%; }</xmp></li><li><xmp>.columnas ul li { clear: none; display: inline; float: left; width: 47%; padding-top: 0px; padding-right: 2em; padding-bottom: 1em; padding-left: 0px; }</xmp></li><li><xmp>.articulo_img img { float: left; margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 0px; }</xmp></li><li><xmp>.paginador-articulo .label-pagina { display: inline-block; float: left; margin-top: 0.2em; color: rgb(119, 119, 119); }</xmp></li><li><xmp>.volver { display: none; background-image: url(https://www.agenciatributaria.es/common/img/volver.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; float: right; margin-top: 2em; margin-right: 1em; margin-bottom: 0px; margin-left: 0px; padding-left: 1.2em; background-position: 0px 3px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.paginador div.irPagina { float: left; cursor: pointer; margin-right: 0.2em; padding-top: 0.2em; padding-right: 0.5em; padding-bottom: 0.2em; padding-left: 0.5em; }</xmp></li><li><xmp>.imprimir { background-image: url(https://www.agenciatributaria.es/common/img/imprimir_med.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; cursor: pointer; display: inline-block; float: right; height: 18px; margin-top: 0.2em; margin-right: 1em; margin-bottom: 0px; margin-left: 0px; opacity: 0.7; vertical-align: middle; width: 20px; background-position: 0px 0px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.caja_mapaweb { float: left; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(223, 232, 240); border-right-color: rgb(223, 232, 240); border-bottom-color: rgb(223, 232, 240); border-left-color: rgb(223, 232, 240); border-top-left-radius: 0.3em 0.3em; border-top-right-radius: 0.3em 0.3em; border-bottom-right-radius: 0.3em 0.3em; border-bottom-left-radius: 0.3em 0.3em; box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 2px; margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 0px; width: 32%; }</xmp></li><li><xmp>#sugerencias label { float: left; padding-right: 5px; text-align: right; width: 8em; }</xmp></li><li><xmp>.enlaces { float: right; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; }</xmp></li><li><xmp>.enlaces a { float: none; }</xmp></li><li><xmp>#dialogoAcceso .mensajeAcceso { color: rgb(119, 119, 119); font-weight: bold; margin-top: 0.2em; float: left; }</xmp></li><li><xmp>#dialogoAcceso .selectorAccesoAyuda { float: right; display: inline; margin-top: 0.2em; font-weight: bold; }</xmp></li><li><xmp>.enlaceRegistro { float: left; padding-top: 0.5em; padding-right: 0px; padding-bottom: 0px; padding-left: 0.5em; }</xmp></li><li><xmp>#slider1 .overview li { float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 0px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; width: 157px; }</xmp></li><li><xmp>.eventos-cambio-vista { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(241, 241, 241); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(228, 228, 228); border-right-color: rgb(228, 228, 228); border-bottom-color: rgb(228, 228, 228); border-left-color: rgb(228, 228, 228); border-top-left-radius: 0.2em 0.2em; border-top-right-radius: 0.2em 0.2em; border-bottom-right-radius: 0.2em 0.2em; border-bottom-left-radius: 0.2em 0.2em; color: rgb(119, 119, 119); cursor: pointer; float: right; margin-top: 0px; margin-right: 2em; margin-bottom: 0px; margin-left: 2em; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; text-align: center; width: 17em; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.flotante-der { float: right; }</xmp></li><li><xmp>.flotante-izq { float: left; }</xmp></li><li><xmp>.linea_segmentos { float: right; width: 100%; background-color: rgb(20, 78, 181); height: 1em; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 79
+
+			Código: H56-Usando el atributo dir en un elemento en linea para resolver problemas con secuencias direccionales anidadas 
+			Criticidad: Baja
+			Observación: Existen 5 segmentos de texto que declaran usar un idioma espec&iacute;fico. Verifique que estos textos corresponda al idioma que se indica, sea un valor valido y as&iacute; tambien que no se requiera indicar la dirrecci&oacute;n de lectura (dir=rtl).<pre><ul><li><xmp><a target="_self" title="Bienvenido" lang="es" hreflang="es" href="https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Certificados_tributarios/Certificados_tributarios.shtml">Castellano</a></xmp></li><li><xmp><a target="_self" title="Benvingut" lang="ca" hreflang="ca" href="https://www.agenciatributaria.es/AEAT.internet/ca_es/Inicio/_Segmentos_/Ciudadanos/Certificados_tributarios/Certificados_tributarios.shtml">Català</a></xmp></li><li><xmp><a target="_self" title="Benvido" lang="gl" hreflang="gl" href="https://www.agenciatributaria.es/AEAT.internet/gl_es/Inicio/_Segmentos_/Ciudadanos/Certificados_tributarios/Certificados_tributarios.shtml">Galego</a></xmp></li><li><xmp><a target="_self" title="Benvingut" lang="ca-valencia" hreflang="ca-valencia" href="https://www.agenciatributaria.es/AEAT.internet/va_es/Inicio/_Segmentos_/Ciudadanos/Certificados_tributarios/Certificados_tributarios.shtml">Valencià</a></xmp></li><li><xmp><a target="_self" title="Welcome" lang="en" hreflang="en" href="https://www.agenciatributaria.es/AEAT.internet/en_gb/Inicio/_Segmentos_/Ciudadanos/Certificados_tributarios/Certificados_tributarios.shtml">English</a></xmp></li></ul></pre>.<br/>
+			Recomendación: En caso de que un texto necesite ser leido en sentido contrario al de defecto (izquierda-derecha), se debe especificar utilizando el atributo dir.  Para mayor informaci&oacute;n refierase a <a haref="https://www.w3.org/TR/html4/struct/dirlang.html">Informaci&oacute;n sobre el idioma y la direcci&oacute;n de lectura de un texto</a>.<br/>
+			Número de errores: 5
+
+			Código: C6-Proporcionando contenido basado en marcadores estructurales
+			Criticidad: Baja
+			Observación: De las 957 reglas CSS en la p&aacute;gina, 31 de ellas usan declaraciones de elementos de forma absoluta (position:asolute).<pre><ul><li><xmp>.ui-helper-hidden-accessible { border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; clip: rect(0px 0px 0px 0px); height: 1px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: absolute; width: 1px; }</xmp></li><li><xmp>.ui-helper-zfix { width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; opacity: 0; }</xmp></li><li><xmp>.ui-resizable-handle { position: absolute; font-size: 0.1px; display: block; }</xmp></li><li><xmp>.ui-selectable-helper { position: absolute; z-index: 100; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: dotted; border-right-style: dotted; border-bottom-style: dotted; border-left-style: dotted; border-top-color: black; border-right-color: black; border-bottom-color: black; border-left-color: black; }</xmp></li><li><xmp>.ui-accordion .ui-accordion-header .ui-accordion-header-icon { position: absolute; left: 0.5em; top: 50%; margin-top: -8px; }</xmp></li><li><xmp>.ui-autocomplete { position: absolute; top: 0px; left: 0px; cursor: default; }</xmp></li><li><xmp>.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }</xmp></li><li><xmp>.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position: absolute; top: 2px; width: 1.8em; height: 1.8em; }</xmp></li><li><xmp>.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px; }</xmp></li><li><xmp>.ui-dialog { overflow-x: hidden; overflow-y: hidden; position: absolute; top: 0px; left: 0px; padding-top: 0.2em; padding-right: 0.2em; padding-bottom: 0.2em; padding-left: 0.2em; outline-width: 0px; outline-style: initial; outline-color: initial; }</xmp></li><li><xmp>.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: 0.3em; top: 50%; width: 20px; margin-top: -10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; height: 20px; }</xmp></li><li><xmp>.ui-menu .ui-menu { position: absolute; }</xmp></li><li><xmp>.ui-menu .ui-icon { position: absolute; top: 0px; bottom: 0px; left: 0.2em; margin-top: auto; margin-right: 0px; margin-bottom: auto; margin-left: 0px; }</xmp></li><li><xmp>.ui-selectmenu-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; top: 0px; left: 0px; display: none; }</xmp></li><li><xmp>.ui-selectmenu-button span.ui-icon { right: 0.5em; left: auto; margin-top: -8px; position: absolute; top: 50%; }</xmp></li><li><xmp>.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }</xmp></li><li><xmp>.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: 0.7em; display: block; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; background-position: 0px 0px; }</xmp></li><li><xmp>.ui-spinner-button { width: 16px; height: 50%; font-size: 0.5em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; text-align: center; position: absolute; cursor: default; display: block; overflow-x: hidden; overflow-y: hidden; right: 0px; }</xmp></li><li><xmp>.ui-spinner .ui-icon { position: absolute; margin-top: -8px; top: 50%; left: 0px; }</xmp></li><li><xmp>.ui-tooltip { padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; position: absolute; z-index: 9999; max-width: 300px; -webkit-box-shadow: rgb(170, 170, 170) 0px 0px 5px; box-shadow: rgb(170, 170, 170) 0px 0px 5px; }</xmp></li><li><xmp>#idiomas h2 { padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; position: absolute; }</xmp></li><li><xmp>.imagen_cabecera { position: absolute; }</xmp></li><li><xmp>span.desplegar { background-image: url(https://www.agenciatributaria.es/common/img/flecha_abajo.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; display: block; float: right; vertical-align: middle; height: 8px; position: absolute; right: 0.5em; top: 0.8em; width: 15px; background-position: 0px 0px; background-repeat: repeat repeat; }</xmp></li><li><xmp>#pie { bottom: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(51, 118, 172); clear: both; float: none; margin-top: 0px; margin-right: -0.7em; margin-bottom: 0px; margin-left: -0.7em; padding-top: 0.5em; padding-right: 0px; padding-bottom: 0.5em; padding-left: 0px; position: absolute; width: 100%; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.listado_iconos li { float: left; font-weight: bold; list-style-type: none; list-style-position: outside; list-style-image: none; margin-bottom: 2.6em; margin-right: 2.6em; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; text-align: center; }</xmp></li><li><xmp>.listado_iconos ul li ul li { height: 11em; width: 10em; border-top-width: medium; border-right-width: medium; border-bottom-width: medium; border-left-width: medium; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-color: initial; float: left; font-size: 0.9em; font-weight: normal; list-style-type: none; list-style-position: outside; list-style-image: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: center; }</xmp></li><li><xmp>.contenedor_iconos_listado ul { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2.1em; list-style-type: none; list-style-position: outside; list-style-image: none; }</xmp></li><li><xmp>#slider1 .buttons { cursor: pointer; background-image: url(https://www.agenciatributaria.es/common/img/flecha_prev.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgb(221, 221, 221); display: block; height: 66px; left: 0px; position: absolute; top: 0px; width: 15px; outline-width: 0px; outline-style: initial; outline-color: initial; border-top-left-radius: 0.3em 0.3em; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0px 0px; border-bottom-left-radius: 0.3em 0.3em; background-position: 47% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#slider1 .overview { list-style-type: none; list-style-position: outside; list-style-image: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: absolute; width: 240px; }</xmp></li><li><xmp>.flecha-tooltip { width: 70px; height: 8px; overflow-x: hidden; overflow-y: hidden; position: absolute; left: 50%; margin-left: -35px; bottom: -8px; }</xmp></li><li><xmp>.flecha-tooltip::after { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(218, 218, 218); border-right-color: rgb(218, 218, 218); border-bottom-color: rgb(218, 218, 218); border-left-color: rgb(218, 218, 218); content: ''; position: absolute; left: 20px; top: -20px; width: 25px; height: 20px; box-shadow: rgb(228, 228, 228) 0px 1px 2px; -webkit-transform: rotate(45deg); background-position: initial initial; background-repeat: initial initial; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 31
+
+			Código: C8-Usando la propiedad letter-spacing de CSS para controlar el espacio dentro de una palabra
+			Criticidad: Baja
+			Observación: No se han detectado textos sospechosos en los que palabras se han formado usando espacios en blanco..<br/>
+			Recomendación: En el caso de requerir por efectos visuales el destarcar cada letra de una palabra por medio de separaciones, utilice la propiedad CSS <code>letter-spacing</code>.<br/>
+			Número de errores: 0
+
+			Código: C27B-Haciendo el DOM ordenado para marcar el orden visual: B) Elementos con posicionamiento absoluto
+			Criticidad: Media
+			Observación: De las 929 reglas CSS en la p&aacute;gina, 59 de ellas usan declaraciones de elementos de forma absoluta (position:asolute|relative|fix).<pre><ul><li><xmp>.ui-helper-hidden-accessible { border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; clip: rect(0px 0px 0px 0px); height: 1px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: absolute; width: 1px; }</xmp></li><li><xmp>.ui-helper-clearfix::before, .ui-helper-clearfix::after { content: ''; display: table; border-collapse: collapse; }</xmp></li><li><xmp>.ui-helper-clearfix::after { clear: both; }</xmp></li><li><xmp>.ui-helper-clearfix { min-height: 0px; }</xmp></li><li><xmp>.ui-helper-zfix { width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; opacity: 0; }</xmp></li><li><xmp>.ui-widget-overlay { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; }</xmp></li><li><xmp>.ui-resizable { position: relative; }</xmp></li><li><xmp>.ui-resizable-handle { position: absolute; font-size: 0.1px; display: block; }</xmp></li><li><xmp>.ui-selectable-helper { position: absolute; z-index: 100; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: dotted; border-right-style: dotted; border-bottom-style: dotted; border-left-style: dotted; border-top-color: black; border-right-color: black; border-bottom-color: black; border-left-color: black; }</xmp></li><li><xmp>.ui-accordion .ui-accordion-header { display: block; cursor: pointer; position: relative; margin-top: 2px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.7em; min-height: 0px; font-size: 100%; }</xmp></li><li><xmp>.ui-accordion .ui-accordion-header .ui-accordion-header-icon { position: absolute; left: 0.5em; top: 50%; margin-top: -8px; }</xmp></li><li><xmp>.ui-autocomplete { position: absolute; top: 0px; left: 0px; cursor: default; }</xmp></li><li><xmp>.ui-button { display: inline-block; position: relative; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; line-height: normal; margin-right: 0.1em; cursor: pointer; vertical-align: middle; text-align: center; overflow-x: visible; overflow-y: visible; }</xmp></li><li><xmp>.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }</xmp></li><li><xmp>.ui-datepicker .ui-datepicker-header { position: relative; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0.2em; padding-left: 0px; }</xmp></li><li><xmp>.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position: absolute; top: 2px; width: 1.8em; height: 1.8em; }</xmp></li><li><xmp>.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px; }</xmp></li><li><xmp>.ui-dialog { overflow-x: hidden; overflow-y: hidden; position: absolute; top: 0px; left: 0px; padding-top: 0.2em; padding-right: 0.2em; padding-bottom: 0.2em; padding-left: 0.2em; outline-width: 0px; outline-style: initial; outline-color: initial; }</xmp></li><li><xmp>.ui-dialog .ui-dialog-titlebar { padding-top: 0.4em; padding-right: 1em; padding-bottom: 0.4em; padding-left: 1em; position: relative; }</xmp></li><li><xmp>.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: 0.3em; top: 50%; width: 20px; margin-top: -10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; height: 20px; }</xmp></li><li><xmp>.ui-dialog .ui-dialog-content { position: relative; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0.5em; padding-right: 1em; padding-bottom: 0.5em; padding-left: 1em; background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; overflow-x: auto; overflow-y: auto; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.ui-menu .ui-menu { position: absolute; }</xmp></li><li><xmp>.ui-menu .ui-menu-item { position: relative; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 3px; padding-right: 1em; padding-bottom: 3px; padding-left: 0.4em; cursor: pointer; min-height: 0px; list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7); }</xmp></li><li><xmp>.ui-menu-icons { position: relative; }</xmp></li><li><xmp>.ui-menu .ui-icon { position: absolute; top: 0px; bottom: 0px; left: 0.2em; margin-top: auto; margin-right: 0px; margin-bottom: auto; margin-left: 0px; }</xmp></li><li><xmp>.ui-selectmenu-menu { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: absolute; top: 0px; left: 0px; display: none; }</xmp></li><li><xmp>.ui-selectmenu-button { display: inline-block; overflow-x: hidden; overflow-y: hidden; position: relative; text-decoration: none; cursor: pointer; }</xmp></li><li><xmp>.ui-selectmenu-button span.ui-icon { right: 0.5em; left: auto; margin-top: -8px; position: absolute; top: 50%; }</xmp></li><li><xmp>.ui-slider { position: relative; text-align: left; }</xmp></li><li><xmp>.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }</xmp></li><li><xmp>.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: 0.7em; display: block; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; background-position: 0px 0px; }</xmp></li><li><xmp>.ui-spinner { position: relative; display: inline-block; overflow-x: hidden; overflow-y: hidden; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; vertical-align: middle; }</xmp></li><li><xmp>.ui-spinner-button { width: 16px; height: 50%; font-size: 0.5em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; text-align: center; position: absolute; cursor: default; display: block; overflow-x: hidden; overflow-y: hidden; right: 0px; }</xmp></li><li><xmp>.ui-spinner .ui-icon { position: absolute; margin-top: -8px; top: 50%; left: 0px; }</xmp></li><li><xmp>.ui-tabs { position: relative; padding-top: 0.2em; padding-right: 0.2em; padding-bottom: 0.2em; padding-left: 0.2em; }</xmp></li><li><xmp>.ui-tabs .ui-tabs-nav li { list-style-type: none; list-style-position: initial; list-style-image: initial; float: left; position: relative; top: 0px; margin-top: 1px; margin-right: 0.2em; margin-bottom: 0px; margin-left: 0px; border-bottom-width: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; white-space: nowrap; }</xmp></li><li><xmp>.ui-tooltip { padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; position: absolute; z-index: 9999; max-width: 300px; -webkit-box-shadow: rgb(170, 170, 170) 0px 0px 5px; box-shadow: rgb(170, 170, 170) 0px 0px 5px; }</xmp></li><li><xmp>#body { padding-top: 0em; padding-right: 0.7em; padding-bottom: 0em; padding-left: 0.7em; min-width: 1020px; min-height: 100%; position: relative; }</xmp></li><li><xmp>#idiomas h2 { padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; position: absolute; }</xmp></li><li><xmp>.menu_enlaces { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(229, 229, 229); clear: both; float: left; height: 2em; width: 78%; position: relative; z-index: 1; }</xmp></li><li><xmp>.menu_segmento_wrapper { float: right; position: relative; width: 66%; margin-right: 0.3em; }</xmp></li><li><xmp>.menu_segmentos { position: relative; }</xmp></li><li><xmp>.bloqueCabecera > .menu_segmentos { float: right; position: relative; width: 65%; margin-right: 1em; }</xmp></li><li><xmp>.buscador { float: right; list-style-type: none; text-align: left; width: 22%; position: relative; z-index: 2; }</xmp></li><li><xmp>.bloqueCabecera { background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(223, 232, 240); border-right-color: rgb(223, 232, 240); border-bottom-color: rgb(223, 232, 240); border-left-color: rgb(223, 232, 240); box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 2px; margin-top: 0.5em; padding-bottom: 0.4em; position: relative; border-top-left-radius: 0.3em 0.3em; border-top-right-radius: 0.3em 0.3em; border-bottom-right-radius: 0px 0px; border-bottom-left-radius: 0px 0px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.imagen_cabecera { position: absolute; }</xmp></li><li><xmp>.topComponente { min-height: 30px; position: relative; color: rgb(51, 118, 172); padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; }</xmp></li><li><xmp>span.desplegar { background-image: url(https://www.agenciatributaria.es/common/img/flecha_abajo.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; display: block; float: right; vertical-align: middle; height: 8px; position: absolute; right: 0.5em; top: 0.8em; width: 15px; background-position: 0px 0px; background-repeat: repeat repeat; }</xmp></li><li><xmp>#pie { bottom: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(51, 118, 172); clear: both; float: none; margin-top: 0px; margin-right: -0.7em; margin-bottom: 0px; margin-left: -0.7em; padding-top: 0.5em; padding-right: 0px; padding-bottom: 0.5em; padding-left: 0px; position: absolute; width: 100%; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.brujula { margin-right: 0.1em; margin-bottom: 0px; margin-left: 0.1em; background-color: rgb(255, 255, 255); border-bottom-width: 0.3em; border-bottom-style: solid; border-bottom-color: rgb(170, 170, 170); border-top-left-radius: 0px 0px; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0.2em 0.2em; border-bottom-left-radius: 0.2em 0.2em; box-sizing: border-box; margin-top: 0px; position: relative; box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 2px; padding-top: 0.5em; padding-right: 1.5em; padding-bottom: 0.5em; padding-left: 1.5em; }</xmp></li><li><xmp>.nav { background-image: url(https://www.agenciatributaria.es/common/img/flecha_gris2.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); color: rgb(118, 118, 118) !important; font-size: 0.9em; padding-top: 0.5em; padding-right: 1em; padding-bottom: 0.5em; padding-left: 0px; position: relative; background-position: 100% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#dialogoAcceso .metodos { margin-top: 1.5em; position: relative; }</xmp></li><li><xmp>#dialogoAcceso .metodos a { background-color: rgb(249, 249, 249); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(209, 209, 209); border-right-color: rgb(209, 209, 209); border-bottom-color: rgb(209, 209, 209); border-left-color: rgb(209, 209, 209); border-top-left-radius: 0.4em 0.4em; border-top-right-radius: 0.4em 0.4em; border-bottom-right-radius: 0.4em 0.4em; border-bottom-left-radius: 0.4em 0.4em; color: rgb(51, 118, 172) !important; display: block; font-weight: bold; margin-top: 0.6em; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; text-align: center; position: relative; }</xmp></li><li><xmp>#slider1 { height: 1%; margin-top: 0.1em; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; overflow-x: hidden; overflow-y: hidden; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 20px; position: relative; }</xmp></li><li><xmp>#slider1 .viewport { height: 66px; overflow-x: hidden; overflow-y: hidden; position: relative; }</xmp></li><li><xmp>#slider1 .buttons { cursor: pointer; background-image: url(https://www.agenciatributaria.es/common/img/flecha_prev.png); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgb(221, 221, 221); display: block; height: 66px; left: 0px; position: absolute; top: 0px; width: 15px; outline-width: 0px; outline-style: initial; outline-color: initial; border-top-left-radius: 0.3em 0.3em; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0px 0px; border-bottom-left-radius: 0.3em 0.3em; background-position: 47% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#slider1 .overview { list-style-type: none; list-style-position: outside; list-style-image: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: absolute; width: 240px; }</xmp></li><li><xmp>.flecha-tooltip { width: 70px; height: 8px; overflow-x: hidden; overflow-y: hidden; position: absolute; left: 50%; margin-left: -35px; bottom: -8px; }</xmp></li><li><xmp>.flecha-tooltip::after { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(218, 218, 218); border-right-color: rgb(218, 218, 218); border-bottom-color: rgb(218, 218, 218); border-left-color: rgb(218, 218, 218); content: ''; position: absolute; left: 20px; top: -20px; width: 25px; height: 20px; box-shadow: rgb(228, 228, 228) 0px 1px 2px; -webkit-transform: rotate(45deg); background-position: initial initial; background-repeat: initial initial; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 59
+
+		Criterio: 1.3.1..Información y relaciones
+		Nivel: A
+
+			Código: G140-Separando la información y la estructura de la presentación para permitir diferentes presentaciones
+			Criticidad: Alta
+			Observación: El sitio se ha estructurado mezclando el contenido con la presentaci&oacute;n por medio de la definici&oacute;n de estilos CSS en el contenido HTML. Los componentes que presentan este problema son: <pre><code><ul><li><xmp><div class="topComponente" style="cursor: pointer; "><ul><li><img alt="" src="/static_files/AEAT/Internet_DSM/varios/acceda.gif"></li></ul><h2><a href="/AEAT.internet/Inicio/_componentes_/Acceda_directamente/FragmentoHtml_Acceda_directamente.shtml" target="_self">Acceda directamente</a></h2><span class="desplegar"></span></div></xmp></li><li><xmp><div class="cuerpoComponente" style="display: none; "><div class="fondoComponente"><ul class="listado_home"><li><a href="/AEAT.internet/Bibl_virtual/folletos/calendario_contribuyente.shtml" target="_self">Calendario del contribuyente</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Campanas/Campanas.shtml" target="_self">Campañas</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Campanas/Censos__NIF_y_domicilio_fiscal/Censos__NIF_y_domicilio_fiscal.shtml" target="_self">Censos, NIF y domicilio fiscal</a></li><li><a href="/AEAT.internet/Inicio/_otros_/Devolucion__centimo_sanitario_/Devolucion__centimo_sanitario_.shtml" target="_self">Céntimo sanitario: devolución y responsabilidad patrimonial</a></li><li><a href="/AEAT.internet/Inicio/Ayuda/Certificado_electronico/Certificado_electronico.shtml" target="_self">Certificados electrónicos</a></li><li><a href="/AEAT.internet/Inicio/_Segmentos_/Empresas_y_profesionales/Empresas/Certificados_tributarios/Certificados_tributarios.shtml" target="_self">Certificados tributarios</a></li><li><a href="/AEAT.internet/datosabiertos_reutilizacion_informacion.shtml" target="_self">Datos abiertos</a></li><li><a href="/AEAT.internet/Inicio/_otros_/Descarga_de_programas_de_ayuda/Descarga_de_programas_de_ayuda.shtml" target="_self">Descarga de programas de ayuda</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Educacion_Civico_Tributaria/Educacion_Civico_Tributaria.shtml" target="_self">Educación Cívico-Tributaria</a></li><li><a href="/AEAT.internet/Inicio/_otros_/EE_LL__Procedimiento_de_Retencion_y_Convenios/EE_LL__Procedimiento_de_Retencion_y_Convenios.shtml" target="_self">EE.LL. Procedimiento de Retención y Convenios</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Empleo_publico/Empleo_publico.shtml" target="_self">Empleo público</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Memorias_y_estadisticas_tributarias/Estadisticas/Estadisticas.shtml" target="_self">Estadísticas</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Campanas/_Campanas_/Fiscalidad_de_no_residentes/Fiscalidad_de_no_residentes.shtml" target="_self">Fiscalidad de no residentes</a></li><li><a href="/AEAT.internet/Inicio/Ayuda/Manuales__Folletos_y_Videos/Folletos_informativos/Folletos_informativos.shtml" target="_self">Folletos informativos</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Aduanas_e_Impuestos_Especiales/_Presentacion/Impuestos_especiales/_IMPUESTOS/Impuesto_sobre_hidrocarburos/_MODELOS_E_INFORMACION/Informacion_Gasoleo_agricola/Informacion_Gasoleo_agricola.shtml" target="_self">Gasóleo agrícola profesional</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Campanas/Impuesto_Especial_sobre_Determinados_Medios_de_Transporte/Impuesto_Especial_sobre_Determinados_Medios_de_Transporte.shtml" target="_self">Impuesto de matriculación (IEDMT)</a></li><li><a href="/AEAT.internet/Inicio/Ayuda/Manuales__Folletos_y_Videos/Manuales_practicos/Manuales_practicos.shtml" target="_self">Manuales prácticos</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Memorias_y_estadisticas_tributarias/Memorias/Memorias.shtml" target="_self">Memorias</a></li><li><a href="/AEAT.internet/Inicio/_otros_/Modelos_y_formularios/Modelos_y_formularios.shtml" target="_self">Modelos y formularios</a></li><li><a href="/AEAT.internet/Normativa_criterios_interpretativos.shtml" target="_self">Normativa y criterios interpretativos</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Campanas/Notificaciones_Electronicas/Notificaciones_Electronicas.shtml" target="_self">Notificaciones</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Perfil_del_contratante/Perfil_del_contratante.shtml" target="_self">Perfil del contratante</a></li><li><a href="https://www2.agenciatributaria.gob.es/ES13/S/IAFRIAFRIINF" target="_self">Preguntas frecuentes (INFORMA)</a><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></li><li><a href="/AEAT.internet/Inicio/_Segmentos_/Colaboradores/Registro_de_apoderamientos/Registro_de_apoderamientos.shtml" target="_self">Registro de apoderamientos</a></li><li><a href="/AEAT.internet/Inicio/La_Agencia_Tributaria/Subastas/Subastas.shtml" target="_self">Subastas</a></li><li><a href="/AEAT.internet/Inicio/Ayuda/Manuales__Folletos_y_Videos/Canal_de_la_Agencia_Tributaria_en_Youtube/Canal_de_la_Agencia_Tributaria_en_Youtube.shtml" target="_self">Vídeos explicativos</a></li></ul></div></div></xmp></li><li><xmp><div class="topComponente" style="cursor: pointer; "><ul><li><img alt="" src="/static_files/AEAT/Internet_DSM/varios/sobre.gif"></li></ul><h2><a href="/AEAT.internet/Inicio/_componentes_/_Contacte_con_nosotros/FragmentoHtml__Contacte_con_nosotros.shtml" target="_self">Contacte con nosotros</a></h2><span class="desplegar"></span></div></xmp></li><li><xmp><div class="cuerpoComponente" style="display: none; "><div class="fondoComponente"><ul class="listado_home"><li><a href="https://www.agenciatributaria.gob.es/AEAT.sede/Inicio/_otros_/_Direcciones_y_telefonos_/_Direcciones_y_telefonos_.shtml" target="_self">Direcciones y teléfonos</a><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></li><li><a href="https://www.agenciatributaria.gob.es/AEAT.sede/Inicio/Procedimientos_y_Servicios/Otros_servicios/Denuncia_tributaria/Denuncia_tributaria.shtml" target="_self">Denuncia tributaria</a><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></li><li><a href="https://www.agenciatributaria.gob.es/AEAT.sede/tramitacion/ZZ13.shtml" target="_self">Denuncia de pagos en efectivo</a><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></li><li><a href="/AEAT.internet/Inicio/_componentes_/_Contacte_con_nosotros/_Denuncias_Vigilancia_Aduanera_/_Denuncias_Vigilancia_Aduanera_.shtml" target="_self" data-aeat-img="/static_files/AEAT/Aduanas/Contenidos_Privados/Imagenes/denuncias.png">Denuncias Vigilancia Aduanera</a></li><li><a href="/AEAT.internet/ayuda/soporte.shtml" target="_self">Consultas informáticas</a></li><li><a href="https://www.agenciatributaria.gob.es/AEAT.sede/procedimientoini/GC29.shtml" target="_self">Cita previa</a><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></li></ul></div></div></xmp></li><li><xmp><div class="topComponente" style="cursor: pointer; "><ul><li><img alt="" src="/static_files/AEAT/Internet_DSM/varios/opine.gif"></li></ul><h2><a href="/AEAT.internet/Inicio/_componentes_/Opine/FragmentoHtml_Opine.shtml" target="_self">Opine</a></h2><span class="desplegar"></span></div></xmp></li><li><xmp><div class="cuerpoComponente" style="display: none; "><div class="fondoComponente"><ul class="listado_home"><li><a href="/AEAT.internet/Inicio/_otros_/Opine/Buzones_de_Sugerencias/Buzones_de_Sugerencias.shtml" target="_self">Buzones de sugerencias</a></li><li><a href="/AEAT.internet/Inicio/_otros_/Opine/Encuestas/Encuestas.shtml" target="_self">Encuestas</a></li></ul></div></div></xmp></li><li><xmp><div class="topComponente" style="cursor: pointer; "><ul><li><img alt="" src="/static_files/AEAT/Internet_DSM/varios/acceda.gif"></li></ul><h2><a href="/AEAT.internet/Inicio/_componentes_/Enlaces_de_interes/FragmentoHtml_Enlaces_de_interes.shtml" target="_self">Enlaces de interés</a></h2><span class="desplegar"></span></div></xmp></li><li><xmp><div class="cuerpoComponente" style="display: none; "><div class="fondoComponente"><ul class="listado_home"><li><a href="http://www.hacienda.gob.es/ " target="_blank">Ministerio de Hacienda</a><img src="/static_files/common/internet/img/icos/popup.gif" title="Nueva ventana" alt="Nueva ventana"></li><li><a href="https://www2.agenciatributaria.gob.es/static_files/common/dep/planificacion/CDC/IFRD0001.html" target="_self" onclick="evento(this, 'StaticFiles', 'https://www2.agenciatributaria.gob.es/static_files/common/dep/planificacion/CDC/IFRD0001.html','Consejo para la Defensa del Contribuyente');return false;">Consejo para la Defensa del Contribuyente</a><img src="/static_files/common/internet/img/icos/ico_sede2.gif" title="Información contenida en la Sede Electrónica de la Agencia Tributaria" alt="Información contenida en la Sede Electrónica de la Agencia Tributaria"></li><li><a href="http://www.agenciatributaria.es/AEAT.fisterritorial/InicioF.shtml" target="_blank">Fiscalidad autonómica y local</a><img src="/static_files/common/internet/img/icos/popup.gif" title="Nueva ventana" alt="Nueva ventana"></li><li><a href="/AEAT.internet/Inicio/_otros_/_Enlaces_de_interes/Administraciones_Tributarias_en_el_Mundo/Administraciones_Tributarias_en_el_Mundo.shtml" target="_self">Administraciones tributarias</a></li><li><a href="/AEAT.internet/Inicio/_otros_/_Enlaces_de_interes/Organismos_Internacionales/Organismos_Internacionales.shtml" target="_self">Organismos internacionales</a></li><li><a href="/AEAT.internet/Inicio/_otros_/_Enlaces_de_interes/Otras_direcciones_de_interes/Otras_direcciones_de_interes.shtml" target="_self">Otras direcciones de interés</a></li></ul></div></div></xmp></li><li><xmp><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none; "></ul></xmp></li></ul></code></pre>.<br/>
+			Recomendación: El separar el contenido de la presentaci&oacute;n facilita la adaptaci&oacute;n de los contenidos a diferentes dispositivos. Se recomienda el uso de hojas de estilo para definir la presentaci&oacute;n de los componentes indicados..<br/>
+			Número de errores: 9
+
+			Código: F87-Fallo en el criterio 1.3.1 debido a la inserción de contenidos no decorativos mediante el uso de :before y :after pseudo-elementos y la propiedad content de los CSS
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H39-Usando elementos caption para asociar títulos de las tablas de datos a los datos de la tabla
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas..<br/>
+			Recomendación: En el caso de hacer uso de tablas estas deben ser identificadas por medio del elemento caption, siempre que no sean utilizadas para maquetaci&oacute;n (layout)..<br/>
+			Número de errores: 0
+
+			Código: H63-Usando el atributo scope para asociar las celdas de encabezado con las celdas de datos en las tablas
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H73-Usando el atributo summary del elemento table para dar una visión general de las tablas de datos
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas con un atriuto summary..<br/>
+			Recomendación: En el caso de hacer uso de tablas e identificarlas con el atributo summary este debe ser valido para identificar la tabla o explicar su estructura en caso de tablas de datos complejas..<br/>
+			Número de errores: 0
+
+			Código: H48-Usando ol, ul y dl para listas o grupos de enlaces
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H85-Usando OPTIONGROUP para agrupar elementos OPTION dentro de un SELECT
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H49-Usando marcas semánticas para marcar textos enfatizados o textos especiales
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H51-Usando tabla de marcado para presentar información tabular
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Al utilizar tablas de datos para presentar informaci&oacute;n tabular use los elementos th (encabezados) y td (datos)..<br/>
+			Número de errores: 0
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Agencia Tributaria</li><li>[H1] [OK] Certificados tributarios</li><ul><li>[H2] [OK] Acceda directamente</li><li>[H2] [OK] Contacte con nosotros</li><li>[H2] [OK] Opine</li><li>[H2] [OK] Enlaces de interés</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: OAW3-Usando elementos legend correctamente
+			Criticidad: Baja
+			Observación: No se han encontrado elementos <code>fieldset</code>.<br/>
+			Recomendación: Es importante que el primer elemento de un fieldset sea un elemento legend que describa el tipo de informaci&oacute;n que se est&aacute; agrupando..<br/>
+			Número de errores: 0
+
+			Código: OAW4-Comprobando el uso de cabeceras múltiples dentro de una fila
+			Criticidad: Media
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Los elementos <code>th</code> deben emplearse correctamente para que el usuario identifique sin dificultades los contenidos de las tablas.<br/>
+			Número de errores: 0
+
+			Código: OAW5-Comprobando la validez de los roles ARIA
+			Criticidad: Alta
+			Observación: Los elementos ARIA encontrados en la p&aacute;gina llevan roles v&aacute;lidos..<br/>
+			Recomendación: Es recomendable apegarse a la la especificaci&oacute;n WAI-ARIA, que define un conjunto de atributos HTML adicionales que se pueden aplicar a los elementos para proporcionar sem&aacute;ntica adicional y mejorar la accesibilidad donde sea que falte.<br/>
+			Número de errores: 0
+
+			Código: OAW6-Comprobando que las celdas de la tabla tengan datos
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Las celdas vac&iacute;as en las tablas suelen causar problemas para los usuarios que ocupan tecnolog&iacute;as de accesibilidad..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.3..Características sensoriales
+		Nivel: A
+
+	Pauta: 1.4..Distinguible
+	Descripcion: Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo
+
+		Criterio: 1.4.2..Control del audio
+		Nivel: A
+
+		Criterio: 1.4.4..Redimensionamiento del texto
+		Nivel: AA
+
+			Código: C28-Especificando el tamaño de un contenedor de texto usando unidades em
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C14-Usando unidades em para tamaños de fuente
+			Criticidad: Alta
+			Observación: De las 61 reglas CSS en la p&aacute;gina para definir el tamaño de letra (font-size), 30 de ellas usan declaraciones de elementos de forma absoluta (position:asolute) o tiene un valor incorrecto.<pre><ul><li><xmp>.ui-resizable-handle { position: absolute; font-size: 0.1px; display: block; }</xmp></li><li><xmp>.ui-datepicker-row-break { clear: both; width: 100%; font-size: 0px; }</xmp></li><li><xmp>.ui-menu .ui-menu-divider { margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; height: 0px; font-size: 0px; line-height: 0; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; }</xmp></li><li><xmp>table { font-size: 0.95em; margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 1em; }</xmp></li><li><xmp>h2 { font-size: 1.16em; }</xmp></li><li><xmp>h3 { font-size: 1.12em; }</xmp></li><li><xmp>h4 { font-size: 1.08em; }</xmp></li><li><xmp>h5 { font-size: 1.05em; }</xmp></li><li><xmp>h6 { font-size: 1.02em; }</xmp></li><li><xmp>.topComponente h2 { display: inline-block; font-size: 0.95em; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0.5em; vertical-align: top; max-width: 76%; }</xmp></li><li><xmp>div.linea { background-image: url(https://www.agenciatributaria.es/common/img/PUNTOS.GIF); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: transparent; clear: both; font-size: 0px; height: 3px; margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; width: 100%; background-position: 0px 0px; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.tablaCalendario th { background-color: rgb(51, 118, 172); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 118, 172); border-right-color: rgb(51, 118, 172); border-bottom-color: rgb(51, 118, 172); border-left-color: rgb(51, 118, 172); font-size: 0.75em; }</xmp></li><li><xmp>.tablaCalendario td { border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); font-size: 0.75em; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; text-align: center; width: 14%; }</xmp></li><li><xmp>.novedades h3 { font-size: 9pt; }</xmp></li><li><xmp>.historico_novedades { background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(223, 232, 240); border-right-color: rgb(223, 232, 240); border-bottom-color: rgb(223, 232, 240); border-left-color: rgb(223, 232, 240); clear: both; font-size: 0.95em; padding-top: 2em; padding-right: 2em; padding-bottom: 2em; padding-left: 2em; text-align: left; border-top-left-radius: 0.3em 0.3em; border-top-right-radius: 0.3em 0.3em; border-bottom-right-radius: 0.3em 0.3em; border-bottom-left-radius: 0.3em 0.3em; box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 2px; }</xmp></li><li><xmp>.historico_novedades h2 { color: rgb(0, 35, 76); font-size: 9pt; margin-left: 8px; padding-bottom: 0px; padding-top: 5px; float: left; }</xmp></li><li><xmp>.historico_novedades h3 { font-size: 9pt; }</xmp></li><li><xmp>.notas_prensa h3 { font-size: 9pt; }</xmp></li><li><xmp>.contenido { background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(223, 232, 240); border-right-color: rgb(223, 232, 240); border-bottom-color: rgb(223, 232, 240); border-left-color: rgb(223, 232, 240); border-top-left-radius: 0px 0px; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0.3em 0.3em; border-bottom-left-radius: 0.3em 0.3em; font-size: 0.95em; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 2px; margin-bottom: 2em; }</xmp></li><li><xmp>.entradilla { font-size: 0.95em; margin-top: 0.3em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-align: justify; }</xmp></li><li><xmp>.listado_iconos { font-size: 0.95em; margin-top: 1em; margin-right: -1em; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>.listado_iconos .cuerpoListaIco > li a { font-size: 0.95em; }</xmp></li><li><xmp>.tituloListaIco > h2 { color: rgb(20, 78, 181); font-size: 9pt; margin-left: 0.5em; padding-bottom: 0px; padding-top: 7px; float: left; line-height: 1.5em; }</xmp></li><li><xmp>.icoCI a { font-size: 0.95em; }</xmp></li><li><xmp>.icoCanal a { font-size: 0.95em; }</xmp></li><li><xmp>.contenedor_iconos_listado { background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(223, 232, 240); border-right-color: rgb(223, 232, 240); border-bottom-color: rgb(223, 232, 240); border-left-color: rgb(223, 232, 240); border-top-left-radius: 0px 0px; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0.3em 0.3em; border-bottom-left-radius: 0.3em 0.3em; box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 2px; font-size: 0.95em; margin-bottom: 2em; padding-top: 1em; padding-right: 0px; padding-bottom: 1em; padding-left: 0px; }</xmp></li><li><xmp>.historico_novedades + .columnas_canales { border-top-left-radius: 0.3em 0.3em; border-top-right-radius: 0.3em 0.3em; border-bottom-right-radius: 0.3em 0.3em; border-bottom-left-radius: 0.3em 0.3em; margin-top: 2em; margin-right: 0px; margin-bottom: 2em; margin-left: 0px; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(223, 232, 240); border-right-color: rgb(223, 232, 240); border-bottom-color: rgb(223, 232, 240); border-left-color: rgb(223, 232, 240); box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 2px; font-size: 0.95em; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; }</xmp></li><li><xmp>.detalle_contenido { background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(223, 232, 240); border-right-color: rgb(223, 232, 240); border-bottom-color: rgb(223, 232, 240); border-left-color: rgb(223, 232, 240); border-top-left-radius: 0.3em 0.3em; border-top-right-radius: 0.3em 0.3em; border-bottom-right-radius: 0.3em 0.3em; border-bottom-left-radius: 0.3em 0.3em; font-size: 0.95em; margin-top: 1em; box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 2px; }</xmp></li><li><xmp>.ac_results li { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 2px; padding-right: 5px; padding-bottom: 2px; padding-left: 5px; cursor: default; display: block; font: menu; font-size: 12px; line-height: 16px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>#eventos > ul > li { font-size: 0.95em; margin-bottom: 2em; color: rgb(85, 85, 85); }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS para definir el tamaño de letra del contenido, utilice valores relativos por medio de unidades "em", % o valores  xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, o larger. Al usar medidas de fuente absolutas, se limita el contenido textual de la p&aacute;gina ya que no se podr&iacute;a adaptar a diferentes resoluciones de pantalla..<br/>
+			Número de errores: 30
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C13-Usando tamaños de fuente nombrados
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C12-Usando porcentajes para tamaños de fuente
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 1.4.8..Presentación visual
+		Nivel: AAA
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C20-Usando medidas relativas para establecer anchos de columna para que las líneas puedan promediar 80 caracteres o menos cuando se cambia el tamaño del navegador
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C19-Especificar la alineación, ya sea a la izquierda o a la derecha en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C21-Especificando espacio entre líneas en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 2.Operable
+Descripcion: Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+	Pauta: 2.1..Accesible por teclado
+	Descripcion: Proporcionar acceso a toda la funcionalidad mediante el teclado
+
+		Criterio: 2.1.1..Teclado
+		Nivel: A
+
+	Pauta: 2.2..Tiempo suficiente
+	Descripcion: Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido
+
+		Criterio: 2.2.2..Pausar, detener, ocultar
+		Nivel: A
+
+			Código: G11A-Creando contenido que parpadea al menos 5 segundos: A) Elementos con animación blink
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>blink</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: G11B-Creando contenido que parpadea al menos 5 segundos: B) Elementos con animación marquee
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>marquee</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+	Pauta: 2.3..Convulsiones
+	Descripcion: No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones
+
+	Pauta: 2.4..Navegable
+	Descripcion: Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran
+
+		Criterio: 2.4.1..Evitar bloques
+		Nivel: A
+
+		Criterio: 2.4.2..Páginas tituladas
+		Nivel: A
+
+			Código: G88-Proporcionar títulos descriptivos para páginas web
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H25-Proporcionando un título usando el elemento title
+			Criticidad: Alta
+			Observación: La p&aacute;gina tiene un t&iacute;tulo, aseg&uacute;rese que sea descriptivo y que est&eacute; acorde al contenido de la p&aacute;gina. <pre><ul><title>Certificados tributarios - Agencia Tributaria</title></ul></pre>.<br/>
+			Recomendación: El t&iacute;tulo de la p&aacute;gina debe ser descriptivo y brindar una persepci&oacute;n del contenido de la misma..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.3..Orden del foco
+		Nivel: A
+
+			Código: H4-Creando un orden lógico en el orden del tabulador a través de los enlaces, controles de formulario, y objetos
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.4..Propósito de los enlaces (En contexto)
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H33-Complementando el texto del enlace con el atributo title
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C7-Usando CSS para ocultar una porcion de texto de un enlace
+			Criticidad: Baja
+			Observación: En la p&aacute;gina se est&aacute; utilizando en 114 ocaci&oacute;n(es) la opci&oacute;n para ocultar contenido, verifique que este sea relevante, o que sea facilmente accesible.<br/>
+			Recomendación: Al ocultar una parte de informaci&oacute;n de la p&aacute;gina, se puede llegar a confundir al usuario.<br/>
+			Número de errores: 114
+
+			Código: H30-Proporcionar un texto de enlace que describa el propósito del enlace para los elemtos de anclaje (a)
+			Criticidad: Alta
+			Observación: En 6 im&aacute;gen(es) de las 26 que hay en la p&aacute;gina, tiene un valor nulo o vacio verifique que corresponda a im&aacute;genes decorativas.  Las im&aacute;genes que presentan este inconveniente son:<pre><ul><li><xmp><img src="/static_files/common/internet/img/tic_amarillo.png" alt=""></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/acceda.gif"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/sobre.gif"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/opine.gif"></xmp></li><li><xmp><img alt="" src="/static_files/AEAT/Internet_DSM/varios/acceda.gif"></xmp></li><li><xmp><img src="/common/img/dispositivo_movil_30.png" alt=""></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&aacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 6
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado enlaces adyacentes que redirecciones al mismo lugar causando redundancia o confusi&oacute;n de informaci&oacute;n..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.6..Encabezados y etiquetas
+		Nivel: AA
+
+			Código: G130-Proporcionar títulos descriptivos
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.5..Re-autentificación
+		Nivel: AA
+
+			Código: H59-Usando el elemneto link y herramientas de navegación
+			Criticidad: Alta
+			Observación: Los 3 links de relacion que tiene la p&aacute;gina se han definido correctamente.<br/>
+			Recomendación: Es importante colocar la etiqueta link &uacute;nicamente dentro del encabezado de la p&aacute;gina, e indicar la relaci&oacute;n que guarda con la misma.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.7..Foco visible
+		Nivel: AA
+
+			Código: C15-Usando CSS para cambiar la presentación de un componente de interfaz de usuario cuando recibe el foco
+			Criticidad: Baja
+			Observación: No se han detectado declaraciones del foco de teclado.<br/>
+			Recomendación: Verificar que el foco sea visible y que este en correcto posicionamiento en la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.10..Encabezados se sección
+		Nivel: AAA
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Agencia Tributaria</li><li>[H1] [OK] Certificados tributarios</li><ul><li>[H2] [OK] Acceda directamente</li><li>[H2] [OK] Contacte con nosotros</li><li>[H2] [OK] Opine</li><li>[H2] [OK] Enlaces de interés</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+
+Principio: 3.Comprensible
+Descripcion: La información y el manejo de la interfaz de usuario deben ser comprensibles
+
+	Pauta: 3.1..Legible
+	Descripcion: Hacer que los contenidos textuales resulten legibles y comprensibles
+
+		Criterio: 3.1.1..Idioma de la página
+		Nivel: A
+
+			Código: H57-Usando el atributo language en el elemento html
+			Criticidad: Alta
+			Observación: La definici&oacute;n de lenguaje en la p&aacute;gina se ha realizado exitosamente.<br/>
+			Recomendación: Verificar la especificaci&oacute;n del lenguaje, es importante especificar en que idioma se est&aacute; presentando la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.3..Palabras inusuales
+		Nivel: AAA
+
+			Código: H60-Usando el elemento link para enlazar a un glosario
+			Criticidad: Baja
+			Observación: La p&aacute;gina podr&iacute;a requerir un link a un glosario de palabras complejas.<br/>
+			Recomendación: Cuando se utiliza palabras complejas es recomendable colocar un glosario que las defina.<br/>
+			Número de errores: 1
+
+			Código: H40-Usando listas de definición
+			Criticidad: Baja
+			Observación: No se han encontrado listas dentro de la p&aacute;gina.<br/>
+			Recomendación: La estructura de la lista de definici&oacute;n, deben ser empleadas correctamente, colocando cada uno de sus componentes sin descartar ninguno.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.6..Pronunciación
+		Nivel: AAA
+
+			Código: H62-Usando el elemento ruby
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado etiquetas ruby.<br/>
+			Recomendación: Es importante supervisar el correcto uso de esta etiqueta para caracteres especiales.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.4..Abreviaturas
+		Nivel: AAA
+
+			Código: H70-Usando elementos frame para agrupar bloques de material repetido
+			Criticidad: Alta
+			Observación: La p&aacute;gina no tiene etiquetas frame.<br/>
+			Recomendación: Los elementos frame no deben usarse para maquetar contenido en la p&aacute;gina, se debe utilizar hojas de estilo.<br/>
+			Número de errores: 0
+
+	Pauta: 3.2..Predecible
+	Descripcion: Hacer que las páginas web aparezcan y operen de manera predecible
+
+		Criterio: 3.2.2..Al introducir datos
+		Nivel: A
+
+			Código: H32-Proporcionar botones de envio
+			Criticidad: Media
+			Observación: Verificar que el formulario tenga m&eacute;todo de env&iacute;o.<br/>
+			Recomendación: Los 1 formularios tienen un m&eacute;todo de env&iacute;o.<br/>
+			Número de errores: 0
+
+		Criterio: 3.2.5..Cambios a petición
+		Nivel: AAA
+
+			Código: H83-Usando el atributo target para abrir una nueva ventana a petición del usuario e indicando en ventana a petición del usuario e indicando en el texto de este enlace
+			Criticidad: Media
+			Observación: 3 enlace(s) indica(n) como destino una nueva ventana, verifique que el enlace contiene informaci&oacute;n que indica que el enlace se abrir&aacute; en una nueva ventana. <pre><ul><li><xmp><a href="https://constitucion40.com" target="_blank"><img alt="Logo 40 Aniversario de la Constitución Española" title="Logotipo del 40 Aniversario de la Constitución Española" src="/static_files/AEAT/Componentes_Home/imagenes/cabecera/constitucion_40_tr.png"></a></xmp></li><li><xmp><a href="http://www.hacienda.gob.es/ " target="_blank">Ministerio de Hacienda</a></xmp></li><li><xmp><a href="http://www.agenciatributaria.es/AEAT.fisterritorial/InicioF.shtml" target="_blank">Fiscalidad autonómica y local</a></xmp></li></ul></pre>.<br/>
+			Recomendación: Un ejemplo podr&iacute;a ser: <code><xmp><a href="ayuda.html" target="_blank">Mostrar ayuda (abre nueva ventana)</a></xmp></code>..<br/>
+			Número de errores: 3
+
+			Código: H76-Usando meta refresh para crear un redireccionamiento de cliente instantánea
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se ha detectado el uso de la etiqueta meta conjuntamente con el atributo refresh para actualizaci&oacute;n de la p&aacute;gina..<br/>
+			Recomendación: En el caso de quere hacer uso de la misma, considerar que la continua actualizaci&oacute;n de la p&aacute;gina no es recomendable, puede causar confusi&oacute;n en el usuario..<br/>
+			Número de errores: 0
+
+	Pauta: 3.3..Entrada de datos asistida
+	Descripcion: Ayudar a los usuarios a evitar y corregir los errores
+
+		Criterio: 3.3.1..Identificación de errores
+		Nivel: A
+
+		Criterio: 3.3.2..Etiquetas o instrucciones
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H71-Proporcionando una descripcion para grupos de controles de formularios usando los elementos fieldset y legend
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: OAW2-Proporcionando contenido en todos los elementos
+			Criticidad: Baja
+			Observación: No se encontraron elementos vac&iacute;os..<br/>
+			Recomendación: Es importante evitar declarar elementos sin contenido.<br/>
+			Número de errores: 0
+
+		Criterio: 3.3.5..Ayuda
+		Nivel: AAA
+
+			Código: G71-Proporcionando un enlace de ayuda en cada pagina web
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H89-Usando el atributo title para proporcionar ayuda contextual
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 4.Robusto
+Descripcion: El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+	Pauta: 4.1..Compatible
+Descripcion: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas
+
+		Criterio: 4.1.1..Procesamiento
+		Nivel: A
+
+			Código: G134-Validación de páginas web
+			Criticidad: Alta
+			Observación: <p>La pagina ha sido analizada en <a href='https://validator.w3.org/' target='_blank'>https://validator.w3.org/</a>, encontrandose <strong>10 mensajes de alerta</strong>.</p><pre><ul><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+xt/css">  <script type="text/javascript" src="/static_files/common/internet/script/jquery/jquery-1.11.1.min.js"></scri</xmp></li><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+</script> <script type="text/javascript" src="/static_files/common/internet/script/jquery/jquery-ui-1.11.1.min.js"></scri</xmp></li><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+</script> <script type="text/javascript" src="/common/script/internet.js"></scri</xmp></li><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+>         <script type="text/javascript" src="/AEAT.internet/Inicio/_top_/_top_.js"></scri</xmp></li><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+div></div><script type='text/javascript'>try{in</xmp></li><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+o"> -->   <script type="text/javascript" src="/AEAT.internet/Inicio/_componentes_/Acceda_directamente/Acceda_directamente.js"></scri</xmp></li><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+ROS -->   <script type="text/javascript" src="/AEAT.internet/Inicio/_componentes_/_Contacte_con_nosotros/_Contacte_con_nosotros.js"></scri</xmp></li><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+INE -->   <script type="text/javascript" src="/AEAT.internet/Inicio/_componentes_/Opine/Opine.js"></scri</xmp></li><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+CES -->   <script type="text/javascript" src="/AEAT.internet/Inicio/_componentes_/Enlaces_de_interes/Enlaces_de_interes.js"></scri</xmp></li><li><xmp>The “type” attribute is unnecessary for JavaScript resources.:
+</div>  <script type="text/javascript" src="/AEAT.internet/Inicio/_pie_/_pie_.js"></scri</xmp></li></ul></pre><p>Para mayor información revise el siguiente enlace: <a href='https://validator.w3.org/nu/?doc=https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Certificados_tributarios/Certificados_tributarios.shtml' target='_blank'>Validación W3C</a></p>.<br/>
+			Recomendación: .<br/>
+			Número de errores: 1
+
+		Criterio: 4.1.2..Nombre, función, valor
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H64-Usando el atributo title en los elementos frame e iframe 
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos frames..<br/>
+			Recomendación: En caso de usar elementos frame o iframe acompañelos por una descripci&oacute;n del mismo a travez del atributo <code>title</code>..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
