@@ -20,7 +20,7 @@
         <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre sitio web</label>
 
         <div class="col-md-8">
-            <input id="nombre" type="text"  name="nombre" value="{{ old('nombre') }}" required autofocus>
+            <input id="nombre" type="text"  name="nombre" placeholder="Renfe" value="{{ old('nombre') }}" required autofocus>
 
             @if ($errors->has('nombre'))
                 <span>
@@ -35,7 +35,7 @@
         <label for="dominio" class="col-md-4 col-form-label text-md-right">Dominio</label>
 
         <div class="col-md-8">
-            <input id="dominio" type="text"  name="dominio" value="{{ old('dominio') }}" required >
+            <input id="dominio" type="text"  name="dominio" placeholder="www.renfe.com" value="{{ old('dominio') }}" required >
 
             @if ($errors->has('dominio'))
                 <span>
@@ -71,16 +71,17 @@
         <div class="col-md-4">
 
             @foreach ($herramientas as $herramienta)
-                <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}" checked> {{$herramienta->descripcion}}<br>
+                <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
             @endforeach
         </div>
     </div>
 
+    <!--Lista de páginas-->
     <div class="form-group row">
         <label for="paginas" class="col-md-4 col-form-label text-md-right">Páginas web</label>
 
         <div class="col-md-8">
-            <textarea name="paginas" rows="10" cols="50" value="{{ old('paginas') }}" ></textarea>
+            <textarea name="paginas" rows="10" cols="50" placeholder="Una dirección en cada línea: http://www.renfe.com" value="{{ old('paginas') }}" ></textarea>
             @if ($errors->has('paginas'))
                 <span>
                     <strong class="strong-val">{{ $errors->first('paginas') }}</strong>
@@ -129,7 +130,7 @@
         <label for="dia" class="col-md-4 col-form-label text-md-right">Día de la semana/mes</label>
 
         <div class="col-md-8">
-            <input id="dia" type="number"  name="dia" value="{{ old('dia') }}" required >
+            <input id="dia" type="number"  name="dia" value="0" required >
 
             @if ($errors->has('dia'))
                 <span>
@@ -144,7 +145,7 @@
         <label for="hora" class="col-md-4 col-form-label text-md-right">Hora</label>
 
         <div class="col-md-8">
-            <input id="hora" type="text"  name="hora" value="{{ old('hora') }}" required >
+            <input id="hora" type="text"  name="hora" placeholder="hh:mm" value="{{ old('hora') }}" required >
 
             @if ($errors->has('hora'))
                 <span>

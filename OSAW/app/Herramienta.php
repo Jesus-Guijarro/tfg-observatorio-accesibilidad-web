@@ -51,6 +51,7 @@ class Herramienta extends Model
         $herramienta->descripcion= $descripcion;
         $herramienta->activa = false;
         $herramienta->save();
+
     }
 
     public function actualizarHerramienta($id,$descripcion,$activa){

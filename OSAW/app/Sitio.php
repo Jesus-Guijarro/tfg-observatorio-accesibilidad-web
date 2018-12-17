@@ -90,8 +90,7 @@ class Sitio extends Model
         return $dia;
     }
 
-    public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,
-    $automatizado,$categoria_id){
+    public function crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id){
         $sitio = new Sitio();
 
         $sitio->nombre =$nombre;
@@ -99,10 +98,14 @@ class Sitio extends Model
         $sitio->periodicidad=$periodicidad;
         $sitio->hora =$hora;
         $sitio->dia =$dia;
-        $sitio->automatizado =$automatizado;
+        $sitio->automatizado =true;
         $sitio->categoria_id =$categoria_id;
 
         $sitio->save();
+
+        $id=$sitio->id;
+
+        return $id;
     }
 
     public function actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,
