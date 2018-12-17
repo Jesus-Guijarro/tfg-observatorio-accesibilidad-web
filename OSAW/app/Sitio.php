@@ -98,7 +98,7 @@ class Sitio extends Model
         $sitio->periodicidad=$periodicidad;
         $sitio->hora =$hora;
         $sitio->dia =$dia;
-        $sitio->automatizado =true;
+        $sitio->automatizado =false;
         $sitio->categoria_id =$categoria_id;
 
         $sitio->save();

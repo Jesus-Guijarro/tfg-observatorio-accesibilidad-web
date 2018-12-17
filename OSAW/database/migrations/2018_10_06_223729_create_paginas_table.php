@@ -22,6 +22,7 @@ class CreatePaginasTable extends Migration
             $table->integer('sitio_id')->unsigned()->nullable();
             $table->foreign('sitio_id')->references('id')->on('sitios')->onDelete("set null");
             
+            $table->timestamps();
         });
     }
 

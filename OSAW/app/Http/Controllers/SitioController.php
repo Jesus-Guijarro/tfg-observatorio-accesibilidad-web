@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Sitio;
+use App\Pagina;
 use App\Categoria;
 use App\Herramienta;
 
@@ -16,6 +17,9 @@ use App\Wave;
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
+
+use Symfony\Component\Process\Process;
+use Symfony\Component\Process\Exception\ProcessFailedException;
 
 class SitioController extends Controller
 {
@@ -117,24 +121,6 @@ class SitioController extends Controller
             'dia' => 'required|min:0',
         ]);
 
-        //Validar paginas
-        if($request->paginas){
-            $paginas = explode("\n", $request->paginas);
-
-            $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
-
-            foreach($paginas as $pagina){
-                if(!preg_match($regex,$pagina)){
-                    return Redirect::back()->withErrors(['paginas'=>'La página '.$pagina. 'no tiene el formato correcto']);
-                }
-            }
-
-            $p = new Pagina();
-            foreach($paginas as $pagina){
-                $p->crearPagina($pagina);
-            }
-        }
-
     
         //Validar dia semana o mes
 
@@ -160,29 +146,50 @@ class SitioController extends Controller
         $hora=$request->hora;
 
         $s = new Sitio();
-        $id= $s->crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id);
+        $sitio_id= $s->crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id);
 
         //Herramientas
-        $sitio=$s->getSitio($id);
+        $sitio=$s->getSitio($sitio_id);
         $herramientas = [$request->accessmonitor,$request->achecker,$request->eiiichecker,$request->observatorio, $request->vamola,$request->wave];
         foreach($herramientas as $herramienta){
             if($herramienta!=0){
                 $sitio->herramientas()->attach($herramienta);
             }
         }
-        /*
+       
         //Páginas web
-        
-        $p = new Pagina();
-        foreach($paginas as $pagina){
-            $p->crearPagina($pagina);
-        }
-        $num_paginas=$request->num_paginas;
-        //Llamada crawler
+        if($request->paginas){
+            $paginas = explode("\n", $request->paginas);
 
-        //crearPagina($URL)
+            $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
+
+            $p = new Pagina();
+            foreach($paginas as $pagina){
+                if(preg_match($regex,$pagina)){
+                    $p->crearPagina($pagina,$sitio_id);
+                }
+            }
+        }
         
-*/
+        
+        //Ruta archivos Web Scraping
+        list($scriptPath) = get_included_files();
+        $ruta = $scriptPath;
+        $ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/",$ruta);
+
+        //Llamada crawler
+        
+        $num_paginas=$request->num_paginas;
+        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$sitio_id." ".$num_paginas;
+
+        $crawler = new Process($comando);
+        $crawler->run();
+
+        //Llamada a cron
+        $comando="/usr/bin/python3 ".$ruta_webscraping."cron.py";
+        $cron = new Process($comando);
+        $cron->run();
+        
         return redirect("/crear-sitio")->with('mensaje', 'El sitio se ha creado con éxito');
     }
 

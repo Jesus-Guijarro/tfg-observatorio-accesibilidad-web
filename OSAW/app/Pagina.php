@@ -57,10 +57,11 @@ class Pagina extends Model
         return $num_paginas;
     }
 
-    public function crearPagina($URL){
+    public function crearPagina($URL,$sitio_id){
         $pagina = new Pagina();
         $pagina->URL= $URL;
         $pagina->hash="default";
+        $pagina->sitio_id=$sitio_id;
         $pagina->save();
     }
 

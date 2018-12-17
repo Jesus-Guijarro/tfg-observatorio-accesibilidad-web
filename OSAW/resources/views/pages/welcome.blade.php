@@ -106,18 +106,20 @@
                     
                 </div>
                 <?php 
-                    #$command=escapeshellcmd("/usr/bin/python3 /home/jesus/TFG/Webscraping/test.py");
-                    #shell_exec($command);
                     
-                    function echoScriptPath() {
-                        list($scriptPath) = get_included_files();
-                        echo $scriptPath;
-                        echo "<br/>";
-                        return $scriptPath;
-                    }
-                    $ruta = echoScriptPath();
-                    $ruta=str_replace("/server.php","/public/storage/web-scraping",$ruta);
-                    echo $ruta;
+                    list($scriptPath) = get_included_files();
+                    $ruta = $scriptPath;
+                    $sitio_id=1;
+                    $num_paginas=2;
+                    $ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/crawler.py",$ruta);
+                    $comando="/usr/bin/python3 ".$ruta_webscraping." ".$sitio_id." ".$num_paginas;
+
+                    list($scriptPath) = get_included_files();
+        $ruta = $scriptPath;
+        $ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/",$ruta);
+
+        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$sitio_id." ".$num_paginas;
+                    echo $comando;
                 ?>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
