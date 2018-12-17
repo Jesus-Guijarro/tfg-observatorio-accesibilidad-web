@@ -145,7 +145,7 @@
         <label for="hora" class="col-md-4 col-form-label text-md-right">Hora</label>
 
         <div class="col-md-8">
-            <input id="hora" type="text"  name="hora" placeholder="hh:mm" value="{{ old('hora') }}" required >
+            <input id="hora" type="text"  name="hora" placeholder="17:00" value="{{ old('hora') }}" required >
 
             @if ($errors->has('hora'))
                 <span>

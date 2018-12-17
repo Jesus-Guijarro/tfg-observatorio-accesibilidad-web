@@ -159,14 +159,23 @@ class SitioController extends Controller
        
         //Páginas web
         if($request->paginas){
-            $paginas = explode("\n", $request->paginas);
+            //Operaciones para obtener cada linea, quitar saltos de línea y espacios de las cadenas
+            $lista_paginas = explode("\n", $request->paginas);
+            $paginas = array();
+            foreach($lista_paginas as $pagina){
+                $pagina=str_replace(array("\r\n","\r"," "),"",$pagina);
+                array_push($paginas, $pagina);
+            }
 
             $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
 
             $p = new Pagina();
             foreach($paginas as $pagina){
                 if(preg_match($regex,$pagina)){
-                    $p->crearPagina($pagina,$sitio_id);
+                    $nueva = $p->paginaNueva($pagina);
+                    if($nueva){
+                        $p->crearPagina($pagina,$sitio_id);
+                    }
                 }
             }
         }
@@ -207,10 +216,10 @@ class SitioController extends Controller
         return view('pages.administrador.modificar-sitio', array('sitio' => $sitio,'categorias' => $categorias,'herramientas' => $herramientas));
     }
 
-    public function modificarSitio(Request $request){
+    public function modificarSitio(Request $request, $id){
         //Validaciones
         $this->validate($request, [
-            'nombre' => 'required|unique:sitios|min:2|max:70',
+            'nombre' => 'required|min:2|max:70',
             'dominio' => ['required','regex:/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/'],
             'num_paginas' => 'min:0|max:20|integer',
             'hora' => ['required','regex:/^([0-1][0-9]|[2][0-3]):([0-5][0-9])?$/'],
@@ -242,7 +251,7 @@ class SitioController extends Controller
         $hora=$request->hora;
 
         $s = new Sitio();
-        $sitio_id= $s->actualizarSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id);
+        $sitio_id= $s->actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id);
 
         //Herramientas
         $sitio=$s->getSitio($sitio_id);
@@ -258,18 +267,26 @@ class SitioController extends Controller
        
         //Páginas web
         if($request->paginas){
-            $paginas = explode("\n", $request->paginas);
+            //Operaciones para obtener cada linea, quitar saltos de línea y espacios de las cadenas
+            $lista_paginas = explode("\n", $request->paginas);
+            $paginas = array();
+            foreach($lista_paginas as $pagina){
+                $pagina=str_replace(array("\r\n","\r"," "),"",$pagina);
+                array_push($paginas, $pagina);
+            }
 
             $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
 
             $p = new Pagina();
             foreach($paginas as $pagina){
                 if(preg_match($regex,$pagina)){
-                    $p->crearPagina($pagina,$sitio_id);
+                    $nueva = $p->paginaNueva($pagina);
+                    if($nueva){
+                        $p->crearPagina($pagina,$sitio_id);
+                    }
                 }
             }
         }
-        
         
         //Ruta archivos Web Scraping
         list($scriptPath) = get_included_files();
@@ -289,7 +306,7 @@ class SitioController extends Controller
         $cron = new Process($comando);
         $cron->run();
         
-        return redirect("/modificar-sitio")->with('mensaje', 'El sitio se ha modificado con éxito');
+        return redirect('/modificar-sitio/'.$id)->with('mensaje', 'El sitio se ha modificado con éxito');
 
         
     }

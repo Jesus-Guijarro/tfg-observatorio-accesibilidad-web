@@ -108,7 +108,7 @@ class Sitio extends Model
         return $id;
     }
 
-    public function actualizarSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id){
+    public function actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id){
 
         $sitio = Sitio::findOrFail($id);
 
