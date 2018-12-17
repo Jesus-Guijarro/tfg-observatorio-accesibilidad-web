@@ -186,7 +186,7 @@ class SitioController extends Controller
         $crawler->run();
 
         //Llamada a cron
-        $comando="/usr/bin/python3 ".$ruta_webscraping."cron.py";
+        $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$sitio_id.' C';
         $cron = new Process($comando);
         $cron->run();
         
@@ -198,14 +198,97 @@ class SitioController extends Controller
         $s = new Sitio();
         $sitio = $s->getSitio($id);
 
-        return view('pages.administrador.modificar-sitio', array('sitio' => $sitio));
+        $categoria = new Categoria();
+        $categorias = $categoria->getCategorias();
+
+        $herramienta = new Herramienta();
+        $herramientas = $herramienta->getHerramientasActivas();
+
+        return view('pages.administrador.modificar-sitio', array('sitio' => $sitio,'categorias' => $categorias,'herramientas' => $herramientas));
     }
 
     public function modificarSitio(Request $request){
-        $s = new Sitio();
-        $sitio = $s->getSitio($id);
+        //Validaciones
+        $this->validate($request, [
+            'nombre' => 'required|unique:sitios|min:2|max:70',
+            'dominio' => ['required','regex:/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/'],
+            'num_paginas' => 'min:0|max:20|integer',
+            'hora' => ['required','regex:/^([0-1][0-9]|[2][0-3]):([0-5][0-9])?$/'],
+            'dia' => 'required|min:0',
+        ]);
 
-        return view('pages.administrador.modificar-sitio', array('sitio' => $sitio));
+    
+        //Validar dia semana o mes
+
+        $periodicidad=$request->periodicidad;
+        $dia=$request->dia;
+
+        if ($periodicidad=="Semanal"){
+            if ($dia<0 or $dia>6){
+                return Redirect::back()->withErrors(['dia'=>'El día debe de ser entre 0 y 6.']);
+            }
+        }
+        elseif($periodicidad=="Mensual"){
+            if ($dia<1 or $dia>31){
+                return Redirect::back()->withErrors(['dia'=>'El día debe de ser entre 1 y 31.']);
+            }
+        }
+
+        //Proceso de creación
+
+        $nombre=$request->nombre;
+        $dominio=$request->dominio;
+        $categoria_id=$request->categoria;
+        $hora=$request->hora;
+
+        $s = new Sitio();
+        $sitio_id= $s->crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$categoria_id);
+
+        //Herramientas
+        $sitio=$s->getSitio($sitio_id);
+        $herramientas = [$request->accessmonitor,$request->achecker,$request->eiiichecker,$request->observatorio, $request->vamola,$request->wave];
+        foreach($herramientas as $herramienta){
+            if($herramienta!=0){
+                $sitio->herramientas()->attach($herramienta);
+            }
+        }
+       
+        //Páginas web
+        if($request->paginas){
+            $paginas = explode("\n", $request->paginas);
+
+            $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
+
+            $p = new Pagina();
+            foreach($paginas as $pagina){
+                if(preg_match($regex,$pagina)){
+                    $p->crearPagina($pagina,$sitio_id);
+                }
+            }
+        }
+        
+        
+        //Ruta archivos Web Scraping
+        list($scriptPath) = get_included_files();
+        $ruta = $scriptPath;
+        $ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/",$ruta);
+
+        //Llamada crawler
+        
+        $num_paginas=$request->num_paginas;
+        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$sitio_id." ".$num_paginas;
+
+        $crawler = new Process($comando);
+        $crawler->run();
+
+        //Llamada a cron
+        $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$sitio_id.' A';
+        $cron = new Process($comando);
+        $cron->run();
+        
+        return redirect("/modificar-sitio")->with('mensaje', 'El sitio se ha modificado con éxito');
+
+        
     }
 
     public function eliminarSitio($id){
