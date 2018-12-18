@@ -588,7 +588,7 @@
         <tr>
             @php
                 {{$reporte=str_replace("/","+",$accessmonitors_reporte->datos_problemas);}}
-                {{$reporte=str_replace("+storage+","",$reporte);}}
+                
             @endphp
             <td>
                 <a href="/reporte-automatico/{{$reporte}}">AccessMonitor-{{$accessmonitors_reporte->fecha_test}}</a></td>
@@ -616,7 +616,7 @@
         <tr>
             @php
                 {{$reporte=str_replace("/","+",$acheckers_reporte->datos_problemas);}}
-                {{$reporte=str_replace("+storage+","",$reporte);}}
+                
             @endphp
             <td>
                 <a href="/reporte-automatico/{{$reporte}}">Achecker-{{$acheckers_reporte->fecha_test}}</a></td>
@@ -642,7 +642,7 @@
         <tr>
             @php
                 {{$reporte=str_replace("/","+",$eiiicheckers_reporte->datos_problemas);}}
-                {{$reporte=str_replace("+storage+","",$reporte);}}
+                
             @endphp
         <td>
             <a href="/reporte-automatico/{{$reporte}}">EIII Page Checker-{{$eiiicheckers_reporte->fecha_test}}</a></td>
@@ -669,7 +669,7 @@
         <tr>
             @php
                 {{$reporte=str_replace("/","+",$observatorios_reporte->datos_problemas);}}
-                {{$reporte=str_replace("+storage+","",$reporte);}}
+                
             @endphp
         <td>
             <a href="/reporte-automatico/{{$reporte}}">Observatorio de la UPS de Ecuador-{{$observatorios_reporte->fecha_test}}</a></td>
@@ -696,7 +696,7 @@
         <tr>
             @php
                 {{$reporte=str_replace("/","+",$vamolas_reporte->datos_problemas);}}
-                {{$reporte=str_replace("+storage+","",$reporte);}}
+                
             @endphp
         <td>
             <a href="/reporte-automatico/{{$reporte}}">Vamolà-{{$vamolas_reporte->fecha_test}}</a></td>
@@ -721,7 +721,7 @@
         <tr>
             @php
                 {{$reporte=str_replace("/","+",$waves_reporte->datos_problemas);}}
-                {{$reporte=str_replace("+storage+","",$reporte);}}
+                
             @endphp
         <td>
             <a href="/reporte-automatico/{{$reporte}}">WAVE-{{$waves_reporte->fecha_test}}</a></td>

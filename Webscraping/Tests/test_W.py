@@ -39,9 +39,9 @@ directorio=directorio.replace("/storage/app","")
 
 fecha_test=str(datetime.now().date())
 
-ruta_reporte=directorio+"/storage/wave/1_"+str(fecha_test)+".txt"
-#ruta_reporte=directorio+"/storage/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
-ruta_BD="/storage/test.txt"
+ruta_reporte=directorio+"/wave/1_"+str(fecha_test)+".txt"
+#ruta_reporte=directorio+"/"+herramienta+"/"+pagina_id+"_"+str(fecha_test)+".txt"
+ruta_BD="/test.txt"
 
 #Crear reporte
 reporte = open(ruta_reporte, 'a')

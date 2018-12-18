@@ -32,6 +32,22 @@ class HerramientaController extends Controller
         return redirect("/crear-herramienta")->with('mensaje', 'Herramienta añadida');
     }
 
+    public function modificarHerramienta(Request $request, $id){
+
+        $this->validate($request, [
+            'nombre' => 'required|unique:herramientas|min:2|max:40',
+            'descripcion' => 'required|min:2|max:45'
+        ]);
+        
+        $nombre=$request->nombre;
+        $descripcion=$request->descripcion;
+
+        $s->crearHerramientaactualizarHerramienta($id,$nombre,$descripcion);
+
+        return back()->with('mensaje', 'Herramienta modificada');
+
+    }
+
     public function activarHerramienta($id){
 
         $h = new Herramienta();

@@ -33,7 +33,10 @@ Route::get('reporte-automatico/{reporte}', 'PaginaController@mostrarReporteAutom
 
 #Usuarios
 Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario');
-Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
+Route::get('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
+
+#Administrador
+Route::get('panel-admin/{id}', 'UserController@mostrarPanelAdministrador');
 
 #Gestión sitios web
 Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios');
@@ -56,6 +59,7 @@ Route::post('modificar-pagina/{id}', 'PaginaController@modificarPagina');
 
 #Gestión herramientas
 Route::get('gestionar-herramientas', 'HerramientaController@gestionarHerramientas');
+Route::post('gestionar-herramientas', 'HerramientaController@modificarHerramienta');
 
 Route::get('crear-herramienta', function()
 {

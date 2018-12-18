@@ -90,26 +90,29 @@ def getDirectorioOSAW():
     else:
         directorio=directorio.replace("/Webscraping","/OSAW/public")
 
+    #Se le añade la carpeta storage al final para acceder en Laravel directamente
+    directorio = directorio+"/storage"
+
     return directorio
 
 #Ruta para guardar rutas de reportes
 def getRutaReporte(directorio,herramienta,pagina_id,fecha_test):
     #Directorio vacio si es para la BD
-    ruta = directorio+"/storage/"+herramienta+"/"+str(pagina_id)+"_"+str(fecha_test)+".txt"
+    ruta = directorio+"/"+herramienta+"/"+str(pagina_id)+"_"+str(fecha_test)+".txt"
     
     return ruta
 
 #Ruta para guardar rutas de copias HTML
 def getRutaCopiaHTML(directorio,pagina_id, nuevo):
     #El argumento directorio está vacio si es para la BD
-    ruta=directorio+"/storage/paginas/"+str(pagina_id)+nuevo+".html"
+    ruta=directorio+"/paginas/"+str(pagina_id)+nuevo+".html"
 
     return ruta
 
 #Método para escribir error producidos durante los análisis de las herramientas
 def errorLog(directorio,fecha_test,herramienta,identificador,error):
 
-    ruta_archivo_logs=directorio+"/storage/logs/log_herramientas_"+fecha_test+".log"
+    ruta_archivo_logs=directorio+"/logs/log_herramientas_"+fecha_test+".log"
 
     
     logging.basicConfig(filename=ruta_archivo_logs,level=logging.ERROR,format='%(asctime)s - %(levelname)s - %(name)s\n\t%(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')

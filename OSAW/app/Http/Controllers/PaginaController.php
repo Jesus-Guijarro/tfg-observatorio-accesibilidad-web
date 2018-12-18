@@ -69,10 +69,7 @@ class PaginaController extends Controller
 
         $reporte=str_replace("+","/",$reporte);
 
-        $nombre_reporte=$reporte;
-
-
-        return view('pages.reporte.automatico', array('reporte' => $reporte,'nombre_reporte'=>$nombre_reporte));
+        return view('pages.reporte.automatico', array('reporte' => $reporte));
     }
 
     public function gestionarPaginas($sitio_id){

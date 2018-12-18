@@ -1,9 +1,8 @@
-import io, json, mysql.connector, os, sys
+import io, mysql.connector, os, sys
 
-from selenium import webdriver
 from database import conexionDB,desconexionDB
 from comprobaciones import comprobarAccesoPagina, comprobarCopiaHTML
-from herramienta import copiarDatosAntiguos, getFecha, getDirectorioOSAW, errorLog, ejecutarHerramienta
+from herramienta import copiarDatosAntiguos, ejecutarHerramienta
 
 
 #Método principal encargado de realizar la evaluación del sitio: checker y llamadas a las herramientas

@@ -1,7 +1,6 @@
 import sys, os
 
 from database import conexionDB,desconexionDB
-from herramienta import getDirectorioOSAW, getFecha
 from crontab import CronTab
 
 #Método para cambiar el estado de automatización de un sitio
@@ -36,9 +35,6 @@ def crearTarea(sitio_id,periodicidad,hora,dia,cursor):
 
     tarea.minute.on(int(minuto))
     tarea.hour.on(int(hora))
-
-    #Para el archivo logs
-    directorio=getDirectorioOSAW()
 
     mensaje_error="No se ha podido crear la tarea para el sitio: "+ str(sitio_id)
 

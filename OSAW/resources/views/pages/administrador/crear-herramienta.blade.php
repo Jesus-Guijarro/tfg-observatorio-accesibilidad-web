@@ -6,6 +6,8 @@
 
 <h1 class="h1-titulo"> Añadir herramienta web </h1>
 
+<a class="btn btn-default" href="/gestionar-herramientas" role="button">Volver a gestionar herramientas</a>
+
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
         {{ session()->get('mensaje') }}
@@ -47,7 +49,6 @@
             <button type="submit" class="btn btn-primary">
                 Añadir herramienta
             </button>
-            <a class="btn btn-default" href="/gestionar-herramientas" role="button">Cancelar</a>
             
         </div>
     </div>

@@ -9,7 +9,7 @@
 <hr>
 
 <div>
-   <p><strong>Reporte: </strong><a href="{{$reporte}}" download="{{$reporte}}">{{$nombre_reporte}}</a></p>
+   <p><strong>Reporte: </strong><a href="{{$reporte}}" download="{{$reporte}}">{{$reporte}}</a></p>
 </div>
 
 <?php $contenido= Storage::get($reporte);?>
