@@ -37,6 +37,9 @@ Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario');
 Route::get('modificar-perfil/{id}', 'UserController@panelModificarPerfilUsuario');
 Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
 
+Route::get('cambiar-password/{id}', 'UserController@panelCambiarPassword');
+Route::post('cambiar-password/{id}', 'UserController@cambiarPassword');
+
 #Gestión sitios web
 Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios');
 

@@ -36,9 +36,6 @@ class UserController extends Controller
            'avatar'=> 'image|mimes:jpeg,bmp,png,jpg,gif|max:2048',
        ]);
         
-       
-       
-
        $usuario->nombre = $request->nombre;
        $usuario->email = $request->email;
        $usuario->biografia = $request->biografia;
@@ -54,6 +51,37 @@ class UserController extends Controller
        
        $usuario->save();
        return back()->with('mensaje','Perfil modificado con éxito.');
+   }
+
+    public function panelCambiarPassword($id){
+        $u = new User();
+        $usuario = $u->getUsuario($id);
+        return view('pages.usuario.cambiar-password', array('usuario' => $usuario));
+    }
+
+    protected function cambiarPassword(Request $request,  $id){
+        
+        $usuario = User::findOrFail($id);
+        
+        $this->validate($request, [
+            'old_password' => 'required|string|min:6|max:60',
+            'new_password' => 'required|string|min:6|max:60|same:new_password_confirm',
+            'new_password_confirm' => 'required|string|min:6|max:60',
+        ]);
+
+
+        if(Hash::check($request->old_password,$usuario->password)){
+            $usuario->password = Hash::make($request->new_password);
+
+            $usuario->save();
+    
+            return back()->with('mensaje','Contraseña cambiada con éxito');
+        }
+        else{
+            return back()->with('old_password','La contraseña antigua no coincide con la introducida');
+        }
+        
+       
    }
 
 }

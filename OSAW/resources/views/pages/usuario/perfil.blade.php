@@ -14,6 +14,9 @@
 <div style="margin-bottom: 1.5em">
     <a class="btn btn-primary" href="/modificar-perfil/{{$usuario->id}}" role="button">Editar datos de usuario</a>
 </div>
+<div style="margin-bottom: 1.5em">
+    <a class="btn btn-primary" href="/cambiar-password/{{$usuario->id}}" role="button">Cambiar contraseña</a>
+</div>
 
 
 
