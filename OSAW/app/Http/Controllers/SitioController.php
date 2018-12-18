@@ -115,11 +115,11 @@ class SitioController extends Controller
 
         //Validaciones
         $this->validate($request, [
-            'nombre' => 'required|unique:sitios|min:2|max:70',
+            'nombre' => 'required|string|unique:sitios|min:2|max:70',
             'dominio' => ['required','regex:/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/'],
             'num_paginas' => 'min:0|max:20|integer',
             'hora' => ['required','regex:/^([0-1][0-9]|[2][0-3]):([0-5][0-9])?$/'],
-            'dia' => 'required|min:0',
+            'dia' => 'required|integer|min:0',
         ]);
 
     
@@ -242,11 +242,11 @@ class SitioController extends Controller
     public function modificarSitio(Request $request, $id){
         //Validaciones
         $this->validate($request, [
-            'nombre' => 'required|min:2|max:70',
+            'nombre' => 'required|string|unique:sitios|min:2|max:70',
             'dominio' => ['required','regex:/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/'],
             'num_paginas' => 'min:0|max:20|integer',
             'hora' => ['required','regex:/^([0-1][0-9]|[2][0-3]):([0-5][0-9])?$/'],
-            'dia' => 'required|min:0',
+            'dia' => 'required|integer|min:0',
         ]);
 
     

@@ -18,6 +18,7 @@ Route::get('/', function () {
 */
 Auth::routes();
 
+
 Route::get('/', 'HomeController@mostrarInicio');
 
 #Sitios web
@@ -35,8 +36,6 @@ Route::get('reporte-automatico/{reporte}', 'PaginaController@mostrarReporteAutom
 Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario');
 Route::get('modificar-perfil/{id}', 'UserController@panelModificarPerfilUsuario');
 Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
-
-
 
 #Gestión sitios web
 Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios');

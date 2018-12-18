@@ -82,32 +82,12 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-                <div class="container">
-                    <?php $users = DB::table('users')->paginate(1);
-                    ?>
-                    <table>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Email</th>
-                        </tr>
-                        @foreach($users as $user)
-                            <tr>
-                                <td> {{$user->nombre}}</td>
-                                <td> {{$user->email}}</td>
-                            </tr>
-                        @endforeach
-                        
-                    </table>
-                    {{ $users->links() }}
-                </div>
-                <div>
-                    <iframe src="{{URL::to('/')}}/storage/paginas/default.html"></iframe>
-                    <!--<iframe src="{{URL::to('/')}}/storage/observatorio/1_2018-10-25.txt"></iframe> -->
-                    
-                </div>
                 <?php 
-                    $partes = explode(":", "X:2");
-                    echo $partes[1];
+                    $user = Auth::user();
+                    $user->nombre="pepe";
+
+                    echo $user->nombre;
+
                 ?>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>

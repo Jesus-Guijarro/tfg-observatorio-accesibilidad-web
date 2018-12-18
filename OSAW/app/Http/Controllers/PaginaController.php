@@ -87,6 +87,7 @@ class PaginaController extends Controller
 
         $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
 
+        //VALIDAR
         
         if(preg_match($regex,$url)){
             $p = new Pagina();

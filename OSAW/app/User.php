@@ -1,7 +1,6 @@
 <?php
 
 namespace App;
-
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -16,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'nombre', 'email', 'password',
+        'nombre', 'email', 'password','rol_id','avatar',
     ];
 
     /**
@@ -64,6 +63,19 @@ class User extends Authenticatable
         where('nombre','like','%'.$nombre.'%')->get();
 
         return $usuarios;
+    }
+
+    public function crearUsuario($nombre, $email, $password, $avatar){
+        $user = new User();
+
+        $user->nombre = $nombre;
+        $user->email=$email;
+        $user->password=$password;
+        $user->avatar=$avatar;
+        $user->rol_id=1;
+
+        $user->save();
+
     }
 
     public function actualizarUsuario($id,$nombre, $email, $password, $avatar, $biografia){
