@@ -29,6 +29,24 @@
                 
                 <a class = "a-hf" href="/perfil/{{Auth::user()->id}}"> {{ Auth::user()->nombre}}</a>
             </li>
+            <!-- Opciones de administración -->
+            @if (Auth::user()->rol_id===3)
+            <li class="li-cabecera">
+                <a class="dropdown-toggle" href="opciones-administracion" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color:white">
+                    Opciones de Administracion <span class="caret"></span>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/gestionar-sitios">
+                        Gestionar Sitios Web
+                    </a>
+                    <a class="dropdown-item" href="/gestionar-herramientas">
+                        Gestionar Herramientas de Evaluación
+                    </a>
+                </div>
+            </li>
+            @endif
+
             <li class="li-cabecera">
                 <a class = "a-hf" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
@@ -42,6 +60,10 @@
         @endguest
     </ul>
 </nav>
+
+
+
+
 <div class="buscador">
     <form method="GET" action="{{ action('SitioController@busquedaSitio') }}">
         <label class="label-buscador" for="nombre" >Buscar Sitio Web: </label>

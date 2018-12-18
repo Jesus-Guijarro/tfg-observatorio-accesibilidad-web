@@ -13,44 +13,46 @@
         {{ session()->get('mensaje') }}
     </div>
 @endif
+<div class="card">
+    <div class="card-body">
+        <form method="POST" action="{{  action('HerramientaController@crearHerramienta') }}">
+            @csrf
 
-<form method="POST" action="{{  action('HerramientaController@crearHerramienta') }}">
-    @csrf
+            <div class="form-group row">
+                <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre herramienta</label>
 
-    <div class="form-group row">
-        <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre herramienta</label>
+                <div class="col-md-8">
+                    <input id="nombre" type="text"  class="form-control" name="nombre" value="{{ old('nombre') }}" required autofocus>
 
-        <div class="col-md-8">
-            <input id="nombre" type="text"  name="nombre" value="{{ old('nombre') }}" required autofocus>
+                    @if ($errors->has('nombre'))
+                        <span >
+                            <strong class="strong-val">{{ $errors->first('nombre') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="descripcion" class="col-md-4 col-form-label text-md-right">Descripción</label>
 
-            @if ($errors->has('nombre'))
-                <span>
-                    <strong class="strong-val">{{ $errors->first('nombre') }}</strong>
-                </span>
-            @endif
-        </div>
+                <div class="col-md-8">
+                    <input id="descripcion" type="text"  name="descripcion" value="{{ old('descripcion') }}" required>
+
+                    @if ($errors->has('descripcion'))
+                        <span>
+                            <strong class="strong-val">{{ $errors->first('descripcion') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
+
+            <div class="form-group row mb-0">
+                <div class="col-md-6 offset-md-4">
+                    <button type="submit" class="btn btn-primary">
+                        Añadir herramienta
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
-    <div class="form-group row">
-        <label for="descripcion" class="col-md-4 col-form-label text-md-right">Descripción</label>
-
-        <div class="col-md-8">
-            <input id="descripcion" type="text"  name="descripcion" value="{{ old('descripcion') }}" required>
-
-            @if ($errors->has('descripcion'))
-                <span>
-                    <strong class="strong-val">{{ $errors->first('descripcion') }}</strong>
-                </span>
-            @endif
-        </div>
-    </div>
-
-    <div class="form-group row mb-0">
-        <div class="col-md-6 offset-md-4">
-            <button type="submit" class="btn btn-primary">
-                Añadir herramienta
-            </button>
-            
-        </div>
-    </div>
-</form>
+</div>
 @endsection
