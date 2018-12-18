@@ -37,7 +37,7 @@ class User extends Authenticatable
     public $timestamps = false;
 
     public function rol() {
-        return $this->belongsTo('App\Usuario');
+        return $this->belongsTo('App\Rol');
     }
 
     #Análisis manual
@@ -90,6 +90,20 @@ class User extends Authenticatable
 
         $usuario -> save();
     }
+
+    public function actualizarUsuarioSinAvatar($id,$nombre, $email, $password, $avatar, $biografia){
+
+        $usuario = User::findOrFail($id);
+
+        $usuario->nombre =$nombre;
+        $usuario->email =$email;
+        $usuario->password =$password;
+        $usuario->biografia =$biografia;
+
+        $usuario -> save();
+    }
+
+
 
     public function actualizarUsuarioRol($id,$rol_id){
 

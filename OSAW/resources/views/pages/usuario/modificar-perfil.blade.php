@@ -1,24 +1,30 @@
 @extends('layouts.master')
 
-@section('titulo', 'Registro')
+@section('titulo', 'Modificar perfil de usuario')
 
 @section('content')
 
-<h1 class="h1-titulo"> Registro </h1>
+<h1 class="h1-titulo"> Modificar perfil de usuario </h1>
+
+@if(session()->has('mensaje'))
+    <div class="alert alert-success">
+        {{ session()->get('mensaje') }}
+    </div>
+@endif
 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+                    <form method="POST" action="<?php action('UserController@modificarPerfilUsuario', $usuario->id); ?>" enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-group row">
                             <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre de usuario</label>
 
                             <div class="col-md-6">
-                                <input id="nombre" type="text" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" name="nombre" value="{{ old('nombre') }}" required autofocus>
+                                <input id="nombre" type="text" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" name="nombre" value="{{ $usuario->nombre }}" required autofocus>
 
                                 @if ($errors->has('nombre'))
                                     <span class="invalid-feedback" role="alert">
@@ -32,7 +38,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">Correo electrónico</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ $usuario->email }}" required>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
@@ -42,27 +48,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirmar contraseña</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
 
                         <div class="form-group row">
                             <label for="avatar" class="col-md-4 col-form-label text-md-right" class="form-control{{ $errors->has('avatar') ? ' is-invalid' : '' }}">Avatar</label>
@@ -75,19 +60,29 @@
                                     </span>
                                 @endif
                             </div>
-
+                        </div>
                             
+                        <div class="form-group row">
+                            <label for="biografia" class="col-md-4 col-form-label text-md-right">Biografia</label>
+                            <div class="col-md-6">
+                                <textarea id="biografia"  name="biografia" rows="5" cols="34" >{{$usuario->biografia}}</textarea>
+                                @if ($errors->has('biografia'))
+                                    <span>
+                                        <strong>{{ $errors->first('biografia') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
                         </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Registro
+                                    Modificar perfil
                                 </button>
                             </div>
                         </div>
                     </form>
-                
+                </div>
             </div>
         </div>
     </div>

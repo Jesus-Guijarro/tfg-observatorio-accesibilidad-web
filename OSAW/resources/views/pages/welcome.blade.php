@@ -82,11 +82,9 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-                <?php 
-                    $user = Auth::user();
-                    $user->nombre="pepe";
+                <?php ;
 
-                    echo $user->nombre;
+                    echo date('Y-m-d H:i:s');
 
                 ?>
                 <div class="links">
