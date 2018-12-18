@@ -22,9 +22,12 @@
             </li>
         @else
             <li class="li-cabecera">
-                <a class = "a-hf" href="/perfil/{{Auth::user()->id}}" >
-                    {{ Auth::user()->nombre}}, Perfil de usuario
-                </a>
+                
+                <a class = "a-hf" href="/perfil/{{Auth::user()->id}}"> <img class="avatar-header" src="/storage/{{Auth::user()->avatar}}" alt="avatar usuario"></a>
+            </li>
+            <li class="li-cabecera">
+                
+                <a class = "a-hf" href="/perfil/{{Auth::user()->id}}"> {{ Auth::user()->nombre}}</a>
             </li>
             <li class="li-cabecera">
                 <a class = "a-hf" href="{{ route('logout') }}"

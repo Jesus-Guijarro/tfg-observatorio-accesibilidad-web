@@ -33,7 +33,8 @@ Route::get('reporte-automatico/{reporte}', 'PaginaController@mostrarReporteAutom
 
 #Usuarios
 Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario');
-Route::get('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
+Route::get('modificar-perfil/{id}', 'UserController@panelModificarPerfilUsuario');
+Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
 
 #Administrador
 Route::get('panel-admin/{id}', 'UserController@mostrarPanelAdministrador');

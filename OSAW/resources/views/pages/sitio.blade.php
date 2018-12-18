@@ -569,7 +569,6 @@
 <h1> Sitio Web </h1>
 <p style="text-decoration: underline"> <strong>{{$sitio->nombre}} </strong></p>
 <p><strong> Dirección web:</strong> <a href="http://{{ $sitio->dominio }}" target="_blank">{{ $sitio->dominio }}</a>
-<p><strong>Número de páginas webs evaluadas: </strong> {{$sitio->num_paginas}}</p>
 
 <table style="text-align: left">
     <tr>

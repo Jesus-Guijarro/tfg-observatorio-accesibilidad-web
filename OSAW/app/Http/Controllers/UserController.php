@@ -14,7 +14,13 @@ class UserController extends Controller
         return view('pages.usuario.perfil', array('usuario' => $usuario));
     }
 
-    public function modificarPerfilUsuario($id){
+    public function panelModificarPerfilUsuario($id){
+        $u = new User();
+        $usuario = $u->getUsuario($id);
+        return view('pages.usuario.modificar-perfil', array('usuario' => $usuario));
+    }
+
+    public function modificarPerfilUsuario(Request $request, $id){
         $u = new User();
         $usuario = $u->getUsuario($id);
         return view('pages.usuario.modificar-perfil', array('usuario' => $usuario));

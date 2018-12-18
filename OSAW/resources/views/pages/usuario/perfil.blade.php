@@ -5,9 +5,7 @@
 @section('content')
 <h1 class="h1-titulo"> Perfil de usuario</h1>
 
-<?php $imagen = Storage::url($usuario->avatar);?>
-
-<img src="{{$imagen}}" alt="Avatar usuario">
+<img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}">
 
 <p><strong> Nombre de usuario:  </strong> {{$usuario->nombre}} </p>
 <p><strong> Correo electrónico: </strong> {{$usuario->email}}</p>
