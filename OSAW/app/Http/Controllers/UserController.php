@@ -11,9 +11,6 @@ use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
-    
-
-
     public function mostrarPerfilUsuario($id){
         $u = new User();
         $usuario = $u->getUsuario($id);

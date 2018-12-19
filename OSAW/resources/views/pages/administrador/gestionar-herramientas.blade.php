@@ -5,6 +5,12 @@
 @section('content')
 <h1 class="h1-titulo"> Gestionar herramientas web </h1>
 
+@if(session()->has('mensaje'))
+    <div class="alert alert-success">
+        {{ session()->get('mensaje') }}
+    </div>
+@endif
+
 @if( count($herramientas) !== 0)
 <table style>
     <tr>

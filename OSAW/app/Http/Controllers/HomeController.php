@@ -28,6 +28,7 @@ class HomeController extends Controller
         $this->middleware('auth');
     }*/
 
+    //Función para mostrar la pantalla de inicio con ciertos datos de interés.
     public function mostrarInicio(){
         $sitio = new Sitio();
         $num_sitios = $sitio->getNumSitios();
@@ -58,9 +59,9 @@ class HomeController extends Controller
 
 
         return view('pages.inicio', array('num_sitios' => $num_sitios,'num_paginas'=>$num_paginas
-    ,'num_accessmonitors' => $num_accessmonitors,'num_acheckers' => $num_acheckers,
-    'num_eiiicheckers' => $num_eiiicheckers,'num_observatorios' => $num_observatorios,'num_vamolas' => $num_vamolas,
-    'num_waves' => $num_waves,'categorias'=>$categorias));
+            ,'num_accessmonitors' => $num_accessmonitors,'num_acheckers' => $num_acheckers,
+            'num_eiiicheckers' => $num_eiiicheckers,'num_observatorios' => $num_observatorios,'num_vamolas' => $num_vamolas,
+            'num_waves' => $num_waves,'categorias'=>$categorias));
 
     }
 

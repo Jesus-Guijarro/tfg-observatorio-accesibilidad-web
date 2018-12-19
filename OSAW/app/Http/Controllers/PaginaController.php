@@ -21,14 +21,21 @@ use Illuminate\Support\Facades\Redirect;
 
 class PaginaController extends Controller
 {
+    //Función para mostrar los datos de una página perteneciente a un sitio web
     public function mostrarPagina($id){
+        
+        //Datos de la página
         $p = new Pagina();
         $pagina = $p->getPagina($id);
 
+        //Datos del sitio al que pertenece
         $sitio = $p->getSitioPagina($id);
 
+        //Herramientas utilizada por el sitio
         $h = new Herramienta();
         $herramientas= $h->getHerramientasSitio($sitio->id);
+
+        //Datos y reportes de las evaluaciones de cada herramienta 
 
         $am = new Accessmonitor();
         $accessmonitors = $am->getAccessmonitorsPaginaGraficos($id);
@@ -65,13 +72,16 @@ class PaginaController extends Controller
         ));
     }
 
+    //Función para mostrar un reporte de evaluación
     public function mostrarReporteAutomatico($reporte){
 
+        //Se reemplaza el carácter '/' por problemas con las rutas de Laravel
         $reporte=str_replace("+","/",$reporte);
 
         return view('pages.reporte.automatico', array('reporte' => $reporte));
     }
 
+    //Función para mostrar la gestión de las páginas de un sitio web.
     public function gestionarPaginas($sitio_id){
 
         $sitio = new Sitio();
@@ -80,21 +90,35 @@ class PaginaController extends Controller
         return view('pages.administrador.gestionar-paginas', array('sitio_id'=>$sitio_id,'paginas' => $paginas));
     }
 
+    //Función para añadir una nueva página al sitio
     public function crearPagina(Request $request, $sitio_id){
 
         $url=$request->url;
-        $url=str_replace(array("\r\n","\r"," "),"",$url);
 
+        //Se eliminan caracteres de escape y espacios
+        $url=str_replace(array("\n","\r\n","\r"," "),"",$url);
+
+        //Se comprueba que el dominio del sitio se encuentra en la URL
+        $sitio=Sitio::findOrFail($sitio_id);
+        if(!strpos($url, $sitio->dominio)){
+            return back()->withErrors(['url'=>'No se encuentra el dominio del sitio en la URL']);
+        }
+
+        if(!get_headers($url)[0]==="HTTP/1.0 200 OK"){
+            return back()->withErrors(['url'=>'No se puede acceder a la URL']);
+        }
+
+        //Expresión regular para comprobar una url del formato "http|https://X.Y"
         $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
-
-        //VALIDAR
-        
         if(preg_match($regex,$url)){
             $p = new Pagina();
             $nueva = $p->paginaNueva($url);
                 if($nueva){
                     $p->crearPagina($url, $sitio_id);
                 }
+        }
+        else{
+            return back()->withErrors(['url'=>'El formato de la URL no es adecuado']);
         }
         
         return back()->with('mensaje', 'La página se ha añadido con éxito');

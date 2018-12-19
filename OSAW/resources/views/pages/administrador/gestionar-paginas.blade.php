@@ -36,6 +36,11 @@
     <form method="POST" action="<?php action('PaginaController@crearPagina', [$sitio_id])?>">
         <label for="url" >Nueva página web:  </label>
         <input type="text" id ="url" name="url"  required autofocus>
+        @if ($errors->has('url'))
+            <span>
+                <strong class="strong-val">{{ $errors->first('url') }}</strong>
+            </span>
+        @endif
 
             <button type="submit" class="btn btn-primary">
                Añadir
