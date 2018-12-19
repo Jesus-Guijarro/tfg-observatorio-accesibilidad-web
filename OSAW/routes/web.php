@@ -35,51 +35,44 @@ Route::get('pagina/{id}', 'PaginaController@mostrarPagina');
 Route::get('reporte-automatico/{reporte}', 'PaginaController@mostrarReporteAutomatico');
 
 #Usuarios
-Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario');
-Route::get('modificar-perfil/{id}', 'UserController@panelModificarPerfilUsuario');
-Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario');
+Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario')->middleware('auth');
+Route::get('modificar-perfil/{id}', 'UserController@panelModificarPerfilUsuario')->middleware('auth');
+Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario')->middleware('auth');
 
-Route::get('cambiar-password/{id}', 'UserController@panelCambiarPassword');
-Route::post('cambiar-password/{id}', 'UserController@cambiarPassword');
+Route::get('cambiar-password/{id}', 'UserController@panelCambiarPassword')->middleware('auth');
+Route::post('cambiar-password/{id}', 'UserController@cambiarPassword')->middleware('auth');
 
 #Gestión sitios web
-Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios');
+Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios')->middleware('auth','esAdmin');
 
-Route::get('crear-sitio', 'SitioController@panelCrearSitio');
-Route::post('crear-sitio', 'SitioController@crearSitio');
+Route::get('crear-sitio', 'SitioController@panelCrearSitio')->middleware('auth','esAdmin');
+Route::post('crear-sitio', 'SitioController@crearSitio')->middleware('auth','esAdmin');
 
-Route::get('modificar-sitio/{id}', 'SitioController@panelModificarSitio');
-Route::post('modificar-sitio/{id}', 'SitioController@modificarSitio');
+Route::get('modificar-sitio/{id}', 'SitioController@panelModificarSitio')->middleware('auth','esAdmin');
+Route::post('modificar-sitio/{id}', 'SitioController@modificarSitio')->middleware('auth','esAdmin');
 
-Route::get('eliminar-sitio/{id}', 'SitioController@eliminarSitio');
+Route::get('eliminar-sitio/{id}', 'SitioController@eliminarSitio')->middleware('auth','esAdmin');
 
 #Gestión paginas web
-Route::get('gestionar-paginas/{sitio_id}', 'PaginaController@gestionarPaginas');
-Route::post('gestionar-paginas/{sitio_id}', 'PaginaController@crearPagina');
-Route::get('eliminar-pagina/{id}', 'PaginaController@eliminarPagina');
+Route::get('gestionar-paginas/{sitio_id}', 'PaginaController@gestionarPaginas')->middleware('auth','esAdmin');
+Route::post('gestionar-paginas/{sitio_id}', 'PaginaController@crearPagina')->middleware('auth','esAdmin');
+Route::get('eliminar-pagina/{id}', 'PaginaController@eliminarPagina')->middleware('auth','esAdmin');
 
-Route::get('modificar-pagina/{id}', 'PaginaController@panelModificarPagina');
-Route::post('modificar-pagina/{id}', 'PaginaController@modificarPagina');
+Route::get('modificar-pagina/{id}', 'PaginaController@panelModificarPagina')->middleware('auth','esAdmin');
+Route::post('modificar-pagina/{id}', 'PaginaController@modificarPagina')->middleware('auth','esAdmin');
 
 #Gestión herramientas
-Route::get('gestionar-herramientas', 'HerramientaController@gestionarHerramientas');
-Route::post('gestionar-herramientas', 'HerramientaController@modificarHerramienta');
+Route::get('gestionar-herramientas', 'HerramientaController@gestionarHerramientas')->middleware('auth','esAdmin');
+Route::post('gestionar-herramientas', 'HerramientaController@modificarHerramienta')->middleware('auth','esAdmin');
 
 Route::get('crear-herramienta', function()
 {
     return View::make('pages.administrador.crear-herramienta');
-});
-Route::post('crear-herramienta', 'HerramientaController@crearHerramienta');
+})->middleware('auth','esAdmin');
+Route::post('crear-herramienta', 'HerramientaController@crearHerramienta')->middleware('auth','esAdmin');
 
-Route::get('desactivar-herramienta/{id}', 'HerramientaController@desactivarHerramienta');
-Route::get('activar-herramienta/{id}', 'HerramientaController@activarHerramienta');
-
-
-#Preguntas frecuentes
-Route::get('faq', function()
-{
-    return View::make('pages.faq');
-});
+Route::get('desactivar-herramienta/{id}', 'HerramientaController@desactivarHerramienta')->middleware('auth','esAdmin');
+Route::get('activar-herramienta/{id}', 'HerramientaController@activarHerramienta')->middleware('auth','esAdmin');
 
 #Contacto
 Route::get('contacto', function()

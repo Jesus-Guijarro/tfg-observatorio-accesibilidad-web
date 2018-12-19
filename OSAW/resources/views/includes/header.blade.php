@@ -63,11 +63,18 @@
 
 
 
-
-<div class="buscador">
-    <form method="GET" action="{{ action('SitioController@busquedaSitio') }}">
-        <label class="label-buscador" for="nombre" >Buscar Sitio Web: </label>
-        <input type="text" id ="nombre" name="nombre" required autofocus>
-        {{ csrf_field() }}
-    </form>
-</div>
+<nav class="nav-cabecera">
+    <ul class="ul-cabecera">
+        <li class="li-cabecera" >
+            <a class = "a-hf" href="lista-sitios">Listado de sitios web </a>
+        </li>
+        
+        <li class="li-cabecera">
+            <form style="display:inline" method="GET" action="{{ action('SitioController@busquedaSitio') }}">
+                <label class="label-buscador" for="nombre" >Buscar Sitio Web: </label>
+                <input type="text" id ="nombre" name="nombre" required autofocus>
+                {{ csrf_field() }}
+            </form>
+        </li>
+    </ul>
+</nav>
