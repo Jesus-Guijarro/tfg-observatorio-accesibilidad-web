@@ -16,6 +16,7 @@
         <tr>
             <td> {{$herramienta->descripcion}}</td>
             <td> {{$herramienta->nombre}}</td>
+            
             @if ($herramienta->activa===1)
                 <td>Activa</td>
                     <?php 
@@ -29,6 +30,7 @@
                 ?>
                 <td><a href="{{$url}}">Activar herramienta</a></td>
             @endif
+                <td> <a href="modificar-herramienta/{{$herramienta->id}}">Modificar</a></td>
         </tr>
     @endforeach
 </table>

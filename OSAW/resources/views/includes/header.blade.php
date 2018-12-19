@@ -63,14 +63,17 @@
 
 
 
-<nav class="nav-cabecera">
+<nav>
     <ul class="ul-cabecera">
+        <li class="li-cabecera" >
+            <a class = "a-hf" href="/">Inicio </a>
+        </li>
         <li class="li-cabecera" >
             <a class = "a-hf" href="/lista-sitios">Listado de sitios web </a>
         </li>
         
         <li class="li-cabecera">
-            <form style="display:inline" method="GET" action="{{ action('SitioController@busquedaSitio') }}">
+            <form style="display:inline;float: right;" method="GET" action="{{ action('SitioController@busquedaSitio') }}">
                 <label class="label-buscador" for="nombre" >Buscar Sitio Web: </label>
                 <input type="text" id ="nombre" name="nombre" required autofocus>
                 {{ csrf_field() }}

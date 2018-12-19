@@ -74,6 +74,9 @@ Route::post('crear-herramienta', 'HerramientaController@crearHerramienta')->midd
 Route::get('desactivar-herramienta/{id}', 'HerramientaController@desactivarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
 Route::get('activar-herramienta/{id}', 'HerramientaController@activarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
 
+Route::get('modificar-herramienta/{id}', 'HerramientaController@panelModificarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
+Route::post('modificar-herramienta/{id}', 'HerramientaController@modificarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
+
 #Contacto
 Route::get('contacto', function()
 {

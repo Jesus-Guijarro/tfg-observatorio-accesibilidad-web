@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('titulo', 'Gestionar paginas web')
+@section('titulo', 'Modificar paginas web')
 
 @section('content')
 

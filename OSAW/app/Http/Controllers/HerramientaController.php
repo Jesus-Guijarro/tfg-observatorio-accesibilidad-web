@@ -32,7 +32,19 @@ class HerramientaController extends Controller
         return redirect("/crear-herramienta")->with('mensaje', 'Herramienta añadida');
     }
 
+
+    public function panelModificarHerramienta($id){
+
+        $h=new Herramienta();
+        $herramienta = $h->getHerramienta($id);
+
+        return view('pages.administrador.modificar-herramienta', array('herramienta' => $herramienta));
+
+    }
+
     public function modificarHerramienta(Request $request, $id){
+
+        $h=new Herramienta();
 
         $this->validate($request, [
             'nombre' => 'required|unique:herramientas|min:2|max:40',
@@ -42,7 +54,7 @@ class HerramientaController extends Controller
         $nombre=$request->nombre;
         $descripcion=$request->descripcion;
 
-        $s->crearHerramientaactualizarHerramienta($id,$nombre,$descripcion);
+        $h->actualizarHerramienta($id,$nombre,$descripcion);
 
         return back()->with('mensaje', 'Herramienta modificada');
 
