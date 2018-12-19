@@ -12,7 +12,15 @@
                 <label for="categoria" >Filtrar por Categoria Institucional:  </label>
                 <select name="categoria">
                     @foreach ($categorias as $cat)
-                        <option value="{{$cat->id}}">{{$cat->descripcion}}</option>
+                    @if(!empty($categoria))
+                            @if($cat->id===$categoria->id)
+                                <option value="{{$cat->id}}" selected>{{$cat->descripcion}}</option>
+                            @else
+                                <option value="{{$cat->id}}" >{{$cat->descripcion}}</option>
+                            @endif
+                        @else
+                            <option value="{{$cat->id}}" >{{$cat->descripcion}}</option>
+                        @endif
                     @endforeach
                 </select>
             <button type="submit" class="btn btn-primary">
