@@ -64,7 +64,7 @@ function mostrarEliminar() {
 
         <div class="col-md-8">
 
-            <select name="categoria">
+            <select id="categoria" name="categoria">
             @foreach ($categorias as $categoria)
               @if($categoria->id === $sitio->categoria_id)
                   <option value="{{$categoria->id}}" selected="selected">{{$categoria->descripcion}}</option>
@@ -88,13 +88,13 @@ function mostrarEliminar() {
         <div class="col-md-4">
 
             @foreach ($herramientas as $herramienta)
+                <label for="{{$herramienta->nombre}}" hidden>Seleccionar herramienta</label>
                 @if (in_array($herramienta->id,$herramientas_sitio))
-                    <input type='hidden' name="{{$herramienta->nombre}}" value="H:{{$herramienta->id}}"> 
-                    <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}" checked> {{$herramienta->descripcion}}<br>
-                    
+                    <input type='hidden' id="{{$herramienta->nombre}}" name="{{$herramienta->nombre}}" value="H:{{$herramienta->id}}"> 
+                    <input type="checkbox" id="{{$herramienta->nombre}}" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}" checked> {{$herramienta->descripcion}}<br>
                 @else
-                    <input type='hidden' name="{{$herramienta->nombre}}" value="H:{{$herramienta->id}}"> 
-                    <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
+                    <input type='hidden' id="{{$herramienta->nombre}}" name="{{$herramienta->nombre}}" value="H:{{$herramienta->id}}"> 
+                    <input type="checkbox" id="{{$herramienta->nombre}}" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
                     
                 @endif
             @endforeach
@@ -106,7 +106,7 @@ function mostrarEliminar() {
         <label for="paginas" class="col-md-4 col-form-label text-md-right">Añadir páginas web</label>
 
         <div class="col-md-8">
-            <textarea name="paginas" rows="10" cols="50" placeholder="Una dirección en cada línea: http://www.renfe.com" value="{{ old('paginas') }}" ></textarea>
+            <textarea id="paginas" name="paginas" rows="10" cols="50" placeholder="Una dirección en cada línea: http://www.renfe.com" value="{{ old('paginas') }}" ></textarea>
             @if ($errors->has('paginas'))
                 <span>
                     <strong class="strong-val">{{ $errors->first('paginas') }}</strong>
@@ -141,7 +141,7 @@ function mostrarEliminar() {
     <div class="form-group row">
         <label for="periodicidad" class="col-md-4 col-form-label text-md-right">Periodicidad de la evaluación</label>
         <div class="col-md-8">
-            <select name="periodicidad">
+            <select id="periodicidad" name="periodicidad">
             @if($sitio->periodicidad === "Diaria")
                 <option value="Diaria" selected="selected">Diaria</option>
             @else
@@ -200,10 +200,11 @@ function mostrarEliminar() {
     <div class="form-group row">
         <span class="col-md-4 col-form-label text-md-right"></span>
         <div class="col-md-4">
+        <label for="automatizado" hidden>Automatizar</label>
             @if($sitio->automatizado==true)
-                <input type="checkbox" name="automatizado" checked> Realizar seguimiento <br>
+                <input type="checkbox" id="automatizado" name="automatizado" checked> Realizar seguimiento <br>
             @else
-                <input type="checkbox" name="automatizado"> Realizar seguimiento <br>
+                <input type="checkbox" id="automatizado" name="automatizado"> Realizar seguimiento <br>
             @endif
         </div>
     </div>

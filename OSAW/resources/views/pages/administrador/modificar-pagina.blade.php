@@ -14,12 +14,17 @@
 
 <div style="margin-bottom: 1.5em">
     <form method="POST" action="<?php action('PaginaController@modificarPagina', $id)?>">
-        
+        <label for="url">URL</label>
         <input type="text" id ="url" name="url" value="{{$pagina->URL}}"   required >
 
-            <button type="submit" class="btn btn-primary">
-               Modificar
-            </button>
+        @if ($errors->has('url'))
+            <span>
+                <strong class="strong-val">{{ $errors->first('url') }}</strong>
+            </span>
+        @endif
+        <button type="submit" class="btn btn-primary">
+            Modificar
+        </button>
         {{ csrf_field() }}
     </form>
 </div>
