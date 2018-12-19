@@ -24,7 +24,9 @@ Route::get('/', 'HomeController@mostrarInicio');
 #Sitios web
 Route::get('sitio/{id}', 'SitioController@mostrarSitio');
 Route::get('lista-sitios/{categoria?}', 'SitioController@listarSitios');
+Route::post('lista-sitios/{categoria?}', 'SitioController@listarSitiosPorCategoria');
 Route::get('busqueda-sitios/{categoria?}', 'SitioController@busquedaSitio');
+Route::post('busqueda-sitios/{categoria?}', 'SitioController@busquedaSitioPorCategoria');
 
 #Pagina web
 Route::get('pagina/{id}', 'PaginaController@mostrarPagina');

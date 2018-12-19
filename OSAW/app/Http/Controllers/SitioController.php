@@ -71,6 +71,20 @@ class SitioController extends Controller
 
     }
 
+    public function listarSitiosPorCategoria(Request $request){
+        
+        $cat = $request->categoria;
+        
+        $sitio = new Sitio();
+        $sitios = $sitio->getSitiosCategoria($cat);
+
+        $c = new Categoria();
+        $categoria = $c->getCategoria($cat);
+        $categorias = $c->getCategorias();
+
+        return view('pages.lista-sitios', array('sitios'=>$sitios,'categorias'=>$categorias, 'categoria'=>$categoria));
+    }
+
     public function busquedaSitio(){
 
         $nombre =  Input::get('nombre');
@@ -82,6 +96,22 @@ class SitioController extends Controller
         $categorias = $c->getCategorias();
 
         return view('pages.busqueda-sitios', array('sitios' => $sitios,'nombre' => $nombre,'categorias'=>$categorias));
+    }
+
+    public function busquedaSitioPorCategoria(Request $request){
+        
+        $nombre= $request->nombre_post;
+
+        $cat = $request->categoria;
+        
+        $sitio = new Sitio();
+        $sitios = $sitio->getSitiosCategoriaNombre($nombre,$cat);
+
+        $c = new Categoria();
+        $categoria = $c->getCategoria($cat);
+        $categorias = $c->getCategorias();
+
+        return view('pages.busqueda-sitios', array('sitios'=>$sitios,'nombre' => $nombre,'categorias'=>$categorias, 'categoria'=>$categoria));
     }
 
 

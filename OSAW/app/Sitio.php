@@ -50,6 +50,16 @@ class Sitio extends Model
         return $sitios;
     }
 
+    public function getSitiosCategoriaNombre($nombre,$categoria_id){
+        $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','categorias.descripcion')->
+        join('categorias','sitios.categoria_id','=','categorias.id')->
+        where('categoria_id',$categoria_id)->
+        where('nombre','like','%'.$nombre.'%')->
+        orderBy('sitios.nombre','asc')->
+        simplePaginate(15);
+        return $sitios;
+    }
+
     public function getSitios(){
         $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','categorias.descripcion')->
         join('categorias','sitios.categoria_id','=','categorias.id')->

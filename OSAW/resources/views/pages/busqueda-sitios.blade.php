@@ -13,19 +13,25 @@
                 {{ csrf_field() }}
         </form>
     </div>
-
     <div style="margin-bottom: 1.5em">
-        <form method="GET">
+        <form method="POST" action="<?php action('SitioController@busquedaSitioPorCategoria') ?>">
+            {{ csrf_field() }}
+                <input type="text" id ="nombre_post" name="nombre_post" value="{{$nombre}}" hidden>
                 <label for="categoria" >Filtrar por Categoria Institucional:  </label>
-                <select>
-                    @foreach ($categorias as $categoria)
-                    <option value="{{$categoria->id}}">{{$categoria->descripcion}}</option>
+                <select name="categoria">
+                    @foreach ($categorias as $cat)
+                        <option value="{{$cat->id}}">{{$cat->descripcion}}</option>
                     @endforeach
                 </select>
-                {{ csrf_field() }}
+            <button type="submit" class="btn btn-primary">
+                Filtrar
+            </button>
         </form>
     </div>
 
+    @isset ($categoria)
+        <h2> {{$categoria->descripcion}}</h2>
+    @endisset
 
     @if( count($sitios) !== 0)
     <table style>
