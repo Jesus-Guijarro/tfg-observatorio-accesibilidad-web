@@ -51,7 +51,7 @@
 
         <div class="col-md-8">
 
-            <select name="categoria">
+            <select id="categoria" name="categoria">
             @foreach ($categorias as $categoria)
                 <option value="{{$categoria->id}}">{{$categoria->descripcion}}</option>
             @endforeach
@@ -71,7 +71,8 @@
         <div class="col-md-4">
 
             @foreach ($herramientas as $herramienta)
-                <input type="checkbox" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
+                <label for="{{$herramienta->nombre}}" hidden> Seleccionar herramienta</label>
+                <input type="checkbox" id="{{$herramienta->nombre}}" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
             @endforeach
         </div>
     </div>
@@ -81,7 +82,8 @@
         <label for="paginas" class="col-md-4 col-form-label text-md-right">Páginas web</label>
 
         <div class="col-md-8">
-            <textarea name="paginas" rows="10" cols="50" placeholder="Una dirección en cada línea: http://www.renfe.com" value="{{ old('paginas') }}" ></textarea>
+
+            <textarea id="paginas" name="paginas" rows="10" cols="50" placeholder="Una dirección en cada línea: http://www.renfe.com" value="{{ old('paginas') }}" ></textarea>
             @if ($errors->has('paginas'))
                 <span>
                     <strong class="strong-val">{{ $errors->first('paginas') }}</strong>
@@ -110,7 +112,7 @@
 
         <div class="col-md-8">
 
-            <select name="periodicidad">
+            <select id="periodicidad" name="periodicidad">
                 <option value="Diaria">Diaria</option>
                 <option value="Semanal">Semanal</option>
                 <option value="Mensual">Mensual</option>
@@ -159,7 +161,8 @@
     <div class="form-group row">
         <span class="col-md-4 col-form-label text-md-right"></span>
         <div class="col-md-4">
-            <input type="checkbox" name="automatizado"> Realizar seguimiento <br>
+            <label for="automatizado" hidden>Automatizar</label>
+            <input type="checkbox" id="automatizado" name="automatizado"> Realizar seguimiento <br>
         </div>
     </div>
 

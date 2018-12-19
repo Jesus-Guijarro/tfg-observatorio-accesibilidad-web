@@ -16,9 +16,10 @@
     <div style="margin-bottom: 1.5em">
         <form method="POST" action="<?php action('SitioController@busquedaSitioPorCategoria') ?>">
             {{ csrf_field() }}
+                <label for="nombre_post" hidden>Buscar Sitio Web:  </label>
                 <input type="text" id ="nombre_post" name="nombre_post" value="{{$nombre}}" hidden>
                 <label for="categoria" >Filtrar por Categoria Institucional:  </label>
-                <select name="categoria">
+                <select id="categoria" name="categoria">
                     @foreach ($categorias as $cat)
                         @if(!empty($categoria))
                             @if($cat->id===$categoria->id)

@@ -10,7 +10,7 @@
         <form method="POST" action="<?php action('SitioController@listarSitiosPorCategoria') ?>">
             {{ csrf_field() }}
                 <label for="categoria" >Filtrar por Categoria Institucional:  </label>
-                <select name="categoria">
+                <select id="categoria" name="categoria">
                     @foreach ($categorias as $cat)
                     @if(!empty($categoria))
                             @if($cat->id===$categoria->id)

@@ -82,8 +82,3 @@ Route::get('contacto', function()
 Route::post('contacto','ContactoController@realizarContacto');
 
 
-Route::get('w', function()
-{
-    return View::make('pages.welcome');
-});
-
