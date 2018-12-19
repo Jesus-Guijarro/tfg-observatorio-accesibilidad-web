@@ -104,55 +104,84 @@ class PaginaController extends Controller
             return back()->withErrors(['url'=>'No se encuentra el dominio del sitio en la URL']);
         }
 
+        //Expresión regular para comprobar una url del formato "http|https://X.Y"
+        $regex = '/((http|https)\:\/\/)[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
+        if(!preg_match($regex,$url)){
+            return back()->withErrors(['url'=>'La URL no tiene el formato adecuado']);
+        }
+
+        //Se verifica que se puede acceder a la URL
         if(!get_headers($url)[0]==="HTTP/1.0 200 OK"){
             return back()->withErrors(['url'=>'No se puede acceder a la URL']);
         }
 
-        //Expresión regular para comprobar una url del formato "http|https://X.Y"
-        $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
-        if(preg_match($regex,$url)){
-            $p = new Pagina();
-            $nueva = $p->paginaNueva($url);
-                if($nueva){
-                    $p->crearPagina($url, $sitio_id);
-                }
+        
+        //Última comprobación por si la página es nueva o no
+        $p = new Pagina();
+        $nueva = $p->paginaNueva($url);
+        if($nueva){
+            //Se añade en caso positivo
+            $p->crearPagina($url, $sitio_id);
         }
         else{
-            return back()->withErrors(['url'=>'El formato de la URL no es adecuado']);
+            return back()->withErrors(['url'=>'La URL ya se encuentra añadida']);
         }
         
         return back()->with('mensaje', 'La página se ha añadido con éxito');
     }
 
+    //Función para mostrar el panel para actualizar una página
     public function panelModificarPagina($id){
 
         $p = new Pagina();
-
         $pagina = $p->getPagina($id);
         
         return view('pages.administrador.modificar-pagina',array('id'=>$id,'pagina'=>$pagina));
-
-        //return back()->with('mensaje', 'La página se ha modificado con éxito');
-        
     }
 
+    //Función para modificar la página
     public function modificarPagina(Request $request, $id){
 
         $url =  $request->url;
 
         $p = new Pagina();
-
         $pagina = $p->getPagina($id);
-        $pagina->actualizarPagina($id,$url);
 
+        //Se eliminan caracteres de escape y espacios
+        $url=str_replace(array("\n","\r\n","\r"," "),"",$url);
+
+        //Se comprueba que el dominio del sitio se encuentra en la URL
+        $sitio=Sitio::findOrFail($pagina->sitio_id);
+        if(!strpos($url, $sitio->dominio)){
+            return back()->withErrors(['url'=>'No se encuentra el dominio del sitio en la URL']);
+        }
+
+        //Expresión regular para comprobar una url del formato "http|https://X.Y"
+        $regex = '/((http|https)\:\/\/)[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
+        if(!preg_match($regex,$url)){
+            return back()->withErrors(['url'=>'La URL no tiene el formato adecuado']);
+        }
+
+        //Se verifica que se puede acceder a la URL
+        if(!get_headers($url)[0]==="HTTP/1.0 200 OK"){
+            return back()->withErrors(['url'=>'No se puede acceder a la URL']);
+        }
+        if($p->paginaNueva($url)){
+            //Se añade en caso positivo
+            $pagina->actualizarPagina($id,$url);
+        }
+        else{
+            return back()->withErrors(['url'=>'La URL ya se encuentra añadida']);
+        }
+        
         return back()->with('mensaje', 'La página se ha modificado con éxito');
         
     }
 
+    //Función para eliminar una página
     public function eliminarPagina($id){
 
         $p = new Pagina();
-
         $pagina = $p->borrarPagina($id);
 
         return back();
