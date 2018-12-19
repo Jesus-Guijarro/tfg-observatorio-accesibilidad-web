@@ -240,9 +240,12 @@ class SitioController extends Controller
     }
 
     public function modificarSitio(Request $request, $id){
+
+        $sitio = Sitio::findOrFail($id);
+
         //Validaciones
         $this->validate($request, [
-            'nombre' => 'required|string|unique:sitios|min:2|max:70',
+            'nombre' => 'required|string|min:2|max:70|unique:sitios,nombre,'.$sitio->id,
             'dominio' => ['required','regex:/^(?:[-A-Za-z0-9]+\.)+[A-Za-z]{2,6}$/'],
             'num_paginas' => 'min:0|max:20|integer',
             'hora' => ['required','regex:/^([0-1][0-9]|[2][0-3]):([0-5][0-9])?$/'],
@@ -339,10 +342,9 @@ class SitioController extends Controller
 
         //Llamada crawler
         $num_paginas=$request->num_paginas;
-        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$id." ".$num_paginas;
-        $crawler = new Process($comando);
+        $comando_crawler='/usr/bin/python3 '.$ruta_webscraping.'crawler.py '.$id.' '.$num_paginas;
+        $crawler = new Process($comando_crawler);
         $crawler->run();
-
         
         //Llamada a cron
         if($automatizado){

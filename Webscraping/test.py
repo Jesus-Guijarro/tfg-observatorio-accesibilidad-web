@@ -1,9 +1,10 @@
-from herramienta import getDirectorioOSAW , getRutaReporte ,getRutaReporte
+from selenium import webdriver
 
-directorio = getDirectorioOSAW()
+opciones = webdriver.ChromeOptions()
 
-ruta_reporte=getRutaReporte(directorio,"wave",1,"20-20")
-ruta_BD=getRutaReporte("","wave",1,"20-20")
+opciones.binary_location = '/usr/bin/google-chrome'
 
-print (ruta_reporte)
-print (ruta_BD)
+
+driver = webdriver.Chrome(chrome_options=opciones)
+
+driver.get('http://www.gva.es/es/inicio/administraciones/adm_tramites_y_servicios')

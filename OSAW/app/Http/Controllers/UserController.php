@@ -30,10 +30,12 @@ class UserController extends Controller
         
         $usuario = User::findOrFail($id);
         
+        //Max:2048 -> 2MB de tamaño maximo de imagen de avatar
+
         $this->validate($request, [
            'nombre' => 'required|string|min:2|max:20|unique:users,nombre,'.$usuario->id,
            'email' => 'required|string|email|max:40|unique:users,email,'.$usuario->id,
-           'avatar'=> 'image|mimes:jpeg,bmp,png,jpg,gif|max:2048',
+           'avatar'=> 'image|mimes:jpeg,bmp,png,jpg,gif,svg|max:2048',
        ]);
         
        $usuario->nombre = $request->nombre;

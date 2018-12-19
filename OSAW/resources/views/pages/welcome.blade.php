@@ -82,9 +82,13 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-                <?php ;
+                <?php 
 
-                    echo date('Y-m-d H:i:s');
+list($scriptPath) = get_included_files();
+$ruta = $scriptPath;
+$ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/",$ruta);
+
+echo $ruta_webscraping;
 
                 ?>
                 <div class="links">
