@@ -35,44 +35,44 @@ Route::get('pagina/{id}', 'PaginaController@mostrarPagina');
 Route::get('reporte-automatico/{reporte}', 'PaginaController@mostrarReporteAutomatico');
 
 #Usuarios
-Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario')->middleware('auth');
-Route::get('modificar-perfil/{id}', 'UserController@panelModificarPerfilUsuario')->middleware('auth');
-Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario')->middleware('auth');
+Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario')->middleware('auth','prevenirAtras','prevenirAtras');
+Route::get('modificar-perfil/{id}', 'UserController@panelModificarPerfilUsuario')->middleware('auth','prevenirAtras');
+Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario')->middleware('auth','prevenirAtras');
 
-Route::get('cambiar-password/{id}', 'UserController@panelCambiarPassword')->middleware('auth');
-Route::post('cambiar-password/{id}', 'UserController@cambiarPassword')->middleware('auth');
+Route::get('cambiar-password/{id}', 'UserController@panelCambiarPassword')->middleware('auth','prevenirAtras');
+Route::post('cambiar-password/{id}', 'UserController@cambiarPassword')->middleware('auth','prevenirAtras');
 
 #Gestión sitios web
-Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios')->middleware('auth','esAdmin');
+Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios')->middleware('auth','prevenirAtras','esAdmin');
 
-Route::get('crear-sitio', 'SitioController@panelCrearSitio')->middleware('auth','esAdmin');
-Route::post('crear-sitio', 'SitioController@crearSitio')->middleware('auth','esAdmin');
+Route::get('crear-sitio', 'SitioController@panelCrearSitio')->middleware('auth','prevenirAtras','esAdmin');
+Route::post('crear-sitio', 'SitioController@crearSitio')->middleware('auth','prevenirAtras','esAdmin');
 
-Route::get('modificar-sitio/{id}', 'SitioController@panelModificarSitio')->middleware('auth','esAdmin');
-Route::post('modificar-sitio/{id}', 'SitioController@modificarSitio')->middleware('auth','esAdmin');
+Route::get('modificar-sitio/{id}', 'SitioController@panelModificarSitio')->middleware('auth','prevenirAtras','esAdmin');
+Route::post('modificar-sitio/{id}', 'SitioController@modificarSitio')->middleware('auth','prevenirAtras','esAdmin');
 
-Route::get('eliminar-sitio/{id}', 'SitioController@eliminarSitio')->middleware('auth','esAdmin');
+Route::get('eliminar-sitio/{id}', 'SitioController@eliminarSitio')->middleware('auth','prevenirAtras','esAdmin');
 
 #Gestión paginas web
-Route::get('gestionar-paginas/{sitio_id}', 'PaginaController@gestionarPaginas')->middleware('auth','esAdmin');
-Route::post('gestionar-paginas/{sitio_id}', 'PaginaController@crearPagina')->middleware('auth','esAdmin');
-Route::get('eliminar-pagina/{id}', 'PaginaController@eliminarPagina')->middleware('auth','esAdmin');
+Route::get('gestionar-paginas/{sitio_id}', 'PaginaController@gestionarPaginas')->middleware('auth','prevenirAtras','esAdmin');
+Route::post('gestionar-paginas/{sitio_id}', 'PaginaController@crearPagina')->middleware('auth','prevenirAtras','esAdmin');
+Route::get('eliminar-pagina/{id}', 'PaginaController@eliminarPagina')->middleware('auth','prevenirAtras','esAdmin');
 
-Route::get('modificar-pagina/{id}', 'PaginaController@panelModificarPagina')->middleware('auth','esAdmin');
-Route::post('modificar-pagina/{id}', 'PaginaController@modificarPagina')->middleware('auth','esAdmin');
+Route::get('modificar-pagina/{id}', 'PaginaController@panelModificarPagina')->middleware('auth','prevenirAtras','esAdmin');
+Route::post('modificar-pagina/{id}', 'PaginaController@modificarPagina')->middleware('auth','prevenirAtras','esAdmin');
 
 #Gestión herramientas
-Route::get('gestionar-herramientas', 'HerramientaController@gestionarHerramientas')->middleware('auth','esAdmin');
-Route::post('gestionar-herramientas', 'HerramientaController@modificarHerramienta')->middleware('auth','esAdmin');
+Route::get('gestionar-herramientas', 'HerramientaController@gestionarHerramientas')->middleware('auth','prevenirAtras','esAdmin');
+Route::post('gestionar-herramientas', 'HerramientaController@modificarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
 
 Route::get('crear-herramienta', function()
 {
     return View::make('pages.administrador.crear-herramienta');
-})->middleware('auth','esAdmin');
-Route::post('crear-herramienta', 'HerramientaController@crearHerramienta')->middleware('auth','esAdmin');
+})->middleware('auth','prevenirAtras','esAdmin');
+Route::post('crear-herramienta', 'HerramientaController@crearHerramienta')->middleware('auth','prevenirAtras','esAdmin');
 
-Route::get('desactivar-herramienta/{id}', 'HerramientaController@desactivarHerramienta')->middleware('auth','esAdmin');
-Route::get('activar-herramienta/{id}', 'HerramientaController@activarHerramienta')->middleware('auth','esAdmin');
+Route::get('desactivar-herramienta/{id}', 'HerramientaController@desactivarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
+Route::get('activar-herramienta/{id}', 'HerramientaController@activarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
 
 #Contacto
 Route::get('contacto', function()

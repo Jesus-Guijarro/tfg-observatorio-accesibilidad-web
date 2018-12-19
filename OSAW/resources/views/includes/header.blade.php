@@ -66,7 +66,7 @@
 <nav class="nav-cabecera">
     <ul class="ul-cabecera">
         <li class="li-cabecera" >
-            <a class = "a-hf" href="lista-sitios">Listado de sitios web </a>
+            <a class = "a-hf" href="/lista-sitios">Listado de sitios web </a>
         </li>
         
         <li class="li-cabecera">

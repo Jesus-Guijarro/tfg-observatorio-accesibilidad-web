@@ -209,10 +209,6 @@ class SitiosTableSeeder extends Seeder
      
 
         #Entidades públicas empresariales
-        $json = array('accessmonitor' => true, 'achecker' => false, 'eiiichecker' => true, 
-        'observatorio' => true, 'vamola' => false,'wave' => false);
-
-        $herramientas= json_encode($json);
 
         DB::table('sitios')->insert([
             [

@@ -20,7 +20,7 @@ class CreateSitiosTable extends Migration
             $table->string('periodicidad');
             $table->string('hora');
             $table->integer('dia');
-            $table ->boolean('automatizado');
+            $table->boolean('automatizado');
 
             $table->integer('categoria_id')->unsigned()->nullable();
             $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete("set null");
