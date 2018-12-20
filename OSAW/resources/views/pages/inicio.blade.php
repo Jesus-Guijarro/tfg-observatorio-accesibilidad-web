@@ -3,9 +3,11 @@
 @section('titulo', 'Pagina de inicio')
 
 @section('content')
-<h1> ¡Bienvenido al Observatorio para el Seguimiento de la Accesibilidad Web (OSAW)!</h1>
-<p> En la actualidad el observatorio hace uso de las siguientes herramientas online gratuitas para realizar los análisis y seguimiento de los sitios institucionales:</p>
+<h1 class ="h1-encabezado-inicio"> Bienvenido al Observatorio para el Seguimiento de la Accesibilidad Web (OSAW)</h1>
 
+<h2>Razón de ser</h2>
+<p> El <strong>Observatorio para el Seguimiento de la Accesibilidad Web </strong> se ha desarrollado con la finalidad de poder realizar un seguimiento de aquellos sitios web que por ley deben ser accesibles. </p>
+<p>Para llevar a cabo esta tarea se ha hecho uso de herramientas online gratuitas de evaluación de la accesibilidad web: </p>
 <ul>
     <a href="http://www.acessibilidade.gov.pt/accessmonitor/" target="_blank"><li>AccessMonitor</li></a>
     <a href="https://achecker.ca/checker/index.php"target="_blank"><li>Achecher</li></a>
@@ -15,6 +17,9 @@
     <a href="https://wave.webaim.org/"target="_blank"><li>WAVE</li></a>
 </ul>
 
+<p> Los análisis se hacen de forma periodica y automática, pudiéndose selecionar la periodicidad de estos para que sea diaria, semanal o mensual. </p>
+<p>También es posible indicar el día de la semana o mes, y la hora del análisis.</p>
+
 <hr>
 
 <h2>Datos del observatorio</h2>
@@ -23,48 +28,51 @@
 <p><a href="/lista-sitios">Ver sitios webs analizados </a></p>
 <p>Número total de <strong>paginas web</strong> evaluadas: <strong>{{$num_paginas}}</strong></p>  
 
-<hr>
 
 <h3> Categorias institucionales y de organización contempladas </h3>
 <ul>
 @foreach ($categorias as $categoria)
-<li>{{$categoria->descripcion}}</li>
+    <li>{{$categoria->descripcion}}</li>
 @endforeach
 </ul>
 
-<hr>
+<h3> Número de evaluaciones realizadas por cada herramienta</h3>
 
-<h3> Número de evaluaciones realizadas por cada herramienta </h3>
 
-<table>
-    <tr>
-        <th>Herramienta</th>
-        <th>Número de evaluaciones</th>
-    </tr>
-    <tr>
-        <td >AccessMonitor</td>
-        <td> {{$num_accessmonitors}}</td>
-    </tr>
-    <tr>
-        <td >AChecker</td>
-        <td> {{$num_acheckers}}</td>
-    </tr>
-    <tr>
-        <td >EIII Page Checker</td>
-        <td> {{$num_eiiicheckers}}</td>
-    </tr>
-    <tr>
-        <td >Observatorio Accesibilidad Web UPS de Ecuador</td>
-        <td> {{$num_observatorios}}</td>
-    </tr>
-    <tr>
-        <td >Vamolà</td>
-        <td> {{$num_vamolas}}</td>
-    </tr>
-    <tr>
-        <td >WAVE</td>
-        <td> {{$num_waves}}</td>
-    </tr>
+<table summary="Tabla que contiene las herramientas utilizadas por el observatorio en la primera columna y su respectivo número de análisis en la segunda columna">
+    <caption>Herramientas de análisis y el número de evaluaciones realizadas</caption>
+    <thead>
+        <tr>
+            <th>Herramienta</th>
+            <th>Número de evaluaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td >AccessMonitor</td>
+            <td> {{$num_accessmonitors}}</td>
+        </tr>
+        <tr>
+            <td >AChecker</td>
+            <td> {{$num_acheckers}}</td>
+        </tr>
+        <tr>
+            <td >EIII Page Checker</td>
+            <td> {{$num_eiiicheckers}}</td>
+        </tr>
+        <tr>
+            <td >Observatorio Accesibilidad Web UPS de Ecuador</td>
+            <td> {{$num_observatorios}}</td>
+        </tr>
+        <tr>
+            <td >Vamolà</td>
+            <td> {{$num_vamolas}}</td>
+        </tr>
+        <tr>
+            <td >WAVE</td>
+            <td> {{$num_waves}}</td>
+        </tr>
+    <tbody>
 </table>
 
 @endsection

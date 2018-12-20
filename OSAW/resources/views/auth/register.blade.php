@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1 class="h1-titulo"> Registro </h1>
+<h1 class="h1-encabezado"> Registro </h1>
 
 <div class="container">
     <div class="row justify-content-center">

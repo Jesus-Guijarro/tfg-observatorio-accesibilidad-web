@@ -1,8 +1,20 @@
 
 /*Enlaces*/
+
+.a-logo{
+    color: white;
+    font-size: 1.1875em;
+    border-style: groove;
+}
+
+.a-logo:hover{
+    color: white;
+}
+
 .a-hf{
     color: white;
 }
+
 
 .a-hf:hover{
     color: white;
@@ -13,22 +25,28 @@
 /*Cabecera*/
 .cabecera{
     background: #1f3653;
-    padding: 1.5em 1.5em;
+    padding: 1em 1em;
     /*border-bottom: 0.25em solid black;*/
 }
 .nav-cabecera{
     display: flex;
 }
 
+.nav-cabecera-debajo{
+    margin-top: 1em;
+}
+
 .ul-cabecera{
     margin-left: auto !important;
-    margin-top: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.2em;
 }
 
 .li-cabecera{
     display: inline;
-    margin-right: 2.5em;
+    margin-right: 1em;
 }
+
 
 .osaw{
     text-align: center;
@@ -58,6 +76,10 @@
     padding: 1.5em 1.5em;
 }
 
+.nav-pie{
+    display: flex;
+}
+
 .li-pie{
     display: inline;
     margin-right: 2.5em;
@@ -74,9 +96,18 @@
 }
 
 /*titulo paginas*/
-.h1-titulo{
+.h1-encabezado{
     color:rgb(34, 104, 184);
     font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.h1-encabezado-inicio{
+    color:rgb(34, 104, 184);
+    font-size: 2.275em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin-top: 0.5em;

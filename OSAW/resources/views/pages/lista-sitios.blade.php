@@ -4,7 +4,7 @@
 
 @section('content')
     
-    <h1 class="h1-titulo"> Listado de sitios webs evaluados</h1>
+    <h1 class="h1-encabezado"> Listado de sitios webs evaluados</h1>
 
     <div style="margin-bottom: 1.5em">
         <form method="POST" action="<?php action('SitioController@listarSitiosPorCategoria') ?>">

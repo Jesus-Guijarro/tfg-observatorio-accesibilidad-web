@@ -1,0 +1,880 @@
+REPORTE PÁGINA WEB: http://www.ciencia.gob.es/portal/site/MICINN/
+FECHA EVALUACIÓN: 2018-12-20
+
+
+Principio: 1.Perceptible
+Descripcion: La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+	Pauta: 1.1..Alternativas textuales
+	Descripcion: Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple
+
+		Criterio: 1.1.1..Contenido no textual
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H35-Proporcionando textos alternativos a elementos applet
+			Criticidad: Alta
+			Observación: No se han encontrado elementos applet en la p&aacute;gina.<br/>
+			Recomendación: Se recomienda colocar una alternativa textual a los elementos applet, para tener conocimiento de su funci&oacute;n.<br/>
+			Número de errores: 0
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>2</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H45-Usando longdesc
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado im&aacute;genes que usen el atributo longdesc para referirse a una larga descripci&oacute;n contenida en un recurso independiente, que sean necesarias como alternativa no textual para una im&aacute;gen.<br/>
+			Recomendación: Use el atributo longdesc en una im&aacute;gen cuando una alternativa textual breve no transmite adecuadamente la funci&oacute;n o la informaci&oacute;n proporcionada en la im&aacute;gen.<br/>
+			Número de errores: 0
+
+			Código: H37-Usando atributos alt en elementos img
+			Criticidad: Media
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong>, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img class="fh5co_logo_width" alt="Ministerio de Ciencia, Innovación y Universidades  - Gobierno de España" src="/stfls/MICINN/Comun/logos/logo_ministerio_c40.png"></xmp></li><li><xmp><img class="mobile_logo_width" alt="Ministerio de Ciencia, Innovación y Universidades  - Gobierno de España" src="/stfls/comun/logos/logo_mciu.png"></xmp></li><li><xmp><img alt="Puesta en marcha del Programa Cervera para impulsar la innovación" src="/stfls/MICINN/Home/Imagenes/ProgramaCervera.jpg"></xmp></li><li><xmp><img alt="Primera reunión del Observatorio de Becas en siete años" src="/stfls/MICINN/Home/Imagenes/Observatorio_Becas.jpg"></xmp></li><li><xmp><img alt="101 millones de euros para la promoción y recuperación de talento científico" src="/stfls/MICINN/Home/Imagenes/Cartela_Ramon_y_Cajal.jpg"></xmp></li><li><xmp><img alt="Plan de Protección de la Salud frente a las Pseudoterapias" src="/stfls/MICINN/Home/Imagenes/Plan_Proteccion_Salud.jpg"></xmp></li><li><xmp><img alt="Creación del Observatorio Mujeres, Ciencia e Innovación" src="/stfls/MICINN/Home/Imagenes/Observatorio_Ciencia_Mujeres_Innovacion.jpg"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Atencion_ciudadania.png"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Sede_electronica.png"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Igualdad_genero.png"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Transparencia_gobierno_abierto.png"></xmp></li><li><xmp><img alt="" src="/stfls/MICINN/Prensa/IMAGENES/2018/12/IMG-20181220-WA0000.jpg"></xmp></li><li><xmp><img alt="" src="/stfls/MICINN/Prensa/IMAGENES/2018/12/UNED_NotaPrensa.jpg"></xmp></li><li><xmp><img alt="El Gobierno manifiesta la apuesta española por la diplomacia científica" src="/stfls/MICINN/Investigacion/CIENCIA/IMAGEN/Diplomacia_Cientifica.jpg"></xmp></li><li><xmp><img alt="Ir a '40 años de la Constitución', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/c40_reducido_bn.png"></xmp></li><li><xmp><img alt="Ir a 'SEPE', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/sepe.png"></xmp></li><li><xmp><img alt="Ir a 'Portal de Transparencia', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/transparencia.jpg"></xmp></li><li><xmp><img alt="Ir a 'BOE', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/boe.jpg"></xmp></li><li><xmp><img alt="Ir a 'Administracion.gob.es', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/admgob.jpg"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H67-Usando texto alternativo nulo y no el atributo title en el elemento img para imágenes que AT puedan ignorar
+			Criticidad: Media
+			Observación: De un total de 19 im&aacute;genes que se encontraron en la p&aacute;gina con texto alternativo, 6 tienen un valor nulo o sin contenido. Verifique que correspondan a imagenes decorativas. <pre><ul><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Atencion_ciudadania.png"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Sede_electronica.png"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Igualdad_genero.png"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Transparencia_gobierno_abierto.png"></xmp></li><li><xmp><img alt="" src="/stfls/MICINN/Prensa/IMAGENES/2018/12/IMG-20181220-WA0000.jpg"></xmp></li><li><xmp><img alt="" src="/stfls/MICINN/Prensa/IMAGENES/2018/12/UNED_NotaPrensa.jpg"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 6
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+			Código: C18-Usando reglas margin y padding en lugar de imágenes de espaciador para diseñar un layout
+			Criticidad: Baja
+			Observación: Existen 21 celdas de tablas que no consideran el separador de contenido de los bordes.<br/>
+			Recomendación: Se debe tener en cuenta la separaci&oacute;n del texto respecto a las celdas en las tablas.<br/>
+			Número de errores: 21
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H36-Usando atributos alt en imágenes que se utilizan como botones de envio
+			Criticidad: Alta
+			Observación: No se han encontrado botones de tipo im&aacute;gen en la p&aacute;gina..<br/>
+			Recomendación: En el caso de hacer uso de botones de tipo im&aacute;gen, estos deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la acci&oacute;n del bot&oacute;n)..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: OAW1-Usando videos decorativos
+			Criticidad: Media
+			Observación: No se han encontrado videos en esta p&aacute;gina..<br/>
+			Recomendación: En caso de tener v&iacute;deos decorativos, es recomendable marcarlos como tal con atributos ARIA, esto evita que los usuarios con tecnolog&iacute;as de asistencia tengan dificultades al encontrar videos sin altenativas textuales..<br/>
+			Número de errores: 0
+
+			Código: H88-Usando HTML de acuerdo a la especificación
+			Criticidad: Alta
+			Observación: No se han encontrado elementos obsoletos dentro de la p&aacute;gina..<br/>
+			Recomendación: Ciertas etiquetas y atributos viejos de HTML han sido suspendidos para utilizar en su lugar alternativas m&aacute;s flexibles (como HTML o CSS). Es recomendable siempre adoptar los est&aacute;ndares HTML..<br/>
+			Número de errores: 0
+
+	Pauta: 1.2..Medios tempodependientes
+	Descripcion: Proporcionar alternativas para los medios tempodependientes
+
+		Criterio: 1.2.1..Sólo audio y sólo vídeo (grabado)
+		Nivel: A
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.4..Subtítulos (en directo)
+		Nivel: AA
+
+		Criterio: 1.2.3..Audiodescripción o Medio Alternativo (grabado)
+		Nivel: A
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.8..Medio alternativo (grabado)
+		Nivel: AAA
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.2..Subtítulos (grabados)
+		Nivel: A
+
+			Código: G87-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado videos en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los videos, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+			Código: G87B-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado audios en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los audios, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+	Pauta: 1.3..Adaptable
+	Descripcion: Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura
+
+		Criterio: 1.3.2..Secuencia con significado
+		Nivel: A
+
+			Código: C27A-Haciendo el DOM ordenado para marcar el orden visual: A) Elementos con posicionamiento flotante sin especificar
+			Criticidad: Media
+			Observación: De las 2111 reglas CSS en la p&aacute;gina, 25 de ellas usan declaraciones de elementos de forma flotante (float:inherit|none|left|rigth).<pre><ul><li><xmp>.dropdown-menu { position: absolute; top: 100%; left: 0px; z-index: 1000; display: none; float: left; min-width: 10rem; padding-top: 0.5rem; padding-right: 0px; padding-bottom: 0.5rem; padding-left: 0px; margin-top: 0.125rem; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size: 1rem; color: rgb(41, 43, 44); text-align: left; list-style-type: none; list-style-position: initial; list-style-image: initial; background-color: rgb(255, 255, 255); -webkit-background-clip: padding-box; background-clip: padding-box; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; }</xmp></li><li><xmp>.btn-group > .btn-group { float: left; }</xmp></li><li><xmp>@media (max-width: 575px) {   .navbar-toggleable .navbar-nav .dropdown-menu { position: static; float: none; }  .navbar-toggleable > .container { padding-right: 0px; padding-left: 0px; }}</xmp></li><li><xmp>@media (max-width: 767px) {   .navbar-toggleable-sm .navbar-nav .dropdown-menu { position: static; float: none; }  .navbar-toggleable-sm > .container { padding-right: 0px; padding-left: 0px; }}</xmp></li><li><xmp>@media (max-width: 991px) {   .navbar-toggleable-md .navbar-nav .dropdown-menu { position: static; float: none; }  .navbar-toggleable-md > .container { padding-right: 0px; padding-left: 0px; }}</xmp></li><li><xmp>@media (max-width: 1199px) {   .navbar-toggleable-lg .navbar-nav .dropdown-menu { position: static; float: none; }  .navbar-toggleable-lg > .container { padding-right: 0px; padding-left: 0px; }}</xmp></li><li><xmp>.navbar-toggleable-xl .navbar-nav .dropdown-menu { position: static; float: none; }</xmp></li><li><xmp>.breadcrumb-item { float: left; }</xmp></li><li><xmp>.close { float: right; font-size: 1.5rem; font-weight: bold; line-height: 1; color: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px 0px; opacity: 0.5; }</xmp></li><li><xmp>.float-left { float: left !important; }</xmp></li><li><xmp>.float-right { float: right !important; }</xmp></li><li><xmp>.float-none { float: none !important; }</xmp></li><li><xmp>@media (min-width: 576px) {   .float-sm-left { float: left !important; }  .float-sm-right { float: right !important; }  .float-sm-none { float: none !important; }}</xmp></li><li><xmp>@media (min-width: 768px) {   .float-md-left { float: left !important; }  .float-md-right { float: right !important; }  .float-md-none { float: none !important; }}</xmp></li><li><xmp>@media (min-width: 992px) {   .float-lg-left { float: left !important; }  .float-lg-right { float: right !important; }  .float-lg-none { float: none !important; }}</xmp></li><li><xmp>@media (min-width: 1200px) {   .float-xl-left { float: left !important; }  .float-xl-right { float: right !important; }  .float-xl-none { float: none !important; }}</xmp></li><li><xmp>.fa-pull-left { float: left; }</xmp></li><li><xmp>.fa-pull-right { float: right; }</xmp></li><li><xmp>.pull-right { float: right; }</xmp></li><li><xmp>.pull-left { float: left; }</xmp></li><li><xmp>.owl-carousel .owl-item { position: relative; min-height: 1px; float: left; -webkit-backface-visibility: hidden; }</xmp></li><li><xmp>.owl-carousel.owl-rtl .owl-item { float: right; }</xmp></li><li><xmp>ul.convocatorias > li { float: left; width: 46%; margin-left: 25px; padding-bottom: 20px; }</xmp></li><li><xmp>.search-form > input { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(242, 243, 245); border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; float: left; width: 130px; color: rgb(0, 0, 0) !important; text-transform: uppercase; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.search-form > button { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(242, 243, 245); border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; float: left; padding-top: 8px; padding-left: 10px; padding-right: 10px; background-position: initial initial; background-repeat: initial initial; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 25
+
+			Código: H56-Usando el atributo dir en un elemento en linea para resolver problemas con secuencias direccionales anidadas 
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han segmentos de texto definidos en un idioma espec&iacute;fico..<br/>
+			Recomendación: En caso de que un texto en la p&aacute;gina se encuentre en un idioma distito al de la misma, se debe especificar el idioma y en caso de ser necesario la direcci&oacute;n de lectura por medio del atributo <code>dir</code>.  Para mayor informaci&oacute;n refierase a <a haref=https://www.w3.org/TR/html4/struct/dirlang.html>Informaci&oacute;n sobre el idioma y la direcci&oacute;n de lectura de un texto</a>.<br/>
+			Número de errores: 0
+
+			Código: C6-Proporcionando contenido basado en marcadores estructurales
+			Criticidad: Baja
+			Observación: De las 2058 reglas CSS en la p&aacute;gina, 53 de ellas usan declaraciones de elementos de forma absoluta (position:asolute).<pre><ul><li><xmp>@media (max-width: 480px) and (min-width: 320px) { 
+  .padding_786 { padding-left: 0px !important; padding-right: 0px !important; }
+  .fh5co_mediya_setting { display: block; text-align: center; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; }
+  .treding_btn { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(245, 188, 4); color: rgb(255, 255, 255); margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px; display: inline-block; padding-top: 5px; padding-right: 40px; padding-bottom: 5px; padding-left: 40px; background-position: initial initial; background-repeat: initial initial; }
+  .fh5co_treding_position_absolute { display: none; }
+  .fh5co_mediya_center { text-align: center; }
+  .fh5co_logo_width { display: none !important; }
+  .fh5co_mediya_right { text-align: center !important; }
+  .fh5co_padding_menu { padding-right: 0px; padding-bottom: 0px; padding-left: 0px; padding-top: 10px; }
+  .mobile_logo_width { display: block !important; margin-left: 20px; padding-bottom: 10px; }
+  .fh5co_padd_mediya { padding-top: 0px; }
+  .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active { }
+  .navbar-light .navbar-nav .nav-link { }
+  .fh5co_display_table { height: 25px; width: 25px; display: table; font-size: 18px; border-top-width: 1px !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-left-width: 1px !important; border-top-style: solid !important; border-right-style: solid !important; border-bottom-style: solid !important; border-left-style: solid !important; border-top-color: rgb(255, 255, 255) !important; border-right-color: rgb(255, 255, 255) !important; border-bottom-color: rgb(255, 255, 255) !important; border-left-color: rgb(255, 255, 255) !important; cursor: pointer; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px; color: rgb(119, 119, 119) !important; }
+  .fh5co_conty_width { margin-top: 10px; }
+  .fh5co_good_font { font-size: 16px; }
+  .fh5co_good_font_2 { font-size: 14px; }
+  .fh5co_suceefh5co_height_2 { height: 200px; overflow-x: hidden; overflow-y: hidden; width: 100%; position: relative; }
+  .fh5co_suceefh5co_height_2 > img { height: 200px; width: 100%; }
+  .fh5co_suceefh5co_height { height: auto; overflow-x: hidden; overflow-y: hidden; width: 100%; position: relative; }
+  .fh5co_suceefh5co_height > img { height: auto; width: 100%; }
+  .fh5co_suceefh5co_height_position_absolute_font { position: absolute; width: 100%; height: 100%; color: rgb(255, 255, 255); z-index: 7; top: 60%; left: 5%; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; }
+  .fh5co_footer_bg { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(34, 34, 34); color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+  .spdp_right { text-align: center; }
+  .footer_img_post_6 { height: 30px; width: 50px; overflow-x: hidden; overflow-y: hidden; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; display: inline-block; }
+  .footer_img_post_6 > img { width: 50px; height: 30px; }
+  .Reserved { text-align: center; }
+  .btn_mange_pagging { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(241, 241, 241); padding-top: 12px; padding-right: 5px; padding-bottom: 12px; padding-left: 5px; color: rgb(34, 34, 34) !important; font-weight: 800; margin-top: 0px; margin-right: 5px; margin-bottom: 0px; margin-left: 5px; font-size: 12px; background-position: initial initial; background-repeat: initial initial; }
+  .btn_pagging { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(241, 241, 241) !important; color: rgb(34, 34, 34); padding-top: 12px !important; padding-right: 10px !important; padding-bottom: 12px !important; padding-left: 10px !important; font-weight: 800; margin-top: 0px; margin-right: 5px; margin-bottom: 0px; margin-left: 5px; font-size: 12px; background-position: initial initial !important; background-repeat: initial initial !important; }
+  .btn_mange_pagging:hover, .btn_mange_pagging:focus { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(34, 34, 34); color: rgb(255, 255, 255) !important; font-weight: 800; background-position: initial initial; background-repeat: initial initial; }
+  .btn_pagging:hover, .btn_pagging:focus { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(34, 34, 34) !important; color: rgb(255, 255, 255); background-position: initial initial !important; background-repeat: initial initial !important; }
+}</xmp></li><li><xmp>.form-check-input { position: absolute; margin-top: 0.25rem; margin-left: -1.25rem; }</xmp></li><li><xmp>.form-check-input:only-child { position: static; }</xmp></li><li><xmp>@media (min-width: 576px) { 
+  .form-inline label { display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; margin-bottom: 0px; }
+  .form-inline .form-group { display: -webkit-box; -webkit-box-flex: 0; -webkit-box-align: center; margin-bottom: 0px; }
+  .form-inline .form-control { display: inline-block; width: auto; vertical-align: middle; }
+  .form-inline .form-control-static { display: inline-block; }
+  .form-inline .input-group { width: auto; }
+  .form-inline .form-control-label { margin-bottom: 0px; vertical-align: middle; }
+  .form-inline .form-check { display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; width: auto; margin-top: 0px; margin-bottom: 0px; }
+  .form-inline .form-check-label { padding-left: 0px; }
+  .form-inline .form-check-input { position: relative; margin-top: 0px; margin-right: 0.25rem; margin-left: 0px; }
+  .form-inline .custom-control { display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; padding-left: 0px; }
+  .form-inline .custom-control-indicator { position: static; display: inline-block; margin-right: 0.25rem; vertical-align: text-bottom; }
+  .form-inline .has-feedback .form-control-feedback { top: 0px; }
+}</xmp></li><li><xmp>.dropdown-menu { position: absolute; top: 100%; left: 0px; z-index: 1000; display: none; float: left; min-width: 10rem; padding-top: 0.5rem; padding-right: 0px; padding-bottom: 0.5rem; padding-left: 0px; margin-top: 0.125rem; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size: 1rem; color: rgb(41, 43, 44); text-align: left; list-style-type: none; list-style-position: initial; list-style-image: initial; background-color: rgb(255, 255, 255); -webkit-background-clip: padding-box; background-clip: padding-box; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; }</xmp></li><li><xmp>[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .btn input[type="checkbox"], [data-toggle="buttons"] > .btn-group > .btn input[type="radio"], [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] { position: absolute; clip: rect(0px 0px 0px 0px); pointer-events: none; }</xmp></li><li><xmp>.custom-control-input { position: absolute; z-index: -1; opacity: 0; }</xmp></li><li><xmp>.custom-control-indicator { position: absolute; top: 0.25rem; left: 0px; display: block; width: 1rem; height: 1rem; pointer-events: none; -webkit-user-select: none; background-color: rgb(221, 221, 221); -webkit-background-size: 50% 50%; background-size: 50% 50%; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.custom-file-control { position: absolute; top: 0px; right: 0px; left: 0px; z-index: 5; height: 2.5rem; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; line-height: 1.5; color: rgb(70, 74, 76); pointer-events: none; -webkit-user-select: none; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; }</xmp></li><li><xmp>.custom-file-control::before { position: absolute; top: -1px; right: -1px; bottom: -1px; z-index: 6; display: block; height: 2.5rem; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; line-height: 1.5; color: rgb(70, 74, 76); background-color: rgb(236, 238, 239); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0px 0px; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0px 0px; }</xmp></li><li><xmp>.navbar-toggler-left { position: absolute; left: 1rem; }</xmp></li><li><xmp>.navbar-toggler-right { position: absolute; right: 1rem; }</xmp></li><li><xmp>@media (max-width: 575px) { 
+  .navbar-toggleable .navbar-nav .dropdown-menu { position: static; float: none; }
+  .navbar-toggleable > .container { padding-right: 0px; padding-left: 0px; }
+}</xmp></li><li><xmp>@media (max-width: 767px) { 
+  .navbar-toggleable-sm .navbar-nav .dropdown-menu { position: static; float: none; }
+  .navbar-toggleable-sm > .container { padding-right: 0px; padding-left: 0px; }
+}</xmp></li><li><xmp>@media (max-width: 991px) { 
+  .navbar-toggleable-md .navbar-nav .dropdown-menu { position: static; float: none; }
+  .navbar-toggleable-md > .container { padding-right: 0px; padding-left: 0px; }
+}</xmp></li><li><xmp>@media (max-width: 1199px) { 
+  .navbar-toggleable-lg .navbar-nav .dropdown-menu { position: static; float: none; }
+  .navbar-toggleable-lg > .container { padding-right: 0px; padding-left: 0px; }
+}</xmp></li><li><xmp>.navbar-toggleable-xl .navbar-nav .dropdown-menu { position: static; float: none; }</xmp></li><li><xmp>.card-img-overlay { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; padding-top: 1.25rem; padding-right: 1.25rem; padding-bottom: 1.25rem; padding-left: 1.25rem; }</xmp></li><li><xmp>.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video { position: absolute; top: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>.modal-scrollbar-measure { position: absolute; top: -9999px; width: 50px; height: 50px; overflow-x: scroll; overflow-y: scroll; }</xmp></li><li><xmp>.tooltip { position: absolute; z-index: 1070; display: block; font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; font-size: 0.875rem; word-wrap: break-word; opacity: 0; }</xmp></li><li><xmp>.tooltip-inner::before { position: absolute; width: 0px; height: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; }</xmp></li><li><xmp>.popover { position: absolute; top: 0px; left: 0px; z-index: 1060; display: block; max-width: 276px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; font-size: 0.875rem; word-wrap: break-word; background-color: rgb(255, 255, 255); -webkit-background-clip: padding-box; background-clip: padding-box; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.199219); border-right-color: rgba(0, 0, 0, 0.199219); border-bottom-color: rgba(0, 0, 0, 0.199219); border-left-color: rgba(0, 0, 0, 0.199219); border-top-left-radius: 0.3rem 0.3rem; border-top-right-radius: 0.3rem 0.3rem; border-bottom-right-radius: 0.3rem 0.3rem; border-bottom-left-radius: 0.3rem 0.3rem; }</xmp></li><li><xmp>.popover.popover-bottom .popover-title::before, .popover.bs-tether-element-attached-top .popover-title::before { position: absolute; top: 0px; left: 50%; display: block; width: 20px; margin-left: -10px; content: ''; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(247, 247, 247); }</xmp></li><li><xmp>.popover::before, .popover::after { position: absolute; display: block; width: 0px; height: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; }</xmp></li><li><xmp>.carousel-item-next, .carousel-item-prev { position: absolute; top: 0px; }</xmp></li><li><xmp>.carousel-control-prev, .carousel-control-next { position: absolute; top: 0px; bottom: 0px; display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; width: 15%; color: rgb(255, 255, 255); text-align: center; opacity: 0.5; }</xmp></li><li><xmp>.carousel-indicators { position: absolute; right: 0px; bottom: 10px; left: 0px; z-index: 15; display: -webkit-box; -webkit-box-pack: center; padding-left: 0px; margin-right: 15%; margin-left: 15%; list-style-type: none; list-style-position: initial; list-style-image: initial; }</xmp></li><li><xmp>.carousel-indicators li::before { position: absolute; top: -10px; left: 0px; display: inline-block; width: 100%; height: 10px; content: ''; }</xmp></li><li><xmp>.carousel-indicators li::after { position: absolute; bottom: -10px; left: 0px; display: inline-block; width: 100%; height: 10px; content: ''; }</xmp></li><li><xmp>.carousel-caption { position: absolute; right: 15%; bottom: 20px; left: 15%; z-index: 10; padding-top: 20px; padding-bottom: 20px; color: rgb(255, 255, 255); text-align: center; }</xmp></li><li><xmp>.sr-only { position: absolute; width: 1px; height: 1px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; clip: rect(0px 0px 0px 0px); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>.sr-only-focusable:active, .sr-only-focusable:focus { position: static; width: auto; height: auto; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; overflow-x: visible; overflow-y: visible; clip: auto; }</xmp></li><li><xmp>.fa-li { position: absolute; left: -2.14285714em; width: 2.14285714em; top: 0.14285714em; text-align: center; }</xmp></li><li><xmp>.fa-stack-1x, .fa-stack-2x { position: absolute; left: 0px; width: 100%; text-align: center; }</xmp></li><li><xmp>.sr-only { position: absolute; width: 1px; height: 1px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; clip: rect(0px 0px 0px 0px); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>.sr-only-focusable:active, .sr-only-focusable:focus { position: static; width: auto; height: auto; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; overflow-x: visible; overflow-y: visible; clip: auto; }</xmp></li><li><xmp>.owl-carousel .owl-video-play-icon { position: absolute; height: 80px; width: 80px; left: 50%; top: 50%; margin-left: -40px; margin-top: -40px; background-image: url(http://www.ciencia.gob.es/recursos_micinn/css/owl.video.play.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; cursor: pointer; z-index: 1; -webkit-backface-visibility: hidden; background-position: initial initial; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.owl-nav { position: absolute; top: -83px; right: 1%; }</xmp></li><li><xmp>.fh5co_treding_position_absolute { height: 20px; width: 20px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(11, 128, 210); position: absolute; left: 9px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.fh5co_suceefh5co_height_position_absolute { position: absolute; width: 100%; height: 100%; background-image: -webkit-linear-gradient(top, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.777344) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; z-index: 5; top: 0px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.fh5co_suceefh5co_height_position_absolute_font { position: absolute; width: 100%; height: 100%; color: rgb(255, 255, 255); z-index: 7; top: 75%; left: 5%; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; }</xmp></li><li><xmp>.fh5co_suceefh5co_height_position_absolute_font_2 { position: absolute; width: 100%; height: 100%; color: rgb(255, 255, 255); z-index: 7; top: 65%; left: 5%; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_absolute { position: absolute; height: 100%; width: 100%; top: 0px; right: 0px; background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.828125) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; z-index: 7; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_absolute_1 { position: absolute; width: 100%; z-index: 9; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; bottom: 0px; }</xmp></li><li><xmp>.fh5co_hover_news_img_video_tag_position_absolute { height: 100%; width: 100%; position: absolute; top: 0px; right: 0px; z-index: 20; }</xmp></li><li><xmp>.fh5co_hover_news_img_video_tag_position_absolute_1 { position: absolute; z-index: 22; cursor: pointer; top: 33%; right: 40%; opacity: 0.7; }</xmp></li><li><xmp>.fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1::before { position: absolute; content: ''; height: 120%; width: 120%; background-color: rgb(11, 128, 210); z-index: -1; top: -10%; right: -10%; opacity: 0.5; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; }</xmp></li><li><xmp>.footer_position_absolute { position: absolute; top: 60px; left: -5px; }</xmp></li><li><xmp>.dd_box { height: 20px; width: 150px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); position: absolute; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#fh5co-title-box .overlay { position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 10; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0.496094); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#fh5co-title-box .page-title { z-index: 12; position: absolute; bottom: 0px; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_absolute_gradientePlana { position: absolute; height: 100%; width: 100%; top: 0px; right: 0px; background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 72%, rgba(0, 0, 0, 0.828125) 0%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; z-index: 7; background-position: initial initial; background-repeat: initial initial; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 53
+
+			Código: C8-Usando la propiedad letter-spacing de CSS para controlar el espacio dentro de una palabra
+			Criticidad: Baja
+			Observación: No se han detectado textos sospechosos en los que palabras se han formado usando espacios en blanco..<br/>
+			Recomendación: En el caso de requerir por efectos visuales el destarcar cada letra de una palabra por medio de separaciones, utilice la propiedad CSS <code>letter-spacing</code>.<br/>
+			Número de errores: 0
+
+			Código: C27B-Haciendo el DOM ordenado para marcar el orden visual: B) Elementos con posicionamiento absoluto
+			Criticidad: Media
+			Observación: De las 2001 reglas CSS en la p&aacute;gina, 110 de ellas usan declaraciones de elementos de forma absoluta (position:asolute|relative|fix).<pre><ul><li><xmp>@media (max-width: 480px) and (min-width: 320px) { 
+  .padding_786 { padding-left: 0px !important; padding-right: 0px !important; }
+  .fh5co_mediya_setting { display: block; text-align: center; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; }
+  .treding_btn { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(245, 188, 4); color: rgb(255, 255, 255); margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px; display: inline-block; padding-top: 5px; padding-right: 40px; padding-bottom: 5px; padding-left: 40px; background-position: initial initial; background-repeat: initial initial; }
+  .fh5co_treding_position_absolute { display: none; }
+  .fh5co_mediya_center { text-align: center; }
+  .fh5co_logo_width { display: none !important; }
+  .fh5co_mediya_right { text-align: center !important; }
+  .fh5co_padding_menu { padding-right: 0px; padding-bottom: 0px; padding-left: 0px; padding-top: 10px; }
+  .mobile_logo_width { display: block !important; margin-left: 20px; padding-bottom: 10px; }
+  .fh5co_padd_mediya { padding-top: 0px; }
+  .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active { }
+  .navbar-light .navbar-nav .nav-link { }
+  .fh5co_display_table { height: 25px; width: 25px; display: table; font-size: 18px; border-top-width: 1px !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-left-width: 1px !important; border-top-style: solid !important; border-right-style: solid !important; border-bottom-style: solid !important; border-left-style: solid !important; border-top-color: rgb(255, 255, 255) !important; border-right-color: rgb(255, 255, 255) !important; border-bottom-color: rgb(255, 255, 255) !important; border-left-color: rgb(255, 255, 255) !important; cursor: pointer; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px; color: rgb(119, 119, 119) !important; }
+  .fh5co_conty_width { margin-top: 10px; }
+  .fh5co_good_font { font-size: 16px; }
+  .fh5co_good_font_2 { font-size: 14px; }
+  .fh5co_suceefh5co_height_2 { height: 200px; overflow-x: hidden; overflow-y: hidden; width: 100%; position: relative; }
+  .fh5co_suceefh5co_height_2 > img { height: 200px; width: 100%; }
+  .fh5co_suceefh5co_height { height: auto; overflow-x: hidden; overflow-y: hidden; width: 100%; position: relative; }
+  .fh5co_suceefh5co_height > img { height: auto; width: 100%; }
+  .fh5co_suceefh5co_height_position_absolute_font { position: absolute; width: 100%; height: 100%; color: rgb(255, 255, 255); z-index: 7; top: 60%; left: 5%; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; }
+  .fh5co_footer_bg { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(34, 34, 34); color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+  .spdp_right { text-align: center; }
+  .footer_img_post_6 { height: 30px; width: 50px; overflow-x: hidden; overflow-y: hidden; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; display: inline-block; }
+  .footer_img_post_6 > img { width: 50px; height: 30px; }
+  .Reserved { text-align: center; }
+  .btn_mange_pagging { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(241, 241, 241); padding-top: 12px; padding-right: 5px; padding-bottom: 12px; padding-left: 5px; color: rgb(34, 34, 34) !important; font-weight: 800; margin-top: 0px; margin-right: 5px; margin-bottom: 0px; margin-left: 5px; font-size: 12px; background-position: initial initial; background-repeat: initial initial; }
+  .btn_pagging { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(241, 241, 241) !important; color: rgb(34, 34, 34); padding-top: 12px !important; padding-right: 10px !important; padding-bottom: 12px !important; padding-left: 10px !important; font-weight: 800; margin-top: 0px; margin-right: 5px; margin-bottom: 0px; margin-left: 5px; font-size: 12px; background-position: initial initial !important; background-repeat: initial initial !important; }
+  .btn_mange_pagging:hover, .btn_mange_pagging:focus { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(34, 34, 34); color: rgb(255, 255, 255) !important; font-weight: 800; background-position: initial initial; background-repeat: initial initial; }
+  .btn_pagging:hover, .btn_pagging:focus { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(34, 34, 34) !important; color: rgb(255, 255, 255); background-position: initial initial !important; background-repeat: initial initial !important; }
+}</xmp></li><li><xmp>@media (max-width: 767px) and (min-width: 480px) { 
+  .fh5co_latest_trading_img { height: 226px; }
+  .fh5co_latest_trading_img > img { height: 240px; }
+  .fh5co_img_special_relative { right: 0px; }
+  .fh5co_logo_width { display: none; }
+  .mobile_logo_width { display: block !important; margin-left: 20px; padding-bottom: 10px; }
+  .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active { }
+  .navbar-light .navbar-nav .nav-link { }
+  @media (max-width: 1024px) and (min-width: 768px) { 
+  .fh5co_mediya_center { font-size: 12px; }
+  .fh5co_logo_width { display: none; }
+  .fh5co_mediya_right { padding-top: 20px; }
+  .mobile_logo_width { width: 100px; display: block !important; margin-left: 20px; padding-bottom: 10px; }
+  .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active { }
+  .navbar-light .navbar-nav .nav-link { }
+  .fh5co_good_font { font-size: 18px; }
+  .fh5co_good_font_2 { font-size: 16px; }
+  .fh5co_contact_us_no_icon_difh5co_hover_2 { text-align: right; }
+}
+  @media (max-width: 1024px) and (min-width: 991px) { 
+  .mobile_logo_width { display: none; }
+  .fh5co_logo_width { display: block; }
+  .fh5co_good_font { font-size: 20px; }
+  .fh5co_good_font_2 { font-size: 14px; }
+}
+}</xmp></li><li><xmp>sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }</xmp></li><li><xmp>.container { position: relative; margin-left: auto; margin-right: auto; padding-right: 15px; padding-left: 15px; }</xmp></li><li><xmp>.container-fluid { position: relative; margin-left: auto; margin-right: auto; padding-right: 15px; padding-left: 15px; }</xmp></li><li><xmp>.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl { position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; }</xmp></li><li><xmp>.form-check { position: relative; display: block; margin-bottom: 0.5rem; }</xmp></li><li><xmp>.form-check-input { position: absolute; margin-top: 0.25rem; margin-left: -1.25rem; }</xmp></li><li><xmp>@media (min-width: 576px) { 
+  .form-inline label { display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; margin-bottom: 0px; }
+  .form-inline .form-group { display: -webkit-box; -webkit-box-flex: 0; -webkit-box-align: center; margin-bottom: 0px; }
+  .form-inline .form-control { display: inline-block; width: auto; vertical-align: middle; }
+  .form-inline .form-control-static { display: inline-block; }
+  .form-inline .input-group { width: auto; }
+  .form-inline .form-control-label { margin-bottom: 0px; vertical-align: middle; }
+  .form-inline .form-check { display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; width: auto; margin-top: 0px; margin-bottom: 0px; }
+  .form-inline .form-check-label { padding-left: 0px; }
+  .form-inline .form-check-input { position: relative; margin-top: 0px; margin-right: 0.25rem; margin-left: 0px; }
+  .form-inline .custom-control { display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; padding-left: 0px; }
+  .form-inline .custom-control-indicator { position: static; display: inline-block; margin-right: 0.25rem; vertical-align: text-bottom; }
+  .form-inline .has-feedback .form-control-feedback { top: 0px; }
+}</xmp></li><li><xmp>.collapsing { position: relative; height: 0px; overflow-x: hidden; overflow-y: hidden; -webkit-transition-property: height; -webkit-transition-duration: 0.35s; -webkit-transition-timing-function: ease; -webkit-transition-delay: initial; }</xmp></li><li><xmp>.dropup, .dropdown { position: relative; }</xmp></li><li><xmp>.dropdown-menu { position: absolute; top: 100%; left: 0px; z-index: 1000; display: none; float: left; min-width: 10rem; padding-top: 0.5rem; padding-right: 0px; padding-bottom: 0.5rem; padding-left: 0px; margin-top: 0.125rem; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size: 1rem; color: rgb(41, 43, 44); text-align: left; list-style-type: none; list-style-position: initial; list-style-image: initial; background-color: rgb(255, 255, 255); -webkit-background-clip: padding-box; background-clip: padding-box; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; }</xmp></li><li><xmp>.dropdown-backdrop { position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: 990; }</xmp></li><li><xmp>.btn-group, .btn-group-vertical { position: relative; display: -webkit-inline-box; vertical-align: middle; }</xmp></li><li><xmp>.btn-group > .btn, .btn-group-vertical > .btn { position: relative; -webkit-box-flex: 0; }</xmp></li><li><xmp>[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > .btn input[type="checkbox"], [data-toggle="buttons"] > .btn-group > .btn input[type="radio"], [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] { position: absolute; clip: rect(0px 0px 0px 0px); pointer-events: none; }</xmp></li><li><xmp>.input-group { position: relative; display: -webkit-box; width: 100%; }</xmp></li><li><xmp>.input-group .form-control { position: relative; z-index: 2; -webkit-box-flex: 1; width: 1%; margin-bottom: 0px; }</xmp></li><li><xmp>.input-group-btn { position: relative; font-size: 0px; white-space: nowrap; }</xmp></li><li><xmp>.input-group-btn > .btn { position: relative; -webkit-box-flex: 1; }</xmp></li><li><xmp>.custom-control { position: relative; display: -webkit-inline-box; min-height: 1.5rem; padding-left: 1.5rem; margin-right: 1rem; cursor: pointer; }</xmp></li><li><xmp>.custom-control-input { position: absolute; z-index: -1; opacity: 0; }</xmp></li><li><xmp>.custom-control-indicator { position: absolute; top: 0.25rem; left: 0px; display: block; width: 1rem; height: 1rem; pointer-events: none; -webkit-user-select: none; background-color: rgb(221, 221, 221); -webkit-background-size: 50% 50%; background-size: 50% 50%; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.custom-file { position: relative; display: inline-block; max-width: 100%; height: 2.5rem; margin-bottom: 0px; cursor: pointer; }</xmp></li><li><xmp>.custom-file-control { position: absolute; top: 0px; right: 0px; left: 0px; z-index: 5; height: 2.5rem; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; line-height: 1.5; color: rgb(70, 74, 76); pointer-events: none; -webkit-user-select: none; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; }</xmp></li><li><xmp>.custom-file-control::before { position: absolute; top: -1px; right: -1px; bottom: -1px; z-index: 6; display: block; height: 2.5rem; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; line-height: 1.5; color: rgb(70, 74, 76); background-color: rgb(236, 238, 239); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0px 0px; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0px 0px; }</xmp></li><li><xmp>.navbar { position: relative; display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-direction: normal; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; }</xmp></li><li><xmp>.navbar-toggler-left { position: absolute; left: 1rem; }</xmp></li><li><xmp>.navbar-toggler-right { position: absolute; right: 1rem; }</xmp></li><li><xmp>.card { position: relative; display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-direction: normal; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.121094); border-right-color: rgba(0, 0, 0, 0.121094); border-bottom-color: rgba(0, 0, 0, 0.121094); border-left-color: rgba(0, 0, 0, 0.121094); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; }</xmp></li><li><xmp>.card-img-overlay { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; padding-top: 1.25rem; padding-right: 1.25rem; padding-bottom: 1.25rem; padding-left: 1.25rem; }</xmp></li><li><xmp>.page-link { position: relative; display: block; padding-top: 0.5rem; padding-right: 0.75rem; padding-bottom: 0.5rem; padding-left: 0.75rem; margin-left: -1px; line-height: 1.25; color: rgb(2, 117, 216); background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); }</xmp></li><li><xmp>.btn .badge { position: relative; top: -1px; }</xmp></li><li><xmp>.alert-dismissible .close { position: relative; top: -0.75rem; right: -1.25rem; padding-top: 0.75rem; padding-right: 1.25rem; padding-bottom: 0.75rem; padding-left: 1.25rem; color: inherit; }</xmp></li><li><xmp>.list-group-item { position: relative; display: -webkit-box; -webkit-box-align: center; padding-top: 0.75rem; padding-right: 1.25rem; padding-bottom: 0.75rem; padding-left: 1.25rem; margin-bottom: -1px; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.121094); border-right-color: rgba(0, 0, 0, 0.121094); border-bottom-color: rgba(0, 0, 0, 0.121094); border-left-color: rgba(0, 0, 0, 0.121094); }</xmp></li><li><xmp>.embed-responsive { position: relative; display: block; width: 100%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video { position: absolute; top: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>.modal { position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: 1050; display: none; overflow-x: hidden; overflow-y: hidden; outline-width: 0px; outline-style: initial; outline-color: initial; }</xmp></li><li><xmp>.modal-dialog { position: relative; width: auto; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; }</xmp></li><li><xmp>.modal-content { position: relative; display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-direction: normal; background-color: rgb(255, 255, 255); -webkit-background-clip: padding-box; background-clip: padding-box; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.199219); border-right-color: rgba(0, 0, 0, 0.199219); border-bottom-color: rgba(0, 0, 0, 0.199219); border-left-color: rgba(0, 0, 0, 0.199219); border-top-left-radius: 0.3rem 0.3rem; border-top-right-radius: 0.3rem 0.3rem; border-bottom-right-radius: 0.3rem 0.3rem; border-bottom-left-radius: 0.3rem 0.3rem; outline-width: 0px; outline-style: initial; outline-color: initial; }</xmp></li><li><xmp>.modal-backdrop { position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: 1040; background-color: rgb(0, 0, 0); }</xmp></li><li><xmp>.modal-body { position: relative; -webkit-box-flex: 1; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; }</xmp></li><li><xmp>.modal-scrollbar-measure { position: absolute; top: -9999px; width: 50px; height: 50px; overflow-x: scroll; overflow-y: scroll; }</xmp></li><li><xmp>.tooltip { position: absolute; z-index: 1070; display: block; font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; font-size: 0.875rem; word-wrap: break-word; opacity: 0; }</xmp></li><li><xmp>.tooltip-inner::before { position: absolute; width: 0px; height: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; }</xmp></li><li><xmp>.popover { position: absolute; top: 0px; left: 0px; z-index: 1060; display: block; max-width: 276px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; font-size: 0.875rem; word-wrap: break-word; background-color: rgb(255, 255, 255); -webkit-background-clip: padding-box; background-clip: padding-box; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.199219); border-right-color: rgba(0, 0, 0, 0.199219); border-bottom-color: rgba(0, 0, 0, 0.199219); border-left-color: rgba(0, 0, 0, 0.199219); border-top-left-radius: 0.3rem 0.3rem; border-top-right-radius: 0.3rem 0.3rem; border-bottom-right-radius: 0.3rem 0.3rem; border-bottom-left-radius: 0.3rem 0.3rem; }</xmp></li><li><xmp>.popover.popover-bottom .popover-title::before, .popover.bs-tether-element-attached-top .popover-title::before { position: absolute; top: 0px; left: 50%; display: block; width: 20px; margin-left: -10px; content: ''; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(247, 247, 247); }</xmp></li><li><xmp>.popover::before, .popover::after { position: absolute; display: block; width: 0px; height: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; }</xmp></li><li><xmp>.carousel { position: relative; }</xmp></li><li><xmp>.carousel-inner { position: relative; width: 100%; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.carousel-item { position: relative; display: none; width: 100%; }</xmp></li><li><xmp>.carousel-item-next, .carousel-item-prev { position: absolute; top: 0px; }</xmp></li><li><xmp>.carousel-control-prev, .carousel-control-next { position: absolute; top: 0px; bottom: 0px; display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; width: 15%; color: rgb(255, 255, 255); text-align: center; opacity: 0.5; }</xmp></li><li><xmp>.carousel-indicators { position: absolute; right: 0px; bottom: 10px; left: 0px; z-index: 15; display: -webkit-box; -webkit-box-pack: center; padding-left: 0px; margin-right: 15%; margin-left: 15%; list-style-type: none; list-style-position: initial; list-style-image: initial; }</xmp></li><li><xmp>.carousel-indicators li { position: relative; -webkit-box-flex: 1; max-width: 30px; height: 3px; margin-right: 3px; margin-left: 3px; text-indent: -999px; cursor: pointer; background-color: rgba(255, 255, 255, 0.496094); }</xmp></li><li><xmp>.carousel-indicators li::before { position: absolute; top: -10px; left: 0px; display: inline-block; width: 100%; height: 10px; content: ''; }</xmp></li><li><xmp>.carousel-indicators li::after { position: absolute; bottom: -10px; left: 0px; display: inline-block; width: 100%; height: 10px; content: ''; }</xmp></li><li><xmp>.carousel-caption { position: absolute; right: 15%; bottom: 20px; left: 15%; z-index: 10; padding-top: 20px; padding-bottom: 20px; color: rgb(255, 255, 255); text-align: center; }</xmp></li><li><xmp>.clearfix::after { display: block; content: ''; clear: both; }</xmp></li><li><xmp>.fixed-top { position: fixed; top: 0px; right: 0px; left: 0px; z-index: 1030; }</xmp></li><li><xmp>.fixed-bottom { position: fixed; right: 0px; bottom: 0px; left: 0px; z-index: 1030; }</xmp></li><li><xmp>.sr-only { position: absolute; width: 1px; height: 1px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; clip: rect(0px 0px 0px 0px); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>@font-face { font-family: FontAwesome; src: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format(embedded-opentype), url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0) format(woff2), url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0) format(woff), url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0) format(truetype), url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format(svg); font-weight: normal; font-style: normal; }</xmp></li><li><xmp>.fa-ul > li { position: relative; }</xmp></li><li><xmp>.fa-li { position: absolute; left: -2.14285714em; width: 2.14285714em; top: 0.14285714em; text-align: center; }</xmp></li><li><xmp>.fa-stack { position: relative; display: inline-block; width: 2em; height: 2em; line-height: 2em; vertical-align: middle; }</xmp></li><li><xmp>.fa-stack-1x, .fa-stack-2x { position: absolute; left: 0px; width: 100%; text-align: center; }</xmp></li><li><xmp>.sr-only { position: absolute; width: 1px; height: 1px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; clip: rect(0px 0px 0px 0px); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>.owl-carousel { display: none; width: 100%; position: relative; z-index: 1; }</xmp></li><li><xmp>.owl-carousel .owl-stage { position: relative; }</xmp></li><li><xmp>.owl-carousel .owl-stage-outer { position: relative; overflow-x: hidden; overflow-y: hidden; -webkit-transform: translate3d(0px, 0px, 0px); }</xmp></li><li><xmp>.owl-carousel .owl-item { position: relative; min-height: 1px; float: left; -webkit-backface-visibility: hidden; }</xmp></li><li><xmp>.owl-carousel .owl-video-wrapper { position: relative; height: 100%; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.owl-carousel .owl-video-play-icon { position: absolute; height: 80px; width: 80px; left: 50%; top: 50%; margin-left: -40px; margin-top: -40px; background-image: url(http://www.ciencia.gob.es/recursos_micinn/css/owl.video.play.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; cursor: pointer; z-index: 1; -webkit-backface-visibility: hidden; background-position: initial initial; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.owl-carousel .owl-video-frame { position: relative; z-index: 1; height: 100%; width: 100%; }</xmp></li><li><xmp>.owl-nav { position: absolute; top: -83px; right: 1%; }</xmp></li><li><xmp>.fh5co_trading_posotion_relative { position: relative; }</xmp></li><li><xmp>.fh5co_treding_position_absolute { height: 20px; width: 20px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(11, 128, 210); position: absolute; left: 9px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.fh5co_text_select_option { margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px; position: relative; top: -10px; }</xmp></li><li><xmp>.navbar-light .navbar-nav .nav-link { color: rgb(34, 34, 34) !important; padding-top: 12px !important; padding-bottom: 15px !important; padding-left: 15px !important; padding-right: 15px !important; margin-top: 0px !important; margin-right: 15px !important; margin-bottom: 0px !important; margin-left: 15px !important; -webkit-transition-property: all; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease; -webkit-transition-delay: initial; position: relative !important; }</xmp></li><li><xmp>.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(11, 128, 210) !important; color: rgb(255, 255, 255) !important; padding-top: 12px !important; padding-bottom: 15px !important; padding-left: 20px !important; padding-right: 20px !important; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 20px; position: relative; background-position: initial initial !important; background-repeat: initial initial !important; }</xmp></li><li><xmp>.fh5co_suceefh5co_height { height: 550px; overflow-x: hidden; overflow-y: hidden; width: 100%; position: relative; }</xmp></li><li><xmp>.fh5co_suceefh5co_height_position_absolute { position: absolute; width: 100%; height: 100%; background-image: -webkit-linear-gradient(top, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.777344) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; z-index: 5; top: 0px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.fh5co_suceefh5co_height_position_absolute_font { position: absolute; width: 100%; height: 100%; color: rgb(255, 255, 255); z-index: 7; top: 75%; left: 5%; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; }</xmp></li><li><xmp>.fh5co_suceefh5co_height_2 { height: 275px; overflow-x: hidden; overflow-y: hidden; width: 100%; position: relative; }</xmp></li><li><xmp>.fh5co_suceefh5co_height_position_absolute_font_2 { position: absolute; width: 100%; height: 100%; color: rgb(255, 255, 255); z-index: 7; top: 65%; left: 5%; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; }</xmp></li><li><xmp>.fh5co_img_special_relative { position: relative; right: 40%; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_relative { position: relative; overflow-x: hidden; overflow-y: hidden; z-index: 5; cursor: pointer; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_absolute { position: absolute; height: 100%; width: 100%; top: 0px; right: 0px; background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.828125) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; z-index: 7; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_absolute_1 { position: absolute; width: 100%; z-index: 9; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; bottom: 0px; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_relative:hover { -webkit-animation-name: swing1; -webkit-animation-duration: 1s; -webkit-animation-timing-function: ease; -webkit-animation-delay: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: initial; -webkit-animation-iteration-count: 1; }</xmp></li><li><xmp>.fh5co_news_img { height: 200px; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; border-bottom-right-radius: 5px 5px; border-bottom-left-radius: 5px 5px; overflow-x: hidden; overflow-y: hidden; position: relative; top: 0px; }</xmp></li><li><xmp>.fh5co_hover_news_img_video_tag_position_relative { position: relative; overflow-x: hidden; overflow-y: hidden; z-index: 18; }</xmp></li><li><xmp>.fh5co_hover_news_img_video_tag_position_absolute { height: 100%; width: 100%; position: absolute; top: 0px; right: 0px; z-index: 20; }</xmp></li><li><xmp>.fh5co_hover_news_img_video_tag_position_absolute_1 { position: absolute; z-index: 22; cursor: pointer; top: 33%; right: 40%; opacity: 0.7; }</xmp></li><li><xmp>.fh5co_hover_news_img_video_tag_position_absolute_1_play_button { height: 60px; width: 60px; background-color: rgb(255, 255, 255); border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; display: table; text-align: center; position: relative; z-index: 5; }</xmp></li><li><xmp>.fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1 { position: relative; display: inline-block; }</xmp></li><li><xmp>.fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1::before { position: absolute; content: ''; height: 120%; width: 120%; background-color: rgb(11, 128, 210); z-index: -1; top: -10%; right: -10%; opacity: 0.5; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; }</xmp></li><li><xmp>.position_footer_relative { position: relative; }</xmp></li><li><xmp>.footer_position_absolute { position: absolute; top: 60px; left: -5px; }</xmp></li><li><xmp>.fh5co_language_chnage { position: relative; top: 15px; }</xmp></li><li><xmp>.dd_position_relative { position: relative; }</xmp></li><li><xmp>.dd_box { height: 20px; width: 150px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); position: absolute; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.gototop { position: fixed; bottom: 20px; right: 20px; z-index: 999; opacity: 0; visibility: hidden; -webkit-transition-property: all; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease; -webkit-transition-delay: initial; }</xmp></li><li><xmp>.single #fh5co-title-box { position: relative; height: 700px; width: 100%; }</xmp></li><li><xmp>#fh5co-title-box .overlay { position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 10; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0.496094); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#fh5co-title-box .page-title { z-index: 12; position: absolute; bottom: 0px; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_relative.banner_w247 { width: 247px; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_absolute_gradientePlana { position: absolute; height: 100%; width: 100%; top: 0px; right: 0px; background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 72%, rgba(0, 0, 0, 0.828125) 0%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; z-index: 7; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.fh5co_latest_trading_img_position_relative { cursor: default !important; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 110
+
+		Criterio: 1.3.1..Información y relaciones
+		Nivel: A
+
+			Código: G140-Separando la información y la estructura de la presentación para permitir diferentes presentaciones
+			Criticidad: Alta
+			Observación: El sitio se ha estructurado mezclando el contenido con la presentaci&oacute;n por medio de la definici&oacute;n de estilos CSS en el contenido HTML. Los componentes que presentan este problema son: <pre><code><ul><li><xmp><div style="font-size: 12px" class="col-12 col-md-6 spdp_right py-4"><a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=0bfd56bc1aea0210VgnVCM1000001034e20aRCRD" title="Aviso Legal" class="footer_last_part_menu">Aviso Legal</a><a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=f42ed437d1293610VgnVCM1000001d04140aRCRD" title="Protección de Datos" class="footer_last_part_menu">Protección de Datos</a><a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=919c282978ea0210VgnVCM1000001034e20aRCRD" title="Accesibilidad" class="footer_last_part_menu">Accesibilidad</a><a href="/portal/site/MICINN/menuitem.89edac14a49f7be269d430a1a14041a0/?vgnextoid=aebb6de155008210VgnVCM1000001d04140aRCRD" title="Mapa Web" class="footer_last_part_menu">Mapa Web</a></div></xmp></li></ul></code></pre>.<br/>
+			Recomendación: El separar el contenido de la presentaci&oacute;n facilita la adaptaci&oacute;n de los contenidos a diferentes dispositivos. Se recomienda el uso de hojas de estilo para definir la presentaci&oacute;n de los componentes indicados..<br/>
+			Número de errores: 1
+
+			Código: F87-Fallo en el criterio 1.3.1 debido a la inserción de contenidos no decorativos mediante el uso de :before y :after pseudo-elementos y la propiedad content de los CSS
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H39-Usando elementos caption para asociar títulos de las tablas de datos a los datos de la tabla
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas..<br/>
+			Recomendación: En el caso de hacer uso de tablas estas deben ser identificadas por medio del elemento caption, siempre que no sean utilizadas para maquetaci&oacute;n (layout)..<br/>
+			Número de errores: 0
+
+			Código: H63-Usando el atributo scope para asociar las celdas de encabezado con las celdas de datos en las tablas
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H73-Usando el atributo summary del elemento table para dar una visión general de las tablas de datos
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas con un atriuto summary..<br/>
+			Recomendación: En el caso de hacer uso de tablas e identificarlas con el atributo summary este debe ser valido para identificar la tabla o explicar su estructura en caso de tablas de datos complejas..<br/>
+			Número de errores: 0
+
+			Código: H48-Usando ol, ul y dl para listas o grupos de enlaces
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H85-Usando OPTIONGROUP para agrupar elementos OPTION dentro de un SELECT
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H49-Usando marcas semánticas para marcar textos enfatizados o textos especiales
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H51-Usando tabla de marcado para presentar información tabular
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Al utilizar tablas de datos para presentar informaci&oacute;n tabular use los elementos th (encabezados) y td (datos)..<br/>
+			Número de errores: 0
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] 
+
+
+
+</li></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: OAW3-Usando elementos legend correctamente
+			Criticidad: Baja
+			Observación: No se han encontrado elementos <code>fieldset</code>.<br/>
+			Recomendación: Es importante que el primer elemento de un fieldset sea un elemento legend que describa el tipo de informaci&oacute;n que se est&aacute; agrupando..<br/>
+			Número de errores: 0
+
+			Código: OAW4-Comprobando el uso de cabeceras múltiples dentro de una fila
+			Criticidad: Media
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Los elementos <code>th</code> deben emplearse correctamente para que el usuario identifique sin dificultades los contenidos de las tablas.<br/>
+			Número de errores: 0
+
+			Código: OAW5-Comprobando la validez de los roles ARIA
+			Criticidad: Alta
+			Observación: No se han encontrado elementos con atributo role..<br/>
+			Recomendación: Es recomendable apegarse a la la especificaci&oacute;n WAI-ARIA, que define un conjunto de atributos HTML adicionales que se pueden aplicar a los elementos para proporcionar sem&aacute;ntica adicional y mejorar la accesibilidad donde sea que falte.<br/>
+			Número de errores: 0
+
+			Código: OAW6-Comprobando que las celdas de la tabla tengan datos
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Las celdas vac&iacute;as en las tablas suelen causar problemas para los usuarios que ocupan tecnolog&iacute;as de accesibilidad..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.3..Características sensoriales
+		Nivel: A
+
+	Pauta: 1.4..Distinguible
+	Descripcion: Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo
+
+		Criterio: 1.4.2..Control del audio
+		Nivel: A
+
+		Criterio: 1.4.4..Redimensionamiento del texto
+		Nivel: AA
+
+			Código: C28-Especificando el tamaño de un contenedor de texto usando unidades em
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C14-Usando unidades em para tamaños de fuente
+			Criticidad: Alta
+			Observación: De las 23 reglas CSS en la p&aacute;gina para definir el tamaño de letra (font-size), 75 de ellas usan declaraciones de elementos de forma absoluta (position:asolute) o tiene un valor incorrecto.<pre><ul><li><xmp>@media (max-width: 480px) and (min-width: 320px) { 
+  .padding_786 { padding-left: 0px !important; padding-right: 0px !important; }
+  .fh5co_mediya_setting { display: block; text-align: center; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; }
+  .treding_btn { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(245, 188, 4); color: rgb(255, 255, 255); margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px; display: inline-block; padding-top: 5px; padding-right: 40px; padding-bottom: 5px; padding-left: 40px; background-position: initial initial; background-repeat: initial initial; }
+  .fh5co_treding_position_absolute { display: none; }
+  .fh5co_mediya_center { text-align: center; }
+  .fh5co_logo_width { display: none !important; }
+  .fh5co_mediya_right { text-align: center !important; }
+  .fh5co_padding_menu { padding-right: 0px; padding-bottom: 0px; padding-left: 0px; padding-top: 10px; }
+  .mobile_logo_width { display: block !important; margin-left: 20px; padding-bottom: 10px; }
+  .fh5co_padd_mediya { padding-top: 0px; }
+  .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active { }
+  .navbar-light .navbar-nav .nav-link { }
+  .fh5co_display_table { height: 25px; width: 25px; display: table; font-size: 18px; border-top-width: 1px !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-left-width: 1px !important; border-top-style: solid !important; border-right-style: solid !important; border-bottom-style: solid !important; border-left-style: solid !important; border-top-color: rgb(255, 255, 255) !important; border-right-color: rgb(255, 255, 255) !important; border-bottom-color: rgb(255, 255, 255) !important; border-left-color: rgb(255, 255, 255) !important; cursor: pointer; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px; color: rgb(119, 119, 119) !important; }
+  .fh5co_conty_width { margin-top: 10px; }
+  .fh5co_good_font { font-size: 16px; }
+  .fh5co_good_font_2 { font-size: 14px; }
+  .fh5co_suceefh5co_height_2 { height: 200px; overflow-x: hidden; overflow-y: hidden; width: 100%; position: relative; }
+  .fh5co_suceefh5co_height_2 > img { height: 200px; width: 100%; }
+  .fh5co_suceefh5co_height { height: auto; overflow-x: hidden; overflow-y: hidden; width: 100%; position: relative; }
+  .fh5co_suceefh5co_height > img { height: auto; width: 100%; }
+  .fh5co_suceefh5co_height_position_absolute_font { position: absolute; width: 100%; height: 100%; color: rgb(255, 255, 255); z-index: 7; top: 60%; left: 5%; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 10px; }
+  .fh5co_footer_bg { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(34, 34, 34); color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+  .spdp_right { text-align: center; }
+  .footer_img_post_6 { height: 30px; width: 50px; overflow-x: hidden; overflow-y: hidden; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; display: inline-block; }
+  .footer_img_post_6 > img { width: 50px; height: 30px; }
+  .Reserved { text-align: center; }
+  .btn_mange_pagging { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(241, 241, 241); padding-top: 12px; padding-right: 5px; padding-bottom: 12px; padding-left: 5px; color: rgb(34, 34, 34) !important; font-weight: 800; margin-top: 0px; margin-right: 5px; margin-bottom: 0px; margin-left: 5px; font-size: 12px; background-position: initial initial; background-repeat: initial initial; }
+  .btn_pagging { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(241, 241, 241) !important; color: rgb(34, 34, 34); padding-top: 12px !important; padding-right: 10px !important; padding-bottom: 12px !important; padding-left: 10px !important; font-weight: 800; margin-top: 0px; margin-right: 5px; margin-bottom: 0px; margin-left: 5px; font-size: 12px; background-position: initial initial !important; background-repeat: initial initial !important; }
+  .btn_mange_pagging:hover, .btn_mange_pagging:focus { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(34, 34, 34); color: rgb(255, 255, 255) !important; font-weight: 800; background-position: initial initial; background-repeat: initial initial; }
+  .btn_pagging:hover, .btn_pagging:focus { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(34, 34, 34) !important; color: rgb(255, 255, 255); background-position: initial initial !important; background-repeat: initial initial !important; }
+}</xmp></li><li><xmp>@media (max-width: 767px) and (min-width: 480px) { 
+  .fh5co_latest_trading_img { height: 226px; }
+  .fh5co_latest_trading_img > img { height: 240px; }
+  .fh5co_img_special_relative { right: 0px; }
+  .fh5co_logo_width { display: none; }
+  .mobile_logo_width { display: block !important; margin-left: 20px; padding-bottom: 10px; }
+  .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active { }
+  .navbar-light .navbar-nav .nav-link { }
+  @media (max-width: 1024px) and (min-width: 768px) { 
+  .fh5co_mediya_center { font-size: 12px; }
+  .fh5co_logo_width { display: none; }
+  .fh5co_mediya_right { padding-top: 20px; }
+  .mobile_logo_width { width: 100px; display: block !important; margin-left: 20px; padding-bottom: 10px; }
+  .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active { }
+  .navbar-light .navbar-nav .nav-link { }
+  .fh5co_good_font { font-size: 18px; }
+  .fh5co_good_font_2 { font-size: 16px; }
+  .fh5co_contact_us_no_icon_difh5co_hover_2 { text-align: right; }
+}
+  @media (max-width: 1024px) and (min-width: 991px) { 
+  .mobile_logo_width { display: none; }
+  .fh5co_logo_width { display: block; }
+  .fh5co_good_font { font-size: 20px; }
+  .fh5co_good_font_2 { font-size: 14px; }
+}
+}</xmp></li><li><xmp>body { font-family: Poppins; font-size: 14px; font-weight: normal; line-height: 1.5; color: rgb(41, 43, 44); background-color: rgb(255, 255, 255); }</xmp></li><li><xmp>legend { display: block; width: 100%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 0.5rem; font-size: 1.5rem; line-height: inherit; }</xmp></li><li><xmp>h1, .h1 { font-size: 2.5rem; }</xmp></li><li><xmp>h2, .h2 { font-size: 2rem; }</xmp></li><li><xmp>h3, .h3 { font-size: 1.75rem; }</xmp></li><li><xmp>h4, .h4 { font-size: 1.5rem; }</xmp></li><li><xmp>h5, .h5 { font-size: 1.25rem; }</xmp></li><li><xmp>h6, .h6 { font-size: 1rem; }</xmp></li><li><xmp>.lead { font-size: 1.25rem; font-weight: 300; }</xmp></li><li><xmp>.display-1 { font-size: 6rem; font-weight: 300; line-height: 1.1; }</xmp></li><li><xmp>.display-2 { font-size: 5.5rem; font-weight: 300; line-height: 1.1; }</xmp></li><li><xmp>.display-3 { font-size: 4.5rem; font-weight: 300; line-height: 1.1; }</xmp></li><li><xmp>.display-4 { font-size: 3.5rem; font-weight: 300; line-height: 1.1; }</xmp></li><li><xmp>.blockquote { padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; margin-bottom: 1rem; font-size: 1.25rem; border-left-width: 0.25rem; border-left-style: solid; border-left-color: rgb(236, 238, 239); }</xmp></li><li><xmp>pre code { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-size: inherit; color: inherit; background-color: transparent; border-top-left-radius: 0px 0px; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0px 0px; border-bottom-left-radius: 0px 0px; }</xmp></li><li><xmp>.form-control { display: block; width: 100%; padding-top: 0.5rem; padding-right: 0.75rem; padding-bottom: 0.5rem; padding-left: 0.75rem; font-size: 1rem; line-height: 1.25; color: rgb(70, 74, 76); background-color: rgb(255, 255, 255); background-image: none; -webkit-background-clip: padding-box; background-clip: padding-box; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; -webkit-transition-property: border-color, -webkit-box-shadow; -webkit-transition-duration: 0.15s, 0.15s; -webkit-transition-timing-function: ease-in-out, ease-in-out; -webkit-transition-delay: initial, initial; }</xmp></li><li><xmp>.col-form-label-lg { font-size: 1.25rem; }</xmp></li><li><xmp>.col-form-label-sm { font-size: 0.875rem; }</xmp></li><li><xmp>.col-form-legend { padding-top: 0.5rem; padding-bottom: 0.5rem; margin-bottom: 0px; font-size: 1rem; }</xmp></li><li><xmp>.form-control-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn { padding-top: 0.25rem; padding-right: 0.5rem; padding-bottom: 0.25rem; padding-left: 0.5rem; font-size: 0.875rem; border-top-left-radius: 0.2rem 0.2rem; border-top-right-radius: 0.2rem 0.2rem; border-bottom-right-radius: 0.2rem 0.2rem; border-bottom-left-radius: 0.2rem 0.2rem; }</xmp></li><li><xmp>.form-control-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn { padding-top: 0.75rem; padding-right: 1.5rem; padding-bottom: 0.75rem; padding-left: 1.5rem; font-size: 1.25rem; border-top-left-radius: 0.3rem 0.3rem; border-top-right-radius: 0.3rem 0.3rem; border-bottom-right-radius: 0.3rem 0.3rem; border-bottom-left-radius: 0.3rem 0.3rem; }</xmp></li><li><xmp>.btn { display: inline-block; font-weight: normal; line-height: 1.25; text-align: center; white-space: nowrap; vertical-align: middle; -webkit-user-select: none; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; padding-top: 0.5rem; padding-right: 1rem; padding-bottom: 0.5rem; padding-left: 1rem; font-size: 1rem; border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; }</xmp></li><li><xmp>.btn-lg, .btn-group-lg > .btn { padding-top: 0.75rem; padding-right: 1.5rem; padding-bottom: 0.75rem; padding-left: 1.5rem; font-size: 1.25rem; border-top-left-radius: 0.3rem 0.3rem; border-top-right-radius: 0.3rem 0.3rem; border-bottom-right-radius: 0.3rem 0.3rem; border-bottom-left-radius: 0.3rem 0.3rem; }</xmp></li><li><xmp>.btn-sm, .btn-group-sm > .btn { padding-top: 0.25rem; padding-right: 0.5rem; padding-bottom: 0.25rem; padding-left: 0.5rem; font-size: 0.875rem; border-top-left-radius: 0.2rem 0.2rem; border-top-right-radius: 0.2rem 0.2rem; border-bottom-right-radius: 0.2rem 0.2rem; border-bottom-left-radius: 0.2rem 0.2rem; }</xmp></li><li><xmp>.dropdown-menu { position: absolute; top: 100%; left: 0px; z-index: 1000; display: none; float: left; min-width: 10rem; padding-top: 0.5rem; padding-right: 0px; padding-bottom: 0.5rem; padding-left: 0px; margin-top: 0.125rem; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size: 1rem; color: rgb(41, 43, 44); text-align: left; list-style-type: none; list-style-position: initial; list-style-image: initial; background-color: rgb(255, 255, 255); -webkit-background-clip: padding-box; background-clip: padding-box; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; }</xmp></li><li><xmp>.dropdown-header { display: block; padding-top: 0.5rem; padding-right: 1.5rem; padding-bottom: 0.5rem; padding-left: 1.5rem; margin-bottom: 0px; font-size: 0.875rem; color: rgb(99, 108, 114); white-space: nowrap; }</xmp></li><li><xmp>.input-group-addon { padding-top: 0.5rem; padding-right: 0.75rem; padding-bottom: 0.5rem; padding-left: 0.75rem; margin-bottom: 0px; font-size: 1rem; font-weight: normal; line-height: 1.25; color: rgb(70, 74, 76); text-align: center; background-color: rgb(236, 238, 239); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.148438); border-left-color: rgba(0, 0, 0, 0.148438); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; }</xmp></li><li><xmp>.input-group-addon.form-control-sm, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .input-group-addon.btn { padding-top: 0.25rem; padding-right: 0.5rem; padding-bottom: 0.25rem; padding-left: 0.5rem; font-size: 0.875rem; border-top-left-radius: 0.2rem 0.2rem; border-top-right-radius: 0.2rem 0.2rem; border-bottom-right-radius: 0.2rem 0.2rem; border-bottom-left-radius: 0.2rem 0.2rem; }</xmp></li><li><xmp>.input-group-addon.form-control-lg, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .input-group-addon.btn { padding-top: 0.75rem; padding-right: 1.5rem; padding-bottom: 0.75rem; padding-left: 1.5rem; font-size: 1.25rem; border-top-left-radius: 0.3rem 0.3rem; border-top-right-radius: 0.3rem 0.3rem; border-bottom-right-radius: 0.3rem 0.3rem; border-bottom-left-radius: 0.3rem 0.3rem; }</xmp></li><li><xmp>.input-group-btn { position: relative; font-size: 0px; white-space: nowrap; }</xmp></li><li><xmp>.navbar-brand { display: inline-block; padding-top: 0.25rem; padding-bottom: 0.25rem; margin-right: 1rem; font-size: 1.25rem; line-height: inherit; white-space: nowrap; }</xmp></li><li><xmp>.navbar-toggler { padding-top: 0.25rem; padding-right: 0.75rem; padding-bottom: 0.25rem; padding-left: 0.75rem; font-size: 1.25rem; line-height: 1; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.pagination-lg .page-link { padding-top: 0.75rem; padding-right: 1.5rem; padding-bottom: 0.75rem; padding-left: 1.5rem; font-size: 1.25rem; }</xmp></li><li><xmp>.pagination-sm .page-link { padding-top: 0.25rem; padding-right: 0.5rem; padding-bottom: 0.25rem; padding-left: 0.5rem; font-size: 0.875rem; }</xmp></li><li><xmp>.progress { display: -webkit-box; overflow-x: hidden; overflow-y: hidden; font-size: 0.75rem; line-height: 1rem; text-align: center; background-color: rgb(236, 238, 239); border-top-left-radius: 0.25rem 0.25rem; border-top-right-radius: 0.25rem 0.25rem; border-bottom-right-radius: 0.25rem 0.25rem; border-bottom-left-radius: 0.25rem 0.25rem; }</xmp></li><li><xmp>.close { float: right; font-size: 1.5rem; font-weight: bold; line-height: 1; color: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px 0px; opacity: 0.5; }</xmp></li><li><xmp>.tooltip { position: absolute; z-index: 1070; display: block; font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; font-size: 0.875rem; word-wrap: break-word; opacity: 0; }</xmp></li><li><xmp>.popover { position: absolute; top: 0px; left: 0px; z-index: 1060; display: block; max-width: 276px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; font-size: 0.875rem; word-wrap: break-word; background-color: rgb(255, 255, 255); -webkit-background-clip: padding-box; background-clip: padding-box; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(0, 0, 0, 0.199219); border-right-color: rgba(0, 0, 0, 0.199219); border-bottom-color: rgba(0, 0, 0, 0.199219); border-left-color: rgba(0, 0, 0, 0.199219); border-top-left-radius: 0.3rem 0.3rem; border-top-right-radius: 0.3rem 0.3rem; border-bottom-right-radius: 0.3rem 0.3rem; border-bottom-left-radius: 0.3rem 0.3rem; }</xmp></li><li><xmp>.popover-title { padding-top: 8px; padding-right: 14px; padding-bottom: 8px; padding-left: 14px; margin-bottom: 0px; font-size: 1rem; background-color: rgb(247, 247, 247); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(235, 235, 235); }</xmp></li><li><xmp>.fa { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; }</xmp></li><li><xmp>.fa-lg { font-size: 1.33333333em; line-height: 0.75em; vertical-align: -15%; }</xmp></li><li><xmp>.owl-theme .owl-nav [class*="owl-"] { color: rgb(66, 64, 64); font-size: 14px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; padding-top: 6px; padding-right: 14px; padding-bottom: 6px; padding-left: 14px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(214, 214, 214); display: inline-block; cursor: pointer; border-top-left-radius: 3px 3px; border-top-right-radius: 3px 3px; border-bottom-right-radius: 3px 3px; border-bottom-left-radius: 3px 3px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.fh5co_display_table { height: 40px; width: 40px; display: table; font-size: 18px; border-top-width: 1px !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-left-width: 1px !important; border-top-style: solid !important; border-right-style: solid !important; border-bottom-style: solid !important; border-left-style: solid !important; border-top-color: rgb(255, 255, 255) !important; border-right-color: rgb(255, 255, 255) !important; border-bottom-color: rgb(255, 255, 255) !important; border-left-color: rgb(255, 255, 255) !important; cursor: pointer; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px; color: rgb(119, 119, 119) !important; }</xmp></li><li><xmp>.fh5co_good_font { color: rgb(255, 255, 255); font-size: 26px; word-wrap: break-word; }</xmp></li><li><xmp>.fh5co_heading { font-size: 20px; color: rgb(66, 64, 64); }</xmp></li><li><xmp>.fh5co_latest_trading_date_and_name_color { color: rgba(255, 255, 255, 0.699219); font-size: 13px; }</xmp></li><li><xmp>.fh5co_small_post_heading { font-size: 17px; color: rgb(66, 64, 64); }</xmp></li><li><xmp>.fh5co_magna { font-size: 16px; color: rgb(34, 34, 34) !important; font-weight: 800; }</xmp></li><li><xmp>.fh5co_mini_time { font-size: 14px; color: rgb(34, 34, 34); display: inline-block; }</xmp></li><li><xmp>.fh5co_consectetur { font-size: 14px; color: rgb(119, 119, 119); }</xmp></li><li><xmp>.most_fh5co_treding_font_123 { font-size: 12px; color: rgb(119, 119, 119); }</xmp></li><li><xmp>.footer_main_title { color: rgb(255, 255, 255); font-weight: 800; font-size: 18px; }</xmp></li><li><xmp>.footer_sub_about { color: rgb(201, 200, 200); font-size: 14px; }</xmp></li><li><xmp>.fh5co_display_table_footer { height: 40px; width: 40px; display: table; font-size: 18px; border-top-width: 1px !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-left-width: 1px !important; border-top-style: solid !important; border-right-style: solid !important; border-bottom-style: solid !important; border-left-style: solid !important; border-top-color: rgb(34, 34, 34) !important; border-right-color: rgb(34, 34, 34) !important; border-bottom-color: rgb(34, 34, 34) !important; border-left-color: rgb(34, 34, 34) !important; cursor: pointer; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; -webkit-transition-property: all; -webkit-transition-duration: 1s; -webkit-transition-timing-function: ease; -webkit-transition-delay: initial; margin-right: 10px; color: rgb(119, 119, 119) !important; }</xmp></li><li><xmp>.footer_makes_sub_font { font-size: 12px; color: rgb(119, 119, 119); }</xmp></li><li><xmp>.fh5co_con { font-size: 24px; color: rgb(255, 255, 255); font-weight: 800; text-decoration: none; -webkit-transition-property: all; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease; -webkit-transition-delay: initial; }</xmp></li><li><xmp>.fh5co_con:hover, .fh5co_con:focus { text-decoration: none; font-size: 24px; color: rgb(11, 128, 210); font-weight: 800; }</xmp></li><li><xmp>.fh5co_con_123 { border-top-width: 1px !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-left-width: 1px !important; border-top-style: solid !important; border-right-style: solid !important; border-bottom-style: solid !important; border-left-style: solid !important; border-top-color: rgb(255, 255, 255) !important; border-right-color: rgb(255, 255, 255) !important; border-bottom-color: rgb(255, 255, 255) !important; border-left-color: rgb(255, 255, 255) !important; color: rgb(255, 255, 255) !important; font-size: 24px !important; padding-top: 10px; padding-right: 15px; padding-bottom: 10px; padding-left: 15px; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 20px; -webkit-transition-property: all; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease; -webkit-transition-delay: initial; }</xmp></li><li><xmp>.fh5co_con_123:hover, .fh5co_con_123:focus { border-top-width: 1px !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-left-width: 1px !important; border-top-style: solid !important; border-right-style: solid !important; border-bottom-style: solid !important; border-left-style: solid !important; border-top-color: rgb(255, 255, 255) !important; border-right-color: rgb(255, 255, 255) !important; border-bottom-color: rgb(255, 255, 255) !important; border-left-color: rgb(255, 255, 255) !important; color: rgb(255, 255, 255) !important; font-size: 24px !important; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(11, 128, 210); padding-top: 10px; padding-right: 15px; padding-bottom: 10px; padding-left: 15px; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 20px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.fh5co_heading { font-size: 24px; color: rgb(34, 34, 34); }</xmp></li><li><xmp>.fh5co_contact_us_no_icon_div { height: 50px; width: 50px; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(34, 34, 34); border-right-color: rgb(34, 34, 34); border-bottom-color: rgb(34, 34, 34); border-left-color: rgb(34, 34, 34); display: table; text-align: center; font-size: 20px; color: rgb(34, 34, 34); }</xmp></li><li><xmp>.fh5co_contact_us_no_text { font-size: 16px; }</xmp></li><li><xmp>.fh5co_contact_us_text_box { border-top-left-radius: 0px 0px !important; border-top-right-radius: 0px 0px !important; border-bottom-right-radius: 0px 0px !important; border-bottom-left-radius: 0px 0px !important; border-top-width: 1px !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-left-width: 1px !important; border-top-style: solid !important; border-right-style: solid !important; border-bottom-style: solid !important; border-left-style: solid !important; border-top-color: rgb(119, 119, 119) !important; border-right-color: rgb(119, 119, 119) !important; border-bottom-color: rgb(119, 119, 119) !important; border-left-color: rgb(119, 119, 119) !important; font-size: 14px !important; }</xmp></li><li><xmp>.fh5co_contact_us_text_area { border-top-left-radius: 0px 0px !important; border-top-right-radius: 0px 0px !important; border-bottom-right-radius: 0px 0px !important; border-bottom-left-radius: 0px 0px !important; border-top-width: 1px !important; border-right-width: 1px !important; border-bottom-width: 1px !important; border-left-width: 1px !important; border-top-style: solid !important; border-right-style: solid !important; border-bottom-style: solid !important; border-left-style: solid !important; border-top-color: rgb(119, 119, 119) !important; border-right-color: rgb(119, 119, 119) !important; border-bottom-color: rgb(119, 119, 119) !important; border-left-color: rgb(119, 119, 119) !important; font-size: 14px !important; height: 100px; resize: none; }</xmp></li><li><xmp>.s_textbox_name { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(199, 199, 199) !important; border-top-width: 0px !important; border-right-width: 0px !important; border-bottom-width: 0px !important; border-left-width: 0px !important; border-style: initial !important; border-color: initial !important; border-top-left-radius: 0px 0px !important; border-top-right-radius: 0px 0px !important; border-bottom-right-radius: 0px 0px !important; border-bottom-left-radius: 0px 0px !important; font-size: 14px !important; letter-spacing: 1px !important; background-position: initial initial !important; background-repeat: initial initial !important; }</xmp></li><li><xmp>.fh5co_p_font_size { font-size: 14px; }</xmp></li><li><xmp>.fh5co_contact_text_box { border-top-left-radius: 0px 0px !important; border-top-right-radius: 0px 0px !important; border-bottom-right-radius: 0px 0px !important; border-bottom-left-radius: 0px 0px !important; font-size: 15px !important; height: 45px !important; letter-spacing: 1px !important; }</xmp></li><li><xmp>.single #fh5co-title-box .page-title h2 { font-size: 72px; }</xmp></li><li><xmp>#fh5co-title-box .page-title > span { display: block; color: rgba(255, 255, 255, 0.496094); text-transform: uppercase; font-size: 15px; letter-spacing: 0.05em; margin-bottom: 10px; }</xmp></li><li><xmp>#fh5co-single-content p, #fh5co-single-content ul li { font-size: 1.05rem; }</xmp></li><li><xmp>.ico_abierta { font-size: 12px; background-image: url(http://www.ciencia.gob.es/recursos_micinn/img/ico_abierta.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-left: 20px; padding-top: 5px; background-position: 0px 5px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.ico_cerrada { font-size: 12px; background-image: url(http://www.ciencia.gob.es/recursos_micinn/img/ico_cerrada.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-left: 20px; padding-top: 5px; background-position: 0px 5px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>font-size: 12px</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS para definir el tamaño de letra del contenido, utilice valores relativos por medio de unidades "em", % o valores  xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, o larger. Al usar medidas de fuente absolutas, se limita el contenido textual de la p&aacute;gina ya que no se podr&iacute;a adaptar a diferentes resoluciones de pantalla..<br/>
+			Número de errores: 75
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: Por defecto la dimensi&oacute;n de ancho de la p&aacute;gina supera a la del navegador, haciendo necesario el uso del SCROLL HORIZONTAL para leer todo el contenido..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 1
+
+			Código: C13-Usando tamaños de fuente nombrados
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C12-Usando porcentajes para tamaños de fuente
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 1.4.8..Presentación visual
+		Nivel: AAA
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: Por defecto la dimensi&oacute;n de ancho de la p&aacute;gina supera a la del navegador, haciendo necesario el uso del SCROLL HORIZONTAL para leer todo el contenido..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 1
+
+			Código: C20-Usando medidas relativas para establecer anchos de columna para que las líneas puedan promediar 80 caracteres o menos cuando se cambia el tamaño del navegador
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C19-Especificar la alineación, ya sea a la izquierda o a la derecha en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C21-Especificando espacio entre líneas en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 2.Operable
+Descripcion: Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+	Pauta: 2.1..Accesible por teclado
+	Descripcion: Proporcionar acceso a toda la funcionalidad mediante el teclado
+
+		Criterio: 2.1.1..Teclado
+		Nivel: A
+
+	Pauta: 2.2..Tiempo suficiente
+	Descripcion: Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido
+
+		Criterio: 2.2.2..Pausar, detener, ocultar
+		Nivel: A
+
+			Código: G11A-Creando contenido que parpadea al menos 5 segundos: A) Elementos con animación blink
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>blink</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: G11B-Creando contenido que parpadea al menos 5 segundos: B) Elementos con animación marquee
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>marquee</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+	Pauta: 2.3..Convulsiones
+	Descripcion: No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones
+
+	Pauta: 2.4..Navegable
+	Descripcion: Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran
+
+		Criterio: 2.4.1..Evitar bloques
+		Nivel: A
+
+		Criterio: 2.4.2..Páginas tituladas
+		Nivel: A
+
+			Código: G88-Proporcionar títulos descriptivos para páginas web
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H25-Proporcionando un título usando el elemento title
+			Criticidad: Alta
+			Observación: La p&aacute;gina tiene un t&iacute;tulo, aseg&uacute;rese que sea descriptivo y que est&eacute; acorde al contenido de la p&aacute;gina. <pre><ul><title>Inicio - Ministerio de Ciencia, Innovación y Universidades (es)</title></ul></pre>.<br/>
+			Recomendación: El t&iacute;tulo de la p&aacute;gina debe ser descriptivo y brindar una persepci&oacute;n del contenido de la misma..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.3..Orden del foco
+		Nivel: A
+
+			Código: H4-Creando un orden lógico en el orden del tabulador a través de los enlaces, controles de formulario, y objetos
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.4..Propósito de los enlaces (En contexto)
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H33-Complementando el texto del enlace con el atributo title
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C7-Usando CSS para ocultar una porcion de texto de un enlace
+			Criticidad: Baja
+			Observación: En la p&aacute;gina se est&aacute; utilizando en 100 ocaci&oacute;n(es) la opci&oacute;n para ocultar contenido, verifique que este sea relevante, o que sea facilmente accesible.<br/>
+			Recomendación: Al ocultar una parte de informaci&oacute;n de la p&aacute;gina, se puede llegar a confundir al usuario.<br/>
+			Número de errores: 100
+
+			Código: H30-Proporcionar un texto de enlace que describa el propósito del enlace para los elemtos de anclaje (a)
+			Criticidad: Alta
+			Observación: En 6 im&aacute;gen(es) de las 19 que hay en la p&aacute;gina, tiene un valor nulo o vacio verifique que corresponda a im&aacute;genes decorativas.  Las im&aacute;genes que presentan este inconveniente son:<pre><ul><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Atencion_ciudadania.png"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Sede_electronica.png"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Igualdad_genero.png"></xmp></li><li><xmp><img class="" alt="" src="/stfls/MICINN/Home/Imagenes/Transparencia_gobierno_abierto.png"></xmp></li><li><xmp><img alt="" src="/stfls/MICINN/Prensa/IMAGENES/2018/12/IMG-20181220-WA0000.jpg"></xmp></li><li><xmp><img alt="" src="/stfls/MICINN/Prensa/IMAGENES/2018/12/UNED_NotaPrensa.jpg"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&aacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 6
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.6..Encabezados y etiquetas
+		Nivel: AA
+
+			Código: G130-Proporcionar títulos descriptivos
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.5..Re-autentificación
+		Nivel: AA
+
+			Código: H59-Usando el elemneto link y herramientas de navegación
+			Criticidad: Alta
+			Observación: Los 13 links de relacion que tiene la p&aacute;gina se han definido correctamente.<br/>
+			Recomendación: Es importante colocar la etiqueta link &uacute;nicamente dentro del encabezado de la p&aacute;gina, e indicar la relaci&oacute;n que guarda con la misma.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.7..Foco visible
+		Nivel: AA
+
+			Código: C15-Usando CSS para cambiar la presentación de un componente de interfaz de usuario cuando recibe el foco
+			Criticidad: Baja
+			Observación: No se han detectado declaraciones del foco de teclado.<br/>
+			Recomendación: Verificar que el foco sea visible y que este en correcto posicionamiento en la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.10..Encabezados se sección
+		Nivel: AAA
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] 
+
+
+
+</li></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+
+Principio: 3.Comprensible
+Descripcion: La información y el manejo de la interfaz de usuario deben ser comprensibles
+
+	Pauta: 3.1..Legible
+	Descripcion: Hacer que los contenidos textuales resulten legibles y comprensibles
+
+		Criterio: 3.1.1..Idioma de la página
+		Nivel: A
+
+			Código: H57-Usando el atributo language en el elemento html
+			Criticidad: Alta
+			Observación: La definici&oacute;n de lenguaje en la p&aacute;gina se ha realizado exitosamente.<br/>
+			Recomendación: Verificar la especificaci&oacute;n del lenguaje, es importante especificar en que idioma se est&aacute; presentando la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.3..Palabras inusuales
+		Nivel: AAA
+
+			Código: H60-Usando el elemento link para enlazar a un glosario
+			Criticidad: Baja
+			Observación: La p&aacute;gina podr&iacute;a requerir un link a un glosario de palabras complejas.<br/>
+			Recomendación: Cuando se utiliza palabras complejas es recomendable colocar un glosario que las defina.<br/>
+			Número de errores: 1
+
+			Código: H40-Usando listas de definición
+			Criticidad: Baja
+			Observación: No se han encontrado listas dentro de la p&aacute;gina.<br/>
+			Recomendación: La estructura de la lista de definici&oacute;n, deben ser empleadas correctamente, colocando cada uno de sus componentes sin descartar ninguno.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.6..Pronunciación
+		Nivel: AAA
+
+			Código: H62-Usando el elemento ruby
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado etiquetas ruby.<br/>
+			Recomendación: Es importante supervisar el correcto uso de esta etiqueta para caracteres especiales.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.4..Abreviaturas
+		Nivel: AAA
+
+			Código: H70-Usando elementos frame para agrupar bloques de material repetido
+			Criticidad: Alta
+			Observación: La p&aacute;gina no tiene etiquetas frame.<br/>
+			Recomendación: Los elementos frame no deben usarse para maquetar contenido en la p&aacute;gina, se debe utilizar hojas de estilo.<br/>
+			Número de errores: 0
+
+	Pauta: 3.2..Predecible
+	Descripcion: Hacer que las páginas web aparezcan y operen de manera predecible
+
+		Criterio: 3.2.2..Al introducir datos
+		Nivel: A
+
+			Código: H32-Proporcionar botones de envio
+			Criticidad: Media
+			Observación: Verificar que el formulario tenga m&eacute;todo de env&iacute;o.<br/>
+			Recomendación: De los 1 formularios de la p&aacute;gina, existen 1 que no tienen m&eacute;todo de env&iacute;o.<br/>
+			Número de errores: 1
+
+		Criterio: 3.2.5..Cambios a petición
+		Nivel: AAA
+
+			Código: H83-Usando el atributo target para abrir una nueva ventana a petición del usuario e indicando en ventana a petición del usuario e indicando en el texto de este enlace
+			Criticidad: Media
+			Observación: 10 enlace(s) indica(n) como destino una nueva ventana, verifique que el enlace contiene informaci&oacute;n que indica que el enlace se abrir&aacute; en una nueva ventana. <pre><ul><li><xmp><a class="fh5co_display_table" href="https://twitter.com/CienciaGob" title="Ir a 'Twitter Ciencia', en ventana nueva" target="_blank"><div class="fh5co_verticle_middle"><i class="fa fa-twitter"><span>social-link</span></i></div></a></xmp></li><li><xmp><a class="fh5co_display_table" href="https://www.facebook.com/CienciaGob/" title="Ir a 'Facebook', en ventana nueva" target="_blank"><div class="fh5co_verticle_middle"><i class="fa fa-facebook "><span>social-link</span></i></div></a></xmp></li><li><xmp><a class="fh5co_display_table" href="https://www.instagram.com/cienciagob/" title="Ir a 'Instagram', en ventana nueva" target="_blank"><div class="fh5co_verticle_middle"><i class="fa fa-instagram"><span>social-link</span></i></div></a></xmp></li><li><xmp><a class="fh5co_display_table" href="https://www.youtube.com/user/cienciagob" title="Ir a 'YouTube', en ventana nueva" target="_blank"><div class="fh5co_verticle_middle"><i class="fa fa-youtube-play"><span>social-link</span></i></div></a></xmp></li><li><xmp><a class="fh5co_display_table" href="https://www.flickr.com/photos/142738847@N05/albums" title="Ir a 'Flickr', en ventana nueva" target="_blank"><div class="fh5co_verticle_middle"><i class="fa fa-flickr"><span>social-link</span></i></div></a></xmp></li><li><xmp><a href="https://constitucion40.com/" title="Ir a '40 años de la Constitución', en ventana nueva" target="_blank" class="footer_img_logos"><img alt="Ir a '40 años de la Constitución', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/c40_reducido_bn.png"></a></xmp></li><li><xmp><a href="http://www.sepe.es/" title="Ir a 'SEPE', en ventana nueva" target="_blank" class="footer_img_logos"><img alt="Ir a 'SEPE', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/sepe.png"></a></xmp></li><li><xmp><a href="http://transparencia.gob.es/" title="Ir a 'Portal de Transparencia', en ventana nueva" target="_blank" class="footer_img_logos"><img alt="Ir a 'Portal de Transparencia', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/transparencia.jpg"></a></xmp></li><li><xmp><a href="http://www.boe.es/" title="Ir a 'BOE', en ventana nueva" target="_blank" class="footer_img_logos"><img alt="Ir a 'BOE', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/boe.jpg"></a></xmp></li><li><xmp><a href="http://administracion.gob.es/" title="Ir a 'Administracion.gob.es', en ventana nueva" target="_blank" class="footer_img_logos"><img alt="Ir a 'Administracion.gob.es', en ventana nueva" src="/stfls/MICINN/Home/Imagenes/admgob.jpg"></a></xmp></li></ul></pre>.<br/>
+			Recomendación: Un ejemplo podr&iacute;a ser: <code><xmp><a href="ayuda.html" target="_blank">Mostrar ayuda (abre nueva ventana)</a></xmp></code>..<br/>
+			Número de errores: 10
+
+			Código: H76-Usando meta refresh para crear un redireccionamiento de cliente instantánea
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se ha detectado el uso de la etiqueta meta conjuntamente con el atributo refresh para actualizaci&oacute;n de la p&aacute;gina..<br/>
+			Recomendación: En el caso de quere hacer uso de la misma, considerar que la continua actualizaci&oacute;n de la p&aacute;gina no es recomendable, puede causar confusi&oacute;n en el usuario..<br/>
+			Número de errores: 0
+
+	Pauta: 3.3..Entrada de datos asistida
+	Descripcion: Ayudar a los usuarios a evitar y corregir los errores
+
+		Criterio: 3.3.1..Identificación de errores
+		Nivel: A
+
+		Criterio: 3.3.2..Etiquetas o instrucciones
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>2</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H71-Proporcionando una descripcion para grupos de controles de formularios usando los elementos fieldset y legend
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: OAW2-Proporcionando contenido en todos los elementos
+			Criticidad: Baja
+			Observación: No se encontraron elementos vac&iacute;os..<br/>
+			Recomendación: Es importante evitar declarar elementos sin contenido.<br/>
+			Número de errores: 0
+
+		Criterio: 3.3.5..Ayuda
+		Nivel: AAA
+
+			Código: G71-Proporcionando un enlace de ayuda en cada pagina web
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H89-Usando el atributo title para proporcionar ayuda contextual
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 4.Robusto
+Descripcion: El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+	Pauta: 4.1..Compatible
+Descripcion: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas
+
+		Criterio: 4.1.1..Procesamiento
+		Nivel: A
+
+			Código: G134-Validación de páginas web
+			Criticidad: Alta
+			Observación: <p>La pagina ha sido analizada en <a href='https://validator.w3.org/' target='_blank'>https://validator.w3.org/</a>, encontrandose <strong>27 errores</strong>.</p><pre><ul><li><xmp>Attribute “xmlns:xalan” not allowed here.:
+fit=no">  <title xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java">Inicio</xmp></li><li><xmp>Attribute “xmlns:java” not allowed here.:
+fit=no">  <title xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java">Inicio</xmp></li><li><xmp>Attribute “xmlns:xalan” not allowed here.:
+)</title> <meta xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" content="Ministerio de Ciencia, Innovación y Universidades, investigación, desarrollo, innovación, ayudas, becas, convocatorias, subvenciones, programas, I+D+I, políticas, estadísticas, cooperación internacional, administración pública, ciencia, tecnología, infraestructuras científicas, infraestructuras tecnológicas, planes regionales, fondo tecnológico, información científica, energía, cambio climático, plan nacional de I+D+I, nanociencia, nanotecnología, Proyectos I+D+I, Ingenio 2010, consejerías, Estrategia Nacional de Ciencia y Tecnología, Museo Nacional de Ciencia y Tecnología" name="keywords"/> <meta</xmp></li><li><xmp>Attribute “xmlns:java” not allowed here.:
+)</title> <meta xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" content="Ministerio de Ciencia, Innovación y Universidades, investigación, desarrollo, innovación, ayudas, becas, convocatorias, subvenciones, programas, I+D+I, políticas, estadísticas, cooperación internacional, administración pública, ciencia, tecnología, infraestructuras científicas, infraestructuras tecnológicas, planes regionales, fondo tecnológico, información científica, energía, cambio climático, plan nacional de I+D+I, nanociencia, nanotecnología, Proyectos I+D+I, Ingenio 2010, consejerías, Estrategia Nacional de Ciencia y Tecnología, Museo Nacional de Ciencia y Tecnología" name="keywords"/> <meta</xmp></li><li><xmp>Attribute “xmlns:xalan” not allowed here.:
+ywords"/> <meta xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" content="El Ministerio de Ciencia, Innovación y Universidades es el departamento de la Administración General del Estado encargado de la propuestas y ejecución de la política del Gobierno en materia de investigación científica, desarrollo tecnológico e innovación en todos los sectores, así como la coordinación de los organismos públicos de investigación de titularidad estatal." name="description"/> <link</xmp></li><li><xmp>Attribute “xmlns:java” not allowed here.:
+ywords"/> <meta xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" content="El Ministerio de Ciencia, Innovación y Universidades es el departamento de la Administración General del Estado encargado de la propuestas y ejecución de la política del Gobierno en materia de investigación científica, desarrollo tecnológico e innovación en todos los sectores, así como la coordinación de los organismos públicos de investigación de titularidad estatal." name="description"/> <link</xmp></li><li><xmp>Bad value “true” for attribute “selected” on element “option”.:
+Idiomas"> <option selected="true" value="/portal/site/MICINN/?lang_choosen=es">Españo</xmp></li><li><xmp>Duplicate ID “lb_busq_gnral”.:
+en"/>     <label for="campobusq" id="lb_busq_gnral">Buscar</xmp></li><li><xmp>Duplicate attribute “class”.:
+value="" class="conborde" id=</xmp></li><li><xmp>Attribute “xmlns:xalan” not allowed here.:
+div>-->   <div xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" class="container-fluid bg-faded fh5co_padd_mediya padding_786"> <div</xmp></li><li><xmp>Attribute “xmlns:java” not allowed here.:
+div>-->   <div xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" class="container-fluid bg-faded fh5co_padd_mediya padding_786"> <div</xmp></li><li><xmp>Bad value “” for attribute “id” on element “div”: An ID must not be the empty string.:
+ng">-->   <div class="container-fluid pt-3 xm" id=""> <div</xmp></li><li><xmp>Duplicate ID “”.:
+v> </div> <div class="container-fluid pb-4 pt-4 paddding" id=""> <div</xmp></li><li><xmp>Bad value “” for attribute “id” on element “div”: An ID must not be the empty string.:
+v> </div> <div class="container-fluid pb-4 pt-4 paddding" id=""> <div</xmp></li><li><xmp>Duplicate ID “”.:
+g" id=""> <div class="container paddding" id=""> <div</xmp></li><li><xmp>Bad value “” for attribute “id” on element “div”: An ID must not be the empty string.:
+g" id=""> <div class="container paddding" id=""> <div</xmp></li><li><xmp>Duplicate ID “”.:
+g" id=""> <div class="row mx-0" id=""> <div</xmp></li><li><xmp>Bad value “” for attribute “id” on element “div”: An ID must not be the empty string.:
+g" id=""> <div class="row mx-0" id=""> <div</xmp></li><li><xmp>Duplicate ID “”.:
+iv></div> <div class="row mx-0 animate-box fadeInUp animated-fast" id=""> <div</xmp></li><li><xmp>Bad value “” for attribute “id” on element “div”: An ID must not be the empty string.:
+iv></div> <div class="row mx-0 animate-box fadeInUp animated-fast" id=""> <div</xmp></li><li><xmp>Attribute “xmlns:xalan” not allowed here.:
+t" id=""> <div xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" class="col-md-8 animate-box fadeInRight animated-fast" data-animate-effect="fadeInRight"> <div></xmp></li><li><xmp>Attribute “xmlns:java” not allowed here.:
+t" id=""> <div xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" class="col-md-8 animate-box fadeInRight animated-fast" data-animate-effect="fadeInRight"> <div></xmp></li><li><xmp>Attribute “xmlns:xalan” not allowed here.:
+v> </div> <div xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" data-animate-effect="fadeInRight" class="col-md-4 animate-box fadeInRight animated-fast"> <div></xmp></li><li><xmp>Attribute “xmlns:java” not allowed here.:
+v> </div> <div xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" data-animate-effect="fadeInRight" class="col-md-4 animate-box fadeInRight animated-fast"> <div></xmp></li><li><xmp>Bad value “fila 6” for attribute “id” on element “div”: An ID must not contain whitespace.:
+v> </div> <div id="fila 6"> </div</xmp></li><li><xmp>Bad value “fila 7” for attribute “id” on element “div”: An ID must not contain whitespace.:
+"> </div> <div id="fila 7"> </div</xmp></li><li><xmp>Bad value “fila 8” for attribute “id” on element “div”: An ID must not contain whitespace.:
+"> </div> <div id="fila 8"> </div</xmp></li></ul></pre><p>Para mayor información revise el siguiente enlace: <a href='https://validator.w3.org/nu/?doc=http://www.ciencia.gob.es/portal/site/MICINN/' target='_blank'>Validación W3C</a></p>.<br/>
+			Recomendación: .<br/>
+			Número de errores: 27
+
+		Criterio: 4.1.2..Nombre, función, valor
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>2</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H64-Usando el atributo title en los elementos frame e iframe 
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos frames..<br/>
+			Recomendación: En caso de usar elementos frame o iframe acompañelos por una descripci&oacute;n del mismo a travez del atributo <code>title</code>..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+

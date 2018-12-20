@@ -1,16 +1,14 @@
 <nav class="nav-cabecera">
-    <a class = "a-hf" href="{{ url('/') }}">
+    <a class = "a-logo" href="{{ url('/') }}">
         <div class="osaw">
             <p class="p-osaw">OSAW</p> 
         </div>
         <div>
-            <p>Observatorio para el Seguimiento de la Accesibilidad Web</p> 
+            <p style="margin-left: 1em;margin-right: 1em">Observatorio para el Seguimiento de la Accesibilidad Web</p> 
         </div>
     </a>
 
-    <!-- Right Side Of Navbar -->
-    <ul class="ul-cabecera">
-        <!-- Authentication Links -->
+    <ul class="ul-cabecera" >
         @guest
             <li class="li-cabecera">
                 <a class = "a-hf" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
@@ -22,7 +20,6 @@
             </li>
         @else
             <li class="li-cabecera">
-                
                 <a class = "a-hf" href="/perfil/{{Auth::user()->id}}"> <img class="avatar-header" src="/storage/{{Auth::user()->avatar}}" alt="avatar usuario"></a>
             </li>
             <li class="li-cabecera">
@@ -63,7 +60,7 @@
 
 
 
-<nav>
+<nav class="nav-cabecera-debajo">
     <ul class="ul-cabecera">
         <li class="li-cabecera" >
             <a class = "a-hf" href="/">Inicio </a>
@@ -71,7 +68,6 @@
         <li class="li-cabecera" >
             <a class = "a-hf" href="/lista-sitios">Listado de sitios web </a>
         </li>
-        
         <li class="li-cabecera">
             <form style="display:inline;float: right;" method="GET" action="{{ action('SitioController@busquedaSitio') }}">
                 <label class="label-buscador" for="nombre" >Buscar Sitio Web: </label>

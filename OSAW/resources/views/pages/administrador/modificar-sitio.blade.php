@@ -17,7 +17,7 @@ function mostrarEliminar() {
 
 @section('content')
 
-<h1 class="h1-titulo"> Modificar sitio web </h1>
+<h1 class="h1-encabezado"> Modificar sitio web </h1>
 
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
@@ -34,7 +34,7 @@ function mostrarEliminar() {
     <br>
 
 <form method="POST" action="<?php action('SitioController@modificarSitio', [$sitio['id']]) ?>">
-    @csrf
+    {{ csrf_field() }}
 
     <!--Nombre del sitio -->
     <div class="form-group row">

@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1 class="h1-titulo"> Gestionar sitios web </h1>
+<h1 class="h1-encabezado"> Gestionar sitios web </h1>
 
 <div style="margin-bottom: 1.5em">
     <a class="btn btn-primary" href="/crear-sitio" role="button">Añadir nuevo sitio web</a>

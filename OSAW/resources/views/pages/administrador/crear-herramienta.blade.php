@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1 class="h1-titulo"> Añadir herramienta web </h1>
+<h1 class="h1-encabezado"> Añadir herramienta web </h1>
 
 <a class="btn btn-default" href="/gestionar-herramientas" role="button">Volver a gestionar herramientas</a>
 
@@ -16,7 +16,7 @@
 <div class="card">
     <div class="card-body">
         <form method="POST" action="{{  action('HerramientaController@crearHerramienta') }}">
-            @csrf
+            {{ csrf_field() }}
 
             <div class="form-group row">
                 <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre herramienta</label>

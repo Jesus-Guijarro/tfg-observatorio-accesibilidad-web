@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="observatorio, accesibilidad, web, analisis, WCAG 2.0, WCAG 2.1, UNE 139803">
         <meta name="description" content="Observatorio para el Seguimiento de la Accesibilidad Web de sitios web que por ley deben de ser accesibles.">
         <meta name="author" content="Jesus F. Guijarro">
@@ -33,7 +33,7 @@
 
             <div class="contenido">
                 <div class="row justify-content-center">
-                    <div class="col-md-10">
+                    <div class="col-md-11">
                         @yield('content')
                     </div>
                 </div>

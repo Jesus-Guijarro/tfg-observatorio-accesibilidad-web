@@ -3,7 +3,7 @@
 @section('titulo', 'Crear sitio web')
 
 @section('content')
-<h1 class="h1-titulo"> Añadir sitio web </h1>
+<h1 class="h1-encabezado"> Añadir sitio web </h1>
 
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
@@ -13,7 +13,7 @@
 
 
 <form method="POST" action="{{ action('SitioController@crearSitio') }}">
-    @csrf
+{{ csrf_field() }}
 
     <!--Nombre del sitio -->
     <div class="form-group row">

@@ -4,7 +4,7 @@
 
 @section('content')
     
-    <h1 class="h1-titulo"> Resultados de búsqueda</h1>
+    <h1 class="h1-encabezado"> Resultados de búsqueda</h1>
 
     <div style="margin-bottom: 1.5em">
         <form method="GET" action="{{ action('SitioController@busquedaSitio') }}">

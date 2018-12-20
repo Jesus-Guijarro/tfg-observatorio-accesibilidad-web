@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1 class="h1-titulo"> Gestionar páginas web </h1>
+<h1 class="h1-encabezado"> Gestionar páginas web </h1>
 
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
@@ -34,6 +34,7 @@
 
 <div style="margin-bottom: 1.5em">
     <form method="POST" action="<?php action('PaginaController@crearPagina', [$sitio_id])?>">
+    {{ csrf_field() }}
         <label for="url" >Nueva página web:  </label>
         <input type="text" id ="url" name="url"  required autofocus>
         @if ($errors->has('url'))
@@ -45,7 +46,6 @@
             <button type="submit" class="btn btn-primary">
                Añadir
             </button>
-        {{ csrf_field() }}
     </form>
 </div>
 

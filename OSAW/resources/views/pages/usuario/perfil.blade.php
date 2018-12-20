@@ -3,7 +3,7 @@
 @section('titulo', 'Perfil de usuario')
 
 @section('content')
-<h1 class="h1-titulo"> Perfil de usuario</h1>
+<h1 class="h1-encabezado"> Perfil de usuario</h1>
 
 <img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}">
 

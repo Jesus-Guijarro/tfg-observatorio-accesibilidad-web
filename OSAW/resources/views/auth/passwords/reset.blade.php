@@ -3,7 +3,7 @@
 @section('titulo', 'Restablecer contraseña')
 
 @section('content')
-<h1 class="h1-titulo"> Restablecer contraseña </h1>
+<h1 class="h1-encabezado"> Restablecer contraseña </h1>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

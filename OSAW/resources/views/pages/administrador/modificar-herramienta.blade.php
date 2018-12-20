@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1 class="h1-titulo"> Modificar página web </h1>
+<h1 class="h1-encabezado"> Modificar página web </h1>
 
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
