@@ -5,6 +5,8 @@
     color: white;
     font-size: 1.1875em;
     border-style: groove;
+    border-radius: 2em;
+    border-color: #1b77c2;
 }
 
 .a-logo:hover{
@@ -19,8 +21,6 @@
 .a-hf:hover{
     color: white;
 }
-
-
 
 /*Cabecera*/
 .cabecera{
@@ -119,14 +119,17 @@
 table{
     border-collapse: collapse;
     margin-bottom: 0.625em;
+    table-layout: fixed;
+    width: 100%;
+
 }
 th, td{
     padding:  0.9375em;
     text-align: center;
-    border-top: 0.0625em solid lightgray;
-    border-bottom: 0.0625em solid lightgray;
-    border-left: 0.0625em solid lightgray;
-    border-right: 0.0625em solid lightgray;
+    border-top: 0.0625em solid darkgray;
+    border-bottom: 0.0625em solid darkgray;
+    border-left: 0.0625em solid darkgray;
+    border-right: 0.0625em solid darkgray;
     
 }
 th{
@@ -152,3 +155,14 @@ th{
     border-radius: 100%;
 }
     
+
+div.grafico { 
+    display: inline-block;
+    width: 72em; 
+    height: 28em;
+    margin-right: 2em;
+   
+    border: solid lightgray;
+ }
+
+ 

@@ -4,7 +4,7 @@
 
 @section('scripts')
 <script type="text/javascript">
-    google.charts.load('current', {'packages':['line']});
+    google.charts.load("current", {packages:["corechart"]});
 
     /*AccessMonitor*/
     @if (in_array(1,$herramientas) && (count($accessmonitors)>0))
@@ -29,10 +29,24 @@
         ]);
 
         var options = {
-            title: 'AccessMonitor'
+            title: 'AccessMonitor - Puntuacion',
+            vAxis: { 
+                minValue:0,
+                maxValue: 10,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('accessmonitor-puntuacion'));
+        var chart = new google.visualization.LineChart(document.getElementById('accessmonitor-puntuacion'));
 
         chart.draw(data, options);
     }
@@ -57,10 +71,26 @@
         ]);
 
         var options = {
-            title: 'B'
+            title: 'AccessMonitor - Número de problemas segun nivel de adecuación',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('accessmonitor-problemas'));
+        var chart = new google.visualization.LineChart(document.getElementById('accessmonitor-problemas'));
 
         chart.draw(data, options);
     }
@@ -85,10 +115,26 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AccessMonitor - Número de advertencias segun nivel de adecuación',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('accessmonitor-advertencias'));
+        var chart = new google.visualization.LineChart(document.getElementById('accessmonitor-advertencias'));
 
         chart.draw(data, options);
     }
@@ -117,10 +163,26 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AccessMonitor - Número de problemas segun nivel de adecuación',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('achecker-total-conocidos'));
+        var chart = new google.visualization.LineChart(document.getElementById('achecker-total-conocidos'));
 
         chart.draw(data, options);
     }
@@ -144,7 +206,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('achecker-total-potenciales'));
+        var chart = new google.visualization.LineChart(document.getElementById('achecker-total-potenciales'));
 
         chart.draw(data, options);
     }
@@ -172,7 +234,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('achecker-conocidos'));
+        var chart = new google.visualization.LineChart(document.getElementById('achecker-conocidos'));
 
         chart.draw(data, options);
     }
@@ -200,7 +262,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('achecker-potenciales'));
+        var chart = new google.visualization.LineChart(document.getElementById('achecker-potenciales'));
 
         chart.draw(data, options);
     }
@@ -231,7 +293,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('eiiichecker-puntuacion'));
+        var chart = new google.visualization.LineChart(document.getElementById('eiiichecker-puntuacion'));
 
         chart.draw(data, options);
     }
@@ -256,7 +318,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('eiiichecker-total'));
+        var chart = new google.visualization.LineChart(document.getElementById('eiiichecker-total'));
 
         chart.draw(data, options);
     }
@@ -281,7 +343,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('eiiichecker-problemas'));
+        var chart = new google.visualization.LineChart(document.getElementById('eiiichecker-problemas'));
 
         chart.draw(data, options);
     }
@@ -319,7 +381,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('observatorio-porcentajes'));
+        var chart = new google.visualization.LineChart(document.getElementById('observatorio-porcentajes'));
 
         chart.draw(data, options);
     }
@@ -349,7 +411,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('observatorio-problemas'));
+        var chart = new google.visualization.LineChart(document.getElementById('observatorio-problemas'));
 
         chart.draw(data, options);
     }
@@ -379,7 +441,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('observatorio-advertencias'));
+        var chart = new google.visualization.LineChart(document.getElementById('observatorio-advertencias'));
 
         chart.draw(data, options);
     }
@@ -411,7 +473,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('vamola-total-conocidos'));
+        var chart = new google.visualization.LineChart(document.getElementById('vamola-total-conocidos'));
 
         chart.draw(data, options);
     }
@@ -435,7 +497,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('vamola-total-potenciales'));
+        var chart = new google.visualization.LineChart(document.getElementById('vamola-total-potenciales'));
 
         chart.draw(data, options);
     }
@@ -463,7 +525,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('vamola-conocidos'));
+        var chart = new google.visualization.LineChart(document.getElementById('vamola-conocidos'));
 
         chart.draw(data, options);
     }
@@ -491,7 +553,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('vamola-potenciales'));
+        var chart = new google.visualization.LineChart(document.getElementById('vamola-potenciales'));
 
         chart.draw(data, options);
     }
@@ -526,7 +588,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('wave-problemas'));
+        var chart = new google.visualization.LineChart(document.getElementById('wave-problemas'));
 
         chart.draw(data, options);
     }
@@ -552,7 +614,7 @@
             title: 'C'
         };
 
-        var chart = new google.charts.Line(document.getElementById('wave-caracteristicas'));
+        var chart = new google.visualization.LineChart(document.getElementById('wave-caracteristicas'));
 
         chart.draw(data, options);
     }
@@ -566,78 +628,118 @@
 
 @section('content')
 
-<h1> Sitio Web </h1>
-<p style="text-decoration: underline"> <strong>{{$sitio->nombre}} </strong></p>
-<p><strong> Dirección web:</strong> <a href="http://{{ $sitio->dominio }}" target="_blank">{{ $sitio->dominio }}</a>
+<h1 class="h1-encabezado"> Sitio Web </h1>
 
-<table style="text-align: left">
-    <tr>
-        <th>Páginas web</th>
-    </tr>
-    @foreach ($paginas as $pagina)
-    <tr>
-        <td>
-            <a href="/pagina/{{ $pagina->id }}" style="color: black; text-decoration-line: underline">{{$pagina->URL}}</a>
-        </td>
-    </tr>
-    @endforeach
-</table>
+<div class="container" hidden>
+    <div class="col-md-10">
+        <div style="margin-bottom: 1.5em">
+            <p> <strong>Nombre del sitio: </strong>{{$sitio->nombre}} </p>
+            <p><strong> Dirección web: </strong> <a href="http://{{ $sitio->dominio }}" target="_blank">{{ $sitio->dominio }}</a>
+
+            <h2>Horario de evaluación</h2>
+            <p><strong>Periodicidad: </strong>{{$sitio->periodicidad}}</p>
+
+            @if ($sitio->periodicidad === "Semanal")
+            <p><strong>Día de la semana: </strong>{{$dia}}</p>
+            @elseif ($sitio->periodicidad === "Mensual")
+            <p><strong>Día mensual: </strong>{{$sitio->dia}}</p>
+            @endif
+
+            <p><strong>Hora: </strong>{{$sitio->hora}}</p>
+        </div>
+    </div>
+</div>
 
 
-<h2>Datos de horario de la evaluación</h2>
-<p><strong>Periodicidad: </strong>{{$sitio->periodicidad}}</p>
+<div class="container">
+    <div class="col-md-12">
+        <div style="margin-bottom: 1.5em">
+            <h2>Resultados de las herramientas</h2>
 
-@if ($sitio->periodicidad === "Semanal")
-<p><strong>Día de la semana: </strong>{{$dia}}</p>
-@elseif ($sitio->periodicidad === "Mensual")
-<p><strong>Día mensual: </strong>{{$sitio->dia}}</p>
-@endif
+            @if (in_array(1,$herramientas) && (count($accessmonitors)>0))
+            <h3> AccessMonitor</h3>
+            <div class ="grafico" id="accessmonitor-puntuacion" ></div>
+            <div class ="grafico" id="accessmonitor-problemas" ></div>
+            <div class ="grafico" id="accessmonitor-advertencias"></div>
 
-<p><strong>Hora: </strong>{{$sitio->hora}}</p>
+            <hr>
 
-<h2>Resultados de ejecución de las herramientas</h2>
+            @endif
 
-@if (in_array(1,$herramientas) && (count($accessmonitors)>0))
-<h3> AccessMonitor</h3>
-<div id="accessmonitor-puntuacion" style="width: 700px; height: 400px;"></div>
-<div id="accessmonitor-problemas" style="width: 700px; height: 400px;"></div>
-<div id="accessmonitor-advertencias" style="width: 700px; height: 400px;"></div>
-@endif
+            @if (in_array(2,$herramientas) && (count($acheckers)>0))
+            <h3> Achecker </h3>
+            <div class ="grafico" id="achecker-total-conocidos"></div>
+            <div class ="grafico" id="achecker-total-potenciales"></div>
+            <div class ="grafico" id="achecker-conocidos"></div>
+            <div class ="grafico" id="achecker-potenciales"></div>
 
-@if (in_array(2,$herramientas) && (count($acheckers)>0))
-<h3> Achecker </h3>
-<div id="achecker-total-conocidos" style="width: 900px; height: 500px;"></div>
-<div id="achecker-total-potenciales" style="width: 900px; height: 500px;"></div>
-<div id="achecker-conocidos" style="width: 900px; height: 500px;"></div>
-<div id="achecker-potenciales" style="width: 900px; height: 500px;"></div>
-@endif
+            <hr>
+            @endif
 
-@if (in_array(2,$herramientas) && (count($eiiicheckers)>0))
-<h3> EIII Page Checker </h3>
-<div id="eiiichecker-puntuacion" style="width: 900px; height: 500px;"></div>
-<div id="eiiichecker-total" style="width: 900px; height: 500px;"></div>
-<div id="eiiichecker-problemas" style="width: 900px; height: 500px;"></div>
-@endif
+            @if (in_array(2,$herramientas) && (count($eiiicheckers)>0))
+            <h3> EIII Page Checker </h3>
+            <div class ="grafico" id="eiiichecker-puntuacion"></div>
+            <div class ="grafico" id="eiiichecker-total"></div>
+            <div class ="grafico" id="eiiichecker-problemas"></div>
 
-@if (in_array(4,$herramientas) && (count($observatorios)>0))
-<h3> Observatorio de la UPS de Ecuador </h3>
-<div id="observatorio-porcentajes" style="width: 900px; height: 500px;"></div>
-<div id="observatorio-problemas" style="width: 900px; height: 500px;"></div>
-<div id="observatorio-advertencias" style="width: 900px; height: 500px;"></div>
-@endif
+            <hr>
+            @endif
 
-@if (in_array(5,$herramientas) && (count($vamolas)>0))
-<h3> Vamolà </h3>
-<div id="vamola-total-conocidos" style="width: 900px; height: 500px;"></div>
-<div id="vamola-total-potenciales" style="width: 900px; height: 500px;"></div>
-<div id="vamola-conocidos" style="width: 900px; height: 500px;"></div>
-<div id="vamola-potenciales" style="width: 900px; height: 500px;"></div>
-@endif
+            @if (in_array(4,$herramientas) && (count($observatorios)>0))
+            <h3> Observatorio de la UPS de Ecuador </h3>
+            <div class ="grafico" id="observatorio-porcentajes"></div>
+            <div class ="grafico" id="observatorio-problemas"></div>
+            <div class ="grafico" id="observatorio-advertencias"></div>
 
-@if (in_array(6,$herramientas) && (count($waves)>0))
-<h3> WAVE </h3>
-<div id="wave-problemas" style="width: 900px; height: 500px;"></div>
-<div id="wave-caracteristicas" style="width: 900px; height: 500px;"></div>
+            <hr>
+            @endif
+
+            @if (in_array(5,$herramientas) && (count($vamolas)>0))
+            <h3> Vamolà </h3>
+            <div class ="grafico" id="vamola-total-conocidos"></div>
+            <div class ="grafico" id="vamola-total-potenciales"></div>
+            <div class ="grafico" id="vamola-conocidos"></div>
+            <div class ="grafico" id="vamola-potenciales"></div>
+
+            <hr>
+            @endif
+
+            @if (in_array(6,$herramientas) && (count($waves)>0))
+            <h3> WAVE </h3>
+            <div class ="grafico" id="wave-problemas"></div>
+            <div class ="grafico" id="wave-caracteristicas"></div>
+
+            <hr>
+            @endif
+
+        </div>
+    </div>
+</div>
+
+@if(isset($paginas))
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+
+            <h2> Páginas web del sitio</h2>
+
+            <table>
+                <tr>
+                    <th style="text-align: left">Página web</th>
+                </tr>
+                @foreach ($paginas as $pagina)
+                <tr>
+                    <td style="text-align: left">
+                        <a href="/pagina/{{ $pagina->id }}" >{{$pagina->URL}}</a>
+                    </td>
+                </tr>
+                @endforeach
+            </table>
+
+        </div>
+    </div>
+</div>
+
 @endif
 
 @endsection

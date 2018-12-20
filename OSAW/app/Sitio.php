@@ -32,12 +32,21 @@ class Sitio extends Model
         return $sitio;
     }
 
+    public function getSitios(){
+        $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','categorias.descripcion')->
+        join('categorias','sitios.categoria_id','=','categorias.id')->
+        orderBy('sitios.nombre','asc')->
+        paginate(10);
+
+        return $sitios;
+    }
+
     public function getSitiosBusqueda($nombre){ # Cadena vacia -> Todos los sitios
         $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','categorias.descripcion')->
         join('categorias','sitios.categoria_id','=','categorias.id')->
         where('nombre','like','%'.$nombre.'%')->
         orderBy('sitios.nombre','asc')->
-        simplePaginate(15);
+        paginate(10);
         return $sitios;
     }
 
@@ -46,7 +55,7 @@ class Sitio extends Model
         join('categorias','sitios.categoria_id','=','categorias.id')->
         where('categoria_id',$categoria_id)->
         orderBy('sitios.nombre','asc')->
-        simplePaginate(15);
+        paginate(10);
         return $sitios;
     }
 
@@ -56,16 +65,7 @@ class Sitio extends Model
         where('categoria_id',$categoria_id)->
         where('nombre','like','%'.$nombre.'%')->
         orderBy('sitios.nombre','asc')->
-        simplePaginate(15);
-        return $sitios;
-    }
-
-    public function getSitios(){
-        $sitios = Sitio::select('sitios.id','sitios.nombre','sitios.dominio','categorias.descripcion')->
-        join('categorias','sitios.categoria_id','=','categorias.id')->
-        orderBy('sitios.nombre','asc')->
-        simplePaginate(15);
-
+        paginate(10);
         return $sitios;
     }
 

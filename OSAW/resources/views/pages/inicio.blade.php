@@ -5,8 +5,8 @@
 @section('content')
 <h1 class ="h1-encabezado-inicio"> Bienvenido al Observatorio para el Seguimiento de la Accesibilidad Web (OSAW)</h1>
 
-<h2>Razón de ser</h2>
-<p> El <strong>Observatorio para el Seguimiento de la Accesibilidad Web </strong> se ha desarrollado con la finalidad de poder realizar un seguimiento de aquellos sitios web que por ley deben ser accesibles. </p>
+<h2>Finalidad del observatorio</h2>
+<p> El <strong>Observatorio para el Seguimiento de la Accesibilidad Web </strong> se ha desarrollado con el objetivo principal de poder realizar un seguimiento de aquellos sitios web que por ley deben ser accesibles. </p>
 <p>Para llevar a cabo esta tarea se ha hecho uso de herramientas online gratuitas de evaluación de la accesibilidad web: </p>
 <ul>
     <a href="http://www.acessibilidade.gov.pt/accessmonitor/" target="_blank"><li>AccessMonitor</li></a>
@@ -17,7 +17,7 @@
     <a href="https://wave.webaim.org/"target="_blank"><li>WAVE</li></a>
 </ul>
 
-<p> Los análisis se hacen de forma periodica y automática, pudiéndose selecionar la periodicidad de estos para que sea diaria, semanal o mensual. </p>
+<p>Los análisis se hacen de forma periodica y automática, pudiéndose selecionar la periodicidad de estos para que sea diaria, semanal o mensual. </p>
 <p>También es posible indicar el día de la semana o mes, y la hora del análisis.</p>
 
 <hr>
@@ -28,13 +28,6 @@
 <p><a href="/lista-sitios">Ver sitios webs analizados </a></p>
 <p>Número total de <strong>paginas web</strong> evaluadas: <strong>{{$num_paginas}}</strong></p>  
 
-
-<h3> Categorias institucionales y de organización contempladas </h3>
-<ul>
-@foreach ($categorias as $categoria)
-    <li>{{$categoria->descripcion}}</li>
-@endforeach
-</ul>
 
 <h3> Número de evaluaciones realizadas por cada herramienta</h3>
 

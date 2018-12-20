@@ -572,13 +572,13 @@
 <a href="{{$pagina->archivo_HTML}}" download="reporte-pagina-{{$pagina->id}}">Descargar copia HTML</a>
 
 
-<h2>Resultados de ejecución de las herramientas</h2>
+<h2>Resultados de las herramientas</h2>
 
 @if (in_array(1,$herramientas) && (count($accessmonitors)>0))
 <h3> AccessMonitor</h3>
-<div id="accessmonitor-puntuacion" style="width: 700px; height: 400px;"></div>
-<div id="accessmonitor-problemas" style="width: 700px; height: 400px;"></div>
-<div id="accessmonitor-advertencias" style="width: 700px; height: 400px;"></div>
+<div class ="grafico" id="accessmonitor-puntuacion" ></div>
+<div class ="grafico" id="accessmonitor-problemas" ></div>
+<div class ="grafico" id="accessmonitor-advertencias" ></div>
 
 <table>
     <tr>
@@ -603,10 +603,10 @@
 
 @if (in_array(2,$herramientas) && (count($acheckers)>0))
 <h3> Achecker </h3>
-<div id="achecker-total-conocidos" style="width: 900px; height: 500px;"></div>
-<div id="achecker-total-potenciales" style="width: 900px; height: 500px;"></div>
-<div id="achecker-conocidos" style="width: 900px; height: 500px;"></div>
-<div id="achecker-potenciales" style="width: 900px; height: 500px;"></div>
+<div class ="grafico" id="achecker-total-conocidos"></div>
+<div class ="grafico" id="achecker-total-potenciales"></div>
+<div class ="grafico" id="achecker-conocidos"></div>
+<div class ="grafico" id="achecker-potenciales"></div>
 
 <table>
     <tr>
@@ -630,9 +630,9 @@
 
 @if (in_array(2,$herramientas) && (count($eiiicheckers)>0))
 <h3> EIII Page Checker </h3>
-<div id="eiiichecker-puntuacion" style="width: 900px; height: 500px;"></div>
-<div id="eiiichecker-total" style="width: 900px; height: 500px;"></div>
-<div id="eiiichecker-problemas" style="width: 900px; height: 500px;"></div>
+<div class ="grafico" id="eiiichecker-puntuacion"></div>
+<div class ="grafico" id="eiiichecker-total"></div>
+<div class ="grafico" id="eiiichecker-problemas"></div>
 
 <table>
     <tr>
@@ -657,9 +657,9 @@
 
 @if (in_array(4,$herramientas) && (count($observatorios)>0))
 <h3> Observatorio de la UPS de Ecuador </h3>
-<div id="observatorio-porcentajes" style="width: 900px; height: 500px;"></div>
-<div id="observatorio-problemas" style="width: 900px; height: 500px;"></div>
-<div id="observatorio-advertencias" style="width: 900px; height: 500px;"></div>
+<div class ="grafico" id="observatorio-porcentajes"></div>
+<div class ="grafico" id="observatorio-problemas"></div>
+<div class ="grafico" id="observatorio-advertencias"></div>
 
 <table>
     <tr>
@@ -683,10 +683,10 @@
 
 @if (in_array(5,$herramientas) && (count($vamolas)>0))
 <h3> Vamolà </h3>
-<div id="vamola-total-conocidos" style="width: 900px; height: 500px;"></div>
-<div id="vamola-total-potenciales" style="width: 900px; height: 500px;"></div>
-<div id="vamola-conocidos" style="width: 900px; height: 500px;"></div>
-<div id="vamola-potenciales" style="width: 900px; height: 500px;"></div>
+<div class ="grafico" id="vamola-total-conocidos"></div>
+<div class ="grafico" id="vamola-total-potenciales"></div>
+<div class ="grafico" id="vamola-conocidos"></div>
+<div class ="grafico" id="vamola-potenciales"></div>
 
 <table>
     <tr>
@@ -710,8 +710,8 @@
 
 @if (in_array(6,$herramientas) && (count($waves)>0))
 <h3> WAVE </h3>
-<div id="wave-problemas" style="width: 900px; height: 500px;"></div>
-<div id="wave-caracteristicas" style="width: 900px; height: 500px;"></div>
+<div class ="grafico" id="wave-problemas"></div>
+<div class ="grafico" id="wave-caracteristicas"></div>
 
 <table>
     <tr>
