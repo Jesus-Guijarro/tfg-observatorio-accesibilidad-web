@@ -21,8 +21,6 @@ class Eiiichecker extends Model
         return $eiiicheckers;
     }
 
-    #puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,fecha_test
-
     public function getEiiicheckersSitioGraficos($sitio_id){
         $eiiicheckers = Eiiichecker::join('paginas','eiiicheckers.pagina_id','=','paginas.id')->
         where('paginas.sitio_id',$sitio_id)->

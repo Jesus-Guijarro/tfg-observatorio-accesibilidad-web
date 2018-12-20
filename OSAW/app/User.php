@@ -91,24 +91,8 @@ class User extends Authenticatable
         $usuario -> save();
     }
 
-    public function actualizarUsuarioSinAvatar($id,$nombre, $email, $password, $avatar, $biografia){
-
-        $usuario = User::findOrFail($id);
-
-        $usuario->nombre =$nombre;
-        $usuario->email =$email;
-        $usuario->password =$password;
-        $usuario->biografia =$biografia;
-
-        $usuario -> save();
-    }
-
-
-
     public function actualizarUsuarioRol($id,$rol_id){
-
         $usuario = User::findOrFail($id);
-
         $usuario->rol_id =$rol_id;
 
         $usuario -> save();
@@ -116,6 +100,7 @@ class User extends Authenticatable
 
     public function borrarUsuario($id){
         $usuario = User::findOrFail($id);
+        
         $usuario ->delete();
     }
 }

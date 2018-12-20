@@ -38,7 +38,7 @@ class Pagina extends Model
         return $this->hasMany('App\Wave');
     }
 
-    #
+    
     public function getPagina($id){
         $pagina=Pagina::findOrFail($id);
         return $pagina;

@@ -21,11 +21,6 @@ class Observatorio extends Model
         return $observatorios;
     }
 
-    #porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,
-    #num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,
-    #num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,
-    #num_advertencias_perceptible,num_advertencias_robusto,fecha_test
-
     public function getObservatoriosSitioGraficos($sitio_id){
         $observatorios = Observatorio::join('paginas','observatorios.pagina_id','=','paginas.id')->
         where('paginas.sitio_id',$sitio_id)->

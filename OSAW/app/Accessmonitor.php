@@ -21,7 +21,6 @@ class Accessmonitor extends Model
         return $accessmonitors;
     }
 
-
     public function getAccessmonitorsSitioGraficos($sitio_id){
         $accessmonitors = Accessmonitor::join('paginas','accessmonitors.pagina_id','=','paginas.id')->
         where('paginas.sitio_id',$sitio_id)->

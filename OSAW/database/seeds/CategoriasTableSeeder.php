@@ -12,7 +12,6 @@ class CategoriasTableSeeder extends Seeder
     public function run()
     {
         DB::table('categorias')->delete();
-
         
         DB::table('categorias')->insert(['descripcion' => 'Ministerios y agencias estatales']);
         DB::table('categorias')->insert(['descripcion' => 'Entidades autonómicas y locales']);

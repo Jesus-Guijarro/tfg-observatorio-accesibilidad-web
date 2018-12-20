@@ -222,26 +222,20 @@ class SitioController extends Controller
             }
         }
         
-        
         //Obtener ruta para ejecutar los archivos de la parte de Web Scraping
         list($scriptPath) = get_included_files();
         $ruta = $scriptPath;
         $ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/",$ruta);
 
-        //Llamada crawler
+        //Llamada al crawler para obtener el número de páginas indicado
         $num_paginas=$request->num_paginas;
         $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$sitio_id." ".$num_paginas;
         $crawler = new Process($comando);
         $crawler->run();
 
-        //Llamada a cron para automatizar 
+        //Llamada a cron para automatizar la evaluación
         if($automatizado){
             $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$sitio_id.' C';
-            $cron = new Process($comando);
-            $cron->run();
-        }
-        else{
-            $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$sitio_id.' E';
             $cron = new Process($comando);
             $cron->run();
         }
@@ -249,7 +243,7 @@ class SitioController extends Controller
         return redirect("/crear-sitio")->with('mensaje', 'El sitio se ha creado con éxito');
     }
 
-    //MODIFICAR SITIO
+    //Función para mostrar el panel de modificar un sitio
     public function panelModificarSitio($id){
 
         $s = new Sitio();
@@ -263,11 +257,10 @@ class SitioController extends Controller
         $herramienta = new Herramienta();
         $herramientas = $herramienta->getHerramientasActivas();
 
-        
-
         return view('pages.administrador.modificar-sitio', array('sitio' => $sitio,'categorias' => $categorias,'herramientas' => $herramientas,'herramientas_sitio'=>$herramientas_sitio));
     }
 
+    //Función para modificar un sitio
     public function modificarSitio(Request $request, $id){
 
         $sitio = Sitio::findOrFail($id);
@@ -282,8 +275,7 @@ class SitioController extends Controller
         ]);
 
     
-        //Validar dia semana o mes
-
+        //Se valida el dia introducido a partir de la periodicidad introducida
         $periodicidad=$request->periodicidad;
         $dia=$request->dia;
 
@@ -298,8 +290,7 @@ class SitioController extends Controller
             }
         }
 
-        //Proceso de creación
-
+        //Asignación de valores
         $nombre=$request->nombre;
         $dominio=$request->dominio;
         $categoria_id=$request->categoria;
@@ -307,21 +298,22 @@ class SitioController extends Controller
 
         //Automatizado
         $automatizado = true;
-        
         if($request->automatizado!="on"){
             $automatizado = false;
         }
 
+        //Actualización del sitio
         $s = new Sitio();
         $s->actualizarSitio($id,$nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id);
 
-        //Herramientas
+        //Asignación de herramientas
         $sitio = $s->getSitio($id);
 
         $herramientas_sitio = $sitio->getHerramientasSitio($id);
 
         $herramientas = [$request->accessmonitor,$request->achecker,$request->eiiichecker,$request->observatorio, $request->vamola,$request->wave];
         foreach($herramientas as $herramienta){
+            //Se diferencian los marcados y desmarcados por si es un número o un string con el formato "X:herramienta_id"
             if(is_numeric($herramienta)){
                 if(!in_array($herramienta, $herramientas_sitio)){
                     $sitio->herramientas()->attach($herramienta);

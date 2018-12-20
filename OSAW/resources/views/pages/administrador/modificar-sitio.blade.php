@@ -25,6 +25,14 @@ function mostrarEliminar() {
     </div>
 @endif
 
+<div class="form-group row mb-0">
+      <div class="col-md-8 offset-md-4">
+        <a class="btn btn-primary" href="/gestionar-paginas/{{$sitio['id']}}" role="button">Gestionar páginas del sitio</a>
+      </div>
+    </div>
+
+    <br>
+
 <form method="POST" action="<?php action('SitioController@modificarSitio', [$sitio['id']]) ?>">
     @csrf
 
@@ -114,14 +122,6 @@ function mostrarEliminar() {
             @endif
         </div>
     </div>
-
-    <div class="form-group row mb-0">
-      <div class="col-md-8 offset-md-4">
-        <a class="btn btn-primary" href="/gestionar-paginas/{{$sitio['id']}}" role="button">Gestionar páginas del sitio</a>
-      </div>
-    </div>
-
-    <br>
 
     <!-- Número de páginas crawler -->
     <div class="form-group row">
