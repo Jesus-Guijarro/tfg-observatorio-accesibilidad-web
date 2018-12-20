@@ -71,7 +71,7 @@
         ]);
 
         var options = {
-            title: 'AccessMonitor - Número de problemas segun nivel de adecuación',
+            title: 'AccessMonitor - Número de problemas según nivel de conformidad',
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
@@ -87,7 +87,6 @@
                 1: { pointShape: 'circle' },
                 2: { pointShape: 'circle' },
             }
-            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('accessmonitor-problemas'));
@@ -115,7 +114,7 @@
         ]);
 
         var options = {
-            title: 'AccessMonitor - Número de advertencias segun nivel de adecuación',
+            title: 'AccessMonitor - Número de advertencias según nivel de conformidad',
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
@@ -163,7 +162,7 @@
         ]);
 
         var options = {
-            title: 'AccessMonitor - Número de problemas segun nivel de adecuación',
+            title: 'AChecker - Número de problemas conocidos',
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
@@ -172,12 +171,10 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#005580'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
-                1: { pointShape: 'circle' },
-                2: { pointShape: 'circle' },
             }
             
         };
@@ -203,7 +200,21 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AChecker - Número de problemas potenciales',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('achecker-total-potenciales'));
@@ -216,9 +227,9 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad A');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad AA');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad AAA');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel A');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel AA');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel AAA');
 
 
         data.addRows([
@@ -231,7 +242,23 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AChecker - Número de criterios con problemas conocidos  según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('achecker-conocidos'));
@@ -244,9 +271,9 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad A');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad AA');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad AAA');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel A');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel AA');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel AAA');
 
 
         data.addRows([
@@ -259,7 +286,23 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AChecker - Número de criterios con problemas potenciales según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('achecker-potenciales'));
@@ -290,7 +333,21 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'EIII Page Checker - Puntuación',
+            vAxis: { 
+                minValue:0,
+                maxValue: 100,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('eiiichecker-puntuacion'));
@@ -315,7 +372,22 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'EIII Page Checker - Número de problemas y aciertos',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('eiiichecker-total'));
@@ -328,8 +400,8 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas de nivel de adecuación A');
-        data.addColumn('number', 'Número de problemas de nivel de adecuación AA');
+        data.addColumn('number', 'Número de problemas de nivel de conformidad A');
+        data.addColumn('number', 'Número de problemas de nivel de conformidad AA');
 
         data.addRows([
         @foreach ($eiiicheckers as $eiiichecker)
@@ -340,7 +412,22 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'EIII Page Checker - Número de problemas según su nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('eiiichecker-problemas'));
@@ -378,7 +465,22 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Observatorio Accesibilidad Web de la UPS de Ecuador - Porcentaje cumplido de cada principio de accesibilidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('observatorio-porcentajes'));
@@ -408,7 +510,22 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Observatorio Accesibilidad Web de la UPS de Ecuador - Número de problemas de cada principio de accesibilidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('observatorio-problemas'));
@@ -438,7 +555,22 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Observatorio Accesibilidad Web de la UPS de Ecuador - Número de advertencias de cada principio de accesibilidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('observatorio-advertencias'));
@@ -470,7 +602,21 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Vamolà - Número de problemas conocidos',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('vamola-total-conocidos'));
@@ -494,7 +640,21 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Vamolà - Número de problemas potenciales',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('vamola-total-potenciales'));
@@ -507,9 +667,9 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad A');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad AA');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad AAA');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel A');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel AA');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel AAA');
 
 
         data.addRows([
@@ -522,7 +682,23 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Vamolà - Número de criterios con problemas conocidos según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('vamola-conocidos'));
@@ -535,9 +711,9 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad A');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad AA');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad AAA');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel A');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel AA');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel AAA');
 
 
         data.addRows([
@@ -550,7 +726,23 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Vamolà - Número de problemas potenciales según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('vamola-potenciales'));
@@ -570,8 +762,8 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas');
-        data.addColumn('number', 'Número de advertencias');
+        data.addColumn('number', 'Número de problemas de accesibilidad');
+        data.addColumn('number', 'Número de advertencias de accesibilidad');
         data.addColumn('number', 'Número de problemas de contraste');
 
 
@@ -585,7 +777,22 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'WAVE - Número de problemas y advertencias de accesibilidad, y problemas de contraste',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('wave-problemas'));
@@ -611,7 +818,21 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'WAVE - Número de características y de elementos ARIA',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('wave-caracteristicas'));
@@ -623,6 +844,7 @@
 
 
 
+
 @endsection
 
 
@@ -630,7 +852,7 @@
 
 <h1 class="h1-encabezado"> Sitio Web </h1>
 
-<div class="container" hidden>
+<div class="container">
     <div class="col-md-10">
         <div style="margin-bottom: 1.5em">
             <p> <strong>Nombre del sitio: </strong>{{$sitio->nombre}} </p>
@@ -650,6 +872,31 @@
     </div>
 </div>
 
+@if(isset($paginas))
+<hr>
+<div class="container">
+    <div class="col-md-10">
+        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#paginas">Mostrar listado de páginas web del sitio</button>
+        <div id="paginas" class="collapse" style="margin-top: 2em;">
+            <table>
+                <tr>
+                    <th style="text-align: left">Página web</th>
+                </tr>
+                @foreach ($paginas as $pagina)
+                <tr>
+                    <td style="text-align: left">
+                        <a href="/pagina/{{ $pagina->id }}" >{{$pagina->URL}}</a>
+                    </td>
+                </tr>
+                @endforeach
+            </table>
+        </div>
+    </div>
+</div>
+
+@endif
+
+<hr>
 
 <div class="container">
     <div class="col-md-12">
@@ -716,30 +963,5 @@
     </div>
 </div>
 
-@if(isset($paginas))
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-12">
-
-            <h2> Páginas web del sitio</h2>
-
-            <table>
-                <tr>
-                    <th style="text-align: left">Página web</th>
-                </tr>
-                @foreach ($paginas as $pagina)
-                <tr>
-                    <td style="text-align: left">
-                        <a href="/pagina/{{ $pagina->id }}" >{{$pagina->URL}}</a>
-                    </td>
-                </tr>
-                @endforeach
-            </table>
-
-        </div>
-    </div>
-</div>
-
-@endif
 
 @endsection

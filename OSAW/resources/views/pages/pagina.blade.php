@@ -4,7 +4,7 @@
 
 @section('scripts')
 <script type="text/javascript">
-    google.charts.load('current', {'packages':['line']});
+    google.charts.load("current", {packages:["corechart"]});
 
     /*AccessMonitor*/
     @if (in_array(1,$herramientas) && (count($accessmonitors)>0))
@@ -29,10 +29,24 @@
         ]);
 
         var options = {
-            title: 'AccessMonitor'
+            title: 'AccessMonitor - Puntuacion',
+            vAxis: { 
+                minValue:0,
+                maxValue: 10,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('accessmonitor-puntuacion'));
+        var chart = new google.visualization.LineChart(document.getElementById('accessmonitor-puntuacion'));
 
         chart.draw(data, options);
     }
@@ -57,10 +71,25 @@
         ]);
 
         var options = {
-            title: 'B'
+            title: 'AccessMonitor - Número de problemas según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
         };
 
-        var chart = new google.charts.Line(document.getElementById('accessmonitor-problemas'));
+        var chart = new google.visualization.LineChart(document.getElementById('accessmonitor-problemas'));
 
         chart.draw(data, options);
     }
@@ -85,10 +114,26 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AccessMonitor - Número de advertencias según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('accessmonitor-advertencias'));
+        var chart = new google.visualization.LineChart(document.getElementById('accessmonitor-advertencias'));
 
         chart.draw(data, options);
     }
@@ -117,10 +162,24 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AChecker - Número de problemas conocidos',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('achecker-total-conocidos'));
+        var chart = new google.visualization.LineChart(document.getElementById('achecker-total-conocidos'));
 
         chart.draw(data, options);
     }
@@ -141,10 +200,24 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AChecker - Número de problemas potenciales',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('achecker-total-potenciales'));
+        var chart = new google.visualization.LineChart(document.getElementById('achecker-total-potenciales'));
 
         chart.draw(data, options);
     }
@@ -154,9 +227,9 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad A');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad AA');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad AAA');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel A');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel AA');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel AAA');
 
 
         data.addRows([
@@ -169,10 +242,26 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AChecker - Número de criterios con problemas conocidos  según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('achecker-conocidos'));
+        var chart = new google.visualization.LineChart(document.getElementById('achecker-conocidos'));
 
         chart.draw(data, options);
     }
@@ -182,9 +271,9 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad A');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad AA');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad AAA');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel A');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel AA');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel AAA');
 
 
         data.addRows([
@@ -197,10 +286,26 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'AChecker - Número de criterios con problemas potenciales según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('achecker-potenciales'));
+        var chart = new google.visualization.LineChart(document.getElementById('achecker-potenciales'));
 
         chart.draw(data, options);
     }
@@ -228,10 +333,24 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'EIII Page Checker - Puntuación',
+            vAxis: { 
+                minValue:0,
+                maxValue: 100,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('eiiichecker-puntuacion'));
+        var chart = new google.visualization.LineChart(document.getElementById('eiiichecker-puntuacion'));
 
         chart.draw(data, options);
     }
@@ -253,10 +372,25 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'EIII Page Checker - Número de problemas y aciertos',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('eiiichecker-total'));
+        var chart = new google.visualization.LineChart(document.getElementById('eiiichecker-total'));
 
         chart.draw(data, options);
     }
@@ -266,8 +400,8 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas de nivel de adecuación A');
-        data.addColumn('number', 'Número de problemas de nivel de adecuación AA');
+        data.addColumn('number', 'Número de problemas de nivel de conformidad A');
+        data.addColumn('number', 'Número de problemas de nivel de conformidad AA');
 
         data.addRows([
         @foreach ($eiiicheckers as $eiiichecker)
@@ -278,10 +412,25 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'EIII Page Checker - Número de problemas según su nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('eiiichecker-problemas'));
+        var chart = new google.visualization.LineChart(document.getElementById('eiiichecker-problemas'));
 
         chart.draw(data, options);
     }
@@ -316,10 +465,25 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Observatorio Accesibilidad Web de la UPS de Ecuador - Porcentaje cumplido de cada principio de accesibilidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('observatorio-porcentajes'));
+        var chart = new google.visualization.LineChart(document.getElementById('observatorio-porcentajes'));
 
         chart.draw(data, options);
     }
@@ -346,10 +510,25 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Observatorio Accesibilidad Web de la UPS de Ecuador - Número de problemas de cada principio de accesibilidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('observatorio-problemas'));
+        var chart = new google.visualization.LineChart(document.getElementById('observatorio-problemas'));
 
         chart.draw(data, options);
     }
@@ -376,10 +555,25 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Observatorio Accesibilidad Web de la UPS de Ecuador - Número de advertencias de cada principio de accesibilidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('observatorio-advertencias'));
+        var chart = new google.visualization.LineChart(document.getElementById('observatorio-advertencias'));
 
         chart.draw(data, options);
     }
@@ -408,10 +602,24 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Vamolà - Número de problemas conocidos',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('vamola-total-conocidos'));
+        var chart = new google.visualization.LineChart(document.getElementById('vamola-total-conocidos'));
 
         chart.draw(data, options);
     }
@@ -432,10 +640,24 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Vamolà - Número de problemas potenciales',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('vamola-total-potenciales'));
+        var chart = new google.visualization.LineChart(document.getElementById('vamola-total-potenciales'));
 
         chart.draw(data, options);
     }
@@ -445,9 +667,9 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad A');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad AA');
-        data.addColumn('number', 'Número de problemas conocidos de nivel de conformidad AAA');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel A');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel AA');
+        data.addColumn('number', 'Número de criterios con problemas conocidos de nivel AAA');
 
 
         data.addRows([
@@ -460,10 +682,26 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Vamolà - Número de criterios con problemas conocidos según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('vamola-conocidos'));
+        var chart = new google.visualization.LineChart(document.getElementById('vamola-conocidos'));
 
         chart.draw(data, options);
     }
@@ -473,9 +711,9 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad A');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad AA');
-        data.addColumn('number', 'Número de problemas potenciales de nivel de conformidad AAA');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel A');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel AA');
+        data.addColumn('number', 'Número de criterios con problemas potenciales de nivel AAA');
 
 
         data.addRows([
@@ -488,10 +726,26 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'Vamolà - Número de problemas potenciales según nivel de conformidad',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            colors: ['#005580','#0099e6','#66ccff'],
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('vamola-potenciales'));
+        var chart = new google.visualization.LineChart(document.getElementById('vamola-potenciales'));
 
         chart.draw(data, options);
     }
@@ -508,8 +762,8 @@
         var data = new google.visualization.DataTable();
 
         data.addColumn('date', 'Fecha de evaluación');
-        data.addColumn('number', 'Número de problemas');
-        data.addColumn('number', 'Número de advertencias');
+        data.addColumn('number', 'Número de problemas de accesibilidad');
+        data.addColumn('number', 'Número de advertencias de accesibilidad');
         data.addColumn('number', 'Número de problemas de contraste');
 
 
@@ -523,10 +777,25 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'WAVE - Número de problemas y advertencias de accesibilidad, y problemas de contraste',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+                2: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('wave-problemas'));
+        var chart = new google.visualization.LineChart(document.getElementById('wave-problemas'));
 
         chart.draw(data, options);
     }
@@ -549,10 +818,24 @@
         ]);
 
         var options = {
-            title: 'C'
+            title: 'WAVE - Número de características y de elementos ARIA',
+            vAxis: { 
+                minValue:0,
+                maxValue: 5,
+                format:'0.00',
+            },
+            hAxis: {
+                format: 'dd MMM yyyy'
+            },
+            pointSize: 5,
+            series: {
+                0: { pointShape: 'circle' },
+                1: { pointShape: 'circle' },
+            }
+            
         };
 
-        var chart = new google.charts.Line(document.getElementById('wave-caracteristicas'));
+        var chart = new google.visualization.LineChart(document.getElementById('wave-caracteristicas'));
 
         chart.draw(data, options);
     }
@@ -561,175 +844,203 @@
 
 
 
+
 @endsection
 
 
 @section('content')
+<h1 class="h1-encabezado"> Página Web </h1>
 
-<h1> Página Web </h1>
-<p style="text-decoration: underline"> <strong><a href='{{$pagina->URL}}' target="_blank">{{$pagina->URL}}</a></strong></p>
-<p><strong>Sitio web:</strong> <a href='{{url("sitio/$sitio->id")}}'>{{$sitio->nombre}}</a></p>
-<a href="{{$pagina->archivo_HTML}}" download="reporte-pagina-{{$pagina->id}}">Descargar copia HTML</a>
-
-
-<h2>Resultados de las herramientas</h2>
-
-@if (in_array(1,$herramientas) && (count($accessmonitors)>0))
-<h3> AccessMonitor</h3>
-<div class ="grafico" id="accessmonitor-puntuacion" ></div>
-<div class ="grafico" id="accessmonitor-problemas" ></div>
-<div class ="grafico" id="accessmonitor-advertencias" ></div>
-
-<table>
-    <tr>
-        <th>Reportes AccessMonitor</th>
-    </tr>
-    @foreach ($accessmonitors_reportes as $accessmonitors_reporte)
-        <tr>
-            @php
-                {{$reporte=str_replace("/","+",$accessmonitors_reporte->datos_problemas);}}
-                
-            @endphp
-            <td>
-                <a href="/reporte-automatico/{{$reporte}}">AccessMonitor-{{$accessmonitors_reporte->fecha_test}}</a></td>
-        </tr>
-    @endforeach
-</table>
-<div >
-    {{ $accessmonitors_reportes->links() }}
+<div class="container">
+    <div class="col-md-10">
+        <div style="margin-bottom: 1.5em">
+            <p style="text-decoration: underline"> <strong><a href='{{$pagina->URL}}' target="_blank">{{$pagina->URL}}</a></strong></p>
+            <p><strong>Sitio web:</strong> <a href='{{url("sitio/$sitio->id")}}'>{{$sitio->nombre}}</a></p>
+            <a href="{{$pagina->archivo_HTML}}" download="reporte-pagina-{{$pagina->id}}">Descargar copia HTML</a>
+        </div>
+    </div>
 </div>
+<div class="container">
+    <div class="col-md-12">
+        <div style="margin-bottom: 1.5em">
+            <h2>Resultados de las herramientas</h2>
 
-@endif
+            @if (in_array(1,$herramientas) && (count($accessmonitors)>0))
+            <h3> AccessMonitor</h3>
+            <div class ="grafico" id="accessmonitor-puntuacion" ></div>
+            <div class ="grafico" id="accessmonitor-problemas" ></div>
+            <div class ="grafico" id="accessmonitor-advertencias" ></div>
 
-@if (in_array(2,$herramientas) && (count($acheckers)>0))
-<h3> Achecker </h3>
-<div class ="grafico" id="achecker-total-conocidos"></div>
-<div class ="grafico" id="achecker-total-potenciales"></div>
-<div class ="grafico" id="achecker-conocidos"></div>
-<div class ="grafico" id="achecker-potenciales"></div>
-
-<table>
-    <tr>
-        <th>Reportes Achecker</th>
-    </tr>
-    @foreach ($acheckers_reportes as $acheckers_reporte)
-        <tr>
-            @php
-                {{$reporte=str_replace("/","+",$acheckers_reporte->datos_problemas);}}
+            <table>
+                <tr>
+                    <th>Reportes AccessMonitor</th>
+                </tr>
+                @foreach ($accessmonitors_reportes as $accessmonitors_reporte)
+                    <tr>
+                        @php
+                            {{$reporte=str_replace("/","+",$accessmonitors_reporte->datos_problemas);}}
+                            
+                        @endphp
+                        <td>
+                            <a href="/reporte-automatico/{{$reporte}}">AccessMonitor-{{$accessmonitors_reporte->fecha_test}}</a></td>
+                    </tr>
+                @endforeach
+            </table>
+            <div class="row justify-content-center">
+                <div class="div-links">
+                    {{ $accessmonitors_reportes->links() }}
+                </div>
+            </div>
                 
-            @endphp
-            <td>
-                <a href="/reporte-automatico/{{$reporte}}">Achecker-{{$acheckers_reporte->fecha_test}}</a></td>
-        </tr>
-    @endforeach
-</table>
-<div >
-    {{ $acheckers_reportes->links() }}
-</div>
-@endif
+            
+            @endif
 
-@if (in_array(2,$herramientas) && (count($eiiicheckers)>0))
-<h3> EIII Page Checker </h3>
-<div class ="grafico" id="eiiichecker-puntuacion"></div>
-<div class ="grafico" id="eiiichecker-total"></div>
-<div class ="grafico" id="eiiichecker-problemas"></div>
+            @if (in_array(2,$herramientas) && (count($acheckers)>0))
+            <h3> Achecker </h3>
+            <div class ="grafico" id="achecker-total-conocidos"></div>
+            <div class ="grafico" id="achecker-total-potenciales"></div>
+            <div class ="grafico" id="achecker-conocidos"></div>
+            <div class ="grafico" id="achecker-potenciales"></div>
 
-<table>
-    <tr>
-        <th>Reportes EIII Page Checker</th>
-    </tr>
-    @foreach ($eiiicheckers_reportes as $eiiicheckers_reporte)
-        <tr>
-            @php
-                {{$reporte=str_replace("/","+",$eiiicheckers_reporte->datos_problemas);}}
-                
-            @endphp
-        <td>
-            <a href="/reporte-automatico/{{$reporte}}">EIII Page Checker-{{$eiiicheckers_reporte->fecha_test}}</a></td>
-        </tr>
-    @endforeach
-</table>
-<div >
-    {{ $eiiicheckers_reportes->links() }}
-</div>
+            <table>
+                <tr>
+                    <th>Reportes Achecker</th>
+                </tr>
+                @foreach ($acheckers_reportes as $acheckers_reporte)
+                    <tr>
+                        @php
+                            {{$reporte=str_replace("/","+",$acheckers_reporte->datos_problemas);}}
+                            
+                        @endphp
+                        <td>
+                            <a href="/reporte-automatico/{{$reporte}}">Achecker-{{$acheckers_reporte->fecha_test}}</a></td>
+                    </tr>
+                @endforeach
+            </table>
 
-@endif
+            <div class="row justify-content-center">
+                <div class="div-links">
+                {{ $acheckers_reportes->links() }}
+                </div>
+            </div>
+            @endif
 
-@if (in_array(4,$herramientas) && (count($observatorios)>0))
-<h3> Observatorio de la UPS de Ecuador </h3>
-<div class ="grafico" id="observatorio-porcentajes"></div>
-<div class ="grafico" id="observatorio-problemas"></div>
-<div class ="grafico" id="observatorio-advertencias"></div>
+            @if (in_array(2,$herramientas) && (count($eiiicheckers)>0))
+            <h3> EIII Page Checker </h3>
+            <div class ="grafico" id="eiiichecker-puntuacion"></div>
+            <div class ="grafico" id="eiiichecker-total"></div>
+            <div class ="grafico" id="eiiichecker-problemas"></div>
 
-<table>
-    <tr>
-        <th>Reportes Observatorio de la UPS de Ecuador</th>
-    </tr>
-    @foreach ($observatorios_reportes as $observatorios_reporte)
-        <tr>
-            @php
-                {{$reporte=str_replace("/","+",$observatorios_reporte->datos_problemas);}}
-                
-            @endphp
-        <td>
-            <a href="/reporte-automatico/{{$reporte}}">Observatorio de la UPS de Ecuador-{{$observatorios_reporte->fecha_test}}</a></td>
-        </tr>
-    @endforeach
-</table>
-<div >
-    {{ $observatorios_reportes->links() }}
-</div>
-@endif
+            <table>
+                <tr>
+                    <th>Reportes EIII Page Checker</th>
+                </tr>
+                @foreach ($eiiicheckers_reportes as $eiiicheckers_reporte)
+                    <tr>
+                        @php
+                            {{$reporte=str_replace("/","+",$eiiicheckers_reporte->datos_problemas);}}
+                            
+                        @endphp
+                    <td>
+                        <a href="/reporte-automatico/{{$reporte}}">EIII Page Checker-{{$eiiicheckers_reporte->fecha_test}}</a></td>
+                    </tr>
+                @endforeach
+            </table>
+            <div class="row justify-content-center">
+                <div class="div-links">
+                {{ $eiiicheckers_reportes->links() }}
+                </div>
+            </div>
 
-@if (in_array(5,$herramientas) && (count($vamolas)>0))
-<h3> Vamolà </h3>
-<div class ="grafico" id="vamola-total-conocidos"></div>
-<div class ="grafico" id="vamola-total-potenciales"></div>
-<div class ="grafico" id="vamola-conocidos"></div>
-<div class ="grafico" id="vamola-potenciales"></div>
+            @endif
 
-<table>
-    <tr>
-        <th>Reportes Vamolà</th>
-    </tr>
-    @foreach ($vamolas_reportes as $vamolas_reporte)
-        <tr>
-            @php
-                {{$reporte=str_replace("/","+",$vamolas_reporte->datos_problemas);}}
-                
-            @endphp
-        <td>
-            <a href="/reporte-automatico/{{$reporte}}">Vamolà-{{$vamolas_reporte->fecha_test}}</a></td>
-        </tr>
-    @endforeach
-</table>
-<div >
-    {{ $vamolas_reportes->links() }}
-</div>
-@endif
+            @if (in_array(4,$herramientas) && (count($observatorios)>0))
+            <h3> Observatorio de la UPS de Ecuador </h3>
+            <div class ="grafico" id="observatorio-porcentajes"></div>
+            <div class ="grafico" id="observatorio-problemas"></div>
+            <div class ="grafico" id="observatorio-advertencias"></div>
 
-@if (in_array(6,$herramientas) && (count($waves)>0))
-<h3> WAVE </h3>
-<div class ="grafico" id="wave-problemas"></div>
-<div class ="grafico" id="wave-caracteristicas"></div>
+            <table>
+                <tr>
+                    <th>Reportes Observatorio de la UPS de Ecuador</th>
+                </tr>
+                @foreach ($observatorios_reportes as $observatorios_reporte)
+                    <tr>
+                        @php
+                            {{$reporte=str_replace("/","+",$observatorios_reporte->datos_problemas);}}
+                            
+                        @endphp
+                    <td>
+                        <a href="/reporte-automatico/{{$reporte}}">Observatorio de la UPS de Ecuador-{{$observatorios_reporte->fecha_test}}</a></td>
+                    </tr>
+                @endforeach
+            </table>
 
-<table>
-    <tr>
-        <th>Reportes WAVE</th>
-    </tr>
-    @foreach ($waves_reportes as $waves_reporte)
-        <tr>
-            @php
-                {{$reporte=str_replace("/","+",$waves_reporte->datos_problemas);}}
-                
-            @endphp
-        <td>
-            <a href="/reporte-automatico/{{$reporte}}">WAVE-{{$waves_reporte->fecha_test}}</a></td>
-        </tr>
-    @endforeach
-</table>
-<div >
-    {{ $waves_reportes->links() }}
+            <div class="row justify-content-center">
+                <div class="div-links">
+                {{ $observatorios_reportes->links() }}
+                </div>
+            </div>
+            @endif
+
+            @if (in_array(5,$herramientas) && (count($vamolas)>0))
+            <h3> Vamolà </h3>
+            <div class ="grafico" id="vamola-total-conocidos"></div>
+            <div class ="grafico" id="vamola-total-potenciales"></div>
+            <div class ="grafico" id="vamola-conocidos"></div>
+            <div class ="grafico" id="vamola-potenciales"></div>
+
+            <table>
+                <tr>
+                    <th>Reportes Vamolà</th>
+                </tr>
+                @foreach ($vamolas_reportes as $vamolas_reporte)
+                    <tr>
+                        @php
+                            {{$reporte=str_replace("/","+",$vamolas_reporte->datos_problemas);}}
+                            
+                        @endphp
+                    <td>
+                        <a href="/reporte-automatico/{{$reporte}}">Vamolà-{{$vamolas_reporte->fecha_test}}</a></td>
+                    </tr>
+                @endforeach
+            </table>
+
+            <div class="row justify-content-center">
+                <div class="div-links">
+                    {{ $vamolas_reportes->links() }}
+                </div>
+            </div>
+
+            @endif
+
+            @if (in_array(6,$herramientas) && (count($waves)>0))
+            <h3> WAVE </h3>
+            <div class ="grafico" id="wave-problemas"></div>
+            <div class ="grafico" id="wave-caracteristicas"></div>
+
+            <table>
+                <tr>
+                    <th>Reportes WAVE</th>
+                </tr>
+                @foreach ($waves_reportes as $waves_reporte)
+                    <tr>
+                        @php
+                            {{$reporte=str_replace("/","+",$waves_reporte->datos_problemas);}}
+                            
+                        @endphp
+                    <td>
+                        <a href="/reporte-automatico/{{$reporte}}">WAVE-{{$waves_reporte->fecha_test}}</a></td>
+                    </tr>
+                @endforeach
+            </table>
+            <div class="row justify-content-center">
+                <div class="div-links">
+                {{ $waves_reportes->links() }}
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @endif

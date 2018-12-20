@@ -5,8 +5,8 @@
 @section('content')
 <h1 class ="h1-encabezado-inicio"> Bienvenido al Observatorio para el Seguimiento de la Accesibilidad Web (OSAW)</h1>
 
-<h2>Finalidad del observatorio</h2>
-<p> El <strong>Observatorio para el Seguimiento de la Accesibilidad Web </strong> se ha desarrollado con el objetivo principal de poder realizar un seguimiento de aquellos sitios web que por ley deben ser accesibles. </p>
+<h2>Objetivo principal</h2>
+<p> El <strong>Observatorio para el Seguimiento de la Accesibilidad Web </strong> se ha desarrollado con la finalidad de poder realizar un seguimiento de aquellos sitios web que por ley deben ser accesibles. </p>
 <p>Para llevar a cabo esta tarea se ha hecho uso de herramientas online gratuitas de evaluación de la accesibilidad web: </p>
 <ul>
     <a href="http://www.acessibilidade.gov.pt/accessmonitor/" target="_blank"><li>AccessMonitor</li></a>
