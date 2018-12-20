@@ -25,10 +25,10 @@
 
 <hr>
 
-<h3> Categorias Institucionales y de organización contempladas </h3>
+<h3> Categorias institucionales y de organización contempladas </h3>
 <ul>
 @foreach ($categorias as $categoria)
-<li>{{$categoria->descripcion}}
+<li>{{$categoria->descripcion}}</li>
 @endforeach
 </ul>
 

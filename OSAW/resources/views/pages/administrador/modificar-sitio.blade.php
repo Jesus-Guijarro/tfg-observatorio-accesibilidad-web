@@ -106,7 +106,7 @@ function mostrarEliminar() {
         <label for="paginas" class="col-md-4 col-form-label text-md-right">Añadir páginas web</label>
 
         <div class="col-md-8">
-            <textarea id="paginas" name="paginas" rows="10" cols="50" placeholder="Una dirección en cada línea: http://www.renfe.com" value="{{ old('paginas') }}" ></textarea>
+            <textarea id="paginas" name="paginas" rows="10" cols="50" placeholder="Una dirección en cada línea: http://www.renfe.com" >{{ old('paginas') }}</textarea>
             @if ($errors->has('paginas'))
                 <span>
                     <strong class="strong-val">{{ $errors->first('paginas') }}</strong>

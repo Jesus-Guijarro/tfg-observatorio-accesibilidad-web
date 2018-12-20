@@ -24,6 +24,7 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 class SitioController extends Controller
 {
 
+    //Función para mostrar un sitio web
     public function mostrarSitio($id){
         $s = new Sitio();
 
@@ -60,6 +61,7 @@ class SitioController extends Controller
      ));
     }
 
+    //Función para mostrar la lista completa de los sitios evaluados
     public function listarSitios(){
         $sitio = new Sitio();
         $sitios = $sitio->getSitios();
@@ -71,20 +73,20 @@ class SitioController extends Controller
 
     }
 
+    //Función para mostrar todo los sitios de una categoria institucional concreta
     public function listarSitiosPorCategoria(Request $request){
         
-        $cat = $request->categoria;
-        
         $sitio = new Sitio();
-        $sitios = $sitio->getSitiosCategoria($cat);
+        $sitios = $sitio->getSitiosCategoria($request->categoria);
 
         $c = new Categoria();
-        $categoria = $c->getCategoria($cat);
+        $categoria = $c->getCategoria($request->categoria);
         $categorias = $c->getCategorias();
 
         return view('pages.lista-sitios', array('sitios'=>$sitios,'categorias'=>$categorias, 'categoria'=>$categoria));
     }
 
+    //Función que devuelve el resultado de buscar un sitio por su nombre
     public function busquedaSitio(){
 
         $nombre =  Input::get('nombre');
@@ -98,10 +100,10 @@ class SitioController extends Controller
         return view('pages.busqueda-sitios', array('sitios' => $sitios,'nombre' => $nombre,'categorias'=>$categorias));
     }
 
+    //Función que devuelve los listos de cierta categoria que coinciden con el nombre buscado
     public function busquedaSitioPorCategoria(Request $request){
         
         $nombre= $request->nombre_post;
-
         $cat = $request->categoria;
         
         $sitio = new Sitio();
@@ -115,8 +117,7 @@ class SitioController extends Controller
     }
 
 
-    //Administración de sitios
-
+    //Función para mostrar la administración de sitios
     public function gestionarSitios(){
 
         $nombre =  Input::get('nombre');
@@ -127,7 +128,7 @@ class SitioController extends Controller
         return view('pages.administrador.gestionar-sitios', array('sitios' => $sitios));
     }
 
-    //CREAR SITIO
+    //Función para mostrar el formulario de creación de un sitio
     public function panelCrearSitio(){
 
         $categoria = new Categoria();
@@ -140,7 +141,7 @@ class SitioController extends Controller
         return view('pages.administrador.crear-sitio', array('categorias' => $categorias,'herramientas' => $herramientas));
     }
 
-
+    //Función para crear un sitio
     public function crearSitio(Request $request){
 
         //Validaciones
@@ -153,7 +154,7 @@ class SitioController extends Controller
         ]);
 
     
-        //Validar dia semana o mes
+        //Se valida el de evaluación en función si la periodicidad es semanal o mensual
 
         $periodicidad=$request->periodicidad;
         $dia=$request->dia;
@@ -169,28 +170,24 @@ class SitioController extends Controller
             }
         }
 
-        //Proceso de creación
-
+        //Asignación de valores
         $nombre=$request->nombre;
         $dominio=$request->dominio;
         $categoria_id=$request->categoria;
         $hora=$request->hora;
 
-        
-        //Automatizado
+        //Control del checkbox de si se quiere automatizar el análisis o no
         $automatizado = true;
-        
         if($request->automatizado!="on"){
             $automatizado = false;
         }
 
-        
-
+        //Creación del sitio
         $s = new Sitio();
-        $id= $s->crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id);
+        $sitio_id= $s->crearSitio($nombre,$dominio,$periodicidad,$hora,$dia,$automatizado,$categoria_id);
 
-        //Herramientas
-        $sitio=$s->getSitio($id);
+        //Asignar las herramientas de evaluación 
+        $sitio=$s->getSitio($sitio_id);
         $herramientas = [$request->accessmonitor,$request->achecker,$request->eiiichecker,$request->observatorio, $request->vamola,$request->wave];
         foreach($herramientas as $herramienta){
             if($herramienta!=0){
@@ -198,51 +195,53 @@ class SitioController extends Controller
             }
         }
        
-        //Páginas web
+        //Añadir y crear las páginas web introducidas en el area de texto
+        //Primero se comprueba que se hayan introducido páginas
         if($request->paginas){
-            //Operaciones para obtener cada linea, quitar saltos de línea y espacios de las cadenas
+            //Operaciones para obtener cada linea: quitar saltos de línea y espacios de las cadenas
             $lista_paginas = explode("\n", $request->paginas);
             $paginas = array();
             foreach($lista_paginas as $pagina){
-                $pagina=str_replace(array("\r\n","\r"," "),"",$pagina);
+                $pagina=str_replace(array("\n","\r\n","\r"," "),"",$pagina);
                 array_push($paginas, $pagina);
             }
 
-            $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
-
             $p = new Pagina();
+            $regex = '/((http|https)\:\/\/)[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
+            
             foreach($paginas as $pagina){
-                if(preg_match($regex,$pagina)){
-                    $nueva = $p->paginaNueva($pagina);
-                    if($nueva){
-                        $p->crearPagina($pagina,$id);
+                if(strpos($pagina, $sitio->dominio)){
+                    if(preg_match($regex,$pagina)){
+                        if(get_headers($pagina)[0]==="HTTP/1.0 200 OK"){
+                            if($p->paginaNueva($pagina)){
+                                $p->crearPagina($sitio_id,$pagina);
+                            }
+                        }
                     }
                 }
             }
         }
         
         
-        //Ruta archivos Web Scraping
+        //Obtener ruta para ejecutar los archivos de la parte de Web Scraping
         list($scriptPath) = get_included_files();
         $ruta = $scriptPath;
         $ruta_webscraping=str_replace("/OSAW/server.php","/Webscraping/",$ruta);
 
         //Llamada crawler
-        
         $num_paginas=$request->num_paginas;
-        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$id." ".$num_paginas;
-
+        $comando="/usr/bin/python3 ".$ruta_webscraping."crawler.py ".$sitio_id." ".$num_paginas;
         $crawler = new Process($comando);
         $crawler->run();
 
-        //Llamada a cron
+        //Llamada a cron para automatizar 
         if($automatizado){
-            $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$id.' C';
+            $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$sitio_id.' C';
             $cron = new Process($comando);
             $cron->run();
         }
         else{
-            $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$id.' E';
+            $comando='/usr/bin/python3 '.$ruta_webscraping.'cron.py '.$sitio_id.' E';
             $cron = new Process($comando);
             $cron->run();
         }
@@ -323,7 +322,6 @@ class SitioController extends Controller
 
         $herramientas = [$request->accessmonitor,$request->achecker,$request->eiiichecker,$request->observatorio, $request->vamola,$request->wave];
         foreach($herramientas as $herramienta){
-
             if(is_numeric($herramienta)){
                 if(!in_array($herramienta, $herramientas_sitio)){
                     $sitio->herramientas()->attach($herramienta);
@@ -335,31 +333,31 @@ class SitioController extends Controller
                 if(in_array($herramienta_id, $herramientas_sitio)){
                     $sitio->herramientas()->detach($herramienta_id);
                 }
-                
             }
-
-
-
         }
        
         //Páginas web
         if($request->paginas){
-            //Operaciones para obtener cada linea, quitar saltos de línea y espacios de las cadenas
+            //Obtenemos la lista de páginas
             $lista_paginas = explode("\n", $request->paginas);
             $paginas = array();
             foreach($lista_paginas as $pagina){
-                $pagina=str_replace(array("\r\n","\r"," "),"",$pagina);
+                $pagina=str_replace(array("\n","\r\n","\r"," "),"",$pagina);
                 array_push($paginas, $pagina);
             }
 
-            $regex = '/((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
-
+            //Se añaden las páginas
             $p = new Pagina();
+            $regex = '/((http|https)\:\/\/)[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/';
+            
             foreach($paginas as $pagina){
-                if(preg_match($regex,$pagina)){
-                    $nueva = $p->paginaNueva($pagina);
-                    if($nueva){
-                        $p->crearPagina($pagina,$id);
+                if(strpos($pagina, $sitio->dominio)){
+                    if(preg_match($regex,$pagina)){
+                        if(get_headers($pagina)[0]==="HTTP/1.0 200 OK"){
+                            if($p->paginaNueva($pagina)){
+                                $p->crearPagina($id,$pagina);
+                            }
+                        }
                     }
                 }
             }
@@ -392,7 +390,7 @@ class SitioController extends Controller
 
     }
 
-    //ELIMINAR
+    //Función para eliminar un sitio
     public function eliminarSitio($id){
 
         $s = new Sitio();

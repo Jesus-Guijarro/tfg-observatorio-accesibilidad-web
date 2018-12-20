@@ -67,7 +67,7 @@ class Pagina extends Model
         }
     }
 
-    public function crearPagina($URL,$sitio_id){
+    public function crearPagina($sitio_id,$URL){
         $pagina = new Pagina();
         $pagina->URL= $URL;
         $pagina->hash="default";

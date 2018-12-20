@@ -121,7 +121,7 @@ class PaginaController extends Controller
         $nueva = $p->paginaNueva($url);
         if($nueva){
             //Se añade en caso positivo
-            $p->crearPagina($url, $sitio_id);
+            $p->crearPagina($sitio_id,$url);
         }
         else{
             return back()->withErrors(['url'=>'La URL ya se encuentra añadida']);
@@ -173,9 +173,7 @@ class PaginaController extends Controller
         else{
             return back()->withErrors(['url'=>'La URL ya se encuentra añadida']);
         }
-        
         return back()->with('mensaje', 'La página se ha modificado con éxito');
-        
     }
 
     //Función para eliminar una página
