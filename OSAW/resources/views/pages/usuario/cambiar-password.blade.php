@@ -22,15 +22,15 @@
                             <label for="old_password" class="col-md-4 col-form-label text-md-right">Antigua contraseña</label>
 
                             <div class="col-md-6">
-                                <input id="old_password" type="password" name="old_password" >
+                                <input id="old_password" type="password" name="old_password" class="form-control{{ $errors->has('old_password') ? ' is-invalid' : '' }}" required>
 
                                 @if ($errors->has('old_password'))
-                                    <span>
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('old_password') }}</strong>
                                     </span>
                                 @endif
                                 @if (session('old_password'))
-                                    <span>
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ session('old_password') }}</strong>
                                     </span>
                                 @endif
@@ -40,10 +40,10 @@
                             <label for="new_password" class="col-md-4 col-form-label text-md-right">Nueva contraseña</label>
 
                             <div class="col-md-6">
-                                <input id="new_password" type="password" name="new_password" >
+                                <input id="new_password" type="password" name="new_password" class="form-control{{ $errors->has('new_password') ? ' is-invalid' : '' }}" required>
 
                                 @if ($errors->has('new_password'))
-                                    <span>
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('new_password') }}</strong>
                                     </span>
                                 @endif
@@ -54,7 +54,7 @@
                             <label for="new_password_confirm" class="col-md-4 col-form-label text-md-right">Confirmar nueva contraseña</label>
 
                             <div class="col-md-6">
-                                <input id="new_password_confirm" type="password" name="new_password_confirm">
+                                <input id="new_password_confirm" type="password" name="new_password_confirm" class="form-control{{ $errors->has('new_password_confirm') ? ' is-invalid' : '' }}" required>
                             </div>
                         </div>
 

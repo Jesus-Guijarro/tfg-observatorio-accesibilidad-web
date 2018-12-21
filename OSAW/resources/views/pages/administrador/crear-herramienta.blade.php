@@ -22,7 +22,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group row">
-                            <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre herramienta</label>
+                            <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre herramienta:</label>
 
                             <div class="col-md-8">
                                 <input id="nombre" type="text"  name="nombre" value="{{ old('nombre') }}" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" autofocus>
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="descripcion" class="col-md-4 col-form-label text-md-right">Descripción</label>
+                            <label for="descripcion" class="col-md-4 col-form-label text-md-right">Descripción:</label>
 
                             <div class="col-md-8">
                                 <input id="descripcion" type="text"  name="descripcion" value="{{ old('descripcion') }}" class="form-control{{ $errors->has('descripcion') ? ' is-invalid' : '' }}" required>

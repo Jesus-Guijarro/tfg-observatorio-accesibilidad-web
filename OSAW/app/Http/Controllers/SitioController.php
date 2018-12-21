@@ -286,12 +286,12 @@ class SitioController extends Controller
 
         if ($periodicidad=="Semanal"){
             if ($dia<0 or $dia>6){
-                return back()->withErrors(['dia'=>'El día debe de ser entre 0 y 6.']);
+                return back()->withErrors(['dia'=>'El día semanal debe de ser entre 0 y 6.']);
             }
         }
         elseif($periodicidad=="Mensual"){
             if ($dia<1 or $dia>31){
-                return back()->withErrors(['dia'=>'El día debe de ser entre 1 y 31.']);
+                return back()->withErrors(['dia'=>'El día mensual debe de ser entre 1 y 31.']);
             }
         }
 

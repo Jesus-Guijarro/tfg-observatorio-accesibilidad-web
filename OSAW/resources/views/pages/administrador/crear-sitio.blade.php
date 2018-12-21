@@ -21,7 +21,7 @@
 
                         <!--Nombre del sitio -->
                         <div class="form-group row">
-                            <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre sitio web</label>
+                            <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre sitio web:</label>
 
                             <div class="col-md-8">
                                 <input id="nombre" type="text"  name="nombre" placeholder="Renfe" value="{{ old('nombre') }}" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" required autofocus>
@@ -36,7 +36,7 @@
 
                         <!--Dominio -->
                         <div class="form-group row">
-                            <label for="dominio" class="col-md-4 col-form-label text-md-right">Dominio</label>
+                            <label for="dominio" class="col-md-4 col-form-label text-md-right">Dominio:</label>
 
                             <div class="col-md-8">
                                 <input id="dominio" type="text"  name="dominio" placeholder="www.renfe.com" value="{{ old('dominio') }}"  class="form-control{{ $errors->has('dominio') ? ' is-invalid' : '' }}" required >
@@ -51,7 +51,7 @@
 
                         <!--Categoria institucional -->
                         <div class="form-group row">
-                            <label for="categoria" class="col-md-4 col-form-label text-md-right">Categoria</label>
+                            <label for="categoria" class="col-md-4 col-form-label text-md-right">Categoria:</label>
 
                             <div class="col-md-8">
 
@@ -71,11 +71,11 @@
 
                         <!--Herramientas -->
                         <div class="form-group row">
-                            <label class="col-md-4 col-form-label text-md-right">Herramientas de evaluación</label>
+                            <label class="col-md-4 col-form-label text-md-right">Herramientas de evaluación:</label>
                             <div class="col-md-4">
 
                                 @foreach ($herramientas as $herramienta)
-                                    <label for="{{$herramienta->nombre}}" hidden> Seleccionar herramienta</label>
+                                    <label for="{{$herramienta->nombre}}" hidden> Seleccionar herramienta:</label>
                                     <input type="checkbox" id="{{$herramienta->nombre}}" name="{{$herramienta->nombre}}" value="{{$herramienta->id}}"> {{$herramienta->descripcion}}<br>
                                 @endforeach
                             </div>
@@ -83,7 +83,7 @@
 
                         <!--Lista de páginas-->
                         <div class="form-group row">
-                            <label for="paginas" class="col-md-4 col-form-label text-md-right">Páginas web</label>
+                            <label for="paginas" class="col-md-4 col-form-label text-md-right">Páginas web:</label>
 
                             <div class="col-md-8">
 
@@ -98,7 +98,7 @@
 
                         <!-- Número de páginas crawler -->
                         <div class="form-group row">
-                            <label for="num_paginas" class="col-md-4 col-form-label text-md-right">Número de paginas a añadir con Crawler</label>
+                            <label for="num_paginas" class="col-md-4 col-form-label text-md-right">Número de paginas a añadir con Crawler:</label>
 
                             <div class="col-md-8">
                                 <input id="num_paginas" type="number"  name="num_paginas"  class="form-control{{ $errors->has('num_paginas') ? ' is-invalid' : '' }}" value="0">
@@ -112,7 +112,7 @@
                         </div>
                         <!--Periodicidad-->
                         <div class="form-group row">
-                            <label for="periodicidad" class="col-md-4 col-form-label text-md-right">Periodicidad de la evaluación</label>
+                            <label for="periodicidad" class="col-md-4 col-form-label text-md-right">Periodicidad de la evaluación:</label>
 
                             <div class="col-md-8">
 
@@ -132,7 +132,7 @@
 
                         <!--Dia-->
                         <div class="form-group row">
-                            <label for="dia" class="col-md-4 col-form-label text-md-right">Día de la semana o mes</label>
+                            <label for="dia" class="col-md-4 col-form-label text-md-right">Día de la semana o mes:</label>
 
                             <div class="col-md-8">
                                 <input id="dia" type="number" name="dia" value="{{ old('dia') }}"  class="form-control{{ $errors->has('dia') ? ' is-invalid' : '' }}" required >
@@ -147,7 +147,7 @@
 
                         <!--Hora -->
                         <div class="form-group row">
-                            <label for="hora" class="col-md-4 col-form-label text-md-right">Hora</label>
+                            <label for="hora" class="col-md-4 col-form-label text-md-right">Hora:</label>
 
                             <div class="col-md-8">
                                 <input id="hora" type="text"  name="hora" placeholder="17:00" value="{{ old('hora') }}"  class="form-control{{ $errors->has('hora') ? ' is-invalid' : '' }}" required >

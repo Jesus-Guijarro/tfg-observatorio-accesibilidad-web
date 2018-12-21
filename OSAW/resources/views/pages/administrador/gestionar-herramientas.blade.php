@@ -12,12 +12,15 @@
 @endif
 
 @if( count($herramientas) !== 0)
-<table class="table-ancho">
-    <tr>
-        <th>Herramienta de evaluación</th>
-        <th>Nombre</th>
-        <th>Estado herramienta</th>
-    </tr>
+<table class="table-ancho" summary="Tabla que muestra las herramientas de evaluación que hace uso el observatorio">
+    <thead>
+        <tr>
+            <th>Herramienta de evaluación</th>
+            <th>Nombre</th>
+            <th>Estado herramienta</th>
+        </tr>
+    </thead>
+    <tbody>
     @foreach ($herramientas as $herramienta)
         <tr>
             <td> {{$herramienta->descripcion}}</td>
@@ -39,6 +42,7 @@
                 <td> <a href="modificar-herramienta/{{$herramienta->id}}">Modificar</a></td>
         </tr>
     @endforeach
+    </tbody>
 </table>
 @else
     <p style="text-align: center"> No hay ninguna herramienta de evaluación</p>

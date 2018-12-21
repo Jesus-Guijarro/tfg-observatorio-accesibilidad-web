@@ -18,10 +18,13 @@
         <div class="col-md-12">
             <div style="margin-bottom: 1.5em">
                 <div class="row justify-content-center">
-                    <table>
-                        <tr>
-                            <th>Página Web</th>
-                        </tr>
+                    <table summary="Lista de páginas web del sitio web a gestionar">
+                        <thead>
+                            <tr>
+                                <th>Página Web</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                         @foreach ($paginas as $pagina)
                             <tr>
                                 <td>{{$pagina->URL}}</td>
@@ -29,6 +32,7 @@
                                 <td > <a href="/eliminar-pagina/{{$pagina->id}}">Eliminar Página</a></td>  
                             </tr>
                         @endforeach
+                        </tbody>
                     </table>
                     <div>
                         {{ $paginas->links() }}
@@ -41,26 +45,29 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row justify-content-center">
-        <div style="margin-bottom: 1.5em">
-            <form method="POST" action="<?php action('PaginaController@crearPagina', [$sitio_id])?>">
-            {{ csrf_field() }}
-                <label for="url" >Nueva página web  </label>
-                <input type="text" id ="url" name="url"  required autofocus>
-                @if ($errors->has('url'))
-                    <span>
-                        <strong class="strong-val">{{ $errors->first('url') }}</strong>
-                    </span>
-                @endif
 
-                    <button type="submit" class="btn btn-primary">
-                    Añadir
-                    </button>
-            </form>
+<div class="row justify-content-center">
+    <div style="margin-bottom: 1.5em">
+        <div class="card">
+            <div class="card-body">
+                <form method="POST" action="<?php action('PaginaController@crearPagina', [$sitio_id])?>">
+                {{ csrf_field() }}
+                        <label for="url">Nueva página web:  </label>
+                        <input type="text" id ="url" name="url" required autofocus>
+                        @if ($errors->has('url'))
+                            <span>
+                                <strong class="strong-val">{{ $errors->first('url') }}</strong>
+                            </span>
+                        @endif
+                        <button type="submit" class="btn btn-primary">
+                            Añadir
+                        </button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
+
 
 <a href="/modificar-sitio/{{$sitio_id}}">Volver a modificar sitio</a></td>  
 @endsection

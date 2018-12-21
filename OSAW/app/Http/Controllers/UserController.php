@@ -82,7 +82,7 @@ class UserController extends Controller
             return back()->with('mensaje','Contraseña cambiada con éxito');
         }
         else{
-            return back()->with('old_password','La contraseña antigua no coincide con la introducida');
+            return back()->withErrors(['old_password'=>'La contraseña antigua no coincide con la introducida']);
         }
         
        

@@ -27,7 +27,7 @@
                                 <input id="nombre" type="text" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" name="nombre" value="{{ $usuario->nombre }}" required autofocus>
 
                                 @if ($errors->has('nombre'))
-                                    <span >
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('nombre') }}</strong>
                                     </span>
                                 @endif
@@ -41,7 +41,7 @@
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ $usuario->email }}" required>
 
                                 @if ($errors->has('email'))
-                                    <span >
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif

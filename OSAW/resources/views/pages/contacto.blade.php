@@ -21,7 +21,7 @@
                     {{ csrf_field() }}
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">Correo electrónico</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">Correo electrónico:</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{  old('email') }}" required>
@@ -35,7 +35,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="asunto" class="col-md-4 col-form-label text-md-right">Asunto</label>
+                            <label for="asunto" class="col-md-4 col-form-label text-md-right">Asunto:</label>
 
                             <div class="col-md-6">
                                 <input id="asunto" type="text" class="form-control{{ $errors->has('asunto') ? ' is-invalid' : '' }}" name="asunto" value="{{ old('asunto')}}" required autofocus>
@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="mensaje" class="col-md-4 col-form-label text-md-right">Mensaje</label>
+                            <label for="mensaje" class="col-md-4 col-form-label text-md-right">Mensaje:</label>
                             <div class="col-md-6">
                                 <textarea id="mensaje"  name="mensaje" rows="5" cols="34" required>{{ old('mensaje')}}</textarea>
                                 @if ($errors->has('mensaje'))

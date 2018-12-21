@@ -27,14 +27,18 @@
 
             @if( count($sitios) !== 0)
             <table class="table-ancho">
-                <tr>
-                    <th>Sitio web</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Sitio web</th>
+                    </tr>
+                </thead>
+                <tbody>
                 @foreach ($sitios as $sitio)
                     <tr>
                         <td> <a href="/modificar-sitio/{{$sitio['id']}}">{{$sitio->nombre}}</a></td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
 
             <div class="row justify-content-center">

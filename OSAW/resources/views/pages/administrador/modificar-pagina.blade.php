@@ -18,7 +18,7 @@
         <div class="card">
             <div class="card-body">
                 <form method="POST" action="<?php action('PaginaController@modificarPagina', $id)?>">
-                    <label for="url">Nueva URL </label>
+                    <label for="url">Nueva URL: </label>
                     <input type="text" id ="url" name="url" value="{{$pagina->URL}}"  style="width: 40em" required >
 
                     @if ($errors->has('url'))
