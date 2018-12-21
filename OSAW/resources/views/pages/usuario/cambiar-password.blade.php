@@ -13,7 +13,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
                     <form method="POST" action="<?php action('UserController@cambiarPassword', $usuario->id); ?>" >

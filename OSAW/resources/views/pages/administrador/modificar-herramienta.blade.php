@@ -12,30 +12,43 @@
     </div>
 @endif
 
-<div style="margin-bottom: 1.5em">
-    <form method="POST" action="<?php action('HerramientaController@modificarHerramienta', $herramienta->id)?>">
-        <label for="nombre">Nombre</label>
-        <input type="text" id ="nombre" name="nombre" value="{{$herramienta->nombre}}" required >
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-body">
+                    <form method="POST" action="<?php action('HerramientaController@modificarHerramienta', $herramienta->id)?>">
+                    {{ csrf_field() }}
+                    <div class="form-group row">
+                        <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre</label>
+                        <input type="text" id ="nombre" name="nombre" value="{{$herramienta->nombre}}" required >
 
-        @if ($errors->has('nombre'))
-            <span>
-                <strong class="strong-val">{{ $errors->first('nombre') }}</strong>
-            </span>
-        @endif
+                        @if ($errors->has('nombre'))
+                            <span>
+                                <strong class="strong-val">{{ $errors->first('nombre') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                    <div class="form-group row">
+                        <label for="descripcion" class="col-md-4 col-form-label text-md-right" >Descripcion</label>
+                        <input type="text" id ="descripcion" name="descripcion" value="{{$herramienta->descripcion}}" required >
 
-        <label for="descripcion">Descripcion</label>
-        <input type="text" id ="descripcion" name="descripcion" value="{{$herramienta->descripcion}}" required >
-
-        @if ($errors->has('descripcion'))
-            <span>
-                <strong class="strong-val">{{ $errors->first('descripcion') }}</strong>
-            </span>
-        @endif
-        <button type="submit" class="btn btn-primary">
-            Modificar
-        </button>
-        {{ csrf_field() }}
-    </form>
+                        @if ($errors->has('descripcion'))
+                            <span>
+                                <strong class="strong-val">{{ $errors->first('descripcion') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-primary">
+                            Modificar
+                        </button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <a href="/gestionar-herramientas">Volver a gestionar herramientas</a></td>  

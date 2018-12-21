@@ -878,7 +878,7 @@
     <div class="col-md-10">
         <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#paginas">Mostrar listado de páginas web del sitio</button>
         <div id="paginas" class="collapse" style="margin-top: 2em;">
-            <table>
+            <table class="table-ancho">
                 <tr>
                     <th style="text-align: left">Página web</th>
                 </tr>

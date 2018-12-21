@@ -12,7 +12,7 @@
 @endif
 
 @if( count($herramientas) !== 0)
-<table style>
+<table class="table-ancho">
     <tr>
         <th>Herramienta de evaluación</th>
         <th>Nombre</th>
@@ -43,9 +43,10 @@
 @else
     <p style="text-align: center"> No hay ninguna herramienta de evaluación</p>
 @endif
-
-<div style="margin-bottom: 1.5em">
-    <a class="btn btn-primary" href="/crear-herramienta" role="button">Añadir nueva herramienta web</a>
+<div class="row justify-content-center">
+    <div style="margin-bottom: 1.5em">
+        <a class="btn btn-primary" href="/crear-herramienta" role="button">Añadir nueva herramienta web</a>
+    </div>
 </div>
 
 @endsection

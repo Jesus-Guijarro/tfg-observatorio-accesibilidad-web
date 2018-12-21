@@ -56,7 +56,7 @@
         @endisset
 
         @if( count($sitios) !== 0)
-        <table style>
+        <table class="table-ancho">
             <tr>
                 <th>Sitio web</th>
                 <th>URL</th>

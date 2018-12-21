@@ -871,7 +871,7 @@
             <div class ="grafico" id="accessmonitor-problemas" ></div>
             <div class ="grafico" id="accessmonitor-advertencias" ></div>
 
-            <table>
+            <table class="table-ancho">
                 <tr>
                     <th>Reportes AccessMonitor</th>
                 </tr>
@@ -902,7 +902,7 @@
             <div class ="grafico" id="achecker-conocidos"></div>
             <div class ="grafico" id="achecker-potenciales"></div>
 
-            <table>
+            <table class="table-ancho">
                 <tr>
                     <th>Reportes Achecker</th>
                 </tr>
@@ -931,7 +931,7 @@
             <div class ="grafico" id="eiiichecker-total"></div>
             <div class ="grafico" id="eiiichecker-problemas"></div>
 
-            <table>
+            <table class="table-ancho">
                 <tr>
                     <th>Reportes EIII Page Checker</th>
                 </tr>
@@ -960,7 +960,7 @@
             <div class ="grafico" id="observatorio-problemas"></div>
             <div class ="grafico" id="observatorio-advertencias"></div>
 
-            <table>
+            <table class="table-ancho">
                 <tr>
                     <th>Reportes Observatorio de la UPS de Ecuador</th>
                 </tr>
@@ -990,7 +990,7 @@
             <div class ="grafico" id="vamola-conocidos"></div>
             <div class ="grafico" id="vamola-potenciales"></div>
 
-            <table>
+            <table class="table-ancho">
                 <tr>
                     <th>Reportes Vamolà</th>
                 </tr>
@@ -1019,7 +1019,7 @@
             <div class ="grafico" id="wave-problemas"></div>
             <div class ="grafico" id="wave-caracteristicas"></div>
 
-            <table>
+            <table class="table-ancho">
                 <tr>
                     <th>Reportes WAVE</th>
                 </tr>

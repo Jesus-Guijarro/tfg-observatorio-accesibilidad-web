@@ -116,13 +116,21 @@
 
 
 /*tablas*/
-table{
+
+.table{
+    border-collapse: collapse;
+    margin-bottom: 0.625em;
+    table-layout: fixed;
+
+}
+.table-ancho{
     border-collapse: collapse;
     margin-bottom: 0.625em;
     table-layout: fixed;
     width: 100%;
 
 }
+
 th, td{
     padding:  0.9375em;
     text-align: center;
@@ -164,5 +172,6 @@ div.grafico {
    
     border: solid lightgray;
  }
+
 
  

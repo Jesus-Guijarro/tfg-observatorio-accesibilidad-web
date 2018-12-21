@@ -226,13 +226,12 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<a href="/gestionar-sitios">Volver a gestionar sitios</a></td>  
 
 @endsection

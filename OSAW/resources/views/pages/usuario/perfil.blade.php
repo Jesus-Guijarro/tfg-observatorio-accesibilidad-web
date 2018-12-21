@@ -5,17 +5,23 @@
 @section('content')
 <h1 class="h1-encabezado"> Perfil de usuario</h1>
 
-<img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}">
 
-<p><strong> Nombre de usuario:  </strong> {{$usuario->nombre}} </p>
-<p><strong> Correo electrónico: </strong> {{$usuario->email}}</p>
-<p><strong>Biografia</strong>  {{$usuario->biografia}}<p>
+            <p><strong> Nombre de usuario:  </strong> {{$usuario->nombre}} </p>
+            <p><strong> Correo electrónico: </strong> {{$usuario->email}}</p>
+            <p><strong>Biografia</strong>  {{$usuario->biografia}}<p>
 
-<div style="margin-bottom: 1.5em">
-    <a class="btn btn-primary" href="/modificar-perfil/{{$usuario->id}}" role="button">Editar datos de usuario</a>
-</div>
-<div style="margin-bottom: 1.5em">
-    <a class="btn btn-primary" href="/cambiar-password/{{$usuario->id}}" role="button">Cambiar contraseña</a>
+            <div style="margin-bottom: 1.5em">
+                <a class="btn btn-primary" href="/modificar-perfil/{{$usuario->id}}" role="button">Editar datos de usuario</a>
+            </div>
+            <div style="margin-bottom: 1.5em">
+                <a class="btn btn-primary" href="/cambiar-password/{{$usuario->id}}" role="button">Cambiar contraseña</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 

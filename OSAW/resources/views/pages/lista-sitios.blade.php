@@ -42,7 +42,7 @@
                 @isset ($categoria)
                 <h2> {{$categoria->descripcion}}</h2>
                 @endisset
-                <table>
+                <table class="table-ancho">
                     <tr>
                         <th>Sitio web</th>
                         <th>URL</th>
