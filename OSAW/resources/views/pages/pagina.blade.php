@@ -871,10 +871,13 @@
             <div class ="grafico" id="accessmonitor-problemas" ></div>
             <div class ="grafico" id="accessmonitor-advertencias" ></div>
 
-            <table class="table-ancho">
-                <tr>
-                    <th>Reportes AccessMonitor</th>
-                </tr>
+            <table class="table-ancho" summary="Reportes AccessMonitor">
+                <thead>
+                    <tr>
+                        <th>Reportes AccessMonitor</th>
+                    </tr>
+                </thead>
+                <tbody>
                 @foreach ($accessmonitors_reportes as $accessmonitors_reporte)
                     <tr>
                         @php
@@ -885,6 +888,7 @@
                             <a href="/reporte-automatico/{{$reporte}}">AccessMonitor-{{$accessmonitors_reporte->fecha_test}}</a></td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
             <div class="row justify-content-center">
                 <div class="div-links">
@@ -892,6 +896,7 @@
                 </div>
             </div>
                 
+            <hr>
             
             @endif
 
@@ -902,10 +907,13 @@
             <div class ="grafico" id="achecker-conocidos"></div>
             <div class ="grafico" id="achecker-potenciales"></div>
 
-            <table class="table-ancho">
-                <tr>
-                    <th>Reportes Achecker</th>
-                </tr>
+            <table class="table-ancho" summary="Reportes AChecker">
+                <thead>
+                    <tr>
+                        <th>Reportes Achecker</th>
+                    </tr>
+                </thead>
+                <tbody>
                 @foreach ($acheckers_reportes as $acheckers_reporte)
                     <tr>
                         @php
@@ -916,6 +924,7 @@
                             <a href="/reporte-automatico/{{$reporte}}">Achecker-{{$acheckers_reporte->fecha_test}}</a></td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
 
             <div class="row justify-content-center">
@@ -923,6 +932,8 @@
                 {{ $acheckers_reportes->links() }}
                 </div>
             </div>
+
+            <hr>
             @endif
 
             @if (in_array(2,$herramientas) && (count($eiiicheckers)>0))
@@ -931,10 +942,13 @@
             <div class ="grafico" id="eiiichecker-total"></div>
             <div class ="grafico" id="eiiichecker-problemas"></div>
 
-            <table class="table-ancho">
-                <tr>
-                    <th>Reportes EIII Page Checker</th>
-                </tr>
+            <table class="table-ancho" summary="Reportes EIII Page Checker">
+                <thead>
+                    <tr>
+                        <th>Reportes EIII Page Checker</th>
+                    </tr>
+                </thead>
+                <tbody>
                 @foreach ($eiiicheckers_reportes as $eiiicheckers_reporte)
                     <tr>
                         @php
@@ -945,12 +959,15 @@
                         <a href="/reporte-automatico/{{$reporte}}">EIII Page Checker-{{$eiiicheckers_reporte->fecha_test}}</a></td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
             <div class="row justify-content-center">
                 <div class="div-links">
                 {{ $eiiicheckers_reportes->links() }}
                 </div>
             </div>
+
+            <hr>
 
             @endif
 
@@ -960,10 +977,13 @@
             <div class ="grafico" id="observatorio-problemas"></div>
             <div class ="grafico" id="observatorio-advertencias"></div>
 
-            <table class="table-ancho">
+            <table class="table-ancho" summary="Reportes Observatorio de la UPS de Ecuador">
+                <thead>
                 <tr>
                     <th>Reportes Observatorio de la UPS de Ecuador</th>
                 </tr>
+                </thead>
+                <tbody>
                 @foreach ($observatorios_reportes as $observatorios_reporte)
                     <tr>
                         @php
@@ -974,6 +994,7 @@
                         <a href="/reporte-automatico/{{$reporte}}">Observatorio de la UPS de Ecuador-{{$observatorios_reporte->fecha_test}}</a></td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
 
             <div class="row justify-content-center">
@@ -981,6 +1002,8 @@
                 {{ $observatorios_reportes->links() }}
                 </div>
             </div>
+
+            <hr>
             @endif
 
             @if (in_array(5,$herramientas) && (count($vamolas)>0))
@@ -990,10 +1013,13 @@
             <div class ="grafico" id="vamola-conocidos"></div>
             <div class ="grafico" id="vamola-potenciales"></div>
 
-            <table class="table-ancho">
-                <tr>
-                    <th>Reportes Vamolà</th>
-                </tr>
+            <table class="table-ancho" summary="Reportes Vamolà">
+                <thead>
+                    <tr>
+                        <th>Reportes Vamolà</th>
+                    </tr>
+                </thead>
+                <tbody>
                 @foreach ($vamolas_reportes as $vamolas_reporte)
                     <tr>
                         @php
@@ -1004,6 +1030,7 @@
                         <a href="/reporte-automatico/{{$reporte}}">Vamolà-{{$vamolas_reporte->fecha_test}}</a></td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
 
             <div class="row justify-content-center">
@@ -1012,6 +1039,8 @@
                 </div>
             </div>
 
+            <hr>
+
             @endif
 
             @if (in_array(6,$herramientas) && (count($waves)>0))
@@ -1019,10 +1048,13 @@
             <div class ="grafico" id="wave-problemas"></div>
             <div class ="grafico" id="wave-caracteristicas"></div>
 
-            <table class="table-ancho">
-                <tr>
-                    <th>Reportes WAVE</th>
-                </tr>
+            <table class="table-ancho" summary="WAVE">
+                <thead>
+                    <tr>
+                        <th>Reportes WAVE</th>
+                    </tr>
+                </thead>
+                <tbody>
                 @foreach ($waves_reportes as $waves_reporte)
                     <tr>
                         @php
@@ -1033,6 +1065,7 @@
                         <a href="/reporte-automatico/{{$reporte}}">WAVE-{{$waves_reporte->fecha_test}}</a></td>
                     </tr>
                 @endforeach
+                </tbody>
             </table>
             <div class="row justify-content-center">
                 <div class="div-links">

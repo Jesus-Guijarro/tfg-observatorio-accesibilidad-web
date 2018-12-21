@@ -56,12 +56,16 @@
         @endisset
 
         @if( count($sitios) !== 0)
-        <table class="table-ancho">
-            <tr>
-                <th>Sitio web</th>
-                <th>URL</th>
-                <th>Categoria Institucional</th>
-            </tr>
+        <table class="table-ancho" summary="Tabla que muestra el resultado de la búsqueda por nombre de los sitios webs que hay registrados">
+            <caption>Resultado búsqueda de sitio web</caption>
+            <thead>
+                <tr>
+                    <th>Sitio web</th>
+                    <th>URL</th>
+                    <th>Categoria Institucional</th>
+                </tr>
+            </thead>
+            <tbody>
             @foreach ($sitios as $sitio)
                 <tr>
                     <td > <a href="/sitio/{{ $sitio['id'] }}" >{{$sitio->nombre}}</a></td>
@@ -69,6 +73,7 @@
                     <td> {{$sitio->descripcion}}</td>
                 </tr>
             @endforeach
+            </tbody>
         </table>
         <div class="div-links">
             {{ $sitios->links() }}

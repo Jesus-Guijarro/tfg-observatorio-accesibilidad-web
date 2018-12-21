@@ -11,16 +11,16 @@
     <ul class="ul-cabecera" >
         @guest
             <li class="li-cabecera">
-                <a class = "a-hf" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
+                <a class = "a-hf" href="{{ route('login') }}">Iniciar Sesión</a>
             </li>
             <li class="li-cabecera">
                 @if (Route::has('register'))
-                    <a class = "a-hf" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
+                    <a class = "a-hf" href="{{ route('register') }}">Registrarse</a>
                 @endif
             </li>
         @else
             <li class="li-cabecera">
-                <a class = "a-hf" href="/perfil/{{Auth::user()->id}}"> <img class="avatar-header" src="/storage/{{Auth::user()->avatar}}" alt="avatar usuario"></a>
+                <a class = "a-hf" href="/perfil/{{Auth::user()->id}}"> <img class="avatar-header" src="/storage/{{Auth::user()->avatar}}" alt="avatar usuario {{ Auth::user()->nombre}}"></a>
             </li>
             <li class="li-cabecera">
                 
@@ -69,7 +69,7 @@
             <a class = "a-hf" href="/lista-sitios">Listado de sitios web </a>
         </li>
         <li class="li-cabecera">
-            <form style="display:inline;float: right;" method="GET" action="{{ action('SitioController@busquedaSitio') }}">
+            <form class="form-buscador" method="GET" action="{{ action('SitioController@busquedaSitio') }}">
                 <label class="label-buscador" for="nombre" >Buscar Sitio Web: </label>
                 <input type="text" id ="nombre" name="nombre" required autofocus>
                 {{ csrf_field() }}

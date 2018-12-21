@@ -17,7 +17,4 @@
 <hr>
 <pre>{{$contenido}}</pre>
 
-
-
-
 @endsection

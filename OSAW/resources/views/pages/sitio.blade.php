@@ -878,17 +878,21 @@
     <div class="col-md-10">
         <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#paginas">Mostrar listado de páginas web del sitio</button>
         <div id="paginas" class="collapse" style="margin-top: 2em;">
-            <table class="table-ancho">
-                <tr>
-                    <th style="text-align: left">Página web</th>
-                </tr>
-                @foreach ($paginas as $pagina)
-                <tr>
-                    <td style="text-align: left">
-                        <a href="/pagina/{{ $pagina->id }}" >{{$pagina->URL}}</a>
-                    </td>
-                </tr>
-                @endforeach
+            <table class="table-ancho" summary="Tabla para ver las páginas webs pertenencientes al actual sitio web">
+                <thead>
+                    <tr>
+                        <th style="text-align: left">Página web</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($paginas as $pagina)
+                    <tr>
+                        <td style="text-align: left">
+                            <a href="/pagina/{{ $pagina->id }}" >{{$pagina->URL}}</a>
+                        </td>
+                    </tr>
+                    @endforeach
+                <tbody>
             </table>
         </div>
     </div>

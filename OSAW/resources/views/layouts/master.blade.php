@@ -25,24 +25,21 @@
         
     </head>
     <body>
-        <div>
+        <header class="cabecera">
+            @include('includes.header')
+        </header>
 
-            <header class="cabecera">
-                @include('includes.header')
-            </header>
-
-            <div class="contenido">
-                <div class="row justify-content-center">
-                    <div class="col-md-11">
-                        @yield('content')
-                    </div>
+        <div class="contenido">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    @yield('content')
                 </div>
             </div>
-
-            <footer class="pie">
-                @include('includes.footer')
-            </footer>
         </div>
+
+        <footer class="pie">
+            @include('includes.footer')
+        </footer>
         <script src="{{ asset('js/bootstrap.js') }}"></script>
     </body>
 </html>

@@ -56,6 +56,11 @@
     font-size: 2em;
 }
 
+.form-buscador{
+    display:inline;
+    float: right;
+}
+
 .buscador{
     text-align: right;
     padding: 6px;
@@ -66,6 +71,12 @@
 
 .label-buscador{
     color: white;
+}
+
+.avatar-header{
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
 }
 
 /*Pie de pagina*/
@@ -102,7 +113,15 @@
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    text-decoration: underline;
+}
+
+.h1-error{
+    color:black;
+    font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .h1-encabezado-inicio{
@@ -119,13 +138,13 @@
 
 .table{
     border-collapse: collapse;
-    margin-bottom: 0.625em;
+    margin-bottom: 1.5em;
     table-layout: fixed;
 
 }
 .table-ancho{
     border-collapse: collapse;
-    margin-bottom: 0.625em;
+    margin-bottom: 1.5em;
     table-layout: fixed;
     width: 100%;
 
@@ -150,19 +169,15 @@ th{
 }
 
 /*Alertas de validacion*/
-
 .strong-val{
     color:red;
 }
 
 
 
-.avatar-header{
-    width: 5em;
-    height: 5em;
-    border-radius: 100%;
-}
+
     
+/*Graficos*/
 
 div.grafico { 
     display: inline-block;
@@ -173,5 +188,7 @@ div.grafico {
     border: solid lightgray;
  }
 
-
+.input-form{
+    width: 20em;
+}
  

@@ -24,11 +24,11 @@
                             <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre sitio web</label>
 
                             <div class="col-md-8">
-                                <input id="nombre" type="text"  name="nombre" placeholder="Renfe" value="{{ old('nombre') }}" required autofocus>
+                                <input id="nombre" type="text"  name="nombre" placeholder="Renfe" value="{{ old('nombre') }}" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" required autofocus>
 
                                 @if ($errors->has('nombre'))
-                                    <span>
-                                        <strong class="strong-val">{{ $errors->first('nombre') }}</strong>
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('nombre') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -39,11 +39,11 @@
                             <label for="dominio" class="col-md-4 col-form-label text-md-right">Dominio</label>
 
                             <div class="col-md-8">
-                                <input id="dominio" type="text"  name="dominio" placeholder="www.renfe.com" value="{{ old('dominio') }}" required >
+                                <input id="dominio" type="text"  name="dominio" placeholder="www.renfe.com" value="{{ old('dominio') }}"  class="form-control{{ $errors->has('dominio') ? ' is-invalid' : '' }}" required >
 
                                 @if ($errors->has('dominio'))
-                                    <span>
-                                        <strong class="strong-val">{{ $errors->first('dominio') }}</strong>
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('dominio') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -101,11 +101,11 @@
                             <label for="num_paginas" class="col-md-4 col-form-label text-md-right">Número de paginas a añadir con Crawler</label>
 
                             <div class="col-md-8">
-                                <input id="num_paginas" type="number"  name="num_paginas" value="0">
+                                <input id="num_paginas" type="number"  name="num_paginas"  class="form-control{{ $errors->has('num_paginas') ? ' is-invalid' : '' }}" value="0">
 
                                 @if ($errors->has('num_paginas'))
-                                    <span>
-                                        <strong class="strong-val">{{ $errors->first('num_paginas') }}</strong>
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('num_paginas') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -120,7 +120,6 @@
                                     <option value="Diaria">Diaria</option>
                                     <option value="Semanal">Semanal</option>
                                     <option value="Mensual">Mensual</option>
-
                                 </select>
                                 
                                 @if ($errors->has('periodicidad'))
@@ -133,14 +132,14 @@
 
                         <!--Dia-->
                         <div class="form-group row">
-                            <label for="dia" class="col-md-4 col-form-label text-md-right">Día de la semana/mes</label>
+                            <label for="dia" class="col-md-4 col-form-label text-md-right">Día de la semana o mes</label>
 
                             <div class="col-md-8">
-                                <input id="dia" type="number"  name="dia" value="{{ old('dia') }}" required >
+                                <input id="dia" type="number" name="dia" value="{{ old('dia') }}"  class="form-control{{ $errors->has('dia') ? ' is-invalid' : '' }}" required >
 
                                 @if ($errors->has('dia'))
-                                    <span>
-                                        <strong class="strong-val">{{ $errors->first('dia') }}</strong>
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong >{{ $errors->first('dia') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -151,11 +150,11 @@
                             <label for="hora" class="col-md-4 col-form-label text-md-right">Hora</label>
 
                             <div class="col-md-8">
-                                <input id="hora" type="text"  name="hora" placeholder="17:00" value="{{ old('hora') }}" required >
+                                <input id="hora" type="text"  name="hora" placeholder="17:00" value="{{ old('hora') }}"  class="form-control{{ $errors->has('hora') ? ' is-invalid' : '' }}" required >
 
                                 @if ($errors->has('hora'))
-                                    <span>
-                                        <strong class="strong-val">{{ $errors->first('hora') }}</strong>
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('hora') }}</strong>
                                     </span>
                                 @endif
                             </div>

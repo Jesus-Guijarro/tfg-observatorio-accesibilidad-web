@@ -176,6 +176,11 @@ class SitioController extends Controller
         $categoria_id=$request->categoria;
         $hora=$request->hora;
 
+        //Comprobación de que existe el dominio
+        if (!checkdnsrr($dominio, 'ANY') ){
+            return back()->withErrors(['dominio'=>'El dominio no existe']);
+        }
+
         //Control del checkbox de si se quiere automatizar el análisis o no
         $automatizado = true;
         if($request->automatizado!="on"){
@@ -295,6 +300,11 @@ class SitioController extends Controller
         $dominio=$request->dominio;
         $categoria_id=$request->categoria;
         $hora=$request->hora;
+
+        //Comprobación de que existe el dominio
+        if (!checkdnsrr($dominio, 'ANY') ){
+            return back()->withErrors(['dominio'=>'El dominio no existe']);
+        }
 
         //Automatizado
         $automatizado = true;

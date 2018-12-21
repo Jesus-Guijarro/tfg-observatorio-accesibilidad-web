@@ -25,10 +25,10 @@
                             <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre herramienta</label>
 
                             <div class="col-md-8">
-                                <input id="nombre" type="text"  name="nombre" value="{{ old('nombre') }}" style="width: 20em" autofocus>
+                                <input id="nombre" type="text"  name="nombre" value="{{ old('nombre') }}" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" autofocus>
 
                                 @if ($errors->has('nombre'))
-                                    <span >
+                                    <span class="invalid-feedback" role="alert">
                                         <strong class="strong-val">{{ $errors->first('nombre') }}</strong>
                                     </span>
                                 @endif
@@ -38,11 +38,11 @@
                             <label for="descripcion" class="col-md-4 col-form-label text-md-right">Descripción</label>
 
                             <div class="col-md-8">
-                                <input id="descripcion" type="text"  name="descripcion" value="{{ old('descripcion') }}" style="width: 20em" required>
+                                <input id="descripcion" type="text"  name="descripcion" value="{{ old('descripcion') }}" class="form-control{{ $errors->has('descripcion') ? ' is-invalid' : '' }}" required>
 
                                 @if ($errors->has('descripcion'))
-                                    <span>
-                                        <strong class="strong-val">{{ $errors->first('descripcion') }}</strong>
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('descripcion') }}</strong>
                                     </span>
                                 @endif
                             </div>

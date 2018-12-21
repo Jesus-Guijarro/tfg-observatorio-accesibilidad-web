@@ -1,4 +1,10 @@
 @extends('layouts.master')
 @section('content')
-<h1 style="color:black">ERROR 403 ACCESO A LA PAGINA NO AUTORIZADO</h1>
+<h1 class="h1-error">ERROR HTTP 403 Prohibido</h1>
+<div class="container">
+    <div class="row justify-content-center">
+            <p><strong> ACCESO AL RECURSO O PÁGINA NO AUTORIZADO</strong></p>
+    </div>
+</div>
+<a href="/"> Volver a la página de inicio </a>
 @endsection
