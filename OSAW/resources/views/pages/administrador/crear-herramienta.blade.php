@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1 class="h1-encabezado"> Añadir herramienta web </h1>
+<h1 class="h1-encabezado"> Añadir herramienta de evaluación </h1>
 
 
 

@@ -3,7 +3,11 @@
 @section('titulo', 'Perfil de usuario')
 
 @section('content')
+@if(Auth::user()->rol_id===3)
+<h1 class="h1-encabezado"> Perfil de administrador</h1>
+@else
 <h1 class="h1-encabezado"> Perfil de usuario</h1>
+@endif
 
 <div class="container">
     <div class="row justify-content-center">

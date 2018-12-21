@@ -3,7 +3,7 @@
 @section('titulo', 'Gestionar herramientas')
 
 @section('content')
-<h1 class="h1-encabezado"> Gestionar herramientas web </h1>
+<h1 class="h1-encabezado"> Gestionar herramientas de evaluación </h1>
 
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
