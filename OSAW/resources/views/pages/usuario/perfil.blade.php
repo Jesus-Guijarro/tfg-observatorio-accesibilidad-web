@@ -9,6 +9,8 @@
 <h1 class="h1-encabezado"> Perfil de usuario</h1>
 @endif
 
+<hr>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-11">
@@ -46,10 +48,12 @@
 <h2 class="h2-perfil-usuario"> Opciones de administración</h2>
 <div class="container">
     <div class="row justify-content-center">
-            <a class="btn btn-info" href="/gestionar-sitios" role="button">Gestionar sitios web</a>
-            <a class="btn btn-info" href="/gestionar-herramientas" role="button" style="margin-left: 5em">Gestionar herramientas de evaluación</a>
+        <a class="btn btn-primary" href="/gestionar-sitios" role="button">Gestionar sitios web</a>
+        <a class="btn btn-primary" href="/gestionar-herramientas" role="button" style="margin-left: 5em; margin-right: 5em">Gestionar herramientas de evaluación</a>
+        <a class="btn btn-info" href="/logs" role="button">Ver logs de las evaluaciones</a>
     </div>
 </div>
+
 
 @endif
 

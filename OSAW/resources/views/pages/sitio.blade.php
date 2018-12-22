@@ -852,6 +852,8 @@
 
 <h1 class="h1-encabezado"> Sitio Web </h1>
 
+<hr>
+
 <div class="container">
     <div class="col-md-10">
         <div style="margin-bottom: 1.5em">

@@ -5,6 +5,8 @@
 @section('content')
 <h1 class="h1-encabezado"> Cambiar contraseña de usuario</h1>
 
+<hr>
+
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
         {{ session()->get('mensaje') }}

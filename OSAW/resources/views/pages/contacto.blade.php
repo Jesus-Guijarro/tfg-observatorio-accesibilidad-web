@@ -6,6 +6,8 @@
 
 <h1 class="h1-encabezado"> Contacto </h1>
 
+<hr>
+
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
         {{ session()->get('mensaje') }}

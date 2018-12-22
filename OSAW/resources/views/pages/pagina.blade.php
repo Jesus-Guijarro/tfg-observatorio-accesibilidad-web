@@ -851,6 +851,8 @@
 @section('content')
 <h1 class="h1-encabezado"> Página Web </h1>
 
+<hr>
+
 <div class="container">
     <div class="col-md-10">
         <div style="margin-bottom: 1.5em">
@@ -1077,5 +1079,7 @@
 </div>
 
 @endif
+
+<a href="{{ URL::previous() }}">Volver al sitio</a></td>  
 
 @endsection

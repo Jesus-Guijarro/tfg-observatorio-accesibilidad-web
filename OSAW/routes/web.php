@@ -11,14 +11,9 @@
 |
 */
 
-/*
-Route::get('/', function () {
-    return view('pages.welcome');
-});
-*/
 Auth::routes();
 
-
+/*Inicio*/
 Route::get('/', 'HomeController@mostrarInicio');
 
 #Sitios web
@@ -36,6 +31,7 @@ Route::get('reporte-automatico/{reporte}', 'PaginaController@mostrarReporteAutom
 
 #Usuarios
 Route::get('perfil/{id}', 'UserController@mostrarPerfilUsuario')->middleware('auth','prevenirAtras','prevenirAtras');
+
 Route::get('modificar-perfil/{id}', 'UserController@panelModificarPerfilUsuario')->middleware('auth','prevenirAtras');
 Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario')->middleware('auth','prevenirAtras');
 
@@ -56,10 +52,11 @@ Route::get('eliminar-sitio/{id}', 'SitioController@eliminarSitio')->middleware('
 #Gestión paginas web
 Route::get('gestionar-paginas/{sitio_id}', 'PaginaController@gestionarPaginas')->middleware('auth','prevenirAtras','esAdmin');
 Route::post('gestionar-paginas/{sitio_id}', 'PaginaController@crearPagina')->middleware('auth','prevenirAtras','esAdmin');
-Route::get('eliminar-pagina/{id}', 'PaginaController@eliminarPagina')->middleware('auth','prevenirAtras','esAdmin');
 
 Route::get('modificar-pagina/{id}', 'PaginaController@panelModificarPagina')->middleware('auth','prevenirAtras','esAdmin');
 Route::post('modificar-pagina/{id}', 'PaginaController@modificarPagina')->middleware('auth','prevenirAtras','esAdmin');
+
+Route::get('eliminar-pagina/{id}', 'PaginaController@eliminarPagina')->middleware('auth','prevenirAtras','esAdmin');
 
 #Gestión herramientas
 Route::get('gestionar-herramientas', 'HerramientaController@gestionarHerramientas')->middleware('auth','prevenirAtras','esAdmin');
@@ -78,7 +75,8 @@ Route::get('modificar-herramienta/{id}', 'HerramientaController@panelModificarHe
 Route::post('modificar-herramienta/{id}', 'HerramientaController@modificarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
 
 #Logs
-Route::get('logs', 'LogsController@mostrarLogs');
+Route::get('logs', 'LogsController@mostrarLogs')->middleware('auth','prevenirAtras','esAdmin');
+Route::get('log/{log}', 'LogsController@mostrarLog')->middleware('auth','prevenirAtras','esAdmin');
 
 #Contacto
 Route::get('contacto', function()

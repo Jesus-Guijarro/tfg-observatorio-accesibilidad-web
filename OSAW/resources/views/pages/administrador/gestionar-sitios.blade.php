@@ -6,6 +6,8 @@
 
 <h1 class="h1-encabezado"> Gestionar sitios web </h1>
 
+<hr>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

@@ -17,4 +17,7 @@
 <hr>
 <pre>{{$contenido}}</pre>
 
+<hr>
+
+<a href="{{ URL::previous() }}">Volver a la página web</a></td>  
 @endsection

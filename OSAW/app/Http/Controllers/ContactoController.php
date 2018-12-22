@@ -26,7 +26,7 @@ class ContactoController extends Controller
             'mensaje' => $request->mensaje
         ], function($mail) use ($request) {
             $mail->from($request->email);
-            $mail->to('OSAW.TFG@gmail.com')->subject('Mensaje de contacto - Asunto: ' . $request->asunto);
+            $mail->to('OSAW.TFG@gmail.com')->subject('Contacto OSAW - Asunto: ' . $request->asunto);
         
         });
 

@@ -6,6 +6,8 @@
     
 <h1 class="h1-encabezado"> Resultados de búsqueda</h1>
 
+<hr>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
