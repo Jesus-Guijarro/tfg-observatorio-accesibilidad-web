@@ -11,12 +11,12 @@
 <p> El <strong>Observatorio para el Seguimiento de la Accesibilidad Web </strong> se ha desarrollado con la finalidad de poder realizar un seguimiento de aquellos sitios web que por ley deben ser accesibles. </p>
 <p>Para llevar a cabo esta tarea se ha hecho uso de herramientas online gratuitas de evaluación de la accesibilidad web: </p>
 <ul>
-    <a href="http://www.acessibilidade.gov.pt/accessmonitor/" target="_blank"><li>AccessMonitor</li></a>
-    <a href="https://achecker.ca/checker/index.php"target="_blank"><li>Achecher</li></a>
-    <a href="http://checkers.eiii.eu/en/pagecheck/"target="_blank"><li>EIII Page Checker </li></a>
-    <a href="http://observatorioweb.ups.edu.ec/oaw/index.jsf"target="_blank"><li>Observatorio de Accesibilidad Web de la Universidad Politécnica Salesiana de Ecuador </li></a>
-    <a href="http://www.validatore.it/vamola_validator/checker/index.php"target="_blank"><li>Vamolà</li></a>
-    <a href="https://wave.webaim.org/"target="_blank"><li>WAVE</li></a>
+    <li><a href="http://www.acessibilidade.gov.pt/accessmonitor/" target="_blank">AccessMonitor</a></li>
+    <li><a href="https://achecker.ca/checker/index.php"target="_blank">Achecher</a></li>
+    <li><a href="http://checkers.eiii.eu/en/pagecheck/"target="_blank">EIII Page Checker </a></li>
+    <li><a href="http://observatorioweb.ups.edu.ec/oaw/index.jsf"target="_blank">Observatorio de Accesibilidad Web de la Universidad Politécnica Salesiana de Ecuador</a>
+    <li><a href="http://www.validatore.it/vamola_validator/checker/index.php"target="_blank">Vamolà</a></li>
+    <li><a href="https://wave.webaim.org/"target="_blank">WAVE</a></li>
 </ul>
 
 <p>Los análisis se hacen de forma periodica y automática, pudiéndose selecionar la periodicidad de estos para que sea diaria, semanal o mensual. </p>

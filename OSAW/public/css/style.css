@@ -52,7 +52,6 @@
 }
 
 .p-osaw{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2em;
 }
 
@@ -187,7 +186,7 @@ th{
 
 div.grafico { 
     display: inline-block;
-    width: 72em; 
+    width: 73em; 
     height: 28em;
     margin-right: 2em;
    

@@ -29,7 +29,7 @@
         ]);
 
         var options = {
-            title: 'AccessMonitor - Puntuacion',
+            title: 'AccessMonitor - Puntuación',
             vAxis: { 
                 minValue:0,
                 maxValue: 10,
@@ -38,7 +38,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -75,12 +75,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -118,12 +118,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -166,12 +166,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -204,12 +204,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -246,12 +246,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -290,12 +290,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -333,7 +333,7 @@
         ]);
 
         var options = {
-            title: 'EIII Page Checker - Puntuación',
+            title: 'EIII Page Checker - Puntuación (%)',
             vAxis: { 
                 minValue:0,
                 maxValue: 100,
@@ -342,7 +342,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -376,12 +376,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6'],
+            colors: ['#0066ff','#ff6600'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -416,12 +416,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6'],
+            colors: ['#0066ff','#ff6600'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -469,12 +469,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            
+            colors: ['#0066ff','#ff6600','#009900','#cc33ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -514,12 +514,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            
+            colors: ['#0066ff','#ff6600','#009900','#cc33ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -559,12 +559,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            
+            colors: ['#0066ff','#ff6600','#009900','#cc33ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -606,12 +606,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -644,12 +644,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -686,12 +686,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -730,12 +730,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -781,11 +781,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -822,11 +823,12 @@
             vAxis: { 
                 minValue:0,
                 maxValue: 5,
-                format:'0.00',
+                format:'0',
             },
             hAxis: {
                 format: 'dd MMM yyyy'
             },
+            colors: ['#0066ff','#ff6600'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -845,6 +847,7 @@
 
 
 
+
 @endsection
 
 
@@ -856,12 +859,15 @@
 <div class="container">
     <div class="col-md-10">
         <div style="margin-bottom: 1.5em">
-            <p style="text-decoration: underline"> <strong><a href='{{$pagina->URL}}' target="_blank">{{$pagina->URL}}</a></strong></p>
+            <p> <strong>URL: </strong><a href='{{$pagina->URL}}' target="_blank">{{$pagina->URL}}</a></p>
             <p><strong>Sitio web:</strong> <a href='{{url("sitio/$sitio->id")}}'>{{$sitio->nombre}}</a></p>
             <a href="{{$pagina->archivo_HTML}}" download="reporte-pagina-{{$pagina->id}}">Descargar copia HTML</a>
         </div>
     </div>
 </div>
+
+<hr>
+
 <div class="container">
     <div class="col-md-12">
         <div style="margin-bottom: 1.5em">
@@ -1080,6 +1086,6 @@
 
 @endif
 
-<a href="{{ URL::previous() }}">Volver al sitio</a></td>  
+<a href="{{ URL::previous() }}">Volver al sitio</a> 
 
 @endsection

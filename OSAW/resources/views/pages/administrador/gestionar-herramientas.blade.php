@@ -7,6 +7,13 @@
 
 <hr>
 
+<div class="row justify-content-center">
+    <div style="margin-bottom: 1.5em">
+        <a class="btn btn-primary" href="/crear-herramienta" role="button">Añadir nueva herramienta web</a>
+    </div>
+</div>
+
+
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
         {{ session()->get('mensaje') }}
@@ -49,10 +56,5 @@
 @else
     <p style="text-align: center"> No hay ninguna herramienta de evaluación</p>
 @endif
-<div class="row justify-content-center">
-    <div style="margin-bottom: 1.5em">
-        <a class="btn btn-primary" href="/crear-herramienta" role="button">Añadir nueva herramienta web</a>
-    </div>
-</div>
 
 @endsection

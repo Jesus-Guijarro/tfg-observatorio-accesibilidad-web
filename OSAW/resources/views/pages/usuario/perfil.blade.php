@@ -14,22 +14,22 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-11">
-            <img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}">
+            <img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}" style="border-style: groove;">
 
             @if(Auth::user()->rol_id===1)
-            <p><strong>ROL COLABORADOR</strong></p>
+            <p style="color:#0066cc"><strong>ROL COLABORADOR</strong></p>
 
             @elseif(Auth::user()->rol_id===2)
-            <p><strong>ROL EXPERTO</strong></p>
+            <p style="color:#ff9933"><strong>ROL EXPERTO</strong></p>
 
             @elseif(Auth::user()->rol_id===3)
-            <p><strong>ROL ADMINISTRADOR</strong></p>
+            <p style="color:#33cc33"><strong>ROL ADMINISTRADOR</strong></p>
 
             @endif
 
             <p><strong> Nombre de usuario:  </strong> {{$usuario->nombre}} </p>
             <p><strong> Correo electrónico: </strong> {{$usuario->email}}</p>
-            <p><strong>Biografia</strong>  {{$usuario->biografia}}<p>
+            <p><strong>Biografia</strong><p> <textarea cols="50" rows="10" readonly> {{$usuario->biografia}}</textarea>
 
             <div style="margin-bottom: 1.5em">
                 <a class="btn btn-primary" href="/modificar-perfil/{{$usuario->id}}" role="button">Editar datos de usuario</a>

@@ -29,7 +29,7 @@
         ]);
 
         var options = {
-            title: 'AccessMonitor - Puntuacion',
+            title: 'AccessMonitor - Puntuación',
             vAxis: { 
                 minValue:0,
                 maxValue: 10,
@@ -38,7 +38,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -80,7 +80,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -123,7 +123,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -171,7 +171,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -209,7 +209,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -251,7 +251,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -295,7 +295,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -333,7 +333,7 @@
         ]);
 
         var options = {
-            title: 'EIII Page Checker - Puntuación',
+            title: 'EIII Page Checker - Puntuación(%)',
             vAxis: { 
                 minValue:0,
                 maxValue: 100,
@@ -342,7 +342,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -381,7 +381,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6'],
+            colors: ['#0066ff','#ff6600'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -421,7 +421,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6'],
+            colors: ['#0066ff','#ff6600'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -474,7 +474,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            
+            colors: ['#0066ff','#ff6600','#009900','#cc33ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -519,7 +519,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            
+            colors: ['#0066ff','#ff6600','#009900','#cc33ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -564,7 +564,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            
+            colors: ['#0066ff','#ff6600','#009900','#cc33ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -611,7 +611,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -649,7 +649,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580'],
+            colors: ['#0066ff'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -691,7 +691,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -735,7 +735,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
-            colors: ['#005580','#0099e6','#66ccff'],
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -786,6 +786,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
+            colors: ['#0066ff','#ff6600','#009900'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -827,6 +828,7 @@
             hAxis: {
                 format: 'dd MMM yyyy'
             },
+            colors: ['#0066ff','#ff6600'],
             pointSize: 5,
             series: {
                 0: { pointShape: 'circle' },
@@ -840,6 +842,7 @@
         chart.draw(data, options);
     }
   </script>
+
 
 
 

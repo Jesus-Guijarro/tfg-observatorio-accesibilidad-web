@@ -89,4 +89,6 @@
         </div>
     </div>
 </div>
+
+<a href="{{ URL::previous() }}">Volver al perfil</a>
 @endsection
