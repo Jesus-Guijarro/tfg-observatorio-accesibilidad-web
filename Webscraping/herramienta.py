@@ -112,7 +112,7 @@ def getRutaCopiaHTML(directorio,pagina_id, nuevo):
 #Método para escribir error producidos durante los análisis de las herramientas
 def errorLog(directorio,fecha_test,herramienta,identificador,error):
 
-    ruta_archivo_logs=directorio+"/logs/log_herramientas_"+fecha_test+".log"
+    ruta_archivo_logs=directorio+"/logs/herramientas/log_herramientas_"+fecha_test+".log"
 
     
     logging.basicConfig(filename=ruta_archivo_logs,level=logging.ERROR,format='%(asctime)s - %(levelname)s - %(name)s\n\t%(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')

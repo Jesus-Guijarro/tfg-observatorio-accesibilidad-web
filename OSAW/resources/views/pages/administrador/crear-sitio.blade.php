@@ -13,7 +13,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-body">
                     <form method="POST" action="{{ action('SitioController@crearSitio') }}">
@@ -57,7 +57,7 @@
 
                                 <select id="categoria" name="categoria">
                                 @foreach ($categorias as $categoria)
-                                    <option value="{{$categoria->id}}">{{$categoria->descripcion}}</option>
+                                    <option value="{{$categoria->id}}" {{ old('categoria') == $categoria->id ? 'selected' : '' }}>{{$categoria->descripcion}}</option>
                                 @endforeach
                                 </select>
                                 
@@ -72,7 +72,7 @@
                         <!--Herramientas -->
                         <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right">Herramientas de evaluación:</label>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
 
                                 @foreach ($herramientas as $herramienta)
                                     <label for="{{$herramienta->nombre}}" hidden> Seleccionar herramienta:</label>

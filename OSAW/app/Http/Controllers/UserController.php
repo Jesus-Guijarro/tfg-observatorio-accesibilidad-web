@@ -8,6 +8,7 @@ use App\User;
 use Illuminate\View\View;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
 
 class UserController extends Controller
 {
@@ -87,5 +88,6 @@ class UserController extends Controller
         
        
    }
+
 
 }

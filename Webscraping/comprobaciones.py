@@ -12,7 +12,7 @@ def errorLog(pagina_web,pagina_id,error):
         fecha_test=getFecha()
         directorio=getDirectorioOSAW()
 
-        ruta_archivo_logs=directorio+"/storage/logs/log_paginas_"+fecha_test+".log"
+        ruta_archivo_logs=directorio+"/logs/paginas/log_paginas_"+fecha_test+".log"
 
         logging.basicConfig(filename=ruta_archivo_logs,level=logging.WARNING,format='%(asctime)s - %(levelname)s - %(name)s\n\t%(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
         logger = logging.getLogger("ACCESSO_PAGINA_WEB")

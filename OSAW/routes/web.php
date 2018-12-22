@@ -77,6 +77,9 @@ Route::get('activar-herramienta/{id}', 'HerramientaController@activarHerramienta
 Route::get('modificar-herramienta/{id}', 'HerramientaController@panelModificarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
 Route::post('modificar-herramienta/{id}', 'HerramientaController@modificarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
 
+#Logs
+Route::get('logs', 'LogsController@mostrarLogs');
+
 #Contacto
 Route::get('contacto', function()
 {

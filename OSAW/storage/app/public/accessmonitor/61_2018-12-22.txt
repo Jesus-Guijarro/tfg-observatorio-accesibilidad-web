@@ -1,0 +1,19 @@
+REPORTE PÁGINA WEB: https://www.upv.es/
+FECHA EVALUACIÓN: 2018-12-22
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se identificaron 5 casos en que se asocian eventos a elementos no interactivos
+Se encontraron 5 elementos de encabezado
+Se identificaron 22 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se han encontrado 6 errores de validación en el lenguaje de marcado
+Se han encontrado 1 elementos o atributos de HTML que se utilizan para controlar la presentación visual del texto
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificaron 2 casos en que se usan unidades de medida expresadas en valores absolutos en el tamaño de letra
+Se constató que todas las unidades de medida existentes en la CSS se expresan en valores relativos
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es-ES"
+El tipo de documento no permite el uso del atributo lang
+Se identificaron 2 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo

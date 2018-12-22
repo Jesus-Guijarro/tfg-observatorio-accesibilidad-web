@@ -6,7 +6,7 @@
 
 <h1 class="h1-encabezado"> Añadir herramienta de evaluación </h1>
 
-
+<hr>
 
 @if(session()->has('mensaje'))
     <div class="alert alert-success">
