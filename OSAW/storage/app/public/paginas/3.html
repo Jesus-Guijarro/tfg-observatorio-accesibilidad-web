@@ -103,25 +103,11 @@
 </script>
 <!-- End Google Tag Manager -->
 </head>
-	<body id="funcionesestructura"><div class="bloqueBuscadorGeneralPortal noDesktop" id="busqueda" role="search"><div class="bloqueBuscadorTitulo">Buscar<img src="/estatico/cs/portal/img/ico_cerrar.png" id="buscador_cerrar" /></div>
-				<form action="http://www.mjusticia.gob.es/cs/Satellite" method="post" name="buscador">
-					
-					<input name="pagename" type="hidden" value="eSEDE/SE_Layout" />
-					<input name="c" type="hidden" value="Page" />
-					<input name="cid" type="hidden" value="1288782227577" />
-					
-					<input name="childpagename" type="hidden" value="FW_ResultadosBusqueda" />
-					<input name="lang" type="hidden" value="es_es" />
-
-					<input name="access" type="hidden" value="p" />
-					<input name="output" type="hidden" value="xml_no_dtd" />
-					<input name="grupo" type="hidden" value="" />
-					<label for="buscar" class="oculto">Buscar</label>
-					<input type="text" id="buscar" name="q" value="" accesskey="b" class="cajaBuscador ui-autocomplete-input" title="Buscar" autocomplete="off" placeholder=" " /><input type="submit" value="Buscar" class="botonSubmit" />
-					<input type="submit" id="buscadorPortalBoton" class="buscarBoton" value="Buscar" style="cursor: pointer; display: none;" />
-					
-				</form>
-			</div><div onclick="$('.cookieMsg').fadeOut('slow');" class="cookieMsg"><p class="cookieMsgTitulo">Información importante sobre cookies</p><p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="/cs/Satellite/Portal/es/aviso-legal#cookies">política de cookies</a>.</p></div>
+	<body id="funcionesestructura"><div id="busqueda" class="bloqueBuscadorGeneralPortal noDesktop" role="search"><div class="bloqueBuscadorTitulo">Buscar<img src="/estatico/cs/portal/img/ico_cerrar.png" id="buscador_cerrar" /></div>
+<form id="cse-search-box" action="http://www.mjusticia.gob.es/estatico/cs/portal/Satellite/es_es/ResultadosMJusticia.html" name="buscador">
+    <fieldset style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="buscar" title="Buscar" class="cajaBuscador" accesskey="b" size="31" name="q" type="text" placeholder=" " /><input type="submit" value="Buscar" class="botonSubmit" /><input id="buscadorPortalBoton" class="buscarBoton" type="submit" value="Enviar consulta" style="cursor: pointer; display: none;" /></fieldset>
+</form>
+</div><div onclick="$('.cookieMsg').fadeOut('slow');" class="cookieMsg"><p class="cookieMsgTitulo">Información importante sobre cookies</p><p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="/cs/Satellite/Portal/es/aviso-legal#cookies">política de cookies</a>.</p></div>
 
 					<a href="#contenido" accesskey="s" id="irContenido">Ir a Contenido</a>
 		<!--googleoff: all-->
@@ -161,34 +147,8 @@
 				
 
 					</nav>
-			<script type="text/javascript" id="autocompleteBuscador">
-			//&lt;![CDATA[
-				// autocomplete buscador general
-				$(function(){
-					var accentMap = {"á": "a","à": "a","â": "a","ä": "a","ç": "c","é": "e","è": "e","ê": "e","ë": "e","í": "i","ì": "i", "î": "i","ï": "i","ó": "o","ò": "o","ô": "o","ö": "o","ú": "u","ù": "u","û": "u","ü": "u"};
-					var normalize = function( term ) {
-						var ret = "";
-						for ( var i = 0; i &lt; term.length; i++ ) {
-							ret += accentMap[ term.charAt(i) ] || term.charAt(i);
-						}
-						return ret;
-					};
-
-					$("#buscar").autocomplete({
-						source: function(request, response) {
-							var palabra = normalize (request.term);
-							$.get("http" +"://" + "www.mjusticia.gob.es" + "/cs/" + "Satellite", 
-								{ q: palabra , pagename : "eSEDE/Comunes/SE_QuerySuggestions", site:"General_es_Portal",client: "portal_es_es"}, 
-								function(data) {
-									response(data.split('\n'));
-								}
-							);
-						}
-					});
-				})
-				//]]&gt;
-			</script>
-				<!-- bloqueBuscadorGeneralPortal -->
+				
+<!-- bloqueBuscadorGeneralPortal -->
 
 				<img id="buscador_boton2" src="/estatico/cs/portal/img/ico_buscar.png" /></div>
 
@@ -537,4 +497,4 @@
 
 
 	
-<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span></body></html>
+</body></html>

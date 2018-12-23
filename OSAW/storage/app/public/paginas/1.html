@@ -102,25 +102,11 @@
 </script>
 <!-- End Google Tag Manager -->
 </head>
-	<body id="home"><div class="bloqueBuscadorGeneralPortal noDesktop" id="busqueda" role="search"><div class="bloqueBuscadorTitulo">Buscar<img src="/estatico/cs/portal/img/ico_cerrar.png" id="buscador_cerrar" /></div>
-				<form action="http://www.mjusticia.gob.es/cs/Satellite" method="post" name="buscador">
-					
-					<input name="pagename" type="hidden" value="eSEDE/SE_Layout" />
-					<input name="c" type="hidden" value="Page" />
-					<input name="cid" type="hidden" value="1288782227577" />
-					
-					<input name="childpagename" type="hidden" value="FW_ResultadosBusqueda" />
-					<input name="lang" type="hidden" value="es_es" />
-
-					<input name="access" type="hidden" value="p" />
-					<input name="output" type="hidden" value="xml_no_dtd" />
-					<input name="grupo" type="hidden" value="" />
-					<label for="buscar" class="oculto">Buscar</label>
-					<input type="text" id="buscar" name="q" value="" accesskey="b" class="cajaBuscador ui-autocomplete-input" title="Buscar" autocomplete="off" placeholder=" " /><input type="submit" value="Buscar" class="botonSubmit" />
-					<input type="submit" id="buscadorPortalBoton" class="buscarBoton" value="Buscar" style="cursor: pointer; display: none;" />
-					
-				</form>
-			</div><div onclick="$('.cookieMsg').fadeOut('slow');" class="cookieMsg"><p class="cookieMsgTitulo">Información importante sobre cookies</p><p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="/cs/Satellite/Portal/es/aviso-legal#cookies">política de cookies</a>.</p></div>
+	<body id="home"><div id="busqueda" class="bloqueBuscadorGeneralPortal noDesktop" role="search"><div class="bloqueBuscadorTitulo">Buscar<img src="/estatico/cs/portal/img/ico_cerrar.png" id="buscador_cerrar" /></div>
+<form id="cse-search-box" action="http://www.mjusticia.gob.es/estatico/cs/portal/Satellite/es_es/ResultadosMJusticia.html" name="buscador">
+    <fieldset style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="buscar" title="Buscar" class="cajaBuscador" accesskey="b" size="31" name="q" type="text" placeholder=" " /><input type="submit" value="Buscar" class="botonSubmit" /><input id="buscadorPortalBoton" class="buscarBoton" type="submit" value="Enviar consulta" style="cursor: pointer; display: none;" /></fieldset>
+</form>
+</div><div onclick="$('.cookieMsg').fadeOut('slow');" class="cookieMsg"><p class="cookieMsgTitulo">Información importante sobre cookies</p><p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="/cs/Satellite/Portal/es/aviso-legal#cookies">política de cookies</a>.</p></div>
 
 					<a href="#contenido" accesskey="s" id="irContenido">Ir a Contenido</a>
 		<!--googleoff: all-->
@@ -160,34 +146,8 @@
 				
 
 					</nav>
-			<script type="text/javascript" id="autocompleteBuscador">
-			//&lt;![CDATA[
-				// autocomplete buscador general
-				$(function(){
-					var accentMap = {"á": "a","à": "a","â": "a","ä": "a","ç": "c","é": "e","è": "e","ê": "e","ë": "e","í": "i","ì": "i", "î": "i","ï": "i","ó": "o","ò": "o","ô": "o","ö": "o","ú": "u","ù": "u","û": "u","ü": "u"};
-					var normalize = function( term ) {
-						var ret = "";
-						for ( var i = 0; i &lt; term.length; i++ ) {
-							ret += accentMap[ term.charAt(i) ] || term.charAt(i);
-						}
-						return ret;
-					};
-
-					$("#buscar").autocomplete({
-						source: function(request, response) {
-							var palabra = normalize (request.term);
-							$.get("http" +"://" + "www.mjusticia.gob.es" + "/cs/" + "Satellite", 
-								{ q: palabra , pagename : "eSEDE/Comunes/SE_QuerySuggestions", site:"General_es_Portal",client: "portal_es_es"}, 
-								function(data) {
-									response(data.split('\n'));
-								}
-							);
-						}
-					});
-				})
-				//]]&gt;
-			</script>
-				<!-- bloqueBuscadorGeneralPortal -->
+				
+<!-- bloqueBuscadorGeneralPortal -->
 
 				<img id="buscador_boton2" src="/estatico/cs/portal/img/ico_buscar.png" /></div>
 
@@ -369,54 +329,54 @@
 						
 					<div class="sliderBloque" style="display: block;">
 						<p>
-							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/espana-apuesta-potenciar" title="España apuesta por potenciar la Conferencia de Ministros de Justicia de Países Iberoamericanos (COMJIB) como instrumento de cooperación jurídica de sus 22 países miembros">
-								<span class="sliderTitulo"><span class="sliderTituloTxt">España apuesta por potenciar la Conferencia de Ministros de Justicia de Países Iberoamericanos (COMJIB) como instrumento de cooperación jurídica de sus 22 países miembros</span></span>
+							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/ministra-justicia-presidente" title="La ministra de Justicia y el presidente del Consejo General del Poder Judicial firman un acuerdo para actualizar los criterios de entrada de asuntos en los juzgados">
+								<span class="sliderTitulo"><span class="sliderTituloTxt">La ministra de Justicia y el presidente del Consejo General del Poder Judicial firman un acuerdo para actualizar los criterios de entrada de asuntos en los juzgados</span></span>
 
 									<span class="sliderImagen">
-										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292429022164" class="foto" alt="España apuesta por potenciar la Conferencia de Ministros de Justicia de Países Iberoamericanos (COMJIB) como instrumento de cooperación jurídica de sus 22 países miembros" />
+										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292429029857" class="foto" alt="La ministra de Justicia y el presidente del Consejo General del Poder Judicial firman un acuerdo para actualizar los criterios de entrada de asuntos en los juzgados" />
 									</span>
 
 							</a>
 						</p>
 					
 						<div class="sliderFecha">
-							<div class="sliderFechaTxt">14 dic</div>
+							<div class="sliderFechaTxt">20 dic</div>
 						</div>
 						<div class="compartirRedesIco"></div>                                                                                                              
 					</div><!--sliderBloque-->
 						
 					<div class="sliderBloque" style="display: none;">
 						<p>
-							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/directora-general-relaciones" title="La directora general de Relaciones con la Administración de Justicia preside la reunión del Consejo Médico Forense">
-								<span class="sliderTitulo"><span class="sliderTituloTxt">La directora general de Relaciones con la Administración de Justicia preside la reunión del Consejo Médico Forense</span></span>
+							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/justicia-ofrece-jueces" title="Justicia ofrece a jueces y fiscales un incremento salarial para sus categorías más bajas">
+								<span class="sliderTitulo"><span class="sliderTituloTxt">Justicia ofrece a jueces y fiscales un incremento salarial para sus categorías más bajas</span></span>
 
 									<span class="sliderImagen">
-										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292429021861" class="foto" alt="La directora general de Relaciones con la Administración de Justicia preside la reunión del Consejo Médico Forense" />
+										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292429029099" class="foto" alt="La ministra de Justicia, Dolores Delgado, durante su reunión con los representantes de siete asociaciones de jueces y fiscales" />
 									</span>
 
 							</a>
 						</p>
 					
 						<div class="sliderFecha">
-							<div class="sliderFechaTxt">13 dic</div>
+							<div class="sliderFechaTxt">19 dic</div>
 						</div>
 						<div class="compartirRedesIco"></div>                                                                                                              
 					</div><!--sliderBloque-->
 						
 					<div class="sliderBloque" style="display: none;">
 						<p>
-							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/secretario-estado-secretario" title="El secretario de Estado y el secretario general de la Administración de Justicia presiden la reunión del Consejo del Secretariado">
-								<span class="sliderTitulo"><span class="sliderTituloTxt">El secretario de Estado y el secretario general de la Administración de Justicia presiden la reunión del Consejo del Secretariado</span></span>
+							<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/gabinete-comunicacion/noticias-ministerio/ministra-justicia-fiscal" title="La ministra de Justicia y la fiscal general del Estado clausuran el curso ‘La actuación del Ministerio Fiscal ante la violencia de género’">
+								<span class="sliderTitulo"><span class="sliderTituloTxt">La ministra de Justicia y la fiscal general del Estado clausuran el curso ‘La actuación del Ministerio Fiscal ante la violencia de género’</span></span>
 
 									<span class="sliderImagen">
-										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292429021464" class="foto" alt="Reunión del Consejo del Secretariado" />
+										<img src="http://www.mjusticia.gob.es/cs/Satellite/Portal/1292429029204" class="foto" alt="La ministra de Justicia, Dolores Delgado, y la fiscal general del Estado, María José Segarra, durante la clausura del curso ‘La actuación del Ministerio Fiscal ante la violencia de género’" />
 									</span>
 
 							</a>
 						</p>
 					
 						<div class="sliderFecha">
-							<div class="sliderFechaTxt">13 dic</div>
+							<div class="sliderFechaTxt">19 dic</div>
 						</div>
 						<div class="compartirRedesIco"></div>                                                                                                              
 					</div><!--sliderBloque-->
@@ -541,7 +501,7 @@
 		<div id="bloqueHome02DerSupContenido">
 			<div id="agendaFecha" style="height: 34px;">
 				<span id="agendaFechaDiaSemana">Domingo</span>
-				<span id="agendaFechaDia">16</span>
+				<span id="agendaFechaDia">23</span>
 				<span id="agendaFechaMes">Diciembre</span>
 			</div><!-- agendaFecha  -->
 			<div id="agendaListado" class="slider" style="height: 34px;">
@@ -774,4 +734,4 @@
 
 
 	
-<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span></body></html>
+</body></html>

@@ -15,7 +15,7 @@ class ContactoController extends Controller
         //Validaciones
         $this->validate($request, [
             'email' => 'required|string|email|min:2|max:30',
-            'asunto' => 'required|string|min:2|max:30',
+            'asunto' => 'required|string|min:2|max:50',
             'mensaje'=> 'required|string|max:1000',
         ]);
 

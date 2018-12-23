@@ -102,25 +102,11 @@
 </script>
 <!-- End Google Tag Manager -->
 </head>
-	<body id="contacto"><div class="bloqueBuscadorGeneralPortal noDesktop" id="busqueda" role="search"><div class="bloqueBuscadorTitulo">Buscar<img src="/estatico/cs/portal/img/ico_cerrar.png" id="buscador_cerrar" /></div>
-				<form action="http://www.mjusticia.gob.es/cs/Satellite" method="post" name="buscador">
-					
-					<input name="pagename" type="hidden" value="eSEDE/SE_Layout" />
-					<input name="c" type="hidden" value="Page" />
-					<input name="cid" type="hidden" value="1288782227577" />
-					
-					<input name="childpagename" type="hidden" value="FW_ResultadosBusqueda" />
-					<input name="lang" type="hidden" value="es_es" />
-
-					<input name="access" type="hidden" value="p" />
-					<input name="output" type="hidden" value="xml_no_dtd" />
-					<input name="grupo" type="hidden" value="" />
-					<label for="buscar" class="oculto">Buscar</label>
-					<input type="text" id="buscar" name="q" value="" accesskey="b" class="cajaBuscador ui-autocomplete-input" title="Buscar" autocomplete="off" placeholder=" " /><input type="submit" value="Buscar" class="botonSubmit" />
-					<input type="submit" id="buscadorPortalBoton" class="buscarBoton" value="Buscar" style="cursor: pointer; display: none;" />
-					
-				</form>
-			</div><div onclick="$('.cookieMsg').fadeOut('slow');" class="cookieMsg"><p class="cookieMsgTitulo">Información importante sobre cookies</p><p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="/cs/Satellite/Portal/es/aviso-legal#cookies">política de cookies</a>.</p></div>
+	<body id="contacto"><div id="busqueda" class="bloqueBuscadorGeneralPortal noDesktop" role="search"><div class="bloqueBuscadorTitulo">Buscar<img src="/estatico/cs/portal/img/ico_cerrar.png" id="buscador_cerrar" /></div>
+<form id="cse-search-box" action="http://www.mjusticia.gob.es/estatico/cs/portal/Satellite/es_es/ResultadosMJusticia.html" name="buscador">
+    <fieldset style="border-top: medium none; border-right: medium none; border-bottom: medium none; border-left: medium none"><input id="buscar" title="Buscar" class="cajaBuscador" accesskey="b" size="31" name="q" type="text" placeholder=" " /><input type="submit" value="Buscar" class="botonSubmit" /><input id="buscadorPortalBoton" class="buscarBoton" type="submit" value="Enviar consulta" style="cursor: pointer; display: none;" /></fieldset>
+</form>
+</div><div onclick="$('.cookieMsg').fadeOut('slow');" class="cookieMsg"><p class="cookieMsgTitulo">Información importante sobre cookies</p><p>Este sitio web utiliza cookies propias y de terceros para dar un mejor servicio. Las cookies no se utilizan para recoger información de carácter personal. Si continúa navegando se considera que acepta su uso. Para más información visite nuestra <a href="/cs/Satellite/Portal/es/aviso-legal#cookies">política de cookies</a>.</p></div>
 
 					<a href="#contenido" accesskey="s" id="irContenido">Ir a Contenido</a>
 		<!--googleoff: all-->
@@ -160,34 +146,8 @@
 				
 
 					</nav>
-			<script type="text/javascript" id="autocompleteBuscador">
-			//&lt;![CDATA[
-				// autocomplete buscador general
-				$(function(){
-					var accentMap = {"á": "a","à": "a","â": "a","ä": "a","ç": "c","é": "e","è": "e","ê": "e","ë": "e","í": "i","ì": "i", "î": "i","ï": "i","ó": "o","ò": "o","ô": "o","ö": "o","ú": "u","ù": "u","û": "u","ü": "u"};
-					var normalize = function( term ) {
-						var ret = "";
-						for ( var i = 0; i &lt; term.length; i++ ) {
-							ret += accentMap[ term.charAt(i) ] || term.charAt(i);
-						}
-						return ret;
-					};
-
-					$("#buscar").autocomplete({
-						source: function(request, response) {
-							var palabra = normalize (request.term);
-							$.get("http" +"://" + "www.mjusticia.gob.es" + "/cs/" + "Satellite", 
-								{ q: palabra , pagename : "eSEDE/Comunes/SE_QuerySuggestions", site:"General_es_Portal",client: "portal_es_es"}, 
-								function(data) {
-									response(data.split('\n'));
-								}
-							);
-						}
-					});
-				})
-				//]]&gt;
-			</script>
-				<!-- bloqueBuscadorGeneralPortal -->
+				
+<!-- bloqueBuscadorGeneralPortal -->
 
 				<img id="buscador_boton2" src="/estatico/cs/portal/img/ico_buscar.png" /></div>
 
@@ -388,9 +348,9 @@
 			<div class="tituloSeccion"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano-span/avisos-centro-atencion">Avisos Centro de Atención al Ciudadano</a></div><div class="bloqueTwitter" style="height: 77px;"><div class="compartirRedesIco"></div></div>
 			<div class="bloqueSubhomeTxt"><!-- Avisos -->
 		<ul>
-			<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano/avisos-centro-atencion/cita-previa">CITA PREVIA</a> <span>(31/10/2018)</span></li><!-- Anuncio_C:1288793369075 -->
-			<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano/avisos-centro-atencion/nueva-tasa-desde-enero-2015">NUEVA TASA DESDE EL 05 DE JULIO DE 2018</a> <span>(05/07/2018)</span></li><!-- Anuncio_C:1288793369075 -->
-			<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano/avisos-centro-atencion/informacion-importante-sobre">INFORMACION IMPORTANTE SOBRE LA PRESENTACION DE SOLICITUDES DE NACIONALIDAD </a> <span>(27/06/2017)</span></li><!-- Anuncio_C:1288793369075 -->
+			<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano/avisos-centro-atencion/atencion-ciudadano-dias">HORARIO Y ATENCIÓN PRESENCIAL LOS DÍAS 24 Y 31 DE DICIEMBRE EN LA OFICINA CENTRAL DE ATENCIÓN AL...</a> <span>(21/12/2018)</span></li><!-- Anuncio_C:1288795501721 -->
+			<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano/avisos-centro-atencion/cita-previa">CITA PREVIA</a> <span>(31/10/2018)</span></li><!-- Anuncio_C:1288795501721 -->
+			<li style="padding: 10px !important"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano/avisos-centro-atencion/nueva-tasa-desde-enero-2015">NUEVA TASA DESDE EL 05 DE JULIO DE 2018</a> <span>(05/07/2018)</span></li><!-- Anuncio_C:1288795501721 -->
 		</ul>
 				<div class="bloqueSubhomeEnlace">
 					<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano-span/avisos-centro-atencion">Ver más <span class="oculto">: Avisos Centro de Atención al Ciudadano</span></a>
@@ -563,9 +523,9 @@ Sábados: de 9:00 h. a 14:00 h.</p>
 			<div class="tituloSeccion"><a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano/novedades">Novedades</a></div><div class="bloqueTwitter" style="height: 77px;"><div class="compartirRedesIco"></div></div>
 			<div class="bloqueSubhomeTxt">
 	<ul class="listado_05">
-				<li id="novedad_1_1288802688685" style="padding: 10px !important"><span class="articuloFecha">(14/12/2018)</span> <a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/area-internacional/tribunal-europeo-derechos/jurisprudencia-tedh/articulo-derecho-proceso">Artículo 6: Derecho a un proceso equitativo</a></li>
-				<li id="novedad_2_1288803482459" style="padding: 10px !important"><span class="articuloFecha">(14/12/2018)</span> <a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/area-internacional/tribunal-europeo-derechos/jurisprudencia-tedh/articulo-derecho-proceso#Se_1288803482459_1">Artículo 6: Derecho a un proceso equitativo (<strong>Avotins c Letonia</strong>)</a></li>
-				<li id="novedad_3_1288798916120" style="padding: 10px !important"><span class="articuloFecha">(14/12/2018)</span> <a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/organigrama/biografias/director-general-memoria"><strong>Fernando Martínez López</strong> (Director General de Memoria Histórica)</a></li>
+				<li id="novedad_1_1288794216249" style="padding: 10px !important"><span class="articuloFecha">(22/12/2018)</span> <a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/actividad-legislativa/normativa/proyectos-real-decreto#id_1288794216249">TRÁMITES CERRADOS</a></li>
+				<li id="novedad_2_1288791240458" style="padding: 10px !important"><span class="articuloFecha">(22/12/2018)</span> <a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/actividad-legislativa/normativa/proyectos-real-decreto#id_1288791240458">TRÁMITES CERRADOS</a></li>
+				<li id="novedad_3_1288795888331" style="padding: 10px !important"><span class="articuloFecha">(21/12/2018)</span> <a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ciudadanos/empleo-publico/oposiciones-procesos/resolucion-julio-2017">Resolución de 25 de julio de 2017 de la Dirección General de los Registros y del Notariado  por la que se convocan oposiciones al Cuerpo de Aspirantes a Registradores de la Propiedad, Mercantiles y de bienes muebles      </a></li>
 	</ul>
 				<div class="bloqueSubhomeEnlace">
 					<a href="http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano/novedades">Ver más <span class="oculto">: Novedades</span></a>
@@ -727,4 +687,4 @@ Sábados: de 9:00 h. a 14:00 h.</p>
 
 
 	
-<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span></body></html>
+</body></html>

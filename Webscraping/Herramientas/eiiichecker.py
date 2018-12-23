@@ -70,8 +70,8 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         
         check.click()
 
-        #Pausa de máximo 55 segundos
-        wait = WebDriverWait(driver, 54)
+        #Pausa de máximo 75 segundos
+        wait = WebDriverWait(driver, 75)
         #Se espera hasta que se haya evaluado y ofrecido el resultado
         try:
             elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#resultsByTest > div > div.tabArea")))

@@ -53,7 +53,7 @@
                         <div class="form-group row">
                             <label for="mensaje" class="col-md-4 col-form-label text-md-right">Mensaje:</label>
                             <div class="col-md-6">
-                                <textarea id="mensaje"  name="mensaje" rows="5" cols="34" required>{{ old('mensaje')}}</textarea>
+                                <textarea id="mensaje"  name="mensaje" rows="15" cols="50" required>{{ old('mensaje')}}</textarea>
                                 @if ($errors->has('mensaje'))
                                     <span>
                                         <strong>{{ $errors->first('mensaje') }}</strong>

@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-1286020074544.html
+FECHA EVALUACIÓN: 2018-12-23
+
+Se han encontrado 3 imágenes que no tienen leyenda
+Se encontró una imagen en la que la leyenda es un espacio vacío
+Se encontró un elemento <iframe> sin título
+Se encontraron 12 elementos de encabezado
+Se han encontrado 16 enlaces con el mismo texto que apuntan a destinos diferentes
+Se identificaron 56 casos en los que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se encontró 1 grupo de enlaces compuesto por 10 o más enlaces no agrupados por elementos estructurales
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se constató que todos los formularios tienen un botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se encontraron 30 errores de validación en el lenguaje de marcado
+Se han encontrado 3 elementos o atributos de HTML que se utilizan para controlar la presentación visual del texto
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que todos los atributos se expresan en unidades de medida relativas
+Se han encontrado 2 elementos <link> para navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "ca_ES"
+Se constató que el código "ca_ES" es incorrecto
+Se constató que los atributos lang y / o xml: lang se utilizan incorrectamente
+Se ha identificado una regla de CSS en la que no se especifica o el color de fondo o el color de fondo
