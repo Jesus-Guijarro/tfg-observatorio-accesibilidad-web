@@ -23,23 +23,27 @@
                         {{ csrf_field() }}
                         <div class="form-group row">
                             <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre:</label>
-                            <input type="text" id ="nombre" name="nombre" value="{{$herramienta->nombre}}" required >
+                            <div class="col-md-8">
+                                <input type="text" id ="nombre" name="nombre" value="{{$herramienta->nombre}}" class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}" required >
 
-                            @if ($errors->has('nombre'))
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $errors->first('nombre') }}</strong>
-                                </span>
-                            @endif
+                                @if ($errors->has('nombre'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('nombre') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
                         </div>
                         <div class="form-group row">
                             <label for="descripcion" class="col-md-4 col-form-label text-md-right" >Descripcion:</label>
-                            <input type="text" id ="descripcion" name="descripcion" value="{{$herramienta->descripcion}}" required >
+                            <div class="col-md-8">
+                                <input type="text" id ="descripcion" name="descripcion" value="{{$herramienta->descripcion}}" class="form-control{{ $errors->has('descripcion') ? ' is-invalid' : '' }}" required >
 
-                            @if ($errors->has('descripcion'))
-                                <span>
-                                    <strong class="strong-val">{{ $errors->first('descripcion') }}</strong>
-                                </span>
-                            @endif
+                                @if ($errors->has('descripcion'))
+                                <span class="invalid-feedback" role="alert">
+                                        <strong class="strong-val">{{ $errors->first('descripcion') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
                         </div>
                         <div class="row justify-content-center">
                             <button type="submit" class="btn btn-primary">

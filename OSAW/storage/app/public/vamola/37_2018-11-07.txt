@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 	REVISAR: 57: input element, type of "text", missing an associated label.  
 
-	REPARAR::> Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.      
+	REPARAR:> Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.      
 
 		LINEA: 186, COLUMNA 2: <input placeholder="Introduzca texto a buscar" type="text" id="edit-busqueda" name="busqueda" value= ...
 
@@ -17,7 +17,7 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 	REVISAR: 213: input element, type of "text", has no text in label.  
 
-	REPARAR::> Add text to the input element's associated label that describes the purpose or function of the control.      
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
 
 		LINEA: 186, COLUMNA 2: <input placeholder="Introduzca texto a buscar" type="text" id="edit-busqueda" name="busqueda" value= ...
 
@@ -27,7 +27,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 117: i (italic) element used.  
 
-	REPARAR::> Replace your i elements with em or strong.      
+	REPARAR:> Replace your i elements with em or strong.      
 
 		LINEA: 149, COLUMNA 19: <i class="fa fa-chevron-up"></i>
 
@@ -93,7 +93,7 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	REVISAR: 188: Label text is empty.  
 
-	REPARAR::> Add text to the label element.      
+	REPARAR:> Add text to the label element.      
 
 		LINEA: 186, COLUMNA 2: <input placeholder="Introduzca texto a buscar" type="text" id="edit-busqueda" name="busqueda" value= ...
 

@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	REVISAR: 188: Label text is empty.  
 
-	REPARAR:: Add text to the label element.     
+	REPARAR: Add text to the label element.     
 
 		LINEA: 123, COLUMNA: 4: <input type="image" alt="Buscador" value="Buscador" id="btn_busq_gnral" src="/recursos_micinn/img/lu ...
 
@@ -147,7 +147,7 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 	REVISAR: 96: textarea label is not positioned close to control.  
 
-	REPARAR:: Position the control's label so it is close to the control.     
+	REPARAR: Position the control's label so it is close to the control.     
 
 		LINEA: 231, COLUMNA: 7: <textareaname="consulta"id="consulta"class="conborde"rows="12"cols="100" ></textarea>
 

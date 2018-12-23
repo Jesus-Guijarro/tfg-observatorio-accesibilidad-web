@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR:: Add Alt text that identifies the purpose or function of the image.     
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
 
 		LINEA: 707, COLUMNA: 21: <img src="imgHome/ticket.png" alt="">(opc10)       
 
@@ -40,7 +40,7 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 	REVISAR: 168: Form missing fieldset and legend to group multiple radio buttons.  
 
-	REPARAR:: Add a fieldset and legend element to the form for each group of radio buttons.     
+	REPARAR: Add a fieldset and legend element to the form for each group of radio buttons.     
 
 		LINEA: 707, COLUMNA: 6: <form method="post" action="https://venta.renfe.com/vol/buscarTren.do" id="datosBusqueda"> ...(opc10)
 
@@ -50,7 +50,7 @@ CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)
 
 	REVISAR: 185: id attribute is not unique.  
 
-	REPARAR:: Modify the id attribute value so it is unique.     
+	REPARAR: Modify the id attribute value so it is unique.     
 
 		LINEA: 707, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...(opc10)
 

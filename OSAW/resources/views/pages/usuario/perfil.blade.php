@@ -29,7 +29,7 @@
 
             <p><strong> Nombre de usuario:  </strong> {{$usuario->nombre}} </p>
             <p><strong> Correo electrónico: </strong> {{$usuario->email}}</p>
-            <p><strong>Biografia</strong><p> <textarea cols="50" rows="10" readonly> {{$usuario->biografia}}</textarea>
+            <p><strong>Biografía:</strong><p> <textarea cols="50" rows="10" readonly> {{$usuario->biografia}}</textarea>
 
             <div style="margin-bottom: 1.5em">
                 <a class="btn btn-primary" href="/modificar-perfil/{{$usuario->id}}" role="button">Editar datos de usuario</a>

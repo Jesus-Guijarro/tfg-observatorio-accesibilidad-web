@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR:: Add Alt text that identifies the purpose or function of the image.     
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
 
 		LINEA: 113, COLUMNA: 133: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/libro/maria-m ...       
 
@@ -22,7 +22,7 @@ CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)
 
 	REVISAR: 174: Anchor contains no text.  
 
-	REPARAR:: Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.     
+	REPARAR: Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.     
 
 		LINEA: 101, COLUMNA: 25: <a href="#" class="prev"></a>       
 

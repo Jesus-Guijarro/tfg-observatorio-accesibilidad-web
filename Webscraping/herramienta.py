@@ -34,7 +34,7 @@ def procesarDatos(datos):
     datos=datos.replace('        ','\n\n')
     datos=datos.replace('Success Criteria','\n\nCRITERIO DE CONFORMIDAD:')
     datos=datos.replace('Check','\n\n\tREVISAR:')
-    datos=datos.replace('Repair','\n\n\tREPARAR:')
+    datos=datos.replace('Repair','\n\n\tREPARAR')
     datos=datos.replace('Line','\n\n\t\tLINEA:')
     datos=datos.replace('Column','COLUMNA:')
     datos=datos.replace('\t\t\t','')

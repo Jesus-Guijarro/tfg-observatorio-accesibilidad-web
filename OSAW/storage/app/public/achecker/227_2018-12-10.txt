@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 238: input element has alt attribute.  
 
-	REPARAR:: Remove the alt attribute from all input elements except those with a type attribute value of "image".     
+	REPARAR: Remove the alt attribute from all input elements except those with a type attribute value of "image".     
 
 		LINEA: 165, COLUMNA: 149: <input type="submit" value=" " class="boton_buscar_cabecera" title="Buscar" alt="Buscar" />
 
@@ -18,7 +18,7 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 	REVISAR: 206: input element, type of "checkbox", has no text in label.  
 
-	REPARAR:: Add text to the input element's associated label that describes the purpose or function of the control.     
+	REPARAR: Add text to the input element's associated label that describes the purpose or function of the control.     
 
 		LINEA: 161, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
 
@@ -30,7 +30,7 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	REVISAR: 188: Label text is empty.  
 
-	REPARAR:: Add text to the label element.     
+	REPARAR: Add text to the label element.     
 
 		LINEA: 161, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
 

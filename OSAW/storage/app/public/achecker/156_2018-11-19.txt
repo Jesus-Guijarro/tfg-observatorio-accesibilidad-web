@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR:: Add Alt text that identifies the purpose or function of the image.     
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
 
 		LINEA: 200, COLUMNA: 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
 
@@ -29,7 +29,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 307: The contrast between the colour of visited link text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
 
 		LINEA: 105, COLUMNA: 53: <a href="javascript:window.print()">Print</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/en/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:visited{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}   
 
@@ -41,7 +41,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 310: Link text colour must provide high contrast with its background colour.  
 
-	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
 
 		LINEA: 105, COLUMNA: 53: <a href="javascript:window.print()">Print</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/en/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:link{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}   
 
@@ -53,7 +53,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
 
 		LINEA: 338, COLUMNA: 61: <span class="etqMuh">MUH</span>    Fixed size example: color contrast exampleReal size example (8.16 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/en/diseno/css/home.css):		.etqMuh{		width:6em;	text-align:center;	display:block;	float:left;	}		.txtVentana{		float:left;	width:71%;	padding:1em 2% 0 1%;	font-size:0.8em;	}   
 

@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 117: i (italic) element used.  
 
-	REPARAR:: Replace your i elements with em or strong.     
+	REPARAR: Replace your i elements with em or strong.     
 
 		LINEA: 64, COLUMNA: 1: <i class="fa fa-twitter"><span>social-link</span></i>       
 
@@ -44,7 +44,7 @@ CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)
 
 	REVISAR: 185: id attribute is not unique.  
 
-	REPARAR:: Modify the id attribute value so it is unique.     
+	REPARAR: Modify the id attribute value so it is unique.     
 
 		LINEA: 115, COLUMNA: 9: <body><!-- style="background-image: url(/recursos_micinn/img/fondo1.jpg)">--><!-- #BeginLibraryIte ...(lb_busq_gnral)
 

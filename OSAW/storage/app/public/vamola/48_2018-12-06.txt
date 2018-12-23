@@ -11,7 +11,7 @@ CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)
 
 	REVISAR: 38: Header nesting - header following h2 is incorrect.  
 
-	REPARAR::> Modify the header levels so only an h3 or any header less than h3 follows h2.      
+	REPARAR:> Modify the header levels so only an h3 or any header less than h3 follows h2.      
 
 		LINEA: 314, COLUMNA: 6: <h2 class="oculto">Contenido de la p&aacute;gina</h2>
 
@@ -21,7 +21,7 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	REVISAR: 188: Label text is empty.  
 
-	REPARAR::> Add text to the label element.      
+	REPARAR:> Add text to the label element.      
 
 		LINEA: 73, COLUMNA: 11: <input class="boton" src="/img/maquetacion/bt_buscar.gif" value="Buscar" alt="Buscar" type="image"/>
 

@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR:: Add Alt text that identifies the purpose or function of the image.     
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
 
 		LINEA: 48, COLUMNA: 37: <img src="/diseno/img/ico-rss.png" alt=""/>       
 
@@ -41,7 +41,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 117: i (italic) element used.  
 
-	REPARAR:: Replace your i elements with em or strong.     
+	REPARAR: Replace your i elements with em or strong.     
 
 		LINEA: 191, COLUMNA: 25: <i class="fa fa-home" aria-hidden="true">&nbsp;</i>       
 

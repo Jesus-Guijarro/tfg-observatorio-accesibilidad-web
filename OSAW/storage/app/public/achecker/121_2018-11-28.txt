@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR:: Add Alt text that identifies the purpose or function of the image.     
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
 
 		LINEA: 54, COLUMNA: 37: <img src="/diseno/img/ico-rss.png" alt=""/>       
 
@@ -69,7 +69,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 117: i (italic) element used.  
 
-	REPARAR:: Replace your i elements with em or strong.     
+	REPARAR: Replace your i elements with em or strong.     
 
 		LINEA: 205, COLUMNA: 115: <i class="fa fa-caret-right" aria-hidden="true">&nbsp;</i>       
 
@@ -127,7 +127,7 @@ CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)
 
 	REVISAR: 37: Header nesting - header following h1 is incorrect.  
 
-	REPARAR:: Modify the header levels so only an h1 or h2 follows h1.     
+	REPARAR: Modify the header levels so only an h1 or h2 follows h1.     
 
 		LINEA: 47, COLUMNA: 29: <h1>Ministerio <span>de Sanidad, Consumo</span> y Bienestar Social</h1>
 

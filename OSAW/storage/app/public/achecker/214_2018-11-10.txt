@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR:: Add Alt text that identifies the purpose or function of the image.     
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
 
 		LINEA: 433, COLUMNA: 172: <img alt="" src="../es/img/HOME/destacados/plan-director-por-un-trabajo-digno.gif" />       
 
@@ -51,7 +51,7 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 	REVISAR: 245: Data table with more than one row/column of headers does not use id and headers attributes to identify cells.  
 
-	REPARAR:: Add id and headers attributes to table cells so they identify the cells that relate to the headers.     
+	REPARAR: Add id and headers attributes to table cells so they identify the cells that relate to the headers.     
 
 		LINEA: 304, COLUMNA: 8: <table class="indicadores2">		<caption>Leading indicators</caption>		<thead> ...
 

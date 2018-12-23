@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
 
 		LINEA: 81, COLUMNA: 3: <h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de Espa&ntild ...    Fixed size example: color contrast exampleReal size example (11.36 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mitramiss.gob.es/cartaespana/css/estructura.css):		 h1{		font-size:15px;	font-weight:bold;	color:#3B6778;	padding-bottom:12px;	border-bottom:1px solid #C6C6C6;	text-transform:uppercase;	}   
 

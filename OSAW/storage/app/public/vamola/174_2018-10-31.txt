@@ -11,7 +11,7 @@ CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)
 
 	REVISAR: 174: Anchor contains no text.  
 
-	REPARAR::> Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.      
+	REPARAR:> Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.      
 
 		LINEA: 246, 
 

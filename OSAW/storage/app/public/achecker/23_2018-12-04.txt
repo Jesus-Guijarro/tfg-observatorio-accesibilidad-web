@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 238: input element has alt attribute.  
 
-	REPARAR:: Remove the alt attribute from all input elements except those with a type attribute value of "image".     
+	REPARAR: Remove the alt attribute from all input elements except those with a type attribute value of "image".     
 
 		LINEA: 4, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...
 
@@ -18,7 +18,7 @@ CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)
 
 	REVISAR: 185: id attribute is not unique.  
 
-	REPARAR:: Modify the id attribute value so it is unique.     
+	REPARAR: Modify the id attribute value so it is unique.     
 
 		LINEA: 18, COLUMNA: 1602: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
 

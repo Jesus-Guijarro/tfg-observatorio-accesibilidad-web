@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 1: img element missing alt attribute.  
 
-	REPARAR:: Add an alt attribute to your img element.     
+	REPARAR: Add an alt attribute to your img element.     
 
 		LINEA: 52, COLUMNA: 768: <img title="Ver vídeo en youtube" src="/docroot/microsites/genericos/img/overlay_videos.png"/>
 
@@ -21,7 +21,7 @@ CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)
 
 	REVISAR: 174: Anchor contains no text.  
 
-	REPARAR:: Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.     
+	REPARAR: Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.     
 
 		LINEA: 51, COLUMNA: 17: <a href="/cultura-mecd/areas-cultura/cine/inicio.html" ></a>       
 

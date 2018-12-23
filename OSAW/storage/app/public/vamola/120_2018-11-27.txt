@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 1: img element missing alt attribute.  
 
-	REPARAR::> Add an alt attribute to your img element.      
+	REPARAR:> Add an alt attribute to your img element.      
 
 		LINEA: 1902, COLUMNA: 30: <img src="/ibcomv3/rbrand/img/ico-info-bk-small.png">
 

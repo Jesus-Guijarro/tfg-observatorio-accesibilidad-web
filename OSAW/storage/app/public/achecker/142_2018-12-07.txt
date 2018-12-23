@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR:: Add Alt text that identifies the purpose or function of the image.     
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
 
 		LINEA: 152, COLUMNA: 3: <img alt="" src="/.imaging/mte/mcd-theme/icoLink/dam/elementos-comunes/iconos/ico-contacto-naranja/j ...
 

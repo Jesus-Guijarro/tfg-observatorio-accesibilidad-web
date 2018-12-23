@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR::> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+	REPARAR:> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
 
 		LINEA: 95, COLUMNA: 1: <span class="menuSuperior menuSuperiorDcho"><a id="idioma_es" class="select_idioma" href="?lang=ES"...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.umh.es/assets/comun.css?vCache=r):		 nav{		display:block;	}		 header{		display:block;	}		#menu_superior{		.menu_superior,height:40px;	margin-bottom:1px;	margin-left:auto;	margin-right:auto;	margin-top:0;	background-color:#464646;	-webkit-border-radius:4px;	-moz-border-radius:4px;	border-radius:4px;	*zoom:1;	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.065);	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.065);	box-shadow:2px 2px 5px #999999;	}		 body{		background-color:#fff;	color:#000;	margin:2px;	min-height:100%;	word-wrap:break-word;	}    
 

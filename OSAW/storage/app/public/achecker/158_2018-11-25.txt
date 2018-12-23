@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR:: Add Alt text that identifies the purpose or function of the image.     
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
 
 		LINEA: 210, COLUMNA: 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
 
@@ -29,7 +29,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 307: The contrast between the colour of visited link text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
 
 		LINEA: 87, COLUMNA: 49:     Fixed size example: color contrast exampleReal size example (13.2 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/gl/diseno/css/home.css):		#textoAEMPShome a:visited{		text-align:center;	text-decoration:none !important;	color:#286D93 !important;	padding-top:15px;	text-transform:none;	}		#cabecera{		margin:0;	float:left;	background-position:bottom;	background-repeat:repeat-x;	background-color:#FFFFFF;	width:100%;	padding-bottom:2%;	}		#textoAEMPShome{		font-family:"Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;	font-weight:bold;	text-align:center;	font-size:1.1em;	text-decoration:none !important;	color:#286D93 !important;	padding-top:15px;	line-height:22px;	}   
 
@@ -43,19 +43,19 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 308: The contrast between the colour of active link text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
 
 		LINEA: 87, COLUMNA: 49:     Fixed size example: color contrast exampleReal size example (13.2 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/gl/diseno/css/home.css):		#textoAEMPShome a:active{		text-align:center;	text-decoration:none !important;	color:#286D93 !important;	padding-top:15px;	text-transform:none;	}		#cabecera{		margin:0;	float:left;	background-position:bottom;	background-repeat:repeat-x;	background-color:#FFFFFF;	width:100%;	padding-bottom:2%;	}		#textoAEMPShome{		font-family:"Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;	font-weight:bold;	text-align:center;	font-size:1.1em;	text-decoration:none !important;	color:#286D93 !important;	padding-top:15px;	line-height:22px;	}      
 
 	REVISAR: 309: The contrast between the colour of selected link text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
 
 		LINEA: 87, COLUMNA: 49:     Fixed size example: color contrast exampleReal size example (13.2 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/gl/diseno/css/home.css):		#textoAEMPShome a:hover{		text-align:center;	text-decoration:none !important;	color:#286D93 !important;	padding-top:15px;	text-transform:none;	}		#cabecera{		margin:0;	float:left;	background-position:bottom;	background-repeat:repeat-x;	background-color:#FFFFFF;	width:100%;	padding-bottom:2%;	}		#textoAEMPShome{		font-family:"Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;	font-weight:bold;	text-align:center;	font-size:1.1em;	text-decoration:none !important;	color:#286D93 !important;	padding-top:15px;	line-height:22px;	}      
 
 	REVISAR: 310: Link text colour must provide high contrast with its background colour.  
 
-	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
 
 		LINEA: 115, COLUMNA: 53: <a href="javascript:window.print()">Imprimir</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/gl/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:link{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}   
 
@@ -67,7 +67,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR:: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
 
 		LINEA: 102, COLUMNA: 61: <label for="search">Buscar</label>    Fixed size example: color contrast exampleReal size example (9 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/gl/diseno/css/home.css):		#cabecera{		margin:0;	float:left;	background-position:bottom;	background-repeat:repeat-x;	background-color:#FFFFFF;	width:100%;	padding-bottom:2%;	}		#zona_buscador table label{		font-size:0.75em;	color:#225E9A;	font-weight:bold;	margin-right:.5em;	}   
 

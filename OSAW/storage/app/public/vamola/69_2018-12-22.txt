@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 116: b (bold) element used.  
 
-	REPARAR::> Replace your b (bold) elements with em or strong.      
+	REPARAR:> Replace your b (bold) elements with em or strong.      
 
 		LINEA: 582, COLUMNA: 146: <b><strong>Campus de Vera (Valencia)</strong></b>
 
@@ -26,7 +26,7 @@ CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)
 
 	REVISAR: 49: Document has invalid language code.  
 
-	REPARAR::> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
+	REPARAR:> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
 
 		LINEA: 19, COLUMNA: 1: <html version="-//W3C//DTD XHTML 1.1//EN"xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="htt ...
 

@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	REVISAR: 188: Label text is empty.  
 
-	REPARAR:: Add text to the label element.     
+	REPARAR: Add text to the label element.     
 
 		LINEA: 145, COLUMNA: 4: <input type="image" alt="Buscador" value="Buscador" id="btn_busq_gnral" src="/recursos_micinn/img/lu ...
 

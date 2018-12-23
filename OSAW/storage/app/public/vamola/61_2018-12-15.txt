@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 116: b (bold) element used.  
 
-	REPARAR::> Replace your b (bold) elements with em or strong.      
+	REPARAR:> Replace your b (bold) elements with em or strong.      
 
 		LINEA: 1154, COLUMNA: 1: <b>Concurso universitario de narrativa corta en valenciano <i>Premi Sambori 2019</i></b>
 
@@ -28,7 +28,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 117: i (italic) element used.  
 
-	REPARAR::> Replace your i elements with em or strong.      
+	REPARAR:> Replace your i elements with em or strong.      
 
 		LINEA: 1154, COLUMNA: 60: <i>Premi Sambori 2019</i>
 

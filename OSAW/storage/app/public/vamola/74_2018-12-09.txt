@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 1: img element missing alt attribute.  
 
-	REPARAR::> Add an alt attribute to your img element.      
+	REPARAR:> Add an alt attribute to your img element.      
 
 		LINEA: 1451, COLUMNA: 36: <img class="imagenPortadaSeccion" src="https://web.ua.es/secciones-ua/images/estudios/grados/fondo.j ...
 
@@ -50,7 +50,7 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 	REVISAR: 168: Form missing fieldset and legend to group multiple radio buttons.  
 
-	REPARAR::> Add a fieldset and legend element to the form for each group of radio buttons.      
+	REPARAR:> Add a fieldset and legend element to the form for each group of radio buttons.      
 
 		LINEA: 564, COLUMNA: 5: <form id="form-buscar" name="form-buscar" action="" method="post"><label class="sinEstilos check ...
 
@@ -60,7 +60,7 @@ CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)
 
 	REVISAR: 185: id attribute is not unique.  
 
-	REPARAR::> Modify the id attribute value so it is unique.      
+	REPARAR:> Modify the id attribute value so it is unique.      
 
 		LINEA: 1580, COLUMNA: 1: <body><h1 class="hidden">Universidad de Alicante</h1><a href="#contenido" class="sr-only">Ir a con ...(teInteresa)
 

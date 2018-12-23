@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR:: Add Alt text that identifies the purpose or function of the image.     
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
 
 		LINEA: 584, COLUMNA: 51: <img src="img2/iconos/ico_sedeElectronica_cent.png" alt="" />       
 
@@ -80,7 +80,7 @@ CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)
 
 	REVISAR: 244: Data table with both row and column headers does not use scope to identify cells.  
 
-	REPARAR:: Add scope attributes to header cells so they identify the cells that relate to the header.     
+	REPARAR: Add scope attributes to header cells so they identify the cells that relate to the header.     
 
 		LINEA: 750, COLUMNA: 9: <table id="indicadoresParo"><caption>Principales indicadores del paro</caption>< ...
 

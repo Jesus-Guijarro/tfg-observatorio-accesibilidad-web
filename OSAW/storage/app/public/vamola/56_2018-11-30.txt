@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)
 
 	REVISAR: 188: Label text is empty.  
 
-	REPARAR::> Add text to the label element.      
+	REPARAR:> Add text to the label element.      
 
 		LINEA: 64, COLUMNA: 1201: <input type="image" class="buscar" id="botonbuscador" alt="Buscar" src="../img/css/iconos/botonBusca ...
 

@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR::> Add Alt text that identifies the purpose or function of the image.      
+	REPARAR:> Add Alt text that identifies the purpose or function of the image.      
 
 		LINEA: 18, COLUMNA: 1873: <img src='/static_files/common/internet/img/tic_amarillo.png' alt='' />
 
@@ -19,7 +19,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 309: The contrast between the colour of selected link text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR::> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+	REPARAR:> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
 
 		LINEA: 30, COLUMNA: 462: <a href="https://www.agenciatributaria.gob.es/AEAT.sede/Inicio/_otros_/_Direcciones_y_telefonos_/_Di ...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.agenciatributaria.es/common/css/internet.css):		 a:hover{		color:#cc3333;	text-decoration:underline;	}		.componente{		clear:both;	margin:1em 0;	padding:0;	background-color:#FFFFFF;	border:1px solid #DFE8F0;	border-radius:0.3em 0.3em 0.3em 0.3em;	box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);	}    
 
@@ -67,7 +67,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR::> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+	REPARAR:> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
 
 		LINEA: 68, COLUMNA: 185: <span class="azul-negrita">29-10-18</span>    Fixed size example: color contrast exampleReal size example (10.8 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.agenciatributaria.es/common/css/internet.css):		.novedades{		background-color:#FFFFFF;	border:1px solid #DFE8F0;	border-radius:0.3em;	box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);	margin-top:1em;	text-align:left;	}		.novedades.azul-negrita{		margin-right:0.4em;	color:#767676 !important;	}		.azul-negrita{		font-weight:bold;	font-size:1em;	COLOR:#3376ac !important;	}		.novedades ul li{		font-size:0.9em;	}    
 

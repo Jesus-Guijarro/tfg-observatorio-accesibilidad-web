@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)
 
 	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
 
-	REPARAR::> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+	REPARAR:> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
 
 		LINEA: 377, COLUMNA: 9: <span class="sliderTitulo">España apuesta por potenciar la Conferencia de Ministros de Justicia de...    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mjusticia.gob.es/estatico/cs/portal/css/estilos.css?v=2):		#sliderActualidad.sliderTitulo{		float:left;	background:#2874BF;	width:38em;	color:#fff;	font-size:1em;	box-sizing:border-box;	padding:0.5em 5em 0.5em 0.6em;	font-family:'Roboto', sans-serif;	display:block;	}    
 
@@ -38,7 +38,7 @@ CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)
 
 	REVISAR: 174: Anchor contains no text.  
 
-	REPARAR::> Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.      
+	REPARAR:> Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.      
 
 		LINEA: 617, COLUMNA: 12: <a href="http://transparencia.gob.es" class="enlacePantallaNueva" id="a1288789668717"><div class="bl ...
 

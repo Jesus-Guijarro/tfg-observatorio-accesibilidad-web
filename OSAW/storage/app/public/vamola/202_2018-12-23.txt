@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 1: img element missing alt attribute.  
 
-	REPARAR::> Add an alt attribute to your img element.      
+	REPARAR:> Add an alt attribute to your img element.      
 
 		LINEA: 537, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/937/752/becas,1.jpg"/>
 
@@ -26,7 +26,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 116: b (bold) element used.  
 
-	REPARAR::> Replace your b (bold) elements with em or strong.      
+	REPARAR:> Replace your b (bold) elements with em or strong.      
 
 		LINEA: 537, COLUMNA: 157: <b>Resolució de 27 de novembre de 2018</b>
 
@@ -42,7 +42,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 117: i (italic) element used.  
 
-	REPARAR::> Replace your i elements with em or strong.      
+	REPARAR:> Replace your i elements with em or strong.      
 
 		LINEA: 108, COLUMNA: 3094: <i class="fa fa-user"></i>
 
@@ -84,7 +84,7 @@ CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)
 
 	REVISAR: 49: Document has invalid language code.  
 
-	REPARAR::> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
+	REPARAR:> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
 
 		LINEA: 24, COLUMNA: 2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca_ES" lang="ca" xmlns:og="http://ogp.me/ns#" ...
 

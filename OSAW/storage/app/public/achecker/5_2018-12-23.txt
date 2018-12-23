@@ -8,7 +8,7 @@ CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)
 
 	REVISAR: 116: b (bold) element used.  
 
-	REPARAR:: Replace your b (bold) elements with em or strong.     
+	REPARAR: Replace your b (bold) elements with em or strong.     
 
 		LINEA: 351, COLUMNA: 226: <b>Sección de Datos abiertos del Ministerio de Justicia</b>
 

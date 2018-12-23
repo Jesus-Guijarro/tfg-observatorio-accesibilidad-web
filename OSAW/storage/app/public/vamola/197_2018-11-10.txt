@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)
 
 	REVISAR: 185: id attribute is not unique.  
 
-	REPARAR::> Modify the id attribute value so it is unique.      
+	REPARAR:> Modify the id attribute value so it is unique.      
 
 		LINEA: 188, COLUMNA: 8: <body id="body" ><h1 style="display:none;">Universidad Miguel Hernández</h1><!--Cabecera común...(Alumni-0)
 

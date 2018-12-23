@@ -9,7 +9,7 @@ CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)
 
 	REVISAR: 7: Image used as anchor is missing valid Alt text.  
 
-	REPARAR::> Add Alt text that identifies the purpose or function of the image.      
+	REPARAR:> Add Alt text that identifies the purpose or function of the image.      
 
 		LINEA: 19, COLUMNA 1524: <img src='/static_files/common/internet/img/tic_amarillo.png' alt='' />
 
