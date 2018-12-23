@@ -2,7 +2,9 @@ REPORTE PÁGINA WEB: http://www.renfe.com/viajeros/atendo/informacion_cliente.ht
 FECHA EVALUACIÓN: 2018-12-13
 
 -PROBLEMAS-
+
 -ALERTAS-
+
 Redundant link	  VECES ENCONTRADO: 1
 Skipped heading level	  VECES ENCONTRADO: 1
 Redundant title text	  VECES ENCONTRADO: 12
@@ -11,6 +13,7 @@ Link to PDF document	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Linked image with alternative text	  VECES ENCONTRADO: 14
 Form label	  VECES ENCONTRADO: 1
 Null or empty alternative text	  VECES ENCONTRADO: 3
@@ -19,6 +22,7 @@ Fieldset	  VECES ENCONTRADO: 1
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 27
 
 

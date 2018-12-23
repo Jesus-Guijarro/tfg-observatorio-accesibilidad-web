@@ -2,10 +2,12 @@ REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/ConsejosDisAct.nsf/fCat
 FECHA EVALUACIÓN: 2018-12-12
 
 -PROBLEMAS-
+
 Empty heading	  VECES ENCONTRADO: 2
 
 
 -ALERTAS-
+
 Broken same-page link	  VECES ENCONTRADO: 1
 Redundant alternative text	  VECES ENCONTRADO: 3
 Noscript element	  VECES ENCONTRADO: 1
@@ -13,9 +15,11 @@ Redundant title text	  VECES ENCONTRADO: 49
 
 
 -CARACTERISTICAS-
+
 Element language	  VECES ENCONTRADO: 1
 Linked image with alternative text	  VECES ENCONTRADO: 7
 Alternative text	  VECES ENCONTRADO: 1
 
 
 -PROBLEMAS DE CONTRASTE-
+

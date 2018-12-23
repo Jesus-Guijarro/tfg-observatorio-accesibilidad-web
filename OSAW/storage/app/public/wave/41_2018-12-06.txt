@@ -2,10 +2,12 @@ REPORTE PÁGINA WEB: http://www.renfe.com
 FECHA EVALUACIÓN: 2018-12-06
 
 -PROBLEMAS-
+
 Broken ARIA reference	  VECES ENCONTRADO: 11
 
 
 -ALERTAS-
+
 Fieldset missing legend	  VECES ENCONTRADO: 2
 Redundant link	  VECES ENCONTRADO: 4
 Noscript element	  VECES ENCONTRADO: 1
@@ -18,6 +20,7 @@ Missing fieldset	  VECES ENCONTRADO: 2
 
 
 -CARACTERISTICAS-
+
 Element language	  VECES ENCONTRADO: 7
 Fieldset	  VECES ENCONTRADO: 4
 Linked image with alternative text	  VECES ENCONTRADO: 19
@@ -27,6 +30,7 @@ Null or empty alternative text	  VECES ENCONTRADO: 12
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 21
 
 

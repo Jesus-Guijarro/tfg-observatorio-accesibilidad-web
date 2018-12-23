@@ -2,6 +2,7 @@ REPORTE PÁGINA WEB: https://www.uv.es/uvweb/college/en/university-valencia-1285
 FECHA EVALUACIÓN: 2018-12-02
 
 -PROBLEMAS-
+
 Empty link	  VECES ENCONTRADO: 10
 Empty heading	  VECES ENCONTRADO: 2
 Linked image missing alternative text	  VECES ENCONTRADO: 9
@@ -11,6 +12,7 @@ Missing alternative text	  VECES ENCONTRADO: 417
 
 
 -ALERTAS-
+
 Redundant title text	  VECES ENCONTRADO: 64
 Noscript element	  VECES ENCONTRADO: 5
 Redundant link	  VECES ENCONTRADO: 39
@@ -25,6 +27,7 @@ Missing fieldset	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Linked image with alternative text	  VECES ENCONTRADO: 61
 Form label	  VECES ENCONTRADO: 1
 Null or empty alternative text	  VECES ENCONTRADO: 15
@@ -32,6 +35,7 @@ Alternative text	  VECES ENCONTRADO: 2
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 33
 
 

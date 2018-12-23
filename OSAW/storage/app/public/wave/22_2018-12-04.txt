@@ -2,7 +2,9 @@ REPORTE PÁGINA WEB: http://www.gva.es/es/inicio/administraciones
 FECHA EVALUACIÓN: 2018-12-04
 
 -PROBLEMAS-
+
 -ALERTAS-
+
 Unlabeled form element with title	  VECES ENCONTRADO: 2
 Accesskey	  VECES ENCONTRADO: 8
 Suspicious alternative text	  VECES ENCONTRADO: 1
@@ -13,6 +15,7 @@ Redundant title text	  VECES ENCONTRADO: 11
 
 
 -CARACTERISTICAS-
+
 Element language	  VECES ENCONTRADO: 6
 Alternative text	  VECES ENCONTRADO: 2
 Image button with alternative text	  VECES ENCONTRADO: 2
@@ -20,3 +23,4 @@ Linked image with alternative text	  VECES ENCONTRADO: 3
 
 
 -PROBLEMAS DE CONTRASTE-
+

@@ -2,12 +2,14 @@ REPORTE PÁGINA WEB: https://www.alicante.es/es/area-tematica/servicio-de-atenci
 FECHA EVALUACIÓN: 2018-12-19
 
 -PROBLEMAS-
+
 Missing form label	  VECES ENCONTRADO: 1
 Empty button	  VECES ENCONTRADO: 4
 Empty link	  VECES ENCONTRADO: 7
 
 
 -ALERTAS-
+
 A nearby image has the same alternative text	  VECES ENCONTRADO: 4
 Redundant title text	  VECES ENCONTRADO: 49
 Redundant alternative text	  VECES ENCONTRADO: 13
@@ -16,12 +18,14 @@ Justified text	  VECES ENCONTRADO: 267
 
 
 -CARACTERISTICAS-
+
 Alternative text	  VECES ENCONTRADO: 2
 Linked image with alternative text	  VECES ENCONTRADO: 47
 Element language	  VECES ENCONTRADO: 2
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 63
 
 

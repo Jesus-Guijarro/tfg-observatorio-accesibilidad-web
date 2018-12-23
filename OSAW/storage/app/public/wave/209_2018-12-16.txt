@@ -2,6 +2,7 @@ REPORTE PÁGINA WEB: https://www.uv.es/uvnoticies
 FECHA EVALUACIÓN: 2018-12-16
 
 -PROBLEMAS-
+
 Image map area missing alternative text	  VECES ENCONTRADO: 1
 Missing form label	  VECES ENCONTRADO: 1
 Empty link	  VECES ENCONTRADO: 148
@@ -11,6 +12,7 @@ Empty heading	  VECES ENCONTRADO: 12
 
 
 -ALERTAS-
+
 Link to PDF document	  VECES ENCONTRADO: 4
 Redundant alternative text	  VECES ENCONTRADO: 1
 Fieldset missing legend	  VECES ENCONTRADO: 1
@@ -21,12 +23,14 @@ Justified text	  VECES ENCONTRADO: 12
 
 
 -CARACTERISTICAS-
+
 Alternative text	  VECES ENCONTRADO: 2
 Image map with alternative text	  VECES ENCONTRADO: 1
 Linked image with alternative text	  VECES ENCONTRADO: 143
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 181
 
 

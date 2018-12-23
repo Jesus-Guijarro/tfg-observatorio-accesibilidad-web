@@ -2,6 +2,7 @@ REPORTE PÁGINA WEB: https://www.uv.es/
 FECHA EVALUACIÓN: 2018-12-23
 
 -PROBLEMAS-
+
 Missing form label	  VECES ENCONTRADO: 11
 Missing alternative text	  VECES ENCONTRADO: 429
 Empty button	  VECES ENCONTRADO: 4
@@ -11,6 +12,7 @@ Empty heading	  VECES ENCONTRADO: 2
 
 
 -ALERTAS-
+
 Noscript element	  VECES ENCONTRADO: 5
 Very small text	  VECES ENCONTRADO: 4
 JavaScript jump menu	  VECES ENCONTRADO: 11
@@ -25,6 +27,7 @@ Long alternative text	  VECES ENCONTRADO: 2
 
 
 -CARACTERISTICAS-
+
 Linked image with alternative text	  VECES ENCONTRADO: 72
 Form label	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 2
@@ -32,6 +35,7 @@ Null or empty alternative text	  VECES ENCONTRADO: 15
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 35
 
 

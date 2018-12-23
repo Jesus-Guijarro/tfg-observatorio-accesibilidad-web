@@ -2,6 +2,7 @@ REPORTE PÁGINA WEB: https://www.endesaclientes.com/hogares/atencion-cliente.htm
 FECHA EVALUACIÓN: 2018-12-10
 
 -PROBLEMAS-
+
 Empty form label	  VECES ENCONTRADO: 1
 Empty button	  VECES ENCONTRADO: 2
 Empty link	  VECES ENCONTRADO: 1
@@ -9,6 +10,7 @@ Missing form label	  VECES ENCONTRADO: 2
 
 
 -ALERTAS-
+
 A nearby image has the same alternative text	  VECES ENCONTRADO: 5
 Unlabeled form element with title	  VECES ENCONTRADO: 1
 Possible heading	  VECES ENCONTRADO: 8
@@ -20,6 +22,7 @@ Skipped heading level	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Linked image with alternative text	  VECES ENCONTRADO: 4
 Null or empty alternative text	  VECES ENCONTRADO: 7
 Fieldset	  VECES ENCONTRADO: 1
@@ -28,6 +31,7 @@ Alternative text	  VECES ENCONTRADO: 7
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 22
 
 

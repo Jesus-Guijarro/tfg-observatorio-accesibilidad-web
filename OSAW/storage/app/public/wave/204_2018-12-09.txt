@@ -2,10 +2,12 @@ REPORTE PÁGINA WEB: https://www.uv.es/uvweb/universitat/ca/estudis-grau/admissi
 FECHA EVALUACIÓN: 2018-12-09
 
 -PROBLEMAS-
+
 Empty link	  VECES ENCONTRADO: 7
 
 
 -ALERTAS-
+
 Very small text	  VECES ENCONTRADO: 4
 Noscript element	  VECES ENCONTRADO: 5
 Accesskey	  VECES ENCONTRADO: 1
@@ -16,12 +18,14 @@ Justified text	  VECES ENCONTRADO: 6
 
 
 -CARACTERISTICAS-
+
 Alternative text	  VECES ENCONTRADO: 4
 Linked image with alternative text	  VECES ENCONTRADO: 20
 Form label	  VECES ENCONTRADO: 1
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 3
 
 

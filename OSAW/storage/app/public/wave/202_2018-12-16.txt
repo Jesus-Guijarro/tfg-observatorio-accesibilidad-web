@@ -2,6 +2,7 @@ REPORTE PÁGINA WEB: https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/mas
 FECHA EVALUACIÓN: 2018-12-16
 
 -PROBLEMAS-
+
 Empty link	  VECES ENCONTRADO: 7
 Empty heading	  VECES ENCONTRADO: 1
 Linked image missing alternative text	  VECES ENCONTRADO: 1
@@ -9,6 +10,7 @@ Missing alternative text	  VECES ENCONTRADO: 3
 
 
 -ALERTAS-
+
 Noscript element	  VECES ENCONTRADO: 5
 Justified text	  VECES ENCONTRADO: 33
 Accesskey	  VECES ENCONTRADO: 1
@@ -20,6 +22,7 @@ Redundant link	  VECES ENCONTRADO: 11
 
 
 -CARACTERISTICAS-
+
 Null or empty alternative text	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 3
 Form label	  VECES ENCONTRADO: 1
@@ -27,6 +30,7 @@ Linked image with alternative text	  VECES ENCONTRADO: 23
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 11
 
 

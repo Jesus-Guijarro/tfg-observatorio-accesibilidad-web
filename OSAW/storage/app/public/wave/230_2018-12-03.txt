@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: http://www.aemet.es/es/conocenos/congresos_y_conferencias/c
 FECHA EVALUACIÓN: 2018-12-03
 
 -PROBLEMAS-
+
 Empty link	  VECES ENCONTRADO: 2
 Empty form label	  VECES ENCONTRADO: 2
 
 
 -ALERTAS-
+
 Long alternative text	  VECES ENCONTRADO: 1
 Accesskey	  VECES ENCONTRADO: 8
 Redundant title text	  VECES ENCONTRADO: 24
@@ -16,6 +18,7 @@ Very small text	  VECES ENCONTRADO: 6
 
 
 -CARACTERISTICAS-
+
 Element language	  VECES ENCONTRADO: 14
 Linked image with alternative text	  VECES ENCONTRADO: 25
 Form label	  VECES ENCONTRADO: 2
@@ -23,6 +26,7 @@ Alternative text	  VECES ENCONTRADO: 2
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 15
 
 

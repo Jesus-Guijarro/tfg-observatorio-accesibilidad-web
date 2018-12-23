@@ -15,7 +15,7 @@ from time import time
 #Obtenemos los datos a guardar en el reporte
 def getDatos(categoria,datos,reporte):
     try:
-        reporte.write(categoria+"\n")
+        reporte.write(categoria+"\n\n")
         valores = datos.values()
         for v in valores:
             reporte.write(str(v["description"]) +"\t  VECES ENCONTRADO: "+ str(v["count"])+"\n")

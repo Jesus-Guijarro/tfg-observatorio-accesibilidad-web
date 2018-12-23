@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/cultura-mecd/areas-cultur
 FECHA EVALUACIÓN: 2018-12-14
 
 -PROBLEMAS-
+
 Empty link	  VECES ENCONTRADO: 2
 Empty button	  VECES ENCONTRADO: 4
 
 
 -ALERTAS-
+
 Redundant link	  VECES ENCONTRADO: 4
 Justified text	  VECES ENCONTRADO: 15
 Broken same-page link	  VECES ENCONTRADO: 10
@@ -18,6 +20,7 @@ Redundant alternative text	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
 Fieldset	  VECES ENCONTRADO: 1
 Element language	  VECES ENCONTRADO: 6
@@ -28,6 +31,7 @@ Null or empty alternative text	  VECES ENCONTRADO: 4
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 1
 
 

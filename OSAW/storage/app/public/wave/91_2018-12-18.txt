@@ -2,6 +2,7 @@ REPORTE PÁGINA WEB: https://www.iberdrola.es
 FECHA EVALUACIÓN: 2018-12-18
 
 -PROBLEMAS-
+
 Spacer image missing alternative text	  VECES ENCONTRADO: 5
 Linked image missing alternative text	  VECES ENCONTRADO: 6
 Empty heading	  VECES ENCONTRADO: 1
@@ -9,6 +10,7 @@ Empty link	  VECES ENCONTRADO: 6
 
 
 -ALERTAS-
+
 Redundant link	  VECES ENCONTRADO: 8
 Underlined text	  VECES ENCONTRADO: 6
 Redundant title text	  VECES ENCONTRADO: 14
@@ -19,6 +21,7 @@ Orphaned form label	  VECES ENCONTRADO: 9
 
 
 -CARACTERISTICAS-
+
 Alternative text	  VECES ENCONTRADO: 24
 Form label	  VECES ENCONTRADO: 2
 Linked image with alternative text	  VECES ENCONTRADO: 12
@@ -27,6 +30,7 @@ Null or empty alternative text	  VECES ENCONTRADO: 21
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 21
 
 

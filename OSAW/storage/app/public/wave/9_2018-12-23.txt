@@ -2,7 +2,9 @@ REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/activida
 FECHA EVALUACIÓN: 2018-12-23
 
 -PROBLEMAS-
+
 -ALERTAS-
+
 Accesskey	  VECES ENCONTRADO: 9
 Device dependent event handler	  VECES ENCONTRADO: 1
 Fieldset missing legend	  VECES ENCONTRADO: 1
@@ -11,6 +13,7 @@ Unlabeled form element with title	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Linked image with alternative text	  VECES ENCONTRADO: 3
 Alternative text	  VECES ENCONTRADO: 1
 Fieldset	  VECES ENCONTRADO: 1
@@ -19,6 +22,7 @@ Element language	  VECES ENCONTRADO: 5
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 13
 
 

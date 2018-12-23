@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/home.nsf/(Portadas1)/$f
 FECHA EVALUACIÓN: 2018-12-19
 
 -PROBLEMAS-
+
 Empty heading	  VECES ENCONTRADO: 8
 Empty link	  VECES ENCONTRADO: 1
 
 
 -ALERTAS-
+
 Redundant alternative text	  VECES ENCONTRADO: 4
 Justified text	  VECES ENCONTRADO: 9
 Redundant link	  VECES ENCONTRADO: 21
@@ -16,6 +18,7 @@ Noscript element	  VECES ENCONTRADO: 2
 
 
 -CARACTERISTICAS-
+
 Element language	  VECES ENCONTRADO: 3
 Alternative text	  VECES ENCONTRADO: 23
 Linked image with alternative text	  VECES ENCONTRADO: 35
@@ -24,6 +27,7 @@ Form label	  VECES ENCONTRADO: 1
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 1
 
 

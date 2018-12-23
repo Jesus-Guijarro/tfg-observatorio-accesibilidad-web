@@ -2,7 +2,9 @@ REPORTE PÁGINA WEB: https://www.aemps.gob.es/eu/home.htm
 FECHA EVALUACIÓN: 2018-12-16
 
 -PROBLEMAS-
+
 -ALERTAS-
+
 Link to PDF document	  VECES ENCONTRADO: 5
 Redundant link	  VECES ENCONTRADO: 2
 Long alternative text	  VECES ENCONTRADO: 2
@@ -10,6 +12,7 @@ Justified text	  VECES ENCONTRADO: 28
 
 
 -CARACTERISTICAS-
+
 Form label	  VECES ENCONTRADO: 1
 Element language	  VECES ENCONTRADO: 6
 Null or empty alternative text on spacer	  VECES ENCONTRADO: 5
@@ -18,6 +21,7 @@ Null or empty alternative text	  VECES ENCONTRADO: 11
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 18
 
 

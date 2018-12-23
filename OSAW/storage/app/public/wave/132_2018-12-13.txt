@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: http://www.ciencia.gob.es/portal/site/MICINN/menuitem.8d788
 FECHA EVALUACIÓN: 2018-12-13
 
 -PROBLEMAS-
+
 Missing alternative text	  VECES ENCONTRADO: 1
 Empty link	  VECES ENCONTRADO: 2
 
 
 -ALERTAS-
+
 Link to PDF document	  VECES ENCONTRADO: 1
 Justified text	  VECES ENCONTRADO: 27
 Broken same-page link	  VECES ENCONTRADO: 1
@@ -16,6 +18,7 @@ Long alternative text	  VECES ENCONTRADO: 2
 
 
 -CARACTERISTICAS-
+
 Image button with alternative text	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 5
 Linked image with alternative text	  VECES ENCONTRADO: 19
@@ -24,6 +27,7 @@ Element language	  VECES ENCONTRADO: 5
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 20
 
 

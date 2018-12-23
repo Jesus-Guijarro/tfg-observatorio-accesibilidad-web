@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/cultura-mecd/
 FECHA EVALUACIÓN: 2018-12-21
 
 -PROBLEMAS-
+
 Empty link	  VECES ENCONTRADO: 6
 Empty button	  VECES ENCONTRADO: 4
 
 
 -ALERTAS-
+
 Redundant title text	  VECES ENCONTRADO: 1
 Justified text	  VECES ENCONTRADO: 2
 Link to PDF document	  VECES ENCONTRADO: 2
@@ -16,6 +18,7 @@ Redundant link	  VECES ENCONTRADO: 10
 
 
 -CARACTERISTICAS-
+
 Fieldset	  VECES ENCONTRADO: 1
 Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
 Form label	  VECES ENCONTRADO: 1
@@ -26,6 +29,7 @@ Element language	  VECES ENCONTRADO: 6
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 1
 
 

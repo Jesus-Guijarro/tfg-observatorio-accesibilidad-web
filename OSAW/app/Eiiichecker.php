@@ -40,7 +40,7 @@ class Eiiichecker extends Model
 
         $eiiicheckers = Eiiichecker::join('paginas','eiiicheckers.pagina_id','=','paginas.id')->
         where('paginas.id',$pagina_id)->select('datos_problemas','fecha_test')->
-        orderBy('fecha_test','asc')->paginate(10);
+        orderBy('fecha_test','desc')->paginate(10);
 
         return $eiiicheckers;
     }

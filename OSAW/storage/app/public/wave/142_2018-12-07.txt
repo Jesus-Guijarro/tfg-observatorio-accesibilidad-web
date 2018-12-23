@@ -2,7 +2,9 @@ REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/comunes/aviso-legal.html
 FECHA EVALUACIÓN: 2018-12-07
 
 -PROBLEMAS-
+
 -ALERTAS-
+
 Suspicious link text	  VECES ENCONTRADO: 1
 Unlabeled form element with title	  VECES ENCONTRADO: 2
 Redundant title text	  VECES ENCONTRADO: 2
@@ -11,6 +13,7 @@ Device dependent event handler	  VECES ENCONTRADO: 2
 
 
 -CARACTERISTICAS-
+
 Fieldset	  VECES ENCONTRADO: 1
 Linked image with alternative text	  VECES ENCONTRADO: 2
 Form label	  VECES ENCONTRADO: 1
@@ -19,6 +22,7 @@ Null or empty alternative text	  VECES ENCONTRADO: 1
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 8
 
 

@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: https://www.iberdrola.es/informacion/alta-nuevo-suministro-
 FECHA EVALUACIÓN: 2018-12-18
 
 -PROBLEMAS-
+
 Linked image missing alternative text	  VECES ENCONTRADO: 6
 Empty link	  VECES ENCONTRADO: 4
 
 
 -ALERTAS-
+
 Redundant link	  VECES ENCONTRADO: 10
 Redundant alternative text	  VECES ENCONTRADO: 7
 Possible heading	  VECES ENCONTRADO: 1
@@ -19,6 +21,7 @@ Underlined text	  VECES ENCONTRADO: 6
 
 
 -CARACTERISTICAS-
+
 Element language	  VECES ENCONTRADO: 3
 Alternative text	  VECES ENCONTRADO: 4
 Linked image with alternative text	  VECES ENCONTRADO: 13
@@ -27,6 +30,7 @@ Form label	  VECES ENCONTRADO: 2
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 15
 
 

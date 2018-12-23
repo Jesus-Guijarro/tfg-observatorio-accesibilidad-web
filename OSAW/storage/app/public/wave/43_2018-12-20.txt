@@ -2,7 +2,9 @@ REPORTE PÁGINA WEB: http://www.renfe.com/viajeros/atendo/index.html
 FECHA EVALUACIÓN: 2018-12-20
 
 -PROBLEMAS-
+
 -ALERTAS-
+
 Noscript element	  VECES ENCONTRADO: 2
 Redundant title text	  VECES ENCONTRADO: 12
 Link to PDF document	  VECES ENCONTRADO: 1
@@ -10,6 +12,7 @@ Redundant link	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Form label	  VECES ENCONTRADO: 1
 Null or empty alternative text	  VECES ENCONTRADO: 4
 Image button with alternative text	  VECES ENCONTRADO: 1
@@ -18,6 +21,7 @@ Fieldset	  VECES ENCONTRADO: 1
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 27
 
 

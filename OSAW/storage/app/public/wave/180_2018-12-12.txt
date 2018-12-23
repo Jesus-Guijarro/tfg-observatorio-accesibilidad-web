@@ -2,10 +2,12 @@ REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/agenda_accesible.nsf/Ag
 FECHA EVALUACIÓN: 2018-12-12
 
 -PROBLEMAS-
+
 Empty heading	  VECES ENCONTRADO: 1
 
 
 -ALERTAS-
+
 Redundant title text	  VECES ENCONTRADO: 31
 Noscript element	  VECES ENCONTRADO: 1
 Redundant alternative text	  VECES ENCONTRADO: 3
@@ -13,6 +15,7 @@ Broken same-page link	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Linked image with alternative text	  VECES ENCONTRADO: 6
 Long description	  VECES ENCONTRADO: 1
 Element language	  VECES ENCONTRADO: 1
@@ -20,6 +23,7 @@ Alternative text	  VECES ENCONTRADO: 4
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 3
 
 

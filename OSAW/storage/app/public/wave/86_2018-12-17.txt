@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/dar-lectur
 FECHA EVALUACIÓN: 2018-12-17
 
 -PROBLEMAS-
+
 Missing alternative text	  VECES ENCONTRADO: 1
 Missing form label	  VECES ENCONTRADO: 2
 
 
 -ALERTAS-
+
 Very small text	  VECES ENCONTRADO: 6
 Redundant title text	  VECES ENCONTRADO: 20
 Noscript element	  VECES ENCONTRADO: 1
@@ -17,6 +19,7 @@ Possible heading	  VECES ENCONTRADO: 5
 
 
 -CARACTERISTICAS-
+
 Null or empty alternative text	  VECES ENCONTRADO: 9
 Alternative text	  VECES ENCONTRADO: 8
 Form label	  VECES ENCONTRADO: 6
@@ -25,6 +28,7 @@ Fieldset	  VECES ENCONTRADO: 1
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 17
 
 

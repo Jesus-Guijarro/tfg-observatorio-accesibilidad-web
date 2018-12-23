@@ -8,7 +8,7 @@
 
 <hr>
 <div class="container">
-    <div class="col-md-10">
+    <div class="col-md-11">
 
       <p><strong>Reporte: </strong><a href="/storage{{$reporte}}" download="{{$reporte}}">{{$reporte}}</a></p>
 

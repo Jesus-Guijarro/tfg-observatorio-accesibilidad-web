@@ -2,6 +2,7 @@ REPORTE PÁGINA WEB: http://www.aemet.es/ca/portada
 FECHA EVALUACIÓN: 2018-12-03
 
 -PROBLEMAS-
+
 Linked image missing alternative text	  VECES ENCONTRADO: 1
 Missing form label	  VECES ENCONTRADO: 1
 Missing alternative text	  VECES ENCONTRADO: 1
@@ -9,6 +10,7 @@ Empty form label	  VECES ENCONTRADO: 2
 
 
 -ALERTAS-
+
 Redundant alternative text	  VECES ENCONTRADO: 19
 Audio/Video	  VECES ENCONTRADO: 1
 Accesskey	  VECES ENCONTRADO: 8
@@ -26,6 +28,7 @@ Missing fieldset	  VECES ENCONTRADO: 2
 
 
 -CARACTERISTICAS-
+
 Alternative text	  VECES ENCONTRADO: 3
 Element language	  VECES ENCONTRADO: 14
 Linked image with alternative text	  VECES ENCONTRADO: 76
@@ -33,6 +36,7 @@ Form label	  VECES ENCONTRADO: 6
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 41
 
 

@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: https://www.iberdrola.es/informacion/instalacion-electricid
 FECHA EVALUACIÓN: 2018-12-18
 
 -PROBLEMAS-
+
 Linked image missing alternative text	  VECES ENCONTRADO: 6
 Empty link	  VECES ENCONTRADO: 7
 
 
 -ALERTAS-
+
 Redundant title text	  VECES ENCONTRADO: 16
 Possible heading	  VECES ENCONTRADO: 1
 Redundant alternative text	  VECES ENCONTRADO: 43
@@ -20,6 +22,7 @@ Link to PDF document	  VECES ENCONTRADO: 2
 
 
 -CARACTERISTICAS-
+
 Alternative text	  VECES ENCONTRADO: 4
 Element language	  VECES ENCONTRADO: 3
 Form label	  VECES ENCONTRADO: 2
@@ -28,6 +31,7 @@ Linked image with alternative text	  VECES ENCONTRADO: 25
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 18
 
 

@@ -2,7 +2,9 @@ REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion
 FECHA EVALUACIÓN: 2018-12-23
 
 -PROBLEMAS-
+
 -ALERTAS-
+
 Underlined text	  VECES ENCONTRADO: 2
 Fieldset missing legend	  VECES ENCONTRADO: 1
 Long alternative text	  VECES ENCONTRADO: 1
@@ -14,6 +16,7 @@ Unlabeled form element with title	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Element language	  VECES ENCONTRADO: 7
 Fieldset	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 2
@@ -22,6 +25,7 @@ Linked image with alternative text	  VECES ENCONTRADO: 2
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 14
 
 

@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/ver-factur
 FECHA EVALUACIÓN: 2018-12-10
 
 -PROBLEMAS-
+
 Missing form label	  VECES ENCONTRADO: 1
 Empty heading	  VECES ENCONTRADO: 1
 
 
 -ALERTAS-
+
 Fieldset missing legend	  VECES ENCONTRADO: 7
 A nearby image has the same alternative text	  VECES ENCONTRADO: 5
 Redundant title text	  VECES ENCONTRADO: 20
@@ -16,6 +18,7 @@ Possible heading	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Fieldset	  VECES ENCONTRADO: 1
 Null or empty alternative text	  VECES ENCONTRADO: 9
 Form label	  VECES ENCONTRADO: 7
@@ -24,6 +27,7 @@ Linked image with alternative text	  VECES ENCONTRADO: 2
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 17
 
 

@@ -2,11 +2,13 @@ REPORTE PÁGINA WEB: https://web.ua.es/es/estudia-en-la-ua.html
 FECHA EVALUACIÓN: 2018-12-23
 
 -PROBLEMAS-
+
 Empty link	  VECES ENCONTRADO: 42
 Missing alternative text	  VECES ENCONTRADO: 9
 
 
 -ALERTAS-
+
 Redundant link	  VECES ENCONTRADO: 8
 Missing fieldset	  VECES ENCONTRADO: 2
 Broken same-page link	  VECES ENCONTRADO: 2
@@ -17,6 +19,7 @@ Possible heading	  VECES ENCONTRADO: 5
 
 
 -CARACTERISTICAS-
+
 Null or empty alternative text	  VECES ENCONTRADO: 19
 Form label	  VECES ENCONTRADO: 12
 Linked image with alternative text	  VECES ENCONTRADO: 12
@@ -24,6 +27,7 @@ Alternative text	  VECES ENCONTRADO: 7
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 49
 
 

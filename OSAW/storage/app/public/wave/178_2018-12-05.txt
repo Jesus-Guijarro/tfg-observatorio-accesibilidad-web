@@ -2,10 +2,12 @@ REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/OMIDC.nsf/vDocumentosTi
 FECHA EVALUACIÓN: 2018-12-05
 
 -PROBLEMAS-
+
 Empty heading	  VECES ENCONTRADO: 4
 
 
 -ALERTAS-
+
 Redundant title text	  VECES ENCONTRADO: 87
 Redundant alternative text	  VECES ENCONTRADO: 3
 Noscript element	  VECES ENCONTRADO: 1
@@ -14,9 +16,11 @@ Broken same-page link	  VECES ENCONTRADO: 1
 
 
 -CARACTERISTICAS-
+
 Element language	  VECES ENCONTRADO: 1
 Alternative text	  VECES ENCONTRADO: 3
 Linked image with alternative text	  VECES ENCONTRADO: 7
 
 
 -PROBLEMAS DE CONTRASTE-
+

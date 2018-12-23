@@ -2,7 +2,9 @@ REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion
 FECHA EVALUACIÓN: 2018-12-16
 
 -PROBLEMAS-
+
 -ALERTAS-
+
 Link to PDF document	  VECES ENCONTRADO: 2
 Accesskey	  VECES ENCONTRADO: 9
 Device dependent event handler	  VECES ENCONTRADO: 1
@@ -12,6 +14,7 @@ Underlined text	  VECES ENCONTRADO: 2
 
 
 -CARACTERISTICAS-
+
 Element language	  VECES ENCONTRADO: 7
 Form label	  VECES ENCONTRADO: 7
 Alternative text	  VECES ENCONTRADO: 2
@@ -20,6 +23,7 @@ Fieldset	  VECES ENCONTRADO: 1
 
 
 -PROBLEMAS DE CONTRASTE-
+
 Very Low Contrast	  VECES ENCONTRADO: 14
 
 
