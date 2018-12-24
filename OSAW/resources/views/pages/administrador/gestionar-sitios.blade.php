@@ -13,7 +13,7 @@
         <div class="col-md-8">
             <div style="margin-bottom: 1.5em">
                 <div class="row justify-content-center">
-                    <a class="btn btn-primary" href="/crear-sitio" role="button">Añadir nuevo sitio web</a>
+                    <a  href="/crear-sitio">Añadir nuevo sitio web</a>
                 </div>
             </div>
 
@@ -55,5 +55,6 @@
     </div>
 </div>
     
+<a href="/perfil/{{Auth::user()->id}}">Volver a perfil de administrador</a></td>  
 
 @endsection

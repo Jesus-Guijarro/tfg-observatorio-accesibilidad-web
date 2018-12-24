@@ -17,25 +17,25 @@
             <img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}" style="border-style: groove;">
 
             @if(Auth::user()->rol_id===1)
-            <p style="color:#0066cc"><strong>ROL COLABORADOR</strong></p>
+            <p style="color:#ff9933"><strong>COLABORADOR</strong></p>
 
             @elseif(Auth::user()->rol_id===2)
-            <p style="color:#ff9933"><strong>ROL EXPERTO</strong></p>
+            <p style="color:#006600"><strong>EXPERTO</strong></p>
 
             @elseif(Auth::user()->rol_id===3)
-            <p style="color:#33cc33"><strong>ROL ADMINISTRADOR</strong></p>
+            <p style="color:#0066cc"><strong>ADMINISTRADOR</strong></p>
 
             @endif
 
             <p><strong> Nombre de usuario:  </strong> {{$usuario->nombre}} </p>
             <p><strong> Correo electrónico: </strong> {{$usuario->email}}</p>
-            <p><strong>Biografía:</strong><p> <textarea cols="50" rows="10" readonly> {{$usuario->biografia}}</textarea>
+            <p><strong>Biografía:</strong><p> <textarea cols="35" rows="7" readonly> {{$usuario->biografia}}</textarea>
 
             <div style="margin-bottom: 1.5em">
-                <a class="btn btn-primary" href="/modificar-perfil/{{$usuario->id}}" role="button">Editar datos de usuario</a>
+                <a href="/modificar-perfil/{{$usuario->id}}" >Editar datos de usuario</a>
             </div>
             <div style="margin-bottom: 1.5em">
-                <a class="btn btn-primary" href="/cambiar-password/{{$usuario->id}}" role="button">Cambiar contraseña</a>
+                <a href="/cambiar-password/{{$usuario->id}}" >Cambiar contraseña</a>
             </div>
         </div>
     </div>
@@ -45,14 +45,19 @@
 
 <hr>
 
-<h2 class="h2-perfil-usuario"> Opciones de administración</h2>
+
+
 <div class="container">
     <div class="row justify-content-center">
-        <a class="btn btn-primary" href="/gestionar-sitios" role="button">Gestionar sitios web</a>
-        <a class="btn btn-primary" href="/gestionar-herramientas" role="button" style="margin-left: 5em; margin-right: 5em">Gestionar herramientas de evaluación</a>
-        <a class="btn btn-info" href="/logs" role="button">Ver logs de las evaluaciones</a>
-    </div>
-</div>
+        <div class="col-md-11">
+            <h2> Opciones de administración</h2>
+            <p><a href="/gestionar-sitios">Gestionar sitios web</a></p>
+            <p><a href="/gestionar-herramientas" >Gestionar herramientas de evaluación</a></p>
+            <p><a href="/logs">Ver logs de las evaluaciones</a></p>
+        </div> 
+    </div> 
+</div>   
+
 
 
 @endif

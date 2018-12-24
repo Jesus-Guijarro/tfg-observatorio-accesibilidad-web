@@ -14,6 +14,28 @@
     </div>
 @endif
 
+<div class="row justify-content-center">
+    <div style="margin-bottom: 1.5em">
+        <div class="card">
+            <div class="card-body">
+                <form method="POST" action="<?php action('PaginaController@crearPagina', [$sitio_id])?>">
+                {{ csrf_field() }}
+                        <label for="url">Añadir nueva página web al sitio:  </label>
+                        <input type="text" id ="url" name="url" required autofocus>
+                        @if ($errors->has('url'))
+                            <span>
+                                <strong class="strong-val">{{ $errors->first('url') }}</strong>
+                            </span>
+                        @endif
+                        <button type="submit" class="btn btn-primary">
+                            Añadir
+                        </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 @if( count($paginas) !== 0)
 <div class="container">
     <div class="row justify-content-center">
@@ -31,7 +53,7 @@
                             <tr>
                                 <td>{{$pagina->URL}}</td>
                                 <td > <a href="/modificar-pagina/{{$pagina->id}}">Modificar Página</a></td>  
-                                <td > <a href="/eliminar-pagina/{{$pagina->id}}">Eliminar Página</a></td>  
+                                <td > <a class="btn btn-danger" href="/eliminar-pagina/{{$pagina->id}}" role="button">Eliminar Página</a></td>  
                             </tr>
                         @endforeach
                         </tbody>
@@ -43,28 +65,6 @@
                     <p style="text-align: center"> El sitio web no tiene ninguna página web asignada.</p>
                     @endif
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row justify-content-center">
-    <div style="margin-bottom: 1.5em">
-        <div class="card">
-            <div class="card-body">
-                <form method="POST" action="<?php action('PaginaController@crearPagina', [$sitio_id])?>">
-                {{ csrf_field() }}
-                        <label for="url">Nueva página web:  </label>
-                        <input type="text" id ="url" name="url" required autofocus>
-                        @if ($errors->has('url'))
-                            <span>
-                                <strong class="strong-val">{{ $errors->first('url') }}</strong>
-                            </span>
-                        @endif
-                        <button type="submit" class="btn btn-primary">
-                            Añadir
-                        </button>
-                </form>
             </div>
         </div>
     </div>

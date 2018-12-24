@@ -9,7 +9,7 @@
 
 <div class="row justify-content-center">
     <div style="margin-bottom: 1.5em">
-        <a class="btn btn-primary" href="/crear-herramienta" role="button">Añadir nueva herramienta web</a>
+        <a href="/crear-herramienta">Añadir nueva herramienta web</a>
     </div>
 </div>
 
@@ -40,13 +40,13 @@
                     <?php 
                         $url = action('HerramientaController@desactivarHerramienta',$herramienta->id);  
                     ?>
-                <td><a href="{{$url}}">Desactivar herramienta</a></td>
+                <td><a class="btn btn-primary" href="{{$url}}" role="button">Desactivar herramienta</a></td>
             @else
                 <td>No activa</td>
                 <?php 
                         $url = action('HerramientaController@activarHerramienta',$herramienta->id);  
                 ?>
-                <td><a href="{{$url}}">Activar herramienta</a></td>
+                <td><a class="btn btn-primary" href="{{$url}}" role="button">Activar herramienta</a></td>
             @endif
                 <td> <a href="modificar-herramienta/{{$herramienta->id}}">Modificar</a></td>
         </tr>
@@ -56,5 +56,7 @@
 @else
     <p style="text-align: center"> No hay ninguna herramienta de evaluación</p>
 @endif
+
+<a href="/perfil/{{Auth::user()->id}}">Volver a perfil de administrador</a></td>  
 
 @endsection
