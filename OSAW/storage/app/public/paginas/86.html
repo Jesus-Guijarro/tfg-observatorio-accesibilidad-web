@@ -121,10 +121,10 @@
 		//});
 	</script>
 	
-<!-- USER-SEGMENTS: 1383296088906-->
+<!-- USER-SEGMENTS: 1383296089135-->
 
 
-<!-- USER-SEGMENTS-SS: 1383296088906-->
+<!-- USER-SEGMENTS-SS: 1383296089135-->
 
 
 <script type="text/javascript">
@@ -372,7 +372,7 @@ var TOUCH = '';
                     <div class="mod_cols mod_colsW100">
                         <div class="notification error">
                             <div class="eInvoice_state_head">
-                                <h5 class="textNormal bold textOrange MarginBottom05em" tabindex="0">Esta versión de  <span id="browserName" class="fc-navigatorTextalert bold"> </span> no es compatible.  </h5>
+                                <p class="textNormal bold textOrange MarginBottom05em" tabindex="0">Esta versión de  <span id="browserName" class="fc-navigatorTextalert bold"> </span> no es compatible.  </p>
                             </div>
                             <p class="textSmall typeC2 MarginTop3em MarginLeft1em">Los navegadores no compatibles, ademas de impedir que puedas usar todas las funcionalidades de la página, son más lentos y suponen un riego para tu seguridad </p>
                             <p class="textSmall typeC2 MarginLeft1em">Te recomendamos que actualices ahora la versión de tu navegador o que accedas con otro  <a class="semiBold linkStyle" href="#" onclick="openNewWindow('Sites_IB_ES');" title="navegador compatible ">navegador compatible .</a></p>
@@ -432,14 +432,16 @@ var TOUCH = '';
 					return new Foundation.Reveal($(elem));
 				};
 				
-						var md_curr_window = init_FoundationModal("#modalWindow_1544950893617[data-reveal]", undefined, false);
+						var md_curr_window = init_FoundationModal("#modalWindow_1545445199976[data-reveal]", undefined, false);
 					
 			</script>
 		
   <div id="modulo-segmentador" data-module-segment="" style="display: none;">
     <div class="seg-container">
-      <div class="left-site op-body-copy-tiny">Hogares y Negocios </div>
-      <div class="right-site"><a href="#" class="right-site-link op-body-copy-tiny" data-open="modalWindow_1544950893617">¿Eres una empresa? </a></div>
+      
+            <div class="left-site op-body-copy-tiny">Hogares y Negocios </div>
+            <div class="right-site"><a href="#" class="right-site-link op-body-copy-tiny" data-open="modalWindow_1545445199976">¿Eres una empresa? </a></div>
+          
     </div>
     
     <div class="op-segment__lang show-for-large-only">
@@ -518,34 +520,13 @@ var TOUCH = '';
     $('div.mod_right').find('a').addClass('fCookie');
     $('footer.mod_footer').find('a').addClass('fCookie');
   </script>
-  <style>
-    .openpower .op-header__link-separator{
-      font-family: "UniversLT";
-      font-size: 15px;
-
-      display: block;
-
-      text-transform: none;
-      cursor: auto;
-      padding: .5rem 1.65rem;
-    }
-
-    .openpower .op-header__link-separator:hover, .openpower .op-header__link-separator:focus{
-      outline: none;
-    }
-
-    .openpower .op-faldon__bg--white .op-header__link {
-      color: black;
-    }
-  </style>
 
   <link rel="stylesheet" href="/static/iberia/open-power/css/Estilos-Extra-OpenPower.css" />
 
   
   <nav class="show-for-large op-header__drop">
-    <ul class="dropdown menu op-header__link-list op-reset op-header__drop" data-dropdown-menu="2a8j7f-dropdown-menu" data-close-on-click="false" data-closing-time="50" role="menubar">
-
-      <li class="op-header__drop op-header__link-container op-header__link-container--border is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="&#10;                  Contratar&#10;                ">
+    <ul class="dropdown menu op-header__link-list op-reset op-header__drop" data-dropdown-menu="q0i99e-dropdown-menu" data-close-on-click="false" data-closing-time="50" role="menubar">
+        <li class="op-header__drop op-header__link-container op-header__link-container--border is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="&#10;                  Contratar&#10;                ">
                 <a class="op-header__link op-header__link--small op-reset id_1383140687140" href="#" title="Contratar">
                   Contratar
                 </a>
@@ -557,12 +538,21 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Luz</p>
 						
-    									<a class="op-drop__item-link" href="/catalogo/luz.html" title="" target="_self" onclick="">Catálogo de tarifas</a>
-								
-    									<a class="op-drop__item-link" href="/catalogo-one" title="" target="_self" onclick="">Tarifas One</a>
-								
-    									<a class="op-drop__item-link" href="/catalogo/tarifas-tempo.html" title="" target="_self" onclick="">Tarifas Tempo</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/catalogo/luz.html" title="" target="_self" onclick="">Catálogo de tarifas</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/catalogo-one" title="" target="_self" onclick="">Tarifas One</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/catalogo/tarifas-tempo.html" title="" target="_self" onclick="">Tarifas Tempo</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1500547391785 -->
@@ -570,8 +560,13 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Tarifa One Gas</p>
 						
-    									<a class="op-drop__item-link" href="/catalogo/gas.html" title="" target="_self" onclick="">Tarifas One</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/catalogo/gas.html" title="" target="_self" onclick="">Tarifas One</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1383138926187 -->
@@ -579,8 +574,13 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Luz+Gas</p>
 						
-    									<a class="op-drop__item-link" href="/tarifa-one-luz-gas.html" title="" target="_self" onclick="">Tarifa One Luz+Gas</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/tarifa-one-luz-gas.html" title="" target="_self" onclick="">Tarifa One Luz+Gas</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1500547392638 -->
@@ -588,14 +588,25 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Otros Productos</p>
 						
-    									<a class="op-drop__item-link" href="/hogares/mantenimiento.html" title="" target="_self" onclick="">Mantenimiento</a>
-								
-    									<a class="op-drop__item-link" href="/catalogo/calefaccion.html" title="" target="_self" onclick="">Calefacción</a>
-								
-    									<a class="op-drop__item-link" href="/catalogo/aire-acondicionado.html" title="" target="_self" onclick="">Aire acondicionado</a>
-								
-    									<a class="op-drop__item-link" href="/negocios/te-asesoramos/eficiencia-energetica-diagnostico-online.html" title="" target="_self" onclick="">Diagnóstico Energético</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/hogares/mantenimiento.html" title="" target="_self" onclick="">Mantenimiento</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/catalogo/calefaccion.html" title="" target="_self" onclick="">Calefacción</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/catalogo/aire-acondicionado.html" title="" target="_self" onclick="">Aire acondicionado</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/negocios/te-asesoramos/eficiencia-energetica-diagnostico-online.html" title="" target="_self" onclick="">Diagnóstico Energético</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1399997855221 -->
@@ -622,16 +633,29 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Facturas y lecturas</p>
 						
-    									<a class="op-drop__item-link" href="/facturas-lecturas" title="" target="_self" onclick="">Facturas y lecturas</a>
-								
-    									<a class="op-drop__item-link" href="/facturas-lecturas/ver-factura" title="" target="_self" onclick="">Cómo ver tu factura</a>
-								
-    									<a class="op-drop__item-link" href="/facturas-lecturas/pagar-facturas" title="" target="_self" onclick="">Pagar tu factura</a>
-								
-    									<a class="op-drop__item-link" href="/explicacion-factura.html" title="" target="_self" onclick="">Cómo entender tu factura</a>
-								
-    									<a class="op-drop__item-link" href="/factura-electronica.html" title="" target="_self" onclick="">Activa tu factura digital</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/facturas-lecturas" title="" target="_self" onclick="">Facturas y lecturas</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/facturas-lecturas/ver-factura" title="" target="_self" onclick="">Cómo ver tu factura</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/facturas-lecturas/pagar-facturas" title="" target="_self" onclick="">Pagar tu factura</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/explicacion-factura.html" title="" target="_self" onclick="">Cómo entender tu factura</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/factura-electronica.html" title="" target="_self" onclick="">Activa tu factura digital</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1383384155818 -->
@@ -639,16 +663,29 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Gestiones y contratos</p>
 						
-    									<a class="op-drop__item-link" href="/gestiones-contratos" title="" target="_self" onclick="">Gestiones con tus contratos</a>
-								
-    									<a class="op-drop__item-link" href="/como-cambiar-comercializadora-luz-gas" title="" target="_self" onclick="">Cambiar de comercializadora</a>
-								
-    									<a class="op-drop__item-link" href="/gestiones-contratos/cambiar-titular" title="" target="_self" onclick="">Cambiar titular</a>
-								
-    									<a class="op-drop__item-link" href="/como-dar-alta-luz-gas" title="" target="_self" onclick="">Dar de alta luz y gas</a>
-								
-    									<a class="op-drop__item-link" href="/gestiones-contratos/cambiar-potencia" title="" target="_self" onclick="">Cambiar la potencia contratada</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/gestiones-contratos" title="" target="_self" onclick="">Gestiones con tus contratos</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/como-cambiar-comercializadora-luz-gas" title="" target="_self" onclick="">Cambiar de comercializadora</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/gestiones-contratos/cambiar-titular" title="" target="_self" onclick="">Cambiar titular</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/como-dar-alta-luz-gas" title="" target="_self" onclick="">Dar de alta luz y gas</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/gestiones-contratos/cambiar-potencia" title="" target="_self" onclick="">Cambiar la potencia contratada</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1500547393053 -->
@@ -656,10 +693,17 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Multimedia</p>
 						
-    									<a class="op-drop__item-link" href="/videos" title="" target="_self" onclick="">Videos</a>
-								
-    									<a class="op-drop__item-link" href="/alexa-endesa" title="" target="_self" onclick="">Asistente por voz Alexa</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/videos" title="" target="_self" onclick="">Videos</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/alexa-endesa" title="" target="_self" onclick="">Asistente por voz Alexa</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1383140640383 -->
@@ -667,8 +711,13 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Bono Social</p>
 						
-    									<a class="op-drop__item-link" href="/bono-social.html" title="" target="_self" onclick="">Bono Social</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/bono-social.html" title="" target="_self" onclick="">Bono Social</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1383141903696 -->
@@ -699,8 +748,13 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Blogavatios</p>
 						
-    									<a class="op-drop__item-link" href="/blog" title="" target="_self" onclick="">Blogavatios</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/blog" title="" target="_self" onclick="">Blogavatios</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1399993044323 -->
@@ -708,12 +762,21 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">El mercado energético</p>
 						
-    									<a class="op-drop__item-link" href="/mercado-libre-mercado-regulado-pvpc" title="" target="_self" onclick="">Mercado libre y regulado</a>
-								
-    									<a class="op-drop__item-link" href="/tarifas-acceso-electricidad" title="" target="_self" onclick="">Tarifas de acceso de la luz</a>
-								
-    									<a class="op-drop__item-link" href="/tarifas-acceso-gas-natural" title="" target="_self" onclick="">Tarifas de acceso del gas</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/mercado-libre-mercado-regulado-pvpc" title="" target="_self" onclick="">Mercado libre y regulado</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/tarifas-acceso-electricidad" title="" target="_self" onclick="">Tarifas de acceso de la luz</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/tarifas-acceso-gas-natural" title="" target="_self" onclick="">Tarifas de acceso del gas</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1399986980791 -->
@@ -721,12 +784,21 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">Tarifa regulada (PVPC)</p>
 						
-    									<a class="op-drop__item-link" href="/pvpc-precio-voluntario-pequeno-consumidor.html" title="" target="_self" onclick="">Qué es la tarifa regulada</a>
-								
-    									<a class="op-drop__item-link" href="/facturacion-horas-pvpc.html" title="" target="_self" onclick="">Facturación por horas PVPC</a>
-								
-    									<a class="op-drop__item-link" href="/curva-horaria/como-consultar-consumo-luz.html" title="" target="_self" onclick="">Cómo consultar tus consumos</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/pvpc-precio-voluntario-pequeno-consumidor.html" title="" target="_self" onclick="">Qué es la tarifa regulada</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/facturacion-horas-pvpc.html" title="" target="_self" onclick="">Facturación por horas PVPC</a>
+    									</li>
+									
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/curva-horaria/como-consultar-consumo-luz.html" title="" target="_self" onclick="">Cómo consultar tus consumos</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1399986868639 -->
@@ -734,8 +806,13 @@ var TOUCH = '';
                     <li class="op-drop__element is-submenu-item is-dropdown-submenu-item" role="menuitem">
 						<p class="op-drop__item-title ">El contador inteligente</p>
 						
-    									<a class="op-drop__item-link" href="/contador-inteligente.html" title="" target="_self" onclick="">El contador inteligente</a>
-								
+						<ol class="op-ul-list-reset">
+							
+										<li role="menuitem">
+    										<a class="op-drop__item-link" href="/contador-inteligente.html" title="" target="_self" onclick="">El contador inteligente</a>
+    									</li>
+									
+						</ol>
                     </li>
 				
 			<!-- ID-LVL2: 1383140600356 -->
@@ -747,14 +824,16 @@ var TOUCH = '';
 	</ul>
 
             </li>
-          <li class="op-header__link op-header__link--small op-header__separator" role="menuitem">
-            <span>|</span>
-          </li>
-          <li class="op-header__drop op-header__link-container op-header__link-container--noborder" role="menuitem">
-            <a class="op-header__link op-header__link--small op-reset" href="/hogares/atencion-cliente.html" title="Atención al cliente ">
-              Atención al cliente 
-            </a>
-          </li>
+        
+                <li class="op-header__link op-header__link--small op-header__separator" role="menuitem">
+                    <span>|</span>
+                </li>
+                <li class="op-header__drop op-header__link-container op-header__link-container--noborder" role="menuitem">
+                    <a class="op-header__link op-header__link--small op-reset" href="/hogares/atencion-cliente.html" title="Atención al cliente ">
+                    Atención al cliente 
+                    </a>
+                </li>
+            
     </ul>
 
 
@@ -775,25 +854,25 @@ var TOUCH = '';
   <!-- BOTON AREA CLIENTE-->
   
 
-
       <!-- BOTON DE ACCESO NO LOGADO -->
       <li class="op-header__link-container" data-function="fc-client-area">
-        <a class="op-header__link" href="/login.html">
+        <a class="op-header__link" href="/login.html" target="_self">
           <img src="/static/iberia/open-power/img/icon/user-icon.png" alt="Usuario " class="op-icon op-icon__white" />
           <img src="/static/iberia/open-power/img/icon/user-icon-colored.svg" alt="Usuario " class="op-icon op-icon__colored" />
           <p class="op-header-label-cliente">ÁREA CLIENTE </p>
         </a>
       </li>
     
-
-  <!-- BOTON BUSCADOR -->
-  <li class="op-header__link-container">
-    <button type="button" data-open="Buscador-1500548168432" class="op-header__link" aria-expanded="false" aria-controls="Buscador-1500548168432">
-      <img src="https://www.endesaclientes.com/static/iberia/open-power/img/icon/lupa-icon.png" alt="Buscar " class="op-icon op-icon__white" />
-      <img src="https://www.endesaclientes.com/static/iberia/open-power/img/icon/lupa-icon-colored.svg" alt="Buscar " class="op-icon op-icon__colored" />
-    </button>
-    <div id="Buscador-1500548168432" data-off-canvas="sldgr8-off-canvas" data-transition="overlap" class="op-search off-canvas position-top is-transition-overlap is-closed" aria-hidden="true">
-      
+  
+    <!-- BOTON BUSCADOR -->
+            
+                <li class="op-header__link-container">
+                    <button type="button" data-open="Buscador-1500548168432" class="op-header__link" onclick="openSearchOP();" aria-expanded="false" aria-controls="Buscador-1500548168432">
+                    <img src="https://www.endesaclientes.com/static/iberia/open-power/img/icon/lupa-icon.png" alt="Buscar " class="op-icon op-icon__white" />
+                    <img src="https://www.endesaclientes.com/static/iberia/open-power/img/icon/lupa-icon-colored.svg" alt="Buscar " class="op-icon op-icon__colored" />
+                    </button>
+                    <div id="Buscador-1500548168432" data-off-canvas="2676lz-off-canvas" data-transition="overlap" class="op-search off-canvas position-top is-transition-overlap is-closed" aria-hidden="true">
+                    
 
     <div class="title-bar-left">
       <div class="op-header__logo">
@@ -812,7 +891,7 @@ var TOUCH = '';
         <button type="submit" class="op-search__icon">
           <img src="https://www.endesaclientes.com/static/iberia/open-power/img/icon/Search-48px-w.svg" alt="Buscar " />
         </button>
-        <input id="faqsSearchTags" name="faqsSearchTags" type="search" class="op-search__input" placeholder="Escribe aquí tu pregunta... " />
+        <input id="faqsSearchTags" name="faqsSearchTags" type="search" class="op-search__input" placeholder="Escribe aquí tu pregunta... " title="Escribe aquí tu pregunta " />
       </form>
       
       <div class="op-search__link-box">
@@ -855,7 +934,7 @@ var TOUCH = '';
 
     </div>
 
-    <button class="close-button" data-close="" aria-label="Cerrar X" type="button" title="Cerrar X">
+    <button class="close-button" data-close="" aria-label="Cerrar X" type="button" title="Cerrar X" onclick="closeSearchOP()">
       <span aria-hidden="true">×</span>
     </button>
 
@@ -882,9 +961,10 @@ var TOUCH = '';
     </script>
 
 
-    </div><div class="js-off-canvas-overlay is-overlay-fixed"></div>
-    
-  </li>
+                    </div><div class="js-off-canvas-overlay is-overlay-fixed"></div>
+                    
+                </li>
+                
 
   <!-- BOTON MENU LATERAL -->
   <li class="op-header__link-container hide-for-large">
@@ -901,7 +981,7 @@ var TOUCH = '';
     $.ajax({
       type : 'POST',
       url : '/sites/Satellite?pagename=Sites_IB_ES/TP_IB_Header_OpenPower/UserLink',
-      data : '&amp;c=Page&amp;cid=1383366570702&amp;locale=1383137899042&amp;loginPageId=1383138770405',
+      data : '&amp;c=Page&amp;cid=1383366570702&amp;locale=1383137899042&amp;loginPageId=1383138770405&amp;segmentoPagina=Hogares',
       success : function(data) {
 
           //found = data.search("op-header__link-list");
@@ -921,73 +1001,72 @@ var TOUCH = '';
 </nav>
 
   </div>
-  <!-- MENU DESPLEGABLE Buscar - pte-->
-  <div id="offCanvastopOverlap" data-off-canvas="kxzf3w-off-canvas" data-transition="overlap" class="off-canvas position-top is-transition-overlap is-closed" aria-hidden="true">
-    <!-- Your menu or Off-canvas content goes here-->
-  </div><div class="js-off-canvas-overlay is-overlay-fixed"></div>
+
+    
+
   <!-- MENU DESPLEGABLE Menu Lateral - pte-->
   <!-- outputdevice :  null -->
-  <div id="LateralMenu" data-off-canvas="6z13tp-off-canvas" data-transition="overlap" data-auto-focus="false" data-content-scroll="false" class="off-canvas position-right op-lateral-menu is-transition-overlap is-closed" aria-hidden="true"><h3 class="show-for-sr">Endesa - Luz, gas, personas </h3><div class="op-lateral-menu__container" id="UserAccess_Lateral_Menu">
+  <div id="LateralMenu" data-off-canvas="j8fvwi-off-canvas" data-transition="overlap" data-auto-focus="false" data-content-scroll="false" class="off-canvas position-right op-lateral-menu is-transition-overlap is-closed" aria-hidden="true"><p class="show-for-sr">Endesa - Luz, gas, personas </p><div class="op-lateral-menu__container" id="UserAccess_Lateral_Menu">
   
   
   <nav>
-    <h3 class="show-for-sr">Menú </h3><div class="op-lateral-menu__lang">
-      <ul class="op-lateral-menu__list op-lateral-menu__lang__container"><li class="op-lateral-menu__lang__item">
+    <p class="show-for-sr">Menú </p><div class="op-lateral-menu__header">
+      <ul class="op-lateral-menu__list op-lateral-menu__header__container"><li class="op-lateral-menu__header__item">
             
-                <a class="op-lateral-menu__lang__link selected" href="/facturas-lecturas/dar-lectura" title="Español">ES</a>
+                <a class="op-lateral-menu__header__link selected" href="/facturas-lecturas/dar-lectura" title="Español">ES</a>
                 
               </li>
-      <li class="op-lateral-menu__lang__item">
+      <li class="op-lateral-menu__header__item">
             
-                <a class="op-lateral-menu__lang__link" href="/facturas-lecturas/dar-lectura-ca.html" title="Català">CAT</a>
+                <a class="op-lateral-menu__header__link" href="/facturas-lecturas/dar-lectura-ca.html" title="Català">CAT</a>
                 
               </li>
-            <li class="op-lateral-menu__lang__item">
+            <li class="op-lateral-menu__header__item">
             
-                <a class="op-lateral-menu__lang__link" href="/facturas-lecturas/dar-lectura-en.html" title="English">EN</a>
+                <a class="op-lateral-menu__header__link" href="/facturas-lecturas/dar-lectura-en.html" title="English">EN</a>
                 
               </li>
             
             <script>
         if('1383137899042' === "1383137899042"){
-          $(".op-lateral-menu__lang__link[title=Español]").addClass("selected");
+          $(".op-lateral-menu__header__link[title=Español]").addClass("selected");
         } else if('1383137899042' === "1383137902529"){
-          $(".op-lateral-menu__lang__link[title=Català]").addClass("selected");
+          $(".op-lateral-menu__header__link[title=Català]").addClass("selected");
         } else if('1383137899042' === "1383137898662"){
-          $(".op-lateral-menu__lang__link[title=English]").addClass("selected");
+          $(".op-lateral-menu__header__link[title=English]").addClass("selected");
         }
         // movemos el enlace de español al primer puesto
-        $(".op-lateral-menu__lang li&gt;a[title='Español']").parent().prependTo(".op-lateral-menu__list")
+        $(".op-lateral-menu__header li&gt;a[title='Español']").parent().prependTo("#LateralMenu .op-lateral-menu__list")
         </script>
-        <li class="op-lateral-menu__lang__item--close">
-        <button class="op-lateral-menu__lang__link" type="button" data-close="LateralMenu" aria-expanded="false" aria-controls="LateralMenu">
-          <img src="https://www.endesaclientes.com/static/iberia/open-power/img/icon/menu-close.png" class="op-icon" alt="Cerrar " />
+        <li class="op-lateral-menu__header__item--close">
+        <button class="op-lateral-menu__header__link" type="button" data-close="LateralMenu" aria-expanded="false" aria-controls="LateralMenu">
+
         </button>
         </li>
       </ul>
     </div><div class="op-lateral-menu-scroll">
-	<div class="op-lateral-menu__segment">
-		<ul class="op-lateral-menu__list__drop vertical menu accordion-menu" data-accordion-menu="4ejt53-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
+	<div class="op-lateral-menu__sections">
+		<ul class="op-lateral-menu__list__drop vertical menu accordion-menu" data-accordion-menu="nydth0-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
 			<li role="treeitem" class="is-accordion-submenu-parent has-submenu-toggle">
-				<a class="op-lateral-menu__segment__link__header chose-segment">
-							Hogares y Negocios </a><button id="2rlxdo-acc-menu-link" class="submenu-toggle" aria-controls="wjdmy0-acc-menu" aria-expanded="false" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
-				<ul class="op-lateral-menu__segment__container menu vertical nested submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="2rlxdo-acc-menu-link" aria-hidden="true" id="wjdmy0-acc-menu" style="display: none;">
-								<li class="op-lateral-menu__segment__item is-submenu-item is-accordion-submenu-item" role="treeitem">
-									<a title="Empresas " href="/empresas/" class="op-lateral-menu__segment__link save-segment">
+				<a class="op-lateral-menu__sections__link__header chose-segment">
+							Hogares y Negocios </a><button id="8oswl4-acc-menu-link" class="submenu-toggle" aria-controls="34bqqv-acc-menu" aria-expanded="false" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
+				<ul class="op-lateral-menu__sections__container menu vertical nested submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="8oswl4-acc-menu-link" aria-hidden="true" id="34bqqv-acc-menu" style="display: none;">
+								<li class="op-lateral-menu__sections__item is-submenu-item is-accordion-submenu-item" role="treeitem">
+									<a title="Empresas " href="/empresas/" class="op-lateral-menu__sections__link save-segment">
 										Empresas 
 										<span class="submenu-toggle-nav"></span>
 									</a>
 								</li>
 							
-								<li class="op-lateral-menu__segment__item is-submenu-item is-accordion-submenu-item" role="treeitem">
-									<a title="Grandes clientes " href="/grandes-clientes.html" class="op-lateral-menu__segment__link save-segment">
+								<li class="op-lateral-menu__sections__item is-submenu-item is-accordion-submenu-item" role="treeitem">
+									<a title="Grandes clientes " href="/grandes-clientes.html" class="op-lateral-menu__sections__link save-segment">
 										Grandes clientes 
 										<span class="submenu-toggle-nav"></span>
 									</a>
 								</li>
 							
-								<li class="op-lateral-menu__segment__item is-submenu-item is-accordion-submenu-item" role="treeitem">
-									<a title="Administradores de fincas " href="/administradores-fincas.html" class="op-lateral-menu__segment__link save-segment">
+								<li class="op-lateral-menu__sections__item is-submenu-item is-accordion-submenu-item" role="treeitem">
+									<a title="Administradores de fincas " href="/administradores-fincas.html" class="op-lateral-menu__sections__link save-segment">
 										Administradores de fincas 
 										<span class="submenu-toggle-nav"></span>
 									</a>
@@ -1026,12 +1105,12 @@ var TOUCH = '';
 
 
 <div class="op-lateral-menu__login" id="Login_Lateral_Menu">
-				<ul class="op-lateral-menu__list vertical menu accordion-menu" data-accordion-menu="tu7pen-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
+				<ul class="op-lateral-menu__list vertical menu accordion-menu" data-accordion-menu="42mb4u-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
 						<li role="treeitem" class="is-accordion-submenu-parent has-submenu-toggle">
 							<a href="#" title="" class="op-lateral-menu__link">
 								ÁREA CLIENTE 
-							</a><button id="f6d0wn-acc-menu-link" class="submenu-toggle" aria-controls="4qklwy-acc-menu" aria-expanded="true" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
-							<ul class="op-lateral-menu__login__content is-active submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="f6d0wn-acc-menu-link" aria-hidden="false" id="4qklwy-acc-menu" style="">
+							</a><button id="aw6fqu-acc-menu-link" class="submenu-toggle" aria-controls="l0xkht-acc-menu" aria-expanded="true" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
+							<ul class="op-lateral-menu__login__content is-active submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="aw6fqu-acc-menu-link" aria-hidden="false" id="l0xkht-acc-menu" style="">
 								<li role="treeitem" class="is-submenu-item is-accordion-submenu-item">
 									
 
@@ -1072,9 +1151,6 @@ var TOUCH = '';
 											
 												<div class="op-lateral-menu__login__social">
 													<p class="op-lateral-menu__login__social-title">Accede con tus redes sociales </p>
-													<h4 class="show-for-sr">
-															Redes Sociales 
-													</h4>
 													
 													
 													<button id="facebookLink" name="facebookLink" class="no-padding op-lateral-menu__login__social-link" type="submit" formnovalidate="">
@@ -1229,13 +1305,13 @@ $(function(){
 
     <script>console.log('nametemplate: '+'/ProductMkt/TP_Detail/Catalog/ProductDetail_Hogares')</script>
 <div class="op-lateral-menu__sections">
-  <ul class="op-lateral-menu__list vertical menu accordion-menu" data-accordion-menu="8wtc9b-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
+  <ul class="op-lateral-menu__list vertical menu accordion-menu" data-accordion-menu="iddz87-accordion-menu" data-submenu-toggle="true" role="tree" aria-multiselectable="true">
     <li role="treeitem" class="is-accordion-submenu-parent has-submenu-toggle">
-      <a class="op-lateral-menu__link">Descubre Endesa Clientes </a><button id="hw68jq-acc-menu-link" class="submenu-toggle" aria-controls="tkgj29-acc-menu" aria-expanded="false" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
+      <a class="op-lateral-menu__link">Descubre Endesa Clientes </a><button id="a32za9-acc-menu-link" class="submenu-toggle" aria-controls="k538s5-acc-menu" aria-expanded="false" title="Toggle menu"><span class="submenu-toggle-text">Toggle menu</span></button>
 
       
 
-    <ul class="op-lateral-menu__section hide-for-large-only submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="hw68jq-acc-menu-link" aria-hidden="true" id="tkgj29-acc-menu" style="display: none;">
+    <ul class="op-lateral-menu__section hide-for-large-only submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="a32za9-acc-menu-link" aria-hidden="true" id="k538s5-acc-menu" style="display: none;">
       <li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem">
         
         <a class="op-lateral-menu__section__title id_1383138063631" data-link="/hogares.html" href="/hogares.html">
@@ -1245,7 +1321,7 @@ $(function(){
     </ul>
 
     
-            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="hw68jq-acc-menu-link" aria-hidden="true" id="tkgj29-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383140687140" data-link="/hogares/productos-servicios.html" href="/hogares/productos-servicios.html">
+            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="a32za9-acc-menu-link" aria-hidden="true" id="k538s5-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383140687140" data-link="/hogares/productos-servicios.html" href="/hogares/productos-servicios.html">
                 Contratar
               </a>
                                     <a class="op-lateral-menu__section__link id_1500547442836" href="/catalogo/luz.html" title="Luz">
@@ -1266,7 +1342,7 @@ $(function(){
                                   
                   </li>
                 </ul>
-            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="hw68jq-acc-menu-link" aria-hidden="true" id="tkgj29-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383138001881" data-link="/te-asesoramos.html" href="/te-asesoramos.html">
+            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="a32za9-acc-menu-link" aria-hidden="true" id="k538s5-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383138001881" data-link="/te-asesoramos.html" href="/te-asesoramos.html">
                 Te ayudamos
               </a>
                                     <a class="op-lateral-menu__section__link id_1383366619718" href="/facturas-lecturas" title="Facturas y lecturas">
@@ -1287,7 +1363,7 @@ $(function(){
                                   
                   </li>
                 </ul>
-            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="hw68jq-acc-menu-link" aria-hidden="true" id="tkgj29-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383359364161" data-link="#" href="#">
+            <ul class="op-lateral-menu__section submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="a32za9-acc-menu-link" aria-hidden="true" id="k538s5-acc-menu" style="display: none;"><li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem"><a class="op-lateral-menu__section__title id_1383359364161" data-link="#" href="#">
                 Conoce la energía
               </a>
                                     <a class="op-lateral-menu__section__link id_1399990851114" href="/blog" title="Blogavatios">
@@ -1308,7 +1384,7 @@ $(function(){
                                   
                   </li>
                 </ul>
-<ul class="op-lateral-menu__section hide-for-large-only submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="hw68jq-acc-menu-link" aria-hidden="true" id="tkgj29-acc-menu" style="display: none;">
+<ul class="op-lateral-menu__section hide-for-large-only submenu is-accordion-submenu" data-submenu="" role="group" aria-labelledby="a32za9-acc-menu-link" aria-hidden="true" id="k538s5-acc-menu" style="display: none;">
       <li class="op-lateral-menu__section__content is-submenu-item is-accordion-submenu-item" role="treeitem">
         
         <a class="op-lateral-menu__section__title id_1383138063631" data-link="/hogares/atencion-cliente.html" href="/hogares/atencion-cliente.html">
@@ -1446,7 +1522,7 @@ console.log("[header] display assistant");
 	
 	var others = {
 
-			name0:'variant-ab:A'
+			name0:'variant-ab:B'
 
 	};//en formato json
 	
@@ -1552,7 +1628,7 @@ console.log("[header] display assistant");
 
         others = {
         		
-        		            name0:'variant-ab:A'
+        		            name0:'variant-ab:B'
         		
         		    };
         
@@ -1786,7 +1862,7 @@ console.log("[header] display assistant");
 </style>
 
 
-		</header><div class="full reveal endesa-modal_op openpower op-modal__max op-segmentador__endesa without-overlay" id="modalWindow_1544950893617" title="" aria-labelledby="modalWindowHeader_1544950893617" data-reveal="217lcf-reveal" data-animation-in="fade-in fast" data-v-offset="0" role="dialog" aria-hidden="true" data-yeti-box="modalWindow_1544950893617" data-resize="modalWindow_1544950893617">
+		</header><div class="full reveal endesa-modal_op openpower op-modal__max op-segmentador__endesa without-overlay" id="modalWindow_1545445199976" title="" aria-labelledby="modalWindowHeader_1545445199976" data-reveal="v8g72w-reveal" data-animation-in="fade-in fast" data-v-offset="0" role="dialog" aria-hidden="true" data-yeti-box="modalWindow_1545445199976" data-resize="modalWindow_1545445199976">
 				
 
   <div class="title-bar-left">
@@ -1799,10 +1875,10 @@ console.log("[header] display assistant");
     </div>
   </div>
   <div class="gen-modal--content_op op-modal__content">
-    <p id="modalWindowHeader_1544950893617" class="gen-modal--title_op op-modal__title op-modal__title--max">Elige el segmento de clientes al que perteneces </p>
+    <p id="modalWindowHeader_1545445199976" class="gen-modal--title_op op-modal__title op-modal__title--max">Elige el segmento de clientes al que perteneces </p>
     <p class="op-modal__text op-modal__text--max">Te ofrecemos distintos productos y servicios en función de si buscas soluciones para tu casa o tu empresa. </p>
 
-    <ul class="dropdown menu op-segmentador op-segmentador__item" data-dropdown-menu="oobvzx-dropdown-menu" data-segment-menu="" role="menubar">
+    <ul class="dropdown menu op-segmentador op-segmentador__item" data-dropdown-menu="75or2r-dropdown-menu" data-segment-menu="" role="menubar">
       <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-label="&#10;          &#10;            Escoge otro segmento &#10;          &#10;        ">
         <a href="#" class="dropdown-selected op-segmentador__link-secundary">
           <span>
@@ -1904,7 +1980,7 @@ console.log("[header] display assistant");
 				<div class="op-breadcrumbs__box">
 					
 							<figure class="op-breadcrumbs__figure">
-								<img src="https://www.endesaclientes.com/sites/Satellite?blobcol=urldata&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1501071878296&amp;ssbinary=true" alt="Image-1500548744876" />
+								<img src="https://www.endesaclientes.com/sites/Satellite?blobcol=urldata&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1501071878296&amp;ssbinary=true" alt="" />
 							</figure>
 						
 				</div>
@@ -2530,7 +2606,7 @@ function actualizarTelemetry(cups){
               <p class="op-product-card__hover-text"> Qué hacer si tienes una factura pendiente.</p>
             </div>
           </div>
-          <figure class="op-product-card__back-fig op-product-card__back-fig--hg"><img src="https://www.endesaclientes.com/blob/Pagar%20factura.jpg" alt="" class="op-product-card__back-img" /></figure></a>
+          <figure class="op-product-card__back-fig op-product-card__back-fig--hg"><img src="https://www.endesaclientes.com/blob/Pagar-factura.jpg" alt="" class="op-product-card__back-img" /></figure></a>
         </article>
       </li></div></div></ul>
 					</div>
@@ -2745,7 +2821,7 @@ function actualizarTelemetry(cups){
 
 
 <!-- modal de cookies -->
-<div id="cookies-wrap" data-off-canvas="o5ergb-off-canvas" data-content-overlay="false" data-transition="overlap" class="openpower modal_cookies off-canvas position-bottom is-transition-overlap is-open" aria-hidden="false">
+<div id="cookies-wrap" data-off-canvas="j0zh9i-off-canvas" data-content-overlay="false" data-transition="overlap" class="openpower modal_cookies off-canvas position-bottom is-transition-overlap is-open" aria-hidden="false">
   <h2 class="modal_cookies__title" id="modalTitle">Política de cookies :</h2>
   <p>
     Utilizamos cookies propias y de empresas colaboradoras para mejorar tu experiencia de usuario y ofrecerte los mejores servicios. Si navegas por nuestra página web, estarás aceptando el uso de las cookies en las condiciones establecidas en la presente  <a class="modal_cookies__link noPrivPol" href="/politica-cookies.html" title="Política de cookies " onclick="hideCookiesIb();"> Política de cookies </a>.
@@ -2832,9 +2908,9 @@ $(document).ready(function() {
 		</script>
 	
 
-<!--elaaeoweew01.risorse.enel - -->
+<!--elaaeoweew03.risorse.enel - -->
 
-<img src="https://www.endesaclientes.com/sites/CookieServer?name=variant-ab&amp;secure=null&amp;timeout=360000000&amp;url=%2F&amp;value=A" alt="" /><img src="https://www.endesaclientes.com/sites/CookieServer?name=idvis&amp;secure=null&amp;timeout=360000000&amp;url=%2F&amp;value=1501213316160" alt="" />
+<img src="https://www.endesaclientes.com/sites/CookieServer?name=variant-ab&amp;secure=null&amp;timeout=360000000&amp;url=%2F&amp;value=B" alt="" /><img src="https://www.endesaclientes.com/sites/CookieServer?name=idvis&amp;secure=null&amp;timeout=360000000&amp;url=%2F&amp;value=1501226236226" alt="" />
 <script type="text/javascript">
 	var csrftoken = (function(){
 	    var token;

@@ -1,0 +1,20 @@
+REPORTE PÁGINA WEB: https://www.bancosantander.es/es/particulares/banca-online/internet
+FECHA EVALUACIÓN: 2018-12-24
+
+Se han encontrado 5 imágenes que no tienen leyenda
+Se encontraron 6 imágenes en las que la leyenda es un espacio vacío
+Se encontró 1 caso en que los encabezados no respetan la cadena jerárquica
+Se encontraron 7 elementos de encabezado
+Se han encontrado 5 enlaces en los que el contenido se compone sólo de una imagen no subtitulada
+Se han localizado 22 enlaces con el mismo texto que apuntan a destinos diferentes
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se han encontrado 2 tablas sin celdas encabezado
+Se identificaron 5 formularios sin botón de envío
+Se encontraron 30 errores de validación en el lenguaje de marcado
+Se ha encontrado 1 atributo para controlar la presentación visual
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que todos los atributos se expresan en unidades de medida relativas
+Se ha encontrado 1 elemento <link> para la navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es-ES"
