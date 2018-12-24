@@ -217,7 +217,7 @@ class SitioController extends Controller
             foreach($paginas as $pagina){
                 if(strpos($pagina, $sitio->dominio)){
                     if(preg_match($regex,$pagina)){
-                        if(get_headers($pagina)[0]==="HTTP/1.0 200 OK"){
+                        if(strpos(get_headers($pagina)[0],"200 OK")){
                             if($p->paginaNueva($pagina)){
                                 $p->crearPagina($sitio_id,$pagina);
                             }
@@ -355,7 +355,7 @@ class SitioController extends Controller
             foreach($paginas as $pagina){
                 if(strpos($pagina, $sitio->dominio)){
                     if(preg_match($regex,$pagina)){
-                        if(get_headers($pagina)[0]==="HTTP/1.0 200 OK"){
+                        if(strpos(get_headers($pagina)[0],"200 OK")){
                             if($p->paginaNueva($pagina)){
                                 $p->crearPagina($id,$pagina);
                             }

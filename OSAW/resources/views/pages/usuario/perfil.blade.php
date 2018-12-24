@@ -14,7 +14,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-11">
-            <img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}" style="border-style: groove;">
+            <img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}" style="border-style: groove; width: 12em; height: 12em">
 
             @if(Auth::user()->rol_id===1)
             <p style="color:#ff9933"><strong>COLABORADOR</strong></p>

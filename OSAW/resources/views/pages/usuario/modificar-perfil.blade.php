@@ -90,5 +90,5 @@
     </div>
 </div>
 
-<a href="{{ URL::previous() }}">Volver al perfil</a>
+<a href="/perfil/{{Auth::user()->id}}">Volver al perfil</a>
 @endsection

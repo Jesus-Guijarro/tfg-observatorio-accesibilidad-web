@@ -1086,6 +1086,6 @@
 
 @endif
 
-<a href="{{ URL::previous() }}">Volver al sitio</a> 
+<a href="/sitio/{{$pagina->sitio_id}}">Volver al sitio</a> 
 
 @endsection

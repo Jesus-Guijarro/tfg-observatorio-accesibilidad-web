@@ -111,7 +111,8 @@ class PaginaController extends Controller
         }
 
         //Se verifica que se puede acceder a la URL
-        if((get_headers($url)[0])!="HTTP/1.0 200 OK"){
+        //HTTP 1.0 o 1.1
+        if(strpos(get_headers($url)[0],"200 OK")===false){
             return back()->withErrors(['url'=>'No se puede acceder a la URL']);
         }
 
@@ -163,7 +164,7 @@ class PaginaController extends Controller
         }
 
         //Se verifica que se puede acceder a la URL
-        if((get_headers($url)[0])!="HTTP/1.0 200 OK"){
+        if(strpos(get_headers($url)[0],"200 OK")===false){
             return back()->withErrors(['url'=>'No se puede acceder a la URL']);
         }
         if($p->paginaNueva($url)){
