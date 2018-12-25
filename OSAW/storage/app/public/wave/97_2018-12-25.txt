@@ -1,0 +1,36 @@
+REPORTE PÁGINA WEB: https://www.iberdrola.es/informacion/alta-nuevo-suministro-electrico
+FECHA EVALUACIÓN: 2018-12-25
+
+-PROBLEMAS-
+
+Empty link	  VECES ENCONTRADO: 4
+Linked image missing alternative text	  VECES ENCONTRADO: 6
+
+
+-ALERTAS-
+
+Possible heading	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 10
+Underlined text	  VECES ENCONTRADO: 6
+Redundant alternative text	  VECES ENCONTRADO: 7
+Redundant title text	  VECES ENCONTRADO: 16
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Justified text	  VECES ENCONTRADO: 15
+Orphaned form label	  VECES ENCONTRADO: 9
+Noscript element	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Null or empty alternative text	  VECES ENCONTRADO: 53
+Linked image with alternative text	  VECES ENCONTRADO: 13
+Alternative text	  VECES ENCONTRADO: 4
+Form label	  VECES ENCONTRADO: 2
+Element language	  VECES ENCONTRADO: 3
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 15
+
+

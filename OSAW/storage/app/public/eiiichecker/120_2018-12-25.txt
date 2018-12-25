@@ -1,0 +1,10 @@
+REPORTE PÁGINA WEB: https://www.iberia.com/es/horarios/
+FECHA EVALUACIÓN: 2018-12-25
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función		 VECES ENCONTRADO: 2
+CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      TÉCNICA G13: Describir lo que sucederá antes de que se realice un cambio en un control de formulario que cause que ocurra un cambio de contexto		 VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <&fieldset> y <&legend>		 VECES ENCONTRADO: 3
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA G131: Proporcionar etiquetas descriptivas		 VECES ENCONTRADO: 3
+CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      Elementos con un atributo de identificación definido único		 VECES ENCONTRADO: 20
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H64: Usando el atributo <&title> de los elementos <&frame> y <&iframe>		 VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H91: Usar controles de formulario HTML y enlaces		 VECES ENCONTRADO: 4

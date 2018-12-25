@@ -1,0 +1,24 @@
+REPORTE PÁGINA WEB: https://www.iberia.com
+FECHA EVALUACIÓN: 2018-12-25
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 4 imágenes en las que la leyenda es un espacio vacío
+Se encontró un elemento <iframe> sin título
+Se encontraron 3 casos en que los encabezados no respetan la cadena jerárquica
+Se han encontrado 43 elementos encabezado
+Se han encontrado 6 enlaces con el mismo texto que apuntan a destinos diferentes
+Se han identificado 28 casos en los que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se han encontrado 8 enlaces para eludir bloques de contenido
+Se encontró 1 elemento <fieldset> sin descripción
+Se identificaron 5 formularios sin botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se encontraron 326 errores de validación en el lenguaje de marcado
+Se han encontrado 1 elementos o atributos de HTML que se utilizan para controlar la presentación visual del texto
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que en 1 caso, se hace uso de unidades de medida absolutas
+Se ha encontrado 1 elemento <link> para la navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+El tipo de documento no permite el uso del atributo lang

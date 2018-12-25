@@ -1,0 +1,25 @@
+12/25/2018 09:21:25 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 23
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/25/2018 10:01:42 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "achecker"
+	PAGINA WEB: 100
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/25/2018 10:09:46 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 167
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/25/2018 10:25:46 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 111
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/25/2018 10:31:22 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "observatorio"
+	PAGINA WEB: 114
+	INFORMACION: "KeyError('resultado',)"
+
