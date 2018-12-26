@@ -63,13 +63,17 @@ class User extends Authenticatable
     }
 
     public function getUsuarios(){
-        $usuarios = User::all();
+        $usuarios = User::where('rol_id','!=','3')
+        ->orderBy('nombre','asc')
+        ->paginate(10);
         return $usuarios;
     }
 
     public function getUsuariosNombre($nombre){
         $usuarios = User::select('id','nombre','avatar','rol_id')->
-        where('nombre','like','%'.$nombre.'%')->get();
+        where('rol_id','!=','3')->
+        where('nombre','like','%'.$nombre.'%')->
+        paginate(10);
 
         return $usuarios;
     }

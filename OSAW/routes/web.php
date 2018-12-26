@@ -38,6 +38,8 @@ Route::post('modificar-perfil/{id}', 'UserController@modificarPerfilUsuario')->m
 Route::get('cambiar-password/{id}', 'UserController@panelCambiarPassword')->middleware('auth','prevenirAtras');
 Route::post('cambiar-password/{id}', 'UserController@cambiarPassword')->middleware('auth','prevenirAtras');
 
+Route::get('participantes', 'UserController@listarUsuarios');
+
 #Gestión sitios web
 Route::get('gestionar-sitios/{nombre?}', 'SitioController@gestionarSitios')->middleware('auth','prevenirAtras','esAdmin');
 
@@ -73,6 +75,11 @@ Route::get('activar-herramienta/{id}', 'HerramientaController@activarHerramienta
 
 Route::get('modificar-herramienta/{id}', 'HerramientaController@panelModificarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
 Route::post('modificar-herramienta/{id}', 'HerramientaController@modificarHerramienta')->middleware('auth','prevenirAtras','esAdmin');
+
+#Gestión de usuarios
+Route::get('gestionar-usuarios', 'UserController@gestionarUsuarios')->middleware('auth','prevenirAtras','esAdmin');
+Route::get('hacer-experto/{id}', 'UserController@hacerExperto')->middleware('auth','prevenirAtras','esAdmin');
+Route::get('hacer-colaborador/{id}', 'UserController@hacerColaborador')->middleware('auth','prevenirAtras','esAdmin');
 
 #Logs
 Route::get('logs', 'LogsController@mostrarLogs')->middleware('auth','prevenirAtras','esAdmin');

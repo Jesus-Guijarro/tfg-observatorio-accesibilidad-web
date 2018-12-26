@@ -34,7 +34,7 @@
 <h3> Número de evaluaciones realizadas por cada herramienta</h3>
 
 
-<table class="table-admin" summary="Tabla que contiene las herramientas utilizadas por el observatorio en la primera columna y su respectivo número de análisis en la segunda columna">
+<table class="table" style="width:50%" summary="Tabla que contiene las herramientas utilizadas por el observatorio en la primera columna y su respectivo número de análisis en la segunda columna">
     <caption>Herramientas de análisis utilizadas y el número de evaluaciones realizadas por cada una de ellas</caption>
     <thead>
         <tr>

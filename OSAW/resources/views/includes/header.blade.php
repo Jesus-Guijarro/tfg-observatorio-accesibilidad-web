@@ -40,6 +40,9 @@
                     <a class="dropdown-item" href="/gestionar-herramientas">
                         Gestionar Herramientas de Evaluación
                     </a>
+                    <a class="dropdown-item" href="/gestionar-usuarios">
+                        Gestionar Usuarios
+                    </a>
                 </div>
             </li>
             @endif
@@ -67,6 +70,9 @@
         </li>
         <li class="li-cabecera" >
             <a class = "a-hf" href="/lista-sitios">Listado de sitios web </a>
+        </li>
+        <li class="li-cabecera" >
+            <a class = "a-hf" href="/participantes">Participantes </a>
         </li>
         <li class="li-cabecera">
             <form class="form-buscador" method="GET" action="{{ action('SitioController@busquedaSitio') }}">

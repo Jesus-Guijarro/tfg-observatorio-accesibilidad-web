@@ -28,7 +28,7 @@
             </div>
 
             @if( count($sitios) !== 0)
-            <table class="table-ancho">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Sitio web</th>

@@ -879,7 +879,7 @@
             <div class ="grafico" id="accessmonitor-problemas" ></div>
             <div class ="grafico" id="accessmonitor-advertencias" ></div>
 
-            <table class="table-ancho" summary="Reportes AccessMonitor">
+            <table class="table" summary="Reportes AccessMonitor">
                 <thead>
                     <tr>
                         <th>Reportes AccessMonitor</th>
@@ -915,7 +915,7 @@
             <div class ="grafico" id="achecker-conocidos"></div>
             <div class ="grafico" id="achecker-potenciales"></div>
 
-            <table class="table-ancho" summary="Reportes AChecker">
+            <table class="table" summary="Reportes AChecker">
                 <thead>
                     <tr>
                         <th>Reportes Achecker</th>
@@ -950,7 +950,7 @@
             <div class ="grafico" id="eiiichecker-total"></div>
             <div class ="grafico" id="eiiichecker-problemas"></div>
 
-            <table class="table-ancho" summary="Reportes EIII Page Checker">
+            <table class="table" summary="Reportes EIII Page Checker">
                 <thead>
                     <tr>
                         <th>Reportes EIII Page Checker</th>
@@ -985,7 +985,7 @@
             <div class ="grafico" id="observatorio-problemas"></div>
             <div class ="grafico" id="observatorio-advertencias"></div>
 
-            <table class="table-ancho" summary="Reportes Observatorio de la UPS de Ecuador">
+            <table class="table" summary="Reportes Observatorio de la UPS de Ecuador">
                 <thead>
                 <tr>
                     <th>Reportes Observatorio de la UPS de Ecuador</th>
@@ -1021,7 +1021,7 @@
             <div class ="grafico" id="vamola-conocidos"></div>
             <div class ="grafico" id="vamola-potenciales"></div>
 
-            <table class="table-ancho" summary="Reportes Vamolà">
+            <table class="table" summary="Reportes Vamolà">
                 <thead>
                     <tr>
                         <th>Reportes Vamolà</th>
@@ -1056,7 +1056,7 @@
             <div class ="grafico" id="wave-problemas"></div>
             <div class ="grafico" id="wave-caracteristicas"></div>
 
-            <table class="table-ancho" summary="WAVE">
+            <table class="table" summary="WAVE">
                 <thead>
                     <tr>
                         <th>Reportes WAVE</th>

@@ -58,7 +58,7 @@
         @endisset
 
         @if( count($sitios) !== 0)
-        <table class="table-ancho" summary="Tabla que muestra el resultado de la búsqueda por nombre de los sitios webs que hay registrados">
+        <table class="table" summary="Tabla que muestra el resultado de la búsqueda por nombre de los sitios webs que hay registrados">
             <caption>Resultado búsqueda de sitio web</caption>
             <thead>
                 <tr>

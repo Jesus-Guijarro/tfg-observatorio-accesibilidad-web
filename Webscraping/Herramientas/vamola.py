@@ -25,7 +25,7 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
     try:
         #Activamos el modo headless
         driver=driverHeadlessBrowser()
-
+        
         #Accedemos a la web de la herramienta de evaluacion
         driver.get('http://www.validatore.it/vamola_validator/checker/index.php')
 

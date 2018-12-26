@@ -162,6 +162,8 @@ th, td{
     border-bottom: 0.0625em solid darkgray;
     border-left: 0.0625em solid darkgray;
     border-right: 0.0625em solid darkgray;
+
+    word-wrap: break-word;
     
 }
 th{

@@ -42,7 +42,7 @@
                 @isset ($categoria)
                 <h2> {{$categoria->descripcion}}</h2>
                 @endisset
-                <table class="table-ancho" summary="Tabla que muestra el listado de webs, con su enlace a la web de inicio y la categoria a la que pertenece">
+                <table class="table" summary="Tabla que muestra el listado de webs, con su enlace a la web de inicio y la categoria a la que pertenece">
                   <caption>Listado de sitios webs</caption> 
                   <thead>
                     <tr>

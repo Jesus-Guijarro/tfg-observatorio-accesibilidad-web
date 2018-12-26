@@ -21,7 +21,7 @@
 @endif
 
 @if( count($herramientas) !== 0)
-<table class="table-ancho" summary="Tabla que muestra las herramientas de evaluación que hace uso el observatorio">
+<table class="table" summary="Tabla que muestra las herramientas de evaluación que hace uso el observatorio">
     <thead>
         <tr>
             <th>Herramienta de evaluación</th>
@@ -40,13 +40,13 @@
                     <?php 
                         $url = action('HerramientaController@desactivarHerramienta',$herramienta->id);  
                     ?>
-                <td><a class="btn btn-primary" href="{{$url}}" role="button">Desactivar herramienta</a></td>
+                <td><a class="btn btn-primary btn-block" href="{{$url}}" role="button">Desactivar herramienta</a></td>
             @else
                 <td>No activa</td>
                 <?php 
                         $url = action('HerramientaController@activarHerramienta',$herramienta->id);  
                 ?>
-                <td><a class="btn btn-primary" href="{{$url}}" role="button">Activar herramienta</a></td>
+                <td><a class="btn btn-primary btn-block" href="{{$url}}" role="button">Activar herramienta</a></td>
             @endif
                 <td> <a href="modificar-herramienta/{{$herramienta->id}}">Modificar</a></td>
         </tr>

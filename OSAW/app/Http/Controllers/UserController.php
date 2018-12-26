@@ -9,6 +9,7 @@ use Illuminate\View\View;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Input;
 
 class UserController extends Controller
 {
@@ -90,4 +91,43 @@ class UserController extends Controller
    }
 
 
+   //Función para gestionar los participantes del observatorio
+   public function gestionarUsuarios(){
+    
+    
+        $nombre =  Input::get('nombre');
+
+        $usuario = new User();
+        $usuarios = $usuario->getUsuariosNombre($nombre);
+
+        return view('pages.administrador.gestionar-usuarios', array('usuarios' => $usuarios));
+    }
+
+    //Función para gestionar los participantes del observatorio
+    public function listarUsuarios(){
+        
+        $usuario = new User();
+        $usuarios = $usuario->getUsuarios();
+
+        return view('pages.participantes', array('usuarios' => $usuarios));
+    }
+
+
+    public function hacerColaborador($id){
+
+        $u = new User();
+        $usuario = $u->getUsuario($id);
+        $usuario->actualizarUsuarioRol($usuario->id,1);
+
+        return redirect('gestionar-usuarios')->with('mensaje', 'El usuario "'. $usuario->nombre .'" se ha hecho colaborador');
+    }
+
+    public function hacerExperto($id){
+
+        $u = new User();
+        $usuario = $u->getUsuario($id);
+        $usuario->actualizarUsuarioRol($usuario->id,2);
+
+        return redirect('gestionar-usuarios')->with('mensaje', 'El usuario "'. $usuario->nombre .'" se ha hecho experto');
+    }
 }

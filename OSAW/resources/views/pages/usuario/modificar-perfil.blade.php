@@ -67,7 +67,7 @@
                         <div class="form-group row">
                             <label for="biografia" class="col-md-4 col-form-label text-md-right">Biografia</label>
                             <div class="col-md-6">
-                                <textarea id="biografia"  name="biografia" rows="5" cols="34" >{{$usuario->biografia}}</textarea>
+                                <textarea class="form-control" id="biografia"  name="biografia" rows="5" cols="34" >{{$usuario->biografia}}</textarea>
                                 @if ($errors->has('biografia'))
                                     <span>
                                         <strong>{{ $errors->first('biografia') }}</strong>
