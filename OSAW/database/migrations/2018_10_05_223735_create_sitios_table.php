@@ -23,7 +23,8 @@ class CreateSitiosTable extends Migration
             $table->boolean('automatizado');
 
             $table->integer('categoria_id')->unsigned()->nullable();
-            $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete("set null");
+            $table->foreign('categoria_id')->references('id')->on('categorias')->onUpdate("cascade")->onDelete("set null");
+            
 
             $table->timestamps();
         });

@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->text('biografia')->nullable();
 
             $table->integer('rol_id')->unsigned()->nullable();
-            $table->foreign('rol_id')->references('id')->on('rols')->onDelete("set null");
+            $table->foreign('rol_id')->references('id')->on('rols')->onUpdate("cascade")->onDelete("set null");
 
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();

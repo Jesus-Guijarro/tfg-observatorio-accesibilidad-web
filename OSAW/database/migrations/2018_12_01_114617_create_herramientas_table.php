@@ -15,7 +15,8 @@ class CreateHerramientasTable extends Migration
     {
         Schema::create('herramientas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('descripcion',40)->unique();
+            $table->string('nombre',40)->unique();
+            $table->string('descripcion',80);
             $table->boolean('activa')->default(false);
         });
     }

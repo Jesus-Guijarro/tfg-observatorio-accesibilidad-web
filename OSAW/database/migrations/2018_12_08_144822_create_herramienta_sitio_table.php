@@ -17,10 +17,10 @@ class CreateHerramientaSitioTable extends Migration
             $table->increments('id');
 
             $table->integer('herramienta_id')->unsigned()->nullable();
-            $table->foreign('herramienta_id')->references('id')->on('herramientas')->onDelete("set null");
+            $table->foreign('herramienta_id')->references('id')->on('herramientas')->onUpdate("cascade")->onDelete("set null");
 
             $table->integer('sitio_id')->unsigned()->nullable();
-            $table->foreign('sitio_id')->references('id')->on('sitios')->onDelete("set null");
+            $table->foreign('sitio_id')->references('id')->on('sitios')->onUpdate("cascade")->onDelete("set null");
 
 
             $table->timestamps();

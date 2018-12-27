@@ -27,10 +27,10 @@ class CreatePaginaUserTable extends Migration
             $table->integer('num_errores_aaa');
 
             $table->integer('pagina_id')->unsigned()->nullable();
-            $table->foreign('pagina_id')->references('id')->on('paginas')->onDelete("set null");
+            $table->foreign('pagina_id')->references('id')->on('paginas')->onUpdate("cascade")->onDelete("set null");
 
             $table->integer('user_id')->unsigned()->nullable();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete("set null");
+            $table->foreign('user_id')->references('id')->on('users')->onUpdate("cascade")->onDelete("set null");
 
             $table->timestamps();
         });
