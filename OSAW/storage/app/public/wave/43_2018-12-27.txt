@@ -1,0 +1,27 @@
+REPORTE PÁGINA WEB: http://www.renfe.com/viajeros/atendo/index.html
+FECHA EVALUACIÓN: 2018-12-27
+
+-PROBLEMAS-
+
+-ALERTAS-
+
+Redundant link	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 12
+Link to PDF document	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Fieldset	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 1
+Null or empty alternative text	  VECES ENCONTRADO: 4
+Linked image with alternative text	  VECES ENCONTRADO: 16
+Image button with alternative text	  VECES ENCONTRADO: 1
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 27
+
+
