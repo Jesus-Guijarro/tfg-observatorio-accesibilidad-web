@@ -9,7 +9,7 @@
 
 <div class="row justify-content-center">
     <div style="margin-bottom: 1.5em">
-        <a href="/crear-herramienta">Añadir nueva herramienta web</a>
+        <a href="/crear-herramienta">Añadir nueva herramienta</a>
     </div>
 </div>
 

@@ -311,7 +311,7 @@
     }
 
     /*EIIIChecker*/
-    @if (in_array(2,$herramientas) && (count($eiiicheckers)>0))
+    @if (in_array(3,$herramientas) && (count($eiiicheckers)>0))
         google.charts.setOnLoadCallback(ei_puntuacion);
         google.charts.setOnLoadCallback(ei_total);
         google.charts.setOnLoadCallback(ei_problemas);
@@ -932,7 +932,7 @@
             <hr>
             @endif
 
-            @if (in_array(2,$herramientas) && (count($eiiicheckers)>0))
+            @if (in_array(3,$herramientas) && (count($eiiicheckers)>0))
             <h3> EIII Page Checker </h3>
             <div class ="grafico" id="eiiichecker-puntuacion"></div>
             <div class ="grafico" id="eiiichecker-total"></div>

@@ -69,7 +69,7 @@
                                     Iniciar sesión
                                 </button>
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Recuperar contraseña
+                                    Restablecer contraseña
                                 </a>
                             </div>
                         </div>
