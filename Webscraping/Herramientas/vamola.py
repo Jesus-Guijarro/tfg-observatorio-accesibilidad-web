@@ -13,8 +13,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from timer import calcularTiemposAcceso
-from time import time
 
 #Método para ejecutar el proceso de evaluación
 def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):

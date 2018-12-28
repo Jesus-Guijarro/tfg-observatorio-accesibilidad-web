@@ -13,8 +13,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from timer import calcularTiemposAcceso
-from time import time
 
 #Datos problemas y calculo de número de problemas según nivel
 def getErrores(mensaje,css_selector,reporte,driver):

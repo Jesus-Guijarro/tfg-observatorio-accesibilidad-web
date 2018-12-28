@@ -8,8 +8,6 @@ from database import conexionDB,desconexionDB
 from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 from keys import OBSERVATORIO_KEY
 
-from timer import calcularTiemposAcceso
-from time import time
 
 #Los "isinstance" son para comprobar que el elemento es una lista o un elemento único
 #Los try son para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón

@@ -13,7 +13,6 @@
                 <thead>
                     <tr>
                         <th>Usuario</th>
-                        <th>Correo electrónico</th>
                         <th>Rol</th>
                         <th>Biografia</th>
                     </tr>
@@ -22,7 +21,6 @@
                 @foreach ($usuarios as $usuario)
                     <tr>
                         <td> <a href="/perfil/{{$usuario->id}}"> {{$usuario->nombre}}</a></td>
-                        <td> {{$usuario->email}}</td>
 
                         @if($usuario->rol_id===1)
                         <td>Colaborador</td>

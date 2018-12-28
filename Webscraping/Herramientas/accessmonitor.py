@@ -16,8 +16,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from timer import calcularTiemposAcceso
-from time import time
 
 def getValor(css_selector,driver):
     try:

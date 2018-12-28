@@ -9,8 +9,6 @@ from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraR
 
 from keys import WAVE_KEY
 
-from timer import calcularTiemposAcceso
-from time import time
 
 #Obtenemos los datos a guardar en el reporte
 def getDatos(categoria,datos,reporte):
