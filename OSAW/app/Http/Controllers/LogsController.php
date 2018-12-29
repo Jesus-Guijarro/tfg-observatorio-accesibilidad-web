@@ -38,7 +38,6 @@ class LogsController extends Controller
         
         $fecha=str_replace(".log","",$fecha);
 
-
         return view('pages.administrador.log', array('log' => $log,'fecha'=>$fecha,'tipo'=>$tipo));
     }
 }

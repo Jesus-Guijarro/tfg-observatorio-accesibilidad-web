@@ -154,8 +154,7 @@ class SitioController extends Controller
         ]);
 
     
-        //Se valida el de evaluación en función si la periodicidad es semanal o mensual
-
+        //Se valida el día de evaluación en función si la periodicidad es semanal o mensual
         $periodicidad=$request->periodicidad;
         $dia=$request->dia;
 
