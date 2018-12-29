@@ -38,9 +38,9 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Accedemos a la web de la herramienta de evaluación
         driver.get('http://checkers.eiii.eu/en/pagecheck/')
 
-        #Pausa explicita de 17 segundos
+        #Pausa explicita de 20 segundos
         #Se pausa hasta que se encuentra el elemento
-        wait = WebDriverWait(driver, 17) 
+        wait = WebDriverWait(driver, 20) 
 
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver

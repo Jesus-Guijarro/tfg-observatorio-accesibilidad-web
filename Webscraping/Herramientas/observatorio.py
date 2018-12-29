@@ -11,7 +11,7 @@ from keys import OBSERVATORIO_KEY
 
 #Los "isinstance" son para comprobar que el elemento es una lista o un elemento único
 #Los try son para ignorar los casos en los que se no se encuentra cierto elemento- Cuando falla el patrón
-#Cuatro niveles: 1.Principios, 2.Pautas, 3.Criterios, 4.Ténicas
+#Cuatro niveles: 1.Principios, 2.Pautas, 3.Criterios, 4.Técnicas
 #Debemos de crear hasta 6 métodos diferentes para realizar la escrita del archivo con los datos de la evaluación
 ###TECNICAS###
 def datosTecnicasLista(tecnicas,reporte):

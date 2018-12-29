@@ -1,0 +1,666 @@
+REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/cartaespana/index.htm
+FECHA EVALUACIÓN: 2018-12-29
+
+
+Principio: 1.Perceptible
+Descripcion: La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+	Pauta: 1.1..Alternativas textuales
+	Descripcion: Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple
+
+		Criterio: 1.1.1..Contenido no textual
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H35-Proporcionando textos alternativos a elementos applet
+			Criticidad: Alta
+			Observación: No se han encontrado elementos applet en la p&aacute;gina.<br/>
+			Recomendación: Se recomienda colocar una alternativa textual a los elementos applet, para tener conocimiento de su funci&oacute;n.<br/>
+			Número de errores: 0
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos de formularios que requieran etiquetas..<br/>
+			Recomendación: En el caso de hacer uso de formularios en la estructura y diseño de p&aacute;gina, no olvide asociar un identificador(etiqueta) a cada campo de entrada del formulario..<br/>
+			Número de errores: 0
+
+			Código: H45-Usando longdesc
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado im&aacute;genes que usen el atributo longdesc para referirse a una larga descripci&oacute;n contenida en un recurso independiente, que sean necesarias como alternativa no textual para una im&aacute;gen.<br/>
+			Recomendación: Use el atributo longdesc en una im&aacute;gen cuando una alternativa textual breve no transmite adecuadamente la funci&oacute;n o la informaci&oacute;n proporcionada en la im&aacute;gen.<br/>
+			Número de errores: 0
+
+			Código: H37-Usando atributos alt en elementos img
+			Criticidad: Media
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong>, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img class="logo_carta" src="img/cabecera/logo_carta.gif" alt="Carta de España Online"></xmp></li><li><xmp><img class="logo_ministerior" src="img/cabecera/logoGdE.gif" alt="Ministerio de Trabajo, Migraciones y Seguridad Social. Gobierno de España."></xmp></li><li><xmp><img src="img/banners/logoMEYSS.jpg" alt="Ciudadanía Española en el Exterior"></xmp></li><li><xmp><img src="img/banners/banner_CEXT.jpg" alt="Ciudadanía Española en el Exterior. El portal de los jóvenes españoles en el exterior"></xmp></li><li><xmp><img alt="portada 752" src="img/noticias/2018/noviembre/752_portadaWeb.jpg"></xmp></li><li><xmp><img src="img/noticias/2018/noviembre/comision1.jpg" alt="La Comisión Permanente recibida en el Congreso de los Diputados"></xmp></li><li><xmp><img src="img/noticias/2018/septiembre-octubre/Raicex1.jpg" alt="La ciencia española en el exterior avanza"></xmp></li><li><xmp><img src="img/noticias/2018/agosto/ladino1.jpg" alt="Ladino, una lengua 'castellana' que lucha por sobrevivir"></xmp></li><li><xmp><img src="img/noticias/2018/julio/portico1.jpg" alt="El Pórtico de la Gloria recupera el color del románico"></xmp></li><li><xmp><img src="img/noticias/2018/junio/todos_web.jpg" alt="Nuevos nombramientos en el Ministerio de Trabajo, Migraciones y Seguridad Social"></xmp></li><li><xmp><img src="img/noticias/2018/abril-mayo/pasajeros_portada.jpg" alt="Españoles en América: emigrar en tercera clase"></xmp></li><li><xmp><img src="img/noticias/2018/marzo/libros1.jpg" alt="Cocina para leer"></xmp></li><li><xmp><img src="img/noticias/2018/marzo/congreso1.jpg" alt="III Congreso de Asociaciones Españolas en Estados Unidos y Puerto Rico"></xmp></li><li><xmp><img src="img/noticias/2018/febrero/pacto1.jpg" alt="Pacto mundial para la migración"></xmp></li><li><xmp><img src="img/noticias/2018/enero/refug1.jpg" alt="Acogida e integración de refugiados"></xmp></li><li><xmp><img src="img/noticias/2017/diciembre/Ancianos1.jpg" alt="Atención a ancianos españoles en el exterior"></xmp></li><li><xmp><img src="img/noticias/2017/diciembre/Ballet.jpg" alt="Cuarenta aniversario del Ballet Nacional de España"></xmp></li><li><xmp><img src="img/noticias/2017/noviembre/Promano_web.jpg" alt="España, plató internacional de cine"></xmp></li><li><xmp><img src="img/noticias/2017/octubre/Ata1.jpg" alt="Atapuerca, cuna de los primeros europeos"></xmp></li><li><xmp><img src="img/noticias/2017/septiembre/pza1.jpg" alt="La Plaza Mayor de Madrid, 400 años de historia"></xmp></li><li><xmp><img src="img/noticias/2017/junio/hispanic1.jpg" alt="Una increíble lección de historia del arte español"></xmp></li><li><xmp><img src="img/noticias/2017/mayo/armada1.jpg" alt="Las huellas de “La Gran Armada” de Felipe II en Irlanda"></xmp></li><li><xmp><img src="img/noticias/2017/abril/vino1.jpg" alt="El mayor viñedo del mundo"></xmp></li><li><xmp><img src="img/noticias/2017/marzo/victor_web.jpg" alt="“Escribe para que la gente se divierta”: la edad de oro de la cultura de quiosco"></xmp></li><li><xmp><img src="img/noticias/2017/febrero/Consejo1.jpg" alt="El Consejo finaliza su sexto mandato"></xmp></li><li><xmp><img src="img/noticias/2017/enero/sefarad1.jpg" alt="Kastiyos en Sefarad: los sefardíes vuelven a casa"></xmp></li><li><xmp><img src="img/noticias/2016/diciembre/belenes1.JPG" alt="Los belenes y la Navidad"></xmp></li><li><xmp><img src="img/noticias/2016/noviembre/Veracruz1.jpg" alt="Veracruz, puerta de América"></xmp></li><li><xmp><img src="img/noticias/2016/octubre/Alcarria_torija.jpg" alt="La Alcarria de Camilo José Cela en el siglo XXI"></xmp></li><li><xmp><img src="img/noticias/2016/septiembre/niagara1.JPG" alt="Leonardo Torres Quevedo y el transbordador del Niagara"></xmp></li><li><xmp><img src="img/noticias/2016/septiembre/Portada_CdE_728_julio-agosto.jpg" alt="Especial cuarto centenario de la muerte de Cervantes"></xmp></li><li><xmp><img src="img/noticias/2016/junio/cine1.jpg" alt="Migrantes de la pantalla"></xmp></li><li><xmp><img src="img/noticias/2016/mayo/futbol1.jpg" alt="Atleti-Real Madrid: una sana rivalidad"></xmp></li><li><xmp><img src="img/noticias/2016/abril/filipinasPortada.jpg" alt="Filipinas, un poco de España en Asia"></xmp></li><li><xmp><img src="img/noticias/2016/marzo/CUBA1.jpg" alt="España en el corazón. Recuerdos en ámbar, desde Cuba"></xmp></li><li><xmp><img src="img/noticias/2016/febrero/robot1.JPG" alt="Cuando el futuro es presente"></xmp></li><li><xmp><img src="img/noticias/2016/enero/ciencia1.jpg" alt="Ciencia en imágenes"></xmp></li><li><xmp><img src="img/noticias/2015/noviembre/Alaska1.jpg" alt="Segundo  Llorente, un leonés en Alaska"></xmp></li><li><xmp><img src="img/noticias/2015/julioagosto/63web.JPG" alt="El testimonio de los &quot;niños de Rusia&quot;"></xmp></li><li><xmp><img src="img/noticias/letras_c_d/Chico.jpg" alt="Un aula para los massai"></xmp></li><li><xmp><img src="img/noticias/2015/marzo/Los_que_esperan_01.jpg" alt="Seis miradas de la nueva fotografía española"></xmp></li><li><xmp><img src="img/noticias/letras_a_b/Bokoko_Drumen.jpg" alt="La huella colonial de España en Guinea Ecuatorial"></xmp></li><li><xmp><img src="img/noticias/2016/recuperadas/antartida1.jpg" alt="Españoles en la Antártida"></xmp></li><li><xmp><img src="img/noticias/2016/recuperadas/Barco1.jpg" alt="Caminos del mar: los barcos de la emigración"></xmp></li><li><xmp><img src="img/noticias/2016/recuperadas/tanger1.jpg" alt="Tánger: la ciudad que hablaba en español"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H67-Usando texto alternativo nulo y no el atributo title en el elemento img para imágenes que AT puedan ignorar
+			Criticidad: Media
+			Observación: 45 im&aacute;genes en la p&aacute;gina tienen alternativas textuales, verifique que esten acorde al contenido de las mismas.<pre><ul><li><xmp><img class="logo_carta" src="img/cabecera/logo_carta.gif" alt="Carta de España Online"></xmp></li><li><xmp><img class="logo_ministerior" src="img/cabecera/logoGdE.gif" alt="Ministerio de Trabajo, Migraciones y Seguridad Social. Gobierno de España."></xmp></li><li><xmp><img src="img/banners/logoMEYSS.jpg" alt="Ciudadanía Española en el Exterior"></xmp></li><li><xmp><img src="img/banners/banner_CEXT.jpg" alt="Ciudadanía Española en el Exterior. El portal de los jóvenes españoles en el exterior"></xmp></li><li><xmp><img alt="portada 752" src="img/noticias/2018/noviembre/752_portadaWeb.jpg"></xmp></li><li><xmp><img src="img/noticias/2018/noviembre/comision1.jpg" alt="La Comisión Permanente recibida en el Congreso de los Diputados"></xmp></li><li><xmp><img src="img/noticias/2018/septiembre-octubre/Raicex1.jpg" alt="La ciencia española en el exterior avanza"></xmp></li><li><xmp><img src="img/noticias/2018/agosto/ladino1.jpg" alt="Ladino, una lengua 'castellana' que lucha por sobrevivir"></xmp></li><li><xmp><img src="img/noticias/2018/julio/portico1.jpg" alt="El Pórtico de la Gloria recupera el color del románico"></xmp></li><li><xmp><img src="img/noticias/2018/junio/todos_web.jpg" alt="Nuevos nombramientos en el Ministerio de Trabajo, Migraciones y Seguridad Social"></xmp></li><li><xmp><img src="img/noticias/2018/abril-mayo/pasajeros_portada.jpg" alt="Españoles en América: emigrar en tercera clase"></xmp></li><li><xmp><img src="img/noticias/2018/marzo/libros1.jpg" alt="Cocina para leer"></xmp></li><li><xmp><img src="img/noticias/2018/marzo/congreso1.jpg" alt="III Congreso de Asociaciones Españolas en Estados Unidos y Puerto Rico"></xmp></li><li><xmp><img src="img/noticias/2018/febrero/pacto1.jpg" alt="Pacto mundial para la migración"></xmp></li><li><xmp><img src="img/noticias/2018/enero/refug1.jpg" alt="Acogida e integración de refugiados"></xmp></li><li><xmp><img src="img/noticias/2017/diciembre/Ancianos1.jpg" alt="Atención a ancianos españoles en el exterior"></xmp></li><li><xmp><img src="img/noticias/2017/diciembre/Ballet.jpg" alt="Cuarenta aniversario del Ballet Nacional de España"></xmp></li><li><xmp><img src="img/noticias/2017/noviembre/Promano_web.jpg" alt="España, plató internacional de cine"></xmp></li><li><xmp><img src="img/noticias/2017/octubre/Ata1.jpg" alt="Atapuerca, cuna de los primeros europeos"></xmp></li><li><xmp><img src="img/noticias/2017/septiembre/pza1.jpg" alt="La Plaza Mayor de Madrid, 400 años de historia"></xmp></li><li><xmp><img src="img/noticias/2017/junio/hispanic1.jpg" alt="Una increíble lección de historia del arte español"></xmp></li><li><xmp><img src="img/noticias/2017/mayo/armada1.jpg" alt="Las huellas de “La Gran Armada” de Felipe II en Irlanda"></xmp></li><li><xmp><img src="img/noticias/2017/abril/vino1.jpg" alt="El mayor viñedo del mundo"></xmp></li><li><xmp><img src="img/noticias/2017/marzo/victor_web.jpg" alt="“Escribe para que la gente se divierta”: la edad de oro de la cultura de quiosco"></xmp></li><li><xmp><img src="img/noticias/2017/febrero/Consejo1.jpg" alt="El Consejo finaliza su sexto mandato"></xmp></li><li><xmp><img src="img/noticias/2017/enero/sefarad1.jpg" alt="Kastiyos en Sefarad: los sefardíes vuelven a casa"></xmp></li><li><xmp><img src="img/noticias/2016/diciembre/belenes1.JPG" alt="Los belenes y la Navidad"></xmp></li><li><xmp><img src="img/noticias/2016/noviembre/Veracruz1.jpg" alt="Veracruz, puerta de América"></xmp></li><li><xmp><img src="img/noticias/2016/octubre/Alcarria_torija.jpg" alt="La Alcarria de Camilo José Cela en el siglo XXI"></xmp></li><li><xmp><img src="img/noticias/2016/septiembre/niagara1.JPG" alt="Leonardo Torres Quevedo y el transbordador del Niagara"></xmp></li><li><xmp><img src="img/noticias/2016/septiembre/Portada_CdE_728_julio-agosto.jpg" alt="Especial cuarto centenario de la muerte de Cervantes"></xmp></li><li><xmp><img src="img/noticias/2016/junio/cine1.jpg" alt="Migrantes de la pantalla"></xmp></li><li><xmp><img src="img/noticias/2016/mayo/futbol1.jpg" alt="Atleti-Real Madrid: una sana rivalidad"></xmp></li><li><xmp><img src="img/noticias/2016/abril/filipinasPortada.jpg" alt="Filipinas, un poco de España en Asia"></xmp></li><li><xmp><img src="img/noticias/2016/marzo/CUBA1.jpg" alt="España en el corazón. Recuerdos en ámbar, desde Cuba"></xmp></li><li><xmp><img src="img/noticias/2016/febrero/robot1.JPG" alt="Cuando el futuro es presente"></xmp></li><li><xmp><img src="img/noticias/2016/enero/ciencia1.jpg" alt="Ciencia en imágenes"></xmp></li><li><xmp><img src="img/noticias/2015/noviembre/Alaska1.jpg" alt="Segundo  Llorente, un leonés en Alaska"></xmp></li><li><xmp><img src="img/noticias/2015/julioagosto/63web.JPG" alt="El testimonio de los &quot;niños de Rusia&quot;"></xmp></li><li><xmp><img src="img/noticias/letras_c_d/Chico.jpg" alt="Un aula para los massai"></xmp></li><li><xmp><img src="img/noticias/2015/marzo/Los_que_esperan_01.jpg" alt="Seis miradas de la nueva fotografía española"></xmp></li><li><xmp><img src="img/noticias/letras_a_b/Bokoko_Drumen.jpg" alt="La huella colonial de España en Guinea Ecuatorial"></xmp></li><li><xmp><img src="img/noticias/2016/recuperadas/antartida1.jpg" alt="Españoles en la Antártida"></xmp></li><li><xmp><img src="img/noticias/2016/recuperadas/Barco1.jpg" alt="Caminos del mar: los barcos de la emigración"></xmp></li><li><xmp><img src="img/noticias/2016/recuperadas/tanger1.jpg" alt="Tánger: la ciudad que hablaba en español"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+			Código: C18-Usando reglas margin y padding en lugar de imágenes de espaciador para diseñar un layout
+			Criticidad: Baja
+			Observación: Existen 3 celdas de tablas que no consideran el separador de contenido de los bordes.<br/>
+			Recomendación: Se debe tener en cuenta la separaci&oacute;n del texto respecto a las celdas en las tablas.<br/>
+			Número de errores: 3
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H36-Usando atributos alt en imágenes que se utilizan como botones de envio
+			Criticidad: Alta
+			Observación: No se han encontrado botones de tipo im&aacute;gen en la p&aacute;gina..<br/>
+			Recomendación: En el caso de hacer uso de botones de tipo im&aacute;gen, estos deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la acci&oacute;n del bot&oacute;n)..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: OAW1-Usando videos decorativos
+			Criticidad: Media
+			Observación: No se han encontrado videos en esta p&aacute;gina..<br/>
+			Recomendación: En caso de tener v&iacute;deos decorativos, es recomendable marcarlos como tal con atributos ARIA, esto evita que los usuarios con tecnolog&iacute;as de asistencia tengan dificultades al encontrar videos sin altenativas textuales..<br/>
+			Número de errores: 0
+
+			Código: H88-Usando HTML de acuerdo a la especificación
+			Criticidad: Alta
+			Observación: No se han encontrado elementos obsoletos dentro de la p&aacute;gina..<br/>
+			Recomendación: Ciertas etiquetas y atributos viejos de HTML han sido suspendidos para utilizar en su lugar alternativas m&aacute;s flexibles (como HTML o CSS). Es recomendable siempre adoptar los est&aacute;ndares HTML..<br/>
+			Número de errores: 0
+
+	Pauta: 1.2..Medios tempodependientes
+	Descripcion: Proporcionar alternativas para los medios tempodependientes
+
+		Criterio: 1.2.1..Sólo audio y sólo vídeo (grabado)
+		Nivel: A
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.4..Subtítulos (en directo)
+		Nivel: AA
+
+		Criterio: 1.2.3..Audiodescripción o Medio Alternativo (grabado)
+		Nivel: A
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.8..Medio alternativo (grabado)
+		Nivel: AAA
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.2..Subtítulos (grabados)
+		Nivel: A
+
+			Código: G87-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado videos en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los videos, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+			Código: G87B-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado audios en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los audios, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+	Pauta: 1.3..Adaptable
+	Descripcion: Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura
+
+		Criterio: 1.3.2..Secuencia con significado
+		Nivel: A
+
+			Código: C27A-Haciendo el DOM ordenado para marcar el orden visual: A) Elementos con posicionamiento flotante sin especificar
+			Criticidad: Media
+			Observación: De las 121 reglas CSS en la p&aacute;gina, 30 de ellas usan declaraciones de elementos de forma flotante (float:inherit|none|left|rigth).<pre><ul><li><xmp>#contenedor { width: auto; height: auto; margin-top: 42px; float: left; }</xmp></li><li><xmp>.imagen_izquierda { float: left; margin-bottom: 0.63em; margin-top: 0.63em; margin-right: 0.63em; }</xmp></li><li><xmp>.imagen_derecha { float: right; margin-bottom: 0.63em; margin-top: 0.63em; margin-left: 0.63em; }</xmp></li><li><xmp>#contenedor_iconos { height: auto; width: 100%; float: left; margin-top: 28px; margin-right: auto; margin-bottom: 0px; margin-left: auto; }</xmp></li><li><xmp>.logo_ministerior { float: right; margin-right: 62px; height: 65px; }</xmp></li><li><xmp>.logo_carta { float: left; margin-left: 64px; }</xmp></li><li><xmp>#lateral_izq { width: 195px; float: left; font-size: 14px; text-transform: uppercase; margin-top: 30px; margin-right: 0px; margin-bottom: 20px; margin-left: 49px; }</xmp></li><li><xmp>#lateral_izq ul li { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(198, 198, 198); padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px; text-indent: 3px; float: left; width: 100%; }</xmp></li><li><xmp>#columna_banners { margin-top: 19px; float: left; }</xmp></li><li><xmp>#listado { width: 655px; height: auto; float: left; margin-left: 20px; }</xmp></li><li><xmp>#listado .laLista > ul > li > img { width: 200px; float: left; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; background-color: white; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(198, 198, 198); border-right-color: rgb(198, 198, 198); border-bottom-color: rgb(198, 198, 198); border-left-color: rgb(198, 198, 198); border-top-left-radius: 15px 15px; border-top-right-radius: 15px 15px; border-bottom-right-radius: 15px 15px; border-bottom-left-radius: 15px 15px; }</xmp></li><li><xmp>#listado .destacado .imagen { width: 220px; float: left; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; }</xmp></li><li><xmp>#listado .destacado .texto { color: white; float: left; font-size: 0.9em; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; width: 375px; }</xmp></li><li><xmp>.redes { width: 270px; float: right; }</xmp></li><li><xmp>.redes li { float: left; margin-left: 5px; font-size: 0.8em; font-weight: bold; }</xmp></li><li><xmp>.noticia { height: auto; width: 100%; margin-top: 15px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(198, 198, 198); padding-bottom: 15px; float: left; }</xmp></li><li><xmp>.foto_noticia { float: left; }</xmp></li><li><xmp>.foto_noticia img { border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(143, 156, 160); border-right-color: rgb(143, 156, 160); border-bottom-color: rgb(143, 156, 160); border-left-color: rgb(143, 156, 160); float: left; }</xmp></li><li><xmp>.txt_noticia { float: right; margin-left: 13px; width: 403px; }</xmp></li><li><xmp>.leer_mas { font-size: 13px; color: rgb(67, 67, 67); text-transform: uppercase; width: 100%; float: left; text-align: right; margin-top: 25px; }</xmp></li><li><xmp>.leer_mas a img { border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; margin-left: 2px; float: none; }</xmp></li><li><xmp>#entradilla { float: left; margin-bottom: 12px; font-size: 0.8em; line-height: 19px; font-weight: bold; }</xmp></li><li><xmp>#pie { width: 100%; float: left; margin-top: 58px; margin-bottom: 50px; }</xmp></li><li><xmp>#copy { float: left; width: auto; color: rgb(27, 97, 121); font-weight: bold; font-size: 13px; margin-left: 50px; }</xmp></li><li><xmp>#menu_inf { float: right; width: auto; margin-right: 61px; }</xmp></li><li><xmp>#txt_repor { font-size: 13px; margin-top: 0px; font-family: Arial; line-height: 18px; float: left; clear: both; width: 100%; }</xmp></li><li><xmp>#avisoLegal { width: 800px; margin-top: 20px; margin-right: auto; margin-bottom: 40px; margin-left: 77px; font-size: 13px; float: left; line-height: 17px; }</xmp></li><li><xmp>#txtAvisoLegal { margin-top: 15px; float: left; }</xmp></li><li><xmp>#share { float: left; width: 100%; font-size: 12px; color: rgb(56, 56, 56); font-weight: bold; text-align: right; padding-top: 8px; }</xmp></li><li><xmp>#centro ul#menu-sup li { display: inline; float: right; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 30
+
+			Código: H56-Usando el atributo dir en un elemento en linea para resolver problemas con secuencias direccionales anidadas 
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han segmentos de texto definidos en un idioma espec&iacute;fico..<br/>
+			Recomendación: En caso de que un texto en la p&aacute;gina se encuentre en un idioma distito al de la misma, se debe especificar el idioma y en caso de ser necesario la direcci&oacute;n de lectura por medio del atributo <code>dir</code>.  Para mayor informaci&oacute;n refierase a <a haref=https://www.w3.org/TR/html4/struct/dirlang.html>Informaci&oacute;n sobre el idioma y la direcci&oacute;n de lectura de un texto</a>.<br/>
+			Número de errores: 0
+
+			Código: C6-Proporcionando contenido basado en marcadores estructurales
+			Criticidad: Baja
+			Observación: Ninguna de las 121 reglas CSS en la p&aacute;gina, se han definido utilizando declaraciones de elementos de forma absoluta (position:asolute)..<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado..<br/>
+			Número de errores: 0
+
+			Código: C8-Usando la propiedad letter-spacing de CSS para controlar el espacio dentro de una palabra
+			Criticidad: Baja
+			Observación: No se han detectado textos sospechosos en los que palabras se han formado usando espacios en blanco..<br/>
+			Recomendación: En el caso de requerir por efectos visuales el destarcar cada letra de una palabra por medio de separaciones, utilice la propiedad CSS <code>letter-spacing</code>.<br/>
+			Número de errores: 0
+
+			Código: C27B-Haciendo el DOM ordenado para marcar el orden visual: B) Elementos con posicionamiento absoluto
+			Criticidad: Media
+			Observación: Ninguna de las 121 reglas CSS en la p&aacute;gina, se han definido utilizando declaraciones de elementos de forma absoluta, relativa o fija (position:asolute|relative|fix)..<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.1..Información y relaciones
+		Nivel: A
+
+			Código: G140-Separando la información y la estructura de la presentación para permitir diferentes presentaciones
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente separando la presentaci&oacute;n del contenido, pues no se ha encontrado atributos <code>style</code> dentro de las etiquetas HTML..<br/>
+			Recomendación: El separar el contenido de la presentaci&oacute;n facilita la adaptaci&oacute;n de los contenidos a diferentes dispositivos..<br/>
+			Número de errores: 0
+
+			Código: F87-Fallo en el criterio 1.3.1 debido a la inserción de contenidos no decorativos mediante el uso de :before y :after pseudo-elementos y la propiedad content de los CSS
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H39-Usando elementos caption para asociar títulos de las tablas de datos a los datos de la tabla
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas..<br/>
+			Recomendación: En el caso de hacer uso de tablas estas deben ser identificadas por medio del elemento caption, siempre que no sean utilizadas para maquetaci&oacute;n (layout)..<br/>
+			Número de errores: 0
+
+			Código: H63-Usando el atributo scope para asociar las celdas de encabezado con las celdas de datos en las tablas
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H73-Usando el atributo summary del elemento table para dar una visión general de las tablas de datos
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas con un atriuto summary..<br/>
+			Recomendación: En el caso de hacer uso de tablas e identificarlas con el atributo summary este debe ser valido para identificar la tabla o explicar su estructura en caso de tablas de datos complejas..<br/>
+			Número de errores: 0
+
+			Código: H48-Usando ol, ul y dl para listas o grupos de enlaces
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H85-Usando OPTIONGROUP para agrupar elementos OPTION dentro de un SELECT
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H49-Usando marcas semánticas para marcar textos enfatizados o textos especiales
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H51-Usando tabla de marcado para presentar información tabular
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Al utilizar tablas de datos para presentar informaci&oacute;n tabular use los elementos th (encabezados) y td (datos)..<br/>
+			Número de errores: 0
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de España. Noticias de En portada</li><ul><li>[H2] [OK] Menú principal</li><li>[H2] [OK] Colaboradores</li><li>[H2] [OK] Menú horizontal</li></ul><ul><li>[H1] [OK] Carta de España Online</li><ul><li>[H2] [OK] Carta de España 752 - Noviembre 2018</li></ul></ul><ul><li>[H1] [OK] Reportajes destacados</li><ul><li>[H2] [OK] La Comisión Permanente recibida en el Congreso de los Diputados</li><li>[H2] [OK] La ciencia española en el exterior avanza</li><li>[H2] [OK] Ladino, una lengua 'castellana' que lucha por sobrevivir</li><li>[H2] [OK] El Pórtico de la Gloria recupera el color del románico</li><li>[H2] [OK] Nuevos nombramientos en el Ministerio de Trabajo, Migraciones y Seguridad Social</li><li>[H2] [OK] Españoles en América: emigrar en tercera clase</li><li>[H2] [OK] Cocina para leer</li><li>[H2] [OK] III Congreso de Asociaciones Españolas en Estados Unidos y Puerto Rico</li><li>[H2] [OK] Pacto mundial para la migración</li><li>[H2] [OK] Acogida e integración de refugiados</li><li>[H2] [OK] Atención a ancianos españoles en el exterior</li><li>[H2] [OK] Cuarenta aniversario del Ballet Nacional de España</li><li>[H2] [OK] España, plató internacional de cine</li><li>[H2] [OK] Atapuerca, cuna de los primeros europeos</li><li>[H2] [OK] La Plaza Mayor de Madrid, 400 años de historia</li><li>[H2] [OK] Una increíble lección de historia del arte español</li><li>[H2] [OK] Las huellas de “La Gran Armada” de Felipe II en Irlanda</li><li>[H2] [OK] El mayor viñedo del mundo</li><li>[H2] [OK] “Escribe para que la gente se divierta”: la edad de oro de la cultura de quiosco</li><li>[H2] [OK] El Consejo finaliza su sexto mandato</li><li>[H2] [OK] Kastiyos en Sefarad: los sefardíes vuelven a casa</li><li>[H2] [OK] Los belenes y la Navidad</li><li>[H2] [OK] Veracruz, puerta de América</li><li>[H2] [OK] La Alcarria de Camilo José Cela en el siglo XXI</li><li>[H2] [OK] Leonardo Torres Quevedo y el transbordador del Niagara</li><li>[H2] [OK] Especial cuarto centenario de la muerte de Cervantes</li><li>[H2] [OK] Migrantes de la pantalla</li><li>[H2] [OK] Atleti-Real Madrid: una sana rivalidad</li><li>[H2] [OK] Filipinas, un poco de España en Asia</li><li>[H2] [OK] España en el corazón. Recuerdos en ámbar, desde Cuba</li><li>[H2] [OK] Cuando el futuro es presente</li><li>[H2] [OK] Ciencia en imágenes</li><li>[H2] [OK] Segundo  Llorente, un leonés en Alaska</li><li>[H2] [OK] El testimonio de los "niños de Rusia"</li><li>[H2] [OK] Un aula para los massai</li><li>[H2] [OK] Seis miradas de la nueva fotografía española</li><li>[H2] [OK] La huella colonial de España en Guinea Ecuatorial</li><li>[H2] [OK] Españoles en la Antártida</li><li>[H2] [OK] Caminos del mar: los barcos de la emigración</li><li>[H2] [OK] Tánger: la ciudad que hablaba en español</li></ul></ul></ul><ul><li>[H1] [OK] Pie de página</li></ul></ul></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: OAW3-Usando elementos legend correctamente
+			Criticidad: Baja
+			Observación: No se han encontrado elementos <code>fieldset</code>.<br/>
+			Recomendación: Es importante que el primer elemento de un fieldset sea un elemento legend que describa el tipo de informaci&oacute;n que se est&aacute; agrupando..<br/>
+			Número de errores: 0
+
+			Código: OAW4-Comprobando el uso de cabeceras múltiples dentro de una fila
+			Criticidad: Media
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Los elementos <code>th</code> deben emplearse correctamente para que el usuario identifique sin dificultades los contenidos de las tablas.<br/>
+			Número de errores: 0
+
+			Código: OAW5-Comprobando la validez de los roles ARIA
+			Criticidad: Alta
+			Observación: No se han encontrado elementos con atributo role..<br/>
+			Recomendación: Es recomendable apegarse a la la especificaci&oacute;n WAI-ARIA, que define un conjunto de atributos HTML adicionales que se pueden aplicar a los elementos para proporcionar sem&aacute;ntica adicional y mejorar la accesibilidad donde sea que falte.<br/>
+			Número de errores: 0
+
+			Código: OAW6-Comprobando que las celdas de la tabla tengan datos
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Las celdas vac&iacute;as en las tablas suelen causar problemas para los usuarios que ocupan tecnolog&iacute;as de accesibilidad..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.3..Características sensoriales
+		Nivel: A
+
+	Pauta: 1.4..Distinguible
+	Descripcion: Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo
+
+		Criterio: 1.4.2..Control del audio
+		Nivel: A
+
+		Criterio: 1.4.4..Redimensionamiento del texto
+		Nivel: AA
+
+			Código: C28-Especificando el tamaño de un contenedor de texto usando unidades em
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C14-Usando unidades em para tamaños de fuente
+			Criticidad: Alta
+			Observación: De las 15 reglas CSS en la p&aacute;gina para definir el tamaño de letra (font-size), 12 de ellas usan declaraciones de elementos de forma absoluta (position:asolute) o tiene un valor incorrecto.<pre><ul><li><xmp>h1 { font-size: 15px; font-weight: bold; color: rgb(59, 103, 120); padding-bottom: 12px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(198, 198, 198); text-transform: uppercase; width: 100%; margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; }</xmp></li><li><xmp>#lateral_izq { width: 195px; float: left; font-size: 14px; text-transform: uppercase; margin-top: 30px; margin-right: 0px; margin-bottom: 20px; margin-left: 49px; }</xmp></li><li><xmp>#listado .laLista > ul > li .literal .entradilla { color: rgb(67, 67, 67); font-size: 13px; line-height: 17px; margin-top: 14px; }</xmp></li><li><xmp>.txt_general { font-size: 13px; color: rgb(67, 67, 67); width: 100%; margin-top: 14px; line-height: 17px; }</xmp></li><li><xmp>.leer_mas { font-size: 13px; color: rgb(67, 67, 67); text-transform: uppercase; width: 100%; float: left; text-align: right; margin-top: 25px; }</xmp></li><li><xmp>#referencia_seccion { color: rgb(94, 166, 191); width: 100%; height: 25px; text-transform: uppercase; font-size: 14px; font-weight: bold; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(197, 197, 197); margin-bottom: 8px; }</xmp></li><li><xmp>#copy { float: left; width: auto; color: rgb(27, 97, 121); font-weight: bold; font-size: 13px; margin-left: 50px; }</xmp></li><li><xmp>#menu_inf a { font-size: 13px; }</xmp></li><li><xmp>#txt_repor { font-size: 13px; margin-top: 0px; font-family: Arial; line-height: 18px; float: left; clear: both; width: 100%; }</xmp></li><li><xmp>#avisoLegal { width: 800px; margin-top: 20px; margin-right: auto; margin-bottom: 40px; margin-left: 77px; font-size: 13px; float: left; line-height: 17px; }</xmp></li><li><xmp>#share { float: left; width: 100%; font-size: 12px; color: rgb(56, 56, 56); font-weight: bold; text-align: right; padding-top: 8px; }</xmp></li><li><xmp>#menu-sup { color: rgb(84, 147, 169); font-size: 15px; text-transform: uppercase; font-family: Arial; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS para definir el tamaño de letra del contenido, utilice valores relativos por medio de unidades "em", % o valores  xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, o larger. Al usar medidas de fuente absolutas, se limita el contenido textual de la p&aacute;gina ya que no se podr&iacute;a adaptar a diferentes resoluciones de pantalla..<br/>
+			Número de errores: 12
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C13-Usando tamaños de fuente nombrados
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C12-Usando porcentajes para tamaños de fuente
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 1.4.8..Presentación visual
+		Nivel: AAA
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C20-Usando medidas relativas para establecer anchos de columna para que las líneas puedan promediar 80 caracteres o menos cuando se cambia el tamaño del navegador
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C19-Especificar la alineación, ya sea a la izquierda o a la derecha en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C21-Especificando espacio entre líneas en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 2.Operable
+Descripcion: Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+	Pauta: 2.1..Accesible por teclado
+	Descripcion: Proporcionar acceso a toda la funcionalidad mediante el teclado
+
+		Criterio: 2.1.1..Teclado
+		Nivel: A
+
+	Pauta: 2.2..Tiempo suficiente
+	Descripcion: Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido
+
+		Criterio: 2.2.2..Pausar, detener, ocultar
+		Nivel: A
+
+			Código: G11A-Creando contenido que parpadea al menos 5 segundos: A) Elementos con animación blink
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>blink</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: G11B-Creando contenido que parpadea al menos 5 segundos: B) Elementos con animación marquee
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>marquee</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+	Pauta: 2.3..Convulsiones
+	Descripcion: No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones
+
+	Pauta: 2.4..Navegable
+	Descripcion: Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran
+
+		Criterio: 2.4.1..Evitar bloques
+		Nivel: A
+
+		Criterio: 2.4.2..Páginas tituladas
+		Nivel: A
+
+			Código: G88-Proporcionar títulos descriptivos para páginas web
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H25-Proporcionando un título usando el elemento title
+			Criticidad: Alta
+			Observación: La p&aacute;gina tiene un t&iacute;tulo, aseg&uacute;rese que sea descriptivo y que est&eacute; acorde al contenido de la p&aacute;gina. <pre><ul><title>Noticias de En portada. Portal Carta de España. Ministerio de Trabajo, Migraciones y Seguridad Social</title></ul></pre>.<br/>
+			Recomendación: El t&iacute;tulo de la p&aacute;gina debe ser descriptivo y brindar una persepci&oacute;n del contenido de la misma..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.3..Orden del foco
+		Nivel: A
+
+			Código: H4-Creando un orden lógico en el orden del tabulador a través de los enlaces, controles de formulario, y objetos
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.4..Propósito de los enlaces (En contexto)
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H33-Complementando el texto del enlace con el atributo title
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C7-Usando CSS para ocultar una porcion de texto de un enlace
+			Criticidad: Baja
+			Observación: En la p&aacute;gina se est&aacute; utilizando en 25 ocaci&oacute;n(es) la opci&oacute;n para ocultar contenido, verifique que este sea relevante, o que sea facilmente accesible.<br/>
+			Recomendación: Al ocultar una parte de informaci&oacute;n de la p&aacute;gina, se puede llegar a confundir al usuario.<br/>
+			Número de errores: 25
+
+			Código: H30-Proporcionar un texto de enlace que describa el propósito del enlace para los elemtos de anclaje (a)
+			Criticidad: Alta
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong> diferente de nulo o vacio, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img class="logo_carta" src="img/cabecera/logo_carta.gif" alt="Carta de España Online"></xmp></li><li><xmp><img class="logo_ministerior" src="img/cabecera/logoGdE.gif" alt="Ministerio de Trabajo, Migraciones y Seguridad Social. Gobierno de España."></xmp></li><li><xmp><img src="img/banners/logoMEYSS.jpg" alt="Ciudadanía Española en el Exterior"></xmp></li><li><xmp><img src="img/banners/banner_CEXT.jpg" alt="Ciudadanía Española en el Exterior. El portal de los jóvenes españoles en el exterior"></xmp></li><li><xmp><img alt="portada 752" src="img/noticias/2018/noviembre/752_portadaWeb.jpg"></xmp></li><li><xmp><img src="img/noticias/2018/noviembre/comision1.jpg" alt="La Comisión Permanente recibida en el Congreso de los Diputados"></xmp></li><li><xmp><img src="img/noticias/2018/septiembre-octubre/Raicex1.jpg" alt="La ciencia española en el exterior avanza"></xmp></li><li><xmp><img src="img/noticias/2018/agosto/ladino1.jpg" alt="Ladino, una lengua 'castellana' que lucha por sobrevivir"></xmp></li><li><xmp><img src="img/noticias/2018/julio/portico1.jpg" alt="El Pórtico de la Gloria recupera el color del románico"></xmp></li><li><xmp><img src="img/noticias/2018/junio/todos_web.jpg" alt="Nuevos nombramientos en el Ministerio de Trabajo, Migraciones y Seguridad Social"></xmp></li><li><xmp><img src="img/noticias/2018/abril-mayo/pasajeros_portada.jpg" alt="Españoles en América: emigrar en tercera clase"></xmp></li><li><xmp><img src="img/noticias/2018/marzo/libros1.jpg" alt="Cocina para leer"></xmp></li><li><xmp><img src="img/noticias/2018/marzo/congreso1.jpg" alt="III Congreso de Asociaciones Españolas en Estados Unidos y Puerto Rico"></xmp></li><li><xmp><img src="img/noticias/2018/febrero/pacto1.jpg" alt="Pacto mundial para la migración"></xmp></li><li><xmp><img src="img/noticias/2018/enero/refug1.jpg" alt="Acogida e integración de refugiados"></xmp></li><li><xmp><img src="img/noticias/2017/diciembre/Ancianos1.jpg" alt="Atención a ancianos españoles en el exterior"></xmp></li><li><xmp><img src="img/noticias/2017/diciembre/Ballet.jpg" alt="Cuarenta aniversario del Ballet Nacional de España"></xmp></li><li><xmp><img src="img/noticias/2017/noviembre/Promano_web.jpg" alt="España, plató internacional de cine"></xmp></li><li><xmp><img src="img/noticias/2017/octubre/Ata1.jpg" alt="Atapuerca, cuna de los primeros europeos"></xmp></li><li><xmp><img src="img/noticias/2017/septiembre/pza1.jpg" alt="La Plaza Mayor de Madrid, 400 años de historia"></xmp></li><li><xmp><img src="img/noticias/2017/junio/hispanic1.jpg" alt="Una increíble lección de historia del arte español"></xmp></li><li><xmp><img src="img/noticias/2017/mayo/armada1.jpg" alt="Las huellas de “La Gran Armada” de Felipe II en Irlanda"></xmp></li><li><xmp><img src="img/noticias/2017/abril/vino1.jpg" alt="El mayor viñedo del mundo"></xmp></li><li><xmp><img src="img/noticias/2017/marzo/victor_web.jpg" alt="“Escribe para que la gente se divierta”: la edad de oro de la cultura de quiosco"></xmp></li><li><xmp><img src="img/noticias/2017/febrero/Consejo1.jpg" alt="El Consejo finaliza su sexto mandato"></xmp></li><li><xmp><img src="img/noticias/2017/enero/sefarad1.jpg" alt="Kastiyos en Sefarad: los sefardíes vuelven a casa"></xmp></li><li><xmp><img src="img/noticias/2016/diciembre/belenes1.JPG" alt="Los belenes y la Navidad"></xmp></li><li><xmp><img src="img/noticias/2016/noviembre/Veracruz1.jpg" alt="Veracruz, puerta de América"></xmp></li><li><xmp><img src="img/noticias/2016/octubre/Alcarria_torija.jpg" alt="La Alcarria de Camilo José Cela en el siglo XXI"></xmp></li><li><xmp><img src="img/noticias/2016/septiembre/niagara1.JPG" alt="Leonardo Torres Quevedo y el transbordador del Niagara"></xmp></li><li><xmp><img src="img/noticias/2016/septiembre/Portada_CdE_728_julio-agosto.jpg" alt="Especial cuarto centenario de la muerte de Cervantes"></xmp></li><li><xmp><img src="img/noticias/2016/junio/cine1.jpg" alt="Migrantes de la pantalla"></xmp></li><li><xmp><img src="img/noticias/2016/mayo/futbol1.jpg" alt="Atleti-Real Madrid: una sana rivalidad"></xmp></li><li><xmp><img src="img/noticias/2016/abril/filipinasPortada.jpg" alt="Filipinas, un poco de España en Asia"></xmp></li><li><xmp><img src="img/noticias/2016/marzo/CUBA1.jpg" alt="España en el corazón. Recuerdos en ámbar, desde Cuba"></xmp></li><li><xmp><img src="img/noticias/2016/febrero/robot1.JPG" alt="Cuando el futuro es presente"></xmp></li><li><xmp><img src="img/noticias/2016/enero/ciencia1.jpg" alt="Ciencia en imágenes"></xmp></li><li><xmp><img src="img/noticias/2015/noviembre/Alaska1.jpg" alt="Segundo  Llorente, un leonés en Alaska"></xmp></li><li><xmp><img src="img/noticias/2015/julioagosto/63web.JPG" alt="El testimonio de los &quot;niños de Rusia&quot;"></xmp></li><li><xmp><img src="img/noticias/letras_c_d/Chico.jpg" alt="Un aula para los massai"></xmp></li><li><xmp><img src="img/noticias/2015/marzo/Los_que_esperan_01.jpg" alt="Seis miradas de la nueva fotografía española"></xmp></li><li><xmp><img src="img/noticias/letras_a_b/Bokoko_Drumen.jpg" alt="La huella colonial de España en Guinea Ecuatorial"></xmp></li><li><xmp><img src="img/noticias/2016/recuperadas/antartida1.jpg" alt="Españoles en la Antártida"></xmp></li><li><xmp><img src="img/noticias/2016/recuperadas/Barco1.jpg" alt="Caminos del mar: los barcos de la emigración"></xmp></li><li><xmp><img src="img/noticias/2016/recuperadas/tanger1.jpg" alt="Tánger: la ciudad que hablaba en español"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.6..Encabezados y etiquetas
+		Nivel: AA
+
+			Código: G130-Proporcionar títulos descriptivos
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.5..Re-autentificación
+		Nivel: AA
+
+			Código: H59-Usando el elemneto link y herramientas de navegación
+			Criticidad: Alta
+			Observación: Los 5 links de relacion que tiene la p&aacute;gina se han definido correctamente.<br/>
+			Recomendación: Es importante colocar la etiqueta link &uacute;nicamente dentro del encabezado de la p&aacute;gina, e indicar la relaci&oacute;n que guarda con la misma.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.7..Foco visible
+		Nivel: AA
+
+			Código: C15-Usando CSS para cambiar la presentación de un componente de interfaz de usuario cuando recibe el foco
+			Criticidad: Baja
+			Observación: No se han detectado declaraciones del foco de teclado.<br/>
+			Recomendación: Verificar que el foco sea visible y que este en correcto posicionamiento en la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.10..Encabezados se sección
+		Nivel: AAA
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de España. Noticias de En portada</li><ul><li>[H2] [OK] Menú principal</li><li>[H2] [OK] Colaboradores</li><li>[H2] [OK] Menú horizontal</li></ul><ul><li>[H1] [OK] Carta de España Online</li><ul><li>[H2] [OK] Carta de España 752 - Noviembre 2018</li></ul></ul><ul><li>[H1] [OK] Reportajes destacados</li><ul><li>[H2] [OK] La Comisión Permanente recibida en el Congreso de los Diputados</li><li>[H2] [OK] La ciencia española en el exterior avanza</li><li>[H2] [OK] Ladino, una lengua 'castellana' que lucha por sobrevivir</li><li>[H2] [OK] El Pórtico de la Gloria recupera el color del románico</li><li>[H2] [OK] Nuevos nombramientos en el Ministerio de Trabajo, Migraciones y Seguridad Social</li><li>[H2] [OK] Españoles en América: emigrar en tercera clase</li><li>[H2] [OK] Cocina para leer</li><li>[H2] [OK] III Congreso de Asociaciones Españolas en Estados Unidos y Puerto Rico</li><li>[H2] [OK] Pacto mundial para la migración</li><li>[H2] [OK] Acogida e integración de refugiados</li><li>[H2] [OK] Atención a ancianos españoles en el exterior</li><li>[H2] [OK] Cuarenta aniversario del Ballet Nacional de España</li><li>[H2] [OK] España, plató internacional de cine</li><li>[H2] [OK] Atapuerca, cuna de los primeros europeos</li><li>[H2] [OK] La Plaza Mayor de Madrid, 400 años de historia</li><li>[H2] [OK] Una increíble lección de historia del arte español</li><li>[H2] [OK] Las huellas de “La Gran Armada” de Felipe II en Irlanda</li><li>[H2] [OK] El mayor viñedo del mundo</li><li>[H2] [OK] “Escribe para que la gente se divierta”: la edad de oro de la cultura de quiosco</li><li>[H2] [OK] El Consejo finaliza su sexto mandato</li><li>[H2] [OK] Kastiyos en Sefarad: los sefardíes vuelven a casa</li><li>[H2] [OK] Los belenes y la Navidad</li><li>[H2] [OK] Veracruz, puerta de América</li><li>[H2] [OK] La Alcarria de Camilo José Cela en el siglo XXI</li><li>[H2] [OK] Leonardo Torres Quevedo y el transbordador del Niagara</li><li>[H2] [OK] Especial cuarto centenario de la muerte de Cervantes</li><li>[H2] [OK] Migrantes de la pantalla</li><li>[H2] [OK] Atleti-Real Madrid: una sana rivalidad</li><li>[H2] [OK] Filipinas, un poco de España en Asia</li><li>[H2] [OK] España en el corazón. Recuerdos en ámbar, desde Cuba</li><li>[H2] [OK] Cuando el futuro es presente</li><li>[H2] [OK] Ciencia en imágenes</li><li>[H2] [OK] Segundo  Llorente, un leonés en Alaska</li><li>[H2] [OK] El testimonio de los "niños de Rusia"</li><li>[H2] [OK] Un aula para los massai</li><li>[H2] [OK] Seis miradas de la nueva fotografía española</li><li>[H2] [OK] La huella colonial de España en Guinea Ecuatorial</li><li>[H2] [OK] Españoles en la Antártida</li><li>[H2] [OK] Caminos del mar: los barcos de la emigración</li><li>[H2] [OK] Tánger: la ciudad que hablaba en español</li></ul></ul></ul><ul><li>[H1] [OK] Pie de página</li></ul></ul></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+
+Principio: 3.Comprensible
+Descripcion: La información y el manejo de la interfaz de usuario deben ser comprensibles
+
+	Pauta: 3.1..Legible
+	Descripcion: Hacer que los contenidos textuales resulten legibles y comprensibles
+
+		Criterio: 3.1.1..Idioma de la página
+		Nivel: A
+
+			Código: H57-Usando el atributo language en el elemento html
+			Criticidad: Alta
+			Observación: La definici&oacute;n de lenguaje en la p&aacute;gina se ha realizado exitosamente.<br/>
+			Recomendación: Verificar la especificaci&oacute;n del lenguaje, es importante especificar en que idioma se est&aacute; presentando la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.3..Palabras inusuales
+		Nivel: AAA
+
+			Código: H60-Usando el elemento link para enlazar a un glosario
+			Criticidad: Baja
+			Observación: La p&aacute;gina podr&iacute;a requerir un link a un glosario de palabras complejas.<br/>
+			Recomendación: Cuando se utiliza palabras complejas es recomendable colocar un glosario que las defina.<br/>
+			Número de errores: 1
+
+			Código: H40-Usando listas de definición
+			Criticidad: Baja
+			Observación: No se han encontrado listas dentro de la p&aacute;gina.<br/>
+			Recomendación: La estructura de la lista de definici&oacute;n, deben ser empleadas correctamente, colocando cada uno de sus componentes sin descartar ninguno.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.6..Pronunciación
+		Nivel: AAA
+
+			Código: H62-Usando el elemento ruby
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado etiquetas ruby.<br/>
+			Recomendación: Es importante supervisar el correcto uso de esta etiqueta para caracteres especiales.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.4..Abreviaturas
+		Nivel: AAA
+
+			Código: H70-Usando elementos frame para agrupar bloques de material repetido
+			Criticidad: Alta
+			Observación: La p&aacute;gina no tiene etiquetas frame.<br/>
+			Recomendación: Los elementos frame no deben usarse para maquetar contenido en la p&aacute;gina, se debe utilizar hojas de estilo.<br/>
+			Número de errores: 0
+
+	Pauta: 3.2..Predecible
+	Descripcion: Hacer que las páginas web aparezcan y operen de manera predecible
+
+		Criterio: 3.2.2..Al introducir datos
+		Nivel: A
+
+			Código: H32-Proporcionar botones de envio
+			Criticidad: Media
+			Observación: Verificar que el formulario tenga m&eacute;todo de env&iacute;o.<br/>
+			Recomendación: No se han encontrado formularios dentro de la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.2.5..Cambios a petición
+		Nivel: AAA
+
+			Código: H83-Usando el atributo target para abrir una nueva ventana a petición del usuario e indicando en ventana a petición del usuario e indicando en el texto de este enlace
+			Criticidad: Media
+			Observación: No se han encontrado enlaces en la p&aacute;gina que abran una nueva ventana..<br/>
+			Recomendación: En el caso de enlaces que se vayan a abrir en una nueva ventana, se debe informar al usuario de dicho comportamiento..<br/>
+			Número de errores: 0
+
+			Código: H76-Usando meta refresh para crear un redireccionamiento de cliente instantánea
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se ha detectado el uso de la etiqueta meta conjuntamente con el atributo refresh para actualizaci&oacute;n de la p&aacute;gina..<br/>
+			Recomendación: En el caso de quere hacer uso de la misma, considerar que la continua actualizaci&oacute;n de la p&aacute;gina no es recomendable, puede causar confusi&oacute;n en el usuario..<br/>
+			Número de errores: 0
+
+	Pauta: 3.3..Entrada de datos asistida
+	Descripcion: Ayudar a los usuarios a evitar y corregir los errores
+
+		Criterio: 3.3.1..Identificación de errores
+		Nivel: A
+
+		Criterio: 3.3.2..Etiquetas o instrucciones
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos de formularios que requieran etiquetas..<br/>
+			Recomendación: En el caso de hacer uso de formularios en la estructura y diseño de p&aacute;gina, no olvide asociar un identificador(etiqueta) a cada campo de entrada del formulario..<br/>
+			Número de errores: 0
+
+			Código: H71-Proporcionando una descripcion para grupos de controles de formularios usando los elementos fieldset y legend
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: OAW2-Proporcionando contenido en todos los elementos
+			Criticidad: Baja
+			Observación: No se encontraron elementos vac&iacute;os..<br/>
+			Recomendación: Es importante evitar declarar elementos sin contenido.<br/>
+			Número de errores: 0
+
+		Criterio: 3.3.5..Ayuda
+		Nivel: AAA
+
+			Código: G71-Proporcionando un enlace de ayuda en cada pagina web
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H89-Usando el atributo title para proporcionar ayuda contextual
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 4.Robusto
+Descripcion: El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+	Pauta: 4.1..Compatible
+Descripcion: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas
+
+		Criterio: 4.1.1..Procesamiento
+		Nivel: A
+
+			Código: G134-Validación de páginas web
+			Criticidad: Alta
+			Observación: <p>La pagina ha sido analizada en <a href='https://validator.w3.org/' target='_blank'>https://validator.w3.org/</a>, encontrandose <strong>2 errores</strong>.</p><pre><ul><li><xmp>Almost standards mode doctype. Expected “<!DOCTYPE html>”.:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html</xmp></li><li><xmp>The “profile” attribute on the “head” element is obsolete. To declare which “meta” terms are used in the document, instead register the names as meta extensions. To trigger specific UA behaviors, use a “link” element instead.:
+lang="es"> <head profile="http://www.w3.org/2000/08/w3c-synd/#">  <met</xmp></li></ul></pre><p>Para mayor información revise el siguiente enlace: <a href='https://validator.w3.org/nu/?doc=http://www.mitramiss.gob.es/cartaespana/index.htm' target='_blank'>Validación W3C</a></p>.<br/>
+			Recomendación: .<br/>
+			Número de errores: 2
+
+		Criterio: 4.1.2..Nombre, función, valor
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos de formularios que requieran etiquetas..<br/>
+			Recomendación: En el caso de hacer uso de formularios en la estructura y diseño de p&aacute;gina, no olvide asociar un identificador(etiqueta) a cada campo de entrada del formulario..<br/>
+			Número de errores: 0
+
+			Código: H64-Usando el atributo title en los elementos frame e iframe 
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos frames..<br/>
+			Recomendación: En caso de usar elementos frame o iframe acompañelos por una descripci&oacute;n del mismo a travez del atributo <code>title</code>..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
