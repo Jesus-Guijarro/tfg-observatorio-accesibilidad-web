@@ -17,19 +17,21 @@
             <img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}" style="border-style: groove; width: 12em; height: 12em">
 
             @if($usuario->id===1)
-            <p style="color:#ff9933"><strong>COLABORADOR</strong></p>
+            <h2>COLABORADOR</h2>
 
             @elseif($usuario->id===2)
-            <p style="color:#64d671"><strong>EXPERTO</strong></p>
+            <h2>EXPERTO</h2>
 
             @elseif($usuario->id===3)
-            <p style="color:#0066cc"><strong>ADMINISTRADOR</strong></p>
+            <h2>ADMINISTRADOR</h2>
 
             @endif
 
             <p><strong> Nombre de usuario:  </strong> {{$usuario->nombre}} </p>
             <p><strong> Correo electrónico: </strong> {{$usuario->email}}</p>
-            <p><strong>Biografía:</strong><p> <textarea cols="35" rows="7" readonly> {{$usuario->biografia}}</textarea>
+            <p><strong>Biografía:</strong></p> 
+            <label for="biografia" hidden>Biografia:</label> 
+            <textarea id="biografia" name="biografia" cols="35" rows="7" readonly> {{$usuario->biografia}}</textarea>
 
             
             @if(Auth::user()->id===$usuario->id)
