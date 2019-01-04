@@ -57,7 +57,7 @@
             <p><a href="/gestionar-sitios">Gestionar sitios web</a></p>
             <p><a href="/gestionar-herramientas" >Gestionar herramientas de evaluación</a></p>
             <p><a href="/gestionar-usuarios" >Gestionar usuarios</a></p>
-            <p><a href="/logs">Ver logs de las evaluaciones</a></p>
+            <p><a href="/logs">Ver archivos de registro de las evaluaciones</a></p>
         </div> 
     </div> 
 </div>   

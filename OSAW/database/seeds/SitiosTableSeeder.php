@@ -170,7 +170,7 @@ class SitiosTableSeeder extends Seeder
                 
             ],
             [
-                'nombre' => 'Agencia Estatal de Meterología',
+                'nombre' => 'Agencia Estatal de Meteorología',
                 'dominio' => 'www.aemet.es',
                 'periodicidad' => 'Semanal',
                 'hora'=>'14:00',

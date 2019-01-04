@@ -43,6 +43,9 @@
                     <a class="dropdown-item" href="/gestionar-usuarios">
                         Gestionar Usuarios
                     </a>
+                    <a class="dropdown-item" href="/logs">
+                        Ver archivos de registro de las evaluaciones
+                    </a>
                 </div>
             </li>
             @endif

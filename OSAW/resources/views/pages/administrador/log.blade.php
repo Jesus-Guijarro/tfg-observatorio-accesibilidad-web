@@ -1,10 +1,10 @@
 @extends('layouts.master')
 
-@section('titulo', 'Log')
+@section('titulo', 'Archivo de registo')
 
 @section('content')
 
-<h1 class="h1-encabezado"> Log</h1>
+<h1 class="h1-encabezado"> Archivo de registro</h1>
 
 <hr>
 <div class="container">

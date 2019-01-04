@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('titulo', 'Logs')
+@section('titulo', 'Archivos de registo')
 
 
 
@@ -26,7 +26,7 @@ function getListaLogs() {
 
 @section('content')
 
-<h1 class="h1-encabezado"> Logs</h1>
+<h1 class="h1-encabezado"> Archivos de registro</h1>
 
 <hr>
 
@@ -34,17 +34,17 @@ function getListaLogs() {
    <div class="col-md-11">
       <div class="row justify-content-center">
          <div style="margin-right: 2em">
-            <label for="tipo_log">Tipo de log:</label>
+            <label for="tipo_log">Tipo de archivo de registro:</label>
             <select id="tipo_log" name="tipo_log" onclick="getListaLogs()"> 
-               <option value="paginas">Logs de las páginas web</option> 
-               <option value="herramientas">Logs de las herramientas</option> 
+               <option value="paginas">Archivos de registro de las páginas web</option> 
+               <option value="herramientas">Archivos de registro de las herramientas</option> 
             </select> 
          </div>
          <div>
             <table id="paginas" summary="Tabla que muestra los logs páginas que no se han podido evaluar" style="display: none;">
                <thead>
                   <tr>
-                     <th>Logs de páginas</th>
+                     <th>Archivos de registro de páginas</th>
                   </tr>
                </thead>
                <tbody>
@@ -64,7 +64,7 @@ function getListaLogs() {
             <table id="herramientas" summary="Tabla con los logs de posibles errores de las herramientas de evaluación" style="display: none;">
                <thead>
                   <tr>
-                     <th>Logs de herramientas</th>
+                     <th>Archivos de registro de herramientas</th>
                   </tr>
                </thead>
                <tbody>
