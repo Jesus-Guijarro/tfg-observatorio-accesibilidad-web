@@ -94,6 +94,7 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
             
         #Se obtiene el número de problemas por nivel al mismo tiempo que se crea el archivo con los datos del reporte
         num_problemas_a+=getErrores("CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       TÉCNICA H37: Uso de <&alt> en elementos <&img>","icon_alt-on-img_rstFail", reporte,driver)
+        num_problemas_a+=getErrores("CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       TÉCNICA H2: Combinar imagen adyacente y enlaces de texto para el mismo recurso","icon_Adjacent-image-text-links_rstFail", reporte,driver)
         num_problemas_a+=getErrores("CRITERIO DE CONFORMIDAD: 1.4.1: Uso del color ","icon_use-color_rstFail", reporte,driver)
         num_problemas_a+=getErrores("CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función","icon_pointing-device-events_rstFail", reporte,driver)
         num_problemas_a+=getErrores("CRITERIO DE CONFORMIDAD: 2.4.2: Titulado de páginas       FALLO F25: Fallo del Criterio de Conformidad 2.4.2 debido al título de una página web que no identifica los contenidos","icon_title-not-descriptive_rstFail", reporte,driver)
@@ -101,6 +102,7 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         num_problemas_aa+=getErrores("CRITERIO DE CONFORMIDAD: 2.4.6: Encabezados y etiquetas       TÉCNICA G130: Proporcionar encabezados descriptivos","icon_descriptive-headings_rstFail", reporte,driver)
         num_problemas_a+=getErrores("CRITERIO DE CONFORMIDAD: 3.1.1: Idioma de la página      ","icon_language-determine_rstFail", reporte,driver)
         num_problemas_aa+=getErrores("CRITERIO DE CONFORMIDAD: 3.1.2: Idioma de las partes      ","icon_language-attributes-page_rstFail", reporte,driver)
+        num_problemas_aa+=getErrores("CRITERIO DE CONFORMIDAD: 3.1.2: Idioma de las partes      ","icon_Value of the xml:lang_rstFail", reporte,driver)
         num_problemas_a+=getErrores("CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      TÉCNICA G13: Describir lo que sucederá antes de que se realice un cambio en un control de formulario que cause que ocurra un cambio de contexto","icon_forms-without-buttons_rstFail", reporte,driver)
         num_problemas_a+=getErrores("CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      TÉCNICA H32: Proporcionar botones de envío de formulario","icon_submit-buttons_rstFail", reporte,driver)
         num_problemas_a+=getErrores("CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <&fieldset> y <&legend>","icon_h71-sturcture_rstFail", reporte,driver)
