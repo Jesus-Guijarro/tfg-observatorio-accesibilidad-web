@@ -35,9 +35,6 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Activamos el modo headless
         driver=driverHeadlessBrowser()
 
-        #Accedemos a la web de la herramienta de evaluación
-        driver.get('http://checkers.eiii.eu/en/pagecheck/')
-
         #Pausa explicita de 20 segundos
         #Se pausa hasta que se encuentra el elemento
         wait = WebDriverWait(driver, 20) 
@@ -45,7 +42,8 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
-            
+            #Accedemos a la web de la herramienta de evaluación
+            driver.get('http://checkers.eiii.eu/en/pagecheck/')
             elem =wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#logo > h1")))
         except:
             driver.quit()

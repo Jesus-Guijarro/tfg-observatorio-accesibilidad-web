@@ -23,9 +23,6 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
     try:
         #Activamos el modo headless
         driver=driverHeadlessBrowser()
-        
-        #Accedemos a la web de la herramienta de evaluacion
-        driver.get('http://www.validatore.it/vamola_validator/checker/index.php')
 
         #Pausa explicita de 10 segundos
         #Se pausa hasta que se encuentra el elemento
@@ -34,6 +31,8 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
+            #Accedemos a la web de la herramienta de evaluacion
+            driver.get('http://www.validatore.it/vamola_validator/checker/index.php')
             elem =wait.until(EC.title_is(("Vamolà, validatore e monitor per l'accessibilità : Web Accessibility Checker")))
         except:
             driver.quit()

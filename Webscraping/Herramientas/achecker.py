@@ -24,9 +24,6 @@ def ejecutarAchecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Activamos el modo headless
         driver=driverHeadlessBrowser()
 
-        #Accedemos a la web de la herramienta de evaluacion
-        driver.get('https://achecker.ca/checker/index.php')
-
         #Pausa explicita de 10 segundos
         #Se pausa hasta que se encuentra el elemento
         wait = WebDriverWait(driver, 10) 
@@ -34,6 +31,8 @@ def ejecutarAchecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
+            #Accedemos a la web de la herramienta de evaluacion
+            driver.get('https://achecker.ca/checker/index.php')
             elem =wait.until(EC.title_is(("IDI Web Accessibility Checker : Web Accessibility Checker")))
         except:
             driver.quit()

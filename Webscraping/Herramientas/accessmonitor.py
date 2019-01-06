@@ -52,9 +52,6 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Activamos el modo headless
         driver=driverHeadlessBrowser()
 
-        #Accedemos a la web de la herramienta de evaluacion
-        driver.get('http://www.acessibilidade.gov.pt/accessmonitor/')
-
         #Pausa explicita de 5 segundos
         #Se pausa hasta que se encuentra el elemento
         wait = WebDriverWait(driver, 5) 
@@ -62,6 +59,8 @@ def ejecutarAccessmonitor(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Esperamos hasta que accedemos a la web de la herramienta
         #En caso negativo se cancela el análisis y se cierra el driver
         try:
+            #Accedemos a la web de la herramienta de evaluacion
+            driver.get('http://www.acessibilidade.gov.pt/accessmonitor/')
             elem =wait.until(EC.title_is(("AccessMonitor")))
         except:
             driver.quit()
