@@ -16,13 +16,13 @@
         <div class="col-md-11">
             <img src="/storage/{{$usuario->avatar}}" alt="Avatar usuario {{$usuario->nombre}}" style="border-style: groove; width: 12em; height: 12em">
 
-            @if($usuario->id===1)
+            @if($usuario->rol_id===1)
             <h2>COLABORADOR</h2>
 
-            @elseif($usuario->id===2)
+            @elseif($usuario->rol_id===2)
             <h2>EXPERTO</h2>
 
-            @elseif($usuario->id===3)
+            @elseif($usuario->rol_id===3)
             <h2>ADMINISTRADOR</h2>
 
             @endif
