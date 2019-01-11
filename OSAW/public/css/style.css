@@ -195,3 +195,9 @@ div.grafico {
     width: 20em;
 }
  
+
+.textarea {
+    width:100%;
+    max-width:100%;
+    max-height:100%;
+}

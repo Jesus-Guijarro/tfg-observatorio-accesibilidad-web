@@ -23,15 +23,18 @@
                     <label for="url" hidden>Nueva URL: </label>
                     <input type="text" id ="url" name="url" value="{{$pagina->URL}}"  style="width: 40em" required >
 
-                    @if ($errors->has('url'))
-                        <span>
-                            <strong class="strong-val">{{ $errors->first('url') }}</strong>
-                        </span>
-                    @endif
+                    
                     <button type="submit" class="btn btn-primary">
                         Modificar
                     </button>
                     {{ csrf_field() }}
+                    <div>
+                        @if ($errors->has('url'))
+                            <span>
+                                <strong class="strong-val">{{ $errors->first('url') }}</strong>
+                            </span>
+                        @endif
+                    </div>
                 </form>
             </div>
         </div>

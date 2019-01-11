@@ -10,8 +10,7 @@
 <div class="container">
     <div class="col-md-11">
 
-      <p><strong>Reporte: </strong><a href="/storage{{$reporte}}" download="{{$reporte}}">{{$reporte}}</a></p>
-
+      <a class="btn btn-primary" href="/storage{{$reporte}}" download="{{$reporte}}" role="button">Descargar reporte</a>
 
       <?php $contenido= Storage::get($reporte);?>
 

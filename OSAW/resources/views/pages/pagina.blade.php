@@ -861,7 +861,7 @@
         <div style="margin-bottom: 1.5em">
             <p> <strong>URL: </strong><a href='{{$pagina->URL}}' target="_blank">{{$pagina->URL}}</a></p>
             <p><strong>Sitio web:</strong> <a href='{{url("sitio/$sitio->id")}}'>{{$sitio->nombre}}</a></p>
-            <a class="btn btn-primary" href="{{$pagina->archivo_HTML}}" download="reporte-pagina-{{$pagina->id}}" role="button">Descargar copia HTML</a>
+            <a class="btn btn-primary" href="{{$pagina->archivo_HTML}}" download="copiaHTML-{{$pagina->id}}" role="button">Descargar copia HTML</a>
         </div>
     </div>
 </div>
