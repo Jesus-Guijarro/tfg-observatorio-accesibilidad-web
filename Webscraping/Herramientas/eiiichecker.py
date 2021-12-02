@@ -5,7 +5,7 @@ directorio_import = os.path.dirname(os.path.abspath(__file__))
 directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from database import conexionDB,desconexionDB
+from database import conexionBD,desconexionBD
 from herramienta import getDirectorioOSAW,getFecha,driverHeadlessBrowser, getRutaReporte, getCabeceraReporte, errorLog
 
 from selenium import webdriver
@@ -122,7 +122,7 @@ def ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Guardamos los datos en la BD
         cursor = cursor.execute("insert into eiiicheckers(pagina_id,puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),puntuacion,num_problemas, num_aciertos,num_problemas_a,num_problemas_aa,ruta_BD,fecha_test,))
 
-        desconexionDB(conexion)
+        desconexionBD(conexion)
 
     except Exception as e:
         errorLog(directorio,fecha_test,herramienta,pagina_id,e)
@@ -136,9 +136,9 @@ pagina_url=sys.argv[2]
 herramienta="eiiichecker"
 
 #Conexion base de datos
-parametros = conexionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarEIIIChecker(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexionDB(conexion)
+desconexionBD(conexion)

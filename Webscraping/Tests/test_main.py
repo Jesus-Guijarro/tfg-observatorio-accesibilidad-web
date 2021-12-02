@@ -1,7 +1,7 @@
 import io, json, mysql.connector, os, sys
 
 from selenium import webdriver
-from database import conexionDB,desconexionDB
+from database import conexionBD,desconexionBD
 from comprobaciones import comprobarAccesoPagina, comprobarCopiaHTML
 from herramienta import copiarDatosAntiguos, getFecha, getDirectorioOSAW, errorLog, ejecutarHerramienta
 
@@ -32,7 +32,7 @@ def ejecutar(sitio_id,herramientas_sitio,conexion,cursor):
 sitio_id=sys.argv[1]
 
 #Conexión base de datos
-parametros = conexionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
@@ -46,4 +46,4 @@ for herramienta in herramientas:
     herramientas_sitio.append(str(herramienta.__getitem__(0)))
 
 ejecutar(sitio_id,herramientas_sitio,conexion,cursor)
-desconexionDB(conexion)
+desconexionBD(conexion)

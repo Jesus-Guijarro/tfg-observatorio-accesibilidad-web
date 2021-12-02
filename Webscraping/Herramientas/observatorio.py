@@ -4,7 +4,7 @@ directorio_import = os.path.dirname(os.path.abspath(__file__))
 directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from database import conexionDB,desconexionDB
+from database import conexionBD,desconexionBD
 from herramienta import getDirectorioOSAW,getFecha, getRutaReporte, getCabeceraReporte, errorLog
 from keys import OBSERVATORIO_KEY
 
@@ -145,7 +145,7 @@ def ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Guardamos los datos en la BD
         cursor = cursor.execute("insert into observatorios(pagina_id,porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),porcentaje_comprensible,porcentaje_operable,porcentaje_perceptible,porcentaje_robusto,num_problemas_comprensible,num_problemas_operable,num_problemas_perceptible,num_problemas_robusto,num_advertencias_comprensible,num_advertencias_operable,num_advertencias_perceptible,num_advertencias_robusto,ruta_BD,fecha_test,))
         
-        desconexionDB(conexion)
+        desconexionBD(conexion)
 
     except Exception as e:
         errorLog(directorio,fecha_test,herramienta,pagina_id,e)
@@ -159,9 +159,9 @@ herramienta="observatorio"
 key=OBSERVATORIO_KEY
 
 #Conexión base de datos
-parametros = conexionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarObservatorioUPS(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexionDB(conexion)
+desconexionBD(conexion)

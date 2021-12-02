@@ -1,6 +1,6 @@
 import sys, os
 
-from database import conexionDB,desconexionDB
+from database import conexionBD,desconexionBD
 from crontab import CronTab
 
 #Método para cambiar el estado de automatización de un sitio
@@ -131,7 +131,7 @@ def ejecutarCrontab(argumentos,conexion,cursor):
         asignarTareasSitios(conexion,cursor)
 
 #Conexion base de datos
-parametros = conexionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
@@ -140,4 +140,4 @@ cron = CronTab(user='jesus')
 
 argumentos=sys.argv
 ejecutarCrontab(argumentos,conexion,cursor)
-desconexionDB(conexion)
+desconexionBD(conexion)

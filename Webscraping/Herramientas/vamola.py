@@ -5,7 +5,7 @@ directorio_import = os.path.dirname(os.path.abspath(__file__))
 directorio_import = directorio_import.replace('/Herramientas','')
 sys.path.append(directorio_import)
 
-from database import conexionDB,desconexionDB
+from database import conexionBD,desconexionBD
 from herramienta import getDirectorioOSAW,getFecha, driverHeadlessBrowser, getRutaReporte, getCabeceraReporte, getDatosProblemas, getNumeroProblemas, errorLog
 
 from selenium import webdriver
@@ -91,7 +91,7 @@ def ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor):
         #Se guarda en la BD
         cursor = cursor.execute("insert into vamolas(pagina_id,num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,datos_problemas,fecha_test)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(int(pagina_id),num_problemas_conocidos, num_problemas_potenciales,num_problemas_conocidos_a,num_problemas_conocidos_aa,num_problemas_conocidos_aaa,num_problemas_potenciales_a,num_problemas_potenciales_aa,num_problemas_potenciales_aaa,ruta_BD,fecha_test,))
         
-        desconexionDB(conexion)
+        desconexionBD(conexion)
 
     except Exception as e:
         errorLog(directorio,fecha_test,herramienta,pagina_id,e)
@@ -105,9 +105,9 @@ pagina_url=sys.argv[2]
 herramienta="vamola"
 
 #Conexion base de datos
-parametros = conexionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
 ejecutarVamola(pagina_id,pagina_url,herramienta,conexion,cursor)
-desconexionDB(conexion)
+desconexionBD(conexion)

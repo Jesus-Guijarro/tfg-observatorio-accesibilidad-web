@@ -1,5 +1,5 @@
 from datetime import datetime
-from database import conexionDB,desconexionDB
+from database import conexionBD,desconexionBD
 
 import os,sys,json
 
@@ -75,7 +75,7 @@ except Exception as e:
     pass
 
 
-parametros = conexionDB()
+parametros = conexionBD()
 conexion= parametros[0]
 cursor = parametros[1]
 
