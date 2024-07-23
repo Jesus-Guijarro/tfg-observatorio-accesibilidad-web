@@ -34,7 +34,11 @@ Crear un observatorio que permita evaluar y monitorear la accesibilidad de los s
 - **Bootstrap**: framework de front-end para desarrollar una aplicación web responsiva.
 - **Google Developers Charts**: visualización de datos.
 
-### Fases del proyecto
+## Diagrama del sistema
+
+![Diagram del sistema](images/diagrama.png)
+
+## Fases del proyecto
 
 1. **Análisis y especificación de requisitos**: Definición de los requisitos funcionales y no funcionales.
 2. **Selección de herramientas de evaluación**: Elección de las herramientas para recopilar datos de análisis de accesibilidad web.
@@ -44,7 +48,7 @@ Crear un observatorio que permita evaluar y monitorear la accesibilidad de los s
    - Obtención de datos mediante web scraping.
    - Desarrollo de la aplicación web.
 
-### Evaluación de la accesibilidad web
+## Evaluación de la accesibilidad web
 
 El seguimiento se ha realizado sobre una muestra de veinticinco sitios web, evaluando diez páginas por sitio con seis herramientas diferentes, generando informes semanales durante dos meses.
 
