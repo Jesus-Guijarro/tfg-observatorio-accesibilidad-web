@@ -1,0 +1,16 @@
+REPORTE PÁGINA WEB: http://www.idae.es/ahorra-energia
+FECHA EVALUACIÓN: 2018-11-22
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 3 elementos de encabezado
+Se identificó 1 caso en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se ha encontrado 1 enlace para eludir bloques de contenido
+Se constató que todos los formularios tienen un botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se encontraron 3 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificó 1 caso en que se utilizan unidades de medida absoluta en la definición del ancho de los elementos
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"

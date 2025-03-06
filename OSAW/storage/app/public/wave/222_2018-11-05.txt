@@ -1,0 +1,43 @@
+REPORTE PÁGINA WEB: http://www.aemet.es/en/portada
+FECHA EVALUACIÓN: 2018-11-05
+
+PROBLEMAS
+Missing form label	  VECES ENCONTRADO: 1
+Empty form label	  VECES ENCONTRADO: 2
+Linked image missing alternative text	  VECES ENCONTRADO: 1
+Missing alternative text	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Device dependent event handler	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 78
+Justified text	  VECES ENCONTRADO: 5
+Skipped heading level	  VECES ENCONTRADO: 1
+Flash	  VECES ENCONTRADO: 1
+Very small text	  VECES ENCONTRADO: 6
+Suspicious link text	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 7
+Long alternative text	  VECES ENCONTRADO: 3
+Missing fieldset	  VECES ENCONTRADO: 2
+Link to PDF document	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 8
+Noscript element	  VECES ENCONTRADO: 1
+Redundant alternative text	  VECES ENCONTRADO: 16
+Audio/Video	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 3
+Form label	  VECES ENCONTRADO: 6
+Element language	  VECES ENCONTRADO: 14
+Linked image with alternative text	  VECES ENCONTRADO: 72
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 40
+
+
+

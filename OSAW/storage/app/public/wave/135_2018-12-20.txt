@@ -1,0 +1,31 @@
+REPORTE PÁGINA WEB: http://www.ciencia.gob.es/portal/site/MICINN/contacto
+FECHA EVALUACIÓN: 2018-12-20
+
+-PROBLEMAS-
+
+Empty link	  VECES ENCONTRADO: 2
+Missing alternative text	  VECES ENCONTRADO: 3
+
+
+-ALERTAS-
+
+Broken same-page link	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 6
+Redundant title text	  VECES ENCONTRADO: 11
+Possible heading	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 3
+Justified text	  VECES ENCONTRADO: 30
+
+
+-CARACTERISTICAS-
+
+Null or empty alternative text	  VECES ENCONTRADO: 3
+Form label	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 1
+Element language	  VECES ENCONTRADO: 5
+Image button with alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 6
+
+
+-PROBLEMAS DE CONTRASTE-
+

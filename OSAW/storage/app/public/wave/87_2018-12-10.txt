@@ -1,0 +1,33 @@
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/explicacion-factura.html
+FECHA EVALUACIÓN: 2018-12-10
+
+-PROBLEMAS-
+
+Missing form label	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Redundant link	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 1
+Possible heading	  VECES ENCONTRADO: 3
+A nearby image has the same alternative text	  VECES ENCONTRADO: 5
+Skipped heading level	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 21
+Very small text	  VECES ENCONTRADO: 6
+
+
+-CARACTERISTICAS-
+
+Linked image with alternative text	  VECES ENCONTRADO: 2
+Null or empty alternative text	  VECES ENCONTRADO: 15
+Alternative text	  VECES ENCONTRADO: 8
+Fieldset	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 2
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 17
+
+

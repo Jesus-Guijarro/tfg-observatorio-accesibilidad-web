@@ -1,0 +1,21 @@
+REPORTE PÁGINA WEB: https://www.alicante.es/es/contenidos/transporte-alicante-metropolitano-tam
+FECHA EVALUACIÓN: 2018-12-26
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 4 imágenes en las que la leyenda es un espacio vacío
+Se encontraron 20 elementos de encabezado
+Se han encontrado 14 enlaces con el mismo texto que apuntan a destinos diferentes
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se ha encontrado 1 enlace para eludir bloques de contenido
+Se encontró 1 tabla sin celdas de encabezado
+Se encontró 1 elemento <fieldset> fuera del formulario
+Se ha identificado 1 control de formulario sin etiquetas asociadas y sin el atributo title
+Se constató que todos los formularios tienen un botón de envío
+Se encontraron 17 errores de validación en el lenguaje de marcado
+Se han encontrado 3 elementos o atributos de HTML que se utilizan para controlar la presentación visual del texto
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificaron 3 casos en que se utilizan unidades de medida absoluta en la definición de la anchura de los elementos
+El título de la página contiene 66 caracteres
+Se constató que se identifica el idioma principal de la página con el código "es"
+Se identificaron 2 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo

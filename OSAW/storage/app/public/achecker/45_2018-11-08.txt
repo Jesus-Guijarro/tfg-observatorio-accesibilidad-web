@@ -1,0 +1,1416 @@
+REPORTE PÁGINA WEB: http://www.renfe.com/viajeros/atendo/estaciones.html
+FECHA EVALUACIÓN: 2018-11-08
+
+-PROBLEMAS CONOCIDOS-
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR: Add text to the label element.     
+
+		LINEA: 62, 
+
+		COLUMNA 11: <input class="boton" src="/img/maquetacion/bt_buscar.gif" value="Buscar" alt="Buscar" type="image"/>
+
+	
+
+  
+
+-PROBLEMAS POTENCIALES-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+
+
+		LINEA: 272, 
+
+		COLUMNA 12: <img src="../../img/6atendo.png" alt="" />       
+
+		LINEA: 279, 
+
+		COLUMNA 12: <img src="../../img/atendo_lateral.png" alt="" />       
+
+		LINEA: 286, 
+
+		COLUMNA 12: <img src="../../img/atendo3.png" alt="" />       
+
+		LINEA: 309, 
+
+		COLUMNA 125: <img src="/img/maquetacion/charpie/social_face.png" alt="Facebook" />       
+
+		LINEA: 310, 
+
+		COLUMNA 119: <img src="/img/maquetacion/charpie/social_twitter.png" alt="Twitter" />       
+
+		LINEA: 311, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_youtube.png" alt="Youtube" />       
+
+		LINEA: 312, 
+
+		COLUMNA 139: <img class="img-responsive" src="/img/maquetacion/charpie/social_flickr.png" alt="Flicker" />       
+
+		LINEA: 313, 
+
+		COLUMNA 114: <img class="img-responsive" src="/img/maquetacion/charpie/social_blog.png" alt="Blog" />       
+
+		LINEA: 314, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_instagram.png" alt="Instagram" />       
+
+		LINEA: 315, 
+
+		COLUMNA 133: <img class="img-responsive" src="/img/maquetacion/charpie/social_linkedin.png" alt="LinkedIn" />       
+
+		LINEA: 323, 
+
+		COLUMNA 304: <img src="/img/maquetacion/charpie/icon_renfe_ticket.png" class="img-responsive" alt="RenfeTicket">       
+
+		LINEA: 326, 
+
+		COLUMNA 305: <img src="/img/maquetacion/charpie/icon_renfe_cercanias.png" class="img-responsive" alt="Renfe Cerca ...       
+
+		LINEA: 329, 
+
+		COLUMNA 99: <img src="/img/maquetacion/charpie/icon_renfe_horarios.png" class="img-responsive" alt="Renfe Horari ...       
+
+		LINEA: 332, 
+
+		COLUMNA 78: <img src="/img/maquetacion/charpie/icon_renfe_play.png" class="img-responsive" alt="PlayRenfe">       
+
+		LINEA: 335, 
+
+		COLUMNA 76: <img src="/img/maquetacion/charpie/icon_atendo.png" class="img-responsive" alt="Renfe Atendo">       
+
+		LINEA: 391, 
+
+		COLUMNA 156: <img class="Logos" src="/img/maquetacion/charpie/logo_gob_small.jpg" alt="Logo fomento">       
+
+		LINEA: 392, 
+
+		COLUMNA 80: <img class="Logos" src="/img/maquetacion/charpie/logo_renfe_wh_small.png" alt="logo renfe color blan ...       
+
+		LINEA: 434, 
+
+		COLUMNA 20: <img src="http://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" border="0 ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 309, 
+
+		COLUMNA 125: <img src="/img/maquetacion/charpie/social_face.png" alt="Facebook" />       
+
+		LINEA: 310, 
+
+		COLUMNA 119: <img src="/img/maquetacion/charpie/social_twitter.png" alt="Twitter" />       
+
+		LINEA: 311, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_youtube.png" alt="Youtube" />       
+
+		LINEA: 312, 
+
+		COLUMNA 139: <img class="img-responsive" src="/img/maquetacion/charpie/social_flickr.png" alt="Flicker" />       
+
+		LINEA: 313, 
+
+		COLUMNA 114: <img class="img-responsive" src="/img/maquetacion/charpie/social_blog.png" alt="Blog" />       
+
+		LINEA: 314, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_instagram.png" alt="Instagram" />       
+
+		LINEA: 315, 
+
+		COLUMNA 133: <img class="img-responsive" src="/img/maquetacion/charpie/social_linkedin.png" alt="LinkedIn" />       
+
+		LINEA: 323, 
+
+		COLUMNA 304: <img src="/img/maquetacion/charpie/icon_renfe_ticket.png" class="img-responsive" alt="RenfeTicket">       
+
+		LINEA: 326, 
+
+		COLUMNA 305: <img src="/img/maquetacion/charpie/icon_renfe_cercanias.png" class="img-responsive" alt="Renfe Cerca ...       
+
+		LINEA: 329, 
+
+		COLUMNA 99: <img src="/img/maquetacion/charpie/icon_renfe_horarios.png" class="img-responsive" alt="Renfe Horari ...       
+
+		LINEA: 332, 
+
+		COLUMNA 78: <img src="/img/maquetacion/charpie/icon_renfe_play.png" class="img-responsive" alt="PlayRenfe">       
+
+		LINEA: 335, 
+
+		COLUMNA 76: <img src="/img/maquetacion/charpie/icon_atendo.png" class="img-responsive" alt="Renfe Atendo">       
+
+		LINEA: 391, 
+
+		COLUMNA 156: <img class="Logos" src="/img/maquetacion/charpie/logo_gob_small.jpg" alt="Logo fomento">       
+
+		LINEA: 392, 
+
+		COLUMNA 80: <img class="Logos" src="/img/maquetacion/charpie/logo_renfe_wh_small.png" alt="logo renfe color blan ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 272, 
+
+		COLUMNA 12: <img src="../../img/6atendo.png" alt="" />       
+
+		LINEA: 279, 
+
+		COLUMNA 12: <img src="../../img/atendo_lateral.png" alt="" />       
+
+		LINEA: 286, 
+
+		COLUMNA 12: <img src="../../img/atendo3.png" alt="" />       
+
+		LINEA: 434, 
+
+		COLUMNA 20: <img src="http://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" border="0 ...
+
+  
+
+	REVISAR: 59: Image used for input element may have Alt text that does not identify the purpose or function as the image.
+
+
+
+		LINEA: 62, 
+
+		COLUMNA 11: <input class="boton" src="/img/maquetacion/bt_buscar.gif" value="Buscar" alt="Buscar" type="image"/>
+
+  
+
+	REVISAR: 193: Form submit button image may contain text that is not in Alt text.
+
+
+
+		LINEA: 62, 
+
+		COLUMNA 11: <input class="boton" src="/img/maquetacion/bt_buscar.gif" value="Buscar" alt="Buscar" type="image"/>
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 61, 
+
+		COLUMNA 6: <input class="campo" name="q" id="busqueda" type="text"/>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 272, 
+
+		COLUMNA 12: <img src="../../img/6atendo.png" alt="" />       
+
+		LINEA: 279, 
+
+		COLUMNA 12: <img src="../../img/atendo_lateral.png" alt="" />       
+
+		LINEA: 286, 
+
+		COLUMNA 12: <img src="../../img/atendo3.png" alt="" />       
+
+		LINEA: 309, 
+
+		COLUMNA 125: <img src="/img/maquetacion/charpie/social_face.png" alt="Facebook" />       
+
+		LINEA: 310, 
+
+		COLUMNA 119: <img src="/img/maquetacion/charpie/social_twitter.png" alt="Twitter" />       
+
+		LINEA: 311, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_youtube.png" alt="Youtube" />       
+
+		LINEA: 312, 
+
+		COLUMNA 139: <img class="img-responsive" src="/img/maquetacion/charpie/social_flickr.png" alt="Flicker" />       
+
+		LINEA: 313, 
+
+		COLUMNA 114: <img class="img-responsive" src="/img/maquetacion/charpie/social_blog.png" alt="Blog" />       
+
+		LINEA: 314, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_instagram.png" alt="Instagram" />       
+
+		LINEA: 315, 
+
+		COLUMNA 133: <img class="img-responsive" src="/img/maquetacion/charpie/social_linkedin.png" alt="LinkedIn" />       
+
+		LINEA: 323, 
+
+		COLUMNA 304: <img src="/img/maquetacion/charpie/icon_renfe_ticket.png" class="img-responsive" alt="RenfeTicket">       
+
+		LINEA: 326, 
+
+		COLUMNA 305: <img src="/img/maquetacion/charpie/icon_renfe_cercanias.png" class="img-responsive" alt="Renfe Cerca ...       
+
+		LINEA: 329, 
+
+		COLUMNA 99: <img src="/img/maquetacion/charpie/icon_renfe_horarios.png" class="img-responsive" alt="Renfe Horari ...       
+
+		LINEA: 332, 
+
+		COLUMNA 78: <img src="/img/maquetacion/charpie/icon_renfe_play.png" class="img-responsive" alt="PlayRenfe">       
+
+		LINEA: 335, 
+
+		COLUMNA 76: <img src="/img/maquetacion/charpie/icon_atendo.png" class="img-responsive" alt="Renfe Atendo">       
+
+		LINEA: 391, 
+
+		COLUMNA 156: <img class="Logos" src="/img/maquetacion/charpie/logo_gob_small.jpg" alt="Logo fomento">       
+
+		LINEA: 392, 
+
+		COLUMNA 80: <img class="Logos" src="/img/maquetacion/charpie/logo_renfe_wh_small.png" alt="logo renfe color blan ...       
+
+		LINEA: 434, 
+
+		COLUMNA 20: <img src="http://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" border="0 ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 61, 
+
+		COLUMNA 6: <input class="campo" name="q" id="busqueda" type="text"/>       
+
+		LINEA: 62, 
+
+		COLUMNA 11: <input class="boton" src="/img/maquetacion/bt_buscar.gif" value="Buscar" alt="Buscar" type="image"/>
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 23, 
+
+		COLUMNA 4: <script type="text/javascript" src="/js/zebra_tables.js"></script>       
+
+		LINEA: 25, 
+
+		COLUMNA 4: <script type="text/javascript" src="/viajeros/css/resbypostmsg_parent.js"></script>       
+
+		LINEA: 404, 
+
+		COLUMNA 1: <script language="JavaScript" type="text/javascript" src="//www.renfe.com/js/s_code.js"></script>       
+
+		LINEA: 405, 
+
+		COLUMNA 1: <script language="JavaScript" type="text/javascript"><!--/* You may give each page an identifying n ...       
+
+		LINEA: 432, 
+
+		COLUMNA 1: <script language="JavaScript" type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 272, 
+
+		COLUMNA 12: <img src="../../img/6atendo.png" alt="" />       
+
+		LINEA: 279, 
+
+		COLUMNA 12: <img src="../../img/atendo_lateral.png" alt="" />       
+
+		LINEA: 286, 
+
+		COLUMNA 12: <img src="../../img/atendo3.png" alt="" />       
+
+		LINEA: 309, 
+
+		COLUMNA 125: <img src="/img/maquetacion/charpie/social_face.png" alt="Facebook" />       
+
+		LINEA: 310, 
+
+		COLUMNA 119: <img src="/img/maquetacion/charpie/social_twitter.png" alt="Twitter" />       
+
+		LINEA: 311, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_youtube.png" alt="Youtube" />       
+
+		LINEA: 312, 
+
+		COLUMNA 139: <img class="img-responsive" src="/img/maquetacion/charpie/social_flickr.png" alt="Flicker" />       
+
+		LINEA: 313, 
+
+		COLUMNA 114: <img class="img-responsive" src="/img/maquetacion/charpie/social_blog.png" alt="Blog" />       
+
+		LINEA: 314, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_instagram.png" alt="Instagram" />       
+
+		LINEA: 315, 
+
+		COLUMNA 133: <img class="img-responsive" src="/img/maquetacion/charpie/social_linkedin.png" alt="LinkedIn" />       
+
+		LINEA: 323, 
+
+		COLUMNA 304: <img src="/img/maquetacion/charpie/icon_renfe_ticket.png" class="img-responsive" alt="RenfeTicket">       
+
+		LINEA: 326, 
+
+		COLUMNA 305: <img src="/img/maquetacion/charpie/icon_renfe_cercanias.png" class="img-responsive" alt="Renfe Cerca ...       
+
+		LINEA: 329, 
+
+		COLUMNA 99: <img src="/img/maquetacion/charpie/icon_renfe_horarios.png" class="img-responsive" alt="Renfe Horari ...       
+
+		LINEA: 332, 
+
+		COLUMNA 78: <img src="/img/maquetacion/charpie/icon_renfe_play.png" class="img-responsive" alt="PlayRenfe">       
+
+		LINEA: 335, 
+
+		COLUMNA 76: <img src="/img/maquetacion/charpie/icon_atendo.png" class="img-responsive" alt="Renfe Atendo">       
+
+		LINEA: 391, 
+
+		COLUMNA 156: <img class="Logos" src="/img/maquetacion/charpie/logo_gob_small.jpg" alt="Logo fomento">       
+
+		LINEA: 392, 
+
+		COLUMNA 80: <img class="Logos" src="/img/maquetacion/charpie/logo_renfe_wh_small.png" alt="logo renfe color blan ...       
+
+		LINEA: 434, 
+
+		COLUMNA 20: <img src="http://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" border="0 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 272, 
+
+		COLUMNA 12: <img src="../../img/6atendo.png" alt="" />       
+
+		LINEA: 279, 
+
+		COLUMNA 12: <img src="../../img/atendo_lateral.png" alt="" />       
+
+		LINEA: 286, 
+
+		COLUMNA 12: <img src="../../img/atendo3.png" alt="" />       
+
+		LINEA: 309, 
+
+		COLUMNA 125: <img src="/img/maquetacion/charpie/social_face.png" alt="Facebook" />       
+
+		LINEA: 310, 
+
+		COLUMNA 119: <img src="/img/maquetacion/charpie/social_twitter.png" alt="Twitter" />       
+
+		LINEA: 311, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_youtube.png" alt="Youtube" />       
+
+		LINEA: 312, 
+
+		COLUMNA 139: <img class="img-responsive" src="/img/maquetacion/charpie/social_flickr.png" alt="Flicker" />       
+
+		LINEA: 313, 
+
+		COLUMNA 114: <img class="img-responsive" src="/img/maquetacion/charpie/social_blog.png" alt="Blog" />       
+
+		LINEA: 314, 
+
+		COLUMNA 128: <img class="img-responsive" src="/img/maquetacion/charpie/social_instagram.png" alt="Instagram" />       
+
+		LINEA: 315, 
+
+		COLUMNA 133: <img class="img-responsive" src="/img/maquetacion/charpie/social_linkedin.png" alt="LinkedIn" />       
+
+		LINEA: 323, 
+
+		COLUMNA 304: <img src="/img/maquetacion/charpie/icon_renfe_ticket.png" class="img-responsive" alt="RenfeTicket">       
+
+		LINEA: 326, 
+
+		COLUMNA 305: <img src="/img/maquetacion/charpie/icon_renfe_cercanias.png" class="img-responsive" alt="Renfe Cerca ...       
+
+		LINEA: 329, 
+
+		COLUMNA 99: <img src="/img/maquetacion/charpie/icon_renfe_horarios.png" class="img-responsive" alt="Renfe Horari ...       
+
+		LINEA: 332, 
+
+		COLUMNA 78: <img src="/img/maquetacion/charpie/icon_renfe_play.png" class="img-responsive" alt="PlayRenfe">       
+
+		LINEA: 335, 
+
+		COLUMNA 76: <img src="/img/maquetacion/charpie/icon_atendo.png" class="img-responsive" alt="Renfe Atendo">       
+
+		LINEA: 391, 
+
+		COLUMNA 156: <img class="Logos" src="/img/maquetacion/charpie/logo_gob_small.jpg" alt="Logo fomento">       
+
+		LINEA: 392, 
+
+		COLUMNA 80: <img class="Logos" src="/img/maquetacion/charpie/logo_renfe_wh_small.png" alt="logo renfe color blan ...       
+
+		LINEA: 434, 
+
+		COLUMNA 20: <img src="http://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" border="0 ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 23, 
+
+		COLUMNA 4: <script type="text/javascript" src="/js/zebra_tables.js"></script>       
+
+		LINEA: 25, 
+
+		COLUMNA 4: <script type="text/javascript" src="/viajeros/css/resbypostmsg_parent.js"></script>       
+
+		LINEA: 404, 
+
+		COLUMNA 1: <script language="JavaScript" type="text/javascript" src="//www.renfe.com/js/s_code.js"></script>       
+
+		LINEA: 405, 
+
+		COLUMNA 1: <script language="JavaScript" type="text/javascript"><!--/* You may give each page an identifying n ...       
+
+		LINEA: 432, 
+
+		COLUMNA 1: <script language="JavaScript" type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0 ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 23, 
+
+		COLUMNA 4: <script type="text/javascript" src="/js/zebra_tables.js"></script>       
+
+		LINEA: 25, 
+
+		COLUMNA 4: <script type="text/javascript" src="/viajeros/css/resbypostmsg_parent.js"></script>       
+
+		LINEA: 404, 
+
+		COLUMNA 1: <script language="JavaScript" type="text/javascript" src="//www.renfe.com/js/s_code.js"></script>       
+
+		LINEA: 405, 
+
+		COLUMNA 1: <script language="JavaScript" type="text/javascript"><!--/* You may give each page an identifying n ...       
+
+		LINEA: 432, 
+
+		COLUMNA 1: <script language="JavaScript" type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0 ...
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 11, 
+
+		COLUMNA 4: <title>Estaciones y Trenes con servicio Atendo</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 35, 
+
+		COLUMNA 7: <a href="/index.html" title="Ir a p&aacute;gina de inicio">Renfe</a>       
+
+		LINEA: 42, 
+
+		COLUMNA 25: <a href="/atencion_cliente.html" title="Ir a atenci&oacute;n al cliente">Atenci&oacute;n al cliente< ...       
+
+		LINEA: 42, 
+
+		COLUMNA 158: <a href="/accesibilidad.html" title="Ir a accesibilidad">Accesibilidad</a>       
+
+		LINEA: 42, 
+
+		COLUMNA 241: <a href="/asistente.html" onclick="window.open(this.href); return false;" title="Ir a la ayuda.Se ab ...       
+
+		LINEA: 51, 
+
+		COLUMNA 25: <a href="/viajeros/index.html" title="Ir a Viajar con Renfe"><span class="str">Viajeros</span></a>       
+
+		LINEA: 52, 
+
+		COLUMNA 25: <a href="/empresa/index.html" title="Informaci&oacute;n corporativa de Renfe">La Empresa</a>       
+
+		LINEA: 75, 
+
+		COLUMNA 9: <a href="/viajeros/index.html" title="Consultar horarios" class="horarios">Horarios</a>       
+
+		LINEA: 76, 
+
+		COLUMNA 9: <a href="/incidencias.html" title="Ver incidencias del servicio" class="incidencias">Avisos</a>       
+
+		LINEA: 77, 
+
+		COLUMNA 9: <a href="https://venta.renfe.com/vol/?idioma=es&amp;pais=ES" title="Compra de billetes por internet. ...       
+
+		LINEA: 78, 
+
+		COLUMNA 9: <a href="/empresa/comunicacion/index.html" title="Ir al Gabinete de Prensa" class="info_legal">Gabin ...       
+
+		LINEA: 93, 
+
+		COLUMNA 27: <a href="/index.html" title="Ir a p&aacute;gina de inicio">Inicio</a>       
+
+		LINEA: 94, 
+
+		COLUMNA 4: <a href="../index.html" title="Ir a Viajeros">Viajeros</a>       
+
+		LINEA: 95, 
+
+		COLUMNA 4: <a href="index.html" title="Ir a ATENDO">ATENDO</a>       
+
+		LINEA: 110, 
+
+		COLUMNA 13: <a href="index.html" title="Presentación" >Presentación</a>       
+
+		LINEA: 119, 
+
+		COLUMNA 13: <a href="servicio_atendo.html" title="Guía ATENDO" >Guía ATENDO</a>       
+
+		LINEA: 128, 
+
+		COLUMNA 13: <a href="/docs/Guia ATENDO Castellano OCT2017.pdf" title="Guía - Lectura Fácil :: Se abre en nueva ...       
+
+		LINEA: 137, 
+
+		COLUMNA 13: <a href="estaciones.html" title="Estaciones y Trenes" >Estaciones y Trenes</a>       
+
+		LINEA: 146, 
+
+		COLUMNA 13: <a href="lineascercanias.html" title="Líneas de Cercanías" >Líneas de Cercanías</a>       
+
+		LINEA: 155, 
+
+		COLUMNA 13: <a href="lineasfeve.html" title="Líneas de Feve" >Líneas de Feve</a>       
+
+		LINEA: 164, 
+
+		COLUMNA 13: <a href="mapa_estaciones.html" title="Mapa de Estaciones :: Se abre en nueva ventana"onclick="wind ...       
+
+		LINEA: 173, 
+
+		COLUMNA 13: <a href="atendo_oficina.html" title="Oficina Central ATENDO" >Oficina Central ATENDO</a>       
+
+		LINEA: 182, 
+
+		COLUMNA 13: <a href="atendo_certificacion.html" title="Certificación de Calidad" >Certificación de Calidad</a>       
+
+		LINEA: 191, 
+
+		COLUMNA 13: <a href="atendo_novedades.html" title="Noticias del Servicio" >Noticias del Servicio</a>       
+
+		LINEA: 200, 
+
+		COLUMNA 13: <a href="informacion_cliente.html" title="Información al Cliente" >Información al Cliente</a>       
+
+		LINEA: 209, 
+
+		COLUMNA 13: <a href="recorridos_internacionales.html" title="Asistencia Internacional" >Asistencia Internacional ...       
+
+		LINEA: 218, 
+
+		COLUMNA 13: <a href="
+
+		LINEA:a900.html" title="Línea 900" >Línea 900</a>       
+
+		LINEA: 227, 
+
+		COLUMNA 13: <a href="PoliticaAccesibilidad.html" title="Política de Accesibilidad " >Política de Accesibilidad ...       
+
+		LINEA: 255, 
+
+		COLUMNA 6: <a href="http://web02.renfe.es/u13/GAD/estasAccesible.nsf">Su navegador no admite marcos. Pulse para ...       
+
+		LINEA: 309, 
+
+		COLUMNA 17: <a href="https://www.facebook.com/Renfe" target="_blank" title="Renfe Facebook :: Se abre en nueva v ...       
+
+		LINEA: 310, 
+
+		COLUMNA 17: <a href="https://twitter.com/renfe" target="_blank" title="Renfe Twitter :: Se abre en nueva ventana ...       
+
+		LINEA: 311, 
+
+		COLUMNA 17: <a href="https://www.youtube.com/user/renfe" target="_blank" title="Renfe Youtube :: Se abre en nuev ...       
+
+		LINEA: 312, 
+
+		COLUMNA 17: <a href="https://www.flickr.com/photos/renfeoperadora/" target="_blank" title="Renfe Flicker :: Se a ...       
+
+		LINEA: 313, 
+
+		COLUMNA 17: <a href=" http://blog.renfe.com/" target="_blank" title="Blog Renfe :: Se abre en nueva ventana"><im ...       
+
+		LINEA: 314, 
+
+		COLUMNA 17: <a href="https://www.instagram.com/renfe/" target="_blank" title="Instagram Renfe :: Se abre en nuev ...       
+
+		LINEA: 315, 
+
+		COLUMNA 17: <a href="https://www.linkedin.com/company/renfe" target="_blank" title="LinkedIn Renfe :: Se abre en ...       
+
+		LINEA: 323, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/renfeticket/descarga.html" onclick="fLinkDependienteDispositivo ('/viaj ...       
+
+		LINEA: 326, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/app_cercanias.html" onclick="fLinkDependienteDispositivo ('/viajeros/mo ...       
+
+		LINEA: 329, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/renfeticket/horariosycompra.html" id="renfehorarios"><img src="/img/maq ...       
+
+		LINEA: 332, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/playrenfe.html" id="renfeplay" ><img src="/img/maquetacion/charpie/icon ...       
+
+		LINEA: 335, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/index.html" id="renfeatendo" ><img src="/img/maquetacion/charpie/icon_a ...       
+
+		LINEA: 346, 
+
+		COLUMNA 25: <a href="/index.html">Renfe</a>       
+
+		LINEA: 347, 
+
+		COLUMNA 25: <a target="_blank" href="http://viajes.renfe.com/" title="Renfe Viajes :: Se abre en nueva ventana"> ...       
+
+		LINEA: 348, 
+
+		COLUMNA 25: <a target="_blank" href="https://venta.renfe.com/vol/?" title="Venta Billetes :: Se abre en nueva ve ...       
+
+		LINEA: 349, 
+
+		COLUMNA 25: <a target="_blank" href="https://agencias.renfe.com/vol/agencias.do" title="Renfe Agencias :: Se abr ...       
+
+		LINEA: 350, 
+
+		COLUMNA 25: <a href="/mapa.html">Mapa Web</a>       
+
+		LINEA: 356, 
+
+		COLUMNA 25: <a href="/viajeros/viajes_internacionales/index.html">Viajes Internacionales</a>       
+
+		LINEA: 357, 
+
+		COLUMNA 25: <a href="/viajeros/viajes_internacionales/interrail.html">Interrail</a>       
+
+		LINEA: 358, 
+
+		COLUMNA 25: <a href="/viajeros/viajes_internacionales/spainpass/index.html">SpainPass</a>       
+
+		LINEA: 359, 
+
+		COLUMNA 25: <a target="_blank" href="https://venta.renfe.com/vol/trenesTuriIni.do" title="Trenes Tem&aacute;tico ...       
+
+		LINEA: 360, 
+
+		COLUMNA 25: <a target="_blank" href="/trenesturisticos/index.html" title="Trenes Tur&iacute;sticos :: Se abre en ...       
+
+		LINEA: 366, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/index.html">Informaci&oacute;n Legal</a>       
+
+		LINEA: 367, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/politica_cookies.html">Pol&iacute;tica de Cookies</a>       
+
+		LINEA: 368, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/privacidad.html">Pol&iacute;tica de Privacidad</a>       
+
+		LINEA: 369, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/accesibilidad_web.html">Accesibilidad Web</a>       
+
+		LINEA: 370, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/CGUsoWeb.html">Condiciones Uso Web</a>       
+
+		LINEA: 376, 
+
+		COLUMNA 25: <ahref="/empresa/atencion_cliente/index.html">Atenci&oacute;n al Cliente</a>       
+
+		LINEA: 377, 
+
+		COLUMNA 25: <ahref="/incidencias.html">Avisos</a>       
+
+		LINEA: 378, 
+
+		COLUMNA 25: <ahref="/viajeros/atendo/index.html" >Atendo</a>       
+
+		LINEA: 379, 
+
+		COLUMNA 25: <ahref="/atencion_cliente.html">Att. Telef&oacute;nica</a>       
+
+		LINEA: 380, 
+
+		COLUMNA 25: <ahref="/empresa/comunicacion/index.html">Comunicaci&oacute;n</a>       
+
+		LINEA: 391, 
+
+		COLUMNA 13: <a class="page-scroll no-padding" href="https://www.fomento.gob.es/" title="ministerio de fomento :: ...       
+
+		LINEA: 392, 
+
+		COLUMNA 13: <a class="page-scroll no-padding" href="/index.html" title="Renfe"><img class="Logos" src="/img/maqu ...
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 35, 
+
+		COLUMNA 7: <a href="/index.html" title="Ir a p&aacute;gina de inicio">Renfe</a>       
+
+		LINEA: 42, 
+
+		COLUMNA 25: <a href="/atencion_cliente.html" title="Ir a atenci&oacute;n al cliente">Atenci&oacute;n al cliente< ...       
+
+		LINEA: 42, 
+
+		COLUMNA 158: <a href="/accesibilidad.html" title="Ir a accesibilidad">Accesibilidad</a>       
+
+		LINEA: 42, 
+
+		COLUMNA 241: <a href="/asistente.html" onclick="window.open(this.href); return false;" title="Ir a la ayuda.Se ab ...       
+
+		LINEA: 51, 
+
+		COLUMNA 25: <a href="/viajeros/index.html" title="Ir a Viajar con Renfe"><span class="str">Viajeros</span></a>       
+
+		LINEA: 52, 
+
+		COLUMNA 25: <a href="/empresa/index.html" title="Informaci&oacute;n corporativa de Renfe">La Empresa</a>       
+
+		LINEA: 75, 
+
+		COLUMNA 9: <a href="/viajeros/index.html" title="Consultar horarios" class="horarios">Horarios</a>       
+
+		LINEA: 76, 
+
+		COLUMNA 9: <a href="/incidencias.html" title="Ver incidencias del servicio" class="incidencias">Avisos</a>       
+
+		LINEA: 77, 
+
+		COLUMNA 9: <a href="https://venta.renfe.com/vol/?idioma=es&amp;pais=ES" title="Compra de billetes por internet. ...       
+
+		LINEA: 78, 
+
+		COLUMNA 9: <a href="/empresa/comunicacion/index.html" title="Ir al Gabinete de Prensa" class="info_legal">Gabin ...       
+
+		LINEA: 93, 
+
+		COLUMNA 27: <a href="/index.html" title="Ir a p&aacute;gina de inicio">Inicio</a>       
+
+		LINEA: 94, 
+
+		COLUMNA 4: <a href="../index.html" title="Ir a Viajeros">Viajeros</a>       
+
+		LINEA: 95, 
+
+		COLUMNA 4: <a href="index.html" title="Ir a ATENDO">ATENDO</a>       
+
+		LINEA: 110, 
+
+		COLUMNA 13: <a href="index.html" title="Presentación" >Presentación</a>       
+
+		LINEA: 119, 
+
+		COLUMNA 13: <a href="servicio_atendo.html" title="Guía ATENDO" >Guía ATENDO</a>       
+
+		LINEA: 128, 
+
+		COLUMNA 13: <a href="/docs/Guia ATENDO Castellano OCT2017.pdf" title="Guía - Lectura Fácil :: Se abre en nueva ...       
+
+		LINEA: 137, 
+
+		COLUMNA 13: <a href="estaciones.html" title="Estaciones y Trenes" >Estaciones y Trenes</a>       
+
+		LINEA: 146, 
+
+		COLUMNA 13: <a href="lineascercanias.html" title="Líneas de Cercanías" >Líneas de Cercanías</a>       
+
+		LINEA: 155, 
+
+		COLUMNA 13: <a href="lineasfeve.html" title="Líneas de Feve" >Líneas de Feve</a>       
+
+		LINEA: 164, 
+
+		COLUMNA 13: <a href="mapa_estaciones.html" title="Mapa de Estaciones :: Se abre en nueva ventana"onclick="wind ...       
+
+		LINEA: 173, 
+
+		COLUMNA 13: <a href="atendo_oficina.html" title="Oficina Central ATENDO" >Oficina Central ATENDO</a>       
+
+		LINEA: 182, 
+
+		COLUMNA 13: <a href="atendo_certificacion.html" title="Certificación de Calidad" >Certificación de Calidad</a>       
+
+		LINEA: 191, 
+
+		COLUMNA 13: <a href="atendo_novedades.html" title="Noticias del Servicio" >Noticias del Servicio</a>       
+
+		LINEA: 200, 
+
+		COLUMNA 13: <a href="informacion_cliente.html" title="Información al Cliente" >Información al Cliente</a>       
+
+		LINEA: 209, 
+
+		COLUMNA 13: <a href="recorridos_internacionales.html" title="Asistencia Internacional" >Asistencia Internacional ...       
+
+		LINEA: 218, 
+
+		COLUMNA 13: <a href="
+
+		LINEA:a900.html" title="Línea 900" >Línea 900</a>       
+
+		LINEA: 227, 
+
+		COLUMNA 13: <a href="PoliticaAccesibilidad.html" title="Política de Accesibilidad " >Política de Accesibilidad ...       
+
+		LINEA: 255, 
+
+		COLUMNA 6: <a href="http://web02.renfe.es/u13/GAD/estasAccesible.nsf">Su navegador no admite marcos. Pulse para ...       
+
+		LINEA: 309, 
+
+		COLUMNA 17: <a href="https://www.facebook.com/Renfe" target="_blank" title="Renfe Facebook :: Se abre en nueva v ...       
+
+		LINEA: 310, 
+
+		COLUMNA 17: <a href="https://twitter.com/renfe" target="_blank" title="Renfe Twitter :: Se abre en nueva ventana ...       
+
+		LINEA: 311, 
+
+		COLUMNA 17: <a href="https://www.youtube.com/user/renfe" target="_blank" title="Renfe Youtube :: Se abre en nuev ...       
+
+		LINEA: 312, 
+
+		COLUMNA 17: <a href="https://www.flickr.com/photos/renfeoperadora/" target="_blank" title="Renfe Flicker :: Se a ...       
+
+		LINEA: 313, 
+
+		COLUMNA 17: <a href=" http://blog.renfe.com/" target="_blank" title="Blog Renfe :: Se abre en nueva ventana"><im ...       
+
+		LINEA: 314, 
+
+		COLUMNA 17: <a href="https://www.instagram.com/renfe/" target="_blank" title="Instagram Renfe :: Se abre en nuev ...       
+
+		LINEA: 315, 
+
+		COLUMNA 17: <a href="https://www.linkedin.com/company/renfe" target="_blank" title="LinkedIn Renfe :: Se abre en ...       
+
+		LINEA: 323, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/renfeticket/descarga.html" onclick="fLinkDependienteDispositivo ('/viaj ...       
+
+		LINEA: 326, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/app_cercanias.html" onclick="fLinkDependienteDispositivo ('/viajeros/mo ...       
+
+		LINEA: 329, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/renfeticket/horariosycompra.html" id="renfehorarios"><img src="/img/maq ...       
+
+		LINEA: 332, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/playrenfe.html" id="renfeplay" ><img src="/img/maquetacion/charpie/icon ...       
+
+		LINEA: 335, 
+
+		COLUMNA 17: <a href="/viajeros/movilidad/index.html" id="renfeatendo" ><img src="/img/maquetacion/charpie/icon_a ...       
+
+		LINEA: 346, 
+
+		COLUMNA 25: <a href="/index.html">Renfe</a>       
+
+		LINEA: 347, 
+
+		COLUMNA 25: <a target="_blank" href="http://viajes.renfe.com/" title="Renfe Viajes :: Se abre en nueva ventana"> ...       
+
+		LINEA: 348, 
+
+		COLUMNA 25: <a target="_blank" href="https://venta.renfe.com/vol/?" title="Venta Billetes :: Se abre en nueva ve ...       
+
+		LINEA: 349, 
+
+		COLUMNA 25: <a target="_blank" href="https://agencias.renfe.com/vol/agencias.do" title="Renfe Agencias :: Se abr ...       
+
+		LINEA: 350, 
+
+		COLUMNA 25: <a href="/mapa.html">Mapa Web</a>       
+
+		LINEA: 356, 
+
+		COLUMNA 25: <a href="/viajeros/viajes_internacionales/index.html">Viajes Internacionales</a>       
+
+		LINEA: 357, 
+
+		COLUMNA 25: <a href="/viajeros/viajes_internacionales/interrail.html">Interrail</a>       
+
+		LINEA: 358, 
+
+		COLUMNA 25: <a href="/viajeros/viajes_internacionales/spainpass/index.html">SpainPass</a>       
+
+		LINEA: 359, 
+
+		COLUMNA 25: <a target="_blank" href="https://venta.renfe.com/vol/trenesTuriIni.do" title="Trenes Tem&aacute;tico ...       
+
+		LINEA: 360, 
+
+		COLUMNA 25: <a target="_blank" href="/trenesturisticos/index.html" title="Trenes Tur&iacute;sticos :: Se abre en ...       
+
+		LINEA: 366, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/index.html">Informaci&oacute;n Legal</a>       
+
+		LINEA: 367, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/politica_cookies.html">Pol&iacute;tica de Cookies</a>       
+
+		LINEA: 368, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/privacidad.html">Pol&iacute;tica de Privacidad</a>       
+
+		LINEA: 369, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/accesibilidad_web.html">Accesibilidad Web</a>       
+
+		LINEA: 370, 
+
+		COLUMNA 25: <ahref="/empresa/informacion_legal/CGUsoWeb.html">Condiciones Uso Web</a>       
+
+		LINEA: 376, 
+
+		COLUMNA 25: <ahref="/empresa/atencion_cliente/index.html">Atenci&oacute;n al Cliente</a>       
+
+		LINEA: 377, 
+
+		COLUMNA 25: <ahref="/incidencias.html">Avisos</a>       
+
+		LINEA: 378, 
+
+		COLUMNA 25: <ahref="/viajeros/atendo/index.html" >Atendo</a>       
+
+		LINEA: 379, 
+
+		COLUMNA 25: <ahref="/atencion_cliente.html">Att. Telef&oacute;nica</a>       
+
+		LINEA: 380, 
+
+		COLUMNA 25: <ahref="/empresa/comunicacion/index.html">Comunicaci&oacute;n</a>       
+
+		LINEA: 391, 
+
+		COLUMNA 13: <a class="page-scroll no-padding" href="https://www.fomento.gob.es/" title="ministerio de fomento :: ...       
+
+		LINEA: 392, 
+
+		COLUMNA 13: <a class="page-scroll no-padding" href="/index.html" title="Renfe"><img class="Logos" src="/img/maqu ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 35, 
+
+		COLUMNA 3: <h1><a href="/index.html" title="Ir a p&aacute;gina de inicio">Renfe</a></h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 102, 
+
+		COLUMNA 6: <h2 class="oculto">Men&uacute; principal</h2>       
+
+		LINEA: 239, 
+
+		COLUMNA 5: <h2>Estaciones y Trenes con servicio Atendo</h2>       
+
+		LINEA: 249, 
+
+		COLUMNA 6: <h2 class="oculto">Contenido de la p&aacute;gina</h2>       
+
+		LINEA: 259, 
+
+		COLUMNA 7: <h2 class="oculto">Informaci&oacute;n adicional</h2>       
+
+		LINEA: 308, 
+
+		COLUMNA 13: <h2>Nuestras Redes</h2>       
+
+		LINEA: 321, 
+
+		COLUMNA 5: <h2>Nuestras Apps</h2>       
+
+		LINEA: 344, 
+
+		COLUMNA 13: <h2>Nuestras Webs</h2>       
+
+		LINEA: 354, 
+
+		COLUMNA 13: <h2>Otros Productos</h2>       
+
+		LINEA: 364, 
+
+		COLUMNA 13: <h2>Aviso Legal</h2>       
+
+		LINEA: 374, 
+
+		COLUMNA 13: <h2>Contacto</h2>       
+
+		LINEA: 389, 
+
+		COLUMNA 9: <h2>Copyright - Renfe - Todos los derechos reservados</h2>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 58, 
+
+		COLUMNA 10: <form method="get" action="http://buscador.renfe.com/search">	<fieldset class="fieldset"><l ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 29, 
+
+		COLUMNA 3: <body>	<!-- CABECERA -->	<noscript><p>Para una correcta visualización, el navegador debe sopo ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 58, 
+
+		COLUMNA 10: <form method="get" action="http://buscador.renfe.com/search">	<fieldset class="fieldset"><l ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 58, 
+
+		COLUMNA 10: <form method="get" action="http://buscador.renfe.com/search">	<fieldset class="fieldset"><l ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 61, 
+
+		COLUMNA 6: <input class="campo" name="q" id="busqueda" type="text"/>       
+
+		LINEA: 63, 
+
+		COLUMNA 11: <input type="hidden" name="client" value="default_frontend"/>       
+
+		LINEA: 64, 
+
+		COLUMNA 11: <input type="hidden" name="output" value="xml_no_dtd"/>       
+
+		LINEA: 65, 
+
+		COLUMNA 11: <input type="hidden" name="proxystylesheet" value="default_frontend"/>
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 61, 
+
+		COLUMNA 6: <input class="campo" name="q" id="busqueda" type="text"/>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 58, 
+
+		COLUMNA 10: <form method="get" action="http://buscador.renfe.com/search">	<fieldset class="fieldset"><l ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 58, 
+
+		COLUMNA 10: <form method="get" action="http://buscador.renfe.com/search">	<fieldset class="fieldset"><l ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 58, 
+
+		COLUMNA 10: <form method="get" action="http://buscador.renfe.com/search">	<fieldset class="fieldset"><l ...
+
+	

@@ -1,0 +1,33 @@
+REPORTE PÁGINA WEB: https://www.ua.es/es/
+FECHA EVALUACIÓN: 2018-11-11
+
+PROBLEMAS
+Missing alternative text	  VECES ENCONTRADO: 3
+Empty link	  VECES ENCONTRADO: 46
+
+
+
+ALERTAS
+Tabindex	  VECES ENCONTRADO: 3
+Redundant link	  VECES ENCONTRADO: 2
+Redundant alternative text	  VECES ENCONTRADO: 10
+Redundant title text	  VECES ENCONTRADO: 3
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Missing fieldset	  VECES ENCONTRADO: 2
+Broken same-page link	  VECES ENCONTRADO: 2
+
+
+
+CARACTERISTICAS
+Form label	  VECES ENCONTRADO: 12
+Alternative text	  VECES ENCONTRADO: 12
+Null or empty alternative text	  VECES ENCONTRADO: 12
+Linked image with alternative text	  VECES ENCONTRADO: 21
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 56
+
+
+

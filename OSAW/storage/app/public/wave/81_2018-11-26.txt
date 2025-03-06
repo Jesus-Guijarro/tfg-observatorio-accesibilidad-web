@@ -1,0 +1,35 @@
+REPORTE PÁGINA WEB: https://www.endesaclientes.com
+FECHA EVALUACIÓN: 2018-11-26
+
+PROBLEMAS
+Broken ARIA reference	  VECES ENCONTRADO: 6
+Empty heading	  VECES ENCONTRADO: 7
+Missing form label	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Fieldset missing legend	  VECES ENCONTRADO: 7
+Very small text	  VECES ENCONTRADO: 6
+Noscript element	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 24
+A nearby image has the same alternative text	  VECES ENCONTRADO: 5
+Possible heading	  VECES ENCONTRADO: 7
+Skipped heading level	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 7
+Null or empty alternative text	  VECES ENCONTRADO: 20
+Fieldset	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 7
+Linked image with alternative text	  VECES ENCONTRADO: 16
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 52
+
+
+

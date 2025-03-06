@@ -1,0 +1,34 @@
+REPORTE PÁGINA WEB: http://www.aemet.es/es/conocenos/congresos_y_conferencias
+FECHA EVALUACIÓN: 2018-12-17
+
+-PROBLEMAS-
+
+Empty link	  VECES ENCONTRADO: 2
+Empty form label	  VECES ENCONTRADO: 2
+
+
+-ALERTAS-
+
+Redundant link	  VECES ENCONTRADO: 2
+Accesskey	  VECES ENCONTRADO: 8
+Device dependent event handler	  VECES ENCONTRADO: 1
+Skipped heading level	  VECES ENCONTRADO: 1
+Long alternative text	  VECES ENCONTRADO: 1
+Very small text	  VECES ENCONTRADO: 6
+Redundant title text	  VECES ENCONTRADO: 26
+Justified text	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Form label	  VECES ENCONTRADO: 2
+Element language	  VECES ENCONTRADO: 14
+Alternative text	  VECES ENCONTRADO: 3
+Linked image with alternative text	  VECES ENCONTRADO: 25
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 12
+
+

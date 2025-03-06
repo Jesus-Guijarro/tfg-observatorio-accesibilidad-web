@@ -1,0 +1,35 @@
+12/16/2018 01:05:23 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 2
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/16/2018 01:31:43 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 71
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/16/2018 01:31:48 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "observatorio"
+	PAGINA WEB: 71
+	INFORMACION: "KeyError('resultado',)"
+
+12/16/2018 01:32:43 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "wave"
+	PAGINA WEB: 71
+	INFORMACION: "Exception('No se ha podido realizar la evaluación. Formato de respuesta incorrecto',)"
+
+12/16/2018 02:32:13 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "vamola"
+	PAGINA WEB: 201
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/16/2018 02:38:53 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "vamola"
+	PAGINA WEB: 209
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/16/2018 02:41:09 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "vamola"
+	PAGINA WEB: 210
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+

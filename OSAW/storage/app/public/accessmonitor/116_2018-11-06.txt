@@ -1,0 +1,10 @@
+REPORTE PÁGINA WEB: https://www.iberia.com/es/autocheckin-online/?language=es&market=es/ibcose
+FECHA EVALUACIÓN: 2018-11-06
+
+Se constató que no hay encabezados marcados en la página
+Se constató que la página no tiene enlaces
+Se han encontrado 4 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"

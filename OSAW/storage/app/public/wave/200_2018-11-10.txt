@@ -1,0 +1,31 @@
+REPORTE PÁGINA WEB: http://www.umh.es/contenido/Estudiantes/:Curso_Adaptacion_Grado/datos_es.html
+FECHA EVALUACIÓN: 2018-11-10
+
+PROBLEMAS
+Missing alternative text	  VECES ENCONTRADO: 1
+Empty button	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Redundant title text	  VECES ENCONTRADO: 19
+Noscript element	  VECES ENCONTRADO: 1
+Underlined text	  VECES ENCONTRADO: 1
+Redundant alternative text	  VECES ENCONTRADO: 1
+Unlabeled form element with title	  VECES ENCONTRADO: 4
+Justified text	  VECES ENCONTRADO: 7
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 6
+Linked image with alternative text	  VECES ENCONTRADO: 5
+Element language	  VECES ENCONTRADO: 6
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 15
+
+
+

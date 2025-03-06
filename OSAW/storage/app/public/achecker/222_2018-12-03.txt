@@ -1,0 +1,2480 @@
+REPORTE PÁGINA WEB: http://www.aemet.es/en/portada
+FECHA EVALUACIÓN: 2018-12-03
+
+-PROBLEMAS CONOCIDOS-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 238: input element has alt attribute.  
+
+	REPARAR: Remove the alt attribute from all input elements except those with a type attribute value of "image".     
+
+		LINEA: 166, COLUMNA: 149: <input type="submit" value=" " class="boton_buscar_cabecera" title="Search" alt="Search" />       
+
+		LINEA: 619, COLUMNA: 8: <input type="submit" value=" " class="boton_buscar_cabecera" title="Search" alt="Search" />
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 57: input element, type of "text", missing an associated label.  
+
+	REPARAR: Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.     
+
+		LINEA: 616, COLUMNA: 8: <input type="text" name="str" value="Search location..." onblur="this.value=(this.value=='') ? 'Sear ...
+
+  
+
+	REVISAR: 206: input element, type of "checkbox", has no text in label.  
+
+	REPARAR: Add text to the input element's associated label that describes the purpose or function of the control.     
+
+		LINEA: 162, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
+
+		LINEA: 174, COLUMNA: 27: <input class="checkbox_menu" type="checkbox" id="nav" />
+
+  
+
+	REVISAR: 213: input element, type of "text", has no text in label.  
+
+	REPARAR: Add text to the input element's associated label that describes the purpose or function of the control.     
+
+		LINEA: 616, COLUMNA: 8: <input type="text" name="str" value="Search location..." onblur="this.value=(this.value=='') ? 'Sear ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 37: Header nesting - header following h1 is incorrect.  
+
+	REPARAR: Modify the header levels so only an h1 or h2 follows h1.     
+
+		LINEA: 101, COLUMNA: 4:
+
+ 3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR: Add text to the label element.     
+
+		LINEA: 162, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
+
+		LINEA: 165, COLUMNA: 9: <input class="texto_buscador" value="Enter text" aria-label ="Enter text" name="str" id="buscar" onf ...       
+
+		LINEA: 174, COLUMNA: 27: <input class="checkbox_menu" type="checkbox" id="nav" />       
+
+		LINEA: 616, COLUMNA: 8: <input type="text" name="str" value="Search location..." onblur="this.value=(this.value=='') ? 'Sear ...
+
+	
+
+
+
+-PROBLEMAS POTENCIALES-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+
+
+		LINEA: 579, COLUMNA: 46: <img class="imagen_avisos_portada" src="/imagenes_d/eltiempo/prediccion/avisos/20181203130000_avi_ho ...       
+
+		LINEA: 703, COLUMNA: 86: <img class="imagen_pred_portada" src="/imagenes_d/eltiempo/prediccion/espa/201812031224_p01wesp0.jpg ...       
+
+		LINEA: 724, COLUMNA: 7: <img class="imagen_no_disponible_video" src="/imagenes/jpg/video_no_disponible.jpg" title="Video no...       
+
+		LINEA: 771, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8pb.gif" alt="Radar.&nbsp;Iberian Peninsula and...       
+
+		LINEA: 776, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8ca.gif" alt="Radar.&nbsp;Las Palmas" title="Rad ...       
+
+		LINEA: 876, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5p0d1.png" alt="Rainfal ...       
+
+		LINEA: 881, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5c0d1.png" alt="Rainfal ...       
+
+		LINEA: 900, COLUMNA: 5: <img alt="Estado del clima 2018" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/2018/11 ...       
+
+		LINEA: 908, COLUMNA: 5: <img alt="Ant&aacute;rtida inexplorada" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/ ...       
+
+		LINEA: 916, COLUMNA: 5: <img alt="Valores r&eacute;cord de gases de efecto invernadero" src="/imagenes_gcd/noticias/imagen_n ...       
+
+		LINEA: 924, COLUMNA: 5: <img alt="Octubre, normal t&eacute;rmicamente y h&uacute;medo" src="/imagenes_gcd/noticias/imagen_no ...       
+
+		LINEA: 1124, COLUMNA: 12: <img src="/js/stats.js?nojs=y" class="nodisplay" alt="estadisticas"/>       
+
+		LINEA: 1131, COLUMNA: 7: <img alt="40th anniversary of the Constitution (it will open in a new window)" class="img_promocion" ...       
+
+		LINEA: 1136, COLUMNA: 7: <img alt="Transparency Portal (it will open in a new window)" class="img_promocion" src="/imagenes_g ...       
+
+		LINEA: 1141, COLUMNA: 7: <img alt="AdapteCCa. Platform for the exchange and consultation of information on adaptation to the...       
+
+		LINEA: 1146, COLUMNA: 7: <img alt="Open data (it will open in a new window)" class="img_promocion" src="/imagenes_gcd/enlaces ...       
+
+		LINEA: 1151, COLUMNA: 7: <img alt="AEMET information through phone 060" class="img_promocion" src="/imagenes_gcd/enlaces_prom ...       
+
+		LINEA: 1156, COLUMNA: 7: <img alt="World Weather Information Service (WWIS). Cities worldwide (it will open in a new window)" ...       
+
+		LINEA: 1161, COLUMNA: 7: <img alt="World Meteorological Organization (WMO) for youth website - WMO Facebook in Spanish - Medi ...       
+
+		LINEA: 1204, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Validates XHTML 1.0 Transitional. (it...       
+
+		LINEA: 1209, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_vcss.gif" title="Certified W3C Valid CSS. (it will open in...       
+
+		LINEA: 1214, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icon in accordance with the Double-A leve ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 126, COLUMNA: 4: <img src="/imagenes/gif/logo_AEMET_web.gif" alt="State Meteorological Agency " title="State Meteorol ...       
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...       
+
+		LINEA: 482, COLUMNA: 73: <img class="imagen_portada_aviso_especial" src="/imagenes/png/iconos/ico-destacado.png" alt="Predicc ...       
+
+		LINEA: 486, COLUMNA: 25: <imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="My website" title="My website" />       
+
+		LINEA: 488, COLUMNA: 38: <imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplication 'El Tiempo de AEMET' (Androi ...       
+
+		LINEA: 490, COLUMNA: 58: <imgsrc="/imagenes/png/iconos/ico-contacto.png" alt="Contact" title="Contact" />       
+
+		LINEA: 492, COLUMNA: 26: <imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Site map" title="Site map" />       
+
+		LINEA: 494, COLUMNA: 76: <imgsrc="/imagenes/png/redes_sociales/Facebook.png" alt="Follow us on Facebook" title="Follow us o ...       
+
+		LINEA: 496, COLUMNA: 74: <imgsrc="/imagenes/png/redes_sociales/Twitter.png" alt="Follow us on Twitter" title="Follow us on...       
+
+		LINEA: 498, COLUMNA: 62: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 500, COLUMNA: 74: <imgsrc="/imagenes/png/redes_sociales/Youtube.png" alt="Follow us on YouTube" title="Follow us on...       
+
+		LINEA: 502, COLUMNA: 46: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 515, COLUMNA: 3: <img alt="My website" src="/imagenes_gcd/lineas_de_interes/ico-miweb.png" title="My website" />       
+
+		LINEA: 520, COLUMNA: 3: <img alt="Attention to the citizen" src="/imagenes_gcd/lineas_de_interes/ico-att-ciudadano.png" titl ...       
+
+		LINEA: 525, COLUMNA: 3: <img alt="Social networks" src="/imagenes_gcd/lineas_de_interes/ico-redes-sociales.png" title="Socia ...       
+
+		LINEA: 530, COLUMNA: 3: <img alt="Meteoalerta: Warnings" src="/imagenes_gcd/lineas_de_interes/ico-meteoalerta.png" title="Me ...       
+
+		LINEA: 535, COLUMNA: 3: <img alt="APP" src="/imagenes_gcd/lineas_de_interes/ico-app-aemet.png" title="APP" />       
+
+		LINEA: 540, COLUMNA: 3: <img alt="Data and statistics" src="/imagenes_gcd/lineas_de_interes/ico-datos.png" title="Data and s ...       
+
+		LINEA: 545, COLUMNA: 3: <img alt="Documentation centre" src="/imagenes_gcd/lineas_de_interes/ico-documentacion.png" title="D ...       
+
+		LINEA: 550, COLUMNA: 3: <img alt="By sectors" src="/imagenes_gcd/lineas_de_interes/ico-estrategico-porsectores.png" title="B ...       
+
+		LINEA: 555, COLUMNA: 3: <img alt="Climate services" src="/imagenes_gcd/lineas_de_interes/ico-servicios-climaticos.png" title ...       
+
+		LINEA: 560, COLUMNA: 3: <img alt="R+D+i" src="/imagenes_gcd/lineas_de_interes/ico-IDI.png" title="R+D+i" />       
+
+		LINEA: 565, COLUMNA: 3: <img alt="International" src="/imagenes_gcd/lineas_de_interes/ico-internacional.png" title="Internat ...       
+
+		LINEA: 579, COLUMNA: 46: <img class="imagen_avisos_portada" src="/imagenes_d/eltiempo/prediccion/avisos/20181203130000_avi_ho ...       
+
+		LINEA: 627, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 637, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 647, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 657, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 667, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 683, COLUMNA: 7: <img title="Weather information on your website" alt="Weather information on your website" src="imag ...       
+
+		LINEA: 690, COLUMNA: 7: <img title="Cities worldwide" alt="Cities worldwide" src="imagenes/png/iconos/ico-mundo.png">       
+
+		LINEA: 703, COLUMNA: 86: <img class="imagen_pred_portada" src="/imagenes_d/eltiempo/prediccion/espa/201812031224_p01wesp0.jpg ...       
+
+		LINEA: 724, COLUMNA: 7: <img class="imagen_no_disponible_video" src="/imagenes/jpg/video_no_disponible.jpg" title="Video no...       
+
+		LINEA: 753, COLUMNA: 7: <img title="AEMET video on your website" alt="AEMET video on your website" src="imagenes/png/iconos/ ...       
+
+		LINEA: 771, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8pb.gif" alt="Radar.&nbsp;Iberian Peninsula and...       
+
+		LINEA: 776, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8ca.gif" alt="Radar.&nbsp;Las Palmas" title="Rad ...       
+
+		LINEA: 789, COLUMNA: 9: <img class="floatleft imagen_portada_aviso_especial paddingtop3px" src="/imagenes/png/iconos/ico-des ...       
+
+		LINEA: 794, COLUMNA: 92:
+
+
+
+		LINEA: 794, COLUMNA: 408:
+
+
+
+		LINEA: 797, COLUMNA: 5: <img alt="La Meteorolog&iacute;a en los medios de comunicaci&oacute;n" class="imagen_portada_noticia ...       
+
+		LINEA: 802, COLUMNA: 5: <img alt="3&ordf; Conferencia Europea de Nowcasting" class="imagen_portada_noticia" src="/imagenes_g ...       
+
+		LINEA: 807, COLUMNA: 5: <img alt="Borrascas con gran impacto de la temporada 2018-2019" class="imagen_portada_noticia" src=" ...       
+
+		LINEA: 812, COLUMNA: 5: <img alt="Resumen de la evoluci&oacute;n de las precipitaciones en Espa&ntilde;a" class="imagen_port ...       
+
+		LINEA: 817, COLUMNA: 5: <img alt="Nuevos canales de suscripci&oacute;n a los avisos de fen&oacute;menos meteorol&oacute;gico ...       
+
+		LINEA: 822, COLUMNA: 5: <img alt="&Iacute;ndice diario de calidad del aire previsto por AEMET" class="imagen_portada_noticia ...       
+
+		LINEA: 860, COLUMNA: 6: <img title="AEMET blog.es" alt="AEMET blog.es" src="imagenes/png/iconos/ico-blog.png">       
+
+		LINEA: 876, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5p0d1.png" alt="Rainfal ...       
+
+		LINEA: 881, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5c0d1.png" alt="Rainfal ...       
+
+		LINEA: 900, COLUMNA: 5: <img alt="Estado del clima 2018" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/2018/11 ...       
+
+		LINEA: 908, COLUMNA: 5: <img alt="Ant&aacute;rtida inexplorada" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/ ...       
+
+		LINEA: 916, COLUMNA: 5: <img alt="Valores r&eacute;cord de gases de efecto invernadero" src="/imagenes_gcd/noticias/imagen_n ...       
+
+		LINEA: 924, COLUMNA: 5: <img alt="Octubre, normal t&eacute;rmicamente y h&uacute;medo" src="/imagenes_gcd/noticias/imagen_no ...       
+
+		LINEA: 944, COLUMNA: 3: <img alt="AEMET OpenData (it will open in a new window) " src="/imagenes_gcd/productos_destacados/lo ...       
+
+		LINEA: 948, COLUMNA: 3: <img alt=" 3rd European Nowcasting Conference (it will open in a new window)" src="/imagenes_gcd/pro ...       
+
+		LINEA: 952, COLUMNA: 3: <img alt="Sexto Simposio Nacional de Predicci&oacute;n Memorial Antonio Mestre (it will open in a ne ...       
+
+		LINEA: 956, COLUMNA: 3: <img alt="MeteoGlosario Visual (it will open in a new window) " src="/imagenes_gcd/productos_destaca ...       
+
+		LINEA: 960, COLUMNA: 3: <img alt="MeteoRuta (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-me ...       
+
+		LINEA: 964, COLUMNA: 3: <img alt="SINOBAS (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo_sino ...       
+
+		LINEA: 968, COLUMNA: 3: <img alt="State Meteorological Agency blog (it will open in a new window) " src="/imagenes_gcd/produ ...       
+
+		LINEA: 972, COLUMNA: 3: <img alt="MeteoNav (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-met ...       
+
+		LINEA: 976, COLUMNA: 3: <img alt="Arcim&iacute;s documental archive (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 980, COLUMNA: 3: <img alt="Atmospheric mineral dust forecast (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 984, COLUMNA: 3: <img alt="Centenary of Iza&ntilde;a (it will open in a new window) " src="/imagenes_gcd/productos_de ...       
+
+		LINEA: 988, COLUMNA: 3: <img alt="Meteoeduca" src="/imagenes_gcd/productos_destacados/meteoeduca.jpg" title="Meteoeduca" />       
+
+		LINEA: 1124, COLUMNA: 12: <img src="/js/stats.js?nojs=y" class="nodisplay" alt="estadisticas"/>       
+
+		LINEA: 1131, COLUMNA: 7: <img alt="40th anniversary of the Constitution (it will open in a new window)" class="img_promocion" ...       
+
+		LINEA: 1136, COLUMNA: 7: <img alt="Transparency Portal (it will open in a new window)" class="img_promocion" src="/imagenes_g ...       
+
+		LINEA: 1141, COLUMNA: 7: <img alt="AdapteCCa. Platform for the exchange and consultation of information on adaptation to the...       
+
+		LINEA: 1146, COLUMNA: 7: <img alt="Open data (it will open in a new window)" class="img_promocion" src="/imagenes_gcd/enlaces ...       
+
+		LINEA: 1151, COLUMNA: 7: <img alt="AEMET information through phone 060" class="img_promocion" src="/imagenes_gcd/enlaces_prom ...       
+
+		LINEA: 1156, COLUMNA: 7: <img alt="World Weather Information Service (WWIS). Cities worldwide (it will open in a new window)" ...       
+
+		LINEA: 1161, COLUMNA: 7: <img alt="World Meteorological Organization (WMO) for youth website - WMO Facebook in Spanish - Medi ...       
+
+		LINEA: 1186, COLUMNA: 39: <imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplication 'El Tiempo de AEMET' (Androi ...       
+
+		LINEA: 1189, COLUMNA: 77: <imgsrc="/imagenes/png/redes_sociales/Facebook.png" alt="Follow us on Facebook" title="Follow us o ...       
+
+		LINEA: 1191, COLUMNA: 75: <imgsrc="/imagenes/png/redes_sociales/Twitter.png" alt="Follow us on Twitter" title="Follow us on...       
+
+		LINEA: 1193, COLUMNA: 63: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 1195, COLUMNA: 75: <imgsrc="/imagenes/png/redes_sociales/Youtube.png" alt="Follow us on YouTube" title="Follow us on...       
+
+		LINEA: 1197, COLUMNA: 47: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 1204, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Validates XHTML 1.0 Transitional. (it...       
+
+		LINEA: 1209, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_vcss.gif" title="Certified W3C Valid CSS. (it will open in...       
+
+		LINEA: 1214, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icon in accordance with the Double-A leve ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 126, COLUMNA: 4: <img src="/imagenes/gif/logo_AEMET_web.gif" alt="State Meteorological Agency " title="State Meteorol ...       
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...       
+
+		LINEA: 724, COLUMNA: 7: <img class="imagen_no_disponible_video" src="/imagenes/jpg/video_no_disponible.jpg" title="Video no...       
+
+		LINEA: 789, COLUMNA: 9: <img class="floatleft imagen_portada_aviso_especial paddingtop3px" src="/imagenes/png/iconos/ico-des ...       
+
+		LINEA: 1124, COLUMNA: 12: <img src="/js/stats.js?nojs=y" class="nodisplay" alt="estadisticas"/>
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+
+
+		LINEA: 126, COLUMNA: 4: <img src="/imagenes/gif/logo_AEMET_web.gif" alt="State Meteorological Agency " title="State Meteorol ...       
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...       
+
+		LINEA: 482, COLUMNA: 73: <img class="imagen_portada_aviso_especial" src="/imagenes/png/iconos/ico-destacado.png" alt="Predicc ...       
+
+		LINEA: 486, COLUMNA: 25: <imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="My website" title="My website" />       
+
+		LINEA: 488, COLUMNA: 38: <imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplication 'El Tiempo de AEMET' (Androi ...       
+
+		LINEA: 490, COLUMNA: 58: <imgsrc="/imagenes/png/iconos/ico-contacto.png" alt="Contact" title="Contact" />       
+
+		LINEA: 492, COLUMNA: 26: <imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Site map" title="Site map" />       
+
+		LINEA: 494, COLUMNA: 76: <imgsrc="/imagenes/png/redes_sociales/Facebook.png" alt="Follow us on Facebook" title="Follow us o ...       
+
+		LINEA: 496, COLUMNA: 74: <imgsrc="/imagenes/png/redes_sociales/Twitter.png" alt="Follow us on Twitter" title="Follow us on...       
+
+		LINEA: 498, COLUMNA: 62: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 500, COLUMNA: 74: <imgsrc="/imagenes/png/redes_sociales/Youtube.png" alt="Follow us on YouTube" title="Follow us on...       
+
+		LINEA: 502, COLUMNA: 46: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 515, COLUMNA: 3: <img alt="My website" src="/imagenes_gcd/lineas_de_interes/ico-miweb.png" title="My website" />       
+
+		LINEA: 520, COLUMNA: 3: <img alt="Attention to the citizen" src="/imagenes_gcd/lineas_de_interes/ico-att-ciudadano.png" titl ...       
+
+		LINEA: 525, COLUMNA: 3: <img alt="Social networks" src="/imagenes_gcd/lineas_de_interes/ico-redes-sociales.png" title="Socia ...       
+
+		LINEA: 530, COLUMNA: 3: <img alt="Meteoalerta: Warnings" src="/imagenes_gcd/lineas_de_interes/ico-meteoalerta.png" title="Me ...       
+
+		LINEA: 535, COLUMNA: 3: <img alt="APP" src="/imagenes_gcd/lineas_de_interes/ico-app-aemet.png" title="APP" />       
+
+		LINEA: 540, COLUMNA: 3: <img alt="Data and statistics" src="/imagenes_gcd/lineas_de_interes/ico-datos.png" title="Data and s ...       
+
+		LINEA: 545, COLUMNA: 3: <img alt="Documentation centre" src="/imagenes_gcd/lineas_de_interes/ico-documentacion.png" title="D ...       
+
+		LINEA: 550, COLUMNA: 3: <img alt="By sectors" src="/imagenes_gcd/lineas_de_interes/ico-estrategico-porsectores.png" title="B ...       
+
+		LINEA: 555, COLUMNA: 3: <img alt="Climate services" src="/imagenes_gcd/lineas_de_interes/ico-servicios-climaticos.png" title ...       
+
+		LINEA: 560, COLUMNA: 3: <img alt="R+D+i" src="/imagenes_gcd/lineas_de_interes/ico-IDI.png" title="R+D+i" />       
+
+		LINEA: 565, COLUMNA: 3: <img alt="International" src="/imagenes_gcd/lineas_de_interes/ico-internacional.png" title="Internat ...       
+
+		LINEA: 579, COLUMNA: 46: <img class="imagen_avisos_portada" src="/imagenes_d/eltiempo/prediccion/avisos/20181203130000_avi_ho ...       
+
+		LINEA: 627, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 637, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 647, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 657, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 667, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 683, COLUMNA: 7: <img title="Weather information on your website" alt="Weather information on your website" src="imag ...       
+
+		LINEA: 690, COLUMNA: 7: <img title="Cities worldwide" alt="Cities worldwide" src="imagenes/png/iconos/ico-mundo.png">       
+
+		LINEA: 703, COLUMNA: 86: <img class="imagen_pred_portada" src="/imagenes_d/eltiempo/prediccion/espa/201812031224_p01wesp0.jpg ...       
+
+		LINEA: 724, COLUMNA: 7: <img class="imagen_no_disponible_video" src="/imagenes/jpg/video_no_disponible.jpg" title="Video no...       
+
+		LINEA: 753, COLUMNA: 7: <img title="AEMET video on your website" alt="AEMET video on your website" src="imagenes/png/iconos/ ...       
+
+		LINEA: 771, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8pb.gif" alt="Radar.&nbsp;Iberian Peninsula and...       
+
+		LINEA: 776, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8ca.gif" alt="Radar.&nbsp;Las Palmas" title="Rad ...       
+
+		LINEA: 789, COLUMNA: 9: <img class="floatleft imagen_portada_aviso_especial paddingtop3px" src="/imagenes/png/iconos/ico-des ...       
+
+		LINEA: 794, COLUMNA: 92:
+
+
+
+		LINEA: 794, COLUMNA: 408:
+
+
+
+		LINEA: 797, COLUMNA: 5: <img alt="La Meteorolog&iacute;a en los medios de comunicaci&oacute;n" class="imagen_portada_noticia ...       
+
+		LINEA: 802, COLUMNA: 5: <img alt="3&ordf; Conferencia Europea de Nowcasting" class="imagen_portada_noticia" src="/imagenes_g ...       
+
+		LINEA: 807, COLUMNA: 5: <img alt="Borrascas con gran impacto de la temporada 2018-2019" class="imagen_portada_noticia" src=" ...       
+
+		LINEA: 812, COLUMNA: 5: <img alt="Resumen de la evoluci&oacute;n de las precipitaciones en Espa&ntilde;a" class="imagen_port ...       
+
+		LINEA: 817, COLUMNA: 5: <img alt="Nuevos canales de suscripci&oacute;n a los avisos de fen&oacute;menos meteorol&oacute;gico ...       
+
+		LINEA: 822, COLUMNA: 5: <img alt="&Iacute;ndice diario de calidad del aire previsto por AEMET" class="imagen_portada_noticia ...       
+
+		LINEA: 860, COLUMNA: 6: <img title="AEMET blog.es" alt="AEMET blog.es" src="imagenes/png/iconos/ico-blog.png">       
+
+		LINEA: 876, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5p0d1.png" alt="Rainfal ...       
+
+		LINEA: 881, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5c0d1.png" alt="Rainfal ...       
+
+		LINEA: 900, COLUMNA: 5: <img alt="Estado del clima 2018" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/2018/11 ...       
+
+		LINEA: 908, COLUMNA: 5: <img alt="Ant&aacute;rtida inexplorada" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/ ...       
+
+		LINEA: 916, COLUMNA: 5: <img alt="Valores r&eacute;cord de gases de efecto invernadero" src="/imagenes_gcd/noticias/imagen_n ...       
+
+		LINEA: 924, COLUMNA: 5: <img alt="Octubre, normal t&eacute;rmicamente y h&uacute;medo" src="/imagenes_gcd/noticias/imagen_no ...       
+
+		LINEA: 944, COLUMNA: 3: <img alt="AEMET OpenData (it will open in a new window) " src="/imagenes_gcd/productos_destacados/lo ...       
+
+		LINEA: 948, COLUMNA: 3: <img alt=" 3rd European Nowcasting Conference (it will open in a new window)" src="/imagenes_gcd/pro ...       
+
+		LINEA: 952, COLUMNA: 3: <img alt="Sexto Simposio Nacional de Predicci&oacute;n Memorial Antonio Mestre (it will open in a ne ...       
+
+		LINEA: 956, COLUMNA: 3: <img alt="MeteoGlosario Visual (it will open in a new window) " src="/imagenes_gcd/productos_destaca ...       
+
+		LINEA: 960, COLUMNA: 3: <img alt="MeteoRuta (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-me ...       
+
+		LINEA: 964, COLUMNA: 3: <img alt="SINOBAS (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo_sino ...       
+
+		LINEA: 968, COLUMNA: 3: <img alt="State Meteorological Agency blog (it will open in a new window) " src="/imagenes_gcd/produ ...       
+
+		LINEA: 972, COLUMNA: 3: <img alt="MeteoNav (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-met ...       
+
+		LINEA: 976, COLUMNA: 3: <img alt="Arcim&iacute;s documental archive (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 980, COLUMNA: 3: <img alt="Atmospheric mineral dust forecast (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 984, COLUMNA: 3: <img alt="Centenary of Iza&ntilde;a (it will open in a new window) " src="/imagenes_gcd/productos_de ...       
+
+		LINEA: 988, COLUMNA: 3: <img alt="Meteoeduca" src="/imagenes_gcd/productos_destacados/meteoeduca.jpg" title="Meteoeduca" />       
+
+		LINEA: 1131, COLUMNA: 7: <img alt="40th anniversary of the Constitution (it will open in a new window)" class="img_promocion" ...       
+
+		LINEA: 1136, COLUMNA: 7: <img alt="Transparency Portal (it will open in a new window)" class="img_promocion" src="/imagenes_g ...       
+
+		LINEA: 1141, COLUMNA: 7: <img alt="AdapteCCa. Platform for the exchange and consultation of information on adaptation to the...       
+
+		LINEA: 1146, COLUMNA: 7: <img alt="Open data (it will open in a new window)" class="img_promocion" src="/imagenes_gcd/enlaces ...       
+
+		LINEA: 1151, COLUMNA: 7: <img alt="AEMET information through phone 060" class="img_promocion" src="/imagenes_gcd/enlaces_prom ...       
+
+		LINEA: 1156, COLUMNA: 7: <img alt="World Weather Information Service (WWIS). Cities worldwide (it will open in a new window)" ...       
+
+		LINEA: 1161, COLUMNA: 7: <img alt="World Meteorological Organization (WMO) for youth website - WMO Facebook in Spanish - Medi ...       
+
+		LINEA: 1186, COLUMNA: 39: <imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplication 'El Tiempo de AEMET' (Androi ...       
+
+		LINEA: 1189, COLUMNA: 77: <imgsrc="/imagenes/png/redes_sociales/Facebook.png" alt="Follow us on Facebook" title="Follow us o ...       
+
+		LINEA: 1191, COLUMNA: 75: <imgsrc="/imagenes/png/redes_sociales/Twitter.png" alt="Follow us on Twitter" title="Follow us on...       
+
+		LINEA: 1193, COLUMNA: 63: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 1195, COLUMNA: 75: <imgsrc="/imagenes/png/redes_sociales/Youtube.png" alt="Follow us on YouTube" title="Follow us on...       
+
+		LINEA: 1197, COLUMNA: 47: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 1204, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Validates XHTML 1.0 Transitional. (it...       
+
+		LINEA: 1209, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_vcss.gif" title="Certified W3C Valid CSS. (it will open in...       
+
+		LINEA: 1214, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icon in accordance with the Double-A leve ...
+
+1.2 Time-based Media: Provide alternatives for time-based media
+
+CRITERIO DE CONFORMIDAD: 1.2.3 Audio Description or Media Alternative (Prerecorded) (A)  
+
+	REVISAR: 146: object link to multimedia file may be missing equivalent alternative.
+
+
+
+		LINEA: 721, COLUMNA: 2: <object width="100%" height="218" type="application/x-shockwave-flash" data="/js/mediaelements/flash ...
+
+  
+
+	REVISAR: 160: object may require a long description.
+
+
+
+		LINEA: 721, COLUMNA: 2: <object width="100%" height="218" type="application/x-shockwave-flash" data="/js/mediaelements/flash ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 123: input element label, type of "checkbox" is not positioned close to control.
+
+
+
+		LINEA: 132, COLUMNA: 7: <input type="checkbox" id="idiomas_mini" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 147, COLUMNA: 7: <input type="checkbox" id="idiomas" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 162, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
+
+		LINEA: 174, COLUMNA: 27: <input class="checkbox_menu" type="checkbox" id="nav" />
+
+  
+
+	REVISAR: 125: input element label, type of "radio", is not positioned close to control.
+
+
+
+		LINEA: 767, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_radar_pyb" name=" ...       
+
+		LINEA: 768, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_radar_coo" name=" ...       
+
+		LINEA: 872, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_prec_pyb" name="t ...       
+
+		LINEA: 873, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_prec_coo" name="t ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 616, COLUMNA: 8: <input type="text" name="str" value="Search location..." onblur="this.value=(this.value=='') ? 'Sear ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 126, COLUMNA: 4: <img src="/imagenes/gif/logo_AEMET_web.gif" alt="State Meteorological Agency " title="State Meteorol ...       
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...       
+
+		LINEA: 482, COLUMNA: 73: <img class="imagen_portada_aviso_especial" src="/imagenes/png/iconos/ico-destacado.png" alt="Predicc ...       
+
+		LINEA: 486, COLUMNA: 25: <imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="My website" title="My website" />       
+
+		LINEA: 488, COLUMNA: 38: <imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplication 'El Tiempo de AEMET' (Androi ...       
+
+		LINEA: 490, COLUMNA: 58: <imgsrc="/imagenes/png/iconos/ico-contacto.png" alt="Contact" title="Contact" />       
+
+		LINEA: 492, COLUMNA: 26: <imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Site map" title="Site map" />       
+
+		LINEA: 494, COLUMNA: 76: <imgsrc="/imagenes/png/redes_sociales/Facebook.png" alt="Follow us on Facebook" title="Follow us o ...       
+
+		LINEA: 496, COLUMNA: 74: <imgsrc="/imagenes/png/redes_sociales/Twitter.png" alt="Follow us on Twitter" title="Follow us on...       
+
+		LINEA: 498, COLUMNA: 62: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 500, COLUMNA: 74: <imgsrc="/imagenes/png/redes_sociales/Youtube.png" alt="Follow us on YouTube" title="Follow us on...       
+
+		LINEA: 502, COLUMNA: 46: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 515, COLUMNA: 3: <img alt="My website" src="/imagenes_gcd/lineas_de_interes/ico-miweb.png" title="My website" />       
+
+		LINEA: 520, COLUMNA: 3: <img alt="Attention to the citizen" src="/imagenes_gcd/lineas_de_interes/ico-att-ciudadano.png" titl ...       
+
+		LINEA: 525, COLUMNA: 3: <img alt="Social networks" src="/imagenes_gcd/lineas_de_interes/ico-redes-sociales.png" title="Socia ...       
+
+		LINEA: 530, COLUMNA: 3: <img alt="Meteoalerta: Warnings" src="/imagenes_gcd/lineas_de_interes/ico-meteoalerta.png" title="Me ...       
+
+		LINEA: 535, COLUMNA: 3: <img alt="APP" src="/imagenes_gcd/lineas_de_interes/ico-app-aemet.png" title="APP" />       
+
+		LINEA: 540, COLUMNA: 3: <img alt="Data and statistics" src="/imagenes_gcd/lineas_de_interes/ico-datos.png" title="Data and s ...       
+
+		LINEA: 545, COLUMNA: 3: <img alt="Documentation centre" src="/imagenes_gcd/lineas_de_interes/ico-documentacion.png" title="D ...       
+
+		LINEA: 550, COLUMNA: 3: <img alt="By sectors" src="/imagenes_gcd/lineas_de_interes/ico-estrategico-porsectores.png" title="B ...       
+
+		LINEA: 555, COLUMNA: 3: <img alt="Climate services" src="/imagenes_gcd/lineas_de_interes/ico-servicios-climaticos.png" title ...       
+
+		LINEA: 560, COLUMNA: 3: <img alt="R+D+i" src="/imagenes_gcd/lineas_de_interes/ico-IDI.png" title="R+D+i" />       
+
+		LINEA: 565, COLUMNA: 3: <img alt="International" src="/imagenes_gcd/lineas_de_interes/ico-internacional.png" title="Internat ...       
+
+		LINEA: 579, COLUMNA: 46: <img class="imagen_avisos_portada" src="/imagenes_d/eltiempo/prediccion/avisos/20181203130000_avi_ho ...       
+
+		LINEA: 627, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 637, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 647, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 657, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 667, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 683, COLUMNA: 7: <img title="Weather information on your website" alt="Weather information on your website" src="imag ...       
+
+		LINEA: 690, COLUMNA: 7: <img title="Cities worldwide" alt="Cities worldwide" src="imagenes/png/iconos/ico-mundo.png">       
+
+		LINEA: 703, COLUMNA: 86: <img class="imagen_pred_portada" src="/imagenes_d/eltiempo/prediccion/espa/201812031224_p01wesp0.jpg ...       
+
+		LINEA: 724, COLUMNA: 7: <img class="imagen_no_disponible_video" src="/imagenes/jpg/video_no_disponible.jpg" title="Video no...       
+
+		LINEA: 753, COLUMNA: 7: <img title="AEMET video on your website" alt="AEMET video on your website" src="imagenes/png/iconos/ ...       
+
+		LINEA: 771, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8pb.gif" alt="Radar.&nbsp;Iberian Peninsula and...       
+
+		LINEA: 776, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8ca.gif" alt="Radar.&nbsp;Las Palmas" title="Rad ...       
+
+		LINEA: 789, COLUMNA: 9: <img class="floatleft imagen_portada_aviso_especial paddingtop3px" src="/imagenes/png/iconos/ico-des ...       
+
+		LINEA: 794, COLUMNA: 92:
+
+
+
+		LINEA: 794, COLUMNA: 408:
+
+
+
+		LINEA: 797, COLUMNA: 5: <img alt="La Meteorolog&iacute;a en los medios de comunicaci&oacute;n" class="imagen_portada_noticia ...       
+
+		LINEA: 802, COLUMNA: 5: <img alt="3&ordf; Conferencia Europea de Nowcasting" class="imagen_portada_noticia" src="/imagenes_g ...       
+
+		LINEA: 807, COLUMNA: 5: <img alt="Borrascas con gran impacto de la temporada 2018-2019" class="imagen_portada_noticia" src=" ...       
+
+		LINEA: 812, COLUMNA: 5: <img alt="Resumen de la evoluci&oacute;n de las precipitaciones en Espa&ntilde;a" class="imagen_port ...       
+
+		LINEA: 817, COLUMNA: 5: <img alt="Nuevos canales de suscripci&oacute;n a los avisos de fen&oacute;menos meteorol&oacute;gico ...       
+
+		LINEA: 822, COLUMNA: 5: <img alt="&Iacute;ndice diario de calidad del aire previsto por AEMET" class="imagen_portada_noticia ...       
+
+		LINEA: 860, COLUMNA: 6: <img title="AEMET blog.es" alt="AEMET blog.es" src="imagenes/png/iconos/ico-blog.png">       
+
+		LINEA: 876, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5p0d1.png" alt="Rainfal ...       
+
+		LINEA: 881, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5c0d1.png" alt="Rainfal ...       
+
+		LINEA: 900, COLUMNA: 5: <img alt="Estado del clima 2018" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/2018/11 ...       
+
+		LINEA: 908, COLUMNA: 5: <img alt="Ant&aacute;rtida inexplorada" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/ ...       
+
+		LINEA: 916, COLUMNA: 5: <img alt="Valores r&eacute;cord de gases de efecto invernadero" src="/imagenes_gcd/noticias/imagen_n ...       
+
+		LINEA: 924, COLUMNA: 5: <img alt="Octubre, normal t&eacute;rmicamente y h&uacute;medo" src="/imagenes_gcd/noticias/imagen_no ...       
+
+		LINEA: 944, COLUMNA: 3: <img alt="AEMET OpenData (it will open in a new window) " src="/imagenes_gcd/productos_destacados/lo ...       
+
+		LINEA: 948, COLUMNA: 3: <img alt=" 3rd European Nowcasting Conference (it will open in a new window)" src="/imagenes_gcd/pro ...       
+
+		LINEA: 952, COLUMNA: 3: <img alt="Sexto Simposio Nacional de Predicci&oacute;n Memorial Antonio Mestre (it will open in a ne ...       
+
+		LINEA: 956, COLUMNA: 3: <img alt="MeteoGlosario Visual (it will open in a new window) " src="/imagenes_gcd/productos_destaca ...       
+
+		LINEA: 960, COLUMNA: 3: <img alt="MeteoRuta (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-me ...       
+
+		LINEA: 964, COLUMNA: 3: <img alt="SINOBAS (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo_sino ...       
+
+		LINEA: 968, COLUMNA: 3: <img alt="State Meteorological Agency blog (it will open in a new window) " src="/imagenes_gcd/produ ...       
+
+		LINEA: 972, COLUMNA: 3: <img alt="MeteoNav (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-met ...       
+
+		LINEA: 976, COLUMNA: 3: <img alt="Arcim&iacute;s documental archive (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 980, COLUMNA: 3: <img alt="Atmospheric mineral dust forecast (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 984, COLUMNA: 3: <img alt="Centenary of Iza&ntilde;a (it will open in a new window) " src="/imagenes_gcd/productos_de ...       
+
+		LINEA: 988, COLUMNA: 3: <img alt="Meteoeduca" src="/imagenes_gcd/productos_destacados/meteoeduca.jpg" title="Meteoeduca" />       
+
+		LINEA: 1124, COLUMNA: 12: <img src="/js/stats.js?nojs=y" class="nodisplay" alt="estadisticas"/>       
+
+		LINEA: 1131, COLUMNA: 7: <img alt="40th anniversary of the Constitution (it will open in a new window)" class="img_promocion" ...       
+
+		LINEA: 1136, COLUMNA: 7: <img alt="Transparency Portal (it will open in a new window)" class="img_promocion" src="/imagenes_g ...       
+
+		LINEA: 1141, COLUMNA: 7: <img alt="AdapteCCa. Platform for the exchange and consultation of information on adaptation to the...       
+
+		LINEA: 1146, COLUMNA: 7: <img alt="Open data (it will open in a new window)" class="img_promocion" src="/imagenes_gcd/enlaces ...       
+
+		LINEA: 1151, COLUMNA: 7: <img alt="AEMET information through phone 060" class="img_promocion" src="/imagenes_gcd/enlaces_prom ...       
+
+		LINEA: 1156, COLUMNA: 7: <img alt="World Weather Information Service (WWIS). Cities worldwide (it will open in a new window)" ...       
+
+		LINEA: 1161, COLUMNA: 7: <img alt="World Meteorological Organization (WMO) for youth website - WMO Facebook in Spanish - Medi ...       
+
+		LINEA: 1186, COLUMNA: 39: <imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplication 'El Tiempo de AEMET' (Androi ...       
+
+		LINEA: 1189, COLUMNA: 77: <imgsrc="/imagenes/png/redes_sociales/Facebook.png" alt="Follow us on Facebook" title="Follow us o ...       
+
+		LINEA: 1191, COLUMNA: 75: <imgsrc="/imagenes/png/redes_sociales/Twitter.png" alt="Follow us on Twitter" title="Follow us on...       
+
+		LINEA: 1193, COLUMNA: 63: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 1195, COLUMNA: 75: <imgsrc="/imagenes/png/redes_sociales/Youtube.png" alt="Follow us on YouTube" title="Follow us on...       
+
+		LINEA: 1197, COLUMNA: 47: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 1204, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Validates XHTML 1.0 Transitional. (it...       
+
+		LINEA: 1209, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_vcss.gif" title="Certified W3C Valid CSS. (it will open in...       
+
+		LINEA: 1214, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icon in accordance with the Double-A leve ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 132, COLUMNA: 7: <input type="checkbox" id="idiomas_mini" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 147, COLUMNA: 7: <input type="checkbox" id="idiomas" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 162, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
+
+		LINEA: 165, COLUMNA: 9: <input class="texto_buscador" value="Enter text" aria-label ="Enter text" name="str" id="buscar" onf ...       
+
+		LINEA: 166, COLUMNA: 149: <input type="submit" value=" " class="boton_buscar_cabecera" title="Search" alt="Search" />       
+
+		LINEA: 174, COLUMNA: 27: <input class="checkbox_menu" type="checkbox" id="nav" />       
+
+		LINEA: 616, COLUMNA: 8: <input type="text" name="str" value="Search location..." onblur="this.value=(this.value=='') ? 'Sear ...       
+
+		LINEA: 619, COLUMNA: 8: <input type="submit" value=" " class="boton_buscar_cabecera" title="Search" alt="Search" />       
+
+		LINEA: 767, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_radar_pyb" name=" ...       
+
+		LINEA: 768, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_radar_coo" name=" ...       
+
+		LINEA: 872, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_prec_pyb" name="t ...       
+
+		LINEA: 873, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_prec_coo" name="t ...
+
+  
+
+	REVISAR: 73: object may be using color alone.
+
+
+
+		LINEA: 721, COLUMNA: 2: <object width="100%" height="218" type="application/x-shockwave-flash" data="/js/mediaelements/flash ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 60, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.min.js"></script>       
+
+		LINEA: 61, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.cookie.js"></script>       
+
+		LINEA: 63, COLUMNA: 1: <script type="text/javascript" src="/js/owl-carousel/owl.carousel.min.js"></script>       
+
+		LINEA: 64, COLUMNA: 1: <script type="text/javascript" src="/js/wow/wow.min.js" ></script>       
+
+		LINEA: 712, COLUMNA: 6: <script src="/js/mediaelements/mediaelement-and-player.min.js"></script>       
+
+		LINEA: 729, COLUMNA: 5: <script>	$('video').mediaelementplayer({		success: function(player, node) {...       
+
+		LINEA: 840, COLUMNA: 7: <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http' ...       
+
+		LINEA: 848, COLUMNA: 4: <script type="text/javascript">//----------------------// Callback function//-------- ...       
+
+		LINEA: 991, COLUMNA: 1: <script type="text/javascript" src="/js/gears_init.js"></script>       
+
+		LINEA: 992, COLUMNA: 1: <script type="text/javascript" src="/js/geo.js"></script>       
+
+		LINEA: 994, COLUMNA: 1: <script type="text/javascript">//<![CDATA[$(function() { var lineas = $("#lineas-de-inte ...       
+
+		LINEA: 1123, COLUMNA: 1: <script type="text/javascript" src="/js/stats.js" ></script>       
+
+		LINEA: 1223, COLUMNA: 1: <script type="text/javascript">	function aceptaCookies() 	{ 		 $.cookie("accept_cookies", "ok" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 126, COLUMNA: 4: <img src="/imagenes/gif/logo_AEMET_web.gif" alt="State Meteorological Agency " title="State Meteorol ...       
+
+		LINEA: 579, COLUMNA: 46: <img class="imagen_avisos_portada" src="/imagenes_d/eltiempo/prediccion/avisos/20181203130000_avi_ho ...       
+
+		LINEA: 703, COLUMNA: 86: <img class="imagen_pred_portada" src="/imagenes_d/eltiempo/prediccion/espa/201812031224_p01wesp0.jpg ...       
+
+		LINEA: 724, COLUMNA: 7: <img class="imagen_no_disponible_video" src="/imagenes/jpg/video_no_disponible.jpg" title="Video no...       
+
+		LINEA: 771, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8pb.gif" alt="Radar.&nbsp;Iberian Peninsula and...       
+
+		LINEA: 776, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8ca.gif" alt="Radar.&nbsp;Las Palmas" title="Rad ...       
+
+		LINEA: 876, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5p0d1.png" alt="Rainfal ...       
+
+		LINEA: 881, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5c0d1.png" alt="Rainfal ...       
+
+		LINEA: 900, COLUMNA: 5: <img alt="Estado del clima 2018" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/2018/11 ...       
+
+		LINEA: 908, COLUMNA: 5: <img alt="Ant&aacute;rtida inexplorada" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/ ...       
+
+		LINEA: 916, COLUMNA: 5: <img alt="Valores r&eacute;cord de gases de efecto invernadero" src="/imagenes_gcd/noticias/imagen_n ...       
+
+		LINEA: 924, COLUMNA: 5: <img alt="Octubre, normal t&eacute;rmicamente y h&uacute;medo" src="/imagenes_gcd/noticias/imagen_no ...       
+
+		LINEA: 944, COLUMNA: 3: <img alt="AEMET OpenData (it will open in a new window) " src="/imagenes_gcd/productos_destacados/lo ...       
+
+		LINEA: 948, COLUMNA: 3: <img alt=" 3rd European Nowcasting Conference (it will open in a new window)" src="/imagenes_gcd/pro ...       
+
+		LINEA: 952, COLUMNA: 3: <img alt="Sexto Simposio Nacional de Predicci&oacute;n Memorial Antonio Mestre (it will open in a ne ...       
+
+		LINEA: 956, COLUMNA: 3: <img alt="MeteoGlosario Visual (it will open in a new window) " src="/imagenes_gcd/productos_destaca ...       
+
+		LINEA: 960, COLUMNA: 3: <img alt="MeteoRuta (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-me ...       
+
+		LINEA: 964, COLUMNA: 3: <img alt="SINOBAS (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo_sino ...       
+
+		LINEA: 968, COLUMNA: 3: <img alt="State Meteorological Agency blog (it will open in a new window) " src="/imagenes_gcd/produ ...       
+
+		LINEA: 972, COLUMNA: 3: <img alt="MeteoNav (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-met ...       
+
+		LINEA: 976, COLUMNA: 3: <img alt="Arcim&iacute;s documental archive (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 980, COLUMNA: 3: <img alt="Atmospheric mineral dust forecast (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 984, COLUMNA: 3: <img alt="Centenary of Iza&ntilde;a (it will open in a new window) " src="/imagenes_gcd/productos_de ...       
+
+		LINEA: 988, COLUMNA: 3: <img alt="Meteoeduca" src="/imagenes_gcd/productos_destacados/meteoeduca.jpg" title="Meteoeduca" />       
+
+		LINEA: 1124, COLUMNA: 12: <img src="/js/stats.js?nojs=y" class="nodisplay" alt="estadisticas"/>       
+
+		LINEA: 1131, COLUMNA: 7: <img alt="40th anniversary of the Constitution (it will open in a new window)" class="img_promocion" ...       
+
+		LINEA: 1136, COLUMNA: 7: <img alt="Transparency Portal (it will open in a new window)" class="img_promocion" src="/imagenes_g ...       
+
+		LINEA: 1141, COLUMNA: 7: <img alt="AdapteCCa. Platform for the exchange and consultation of information on adaptation to the...       
+
+		LINEA: 1146, COLUMNA: 7: <img alt="Open data (it will open in a new window)" class="img_promocion" src="/imagenes_gcd/enlaces ...       
+
+		LINEA: 1151, COLUMNA: 7: <img alt="AEMET information through phone 060" class="img_promocion" src="/imagenes_gcd/enlaces_prom ...       
+
+		LINEA: 1156, COLUMNA: 7: <img alt="World Weather Information Service (WWIS). Cities worldwide (it will open in a new window)" ...       
+
+		LINEA: 1161, COLUMNA: 7: <img alt="World Meteorological Organization (WMO) for youth website - WMO Facebook in Spanish - Medi ...       
+
+		LINEA: 1204, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Validates XHTML 1.0 Transitional. (it...       
+
+		LINEA: 1209, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_vcss.gif" title="Certified W3C Valid CSS. (it will open in...       
+
+		LINEA: 1214, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icon in accordance with the Double-A leve ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 126, COLUMNA: 4: <img src="/imagenes/gif/logo_AEMET_web.gif" alt="State Meteorological Agency " title="State Meteorol ...       
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...       
+
+		LINEA: 482, COLUMNA: 73: <img class="imagen_portada_aviso_especial" src="/imagenes/png/iconos/ico-destacado.png" alt="Predicc ...       
+
+		LINEA: 486, COLUMNA: 25: <imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="My website" title="My website" />       
+
+		LINEA: 488, COLUMNA: 38: <imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplication 'El Tiempo de AEMET' (Androi ...       
+
+		LINEA: 490, COLUMNA: 58: <imgsrc="/imagenes/png/iconos/ico-contacto.png" alt="Contact" title="Contact" />       
+
+		LINEA: 492, COLUMNA: 26: <imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Site map" title="Site map" />       
+
+		LINEA: 494, COLUMNA: 76: <imgsrc="/imagenes/png/redes_sociales/Facebook.png" alt="Follow us on Facebook" title="Follow us o ...       
+
+		LINEA: 496, COLUMNA: 74: <imgsrc="/imagenes/png/redes_sociales/Twitter.png" alt="Follow us on Twitter" title="Follow us on...       
+
+		LINEA: 498, COLUMNA: 62: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 500, COLUMNA: 74: <imgsrc="/imagenes/png/redes_sociales/Youtube.png" alt="Follow us on YouTube" title="Follow us on...       
+
+		LINEA: 502, COLUMNA: 46: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 515, COLUMNA: 3: <img alt="My website" src="/imagenes_gcd/lineas_de_interes/ico-miweb.png" title="My website" />       
+
+		LINEA: 520, COLUMNA: 3: <img alt="Attention to the citizen" src="/imagenes_gcd/lineas_de_interes/ico-att-ciudadano.png" titl ...       
+
+		LINEA: 525, COLUMNA: 3: <img alt="Social networks" src="/imagenes_gcd/lineas_de_interes/ico-redes-sociales.png" title="Socia ...       
+
+		LINEA: 530, COLUMNA: 3: <img alt="Meteoalerta: Warnings" src="/imagenes_gcd/lineas_de_interes/ico-meteoalerta.png" title="Me ...       
+
+		LINEA: 535, COLUMNA: 3: <img alt="APP" src="/imagenes_gcd/lineas_de_interes/ico-app-aemet.png" title="APP" />       
+
+		LINEA: 540, COLUMNA: 3: <img alt="Data and statistics" src="/imagenes_gcd/lineas_de_interes/ico-datos.png" title="Data and s ...       
+
+		LINEA: 545, COLUMNA: 3: <img alt="Documentation centre" src="/imagenes_gcd/lineas_de_interes/ico-documentacion.png" title="D ...       
+
+		LINEA: 550, COLUMNA: 3: <img alt="By sectors" src="/imagenes_gcd/lineas_de_interes/ico-estrategico-porsectores.png" title="B ...       
+
+		LINEA: 555, COLUMNA: 3: <img alt="Climate services" src="/imagenes_gcd/lineas_de_interes/ico-servicios-climaticos.png" title ...       
+
+		LINEA: 560, COLUMNA: 3: <img alt="R+D+i" src="/imagenes_gcd/lineas_de_interes/ico-IDI.png" title="R+D+i" />       
+
+		LINEA: 565, COLUMNA: 3: <img alt="International" src="/imagenes_gcd/lineas_de_interes/ico-internacional.png" title="Internat ...       
+
+		LINEA: 579, COLUMNA: 46: <img class="imagen_avisos_portada" src="/imagenes_d/eltiempo/prediccion/avisos/20181203130000_avi_ho ...       
+
+		LINEA: 627, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 637, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 647, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 657, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 667, COLUMNA: 58: <img src="/imagenes/png/estado_cielo/12.png" alt="Partly cloudy" title="Partly cloudy"/>       
+
+		LINEA: 683, COLUMNA: 7: <img title="Weather information on your website" alt="Weather information on your website" src="imag ...       
+
+		LINEA: 690, COLUMNA: 7: <img title="Cities worldwide" alt="Cities worldwide" src="imagenes/png/iconos/ico-mundo.png">       
+
+		LINEA: 703, COLUMNA: 86: <img class="imagen_pred_portada" src="/imagenes_d/eltiempo/prediccion/espa/201812031224_p01wesp0.jpg ...       
+
+		LINEA: 724, COLUMNA: 7: <img class="imagen_no_disponible_video" src="/imagenes/jpg/video_no_disponible.jpg" title="Video no...       
+
+		LINEA: 753, COLUMNA: 7: <img title="AEMET video on your website" alt="AEMET video on your website" src="imagenes/png/iconos/ ...       
+
+		LINEA: 771, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8pb.gif" alt="Radar.&nbsp;Iberian Peninsula and...       
+
+		LINEA: 776, COLUMNA: 7: <img src="/imagenes_d/eltiempo/observacion/portada/r8ca.gif" alt="Radar.&nbsp;Las Palmas" title="Rad ...       
+
+		LINEA: 789, COLUMNA: 9: <img class="floatleft imagen_portada_aviso_especial paddingtop3px" src="/imagenes/png/iconos/ico-des ...       
+
+		LINEA: 794, COLUMNA: 92:
+
+
+
+		LINEA: 794, COLUMNA: 408:
+
+
+
+		LINEA: 797, COLUMNA: 5: <img alt="La Meteorolog&iacute;a en los medios de comunicaci&oacute;n" class="imagen_portada_noticia ...       
+
+		LINEA: 802, COLUMNA: 5: <img alt="3&ordf; Conferencia Europea de Nowcasting" class="imagen_portada_noticia" src="/imagenes_g ...       
+
+		LINEA: 807, COLUMNA: 5: <img alt="Borrascas con gran impacto de la temporada 2018-2019" class="imagen_portada_noticia" src=" ...       
+
+		LINEA: 812, COLUMNA: 5: <img alt="Resumen de la evoluci&oacute;n de las precipitaciones en Espa&ntilde;a" class="imagen_port ...       
+
+		LINEA: 817, COLUMNA: 5: <img alt="Nuevos canales de suscripci&oacute;n a los avisos de fen&oacute;menos meteorol&oacute;gico ...       
+
+		LINEA: 822, COLUMNA: 5: <img alt="&Iacute;ndice diario de calidad del aire previsto por AEMET" class="imagen_portada_noticia ...       
+
+		LINEA: 860, COLUMNA: 6: <img title="AEMET blog.es" alt="AEMET blog.es" src="imagenes/png/iconos/ico-blog.png">       
+
+		LINEA: 876, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5p0d1.png" alt="Rainfal ...       
+
+		LINEA: 881, COLUMNA: 7: <img src="/imagenes_d/eltiempo/prediccion/precipitacion/2018120300+024_ww_bpd5c0d1.png" alt="Rainfal ...       
+
+		LINEA: 900, COLUMNA: 5: <img alt="Estado del clima 2018" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/2018/11 ...       
+
+		LINEA: 908, COLUMNA: 5: <img alt="Ant&aacute;rtida inexplorada" src="/imagenes_gcd/noticias/imagen_noticia_reducida_portada/ ...       
+
+		LINEA: 916, COLUMNA: 5: <img alt="Valores r&eacute;cord de gases de efecto invernadero" src="/imagenes_gcd/noticias/imagen_n ...       
+
+		LINEA: 924, COLUMNA: 5: <img alt="Octubre, normal t&eacute;rmicamente y h&uacute;medo" src="/imagenes_gcd/noticias/imagen_no ...       
+
+		LINEA: 944, COLUMNA: 3: <img alt="AEMET OpenData (it will open in a new window) " src="/imagenes_gcd/productos_destacados/lo ...       
+
+		LINEA: 948, COLUMNA: 3: <img alt=" 3rd European Nowcasting Conference (it will open in a new window)" src="/imagenes_gcd/pro ...       
+
+		LINEA: 952, COLUMNA: 3: <img alt="Sexto Simposio Nacional de Predicci&oacute;n Memorial Antonio Mestre (it will open in a ne ...       
+
+		LINEA: 956, COLUMNA: 3: <img alt="MeteoGlosario Visual (it will open in a new window) " src="/imagenes_gcd/productos_destaca ...       
+
+		LINEA: 960, COLUMNA: 3: <img alt="MeteoRuta (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-me ...       
+
+		LINEA: 964, COLUMNA: 3: <img alt="SINOBAS (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo_sino ...       
+
+		LINEA: 968, COLUMNA: 3: <img alt="State Meteorological Agency blog (it will open in a new window) " src="/imagenes_gcd/produ ...       
+
+		LINEA: 972, COLUMNA: 3: <img alt="MeteoNav (it will open in a new window) " src="/imagenes_gcd/productos_destacados/logo-met ...       
+
+		LINEA: 976, COLUMNA: 3: <img alt="Arcim&iacute;s documental archive (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 980, COLUMNA: 3: <img alt="Atmospheric mineral dust forecast (it will open in a new window) " src="/imagenes_gcd/prod ...       
+
+		LINEA: 984, COLUMNA: 3: <img alt="Centenary of Iza&ntilde;a (it will open in a new window) " src="/imagenes_gcd/productos_de ...       
+
+		LINEA: 988, COLUMNA: 3: <img alt="Meteoeduca" src="/imagenes_gcd/productos_destacados/meteoeduca.jpg" title="Meteoeduca" />       
+
+		LINEA: 1124, COLUMNA: 12: <img src="/js/stats.js?nojs=y" class="nodisplay" alt="estadisticas"/>       
+
+		LINEA: 1131, COLUMNA: 7: <img alt="40th anniversary of the Constitution (it will open in a new window)" class="img_promocion" ...       
+
+		LINEA: 1136, COLUMNA: 7: <img alt="Transparency Portal (it will open in a new window)" class="img_promocion" src="/imagenes_g ...       
+
+		LINEA: 1141, COLUMNA: 7: <img alt="AdapteCCa. Platform for the exchange and consultation of information on adaptation to the...       
+
+		LINEA: 1146, COLUMNA: 7: <img alt="Open data (it will open in a new window)" class="img_promocion" src="/imagenes_gcd/enlaces ...       
+
+		LINEA: 1151, COLUMNA: 7: <img alt="AEMET information through phone 060" class="img_promocion" src="/imagenes_gcd/enlaces_prom ...       
+
+		LINEA: 1156, COLUMNA: 7: <img alt="World Weather Information Service (WWIS). Cities worldwide (it will open in a new window)" ...       
+
+		LINEA: 1161, COLUMNA: 7: <img alt="World Meteorological Organization (WMO) for youth website - WMO Facebook in Spanish - Medi ...       
+
+		LINEA: 1186, COLUMNA: 39: <imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplication 'El Tiempo de AEMET' (Androi ...       
+
+		LINEA: 1189, COLUMNA: 77: <imgsrc="/imagenes/png/redes_sociales/Facebook.png" alt="Follow us on Facebook" title="Follow us o ...       
+
+		LINEA: 1191, COLUMNA: 75: <imgsrc="/imagenes/png/redes_sociales/Twitter.png" alt="Follow us on Twitter" title="Follow us on...       
+
+		LINEA: 1193, COLUMNA: 63: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 1195, COLUMNA: 75: <imgsrc="/imagenes/png/redes_sociales/Youtube.png" alt="Follow us on YouTube" title="Follow us on...       
+
+		LINEA: 1197, COLUMNA: 47: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 1204, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Validates XHTML 1.0 Transitional. (it...       
+
+		LINEA: 1209, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_vcss.gif" title="Certified W3C Valid CSS. (it will open in...       
+
+		LINEA: 1214, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icon in accordance with the Double-A leve ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 60, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.min.js"></script>       
+
+		LINEA: 61, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.cookie.js"></script>       
+
+		LINEA: 63, COLUMNA: 1: <script type="text/javascript" src="/js/owl-carousel/owl.carousel.min.js"></script>       
+
+		LINEA: 64, COLUMNA: 1: <script type="text/javascript" src="/js/wow/wow.min.js" ></script>       
+
+		LINEA: 712, COLUMNA: 6: <script src="/js/mediaelements/mediaelement-and-player.min.js"></script>       
+
+		LINEA: 729, COLUMNA: 5: <script>	$('video').mediaelementplayer({		success: function(player, node) {...       
+
+		LINEA: 840, COLUMNA: 7: <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http' ...       
+
+		LINEA: 848, COLUMNA: 4: <script type="text/javascript">//----------------------// Callback function//-------- ...       
+
+		LINEA: 991, COLUMNA: 1: <script type="text/javascript" src="/js/gears_init.js"></script>       
+
+		LINEA: 992, COLUMNA: 1: <script type="text/javascript" src="/js/geo.js"></script>       
+
+		LINEA: 994, COLUMNA: 1: <script type="text/javascript">//<![CDATA[$(function() { var lineas = $("#lineas-de-inte ...       
+
+		LINEA: 1123, COLUMNA: 1: <script type="text/javascript" src="/js/stats.js" ></script>       
+
+		LINEA: 1223, COLUMNA: 1: <script type="text/javascript">	function aceptaCookies() 	{ 		 $.cookie("accept_cookies", "ok" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.1.2 No Keyboard Trap (A)  
+
+	REVISAR: 259: object may not provide a keyboard mechanism to return focus to the parent window.
+
+
+
+		LINEA: 721, COLUMNA: 2: <object width="100%" height="218" type="application/x-shockwave-flash" data="/js/mediaelements/flash ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 30: object may flicker.
+
+
+
+		LINEA: 721, COLUMNA: 2: <object width="100%" height="218" type="application/x-shockwave-flash" data="/js/mediaelements/flash ...
+
+  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 60, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.min.js"></script>       
+
+		LINEA: 61, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.cookie.js"></script>       
+
+		LINEA: 63, COLUMNA: 1: <script type="text/javascript" src="/js/owl-carousel/owl.carousel.min.js"></script>       
+
+		LINEA: 64, COLUMNA: 1: <script type="text/javascript" src="/js/wow/wow.min.js" ></script>       
+
+		LINEA: 712, COLUMNA: 6: <script src="/js/mediaelements/mediaelement-and-player.min.js"></script>       
+
+		LINEA: 729, COLUMNA: 5: <script>	$('video').mediaelementplayer({		success: function(player, node) {...       
+
+		LINEA: 840, COLUMNA: 7: <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http' ...       
+
+		LINEA: 848, COLUMNA: 4: <script type="text/javascript">//----------------------// Callback function//-------- ...       
+
+		LINEA: 991, COLUMNA: 1: <script type="text/javascript" src="/js/gears_init.js"></script>       
+
+		LINEA: 992, COLUMNA: 1: <script type="text/javascript" src="/js/geo.js"></script>       
+
+		LINEA: 994, COLUMNA: 1: <script type="text/javascript">//<![CDATA[$(function() { var lineas = $("#lineas-de-inte ...       
+
+		LINEA: 1123, COLUMNA: 1: <script type="text/javascript" src="/js/stats.js" ></script>       
+
+		LINEA: 1223, COLUMNA: 1: <script type="text/javascript">	function aceptaCookies() 	{ 		 $.cookie("accept_cookies", "ok" ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 48, COLUMNA: 1: <title>State Meteorological Agency - AEMET - Spanish Government</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 92, COLUMNA: 5:
+
+
+
+		LINEA: 105, COLUMNA: 7: <a href="#contenido" accesskey="c">C&nbsp;-&nbsp;Go to content</a>       
+
+		LINEA: 108, COLUMNA: 9: <a href="/en/accesibilidad" accesskey="0">0&nbsp;-&nbsp;Web Accessibility</a>       
+
+		LINEA: 110, COLUMNA: 9: <a href="/en/portada" accesskey="1">1&nbsp;-&nbsp;Homepage</a>       
+
+		LINEA: 112, COLUMNA: 9: <a href="/en/mapaweb" accesskey="2">2&nbsp;-&nbsp;Site map</a>       
+
+		LINEA: 114, COLUMNA: 9: <a href="/en/ayuda" accesskey="3">3&nbsp;-&nbsp;Web help</a>       
+
+		LINEA: 116, COLUMNA: 2: <a href="/en/contactar" accesskey="4">4&nbsp;-&nbsp;Contact</a>       
+
+		LINEA: 118, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios" accesskey="5">5&nbsp;-&nbsp;Towns</a>       
+
+		LINEA: 120, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos" accesskey="6">6&nbsp;-&nbsp;Warnings</a>       
+
+		LINEA: 137, COLUMNA: 12: <a class="separador_idiomas" lang="es" hreflang="es" href="http://www.aemet.es/es/portada" title="Es ...       
+
+		LINEA: 138, COLUMNA: 12: <a class="separador_idiomas" lang="ca" hreflang="ca" href="http://www.aemet.es/ca/portada" title="Ca ...       
+
+		LINEA: 139, COLUMNA: 12: <a class="separador_idiomas" lang="gl" hreflang="gl" href="http://www.aemet.es/gl/portada" title="Ga ...       
+
+		LINEA: 140, COLUMNA: 12: <a class="separador_idiomas" lang="va" hreflang="va" href="http://www.aemet.es/va/portada" title="Va ...       
+
+		LINEA: 141, COLUMNA: 12: <a class="separador_idiomas" lang="eu" hreflang="eu" href="http://www.aemet.es/eu/portada" title="Eu ...       
+
+		LINEA: 142, COLUMNA: 12: <a class="separador_idiomas" lang="en" hreflang="en" href="http://www.aemet.es/en/portada" title="En ...       
+
+		LINEA: 143, COLUMNA: 12: <a class="separador_idiomas" lang="fr" hreflang="fr" href="http://www.aemet.es/fr/portada" title="Fr ...       
+
+		LINEA: 150, COLUMNA: 12: <a class="separador_idiomas" lang="es" hreflang="es" href="http://www.aemet.es/es/portada" title="Es ...       
+
+		LINEA: 151, COLUMNA: 12: <a class="separador_idiomas" lang="ca" hreflang="ca" href="http://www.aemet.es/ca/portada" title="Ca ...       
+
+		LINEA: 152, COLUMNA: 12: <a class="separador_idiomas" lang="gl" hreflang="gl" href="http://www.aemet.es/gl/portada" title="Ga ...       
+
+		LINEA: 153, COLUMNA: 12: <a class="separador_idiomas" lang="va" hreflang="va" href="http://www.aemet.es/va/portada" title="Va ...       
+
+		LINEA: 154, COLUMNA: 12: <a class="separador_idiomas" lang="eu" hreflang="eu" href="http://www.aemet.es/eu/portada" title="Eu ...       
+
+		LINEA: 155, COLUMNA: 12: <a class="separador_idiomas" lang="en" hreflang="en" href="http://www.aemet.es/en/portada" title="En ...       
+
+		LINEA: 156, COLUMNA: 12: <a class="separador_idiomas" lang="fr" hreflang="fr" href="http://www.aemet.es/fr/portada" title="Fr ...       
+
+		LINEA: 178, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/eltiempo">Weather</a>       
+
+		LINEA: 178, COLUMNA: 73: <a class="enlace_menumovil_1er_nvl" href="#">Weather</a>       
+
+		LINEA: 180, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/eltiempo/observacion">Weather observations</a>       
+
+		LINEA: 180, COLUMNA: 121: <a class="enlace_menumovil_2o_nvl" href="#">Weather observations</a>       
+
+		LINEA: 182, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/ultimosdatos">Today and last days</a>       
+
+		LINEA: 184, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/sinobas">SINOBAS</a>       
+
+		LINEA: 186, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/radar">Radar</a>       
+
+		LINEA: 188, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/satelite/infra">Satellites</a>       
+
+		LINEA: 190, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/rayos">Lightnings</a>       
+
+		LINEA: 192, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/radiacion/radiacion">Radiation and ozone< ...       
+
+		LINEA: 194, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/contaminacionfondo">Background pollution< ...       
+
+		LINEA: 198, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/eltiempo/prediccion">Forecast</a>       
+
+		LINEA: 198, COLUMNA: 108: <a class="enlace_menumovil_2o_nvl" href="#">Forecast</a>       
+
+		LINEA: 200, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/avisos">Warnings</a>       
+
+		LINEA: 202, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/municipios">Towns</a>       
+
+		LINEA: 204, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/playas">Beaches</a>       
+
+		LINEA: 206, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/montana">Mountain</a>       
+
+		LINEA: 208, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/provincias">Provinces</a>       
+
+		LINEA: 210, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/comunidades">Autonomous regions</a>       
+
+		LINEA: 212, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/espana">Spain</a>       
+
+		LINEA: 214, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/mundo">Cities worldwide</a>       
+
+		LINEA: 216, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/maritima">Marine</a>       
+
+		LINEA: 218, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/aeronautica">Aviation</a>       
+
+		LINEA: 220, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/mapa_frentes">Surface pressure charts</a>       
+
+		LINEA: 222, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/temperaturas">Max/Min temperatures</a>       
+
+		LINEA: 224, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/modelosnumericos/harmonie_arome">Numerical ...       
+
+		LINEA: 226, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/mapas_probabilisticos">Probabilistics maps ...       
+
+		LINEA: 228, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/radiacionuv">Ultraviolet radiation</a>       
+
+		LINEA: 230, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/calidad_del_aire">Atmosphere chemical comp ...       
+
+		LINEA: 232, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/incendios">Fires</a>       
+
+		LINEA: 234, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/meteoruta">MeteoRuta</a>       
+
+		LINEA: 236, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/polvo_mineral">Mineral dust</a>       
+
+		LINEA: 246, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/serviciosclimaticos">Climate services</a>       
+
+		LINEA: 246, COLUMNA: 93: <a class="enlace_menumovil_1er_nvl" href="#">Climate services</a>       
+
+		LINEA: 248, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/serviciosclimaticos/datosclimatologicos">Climatological d ...       
+
+		LINEA: 248, COLUMNA: 139: <a class="enlace_menumovil_2o_nvl" href="#">Climatological data</a>       
+
+		LINEA: 250, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos" ...       
+
+		LINEA: 252, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/efemerides_extremos">E ...       
+
+		LINEA: 254, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/superacion_umbrales">O ...       
+
+		LINEA: 256, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/efemerides_sucesos">Ev ...       
+
+		LINEA: 258, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/fenologia">Phenology</ ...       
+
+		LINEA: 260, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/atlas_climatico">Clima ...       
+
+		LINEA: 264, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/serviciosclimaticos/vigilancia_clima">Climate monitoring< ...       
+
+		LINEA: 264, COLUMNA: 135: <a class="enlace_menumovil_2o_nvl" href="#">Climate monitoring</a>       
+
+		LINEA: 266, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/resumenes">Climatological ...       
+
+		LINEA: 268, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/analisis_estacional">Seas ...       
+
+		LINEA: 270, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/vigilancia_sequia">Meteor ...       
+
+		LINEA: 272, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/balancehidrico">Hidric ba ...       
+
+		LINEA: 274, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/radiacion_ozono">Radiatio ...       
+
+		LINEA: 278, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/prediccion_estacional">Seasonal forecast</ ...       
+
+		LINEA: 280, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/serviciosclimaticos/cambio_climat">Climate projections fo ...       
+
+		LINEA: 280, COLUMNA: 153: <a class="enlace_menumovil_2o_nvl" href="#">Climate projections for the XXI Century</a>       
+
+		LINEA: 282, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/cambio_climat/result_graficos">Graphic res ...       
+
+		LINEA: 284, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/cambio_climat/datos_diarios">Daily data</a ...       
+
+		LINEA: 286, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/cambio_climat/datos_mensuales">Monthly dat ...       
+
+		LINEA: 296, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/conocenos">Know us</a>       
+
+		LINEA: 296, COLUMNA: 74: <a class="enlace_menumovil_1er_nvl" href="#">Know us</a>       
+
+		LINEA: 298, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/quienes_somos">About us</a>       
+
+		LINEA: 300, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/a_que_nos_dedicamos">What we do</a>       
+
+		LINEA: 302, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/recursos">Our resources</a>       
+
+		LINEA: 304, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/nuestra_historia">Our history</a>       
+
+		LINEA: 306, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/conocenos/congresos_y_conferencias">Congresses and confer ...       
+
+		LINEA: 306, COLUMNA: 141: <a class="enlace_menumovil_2o_nvl" href="#">Congresses and conferences</a>       
+
+		LINEA: 308, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/congresos_y_conferencias/congresos">Announcements</a ...       
+
+		LINEA: 310, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/congresos_y_conferencias/reuniones">Meetings and con ...       
+
+		LINEA: 314, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/colaboracion_institucional/convenios">Institutional...       
+
+		LINEA: 316, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/cursos">Courses</a>       
+
+		LINEA: 324, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/idi">R&D+I</a>       
+
+		LINEA: 324, COLUMNA: 66: <a class="enlace_menumovil_1er_nvl" href="#">R&D+I</a>       
+
+		LINEA: 326, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/prediccion">Forecast</a>       
+
+		LINEA: 328, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/clima">Climate</a>       
+
+		LINEA: 330, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/medio_ambiente">The Environment</a>       
+
+		LINEA: 332, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/tic">Technological innovation</a>       
+
+		LINEA: 334, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/observacion">Observation</a>       
+
+		LINEA: 336, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/SAF_Nowcasting">Nowcasting SAF</a>       
+
+		LINEA: 338, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/CIAI">CIAI</a>       
+
+		LINEA: 340, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/SDS-WAS">SDS-WAS</a>       
+
+		LINEA: 348, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/conocermas">Knowing more</a>       
+
+		LINEA: 348, COLUMNA: 80: <a class="enlace_menumovil_1er_nvl" href="#">Knowing more</a>       
+
+		LINEA: 350, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/aeronautica">Aviation</a>       
+
+		LINEA: 352, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/maritima">Marine</a>       
+
+		LINEA: 354, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/montana">Mountain</a>       
+
+		LINEA: 356, COLUMNA: 5:
+
+
+
+		LINEA: 358, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/conocermas/biblioteca">Library</a>       
+
+		LINEA: 358, COLUMNA: 109: <a class="enlace_menumovil_2o_nvl" href="#">Library</a>       
+
+		LINEA: 360, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/biblioteca/catalogo">Catalogue</a>       
+
+		LINEA: 362, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/biblioteca/boletines">Meteorological bulletin</a>       
+
+		LINEA: 364, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/biblioteca/exposiciones">Exhibitions</a>       
+
+		LINEA: 368, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/conocermas/recursos_en_linea">Online resources</a>       
+
+		LINEA: 368, COLUMNA: 125: <a class="enlace_menumovil_2o_nvl" href="#">Online resources</a>       
+
+		LINEA: 370, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/recursos_en_linea/publicaciones_y_estudios">Publica ...       
+
+		LINEA: 372, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/recursos_en_linea/calendarios">Meteorological calen ...       
+
+		LINEA: 374, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/recursos_en_linea/elobservador">El Observador</a>       
+
+		LINEA: 378, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/conocermas/meteoeduca">Meteoeduca</a>       
+
+		LINEA: 378, COLUMNA: 112: <a class="enlace_menumovil_2o_nvl" href="#">Meteoeduca</a>       
+
+		LINEA: 380, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteoeduca/modulos_tempo">TEMPO module library</a>       
+
+		LINEA: 382, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteoeduca/juegos">Educational games</a>       
+
+		LINEA: 384, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteoeduca/cuentos_infantiles">Children tales</a>       
+
+		LINEA: 386, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteoeduca/la_familia_meteo">Meteo family</a>       
+
+		LINEA: 390, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/dia_meteorologico">World Meteorological Day</a>       
+
+		LINEA: 392, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/modificacion_artificial_tiempo">Weather modificatio ...       
+
+		LINEA: 394, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteo_glosario_visual">MeteoGlosario Visual</a>       
+
+		LINEA: 396, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/borrascas/2018-2019">High impact storms</a>       
+
+		LINEA: 404, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/empleo_y_becas">Public employment and scholarships</a>       
+
+		LINEA: 404, COLUMNA: 106: <a class="enlace_menumovil_1er_nvl" href="#">Public employment and scholarships</a>       
+
+		LINEA: 406, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/empleo_y_becas/empleo_publico">Public employment</a>       
+
+		LINEA: 406, COLUMNA: 127: <a class="enlace_menumovil_2o_nvl" href="#">Public employment</a>       
+
+		LINEA: 408, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/ingresar_en_la_aemet">Joining AE ...       
+
+		LINEA: 410, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/oposiciones">Civil servant exams ...       
+
+		LINEA: 412, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/funcionarios_interinos">Interim...       
+
+		LINEA: 414, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/personal_laboral">Hired staff</a ...       
+
+		LINEA: 416, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/condiciones_de_trabajo">Working...       
+
+		LINEA: 420, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/concursos">Invitations to tender</a>       
+
+		LINEA: 422, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/practicas">Training</a>       
+
+		LINEA: 424, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/empleo_y_becas/becas">Scholarships</a>       
+
+		LINEA: 424, COLUMNA: 113: <a class="enlace_menumovil_2o_nvl" href="#">Scholarships</a>       
+
+		LINEA: 426, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/becas/informacion_de_interes">Information of in ...       
+
+		LINEA: 428, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/becas/convocatorias">Announcements</a>       
+
+		LINEA: 438, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/datos_abiertos">Open data</a>       
+
+		LINEA: 438, COLUMNA: 81: <a class="enlace_menumovil_1er_nvl" href="#">Open data</a>       
+
+		LINEA: 440, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/datos_abiertos/catalogo">Catalogue. RISP Plan</a>       
+
+		LINEA: 442, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/datos_abiertos/AEMET_OpenData">AEMET OpenData</a>       
+
+		LINEA: 444, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/datos_abiertos/estadisticas">Statistics</a>       
+
+		LINEA: 452, COLUMNA: 8: <a class="enlace_3er_nvl" href="/en/sede_electronica">Virtual office</a>       
+
+		LINEA: 468, COLUMNA: 5: <a href="/en/eltiempo/prediccion/avisos?w=hoy" title="Mon 3 - Maximum level of warning: Risk."><div...       
+
+		LINEA: 471, COLUMNA: 5: <a href="/en/eltiempo/prediccion/avisos?w=mna" title="Tue 4 - Maximum level of warning: No risk"><di ...       
+
+		LINEA: 474, COLUMNA: 5: <a href="/en/eltiempo/prediccion/avisos?w=pmna" title="Wed 5 - Maximum level of warning: No risk"><d ...       
+
+		LINEA: 482, COLUMNA: 6: <a href="/en/zona_portada_destacada" class="icono_avisos_cabecera"><img class="imagen_portada_aviso_ ...       
+
+		LINEA: 486, COLUMNA: 4: <a href="/en/mi_web"><imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="My website" title="My websi ...       
+
+		LINEA: 488, COLUMNA: 4: <a href="/en/app/eltiempodeAEMET"><imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplic ...       
+
+		LINEA: 490, COLUMNA: 4: <a href="/en/lineas_de_interes/atencion_al_ciudadano"><imgsrc="/imagenes/png/iconos/ico-contacto.p ...       
+
+		LINEA: 492, COLUMNA: 4: <a href="/en/mapaweb"><imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Site map" title="Site m ...       
+
+		LINEA: 494, COLUMNA: 4: <a href="/en/redes_sociales/facebook/AEMET_facebook" class="red_social"><imgsrc="/imagenes/png/red ...       
+
+		LINEA: 496, COLUMNA: 4: <a href="/en/redes_sociales/twitter/AEMET_twitter" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 498, COLUMNA: 4: <a href="https://aemetblog.wordpress.com" target="_blank"><imgsrc="/imagenes/png/iconos/ico-blog2. ...       
+
+		LINEA: 500, COLUMNA: 4: <a href="/en/redes_sociales/youtube/AEMET_YouTube" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 502, COLUMNA: 4: <a href="/en/rss_info" class="red_social"><img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS"...       
+
+		LINEA: 514, COLUMNA: 3: <a href="/en/lineas_de_interes/miweb" title="My website"><img alt="My website" src="/imagenes_gcd ...       
+
+		LINEA: 519, COLUMNA: 3: <a href="/en/lineas_de_interes/atencion_al_ciudadano" title="Attention to the citizen"><img alt=" ...       
+
+		LINEA: 524, COLUMNA: 3: <a href="/en/lineas_de_interes/redes_sociales" title="Social networks"><img alt="Social networks" ...       
+
+		LINEA: 529, COLUMNA: 3: <a href="/en/lineas_de_interes/meteoalerta" title="Meteoalerta: Warnings"><img alt="Meteoalerta:...       
+
+		LINEA: 534, COLUMNA: 3: <a href="/en/lineas_de_interes/apps" title="APP"><img alt="APP" src="/imagenes_gcd/lineas_de_inte ...       
+
+		LINEA: 539, COLUMNA: 3: <a href="/en/lineas_de_interes/datos_y_estadistica" title="Data and statistics"><img alt="Data an ...       
+
+		LINEA: 544, COLUMNA: 3: <a href="/en/lineas_de_interes/centro_de_documentacion" title="Documentation centre"><img alt="Do ...       
+
+		LINEA: 549, COLUMNA: 3: <a href="/en/lineas_de_interes/por_sectores" title="By sectors"><img alt="By sectors" src="/image ...       
+
+		LINEA: 554, COLUMNA: 3: <a href="/en/lineas_de_interes/servicios_climaticos" title="Climate services"><img alt="Climate s ...       
+
+		LINEA: 559, COLUMNA: 3: <a href="/en/lineas_de_interes/i_d_i" title="R+D+i"><img alt="R+D+i" src="/imagenes_gcd/lineas_de ...       
+
+		LINEA: 564, COLUMNA: 3: <a href="/en/lineas_de_interes/internacional" title="International"><img alt="International" src= ...       
+
+		LINEA: 573, COLUMNA: 14: <a href="/en/eltiempo/prediccion/avisos" class="capitalizar">meteoalerta</a>       
+
+		LINEA: 579, COLUMNA: 5: <a href="/en/eltiempo/prediccion/avisos"><img class="imagen_avisos_portada" src="/imagenes_d/eltiemp ...       
+
+		LINEA: 585, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos?w=hoy"><div class="fecha_nivel_aviso_max_portada">Mon 3</div ...       
+
+		LINEA: 590, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos?w=mna"><div class="fecha_nivel_aviso_max_portada">Tue 4</div ...       
+
+		LINEA: 595, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos?w=pmna"><div class="fecha_nivel_aviso_max_portada">Wed 5</di ...       
+
+		LINEA: 603, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos">See more information</a>       
+
+		LINEA: 625, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/barcelona-id08019">		<div class="texto_municipio ...       
+
+		LINEA: 635, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/madrid-id28079">		<div class="texto_municipio_po ...       
+
+		LINEA: 645, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/sevilla-id41091">		<div class="texto_municipio_p ...       
+
+		LINEA: 655, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/valencia-id46250">		<div class="texto_municipio_ ...       
+
+		LINEA: 665, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/zaragoza-id50297">		<div class="texto_municipio_ ...       
+
+		LINEA: 678, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios">See more locations</a>       
+
+		LINEA: 682, COLUMNA: 5: <a href="/en/eltiempo/widgets/municipios"><div class="icono_enlace_especial"><img title="Wea ...       
+
+		LINEA: 689, COLUMNA: 5: <a href="/en/eltiempo/prediccion/mundo"><div class="icono_enlace_especial"><img title="Citie ...       
+
+		LINEA: 703, COLUMNA: 45: <a href="/en/eltiempo/prediccion/espana"><img class="imagen_pred_portada" src="/imagenes_d/eltiempo/ ...       
+
+		LINEA: 706, COLUMNA: 9: <a href="/en/eltiempo/prediccion/espana">See more information</a>       
+
+		LINEA: 748, COLUMNA: 9: <a href="/en/eltiempo/prediccion/espana">See more information</a>       
+
+		LINEA: 752, COLUMNA: 5: <a href="/en/eltiempo/widgets/video"><div class="icono_enlace_especial"><img title="AEMET vi ...       
+
+		LINEA: 763, COLUMNA: 4: <a href="/en/eltiempo/observacion/radar">Radar</a>       
+
+		LINEA: 770, COLUMNA: 6: <a href="/en/eltiempo/observacion/radar"><img src="/imagenes_d/eltiempo/observacion/portada/ ...       
+
+		LINEA: 775, COLUMNA: 6: <a href="/en/eltiempo/observacion/radar?w=1&amp;p=r8ca"><img src="/imagenes_d/eltiempo/obser ...       
+
+		LINEA: 782, COLUMNA: 9: <a href="/en/eltiempo/observacion/radar">See more information</a>       
+
+		LINEA: 794, COLUMNA: 14: <a href='/documentos_d/enportada/20181203124924_p51tesp1.pdf' target='_blank'><img class='imagen_por ...       
+
+		LINEA: 794, COLUMNA: 330: <a href='/documentos_d/enportada/20181130083025_p54tesp1.pdf' target='_blank'><img class='imagen_por ...       
+
+		LINEA: 796, COLUMNA: 5: <a href="/en/noticias_/meteorologia_en_los_medios"><img alt="La Meteorolog&iacute;a en los medi ...       
+
+		LINEA: 801, COLUMNA: 5: <a href="/en/zona_portada_destacada/enc2019"><img alt="3&ordf; Conferencia Europea de Nowcastin ...       
+
+		LINEA: 806, COLUMNA: 5: <a href="/en/conocermas/borrascas/2018-2019"><img alt="Borrascas con gran impacto de la tempora ...       
+
+		LINEA: 811, COLUMNA: 5: <a href="/en/serviciosclimaticos/vigilancia_clima/resumen_precipitaciones"><img alt="Resumen de ...       
+
+		LINEA: 816, COLUMNA: 5: <a href="/en/rss_info/avisos/esp"><img alt="Nuevos canales de suscripci&oacute;n a los avisos d ...       
+
+		LINEA: 821, COLUMNA: 5: <a href="/en/eltiempo/prediccion/composicion_quimica_atmosfera/indice_previsto"><img alt="&Iacu ...       
+
+		LINEA: 829, COLUMNA: 10: <a href="/en/zona_portada_destacada">See more information</a>       
+
+		LINEA: 839, COLUMNA: 4: <a class="twitter-timeline" href="https://twitter.com/AEMET_Esp" data-widget-id="676722790867816448" ...       
+
+		LINEA: 859, COLUMNA: 4: <a href="https://aemetblog.wordpress.com" target="_blank"><div class="icono_enlace_especial">		 ...       
+
+		LINEA: 875, COLUMNA: 6: <a href="/en/eltiempo/prediccion/mapas_probabilisticos?dia=&amp;zona=penyb"><img src="/image ...       
+
+		LINEA: 880, COLUMNA: 6: <a href="/en/eltiempo/prediccion/mapas_probabilisticos?dia=hoy&amp;zona=can"><img src="/imag ...       
+
+		LINEA: 887, COLUMNA: 9: <a href="/en/eltiempo/prediccion/mapas_probabilisticos">See more information</a>       
+
+		LINEA: 894, COLUMNA: 13: <a href="/en/noticias" class="capitalizar">news</a>       
+
+		LINEA: 899, COLUMNA: 3: <a href="/en/noticias/2018/11/Estado_clima_2018"><img alt="Estado del clima 2018" src="/imagene ...       
+
+		LINEA: 903, COLUMNA: 5: <a href="/en/noticias/2018/11/Estado_clima_2018">Las se&ntilde;ales y los efectos del cambio clim&aa ...       
+
+		LINEA: 907, COLUMNA: 3: <a href="/en/noticias/2018/11/Antartida_inexplorada"><img alt="Ant&aacute;rtida inexplorada" sr ...       
+
+		LINEA: 911, COLUMNA: 5: <a href="/en/noticias/2018/11/Antartida_inexplorada">Participaci&oacute;n de AEMET en la expedici&oa ...       
+
+		LINEA: 915, COLUMNA: 3: <a href="/en/noticias/2018/11/record_gases_invernadero"><img alt="Valores r&eacute;cord de gase ...       
+
+		LINEA: 919, COLUMNA: 5: <a href="/en/noticias/2018/11/record_gases_invernadero">Los niveles de gases de efecto invernadero e ...       
+
+		LINEA: 923, COLUMNA: 3: <a href="/en/noticias/2018/11/Avance_octubre_2018"><img alt="Octubre, normal t&eacute;rmicament ...       
+
+		LINEA: 927, COLUMNA: 5: <a href="/en/noticias/2018/11/Avance_octubre_2018">Octubre de 2018, normal en cuanto a temperaturas...       
+
+		LINEA: 934, COLUMNA: 8: <a href="/en/noticias">Find more news</a>       
+
+		LINEA: 943, COLUMNA: 3: <a href="https://opendata.aemet.es/" target="_blank" title="AEMET OpenData (it will open in a new wi ...       
+
+		LINEA: 947, COLUMNA: 3: <a href="https://enc2019.aemet.es/" target="_blank" title=" 3rd European Nowcasting Conference (it w ...       
+
+		LINEA: 951, COLUMNA: 3: <a href="http://sextosimposio.aemet.es/" target="_blank" title="Sexto Simposio Nacional de Predicci& ...       
+
+		LINEA: 955, COLUMNA: 3: <a href="https://meteoglosario.aemet.es/" target="_blank" title="MeteoGlosario Visual (it will open...       
+
+		LINEA: 959, COLUMNA: 3: <a href="http://meteoruta.aemet.es/p_index.html" target="_blank" title="MeteoRuta (it will open in a ...       
+
+		LINEA: 963, COLUMNA: 3: <a href="http://sinobas.aemet.es/" target="_blank" title="SINOBAS (it will open in a new window) "> ...       
+
+		LINEA: 967, COLUMNA: 3: <a href="https://aemetblog.es/" target="_blank" title="State Meteorological Agency blog (it will ope ...       
+
+		LINEA: 971, COLUMNA: 3: <a href="http://meteonav.aemet.es/MeteoNav/" target="_blank" title="MeteoNav (it will open in a new...       
+
+		LINEA: 975, COLUMNA: 3: <a href="http://repositorio.aemet.es/" target="_blank" title="Arcim&iacute;s documental archive (it...       
+
+		LINEA: 979, COLUMNA: 3: <a href="http://dust.aemet.es/forecast" target="_blank" title="Atmospheric mineral dust forecast (it ...       
+
+		LINEA: 983, COLUMNA: 3: <a href="http://izana100.aemet.es/" target="_blank" title="Centenary of Iza&ntilde;a (it will open i ...       
+
+		LINEA: 987, COLUMNA: 3: <a href="/en/conocermas/meteoeduca" title="Meteoeduca"><img alt="Meteoeduca" src="/imagenes_gcd/p ...       
+
+		LINEA: 1130, COLUMNA: 7: <a href="https://www.constitucion40.com/" target="_blank" title="40th anniversary of the Constitutio ...       
+
+		LINEA: 1135, COLUMNA: 7: <a href="http://transparencia.gob.es/en" target="_blank" title="Transparency Portal (it will open in ...       
+
+		LINEA: 1140, COLUMNA: 7: <a href="http://www.adaptecca.es/en" target="_blank" title="AdapteCCa. Platform for the exchange and ...       
+
+		LINEA: 1145, COLUMNA: 7: <a href="http://datos.gob.es/en" target="_blank" title="Open data (it will open in a new window)">...       
+
+		LINEA: 1150, COLUMNA: 7: <a href="/en/contactar/telefono_060" title="AEMET information through phone 060"><img alt="AE ...       
+
+		LINEA: 1155, COLUMNA: 7: <a href="http://wwis.aemet.es/es/home.html" target="_blank" title="World Weather Information Service ...       
+
+		LINEA: 1160, COLUMNA: 7: <a href="/en/omm" title="World Meteorological Organization (WMO) for youth website - WMO Facebook in ...       
+
+		LINEA: 1171, COLUMNA: 10: <a href="/en/nota_legal">Legal notice</a>       
+
+		LINEA: 1173, COLUMNA: 12: <a href="/en/accesibilidad">Web Accessibility</a>       
+
+		LINEA: 1176, COLUMNA: 7: <a href="/en/enlaces">Links</a>       
+
+		LINEA: 1179, COLUMNA: 9: <a href="/en/ayuda">Web help</a>       
+
+		LINEA: 1186, COLUMNA: 5: <a href="/en/app/eltiempodeAEMET"><imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplic ...       
+
+		LINEA: 1189, COLUMNA: 5: <a href="/en/redes_sociales/facebook/AEMET_facebook" class="red_social"><imgsrc="/imagenes/png/red ...       
+
+		LINEA: 1191, COLUMNA: 5: <a href="/en/redes_sociales/twitter/AEMET_twitter" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 1193, COLUMNA: 5: <a href="https://aemetblog.wordpress.com" target="_blank"><imgsrc="/imagenes/png/iconos/ico-blog2. ...       
+
+		LINEA: 1195, COLUMNA: 5: <a href="/en/redes_sociales/youtube/AEMET_YouTube" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 1197, COLUMNA: 5: <a href="/en/rss_info" class="red_social"><img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS"...       
+
+		LINEA: 1203, COLUMNA: 6: <a target="_blank" href="http://validator.w3.org/check?uri=referer" ><imgsrc="/imagenes/pn ...       
+
+		LINEA: 1208, COLUMNA: 6: <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3&amp;usermediu ...       
+
+		LINEA: 1213, COLUMNA: 6: <a target="_blank" href="http://www.w3.org/WAI/WCAG1AA-Conformance"	><img src="/imagenes/png ...
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 92, COLUMNA: 5:
+
+
+
+		LINEA: 105, COLUMNA: 7: <a href="#contenido" accesskey="c">C&nbsp;-&nbsp;Go to content</a>       
+
+		LINEA: 108, COLUMNA: 9: <a href="/en/accesibilidad" accesskey="0">0&nbsp;-&nbsp;Web Accessibility</a>       
+
+		LINEA: 110, COLUMNA: 9: <a href="/en/portada" accesskey="1">1&nbsp;-&nbsp;Homepage</a>       
+
+		LINEA: 112, COLUMNA: 9: <a href="/en/mapaweb" accesskey="2">2&nbsp;-&nbsp;Site map</a>       
+
+		LINEA: 114, COLUMNA: 9: <a href="/en/ayuda" accesskey="3">3&nbsp;-&nbsp;Web help</a>       
+
+		LINEA: 116, COLUMNA: 2: <a href="/en/contactar" accesskey="4">4&nbsp;-&nbsp;Contact</a>       
+
+		LINEA: 118, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios" accesskey="5">5&nbsp;-&nbsp;Towns</a>       
+
+		LINEA: 120, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos" accesskey="6">6&nbsp;-&nbsp;Warnings</a>       
+
+		LINEA: 124, COLUMNA: 4: <a aria-label="State Meteorological Agency " class="enlace_aemet" title="State Meteorological Agency ...       
+
+		LINEA: 125, COLUMNA: 4:
+
+
+
+		LINEA: 137, COLUMNA: 12: <a class="separador_idiomas" lang="es" hreflang="es" href="http://www.aemet.es/es/portada" title="Es ...       
+
+		LINEA: 138, COLUMNA: 12: <a class="separador_idiomas" lang="ca" hreflang="ca" href="http://www.aemet.es/ca/portada" title="Ca ...       
+
+		LINEA: 139, COLUMNA: 12: <a class="separador_idiomas" lang="gl" hreflang="gl" href="http://www.aemet.es/gl/portada" title="Ga ...       
+
+		LINEA: 140, COLUMNA: 12: <a class="separador_idiomas" lang="va" hreflang="va" href="http://www.aemet.es/va/portada" title="Va ...       
+
+		LINEA: 141, COLUMNA: 12: <a class="separador_idiomas" lang="eu" hreflang="eu" href="http://www.aemet.es/eu/portada" title="Eu ...       
+
+		LINEA: 142, COLUMNA: 12: <a class="separador_idiomas" lang="en" hreflang="en" href="http://www.aemet.es/en/portada" title="En ...       
+
+		LINEA: 143, COLUMNA: 12: <a class="separador_idiomas" lang="fr" hreflang="fr" href="http://www.aemet.es/fr/portada" title="Fr ...       
+
+		LINEA: 150, COLUMNA: 12: <a class="separador_idiomas" lang="es" hreflang="es" href="http://www.aemet.es/es/portada" title="Es ...       
+
+		LINEA: 151, COLUMNA: 12: <a class="separador_idiomas" lang="ca" hreflang="ca" href="http://www.aemet.es/ca/portada" title="Ca ...       
+
+		LINEA: 152, COLUMNA: 12: <a class="separador_idiomas" lang="gl" hreflang="gl" href="http://www.aemet.es/gl/portada" title="Ga ...       
+
+		LINEA: 153, COLUMNA: 12: <a class="separador_idiomas" lang="va" hreflang="va" href="http://www.aemet.es/va/portada" title="Va ...       
+
+		LINEA: 154, COLUMNA: 12: <a class="separador_idiomas" lang="eu" hreflang="eu" href="http://www.aemet.es/eu/portada" title="Eu ...       
+
+		LINEA: 155, COLUMNA: 12: <a class="separador_idiomas" lang="en" hreflang="en" href="http://www.aemet.es/en/portada" title="En ...       
+
+		LINEA: 156, COLUMNA: 12: <a class="separador_idiomas" lang="fr" hreflang="fr" href="http://www.aemet.es/fr/portada" title="Fr ...       
+
+		LINEA: 178, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/eltiempo">Weather</a>       
+
+		LINEA: 178, COLUMNA: 73: <a class="enlace_menumovil_1er_nvl" href="#">Weather</a>       
+
+		LINEA: 180, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/eltiempo/observacion">Weather observations</a>       
+
+		LINEA: 180, COLUMNA: 121: <a class="enlace_menumovil_2o_nvl" href="#">Weather observations</a>       
+
+		LINEA: 182, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/ultimosdatos">Today and last days</a>       
+
+		LINEA: 184, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/sinobas">SINOBAS</a>       
+
+		LINEA: 186, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/radar">Radar</a>       
+
+		LINEA: 188, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/satelite/infra">Satellites</a>       
+
+		LINEA: 190, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/rayos">Lightnings</a>       
+
+		LINEA: 192, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/radiacion/radiacion">Radiation and ozone< ...       
+
+		LINEA: 194, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/observacion/contaminacionfondo">Background pollution< ...       
+
+		LINEA: 198, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/eltiempo/prediccion">Forecast</a>       
+
+		LINEA: 198, COLUMNA: 108: <a class="enlace_menumovil_2o_nvl" href="#">Forecast</a>       
+
+		LINEA: 200, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/avisos">Warnings</a>       
+
+		LINEA: 202, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/municipios">Towns</a>       
+
+		LINEA: 204, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/playas">Beaches</a>       
+
+		LINEA: 206, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/montana">Mountain</a>       
+
+		LINEA: 208, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/provincias">Provinces</a>       
+
+		LINEA: 210, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/comunidades">Autonomous regions</a>       
+
+		LINEA: 212, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/espana">Spain</a>       
+
+		LINEA: 214, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/mundo">Cities worldwide</a>       
+
+		LINEA: 216, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/maritima">Marine</a>       
+
+		LINEA: 218, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/aeronautica">Aviation</a>       
+
+		LINEA: 220, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/mapa_frentes">Surface pressure charts</a>       
+
+		LINEA: 222, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/temperaturas">Max/Min temperatures</a>       
+
+		LINEA: 224, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/modelosnumericos/harmonie_arome">Numerical ...       
+
+		LINEA: 226, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/mapas_probabilisticos">Probabilistics maps ...       
+
+		LINEA: 228, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/radiacionuv">Ultraviolet radiation</a>       
+
+		LINEA: 230, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/calidad_del_aire">Atmosphere chemical comp ...       
+
+		LINEA: 232, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/incendios">Fires</a>       
+
+		LINEA: 234, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/meteoruta">MeteoRuta</a>       
+
+		LINEA: 236, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/eltiempo/prediccion/polvo_mineral">Mineral dust</a>       
+
+		LINEA: 246, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/serviciosclimaticos">Climate services</a>       
+
+		LINEA: 246, COLUMNA: 93: <a class="enlace_menumovil_1er_nvl" href="#">Climate services</a>       
+
+		LINEA: 248, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/serviciosclimaticos/datosclimatologicos">Climatological d ...       
+
+		LINEA: 248, COLUMNA: 139: <a class="enlace_menumovil_2o_nvl" href="#">Climatological data</a>       
+
+		LINEA: 250, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos" ...       
+
+		LINEA: 252, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/efemerides_extremos">E ...       
+
+		LINEA: 254, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/superacion_umbrales">O ...       
+
+		LINEA: 256, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/efemerides_sucesos">Ev ...       
+
+		LINEA: 258, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/fenologia">Phenology</ ...       
+
+		LINEA: 260, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/datosclimatologicos/atlas_climatico">Clima ...       
+
+		LINEA: 264, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/serviciosclimaticos/vigilancia_clima">Climate monitoring< ...       
+
+		LINEA: 264, COLUMNA: 135: <a class="enlace_menumovil_2o_nvl" href="#">Climate monitoring</a>       
+
+		LINEA: 266, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/resumenes">Climatological ...       
+
+		LINEA: 268, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/analisis_estacional">Seas ...       
+
+		LINEA: 270, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/vigilancia_sequia">Meteor ...       
+
+		LINEA: 272, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/balancehidrico">Hidric ba ...       
+
+		LINEA: 274, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/vigilancia_clima/radiacion_ozono">Radiatio ...       
+
+		LINEA: 278, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/prediccion_estacional">Seasonal forecast</ ...       
+
+		LINEA: 280, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/serviciosclimaticos/cambio_climat">Climate projections fo ...       
+
+		LINEA: 280, COLUMNA: 153: <a class="enlace_menumovil_2o_nvl" href="#">Climate projections for the XXI Century</a>       
+
+		LINEA: 282, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/cambio_climat/result_graficos">Graphic res ...       
+
+		LINEA: 284, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/cambio_climat/datos_diarios">Daily data</a ...       
+
+		LINEA: 286, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/serviciosclimaticos/cambio_climat/datos_mensuales">Monthly dat ...       
+
+		LINEA: 296, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/conocenos">Know us</a>       
+
+		LINEA: 296, COLUMNA: 74: <a class="enlace_menumovil_1er_nvl" href="#">Know us</a>       
+
+		LINEA: 298, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/quienes_somos">About us</a>       
+
+		LINEA: 300, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/a_que_nos_dedicamos">What we do</a>       
+
+		LINEA: 302, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/recursos">Our resources</a>       
+
+		LINEA: 304, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/nuestra_historia">Our history</a>       
+
+		LINEA: 306, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/conocenos/congresos_y_conferencias">Congresses and confer ...       
+
+		LINEA: 306, COLUMNA: 141: <a class="enlace_menumovil_2o_nvl" href="#">Congresses and conferences</a>       
+
+		LINEA: 308, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/congresos_y_conferencias/congresos">Announcements</a ...       
+
+		LINEA: 310, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/congresos_y_conferencias/reuniones">Meetings and con ...       
+
+		LINEA: 314, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/colaboracion_institucional/convenios">Institutional...       
+
+		LINEA: 316, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocenos/cursos">Courses</a>       
+
+		LINEA: 324, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/idi">R&D+I</a>       
+
+		LINEA: 324, COLUMNA: 66: <a class="enlace_menumovil_1er_nvl" href="#">R&D+I</a>       
+
+		LINEA: 326, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/prediccion">Forecast</a>       
+
+		LINEA: 328, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/clima">Climate</a>       
+
+		LINEA: 330, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/medio_ambiente">The Environment</a>       
+
+		LINEA: 332, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/tic">Technological innovation</a>       
+
+		LINEA: 334, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/observacion">Observation</a>       
+
+		LINEA: 336, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/SAF_Nowcasting">Nowcasting SAF</a>       
+
+		LINEA: 338, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/CIAI">CIAI</a>       
+
+		LINEA: 340, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/idi/SDS-WAS">SDS-WAS</a>       
+
+		LINEA: 348, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/conocermas">Knowing more</a>       
+
+		LINEA: 348, COLUMNA: 80: <a class="enlace_menumovil_1er_nvl" href="#">Knowing more</a>       
+
+		LINEA: 350, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/aeronautica">Aviation</a>       
+
+		LINEA: 352, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/maritima">Marine</a>       
+
+		LINEA: 354, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/montana">Mountain</a>       
+
+		LINEA: 356, COLUMNA: 5:
+
+
+
+		LINEA: 358, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/conocermas/biblioteca">Library</a>       
+
+		LINEA: 358, COLUMNA: 109: <a class="enlace_menumovil_2o_nvl" href="#">Library</a>       
+
+		LINEA: 360, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/biblioteca/catalogo">Catalogue</a>       
+
+		LINEA: 362, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/biblioteca/boletines">Meteorological bulletin</a>       
+
+		LINEA: 364, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/biblioteca/exposiciones">Exhibitions</a>       
+
+		LINEA: 368, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/conocermas/recursos_en_linea">Online resources</a>       
+
+		LINEA: 368, COLUMNA: 125: <a class="enlace_menumovil_2o_nvl" href="#">Online resources</a>       
+
+		LINEA: 370, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/recursos_en_linea/publicaciones_y_estudios">Publica ...       
+
+		LINEA: 372, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/recursos_en_linea/calendarios">Meteorological calen ...       
+
+		LINEA: 374, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/recursos_en_linea/elobservador">El Observador</a>       
+
+		LINEA: 378, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/conocermas/meteoeduca">Meteoeduca</a>       
+
+		LINEA: 378, COLUMNA: 112: <a class="enlace_menumovil_2o_nvl" href="#">Meteoeduca</a>       
+
+		LINEA: 380, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteoeduca/modulos_tempo">TEMPO module library</a>       
+
+		LINEA: 382, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteoeduca/juegos">Educational games</a>       
+
+		LINEA: 384, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteoeduca/cuentos_infantiles">Children tales</a>       
+
+		LINEA: 386, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteoeduca/la_familia_meteo">Meteo family</a>       
+
+		LINEA: 390, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/dia_meteorologico">World Meteorological Day</a>       
+
+		LINEA: 392, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/modificacion_artificial_tiempo">Weather modificatio ...       
+
+		LINEA: 394, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/meteo_glosario_visual">MeteoGlosario Visual</a>       
+
+		LINEA: 396, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/conocermas/borrascas/2018-2019">High impact storms</a>       
+
+		LINEA: 404, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/empleo_y_becas">Public employment and scholarships</a>       
+
+		LINEA: 404, COLUMNA: 106: <a class="enlace_menumovil_1er_nvl" href="#">Public employment and scholarships</a>       
+
+		LINEA: 406, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/empleo_y_becas/empleo_publico">Public employment</a>       
+
+		LINEA: 406, COLUMNA: 127: <a class="enlace_menumovil_2o_nvl" href="#">Public employment</a>       
+
+		LINEA: 408, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/ingresar_en_la_aemet">Joining AE ...       
+
+		LINEA: 410, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/oposiciones">Civil servant exams ...       
+
+		LINEA: 412, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/funcionarios_interinos">Interim...       
+
+		LINEA: 414, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/personal_laboral">Hired staff</a ...       
+
+		LINEA: 416, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/empleo_publico/condiciones_de_trabajo">Working...       
+
+		LINEA: 420, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/concursos">Invitations to tender</a>       
+
+		LINEA: 422, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/practicas">Training</a>       
+
+		LINEA: 424, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/en/empleo_y_becas/becas">Scholarships</a>       
+
+		LINEA: 424, COLUMNA: 113: <a class="enlace_menumovil_2o_nvl" href="#">Scholarships</a>       
+
+		LINEA: 426, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/becas/informacion_de_interes">Information of in ...       
+
+		LINEA: 428, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/empleo_y_becas/becas/convocatorias">Announcements</a>       
+
+		LINEA: 438, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/en/datos_abiertos">Open data</a>       
+
+		LINEA: 438, COLUMNA: 81: <a class="enlace_menumovil_1er_nvl" href="#">Open data</a>       
+
+		LINEA: 440, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/datos_abiertos/catalogo">Catalogue. RISP Plan</a>       
+
+		LINEA: 442, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/datos_abiertos/AEMET_OpenData">AEMET OpenData</a>       
+
+		LINEA: 444, COLUMNA: 5: <a class="enlace_3er_nvl" href="/en/datos_abiertos/estadisticas">Statistics</a>       
+
+		LINEA: 452, COLUMNA: 8: <a class="enlace_3er_nvl" href="/en/sede_electronica">Virtual office</a>       
+
+		LINEA: 468, COLUMNA: 5: <a href="/en/eltiempo/prediccion/avisos?w=hoy" title="Mon 3 - Maximum level of warning: Risk."><div...       
+
+		LINEA: 471, COLUMNA: 5: <a href="/en/eltiempo/prediccion/avisos?w=mna" title="Tue 4 - Maximum level of warning: No risk"><di ...       
+
+		LINEA: 474, COLUMNA: 5: <a href="/en/eltiempo/prediccion/avisos?w=pmna" title="Wed 5 - Maximum level of warning: No risk"><d ...       
+
+		LINEA: 482, COLUMNA: 6: <a href="/en/zona_portada_destacada" class="icono_avisos_cabecera"><img class="imagen_portada_aviso_ ...       
+
+		LINEA: 486, COLUMNA: 4: <a href="/en/mi_web"><imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="My website" title="My websi ...       
+
+		LINEA: 488, COLUMNA: 4: <a href="/en/app/eltiempodeAEMET"><imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplic ...       
+
+		LINEA: 490, COLUMNA: 4: <a href="/en/lineas_de_interes/atencion_al_ciudadano"><imgsrc="/imagenes/png/iconos/ico-contacto.p ...       
+
+		LINEA: 492, COLUMNA: 4: <a href="/en/mapaweb"><imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Site map" title="Site m ...       
+
+		LINEA: 494, COLUMNA: 4: <a href="/en/redes_sociales/facebook/AEMET_facebook" class="red_social"><imgsrc="/imagenes/png/red ...       
+
+		LINEA: 496, COLUMNA: 4: <a href="/en/redes_sociales/twitter/AEMET_twitter" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 498, COLUMNA: 4: <a href="https://aemetblog.wordpress.com" target="_blank"><imgsrc="/imagenes/png/iconos/ico-blog2. ...       
+
+		LINEA: 500, COLUMNA: 4: <a href="/en/redes_sociales/youtube/AEMET_YouTube" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 502, COLUMNA: 4: <a href="/en/rss_info" class="red_social"><img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS"...       
+
+		LINEA: 514, COLUMNA: 3: <a href="/en/lineas_de_interes/miweb" title="My website"><img alt="My website" src="/imagenes_gcd ...       
+
+		LINEA: 519, COLUMNA: 3: <a href="/en/lineas_de_interes/atencion_al_ciudadano" title="Attention to the citizen"><img alt=" ...       
+
+		LINEA: 524, COLUMNA: 3: <a href="/en/lineas_de_interes/redes_sociales" title="Social networks"><img alt="Social networks" ...       
+
+		LINEA: 529, COLUMNA: 3: <a href="/en/lineas_de_interes/meteoalerta" title="Meteoalerta: Warnings"><img alt="Meteoalerta:...       
+
+		LINEA: 534, COLUMNA: 3: <a href="/en/lineas_de_interes/apps" title="APP"><img alt="APP" src="/imagenes_gcd/lineas_de_inte ...       
+
+		LINEA: 539, COLUMNA: 3: <a href="/en/lineas_de_interes/datos_y_estadistica" title="Data and statistics"><img alt="Data an ...       
+
+		LINEA: 544, COLUMNA: 3: <a href="/en/lineas_de_interes/centro_de_documentacion" title="Documentation centre"><img alt="Do ...       
+
+		LINEA: 549, COLUMNA: 3: <a href="/en/lineas_de_interes/por_sectores" title="By sectors"><img alt="By sectors" src="/image ...       
+
+		LINEA: 554, COLUMNA: 3: <a href="/en/lineas_de_interes/servicios_climaticos" title="Climate services"><img alt="Climate s ...       
+
+		LINEA: 559, COLUMNA: 3: <a href="/en/lineas_de_interes/i_d_i" title="R+D+i"><img alt="R+D+i" src="/imagenes_gcd/lineas_de ...       
+
+		LINEA: 564, COLUMNA: 3: <a href="/en/lineas_de_interes/internacional" title="International"><img alt="International" src= ...       
+
+		LINEA: 573, COLUMNA: 14: <a href="/en/eltiempo/prediccion/avisos" class="capitalizar">meteoalerta</a>       
+
+		LINEA: 579, COLUMNA: 5: <a href="/en/eltiempo/prediccion/avisos"><img class="imagen_avisos_portada" src="/imagenes_d/eltiemp ...       
+
+		LINEA: 585, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos?w=hoy"><div class="fecha_nivel_aviso_max_portada">Mon 3</div ...       
+
+		LINEA: 590, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos?w=mna"><div class="fecha_nivel_aviso_max_portada">Tue 4</div ...       
+
+		LINEA: 595, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos?w=pmna"><div class="fecha_nivel_aviso_max_portada">Wed 5</di ...       
+
+		LINEA: 603, COLUMNA: 9: <a href="/en/eltiempo/prediccion/avisos">See more information</a>       
+
+		LINEA: 625, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/barcelona-id08019">		<div class="texto_municipio ...       
+
+		LINEA: 635, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/madrid-id28079">		<div class="texto_municipio_po ...       
+
+		LINEA: 645, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/sevilla-id41091">		<div class="texto_municipio_p ...       
+
+		LINEA: 655, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/valencia-id46250">		<div class="texto_municipio_ ...       
+
+		LINEA: 665, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios/zaragoza-id50297">		<div class="texto_municipio_ ...       
+
+		LINEA: 678, COLUMNA: 9: <a href="/en/eltiempo/prediccion/municipios">See more locations</a>       
+
+		LINEA: 682, COLUMNA: 5: <a href="/en/eltiempo/widgets/municipios"><div class="icono_enlace_especial"><img title="Wea ...       
+
+		LINEA: 689, COLUMNA: 5: <a href="/en/eltiempo/prediccion/mundo"><div class="icono_enlace_especial"><img title="Citie ...       
+
+		LINEA: 703, COLUMNA: 45: <a href="/en/eltiempo/prediccion/espana"><img class="imagen_pred_portada" src="/imagenes_d/eltiempo/ ...       
+
+		LINEA: 706, COLUMNA: 9: <a href="/en/eltiempo/prediccion/espana">See more information</a>       
+
+		LINEA: 748, COLUMNA: 9: <a href="/en/eltiempo/prediccion/espana">See more information</a>       
+
+		LINEA: 752, COLUMNA: 5: <a href="/en/eltiempo/widgets/video"><div class="icono_enlace_especial"><img title="AEMET vi ...       
+
+		LINEA: 763, COLUMNA: 4: <a href="/en/eltiempo/observacion/radar">Radar</a>       
+
+		LINEA: 770, COLUMNA: 6: <a href="/en/eltiempo/observacion/radar"><img src="/imagenes_d/eltiempo/observacion/portada/ ...       
+
+		LINEA: 775, COLUMNA: 6: <a href="/en/eltiempo/observacion/radar?w=1&amp;p=r8ca"><img src="/imagenes_d/eltiempo/obser ...       
+
+		LINEA: 782, COLUMNA: 9: <a href="/en/eltiempo/observacion/radar">See more information</a>       
+
+		LINEA: 794, COLUMNA: 14: <a href='/documentos_d/enportada/20181203124924_p51tesp1.pdf' target='_blank'><img class='imagen_por ...       
+
+		LINEA: 794, COLUMNA: 330: <a href='/documentos_d/enportada/20181130083025_p54tesp1.pdf' target='_blank'><img class='imagen_por ...       
+
+		LINEA: 796, COLUMNA: 5: <a href="/en/noticias_/meteorologia_en_los_medios"><img alt="La Meteorolog&iacute;a en los medi ...       
+
+		LINEA: 801, COLUMNA: 5: <a href="/en/zona_portada_destacada/enc2019"><img alt="3&ordf; Conferencia Europea de Nowcastin ...       
+
+		LINEA: 806, COLUMNA: 5: <a href="/en/conocermas/borrascas/2018-2019"><img alt="Borrascas con gran impacto de la tempora ...       
+
+		LINEA: 811, COLUMNA: 5: <a href="/en/serviciosclimaticos/vigilancia_clima/resumen_precipitaciones"><img alt="Resumen de ...       
+
+		LINEA: 816, COLUMNA: 5: <a href="/en/rss_info/avisos/esp"><img alt="Nuevos canales de suscripci&oacute;n a los avisos d ...       
+
+		LINEA: 821, COLUMNA: 5: <a href="/en/eltiempo/prediccion/composicion_quimica_atmosfera/indice_previsto"><img alt="&Iacu ...       
+
+		LINEA: 829, COLUMNA: 10: <a href="/en/zona_portada_destacada">See more information</a>       
+
+		LINEA: 839, COLUMNA: 4: <a class="twitter-timeline" href="https://twitter.com/AEMET_Esp" data-widget-id="676722790867816448" ...       
+
+		LINEA: 859, COLUMNA: 4: <a href="https://aemetblog.wordpress.com" target="_blank"><div class="icono_enlace_especial">		 ...       
+
+		LINEA: 875, COLUMNA: 6: <a href="/en/eltiempo/prediccion/mapas_probabilisticos?dia=&amp;zona=penyb"><img src="/image ...       
+
+		LINEA: 880, COLUMNA: 6: <a href="/en/eltiempo/prediccion/mapas_probabilisticos?dia=hoy&amp;zona=can"><img src="/imag ...       
+
+		LINEA: 887, COLUMNA: 9: <a href="/en/eltiempo/prediccion/mapas_probabilisticos">See more information</a>       
+
+		LINEA: 894, COLUMNA: 13: <a href="/en/noticias" class="capitalizar">news</a>       
+
+		LINEA: 899, COLUMNA: 3: <a href="/en/noticias/2018/11/Estado_clima_2018"><img alt="Estado del clima 2018" src="/imagene ...       
+
+		LINEA: 903, COLUMNA: 5: <a href="/en/noticias/2018/11/Estado_clima_2018">Las se&ntilde;ales y los efectos del cambio clim&aa ...       
+
+		LINEA: 907, COLUMNA: 3: <a href="/en/noticias/2018/11/Antartida_inexplorada"><img alt="Ant&aacute;rtida inexplorada" sr ...       
+
+		LINEA: 911, COLUMNA: 5: <a href="/en/noticias/2018/11/Antartida_inexplorada">Participaci&oacute;n de AEMET en la expedici&oa ...       
+
+		LINEA: 915, COLUMNA: 3: <a href="/en/noticias/2018/11/record_gases_invernadero"><img alt="Valores r&eacute;cord de gase ...       
+
+		LINEA: 919, COLUMNA: 5: <a href="/en/noticias/2018/11/record_gases_invernadero">Los niveles de gases de efecto invernadero e ...       
+
+		LINEA: 923, COLUMNA: 3: <a href="/en/noticias/2018/11/Avance_octubre_2018"><img alt="Octubre, normal t&eacute;rmicament ...       
+
+		LINEA: 927, COLUMNA: 5: <a href="/en/noticias/2018/11/Avance_octubre_2018">Octubre de 2018, normal en cuanto a temperaturas...       
+
+		LINEA: 934, COLUMNA: 8: <a href="/en/noticias">Find more news</a>       
+
+		LINEA: 943, COLUMNA: 3: <a href="https://opendata.aemet.es/" target="_blank" title="AEMET OpenData (it will open in a new wi ...       
+
+		LINEA: 947, COLUMNA: 3: <a href="https://enc2019.aemet.es/" target="_blank" title=" 3rd European Nowcasting Conference (it w ...       
+
+		LINEA: 951, COLUMNA: 3: <a href="http://sextosimposio.aemet.es/" target="_blank" title="Sexto Simposio Nacional de Predicci& ...       
+
+		LINEA: 955, COLUMNA: 3: <a href="https://meteoglosario.aemet.es/" target="_blank" title="MeteoGlosario Visual (it will open...       
+
+		LINEA: 959, COLUMNA: 3: <a href="http://meteoruta.aemet.es/p_index.html" target="_blank" title="MeteoRuta (it will open in a ...       
+
+		LINEA: 963, COLUMNA: 3: <a href="http://sinobas.aemet.es/" target="_blank" title="SINOBAS (it will open in a new window) "> ...       
+
+		LINEA: 967, COLUMNA: 3: <a href="https://aemetblog.es/" target="_blank" title="State Meteorological Agency blog (it will ope ...       
+
+		LINEA: 971, COLUMNA: 3: <a href="http://meteonav.aemet.es/MeteoNav/" target="_blank" title="MeteoNav (it will open in a new...       
+
+		LINEA: 975, COLUMNA: 3: <a href="http://repositorio.aemet.es/" target="_blank" title="Arcim&iacute;s documental archive (it...       
+
+		LINEA: 979, COLUMNA: 3: <a href="http://dust.aemet.es/forecast" target="_blank" title="Atmospheric mineral dust forecast (it ...       
+
+		LINEA: 983, COLUMNA: 3: <a href="http://izana100.aemet.es/" target="_blank" title="Centenary of Iza&ntilde;a (it will open i ...       
+
+		LINEA: 987, COLUMNA: 3: <a href="/en/conocermas/meteoeduca" title="Meteoeduca"><img alt="Meteoeduca" src="/imagenes_gcd/p ...       
+
+		LINEA: 1130, COLUMNA: 7: <a href="https://www.constitucion40.com/" target="_blank" title="40th anniversary of the Constitutio ...       
+
+		LINEA: 1135, COLUMNA: 7: <a href="http://transparencia.gob.es/en" target="_blank" title="Transparency Portal (it will open in ...       
+
+		LINEA: 1140, COLUMNA: 7: <a href="http://www.adaptecca.es/en" target="_blank" title="AdapteCCa. Platform for the exchange and ...       
+
+		LINEA: 1145, COLUMNA: 7: <a href="http://datos.gob.es/en" target="_blank" title="Open data (it will open in a new window)">...       
+
+		LINEA: 1150, COLUMNA: 7: <a href="/en/contactar/telefono_060" title="AEMET information through phone 060"><img alt="AE ...       
+
+		LINEA: 1155, COLUMNA: 7: <a href="http://wwis.aemet.es/es/home.html" target="_blank" title="World Weather Information Service ...       
+
+		LINEA: 1160, COLUMNA: 7: <a href="/en/omm" title="World Meteorological Organization (WMO) for youth website - WMO Facebook in ...       
+
+		LINEA: 1171, COLUMNA: 10: <a href="/en/nota_legal">Legal notice</a>       
+
+		LINEA: 1173, COLUMNA: 12: <a href="/en/accesibilidad">Web Accessibility</a>       
+
+		LINEA: 1176, COLUMNA: 7: <a href="/en/enlaces">Links</a>       
+
+		LINEA: 1179, COLUMNA: 9: <a href="/en/ayuda">Web help</a>       
+
+		LINEA: 1186, COLUMNA: 5: <a href="/en/app/eltiempodeAEMET"><imgsrc="/imagenes/png/iconos/ico-phone.png" alt="Official aplic ...       
+
+		LINEA: 1189, COLUMNA: 5: <a href="/en/redes_sociales/facebook/AEMET_facebook" class="red_social"><imgsrc="/imagenes/png/red ...       
+
+		LINEA: 1191, COLUMNA: 5: <a href="/en/redes_sociales/twitter/AEMET_twitter" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 1193, COLUMNA: 5: <a href="https://aemetblog.wordpress.com" target="_blank"><imgsrc="/imagenes/png/iconos/ico-blog2. ...       
+
+		LINEA: 1195, COLUMNA: 5: <a href="/en/redes_sociales/youtube/AEMET_YouTube" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 1197, COLUMNA: 5: <a href="/en/rss_info" class="red_social"><img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS"...       
+
+		LINEA: 1203, COLUMNA: 6: <a target="_blank" href="http://validator.w3.org/check?uri=referer" ><imgsrc="/imagenes/pn ...       
+
+		LINEA: 1208, COLUMNA: 6: <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3&amp;usermediu ...       
+
+		LINEA: 1213, COLUMNA: 6: <a target="_blank" href="http://www.w3.org/WAI/WCAG1AA-Conformance"	><img src="/imagenes/png ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 101, COLUMNA: 4:
+
+   
+
+	REVISAR: 44: h3 may be used for formatting.
+
+
+
+		LINEA: 573, COLUMNA: 10: <h3><a href="/en/eltiempo/prediccion/avisos" class="capitalizar">meteoalerta</a></h3>       
+
+		LINEA: 610, COLUMNA: 13: <h3>Spanish towns</h3>       
+
+		LINEA: 699, COLUMNA: 13: <h3>Weather:&nbsp;Spain forecast</h3>       
+
+		LINEA: 714, COLUMNA: 13: <h3>AEMET weather</h3>       
+
+		LINEA: 762, COLUMNA: 13: <h3><a href="/en/eltiempo/observacion/radar">Radar</a></h3>       
+
+		LINEA: 790, COLUMNA: 13: <h3>Highlights</h3>       
+
+		LINEA: 836, COLUMNA: 13: <h3>Twitter</h3>       
+
+		LINEA: 868, COLUMNA: 13: <h3>Probabilistics maps</h3>       
+
+		LINEA: 894, COLUMNA: 9: <h3><a href="/en/noticias" class="capitalizar">news</a></h3>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.2 Language of Parts (AA)  
+
+	REVISAR: 110: Words or phrases that are not in the document's primary language may not be identified.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/en/buscador"><div class="contenedor_buscador"> ...       
+
+		LINEA: 615, COLUMNA: 6: <form name="frmLoc_menu" method="get" action="/en/eltiempo/prediccion/municipios">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+
+
+		LINEA: 165, COLUMNA: 9: <input class="texto_buscador" value="Enter text" aria-label ="Enter text" name="str" id="buscar" onf ...       
+
+		LINEA: 616, COLUMNA: 8: <input type="text" name="str" value="Search location..." onblur="this.value=(this.value=='') ? 'Sear ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/en/buscador"><div class="contenedor_buscador"> ...       
+
+		LINEA: 615, COLUMNA: 6: <form name="frmLoc_menu" method="get" action="/en/eltiempo/prediccion/municipios">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/en/buscador"><div class="contenedor_buscador"> ...       
+
+		LINEA: 615, COLUMNA: 6: <form name="frmLoc_menu" method="get" action="/en/eltiempo/prediccion/municipios">	 ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 132, COLUMNA: 7: <input type="checkbox" id="idiomas_mini" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 147, COLUMNA: 7: <input type="checkbox" id="idiomas" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 166, COLUMNA: 9: <input type="hidden" name="modo" value="and" />       
+
+		LINEA: 166, COLUMNA: 56: <input type="hidden" name="orden" value="n" />       
+
+		LINEA: 166, COLUMNA: 102: <input type="hidden" name="tipo" value="sta" />       
+
+		LINEA: 166, COLUMNA: 149: <input type="submit" value=" " class="boton_buscar_cabecera" title="Search" alt="Search" />       
+
+		LINEA: 616, COLUMNA: 261: <input type="hidden" name="modo" value="and"/>       
+
+		LINEA: 617, COLUMNA: 8: <input type="hidden" name="orden" value="n"/>       
+
+		LINEA: 618, COLUMNA: 8: <input type="hidden" name="tipo" value="sta"/>       
+
+		LINEA: 619, COLUMNA: 8: <input type="submit" value=" " class="boton_buscar_cabecera" title="Search" alt="Search" />       
+
+		LINEA: 767, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_radar_pyb" name=" ...       
+
+		LINEA: 768, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_radar_coo" name=" ...       
+
+		LINEA: 872, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_prec_pyb" name="t ...       
+
+		LINEA: 873, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_prec_coo" name="t ...
+
+  
+
+	REVISAR: 219: input element, type of "checkbox", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 132, COLUMNA: 7: <input type="checkbox" id="idiomas_mini" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 147, COLUMNA: 7: <input type="checkbox" id="idiomas" class="checkbox_oculto_idiomas" />
+
+  
+
+	REVISAR: 220: input element, type of "radio", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 767, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_radar_pyb" name=" ...       
+
+		LINEA: 768, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_radar_coo" name=" ...       
+
+		LINEA: 872, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_prec_pyb" name="t ...       
+
+		LINEA: 873, COLUMNA: 5: <input class="checkbox_oculto_pestanhas_portada" type="radio" id="pestanha_portada_prec_coo" name="t ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/en/buscador"><div class="contenedor_buscador"> ...       
+
+		LINEA: 615, COLUMNA: 6: <form name="frmLoc_menu" method="get" action="/en/eltiempo/prediccion/municipios">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/en/buscador"><div class="contenedor_buscador"> ...       
+
+		LINEA: 615, COLUMNA: 6: <form name="frmLoc_menu" method="get" action="/en/eltiempo/prediccion/municipios">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/en/buscador"><div class="contenedor_buscador"> ...       
+
+		LINEA: 615, COLUMNA: 6: <form name="frmLoc_menu" method="get" action="/en/eltiempo/prediccion/municipios">	 ...
+
+	

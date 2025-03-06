@@ -1,0 +1,17 @@
+REPORTE PÁGINA WEB: https://web.ua.es/es/masteres-oficiales.html
+FECHA EVALUACIÓN: 2018-12-23
+
+Se han encontrado 4 imágenes que no tienen leyenda
+Se encontraron 12 imágenes en las que la leyenda es un espacio vacío
+Se encontraron 5 elementos de encabezado
+Se han encontrado 117 enlaces con el mismo texto que apuntan a destinos diferentes
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se han encontrado 15 enlaces para eludir bloques de contenido
+Se identificó 1 formulario sin botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se han encontrado 4 valores repetidos del atributo id
+Se encontraron 12 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"

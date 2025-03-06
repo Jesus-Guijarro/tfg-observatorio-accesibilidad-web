@@ -1,0 +1,666 @@
+REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=8&MS=69&MN=2&r=1536*864
+FECHA EVALUACIÓN: 2018-11-09
+
+
+Principio: 1.Perceptible
+Descripcion: La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+	Pauta: 1.1..Alternativas textuales
+	Descripcion: Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple
+
+		Criterio: 1.1.1..Contenido no textual
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H35-Proporcionando textos alternativos a elementos applet
+			Criticidad: Alta
+			Observación: No se han encontrado elementos applet en la p&aacute;gina.<br/>
+			Recomendación: Se recomienda colocar una alternativa textual a los elementos applet, para tener conocimiento de su funci&oacute;n.<br/>
+			Número de errores: 0
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H45-Usando longdesc
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado im&aacute;genes que usen el atributo longdesc para referirse a una larga descripci&oacute;n contenida en un recurso independiente, que sean necesarias como alternativa no textual para una im&aacute;gen.<br/>
+			Recomendación: Use el atributo longdesc en una im&aacute;gen cuando una alternativa textual breve no transmite adecuadamente la funci&oacute;n o la informaci&oacute;n proporcionada en la im&aacute;gen.<br/>
+			Número de errores: 0
+
+			Código: H37-Usando atributos alt en elementos img
+			Criticidad: Media
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong>, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img class="btn-cookie" src="img/es/iconos/cerrar.png" onclick="cerrarCapaCookies()" alt="Cerrar"></xmp></li><li><xmp><img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnológico Industrial"></xmp></li><li><xmp><img src="img/es/iconos/logoMinisterio.gif" alt="Logo del Ministerio de Economía y Competitividad" class="ministerio"></xmp></li><li><xmp><img src="img/es/iconos/inicio.gif" alt="Inicio (Tecla de acceso 1)"></xmp></li><li><xmp><img src="img/es/iconos/mapaWeb.gif" alt="Mapa web (Tecla de acceso 3 )"></xmp></li><li><xmp><img src="img/es/iconos/contacto.gif" alt="Contacto (Tecla de acceso 9 )"></xmp></li><li><xmp><img src="img/es/iconos/accesibilidad.gif" alt="Accesibilidad (Tecla de acceso 0 )"></xmp></li><li><xmp><img src="img/es/portal/solicitudesInformacion.gif" alt="Presentación de solicitudes de financiación"></xmp></li><li><xmp><img src="img/es/portal/sedeElectronica.jpg" alt="Sede electrónica"></xmp></li><li><xmp><img src="img/es/portal/areaColaboracion.gif" alt="Área de colaboración para"></xmp></li><li><xmp><img alt="Acceso a la revista Perspectiva digital" class="img_Sin" height="91" id="Imagen_1402_1519733241446" src="/recursos/img/Home/10053_272272201813443.gif" width="227"></xmp></li><li><xmp><img alt="Programa INNVIERTE" class="img_Sin" height="48" id="Imagen_1059_1432197174234" src="/recursos/img/Home/12411_261126112014115710.gif" width="227"></xmp></li><li><xmp><img alt="10ª Conferencia Programa Marco de la Unión Europea" class="img_Sin" height="252" id="Imagen_1447_1539083109243" src="/recursos/img/Home/25774_91091020181344.gif" width="227"></xmp></li><li><xmp><img alt="Guía breve para presentación de propuestas" class="img_Sin" height="148" id="Imagen_1419_1525775303070" src="/recursos/img/Home/31694_85852018122628.gif" width="227"></xmp></li><li><xmp><img alt="Acceso al Fondo Tecnológico" class="img_Sin" height="49" id="Imagen_366_1205139678496" src="/recursos/img/Home/1683_73732008113512.gif" width="131"></xmp></li><li><xmp><img alt="http://eshorizonte2020.es" class="img_Sin" height="46" id="Imagen_1001_1392033659714" src="/recursos/img/Home/40190_1021022014125858.gif" width="134"></xmp></li><li><xmp><img alt="Red de Puntos de Información en I+D+i" class="img_Sin" height="49" id="Imagen_1108_1432204853316" src="/recursos/img/Home/33452_2152152015123342.gif" width="110"></xmp></li><li><xmp><img alt="Portal de la Transparencia" class="img_Con" height="49" id="Imagen_1066_1418208066830" src="/recursos/img/5206_101210122014114026.gif" width="184"></xmp></li><li><xmp><img alt="Información sobre empleo en CDTI" class="img_Sin" height="49" id="Imagen_196_1418640572662" src="/recursos/img/Home/6948_311311200695223.gif" width="131"></xmp></li><li><xmp><img alt="Marca España" class="img_Sin" height="49" id="Imagen_990_1418640883474" src="/recursos/img/Home/11750_1891892013114440.gif" width="91"></xmp></li><li><xmp><img alt="Instalaciones Cientifico-Tecnológicas Singulares" class="img_Con" height="49" id="Imagen_1176_1453450578359" src="/recursos/img/Home/6259_22122120169158.png" width="145"></xmp></li><li><xmp><img alt="Política antifraude" class="img_Sin" height="49" id="Imagen_1448_1539702314506" src="/recursos/img/Home/38942_16101610201817438.gif" width="92"></xmp></li><li><xmp><img src="img/es/portal/rss.gif" alt="RSS" class="rss"></xmp></li><li><xmp><img src="img/es/portal/w3c.gif" alt="W3C - WAI AA"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H67-Usando texto alternativo nulo y no el atributo title en el elemento img para imágenes que AT puedan ignorar
+			Criticidad: Media
+			Observación: 24 im&aacute;genes en la p&aacute;gina tienen alternativas textuales, verifique que esten acorde al contenido de las mismas.<pre><ul><li><xmp><img class="btn-cookie" src="img/es/iconos/cerrar.png" onclick="cerrarCapaCookies()" alt="Cerrar"></xmp></li><li><xmp><img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnológico Industrial"></xmp></li><li><xmp><img src="img/es/iconos/logoMinisterio.gif" alt="Logo del Ministerio de Economía y Competitividad" class="ministerio"></xmp></li><li><xmp><img src="img/es/iconos/inicio.gif" alt="Inicio (Tecla de acceso 1)"></xmp></li><li><xmp><img src="img/es/iconos/mapaWeb.gif" alt="Mapa web (Tecla de acceso 3 )"></xmp></li><li><xmp><img src="img/es/iconos/contacto.gif" alt="Contacto (Tecla de acceso 9 )"></xmp></li><li><xmp><img src="img/es/iconos/accesibilidad.gif" alt="Accesibilidad (Tecla de acceso 0 )"></xmp></li><li><xmp><img src="img/es/portal/solicitudesInformacion.gif" alt="Presentación de solicitudes de financiación"></xmp></li><li><xmp><img src="img/es/portal/sedeElectronica.jpg" alt="Sede electrónica"></xmp></li><li><xmp><img src="img/es/portal/areaColaboracion.gif" alt="Área de colaboración para"></xmp></li><li><xmp><img alt="Acceso a la revista Perspectiva digital" class="img_Sin" height="91" id="Imagen_1402_1519733241446" src="/recursos/img/Home/10053_272272201813443.gif" width="227"></xmp></li><li><xmp><img alt="Programa INNVIERTE" class="img_Sin" height="48" id="Imagen_1059_1432197174234" src="/recursos/img/Home/12411_261126112014115710.gif" width="227"></xmp></li><li><xmp><img alt="10ª Conferencia Programa Marco de la Unión Europea" class="img_Sin" height="252" id="Imagen_1447_1539083109243" src="/recursos/img/Home/25774_91091020181344.gif" width="227"></xmp></li><li><xmp><img alt="Guía breve para presentación de propuestas" class="img_Sin" height="148" id="Imagen_1419_1525775303070" src="/recursos/img/Home/31694_85852018122628.gif" width="227"></xmp></li><li><xmp><img alt="Acceso al Fondo Tecnológico" class="img_Sin" height="49" id="Imagen_366_1205139678496" src="/recursos/img/Home/1683_73732008113512.gif" width="131"></xmp></li><li><xmp><img alt="http://eshorizonte2020.es" class="img_Sin" height="46" id="Imagen_1001_1392033659714" src="/recursos/img/Home/40190_1021022014125858.gif" width="134"></xmp></li><li><xmp><img alt="Red de Puntos de Información en I+D+i" class="img_Sin" height="49" id="Imagen_1108_1432204853316" src="/recursos/img/Home/33452_2152152015123342.gif" width="110"></xmp></li><li><xmp><img alt="Portal de la Transparencia" class="img_Con" height="49" id="Imagen_1066_1418208066830" src="/recursos/img/5206_101210122014114026.gif" width="184"></xmp></li><li><xmp><img alt="Información sobre empleo en CDTI" class="img_Sin" height="49" id="Imagen_196_1418640572662" src="/recursos/img/Home/6948_311311200695223.gif" width="131"></xmp></li><li><xmp><img alt="Marca España" class="img_Sin" height="49" id="Imagen_990_1418640883474" src="/recursos/img/Home/11750_1891892013114440.gif" width="91"></xmp></li><li><xmp><img alt="Instalaciones Cientifico-Tecnológicas Singulares" class="img_Con" height="49" id="Imagen_1176_1453450578359" src="/recursos/img/Home/6259_22122120169158.png" width="145"></xmp></li><li><xmp><img alt="Política antifraude" class="img_Sin" height="49" id="Imagen_1448_1539702314506" src="/recursos/img/Home/38942_16101610201817438.gif" width="92"></xmp></li><li><xmp><img src="img/es/portal/rss.gif" alt="RSS" class="rss"></xmp></li><li><xmp><img src="img/es/portal/w3c.gif" alt="W3C - WAI AA"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+			Código: C18-Usando reglas margin y padding en lugar de imágenes de espaciador para diseñar un layout
+			Criticidad: Baja
+			Observación: Existen 18 celdas de tablas que no consideran el separador de contenido de los bordes.<br/>
+			Recomendación: Se debe tener en cuenta la separaci&oacute;n del texto respecto a las celdas en las tablas.<br/>
+			Número de errores: 18
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H36-Usando atributos alt en imágenes que se utilizan como botones de envio
+			Criticidad: Alta
+			Observación: Los botones de tipo im&aacute;gen se han encontrado con textos alternativos, verifique que describan la funci&oacute;n del bot&oacute;n y no de la im&aacute;gen.<pre><ul><li><xmp><input type="image" class="buscar" id="botonbuscador" alt="Buscar" src="../img/css/iconos/botonBuscador.gif"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de botones de tipo im&aacute;gen, estos deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la acci&oacute;n del bot&oacute;n)..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: OAW1-Usando videos decorativos
+			Criticidad: Media
+			Observación: No se han encontrado videos en esta p&aacute;gina..<br/>
+			Recomendación: En caso de tener v&iacute;deos decorativos, es recomendable marcarlos como tal con atributos ARIA, esto evita que los usuarios con tecnolog&iacute;as de asistencia tengan dificultades al encontrar videos sin altenativas textuales..<br/>
+			Número de errores: 0
+
+			Código: H88-Usando HTML de acuerdo a la especificación
+			Criticidad: Alta
+			Observación: Se han encontrado elementos obsoletos dentro de la p&aacute;gina.<pre><ul><li><xmp>La etiqueta <code>acronym</code> no es compatible con HTML5. Use la etiqueta <code>abbr</code> en su lugar.</xmp></li><li><xmp>La etiqueta <code>acronym</code> no es compatible con HTML5. Use la etiqueta <code>abbr</code> en su lugar.</xmp></li><li><xmp>La etiqueta <code>acronym</code> no es compatible con HTML5. Use la etiqueta <code>abbr</code> en su lugar.</xmp></li></ul></pre>.<br/>
+			Recomendación: Ciertas etiquetas y atributos viejos de HTML han sido suspendidos para utilizar en su lugar alternativas m&aacute;s flexibles (como HTML o CSS). Es recomendable siempre adoptar los est&aacute;ndares HTML..<br/>
+			Número de errores: 3
+
+	Pauta: 1.2..Medios tempodependientes
+	Descripcion: Proporcionar alternativas para los medios tempodependientes
+
+		Criterio: 1.2.1..Sólo audio y sólo vídeo (grabado)
+		Nivel: A
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.4..Subtítulos (en directo)
+		Nivel: AA
+
+		Criterio: 1.2.3..Audiodescripción o Medio Alternativo (grabado)
+		Nivel: A
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.8..Medio alternativo (grabado)
+		Nivel: AAA
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.2..Subtítulos (grabados)
+		Nivel: A
+
+			Código: G87-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado videos en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los videos, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+			Código: G87B-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado audios en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los audios, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+	Pauta: 1.3..Adaptable
+	Descripcion: Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura
+
+		Criterio: 1.3.2..Secuencia con significado
+		Nivel: A
+
+			Código: C27A-Haciendo el DOM ordenado para marcar el orden visual: A) Elementos con posicionamiento flotante sin especificar
+			Criticidad: Media
+			Observación: De las 363 reglas CSS en la p&aacute;gina, 114 de ellas usan declaraciones de elementos de forma flotante (float:inherit|none|left|rigth).<pre><ul><li><xmp>fieldset { width: 99%; float: left; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; }</xmp></li><li><xmp>h1 { float: left; margin-left: 1% !important; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-size: 10px; }</xmp></li><li><xmp>dl { width: 100%; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>dt { width: 100%; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 4px; padding-right: 0px; padding-bottom: 4px; padding-left: 0px; }</xmp></li><li><xmp>dd { width: 100%; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>address { font-style: normal; float: left; }</xmp></li><li><xmp>#envoltura { width: 100%; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-image: url(https://www.cdti.es/img/css/portal/puntosV.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: 195px 0px; background-repeat: no-repeat repeat; }</xmp></li><li><xmp>#navegacion { width: 187px; float: left; height: 100%; padding-top: 35px; padding-right: 35px; padding-bottom: 0px; padding-left: 0px; background-image: url(https://www.cdti.es/img/css/portal/fondoNavegacion.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: 100% 0px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#situacion { float: none; margin-left: 225px !important; height: 65px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-image: url(https://www.cdti.es/img/css/portal/fondoRecurso.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: 0px 0px; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#recurso { float: none !important; margin-left: 225px !important; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding-bottom: 10px; }</xmp></li><li><xmp>#atajo { float: none; margin-left: 225px; clear: left; margin-top: 15px; padding-top: 20px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; height: 25px; background-image: url(https://www.cdti.es/img/css/portal/fondoAtajo.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: 0px 0px; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#pie { width: 100% !important; clear: left; float: left !important; border-top-width: 7px; border-top-style: solid; border-top-color: rgb(41, 118, 158); background-image: url(https://www.cdti.es/img/css/portal/fondoPie.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(246, 246, 246); margin-top: 15px; color: rgb(41, 118, 158); font-size: 0.8em; background-position: 0px 0px; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.fondocabecera { width: 100%; min-height: 68px !important; height: auto !important; float: left; position: relative; }</xmp></li><li><xmp>.ministerio { float: right; margin-top: 13px; margin-right: 40px; margin-bottom: 13px; margin-left: 13px; }</xmp></li><li><xmp>.logomenu { float: right; margin-top: 13px; margin-right: 15px; margin-bottom: 0px; margin-left: 70px; }</xmp></li><li><xmp>.contenedorutilidades { float: left !important; width: 81%; margin-left: 18.9%; min-height: 26px !important; height: auto !important; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(255, 255, 255); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(255, 255, 255); background-image: url(https://www.cdti.es/img/css/portal/fondoUtilidades.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; color: rgb(255, 255, 255); background-position: 0px 0px; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#utilidades { float: left; margin-left: 60% !important; margin-top: 5px; margin-right: 0px; margin-bottom: 3px; }</xmp></li><li><xmp>div > #utilidades { float: none; margin-top: 5px !important; margin-right: 0px !important; margin-bottom: 3px !important; margin-left: 30% !important; }</xmp></li><li><xmp>#utilidades li { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 2px !important; padding-right: 8px !important; padding-bottom: 1px !important; padding-left: 8px !important; background-image: url(https://www.cdti.es/img/css/portal/puntosCab.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: 0px 0px; background-repeat: no-repeat repeat; }</xmp></li><li><xmp>#buscadorGeneralForm { float: right; width: 20%; margin-top: 6px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>#buscadorGeneralForm input { float: left; width: 70%; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 1px; padding-right: 3px; padding-bottom: 1px; padding-left: 3px; font-size: 0.8em; color: rgb(52, 93, 106); }</xmp></li><li><xmp>#buscadorGeneralForm input.buscar { float: left; width: 16px; margin-top: -3px; margin-right: 0px; margin-bottom: 0px; margin-left: 1%; padding-top: 2px; padding-right: 0px; padding-bottom: 2px; padding-left: 0px; background-image: none !important; }</xmp></li><li><xmp>#idiomas { width: 35%; float: left; padding-top: 6px; padding-right: 0px; padding-bottom: 0px; padding-left: 5px; font-size: 0.9em; }</xmp></li><li><xmp>#idiomas input, #idiomas select { float: left; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#idiomas .cambiar { float: left; width: 18px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 3px; padding-top: 2px; padding-right: 0px; padding-bottom: 2px; padding-left: 0px; background-image: url(https://www.cdti.es/img/css/iconos/botonIdiomas.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; cursor: pointer; background-position: 0px 0px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>ul#n1 { width: 100%; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.bannernav { width: 100%; float: left; padding-top: 20px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#acceso { width: 99%; float: left; background-image: url(https://www.cdti.es/img/css/portal/fondoAcceso.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; margin-top: 30px; padding-bottom: 17px; background-position: 100% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#acceso h2 { float: left; padding-top: 3px; padding-right: 0px; padding-bottom: 3px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 2%; background-image: url(https://www.cdti.es/img/css/portal/puntosH.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: 0px 0px; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#acceso h2 img { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#acceso label { width: 93%; float: left; clear: left; padding-top: 2px; padding-right: 0px; padding-bottom: 3px; padding-left: 12px; }</xmp></li><li><xmp>#acceso label span { float: left; width: 45%; padding-top: 3px; }</xmp></li><li><xmp>#acceso input { width: 45%; float: left; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 102, 153); border-right-color: rgb(51, 102, 153); border-bottom-color: rgb(51, 102, 153); border-left-color: rgb(51, 102, 153); padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }</xmp></li><li><xmp>#acceso input.acceso { width: 50px; float: right; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; background-image: url(https://www.cdti.es/img/css/iconos/boton.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; margin-top: 7px; margin-right: 25%; margin-bottom: 0px; margin-left: 0px; font-size: 0.9em; font-family: arial; cursor: pointer; color: rgb(51, 51, 51); background-position: 0px 0px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#acceso ul { float: left; padding-top: 17px; padding-right: 12px; padding-bottom: 0px; padding-left: 12px; }</xmp></li><li><xmp>#acceso form ul.especial { float: left; width: 175px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 1.5%; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 3%; background-image: url(https://www.cdti.es/img/css/portal/puntosH.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: 0px 0px; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#acceso form ul.especial li { width: 90%; float: left; padding-bottom: 4px; }</xmp></li><li><xmp>#compas { width: 97.9%; float: right; margin-top: 6px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 0px; padding-right: 1%; padding-bottom: 6px; padding-left: 1%; font-size: 0.8em; background-image: url(https://www.cdti.es/img/css/portal/fondoCompas.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(238, 238, 238); background-position: 0px 0px; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#compas em { width: auto; float: left; }</xmp></li><li><xmp>#compas ol { width: 85%; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>#pactivo { width: 100%; float: left; position: relative; }</xmp></li><li><xmp>#pactivo img { float: left; margin-right: 100px; }</xmp></li><li><xmp>#atajo ul { float: right; margin-top: 5px; margin-right: 0.5%; margin-bottom: 0px; margin-left: 0px; font-size: 0.8em; }</xmp></li><li><xmp>#atajo li { float: left; padding-top: 0px; padding-right: 1px; padding-bottom: 0px; padding-left: 1px; }</xmp></li><li><xmp>#atajo li img, #atajo li span { float: left; margin-left: 5px; cursor: pointer; }</xmp></li><li><xmp>#seccion1, #seccion2, #seccion3, #seccion4 { width: 26%; float: left; padding-top: 8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; margin-left: 2.5%; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(255, 255, 255); }</xmp></li><li><xmp>#seccion4 { width: auto; float: left; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; padding-top: 8px; padding-right: 0px; padding-bottom: 8px; padding-left: 1.5%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>#seccion4 img.rss { margin-right: 25% !important; margin-top: 4px; margin-bottom: 4px; margin-left: 0px; float: left; }</xmp></li><li><xmp>.caja-obsoleto { width: 100%; float: left; }</xmp></li><li><xmp>.txt-cookie { width: 97%; float: left; }</xmp></li><li><xmp>.btn-cookie { float: right; }</xmp></li><li><xmp>.modulo100 { width: 99.9%; float: left; }</xmp></li><li><xmp>.img_Sin { clear: both; float: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.img_Sin_C { clear: both; float: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.img_Sin_L { float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.img_Sin_R { float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 10px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.img_Con { clear: both; float: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(215, 215, 221); border-right-color: rgb(215, 215, 221); border-bottom-color: rgb(215, 215, 221); border-left-color: rgb(215, 215, 221); }</xmp></li><li><xmp>.img_Con_C { clear: both; float: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(215, 215, 221); border-right-color: rgb(215, 215, 221); border-bottom-color: rgb(215, 215, 221); border-left-color: rgb(215, 215, 221); }</xmp></li><li><xmp>.img_Con_L { float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(215, 215, 221); border-right-color: rgb(215, 215, 221); border-bottom-color: rgb(215, 215, 221); border-left-color: rgb(215, 215, 221); }</xmp></li><li><xmp>.img_Con_R { float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 10px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(215, 215, 221); border-right-color: rgb(215, 215, 221); border-bottom-color: rgb(215, 215, 221); border-left-color: rgb(215, 215, 221); }</xmp></li><li><xmp>.cc-cookies-error { float: left; width: 90%; text-align: center; margin-top: 1em; margin-right: 0px; margin-bottom: 2em; margin-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); padding-top: 2em; padding-right: 5%; padding-bottom: 2em; padding-left: 5%; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); font-size: 18px; color: rgb(51, 51, 51); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.txt-cookie { float: left; width: 97%; }</xmp></li><li><xmp>.btn-cookie { float: right; cursor: pointer; }</xmp></li><li><xmp>@media screen and (max-width: 480px) {   .cc-cookies { position: relative; float: left; }}</xmp></li><li><xmp>#a_agenda { width: 100%; float: left; padding-bottom: 10px; background-image: url(https://www.cdti.es/img/css/portal/puntosV.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: 71% 0px; background-repeat: no-repeat repeat; }</xmp></li><li><xmp>#a_agenda .form_tipo2 .radios .zonaradios { float: left; width: 98%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 15px; padding-left: 0px; }</xmp></li><li><xmp>#a_agenda .form_tipo2 .zonaradios input { border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; float: left; }</xmp></li><li><xmp>#a_agenda .form_tipo2 .zonaradios label span { float: left; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: -18px !important; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 18px !important; }</xmp></li><li><xmp>#a_agenda .form_tipo2 .especial p.texto { width: 15%; margin-left: 2%; float: left; padding-top: 3px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#a_destacados ul { width: 99%; float: left; margin-top: 8px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>#a_destacados ul li { float: left; padding-top: 7px; padding-right: 5%; padding-bottom: 4px; padding-left: 5%; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(240, 240, 245); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(255, 255, 255); font: normal normal normal 1em/normal Arial; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#cuerpodestacado { width: 97%; float: left; min-height: 151px !important; height: auto !important; padding-top: 5px; padding-right: 1%; padding-bottom: 5px; padding-left: 1%; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(215, 215, 221); border-right-color: rgb(215, 215, 221); border-bottom-color: rgb(215, 215, 221); border-left-color: rgb(215, 215, 221); border-top-width: 10px; background-image: url(https://www.cdti.es/img/css/portal/fondoDestacados.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: 0px 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#cuerpodestacado ul li.todas a { float: right; padding-top: 0px; padding-right: 20px; padding-bottom: 2px; padding-left: 0px; background-image: url(https://www.cdti.es/img/css/iconos/mas.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; color: rgb(51, 102, 153); background-position: 100% 0px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.modulodestacados #a_calendario .contenedorCalendario { width: 40%; float: left; clear: both; margin-top: 7px; margin-right: auto; margin-bottom: 7px; margin-left: auto; }</xmp></li><li><xmp>.modulodestacados #a_calendario .leyenda { width: 51%; float: left; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 5%; font-size: 1em; background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.modulodestacados #a_calendario .leyenda ul { float: left; width: 93%; padding-top: 0px; padding-right: 0px; padding-bottom: 7px; padding-left: 4%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-image: url(https://www.cdti.es/img/css/portal/puntosH.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: 0px 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.modulodestacados #a_calendario .leyenda li { float: left; width: 90%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; font-weight: bold; background-image: url(https://www.cdti.es/css/comunes/apariencia.css); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; background-position: 0px 2px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.bloquefotos { width: auto; float: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>#a_mapaweb ul, #a_mapaweb ul li ul, #a_mapaweb ul li ul li { width: auto; float: none !important; }</xmp></li><li><xmp>#resultados, #listadoitems { width: 100%; float: none; }</xmp></li><li><xmp>#a_servicioListas .lista { float: left !important; }</xmp></li><li><xmp>#a_servicioListas .lista ul.list_especial li { float: none; clear: left; }</xmp></li><li><xmp>#a_noticia .listado_tipo1 dt, #a_noticia .listado_tipo1 dd { clear: left; float: none; }</xmp></li><li><xmp>#a_servicioListas .listadolistas dl, #a_servicioListas .listadolistas dt, #a_servicioListas .lista dd { width: 100%; float: none !important; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>#encabezado, #envoltura, #navegacion, #situacion, #recurso, #pie { width: auto; height: auto; clear: none !important; float: none !important; margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 0px !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(255, 255, 255) !important; background-position: initial initial !important; background-repeat: initial initial !important; }</xmp></li><li><xmp>.ministerio { position: static; float: left; margin-top: 10px; }</xmp></li><li><xmp>#idiomas { width: auto !important; float: none !important; margin-bottom: 5px; }</xmp></li><li><xmp>#utilidades, .contenedorutilidades, #buscadorGeneralForm { width: auto !important; float: none !important; margin-top: 0px !important; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 0px !important; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(54, 54, 54); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#buscadorGeneralForm input { float: none !important; width: 60%; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); }</xmp></li><li><xmp>#seccion1, #seccion2, #seccion3, #seccion4 { width: auto; float: none; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>#acceso, #acceso label, #acceso input { width: auto; float: none; clear: none; margin-top: 0px; padding-bottom: 0px; background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(255, 255, 255) !important; background-position: initial initial !important; background-repeat: initial initial !important; }</xmp></li><li><xmp>#compas { width: 100%; float: left; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px; }</xmp></li><li><xmp>#atajo li img, #atajo li span, #atajo li { display: inline; float: none; }</xmp></li><li><xmp>.moduloflash, .moduloprogramas, .moduloayuda, .modulodestacados, .moduloayuda .modulo50, .zonacentro, .zonadcha, .modulocontenido_3, .prehomeprogramas .zonadcha, .prehomeprogramas .contenedorizda, .prehomeprogramas .contenedorizda .cajaprograma, .zonacentro .cajaprograma, .zonacentro .cajaprograma2, .cajaprehomefoto, .cajaprehomefoto .foto, .cajaprehomefoto .texto, .galeria .zonadcha, .marcovideo, .introduccion, .introduccion p { width: auto !important; float: none !important; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; text-align: left; }</xmp></li><li><xmp>.fondogaleria, .galeria .zonadcha, .marcovideo { width: auto; float: none; }</xmp></li><li><xmp>.bloquefotos img, .bloquevideos img { float: none; margin-bottom: 10px; }</xmp></li><li><xmp>.cajadestacado p a { width: auto; float: none; text-align: right; }</xmp></li><li><xmp>.modulodestacados #a_calendario .contenedorCalendario, .modulodestacados #a_calendario .leyenda { width: auto; float: none; clear: none; }</xmp></li><li><xmp>.modulo80, .modulo70, .modulo65, .modulo50, .modulo35, .modulo30, .modulo20 { width: auto; float: none; }</xmp></li><li><xmp>#a_noticiaDestacada { width: auto; float: none; }</xmp></li><li><xmp>#a_empleo .listado_tipo1 table { width: 100%; float: none; }</xmp></li><li><xmp>#a_curriculum ul.puestos li { float: none; display: block; padding-bottom: 10px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>#a_agenda, #a_mapaweb ul li, #resultados, #listadoitems, #resultados ul li, .zonadcha { width: auto; float: none; }</xmp></li><li><xmp>#a_buscadorgeneral { width: auto; float: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>#a_documento .zonainformacion, #a_documento .zonaimagen { width: auto; float: none; }</xmp></li><li><xmp>.cuerpoform { width: 95% !important; float: left !important; padding-top: 10px !important; padding-right: 2.5% !important; padding-bottom: 10px !important; padding-left: 2.5% !important; }</xmp></li><li><xmp>.cuerpoform span.etiqueta, .cuerpoform span.etiquetarequerida { width: auto !important; float: none !important; display: block !important; }</xmp></li><li><xmp>.fechas label { width: auto; float: none; }</xmp></li><li><xmp>.radios { width: 100%; float: left; }</xmp></li><li><xmp>.combo, .combo2 { width: auto; float: none; }</xmp></li><li><xmp>.td15, .td25, .td33, .td35, .td50, .td60, .td65, .td75, .td100 { width: auto; float: none; }</xmp></li><li><xmp>#a_error #envioerror, #a_mensaje #envioconfirmacion, #a_mensaje #errorvalidacion { width: auto; float: none; padding-top: 20px; padding-right: 3%; padding-bottom: 20px; padding-left: 3%; margin-top: 0px; min-height: 20px !important; height: auto !important; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(249, 249, 233); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#a_error #envioerror h3, #a_mensaje #envioconfirmacion h3 { width: auto; float: none; }</xmp></li><li><xmp>#a_error #envioerror ul, #a_mensaje #errorvalidacion ul { width: auto; float: none; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 114
+
+			Código: H56-Usando el atributo dir en un elemento en linea para resolver problemas con secuencias direccionales anidadas 
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han segmentos de texto definidos en un idioma espec&iacute;fico..<br/>
+			Recomendación: En caso de que un texto en la p&aacute;gina se encuentre en un idioma distito al de la misma, se debe especificar el idioma y en caso de ser necesario la direcci&oacute;n de lectura por medio del atributo <code>dir</code>.  Para mayor informaci&oacute;n refierase a <a haref=https://www.w3.org/TR/html4/struct/dirlang.html>Informaci&oacute;n sobre el idioma y la direcci&oacute;n de lectura de un texto</a>.<br/>
+			Número de errores: 0
+
+			Código: C6-Proporcionando contenido basado en marcadores estructurales
+			Criticidad: Baja
+			Observación: De las 358 reglas CSS en la p&aacute;gina, 5 de ellas usan declaraciones de elementos de forma absoluta (position:asolute).<pre><ul><li><xmp>.mensaje { position: absolute; top: 0px; left: -4000px; z-index: -100; }</xmp></li><li><xmp>.presidencia { position: absolute; right: 5px; top: 13px; }</xmp></li><li><xmp>#pactivo div { position: absolute; top: 30px; left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(143, 174, 206); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.calendar .combo { position: absolute; display: none; width: 4em; top: 0px; left: 0px; cursor: default; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(255, 255, 255); background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(228, 224, 216); font-size: 90%; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.ministerio { position: static; float: left; margin-top: 10px; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 5
+
+			Código: C8-Usando la propiedad letter-spacing de CSS para controlar el espacio dentro de una palabra
+			Criticidad: Baja
+			Observación: No se han detectado textos sospechosos en los que palabras se han formado usando espacios en blanco..<br/>
+			Recomendación: En el caso de requerir por efectos visuales el destarcar cada letra de una palabra por medio de separaciones, utilice la propiedad CSS <code>letter-spacing</code>.<br/>
+			Número de errores: 0
+
+			Código: C27B-Haciendo el DOM ordenado para marcar el orden visual: B) Elementos con posicionamiento absoluto
+			Criticidad: Media
+			Observación: De las 352 reglas CSS en la p&aacute;gina, 11 de ellas usan declaraciones de elementos de forma absoluta (position:asolute|relative|fix).<pre><ul><li><xmp>.mensaje { position: absolute; top: 0px; left: -4000px; z-index: -100; }</xmp></li><li><xmp>.fondocabecera { width: 100%; min-height: 68px !important; height: auto !important; float: left; position: relative; }</xmp></li><li><xmp>.presidencia { position: absolute; right: 5px; top: 13px; }</xmp></li><li><xmp>#pactivo { width: 100%; float: left; position: relative; }</xmp></li><li><xmp>#pactivo div { position: absolute; top: 30px; left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(143, 174, 206); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.cc-cookies { position: relative; width: 90%; left: 0px; top: 0px; padding-top: 0.5em; padding-right: 5%; padding-bottom: 0.5em; padding-left: 5%; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(33, 33, 33, 0.949219); text-shadow: rgba(0, 0, 0, 0.347656) 0px -1px 0px; z-index: 99999; text-align: center; color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>@media screen and (max-width: 480px) { 
+  .cc-cookies { position: relative; float: left; }
+}</xmp></li><li><xmp>.calendar { position: relative; display: none; border-top-width: 2px; border-top-style: solid; border-top-color: rgb(255, 255, 255); border-right-width: 2px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); border-left-width: 2px; border-left-style: solid; border-left-color: rgb(255, 255, 255); font-size: 11px; color: rgb(0, 0, 0); cursor: default; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(212, 208, 200); font-family: tahoma, verdana, sans-serif; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.calendar .combo { position: absolute; display: none; width: 4em; top: 0px; left: 0px; cursor: default; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(255, 255, 255); background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(228, 224, 216); font-size: 90%; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.calendar .combo .label, .calendar .combo .label-IEfix { text-align: center; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }</xmp></li><li><xmp>.calendar .combo .label-IEfix { width: 4em; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 11
+
+		Criterio: 1.3.1..Información y relaciones
+		Nivel: A
+
+			Código: G140-Separando la información y la estructura de la presentación para permitir diferentes presentaciones
+			Criticidad: Alta
+			Observación: El sitio se ha estructurado mezclando el contenido con la presentaci&oacute;n por medio de la definici&oacute;n de estilos CSS en el contenido HTML. Los componentes que presentan este problema son: <pre><code><ul><li><xmp><div class="cc-cookies" style="top: 0; bottom: auto;"><div class="txt-cookie">Para mejorar nuestros servicios, utilizamos cookies propias y de terceros. Si continúa navegando, consideramos que acepta su uso. Para más información o para cambiar esta configuración, consulte nuestra <a href="https://www.cdti.es/index.asp?MP=92&amp;MS=0&amp;MN=1&amp;Hash=606199888201891179&amp;r=1024*768">política de cookies</a>.</div><img class="btn-cookie" src="img/es/iconos/cerrar.png" onclick="cerrarCapaCookies()" alt="Cerrar"></div></xmp></li><li><xmp><div class="fondocabecera" style="background:transparent url(../../img/css/portal/imgCabecera_es.jpg) no-repeat 40% 0;"><h1><a href="index.asp"><img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnológico Industrial"></a></h1><a href="http://www.micinn.es" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img src="img/es/iconos/logoMinisterio.gif" alt="Logo del Ministerio de Economía y Competitividad" class="ministerio"></a></div></xmp></li><li><xmp><div style="text-align: center">&nbsp;<a class="externo" href="http://www.perspectivacdti.es/" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img alt="Acceso a la revista Perspectiva digital" class="img_Sin" height="91" id="Imagen_1402_1519733241446" src="/recursos/img/Home/10053_272272201813443.gif" width="227"></a> </div></xmp></li><li><xmp><div style="text-align: center"><br><a href="https://www.cdti.es/index.asp?MP=100&amp;MS=819&amp;MN=2&amp;r=1024*768"><img alt="Programa INNVIERTE" class="img_Sin" height="48" id="Imagen_1059_1432197174234" src="/recursos/img/Home/12411_261126112014115710.gif" width="227"></a><br>&nbsp; </div></xmp></li><li><xmp><div style="width: 100%; text-align: center"><p><br><a class="externo" href="https://www.conferenciah2020.es/" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img alt="10ª Conferencia Programa Marco de la Unión Europea" class="img_Sin" height="252" id="Imagen_1447_1539083109243" src="/recursos/img/Home/25774_91091020181344.gif" width="227"></a></p><p><a href="https://www.cdti.es/index.asp?TR=A&amp;IDR=1&amp;iddocumento=6736&amp;r=1024*768" id="Documento_6736_1525775409356"><img alt="Guía breve para presentación de propuestas" class="img_Sin" height="148" id="Imagen_1419_1525775303070" src="/recursos/img/Home/31694_85852018122628.gif" width="227"></a>&nbsp;<br></p></div></xmp></li></ul></code></pre>.<br/>
+			Recomendación: El separar el contenido de la presentaci&oacute;n facilita la adaptaci&oacute;n de los contenidos a diferentes dispositivos. Se recomienda el uso de hojas de estilo para definir la presentaci&oacute;n de los componentes indicados..<br/>
+			Número de errores: 5
+
+			Código: F87-Fallo en el criterio 1.3.1 debido a la inserción de contenidos no decorativos mediante el uso de :before y :after pseudo-elementos y la propiedad content de los CSS
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H39-Usando elementos caption para asociar títulos de las tablas de datos a los datos de la tabla
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas..<br/>
+			Recomendación: En el caso de hacer uso de tablas estas deben ser identificadas por medio del elemento caption, siempre que no sean utilizadas para maquetaci&oacute;n (layout)..<br/>
+			Número de errores: 0
+
+			Código: H63-Usando el atributo scope para asociar las celdas de encabezado con las celdas de datos en las tablas
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H73-Usando el atributo summary del elemento table para dar una visión general de las tablas de datos
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas con un atriuto summary..<br/>
+			Recomendación: En el caso de hacer uso de tablas e identificarlas con el atributo summary este debe ser valido para identificar la tabla o explicar su estructura en caso de tablas de datos complejas..<br/>
+			Número de errores: 0
+
+			Código: H48-Usando ol, ul y dl para listas o grupos de enlaces
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H85-Usando OPTIONGROUP para agrupar elementos OPTION dentro de un SELECT
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H49-Usando marcas semánticas para marcar textos enfatizados o textos especiales
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H51-Usando tabla de marcado para presentar información tabular
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Al utilizar tablas de datos para presentar informaci&oacute;n tabular use los elementos th (encabezados) y td (datos)..<br/>
+			Número de errores: 0
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] </li><ul><li>[H2] [OK] </li><li>[H2] [OK] Financiación I+D+i</li><li>[H2] [OK] Solicitud de proyectos on-line</li><li>[H2] [OK] Internacionalización de la I+D+i</li><li>[H2] [OK] Listas de distribución</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: OAW3-Usando elementos legend correctamente
+			Criticidad: Baja
+			Observación: No se han encontrado elementos <code>fieldset</code>.<br/>
+			Recomendación: Es importante que el primer elemento de un fieldset sea un elemento legend que describa el tipo de informaci&oacute;n que se est&aacute; agrupando..<br/>
+			Número de errores: 0
+
+			Código: OAW4-Comprobando el uso de cabeceras múltiples dentro de una fila
+			Criticidad: Media
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Los elementos <code>th</code> deben emplearse correctamente para que el usuario identifique sin dificultades los contenidos de las tablas.<br/>
+			Número de errores: 0
+
+			Código: OAW5-Comprobando la validez de los roles ARIA
+			Criticidad: Alta
+			Observación: No se han encontrado elementos con atributo role..<br/>
+			Recomendación: Es recomendable apegarse a la la especificaci&oacute;n WAI-ARIA, que define un conjunto de atributos HTML adicionales que se pueden aplicar a los elementos para proporcionar sem&aacute;ntica adicional y mejorar la accesibilidad donde sea que falte.<br/>
+			Número de errores: 0
+
+			Código: OAW6-Comprobando que las celdas de la tabla tengan datos
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Las celdas vac&iacute;as en las tablas suelen causar problemas para los usuarios que ocupan tecnolog&iacute;as de accesibilidad..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.3..Características sensoriales
+		Nivel: A
+
+	Pauta: 1.4..Distinguible
+	Descripcion: Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo
+
+		Criterio: 1.4.2..Control del audio
+		Nivel: A
+
+		Criterio: 1.4.4..Redimensionamiento del texto
+		Nivel: AA
+
+			Código: C28-Especificando el tamaño de un contenedor de texto usando unidades em
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C14-Usando unidades em para tamaños de fuente
+			Criticidad: Alta
+			Observación: De las 27 reglas CSS en la p&aacute;gina para definir el tamaño de letra (font-size), 5 de ellas usan declaraciones de elementos de forma absoluta (position:asolute) o tiene un valor incorrecto.<pre><ul><li><xmp>h1 { float: left; margin-left: 1% !important; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-size: 10px; }</xmp></li><li><xmp>.cc-cookies { position: relative; width: 90%; left: 0px; top: 0px; padding-top: 0.5em; padding-right: 5%; padding-bottom: 0.5em; padding-left: 5%; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(33, 33, 33, 0.949219); text-shadow: rgba(0, 0, 0, 0.347656) 0px -1px 0px; z-index: 99999; text-align: center; color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.cc-cookies-error { float: left; width: 90%; text-align: center; margin-top: 1em; margin-right: 0px; margin-bottom: 2em; margin-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); padding-top: 2em; padding-right: 5%; padding-bottom: 2em; padding-left: 5%; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); font-size: 18px; color: rgb(51, 51, 51); background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.calendar { position: relative; display: none; border-top-width: 2px; border-top-style: solid; border-top-color: rgb(255, 255, 255); border-right-width: 2px; border-right-style: solid; border-right-color: rgb(0, 0, 0); border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); border-left-width: 2px; border-left-style: solid; border-left-color: rgb(255, 255, 255); font-size: 11px; color: rgb(0, 0, 0); cursor: default; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(212, 208, 200); font-family: tahoma, verdana, sans-serif; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.calendar table { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(0, 0, 0); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(255, 255, 255); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); font-size: 11px; color: rgb(0, 0, 0); cursor: default; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(212, 208, 200); font-family: tahoma, verdana, sans-serif; text-align: center; background-position: initial initial; background-repeat: initial initial; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS para definir el tamaño de letra del contenido, utilice valores relativos por medio de unidades "em", % o valores  xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, o larger. Al usar medidas de fuente absolutas, se limita el contenido textual de la p&aacute;gina ya que no se podr&iacute;a adaptar a diferentes resoluciones de pantalla..<br/>
+			Número de errores: 5
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: Incrementando el tamaño del texto en un 200% <code>$('body').css('font-size', '200%');</code> la dimensi&oacute;n de ancho de la p&aacute;gina supera a la del navegador, haciendo necesario el uso del SCROLL HORIZONTAL para acceder a todo el contenido, as&iacute; tambi&eacute;n posiblemente algunos texto resulten incomprensibles..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 1
+
+			Código: C13-Usando tamaños de fuente nombrados
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C12-Usando porcentajes para tamaños de fuente
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 1.4.8..Presentación visual
+		Nivel: AAA
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: Incrementando el tamaño del texto en un 200% <code>$('body').css('font-size', '200%');</code> la dimensi&oacute;n de ancho de la p&aacute;gina supera a la del navegador, haciendo necesario el uso del SCROLL HORIZONTAL para acceder a todo el contenido, as&iacute; tambi&eacute;n posiblemente algunos texto resulten incomprensibles..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 1
+
+			Código: C20-Usando medidas relativas para establecer anchos de columna para que las líneas puedan promediar 80 caracteres o menos cuando se cambia el tamaño del navegador
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C19-Especificar la alineación, ya sea a la izquierda o a la derecha en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C21-Especificando espacio entre líneas en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 2.Operable
+Descripcion: Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+	Pauta: 2.1..Accesible por teclado
+	Descripcion: Proporcionar acceso a toda la funcionalidad mediante el teclado
+
+		Criterio: 2.1.1..Teclado
+		Nivel: A
+
+	Pauta: 2.2..Tiempo suficiente
+	Descripcion: Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido
+
+		Criterio: 2.2.2..Pausar, detener, ocultar
+		Nivel: A
+
+			Código: G11A-Creando contenido que parpadea al menos 5 segundos: A) Elementos con animación blink
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>blink</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: G11B-Creando contenido que parpadea al menos 5 segundos: B) Elementos con animación marquee
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>marquee</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+	Pauta: 2.3..Convulsiones
+	Descripcion: No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones
+
+	Pauta: 2.4..Navegable
+	Descripcion: Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran
+
+		Criterio: 2.4.1..Evitar bloques
+		Nivel: A
+
+		Criterio: 2.4.2..Páginas tituladas
+		Nivel: A
+
+			Código: G88-Proporcionar títulos descriptivos para páginas web
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H25-Proporcionando un título usando el elemento title
+			Criticidad: Alta
+			Observación: La p&aacute;gina tiene un t&iacute;tulo, aseg&uacute;rese que sea descriptivo y que est&eacute; acorde al contenido de la p&aacute;gina. <pre><ul><title>Centro para el Desarrollo Tecnológico Industrial</title></ul></pre>.<br/>
+			Recomendación: El t&iacute;tulo de la p&aacute;gina debe ser descriptivo y brindar una persepci&oacute;n del contenido de la misma..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.3..Orden del foco
+		Nivel: A
+
+			Código: H4-Creando un orden lógico en el orden del tabulador a través de los enlaces, controles de formulario, y objetos
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.4..Propósito de los enlaces (En contexto)
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H33-Complementando el texto del enlace con el atributo title
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C7-Usando CSS para ocultar una porcion de texto de un enlace
+			Criticidad: Baja
+			Observación: En la p&aacute;gina se est&aacute; utilizando en 60 ocaci&oacute;n(es) la opci&oacute;n para ocultar contenido, verifique que este sea relevante, o que sea facilmente accesible.<br/>
+			Recomendación: Al ocultar una parte de informaci&oacute;n de la p&aacute;gina, se puede llegar a confundir al usuario.<br/>
+			Número de errores: 60
+
+			Código: H30-Proporcionar un texto de enlace que describa el propósito del enlace para los elemtos de anclaje (a)
+			Criticidad: Alta
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong> diferente de nulo o vacio, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img class="btn-cookie" src="img/es/iconos/cerrar.png" onclick="cerrarCapaCookies()" alt="Cerrar"></xmp></li><li><xmp><img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnológico Industrial"></xmp></li><li><xmp><img src="img/es/iconos/logoMinisterio.gif" alt="Logo del Ministerio de Economía y Competitividad" class="ministerio"></xmp></li><li><xmp><img src="img/es/iconos/inicio.gif" alt="Inicio (Tecla de acceso 1)"></xmp></li><li><xmp><img src="img/es/iconos/mapaWeb.gif" alt="Mapa web (Tecla de acceso 3 )"></xmp></li><li><xmp><img src="img/es/iconos/contacto.gif" alt="Contacto (Tecla de acceso 9 )"></xmp></li><li><xmp><img src="img/es/iconos/accesibilidad.gif" alt="Accesibilidad (Tecla de acceso 0 )"></xmp></li><li><xmp><img src="img/es/portal/solicitudesInformacion.gif" alt="Presentación de solicitudes de financiación"></xmp></li><li><xmp><img src="img/es/portal/sedeElectronica.jpg" alt="Sede electrónica"></xmp></li><li><xmp><img src="img/es/portal/areaColaboracion.gif" alt="Área de colaboración para"></xmp></li><li><xmp><img alt="Acceso a la revista Perspectiva digital" class="img_Sin" height="91" id="Imagen_1402_1519733241446" src="/recursos/img/Home/10053_272272201813443.gif" width="227"></xmp></li><li><xmp><img alt="Programa INNVIERTE" class="img_Sin" height="48" id="Imagen_1059_1432197174234" src="/recursos/img/Home/12411_261126112014115710.gif" width="227"></xmp></li><li><xmp><img alt="10ª Conferencia Programa Marco de la Unión Europea" class="img_Sin" height="252" id="Imagen_1447_1539083109243" src="/recursos/img/Home/25774_91091020181344.gif" width="227"></xmp></li><li><xmp><img alt="Guía breve para presentación de propuestas" class="img_Sin" height="148" id="Imagen_1419_1525775303070" src="/recursos/img/Home/31694_85852018122628.gif" width="227"></xmp></li><li><xmp><img alt="Acceso al Fondo Tecnológico" class="img_Sin" height="49" id="Imagen_366_1205139678496" src="/recursos/img/Home/1683_73732008113512.gif" width="131"></xmp></li><li><xmp><img alt="http://eshorizonte2020.es" class="img_Sin" height="46" id="Imagen_1001_1392033659714" src="/recursos/img/Home/40190_1021022014125858.gif" width="134"></xmp></li><li><xmp><img alt="Red de Puntos de Información en I+D+i" class="img_Sin" height="49" id="Imagen_1108_1432204853316" src="/recursos/img/Home/33452_2152152015123342.gif" width="110"></xmp></li><li><xmp><img alt="Portal de la Transparencia" class="img_Con" height="49" id="Imagen_1066_1418208066830" src="/recursos/img/5206_101210122014114026.gif" width="184"></xmp></li><li><xmp><img alt="Información sobre empleo en CDTI" class="img_Sin" height="49" id="Imagen_196_1418640572662" src="/recursos/img/Home/6948_311311200695223.gif" width="131"></xmp></li><li><xmp><img alt="Marca España" class="img_Sin" height="49" id="Imagen_990_1418640883474" src="/recursos/img/Home/11750_1891892013114440.gif" width="91"></xmp></li><li><xmp><img alt="Instalaciones Cientifico-Tecnológicas Singulares" class="img_Con" height="49" id="Imagen_1176_1453450578359" src="/recursos/img/Home/6259_22122120169158.png" width="145"></xmp></li><li><xmp><img alt="Política antifraude" class="img_Sin" height="49" id="Imagen_1448_1539702314506" src="/recursos/img/Home/38942_16101610201817438.gif" width="92"></xmp></li><li><xmp><img src="img/es/portal/rss.gif" alt="RSS" class="rss"></xmp></li><li><xmp><img src="img/es/portal/w3c.gif" alt="W3C - WAI AA"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.6..Encabezados y etiquetas
+		Nivel: AA
+
+			Código: G130-Proporcionar títulos descriptivos
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.5..Re-autentificación
+		Nivel: AA
+
+			Código: H59-Usando el elemneto link y herramientas de navegación
+			Criticidad: Alta
+			Observación: Los 10 links de relacion que tiene la p&aacute;gina se han definido correctamente.<br/>
+			Recomendación: Es importante colocar la etiqueta link &uacute;nicamente dentro del encabezado de la p&aacute;gina, e indicar la relaci&oacute;n que guarda con la misma.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.7..Foco visible
+		Nivel: AA
+
+			Código: C15-Usando CSS para cambiar la presentación de un componente de interfaz de usuario cuando recibe el foco
+			Criticidad: Baja
+			Observación: No se han detectado declaraciones del foco de teclado.<br/>
+			Recomendación: Verificar que el foco sea visible y que este en correcto posicionamiento en la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.10..Encabezados se sección
+		Nivel: AAA
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] </li><ul><li>[H2] [OK] </li><li>[H2] [OK] Financiación I+D+i</li><li>[H2] [OK] Solicitud de proyectos on-line</li><li>[H2] [OK] Internacionalización de la I+D+i</li><li>[H2] [OK] Listas de distribución</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+
+Principio: 3.Comprensible
+Descripcion: La información y el manejo de la interfaz de usuario deben ser comprensibles
+
+	Pauta: 3.1..Legible
+	Descripcion: Hacer que los contenidos textuales resulten legibles y comprensibles
+
+		Criterio: 3.1.1..Idioma de la página
+		Nivel: A
+
+			Código: H57-Usando el atributo language en el elemento html
+			Criticidad: Alta
+			Observación: La definici&oacute;n de lenguaje en la p&aacute;gina se ha realizado exitosamente.<br/>
+			Recomendación: Verificar la especificaci&oacute;n del lenguaje, es importante especificar en que idioma se est&aacute; presentando la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.3..Palabras inusuales
+		Nivel: AAA
+
+			Código: H60-Usando el elemento link para enlazar a un glosario
+			Criticidad: Baja
+			Observación: La p&aacute;gina podr&iacute;a requerir un link a un glosario de palabras complejas.<br/>
+			Recomendación: Cuando se utiliza palabras complejas es recomendable colocar un glosario que las defina.<br/>
+			Número de errores: 1
+
+			Código: H40-Usando listas de definición
+			Criticidad: Baja
+			Observación: No se han encontrado listas dentro de la p&aacute;gina.<br/>
+			Recomendación: La estructura de la lista de definici&oacute;n, deben ser empleadas correctamente, colocando cada uno de sus componentes sin descartar ninguno.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.6..Pronunciación
+		Nivel: AAA
+
+			Código: H62-Usando el elemento ruby
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado etiquetas ruby.<br/>
+			Recomendación: Es importante supervisar el correcto uso de esta etiqueta para caracteres especiales.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.4..Abreviaturas
+		Nivel: AAA
+
+			Código: H70-Usando elementos frame para agrupar bloques de material repetido
+			Criticidad: Alta
+			Observación: La p&aacute;gina no tiene etiquetas frame.<br/>
+			Recomendación: Los elementos frame no deben usarse para maquetar contenido en la p&aacute;gina, se debe utilizar hojas de estilo.<br/>
+			Número de errores: 0
+
+	Pauta: 3.2..Predecible
+	Descripcion: Hacer que las páginas web aparezcan y operen de manera predecible
+
+		Criterio: 3.2.2..Al introducir datos
+		Nivel: A
+
+			Código: H32-Proporcionar botones de envio
+			Criticidad: Media
+			Observación: Verificar que el formulario tenga m&eacute;todo de env&iacute;o.<br/>
+			Recomendación: De los 2 formularios de la p&aacute;gina, existen 2 que no tienen m&eacute;todo de env&iacute;o.<br/>
+			Número de errores: 2
+
+		Criterio: 3.2.5..Cambios a petición
+		Nivel: AAA
+
+			Código: H83-Usando el atributo target para abrir una nueva ventana a petición del usuario e indicando en ventana a petición del usuario e indicando en el texto de este enlace
+			Criticidad: Media
+			Observación: 7 enlace(s) indica(n) como destino una nueva ventana, verifique que el enlace contiene informaci&oacute;n que indica que el enlace se abrir&aacute; en una nueva ventana. <pre><ul><li><xmp><a href="http://www.micinn.es" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img src="img/es/iconos/logoMinisterio.gif" alt="Logo del Ministerio de Economía y Competitividad" class="ministerio"></a></xmp></li><li><xmp><a class="externo" href="http://www.perspectivacdti.es/" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img alt="Acceso a la revista Perspectiva digital" class="img_Sin" height="91" id="Imagen_1402_1519733241446" src="/recursos/img/Home/10053_272272201813443.gif" width="227"></a></xmp></li><li><xmp><a class="externo" href="https://www.conferenciah2020.es/" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img alt="10ª Conferencia Programa Marco de la Unión Europea" class="img_Sin" height="252" id="Imagen_1447_1539083109243" src="/recursos/img/Home/25774_91091020181344.gif" width="227"></a></xmp></li><li><xmp><a href="http://eshorizonte2020.es/" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img alt="http://eshorizonte2020.es" class="img_Sin" height="46" id="Imagen_1001_1392033659714" src="/recursos/img/Home/40190_1021022014125858.gif" width="134"></a></xmp></li><li><xmp><a class="externo" href="http://transparencia.gob.es/" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img alt="Portal de la Transparencia" class="img_Con" height="49" id="Imagen_1066_1418208066830" src="/recursos/img/5206_101210122014114026.gif" width="184"></a></xmp></li><li><xmp><a class="externo" href="http://marcaespana.es/" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img alt="Marca España" class="img_Sin" height="49" id="Imagen_990_1418640883474" src="/recursos/img/Home/11750_1891892013114440.gif" width="91"></a></xmp></li><li><xmp><a class="externo" href="http://www.idi.mineco.gob.es/portal/site/MICINN/menuitem.eed4570ef37d2c8fbaa777b9026041a0/?vgnextoid=b8be18ef1a553510VgnVCM1000001d04140aRCRD" rel="external" title=" (Se abre en ventana nueva)" target="_blank"><img alt="Instalaciones Cientifico-Tecnológicas Singulares" class="img_Con" height="49" id="Imagen_1176_1453450578359" src="/recursos/img/Home/6259_22122120169158.png" width="145"></a></xmp></li></ul></pre>.<br/>
+			Recomendación: Un ejemplo podr&iacute;a ser: <code><xmp><a href="ayuda.html" target="_blank">Mostrar ayuda (abre nueva ventana)</a></xmp></code>..<br/>
+			Número de errores: 7
+
+			Código: H76-Usando meta refresh para crear un redireccionamiento de cliente instantánea
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se ha detectado el uso de la etiqueta meta conjuntamente con el atributo refresh para actualizaci&oacute;n de la p&aacute;gina..<br/>
+			Recomendación: En el caso de quere hacer uso de la misma, considerar que la continua actualizaci&oacute;n de la p&aacute;gina no es recomendable, puede causar confusi&oacute;n en el usuario..<br/>
+			Número de errores: 0
+
+	Pauta: 3.3..Entrada de datos asistida
+	Descripcion: Ayudar a los usuarios a evitar y corregir los errores
+
+		Criterio: 3.3.1..Identificación de errores
+		Nivel: A
+
+		Criterio: 3.3.2..Etiquetas o instrucciones
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H71-Proporcionando una descripcion para grupos de controles de formularios usando los elementos fieldset y legend
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: OAW2-Proporcionando contenido en todos los elementos
+			Criticidad: Baja
+			Observación: En la p&aacute;gina existen 3 elementos sin contenido. <pre><ul><li><xmp><a name="arriba"></a></xmp></li><li><xmp><p></p></xmp></li><li><xmp><p></p></xmp></li</ul></pre>.<br/>
+			Recomendación: Es importante evitar declarar elementos sin contenido.<br/>
+			Número de errores: 3
+
+		Criterio: 3.3.5..Ayuda
+		Nivel: AAA
+
+			Código: G71-Proporcionando un enlace de ayuda en cada pagina web
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H89-Usando el atributo title para proporcionar ayuda contextual
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 4.Robusto
+Descripcion: El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+	Pauta: 4.1..Compatible
+Descripcion: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas
+
+		Criterio: 4.1.1..Procesamiento
+		Nivel: A
+
+			Código: G134-Validación de páginas web
+			Criticidad: Alta
+			Observación: Se ha producido un error al intentar validar la pagina </strong> en <a href='https://validator.w3.org/' target='_blank'>https://validator.w3.org/</a>.   Puede revisar usted manualmente por medio del siguiente enlace: <a href='https://validator.w3.org/nu/?doc=https://www.cdti.es/index.asp?MP' target='_blank'>Validación W3C</a>.<br/>
+			Recomendación: .<br/>
+			Número de errores: 1
+
+		Criterio: 4.1.2..Nombre, función, valor
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H64-Usando el atributo title en los elementos frame e iframe 
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos frames..<br/>
+			Recomendación: En caso de usar elementos frame o iframe acompañelos por una descripci&oacute;n del mismo a travez del atributo <code>title</code>..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+

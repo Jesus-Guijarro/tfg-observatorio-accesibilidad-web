@@ -1,0 +1,23 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/ConsejosDisAct.nsf/fCategoriaVista2?readForm&Vista=vComisionesTodasVal&Categoria=Consejos&lang=2&nivel=3%5f5&nivelExpandido=1&bdorigen=ayuntamiento/ayuntamiento.nsf&idapoyo=9A0B3E8F6AB1CDBAC12582410042C735
+FECHA EVALUACIÓN: 2018-10-31
+
+PROBLEMAS
+Empty heading	  VECES ENCONTRADO: 2
+
+
+
+ALERTAS
+Redundant alternative text	  VECES ENCONTRADO: 3
+Noscript element	  VECES ENCONTRADO: 1
+Broken same-page link	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 48
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 7
+
+
+

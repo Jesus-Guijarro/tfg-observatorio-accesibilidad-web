@@ -1,0 +1,37 @@
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/areas-cultura/archivos.html
+FECHA EVALUACIÓN: 2018-11-16
+
+PROBLEMAS
+Empty link	  VECES ENCONTRADO: 2
+Empty button	  VECES ENCONTRADO: 4
+
+
+
+ALERTAS
+Broken same-page link	  VECES ENCONTRADO: 9
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Redundant alternative text	  VECES ENCONTRADO: 5
+Long alternative text	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 4
+Justified text	  VECES ENCONTRADO: 19
+Noscript element	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 6
+Alternative text	  VECES ENCONTRADO: 6
+Fieldset	  VECES ENCONTRADO: 1
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
+Null or empty alternative text	  VECES ENCONTRADO: 4
+Linked image with alternative text	  VECES ENCONTRADO: 39
+Form label	  VECES ENCONTRADO: 1
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+
+

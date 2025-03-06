@@ -1,0 +1,732 @@
+REPORTE PÁGINA WEB: http://www.mscbs.gob.es/biblioPublic/portada/home.htm
+FECHA EVALUACIÓN: 2018-11-28
+
+-PROBLEMAS CONOCIDOS-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
+
+		LINEA: 47, COLUMNA: 37: <img src="/diseno/img/ico-rss.png" alt=""/>       
+
+		LINEA: 53, COLUMNA: 37: <img src="/diseno/img/ico-facebook.png" alt=""/>       
+
+		LINEA: 59, COLUMNA: 37: <img src="/diseno/img/ico-twitter.png" alt=""/>       
+
+		LINEA: 65, COLUMNA: 37: <img src="/diseno/img/ico-youtube.png" alt=""/>       
+
+		LINEA: 71, COLUMNA: 37: <img src="/diseno/img/ico-suscripcionlistas.png" alt=""/>       
+
+		LINEA: 77, COLUMNA: 37: <img src="/diseno/img/ico-webstematicas.png" alt=""/>       
+
+		LINEA: 290, COLUMNA: 29: <img src="/diseno/img/util_traducir.gif" alt=""/>       
+
+		LINEA: 296, COLUMNA: 29: <img src="/diseno/img/util_compartir.gif" alt=""/>       
+
+		LINEA: 308, COLUMNA: 29: <img src="/diseno/img/util_descargarPdf.gif" alt=""/>       
+
+		LINEA: 316, COLUMNA: 29: <img src="/diseno/img/util_webTematicas.gif" alt=""/>       
+
+		LINEA: 322, COLUMNA: 29: <img src="/diseno/img/util_personalizaServ.gif" alt=""/>       
+
+		LINEA: 328, COLUMNA: 29: <img src="/diseno/img/util_rss.gif" alt=""/>
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)  
+
+	REVISAR: 117: i (italic) element used.  
+
+	REPARAR: Replace your i elements with em or strong.     
+
+		LINEA: 190, COLUMNA: 25: <i class="fa fa-home" aria-hidden="true">&nbsp;</i>       
+
+		LINEA: 251, COLUMNA: 17: <i class="fa fa-angle-up" aria-hidden="true"><span class="sr-only">Subir</span ...
+
+	
+
+ -------------- 
+
+-PROBLEMAS POTENCIALES-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 38, COLUMNA: 33: <img src="/diseno/img/logo_ministerio.jpg" alt="Ministerio de Sanidad, Consumo y Bienestar Social -...       
+
+		LINEA: 145, COLUMNA: 33: <img src="/diseno/img/ico-servicios.png" alt="Servicios al ciudadano"/>       
+
+		LINEA: 302, COLUMNA: 29: <img src="/diseno/img/util_facebook.gif" alt="Compartir en facebook"/>       
+
+		LINEA: 334, COLUMNA: 29: <img title="Barra expandida, pulse para ocultarla" src="/diseno/img/util_ocultar.gif" alt="Barra exp ...       
+
+		LINEA: 341, COLUMNA: 21: <img title="Barra oculta, pulse para expandirla" src="/diseno/img/util_mostrar.gif" alt="Barra ocult ...
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+
+
+		LINEA: 334, COLUMNA: 29: <img title="Barra expandida, pulse para ocultarla" src="/diseno/img/util_ocultar.gif" alt="Barra exp ...       
+
+		LINEA: 341, COLUMNA: 21: <img title="Barra oculta, pulse para expandirla" src="/diseno/img/util_mostrar.gif" alt="Barra ocult ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 137, COLUMNA: 33: <input type="text" name="search" id="buscar"/>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 38, COLUMNA: 33: <img src="/diseno/img/logo_ministerio.jpg" alt="Ministerio de Sanidad, Consumo y Bienestar Social -...       
+
+		LINEA: 47, COLUMNA: 37: <img src="/diseno/img/ico-rss.png" alt=""/>       
+
+		LINEA: 53, COLUMNA: 37: <img src="/diseno/img/ico-facebook.png" alt=""/>       
+
+		LINEA: 59, COLUMNA: 37: <img src="/diseno/img/ico-twitter.png" alt=""/>       
+
+		LINEA: 65, COLUMNA: 37: <img src="/diseno/img/ico-youtube.png" alt=""/>       
+
+		LINEA: 71, COLUMNA: 37: <img src="/diseno/img/ico-suscripcionlistas.png" alt=""/>       
+
+		LINEA: 77, COLUMNA: 37: <img src="/diseno/img/ico-webstematicas.png" alt=""/>       
+
+		LINEA: 145, COLUMNA: 33: <img src="/diseno/img/ico-servicios.png" alt="Servicios al ciudadano"/>       
+
+		LINEA: 290, COLUMNA: 29: <img src="/diseno/img/util_traducir.gif" alt=""/>       
+
+		LINEA: 296, COLUMNA: 29: <img src="/diseno/img/util_compartir.gif" alt=""/>       
+
+		LINEA: 302, COLUMNA: 29: <img src="/diseno/img/util_facebook.gif" alt="Compartir en facebook"/>       
+
+		LINEA: 308, COLUMNA: 29: <img src="/diseno/img/util_descargarPdf.gif" alt=""/>       
+
+		LINEA: 316, COLUMNA: 29: <img src="/diseno/img/util_webTematicas.gif" alt=""/>       
+
+		LINEA: 322, COLUMNA: 29: <img src="/diseno/img/util_personalizaServ.gif" alt=""/>       
+
+		LINEA: 328, COLUMNA: 29: <img src="/diseno/img/util_rss.gif" alt=""/>       
+
+		LINEA: 334, COLUMNA: 29: <img title="Barra expandida, pulse para ocultarla" src="/diseno/img/util_ocultar.gif" alt="Barra exp ...       
+
+		LINEA: 341, COLUMNA: 21: <img title="Barra oculta, pulse para expandirla" src="/diseno/img/util_mostrar.gif" alt="Barra ocult ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 137, COLUMNA: 33: <input type="text" name="search" id="buscar"/>
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 29, COLUMNA: 8: <script src="/diseno/js/jquery.min.js"></script>       
+
+		LINEA: 30, COLUMNA: 8: <script src="/diseno/js/utilidades.js"></script>       
+
+		LINEA: 31, COLUMNA: 8: <script src="/diseno/js/multidiomaEscenario.js"></script>       
+
+		LINEA: 152, COLUMNA: 9: <script src="/diseno/general/js/idiomas.js"></script>       
+
+		LINEA: 153, COLUMNA: 9: <script src="/diseno/general/js/menuDesplegableEscenario.js"></script>       
+
+		LINEA: 181, COLUMNA: 9: <script src="/diseno/general/js/categoriasEscenario.js"></script>       
+
+		LINEA: 202, COLUMNA: 8: <script src="/diseno/biblioPublic/js/migasPanEscenario.js"></script>       
+
+		LINEA: 235, COLUMNA: 7: <script src="/diseno/sanidad/js/menuIzqEscenario.js"></script>       
+
+		LINEA: 346, COLUMNA: 6: <script src="/diseno/js/barraUtil.js"></script>       
+
+		LINEA: 347, COLUMNA: 6: <script src="/diseno/js/bootstrap.min.js"></script>       
+
+		LINEA: 348, COLUMNA: 6: <script src="/diseno/js/jasny-bootstrap.min.js"></script>       
+
+		LINEA: 349, COLUMNA: 6: <script src="/diseno/js/float-panel.js"></script>       
+
+		LINEA: 350, COLUMNA: 6: <script src="/diseno/js/main.js"></script>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 38, COLUMNA: 33: <img src="/diseno/img/logo_ministerio.jpg" alt="Ministerio de Sanidad, Consumo y Bienestar Social -...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 38, COLUMNA: 33: <img src="/diseno/img/logo_ministerio.jpg" alt="Ministerio de Sanidad, Consumo y Bienestar Social -...       
+
+		LINEA: 47, COLUMNA: 37: <img src="/diseno/img/ico-rss.png" alt=""/>       
+
+		LINEA: 53, COLUMNA: 37: <img src="/diseno/img/ico-facebook.png" alt=""/>       
+
+		LINEA: 59, COLUMNA: 37: <img src="/diseno/img/ico-twitter.png" alt=""/>       
+
+		LINEA: 65, COLUMNA: 37: <img src="/diseno/img/ico-youtube.png" alt=""/>       
+
+		LINEA: 71, COLUMNA: 37: <img src="/diseno/img/ico-suscripcionlistas.png" alt=""/>       
+
+		LINEA: 77, COLUMNA: 37: <img src="/diseno/img/ico-webstematicas.png" alt=""/>       
+
+		LINEA: 145, COLUMNA: 33: <img src="/diseno/img/ico-servicios.png" alt="Servicios al ciudadano"/>       
+
+		LINEA: 290, COLUMNA: 29: <img src="/diseno/img/util_traducir.gif" alt=""/>       
+
+		LINEA: 296, COLUMNA: 29: <img src="/diseno/img/util_compartir.gif" alt=""/>       
+
+		LINEA: 302, COLUMNA: 29: <img src="/diseno/img/util_facebook.gif" alt="Compartir en facebook"/>       
+
+		LINEA: 308, COLUMNA: 29: <img src="/diseno/img/util_descargarPdf.gif" alt=""/>       
+
+		LINEA: 316, COLUMNA: 29: <img src="/diseno/img/util_webTematicas.gif" alt=""/>       
+
+		LINEA: 322, COLUMNA: 29: <img src="/diseno/img/util_personalizaServ.gif" alt=""/>       
+
+		LINEA: 328, COLUMNA: 29: <img src="/diseno/img/util_rss.gif" alt=""/>       
+
+		LINEA: 334, COLUMNA: 29: <img title="Barra expandida, pulse para ocultarla" src="/diseno/img/util_ocultar.gif" alt="Barra exp ...       
+
+		LINEA: 341, COLUMNA: 21: <img title="Barra oculta, pulse para expandirla" src="/diseno/img/util_mostrar.gif" alt="Barra ocult ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 29, COLUMNA: 8: <script src="/diseno/js/jquery.min.js"></script>       
+
+		LINEA: 30, COLUMNA: 8: <script src="/diseno/js/utilidades.js"></script>       
+
+		LINEA: 31, COLUMNA: 8: <script src="/diseno/js/multidiomaEscenario.js"></script>       
+
+		LINEA: 152, COLUMNA: 9: <script src="/diseno/general/js/idiomas.js"></script>       
+
+		LINEA: 153, COLUMNA: 9: <script src="/diseno/general/js/menuDesplegableEscenario.js"></script>       
+
+		LINEA: 181, COLUMNA: 9: <script src="/diseno/general/js/categoriasEscenario.js"></script>       
+
+		LINEA: 202, COLUMNA: 8: <script src="/diseno/biblioPublic/js/migasPanEscenario.js"></script>       
+
+		LINEA: 235, COLUMNA: 7: <script src="/diseno/sanidad/js/menuIzqEscenario.js"></script>       
+
+		LINEA: 346, COLUMNA: 6: <script src="/diseno/js/barraUtil.js"></script>       
+
+		LINEA: 347, COLUMNA: 6: <script src="/diseno/js/bootstrap.min.js"></script>       
+
+		LINEA: 348, COLUMNA: 6: <script src="/diseno/js/jasny-bootstrap.min.js"></script>       
+
+		LINEA: 349, COLUMNA: 6: <script src="/diseno/js/float-panel.js"></script>       
+
+		LINEA: 350, COLUMNA: 6: <script src="/diseno/js/main.js"></script>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 29, COLUMNA: 8: <script src="/diseno/js/jquery.min.js"></script>       
+
+		LINEA: 30, COLUMNA: 8: <script src="/diseno/js/utilidades.js"></script>       
+
+		LINEA: 31, COLUMNA: 8: <script src="/diseno/js/multidiomaEscenario.js"></script>       
+
+		LINEA: 152, COLUMNA: 9: <script src="/diseno/general/js/idiomas.js"></script>       
+
+		LINEA: 153, COLUMNA: 9: <script src="/diseno/general/js/menuDesplegableEscenario.js"></script>       
+
+		LINEA: 181, COLUMNA: 9: <script src="/diseno/general/js/categoriasEscenario.js"></script>       
+
+		LINEA: 202, COLUMNA: 8: <script src="/diseno/biblioPublic/js/migasPanEscenario.js"></script>       
+
+		LINEA: 235, COLUMNA: 7: <script src="/diseno/sanidad/js/menuIzqEscenario.js"></script>       
+
+		LINEA: 346, COLUMNA: 6: <script src="/diseno/js/barraUtil.js"></script>       
+
+		LINEA: 347, COLUMNA: 6: <script src="/diseno/js/bootstrap.min.js"></script>       
+
+		LINEA: 348, COLUMNA: 6: <script src="/diseno/js/jasny-bootstrap.min.js"></script>       
+
+		LINEA: 349, COLUMNA: 6: <script src="/diseno/js/float-panel.js"></script>       
+
+		LINEA: 350, COLUMNA: 6: <script src="/diseno/js/main.js"></script>
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 7, COLUMNA: 9: <title>Ministerio de Sanidad, Consumo y Bienestar Social - Biblioteca y Publicaciones - Portada</tit ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 37, COLUMNA: 29: <a title="Ministerio de Sanidad, Consumo y Bienestar Social - Gobierno de Espa&ntilde;a" href="/home ...       
+
+		LINEA: 46, COLUMNA: 33: <a title="RSS" href="/rss/cargar.do"><img src="/diseno/img/ico ...       
+
+		LINEA: 52, COLUMNA: 33: <a title="Facebook. Se abrir&aacute; en una ventana nueva" target="_blank" href="https://www.faceboo ...       
+
+		LINEA: 58, COLUMNA: 33: <a title="Twitter. Se abrir&aacute; en una ventana nueva" target="_blank" href="http://twitter.com/s ...       
+
+		LINEA: 64, COLUMNA: 33: <a title="Youtube. Se abrir&aacute; en una ventana nueva" target="_blank" href="http://www.youtube.c ...       
+
+		LINEA: 70, COLUMNA: 33: <a title="Suscripci&oacute;n a listas" href="https://listas.msssi.es"> ...       
+
+		LINEA: 76, COLUMNA: 33: <a title="Webs tem&aacute;ticas" href="/websTematicas/home.htm"> ...       
+
+		LINEA: 84, COLUMNA: 33: <a role="button" href="/home.htm" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true ...       
+
+		LINEA: 88, COLUMNA: 41: <a title="Bienvenidos: Acceso a la web en espa&ntilde;ol" href="/home.htm">Castellano</a>       
+
+		LINEA: 91, COLUMNA: 41: <a title="Benvinguts: Acceso a la web en catal&aacute;n" href="/ca/home.htm">...       
+
+		LINEA: 96, COLUMNA: 41: <a title="Ongi etorri: Acceso a la web en euskera" href="/eu/home.htm">...       
+
+		LINEA: 101, COLUMNA: 41: <a title="Benvidos: Acceso a la web en gallego" href="/gl/home.htm"> ...       
+
+		LINEA: 106, COLUMNA: 41: <a title="Benvinguts: Acceso a la web en valenciano" href="/va/home.htm">...       
+
+		LINEA: 111, COLUMNA: 41: <a title="Welcome: Acceso a la web en ingl&eacute;s" href="/en/home.htm">...       
+
+		LINEA: 116, COLUMNA: 41: <a title="Bienvenue: Acceso a la web en franc&eacute;s" href="/fr/home.htm"> ...       
+
+		LINEA: 127, COLUMNA: 33: <a href="/servCiudadanos/home.htm">Servicios al ciudadano</a>       
+
+		LINEA: 130, COLUMNA: 33: <a title="Se abrir&aacute; en una ventana nueva" target="_blank" href="https://sede.msssi.gob.es/" c ...       
+
+		LINEA: 144, COLUMNA: 29: <a title="Servicios al ciudadano" href="/servCiudadanos/home.htm"> ...       
+
+		LINEA: 159, COLUMNA: 33: <a role="button" href="/organizacion/portada/home.htm" data-toggle="dropdown" class="dropdown-toggle ...       
+
+		LINEA: 164, COLUMNA: 33: <a role="button" href="/sanidad/portada/home.htm" data-toggle="dropdown" class="dropdown-toggle" ari ...       
+
+		LINEA: 169, COLUMNA: 33: <a role="button" href="/ssi/portada/home.htm" data-toggle="dropdown" class="dropdown-toggle" aria-ha ...       
+
+		LINEA: 174, COLUMNA: 33: <a role="button" href="/normativa/proyectos/home.htm" data-toggle="dropdown" class="dropdown-toggle" ...       
+
+		LINEA: 189, COLUMNA: 21: <a href="/home.htm"><i class="fa fa-home" aria-hidden="true">&nbsp;</i>...       
+
+		LINEA: 195, COLUMNA: 21: <a href="/sanidad/portada/home.htm">Sanidad</a>       
+
+		LINEA: 198, COLUMNA: 21: <a href="/biblioPublic/portada/home.htm">Biblioteca y Publicaciones</a>       
+
+		LINEA: 213, COLUMNA: 25: <a href="#" class="navbar-brand">Men&uacute;</a>       
+
+		LINEA: 219, COLUMNA: 33: <a href="/ciudadanos/portada/home.htm">Ciudadanos</a>       
+
+		LINEA: 222, COLUMNA: 33: <a href="/profesionales/portada/home.htm">Profesionales</a>       
+
+		LINEA: 225, COLUMNA: 33: <a href="/biblioPublic/portada/home.htm">Biblioteca y Publicaciones</a>       
+
+		LINEA: 228, COLUMNA: 33: <a href="/estadEstudios/portada/home.htm">Portal Estad&iacute;stico del SNS</a>       
+
+		LINEA: 243, COLUMNA: 25: <a href="../publicaciones/home.htm">Publicaciones</a>       
+
+		LINEA: 246, COLUMNA: 25: <a href="../biblioDocum/home.htm">Bibliotecas</a>       
+
+		LINEA: 250, COLUMNA: 13: <a href="#" class="scrolltop"><i class="fa fa-angle-up" aria-hidden="true">...       
+
+		LINEA: 263, COLUMNA: 25: <a href="../../guiaNav/home.htm">		Guia de navegaci&oacute;n</a>       
+
+		LINEA: 267, COLUMNA: 25: <a href="../../avisoLegal/home.htm">		Aviso legal</a>       
+
+		LINEA: 271, COLUMNA: 25: <a href="../../accesibilidad/home.htm">		Accesibilidad</a>       
+
+		LINEA: 275, COLUMNA: 25: <a href="../../mapaWeb/cargar.do">		Mapa Web</a>       
+
+		LINEA: 279, COLUMNA: 25: <a href="../../contactar/home.htm">		Contactar</a>       
+
+		LINEA: 289, COLUMNA: 25: <a title="Traducir. Se abrir&aacute; en una ventana nueva" target="_blank" id="enlaceTraducir" href= ...       
+
+		LINEA: 295, COLUMNA: 25: <a title="Compartir" href="/servicios/compartir.do"><img src="/diseno/ ...       
+
+		LINEA: 301, COLUMNA: 25: <a title="Me gusta. Se abrir&aacute; en una ventana nueva" target="_blank" href="http://www.facebook ...       
+
+		LINEA: 307, COLUMNA: 25: <a title="Descargar p&aacute;gina actual en pdf" href="/servicios/descargarPdf.do">...       
+
+		LINEA: 315, COLUMNA: 25: <a title="Web tem&aacute;ticas" href="/websTematicas/home.htm"><img sr ...       
+
+		LINEA: 321, COLUMNA: 25: <a title="Personaliza tus servicios" href="/servicios/gestionServicios.do">...       
+
+		LINEA: 327, COLUMNA: 25: <a title="RSS" href="/rss/cargar.do"><img src="/diseno/img/util_rss.gi ...       
+
+		LINEA: 333, COLUMNA: 25: <a href="javascript:void(0)"><img title="Barra expandida, pulse para o ...       
+
+		LINEA: 340, COLUMNA: 17: <a href="javascript:void(0)"><img title="Barra oculta, pulse para expandirla"...
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 37, COLUMNA: 29: <a title="Ministerio de Sanidad, Consumo y Bienestar Social - Gobierno de Espa&ntilde;a" href="/home ...       
+
+		LINEA: 46, COLUMNA: 33: <a title="RSS" href="/rss/cargar.do"><img src="/diseno/img/ico ...       
+
+		LINEA: 52, COLUMNA: 33: <a title="Facebook. Se abrir&aacute; en una ventana nueva" target="_blank" href="https://www.faceboo ...       
+
+		LINEA: 58, COLUMNA: 33: <a title="Twitter. Se abrir&aacute; en una ventana nueva" target="_blank" href="http://twitter.com/s ...       
+
+		LINEA: 64, COLUMNA: 33: <a title="Youtube. Se abrir&aacute; en una ventana nueva" target="_blank" href="http://www.youtube.c ...       
+
+		LINEA: 70, COLUMNA: 33: <a title="Suscripci&oacute;n a listas" href="https://listas.msssi.es"> ...       
+
+		LINEA: 76, COLUMNA: 33: <a title="Webs tem&aacute;ticas" href="/websTematicas/home.htm"> ...       
+
+		LINEA: 84, COLUMNA: 33: <a role="button" href="/home.htm" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true ...       
+
+		LINEA: 88, COLUMNA: 41: <a title="Bienvenidos: Acceso a la web en espa&ntilde;ol" href="/home.htm">Castellano</a>       
+
+		LINEA: 91, COLUMNA: 41: <a title="Benvinguts: Acceso a la web en catal&aacute;n" href="/ca/home.htm">...       
+
+		LINEA: 96, COLUMNA: 41: <a title="Ongi etorri: Acceso a la web en euskera" href="/eu/home.htm">...       
+
+		LINEA: 101, COLUMNA: 41: <a title="Benvidos: Acceso a la web en gallego" href="/gl/home.htm"> ...       
+
+		LINEA: 106, COLUMNA: 41: <a title="Benvinguts: Acceso a la web en valenciano" href="/va/home.htm">...       
+
+		LINEA: 111, COLUMNA: 41: <a title="Welcome: Acceso a la web en ingl&eacute;s" href="/en/home.htm">...       
+
+		LINEA: 116, COLUMNA: 41: <a title="Bienvenue: Acceso a la web en franc&eacute;s" href="/fr/home.htm"> ...       
+
+		LINEA: 127, COLUMNA: 33: <a href="/servCiudadanos/home.htm">Servicios al ciudadano</a>       
+
+		LINEA: 130, COLUMNA: 33: <a title="Se abrir&aacute; en una ventana nueva" target="_blank" href="https://sede.msssi.gob.es/" c ...       
+
+		LINEA: 144, COLUMNA: 29: <a title="Servicios al ciudadano" href="/servCiudadanos/home.htm"> ...       
+
+		LINEA: 159, COLUMNA: 33: <a role="button" href="/organizacion/portada/home.htm" data-toggle="dropdown" class="dropdown-toggle ...       
+
+		LINEA: 164, COLUMNA: 33: <a role="button" href="/sanidad/portada/home.htm" data-toggle="dropdown" class="dropdown-toggle" ari ...       
+
+		LINEA: 169, COLUMNA: 33: <a role="button" href="/ssi/portada/home.htm" data-toggle="dropdown" class="dropdown-toggle" aria-ha ...       
+
+		LINEA: 174, COLUMNA: 33: <a role="button" href="/normativa/proyectos/home.htm" data-toggle="dropdown" class="dropdown-toggle" ...       
+
+		LINEA: 189, COLUMNA: 21: <a href="/home.htm"><i class="fa fa-home" aria-hidden="true">&nbsp;</i>...       
+
+		LINEA: 195, COLUMNA: 21: <a href="/sanidad/portada/home.htm">Sanidad</a>       
+
+		LINEA: 198, COLUMNA: 21: <a href="/biblioPublic/portada/home.htm">Biblioteca y Publicaciones</a>       
+
+		LINEA: 213, COLUMNA: 25: <a href="#" class="navbar-brand">Men&uacute;</a>       
+
+		LINEA: 219, COLUMNA: 33: <a href="/ciudadanos/portada/home.htm">Ciudadanos</a>       
+
+		LINEA: 222, COLUMNA: 33: <a href="/profesionales/portada/home.htm">Profesionales</a>       
+
+		LINEA: 225, COLUMNA: 33: <a href="/biblioPublic/portada/home.htm">Biblioteca y Publicaciones</a>       
+
+		LINEA: 228, COLUMNA: 33: <a href="/estadEstudios/portada/home.htm">Portal Estad&iacute;stico del SNS</a>       
+
+		LINEA: 243, COLUMNA: 25: <a href="../publicaciones/home.htm">Publicaciones</a>       
+
+		LINEA: 246, COLUMNA: 25: <a href="../biblioDocum/home.htm">Bibliotecas</a>       
+
+		LINEA: 250, COLUMNA: 13: <a href="#" class="scrolltop"><i class="fa fa-angle-up" aria-hidden="true">...       
+
+		LINEA: 263, COLUMNA: 25: <a href="../../guiaNav/home.htm">		Guia de navegaci&oacute;n</a>       
+
+		LINEA: 267, COLUMNA: 25: <a href="../../avisoLegal/home.htm">		Aviso legal</a>       
+
+		LINEA: 271, COLUMNA: 25: <a href="../../accesibilidad/home.htm">		Accesibilidad</a>       
+
+		LINEA: 275, COLUMNA: 25: <a href="../../mapaWeb/cargar.do">		Mapa Web</a>       
+
+		LINEA: 279, COLUMNA: 25: <a href="../../contactar/home.htm">		Contactar</a>       
+
+		LINEA: 289, COLUMNA: 25: <a title="Traducir. Se abrir&aacute; en una ventana nueva" target="_blank" id="enlaceTraducir" href= ...       
+
+		LINEA: 295, COLUMNA: 25: <a title="Compartir" href="/servicios/compartir.do"><img src="/diseno/ ...       
+
+		LINEA: 301, COLUMNA: 25: <a title="Me gusta. Se abrir&aacute; en una ventana nueva" target="_blank" href="http://www.facebook ...       
+
+		LINEA: 307, COLUMNA: 25: <a title="Descargar p&aacute;gina actual en pdf" href="/servicios/descargarPdf.do">...       
+
+		LINEA: 315, COLUMNA: 25: <a title="Web tem&aacute;ticas" href="/websTematicas/home.htm"><img sr ...       
+
+		LINEA: 321, COLUMNA: 25: <a title="Personaliza tus servicios" href="/servicios/gestionServicios.do">...       
+
+		LINEA: 327, COLUMNA: 25: <a title="RSS" href="/rss/cargar.do"><img src="/diseno/img/util_rss.gi ...       
+
+		LINEA: 333, COLUMNA: 25: <a href="javascript:void(0)"><img title="Barra expandida, pulse para o ...       
+
+		LINEA: 340, COLUMNA: 17: <a href="javascript:void(0)"><img title="Barra oculta, pulse para expandirla"...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 239, COLUMNA: 17: <h1>Biblioteca y Publicaciones</h1>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 135, COLUMNA: 29: <form role="search" method="post" class="search" action="/buscador/iniciar.do">...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 24, COLUMNA: 5: <body><header><div style="visibility:hidden" id="nivel">3</div>...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 135, COLUMNA: 29: <form role="search" method="post" class="search" action="/buscador/iniciar.do">...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 135, COLUMNA: 29: <form role="search" method="post" class="search" action="/buscador/iniciar.do">...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 137, COLUMNA: 33: <input type="text" name="search" id="buscar"/>
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 137, COLUMNA: 33: <input type="text" name="search" id="buscar"/>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 135, COLUMNA: 29: <form role="search" method="post" class="search" action="/buscador/iniciar.do">...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 135, COLUMNA: 29: <form role="search" method="post" class="search" action="/buscador/iniciar.do">...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 135, COLUMNA: 29: <form role="search" method="post" class="search" action="/buscador/iniciar.do">...
+
+	

@@ -1,0 +1,16 @@
+REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/es/extras/avisolegal.htm
+FECHA EVALUACIÓN: 2018-12-08
+
+ALERTAS
+Redundant link	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 5
+Form label	  VECES ENCONTRADO: 1
+Image button with alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 3
+
+
+

@@ -1,0 +1,36 @@
+REPORTE PÁGINA WEB: https://www.iberdrola.es/servicios/vehiculo-electrico/punto-recarga
+FECHA EVALUACIÓN: 2018-12-25
+
+-PROBLEMAS-
+
+Linked image missing alternative text	  VECES ENCONTRADO: 6
+Empty link	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Link to PDF document	  VECES ENCONTRADO: 5
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Redundant title text	  VECES ENCONTRADO: 14
+Skipped heading level	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 2
+Redundant link	  VECES ENCONTRADO: 8
+Redundant alternative text	  VECES ENCONTRADO: 13
+Orphaned form label	  VECES ENCONTRADO: 9
+Underlined text	  VECES ENCONTRADO: 6
+
+
+-CARACTERISTICAS-
+
+Alternative text	  VECES ENCONTRADO: 8
+Linked image with alternative text	  VECES ENCONTRADO: 16
+Null or empty alternative text	  VECES ENCONTRADO: 19
+Element language	  VECES ENCONTRADO: 3
+Form label	  VECES ENCONTRADO: 2
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 29
+
+

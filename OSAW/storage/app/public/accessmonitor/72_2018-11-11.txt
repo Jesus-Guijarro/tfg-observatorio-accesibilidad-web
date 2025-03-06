@@ -1,0 +1,19 @@
+REPORTE PÁGINA WEB: https://web.ua.es/es/estudia-en-la-ua.html
+FECHA EVALUACIÓN: 2018-11-11
+
+Se han encontrado 11 imágenes que no tienen leyenda
+Se encontraron 19 imágenes en las que la leyenda es un espacio vacío
+Se encontraron 5 elementos de encabezado
+Se han encontrado 103 enlaces con el mismo texto que apuntan a destinos diferentes
+Se identificó 1 caso en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se han encontrado 15 enlaces para eludir bloques de contenido
+Se identificó 1 formulario sin botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se encontró 1 valor repetido del atributo id
+Se encontraron 17 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificaron 3 casos en que se usan unidades de medida expresadas en valores absolutos en el tamaño de letra
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"

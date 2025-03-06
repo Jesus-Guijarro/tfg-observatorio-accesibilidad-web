@@ -1,0 +1,14 @@
+REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/justicia-espana/organizacion
+FECHA EVALUACIÓN: 2018-11-25
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 3 elementos de encabezado
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se ha encontrado 1 enlace para eludir bloques de contenido
+Se constató que todos los formularios tienen un botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se ha encontrado 1 elemento <link> para la navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"

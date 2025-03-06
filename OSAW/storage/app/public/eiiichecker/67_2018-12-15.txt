@@ -1,0 +1,6 @@
+REPORTE PÁGINA WEB: https://www.upv.es/investigacion/estructuras/index-es.html
+FECHA EVALUACIÓN: 2018-12-15
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         
+	FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función		 
+	VECES ENCONTRADO: 5

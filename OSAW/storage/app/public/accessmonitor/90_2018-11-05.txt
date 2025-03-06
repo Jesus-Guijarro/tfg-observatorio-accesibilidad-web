@@ -1,0 +1,23 @@
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/gestiones-contratos
+FECHA EVALUACIÓN: 2018-11-05
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 12 imágenes en las que la leyenda es un espacio vacío
+Se encontró un elemento <iframe> sin título
+Se encontró 1 caso en que los encabezados no respetan la cadena jerárquica
+Se encontraron 14 elementos de encabezado
+Se han encontrado 2 enlaces con el mismo texto que apuntan a destinos diferentes
+Se identificaron 41 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se ha encontrado 1 enlace para eludir bloques de contenido
+Se constató que todos los formularios tienen un botón de envío
+Se encontraron 5 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificó 1 caso en que se utilizan unidades de medida expresadas en valores absolutos en el tamaño de letra
+Se constató que todas las unidades de medida existentes en la CSS se expresan en valores relativos
+Se han encontrado 3 elementos <link> para navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+El tipo de documento no permite el uso del atributo xml: lang
+Se identificaron 3 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo

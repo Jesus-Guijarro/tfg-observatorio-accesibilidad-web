@@ -1,0 +1,34 @@
+REPORTE PÁGINA WEB: https://www.alicante.es/es/contenidos/transporte-alicante-metropolitano-tam
+FECHA EVALUACIÓN: 2018-12-19
+
+-PROBLEMAS-
+
+Missing form label	  VECES ENCONTRADO: 1
+Empty link	  VECES ENCONTRADO: 7
+Empty button	  VECES ENCONTRADO: 4
+
+
+-ALERTAS-
+
+Redundant title text	  VECES ENCONTRADO: 2
+Underlined text	  VECES ENCONTRADO: 3
+Justified text	  VECES ENCONTRADO: 247
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 4
+Redundant link	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Null or empty alternative text	  VECES ENCONTRADO: 4
+Alternative text	  VECES ENCONTRADO: 1
+Element language	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 2
+Fieldset	  VECES ENCONTRADO: 1
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 9
+
+

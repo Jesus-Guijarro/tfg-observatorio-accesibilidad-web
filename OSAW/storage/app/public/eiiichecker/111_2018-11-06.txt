@@ -1,0 +1,23 @@
+REPORTE PÁGINA WEB: https://www.iberia.com
+FECHA EVALUACIÓN: 2018-11-06
+
+CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       
+	TÉCNICA H37: Uso de <&alt> en elementos <&img>		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         
+	FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <&fieldset> y <&legend>		 
+	VECES ENCONTRADO: 5
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA G131: Proporcionar etiquetas descriptivas		 
+	VECES ENCONTRADO: 4
+CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      		 
+	VECES ENCONTRADO: 2
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	TÉCNICA H65: Usar el atributo <&title> para identificar los controles de formulario cuando no se puede usar el elemento <&label>		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	TÉCNICA H91: Usar controles de formulario HTML y enlaces		 
+	VECES ENCONTRADO: 12

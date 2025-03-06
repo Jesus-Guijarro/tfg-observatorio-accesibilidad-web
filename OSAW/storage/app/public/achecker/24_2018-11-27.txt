@@ -1,0 +1,792 @@
+REPORTE PÁGINA WEB: http://www.gva.es/es/inicio/ciudadanos/ciu_busco_trabajo
+FECHA EVALUACIÓN: 2018-11-27
+
+-PROBLEMAS CONOCIDOS-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 238: input element has alt attribute.  
+
+	REPARAR: Remove the alt attribute from all input elements except those with a type attribute value of "image".     
+
+		LINEA: 20, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...(PORTLET_5_WAR_portalgvaportlet)
+
+4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)  
+
+	REVISAR: 185: id attribute is not unique.  
+
+	REPARAR: Modify the id attribute value so it is unique.     
+
+		LINEA: 20, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+	
+
+ -------------- 
+
+-PROBLEMAS POTENCIALES-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 20, COLUMNA: 91: <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 509: <img src="/resources/v2/img/certif_digital_peke.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 997: <img src="/resources/v2/img/certif_digital_peke.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1150: <img src="/resources/images/icono_01.gif" alt="Tramitable telemáticamente">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1272: <img src="/resources/images/icono_02.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4681: <img src="/resources/v2/img/ico_portal_funcionario.gif"alt='Funcionarios' >(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4908: <img src="/resources/v2/img/ico_correo_funcionario.gif"alt='Correo del funcionario' >(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5085: <img src="/resources/v2/es/img/rss.gif" alt="RSS XML" title="RSS XML">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5155: <img src="/resources/v2/es/img/xml.gif" alt="RSS XML" title="RSS XML">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5242: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 20, COLUMNA: 509: <img src="/resources/v2/img/certif_digital_peke.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 997: <img src="/resources/v2/img/certif_digital_peke.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1150: <img src="/resources/images/icono_01.gif" alt="Tramitable telemáticamente">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1272: <img src="/resources/images/icono_02.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5242: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+
+
+		LINEA: 20, COLUMNA: 5085: <img src="/resources/v2/es/img/rss.gif" alt="RSS XML" title="RSS XML">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5155: <img src="/resources/v2/es/img/xml.gif" alt="RSS XML" title="RSS XML">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5242: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 59: Image used for input element may have Alt text that does not identify the purpose or function as the image.
+
+
+
+		LINEA: 20, COLUMNA: 140: <input type="image" class="buscador_input_img" src="/resources/v2/im ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 193: Form submit button image may contain text that is not in Alt text.
+
+
+
+		LINEA: 20, COLUMNA: 140: <input type="image" class="buscador_input_img" src="/resources/v2/im ...(PORTLET_5_WAR_portalgvaportlet)
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 20, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 1, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 1, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 20, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 20, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 20, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 20, COLUMNA: 91: <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 509: <img src="/resources/v2/img/certif_digital_peke.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 997: <img src="/resources/v2/img/certif_digital_peke.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1150: <img src="/resources/images/icono_01.gif" alt="Tramitable telemáticamente">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1272: <img src="/resources/images/icono_02.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4681: <img src="/resources/v2/img/ico_portal_funcionario.gif"alt='Funcionarios' >(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4908: <img src="/resources/v2/img/ico_correo_funcionario.gif"alt='Correo del funcionario' >(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5085: <img src="/resources/v2/es/img/rss.gif" alt="RSS XML" title="RSS XML">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5155: <img src="/resources/v2/es/img/xml.gif" alt="RSS XML" title="RSS XML">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5242: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 20, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 140: <input type="image" class="buscador_input_img" src="/resources/v2/im ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 1, COLUMNA: 353: <script type="text/javascript" src="/portal-gva-theme/js/jquery-1.9.1.min.js"></script>       
+
+		LINEA: 1, COLUMNA: 455: <script type="text/javascript" src="/portal-gva-theme/js/bootstrap.min.js"></script>       
+
+		LINEA: 1, COLUMNA: 934: <script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return fals ...       
+
+		LINEA: 1, COLUMNA: 989: <script src="/html/js/barebone.jsp?browserId=other&amp;themeId=gva_WAR_portalgvatheme&amp;colorSchem ...       
+
+		LINEA: 1, COLUMNA: 1263: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.list=["cabecera_WAR_portalgvaportlet","1 ...       
+
+		LINEA: 20, COLUMNA: 998: <script type="text/javascript">/*<![CDATA[*/function Busc(){var a=document.getElementById("campo");i ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5545: <script type="text/javascript">/*<![CDATA[*/Liferay.Util.addInputFocus();/*]]>*/</script>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5600: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,i ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5655: <script src="/portal-gva-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=es_ES&a ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5833: <script type="text/javascript"></script>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5888: <script type="text/javascript">/*<![CDATA[*/var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39216849- ...(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 20, COLUMNA: 91: <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo">(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 20, COLUMNA: 91: <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 509: <img src="/resources/v2/img/certif_digital_peke.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 997: <img src="/resources/v2/img/certif_digital_peke.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1150: <img src="/resources/images/icono_01.gif" alt="Tramitable telemáticamente">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1272: <img src="/resources/images/icono_02.gif" alt="Requiere certificado digital">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4681: <img src="/resources/v2/img/ico_portal_funcionario.gif"alt='Funcionarios' >(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4908: <img src="/resources/v2/img/ico_correo_funcionario.gif"alt='Correo del funcionario' >(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5085: <img src="/resources/v2/es/img/rss.gif" alt="RSS XML" title="RSS XML">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5155: <img src="/resources/v2/es/img/xml.gif" alt="RSS XML" title="RSS XML">(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5242: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>(PORTLET_5_WAR_portalgvaportlet)
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 1, COLUMNA: 353: <script type="text/javascript" src="/portal-gva-theme/js/jquery-1.9.1.min.js"></script>       
+
+		LINEA: 1, COLUMNA: 455: <script type="text/javascript" src="/portal-gva-theme/js/bootstrap.min.js"></script>       
+
+		LINEA: 1, COLUMNA: 934: <script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return fals ...       
+
+		LINEA: 1, COLUMNA: 989: <script src="/html/js/barebone.jsp?browserId=other&amp;themeId=gva_WAR_portalgvatheme&amp;colorSchem ...       
+
+		LINEA: 1, COLUMNA: 1263: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.list=["cabecera_WAR_portalgvaportlet","1 ...       
+
+		LINEA: 20, COLUMNA: 998: <script type="text/javascript">/*<![CDATA[*/function Busc(){var a=document.getElementById("campo");i ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5545: <script type="text/javascript">/*<![CDATA[*/Liferay.Util.addInputFocus();/*]]>*/</script>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5600: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,i ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5655: <script src="/portal-gva-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=es_ES&a ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5833: <script type="text/javascript"></script>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5888: <script type="text/javascript">/*<![CDATA[*/var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39216849- ...(PORTLET_5_WAR_portalgvaportlet)
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 1, COLUMNA: 353: <script type="text/javascript" src="/portal-gva-theme/js/jquery-1.9.1.min.js"></script>       
+
+		LINEA: 1, COLUMNA: 455: <script type="text/javascript" src="/portal-gva-theme/js/bootstrap.min.js"></script>       
+
+		LINEA: 1, COLUMNA: 934: <script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return fals ...       
+
+		LINEA: 1, COLUMNA: 989: <script src="/html/js/barebone.jsp?browserId=other&amp;themeId=gva_WAR_portalgvatheme&amp;colorSchem ...       
+
+		LINEA: 1, COLUMNA: 1263: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.list=["cabecera_WAR_portalgvaportlet","1 ...       
+
+		LINEA: 20, COLUMNA: 998: <script type="text/javascript">/*<![CDATA[*/function Busc(){var a=document.getElementById("campo");i ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5545: <script type="text/javascript">/*<![CDATA[*/Liferay.Util.addInputFocus();/*]]>*/</script>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5600: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,i ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5655: <script src="/portal-gva-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=es_ES&a ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5833: <script type="text/javascript"></script>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5888: <script type="text/javascript">/*<![CDATA[*/var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39216849- ...(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 1, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 20, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 1, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 1, COLUMNA: 41: <title>Generalitat: Busco trabajo</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 20, COLUMNA: 2594: <a href="/" class="gva-logo">www.gva.es</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2745: <a class="language-select-icon dropdown-toggle" href="#" data-toggle="dropdown">&#x25BC;</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2932: <a class="mobile-search-icon dropdown-toggle" href="#" data-toggle="dropdown">#language("search")</a ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3241: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_busco_trabajo;jsessionid=qkKKb9zdHY0FvLlCmfycjrn ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 19: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_busco_trabajo;jsessionid=qkKKb9zdHY0FvLlCmfycjrn ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 19: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_busco_trabajo;jsessionid=qkKKb9zdHY0FvLlCmfycjrn ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 62: <a href="http://www.gva.es"> <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo"> <span...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 290: <a accesskey="3" href="/inicio/ciudadanos" title="Aquí encontrará información y servicios dirigid ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 462: <a accesskey="4" href="/inicio/empresas" title="Aquí encontrará información y servicios dirigidos ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 612: <a accesskey="5" href="/inicio/administraciones" title="Aquí encontrará información y servicios d ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 802: <a target="_blank" href="https://www.tramita.gva.es/cdc/aplicacio/inicia.html?idioma=es" title="El e ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 144: <a href="http://www.gva.es/es/inicio/presentacion"title="Acceso a Inicio">Inicio</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 242: <a href="http://www.gva.es/es/inicio/ciudadanos"title="Acceso a Ciudadanía">Ciudadanía</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 483: <a href="https://www.ivoox.com/radio-generalitat_aj_13038488_1.html" class="ivoox" target="_blank" t ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 688: <a href="https://twitter.com/generalitat" class="twitter" target="_blank" title="El enlace se abre e ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 872: <a href="http://www.youtube.com/presidenciagva" class="youtube" target="_blank" title="El enlace se...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1062: <a href="https://www.facebook.com/generalitatvalenciana" class="facebook" target="_blank" title="El...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1264: <a href="http://www.flickr.com/presidenciagva" class="flickr" target="_blank" title="El enlace se ab ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1726: <a class="btn btn-navbar hidden-print" data-toggle="collapse" data-target=".nav-collapse"> <span cla ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2454: <a href="/inicio/ciudadanos/ciu_areas_tematicas" target="_self" title="Enlace aBuscar por temas">Bus ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2599: <a href="/inicio/ciudadanos" target="_self" title="Enlace a¿Qué hago si...?">¿Qué hago si...?</a ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2720: <a href="/inicio/ciudadanos/ciu_busco_trabajo" target="_self" title="Enlace aBusco trabajo">Busco tr ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2849: <a href="/inicio/ciudadanos/ciu_familia_y_pareja" target="_self" title="Enlace aQuiero información...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3012: <a href="/inicio/ciudadanos/ciu_necesito_informacion_tributaria" target="_self" title="Enlace aNeces ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3188: <a href="/inicio/ciudadanos/ciu_necesito_ir_al_medico" target="_self" title="Enlace aNecesito ir al...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3334: <a href="/inicio/ciudadanos/ciu_quiero_acceder_a_una_vivienda" target="_self" title="Enlace aQuiero...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3502: <a href="/inicio/ciudadanos/ciu_quiero_estudiar_y_formarme" target="_self" title="Enlace aQuiero est ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4067: <a href="/web/portal/inicio/la_administracion_valenciana" target="_self" title="Enlace aLa Generalit ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4200: <a href="http://www.president.gva.es/" target="_blank" title="El enlace se abre en una nueva ventana ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4344: <a href="/web/portal/inicio/la_administracion_valenciana/lav_org_gobierno_val" target="_self" title= ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4490: <a href="/web/portal/inicio/area_de_prensa" target="_self" title="Enlace aGabinete de Comunicación" ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4631: <a href="http://canal.gva.es" target="_blank" title="El enlace se abre en una nueva ventana a Canal...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4776: <a href="http://www.dogv.gva.es/" target="_blank" title="El enlace se abre en una nueva ventana a Di ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4919: <a href="/web/portal/inicio/servicios_linea/citas_previas" target="_self" title="Enlace aCita previa ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5047: <a href="/web/portal/inicio/atencion_ciudadano" target="_self" title="Enlace aAtención a la ciudada ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5220: <a href="http://www.chap.gva.es/ca/web/subsecretaria/contratacion" target="_blank" title="El enlace...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5420: <a href="https://sede.gva.es/es/web/sede_electronica/inicio" target="_blank" title="El enlace se abr ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5596: <a href="/web/portal/inicio/mi_opinion_cuenta" target="_self" title="Enlace aBuzón de la ciudadaní ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5738: <a href="http://www.presidencia.gva.es/web/dg-relaciones-ue" target="_blank" title="El enlace se abr ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5922: <a href="/web/portal/inicio/atencion_ciudadano/enlaces_interes" target="_self" title="Enlace aEnlace ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 6534: <a href="/web/portal/inicio/atencion_ciudadano/buscadores" target="_self" title="Enlace aGuía Prop" ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 6660: <a href="http://www.cv.gva.es/principal.do" target="_blank" title="El enlace se abre en una nueva ve ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 6803: <a href="http://www.accv.es" target="_blank" title="El enlace se abre en una nueva ventana a Firma E ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 407: <a href="/inicio/ciudadanos/ciu_busco_trabajo/ciu_bt_empleo_publico_oposiciones_y_bolsas" title="Emp ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 24: <a href="/inicio/ciudadanos/ciu_busco_trabajo/ciu_bt_oferta_de_empleo" title="Ofertas de empleo" tar ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 167: <a href="/inicio/procedimientos?id_proc=19370" target="_self" title="Enlace aEnlace aSolicitud para...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 609: <a href="/inicio/procedimientos?id_proc=19526" target="_self" title="Enlace aEnlace aEMPA01 2018- Pr ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2733: <a href="http://www.servef.gva.es/miservef" target="_blank" title="El enlace se abre en una nueva ve ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2887: <a href="http://www.servef.gva.es/centrosservef" target="_blank" title="El enlace se abre en una nue ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4055: <a href="/web/portal/inicio/mapa_web" class="" target="_self" title="Enlace aMapa Web">Mapa Web</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4168: <a href="/web/portal/inicio/presentacion/bie_info_nuevo_portal" class="" target="_self" title="Enlac ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4325: <a href="/web/portal/inicio/nota_legal" class="" target="_self" title="Enlace aAviso legal">Aviso le ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4446: <a href="/es/inicio/accesibilidad" class="" target="_self" title="Enlace aAccesibilidad">Accesibilid ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4566: <a href="http://pf.gva.es/" class="" target="_blank" title="El enlace se abre en una nueva ventana a ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4778: <a href="https://webmail.gva.es" class="" target="_blank" title="El enlace se abre en una nueva vent ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5014: <a href="/web/portal/inicio/xmlrss" class="" target="" title="RSS XML"><img src="/resources/v2/es/im ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 20, COLUMNA: 2594: <a href="/" class="gva-logo">www.gva.es</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2745: <a class="language-select-icon dropdown-toggle" href="#" data-toggle="dropdown">&#x25BC;</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2932: <a class="mobile-search-icon dropdown-toggle" href="#" data-toggle="dropdown">#language("search")</a ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3241: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_busco_trabajo;jsessionid=qkKKb9zdHY0FvLlCmfycjrn ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 19: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_busco_trabajo;jsessionid=qkKKb9zdHY0FvLlCmfycjrn ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 19: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_busco_trabajo;jsessionid=qkKKb9zdHY0FvLlCmfycjrn ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 62: <a href="http://www.gva.es"> <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo"> <span...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 290: <a accesskey="3" href="/inicio/ciudadanos" title="Aquí encontrará información y servicios dirigid ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 462: <a accesskey="4" href="/inicio/empresas" title="Aquí encontrará información y servicios dirigidos ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 612: <a accesskey="5" href="/inicio/administraciones" title="Aquí encontrará información y servicios d ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 802: <a target="_blank" href="https://www.tramita.gva.es/cdc/aplicacio/inicia.html?idioma=es" title="El e ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 144: <a href="http://www.gva.es/es/inicio/presentacion"title="Acceso a Inicio">Inicio</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 242: <a href="http://www.gva.es/es/inicio/ciudadanos"title="Acceso a Ciudadanía">Ciudadanía</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 483: <a href="https://www.ivoox.com/radio-generalitat_aj_13038488_1.html" class="ivoox" target="_blank" t ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 688: <a href="https://twitter.com/generalitat" class="twitter" target="_blank" title="El enlace se abre e ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 872: <a href="http://www.youtube.com/presidenciagva" class="youtube" target="_blank" title="El enlace se...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1062: <a href="https://www.facebook.com/generalitatvalenciana" class="facebook" target="_blank" title="El...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 1264: <a href="http://www.flickr.com/presidenciagva" class="flickr" target="_blank" title="El enlace se ab ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2454: <a href="/inicio/ciudadanos/ciu_areas_tematicas" target="_self" title="Enlace aBuscar por temas">Bus ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2599: <a href="/inicio/ciudadanos" target="_self" title="Enlace a¿Qué hago si...?">¿Qué hago si...?</a ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2720: <a href="/inicio/ciudadanos/ciu_busco_trabajo" target="_self" title="Enlace aBusco trabajo">Busco tr ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2849: <a href="/inicio/ciudadanos/ciu_familia_y_pareja" target="_self" title="Enlace aQuiero información...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3012: <a href="/inicio/ciudadanos/ciu_necesito_informacion_tributaria" target="_self" title="Enlace aNeces ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3188: <a href="/inicio/ciudadanos/ciu_necesito_ir_al_medico" target="_self" title="Enlace aNecesito ir al...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3334: <a href="/inicio/ciudadanos/ciu_quiero_acceder_a_una_vivienda" target="_self" title="Enlace aQuiero...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 3502: <a href="/inicio/ciudadanos/ciu_quiero_estudiar_y_formarme" target="_self" title="Enlace aQuiero est ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4067: <a href="/web/portal/inicio/la_administracion_valenciana" target="_self" title="Enlace aLa Generalit ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4200: <a href="http://www.president.gva.es/" target="_blank" title="El enlace se abre en una nueva ventana ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4344: <a href="/web/portal/inicio/la_administracion_valenciana/lav_org_gobierno_val" target="_self" title= ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4490: <a href="/web/portal/inicio/area_de_prensa" target="_self" title="Enlace aGabinete de Comunicación" ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4631: <a href="http://canal.gva.es" target="_blank" title="El enlace se abre en una nueva ventana a Canal...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4776: <a href="http://www.dogv.gva.es/" target="_blank" title="El enlace se abre en una nueva ventana a Di ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4919: <a href="/web/portal/inicio/servicios_linea/citas_previas" target="_self" title="Enlace aCita previa ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5047: <a href="/web/portal/inicio/atencion_ciudadano" target="_self" title="Enlace aAtención a la ciudada ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5220: <a href="http://www.chap.gva.es/ca/web/subsecretaria/contratacion" target="_blank" title="El enlace...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5420: <a href="https://sede.gva.es/es/web/sede_electronica/inicio" target="_blank" title="El enlace se abr ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5596: <a href="/web/portal/inicio/mi_opinion_cuenta" target="_self" title="Enlace aBuzón de la ciudadaní ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5738: <a href="http://www.presidencia.gva.es/web/dg-relaciones-ue" target="_blank" title="El enlace se abr ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5922: <a href="/web/portal/inicio/atencion_ciudadano/enlaces_interes" target="_self" title="Enlace aEnlace ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 6534: <a href="/web/portal/inicio/atencion_ciudadano/buscadores" target="_self" title="Enlace aGuía Prop" ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 6660: <a href="http://www.cv.gva.es/principal.do" target="_blank" title="El enlace se abre en una nueva ve ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 6803: <a href="http://www.accv.es" target="_blank" title="El enlace se abre en una nueva ventana a Firma E ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 407: <a href="/inicio/ciudadanos/ciu_busco_trabajo/ciu_bt_empleo_publico_oposiciones_y_bolsas" title="Emp ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 24: <a href="/inicio/ciudadanos/ciu_busco_trabajo/ciu_bt_oferta_de_empleo" title="Ofertas de empleo" tar ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 167: <a href="/inicio/procedimientos?id_proc=19370" target="_self" title="Enlace aEnlace aSolicitud para...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 609: <a href="/inicio/procedimientos?id_proc=19526" target="_self" title="Enlace aEnlace aEMPA01 2018- Pr ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2733: <a href="http://www.servef.gva.es/miservef" target="_blank" title="El enlace se abre en una nueva ve ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2887: <a href="http://www.servef.gva.es/centrosservef" target="_blank" title="El enlace se abre en una nue ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4055: <a href="/web/portal/inicio/mapa_web" class="" target="_self" title="Enlace aMapa Web">Mapa Web</a>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4168: <a href="/web/portal/inicio/presentacion/bie_info_nuevo_portal" class="" target="_self" title="Enlac ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4325: <a href="/web/portal/inicio/nota_legal" class="" target="_self" title="Enlace aAviso legal">Aviso le ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4446: <a href="/es/inicio/accesibilidad" class="" target="_self" title="Enlace aAccesibilidad">Accesibilid ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4566: <a href="http://pf.gva.es/" class="" target="_blank" title="El enlace se abre en una nueva ventana a ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4778: <a href="https://webmail.gva.es" class="" target="_blank" title="El enlace se abre en una nueva vent ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5014: <a href="/web/portal/inicio/xmlrss" class="" target="" title="RSS XML"><img src="/resources/v2/es/im ...(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 1, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 20, COLUMNA: 1755: <h1 class="invisible">Generalitat Valenciana</h1>(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 20, COLUMNA: 2449: <h2> <a href="/inicio/ciudadanos/ciu_areas_tematicas" target="_self" title="Enlace aBuscar por temas ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 4037: <h2>Destacamos</h2>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 6469: <h2 class="compacto">Consultas y trámites online</h2>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 7578: <h2 class="grande"> Busco trabajo<!-- <span id="icono"></span> --> </h2>(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 2660: <h2><span class="azul">Temas relacionados</span></h2>(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 20, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 1, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 1, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 20, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 1, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 20, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5430: <form action="" id="hrefFm" method="post" name="hrefFm"></form>(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 1, COLUMNA: 1608: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+
+
+		LINEA: 20, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...(PORTLET_5_WAR_portalgvaportlet)
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 20, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5430: <form action="" id="hrefFm" method="post" name="hrefFm"></form>(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 20, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5430: <form action="" id="hrefFm" method="post" name="hrefFm"></form>(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 20, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 35: <input type="hidden" name="hl" value="ES" />(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 80: <input type="hidden" name="as_sitesearch" value="gva.es" />(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 140: <input type="image" class="buscador_input_img" src="/resources/v2/im ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 20, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 20, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5430: <form action="" id="hrefFm" method="post" name="hrefFm"></form>(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 20, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5430: <form action="" id="hrefFm" method="post" name="hrefFm"></form>(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 20, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...(PORTLET_5_WAR_portalgvaportlet)       
+
+		LINEA: 20, COLUMNA: 5430: <form action="" id="hrefFm" method="post" name="hrefFm"></form>(PORTLET_5_WAR_portalgvaportlet)
+
+	

@@ -1,0 +1,31 @@
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/gestiones-contratos
+FECHA EVALUACIÓN: 2018-12-17
+
+-PROBLEMAS-
+
+Missing form label	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Noscript element	  VECES ENCONTRADO: 1
+Very small text	  VECES ENCONTRADO: 6
+A nearby image has the same alternative text	  VECES ENCONTRADO: 5
+Redundant title text	  VECES ENCONTRADO: 19
+Possible heading	  VECES ENCONTRADO: 1
+
+
+-CARACTERISTICAS-
+
+Null or empty alternative text	  VECES ENCONTRADO: 12
+Linked image with alternative text	  VECES ENCONTRADO: 2
+Fieldset	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 7
+Form label	  VECES ENCONTRADO: 2
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 22
+
+

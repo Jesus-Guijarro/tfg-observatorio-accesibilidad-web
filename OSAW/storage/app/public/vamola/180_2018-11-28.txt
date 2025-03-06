@@ -1,0 +1,568 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/agenda_accesible.nsf/Agenda/001E7DF55397BF5DC125830100429CBA?OpenDocument&lang=2&nivel=4&bdOrigen=ayuntamiento/laciudad.nsf
+FECHA EVALUACIÓN: 2018-11-28
+
+-PROBLEMAS CONOCIDOS-
+
+Ningún problema conocido encontrado.
+
+ -------------- 
+
+-PROBLEMAS POTENCIALES-
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 39, COLUMNA: 29: <a href="/ayuntamiento/eltiempo.nsf/0/5CEB45991D7314CFC1257ECB0036B634?OpenDocument&lang=2&nivel=1&s ...
+
+
+
+		LINEA: 55, COLUMNA: 8:
+
+ 
+
+		LINEA: 56, COLUMNA: 8: <a href="#buscador_cabecera">Salta al buscador cabecera</a>
+
+
+
+		LINEA: 57, COLUMNA: 8:
+
+ 1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 40, COLUMNA: 7: <img src="/ayuntamiento/eltiempo.nsf/0/34F32A418FDBB93FC1257567002AA821/$File/sol(2).gif" alt="L'Ora ...
+
+
+
+		LINEA: 45, COLUMNA: 160: <img src="/ayuntamiento/home.nsf/0/D4906D54EC62455AC1257059003BED32/$FILE/correo_ciudadano.gif" alt= ...
+
+
+
+		LINEA: 46, COLUMNA: 171: <img src="/ayuntamiento/home.nsf/0/6CD7214B3A3DA40CC1257059003BED35/$FILE/bandera-spain.jpg" alt="Ac ...
+
+
+
+		LINEA: 47, COLUMNA: 278:
+
+ 
+
+		LINEA: 86, COLUMNA: 74: <img src="/ayuntamiento/agenda_accesible.nsf/0/7E87824D6DDE62BCC1257589002C045A/$FILE/cabeceraLACIUD ...
+
+
+
+		LINEA: 139, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+
+
+		LINEA: 154, COLUMNA: 2: <img class="logo_impresion" src="/ayuntamiento/agenda_accesible.nsf/escudonuevo.gif" alt="logo Ajunt ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 139, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+
+
+		LINEA: 154, COLUMNA: 2: <img class="logo_impresion" src="/ayuntamiento/agenda_accesible.nsf/escudonuevo.gif" alt="logo Ajunt ...
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+ 
+
+		LINEA: 40, COLUMNA: 7: <img src="/ayuntamiento/eltiempo.nsf/0/34F32A418FDBB93FC1257567002AA821/$File/sol(2).gif" alt="L'Ora ...
+
+
+
+		LINEA: 45, COLUMNA: 160: <img src="/ayuntamiento/home.nsf/0/D4906D54EC62455AC1257059003BED32/$FILE/correo_ciudadano.gif" alt= ...
+
+
+
+		LINEA: 46, COLUMNA: 171: <img src="/ayuntamiento/home.nsf/0/6CD7214B3A3DA40CC1257059003BED35/$FILE/bandera-spain.jpg" alt="Ac ...
+
+
+
+		LINEA: 47, COLUMNA: 278:
+
+ 
+
+		LINEA: 139, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 40, COLUMNA: 7: <img src="/ayuntamiento/eltiempo.nsf/0/34F32A418FDBB93FC1257567002AA821/$File/sol(2).gif" alt="L'Ora ...
+
+
+
+		LINEA: 45, COLUMNA: 160: <img src="/ayuntamiento/home.nsf/0/D4906D54EC62455AC1257059003BED32/$FILE/correo_ciudadano.gif" alt= ...
+
+
+
+		LINEA: 46, COLUMNA: 171: <img src="/ayuntamiento/home.nsf/0/6CD7214B3A3DA40CC1257059003BED35/$FILE/bandera-spain.jpg" alt="Ac ...
+
+
+
+		LINEA: 47, COLUMNA: 278:
+
+ 
+
+		LINEA: 86, COLUMNA: 74: <img src="/ayuntamiento/agenda_accesible.nsf/0/7E87824D6DDE62BCC1257589002C045A/$FILE/cabeceraLACIUD ...
+
+
+
+		LINEA: 139, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+
+
+		LINEA: 154, COLUMNA: 2: <img class="logo_impresion" src="/ayuntamiento/agenda_accesible.nsf/escudonuevo.gif" alt="logo Ajunt ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 62, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_idioma.js" type="text/javascript"></script ...
+
+
+
+		LINEA: 82, COLUMNA: 11: <script type="text/javascript"> var rutaImagenesCabecera="/ayuntamiento/agenda_accesible.nsf/0/7E87 ...
+
+
+
+		LINEA: 87, COLUMNA: 4: <script type="text/javascript">document.getElementById('imagen_cabecera').src=rutaImagenesCabecera+i ...
+
+
+
+		LINEA: 135, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_menu.js" type="text/javascript"></script>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 86, COLUMNA: 74: <img src="/ayuntamiento/agenda_accesible.nsf/0/7E87824D6DDE62BCC1257589002C045A/$FILE/cabeceraLACIUD ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 40, COLUMNA: 7: <img src="/ayuntamiento/eltiempo.nsf/0/34F32A418FDBB93FC1257567002AA821/$File/sol(2).gif" alt="L'Ora ...
+
+
+
+		LINEA: 45, COLUMNA: 160: <img src="/ayuntamiento/home.nsf/0/D4906D54EC62455AC1257059003BED32/$FILE/correo_ciudadano.gif" alt= ...
+
+
+
+		LINEA: 46, COLUMNA: 171: <img src="/ayuntamiento/home.nsf/0/6CD7214B3A3DA40CC1257059003BED35/$FILE/bandera-spain.jpg" alt="Ac ...
+
+
+
+		LINEA: 47, COLUMNA: 278:
+
+ 
+
+		LINEA: 86, COLUMNA: 74: <img src="/ayuntamiento/agenda_accesible.nsf/0/7E87824D6DDE62BCC1257589002C045A/$FILE/cabeceraLACIUD ...
+
+
+
+		LINEA: 139, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+
+
+		LINEA: 154, COLUMNA: 2: <img class="logo_impresion" src="/ayuntamiento/agenda_accesible.nsf/escudonuevo.gif" alt="logo Ajunt ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 62, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_idioma.js" type="text/javascript"></script ...
+
+
+
+		LINEA: 82, COLUMNA: 11: <script type="text/javascript"> var rutaImagenesCabecera="/ayuntamiento/agenda_accesible.nsf/0/7E87 ...
+
+
+
+		LINEA: 87, COLUMNA: 4: <script type="text/javascript">document.getElementById('imagen_cabecera').src=rutaImagenesCabecera+i ...
+
+
+
+		LINEA: 135, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_menu.js" type="text/javascript"></script>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 62, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_idioma.js" type="text/javascript"></script ...
+
+
+
+		LINEA: 82, COLUMNA: 11: <script type="text/javascript"> var rutaImagenesCabecera="/ayuntamiento/agenda_accesible.nsf/0/7E87 ...
+
+
+
+		LINEA: 87, COLUMNA: 4: <script type="text/javascript">document.getElementById('imagen_cabecera').src=rutaImagenesCabecera+i ...
+
+
+
+		LINEA: 135, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_menu.js" type="text/javascript"></script>
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 7, COLUMNA: 2:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 39, COLUMNA: 29: <a href="/ayuntamiento/eltiempo.nsf/0/5CEB45991D7314CFC1257ECB0036B634?OpenDocument&lang=2&nivel=1&s ...
+
+
+
+		LINEA: 45, COLUMNA: 7: <a href="/ayuntamiento/correociudadano.nsf/Registrarse?ReadForm&amp;lang=2&amp;nivel=1&amp;seccion=0 ...
+
+
+
+		LINEA: 46, COLUMNA: 32:
+
+ 
+
+		LINEA: 47, COLUMNA: 26: <a href="/ayuntamiento/sugerencias.nsf/Web%5CPortada2013?ReadForm&amp;lang=2&amp;nivel=6&amp;bdOrige ...
+
+
+
+		LINEA: 48, COLUMNA: 35: <a href="/ayuntamiento/home.nsf/vMapaWeb2/$first?opendocument&amp;lang=2" title="Mapa web" target="_ ...
+
+
+
+		LINEA: 48, COLUMNA: 175: <a href="/ayuntamiento/home.nsf/(Portadas2)/$first?OpenDocument&amp;lang=2" title="Portada" target=" ...
+
+
+
+		LINEA: 55, COLUMNA: 8:
+
+ 
+
+		LINEA: 56, COLUMNA: 8: <a href="#buscador_cabecera">Salta al buscador cabecera</a>
+
+
+
+		LINEA: 57, COLUMNA: 8:
+
+ 
+
+		LINEA: 69, COLUMNA: 23: <a href="/ayuntamiento/ayuntamiento.nsf?OpenDatabase&amp;nivel=1&amp;lang=2" title="Ajuntament" targ ...
+
+
+
+		LINEA: 70, COLUMNA: 23: <a href="/twav/tramites_acc09.nsf/vDocumentosTituloAux/Portadilla%20Tr%C3%A1mites%20SEDE?opendocumen ...
+
+
+
+		LINEA: 71, COLUMNA: 23: <a href="/ayuntamiento/websmunicipales.nsf/vDocumentosTituloAux/Entrada%20a%20webs%20municipales?ope ...
+
+
+
+		LINEA: 72, COLUMNA: 23: <a href="/ayuntamiento/laciudad.nsf?OpenDatabase&amp;nivel=1&amp;lang=2" title="La ciutat" target="_ ...
+
+
+
+		LINEA: 73, COLUMNA: 23:
+
+ 
+
+		LINEA: 86, COLUMNA: 1: <a href="http://www.valencia.es" target="_top" title="anar a la portada"><img src="/ayuntamiento/age ...
+
+
+
+		LINEA: 95, COLUMNA: 6: <a id="subnivel_4_1" href="/ayuntamiento/laciudad.nsf/vDocumentosTituloAux/situacion%20geografica?op ...
+
+
+
+		LINEA: 97, COLUMNA: 6:
+
+ 
+
+		LINEA: 99, COLUMNA: 6: <a id="subnivel_4_2_1" href="/ayuntamiento/laciudad.nsf/vDocumentosTituloAux/poblacion%20contenido?o ...
+
+
+
+		LINEA: 101, COLUMNA: 6: <a id="subnivel_4_2_2" href="/ayuntamiento/laciudad.nsf/vDocumentosTituloAux/act%20economica%20conte ...
+
+
+
+		LINEA: 103, COLUMNA: 6: <a id="subnivel_4_2_3" href="/ayuntamiento/laciudad.nsf/vDocumentosTituloAux/Elecciones%202015?opend ...
+
+
+
+		LINEA: 107, COLUMNA: 6: <a id="subnivel_4_3" href="/ayuntamiento/laciudad.nsf/vDocumentosTituloAux/origenes?opendocument&amp ...
+
+
+
+		LINEA: 109, COLUMNA: 6: <a id="subnivel_4_4" href="/ayuntamiento/agenda_accesible.nsf/BuscarAgenda?ReadForm&amp;nivel=4&amp; ...
+
+
+
+		LINEA: 111, COLUMNA: 6: <a id="subnivel_4_5" href="/ayuntamiento/infociudad_accesible.nsf/vListadoCategoriasWeb_textointro/8 ...
+
+
+
+		LINEA: 113, COLUMNA: 6: <a id="subnivel_4_6" href="/ayuntamiento/laciudad.nsf/vDocumentosTituloAux/fiestas?opendocument&amp; ...
+
+
+
+		LINEA: 115, COLUMNA: 6: <a id="subnivel_4_7" href="/ayuntamiento/laciudad.nsf/vDocumentosTituloAux/Jardines%20hist%C3%B3rico ...
+
+
+
+		LINEA: 117, COLUMNA: 6: <a id="subnivel_4_8" href="/ayuntamiento/laciudad.nsf/vDocumentosTituloAux/Playas%20Introducci%C3%B3 ...
+
+
+
+		LINEA: 119, COLUMNA: 6: <a id="subnivel_4_9" href="/ayuntamiento/epostales.nsf/Coleccionweb?readForm&amp;Id=Valenciano&amp;C ...
+
+
+
+		LINEA: 121, COLUMNA: 6: <a id="subnivel_4_10" href="/ayuntamiento/laciudad.nsf/vDocumentosTituloAux/Ciudades%20hermanadas%20 ...
+
+
+
+		LINEA: 127, COLUMNA: 13: <a href="/ayuntamiento/infociudad_accesible.nsf/Busqueda%20(web)?ReadForm&amp;lang=2&amp;nivel=1" ta ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 33, COLUMNA: 5: <h1 class="oculta"></h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 67, COLUMNA: 5: <h2 class="oculta">Servicios de la web</h2>
+
+
+
+		LINEA: 152, COLUMNA: 2: <h2 class="bloque_titulo">AGENDA</h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 93, COLUMNA: 2: <h3 title="La ciutat" class="oculta">La ciutat</h3>
+
+
+
+		LINEA: 126, COLUMNA: 13: <h3 title="INFOCIUTAT">INFOCIUTAT</h3>
+
+
+
+		LINEA: 156, COLUMNA: 1:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 30, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="4"><div id="marco_web ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 31, COLUMNA: 1: <input type="hidden" name="seccion" id="seccion_sel" value="4">
+
+

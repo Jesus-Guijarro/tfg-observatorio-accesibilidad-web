@@ -1,0 +1,32 @@
+REPORTE PÁGINA WEB: http://www.raspeig.es/actualidad/arranca-en-las-calles-vicente-savall-y-alfonso-xiii-el-nuevo-plan-de-poda-de-ciudad/
+FECHA EVALUACIÓN: 2018-10-30
+
+PROBLEMAS
+Empty link	  VECES ENCONTRADO: 2
+Missing form label	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Device dependent event handler	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 55
+Fieldset missing legend	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 2
+Link to PDF document	  VECES ENCONTRADO: 1
+Possible heading	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 2
+Image button with alternative text	  VECES ENCONTRADO: 1
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 10
+
+
+

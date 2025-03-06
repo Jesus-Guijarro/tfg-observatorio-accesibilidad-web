@@ -1,0 +1,26 @@
+REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=20&MS=0&MN=1
+FECHA EVALUACIÓN: 2018-11-30
+
+-PROBLEMAS-
+
+-ALERTAS-
+
+Redundant title text	  VECES ENCONTRADO: 6
+Accesskey	  VECES ENCONTRADO: 10
+Device dependent event handler	  VECES ENCONTRADO: 1
+Very small text	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Alternative text	  VECES ENCONTRADO: 4
+Image button with alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 14
+Form label	  VECES ENCONTRADO: 3
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 4
+
+

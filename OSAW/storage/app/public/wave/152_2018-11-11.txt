@@ -1,0 +1,24 @@
+REPORTE PÁGINA WEB: https://www.aemps.gob.es/avisoLegal/home.htm
+FECHA EVALUACIÓN: 2018-11-11
+
+ALERTAS
+Justified text	  VECES ENCONTRADO: 33
+Noscript element	  VECES ENCONTRADO: 3
+Link to PDF document	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 6
+
+
+
+CARACTERISTICAS
+Null or empty alternative text	  VECES ENCONTRADO: 9
+Linked image with alternative text	  VECES ENCONTRADO: 10
+Element language	  VECES ENCONTRADO: 6
+Form label	  VECES ENCONTRADO: 1
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 13
+
+
+

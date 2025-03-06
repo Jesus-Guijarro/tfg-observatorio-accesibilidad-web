@@ -1,0 +1,1188 @@
+REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/cartaespana/index.htm
+FECHA EVALUACIÓN: 2018-12-22
+
+-PROBLEMAS CONOCIDOS-
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+
+		LINEA: 81, COLUMNA: 3: <h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de Espa&ntild ...    Fixed size example: color contrast exampleReal size example (11.36 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mitramiss.gob.es/cartaespana/css/estructura.css):		 h1{		font-size:15px;	font-weight:bold;	color:#3B6778;	padding-bottom:12px;	border-bottom:1px solid #C6C6C6;	text-transform:uppercase;	}   
+
+		LINEA: 277, COLUMNA: 4: <h1 class="oculto">Carta de Espa&ntilde;a Online</h1>    Fixed size example: color contrast exampleReal size example (11.36 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mitramiss.gob.es/cartaespana/css/estructura.css):		 h1{		font-size:15px;	font-weight:bold;	color:#3B6778;	padding-bottom:12px;	border-bottom:1px solid #C6C6C6;	text-transform:uppercase;	}   
+
+		LINEA: 283, COLUMNA: 6: <h2>Carta de España 752 - Noviembre 2018</h2>    Fixed size example: color contrast exampleReal size example (12 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mitramiss.gob.es/cartaespana/css/estructura.css):		#listado.destacado{		background:#3B3B3B;	display:inline-block;	padding:10px;	margin:20px 0;	width:635px;	-webkit-border-radius:15px;	-moz-border-radius:15px;	}		External CSS (http://www.mitramiss.gob.es/cartaespana/css/reset.css):		 h2{		html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,	margin:0;	padding:0;	border:0;	font-size:100%;	vertical-align:baseline;	background:transparent;	}		 div{		html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,	margin:0;	padding:0;	border:0;	font-size:100%;	vertical-align:baseline;	background:transparent;	}		 body{		html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,	margin:0;	padding:0;	border:0;	font-size:100%;	vertical-align:baseline;	background:transparent;	}   
+
+		LINEA: 296, COLUMNA: 3: <h1>Reportajes destacados</h1>    Fixed size example: color contrast exampleReal size example (11.36 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mitramiss.gob.es/cartaespana/css/estructura.css):		 h1{		font-size:15px;	font-weight:bold;	color:#3B6778;	padding-bottom:12px;	border-bottom:1px solid #C6C6C6;	text-transform:uppercase;	}   
+
+		LINEA: 5883, COLUMNA: 6: <h1 class="oculto">Pie de p&aacute;gina</h1>    Fixed size example: color contrast exampleReal size example (11.36 points): color contrast exampleCSS rules for the element: 	External CSS (http://www.mitramiss.gob.es/cartaespana/css/estructura.css):		 h1{		font-size:15px;	font-weight:bold;	color:#3B6778;	padding-bottom:12px;	border-bottom:1px solid #C6C6C6;	text-transform:uppercase;	}    	
+
+
+
+-PROBLEMAS POTENCIALES-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+
+
+		LINEA: 87, COLUMNA: 133: <img class="logo_ministerior" src="img/cabecera/logoGdE.gif" alt="Ministerio de Trabajo, Migraciones ...       
+
+		LINEA: 207, COLUMNA: 136: <img src="img/banners/logoMEYSS.jpg" alt="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior" />       
+
+		LINEA: 280, COLUMNA: 29: <img alt="portada 752" src="img/noticias/2018/noviembre/752_portadaWeb.jpg" />       
+
+		LINEA: 371, COLUMNA: 8: <img src="img/noticias/2018/noviembre/comision1.jpg" alt="La Comisión Permanente recibida en el Con ...       
+
+		LINEA: 416, COLUMNA: 8: <img src="img/noticias/2018/septiembre-octubre/Raicex1.jpg" alt="La ciencia española en el exterior ...       
+
+		LINEA: 506, COLUMNA: 8: <img src="img/noticias/2018/agosto/ladino1.jpg" alt="Ladino, una lengua &#039;castellana&#039; que l ...       
+
+		LINEA: 587, COLUMNA: 8: <img src="img/noticias/2018/julio/portico1.jpg" alt="El Pórtico de la Gloria recupera el color del...       
+
+		LINEA: 686, COLUMNA: 8: <img src="img/noticias/2018/junio/todos_web.jpg" alt="Nuevos nombramientos en el Ministerio de Traba ...       
+
+		LINEA: 722, COLUMNA: 8: <img src="img/noticias/2018/abril-mayo/pasajeros_portada.jpg" alt="Españoles en América: emigrar e ...       
+
+		LINEA: 803, COLUMNA: 8: <img src="img/noticias/2018/marzo/libros1.jpg" alt="Cocina para leer" />       
+
+		LINEA: 884, COLUMNA: 8: <img src="img/noticias/2018/marzo/congreso1.jpg" alt="III Congreso de Asociaciones Españolas en Est ...       
+
+		LINEA: 956, COLUMNA: 8: <img src="img/noticias/2018/febrero/pacto1.jpg" alt="Pacto mundial para la migración" />       
+
+		LINEA: 1010, COLUMNA: 8: <img src="img/noticias/2018/enero/refug1.jpg" alt="Acogida e integración de refugiados" />       
+
+		LINEA: 1091, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ancianos1.jpg" alt="Atención a ancianos españoles en el exte ...       
+
+		LINEA: 1163, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ballet.jpg" alt="Cuarenta aniversario del Ballet Nacional de E ...       
+
+		LINEA: 1199, COLUMNA: 8: <img src="img/noticias/2017/noviembre/Promano_web.jpg" alt="España, plató internacional de cine" / ...       
+
+		LINEA: 1289, COLUMNA: 8: <img src="img/noticias/2017/octubre/Ata1.jpg" alt="Atapuerca, cuna de los primeros europeos" />       
+
+		LINEA: 1406, COLUMNA: 8: <img src="img/noticias/2017/septiembre/pza1.jpg" alt="La Plaza Mayor de Madrid, 400 años de histori ...       
+
+		LINEA: 1532, COLUMNA: 8: <img src="img/noticias/2017/junio/hispanic1.jpg" alt="Una increíble lección de historia del arte e ...       
+
+		LINEA: 1622, COLUMNA: 8: <img src="img/noticias/2017/mayo/armada1.jpg" alt="Las huellas de “La Gran Armada” de Felipe II...       
+
+		LINEA: 1748, COLUMNA: 8: <img src="img/noticias/2017/abril/vino1.jpg" alt="El mayor viñedo del mundo" />       
+
+		LINEA: 1874, COLUMNA: 8: <img src="img/noticias/2017/marzo/victor_web.jpg" alt="“Escribe para que la gente se divierta”:...       
+
+		LINEA: 2054, COLUMNA: 8: <img src="img/noticias/2017/febrero/Consejo1.jpg" alt="El Consejo finaliza su sexto mandato" />       
+
+		LINEA: 2117, COLUMNA: 8: <img src="img/noticias/2017/enero/sefarad1.jpg" alt="Kastiyos en Sefarad: los sefardíes vuelven a c ...       
+
+		LINEA: 2324, COLUMNA: 8: <img src="img/noticias/2016/diciembre/belenes1.JPG" alt="Los belenes y la Navidad" />       
+
+		LINEA: 2360, COLUMNA: 8: <img src="img/noticias/2016/noviembre/Veracruz1.jpg" alt="Veracruz, puerta de América" />       
+
+		LINEA: 2468, COLUMNA: 8: <img src="img/noticias/2016/octubre/Alcarria_torija.jpg" alt="La Alcarria de Camilo José Cela en el ...       
+
+		LINEA: 2621, COLUMNA: 8: <img src="img/noticias/2016/septiembre/niagara1.JPG" alt="Leonardo Torres Quevedo y el transbordador ...       
+
+		LINEA: 2711, COLUMNA: 8: <img src="img/noticias/2016/septiembre/Portada_CdE_728_julio-agosto.jpg" alt="Especial cuarto centen ...       
+
+		LINEA: 2747, COLUMNA: 8: <img src="img/noticias/2016/junio/cine1.jpg" alt="Migrantes de la pantalla" />       
+
+		LINEA: 2846, COLUMNA: 8: <img src="img/noticias/2016/mayo/futbol1.jpg" alt="Atleti-Real Madrid: una sana rivalidad" />       
+
+		LINEA: 2945, COLUMNA: 8: <img src="img/noticias/2016/abril/filipinasPortada.jpg" alt="Filipinas, un poco de España en Asia"...       
+
+		LINEA: 3080, COLUMNA: 8: <img src="img/noticias/2016/marzo/CUBA1.jpg" alt="España en el corazón. Recuerdos en ámbar, desde ...       
+
+		LINEA: 3215, COLUMNA: 8: <img src="img/noticias/2016/febrero/robot1.JPG" alt="Cuando el futuro es presente" />       
+
+		LINEA: 3305, COLUMNA: 8: <img src="img/noticias/2016/enero/ciencia1.jpg" alt="Ciencia en imágenes" />       
+
+		LINEA: 3611, COLUMNA: 8: <img src="img/noticias/2015/noviembre/Alaska1.jpg" alt="SegundoLlorente, un leonés en Alaska" />       
+
+		LINEA: 3773, COLUMNA: 8: <img src="img/noticias/2015/julioagosto/63web.JPG" alt="El testimonio de los &#034;niños de Rusia&# ...       
+
+		LINEA: 3854, COLUMNA: 8: <img src="img/noticias/letras_c_d/Chico.jpg" alt="Un aula para los massai" />       
+
+		LINEA: 3890, COLUMNA: 8: <img src="img/noticias/2015/marzo/Los_que_esperan_01.jpg" alt="Seis miradas de la nueva fotografía...       
+
+		LINEA: 3926, COLUMNA: 8: <img src="img/noticias/letras_a_b/Bokoko_Drumen.jpg" alt="La huella colonial de España en Guinea Ec ...       
+
+		LINEA: 5717, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/antartida1.jpg" alt="Españoles en la Antártida" />       
+
+		LINEA: 5771, COLUMNA: 8:
+
+
+
+		LINEA: 5825, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/tanger1.jpg" alt="Tánger: la ciudad que hablaba en español ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 86, COLUMNA: 6: <img class="logo_carta" src="img/cabecera/logo_carta.gif" alt="Carta de Espa&ntilde;a Online" />       
+
+		LINEA: 87, COLUMNA: 133: <img class="logo_ministerior" src="img/cabecera/logoGdE.gif" alt="Ministerio de Trabajo, Migraciones ...       
+
+		LINEA: 207, COLUMNA: 136: <img src="img/banners/logoMEYSS.jpg" alt="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior" />       
+
+		LINEA: 210, COLUMNA: 173: <img src="img/banners/banner_CEXT.jpg" alt="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior. El por ...       
+
+		LINEA: 280, COLUMNA: 29: <img alt="portada 752" src="img/noticias/2018/noviembre/752_portadaWeb.jpg" />       
+
+		LINEA: 371, COLUMNA: 8: <img src="img/noticias/2018/noviembre/comision1.jpg" alt="La Comisión Permanente recibida en el Con ...       
+
+		LINEA: 416, COLUMNA: 8: <img src="img/noticias/2018/septiembre-octubre/Raicex1.jpg" alt="La ciencia española en el exterior ...       
+
+		LINEA: 506, COLUMNA: 8: <img src="img/noticias/2018/agosto/ladino1.jpg" alt="Ladino, una lengua &#039;castellana&#039; que l ...       
+
+		LINEA: 587, COLUMNA: 8: <img src="img/noticias/2018/julio/portico1.jpg" alt="El Pórtico de la Gloria recupera el color del...       
+
+		LINEA: 686, COLUMNA: 8: <img src="img/noticias/2018/junio/todos_web.jpg" alt="Nuevos nombramientos en el Ministerio de Traba ...       
+
+		LINEA: 722, COLUMNA: 8: <img src="img/noticias/2018/abril-mayo/pasajeros_portada.jpg" alt="Españoles en América: emigrar e ...       
+
+		LINEA: 803, COLUMNA: 8: <img src="img/noticias/2018/marzo/libros1.jpg" alt="Cocina para leer" />       
+
+		LINEA: 884, COLUMNA: 8: <img src="img/noticias/2018/marzo/congreso1.jpg" alt="III Congreso de Asociaciones Españolas en Est ...       
+
+		LINEA: 956, COLUMNA: 8: <img src="img/noticias/2018/febrero/pacto1.jpg" alt="Pacto mundial para la migración" />       
+
+		LINEA: 1010, COLUMNA: 8: <img src="img/noticias/2018/enero/refug1.jpg" alt="Acogida e integración de refugiados" />       
+
+		LINEA: 1091, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ancianos1.jpg" alt="Atención a ancianos españoles en el exte ...       
+
+		LINEA: 1163, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ballet.jpg" alt="Cuarenta aniversario del Ballet Nacional de E ...       
+
+		LINEA: 1199, COLUMNA: 8: <img src="img/noticias/2017/noviembre/Promano_web.jpg" alt="España, plató internacional de cine" / ...       
+
+		LINEA: 1289, COLUMNA: 8: <img src="img/noticias/2017/octubre/Ata1.jpg" alt="Atapuerca, cuna de los primeros europeos" />       
+
+		LINEA: 1406, COLUMNA: 8: <img src="img/noticias/2017/septiembre/pza1.jpg" alt="La Plaza Mayor de Madrid, 400 años de histori ...       
+
+		LINEA: 1532, COLUMNA: 8: <img src="img/noticias/2017/junio/hispanic1.jpg" alt="Una increíble lección de historia del arte e ...       
+
+		LINEA: 1622, COLUMNA: 8: <img src="img/noticias/2017/mayo/armada1.jpg" alt="Las huellas de “La Gran Armada” de Felipe II...       
+
+		LINEA: 1748, COLUMNA: 8: <img src="img/noticias/2017/abril/vino1.jpg" alt="El mayor viñedo del mundo" />       
+
+		LINEA: 1874, COLUMNA: 8: <img src="img/noticias/2017/marzo/victor_web.jpg" alt="“Escribe para que la gente se divierta”:...       
+
+		LINEA: 2054, COLUMNA: 8: <img src="img/noticias/2017/febrero/Consejo1.jpg" alt="El Consejo finaliza su sexto mandato" />       
+
+		LINEA: 2117, COLUMNA: 8: <img src="img/noticias/2017/enero/sefarad1.jpg" alt="Kastiyos en Sefarad: los sefardíes vuelven a c ...       
+
+		LINEA: 2324, COLUMNA: 8: <img src="img/noticias/2016/diciembre/belenes1.JPG" alt="Los belenes y la Navidad" />       
+
+		LINEA: 2360, COLUMNA: 8: <img src="img/noticias/2016/noviembre/Veracruz1.jpg" alt="Veracruz, puerta de América" />       
+
+		LINEA: 2468, COLUMNA: 8: <img src="img/noticias/2016/octubre/Alcarria_torija.jpg" alt="La Alcarria de Camilo José Cela en el ...       
+
+		LINEA: 2621, COLUMNA: 8: <img src="img/noticias/2016/septiembre/niagara1.JPG" alt="Leonardo Torres Quevedo y el transbordador ...       
+
+		LINEA: 2711, COLUMNA: 8: <img src="img/noticias/2016/septiembre/Portada_CdE_728_julio-agosto.jpg" alt="Especial cuarto centen ...       
+
+		LINEA: 2747, COLUMNA: 8: <img src="img/noticias/2016/junio/cine1.jpg" alt="Migrantes de la pantalla" />       
+
+		LINEA: 2846, COLUMNA: 8: <img src="img/noticias/2016/mayo/futbol1.jpg" alt="Atleti-Real Madrid: una sana rivalidad" />       
+
+		LINEA: 2945, COLUMNA: 8: <img src="img/noticias/2016/abril/filipinasPortada.jpg" alt="Filipinas, un poco de España en Asia"...       
+
+		LINEA: 3080, COLUMNA: 8: <img src="img/noticias/2016/marzo/CUBA1.jpg" alt="España en el corazón. Recuerdos en ámbar, desde ...       
+
+		LINEA: 3215, COLUMNA: 8: <img src="img/noticias/2016/febrero/robot1.JPG" alt="Cuando el futuro es presente" />       
+
+		LINEA: 3305, COLUMNA: 8: <img src="img/noticias/2016/enero/ciencia1.jpg" alt="Ciencia en imágenes" />       
+
+		LINEA: 3611, COLUMNA: 8: <img src="img/noticias/2015/noviembre/Alaska1.jpg" alt="SegundoLlorente, un leonés en Alaska" />       
+
+		LINEA: 3773, COLUMNA: 8: <img src="img/noticias/2015/julioagosto/63web.JPG" alt="El testimonio de los &#034;niños de Rusia&# ...       
+
+		LINEA: 3854, COLUMNA: 8: <img src="img/noticias/letras_c_d/Chico.jpg" alt="Un aula para los massai" />       
+
+		LINEA: 3890, COLUMNA: 8: <img src="img/noticias/2015/marzo/Los_que_esperan_01.jpg" alt="Seis miradas de la nueva fotografía...       
+
+		LINEA: 3926, COLUMNA: 8: <img src="img/noticias/letras_a_b/Bokoko_Drumen.jpg" alt="La huella colonial de España en Guinea Ec ...       
+
+		LINEA: 5717, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/antartida1.jpg" alt="Españoles en la Antártida" />       
+
+		LINEA: 5771, COLUMNA: 8:
+
+
+
+		LINEA: 5825, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/tanger1.jpg" alt="Tánger: la ciudad que hablaba en español ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 280, COLUMNA: 29: <img alt="portada 752" src="img/noticias/2018/noviembre/752_portadaWeb.jpg" />       
+
+		LINEA: 371, COLUMNA: 8: <img src="img/noticias/2018/noviembre/comision1.jpg" alt="La Comisión Permanente recibida en el Con ...       
+
+		LINEA: 416, COLUMNA: 8: <img src="img/noticias/2018/septiembre-octubre/Raicex1.jpg" alt="La ciencia española en el exterior ...       
+
+		LINEA: 506, COLUMNA: 8: <img src="img/noticias/2018/agosto/ladino1.jpg" alt="Ladino, una lengua &#039;castellana&#039; que l ...       
+
+		LINEA: 587, COLUMNA: 8: <img src="img/noticias/2018/julio/portico1.jpg" alt="El Pórtico de la Gloria recupera el color del...       
+
+		LINEA: 686, COLUMNA: 8: <img src="img/noticias/2018/junio/todos_web.jpg" alt="Nuevos nombramientos en el Ministerio de Traba ...       
+
+		LINEA: 722, COLUMNA: 8: <img src="img/noticias/2018/abril-mayo/pasajeros_portada.jpg" alt="Españoles en América: emigrar e ...       
+
+		LINEA: 803, COLUMNA: 8: <img src="img/noticias/2018/marzo/libros1.jpg" alt="Cocina para leer" />       
+
+		LINEA: 884, COLUMNA: 8: <img src="img/noticias/2018/marzo/congreso1.jpg" alt="III Congreso de Asociaciones Españolas en Est ...       
+
+		LINEA: 956, COLUMNA: 8: <img src="img/noticias/2018/febrero/pacto1.jpg" alt="Pacto mundial para la migración" />       
+
+		LINEA: 1010, COLUMNA: 8: <img src="img/noticias/2018/enero/refug1.jpg" alt="Acogida e integración de refugiados" />       
+
+		LINEA: 1091, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ancianos1.jpg" alt="Atención a ancianos españoles en el exte ...       
+
+		LINEA: 1163, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ballet.jpg" alt="Cuarenta aniversario del Ballet Nacional de E ...       
+
+		LINEA: 1199, COLUMNA: 8: <img src="img/noticias/2017/noviembre/Promano_web.jpg" alt="España, plató internacional de cine" / ...       
+
+		LINEA: 1289, COLUMNA: 8: <img src="img/noticias/2017/octubre/Ata1.jpg" alt="Atapuerca, cuna de los primeros europeos" />       
+
+		LINEA: 1406, COLUMNA: 8: <img src="img/noticias/2017/septiembre/pza1.jpg" alt="La Plaza Mayor de Madrid, 400 años de histori ...       
+
+		LINEA: 1532, COLUMNA: 8: <img src="img/noticias/2017/junio/hispanic1.jpg" alt="Una increíble lección de historia del arte e ...       
+
+		LINEA: 1622, COLUMNA: 8: <img src="img/noticias/2017/mayo/armada1.jpg" alt="Las huellas de “La Gran Armada” de Felipe II...       
+
+		LINEA: 1748, COLUMNA: 8: <img src="img/noticias/2017/abril/vino1.jpg" alt="El mayor viñedo del mundo" />       
+
+		LINEA: 1874, COLUMNA: 8: <img src="img/noticias/2017/marzo/victor_web.jpg" alt="“Escribe para que la gente se divierta”:...       
+
+		LINEA: 2054, COLUMNA: 8: <img src="img/noticias/2017/febrero/Consejo1.jpg" alt="El Consejo finaliza su sexto mandato" />       
+
+		LINEA: 2117, COLUMNA: 8: <img src="img/noticias/2017/enero/sefarad1.jpg" alt="Kastiyos en Sefarad: los sefardíes vuelven a c ...       
+
+		LINEA: 2324, COLUMNA: 8: <img src="img/noticias/2016/diciembre/belenes1.JPG" alt="Los belenes y la Navidad" />       
+
+		LINEA: 2360, COLUMNA: 8: <img src="img/noticias/2016/noviembre/Veracruz1.jpg" alt="Veracruz, puerta de América" />       
+
+		LINEA: 2468, COLUMNA: 8: <img src="img/noticias/2016/octubre/Alcarria_torija.jpg" alt="La Alcarria de Camilo José Cela en el ...       
+
+		LINEA: 2621, COLUMNA: 8: <img src="img/noticias/2016/septiembre/niagara1.JPG" alt="Leonardo Torres Quevedo y el transbordador ...       
+
+		LINEA: 2711, COLUMNA: 8: <img src="img/noticias/2016/septiembre/Portada_CdE_728_julio-agosto.jpg" alt="Especial cuarto centen ...       
+
+		LINEA: 2747, COLUMNA: 8: <img src="img/noticias/2016/junio/cine1.jpg" alt="Migrantes de la pantalla" />       
+
+		LINEA: 2846, COLUMNA: 8: <img src="img/noticias/2016/mayo/futbol1.jpg" alt="Atleti-Real Madrid: una sana rivalidad" />       
+
+		LINEA: 2945, COLUMNA: 8: <img src="img/noticias/2016/abril/filipinasPortada.jpg" alt="Filipinas, un poco de España en Asia"...       
+
+		LINEA: 3080, COLUMNA: 8: <img src="img/noticias/2016/marzo/CUBA1.jpg" alt="España en el corazón. Recuerdos en ámbar, desde ...       
+
+		LINEA: 3215, COLUMNA: 8: <img src="img/noticias/2016/febrero/robot1.JPG" alt="Cuando el futuro es presente" />       
+
+		LINEA: 3305, COLUMNA: 8: <img src="img/noticias/2016/enero/ciencia1.jpg" alt="Ciencia en imágenes" />       
+
+		LINEA: 3611, COLUMNA: 8: <img src="img/noticias/2015/noviembre/Alaska1.jpg" alt="SegundoLlorente, un leonés en Alaska" />       
+
+		LINEA: 3773, COLUMNA: 8: <img src="img/noticias/2015/julioagosto/63web.JPG" alt="El testimonio de los &#034;niños de Rusia&# ...       
+
+		LINEA: 3854, COLUMNA: 8: <img src="img/noticias/letras_c_d/Chico.jpg" alt="Un aula para los massai" />       
+
+		LINEA: 3890, COLUMNA: 8: <img src="img/noticias/2015/marzo/Los_que_esperan_01.jpg" alt="Seis miradas de la nueva fotografía...       
+
+		LINEA: 3926, COLUMNA: 8: <img src="img/noticias/letras_a_b/Bokoko_Drumen.jpg" alt="La huella colonial de España en Guinea Ec ...       
+
+		LINEA: 5717, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/antartida1.jpg" alt="Españoles en la Antártida" />       
+
+		LINEA: 5771, COLUMNA: 8:
+
+
+
+		LINEA: 5825, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/tanger1.jpg" alt="Tánger: la ciudad que hablaba en español ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 86, COLUMNA: 6: <img class="logo_carta" src="img/cabecera/logo_carta.gif" alt="Carta de Espa&ntilde;a Online" />       
+
+		LINEA: 87, COLUMNA: 133: <img class="logo_ministerior" src="img/cabecera/logoGdE.gif" alt="Ministerio de Trabajo, Migraciones ...       
+
+		LINEA: 207, COLUMNA: 136: <img src="img/banners/logoMEYSS.jpg" alt="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior" />       
+
+		LINEA: 210, COLUMNA: 173: <img src="img/banners/banner_CEXT.jpg" alt="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior. El por ...       
+
+		LINEA: 280, COLUMNA: 29: <img alt="portada 752" src="img/noticias/2018/noviembre/752_portadaWeb.jpg" />       
+
+		LINEA: 371, COLUMNA: 8: <img src="img/noticias/2018/noviembre/comision1.jpg" alt="La Comisión Permanente recibida en el Con ...       
+
+		LINEA: 416, COLUMNA: 8: <img src="img/noticias/2018/septiembre-octubre/Raicex1.jpg" alt="La ciencia española en el exterior ...       
+
+		LINEA: 506, COLUMNA: 8: <img src="img/noticias/2018/agosto/ladino1.jpg" alt="Ladino, una lengua &#039;castellana&#039; que l ...       
+
+		LINEA: 587, COLUMNA: 8: <img src="img/noticias/2018/julio/portico1.jpg" alt="El Pórtico de la Gloria recupera el color del...       
+
+		LINEA: 686, COLUMNA: 8: <img src="img/noticias/2018/junio/todos_web.jpg" alt="Nuevos nombramientos en el Ministerio de Traba ...       
+
+		LINEA: 722, COLUMNA: 8: <img src="img/noticias/2018/abril-mayo/pasajeros_portada.jpg" alt="Españoles en América: emigrar e ...       
+
+		LINEA: 803, COLUMNA: 8: <img src="img/noticias/2018/marzo/libros1.jpg" alt="Cocina para leer" />       
+
+		LINEA: 884, COLUMNA: 8: <img src="img/noticias/2018/marzo/congreso1.jpg" alt="III Congreso de Asociaciones Españolas en Est ...       
+
+		LINEA: 956, COLUMNA: 8: <img src="img/noticias/2018/febrero/pacto1.jpg" alt="Pacto mundial para la migración" />       
+
+		LINEA: 1010, COLUMNA: 8: <img src="img/noticias/2018/enero/refug1.jpg" alt="Acogida e integración de refugiados" />       
+
+		LINEA: 1091, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ancianos1.jpg" alt="Atención a ancianos españoles en el exte ...       
+
+		LINEA: 1163, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ballet.jpg" alt="Cuarenta aniversario del Ballet Nacional de E ...       
+
+		LINEA: 1199, COLUMNA: 8: <img src="img/noticias/2017/noviembre/Promano_web.jpg" alt="España, plató internacional de cine" / ...       
+
+		LINEA: 1289, COLUMNA: 8: <img src="img/noticias/2017/octubre/Ata1.jpg" alt="Atapuerca, cuna de los primeros europeos" />       
+
+		LINEA: 1406, COLUMNA: 8: <img src="img/noticias/2017/septiembre/pza1.jpg" alt="La Plaza Mayor de Madrid, 400 años de histori ...       
+
+		LINEA: 1532, COLUMNA: 8: <img src="img/noticias/2017/junio/hispanic1.jpg" alt="Una increíble lección de historia del arte e ...       
+
+		LINEA: 1622, COLUMNA: 8: <img src="img/noticias/2017/mayo/armada1.jpg" alt="Las huellas de “La Gran Armada” de Felipe II...       
+
+		LINEA: 1748, COLUMNA: 8: <img src="img/noticias/2017/abril/vino1.jpg" alt="El mayor viñedo del mundo" />       
+
+		LINEA: 1874, COLUMNA: 8: <img src="img/noticias/2017/marzo/victor_web.jpg" alt="“Escribe para que la gente se divierta”:...       
+
+		LINEA: 2054, COLUMNA: 8: <img src="img/noticias/2017/febrero/Consejo1.jpg" alt="El Consejo finaliza su sexto mandato" />       
+
+		LINEA: 2117, COLUMNA: 8: <img src="img/noticias/2017/enero/sefarad1.jpg" alt="Kastiyos en Sefarad: los sefardíes vuelven a c ...       
+
+		LINEA: 2324, COLUMNA: 8: <img src="img/noticias/2016/diciembre/belenes1.JPG" alt="Los belenes y la Navidad" />       
+
+		LINEA: 2360, COLUMNA: 8: <img src="img/noticias/2016/noviembre/Veracruz1.jpg" alt="Veracruz, puerta de América" />       
+
+		LINEA: 2468, COLUMNA: 8: <img src="img/noticias/2016/octubre/Alcarria_torija.jpg" alt="La Alcarria de Camilo José Cela en el ...       
+
+		LINEA: 2621, COLUMNA: 8: <img src="img/noticias/2016/septiembre/niagara1.JPG" alt="Leonardo Torres Quevedo y el transbordador ...       
+
+		LINEA: 2711, COLUMNA: 8: <img src="img/noticias/2016/septiembre/Portada_CdE_728_julio-agosto.jpg" alt="Especial cuarto centen ...       
+
+		LINEA: 2747, COLUMNA: 8: <img src="img/noticias/2016/junio/cine1.jpg" alt="Migrantes de la pantalla" />       
+
+		LINEA: 2846, COLUMNA: 8: <img src="img/noticias/2016/mayo/futbol1.jpg" alt="Atleti-Real Madrid: una sana rivalidad" />       
+
+		LINEA: 2945, COLUMNA: 8: <img src="img/noticias/2016/abril/filipinasPortada.jpg" alt="Filipinas, un poco de España en Asia"...       
+
+		LINEA: 3080, COLUMNA: 8: <img src="img/noticias/2016/marzo/CUBA1.jpg" alt="España en el corazón. Recuerdos en ámbar, desde ...       
+
+		LINEA: 3215, COLUMNA: 8: <img src="img/noticias/2016/febrero/robot1.JPG" alt="Cuando el futuro es presente" />       
+
+		LINEA: 3305, COLUMNA: 8: <img src="img/noticias/2016/enero/ciencia1.jpg" alt="Ciencia en imágenes" />       
+
+		LINEA: 3611, COLUMNA: 8: <img src="img/noticias/2015/noviembre/Alaska1.jpg" alt="SegundoLlorente, un leonés en Alaska" />       
+
+		LINEA: 3773, COLUMNA: 8: <img src="img/noticias/2015/julioagosto/63web.JPG" alt="El testimonio de los &#034;niños de Rusia&# ...       
+
+		LINEA: 3854, COLUMNA: 8: <img src="img/noticias/letras_c_d/Chico.jpg" alt="Un aula para los massai" />       
+
+		LINEA: 3890, COLUMNA: 8: <img src="img/noticias/2015/marzo/Los_que_esperan_01.jpg" alt="Seis miradas de la nueva fotografía...       
+
+		LINEA: 3926, COLUMNA: 8: <img src="img/noticias/letras_a_b/Bokoko_Drumen.jpg" alt="La huella colonial de España en Guinea Ec ...       
+
+		LINEA: 5717, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/antartida1.jpg" alt="Españoles en la Antártida" />       
+
+		LINEA: 5771, COLUMNA: 8:
+
+
+
+		LINEA: 5825, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/tanger1.jpg" alt="Tánger: la ciudad que hablaba en español ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 5899, COLUMNA: 2: <script type="text/javascript">	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]|| ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 86, COLUMNA: 6: <img class="logo_carta" src="img/cabecera/logo_carta.gif" alt="Carta de Espa&ntilde;a Online" />       
+
+		LINEA: 87, COLUMNA: 133: <img class="logo_ministerior" src="img/cabecera/logoGdE.gif" alt="Ministerio de Trabajo, Migraciones ...       
+
+		LINEA: 207, COLUMNA: 136: <img src="img/banners/logoMEYSS.jpg" alt="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior" />       
+
+		LINEA: 210, COLUMNA: 173: <img src="img/banners/banner_CEXT.jpg" alt="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior. El por ...       
+
+		LINEA: 280, COLUMNA: 29: <img alt="portada 752" src="img/noticias/2018/noviembre/752_portadaWeb.jpg" />       
+
+		LINEA: 371, COLUMNA: 8: <img src="img/noticias/2018/noviembre/comision1.jpg" alt="La Comisión Permanente recibida en el Con ...       
+
+		LINEA: 416, COLUMNA: 8: <img src="img/noticias/2018/septiembre-octubre/Raicex1.jpg" alt="La ciencia española en el exterior ...       
+
+		LINEA: 506, COLUMNA: 8: <img src="img/noticias/2018/agosto/ladino1.jpg" alt="Ladino, una lengua &#039;castellana&#039; que l ...       
+
+		LINEA: 587, COLUMNA: 8: <img src="img/noticias/2018/julio/portico1.jpg" alt="El Pórtico de la Gloria recupera el color del...       
+
+		LINEA: 686, COLUMNA: 8: <img src="img/noticias/2018/junio/todos_web.jpg" alt="Nuevos nombramientos en el Ministerio de Traba ...       
+
+		LINEA: 722, COLUMNA: 8: <img src="img/noticias/2018/abril-mayo/pasajeros_portada.jpg" alt="Españoles en América: emigrar e ...       
+
+		LINEA: 803, COLUMNA: 8: <img src="img/noticias/2018/marzo/libros1.jpg" alt="Cocina para leer" />       
+
+		LINEA: 884, COLUMNA: 8: <img src="img/noticias/2018/marzo/congreso1.jpg" alt="III Congreso de Asociaciones Españolas en Est ...       
+
+		LINEA: 956, COLUMNA: 8: <img src="img/noticias/2018/febrero/pacto1.jpg" alt="Pacto mundial para la migración" />       
+
+		LINEA: 1010, COLUMNA: 8: <img src="img/noticias/2018/enero/refug1.jpg" alt="Acogida e integración de refugiados" />       
+
+		LINEA: 1091, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ancianos1.jpg" alt="Atención a ancianos españoles en el exte ...       
+
+		LINEA: 1163, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ballet.jpg" alt="Cuarenta aniversario del Ballet Nacional de E ...       
+
+		LINEA: 1199, COLUMNA: 8: <img src="img/noticias/2017/noviembre/Promano_web.jpg" alt="España, plató internacional de cine" / ...       
+
+		LINEA: 1289, COLUMNA: 8: <img src="img/noticias/2017/octubre/Ata1.jpg" alt="Atapuerca, cuna de los primeros europeos" />       
+
+		LINEA: 1406, COLUMNA: 8: <img src="img/noticias/2017/septiembre/pza1.jpg" alt="La Plaza Mayor de Madrid, 400 años de histori ...       
+
+		LINEA: 1532, COLUMNA: 8: <img src="img/noticias/2017/junio/hispanic1.jpg" alt="Una increíble lección de historia del arte e ...       
+
+		LINEA: 1622, COLUMNA: 8: <img src="img/noticias/2017/mayo/armada1.jpg" alt="Las huellas de “La Gran Armada” de Felipe II...       
+
+		LINEA: 1748, COLUMNA: 8: <img src="img/noticias/2017/abril/vino1.jpg" alt="El mayor viñedo del mundo" />       
+
+		LINEA: 1874, COLUMNA: 8: <img src="img/noticias/2017/marzo/victor_web.jpg" alt="“Escribe para que la gente se divierta”:...       
+
+		LINEA: 2054, COLUMNA: 8: <img src="img/noticias/2017/febrero/Consejo1.jpg" alt="El Consejo finaliza su sexto mandato" />       
+
+		LINEA: 2117, COLUMNA: 8: <img src="img/noticias/2017/enero/sefarad1.jpg" alt="Kastiyos en Sefarad: los sefardíes vuelven a c ...       
+
+		LINEA: 2324, COLUMNA: 8: <img src="img/noticias/2016/diciembre/belenes1.JPG" alt="Los belenes y la Navidad" />       
+
+		LINEA: 2360, COLUMNA: 8: <img src="img/noticias/2016/noviembre/Veracruz1.jpg" alt="Veracruz, puerta de América" />       
+
+		LINEA: 2468, COLUMNA: 8: <img src="img/noticias/2016/octubre/Alcarria_torija.jpg" alt="La Alcarria de Camilo José Cela en el ...       
+
+		LINEA: 2621, COLUMNA: 8: <img src="img/noticias/2016/septiembre/niagara1.JPG" alt="Leonardo Torres Quevedo y el transbordador ...       
+
+		LINEA: 2711, COLUMNA: 8: <img src="img/noticias/2016/septiembre/Portada_CdE_728_julio-agosto.jpg" alt="Especial cuarto centen ...       
+
+		LINEA: 2747, COLUMNA: 8: <img src="img/noticias/2016/junio/cine1.jpg" alt="Migrantes de la pantalla" />       
+
+		LINEA: 2846, COLUMNA: 8: <img src="img/noticias/2016/mayo/futbol1.jpg" alt="Atleti-Real Madrid: una sana rivalidad" />       
+
+		LINEA: 2945, COLUMNA: 8: <img src="img/noticias/2016/abril/filipinasPortada.jpg" alt="Filipinas, un poco de España en Asia"...       
+
+		LINEA: 3080, COLUMNA: 8: <img src="img/noticias/2016/marzo/CUBA1.jpg" alt="España en el corazón. Recuerdos en ámbar, desde ...       
+
+		LINEA: 3215, COLUMNA: 8: <img src="img/noticias/2016/febrero/robot1.JPG" alt="Cuando el futuro es presente" />       
+
+		LINEA: 3305, COLUMNA: 8: <img src="img/noticias/2016/enero/ciencia1.jpg" alt="Ciencia en imágenes" />       
+
+		LINEA: 3611, COLUMNA: 8: <img src="img/noticias/2015/noviembre/Alaska1.jpg" alt="SegundoLlorente, un leonés en Alaska" />       
+
+		LINEA: 3773, COLUMNA: 8: <img src="img/noticias/2015/julioagosto/63web.JPG" alt="El testimonio de los &#034;niños de Rusia&# ...       
+
+		LINEA: 3854, COLUMNA: 8: <img src="img/noticias/letras_c_d/Chico.jpg" alt="Un aula para los massai" />       
+
+		LINEA: 3890, COLUMNA: 8: <img src="img/noticias/2015/marzo/Los_que_esperan_01.jpg" alt="Seis miradas de la nueva fotografía...       
+
+		LINEA: 3926, COLUMNA: 8: <img src="img/noticias/letras_a_b/Bokoko_Drumen.jpg" alt="La huella colonial de España en Guinea Ec ...       
+
+		LINEA: 5717, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/antartida1.jpg" alt="Españoles en la Antártida" />       
+
+		LINEA: 5771, COLUMNA: 8:
+
+
+
+		LINEA: 5825, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/tanger1.jpg" alt="Tánger: la ciudad que hablaba en español ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 86, COLUMNA: 6: <img class="logo_carta" src="img/cabecera/logo_carta.gif" alt="Carta de Espa&ntilde;a Online" />       
+
+		LINEA: 87, COLUMNA: 133: <img class="logo_ministerior" src="img/cabecera/logoGdE.gif" alt="Ministerio de Trabajo, Migraciones ...       
+
+		LINEA: 207, COLUMNA: 136: <img src="img/banners/logoMEYSS.jpg" alt="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior" />       
+
+		LINEA: 210, COLUMNA: 173: <img src="img/banners/banner_CEXT.jpg" alt="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior. El por ...       
+
+		LINEA: 280, COLUMNA: 29: <img alt="portada 752" src="img/noticias/2018/noviembre/752_portadaWeb.jpg" />       
+
+		LINEA: 371, COLUMNA: 8: <img src="img/noticias/2018/noviembre/comision1.jpg" alt="La Comisión Permanente recibida en el Con ...       
+
+		LINEA: 416, COLUMNA: 8: <img src="img/noticias/2018/septiembre-octubre/Raicex1.jpg" alt="La ciencia española en el exterior ...       
+
+		LINEA: 506, COLUMNA: 8: <img src="img/noticias/2018/agosto/ladino1.jpg" alt="Ladino, una lengua &#039;castellana&#039; que l ...       
+
+		LINEA: 587, COLUMNA: 8: <img src="img/noticias/2018/julio/portico1.jpg" alt="El Pórtico de la Gloria recupera el color del...       
+
+		LINEA: 686, COLUMNA: 8: <img src="img/noticias/2018/junio/todos_web.jpg" alt="Nuevos nombramientos en el Ministerio de Traba ...       
+
+		LINEA: 722, COLUMNA: 8: <img src="img/noticias/2018/abril-mayo/pasajeros_portada.jpg" alt="Españoles en América: emigrar e ...       
+
+		LINEA: 803, COLUMNA: 8: <img src="img/noticias/2018/marzo/libros1.jpg" alt="Cocina para leer" />       
+
+		LINEA: 884, COLUMNA: 8: <img src="img/noticias/2018/marzo/congreso1.jpg" alt="III Congreso de Asociaciones Españolas en Est ...       
+
+		LINEA: 956, COLUMNA: 8: <img src="img/noticias/2018/febrero/pacto1.jpg" alt="Pacto mundial para la migración" />       
+
+		LINEA: 1010, COLUMNA: 8: <img src="img/noticias/2018/enero/refug1.jpg" alt="Acogida e integración de refugiados" />       
+
+		LINEA: 1091, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ancianos1.jpg" alt="Atención a ancianos españoles en el exte ...       
+
+		LINEA: 1163, COLUMNA: 8: <img src="img/noticias/2017/diciembre/Ballet.jpg" alt="Cuarenta aniversario del Ballet Nacional de E ...       
+
+		LINEA: 1199, COLUMNA: 8: <img src="img/noticias/2017/noviembre/Promano_web.jpg" alt="España, plató internacional de cine" / ...       
+
+		LINEA: 1289, COLUMNA: 8: <img src="img/noticias/2017/octubre/Ata1.jpg" alt="Atapuerca, cuna de los primeros europeos" />       
+
+		LINEA: 1406, COLUMNA: 8: <img src="img/noticias/2017/septiembre/pza1.jpg" alt="La Plaza Mayor de Madrid, 400 años de histori ...       
+
+		LINEA: 1532, COLUMNA: 8: <img src="img/noticias/2017/junio/hispanic1.jpg" alt="Una increíble lección de historia del arte e ...       
+
+		LINEA: 1622, COLUMNA: 8: <img src="img/noticias/2017/mayo/armada1.jpg" alt="Las huellas de “La Gran Armada” de Felipe II...       
+
+		LINEA: 1748, COLUMNA: 8: <img src="img/noticias/2017/abril/vino1.jpg" alt="El mayor viñedo del mundo" />       
+
+		LINEA: 1874, COLUMNA: 8: <img src="img/noticias/2017/marzo/victor_web.jpg" alt="“Escribe para que la gente se divierta”:...       
+
+		LINEA: 2054, COLUMNA: 8: <img src="img/noticias/2017/febrero/Consejo1.jpg" alt="El Consejo finaliza su sexto mandato" />       
+
+		LINEA: 2117, COLUMNA: 8: <img src="img/noticias/2017/enero/sefarad1.jpg" alt="Kastiyos en Sefarad: los sefardíes vuelven a c ...       
+
+		LINEA: 2324, COLUMNA: 8: <img src="img/noticias/2016/diciembre/belenes1.JPG" alt="Los belenes y la Navidad" />       
+
+		LINEA: 2360, COLUMNA: 8: <img src="img/noticias/2016/noviembre/Veracruz1.jpg" alt="Veracruz, puerta de América" />       
+
+		LINEA: 2468, COLUMNA: 8: <img src="img/noticias/2016/octubre/Alcarria_torija.jpg" alt="La Alcarria de Camilo José Cela en el ...       
+
+		LINEA: 2621, COLUMNA: 8: <img src="img/noticias/2016/septiembre/niagara1.JPG" alt="Leonardo Torres Quevedo y el transbordador ...       
+
+		LINEA: 2711, COLUMNA: 8: <img src="img/noticias/2016/septiembre/Portada_CdE_728_julio-agosto.jpg" alt="Especial cuarto centen ...       
+
+		LINEA: 2747, COLUMNA: 8: <img src="img/noticias/2016/junio/cine1.jpg" alt="Migrantes de la pantalla" />       
+
+		LINEA: 2846, COLUMNA: 8: <img src="img/noticias/2016/mayo/futbol1.jpg" alt="Atleti-Real Madrid: una sana rivalidad" />       
+
+		LINEA: 2945, COLUMNA: 8: <img src="img/noticias/2016/abril/filipinasPortada.jpg" alt="Filipinas, un poco de España en Asia"...       
+
+		LINEA: 3080, COLUMNA: 8: <img src="img/noticias/2016/marzo/CUBA1.jpg" alt="España en el corazón. Recuerdos en ámbar, desde ...       
+
+		LINEA: 3215, COLUMNA: 8: <img src="img/noticias/2016/febrero/robot1.JPG" alt="Cuando el futuro es presente" />       
+
+		LINEA: 3305, COLUMNA: 8: <img src="img/noticias/2016/enero/ciencia1.jpg" alt="Ciencia en imágenes" />       
+
+		LINEA: 3611, COLUMNA: 8: <img src="img/noticias/2015/noviembre/Alaska1.jpg" alt="SegundoLlorente, un leonés en Alaska" />       
+
+		LINEA: 3773, COLUMNA: 8: <img src="img/noticias/2015/julioagosto/63web.JPG" alt="El testimonio de los &#034;niños de Rusia&# ...       
+
+		LINEA: 3854, COLUMNA: 8: <img src="img/noticias/letras_c_d/Chico.jpg" alt="Un aula para los massai" />       
+
+		LINEA: 3890, COLUMNA: 8: <img src="img/noticias/2015/marzo/Los_que_esperan_01.jpg" alt="Seis miradas de la nueva fotografía...       
+
+		LINEA: 3926, COLUMNA: 8: <img src="img/noticias/letras_a_b/Bokoko_Drumen.jpg" alt="La huella colonial de España en Guinea Ec ...       
+
+		LINEA: 5717, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/antartida1.jpg" alt="Españoles en la Antártida" />       
+
+		LINEA: 5771, COLUMNA: 8:
+
+
+
+		LINEA: 5825, COLUMNA: 8: <img src="img/noticias/2016/recuperadas/tanger1.jpg" alt="Tánger: la ciudad que hablaba en español ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 5899, COLUMNA: 2: <script type="text/javascript">	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]|| ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 5899, COLUMNA: 2: <script type="text/javascript">	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]|| ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 40, COLUMNA: 2: <title>Noticias de En portada. Portal Carta de Espa&ntilde;a. Ministerio de Trabajo, Migraciones y S ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 85, COLUMNA: 5: <a href="index.htm" title="Carta de Espa&ntilde;a Online">		<img class="logo_carta" src="img/cab ...       
+
+		LINEA: 87, COLUMNA: 5: <a href="http://www.mitramiss.gob.es" title="Ministerio de Trabajo, Migraciones y Seguridad Social....       
+
+		LINEA: 129, COLUMNA: 3: <a href="es/online/index.htm">S&oacute;lo online</a>       
+
+		LINEA: 133, COLUMNA: 3: <a href="es/index.htm">En portada</a>       
+
+		LINEA: 137, COLUMNA: 3: <a href="es/panorama/index.htm">Panorama</a>       
+
+		LINEA: 141, COLUMNA: 3: <a href="es/consejogeneral/index.htm">Consejo General</a>       
+
+		LINEA: 145, COLUMNA: 3: <a href="es/enelmundo/index.htm">Espa&ntilde;oles en el mundo</a>       
+
+		LINEA: 149, COLUMNA: 3: <a href="es/entrevista/index.htm">Entrevista</a>       
+
+		LINEA: 153, COLUMNA: 3: <a href="es/culturaysociedad/index.htm">Cultura y sociedad</a>       
+
+		LINEA: 157, COLUMNA: 3: <a href="es/deportes/index.htm">Deportes</a>       
+
+		LINEA: 161, COLUMNA: 3: <a href="es/comeryviajar/index.htm">Comer y viajar</a>       
+
+		LINEA: 165, COLUMNA: 3: <a href="es/memgrafica/index.htm">Memoria gr&aacute;fica</a>       
+
+		LINEA: 169, COLUMNA: 3: <a href="es/lectoresycentros/index.htm">Lectores y centros</a>       
+
+		LINEA: 173, COLUMNA: 3: <a href="es/colaboradores/index.htm">@colaboradores</a>       
+
+		LINEA: 207, COLUMNA: 3: <a href="http://www.ciudadaniaexterior.mitramiss.gob.es" title="Ciudadan&iacute;a Espa&ntilde;ola en ...       
+
+		LINEA: 210, COLUMNA: 3: <a href="http://www.cext.es" title="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior. El portal de l ...       
+
+		LINEA: 271, COLUMNA: 4: <a href="http://www.ciudadaniaexterior.mitramiss.gob.es/es/destacados/carta/index.htm" title="Hemero ...       
+
+		LINEA: 273, COLUMNA: 4: <a href="http://archivografico.xn--cartadeespaa-khb.es" title="Archivo gr&aacute;fico de Carta de Es ...       
+
+		LINEA: 285, COLUMNA: 9: <a href="es/noticias/Noticia_0494.htm">La Comisión Permanente del CGCEE recibida en el Congreso</a>       
+
+		LINEA: 286, COLUMNA: 9: <a href="es/noticias/Noticia_0493.htm">Plan de Retorno a España</a>       
+
+		LINEA: 287, COLUMNA: 9: <a href="es/noticias/Noticia_0497.htm">Músicos españoles en Londres</a>       
+
+		LINEA: 288, COLUMNA: 9: <a href="es/noticias/Noticia_0496.htm">Entrevista con el director del Museo del Palacio de Bellas Ar ...       
+
+		LINEA: 289, COLUMNA: 9: <a href="es/noticias/Noticia_0495.htm">Muere Eduardo Arrollo, un artista radical</a>       
+
+		LINEA: 290, COLUMNA: 26: <a href="documentos/752_web.pdf">Descargar PDF </a>       
+
+		LINEA: 375, COLUMNA: 9: <a href="es/noticias/Noticia_0494.htm">La Comisión Permanente recibida en el Congreso de los Diputa ...       
+
+		LINEA: 420, COLUMNA: 9: <a href="es/noticias/Noticia_0491.htm">La ciencia española en el exterior avanza</a>       
+
+		LINEA: 510, COLUMNA: 9: <a href="es/noticias/Noticia_0484.htm">Ladino, una lengua &#039;castellana&#039; que lucha por sobre ...       
+
+		LINEA: 591, COLUMNA: 9: <a href="es/noticias/Noticia_0477.htm">El Pórtico de la Gloria recupera el color del románico</a>       
+
+		LINEA: 690, COLUMNA: 9: <a href="es/noticias/Noticia_0041.htm">Nuevos nombramientos en el Ministerio de Trabajo, Migraciones ...       
+
+		LINEA: 726, COLUMNA: 9: <a href="es/noticias/Noticia_0474.htm">Españoles en América: emigrar en tercera clase</a>       
+
+		LINEA: 807, COLUMNA: 9: <a href="es/noticias/Noticia_0468.htm">Cocina para leer</a>       
+
+		LINEA: 888, COLUMNA: 9: <a href="es/noticias/Noticia_0141.htm">III Congreso de Asociaciones Españolas en Estados Unidos y P ...       
+
+		LINEA: 960, COLUMNA: 9: <a href="es/noticias/Noticia_0461.htm">Pacto mundial para la migración</a>       
+
+		LINEA: 1014, COLUMNA: 9: <a href="es/noticias/Noticia_0458.htm">Acogida e integración de refugiados</a>       
+
+		LINEA: 1095, COLUMNA: 9: <a href="es/noticias/Noticia_0455.htm">Atención a ancianos españoles en el exterior</a>       
+
+		LINEA: 1167, COLUMNA: 9: <a href="es/noticias/Noticia_0450.htm">Cuarenta aniversario del Ballet Nacional de España</a>       
+
+		LINEA: 1203, COLUMNA: 9: <a href="es/noticias/Noticia_0448.htm">España, plató internacional de cine</a>       
+
+		LINEA: 1293, COLUMNA: 9: <a href="es/noticias/Noticia_0440.htm">Atapuerca, cuna de los primeros europeos</a>       
+
+		LINEA: 1410, COLUMNA: 9: <a href="es/noticias/Noticia_0432.htm">La Plaza Mayor de Madrid, 400 años de historia</a>       
+
+		LINEA: 1536, COLUMNA: 9: <a href="es/noticias/Noticia_0421.htm">Una increíble lección de historia del arte español</a>       
+
+		LINEA: 1626, COLUMNA: 9: <a href="es/noticias/Noticia_0414.htm">Las huellas de “La Gran Armada” de Felipe II en Irlanda</ ...       
+
+		LINEA: 1752, COLUMNA: 9: <a href="es/noticias/Noticia_0308.htm">El mayor viñedo del mundo</a>       
+
+		LINEA: 1878, COLUMNA: 9: <a href="es/noticias/Noticia_0256.htm">“Escribe para que la gente se divierta”: la edad de oro d ...       
+
+		LINEA: 2058, COLUMNA: 9: <a href="es/noticias/Noticia_0139.htm">El Consejo finaliza su sexto mandato</a>       
+
+		LINEA: 2121, COLUMNA: 9: <a href="es/noticias/Noticia_0109.htm">Kastiyos en Sefarad: los sefardíes vuelven a casa</a>       
+
+		LINEA: 2328, COLUMNA: 9: <a href="es/noticias/Noticia_0033.htm">Los belenes y la Navidad</a>       
+
+		LINEA: 2364, COLUMNA: 9: <a href="es/noticias/Noticia_0409.htm">Veracruz, puerta de América</a>       
+
+		LINEA: 2472, COLUMNA: 9: <a href="es/noticias/Noticia_0399.htm">La Alcarria de Camilo José Cela en el siglo XXI</a>       
+
+		LINEA: 2625, COLUMNA: 9: <a href="es/noticias/Noticia_0384.htm">Leonardo Torres Quevedo y el transbordador del Niagara</a>       
+
+		LINEA: 2715, COLUMNA: 9: <a href="es/noticias/Noticia_0377.htm">Especial cuarto centenario de la muerte de Cervantes</a>       
+
+		LINEA: 2751, COLUMNA: 9: <a href="es/noticias/Noticia_0375.htm">Migrantes de la pantalla</a>       
+
+		LINEA: 2850, COLUMNA: 9: <a href="es/noticias/Noticia_0295.htm">Atleti-Real Madrid: una sana rivalidad</a>       
+
+		LINEA: 2949, COLUMNA: 9: <a href="es/noticias/Noticia_0057.htm">Filipinas, un poco de España en Asia</a>       
+
+		LINEA: 3084, COLUMNA: 9: <a href="es/noticias/Noticia_0360.htm">España en el corazón. Recuerdos en ámbar, desde Cuba</a>       
+
+		LINEA: 3219, COLUMNA: 9: <a href="es/noticias/Noticia_0345.htm">Cuando el futuro es presente</a>       
+
+		LINEA: 3309, COLUMNA: 9: <a href="es/noticias/Noticia_0315.htm">Ciencia en imágenes</a>       
+
+		LINEA: 3615, COLUMNA: 9: <a href="es/noticias/Noticia_0288.htm">SegundoLlorente, un leonés en Alaska</a>       
+
+		LINEA: 3777, COLUMNA: 9: <a href="es/noticias/Noticia_0250.htm">El testimonio de los &#034;niños de Rusia&#034;</a>       
+
+		LINEA: 3858, COLUMNA: 9: <a href="es/noticias/Noticia_0248.htm">Un aula para los massai</a>       
+
+		LINEA: 3894, COLUMNA: 9: <a href="es/noticias/Noticia_0247.htm">Seis miradas de la nueva fotografía española</a>       
+
+		LINEA: 3930, COLUMNA: 9: <a href="es/noticias/Noticia_0245.htm">La huella colonial de España en Guinea Ecuatorial</a>       
+
+		LINEA: 5721, COLUMNA: 9: <a href="es/noticias/Noticia_0324.htm">Españoles en la Antártida</a>       
+
+		LINEA: 5775, COLUMNA: 9: <a href="es/noticias/Noticia_0325.htm">Caminos del mar: los barcos de la emigración</a>       
+
+		LINEA: 5829, COLUMNA: 9: <a href="es/noticias/Noticia_0279.htm">Tánger: la ciudad que hablaba en español</a>       
+
+		LINEA: 5887, COLUMNA: 12: <a href="es/extras/accesibilidad/index.htm">Accesibilidad</a>       
+
+		LINEA: 5888, COLUMNA: 12: <a href="mailto:cartaesp@meyss.es">Contacto Redacci&oacute;n</a>       
+
+		LINEA: 5889, COLUMNA: 12: <a href="mailto:cartaespsus@meyss.es">Contacto Suscripciones</a>       
+
+		LINEA: 5890, COLUMNA: 12: <a href="es/extras/aviso/index.htm">Aviso legal y privacidad</a>       
+
+		LINEA: 5891, COLUMNA: 12: <a href="es/extras/mapaweb/index.htm">Mapa del sitio</a>
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 85, COLUMNA: 5: <a href="index.htm" title="Carta de Espa&ntilde;a Online">		<img class="logo_carta" src="img/cab ...       
+
+		LINEA: 87, COLUMNA: 5: <a href="http://www.mitramiss.gob.es" title="Ministerio de Trabajo, Migraciones y Seguridad Social....       
+
+		LINEA: 129, COLUMNA: 3: <a href="es/online/index.htm">S&oacute;lo online</a>       
+
+		LINEA: 133, COLUMNA: 3: <a href="es/index.htm">En portada</a>       
+
+		LINEA: 137, COLUMNA: 3: <a href="es/panorama/index.htm">Panorama</a>       
+
+		LINEA: 141, COLUMNA: 3: <a href="es/consejogeneral/index.htm">Consejo General</a>       
+
+		LINEA: 145, COLUMNA: 3: <a href="es/enelmundo/index.htm">Espa&ntilde;oles en el mundo</a>       
+
+		LINEA: 149, COLUMNA: 3: <a href="es/entrevista/index.htm">Entrevista</a>       
+
+		LINEA: 153, COLUMNA: 3: <a href="es/culturaysociedad/index.htm">Cultura y sociedad</a>       
+
+		LINEA: 157, COLUMNA: 3: <a href="es/deportes/index.htm">Deportes</a>       
+
+		LINEA: 161, COLUMNA: 3: <a href="es/comeryviajar/index.htm">Comer y viajar</a>       
+
+		LINEA: 165, COLUMNA: 3: <a href="es/memgrafica/index.htm">Memoria gr&aacute;fica</a>       
+
+		LINEA: 169, COLUMNA: 3: <a href="es/lectoresycentros/index.htm">Lectores y centros</a>       
+
+		LINEA: 173, COLUMNA: 3: <a href="es/colaboradores/index.htm">@colaboradores</a>       
+
+		LINEA: 207, COLUMNA: 3: <a href="http://www.ciudadaniaexterior.mitramiss.gob.es" title="Ciudadan&iacute;a Espa&ntilde;ola en ...       
+
+		LINEA: 210, COLUMNA: 3: <a href="http://www.cext.es" title="Ciudadan&iacute;a Espa&ntilde;ola en el Exterior. El portal de l ...       
+
+		LINEA: 271, COLUMNA: 4: <a href="http://www.ciudadaniaexterior.mitramiss.gob.es/es/destacados/carta/index.htm" title="Hemero ...       
+
+		LINEA: 273, COLUMNA: 4: <a href="http://archivografico.xn--cartadeespaa-khb.es" title="Archivo gr&aacute;fico de Carta de Es ...       
+
+		LINEA: 285, COLUMNA: 9: <a href="es/noticias/Noticia_0494.htm">La Comisión Permanente del CGCEE recibida en el Congreso</a>       
+
+		LINEA: 286, COLUMNA: 9: <a href="es/noticias/Noticia_0493.htm">Plan de Retorno a España</a>       
+
+		LINEA: 287, COLUMNA: 9: <a href="es/noticias/Noticia_0497.htm">Músicos españoles en Londres</a>       
+
+		LINEA: 288, COLUMNA: 9: <a href="es/noticias/Noticia_0496.htm">Entrevista con el director del Museo del Palacio de Bellas Ar ...       
+
+		LINEA: 289, COLUMNA: 9: <a href="es/noticias/Noticia_0495.htm">Muere Eduardo Arrollo, un artista radical</a>       
+
+		LINEA: 290, COLUMNA: 26: <a href="documentos/752_web.pdf">Descargar PDF </a>       
+
+		LINEA: 375, COLUMNA: 9: <a href="es/noticias/Noticia_0494.htm">La Comisión Permanente recibida en el Congreso de los Diputa ...       
+
+		LINEA: 420, COLUMNA: 9: <a href="es/noticias/Noticia_0491.htm">La ciencia española en el exterior avanza</a>       
+
+		LINEA: 510, COLUMNA: 9: <a href="es/noticias/Noticia_0484.htm">Ladino, una lengua &#039;castellana&#039; que lucha por sobre ...       
+
+		LINEA: 591, COLUMNA: 9: <a href="es/noticias/Noticia_0477.htm">El Pórtico de la Gloria recupera el color del románico</a>       
+
+		LINEA: 690, COLUMNA: 9: <a href="es/noticias/Noticia_0041.htm">Nuevos nombramientos en el Ministerio de Trabajo, Migraciones ...       
+
+		LINEA: 726, COLUMNA: 9: <a href="es/noticias/Noticia_0474.htm">Españoles en América: emigrar en tercera clase</a>       
+
+		LINEA: 807, COLUMNA: 9: <a href="es/noticias/Noticia_0468.htm">Cocina para leer</a>       
+
+		LINEA: 888, COLUMNA: 9: <a href="es/noticias/Noticia_0141.htm">III Congreso de Asociaciones Españolas en Estados Unidos y P ...       
+
+		LINEA: 960, COLUMNA: 9: <a href="es/noticias/Noticia_0461.htm">Pacto mundial para la migración</a>       
+
+		LINEA: 1014, COLUMNA: 9: <a href="es/noticias/Noticia_0458.htm">Acogida e integración de refugiados</a>       
+
+		LINEA: 1095, COLUMNA: 9: <a href="es/noticias/Noticia_0455.htm">Atención a ancianos españoles en el exterior</a>       
+
+		LINEA: 1167, COLUMNA: 9: <a href="es/noticias/Noticia_0450.htm">Cuarenta aniversario del Ballet Nacional de España</a>       
+
+		LINEA: 1203, COLUMNA: 9: <a href="es/noticias/Noticia_0448.htm">España, plató internacional de cine</a>       
+
+		LINEA: 1293, COLUMNA: 9: <a href="es/noticias/Noticia_0440.htm">Atapuerca, cuna de los primeros europeos</a>       
+
+		LINEA: 1410, COLUMNA: 9: <a href="es/noticias/Noticia_0432.htm">La Plaza Mayor de Madrid, 400 años de historia</a>       
+
+		LINEA: 1536, COLUMNA: 9: <a href="es/noticias/Noticia_0421.htm">Una increíble lección de historia del arte español</a>       
+
+		LINEA: 1626, COLUMNA: 9: <a href="es/noticias/Noticia_0414.htm">Las huellas de “La Gran Armada” de Felipe II en Irlanda</ ...       
+
+		LINEA: 1752, COLUMNA: 9: <a href="es/noticias/Noticia_0308.htm">El mayor viñedo del mundo</a>       
+
+		LINEA: 1878, COLUMNA: 9: <a href="es/noticias/Noticia_0256.htm">“Escribe para que la gente se divierta”: la edad de oro d ...       
+
+		LINEA: 2058, COLUMNA: 9: <a href="es/noticias/Noticia_0139.htm">El Consejo finaliza su sexto mandato</a>       
+
+		LINEA: 2121, COLUMNA: 9: <a href="es/noticias/Noticia_0109.htm">Kastiyos en Sefarad: los sefardíes vuelven a casa</a>       
+
+		LINEA: 2328, COLUMNA: 9: <a href="es/noticias/Noticia_0033.htm">Los belenes y la Navidad</a>       
+
+		LINEA: 2364, COLUMNA: 9: <a href="es/noticias/Noticia_0409.htm">Veracruz, puerta de América</a>       
+
+		LINEA: 2472, COLUMNA: 9: <a href="es/noticias/Noticia_0399.htm">La Alcarria de Camilo José Cela en el siglo XXI</a>       
+
+		LINEA: 2625, COLUMNA: 9: <a href="es/noticias/Noticia_0384.htm">Leonardo Torres Quevedo y el transbordador del Niagara</a>       
+
+		LINEA: 2715, COLUMNA: 9: <a href="es/noticias/Noticia_0377.htm">Especial cuarto centenario de la muerte de Cervantes</a>       
+
+		LINEA: 2751, COLUMNA: 9: <a href="es/noticias/Noticia_0375.htm">Migrantes de la pantalla</a>       
+
+		LINEA: 2850, COLUMNA: 9: <a href="es/noticias/Noticia_0295.htm">Atleti-Real Madrid: una sana rivalidad</a>       
+
+		LINEA: 2949, COLUMNA: 9: <a href="es/noticias/Noticia_0057.htm">Filipinas, un poco de España en Asia</a>       
+
+		LINEA: 3084, COLUMNA: 9: <a href="es/noticias/Noticia_0360.htm">España en el corazón. Recuerdos en ámbar, desde Cuba</a>       
+
+		LINEA: 3219, COLUMNA: 9: <a href="es/noticias/Noticia_0345.htm">Cuando el futuro es presente</a>       
+
+		LINEA: 3309, COLUMNA: 9: <a href="es/noticias/Noticia_0315.htm">Ciencia en imágenes</a>       
+
+		LINEA: 3615, COLUMNA: 9: <a href="es/noticias/Noticia_0288.htm">SegundoLlorente, un leonés en Alaska</a>       
+
+		LINEA: 3777, COLUMNA: 9: <a href="es/noticias/Noticia_0250.htm">El testimonio de los &#034;niños de Rusia&#034;</a>       
+
+		LINEA: 3858, COLUMNA: 9: <a href="es/noticias/Noticia_0248.htm">Un aula para los massai</a>       
+
+		LINEA: 3894, COLUMNA: 9: <a href="es/noticias/Noticia_0247.htm">Seis miradas de la nueva fotografía española</a>       
+
+		LINEA: 3930, COLUMNA: 9: <a href="es/noticias/Noticia_0245.htm">La huella colonial de España en Guinea Ecuatorial</a>       
+
+		LINEA: 5721, COLUMNA: 9: <a href="es/noticias/Noticia_0324.htm">Españoles en la Antártida</a>       
+
+		LINEA: 5775, COLUMNA: 9: <a href="es/noticias/Noticia_0325.htm">Caminos del mar: los barcos de la emigración</a>       
+
+		LINEA: 5829, COLUMNA: 9: <a href="es/noticias/Noticia_0279.htm">Tánger: la ciudad que hablaba en español</a>       
+
+		LINEA: 5887, COLUMNA: 12: <a href="es/extras/accesibilidad/index.htm">Accesibilidad</a>       
+
+		LINEA: 5888, COLUMNA: 12: <a href="mailto:cartaesp@meyss.es">Contacto Redacci&oacute;n</a>       
+
+		LINEA: 5889, COLUMNA: 12: <a href="mailto:cartaespsus@meyss.es">Contacto Suscripciones</a>       
+
+		LINEA: 5890, COLUMNA: 12: <a href="es/extras/aviso/index.htm">Aviso legal y privacidad</a>       
+
+		LINEA: 5891, COLUMNA: 12: <a href="es/extras/mapaweb/index.htm">Mapa del sitio</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 81, COLUMNA: 3: <h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de Espa&ntild ...       
+
+		LINEA: 277, COLUMNA: 4: <h1 class="oculto">Carta de Espa&ntilde;a Online</h1>       
+
+		LINEA: 296, COLUMNA: 3: <h1>Reportajes destacados</h1>       
+
+		LINEA: 5883, COLUMNA: 6: <h1 class="oculto">Pie de p&aacute;gina</h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 102, COLUMNA: 3: <h2 class="oculto">Men&uacute; principal</h2>       
+
+		LINEA: 180, COLUMNA: 3: <h2 class="oculto">Colaboradores</h2>       
+
+		LINEA: 268, COLUMNA: 2: <h2 class="oculto">Men&uacute; horizontal</h2>       
+
+		LINEA: 283, COLUMNA: 6: <h2>Carta de España 752 - Noviembre 2018</h2>       
+
+		LINEA: 375, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0494.htm">La Comisión Permanente recibida en el Congreso de los Di ...       
+
+		LINEA: 420, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0491.htm">La ciencia española en el exterior avanza</a></h2>       
+
+		LINEA: 510, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0484.htm">Ladino, una lengua &#039;castellana&#039; que lucha por s ...       
+
+		LINEA: 591, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0477.htm">El Pórtico de la Gloria recupera el color del románico< ...       
+
+		LINEA: 690, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0041.htm">Nuevos nombramientos en el Ministerio de Trabajo, Migraci ...       
+
+		LINEA: 726, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0474.htm">Españoles en América: emigrar en tercera clase</a></h2>       
+
+		LINEA: 807, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0468.htm">Cocina para leer</a></h2>       
+
+		LINEA: 888, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0141.htm">III Congreso de Asociaciones Españolas en Estados Unidos ...       
+
+		LINEA: 960, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0461.htm">Pacto mundial para la migración</a></h2>       
+
+		LINEA: 1014, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0458.htm">Acogida e integración de refugiados</a></h2>       
+
+		LINEA: 1095, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0455.htm">Atención a ancianos españoles en el exterior</a></h2>       
+
+		LINEA: 1167, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0450.htm">Cuarenta aniversario del Ballet Nacional de España</a></ ...       
+
+		LINEA: 1203, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0448.htm">España, plató internacional de cine</a></h2>       
+
+		LINEA: 1293, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0440.htm">Atapuerca, cuna de los primeros europeos</a></h2>       
+
+		LINEA: 1410, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0432.htm">La Plaza Mayor de Madrid, 400 años de historia</a></h2>       
+
+		LINEA: 1536, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0421.htm">Una increíble lección de historia del arte español</a> ...       
+
+		LINEA: 1626, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0414.htm">Las huellas de “La Gran Armada” de Felipe II en Irlan ...       
+
+		LINEA: 1752, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0308.htm">El mayor viñedo del mundo</a></h2>       
+
+		LINEA: 1878, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0256.htm">“Escribe para que la gente se divierta”: la edad de o ...       
+
+		LINEA: 2058, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0139.htm">El Consejo finaliza su sexto mandato</a></h2>       
+
+		LINEA: 2121, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0109.htm">Kastiyos en Sefarad: los sefardíes vuelven a casa</a></h ...       
+
+		LINEA: 2328, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0033.htm">Los belenes y la Navidad</a></h2>       
+
+		LINEA: 2364, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0409.htm">Veracruz, puerta de América</a></h2>       
+
+		LINEA: 2472, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0399.htm">La Alcarria de Camilo José Cela en el siglo XXI</a></h2>       
+
+		LINEA: 2625, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0384.htm">Leonardo Torres Quevedo y el transbordador del Niagara</a ...       
+
+		LINEA: 2715, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0377.htm">Especial cuarto centenario de la muerte de Cervantes</a>< ...       
+
+		LINEA: 2751, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0375.htm">Migrantes de la pantalla</a></h2>       
+
+		LINEA: 2850, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0295.htm">Atleti-Real Madrid: una sana rivalidad</a></h2>       
+
+		LINEA: 2949, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0057.htm">Filipinas, un poco de España en Asia</a></h2>       
+
+		LINEA: 3084, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0360.htm">España en el corazón. Recuerdos en ámbar, desde Cuba</ ...       
+
+		LINEA: 3219, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0345.htm">Cuando el futuro es presente</a></h2>       
+
+		LINEA: 3309, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0315.htm">Ciencia en imágenes</a></h2>       
+
+		LINEA: 3615, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0288.htm">SegundoLlorente, un leonés en Alaska</a></h2>       
+
+		LINEA: 3777, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0250.htm">El testimonio de los &#034;niños de Rusia&#034;</a></h2>       
+
+		LINEA: 3858, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0248.htm">Un aula para los massai</a></h2>       
+
+		LINEA: 3894, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0247.htm">Seis miradas de la nueva fotografía española</a></h2>       
+
+		LINEA: 3930, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0245.htm">La huella colonial de España en Guinea Ecuatorial</a></h ...       
+
+		LINEA: 5721, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0324.htm">Españoles en la Antártida</a></h2>       
+
+		LINEA: 5775, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0325.htm">Caminos del mar: los barcos de la emigración</a></h2>       
+
+		LINEA: 5829, COLUMNA: 5: <h2><a href="es/noticias/Noticia_0279.htm">Tánger: la ciudad que hablaba en español</a></h2>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 80, COLUMNA: 2: <body>		<h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Portal Carta de E ...
+
+	

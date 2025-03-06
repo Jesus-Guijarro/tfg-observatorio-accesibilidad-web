@@ -1,0 +1,33 @@
+REPORTE PÁGINA WEB: https://web.ua.es/es/centros-departamentos-e-institutos.html
+FECHA EVALUACIÓN: 2018-12-02
+
+-PROBLEMAS-
+
+Empty link	  VECES ENCONTRADO: 41
+Missing alternative text	  VECES ENCONTRADO: 13
+
+
+-ALERTAS-
+
+Link to PDF document	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Tabindex	  VECES ENCONTRADO: 3
+Redundant link	  VECES ENCONTRADO: 2
+Missing fieldset	  VECES ENCONTRADO: 2
+Redundant alternative text	  VECES ENCONTRADO: 7
+Broken same-page link	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Linked image with alternative text	  VECES ENCONTRADO: 12
+Form label	  VECES ENCONTRADO: 12
+Alternative text	  VECES ENCONTRADO: 5
+Null or empty alternative text	  VECES ENCONTRADO: 12
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 42
+
+

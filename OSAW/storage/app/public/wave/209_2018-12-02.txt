@@ -1,0 +1,37 @@
+REPORTE PÁGINA WEB: https://www.uv.es/uvnoticies
+FECHA EVALUACIÓN: 2018-12-02
+
+-PROBLEMAS-
+
+Empty heading	  VECES ENCONTRADO: 12
+Missing alternative text	  VECES ENCONTRADO: 1
+Missing form label	  VECES ENCONTRADO: 1
+Image map area missing alternative text	  VECES ENCONTRADO: 1
+Empty link	  VECES ENCONTRADO: 136
+Empty button	  VECES ENCONTRADO: 22
+Linked image missing alternative text	  VECES ENCONTRADO: 18
+
+
+-ALERTAS-
+
+Redundant title text	  VECES ENCONTRADO: 60
+Fieldset missing legend	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 4
+Justified text	  VECES ENCONTRADO: 8
+A nearby image has the same alternative text	  VECES ENCONTRADO: 10
+Redundant link	  VECES ENCONTRADO: 137
+Redundant alternative text	  VECES ENCONTRADO: 1
+
+
+-CARACTERISTICAS-
+
+Alternative text	  VECES ENCONTRADO: 1
+Image map with alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 139
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 184
+
+

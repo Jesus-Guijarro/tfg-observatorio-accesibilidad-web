@@ -1,0 +1,22 @@
+REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/es/el_ministerio/index.htm
+FECHA EVALUACIÓN: 2018-11-24
+
+ALERTAS
+Possible heading	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 5
+Image button with alternative text	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 1
+Element language	  VECES ENCONTRADO: 5
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+
+

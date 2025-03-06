@@ -1,0 +1,1142 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Inicio?opendocument&lang=2&nivel=1
+FECHA EVALUACIÓN: 2018-12-19
+
+-PROBLEMAS CONOCIDOS-
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 38: Header nesting - header following h2 is incorrect.  
+
+	REPARAR:> Modify the header levels so only an h3 or any header less than h3 follows h2.      
+
+		LINEA: 299, COLUMNA: 1: <h2 class="bloque_titulo"></h2>
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 36, COLUMNA: 29: <a href="/ayuntamiento/eltiempo.nsf/0/5CEB45991D7314CFC1257ECB0036B634?OpenDocument&lang=2&nivel=1&s ...
+
+
+
+		LINEA: 52, COLUMNA: 8:
+
+ 
+
+		LINEA: 53, COLUMNA: 8: <a href="#buscador_cabecera">Salta al buscador cabecera</a>
+
+
+
+		LINEA: 54, COLUMNA: 8:
+
+ 
+
+		LINEA: 121, COLUMNA: 6: <a id="subnivel_3_6_3" href="http://www.ciclointegraldelagua.com" target="_blank" title="Cicle Integ ...
+
+
+
+		LINEA: 127, COLUMNA: 6:
+
+ 
+
+		LINEA: 137, COLUMNA: 6: <a id="subnivel_3_6_12" href="http://www.tutoriasenred.com" target="_blank" title="Tutories en Xarxa ...
+
+
+
+		LINEA: 139, COLUMNA: 6:
+
+ 
+
+		LINEA: 152, COLUMNA: 6:
+
+ 
+
+		LINEA: 154, COLUMNA: 6:
+
+ 
+
+		LINEA: 158, COLUMNA: 6: <a id="subnivel_3_1_5" href="http://universitatpopular.com/va/" target="_blank" title="Universitat P ...
+
+
+
+		LINEA: 182, COLUMNA: 6:
+
+ 
+
+		LINEA: 184, COLUMNA: 6: <a id="subnivel_3_2_7" href="http://www.fallas.com" target="_blank" title="Junta Central Fallera">Ju ...
+
+
+
+		LINEA: 186, COLUMNA: 6: <a id="subnivel_3_2_8" href="http://www.juntacentralvicentina.com" target="_blank" title="Junta Cent ...
+
+
+
+		LINEA: 188, COLUMNA: 6: <a id="subnivel_3_2_9" href="http://www.semanasantamarinera.org" target="_blank" title="Junta Major...
+
+
+
+		LINEA: 190, COLUMNA: 6: <a id="subnivel_3_2_10" href="https://www.lamutant.com/val/inici/" target="_blank" title="La Mutant" ...
+
+
+
+		LINEA: 192, COLUMNA: 6: <a id="subnivel_3_2_11" href="http://www.lasnaves.com" target="_blank" title="Las Naves">Las Naves</ ...
+
+
+
+		LINEA: 194, COLUMNA: 6:
+
+ 
+
+		LINEA: 198, COLUMNA: 6: <a id="subnivel_3_2_14" href="http://www.teatreelmusical.es" target="_blank" title="Teatre El Musica ...
+
+
+
+		LINEA: 206, COLUMNA: 6: <a id="subnivel_3_3_2" href="http://www.lasnaves.com/?lang=ca " target="_blank" title="Las Naves">La ...
+
+
+
+		LINEA: 208, COLUMNA: 6:
+
+ 
+
+		LINEA: 212, COLUMNA: 6: <a id="subnivel_3_3_5" href="http://www.mercavalencia.es/" target="_blank" title="Mercavalencia">Mer ...
+
+
+
+		LINEA: 216, COLUMNA: 6: <a id="subnivel_3_3_7" href="http://www.palcongres-vlc.com" target="_blank" title="Palau de Congress ...
+
+
+
+		LINEA: 220, COLUMNA: 6: <a id="subnivel_3_3_9" href="https://www.visitvalencia.com/va" target="_blank" title="Turismo Valenc ...
+
+
+
+		LINEA: 222, COLUMNA: 6:
+
+ 
+
+		LINEA: 224, COLUMNA: 6:
+
+ 
+
+		LINEA: 238, COLUMNA: 6: <a id="subnivel_3_5_1" href="http://www.juventud-valencia.es/" target="_blank" title="Joventut">Jove ...
+
+
+
+		LINEA: 258, COLUMNA: 6: <a id="subnivel_3_9_1" href="http://www.emtvalencia.es" target="_blank" title="EMT">EMT</a>
+
+
+
+		LINEA: 262, COLUMNA: 6:
+
+ 
+
+		LINEA: 268, COLUMNA: 6: <a id="subnivel_3_10_1" href="http://www.aumsa.es" target="_blank" title="AUMSA">AUMSA</a>
+
+
+
+		LINEA: 352, COLUMNA: 1: <a href = "/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/E5EBF9394CCCEB10C125779D003F527E?OpenDocumen ...
+
+
+
+		LINEA: 380, COLUMNA: 4: <a class="validador" href="http://www.w3.org/WAI/WCAG1AA-Conformance" target="_blank" title="Directr ...
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 312, COLUMNA: 41: <img src="/ayuntamiento/OMIDC.nsf/0/2ABA2E9810632FE2C1257E120030E4F0/$FILE/400xLOGO_TEXTO-OVC.gif" a ...
+
+
+
+		LINEA: 347, COLUMNA: 11: <img src="/ayuntamiento/OMIDC.nsf/0/0F3BCE1AF9838779C12576570036EBB0/$FILE/Inicio159.gif" alt="Ciste ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 37, COLUMNA: 7: <img src="/ayuntamiento/eltiempo.nsf/0/34F32A418FDBB93FC1257567002AA821/$File/sol(2).gif" alt="L'Ora ...
+
+
+
+		LINEA: 42, COLUMNA: 160: <img src="/ayuntamiento/home.nsf/0/D4906D54EC62455AC1257059003BED32/$FILE/correo_ciudadano.gif" alt= ...
+
+
+
+		LINEA: 43, COLUMNA: 171: <img src="/ayuntamiento/home.nsf/0/6CD7214B3A3DA40CC1257059003BED35/$FILE/bandera-spain.jpg" alt="Ac ...
+
+
+
+		LINEA: 44, COLUMNA: 278:
+
+ 
+
+		LINEA: 83, COLUMNA: 74: <img src="/ayuntamiento/home.nsf/0/2AE808FAE8B5B1F8C125753F003BDF4A/$FILE/cabeceraHOME04V_611px.gif" ...
+
+
+
+		LINEA: 286, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+
+
+		LINEA: 312, COLUMNA: 41: <img src="/ayuntamiento/OMIDC.nsf/0/2ABA2E9810632FE2C1257E120030E4F0/$FILE/400xLOGO_TEXTO-OVC.gif" a ...
+
+
+
+		LINEA: 336, COLUMNA: 184:
+
+ 
+
+		LINEA: 347, COLUMNA: 11: <img src="/ayuntamiento/OMIDC.nsf/0/0F3BCE1AF9838779C12576570036EBB0/$FILE/Inicio159.gif" alt="Ciste ...
+
+
+
+		LINEA: 381, COLUMNA: 8: <img width="60" src="http://www.w3.org/WAI/wcag1AA.gif" class="validador" alt="Directrices de Accesi ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 286, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+
+
+		LINEA: 312, COLUMNA: 41: <img src="/ayuntamiento/OMIDC.nsf/0/2ABA2E9810632FE2C1257E120030E4F0/$FILE/400xLOGO_TEXTO-OVC.gif" a ...
+
+
+
+		LINEA: 347, COLUMNA: 11: <img src="/ayuntamiento/OMIDC.nsf/0/0F3BCE1AF9838779C12576570036EBB0/$FILE/Inicio159.gif" alt="Ciste ...
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+ 
+
+		LINEA: 37, COLUMNA: 7: <img src="/ayuntamiento/eltiempo.nsf/0/34F32A418FDBB93FC1257567002AA821/$File/sol(2).gif" alt="L'Ora ...
+
+
+
+		LINEA: 42, COLUMNA: 160: <img src="/ayuntamiento/home.nsf/0/D4906D54EC62455AC1257059003BED32/$FILE/correo_ciudadano.gif" alt= ...
+
+
+
+		LINEA: 43, COLUMNA: 171: <img src="/ayuntamiento/home.nsf/0/6CD7214B3A3DA40CC1257059003BED35/$FILE/bandera-spain.jpg" alt="Ac ...
+
+
+
+		LINEA: 44, COLUMNA: 278:
+
+ 
+
+		LINEA: 286, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+
+
+		LINEA: 312, COLUMNA: 41: <img src="/ayuntamiento/OMIDC.nsf/0/2ABA2E9810632FE2C1257E120030E4F0/$FILE/400xLOGO_TEXTO-OVC.gif" a ...
+
+
+
+		LINEA: 336, COLUMNA: 184:
+
+ 
+
+		LINEA: 347, COLUMNA: 11: <img src="/ayuntamiento/OMIDC.nsf/0/0F3BCE1AF9838779C12576570036EBB0/$FILE/Inicio159.gif" alt="Ciste ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 37, COLUMNA: 7: <img src="/ayuntamiento/eltiempo.nsf/0/34F32A418FDBB93FC1257567002AA821/$File/sol(2).gif" alt="L'Ora ...
+
+
+
+		LINEA: 42, COLUMNA: 160: <img src="/ayuntamiento/home.nsf/0/D4906D54EC62455AC1257059003BED32/$FILE/correo_ciudadano.gif" alt= ...
+
+
+
+		LINEA: 43, COLUMNA: 171: <img src="/ayuntamiento/home.nsf/0/6CD7214B3A3DA40CC1257059003BED35/$FILE/bandera-spain.jpg" alt="Ac ...
+
+
+
+		LINEA: 44, COLUMNA: 278:
+
+ 
+
+		LINEA: 83, COLUMNA: 74: <img src="/ayuntamiento/home.nsf/0/2AE808FAE8B5B1F8C125753F003BDF4A/$FILE/cabeceraHOME04V_611px.gif" ...
+
+
+
+		LINEA: 286, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+
+
+		LINEA: 312, COLUMNA: 41: <img src="/ayuntamiento/OMIDC.nsf/0/2ABA2E9810632FE2C1257E120030E4F0/$FILE/400xLOGO_TEXTO-OVC.gif" a ...
+
+
+
+		LINEA: 336, COLUMNA: 184:
+
+ 
+
+		LINEA: 347, COLUMNA: 11: <img src="/ayuntamiento/OMIDC.nsf/0/0F3BCE1AF9838779C12576570036EBB0/$FILE/Inicio159.gif" alt="Ciste ...
+
+
+
+		LINEA: 381, COLUMNA: 8: <img width="60" src="http://www.w3.org/WAI/wcag1AA.gif" class="validador" alt="Directrices de Accesi ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 59, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_idioma.js" type="text/javascript"></script ...
+
+
+
+		LINEA: 79, COLUMNA: 11: <script type="text/javascript"> var rutaImagenesCabecera="/ayuntamiento/home.nsf/0/2AE808FAE8B5B1F8 ...
+
+
+
+		LINEA: 84, COLUMNA: 4: <script type="text/javascript">document.getElementById('imagen_cabecera').src=rutaImagenesCabecera+i ...
+
+
+
+		LINEA: 282, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_menu.js" type="text/javascript"></script>
+
+
+
+		LINEA: 383, COLUMNA: 1: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_doc.js" type="text/javascript"></script>
+
+
+
+		LINEA: 384, COLUMNA: 1: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_formulario3.js" type="text/javascript"></s ...
+
+
+
+		LINEA: 396, COLUMNA: 1: <script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https:// ...
+
+
+
+		LINEA: 400, COLUMNA: 1: <script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-11786303-1");pageTrack ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 83, COLUMNA: 74: <img src="/ayuntamiento/home.nsf/0/2AE808FAE8B5B1F8C125753F003BDF4A/$FILE/cabeceraHOME04V_611px.gif" ...
+
+
+
+		LINEA: 312, COLUMNA: 41: <img src="/ayuntamiento/OMIDC.nsf/0/2ABA2E9810632FE2C1257E120030E4F0/$FILE/400xLOGO_TEXTO-OVC.gif" a ...
+
+
+
+		LINEA: 336, COLUMNA: 184:
+
+ 
+
+		LINEA: 347, COLUMNA: 11: <img src="/ayuntamiento/OMIDC.nsf/0/0F3BCE1AF9838779C12576570036EBB0/$FILE/Inicio159.gif" alt="Ciste ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 37, COLUMNA: 7: <img src="/ayuntamiento/eltiempo.nsf/0/34F32A418FDBB93FC1257567002AA821/$File/sol(2).gif" alt="L'Ora ...
+
+
+
+		LINEA: 42, COLUMNA: 160: <img src="/ayuntamiento/home.nsf/0/D4906D54EC62455AC1257059003BED32/$FILE/correo_ciudadano.gif" alt= ...
+
+
+
+		LINEA: 43, COLUMNA: 171: <img src="/ayuntamiento/home.nsf/0/6CD7214B3A3DA40CC1257059003BED35/$FILE/bandera-spain.jpg" alt="Ac ...
+
+
+
+		LINEA: 44, COLUMNA: 278:
+
+ 
+
+		LINEA: 83, COLUMNA: 74: <img src="/ayuntamiento/home.nsf/0/2AE808FAE8B5B1F8C125753F003BDF4A/$FILE/cabeceraHOME04V_611px.gif" ...
+
+
+
+		LINEA: 286, COLUMNA: 13: <img id="imgEscudoValencia" title="Valencia.es" alt="Valencia" src="/ayuntamiento/repositoriov2009.n ...
+
+
+
+		LINEA: 312, COLUMNA: 41: <img src="/ayuntamiento/OMIDC.nsf/0/2ABA2E9810632FE2C1257E120030E4F0/$FILE/400xLOGO_TEXTO-OVC.gif" a ...
+
+
+
+		LINEA: 336, COLUMNA: 184:
+
+ 
+
+		LINEA: 347, COLUMNA: 11: <img src="/ayuntamiento/OMIDC.nsf/0/0F3BCE1AF9838779C12576570036EBB0/$FILE/Inicio159.gif" alt="Ciste ...
+
+
+
+		LINEA: 381, COLUMNA: 8: <img width="60" src="http://www.w3.org/WAI/wcag1AA.gif" class="validador" alt="Directrices de Accesi ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 59, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_idioma.js" type="text/javascript"></script ...
+
+
+
+		LINEA: 79, COLUMNA: 11: <script type="text/javascript"> var rutaImagenesCabecera="/ayuntamiento/home.nsf/0/2AE808FAE8B5B1F8 ...
+
+
+
+		LINEA: 84, COLUMNA: 4: <script type="text/javascript">document.getElementById('imagen_cabecera').src=rutaImagenesCabecera+i ...
+
+
+
+		LINEA: 282, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_menu.js" type="text/javascript"></script>
+
+
+
+		LINEA: 383, COLUMNA: 1: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_doc.js" type="text/javascript"></script>
+
+
+
+		LINEA: 384, COLUMNA: 1: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_formulario3.js" type="text/javascript"></s ...
+
+
+
+		LINEA: 396, COLUMNA: 1: <script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https:// ...
+
+
+
+		LINEA: 400, COLUMNA: 1: <script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-11786303-1");pageTrack ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 59, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_idioma.js" type="text/javascript"></script ...
+
+
+
+		LINEA: 79, COLUMNA: 11: <script type="text/javascript"> var rutaImagenesCabecera="/ayuntamiento/home.nsf/0/2AE808FAE8B5B1F8 ...
+
+
+
+		LINEA: 84, COLUMNA: 4: <script type="text/javascript">document.getElementById('imagen_cabecera').src=rutaImagenesCabecera+i ...
+
+
+
+		LINEA: 282, COLUMNA: 2: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_menu.js" type="text/javascript"></script>
+
+
+
+		LINEA: 383, COLUMNA: 1: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_doc.js" type="text/javascript"></script>
+
+
+
+		LINEA: 384, COLUMNA: 1: <script src="/ayuntamiento/repositoriov2009.nsf/funciones_formulario3.js" type="text/javascript"></s ...
+
+
+
+		LINEA: 396, COLUMNA: 1: <script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https:// ...
+
+
+
+		LINEA: 400, COLUMNA: 1: <script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-11786303-1");pageTrack ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 5, COLUMNA: 2:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 36, COLUMNA: 29: <a href="/ayuntamiento/eltiempo.nsf/0/5CEB45991D7314CFC1257ECB0036B634?OpenDocument&lang=2&nivel=1&s ...
+
+
+
+		LINEA: 42, COLUMNA: 7: <a href="/ayuntamiento/correociudadano.nsf/Registrarse?ReadForm&amp;lang=2&amp;nivel=1&amp;seccion=0 ...
+
+
+
+		LINEA: 43, COLUMNA: 32:
+
+ 
+
+		LINEA: 44, COLUMNA: 26: <a href="/ayuntamiento/sugerencias.nsf/Web%5CPortada2013?ReadForm&amp;lang=2&amp;nivel=6&amp;bdOrige ...
+
+
+
+		LINEA: 45, COLUMNA: 35: <a href="/ayuntamiento/home.nsf/vMapaWeb2/$first?opendocument&amp;lang=2" title="Mapa web" target="_ ...
+
+
+
+		LINEA: 45, COLUMNA: 175: <a href="/ayuntamiento/home.nsf/(Portadas2)/$first?OpenDocument&amp;lang=2" title="Portada" target=" ...
+
+
+
+		LINEA: 52, COLUMNA: 8:
+
+ 
+
+		LINEA: 53, COLUMNA: 8: <a href="#buscador_cabecera">Salta al buscador cabecera</a>
+
+
+
+		LINEA: 54, COLUMNA: 8:
+
+ 
+
+		LINEA: 66, COLUMNA: 23: <a href="/ayuntamiento/ayuntamiento.nsf?OpenDatabase&amp;nivel=1&amp;lang=2" title="Ajuntament" targ ...
+
+
+
+		LINEA: 67, COLUMNA: 23: <a href="/twav/tramites_acc09.nsf/vDocumentosTituloAux/Portadilla%20Tr%C3%A1mites%20SEDE?opendocumen ...
+
+
+
+		LINEA: 68, COLUMNA: 23: <a href="/ayuntamiento/websmunicipales.nsf/vDocumentosTituloAux/Entrada%20a%20webs%20municipales?ope ...
+
+
+
+		LINEA: 69, COLUMNA: 23: <a href="/ayuntamiento/laciudad.nsf?OpenDatabase&amp;nivel=1&amp;lang=2" title="La ciutat" target="_ ...
+
+
+
+		LINEA: 70, COLUMNA: 23:
+
+ 
+
+		LINEA: 83, COLUMNA: 1: <a href="http://www.valencia.es" target="_top" title="anar a la portada"><img src="/ayuntamiento/hom ...
+
+
+
+		LINEA: 94, COLUMNA: 6: <a id="nivel_1" href="/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Inicio?opendocument&amp;lang=2&am ...
+
+
+
+		LINEA: 96, COLUMNA: 6: <a id="nivel_2" href="/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/OMIDC?opendocument&amp;lang=2&amp ...
+
+
+
+		LINEA: 98, COLUMNA: 6: <a id="nivel_3" href="/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Mediador%20de%20gesti%C3%B3n%20r% ...
+
+
+
+		LINEA: 100, COLUMNA: 6: <a id="nivel_4" href="/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Consultor%20de%20compras%20y%20se ...
+
+
+
+		LINEA: 102, COLUMNA: 6: <a id="nivel_5" href="/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Infor%20consumidor%20-%20Derechos ...
+
+
+
+		LINEA: 104, COLUMNA: 6: <a id="nivel_6" href="http://www.valencia.es/valencia/webs/index.htm?&amp;lang=2&amp;nivel=6&amp;sec ...
+
+
+
+		LINEA: 106, COLUMNA: 6: <a id="nivel_7" href="/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Reclamaciones%20-%20%C2%BFC%C3%B3 ...
+
+
+
+		LINEA: 108, COLUMNA: 6: <a id="nivel_8" href="/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Asociaciones%20de%20consumidores? ...
+
+
+
+		LINEA: 110, COLUMNA: 6: <a id="nivel_9" href="/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Normativa?opendocument&amp;lang=2 ...
+
+
+
+		LINEA: 112, COLUMNA: 6: <a id="nivel_10" href="http://www.valencia.es/ayuntamiento/enlaces_accesible.nsf/vListadoCategoriasW ...
+
+
+
+		LINEA: 117, COLUMNA: 6: <a id="subnivel_3_6_1" href="/ayuntamiento/arborizate.nsf/vDocumentosTituloAux/Inicio?opendocument&a ...
+
+
+
+		LINEA: 119, COLUMNA: 6: <a id="subnivel_3_6_2" href="/ayuntamiento/cementerios.nsf/vDocumentosTituloAux/Inicio%20-%20Bando%2 ...
+
+
+
+		LINEA: 121, COLUMNA: 6: <a id="subnivel_3_6_3" href="http://www.ciclointegraldelagua.com" target="_blank" title="Cicle Integ ...
+
+
+
+		LINEA: 123, COLUMNA: 6: <a id="subnivel_3_6_4" href="http://www.valencia.es/ayuntamiento/maparuido.nsf/vDocumentosTituloAux/ ...
+
+
+
+		LINEA: 125, COLUMNA: 6: <a id="subnivel_3_6_5" href="/ayuntamiento/energias.nsf/vDocumentosTituloAux/Inicio?opendocument&amp ...
+
+
+
+		LINEA: 127, COLUMNA: 6:
+
+ 
+
+		LINEA: 129, COLUMNA: 6: <a id="subnivel_3_6_8" href="/ayuntamiento/naturia.nsf/vDocumentosTituloAux/Inicio?opendocument&amp; ...
+
+
+
+		LINEA: 131, COLUMNA: 6: <a id="subnivel_3_6_9" href="/ayuntamiento/jardines_accesible.nsf/vDocumentosTituloAux/Portadilla?op ...
+
+
+
+		LINEA: 133, COLUMNA: 6: <a id="subnivel_3_6_10" href="/ayuntamiento/drogodependencias.nsf/vDocumentosTituloAux/Portada?opend ...
+
+
+
+		LINEA: 135, COLUMNA: 6: <a id="subnivel_3_6_11" href="/ayuntamiento/playas.nsf/vDocumentosTituloAux/Inicio?opendocument&amp; ...
+
+
+
+		LINEA: 137, COLUMNA: 6: <a id="subnivel_3_6_12" href="http://www.tutoriasenred.com" target="_blank" title="Tutories en Xarxa ...
+
+
+
+		LINEA: 139, COLUMNA: 6:
+
+ 
+
+		LINEA: 141, COLUMNA: 6: <a id="subnivel_3_6_14" href="/ayuntamiento/sanidad.nsf/vDocumentosTituloAux/Servicio%20de%20Sanidad ...
+
+
+
+		LINEA: 148, COLUMNA: 6:
+
+ 
+
+		LINEA: 150, COLUMNA: 6: <a id="subnivel_3_1_1" href="/ayuntamiento/bienestarsocial.nsf/vDocumentosTituloAux/Inicio?opendocum ...
+
+
+
+		LINEA: 152, COLUMNA: 6:
+
+ 
+
+		LINEA: 154, COLUMNA: 6:
+
+ 
+
+		LINEA: 156, COLUMNA: 6: <a id="subnivel_3_1_4" href="/mujer/mujer.nsf/vDocumentosTituloAux/Portada?opendocument&amp;lang=2&a ...
+
+
+
+		LINEA: 158, COLUMNA: 6: <a id="subnivel_3_1_5" href="http://universitatpopular.com/va/" target="_blank" title="Universitat P ...
+
+
+
+		LINEA: 160, COLUMNA: 6: <a id="subnivel_3_1_6" href="/ayuntamiento/refugiados.nsf/vDocumentosTituloAux/Recogida ofrecimiento ...
+
+
+
+		LINEA: 162, COLUMNA: 6: <a id="subnivel_3_1_7" href="/ayuntamiento/majors.nsf/vDocumentosTituloAux/Inicio?opendocument&amp;l ...
+
+
+
+		LINEA: 164, COLUMNA: 6: <a id="subnivel_3_1_8" href="/ayuntamiento/cooperacion.nsf/vDocumentosTituloAux/Presentaci%C3%B3n?op ...
+
+
+
+		LINEA: 166, COLUMNA: 6: <a id="subnivel_3_1_9" href="/ayuntamiento/conservatorio_accesible.nsf/vDocumentosTituloAux/Inicio?o ...
+
+
+
+		LINEA: 170, COLUMNA: 6: <a id="subniveldesp_3_2" href="#" target="_top" title="Cultura i festes populars">Cultura i festes p ...
+
+
+
+		LINEA: 172, COLUMNA: 6: <a id="subnivel_3_2_1" href="/ayuntamiento/biblioteca.nsf/vDocumentosTituloAux/Inicio?opendocument&a ...
+
+
+
+		LINEA: 174, COLUMNA: 6: <a id="subnivel_3_2_2" href="/ayuntamiento/redbibliotecas.nsf/vDocumentosTituloAux/Inicio?opendocume ...
+
+
+
+		LINEA: 176, COLUMNA: 6: <a id="subnivel_3_2_3" href="/ayuntamiento/almoina08.nsf/vDocumentosTituloAux/Inicio?opendocument&am ...
+
+
+
+		LINEA: 178, COLUMNA: 6: <a id="subnivel_3_2_4" href="http://www.cibm-valencia.com/" target="_top" title="Obri Certamen de Ba ...
+
+
+
+		LINEA: 180, COLUMNA: 6: <a id="subnivel_3_2_5" href="/ayuntamiento/cultura.nsf/vDocumentosTituloAux/Inicio?opendocument&amp; ...
+
+
+
+		LINEA: 182, COLUMNA: 6:
+
+ 
+
+		LINEA: 184, COLUMNA: 6: <a id="subnivel_3_2_7" href="http://www.fallas.com" target="_blank" title="Junta Central Fallera">Ju ...
+
+
+
+		LINEA: 186, COLUMNA: 6: <a id="subnivel_3_2_8" href="http://www.juntacentralvicentina.com" target="_blank" title="Junta Cent ...
+
+
+
+		LINEA: 188, COLUMNA: 6: <a id="subnivel_3_2_9" href="http://www.semanasantamarinera.org" target="_blank" title="Junta Major...
+
+
+
+		LINEA: 190, COLUMNA: 6: <a id="subnivel_3_2_10" href="https://www.lamutant.com/val/inici/" target="_blank" title="La Mutant" ...
+
+
+
+		LINEA: 192, COLUMNA: 6: <a id="subnivel_3_2_11" href="http://www.lasnaves.com" target="_blank" title="Las Naves">Las Naves</ ...
+
+
+
+		LINEA: 194, COLUMNA: 6:
+
+ 
+
+		LINEA: 196, COLUMNA: 6: <a id="subnivel_3_2_13" href="/ayuntamiento/publicaciones.nsf/vDocumentosTituloAux/Inicio?opendocume ...
+
+
+
+		LINEA: 198, COLUMNA: 6: <a id="subnivel_3_2_14" href="http://www.teatreelmusical.es" target="_blank" title="Teatre El Musica ...
+
+
+
+		LINEA: 202, COLUMNA: 6:
+
+ 
+
+		LINEA: 204, COLUMNA: 6: <a id="subnivel_3_3_1" href="/ayuntamiento/empleo.nsf/vDocumentosTituloAux/Inicio?opendocument&amp;l ...
+
+
+
+		LINEA: 206, COLUMNA: 6: <a id="subnivel_3_3_2" href="http://www.lasnaves.com/?lang=ca " target="_blank" title="Las Naves">La ...
+
+
+
+		LINEA: 208, COLUMNA: 6:
+
+ 
+
+		LINEA: 210, COLUMNA: 6: <a id="subnivel_3_3_4" href="/ayuntamiento/Mercados.nsf/vDocumentosTituloAux/Inicio?opendocument&amp ...
+
+
+
+		LINEA: 212, COLUMNA: 6: <a id="subnivel_3_3_5" href="http://www.mercavalencia.es/" target="_blank" title="Mercavalencia">Mer ...
+
+
+
+		LINEA: 214, COLUMNA: 6: <a id="subnivel_3_3_6" href="/ayuntamiento/estadistica.nsf/vDocumentosTituloAux/Principal?opendocume ...
+
+
+
+		LINEA: 216, COLUMNA: 6: <a id="subnivel_3_3_7" href="http://www.palcongres-vlc.com" target="_blank" title="Palau de Congress ...
+
+
+
+		LINEA: 218, COLUMNA: 6: <a id="subnivel_3_3_8" href="/ayuntamiento/palacioexposicion_accesible.nsf/vDocumentosTituloAux/El%2 ...
+
+
+
+		LINEA: 220, COLUMNA: 6: <a id="subnivel_3_3_9" href="https://www.visitvalencia.com/va" target="_blank" title="Turismo Valenc ...
+
+
+
+		LINEA: 222, COLUMNA: 6:
+
+ 
+
+		LINEA: 224, COLUMNA: 6:
+
+ 
+
+		LINEA: 228, COLUMNA: 6: <a id="subniveldesp_3_4" href="#" target="_top" title="Hisenda">Hisenda</a>
+
+
+
+		LINEA: 230, COLUMNA: 6: <a id="subnivel_3_4_1" href="http://www.valencia.es/ayuntamiento/tributos_municipales.nsf/vDocumento ...
+
+
+
+		LINEA: 232, COLUMNA: 6: <a id="subnivel_3_4_2" href="/ayuntamiento/tributos_municipales.nsf/vDocumentosTituloAux/Calendario...
+
+
+
+		LINEA: 236, COLUMNA: 6: <a id="subniveldesp_3_5" href="#" target="_top" title="Joventut">Joventut</a>
+
+
+
+		LINEA: 238, COLUMNA: 6: <a id="subnivel_3_5_1" href="http://www.juventud-valencia.es/" target="_blank" title="Joventut">Jove ...
+
+
+
+		LINEA: 242, COLUMNA: 6:
+
+ 
+
+		LINEA: 244, COLUMNA: 6: <a id="subnivel_3_7_1" href="/ayuntamiento/participacion.nsf/vDocumentosTituloAux/Inicio?opendocumen ...
+
+
+
+		LINEA: 246, COLUMNA: 6: <a id="subnivel_3_7_2" href="/ayuntamiento/consultas.nsf/vDocumentosTituloAux/Inicio?opendocument&am ...
+
+
+
+		LINEA: 250, COLUMNA: 6: <a id="subniveldesp_3_8" href="#" target="_top" title="Seguretat ciutadana">Seguretat ciutadana</a>
+
+
+
+		LINEA: 252, COLUMNA: 6: <a id="subnivel_3_8_1" href="/ayuntamiento/bomberos.nsf/vDocumentosTituloAux/Portada?opendocument&am ...
+
+
+
+		LINEA: 256, COLUMNA: 6: <a id="subniveldesp_3_9" href="#" target="_top" title="Mobilitat">Mobilitat</a>
+
+
+
+		LINEA: 258, COLUMNA: 6: <a id="subnivel_3_9_1" href="http://www.emtvalencia.es" target="_blank" title="EMT">EMT</a>
+
+
+
+		LINEA: 260, COLUMNA: 6: <a id="subnivel_3_9_2" href="/ayuntamiento/trafico.nsf/vPortadasTituloAux/Portada?opendocument&amp;l ...
+
+
+
+		LINEA: 262, COLUMNA: 6:
+
+ 
+
+		LINEA: 266, COLUMNA: 6: <a id="subniveldesp_3_10" href="#" target="_top" title="Urbanisme i Vivenda">Urbanisme i Vivenda</a>
+
+
+
+		LINEA: 268, COLUMNA: 6: <a id="subnivel_3_10_1" href="http://www.aumsa.es" target="_blank" title="AUMSA">AUMSA</a>
+
+
+
+		LINEA: 270, COLUMNA: 6: <a id="subnivel_3_10_2" href="/ayuntamiento/urbanismo.nsf/vDocumentosTituloAux/Portada%20CON%20colum ...
+
+
+
+		LINEA: 272, COLUMNA: 6: <a id="subnivel_3_10_3" href="/ayuntamiento/vivienda.nsf/vDocumentosTituloAux/Inicio?opendocument&am ...
+
+
+
+		LINEA: 336, COLUMNA: 4:
+
+ 
+
+		LINEA: 352, COLUMNA: 1: <a href = "/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/E5EBF9394CCCEB10C125779D003F527E?OpenDocumen ...
+
+
+
+		LINEA: 366, COLUMNA: 19:
+
+ 
+
+		LINEA: 367, COLUMNA: 19: <a href="/twav/tramites_acc09.nsf/vDocumentosTituloAux/Portadilla%20Tr%C3%A1mites%20SEDE?opendocumen ...
+
+
+
+		LINEA: 368, COLUMNA: 19: <a href="/ayuntamiento/websmunicipales.nsf/vDocumentosTituloAux/Entrada%20a%20webs%20municipales?ope ...
+
+
+
+		LINEA: 369, COLUMNA: 19: <a href="/ayuntamiento/laciudad.nsf?OpenDatabase&amp;lang=2" title="La ciudad" target="_top">La ciuT ...
+
+
+
+		LINEA: 370, COLUMNA: 19: <a href="/ayuntamiento/infociudad_accesible.nsf/Busqueda%20(web)?readform&amp;lang=2&amp;nivel=1" ti ...
+
+
+
+		LINEA: 371, COLUMNA: 19:
+
+ 
+
+		LINEA: 372, COLUMNA: 19: <a href="/ayuntamiento/agenda_accesible.nsf/BuscarAgenda?ReadForm&amp;lang=2&amp;bdOrigen=/ayuntamie ...
+
+
+
+		LINEA: 373, COLUMNA: 19: <a href=" http://www.valencia.es/ayuntamiento/home.nsf/vMapaWeb1/$first?opendocument&amp;lang=2" tit ...
+
+
+
+		LINEA: 374, COLUMNA: 19: <a href="/ayuntamiento/ayuntamiento.nsf/vDocumentosTituloAux/POLITICA%20PRIVACIDAD%20-%20Pie%20web?o ...
+
+
+
+		LINEA: 376, COLUMNA: 4: <a href="/ayuntamiento/home.nsf/vAvisoLegal/Idioma_2/D606C7943FBF79AFC1258301003BCD06?OpenDocument"...
+
+
+
+		LINEA: 380, COLUMNA: 4: <a class="validador" href="http://www.w3.org/WAI/WCAG1AA-Conformance" target="_blank" title="Directr ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 30, COLUMNA: 5: <h1 class="oculta"></h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 64, COLUMNA: 5: <h2 class="oculta">Servicios de la web</h2>
+
+
+
+		LINEA: 299, COLUMNA: 1: <h2 class="bloque_titulo"></h2>
+
+
+
+		LINEA: 343, COLUMNA: 1: <h2 class="bloque_titulo"></h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 91, COLUMNA: 2: <h3>Medi Ambient i Salut</h3>
+
+
+
+		LINEA: 115, COLUMNA: 2: <h3 class="oculta">Medi Ambient i Salut</h3>
+
+
+
+		LINEA: 146, COLUMNA: 3: <h3 class="oculta" title="Webs municipals">Webs municipals</h3>
+
+
+
+		LINEA: 333, COLUMNA: 4: <h3> </h3>
+
+  
+
+	REVISAR: 45: h4 may be used for formatting.
+
+ 
+
+		LINEA: 92, COLUMNA: 2: <h4>OMIDC</h4>
+
+
+
+		LINEA: 307, COLUMNA: 16: <h4 class="titulo_portadilla">OFICINA VIRTUAL DE CONSUM</h4>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 27, COLUMNA: 1: <body dir="ltr" ><input type="hidden" name="seccion" id="seccion_sel" value="3"><div id="marco_web ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 28, COLUMNA: 1: <input type="hidden" name="seccion" id="seccion_sel" value="3">
+
+
+
+		LINEA: 90, COLUMNA: 2: <input type="hidden" value="true" name="esSubseccion" id="esSubseccion">
+
+

@@ -1,0 +1,1146 @@
+REPORTE PÁGINA WEB: http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria
+FECHA EVALUACIÓN: 2018-11-20
+
+-PROBLEMAS CONOCIDOS-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 238: input element has alt attribute.  
+
+	REPARAR:> Remove the alt attribute from all input elements except those with a type attribute value of "image".      
+
+		LINEA: 4, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...
+
+4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)  
+
+	REVISAR: 185: id attribute is not unique.  
+
+	REPARAR:> Modify the id attribute value so it is unique.      
+
+		LINEA: 18, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+
+
+ -------------- 
+
+-PROBLEMAS POTENCIALES-
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 1, COLUMNA: 1970: <a id="p_103"></a>
+
+
+
+		LINEA: 1, COLUMNA: 2398: <a id="p_cabecera_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 1, COLUMNA: 2651: <a href="/" class="gva-logo">www.gva.es</a>
+
+
+
+		LINEA: 1, COLUMNA: 2802: <a class="language-select-icon dropdown-toggle" href="#" data-toggle="dropdown">&#x25BC;</a>
+
+
+
+		LINEA: 1, COLUMNA: 2989: <a class="mobile-search-icon dropdown-toggle" href="#" data-toggle="dropdown">#language("search")</a ...
+
+
+
+		LINEA: 1, COLUMNA: 3298: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria;jsessionid=nZXTb ...
+
+
+
+		LINEA: 2, COLUMNA: 19: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria;jsessionid=nZXTb ...
+
+
+
+		LINEA: 3, COLUMNA: 19: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria;jsessionid=nZXTb ...
+
+
+
+		LINEA: 4, COLUMNA: 62: <a href="http://www.gva.es"> <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo"> <span...
+
+
+
+		LINEA: 4, COLUMNA: 290: <a accesskey="3" href="/inicio/ciudadanos" title="Aquí encontrará información y servicios dirigid ...
+
+
+
+		LINEA: 4, COLUMNA: 462: <a accesskey="4" href="/inicio/empresas" title="Aquí encontrará información y servicios dirigidos ...
+
+
+
+		LINEA: 4, COLUMNA: 612: <a accesskey="5" href="/inicio/administraciones" title="Aquí encontrará información y servicios d ...
+
+
+
+		LINEA: 4, COLUMNA: 802: <a target="_blank" href="https://www.tramita.gva.es/cdc/aplicacio/inicia.html?idioma=es" title="El e ...
+
+
+
+		LINEA: 17, COLUMNA: 144: <a href="http://www.gva.es/es/inicio/presentacion"title="Acceso a Inicio">Inicio</a>
+
+
+
+		LINEA: 17, COLUMNA: 242: <a href="http://www.gva.es/es/inicio/ciudadanos"title="Acceso a Ciudadanía">Ciudadanía</a>
+
+
+
+		LINEA: 17, COLUMNA: 502: <a href="https://twitter.com/generalitat" class="twitter" target="_blank" title="El enlace se abre e ...
+
+
+
+		LINEA: 17, COLUMNA: 685: <a href="http://www.youtube.com/presidenciagva" class="youtube" target="_blank" title="El enlace se...
+
+
+
+		LINEA: 17, COLUMNA: 874: <a href="https://www.facebook.com/generalitatvalenciana" class="facebook" target="_blank" title="El...
+
+
+
+		LINEA: 17, COLUMNA: 1075: <a href="http://www.flickr.com/presidenciagva" class="flickr" target="_blank" title="El enlace se ab ...
+
+
+
+		LINEA: 17, COLUMNA: 1536: <a class="btn btn-navbar hidden-print" data-toggle="collapse" data-target=".nav-collapse"> <span cla ...
+
+
+
+		LINEA: 17, COLUMNA: 2075: <a id="p_151_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 17, COLUMNA: 3667: <a id="p_75_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 17, COLUMNA: 4010: <a href="http://www.president.gva.es/" target="_blank" title="El enlace se abre en una nueva ventana ...
+
+
+
+		LINEA: 17, COLUMNA: 4441: <a href="http://canal.gva.es" target="_blank" title="El enlace se abre en una nueva ventana a Canal...
+
+
+
+		LINEA: 17, COLUMNA: 4586: <a href="http://www.dogv.gva.es/" target="_blank" title="El enlace se abre en una nueva ventana a Di ...
+
+
+
+		LINEA: 17, COLUMNA: 5030: <a href="http://www.chap.gva.es/ca/web/subsecretaria/contratacion" target="_blank" title="El enlace...
+
+
+
+		LINEA: 17, COLUMNA: 5230: <a href="https://sede.gva.es/es/web/sede_electronica/inicio" target="_blank" title="El enlace se abr ...
+
+
+
+		LINEA: 17, COLUMNA: 5548: <a href="http://www.presidencia.gva.es/web/dg-relaciones-ue" target="_blank" title="El enlace se abr ...
+
+
+
+		LINEA: 17, COLUMNA: 6099: <a id="p_76_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 17, COLUMNA: 6470: <a href="http://www.cv.gva.es/principal.do" target="_blank" title="El enlace se abre en una nueva ve ...
+
+
+
+		LINEA: 17, COLUMNA: 6613: <a href="http://www.accv.es" target="_blank" title="El enlace se abre en una nueva ventana a Firma E ...
+
+
+
+		LINEA: 17, COLUMNA: 7249: <a id="p_cabecera_parametrizable_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 18, COLUMNA: 204: <a id="p_125_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 18, COLUMNA: 492: <a id="p_46_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 18, COLUMNA: 898: <a title="Impuesto sobre Sucesiones y Donaciones (modalidad sucesiones)." href="/portal/page/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 1112: <a title="Impuesto sobre Sucesiones y Donaciones (modalidad donaciones)." href="/portal/page/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 1451: <a title="Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados" href="/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 1807: <a title="Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados" href="/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 2076: <a title="Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados" href="/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 2434: <a title="Tasas. Modelo 046" href="http://www.chap.gva.es/web/tributos-y-juego/tributos-impuestos-de ...
+
+
+
+		LINEA: 18, COLUMNA: 2798: <a href="http://www.chap.gva.es/web/tributos-y-juego/tributos-infogeneral-dondepagar" title="">Entid ...
+
+
+
+		LINEA: 18, COLUMNA: 3137: <a href="http://www.chap.gva.es/web/tributos-y-juego/hacienda-beneficios-fiscales" title="Beneficios ...
+
+
+
+		LINEA: 18, COLUMNA: 3413: <a href="http://www.chap.gva.es/web/tributos-y-juego/tributos-infogeneral-dondeatenderme" title="Ser ...
+
+
+
+		LINEA: 18, COLUMNA: 3801: <a href="/portal/page/portal/inicio/atencion_ciudadano" title="Servicio de Atención telefónica 012 ...
+
+
+
+		LINEA: 18, COLUMNA: 3966: <a href="http://www.chap.gva.es/web/tributos-y-juego/subhome-tributos" title="Portal Tributario de l ...
+
+
+
+		LINEA: 18, COLUMNA: 4395: <a id="p_44_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 18, COLUMNA: 4682: <a id="p_45_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 18, COLUMNA: 5525: <a id="p_12_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 18, COLUMNA: 5793: <a href="https://www.agenciatributaria.gob.es/" target="_blank" title="El enlace se abre en una nuev ...
+
+
+
+		LINEA: 18, COLUMNA: 6445: <a id="p_5_WAR_portalgvaportlet"></a>
+
+
+
+		LINEA: 18, COLUMNA: 7488: <a href="http://pf.gva.es/" class="" target="_blank" title="El enlace se abre en una nueva ventana a ...
+
+
+
+		LINEA: 18, COLUMNA: 7700: <a href="https://webmail.gva.es" class="" target="_blank" title="El enlace se abre en una nueva vent ...
+
+
+
+		LINEA: 18, COLUMNA: 7936: <a href="/web/portal/inicio/xmlrss" class="" target="" title="RSS XML"><img src="/resources/v2/es/im ...
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 4, COLUMNA: 91: <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo">
+
+
+
+		LINEA: 18, COLUMNA: 7603: <img src="/resources/v2/img/ico_portal_funcionario.gif"alt='Funcionarios' >
+
+
+
+		LINEA: 18, COLUMNA: 7830: <img src="/resources/v2/img/ico_correo_funcionario.gif"alt='Correo del funcionario' >
+
+
+
+		LINEA: 18, COLUMNA: 8007: <img src="/resources/v2/es/img/rss.gif" alt="RSS XML" title="RSS XML">
+
+
+
+		LINEA: 18, COLUMNA: 8077: <img src="/resources/v2/es/img/xml.gif" alt="RSS XML" title="RSS XML">
+
+
+
+		LINEA: 18, COLUMNA: 8164: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 18, COLUMNA: 8164: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+ 
+
+		LINEA: 18, COLUMNA: 8007: <img src="/resources/v2/es/img/rss.gif" alt="RSS XML" title="RSS XML">
+
+
+
+		LINEA: 18, COLUMNA: 8077: <img src="/resources/v2/es/img/xml.gif" alt="RSS XML" title="RSS XML">
+
+
+
+		LINEA: 18, COLUMNA: 8164: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>
+
+  
+
+	REVISAR: 59: Image used for input element may have Alt text that does not identify the purpose or function as the image.
+
+ 
+
+		LINEA: 12, COLUMNA: 140: <input type="image" class="buscador_input_img" src="/resources/v2/im ...
+
+  
+
+	REVISAR: 193: Form submit button image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 12, COLUMNA: 140: <input type="image" class="buscador_input_img" src="/resources/v2/im ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 18, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 1, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 18, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 18, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 4, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 18, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 4, COLUMNA: 91: <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo">
+
+
+
+		LINEA: 18, COLUMNA: 7603: <img src="/resources/v2/img/ico_portal_funcionario.gif"alt='Funcionarios' >
+
+
+
+		LINEA: 18, COLUMNA: 7830: <img src="/resources/v2/img/ico_correo_funcionario.gif"alt='Correo del funcionario' >
+
+
+
+		LINEA: 18, COLUMNA: 8007: <img src="/resources/v2/es/img/rss.gif" alt="RSS XML" title="RSS XML">
+
+
+
+		LINEA: 18, COLUMNA: 8077: <img src="/resources/v2/es/img/xml.gif" alt="RSS XML" title="RSS XML">
+
+
+
+		LINEA: 18, COLUMNA: 8164: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 4, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...
+
+
+
+		LINEA: 12, COLUMNA: 140: <input type="image" class="buscador_input_img" src="/resources/v2/im ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 1, COLUMNA: 410: <script type="text/javascript" src="/portal-gva-theme/js/jquery-1.9.1.min.js"></script>
+
+
+
+		LINEA: 1, COLUMNA: 512: <script type="text/javascript" src="/portal-gva-theme/js/bootstrap.min.js"></script>
+
+
+
+		LINEA: 1, COLUMNA: 991: <script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return fals ...
+
+
+
+		LINEA: 1, COLUMNA: 1046: <script src="/html/js/barebone.jsp?browserId=other&amp;themeId=gva_WAR_portalgvatheme&amp;colorSchem ...
+
+
+
+		LINEA: 1, COLUMNA: 1320: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.list=["cabecera_WAR_portalgvaportlet","1 ...
+
+
+
+		LINEA: 4, COLUMNA: 998: <script type="text/javascript">/*<![CDATA[*/function Busc(){var a=document.getElementById("campo");i ...
+
+
+
+		LINEA: 18, COLUMNA: 8467: <script type="text/javascript">/*<![CDATA[*/Liferay.Util.addInputFocus();/*]]>*/</script>
+
+
+
+		LINEA: 18, COLUMNA: 8522: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,i ...
+
+
+
+		LINEA: 18, COLUMNA: 8577: <script src="/portal-gva-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=es_ES&a ...
+
+
+
+		LINEA: 18, COLUMNA: 8755: <script type="text/javascript"></script>
+
+
+
+		LINEA: 18, COLUMNA: 8810: <script type="text/javascript">/*<![CDATA[*/var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39216849- ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 4, COLUMNA: 91: <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo">
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 4, COLUMNA: 91: <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo">
+
+
+
+		LINEA: 18, COLUMNA: 7603: <img src="/resources/v2/img/ico_portal_funcionario.gif"alt='Funcionarios' >
+
+
+
+		LINEA: 18, COLUMNA: 7830: <img src="/resources/v2/img/ico_correo_funcionario.gif"alt='Correo del funcionario' >
+
+
+
+		LINEA: 18, COLUMNA: 8007: <img src="/resources/v2/es/img/rss.gif" alt="RSS XML" title="RSS XML">
+
+
+
+		LINEA: 18, COLUMNA: 8077: <img src="/resources/v2/es/img/xml.gif" alt="RSS XML" title="RSS XML">
+
+
+
+		LINEA: 18, COLUMNA: 8164: <img src="/resources/v2/es/img/FEDER.gif"alt='Logo Feder'title='Logo Feder'>
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 1, COLUMNA: 410: <script type="text/javascript" src="/portal-gva-theme/js/jquery-1.9.1.min.js"></script>
+
+
+
+		LINEA: 1, COLUMNA: 512: <script type="text/javascript" src="/portal-gva-theme/js/bootstrap.min.js"></script>
+
+
+
+		LINEA: 1, COLUMNA: 991: <script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return fals ...
+
+
+
+		LINEA: 1, COLUMNA: 1046: <script src="/html/js/barebone.jsp?browserId=other&amp;themeId=gva_WAR_portalgvatheme&amp;colorSchem ...
+
+
+
+		LINEA: 1, COLUMNA: 1320: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.list=["cabecera_WAR_portalgvaportlet","1 ...
+
+
+
+		LINEA: 4, COLUMNA: 998: <script type="text/javascript">/*<![CDATA[*/function Busc(){var a=document.getElementById("campo");i ...
+
+
+
+		LINEA: 18, COLUMNA: 8467: <script type="text/javascript">/*<![CDATA[*/Liferay.Util.addInputFocus();/*]]>*/</script>
+
+
+
+		LINEA: 18, COLUMNA: 8522: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,i ...
+
+
+
+		LINEA: 18, COLUMNA: 8577: <script src="/portal-gva-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=es_ES&a ...
+
+
+
+		LINEA: 18, COLUMNA: 8755: <script type="text/javascript"></script>
+
+
+
+		LINEA: 18, COLUMNA: 8810: <script type="text/javascript">/*<![CDATA[*/var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39216849- ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 1, COLUMNA: 410: <script type="text/javascript" src="/portal-gva-theme/js/jquery-1.9.1.min.js"></script>
+
+
+
+		LINEA: 1, COLUMNA: 512: <script type="text/javascript" src="/portal-gva-theme/js/bootstrap.min.js"></script>
+
+
+
+		LINEA: 1, COLUMNA: 991: <script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return fals ...
+
+
+
+		LINEA: 1, COLUMNA: 1046: <script src="/html/js/barebone.jsp?browserId=other&amp;themeId=gva_WAR_portalgvatheme&amp;colorSchem ...
+
+
+
+		LINEA: 1, COLUMNA: 1320: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.list=["cabecera_WAR_portalgvaportlet","1 ...
+
+
+
+		LINEA: 4, COLUMNA: 998: <script type="text/javascript">/*<![CDATA[*/function Busc(){var a=document.getElementById("campo");i ...
+
+
+
+		LINEA: 18, COLUMNA: 8467: <script type="text/javascript">/*<![CDATA[*/Liferay.Util.addInputFocus();/*]]>*/</script>
+
+
+
+		LINEA: 18, COLUMNA: 8522: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,i ...
+
+
+
+		LINEA: 18, COLUMNA: 8577: <script src="/portal-gva-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=es_ES&a ...
+
+
+
+		LINEA: 18, COLUMNA: 8755: <script type="text/javascript"></script>
+
+
+
+		LINEA: 18, COLUMNA: 8810: <script type="text/javascript">/*<![CDATA[*/var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-39216849- ...
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 18, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 1, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 1, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 1, COLUMNA: 41: <title>Generalitat: Necesito información tributaria</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 1, COLUMNA: 2651: <a href="/" class="gva-logo">www.gva.es</a>
+
+
+
+		LINEA: 1, COLUMNA: 2802: <a class="language-select-icon dropdown-toggle" href="#" data-toggle="dropdown">&#x25BC;</a>
+
+
+
+		LINEA: 1, COLUMNA: 2989: <a class="mobile-search-icon dropdown-toggle" href="#" data-toggle="dropdown">#language("search")</a ...
+
+
+
+		LINEA: 1, COLUMNA: 3298: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria;jsessionid=nZXTb ...
+
+
+
+		LINEA: 2, COLUMNA: 19: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria;jsessionid=nZXTb ...
+
+
+
+		LINEA: 3, COLUMNA: 19: <a href="http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria;jsessionid=nZXTb ...
+
+
+
+		LINEA: 4, COLUMNA: 62: <a href="http://www.gva.es"> <img src="/portal-gva-theme/images/GVA/logo_gva.png" alt="logo"> <span...
+
+
+
+		LINEA: 4, COLUMNA: 290: <a accesskey="3" href="/inicio/ciudadanos" title="Aquí encontrará información y servicios dirigid ...
+
+
+
+		LINEA: 4, COLUMNA: 462: <a accesskey="4" href="/inicio/empresas" title="Aquí encontrará información y servicios dirigidos ...
+
+
+
+		LINEA: 4, COLUMNA: 612: <a accesskey="5" href="/inicio/administraciones" title="Aquí encontrará información y servicios d ...
+
+
+
+		LINEA: 4, COLUMNA: 802: <a target="_blank" href="https://www.tramita.gva.es/cdc/aplicacio/inicia.html?idioma=es" title="El e ...
+
+
+
+		LINEA: 17, COLUMNA: 144: <a href="http://www.gva.es/es/inicio/presentacion"title="Acceso a Inicio">Inicio</a>
+
+
+
+		LINEA: 17, COLUMNA: 242: <a href="http://www.gva.es/es/inicio/ciudadanos"title="Acceso a Ciudadanía">Ciudadanía</a>
+
+
+
+		LINEA: 17, COLUMNA: 502: <a href="https://twitter.com/generalitat" class="twitter" target="_blank" title="El enlace se abre e ...
+
+
+
+		LINEA: 17, COLUMNA: 685: <a href="http://www.youtube.com/presidenciagva" class="youtube" target="_blank" title="El enlace se...
+
+
+
+		LINEA: 17, COLUMNA: 874: <a href="https://www.facebook.com/generalitatvalenciana" class="facebook" target="_blank" title="El...
+
+
+
+		LINEA: 17, COLUMNA: 1075: <a href="http://www.flickr.com/presidenciagva" class="flickr" target="_blank" title="El enlace se ab ...
+
+
+
+		LINEA: 17, COLUMNA: 1536: <a class="btn btn-navbar hidden-print" data-toggle="collapse" data-target=".nav-collapse"> <span cla ...
+
+
+
+		LINEA: 17, COLUMNA: 2264: <a href="/inicio/ciudadanos/ciu_areas_tematicas" target="_self" title="Enlace aBuscar por temas">Bus ...
+
+
+
+		LINEA: 17, COLUMNA: 2409: <a href="/inicio/ciudadanos" target="_self" title="Enlace a¿Qué hago si...?">¿Qué hago si...?</a ...
+
+
+
+		LINEA: 17, COLUMNA: 2521: <a href="/inicio/ciudadanos/ciu_busco_trabajo" target="_self" title="Enlace aBusco trabajo">Busco tr ...
+
+
+
+		LINEA: 17, COLUMNA: 2641: <a href="/inicio/ciudadanos/ciu_familia_y_pareja" target="_self" title="Enlace aQuiero información...
+
+
+
+		LINEA: 17, COLUMNA: 2813: <a href="/inicio/ciudadanos/ciu_necesito_informacion_tributaria" target="_self" title="Enlace aNeces ...
+
+
+
+		LINEA: 17, COLUMNA: 2998: <a href="/inicio/ciudadanos/ciu_necesito_ir_al_medico" target="_self" title="Enlace aNecesito ir al...
+
+
+
+		LINEA: 17, COLUMNA: 3144: <a href="/inicio/ciudadanos/ciu_quiero_acceder_a_una_vivienda" target="_self" title="Enlace aQuiero...
+
+
+
+		LINEA: 17, COLUMNA: 3312: <a href="/inicio/ciudadanos/ciu_quiero_estudiar_y_formarme" target="_self" title="Enlace aQuiero est ...
+
+
+
+		LINEA: 17, COLUMNA: 3877: <a href="/web/portal/inicio/la_administracion_valenciana" target="_self" title="Enlace aLa Generalit ...
+
+
+
+		LINEA: 17, COLUMNA: 4010: <a href="http://www.president.gva.es/" target="_blank" title="El enlace se abre en una nueva ventana ...
+
+
+
+		LINEA: 17, COLUMNA: 4154: <a href="/web/portal/inicio/la_administracion_valenciana/lav_org_gobierno_val" target="_self" title= ...
+
+
+
+		LINEA: 17, COLUMNA: 4300: <a href="/web/portal/inicio/area_de_prensa" target="_self" title="Enlace aGabinete de Comunicación" ...
+
+
+
+		LINEA: 17, COLUMNA: 4441: <a href="http://canal.gva.es" target="_blank" title="El enlace se abre en una nueva ventana a Canal...
+
+
+
+		LINEA: 17, COLUMNA: 4586: <a href="http://www.dogv.gva.es/" target="_blank" title="El enlace se abre en una nueva ventana a Di ...
+
+
+
+		LINEA: 17, COLUMNA: 4729: <a href="/web/portal/inicio/servicios_linea/citas_previas" target="_self" title="Enlace aCita previa ...
+
+
+
+		LINEA: 17, COLUMNA: 4857: <a href="/web/portal/inicio/atencion_ciudadano" target="_self" title="Enlace aAtención a la ciudada ...
+
+
+
+		LINEA: 17, COLUMNA: 5030: <a href="http://www.chap.gva.es/ca/web/subsecretaria/contratacion" target="_blank" title="El enlace...
+
+
+
+		LINEA: 17, COLUMNA: 5230: <a href="https://sede.gva.es/es/web/sede_electronica/inicio" target="_blank" title="El enlace se abr ...
+
+
+
+		LINEA: 17, COLUMNA: 5406: <a href="/web/portal/inicio/mi_opinion_cuenta" target="_self" title="Enlace aBuzón de la ciudadaní ...
+
+
+
+		LINEA: 17, COLUMNA: 5548: <a href="http://www.presidencia.gva.es/web/dg-relaciones-ue" target="_blank" title="El enlace se abr ...
+
+
+
+		LINEA: 17, COLUMNA: 5732: <a href="/web/portal/inicio/atencion_ciudadano/enlaces_interes" target="_self" title="Enlace aEnlace ...
+
+
+
+		LINEA: 17, COLUMNA: 6344: <a href="/web/portal/inicio/atencion_ciudadano/buscadores" target="_self" title="Enlace aGuía Prop" ...
+
+
+
+		LINEA: 17, COLUMNA: 6470: <a href="http://www.cv.gva.es/principal.do" target="_blank" title="El enlace se abre en una nueva ve ...
+
+
+
+		LINEA: 17, COLUMNA: 6613: <a href="http://www.accv.es" target="_blank" title="El enlace se abre en una nueva ventana a Firma E ...
+
+
+
+		LINEA: 18, COLUMNA: 898: <a title="Impuesto sobre Sucesiones y Donaciones (modalidad sucesiones)." href="/portal/page/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 1112: <a title="Impuesto sobre Sucesiones y Donaciones (modalidad donaciones)." href="/portal/page/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 1451: <a title="Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados" href="/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 1807: <a title="Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados" href="/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 2076: <a title="Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados" href="/portal/ ...
+
+
+
+		LINEA: 18, COLUMNA: 2434: <a title="Tasas. Modelo 046" href="http://www.chap.gva.es/web/tributos-y-juego/tributos-impuestos-de ...
+
+
+
+		LINEA: 18, COLUMNA: 2798: <a href="http://www.chap.gva.es/web/tributos-y-juego/tributos-infogeneral-dondepagar" title="">Entid ...
+
+
+
+		LINEA: 18, COLUMNA: 3137: <a href="http://www.chap.gva.es/web/tributos-y-juego/hacienda-beneficios-fiscales" title="Beneficios ...
+
+
+
+		LINEA: 18, COLUMNA: 3413: <a href="http://www.chap.gva.es/web/tributos-y-juego/tributos-infogeneral-dondeatenderme" title="Ser ...
+
+
+
+		LINEA: 18, COLUMNA: 3801: <a href="/portal/page/portal/inicio/atencion_ciudadano" title="Servicio de Atención telefónica 012 ...
+
+
+
+		LINEA: 18, COLUMNA: 3966: <a href="http://www.chap.gva.es/web/tributos-y-juego/subhome-tributos" title="Portal Tributario de l ...
+
+
+
+		LINEA: 18, COLUMNA: 4933: <a href="/inicio/procedimientos?id_proc=15392" target="_self" title="Enlace aPago telemático genér ...
+
+
+
+		LINEA: 18, COLUMNA: 5105: <a href="/inicio/procedimientos?id_proc=12072" target="_self" title="Enlace aTasas y otros ingresos...
+
+
+
+		LINEA: 18, COLUMNA: 5793: <a href="https://www.agenciatributaria.gob.es/" target="_blank" title="El enlace se abre en una nuev ...
+
+
+
+		LINEA: 18, COLUMNA: 6977: <a href="/web/portal/inicio/mapa_web" class="" target="_self" title="Enlace aMapa Web">Mapa Web</a>
+
+
+
+		LINEA: 18, COLUMNA: 7090: <a href="/web/portal/inicio/presentacion/bie_info_nuevo_portal" class="" target="_self" title="Enlac ...
+
+
+
+		LINEA: 18, COLUMNA: 7247: <a href="/web/portal/inicio/nota_legal" class="" target="_self" title="Enlace aAviso legal">Aviso le ...
+
+
+
+		LINEA: 18, COLUMNA: 7368: <a href="/es/inicio/accesibilidad" class="" target="_self" title="Enlace aAccesibilidad">Accesibilid ...
+
+
+
+		LINEA: 18, COLUMNA: 7488: <a href="http://pf.gva.es/" class="" target="_blank" title="El enlace se abre en una nueva ventana a ...
+
+
+
+		LINEA: 18, COLUMNA: 7700: <a href="https://webmail.gva.es" class="" target="_blank" title="El enlace se abre en una nueva vent ...
+
+
+
+		LINEA: 18, COLUMNA: 7936: <a href="/web/portal/inicio/xmlrss" class="" target="" title="RSS XML"><img src="/resources/v2/es/im ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 1, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 1, COLUMNA: 1812: <h1 class="invisible">Generalitat Valenciana</h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 17, COLUMNA: 2259: <h2> <a href="/inicio/ciudadanos/ciu_areas_tematicas" target="_self" title="Enlace aBuscar por temas ...
+
+
+
+		LINEA: 17, COLUMNA: 3847: <h2>Destacamos</h2>
+
+
+
+		LINEA: 17, COLUMNA: 6279: <h2 class="compacto">Consultas y trámites online</h2>
+
+
+
+		LINEA: 17, COLUMNA: 7388: <h2 class="grande"> Necesito información tributaria<!-- <span id="icono"></span> --> </h2>
+
+
+
+		LINEA: 18, COLUMNA: 4877: <h2><span class="azul">Destacamos</span></h2>
+
+
+
+		LINEA: 18, COLUMNA: 5720: <h2><span class="azul">Temas relacionados</span></h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 18, COLUMNA: 772: <h3> Quiero presentar una declaraci&#243;n:</h3>
+
+
+
+		LINEA: 18, COLUMNA: 2649: <h3> ¿Cu&#225;les son las entidades de dep&#243;sito o colaboradoras para la recaudaci&#243;n de...
+
+
+
+		LINEA: 18, COLUMNA: 3033: <h3> Quiero conocer los beneficios fiscales aprobados por la Generalitat Valenciana.</h3>
+
+
+
+		LINEA: 18, COLUMNA: 3359: <h3> Para m&#225;s informaci&#243;n:</h3>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 18, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 1, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 18, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...(PORTLET_5_WAR_portalgvaportlet)
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 1, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 1, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 4, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...
+
+
+
+		LINEA: 18, COLUMNA: 8352: <form action="" id="hrefFm" method="post" name="hrefFm"></form>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 1, COLUMNA: 1665: <body class="GVA-responsive controls-visible signed-out public-page"> <div id="wrapper"> <div id="co ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+ 
+
+		LINEA: 4, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 4, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...
+
+
+
+		LINEA: 18, COLUMNA: 8352: <form action="" id="hrefFm" method="post" name="hrefFm"></form>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 4, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...
+
+
+
+		LINEA: 18, COLUMNA: 8352: <form action="" id="hrefFm" method="post" name="hrefFm"></form>
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 4, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...
+
+
+
+		LINEA: 12, COLUMNA: 35: <input type="hidden" name="hl" value="ES" />
+
+
+
+		LINEA: 12, COLUMNA: 80: <input type="hidden" name="as_sitesearch" value="gva.es" />
+
+
+
+		LINEA: 12, COLUMNA: 140: <input type="image" class="buscador_input_img" src="/resources/v2/im ...
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 4, COLUMNA: 1186: <input type="text"	 class="busquedavanzada" title="Buscar" size="17" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 4, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...
+
+
+
+		LINEA: 18, COLUMNA: 8352: <form action="" id="hrefFm" method="post" name="hrefFm"></form>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 4, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...
+
+
+
+		LINEA: 18, COLUMNA: 8352: <form action="" id="hrefFm" method="post" name="hrefFm"></form>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 4, COLUMNA: 1097: <form id="form1cap2" method="get" action="https://www.google.es/search" target="_blank"> <input type ...
+
+
+
+		LINEA: 18, COLUMNA: 8352: <form action="" id="hrefFm" method="post" name="hrefFm"></form>
+
+

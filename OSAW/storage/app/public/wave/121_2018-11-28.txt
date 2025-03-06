@@ -1,0 +1,34 @@
+REPORTE PÁGINA WEB: http://www.mscbs.gob.es/
+FECHA EVALUACIÓN: 2018-11-28
+
+PROBLEMAS
+Empty button	  VECES ENCONTRADO: 3
+Broken ARIA reference	  VECES ENCONTRADO: 27
+
+
+
+ALERTAS
+Redundant link	  VECES ENCONTRADO: 2
+Orphaned form label	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 3
+Noscript element	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 2
+Possible heading	  VECES ENCONTRADO: 5
+Link to PDF document	  VECES ENCONTRADO: 8
+Skipped heading level	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Linked image with alternative text	  VECES ENCONTRADO: 97
+Element language	  VECES ENCONTRADO: 12
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 1
+Null or empty alternative text	  VECES ENCONTRADO: 44
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 6
+
+
+

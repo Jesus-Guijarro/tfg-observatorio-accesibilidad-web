@@ -1,0 +1,9 @@
+REPORTE PÁGINA WEB: https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Vivienda/Vivienda.shtml
+FECHA EVALUACIÓN: 2018-12-03
+
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA G167: Usar un botón adyacente para etiquetar el propósito de un campo		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA G131: Proporcionar etiquetas descriptivas		 
+	VECES ENCONTRADO: 1

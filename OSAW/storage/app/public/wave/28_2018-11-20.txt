@@ -1,0 +1,21 @@
+REPORTE PÁGINA WEB: http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria
+FECHA EVALUACIÓN: 2018-11-20
+
+ALERTAS
+Redundant title text	  VECES ENCONTRADO: 3
+Suspicious alternative text	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 8
+Underlined text	  VECES ENCONTRADO: 1
+Unlabeled form element with title	  VECES ENCONTRADO: 2
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 6
+Image button with alternative text	  VECES ENCONTRADO: 2
+Alternative text	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 3
+
+
+

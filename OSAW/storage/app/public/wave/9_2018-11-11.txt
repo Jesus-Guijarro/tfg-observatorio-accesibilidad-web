@@ -1,0 +1,24 @@
+REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/actividad-legislativa/normativa
+FECHA EVALUACIÓN: 2018-11-11
+
+ALERTAS
+Device dependent event handler	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 9
+Long alternative text	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 5
+Alternative text	  VECES ENCONTRADO: 1
+Fieldset	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 3
+Linked image with alternative text	  VECES ENCONTRADO: 3
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 13
+
+
+

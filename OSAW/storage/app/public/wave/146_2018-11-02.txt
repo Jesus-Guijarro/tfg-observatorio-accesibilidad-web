@@ -1,0 +1,37 @@
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/areas-cultura/bibliotecas.html
+FECHA EVALUACIÓN: 2018-11-02
+
+PROBLEMAS
+Empty link	  VECES ENCONTRADO: 2
+Empty button	  VECES ENCONTRADO: 4
+
+
+
+ALERTAS
+Accesskey	  VECES ENCONTRADO: 1
+Broken same-page link	  VECES ENCONTRADO: 10
+Redundant alternative text	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 3
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Justified text	  VECES ENCONTRADO: 15
+Link to PDF document	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Fieldset	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 9
+Null or empty alternative text	  VECES ENCONTRADO: 4
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
+Element language	  VECES ENCONTRADO: 6
+Form label	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 34
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+
+

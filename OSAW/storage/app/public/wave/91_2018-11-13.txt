@@ -1,0 +1,35 @@
+REPORTE PÁGINA WEB: https://www.iberdrola.es
+FECHA EVALUACIÓN: 2018-11-13
+
+PROBLEMAS
+Spacer image missing alternative text	  VECES ENCONTRADO: 5
+Linked image missing alternative text	  VECES ENCONTRADO: 3
+Empty link	  VECES ENCONTRADO: 6
+
+
+
+ALERTAS
+Redundant alternative text	  VECES ENCONTRADO: 7
+Noscript element	  VECES ENCONTRADO: 3
+Redundant title text	  VECES ENCONTRADO: 14
+Orphaned form label	  VECES ENCONTRADO: 10
+Underlined text	  VECES ENCONTRADO: 4
+Redundant link	  VECES ENCONTRADO: 4
+A nearby image has the same alternative text	  VECES ENCONTRADO: 13
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 3
+Linked image with alternative text	  VECES ENCONTRADO: 10
+Form label	  VECES ENCONTRADO: 2
+Null or empty alternative text	  VECES ENCONTRADO: 17
+Alternative text	  VECES ENCONTRADO: 26
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 25
+
+
+

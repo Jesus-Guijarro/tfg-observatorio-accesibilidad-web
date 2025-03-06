@@ -1,0 +1,33 @@
+REPORTE PÁGINA WEB: http://www.alicante.es/es
+FECHA EVALUACIÓN: 2018-12-05
+
+-PROBLEMAS-
+
+Empty link	  VECES ENCONTRADO: 7
+Empty button	  VECES ENCONTRADO: 4
+Missing form label	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Long alternative text	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Justified text	  VECES ENCONTRADO: 422
+Broken same-page link	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 62
+Redundant link	  VECES ENCONTRADO: 28
+Redundant alternative text	  VECES ENCONTRADO: 7
+
+
+-CARACTERISTICAS-
+
+Element language	  VECES ENCONTRADO: 2
+Alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 65
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 88
+
+

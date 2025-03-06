@@ -1,0 +1,28 @@
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/aviso-legal-mecd/
+FECHA EVALUACIÓN: 2018-11-02
+
+PROBLEMAS
+Empty button	  VECES ENCONTRADO: 4
+
+
+
+ALERTAS
+Broken same-page link	  VECES ENCONTRADO: 1
+Justified text	  VECES ENCONTRADO: 33
+Accesskey	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Linked image with alternative text	  VECES ENCONTRADO: 9
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
+Null or empty alternative text	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 2
+Fieldset	  VECES ENCONTRADO: 1
+Element language	  VECES ENCONTRADO: 6
+
+
+

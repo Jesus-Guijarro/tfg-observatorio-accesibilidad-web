@@ -1,0 +1,6 @@
+REPORTE PÁGINA WEB: https://www.iberia.com/es/autocheckin-online/?language=es&market=es/ibcose
+FECHA EVALUACIÓN: 2018-11-27
+
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	TÉCNICA H64: Usando el atributo <&title> de los elementos <&frame> y <&iframe>		 
+	VECES ENCONTRADO: 2

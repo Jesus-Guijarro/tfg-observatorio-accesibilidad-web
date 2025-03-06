@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: http://www.renfe.com/viajeros/tarifas/index.html
+FECHA EVALUACIÓN: 2018-12-27
+
+-PROBLEMAS-
+
+-ALERTAS-
+
+Noscript element	  VECES ENCONTRADO: 2
+Redundant title text	  VECES ENCONTRADO: 30
+
+
+-CARACTERISTICAS-
+
+Form label	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 17
+Fieldset	  VECES ENCONTRADO: 1
+Image button with alternative text	  VECES ENCONTRADO: 1
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 46
+
+

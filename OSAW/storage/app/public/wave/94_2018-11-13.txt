@@ -1,0 +1,36 @@
+REPORTE PÁGINA WEB: https://www.iberdrola.es/servicios/equipos/smart-solar
+FECHA EVALUACIÓN: 2018-11-13
+
+PROBLEMAS
+Linked image missing alternative text	  VECES ENCONTRADO: 3
+Empty link	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Link to PDF document	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 6
+Skipped heading level	  VECES ENCONTRADO: 1
+Redundant alternative text	  VECES ENCONTRADO: 7
+Underlined text	  VECES ENCONTRADO: 4
+Noscript element	  VECES ENCONTRADO: 2
+Redundant title text	  VECES ENCONTRADO: 16
+Orphaned form label	  VECES ENCONTRADO: 10
+
+
+
+CARACTERISTICAS
+Linked image with alternative text	  VECES ENCONTRADO: 12
+Alternative text	  VECES ENCONTRADO: 7
+Element language	  VECES ENCONTRADO: 3
+Null or empty alternative text	  VECES ENCONTRADO: 43
+Form label	  VECES ENCONTRADO: 2
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 18
+
+
+

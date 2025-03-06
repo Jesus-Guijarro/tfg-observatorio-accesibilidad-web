@@ -1,0 +1,686 @@
+REPORTE PÁGINA WEB: http://www.renfe.com/viajeros/atendo/estaciones.html
+FECHA EVALUACIÓN: 2018-11-15
+
+
+Principio: 1.Perceptible
+Descripcion: La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+	Pauta: 1.1..Alternativas textuales
+	Descripcion: Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple
+
+		Criterio: 1.1.1..Contenido no textual
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H35-Proporcionando textos alternativos a elementos applet
+			Criticidad: Alta
+			Observación: No se han encontrado elementos applet en la p&aacute;gina.<br/>
+			Recomendación: Se recomienda colocar una alternativa textual a los elementos applet, para tener conocimiento de su funci&oacute;n.<br/>
+			Número de errores: 0
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H45-Usando longdesc
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado im&aacute;genes que usen el atributo longdesc para referirse a una larga descripci&oacute;n contenida en un recurso independiente, que sean necesarias como alternativa no textual para una im&aacute;gen.<br/>
+			Recomendación: Use el atributo longdesc en una im&aacute;gen cuando una alternativa textual breve no transmite adecuadamente la funci&oacute;n o la informaci&oacute;n proporcionada en la im&aacute;gen.<br/>
+			Número de errores: 0
+
+			Código: H37-Usando atributos alt en elementos img
+			Criticidad: Media
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong>, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img src="../../img/6atendo.png" alt=""></xmp></li><li><xmp><img src="../../img/atendo_lateral.png" alt=""></xmp></li><li><xmp><img src="../../img/atendo3.png" alt=""></xmp></li><li><xmp><img src="/img/maquetacion/charpie/social_face.png" alt="Facebook"></xmp></li><li><xmp><img src="/img/maquetacion/charpie/social_twitter.png" alt="Twitter"></xmp></li><li><xmp><img class="img-responsive" src="/img/maquetacion/charpie/social_youtube.png" alt="Youtube"></xmp></li><li><xmp><img class="img-responsive" src="/img/maquetacion/charpie/social_flickr.png" alt="Flicker"></xmp></li><li><xmp><img class="img-responsive" src="/img/maquetacion/charpie/social_blog.png" alt="Blog"></xmp></li><li><xmp><img class="img-responsive" src="/img/maquetacion/charpie/social_instagram.png" alt="Instagram"></xmp></li><li><xmp><img class="img-responsive" src="/img/maquetacion/charpie/social_linkedin.png" alt="LinkedIn"></xmp></li><li><xmp><img src="/img/maquetacion/charpie/icon_renfe_ticket.png" class="img-responsive" alt="RenfeTicket"></xmp></li><li><xmp><img src="/img/maquetacion/charpie/icon_renfe_cercanias.png" class="img-responsive" alt="Renfe Cercanías"></xmp></li><li><xmp><img src="/img/maquetacion/charpie/icon_renfe_horarios.png" class="img-responsive" alt="Renfe Horarios"></xmp></li><li><xmp><img src="/img/maquetacion/charpie/icon_renfe_play.png" class="img-responsive" alt="PlayRenfe"></xmp></li><li><xmp><img src="/img/maquetacion/charpie/icon_atendo.png" class="img-responsive" alt="Renfe Atendo"></xmp></li><li><xmp><img class="Logos" src="/img/maquetacion/charpie/logo_gob_small.jpg" alt="Logo fomento"></xmp></li><li><xmp><img class="Logos" src="/img/maquetacion/charpie/logo_renfe_wh_small.png" alt="logo renfe color blanco"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H67-Usando texto alternativo nulo y no el atributo title en el elemento img para imágenes que AT puedan ignorar
+			Criticidad: Media
+			Observación: De un total de 17 im&aacute;genes que se encontraron en la p&aacute;gina con texto alternativo, 3 tienen un valor nulo o sin contenido. Verifique que correspondan a imagenes decorativas. <pre><ul><li><xmp><img src="../../img/6atendo.png" alt=""></xmp></li><li><xmp><img src="../../img/atendo_lateral.png" alt=""></xmp></li><li><xmp><img src="../../img/atendo3.png" alt=""></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 3
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+			Código: C18-Usando reglas margin y padding en lugar de imágenes de espaciador para diseñar un layout
+			Criticidad: Baja
+			Observación: Existen 6 celdas de tablas que no consideran el separador de contenido de los bordes.<br/>
+			Recomendación: Se debe tener en cuenta la separaci&oacute;n del texto respecto a las celdas en las tablas.<br/>
+			Número de errores: 6
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H36-Usando atributos alt en imágenes que se utilizan como botones de envio
+			Criticidad: Alta
+			Observación: Los botones de tipo im&aacute;gen se han encontrado con textos alternativos, verifique que describan la funci&oacute;n del bot&oacute;n y no de la im&aacute;gen.<pre><ul><li><xmp><input class="boton" src="/img/maquetacion/bt_buscar.gif" value="Buscar" alt="Buscar" type="image"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de botones de tipo im&aacute;gen, estos deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la acci&oacute;n del bot&oacute;n)..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: En 4 enlace(s) en la p&aacute;gina se presenta redundancia en la informaci&oacute;n, contenido del enlace y alt de la im&aacute;gen son similares. Para un usuario de teclado, es tedioso para navegar a trav&eacute;s de enlaces redundantes, para los usuarios de las tecnolog&iacute;as de apoyo puede ser confuso encontrar enlaces sucesivos id&eacute;nticos y cuando la alternativa de texto para la im&aacute;gen es un duplicado del texto del enlace provoca que los lectores de pantalla leen la descripci&oacute;n dos veces. Los elementos que presentan este inconveniente son:<pre><ul><li><xmp><a href="/viajeros/movilidad/app_cercanias.html" onclick="fLinkDependienteDispositivo ('/viajeros/movilidad/app_cercanias.html', 'https://itunes.apple.com/es/app/renfe-cercanias/id953441960?mt=8', 'market://play.google.com/store/apps/details?id=com.renfe.renfecercanias'); return false;"><img src="/img/maquetacion/charpie/icon_renfe_cercanias.png" class="img-responsive" alt="Renfe Cercanías">
+               <p>Renfe Cercanías</p></a></xmp></li><li><xmp><a href="/viajeros/movilidad/renfeticket/horariosycompra.html" id="renfehorarios"><img src="/img/maquetacion/charpie/icon_renfe_horarios.png" class="img-responsive" alt="Renfe Horarios">
+                <p>Renfe Horarios</p></a></xmp></li><li><xmp><a href="/viajeros/movilidad/playrenfe.html" id="renfeplay"><img src="/img/maquetacion/charpie/icon_renfe_play.png" class="img-responsive" alt="PlayRenfe">
+                <p>PlayRenfe</p></a></xmp></li><li><xmp><a href="/viajeros/movilidad/index.html" id="renfeatendo"><img src="/img/maquetacion/charpie/icon_atendo.png" class="img-responsive" alt="Renfe Atendo">
+                <p>Renfe Atendo</p></a></xmp></li></ul></pre>.<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 4
+
+			Código: OAW1-Usando videos decorativos
+			Criticidad: Media
+			Observación: No se han encontrado videos en esta p&aacute;gina..<br/>
+			Recomendación: En caso de tener v&iacute;deos decorativos, es recomendable marcarlos como tal con atributos ARIA, esto evita que los usuarios con tecnolog&iacute;as de asistencia tengan dificultades al encontrar videos sin altenativas textuales..<br/>
+			Número de errores: 0
+
+			Código: H88-Usando HTML de acuerdo a la especificación
+			Criticidad: Alta
+			Observación: No se han encontrado elementos obsoletos dentro de la p&aacute;gina..<br/>
+			Recomendación: Ciertas etiquetas y atributos viejos de HTML han sido suspendidos para utilizar en su lugar alternativas m&aacute;s flexibles (como HTML o CSS). Es recomendable siempre adoptar los est&aacute;ndares HTML..<br/>
+			Número de errores: 0
+
+	Pauta: 1.2..Medios tempodependientes
+	Descripcion: Proporcionar alternativas para los medios tempodependientes
+
+		Criterio: 1.2.1..Sólo audio y sólo vídeo (grabado)
+		Nivel: A
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.4..Subtítulos (en directo)
+		Nivel: AA
+
+		Criterio: 1.2.3..Audiodescripción o Medio Alternativo (grabado)
+		Nivel: A
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.8..Medio alternativo (grabado)
+		Nivel: AAA
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.2..Subtítulos (grabados)
+		Nivel: A
+
+			Código: G87-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado videos en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los videos, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+			Código: G87B-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado audios en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los audios, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+	Pauta: 1.3..Adaptable
+	Descripcion: Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura
+
+		Criterio: 1.3.2..Secuencia con significado
+		Nivel: A
+
+			Código: C27A-Haciendo el DOM ordenado para marcar el orden visual: A) Elementos con posicionamiento flotante sin especificar
+			Criticidad: Media
+			Observación: De las 321 reglas CSS en la p&aacute;gina, 38 de ellas usan declaraciones de elementos de forma flotante (float:inherit|none|left|rigth).<pre><ul><li><xmp>#cabecera h1 { float: left; width: 499px; height: 105px; background-image: url(http://www.renfe.com/img/maquetacion/cabecera_renfe.jpg); margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>* html #cabecera h1 { float: left; width: 499px; height: 105px; background-image: url(http://www.renfe.com/img/maquetacion/cabecera_renfe.jpg); margin-top: 0px; margin-right: 0px; margin-bottom: -8px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>:first-child + html #cabecera h1 { float: left; width: 499px; height: 105px; background-image: url(http://www.renfe.com/img/maquetacion/cabecera_renfe.jpg); margin-top: 0px; margin-right: 0px; margin-bottom: -5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#buscador { float: right; margin-top: -35px; margin-right: 7px; margin-bottom: 0px; margin-left: 5px; padding-top: 6px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: right; }</xmp></li><li><xmp>* html #buscador { float: right; padding-top: 6px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: right; margin-top: -35px; margin-right: 7px; margin-bottom: -6px; margin-left: 5px; }</xmp></li><li><xmp>:first-child + html #buscador { float: right; margin-top: -35px; margin-right: 7px; margin-bottom: -6px; margin-left: 5px; padding-top: 6px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: right; }</xmp></li><li><xmp>#buscador input.campo { float: left; margin-top: 2px; margin-right: 2px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>* html #buscador input.campo { float: left; margin-top: 2px; margin-right: 2px; margin-bottom: 8px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>:first-child + html #buscador input.campo { float: left; margin-top: 2px; margin-right: 2px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#nav_rec2 { clear: right; float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>* html #nav_rec2 { clear: right; float: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0.3em; margin-left: 33em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>:first-child + html #nav_rec2 { clear: right; float: none; margin-top: 5px; margin-right: 0px; margin-bottom: 0.3em; margin-left: 34em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#colA { float: left; margin-top: -25px; margin-right: 0px; margin-bottom: 20px; margin-left: 10px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 10em; padding-left: 0.5em; width: 180px; background-image: url(http://www.renfe.com/img/maquetacion/fd_colA.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#colB { float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 20px; margin-left: 0px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; width: 510px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(240, 232, 192); }</xmp></li><li><xmp>* html #colB { float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 20px; margin-left: 0px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; width: 500px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(240, 232, 192); }</xmp></li><li><xmp>#colBB { float: left; }</xmp></li><li><xmp>.colB1 { clear: both; float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 160px; text-align: center; }</xmp></li><li><xmp>.colB2 { float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 160px; text-align: center; }</xmp></li><li><xmp>.colB3 { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 160px; text-align: center; }</xmp></li><li><xmp>.colB1Oferta { clear: both; float: left; margin-top: 0px; margin-right: 2px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 20px; padding-left: 0px; width: 160px; height: 260px; background-image: url(http://www.renfe.com/img/maquetacion/of_pietitulobuscar.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.colB2Oferta { float: left; margin-top: 0px; margin-right: 2px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 20px; padding-left: 0px; width: 160px; height: 260px; background-image: url(http://www.renfe.com/img/maquetacion/of_pietitulobuscar.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>.colB3Oferta { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 20px; padding-left: 0px; width: 160px; height: 260px; background-image: url(http://www.renfe.com/img/maquetacion/of_pietitulobuscar.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 100%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#colC { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 20px; margin-left: 0px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; width: 180px; }</xmp></li><li><xmp>.img_texto230 { float: left; margin-top: 0.5em; margin-right: 1em; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.fr { float: right; }</xmp></li><li><xmp>.img_lista_enlaces { float: left; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; }</xmp></li><li><xmp>.parrafo_flotante .imagen_flotante { float: left; margin-top: 0.5em; margin-right: 1em; margin-bottom: 0.5em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.colBEspecial { clear: both; float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 500px; }</xmp></li><li><xmp>.boton1 { float: right; margin-top: -23px; }</xmp></li><li><xmp>.boton2 img { float: right; margin-top: -20px; }</xmp></li><li><xmp>#colCLogin { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 20px; margin-left: 0px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; width: 150px; }</xmp></li><li><xmp>#colCLogin input { width: 80px; font-size: 0.7em; float: right; margin-top: 5px; padding-top: 0px; padding-right: 0.2em; padding-bottom: 0.3em; padding-left: 0.2em; }</xmp></li><li><xmp>#colCLogin select { width: 155px; font-size: 0.7em; float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0.2em; padding-bottom: 0.3em; padding-left: 0.2em; }</xmp></li><li><xmp>#colCLogin h4 { float: left; font-size: 0.8em; padding-top: 0.2em; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(0, 0, 0); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#colCLogin input.boton { font-size: 0.9em; float: left; margin-top: 10px; margin-right: 40px; margin-bottom: 10px; margin-left: 30px; }</xmp></li><li><xmp>#nav_vj { margin-top: -30px; margin-right: 10px; margin-bottom: 0px; margin-left: 0px; width: 300px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: right; float: right; }</xmp></li><li><xmp>h1 { float: left; }</xmp></li><li><xmp>.PieRenfe .logos { width: 65%; position: relative; float: right; padding-top: 15px; padding-right: 0px; padding-bottom: 15px; padding-left: 0px; text-align: right; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 38
+
+			Código: H56-Usando el atributo dir en un elemento en linea para resolver problemas con secuencias direccionales anidadas 
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han segmentos de texto definidos en un idioma espec&iacute;fico..<br/>
+			Recomendación: En caso de que un texto en la p&aacute;gina se encuentre en un idioma distito al de la misma, se debe especificar el idioma y en caso de ser necesario la direcci&oacute;n de lectura por medio del atributo <code>dir</code>.  Para mayor informaci&oacute;n refierase a <a haref=https://www.w3.org/TR/html4/struct/dirlang.html>Informaci&oacute;n sobre el idioma y la direcci&oacute;n de lectura de un texto</a>.<br/>
+			Número de errores: 0
+
+			Código: C6-Proporcionando contenido basado en marcadores estructurales
+			Criticidad: Baja
+			Observación: De las 315 reglas CSS en la p&aacute;gina, 6 de ellas usan declaraciones de elementos de forma absoluta (position:asolute).<pre><ul><li><xmp>table caption { position: absolute; left: -9999px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.hidden { position: absolute; left: -9999px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>p.oculto { position: absolute; left: -9999px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.oculto { position: absolute; left: -9999px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>#colCLogin #menu_lat3 ul li { background-image: url(http://www.renfe.com/img/maquetacion/it_triangulo_81005e.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(207, 201, 196); list-style-position: outside; list-style-type: none; list-style-image: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 3px; padding-right: 0px; padding-bottom: 5px; padding-left: 20px; background-position: 0px 0px; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#colC #menu_lat3 ul li { background-image: url(http://www.renfe.com/img/maquetacion/it_triangulo_81005e.gif); background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(207, 201, 196); list-style-position: outside; list-style-type: none; list-style-image: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 3px; padding-right: 0px; padding-bottom: 5px; padding-left: 20px; background-position: 0px 0px; background-repeat: no-repeat no-repeat; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 6
+
+			Código: C8-Usando la propiedad letter-spacing de CSS para controlar el espacio dentro de una palabra
+			Criticidad: Baja
+			Observación: No se han detectado textos sospechosos en los que palabras se han formado usando espacios en blanco..<br/>
+			Recomendación: En el caso de requerir por efectos visuales el destarcar cada letra de una palabra por medio de separaciones, utilice la propiedad CSS <code>letter-spacing</code>.<br/>
+			Número de errores: 0
+
+			Código: C27B-Haciendo el DOM ordenado para marcar el orden visual: B) Elementos con posicionamiento absoluto
+			Criticidad: Media
+			Observación: De las 316 reglas CSS en la p&aacute;gina, 5 de ellas usan declaraciones de elementos de forma absoluta (position:asolute|relative|fix).<pre><ul><li><xmp>table caption { position: absolute; left: -9999px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.hidden { position: absolute; left: -9999px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>p.oculto { position: absolute; left: -9999px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.oculto { position: absolute; left: -9999px; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.PieRenfe .logos { width: 65%; position: relative; float: right; padding-top: 15px; padding-right: 0px; padding-bottom: 15px; padding-left: 0px; text-align: right; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 5
+
+		Criterio: 1.3.1..Información y relaciones
+		Nivel: A
+
+			Código: G140-Separando la información y la estructura de la presentación para permitir diferentes presentaciones
+			Criticidad: Alta
+			Observación: El sitio se ha estructurado mezclando el contenido con la presentaci&oacute;n por medio de la definici&oacute;n de estilos CSS en el contenido HTML. Los componentes que presentan este problema son: <pre><code><ul><li><xmp><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_renfe_0" style="display: none; width: 0px; height: 0px; " src="http://fast.renfe.demdex.net/dest5.html?d_nsid=0#http%3A%2F%2Fwww.renfe.com%2Fviajeros%2Fatendo%2Festaciones.html" class="aamIframeLoaded"></iframe></xmp></li></ul></code></pre>.<br/>
+			Recomendación: El separar el contenido de la presentaci&oacute;n facilita la adaptaci&oacute;n de los contenidos a diferentes dispositivos. Se recomienda el uso de hojas de estilo para definir la presentaci&oacute;n de los componentes indicados..<br/>
+			Número de errores: 1
+
+			Código: F87-Fallo en el criterio 1.3.1 debido a la inserción de contenidos no decorativos mediante el uso de :before y :after pseudo-elementos y la propiedad content de los CSS
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H39-Usando elementos caption para asociar títulos de las tablas de datos a los datos de la tabla
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas..<br/>
+			Recomendación: En el caso de hacer uso de tablas estas deben ser identificadas por medio del elemento caption, siempre que no sean utilizadas para maquetaci&oacute;n (layout)..<br/>
+			Número de errores: 0
+
+			Código: H63-Usando el atributo scope para asociar las celdas de encabezado con las celdas de datos en las tablas
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H73-Usando el atributo summary del elemento table para dar una visión general de las tablas de datos
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas con un atriuto summary..<br/>
+			Recomendación: En el caso de hacer uso de tablas e identificarlas con el atributo summary este debe ser valido para identificar la tabla o explicar su estructura en caso de tablas de datos complejas..<br/>
+			Número de errores: 0
+
+			Código: H48-Usando ol, ul y dl para listas o grupos de enlaces
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H85-Usando OPTIONGROUP para agrupar elementos OPTION dentro de un SELECT
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H49-Usando marcas semánticas para marcar textos enfatizados o textos especiales
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H51-Usando tabla de marcado para presentar información tabular
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Al utilizar tablas de datos para presentar informaci&oacute;n tabular use los elementos th (encabezados) y td (datos)..<br/>
+			Número de errores: 0
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Renfe</li><ul><li>[H2] [OK] Menú principal</li><li>[H2] [OK] Estaciones y Trenes con servicio Atendo</li><li>[H2] [OK] Contenido de la página</li><li>[H2] [OK] Información adicional</li><li>[H2] [OK] Nuestras Redes</li><li>[H2] [OK] Nuestras Apps</li><li>[H2] [OK] Nuestras Webs</li><li>[H2] [OK] Otros Productos</li><li>[H2] [OK] Aviso Legal</li><li>[H2] [OK] Contacto</li><li>[H2] [OK] Copyright - Renfe - Todos los derechos reservados</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: OAW3-Usando elementos legend correctamente
+			Criticidad: Baja
+			Observación: La etiqueta legend se est&aacute; ocupando de manera correcta en el elemento fieldset.<br/>
+			Recomendación: Es importante que el primer elemento de un fieldset sea un elemento legend que describa el tipo de informaci&oacute;n que se est&aacute; agrupando..<br/>
+			Número de errores: 0
+
+			Código: OAW4-Comprobando el uso de cabeceras múltiples dentro de una fila
+			Criticidad: Media
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Los elementos <code>th</code> deben emplearse correctamente para que el usuario identifique sin dificultades los contenidos de las tablas.<br/>
+			Número de errores: 0
+
+			Código: OAW5-Comprobando la validez de los roles ARIA
+			Criticidad: Alta
+			Observación: No se han encontrado elementos con atributo role..<br/>
+			Recomendación: Es recomendable apegarse a la la especificaci&oacute;n WAI-ARIA, que define un conjunto de atributos HTML adicionales que se pueden aplicar a los elementos para proporcionar sem&aacute;ntica adicional y mejorar la accesibilidad donde sea que falte.<br/>
+			Número de errores: 0
+
+			Código: OAW6-Comprobando que las celdas de la tabla tengan datos
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Las celdas vac&iacute;as en las tablas suelen causar problemas para los usuarios que ocupan tecnolog&iacute;as de accesibilidad..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.3..Características sensoriales
+		Nivel: A
+
+	Pauta: 1.4..Distinguible
+	Descripcion: Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo
+
+		Criterio: 1.4.2..Control del audio
+		Nivel: A
+
+		Criterio: 1.4.4..Redimensionamiento del texto
+		Nivel: AA
+
+			Código: C28-Especificando el tamaño de un contenedor de texto usando unidades em
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C14-Usando unidades em para tamaños de fuente
+			Criticidad: Alta
+			Observación: De las 60 reglas CSS en la p&aacute;gina para definir el tamaño de letra (font-size), 6 de ellas usan declaraciones de elementos de forma absoluta (position:asolute) o tiene un valor incorrecto.<pre><ul><li><xmp>#path p { color: rgb(240, 232, 192); margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; font-size: 0.75em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(207, 201, 196); }</xmp></li><li><xmp>.colB1 p, .colB2 p, .colB3 p { font-size: 0.75em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.1em; margin-left: 0px; padding-top: 0.2em; padding-right: 0.2em; padding-bottom: 0.2em; padding-left: 0.2em; text-align: left; }</xmp></li><li><xmp>.colB1Oferta p, .colB2Oferta p, .colB3Oferta p { font-size: 0.75em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.1em; margin-left: 0px; padding-top: 0.2em; padding-right: 0.2em; padding-bottom: 0.2em; padding-left: 0.2em; }</xmp></li><li><xmp>.colBEspecial p { font-size: 0.75em; margin-top: 0px; margin-right: 0px; margin-bottom: 0.1em; margin-left: 0px; padding-top: 0.2em; padding-right: 0.2em; padding-bottom: 0.2em; padding-left: 0.2em; }</xmp></li><li><xmp>.caja_texto { border-right-color: rgb(204, 204, 204); border-right-width: 0.1em; border-right-style: solid; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid; font-size: 0.85em; border-left-color: rgb(204, 204, 204); border-left-width: 1px; border-left-style: solid; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 0.1em; border-bottom-style: solid; font-family: Arial, Helvetica, sans-serif; }</xmp></li><li><xmp>* html .caja_texto { border-right-color: rgb(204, 204, 204); border-right-width: 0.1em; border-right-style: solid; border-top-color: rgb(204, 204, 204); border-top-width: 1px; border-top-style: solid; font-size: 0.85em; border-left-color: rgb(204, 204, 204); border-left-width: 1px; border-left-style: solid; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 0.1em; border-bottom-style: solid; font-family: Arial, Helvetica, sans-serif; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS para definir el tamaño de letra del contenido, utilice valores relativos por medio de unidades "em", % o valores  xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, o larger. Al usar medidas de fuente absolutas, se limita el contenido textual de la p&aacute;gina ya que no se podr&iacute;a adaptar a diferentes resoluciones de pantalla..<br/>
+			Número de errores: 6
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C13-Usando tamaños de fuente nombrados
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C12-Usando porcentajes para tamaños de fuente
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 1.4.8..Presentación visual
+		Nivel: AAA
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C20-Usando medidas relativas para establecer anchos de columna para que las líneas puedan promediar 80 caracteres o menos cuando se cambia el tamaño del navegador
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C19-Especificar la alineación, ya sea a la izquierda o a la derecha en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C21-Especificando espacio entre líneas en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 2.Operable
+Descripcion: Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+	Pauta: 2.1..Accesible por teclado
+	Descripcion: Proporcionar acceso a toda la funcionalidad mediante el teclado
+
+		Criterio: 2.1.1..Teclado
+		Nivel: A
+
+	Pauta: 2.2..Tiempo suficiente
+	Descripcion: Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido
+
+		Criterio: 2.2.2..Pausar, detener, ocultar
+		Nivel: A
+
+			Código: G11A-Creando contenido que parpadea al menos 5 segundos: A) Elementos con animación blink
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>blink</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: G11B-Creando contenido que parpadea al menos 5 segundos: B) Elementos con animación marquee
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>marquee</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+	Pauta: 2.3..Convulsiones
+	Descripcion: No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones
+
+	Pauta: 2.4..Navegable
+	Descripcion: Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran
+
+		Criterio: 2.4.1..Evitar bloques
+		Nivel: A
+
+		Criterio: 2.4.2..Páginas tituladas
+		Nivel: A
+
+			Código: G88-Proporcionar títulos descriptivos para páginas web
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H25-Proporcionando un título usando el elemento title
+			Criticidad: Alta
+			Observación: La p&aacute;gina tiene un t&iacute;tulo, aseg&uacute;rese que sea descriptivo y que est&eacute; acorde al contenido de la p&aacute;gina. <pre><ul><title>Estaciones y Trenes con servicio Atendo</title></ul></pre>.<br/>
+			Recomendación: El t&iacute;tulo de la p&aacute;gina debe ser descriptivo y brindar una persepci&oacute;n del contenido de la misma..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.3..Orden del foco
+		Nivel: A
+
+			Código: H4-Creando un orden lógico en el orden del tabulador a través de los enlaces, controles de formulario, y objetos
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.4..Propósito de los enlaces (En contexto)
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H33-Complementando el texto del enlace con el atributo title
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C7-Usando CSS para ocultar una porcion de texto de un enlace
+			Criticidad: Baja
+			Observación: En la p&aacute;gina se est&aacute; utilizando en 46 ocaci&oacute;n(es) la opci&oacute;n para ocultar contenido, verifique que este sea relevante, o que sea facilmente accesible.<br/>
+			Recomendación: Al ocultar una parte de informaci&oacute;n de la p&aacute;gina, se puede llegar a confundir al usuario.<br/>
+			Número de errores: 46
+
+			Código: H30-Proporcionar un texto de enlace que describa el propósito del enlace para los elemtos de anclaje (a)
+			Criticidad: Alta
+			Observación: En 3 im&aacute;gen(es) de las 17 que hay en la p&aacute;gina, tiene un valor nulo o vacio verifique que corresponda a im&aacute;genes decorativas.  Las im&aacute;genes que presentan este inconveniente son:<pre><ul><li><xmp><img src="../../img/6atendo.png" alt=""></xmp></li><li><xmp><img src="../../img/atendo_lateral.png" alt=""></xmp></li><li><xmp><img src="../../img/atendo3.png" alt=""></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&aacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 3
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: En 4 enlace(s) en la p&aacute;gina se presenta redundancia en la informaci&oacute;n, contenido del enlace y alt de la im&aacute;gen son similares. Para un usuario de teclado, es tedioso para navegar a trav&eacute;s de enlaces redundantes, para los usuarios de las tecnolog&iacute;as de apoyo puede ser confuso encontrar enlaces sucesivos id&eacute;nticos y cuando la alternativa de texto para la im&aacute;gen es un duplicado del texto del enlace provoca que los lectores de pantalla leen la descripci&oacute;n dos veces. Los elementos que presentan este inconveniente son:<pre><ul><li><xmp><a href="/viajeros/movilidad/app_cercanias.html" onclick="fLinkDependienteDispositivo ('/viajeros/movilidad/app_cercanias.html', 'https://itunes.apple.com/es/app/renfe-cercanias/id953441960?mt=8', 'market://play.google.com/store/apps/details?id=com.renfe.renfecercanias'); return false;"><img src="/img/maquetacion/charpie/icon_renfe_cercanias.png" class="img-responsive" alt="Renfe Cercanías">
+               <p>Renfe Cercanías</p></a></xmp></li><li><xmp><a href="/viajeros/movilidad/renfeticket/horariosycompra.html" id="renfehorarios"><img src="/img/maquetacion/charpie/icon_renfe_horarios.png" class="img-responsive" alt="Renfe Horarios">
+                <p>Renfe Horarios</p></a></xmp></li><li><xmp><a href="/viajeros/movilidad/playrenfe.html" id="renfeplay"><img src="/img/maquetacion/charpie/icon_renfe_play.png" class="img-responsive" alt="PlayRenfe">
+                <p>PlayRenfe</p></a></xmp></li><li><xmp><a href="/viajeros/movilidad/index.html" id="renfeatendo"><img src="/img/maquetacion/charpie/icon_atendo.png" class="img-responsive" alt="Renfe Atendo">
+                <p>Renfe Atendo</p></a></xmp></li></ul></pre>.<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 4
+
+		Criterio: 2.4.6..Encabezados y etiquetas
+		Nivel: AA
+
+			Código: G130-Proporcionar títulos descriptivos
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.5..Re-autentificación
+		Nivel: AA
+
+			Código: H59-Usando el elemneto link y herramientas de navegación
+			Criticidad: Alta
+			Observación: Los 4 links de relacion que tiene la p&aacute;gina se han definido correctamente.<br/>
+			Recomendación: Es importante colocar la etiqueta link &uacute;nicamente dentro del encabezado de la p&aacute;gina, e indicar la relaci&oacute;n que guarda con la misma.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.7..Foco visible
+		Nivel: AA
+
+			Código: C15-Usando CSS para cambiar la presentación de un componente de interfaz de usuario cuando recibe el foco
+			Criticidad: Baja
+			Observación: No se han detectado declaraciones del foco de teclado.<br/>
+			Recomendación: Verificar que el foco sea visible y que este en correcto posicionamiento en la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.10..Encabezados se sección
+		Nivel: AAA
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Renfe</li><ul><li>[H2] [OK] Menú principal</li><li>[H2] [OK] Estaciones y Trenes con servicio Atendo</li><li>[H2] [OK] Contenido de la página</li><li>[H2] [OK] Información adicional</li><li>[H2] [OK] Nuestras Redes</li><li>[H2] [OK] Nuestras Apps</li><li>[H2] [OK] Nuestras Webs</li><li>[H2] [OK] Otros Productos</li><li>[H2] [OK] Aviso Legal</li><li>[H2] [OK] Contacto</li><li>[H2] [OK] Copyright - Renfe - Todos los derechos reservados</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+
+Principio: 3.Comprensible
+Descripcion: La información y el manejo de la interfaz de usuario deben ser comprensibles
+
+	Pauta: 3.1..Legible
+	Descripcion: Hacer que los contenidos textuales resulten legibles y comprensibles
+
+		Criterio: 3.1.1..Idioma de la página
+		Nivel: A
+
+			Código: H57-Usando el atributo language en el elemento html
+			Criticidad: Alta
+			Observación: La definici&oacute;n de lenguaje en la p&aacute;gina se ha realizado exitosamente.<br/>
+			Recomendación: Verificar la especificaci&oacute;n del lenguaje, es importante especificar en que idioma se est&aacute; presentando la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.3..Palabras inusuales
+		Nivel: AAA
+
+			Código: H60-Usando el elemento link para enlazar a un glosario
+			Criticidad: Baja
+			Observación: La p&aacute;gina podr&iacute;a requerir un link a un glosario de palabras complejas.<br/>
+			Recomendación: Cuando se utiliza palabras complejas es recomendable colocar un glosario que las defina.<br/>
+			Número de errores: 1
+
+			Código: H40-Usando listas de definición
+			Criticidad: Baja
+			Observación: No se han encontrado listas dentro de la p&aacute;gina.<br/>
+			Recomendación: La estructura de la lista de definici&oacute;n, deben ser empleadas correctamente, colocando cada uno de sus componentes sin descartar ninguno.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.6..Pronunciación
+		Nivel: AAA
+
+			Código: H62-Usando el elemento ruby
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado etiquetas ruby.<br/>
+			Recomendación: Es importante supervisar el correcto uso de esta etiqueta para caracteres especiales.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.4..Abreviaturas
+		Nivel: AAA
+
+			Código: H70-Usando elementos frame para agrupar bloques de material repetido
+			Criticidad: Alta
+			Observación: La p&aacute;gina no tiene etiquetas frame.<br/>
+			Recomendación: Los elementos frame no deben usarse para maquetar contenido en la p&aacute;gina, se debe utilizar hojas de estilo.<br/>
+			Número de errores: 0
+
+	Pauta: 3.2..Predecible
+	Descripcion: Hacer que las páginas web aparezcan y operen de manera predecible
+
+		Criterio: 3.2.2..Al introducir datos
+		Nivel: A
+
+			Código: H32-Proporcionar botones de envio
+			Criticidad: Media
+			Observación: Verificar que el formulario tenga m&eacute;todo de env&iacute;o.<br/>
+			Recomendación: De los 1 formularios de la p&aacute;gina, existen 1 que no tienen m&eacute;todo de env&iacute;o.<br/>
+			Número de errores: 1
+
+		Criterio: 3.2.5..Cambios a petición
+		Nivel: AAA
+
+			Código: H83-Usando el atributo target para abrir una nueva ventana a petición del usuario e indicando en ventana a petición del usuario e indicando en el texto de este enlace
+			Criticidad: Media
+			Observación: 13 enlace(s) indica(n) como destino una nueva ventana, verifique que el enlace contiene informaci&oacute;n que indica que el enlace se abrir&aacute; en una nueva ventana. <pre><ul><li><xmp><a href="https://www.facebook.com/Renfe" target="_blank" title="Renfe Facebook :: Se abre en nueva ventana"><img src="/img/maquetacion/charpie/social_face.png" alt="Facebook"></a></xmp></li><li><xmp><a href="https://twitter.com/renfe" target="_blank" title="Renfe Twitter :: Se abre en nueva ventana"><img src="/img/maquetacion/charpie/social_twitter.png" alt="Twitter"></a></xmp></li><li><xmp><a href="https://www.youtube.com/user/renfe" target="_blank" title="Renfe Youtube :: Se abre en nueva ventana"><img class="img-responsive" src="/img/maquetacion/charpie/social_youtube.png" alt="Youtube"></a></xmp></li><li><xmp><a href="https://www.flickr.com/photos/renfeoperadora/" target="_blank" title="Renfe Flicker :: Se abre en nueva ventana"><img class="img-responsive" src="/img/maquetacion/charpie/social_flickr.png" alt="Flicker"></a></xmp></li><li><xmp><a href=" http://blog.renfe.com/" target="_blank" title="Blog Renfe :: Se abre en nueva ventana"><img class="img-responsive" src="/img/maquetacion/charpie/social_blog.png" alt="Blog"></a></xmp></li><li><xmp><a href="https://www.instagram.com/renfe/" target="_blank" title="Instagram Renfe :: Se abre en nueva ventana"><img class="img-responsive" src="/img/maquetacion/charpie/social_instagram.png" alt="Instagram"></a></xmp></li><li><xmp><a href="https://www.linkedin.com/company/renfe" target="_blank" title="LinkedIn Renfe :: Se abre en nueva ventana"><img class="img-responsive" src="/img/maquetacion/charpie/social_linkedin.png" alt="LinkedIn"></a></xmp></li><li><xmp><a target="_blank" href="http://viajes.renfe.com/" title="Renfe Viajes :: Se abre en nueva ventana">Renfe Viajes</a></xmp></li><li><xmp><a target="_blank" href="https://venta.renfe.com/vol/?" title="Venta Billetes :: Se abre en nueva ventana">Venta Billetes</a></xmp></li><li><xmp><a target="_blank" href="https://agencias.renfe.com/vol/agencias.do" title="Renfe Agencias :: Se abre en nueva ventana">Renfe Agencias</a></xmp></li><li><xmp><a target="_blank" href="https://venta.renfe.com/vol/trenesTuriIni.do" title="Trenes Temáticos :: Se abre en nueva ventana">Trenes Temáticos</a></xmp></li><li><xmp><a target="_blank" href="/trenesturisticos/index.html" title="Trenes Turísticos :: Se abre en nueva ventana">Trenes Turísticos</a></xmp></li><li><xmp><a class="page-scroll no-padding" href="https://www.fomento.gob.es/" title="ministerio de fomento :: Se abre en nueva ventana" target="_blank"><img class="Logos" src="/img/maquetacion/charpie/logo_gob_small.jpg" alt="Logo fomento"></a></xmp></li></ul></pre>.<br/>
+			Recomendación: Un ejemplo podr&iacute;a ser: <code><xmp><a href="ayuda.html" target="_blank">Mostrar ayuda (abre nueva ventana)</a></xmp></code>..<br/>
+			Número de errores: 13
+
+			Código: H76-Usando meta refresh para crear un redireccionamiento de cliente instantánea
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se ha detectado el uso de la etiqueta meta conjuntamente con el atributo refresh para actualizaci&oacute;n de la p&aacute;gina..<br/>
+			Recomendación: En el caso de quere hacer uso de la misma, considerar que la continua actualizaci&oacute;n de la p&aacute;gina no es recomendable, puede causar confusi&oacute;n en el usuario..<br/>
+			Número de errores: 0
+
+	Pauta: 3.3..Entrada de datos asistida
+	Descripcion: Ayudar a los usuarios a evitar y corregir los errores
+
+		Criterio: 3.3.1..Identificación de errores
+		Nivel: A
+
+		Criterio: 3.3.2..Etiquetas o instrucciones
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H71-Proporcionando una descripcion para grupos de controles de formularios usando los elementos fieldset y legend
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: OAW2-Proporcionando contenido en todos los elementos
+			Criticidad: Baja
+			Observación: En la p&aacute;gina existen 1 elementos sin contenido. <pre><ul><li><xmp><p></p></xmp></li</ul></pre>.<br/>
+			Recomendación: Es importante evitar declarar elementos sin contenido.<br/>
+			Número de errores: 1
+
+		Criterio: 3.3.5..Ayuda
+		Nivel: AAA
+
+			Código: G71-Proporcionando un enlace de ayuda en cada pagina web
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H89-Usando el atributo title para proporcionar ayuda contextual
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 4.Robusto
+Descripcion: El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+	Pauta: 4.1..Compatible
+Descripcion: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas
+
+		Criterio: 4.1.1..Procesamiento
+		Nivel: A
+
+			Código: G134-Validación de páginas web
+			Criticidad: Alta
+			Observación: <p>La pagina ha sido analizada en <a href='https://validator.w3.org/' target='_blank'>https://validator.w3.org/</a>, encontrandose <strong>12 errores</strong>.</p><pre><ul><li><xmp>Obsolete doctype. Expected “<!DOCTYPE html>”.:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  <htm</xmp></li><li><xmp>A “meta” element with an “http-equiv” attribute whose value is “X-UA-Compatible” must have a “content” attribute with the value “IE=edge”.:
+-8" />    <meta http-equiv="X-UA-Compatible" content="IE=10">    <m</xmp></li><li><xmp>Attribute “value” not allowed on element “input” at this point.:
+<input class="boton" src="/img/maquetacion/bt_buscar.gif" value="Buscar" alt="Buscar" type="image"/></xmp></li><li><xmp>Bad value “/docs/Guia ATENDO Castellano OCT2017.pdf” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.:
+<li><a href="/docs/Guia ATENDO Castellano OCT2017.pdf" title="Guía - Lectura Fácil :: Se abre en nueva ventana"  onclick="window.open(this.href);return false;" >Guía -</xmp></li><li><xmp>The “scrolling” attribute on the “iframe” element is obsolete. Use CSS instead.:
+<iframe title="Estaciones y Trenes con servicio Atendo" src="http://web02.renfe.es/u13/GAD/estasAccesible.nsf" width="700" height="800" scrolling="auto" frameborder="0" onload="onLoadFrame(this)"></xmp></li><li><xmp>The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.:
+<iframe title="Estaciones y Trenes con servicio Atendo" src="http://web02.renfe.es/u13/GAD/estasAccesible.nsf" width="700" height="800" scrolling="auto" frameborder="0" onload="onLoadFrame(this)"></xmp></li><li><xmp>Text not allowed in element “iframe” in this context.:
+s)">      <a href=</xmp></li><li><xmp>Text not allowed in element “iframe” in this context.:
+">      <a href="http://web02.renfe.es/u13/GAD/estasAccesible.nsf">Su navegador no admite marcos. Pulse para acceder a una versi&oacute;n sin marcos</a></xmp></li><li><xmp>Text not allowed in element “iframe” in this context.:
+sin marcos</a></xmp></li><li><xmp>Text not allowed in element “iframe” in this context.:
+marcos</a>      </ifra</xmp></li><li><xmp>Stray end tag “ul”.:
+</ul></xmp></li><li><xmp>No “p” element in scope but a “p” end tag seen.:
+anco"></a></p></xmp></li></ul></pre><p>Para mayor información revise el siguiente enlace: <a href='https://validator.w3.org/nu/?doc=http://www.renfe.com/viajeros/atendo/estaciones.html' target='_blank'>Validación W3C</a></p>.<br/>
+			Recomendación: .<br/>
+			Número de errores: 12
+
+		Criterio: 4.1.2..Nombre, función, valor
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H64-Usando el atributo title en los elementos frame e iframe 
+			Criticidad: Alta
+			Observación: Los 2 frames de la p&aacute;gina presentan una descripci&oacute;n, verifique que sea descriptivo y vaya acorde al contenido del frame.<pre><ul><li><xmp><iframe title="Estaciones y Trenes con servicio Atendo" src="http://web02.renfe.es/u13/GAD/estasAccesible.nsf" width="700" height="800" scrolling="auto" frameborder="0" onload="onLoadFrame(this)">
+					&lt;a href="http://web02.renfe.es/u13/GAD/estasAccesible.nsf"&gt;Su navegador no admite marcos. Pulse para acceder a una versi&amp;oacute;n sin marcos&lt;/a&gt;
+					</iframe></xmp></li><li><xmp><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_renfe_0" style="display: none; width: 0px; height: 0px; " src="http://fast.renfe.demdex.net/dest5.html?d_nsid=0#http%3A%2F%2Fwww.renfe.com%2Fviajeros%2Fatendo%2Festaciones.html" class="aamIframeLoaded"></iframe></xmp></li></ul></pre>.<br/>
+			Recomendación: En caso de usar elementos frame o iframe acompañelos por una descripci&oacute;n del mismo a travez del atributo <code>title</code>..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+

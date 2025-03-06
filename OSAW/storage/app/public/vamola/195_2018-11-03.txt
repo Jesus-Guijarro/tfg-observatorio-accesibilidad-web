@@ -1,0 +1,738 @@
+REPORTE PÁGINA WEB: http://www.umh.es/acc/
+FECHA EVALUACIÓN: 2018-11-03
+
+-PROBLEMAS CONOCIDOS-
+
+Ningún problema conocido encontrado.
+
+  
+
+-PROBLEMAS POTENCIALES-
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 30, COLUMNA 34: <a href="#titulo">Ir a contenido</a>
+
+
+
+		LINEA: 31, COLUMNA 63: <ahref="/acc/contenido/Estudiantes/:none/datos_es.html">Estudiantes</a>
+
+
+
+		LINEA: 31, COLUMNA 148: <ahref="/acc/contenido/PDI/:none/datos_es.html">PDI</a>
+
+
+
+		LINEA: 31, COLUMNA 217: <ahref="/acc/contenido/PAS/:none/datos_es.html">PAS</a>
+
+
+
+		LINEA: 31, COLUMNA 286: <ahref="/acc/contenido/Visitantes/:none/datos_es.html">Visitantes</a>
+
+
+
+		LINEA: 31, COLUMNA 369: <ahref="/acc/contenido/Alumni/:none/datos_es.html">Alumni</a>
+
+
+
+		LINEA: 31, COLUMNA 444: <ahref="/acc/contenido/Universidad/:universidad/datos_es.html">Acerca de</a>
+
+
+
+		LINEA: 31, COLUMNA 534: <ahref="/acc/contenido/AdmisionAyudas/:admision_ayudas/datos_es.html">Admisión y ayudas</a>
+
+
+
+		LINEA: 31, COLUMNA 640: <ahref="/acc/contenido/Estudios/:Estudios_Universitarios/datos_es.html">Estudios</a>
+
+
+
+		LINEA: 31, COLUMNA 738: <ahref="/acc/contenido/Investigacion/:investigacion/datos_es.html">Investigación</a>
+
+
+
+		LINEA: 34, COLUMNA 1: <a id="idioma_es" class="select_idioma" href="?lang=ES" xml:lang="es" lang="es" >Español</a>
+
+
+
+		LINEA: 38, COLUMNA 1: <a id="idioma_ca" class="non_select_idioma" href="?lang=VAL" xml:lang="ca" lang="ca" >Valencià</a>
+
+
+
+		LINEA: 42, COLUMNA 1: <a id="idioma_en" class="non_select_idioma" href="?lang=EN" xml:lang="en" lang="en" >English</a>
+
+
+
+		LINEA: 51, COLUMNA 6: <a href='https://cultura.umh.es/es/cursosdhivern/' target='_blank'>¡Te esperan más de 40 cursos!</ ...
+
+
+
+		LINEA: 51, COLUMNA 118: <a href='https://internacional.umh.es/2018/10/25/la-umh-organiza-sesiones-informativas-sobre-los-pro ...
+
+
+
+		LINEA: 51, COLUMNA 291: <a href='http://umhsaludable.umh.es/2018/10/31/maraton-donacion-de-sangre-en-los-campus-de-elche-y-s ...
+
+
+
+		LINEA: 51, COLUMNA 461: <a href='https://www.idiomasumh.es/es' target='_blank'>¡Inscríbete ya!</a>
+
+
+
+		LINEA: 51, COLUMNA 547: <a href='http://ccexp.umh.es/2018/10/18/programacion-de-la-x-jornada-de-san-alberto-magno-15-de-novi ...
+
+
+
+		LINEA: 51, COLUMNA 710: <a href='http://cultura.umh.es/arts/exposiciones-actuales/sala-universitas-edif-rectorat/' target='_ ...
+
+
+
+		LINEA: 57, COLUMNA 5: <a href="https://matricula.umh.es/" title="Accesos directos: Grado y postgrado">Grado y postgrado</a ...
+
+
+
+		LINEA: 57, COLUMNA 115: <a href="http://universite.umh.es/subastaprematricula" target="_blank" title="Accesos directos: http ...
+
+
+
+		LINEA: 57, COLUMNA 314: <a href="https://appweb.edu.gva.es/preinscripcion/index.jsp" title="Accesos directos: Resultados Pre ...
+
+
+
+		LINEA: 57, COLUMNA 467:
+
+ 
+
+		LINEA: 57, COLUMNA 599: <a href="https://appweb.edu.gva.es/paseu/login.sec" title="Accesos directos: Resultados de la PAU 20 ...
+
+
+
+		LINEA: 57, COLUMNA 741: <a href="http://estudiospropios.umh.es/" target="_blank" title="Accesos directos: http://estudiospro ...
+
+
+
+		LINEA: 57, COLUMNA 898: <a href="http://www.umh.es/contenido/Investigacion/:investigacion/datos_es.html" title="Accesos dire ...
+
+
+
+		LINEA: 57, COLUMNA 1159: <a href="http://cultura.umh.es/es/" target="_blank" title="Accesos directos: http://cultura.umh.es/e ...
+
+
+
+		LINEA: 57, COLUMNA 1301: <a href="http://internacional.umh.es/" target="_blank" title="Accesos directos: http://internacional ...
+
+
+
+		LINEA: 57, COLUMNA 1452: <a href="http://deportes.umh.es/" target="_blank" title="Accesos directos: http://deportes.umh.es/"> ...
+
+
+
+		LINEA: 57, COLUMNA 1588: <a href="http://www.idiomasumh.es/es" target="_blank" title="Accesos directos: http://www.idiomasumh ...
+
+
+
+		LINEA: 57, COLUMNA 1736: <a href="http://umh.es/becas.html" target="_blank" title="Accesos directos: http://umh.es/becas.html ...
+
+
+
+		LINEA: 57, COLUMNA 1875: <a href="http://www.parquecientificoumh.es/" target="_blank" title="Accesos directos: http://www.par ...
+
+
+
+		LINEA: 57, COLUMNA 2044: <a href="https://www.nanocursos.com/" title="Accesos directos: https://www.nanocursos.com/">https:// ...
+
+
+
+		LINEA: 63, COLUMNA 5: <a href="http://enlacesdeinteres.umh.es/#publicacionesoficiales" target="_blank" title="Enlaces de i ...
+
+
+
+		LINEA: 63, COLUMNA 175: <a href="http://enlacesdeinteres.umh.es/#audiovisual" target="_blank" title="Enlaces de interés: Au ...
+
+
+
+		LINEA: 63, COLUMNA 310: <a href="http://enlacesdeinteres.umh.es/#empresas" target="_blank" title="Enlaces de interés: Empre ...
+
+
+
+		LINEA: 63, COLUMNA 436: <a href="http://enlacesdeinteres.umh.es/#divulgacioncientifica" target="_blank" title="Enlaces de in ...
+
+
+
+		LINEA: 63, COLUMNA 607: <a href="http://enlacesdeinteres.umh.es/#formaciononline" target="_blank" title="Enlaces de interés ...
+
+
+
+		LINEA: 68, COLUMNA 34: <a href='http://comunicacion.umh.es/?p=115115'>La UMH entra por primera vez en el ranking Times High ...
+
+
+
+		LINEA: 69, COLUMNA 39: <a href='http://comunicacion.umh.es/?p=108626'>Memoria de investigación 2017</a>
+
+
+
+		LINEA: 69, COLUMNA 635: <a href="http://research.umh.es/vivo/RAR2017">http://research.umh.es/vivo/RAR2017</a>
+
+
+
+		LINEA: 70, COLUMNA 38: <a href='https://comunicacion.umh.es/?p=98363'>La producción científica media de un profesor de la ...
+
+
+
+		LINEA: 71, COLUMNA 7: <a href="http://comunicacion.umh.es/es/category/noticia/" target="_blank">Noticias UMH</a>
+
+
+
+		LINEA: 72, COLUMNA 7: <a href="http://transparencia.umh.es" target="_blank">Transparencia</a>
+
+
+
+		LINEA: 73, COLUMNA 7: <a href="http://comunicacion.umh.es/es/category/comunicados-umh/" target="_blank">Comunicados</a>
+
+
+
+		LINEA: 80, COLUMNA 10: <a href="http://www.vives.org" target="_blank">Red Vives de Universidades</a>
+
+
+
+		LINEA: 81, COLUMNA 10: <a href="http://www.universia.es" target="_blank">Universia</a>
+
+
+
+		LINEA: 82, COLUMNA 10: <a href="http://www.crue.org" target="_blank">Conferencia de Rectores de las Universidades Española ...
+
+
+
+		LINEA: 83, COLUMNA 10: <a href="http://www.acles.es/" target="_blank">Asociación de Centros de Lenguas en la Enseñanza Su ...
+
+
+
+		LINEA: 84, COLUMNA 10: <a href="http://www.apune.org/" target="_blank">Asociación de Programas Universitarios Norteamerica ...
+
+
+
+		LINEA: 85, COLUMNA 10: <a href="http://www.eua.be/" target="_blank">Asociación de Universidades Europeas</a>
+
+
+
+		LINEA: 86, COLUMNA 10: <a href="http://www.pactomundial.org/" target="_blank">Red Pacto Mundial España</a>
+
+
+
+		LINEA: 87, COLUMNA 10: <a href="http://www.msssi.gob.es/profesionales/saludPublica/prevPromocion/promocion/UniversidadesSal ...
+
+
+
+		LINEA: 88, COLUMNA 10: <a href="http://ruvid.org" target="_blank">Red de Universidades Valencianas para el fomento de la In ...
+
+
+
+		LINEA: 99, COLUMNA 6: <a href="https://play.google.com/store/apps/details?id=com.umh.umh" target="_blank">app_Android</a>
+
+
+
+		LINEA: 103, COLUMNA 6: <a href="https://itunes.apple.com/es/app/umhapp/id807439885?mt=8" target="_blank">app_iOS</a>
+
+
+
+		LINEA: 107, COLUMNA 6: <a href="https://www.facebook.com/UniversidadMiguelHernandezElche" target="_blank">Facebook</a>
+
+
+
+		LINEA: 111, COLUMNA 6: <a href="http://twitter.com/UniversidadMH" target="_blank">Twitter</a>
+
+
+
+		LINEA: 115, COLUMNA 6: <a href="http://youtube.umh.es" target="_blank">YouTube</a>
+
+
+
+		LINEA: 119, COLUMNA 6: <a href="https://plus.google.com/103957282790909966681" target="_blank" rel="publisher">Google plus< ...
+
+
+
+		LINEA: 123, COLUMNA 6: <a href="http://www.scoop.it/noticias-umh" target="_blank">Scoop It</a>
+
+
+
+		LINEA: 127, COLUMNA 6: <a href="http://es.linkedin.com/edu/universidad-miguel-hernández-de-elche-12237" target="_blank">Li ...
+
+
+
+		LINEA: 131, COLUMNA 6: <a href="http://instagram.com/universidadmh#" target="_blank">Instagram</a>
+
+
+
+		LINEA: 135, COLUMNA 6: <a href="http://es.pinterest.com/universidadmh/" target="_blank">Pinterest</a>
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 6, COLUMNA 9: <title id="head-title">Universidad Miguel Hernández</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 30, COLUMNA 34: <a href="#titulo">Ir a contenido</a>
+
+
+
+		LINEA: 31, COLUMNA 63: <ahref="/acc/contenido/Estudiantes/:none/datos_es.html">Estudiantes</a>
+
+
+
+		LINEA: 31, COLUMNA 148: <ahref="/acc/contenido/PDI/:none/datos_es.html">PDI</a>
+
+
+
+		LINEA: 31, COLUMNA 217: <ahref="/acc/contenido/PAS/:none/datos_es.html">PAS</a>
+
+
+
+		LINEA: 31, COLUMNA 286: <ahref="/acc/contenido/Visitantes/:none/datos_es.html">Visitantes</a>
+
+
+
+		LINEA: 31, COLUMNA 369: <ahref="/acc/contenido/Alumni/:none/datos_es.html">Alumni</a>
+
+
+
+		LINEA: 31, COLUMNA 444: <ahref="/acc/contenido/Universidad/:universidad/datos_es.html">Acerca de</a>
+
+
+
+		LINEA: 31, COLUMNA 534: <ahref="/acc/contenido/AdmisionAyudas/:admision_ayudas/datos_es.html">Admisión y ayudas</a>
+
+
+
+		LINEA: 31, COLUMNA 640: <ahref="/acc/contenido/Estudios/:Estudios_Universitarios/datos_es.html">Estudios</a>
+
+
+
+		LINEA: 31, COLUMNA 738: <ahref="/acc/contenido/Investigacion/:investigacion/datos_es.html">Investigación</a>
+
+
+
+		LINEA: 34, COLUMNA 1: <a id="idioma_es" class="select_idioma" href="?lang=ES" xml:lang="es" lang="es" >Español</a>
+
+
+
+		LINEA: 38, COLUMNA 1: <a id="idioma_ca" class="non_select_idioma" href="?lang=VAL" xml:lang="ca" lang="ca" >Valencià</a>
+
+
+
+		LINEA: 42, COLUMNA 1: <a id="idioma_en" class="non_select_idioma" href="?lang=EN" xml:lang="en" lang="en" >English</a>
+
+
+
+		LINEA: 51, COLUMNA 6: <a href='https://cultura.umh.es/es/cursosdhivern/' target='_blank'>¡Te esperan más de 40 cursos!</ ...
+
+
+
+		LINEA: 51, COLUMNA 118: <a href='https://internacional.umh.es/2018/10/25/la-umh-organiza-sesiones-informativas-sobre-los-pro ...
+
+
+
+		LINEA: 51, COLUMNA 291: <a href='http://umhsaludable.umh.es/2018/10/31/maraton-donacion-de-sangre-en-los-campus-de-elche-y-s ...
+
+
+
+		LINEA: 51, COLUMNA 461: <a href='https://www.idiomasumh.es/es' target='_blank'>¡Inscríbete ya!</a>
+
+
+
+		LINEA: 51, COLUMNA 547: <a href='http://ccexp.umh.es/2018/10/18/programacion-de-la-x-jornada-de-san-alberto-magno-15-de-novi ...
+
+
+
+		LINEA: 51, COLUMNA 710: <a href='http://cultura.umh.es/arts/exposiciones-actuales/sala-universitas-edif-rectorat/' target='_ ...
+
+
+
+		LINEA: 57, COLUMNA 5: <a href="https://matricula.umh.es/" title="Accesos directos: Grado y postgrado">Grado y postgrado</a ...
+
+
+
+		LINEA: 57, COLUMNA 115: <a href="http://universite.umh.es/subastaprematricula" target="_blank" title="Accesos directos: http ...
+
+
+
+		LINEA: 57, COLUMNA 314: <a href="https://appweb.edu.gva.es/preinscripcion/index.jsp" title="Accesos directos: Resultados Pre ...
+
+
+
+		LINEA: 57, COLUMNA 467:
+
+ 
+
+		LINEA: 57, COLUMNA 599: <a href="https://appweb.edu.gva.es/paseu/login.sec" title="Accesos directos: Resultados de la PAU 20 ...
+
+
+
+		LINEA: 57, COLUMNA 741: <a href="http://estudiospropios.umh.es/" target="_blank" title="Accesos directos: http://estudiospro ...
+
+
+
+		LINEA: 57, COLUMNA 898: <a href="http://www.umh.es/contenido/Investigacion/:investigacion/datos_es.html" title="Accesos dire ...
+
+
+
+		LINEA: 57, COLUMNA 1159: <a href="http://cultura.umh.es/es/" target="_blank" title="Accesos directos: http://cultura.umh.es/e ...
+
+
+
+		LINEA: 57, COLUMNA 1301: <a href="http://internacional.umh.es/" target="_blank" title="Accesos directos: http://internacional ...
+
+
+
+		LINEA: 57, COLUMNA 1452: <a href="http://deportes.umh.es/" target="_blank" title="Accesos directos: http://deportes.umh.es/"> ...
+
+
+
+		LINEA: 57, COLUMNA 1588: <a href="http://www.idiomasumh.es/es" target="_blank" title="Accesos directos: http://www.idiomasumh ...
+
+
+
+		LINEA: 57, COLUMNA 1736: <a href="http://umh.es/becas.html" target="_blank" title="Accesos directos: http://umh.es/becas.html ...
+
+
+
+		LINEA: 57, COLUMNA 1875: <a href="http://www.parquecientificoumh.es/" target="_blank" title="Accesos directos: http://www.par ...
+
+
+
+		LINEA: 57, COLUMNA 2044: <a href="https://www.nanocursos.com/" title="Accesos directos: https://www.nanocursos.com/">https:// ...
+
+
+
+		LINEA: 63, COLUMNA 5: <a href="http://enlacesdeinteres.umh.es/#publicacionesoficiales" target="_blank" title="Enlaces de i ...
+
+
+
+		LINEA: 63, COLUMNA 175: <a href="http://enlacesdeinteres.umh.es/#audiovisual" target="_blank" title="Enlaces de interés: Au ...
+
+
+
+		LINEA: 63, COLUMNA 310: <a href="http://enlacesdeinteres.umh.es/#empresas" target="_blank" title="Enlaces de interés: Empre ...
+
+
+
+		LINEA: 63, COLUMNA 436: <a href="http://enlacesdeinteres.umh.es/#divulgacioncientifica" target="_blank" title="Enlaces de in ...
+
+
+
+		LINEA: 63, COLUMNA 607: <a href="http://enlacesdeinteres.umh.es/#formaciononline" target="_blank" title="Enlaces de interés ...
+
+
+
+		LINEA: 68, COLUMNA 34: <a href='http://comunicacion.umh.es/?p=115115'>La UMH entra por primera vez en el ranking Times High ...
+
+
+
+		LINEA: 69, COLUMNA 39: <a href='http://comunicacion.umh.es/?p=108626'>Memoria de investigación 2017</a>
+
+
+
+		LINEA: 69, COLUMNA 635: <a href="http://research.umh.es/vivo/RAR2017">http://research.umh.es/vivo/RAR2017</a>
+
+
+
+		LINEA: 70, COLUMNA 38: <a href='https://comunicacion.umh.es/?p=98363'>La producción científica media de un profesor de la ...
+
+
+
+		LINEA: 71, COLUMNA 7: <a href="http://comunicacion.umh.es/es/category/noticia/" target="_blank">Noticias UMH</a>
+
+
+
+		LINEA: 72, COLUMNA 7: <a href="http://transparencia.umh.es" target="_blank">Transparencia</a>
+
+
+
+		LINEA: 73, COLUMNA 7: <a href="http://comunicacion.umh.es/es/category/comunicados-umh/" target="_blank">Comunicados</a>
+
+
+
+		LINEA: 80, COLUMNA 10: <a href="http://www.vives.org" target="_blank">Red Vives de Universidades</a>
+
+
+
+		LINEA: 81, COLUMNA 10: <a href="http://www.universia.es" target="_blank">Universia</a>
+
+
+
+		LINEA: 82, COLUMNA 10: <a href="http://www.crue.org" target="_blank">Conferencia de Rectores de las Universidades Española ...
+
+
+
+		LINEA: 83, COLUMNA 10: <a href="http://www.acles.es/" target="_blank">Asociación de Centros de Lenguas en la Enseñanza Su ...
+
+
+
+		LINEA: 84, COLUMNA 10: <a href="http://www.apune.org/" target="_blank">Asociación de Programas Universitarios Norteamerica ...
+
+
+
+		LINEA: 85, COLUMNA 10: <a href="http://www.eua.be/" target="_blank">Asociación de Universidades Europeas</a>
+
+
+
+		LINEA: 86, COLUMNA 10: <a href="http://www.pactomundial.org/" target="_blank">Red Pacto Mundial España</a>
+
+
+
+		LINEA: 87, COLUMNA 10: <a href="http://www.msssi.gob.es/profesionales/saludPublica/prevPromocion/promocion/UniversidadesSal ...
+
+
+
+		LINEA: 88, COLUMNA 10: <a href="http://ruvid.org" target="_blank">Red de Universidades Valencianas para el fomento de la In ...
+
+
+
+		LINEA: 99, COLUMNA 6: <a href="https://play.google.com/store/apps/details?id=com.umh.umh" target="_blank">app_Android</a>
+
+
+
+		LINEA: 103, COLUMNA 6: <a href="https://itunes.apple.com/es/app/umhapp/id807439885?mt=8" target="_blank">app_iOS</a>
+
+
+
+		LINEA: 107, COLUMNA 6: <a href="https://www.facebook.com/UniversidadMiguelHernandezElche" target="_blank">Facebook</a>
+
+
+
+		LINEA: 111, COLUMNA 6: <a href="http://twitter.com/UniversidadMH" target="_blank">Twitter</a>
+
+
+
+		LINEA: 115, COLUMNA 6: <a href="http://youtube.umh.es" target="_blank">YouTube</a>
+
+
+
+		LINEA: 119, COLUMNA 6: <a href="https://plus.google.com/103957282790909966681" target="_blank" rel="publisher">Google plus< ...
+
+
+
+		LINEA: 123, COLUMNA 6: <a href="http://www.scoop.it/noticias-umh" target="_blank">Scoop It</a>
+
+
+
+		LINEA: 127, COLUMNA 6: <a href="http://es.linkedin.com/edu/universidad-miguel-hernández-de-elche-12237" target="_blank">Li ...
+
+
+
+		LINEA: 131, COLUMNA 6: <a href="http://instagram.com/universidadmh#" target="_blank">Instagram</a>
+
+
+
+		LINEA: 135, COLUMNA 6: <a href="http://es.pinterest.com/universidadmh/" target="_blank">Pinterest</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 22, COLUMNA 24: <h1>Página principal</h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 49, COLUMNA 4: <h2>Destacados</h2>
+
+
+
+		LINEA: 55, COLUMNA 13: <h2>Accesos directos</h2>
+
+
+
+		LINEA: 61, COLUMNA 4: <h2>Enlaces de interés</h2>
+
+
+
+		LINEA: 67, COLUMNA 13: <h2 id="titulo">Noticias</h2>
+
+
+
+		LINEA: 77, COLUMNA 4: <h2>Redes a las que pertenecemos</h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 68, COLUMNA 30: <h3><a href='http://comunicacion.umh.es/?p=115115'>La UMH entra por primera vez en el ranking Times...
+
+
+
+		LINEA: 69, COLUMNA 35: <h3><a href='http://comunicacion.umh.es/?p=108626'>Memoria de investigación 2017</a></h3>
+
+
+
+		LINEA: 70, COLUMNA 34: <h3><a href='https://comunicacion.umh.es/?p=98363'>La producción científica media de un profesor d ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 22, COLUMNA 8: <body id='body'><h1>Página principal</h1><!--Cabecera común a datos.htm, agenda.html y publicac ...
+
+

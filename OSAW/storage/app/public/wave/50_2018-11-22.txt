@@ -1,0 +1,23 @@
+REPORTE PÁGINA WEB: http://www.renfe.com/viajeros/cercanias/index.html
+FECHA EVALUACIÓN: 2018-11-22
+
+ALERTAS
+Noscript element	  VECES ENCONTRADO: 2
+Redundant link	  VECES ENCONTRADO: 14
+Redundant title text	  VECES ENCONTRADO: 35
+
+
+
+CARACTERISTICAS
+Linked image with alternative text	  VECES ENCONTRADO: 28
+Form label	  VECES ENCONTRADO: 1
+Fieldset	  VECES ENCONTRADO: 1
+Image button with alternative text	  VECES ENCONTRADO: 1
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 38
+
+
+

@@ -1,0 +1,36 @@
+REPORTE PÁGINA WEB: https://www.iberdrola.es/informacion/facturas
+FECHA EVALUACIÓN: 2018-11-06
+
+PROBLEMAS
+Empty link	  VECES ENCONTRADO: 1
+Linked image missing alternative text	  VECES ENCONTRADO: 48
+
+
+
+ALERTAS
+Orphaned form label	  VECES ENCONTRADO: 10
+Justified text	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 16
+Skipped heading level	  VECES ENCONTRADO: 1
+Underlined text	  VECES ENCONTRADO: 5
+Noscript element	  VECES ENCONTRADO: 2
+Redundant link	  VECES ENCONTRADO: 35
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Redundant alternative text	  VECES ENCONTRADO: 7
+
+
+
+CARACTERISTICAS
+Form label	  VECES ENCONTRADO: 2
+Alternative text	  VECES ENCONTRADO: 4
+Element language	  VECES ENCONTRADO: 3
+Linked image with alternative text	  VECES ENCONTRADO: 11
+Null or empty alternative text	  VECES ENCONTRADO: 32
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 28
+
+
+

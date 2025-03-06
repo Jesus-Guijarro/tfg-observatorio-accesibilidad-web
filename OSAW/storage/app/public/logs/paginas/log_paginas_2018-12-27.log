@@ -1,0 +1,4 @@
+12/27/2018 01:36:34 PM - WARNING - ACCESSO_PAGINA_WEB
+	IDENTIFICADOR: 139
+	PAGINA_WEB: http://www.ciencia.gob.es/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=25c55ef3677c4610VgnVCM1000001d04140aRCRD
+	INFORMACION: "No se puede acceder a la página. Error: ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='www.ciencia.gob.es', port=80): Read timed out. (read timeout=20)",),)"

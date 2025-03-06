@@ -1,0 +1,37 @@
+REPORTE PÁGINA WEB: https://www.iberdrola.es/informacion/instalacion-electricidad
+FECHA EVALUACIÓN: 2018-11-13
+
+PROBLEMAS
+Empty link	  VECES ENCONTRADO: 7
+Linked image missing alternative text	  VECES ENCONTRADO: 3
+
+
+
+ALERTAS
+Justified text	  VECES ENCONTRADO: 81
+Redundant alternative text	  VECES ENCONTRADO: 43
+Orphaned form label	  VECES ENCONTRADO: 10
+A nearby image has the same alternative text	  VECES ENCONTRADO: 28
+Underlined text	  VECES ENCONTRADO: 4
+Redundant link	  VECES ENCONTRADO: 5
+Link to PDF document	  VECES ENCONTRADO: 2
+Possible heading	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 2
+Redundant title text	  VECES ENCONTRADO: 16
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 4
+Element language	  VECES ENCONTRADO: 3
+Form label	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 23
+Null or empty alternative text	  VECES ENCONTRADO: 71
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 19
+
+
+

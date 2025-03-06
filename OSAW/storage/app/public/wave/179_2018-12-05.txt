@@ -1,0 +1,26 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/WebCiudano.nsf/Registro?ReadForm&lang=2&id=0F3E93B421616BDEC1257F46002D260A&estado=0&nivel=2_2&bdorigen=ayuntamiento/ayuntamiento.nsf
+FECHA EVALUACIÓN: 2018-12-05
+
+-PROBLEMAS-
+
+Empty heading	  VECES ENCONTRADO: 3
+
+
+-ALERTAS-
+
+Redundant title text	  VECES ENCONTRADO: 74
+Noscript element	  VECES ENCONTRADO: 1
+Fieldset missing legend	  VECES ENCONTRADO: 1
+Broken same-page link	  VECES ENCONTRADO: 1
+Redundant alternative text	  VECES ENCONTRADO: 3
+
+
+-CARACTERISTICAS-
+
+Element language	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 7
+
+
+-PROBLEMAS DE CONTRASTE-
+

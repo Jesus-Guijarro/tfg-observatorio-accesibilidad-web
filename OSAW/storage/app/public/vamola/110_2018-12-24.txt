@@ -1,0 +1,2972 @@
+REPORTE PÁGINA WEB: https://www.bancosantander.es/es/particulares/banca-online/internet
+FECHA EVALUACIÓN: 2018-12-24
+
+-PROBLEMAS CONOCIDOS-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 1: img element missing alt attribute.  
+
+	REPARAR:> Add an alt attribute to your img element.      
+
+		LINEA: 10, COLUMNA: 37285: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 37946: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 38621: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 39382: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 39956: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR:> Add Alt text that identifies the purpose or function of the image.      
+
+		LINEA: 1, COLUMNA: 16059: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 16822: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 17639: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 18391: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 19037: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 115: Layout table contains a caption.  
+
+	REPARAR:> Remove the table's caption element.      
+
+		LINEA: 10, COLUMNA: 60467: <table width="100%"> <caption></caption> <tbody> <tr class="fck_impar"> <td width="40%"><a target="_ ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 174: Anchor contains no text.  
+
+	REPARAR:> Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.      
+
+		LINEA: 1, COLUMNA: 18910: <a role="menuitem" href="/es/particulares/atencion-al-cliente/santander-personal" name="elementoAgru ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 38: Header nesting - header following h2 is incorrect.  
+
+	REPARAR:> Modify the header levels so only an h3 or any header less than h3 follows h2.      
+
+		LINEA: 1, COLUMNA: 10908: <h2 class="title_message">Aviso de cookies</h2>
+
+
+
+		LINEA: 10, COLUMNA: 29625: <h2 class="titpage">Internet - Banca online</h2>
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 2: Image has suspicious Alt text (same as filename).
+
+ 
+
+		LINEA: 1, COLUMNA: 9149: <img class="image" id="imgicono" src="" alt="" />
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 82: p element may be misused (could be a header).
+
+ 
+
+		LINEA: 10, COLUMNA: 40808: <p><strong>&iquest;Que se necesita para acceder a Banca Online?</strong></p>
+
+
+
+		LINEA: 10, COLUMNA: 41360: <p><strong><br /> &iquest;C&oacute;mo accedo a Supernet?</strong></p>
+
+
+
+		LINEA: 10, COLUMNA: 42063: <p><strong><br /> &iquest;C&oacute;mo obtener la clave de acceso?</strong></p>
+
+
+
+		LINEA: 10, COLUMNA: 43195: <p><strong><br /> &iquest;C&oacute;mo obtengo la firma electr&oacute;nica?</strong></p>
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 1, COLUMNA: 11310: <a href="/es/politica-de-cookies"><strong>Pol&iacute;tica de Cookies</strong></a>
+
+
+
+		LINEA: 1, COLUMNA: 14954: <a aria-haspopup="true" role="menuitem" class="nav icon_arrow openTooltip" href="#idiomasTip22">Espa ...
+
+
+
+		LINEA: 1, COLUMNA: 15280: <a role="menuitem" href="https://www.bancosantander.es/es/es/particulares/banca-online/internet" cla ...
+
+
+
+		LINEA: 1, COLUMNA: 15418: <a role="menuitem" href="https://www.bancosantander.es/es/ca/particulares/banca-online/internet" cla ...
+
+
+
+		LINEA: 1, COLUMNA: 15879: <a role="menuitem" href="https://microsite.bancosantander.es/files/ayudaonline/popup/particulares.ht ...
+
+
+
+		LINEA: 1, COLUMNA: 16380: <a role="menuitem" href="https://microsite.bancosantander.es/files/ayudaonline/popup/particulares.ht ...
+
+
+
+		LINEA: 1, COLUMNA: 16605: <a role="menuitem" href="https://www.bancosantander.es/cssa/Satellite?pagename=BuscadorOficinas/Page ...
+
+
+
+		LINEA: 1, COLUMNA: 17143: <a role="menuitem" href="https://www.bancosantander.es/cssa/Satellite?pagename=BuscadorOficinas/Page ...
+
+
+
+		LINEA: 1, COLUMNA: 17403: <a role="menuitem" href="http://www.santander.com/csgs/Satellite/CFWCSancomQP01/es_ES/Corporativo/Ac ...
+
+
+
+		LINEA: 1, COLUMNA: 17954: <a role="menuitem" href="http://www.santander.com/csgs/Satellite/CFWCSancomQP01/es_ES/Corporativo/Ac ...
+
+
+
+		LINEA: 1, COLUMNA: 18226: <a role="menuitem" href="https://www.google.es/maps/search/Oficina+Santander+Smart+Red/" name="eleme ...
+
+
+
+		LINEA: 1, COLUMNA: 18711: <a role="menuitem" href="https://www.google.es/maps/search/Oficina+Santander+Smart+Red/" name="eleme ...
+
+
+
+		LINEA: 1, COLUMNA: 19818: <a tabindex="7" class="wlr_btn wlr_btn02" href="#" data-subtitulo="">Acceso clientes</a>
+
+
+
+		LINEA: 10, COLUMNA: 1053: <a href="#nav">Navigation</a>
+
+
+
+		LINEA: 10, COLUMNA: 40450: <a href="/es/particulares/banca-online/clave-online">tus claves</a>
+
+
+
+		LINEA: 10, COLUMNA: 53274: <a target="_blank" title="Abre en ventana nueva" href="http://www.santander.com" data-tagging='{"tit ...
+
+
+
+		LINEA: 10, COLUMNA: 53587: <a target="_blank" title="Abre en ventana nueva" href="http://www.santanderassetmanagement.es/" data ...
+
+
+
+		LINEA: 10, COLUMNA: 53795: <a target="_blank" title="Abre en ventana nueva" href="http://www.santanderconsumer.es/" data-taggin ...
+
+
+
+		LINEA: 10, COLUMNA: 53980: <a target="_blank" title="Abre en ventana nueva" href="https://blog.bancosantander.es/" data-tagging ...
+
+
+
+		LINEA: 10, COLUMNA: 54341: <a target="_blank" title="Abre en ventana nueva" href="https://prescriptoreshipotecarios.bancosantan ...
+
+
+
+		LINEA: 10, COLUMNA: 57777: <a target="_blank" title="Abre en ventana nueva" href="https://www.123acorrer.es/" data-tagging='{"t ...
+
+
+
+		LINEA: 10, COLUMNA: 58448: <a target="_blank" title="Abre en ventana nueva" href="https://www.masalladeldinero.com/?campana=123 ...
+
+
+
+		LINEA: 10, COLUMNA: 60984: <a target="_blank" href="https://play.google.com/store/apps/details?id=es.bancosantander.apps&amp;hl ...
+
+
+
+		LINEA: 10, COLUMNA: 61463: <a target="_blank" href="https://itunes.apple.com/es/app/santander/id408043474?mt=8"><img src="https ...
+
+
+
+		LINEA: 10, COLUMNA: 61947: <a target="_blank" href="https://www.twitter.com/santander_es"><img src="https://www.bancosantander. ...
+
+
+
+		LINEA: 10, COLUMNA: 62382: <a rel="publisher" target="_blank" href="https://plus.google.com/+bancosantander"><img src="https:// ...
+
+
+
+		LINEA: 10, COLUMNA: 62825: <a target="_blank" href="https://www.facebook.com/bancoSantander"><img src="https://www.bancosantand ...
+
+
+
+		LINEA: 10, COLUMNA: 63264: <a target="_blank" href="https://www.youtube.com/user/bancosantander"><img src="https://www.bancosan ...
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 1, COLUMNA: 9149: <img class="image" id="imgicono" src="" alt="" />
+
+
+
+		LINEA: 1, COLUMNA: 10573: <img class="image" alt="Cookie directive" src="/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fg ...
+
+
+
+		LINEA: 1, COLUMNA: 16059: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 16822: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 17639: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 18391: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 19037: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 658: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 30449: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 33180: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 47570: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 50248: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 60606: <img class="alignLeft" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader ...
+
+
+
+		LINEA: 10, COLUMNA: 61089: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 61548: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 62010: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62464: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62891: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 63334: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 1, COLUMNA: 10573: <img class="image" alt="Cookie directive" src="/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fg ...
+
+
+
+		LINEA: 10, COLUMNA: 658: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 30449: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 33180: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 47570: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 50248: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 60606: <img class="alignLeft" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader ...
+
+
+
+		LINEA: 10, COLUMNA: 61089: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 61548: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 62010: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62464: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62891: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 63334: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 1, COLUMNA: 9149: <img class="image" id="imgicono" src="" alt="" />
+
+
+
+		LINEA: 1, COLUMNA: 10573: <img class="image" alt="Cookie directive" src="/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fg ...
+
+
+
+		LINEA: 10, COLUMNA: 30449: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 47570: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+  
+
+	REVISAR: 242: Table caption may not identify the table.
+
+ 
+
+		LINEA: 10, COLUMNA: 60488: <caption></caption>
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 1, COLUMNA: 21357: <input type="text" title="buscador"		id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportle ...
+
+  
+
+	REVISAR: 136: Data table may require th elements.
+
+ 
+
+		LINEA: 10, COLUMNA: 37202: <table> <tbody> <tr class="fck_impar"> <td valign="top" style="text-align: center"><img src="https:/ ...
+
+
+
+		LINEA: 10, COLUMNA: 60467: <table width="100%"> <caption></caption> <tbody> <tr class="fck_impar"> <td width="40%"><a target="_ ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+  
+
+	REVISAR: 133: Layout table may not linearize.
+
+ 
+
+		LINEA: 10, COLUMNA: 37202: <table> <tbody> <tr class="fck_impar"> <td valign="top" style="text-align: center"><img src="https:/ ...
+
+
+
+		LINEA: 10, COLUMNA: 60467: <table width="100%"> <caption></caption> <tbody> <tr class="fck_impar"> <td width="40%"><a target="_ ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 1, COLUMNA: 9149: <img class="image" id="imgicono" src="" alt="" />
+
+
+
+		LINEA: 1, COLUMNA: 10573: <img class="image" alt="Cookie directive" src="/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fg ...
+
+
+
+		LINEA: 1, COLUMNA: 16059: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 16822: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 17639: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 18391: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 19037: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 658: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 30449: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 33180: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 37285: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 37946: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 38621: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 39382: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 39956: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 47570: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 50248: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 60606: <img class="alignLeft" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader ...
+
+
+
+		LINEA: 10, COLUMNA: 61089: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 61548: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 62010: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62464: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62891: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 63334: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 1, COLUMNA: 21357: <input type="text" title="buscador"		id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportle ...
+
+
+
+		LINEA: 10, COLUMNA: 49: <input type="submit" value="Search" id="botonEnvio" class="btnSubmit"/>
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 1, COLUMNA: 457: <script type="text/javascript" src="/Theme_GenerInter01-theme/js/modernizr.js" charset="utf-8"></scr ...
+
+
+
+		LINEA: 1, COLUMNA: 751: <script type='text/javascript'>var dojoConfig = {async : false,isDebug: false,waitSeconds: 3,baseUrl ...
+
+
+
+		LINEA: 1, COLUMNA: 805: <script type='text/javascript'> dojoConfig.packages.push({ name : 'jquery', location : '/Utilidades/ ...
+
+
+
+		LINEA: 1, COLUMNA: 859: <script type='text/javascript' src='/Portlet-Javascript-Framework/ipf/dojoIPF175_c.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 969: <script type='text/javascript' src='/Portlet-Javascript-Lib/dojo-release-1.7.5/dojo/dojo_c.js'></scr ...
+
+
+
+		LINEA: 1, COLUMNA: 1087: <script type='text/javascript' src='/Theme_GenerInter01-theme/js/dijit_c.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 1187: <script type='text/javascript' src='/Portlet-Javascript-Lib/dojo-release-1.7.5/dojox/dojox_c.js'></s ...
+
+
+
+		LINEA: 1, COLUMNA: 1307: <script type='text/javascript' src='/Portlet-Javascript-Framework/ipf/ipf2.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 1409: <script type='text/javascript' src='/Theme_GenerInter01-theme/js/widgets/compactado/wlr_compact.js'> ...
+
+
+
+		LINEA: 1, COLUMNA: 1532: <script type='text/javascript'>require({cache:{}});</script>
+
+
+
+		LINEA: 1, COLUMNA: 1586: <script type='text/javascript'>require(['ipf/util-cookie'], function(utilCookie){utilCookie._setWind ...
+
+
+
+		LINEA: 1, COLUMNA: 1641: <script type='text/javascript' src='/Theme_WCSantanderUK-theme/js/ntpagetag.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 1744: <script type='text/javascript' src='//tags.tiqcdn.com/utag/santander/es-main/prod/utag.sync.js'></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 2834: <script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return true ...
+
+
+
+		LINEA: 1, COLUMNA: 2889: <script src="/es/html/js/barebone.jsp?browserId=other&amp;themeId=Theme_GenerInter01theme_WAR_Theme_ ...
+
+
+
+		LINEA: 1, COLUMNA: 3195: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.list=["W010_Product_Detail_Active_WAR_W0 ...
+
+
+
+		LINEA: 1, COLUMNA: 3250: <script type="text/javascript">/*<![CDATA[*/require({paths:{W003PageTitleModule:"/W003_Page_title/js ...
+
+
+
+		LINEA: 1, COLUMNA: 3305: <script src="/W003_Page_title/js/W003PageTitleWidget.js" type="text/javascript"></script>
+
+
+
+		LINEA: 1, COLUMNA: 3409: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 3464: <script type="text/javascript">/*<![CDATA[*/require({paths:{W010ProductDetailActiveModule:"/W010_Pro ...
+
+
+
+		LINEA: 1, COLUMNA: 3519: <script src="/W010_Product_Detail_Active-portlet/statics/js/W010ProductDetailActive.js" type="text/j ...
+
+
+
+		LINEA: 1, COLUMNA: 3654: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4117: <script type="text/javascript">/*<![CDATA[*/require({paths:{W016LinksClusterGrouperModule:"/W016_Lin ...
+
+
+
+		LINEA: 1, COLUMNA: 4172: <script src="/W016_Links_Cluster_Grouper-portlet/statics/js/W016LinksClusterGrouper.js" type="text/j ...
+
+
+
+		LINEA: 1, COLUMNA: 4307: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4362: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletMo ...
+
+
+
+		LINEA: 1, COLUMNA: 4417: <script type="text/javascript">/*<![CDATA[*/require({paths:{w034CookieDirective:"/W034_Cookie_Direct ...
+
+
+
+		LINEA: 1, COLUMNA: 4472: <script src="/W034_Cookie_Directive-portlet/js/w034CookieDirective.js" type="text/javascript"></scri ...
+
+
+
+		LINEA: 1, COLUMNA: 4590: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4645: <script type="text/javascript">/*<![CDATA[*/require({paths:{moduloW037ObsoleteBrowsers:"/W037_Obsole ...
+
+
+
+		LINEA: 1, COLUMNA: 4700: <script src="/W037_Obsolete_Browsers-portlet/statics/js/moduloW037ObsoleteBrowsers.js" type="text/ja ...
+
+
+
+		LINEA: 1, COLUMNA: 4834: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4889: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 4944: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5064: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5119: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 5174: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5294: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5349: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 5404: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5524: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5579: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 5634: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5754: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5809: <script type="text/javascript">/*<![CDATA[*/require({paths:{W044InformationDetailModule:"/W044_Infor ...
+
+
+
+		LINEA: 1, COLUMNA: 5864: <script src="/W044_Information_Detail-portlet/statics/js/W044InformationDetail.js" type="text/javasc ...
+
+
+
+		LINEA: 1, COLUMNA: 5994: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 6049: <script type="text/javascript">/*<![CDATA[*/require({paths:{moduloW054MenuCabecera:"/W054_Menu_Cabec ...
+
+
+
+		LINEA: 1, COLUMNA: 6104: <script src="/W054_Menu_Cabecera-portlet/statics/js/moduloW054MenuCabecera.js" type="text/javascript ...
+
+
+
+		LINEA: 1, COLUMNA: 6230: <script src="/Theme_WCSantanderUK-theme/js/ntpagetag.js" type="text/javascript"></script>
+
+
+
+		LINEA: 1, COLUMNA: 6334: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 6811: <script type="text/javascript" src="/ipf-hook/js/util.js"></script>
+
+
+
+		LINEA: 1, COLUMNA: 6893: <script type="text/javascript" src="/ipf-hook/js/commons.js" ></script>
+
+
+
+		LINEA: 1, COLUMNA: 6979: <script type="text/javascript" src="/ipf-hook/js/metaTags.js" ></script>
+
+
+
+		LINEA: 1, COLUMNA: 7066: <script type="text/javascript" src="/ipf-hook/js/ipf-literalTag.js" ></script>
+
+
+
+		LINEA: 1, COLUMNA: 7308: <script type="text/javascript">/*<![CDATA[*/YUI().use("ipf_metaTags",function(a){a.IPF_MetaTags.ipf_ ...
+
+
+
+		LINEA: 1, COLUMNA: 7451: <script>/*<![CDATA[*/var sandatalayer={user_id:"empty",site_id:"11023",page_lang:"es_ES",page_title: ...
+
+
+
+		LINEA: 1, COLUMNA: 7483: <script type='text/javascript'>var utag_data = {}; (function(a,b,c,d){ a='//tags.tiqcdn.com/utag/san ...
+
+
+
+		LINEA: 1, COLUMNA: 8821: <script type="text/javascript">/*<![CDATA[*/var arrNavObs=["ie 7","ie 8",];require(["dojo/ready"],fu ...
+
+
+
+		LINEA: 10, COLUMNA: 60253: <script type="text/javascript">/*<![CDATA[*/require(["dojo/query","dojo/dom-construct","dojo/dom-att ...
+
+
+
+		LINEA: 10, COLUMNA: 64543: <script type="text/javascript">/*<![CDATA[*/AUI().use("aui-viewport");/*]]>*/</script>
+
+
+
+		LINEA: 10, COLUMNA: 64620: <script type="text/javascript" src=/Utilidades/paginador/paginador.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 64730: <script type="text/javascript" src=/Utilidades/utilvideo/utilvideo.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 64840: <script type="text/javascript" src=/Utilidades/lightbox/lightbox.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 64948: <script type="text/javascript" src=/Utilidades/fcktooltip/fcktooltip.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 65090: <script type="text/javascript">/*<![CDATA[*/Liferay.Util.addInputFocus();Liferay.Portlet.runtimePort ...
+
+
+
+		LINEA: 10, COLUMNA: 65145: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,i ...
+
+
+
+		LINEA: 10, COLUMNA: 65200: <script src="https://www.bancosantander.es/Theme_GenerInter01-theme/js/main.js?browserId=other&amp;m ...
+
+
+
+		LINEA: 10, COLUMNA: 65415: <script type="text/javascript"></script>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 1, COLUMNA: 9149: <img class="image" id="imgicono" src="" alt="" />
+
+
+
+		LINEA: 1, COLUMNA: 10573: <img class="image" alt="Cookie directive" src="/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fg ...
+
+
+
+		LINEA: 1, COLUMNA: 16059: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 16822: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 17639: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 18391: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 19037: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 658: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 30449: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 33180: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 47570: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 50248: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 60606: <img class="alignLeft" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader ...
+
+
+
+		LINEA: 10, COLUMNA: 61089: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 61548: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 62010: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62464: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62891: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 63334: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 1, COLUMNA: 9149: <img class="image" id="imgicono" src="" alt="" />
+
+
+
+		LINEA: 1, COLUMNA: 10573: <img class="image" alt="Cookie directive" src="/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fg ...
+
+
+
+		LINEA: 1, COLUMNA: 16059: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 16822: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 17639: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 18391: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 1, COLUMNA: 19037: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 658: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 30449: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 33180: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 37285: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 37946: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 38621: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 39382: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 39956: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 47570: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 50248: <img class="image" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=ima ...
+
+
+
+		LINEA: 10, COLUMNA: 60606: <img class="alignLeft" src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader ...
+
+
+
+		LINEA: 10, COLUMNA: 61089: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 61548: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fjpeg&blob ...
+
+
+
+		LINEA: 10, COLUMNA: 62010: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62464: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 62891: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+
+
+		LINEA: 10, COLUMNA: 63334: <img src="https://www.bancosantander.es/cssa/BlobServer?blobcol=urldata&blobheader=image%2Fpng&blobh ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 1, COLUMNA: 457: <script type="text/javascript" src="/Theme_GenerInter01-theme/js/modernizr.js" charset="utf-8"></scr ...
+
+
+
+		LINEA: 1, COLUMNA: 751: <script type='text/javascript'>var dojoConfig = {async : false,isDebug: false,waitSeconds: 3,baseUrl ...
+
+
+
+		LINEA: 1, COLUMNA: 805: <script type='text/javascript'> dojoConfig.packages.push({ name : 'jquery', location : '/Utilidades/ ...
+
+
+
+		LINEA: 1, COLUMNA: 859: <script type='text/javascript' src='/Portlet-Javascript-Framework/ipf/dojoIPF175_c.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 969: <script type='text/javascript' src='/Portlet-Javascript-Lib/dojo-release-1.7.5/dojo/dojo_c.js'></scr ...
+
+
+
+		LINEA: 1, COLUMNA: 1087: <script type='text/javascript' src='/Theme_GenerInter01-theme/js/dijit_c.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 1187: <script type='text/javascript' src='/Portlet-Javascript-Lib/dojo-release-1.7.5/dojox/dojox_c.js'></s ...
+
+
+
+		LINEA: 1, COLUMNA: 1307: <script type='text/javascript' src='/Portlet-Javascript-Framework/ipf/ipf2.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 1409: <script type='text/javascript' src='/Theme_GenerInter01-theme/js/widgets/compactado/wlr_compact.js'> ...
+
+
+
+		LINEA: 1, COLUMNA: 1532: <script type='text/javascript'>require({cache:{}});</script>
+
+
+
+		LINEA: 1, COLUMNA: 1586: <script type='text/javascript'>require(['ipf/util-cookie'], function(utilCookie){utilCookie._setWind ...
+
+
+
+		LINEA: 1, COLUMNA: 1641: <script type='text/javascript' src='/Theme_WCSantanderUK-theme/js/ntpagetag.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 1744: <script type='text/javascript' src='//tags.tiqcdn.com/utag/santander/es-main/prod/utag.sync.js'></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 2834: <script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return true ...
+
+
+
+		LINEA: 1, COLUMNA: 2889: <script src="/es/html/js/barebone.jsp?browserId=other&amp;themeId=Theme_GenerInter01theme_WAR_Theme_ ...
+
+
+
+		LINEA: 1, COLUMNA: 3195: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.list=["W010_Product_Detail_Active_WAR_W0 ...
+
+
+
+		LINEA: 1, COLUMNA: 3250: <script type="text/javascript">/*<![CDATA[*/require({paths:{W003PageTitleModule:"/W003_Page_title/js ...
+
+
+
+		LINEA: 1, COLUMNA: 3305: <script src="/W003_Page_title/js/W003PageTitleWidget.js" type="text/javascript"></script>
+
+
+
+		LINEA: 1, COLUMNA: 3409: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 3464: <script type="text/javascript">/*<![CDATA[*/require({paths:{W010ProductDetailActiveModule:"/W010_Pro ...
+
+
+
+		LINEA: 1, COLUMNA: 3519: <script src="/W010_Product_Detail_Active-portlet/statics/js/W010ProductDetailActive.js" type="text/j ...
+
+
+
+		LINEA: 1, COLUMNA: 3654: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4117: <script type="text/javascript">/*<![CDATA[*/require({paths:{W016LinksClusterGrouperModule:"/W016_Lin ...
+
+
+
+		LINEA: 1, COLUMNA: 4172: <script src="/W016_Links_Cluster_Grouper-portlet/statics/js/W016LinksClusterGrouper.js" type="text/j ...
+
+
+
+		LINEA: 1, COLUMNA: 4307: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4362: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletMo ...
+
+
+
+		LINEA: 1, COLUMNA: 4417: <script type="text/javascript">/*<![CDATA[*/require({paths:{w034CookieDirective:"/W034_Cookie_Direct ...
+
+
+
+		LINEA: 1, COLUMNA: 4472: <script src="/W034_Cookie_Directive-portlet/js/w034CookieDirective.js" type="text/javascript"></scri ...
+
+
+
+		LINEA: 1, COLUMNA: 4590: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4645: <script type="text/javascript">/*<![CDATA[*/require({paths:{moduloW037ObsoleteBrowsers:"/W037_Obsole ...
+
+
+
+		LINEA: 1, COLUMNA: 4700: <script src="/W037_Obsolete_Browsers-portlet/statics/js/moduloW037ObsoleteBrowsers.js" type="text/ja ...
+
+
+
+		LINEA: 1, COLUMNA: 4834: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4889: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 4944: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5064: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5119: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 5174: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5294: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5349: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 5404: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5524: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5579: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 5634: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5754: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5809: <script type="text/javascript">/*<![CDATA[*/require({paths:{W044InformationDetailModule:"/W044_Infor ...
+
+
+
+		LINEA: 1, COLUMNA: 5864: <script src="/W044_Information_Detail-portlet/statics/js/W044InformationDetail.js" type="text/javasc ...
+
+
+
+		LINEA: 1, COLUMNA: 5994: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 6049: <script type="text/javascript">/*<![CDATA[*/require({paths:{moduloW054MenuCabecera:"/W054_Menu_Cabec ...
+
+
+
+		LINEA: 1, COLUMNA: 6104: <script src="/W054_Menu_Cabecera-portlet/statics/js/moduloW054MenuCabecera.js" type="text/javascript ...
+
+
+
+		LINEA: 1, COLUMNA: 6230: <script src="/Theme_WCSantanderUK-theme/js/ntpagetag.js" type="text/javascript"></script>
+
+
+
+		LINEA: 1, COLUMNA: 6334: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 6811: <script type="text/javascript" src="/ipf-hook/js/util.js"></script>
+
+
+
+		LINEA: 1, COLUMNA: 6893: <script type="text/javascript" src="/ipf-hook/js/commons.js" ></script>
+
+
+
+		LINEA: 1, COLUMNA: 6979: <script type="text/javascript" src="/ipf-hook/js/metaTags.js" ></script>
+
+
+
+		LINEA: 1, COLUMNA: 7066: <script type="text/javascript" src="/ipf-hook/js/ipf-literalTag.js" ></script>
+
+
+
+		LINEA: 1, COLUMNA: 7308: <script type="text/javascript">/*<![CDATA[*/YUI().use("ipf_metaTags",function(a){a.IPF_MetaTags.ipf_ ...
+
+
+
+		LINEA: 1, COLUMNA: 7451: <script>/*<![CDATA[*/var sandatalayer={user_id:"empty",site_id:"11023",page_lang:"es_ES",page_title: ...
+
+
+
+		LINEA: 1, COLUMNA: 7483: <script type='text/javascript'>var utag_data = {}; (function(a,b,c,d){ a='//tags.tiqcdn.com/utag/san ...
+
+
+
+		LINEA: 1, COLUMNA: 8821: <script type="text/javascript">/*<![CDATA[*/var arrNavObs=["ie 7","ie 8",];require(["dojo/ready"],fu ...
+
+
+
+		LINEA: 10, COLUMNA: 60253: <script type="text/javascript">/*<![CDATA[*/require(["dojo/query","dojo/dom-construct","dojo/dom-att ...
+
+
+
+		LINEA: 10, COLUMNA: 64543: <script type="text/javascript">/*<![CDATA[*/AUI().use("aui-viewport");/*]]>*/</script>
+
+
+
+		LINEA: 10, COLUMNA: 64620: <script type="text/javascript" src=/Utilidades/paginador/paginador.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 64730: <script type="text/javascript" src=/Utilidades/utilvideo/utilvideo.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 64840: <script type="text/javascript" src=/Utilidades/lightbox/lightbox.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 64948: <script type="text/javascript" src=/Utilidades/fcktooltip/fcktooltip.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 65090: <script type="text/javascript">/*<![CDATA[*/Liferay.Util.addInputFocus();Liferay.Portlet.runtimePort ...
+
+
+
+		LINEA: 10, COLUMNA: 65145: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,i ...
+
+
+
+		LINEA: 10, COLUMNA: 65200: <script src="https://www.bancosantander.es/Theme_GenerInter01-theme/js/main.js?browserId=other&amp;m ...
+
+
+
+		LINEA: 10, COLUMNA: 65415: <script type="text/javascript"></script>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 1, COLUMNA: 457: <script type="text/javascript" src="/Theme_GenerInter01-theme/js/modernizr.js" charset="utf-8"></scr ...
+
+
+
+		LINEA: 1, COLUMNA: 751: <script type='text/javascript'>var dojoConfig = {async : false,isDebug: false,waitSeconds: 3,baseUrl ...
+
+
+
+		LINEA: 1, COLUMNA: 805: <script type='text/javascript'> dojoConfig.packages.push({ name : 'jquery', location : '/Utilidades/ ...
+
+
+
+		LINEA: 1, COLUMNA: 859: <script type='text/javascript' src='/Portlet-Javascript-Framework/ipf/dojoIPF175_c.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 969: <script type='text/javascript' src='/Portlet-Javascript-Lib/dojo-release-1.7.5/dojo/dojo_c.js'></scr ...
+
+
+
+		LINEA: 1, COLUMNA: 1087: <script type='text/javascript' src='/Theme_GenerInter01-theme/js/dijit_c.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 1187: <script type='text/javascript' src='/Portlet-Javascript-Lib/dojo-release-1.7.5/dojox/dojox_c.js'></s ...
+
+
+
+		LINEA: 1, COLUMNA: 1307: <script type='text/javascript' src='/Portlet-Javascript-Framework/ipf/ipf2.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 1409: <script type='text/javascript' src='/Theme_GenerInter01-theme/js/widgets/compactado/wlr_compact.js'> ...
+
+
+
+		LINEA: 1, COLUMNA: 1532: <script type='text/javascript'>require({cache:{}});</script>
+
+
+
+		LINEA: 1, COLUMNA: 1586: <script type='text/javascript'>require(['ipf/util-cookie'], function(utilCookie){utilCookie._setWind ...
+
+
+
+		LINEA: 1, COLUMNA: 1641: <script type='text/javascript' src='/Theme_WCSantanderUK-theme/js/ntpagetag.js'></script>
+
+
+
+		LINEA: 1, COLUMNA: 1744: <script type='text/javascript' src='//tags.tiqcdn.com/utag/santander/es-main/prod/utag.sync.js'></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 2834: <script type="text/javascript">/*<![CDATA[*/var Liferay={Browser:{acceptsGzip:function(){return true ...
+
+
+
+		LINEA: 1, COLUMNA: 2889: <script src="/es/html/js/barebone.jsp?browserId=other&amp;themeId=Theme_GenerInter01theme_WAR_Theme_ ...
+
+
+
+		LINEA: 1, COLUMNA: 3195: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.list=["W010_Product_Detail_Active_WAR_W0 ...
+
+
+
+		LINEA: 1, COLUMNA: 3250: <script type="text/javascript">/*<![CDATA[*/require({paths:{W003PageTitleModule:"/W003_Page_title/js ...
+
+
+
+		LINEA: 1, COLUMNA: 3305: <script src="/W003_Page_title/js/W003PageTitleWidget.js" type="text/javascript"></script>
+
+
+
+		LINEA: 1, COLUMNA: 3409: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 3464: <script type="text/javascript">/*<![CDATA[*/require({paths:{W010ProductDetailActiveModule:"/W010_Pro ...
+
+
+
+		LINEA: 1, COLUMNA: 3519: <script src="/W010_Product_Detail_Active-portlet/statics/js/W010ProductDetailActive.js" type="text/j ...
+
+
+
+		LINEA: 1, COLUMNA: 3654: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4117: <script type="text/javascript">/*<![CDATA[*/require({paths:{W016LinksClusterGrouperModule:"/W016_Lin ...
+
+
+
+		LINEA: 1, COLUMNA: 4172: <script src="/W016_Links_Cluster_Grouper-portlet/statics/js/W016LinksClusterGrouper.js" type="text/j ...
+
+
+
+		LINEA: 1, COLUMNA: 4307: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4362: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletMo ...
+
+
+
+		LINEA: 1, COLUMNA: 4417: <script type="text/javascript">/*<![CDATA[*/require({paths:{w034CookieDirective:"/W034_Cookie_Direct ...
+
+
+
+		LINEA: 1, COLUMNA: 4472: <script src="/W034_Cookie_Directive-portlet/js/w034CookieDirective.js" type="text/javascript"></scri ...
+
+
+
+		LINEA: 1, COLUMNA: 4590: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4645: <script type="text/javascript">/*<![CDATA[*/require({paths:{moduloW037ObsoleteBrowsers:"/W037_Obsole ...
+
+
+
+		LINEA: 1, COLUMNA: 4700: <script src="/W037_Obsolete_Browsers-portlet/statics/js/moduloW037ObsoleteBrowsers.js" type="text/ja ...
+
+
+
+		LINEA: 1, COLUMNA: 4834: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 4889: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 4944: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5064: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5119: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 5174: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5294: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5349: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 5404: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5524: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5579: <script type="text/javascript">/*<![CDATA[*/require({paths:{W042MultimediaDetailModule:"/W042_Multim ...
+
+
+
+		LINEA: 1, COLUMNA: 5634: <script src="/W042_Multimedia_Detail-portlet/js/W042MultimediaDetail.js" type="text/javascript"></sc ...
+
+
+
+		LINEA: 1, COLUMNA: 5754: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 5809: <script type="text/javascript">/*<![CDATA[*/require({paths:{W044InformationDetailModule:"/W044_Infor ...
+
+
+
+		LINEA: 1, COLUMNA: 5864: <script src="/W044_Information_Detail-portlet/statics/js/W044InformationDetail.js" type="text/javasc ...
+
+
+
+		LINEA: 1, COLUMNA: 5994: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 6049: <script type="text/javascript">/*<![CDATA[*/require({paths:{moduloW054MenuCabecera:"/W054_Menu_Cabec ...
+
+
+
+		LINEA: 1, COLUMNA: 6104: <script src="/W054_Menu_Cabecera-portlet/statics/js/moduloW054MenuCabecera.js" type="text/javascript ...
+
+
+
+		LINEA: 1, COLUMNA: 6230: <script src="/Theme_WCSantanderUK-theme/js/ntpagetag.js" type="text/javascript"></script>
+
+
+
+		LINEA: 1, COLUMNA: 6334: <script type="text/javascript">/*<![CDATA[*/require(["ipf/main"],function(a){a.addPortlet({portletLD ...
+
+
+
+		LINEA: 1, COLUMNA: 6811: <script type="text/javascript" src="/ipf-hook/js/util.js"></script>
+
+
+
+		LINEA: 1, COLUMNA: 6893: <script type="text/javascript" src="/ipf-hook/js/commons.js" ></script>
+
+
+
+		LINEA: 1, COLUMNA: 6979: <script type="text/javascript" src="/ipf-hook/js/metaTags.js" ></script>
+
+
+
+		LINEA: 1, COLUMNA: 7066: <script type="text/javascript" src="/ipf-hook/js/ipf-literalTag.js" ></script>
+
+
+
+		LINEA: 1, COLUMNA: 7308: <script type="text/javascript">/*<![CDATA[*/YUI().use("ipf_metaTags",function(a){a.IPF_MetaTags.ipf_ ...
+
+
+
+		LINEA: 1, COLUMNA: 7451: <script>/*<![CDATA[*/var sandatalayer={user_id:"empty",site_id:"11023",page_lang:"es_ES",page_title: ...
+
+
+
+		LINEA: 1, COLUMNA: 7483: <script type='text/javascript'>var utag_data = {}; (function(a,b,c,d){ a='//tags.tiqcdn.com/utag/san ...
+
+
+
+		LINEA: 1, COLUMNA: 8821: <script type="text/javascript">/*<![CDATA[*/var arrNavObs=["ie 7","ie 8",];require(["dojo/ready"],fu ...
+
+
+
+		LINEA: 10, COLUMNA: 60253: <script type="text/javascript">/*<![CDATA[*/require(["dojo/query","dojo/dom-construct","dojo/dom-att ...
+
+
+
+		LINEA: 10, COLUMNA: 64543: <script type="text/javascript">/*<![CDATA[*/AUI().use("aui-viewport");/*]]>*/</script>
+
+
+
+		LINEA: 10, COLUMNA: 64620: <script type="text/javascript" src=/Utilidades/paginador/paginador.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 64730: <script type="text/javascript" src=/Utilidades/utilvideo/utilvideo.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 64840: <script type="text/javascript" src=/Utilidades/lightbox/lightbox.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 64948: <script type="text/javascript" src=/Utilidades/fcktooltip/fcktooltip.js charset="utf-8"></script>
+
+
+
+		LINEA: 10, COLUMNA: 65090: <script type="text/javascript">/*<![CDATA[*/Liferay.Util.addInputFocus();Liferay.Portlet.runtimePort ...
+
+
+
+		LINEA: 10, COLUMNA: 65145: <script type="text/javascript">/*<![CDATA[*/Liferay.Portlet.onLoad({canEditTitle:false,columnPos:0,i ...
+
+
+
+		LINEA: 10, COLUMNA: 65200: <script src="https://www.bancosantander.es/Theme_GenerInter01-theme/js/main.js?browserId=other&amp;m ...
+
+
+
+		LINEA: 10, COLUMNA: 65415: <script type="text/javascript"></script>
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 1, COLUMNA: 385: <title>Internet | Banca online | Particulares - Banco Santander</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 1, COLUMNA: 11310: <a href="/es/politica-de-cookies"><strong>Pol&iacute;tica de Cookies</strong></a>
+
+
+
+		LINEA: 1, COLUMNA: 14232: <a title="" href="https://www.bancosantander.es/es/particulares" text="Particulares" name="FirstLeve ...
+
+
+
+		LINEA: 1, COLUMNA: 14401: <a title="" href="https://www.bancosantander.es/es/private-banking" text="Private Banking" name="Fir ...
+
+
+
+		LINEA: 1, COLUMNA: 14579: <a title="" href="https://www.bancosantander.es/es/empresas" text="Empresas" name="FirstLevelOption" ...
+
+
+
+		LINEA: 1, COLUMNA: 14954: <a aria-haspopup="true" role="menuitem" class="nav icon_arrow openTooltip" href="#idiomasTip22">Espa ...
+
+
+
+		LINEA: 1, COLUMNA: 15280: <a role="menuitem" href="https://www.bancosantander.es/es/es/particulares/banca-online/internet" cla ...
+
+
+
+		LINEA: 1, COLUMNA: 15418: <a role="menuitem" href="https://www.bancosantander.es/es/ca/particulares/banca-online/internet" cla ...
+
+
+
+		LINEA: 1, COLUMNA: 15879: <a role="menuitem" href="https://microsite.bancosantander.es/files/ayudaonline/popup/particulares.ht ...
+
+
+
+		LINEA: 1, COLUMNA: 16380: <a role="menuitem" href="https://microsite.bancosantander.es/files/ayudaonline/popup/particulares.ht ...
+
+
+
+		LINEA: 1, COLUMNA: 16605: <a role="menuitem" href="https://www.bancosantander.es/cssa/Satellite?pagename=BuscadorOficinas/Page ...
+
+
+
+		LINEA: 1, COLUMNA: 17143: <a role="menuitem" href="https://www.bancosantander.es/cssa/Satellite?pagename=BuscadorOficinas/Page ...
+
+
+
+		LINEA: 1, COLUMNA: 17403: <a role="menuitem" href="http://www.santander.com/csgs/Satellite/CFWCSancomQP01/es_ES/Corporativo/Ac ...
+
+
+
+		LINEA: 1, COLUMNA: 17954: <a role="menuitem" href="http://www.santander.com/csgs/Satellite/CFWCSancomQP01/es_ES/Corporativo/Ac ...
+
+
+
+		LINEA: 1, COLUMNA: 18226: <a role="menuitem" href="https://www.google.es/maps/search/Oficina+Santander+Smart+Red/" name="eleme ...
+
+
+
+		LINEA: 1, COLUMNA: 18711: <a role="menuitem" href="https://www.google.es/maps/search/Oficina+Santander+Smart+Red/" name="eleme ...
+
+
+
+		LINEA: 1, COLUMNA: 18910: <a role="menuitem" href="/es/particulares/atencion-al-cliente/santander-personal" name="elementoAgru ...
+
+
+
+		LINEA: 1, COLUMNA: 19366: <a role="menuitem" href="/es/particulares/atencion-al-cliente/santander-personal" name="elementoAgru ...
+
+
+
+		LINEA: 1, COLUMNA: 19818: <a tabindex="7" class="wlr_btn wlr_btn02" href="#" data-subtitulo="">Acceso clientes</a>
+
+
+
+		LINEA: 10, COLUMNA: 591: <a href="/es/particulares" title="" itemprop="logo" target=_self > <img src="https://www.bancosantan ...
+
+
+
+		LINEA: 10, COLUMNA: 1053: <a href="#nav">Navigation</a>
+
+
+
+		LINEA: 10, COLUMNA: 1304: <a title="" href="https://www.bancosantander.es/es/particulares/cuentas-y-tarjetas" class="menufirst ...
+
+
+
+		LINEA: 10, COLUMNA: 1638: <a href="https://www.bancosantander.es/es/particulares/cuentas-corrientes" name="MenuOption" class=" ...
+
+
+
+		LINEA: 10, COLUMNA: 1869: <a href="https://www.bancosantander.es/es/particulares/cuentas-corrientes/cuenta-123" name="MenuOpti ...
+
+
+
+		LINEA: 10, COLUMNA: 2023: <a href="https://www.bancosantander.es/es/particulares/cuentas-corrientes/cuenta-123-smart" name="Me ...
+
+
+
+		LINEA: 10, COLUMNA: 2189: <a href="https://www.bancosantander.es/es/particulares/cuentas-corrientes/cuenta-123-mini" name="Men ...
+
+
+
+		LINEA: 10, COLUMNA: 2353: <a href="https://www.bancosantander.es/es/cuenta-1l2l3-profesional" name="MenuOption" target=_self t ...
+
+
+
+		LINEA: 10, COLUMNA: 2503: <a href="https://www.bancosantander.es/es/cuenta-1l2l3-profesional-premium" name="MenuOption" target ...
+
+
+
+		LINEA: 10, COLUMNA: 2669: <a href="https://www.bancosantander.es/es/particulares/cuentas-corrientes/cuenta-zero" name="MenuOpt ...
+
+
+
+		LINEA: 10, COLUMNA: 2831: <a href="https://www.bancosantander.es/es/particulares/cuentas-corrientes/cuenta-nomina" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 2993: <a href="https://www.bancosantander.es/es/particulares/cuentas-corrientes/otras-cuentas" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 3153: <a href="https://www.bancosantander.es/es/calcular-iban" name="MenuOption" target=_self title=""> Ca ...
+
+
+
+		LINEA: 10, COLUMNA: 3315: <a href="https://www.bancosantander.es/es/particulares/tarjetas-de-credito" name="MenuOption" class= ...
+
+
+
+		LINEA: 10, COLUMNA: 3549: <a href="https://www.bancosantander.es/es/particulares/tarjetas-de-credito/mundo-123" name="MenuOpti ...
+
+
+
+		LINEA: 10, COLUMNA: 3719: <a href="https://www.bancosantander.es/es/particulares/tarjetas-de-credito/mi-otra-123" name="MenuOp ...
+
+
+
+		LINEA: 10, COLUMNA: 3893: <a href="https://www.bancosantander.es/es/particulares/tarjetas-de-credito/laliga-santander" name="M ...
+
+
+
+		LINEA: 10, COLUMNA: 4068: <a href="https://www.bancosantander.es/es/particulares/tarjetas-de-credito/credito-zero" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 4242: <a href="https://www.bancosantander.es/es/particulares/tarjetas-de-credito/mi-otra-zero" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 4424: <a href="https://www.bancosantander.es/es/particulares/tarjetas-de-credito/tarjeta-via-t" name="Menu ...
+
+
+
+		LINEA: 10, COLUMNA: 4603: <a href="https://www.bancosantander.es/es/particulares/tarjetas-de-credito/tarjeta-iberia" name="Men ...
+
+
+
+		LINEA: 10, COLUMNA: 4781: <a href="https://www.bancosantander.es/es/particulares/tarjetas-de-credito/ventajas" name="MenuOptio ...
+
+
+
+		LINEA: 10, COLUMNA: 4994: <a href="https://www.bancosantander.es/es/particulares/tarjetas-debito-y-prepago" name="MenuOption"...
+
+
+
+		LINEA: 10, COLUMNA: 5233: <a href="https://www.bancosantander.es/es/particulares/tarjetas-debito-y-prepago/debito-oro" name="M ...
+
+
+
+		LINEA: 10, COLUMNA: 5407: <a href="https://www.bancosantander.es/es/particulares/tarjetas-debito-y-prepago/debito-zero" name=" ...
+
+
+
+		LINEA: 10, COLUMNA: 5585: <a href="https://www.bancosantander.es/es/particulares/tarjetas-debito-y-prepago/tarjeta-123-mini" n ...
+
+
+
+		LINEA: 10, COLUMNA: 5766: <a href="https://www.bancosantander.es/es/particulares/tarjetas-debito-y-prepago/pulsera-123-mini" n ...
+
+
+
+		LINEA: 10, COLUMNA: 5947: <a href="https://www.bancosantander.es/es/particulares/tarjetas-debito-y-prepago/pulsera-contactless ...
+
+
+
+		LINEA: 10, COLUMNA: 6142: <a href="https://www.bancosantander.es/es/particulares/tarjetas-debito-y-prepago/e-cash" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 6311: <a href="https://www.bancosantander.es/es/particulares/tarjetas-debito-y-prepago/ventajas" name="Men ...
+
+
+
+		LINEA: 10, COLUMNA: 6529: <a href="https://www.bancosantander.es/es/particulares/financiacion-con-tarjeta" name="MenuOption" c ...
+
+
+
+		LINEA: 10, COLUMNA: 6773: <a href="https://www.bancosantander.es/es/particulares/financiacion-con-tarjeta/pago-facil" name="Me ...
+
+
+
+		LINEA: 10, COLUMNA: 6934: <a href="https://www.bancosantander.es/es/particulares/financiacion-con-tarjeta/dinero-directo" name ...
+
+
+
+		LINEA: 10, COLUMNA: 7159: <a title="" href="https://www.bancosantander.es/es/particulares/ahorro-e-inversion" class="menufirst ...
+
+
+
+		LINEA: 10, COLUMNA: 7606: <a href="https://www.bancosantander.es/es/particulares/sofia/plataforma-inversion" name="MenuOption" ...
+
+
+
+		LINEA: 10, COLUMNA: 7771: <a href="https://www.bancosantander.es/es/ahorro-e-inversion/app-sofia" name="MenuOption" target=_se ...
+
+
+
+		LINEA: 10, COLUMNA: 7945: <a href="https://www.bancosantander.es/es/particulares/fondos-de-inversion" name="MenuOption" class= ...
+
+
+
+		LINEA: 10, COLUMNA: 8179: <a href="https://www.bancosantander.es/es/particulares/fondos-de-inversion/garantizados" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 8345: <a href="https://www.bancosantander.es/es/particulares/fondos-de-inversion/monetarios-y-renta-fija"...
+
+
+
+		LINEA: 10, COLUMNA: 8533: <a href="https://www.bancosantander.es/es/particulares/fondos-de-inversion/mixtos" name="MenuOption" ...
+
+
+
+		LINEA: 10, COLUMNA: 8687: <a href="https://www.bancosantander.es/es/particulares/fondos-de-inversion/renta-variable" name="Men ...
+
+
+
+		LINEA: 10, COLUMNA: 8857: <a href="https://www.bancosantander.es/es/particulares/fondos-de-inversion/sostenidos" name="MenuOpt ...
+
+
+
+		LINEA: 10, COLUMNA: 9020: <a href="https://www.bancosantander.es/es/particulares/fondos-de-inversion/buscador-fondos" name="Me ...
+
+
+
+		LINEA: 10, COLUMNA: 9196: <a href="https://www.bancosantander.es/es/particulares/ahorro-e-inversion/valor-institucional" name= ...
+
+
+
+		LINEA: 10, COLUMNA: 9368: <a href="https://www.bancosantander.es/es/particulares/cartera-gestion" name="MenuOption" target=_se ...
+
+
+
+		LINEA: 10, COLUMNA: 9551: <a href="https://www.bancosantander.es/es/particulares/planes-de-pensiones" name="MenuOption" class= ...
+
+
+
+		LINEA: 10, COLUMNA: 9784: <a href="https://www.bancosantander.es/es/particulares/planes-de-pensiones/simulador" name="MenuOpti ...
+
+
+
+		LINEA: 10, COLUMNA: 9958: <a href="https://www.bancosantander.es/es/particulares/planes-de-pensiones/gama-mi-proyecto" name="M ...
+
+
+
+		LINEA: 10, COLUMNA: 10125: <a href="https://www.bancosantander.es/es/particulares/planes-de-pensiones/gama-mi-plan" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 10284: <a href="https://www.bancosantander.es/es/particulares/planes-de-pensiones/renta-variable" name="Men ...
+
+
+
+		LINEA: 10, COLUMNA: 10467: <a href="https://www.bancosantander.es/es/particulares/planes-de-pensiones/epsv" name="MenuOption" t ...
+
+
+
+		LINEA: 10, COLUMNA: 10610: <a href="https://www.bancosantander.es/es/particulares/planes-de-pensiones/buscador-planes" name="Me ...
+
+
+
+		LINEA: 10, COLUMNA: 10788: <a href="https://www.bancosantander.es/es/particulares/planes-de-pensiones/traspaso" name="MenuOptio ...
+
+
+
+		LINEA: 10, COLUMNA: 10964: <a href="https://www.bancosantander.es/es/particulares/planes-de-pensiones/contrata-primer-plan-pens ...
+
+
+
+		LINEA: 10, COLUMNA: 11203: <a href="https://www.bancosantander.es/es/particulares/seguros-ahorro" name="MenuOption" class="cate ...
+
+
+
+		LINEA: 10, COLUMNA: 11429: <a href="https://www.bancosantander.es/es/particulares/seguros-ahorro/sialp" name="MenuOption" targe ...
+
+
+
+		LINEA: 10, COLUMNA: 11594: <a href="https://www.bancosantander.es/es/particulares/seguros-ahorro/rentas-vitalicias" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 11758: <a href="https://www.bancosantander.es/es/particulares/seguros-ahorro/ppa" name="MenuOption" target= ...
+
+
+
+		LINEA: 10, COLUMNA: 11927: <a href="https://www.bancosantander.es/es/particulares/seguros-ahorro/plan-ahorro-infantil-asegurado ...
+
+
+
+		LINEA: 10, COLUMNA: 12120: <a href="https://www.bancosantander.es/es/particulares/seguros-ahorro/renta-reinversion" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 12307: <a href="https://www.bancosantander.es/es/plan-de-ahorro-seguro-santander-pass-" name="MenuOption" t ...
+
+
+
+		LINEA: 10, COLUMNA: 12484: <a href="https://www.bancosantander.es/es/particulares/seguros-ahorro/seguro-activo-santander-europa ...
+
+
+
+		LINEA: 10, COLUMNA: 12845: <a href="https://www.bancosantander.es/es/particulares/bolsas-mercados-valores" name="MenuOption" ta ...
+
+
+
+		LINEA: 10, COLUMNA: 13010: <a href="https://www.bancosantander.es/es/particulares/oportunidades-de-inversion" name="MenuOption" ...
+
+
+
+		LINEA: 10, COLUMNA: 13345: <a href="https://www.bancosantander.es/es/particulares/ahorro-e-inversion/priips" name="MenuOption"...
+
+
+
+		LINEA: 10, COLUMNA: 13569: <a title="" href="https://www.bancosantander.es/es/particulares/hipotecas" class="menufirst linkable ...
+
+
+
+		LINEA: 10, COLUMNA: 13885: <a href="https://www.bancosantander.es/es/elige-tu-hipoteca" name="MenuOption" class="category_heade ...
+
+
+
+		LINEA: 10, COLUMNA: 14101: <a href="https://www.bancosantander.es/es/particulares/hipotecas/hipoteca-variable" name="MenuOption ...
+
+
+
+		LINEA: 10, COLUMNA: 14260: <a href="https://www.bancosantander.es/es/particulares/hipotecas/hipoteca-fija" name="MenuOption" ta ...
+
+
+
+		LINEA: 10, COLUMNA: 14411: <a href="https://www.bancosantander.es/es/particulares/hipotecas/cambio-hipoteca" name="MenuOption"...
+
+
+
+		LINEA: 10, COLUMNA: 14566: <a href="https://www.bancosantander.es/es/particulares/hipotecas/otras-hipotecas" name="MenuOption"...
+
+
+
+		LINEA: 10, COLUMNA: 14721: <a href="https://www.bancosantander.es/es/particulares/hipotecas/hipoteca-altamira-casaktua" name="M ...
+
+
+
+		LINEA: 10, COLUMNA: 14900: <a href="https://www.bancosantander.es/es/particulares/hipotecas/hipoteca-aliseda" name="MenuOption" ...
+
+
+
+		LINEA: 10, COLUMNA: 15057: <a href="https://www.bancosantander.es/es/inmuebles" name="MenuOption" target=_self title=""> Santan ...
+
+
+
+		LINEA: 10, COLUMNA: 15244: <a title="" href="https://www.bancosantander.es/es/particulares/prestamos" class="menufirst linkable ...
+
+
+
+		LINEA: 10, COLUMNA: 15561: <a href="https://www.bancosantander.es/es/elige-tu-prestamo" name="MenuOption" class="category_heade ...
+
+
+
+		LINEA: 10, COLUMNA: 15781: <a href="https://www.bancosantander.es/es/particulares/prestamos/prestamo-123" name="MenuOption" tar ...
+
+
+
+		LINEA: 10, COLUMNA: 15931: <a href="https://www.bancosantander.es/es/particulares/prestamos/prestamos-personales" name="MenuOpt ...
+
+
+
+		LINEA: 10, COLUMNA: 16097: <a href="https://www.bancosantander.es/es/particulares/prestamos/prestamo-coche" name="MenuOption" t ...
+
+
+
+		LINEA: 10, COLUMNA: 16251: <a href="https://www.bancosantander.es/es/particulares/prestamos/anticipo-nomina" name="MenuOption"...
+
+
+
+		LINEA: 10, COLUMNA: 16572: <a href="https://www.bancosantander.es/es/particulares/prestamos/prestamos-personales/simulador" nam ...
+
+
+
+		LINEA: 10, COLUMNA: 16758: <a href="https://www.bancosantander.es/es/particulares/prestamos/prestamo-coche/simulador" name="Men ...
+
+
+
+		LINEA: 10, COLUMNA: 16932: <a href="https://www.bancosantander.es/es/particulares/prestamos/reforma-vivienda" name="MenuOption" ...
+
+
+
+		LINEA: 10, COLUMNA: 17274: <a href="https://www.bancosantander.es/es/particulares/prestamos/renting" name="MenuOption" target=_ ...
+
+
+
+		LINEA: 10, COLUMNA: 17432: <a href="https://www.bancosantander.es/es/particulares/prestamos/renting-para-particulares/renting-t ...
+
+
+
+		LINEA: 10, COLUMNA: 17697: <a title="" href="https://www.bancosantander.es/es/particulares/seguros" class="menufirst linkable"...
+
+
+
+		LINEA: 10, COLUMNA: 18009: <a href="https://www.bancosantander.es/es/particulares/seguros/vida" name="MenuOption" class="catego ...
+
+
+
+		LINEA: 10, COLUMNA: 18231: <a href="https://www.bancosantander.es/es/particulares/seguros/vida/proteccion-familiar-plus" name=" ...
+
+
+
+		LINEA: 10, COLUMNA: 18408: <a href="https://www.bancosantander.es/es/particulares/seguros/vida/seguro-vida-mujer" name="MenuOpt ...
+
+
+
+		LINEA: 10, COLUMNA: 18585: <a href="https://www.bancosantander.es/es/particulares/seguros/promociones" name="MenuOption" target ...
+
+
+
+		LINEA: 10, COLUMNA: 18897: <a href="https://www.bancosantander.es/es/particulares/seguros/hogar/proteccion-flexible" name="Menu ...
+
+
+
+		LINEA: 10, COLUMNA: 19105: <a href="https://www.bancosantander.es/es/particulares/seguros/salud" name="MenuOption" class="categ ...
+
+
+
+		LINEA: 10, COLUMNA: 19329: <a href="https://www.bancosantander.es/es/particulares/seguros/salud/seguro-salud-aegon" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 19497: <a href="https://www.bancosantander.es/es/particulares/seguros/salud/seguro-autonomos" name="MenuOpt ...
+
+
+
+		LINEA: 10, COLUMNA: 19708: <a href="https://www.bancosantander.es/es/particulares/seguros/seguros-de-ahorro" name="MenuOption"...
+
+
+
+		LINEA: 10, COLUMNA: 19945: <a href="https://www.bancosantander.es/es/plan-de-ahorro-santander-sialp" name="MenuOption" target=_ ...
+
+
+
+		LINEA: 10, COLUMNA: 20107: <a href="https://www.bancosantander.es/es/rentas-vitalicias" name="MenuOption" target=_self title="" ...
+
+
+
+		LINEA: 10, COLUMNA: 20243: <a href="https://www.bancosantander.es/es/plan-futuro-ppa" name="MenuOption" target=_self title="">...
+
+
+
+		LINEA: 10, COLUMNA: 20396: <a href="https://www.bancosantander.es/es/plan-de-ahorro-infantil-asegurado" name="MenuOption" targe ...
+
+
+
+		LINEA: 10, COLUMNA: 20564: <a href="https://www.bancosantander.es/es/renta-reinversion" name="MenuOption" target=_self title="" ...
+
+
+
+		LINEA: 10, COLUMNA: 20701: <a href="https://www.bancosantander.es/es/particulares/seguros-ahorro/pass" name="MenuOption" target ...
+
+
+
+		LINEA: 10, COLUMNA: 20873: <a href="https://www.bancosantander.es/es/unit-linked-seguro-activo-santanter-europa" name="MenuOpti ...
+
+
+
+		LINEA: 10, COLUMNA: 21216: <a href="https://www.bancosantander.es/es/particulares/seguros/coche/superbuscador" name="MenuOption ...
+
+
+
+		LINEA: 10, COLUMNA: 21549: <a href="https://www.bancosantander.es/es/particulares/seguros/decesos" name="MenuOption" target=_se ...
+
+
+
+		LINEA: 10, COLUMNA: 21870: <a href="https://www.bancosantander.es/es/particulares/seguros/proteccion_incapacidad_temporal" name ...
+
+
+
+		LINEA: 10, COLUMNA: 22227: <a href="https://www.bancosantander.es/es/particulares/seguros/seguro-proteccion-senior" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 22460: <a title="" href="https://www.bancosantander.es/es/particulares/banca-online" class="menufirst linka ...
+
+
+
+		LINEA: 10, COLUMNA: 22782: <a href="https://www.bancosantander.es/es/particulares/banca-online/digilosofia" name="MenuOption" c ...
+
+
+
+		LINEA: 10, COLUMNA: 23013: <a href="https://www.bancosantander.es/es/particulares/banca-online/internet" name="MenuOption" targ ...
+
+
+
+		LINEA: 10, COLUMNA: 23167: <a href="https://www.bancosantander.es/es/particulares/banca-online/app" name="MenuOption" target=_s ...
+
+
+
+		LINEA: 10, COLUMNA: 23312: <a href="https://www.bancosantander.es/es/particulares/banca-online/redes-sociales" name="MenuOption ...
+
+
+
+		LINEA: 10, COLUMNA: 23468: <a href="https://www.bancosantander.es/es/particulares/banca-online/seguridad-online" name="MenuOpti ...
+
+
+
+		LINEA: 10, COLUMNA: 23628: <a href="https://www.bancosantander.es/es/particulares/banca-online/cajeros-contactless" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 23794: <a href="https://www.bancosantander.es/es/particulares/banca-online/oficinas-santander-smart-red" na ...
+
+
+
+		LINEA: 10, COLUMNA: 23968: <a href="https://www.bancosantander.es/es/particulares/banca-online/one-pay" name="MenuOption" targe ...
+
+
+
+		LINEA: 10, COLUMNA: 24110: <a href="https://www.bancosantander.es/es/particulares/banca-online/santander-work-cafe" name="MenuO ...
+
+
+
+		LINEA: 10, COLUMNA: 24267: <a href="https://www.bancosantander.es/es/particulares/banca-online/marketplace-promociones" name="M ...
+
+
+
+		LINEA: 10, COLUMNA: 24475: <a href="https://www.bancosantander.es/es/santander-en-tu-movil" name="MenuOption" class="category_h ...
+
+
+
+		LINEA: 10, COLUMNA: 24691: <a href="https://www.bancosantander.es/es/particulares/banca-online/app/santander" name="MenuOption" ...
+
+
+
+		LINEA: 10, COLUMNA: 24858: <a href="https://www.bancosantander.es/es/particulares/banca-online/app/wallet" name="MenuOption" ta ...
+
+
+
+		LINEA: 10, COLUMNA: 25016: <a href="https://www.bancosantander.es/es/particulares/banca-online/app/money-plan" name="MenuOption ...
+
+
+
+		LINEA: 10, COLUMNA: 25182: <a href="https://www.bancosantander.es/es/particulares/banca-online/app/sofia" name="MenuOption" tar ...
+
+
+
+		LINEA: 10, COLUMNA: 25339: <a href="https://www.bancosantander.es/es/particulares/banca-online/app/123-mini" name="MenuOption"...
+
+
+
+		LINEA: 10, COLUMNA: 25490: <a href="https://www.bancosantander.es/es/particulares/banca-online/app/justicia" name="MenuOption"...
+
+
+
+		LINEA: 10, COLUMNA: 25686: <a href="https://www.bancosantander.es/es/particulares/banca-online/pagar-con-el-movil" name="MenuOp ...
+
+
+
+		LINEA: 10, COLUMNA: 25931: <a href="https://www.bancosantander.es/es/particulares/banca-online/apple-pay" name="MenuOption" tar ...
+
+
+
+		LINEA: 10, COLUMNA: 26077: <a href="https://www.bancosantander.es/es/particulares/banca-online/bizum" name="MenuOption" target= ...
+
+
+
+		LINEA: 10, COLUMNA: 26215: <a href="https://www.bancosantander.es/es/particulares/banca-online/samsung-pay" name="MenuOption" t ...
+
+
+
+		LINEA: 10, COLUMNA: 26365: <a href="https://www.bancosantander.es/es/particulares/banca-online/fitbit-pay" name="MenuOption" ta ...
+
+
+
+		LINEA: 10, COLUMNA: 26513: <a href="https://www.bancosantander.es/es/particulares/banca-online/garmin-pay" name="MenuOption" ta ...
+
+
+
+		LINEA: 10, COLUMNA: 26824: <a href="https://www.bancosantander.es/es/particulares/banca-online/clave-online" name="MenuOption"...
+
+
+
+		LINEA: 10, COLUMNA: 27794: <a href="https://www.bancosantander.es/es/particulares" title="" target=_self >Particulares</a>
+
+
+
+		LINEA: 10, COLUMNA: 27901: <a href="https://www.bancosantander.es/es/particulares/banca-online" title="" target=_self >Banca on ...
+
+
+
+		LINEA: 10, COLUMNA: 28021: <a href="https://www.bancosantander.es/es/particulares/banca-online/digilosofia" title="" target=_se ...
+
+
+
+		LINEA: 10, COLUMNA: 33011: <a href="/es/particulares/banca-online/clave-online" target="_self" title="Consigue tus claves" data ...
+
+
+
+		LINEA: 10, COLUMNA: 40276: <a target="_self" href="/es/particulares/bolsas-mercados-valores/broker-bolsa-online">Broker de Bols ...
+
+
+
+		LINEA: 10, COLUMNA: 40450: <a href="/es/particulares/banca-online/clave-online">tus claves</a>
+
+
+
+		LINEA: 10, COLUMNA: 50093: <a href="/es/particulares/cuentas-corrientes/cuenta-123" target="_self" title="" data-tagging='{"tit ...
+
+
+
+		LINEA: 10, COLUMNA: 53274: <a target="_blank" title="Abre en ventana nueva" href="http://www.santander.com" data-tagging='{"tit ...
+
+
+
+		LINEA: 10, COLUMNA: 53441: <a target="_self" title="" href="/es/inmuebles" data-tagging='{"title":"Santander Inmuebles"}' > <sp ...
+
+
+
+		LINEA: 10, COLUMNA: 53587: <a target="_blank" title="Abre en ventana nueva" href="http://www.santanderassetmanagement.es/" data ...
+
+
+
+		LINEA: 10, COLUMNA: 53795: <a target="_blank" title="Abre en ventana nueva" href="http://www.santanderconsumer.es/" data-taggin ...
+
+
+
+		LINEA: 10, COLUMNA: 53980: <a target="_blank" title="Abre en ventana nueva" href="https://blog.bancosantander.es/" data-tagging ...
+
+
+
+		LINEA: 10, COLUMNA: 54176: <a target="_self" title="" href="/es/diccionario-financiero" data-tagging='{"title":"Diccionario Fin ...
+
+
+
+		LINEA: 10, COLUMNA: 54341: <a target="_blank" title="Abre en ventana nueva" href="https://prescriptoreshipotecarios.bancosantan ...
+
+
+
+		LINEA: 10, COLUMNA: 54719: <a target="_self" title="" href="/es/aviso-legal" data-tagging='{"title":"Aviso Legal"}' > <span>Avi ...
+
+
+
+		LINEA: 10, COLUMNA: 54851: <a target="_self" title="" href="/es/politica-de-cookies" data-tagging='{"title":"Política de cooki ...
+
+
+
+		LINEA: 10, COLUMNA: 55009: <a target="_self" title="" href="/es/tablon-anuncios" data-tagging='{"title":"Tablón"}' > <span>Tab ...
+
+
+
+		LINEA: 10, COLUMNA: 55137: <a target="_self" title="" href="/es/espacio-mifid" data-tagging='{"title":"MiFID"}' > <span>MiFID</ ...
+
+
+
+		LINEA: 10, COLUMNA: 55259: <a target="_self" title="" href="/es/espacio-psd2" data-tagging='{"title":"Normativa PSD2"}' > <span ...
+
+
+
+		LINEA: 10, COLUMNA: 55398: <a target="_self" title="" href="/es/accesibilidad" data-tagging='{"title":"Accesibilidad"}' > <span ...
+
+
+
+		LINEA: 10, COLUMNA: 55536: <a target="_self" title="" href="/es/particulares/banca-online/seguridad-online/aprende-seguridad-on ...
+
+
+
+		LINEA: 10, COLUMNA: 55736: <a target="_self" title="" href="/es/tablon-de-anuncios/dependencias-y-organismos-de-atencion-de-cli ...
+
+
+
+		LINEA: 10, COLUMNA: 55999: <a target="_self" title="" href="/es/reclamaciones-clausula-suelo" data-tagging='{"title":"Reclamaci ...
+
+
+
+		LINEA: 10, COLUMNA: 56184: <a target="_self" title="" href="/es/sepa " data-tagging='{"title":"SEPA"}' > <span>SEPA</span> </a>
+
+
+
+		LINEA: 10, COLUMNA: 56296: <a target="_self" title="" href="/es/uso-de-la-web" data-tagging='{"title":"Uso de la web"}' > <span ...
+
+
+
+		LINEA: 10, COLUMNA: 56434: <a target="_self" title="" href="/es/sorteos-y-promociones" data-tagging='{"title":"Bases Legales, S ...
+
+
+
+		LINEA: 10, COLUMNA: 56626: <a target="_self" title="" href="/es/gdpr" data-tagging='{"title":"GDPR"}' > <span>GDPR</span> </a>
+
+
+
+		LINEA: 10, COLUMNA: 56848: <a target="_self" title="" href="/es/particulares/hipotecas/simulador" data-tagging='{"title":"Simul ...
+
+
+
+		LINEA: 10, COLUMNA: 57021: <a target="_self" title="" href="/es/particulares/prestamos/prestamos-personales/simulador" data-tag ...
+
+
+
+		LINEA: 10, COLUMNA: 57219: <a target="_self" title="" href="/es/particulares/cuentas-corrientes/cuenta-nomina" data-tagging='{" ...
+
+
+
+		LINEA: 10, COLUMNA: 57391: <a target="_self" title="" href="/es/particulares/seguros" data-tagging='{"title":"Seguros"}' > <spa ...
+
+
+
+		LINEA: 10, COLUMNA: 57630: <a target="_self" title="" href="/es/laliga-santander" data-tagging='{"title":"LaLiga Santander"}' > ...
+
+
+
+		LINEA: 10, COLUMNA: 57777: <a target="_blank" title="Abre en ventana nueva" href="https://www.123acorrer.es/" data-tagging='{"t ...
+
+
+
+		LINEA: 10, COLUMNA: 57940: <a target="_self" title="" href="/es/trabaja-con-nosotros" data-tagging='{"title":"Trabaja con nosot ...
+
+
+
+		LINEA: 10, COLUMNA: 58099: <a target="_self" title="" href="/es/fondo-social-de-viviendas" data-tagging='{"title":"Fondo Social ...
+
+
+
+		LINEA: 10, COLUMNA: 58273: <a target="_self" title="" href="/es/particulares/espacios-a-medida/agro/aacc" data-tagging='{"title ...
+
+
+
+		LINEA: 10, COLUMNA: 58448: <a target="_blank" title="Abre en ventana nueva" href="https://www.masalladeldinero.com/?campana=123 ...
+
+
+
+		LINEA: 10, COLUMNA: 60555: <a target="_self" href="/es/sello-calidad-efqm500"><img class="alignLeft" src="https://www.bancosant ...
+
+
+
+		LINEA: 10, COLUMNA: 60984: <a target="_blank" href="https://play.google.com/store/apps/details?id=es.bancosantander.apps&amp;hl ...
+
+
+
+		LINEA: 10, COLUMNA: 61463: <a target="_blank" href="https://itunes.apple.com/es/app/santander/id408043474?mt=8"><img src="https ...
+
+
+
+		LINEA: 10, COLUMNA: 61947: <a target="_blank" href="https://www.twitter.com/santander_es"><img src="https://www.bancosantander. ...
+
+
+
+		LINEA: 10, COLUMNA: 62382: <a rel="publisher" target="_blank" href="https://plus.google.com/+bancosantander"><img src="https:// ...
+
+
+
+		LINEA: 10, COLUMNA: 62825: <a target="_blank" href="https://www.facebook.com/bancoSantander"><img src="https://www.bancosantand ...
+
+
+
+		LINEA: 10, COLUMNA: 63264: <a target="_blank" href="https://www.youtube.com/user/bancosantander"><img src="https://www.bancosan ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 10, COLUMNA: 522: <h1 class="logo_wlrh3" itemscope itemtype="http://schema.org/Brand"> <a href="/es/particulares" titl ...
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 1, COLUMNA: 9204: <h2 id="titulo" class="title_message"></h2>
+
+
+
+		LINEA: 1, COLUMNA: 10908: <h2 class="title_message">Aviso de cookies</h2>
+
+
+
+		LINEA: 10, COLUMNA: 29625: <h2 class="titpage">Internet - Banca online</h2>
+
+  
+
+	REVISAR: 45: h4 may be used for formatting.
+
+ 
+
+		LINEA: 1, COLUMNA: 15859: <h4></h4>
+
+
+
+		LINEA: 10, COLUMNA: 53221: <h4 class="grouptitle">Webs Santander</h4>
+
+
+
+		LINEA: 10, COLUMNA: 54657: <h4 class="grouptitle">Info. Legal y seguridad</h4>
+
+
+
+		LINEA: 10, COLUMNA: 56799: <h4 class="grouptitle">Destacados</h4>
+
+
+
+		LINEA: 10, COLUMNA: 57586: <h4 class="grouptitle">Otros</h4>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 1, COLUMNA: 20622: <form class="wlr_searchBox" id="searchHeader" name="searchHeader" autocomplete="off" action="https:/ ...
+
+
+
+		LINEA: 10, COLUMNA: 30837: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_2 ...
+
+
+
+		LINEA: 10, COLUMNA: 33563: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_j ...
+
+
+
+		LINEA: 10, COLUMNA: 47945: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_G ...
+
+
+
+		LINEA: 10, COLUMNA: 50621: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_A ...
+
+
+
+		LINEA: 10, COLUMNA: 64449: <form action="#" id="hrefFm" method="post" name="hrefFm"> <span></span> </form>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 1, COLUMNA: 7371: <body class=" yui3-skin-sam controls-visible signed-out public-page site hide"> <script>/*<![CDATA[* ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 1, COLUMNA: 20622: <form class="wlr_searchBox" id="searchHeader" name="searchHeader" autocomplete="off" action="https:/ ...
+
+
+
+		LINEA: 10, COLUMNA: 30837: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_2 ...
+
+
+
+		LINEA: 10, COLUMNA: 33563: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_j ...
+
+
+
+		LINEA: 10, COLUMNA: 47945: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_G ...
+
+
+
+		LINEA: 10, COLUMNA: 50621: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_A ...
+
+
+
+		LINEA: 10, COLUMNA: 64449: <form action="#" id="hrefFm" method="post" name="hrefFm"> <span></span> </form>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 1, COLUMNA: 20622: <form class="wlr_searchBox" id="searchHeader" name="searchHeader" autocomplete="off" action="https:/ ...
+
+
+
+		LINEA: 10, COLUMNA: 30837: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_2 ...
+
+
+
+		LINEA: 10, COLUMNA: 33563: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_j ...
+
+
+
+		LINEA: 10, COLUMNA: 47945: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_G ...
+
+
+
+		LINEA: 10, COLUMNA: 50621: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_A ...
+
+
+
+		LINEA: 10, COLUMNA: 64449: <form action="#" id="hrefFm" method="post" name="hrefFm"> <span></span> </form>
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 1, COLUMNA: 9922: <input id="_W034_Cookie_Directive_WAR_W034_Cookie_Directiveportlet_oculto" type="hidden" name="ocult ...
+
+
+
+		LINEA: 1, COLUMNA: 10041: <input id="_W034_Cookie_Directive_WAR_W034_Cookie_Directiveportlet_expTime" type="hidden" name="expT ...
+
+
+
+		LINEA: 1, COLUMNA: 11928: <input type="hidden" id="valorCookieExpirationTime" value="31536000" />
+
+
+
+		LINEA: 1, COLUMNA: 12000: <input type="hidden" id="valorCookieName" value="WCSANComercMenuOp" />
+
+
+
+		LINEA: 1, COLUMNA: 12071: <input type="hidden" id="valorCookieNameLogout" value="WCSANComercLogout" />
+
+
+
+		LINEA: 1, COLUMNA: 12148: <input type="hidden" id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportlet_valorCookieNameLanguage"...
+
+
+
+		LINEA: 1, COLUMNA: 12275: <input type="hidden" id="valorDelay" value="600" />
+
+
+
+		LINEA: 1, COLUMNA: 12327: <input type="hidden" id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportlet_valorCurrentLocale" value ...
+
+
+
+		LINEA: 1, COLUMNA: 12439: <input type="hidden" id="paginaPadreNivel1" value="com.isban.w054menucabecera.models.LayoutDAO@1ae51 ...
+
+
+
+		LINEA: 1, COLUMNA: 12547: <input type="hidden" id="nivelPaginaActual" value="4" />
+
+
+
+		LINEA: 1, COLUMNA: 12604: <input type="hidden" id="urlPaginaActual" value="/particulares/banca-online/internet" />
+
+
+
+		LINEA: 1, COLUMNA: 12693: <input type="hidden" id="valorNivelGuardadoCookie" value="1" />
+
+
+
+		LINEA: 1, COLUMNA: 12757: <input type="hidden" id="boton1Link" value="" />
+
+
+
+		LINEA: 1, COLUMNA: 12806: <input type="hidden" id="boton2Link" value="" />
+
+
+
+		LINEA: 1, COLUMNA: 12855: <input type="hidden" id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportlet_paramSiteID" value="11023 ...
+
+
+
+		LINEA: 1, COLUMNA: 12960: <input type="hidden" id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportlet_paramUserID" value="Usuar ...
+
+
+
+		LINEA: 1, COLUMNA: 13077: <input type="hidden" id="optionsLevel1W54" value="[com.isban.w054menucabecera.models.LayoutDAO@1ae51 ...
+
+
+
+		LINEA: 1, COLUMNA: 13294: <input type="hidden" id="enlaceBoton3" value="/es/particulares/hazte-cliente" />
+
+
+
+		LINEA: 1, COLUMNA: 13375: <input type="hidden" id="targetBoton3" value="NO" />
+
+
+
+		LINEA: 1, COLUMNA: 13428: <input type="hidden" id="urlIframe" value="https://particulares.bancosantander.es/external-login/" / ...
+
+
+
+		LINEA: 1, COLUMNA: 13530: <input type="hidden" id="alturaIFrame" value="500" />
+
+
+
+		LINEA: 1, COLUMNA: 13584: <input type="hidden" id="closeText" value="Cerrar" />
+
+
+
+		LINEA: 1, COLUMNA: 13638: <input type="hidden" id="ocultaLi" value="" />
+
+
+
+		LINEA: 1, COLUMNA: 13685: <input type="hidden" id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportlet_uv" value="2" />
+
+
+
+		LINEA: 1, COLUMNA: 20051: <input type="hidden" id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportlet_urlToSearch" value="https ...
+
+
+
+		LINEA: 1, COLUMNA: 21357: <input type="text" title="buscador"		id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportle ...
+
+
+
+		LINEA: 10, COLUMNA: 49: <input type="submit" value="Search" id="botonEnvio" class="btnSubmit"/>
+
+
+
+		LINEA: 10, COLUMNA: 30844: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_26b549NU ...
+
+
+
+		LINEA: 10, COLUMNA: 31275: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_26b549NU ...
+
+
+
+		LINEA: 10, COLUMNA: 31751: <input type="hidden" name="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_26b549 ...
+
+
+
+		LINEA: 10, COLUMNA: 31967: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_26b549NU ...
+
+
+
+		LINEA: 10, COLUMNA: 32113: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_26b549NU ...
+
+
+
+		LINEA: 10, COLUMNA: 33570: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_joHh3dru ...
+
+
+
+		LINEA: 10, COLUMNA: 33995: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_joHh3dru ...
+
+
+
+		LINEA: 10, COLUMNA: 34460: <input type="hidden" name="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_joHh3d ...
+
+
+
+		LINEA: 10, COLUMNA: 34676: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_joHh3dru ...
+
+
+
+		LINEA: 10, COLUMNA: 34822: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_joHh3dru ...
+
+
+
+		LINEA: 10, COLUMNA: 45877: <input type="hidden" name='_W010_Product_Detail_Active_WAR_W010_Product_Detail_Activeportlet_INSTANC ...
+
+
+
+		LINEA: 10, COLUMNA: 46109: <input type="hidden" id="_W010_Product_Detail_Active_WAR_W010_Product_Detail_Activeportlet_INSTANCE_ ...
+
+
+
+		LINEA: 10, COLUMNA: 46263: <input type="hidden" id="_W010_Product_Detail_Active_WAR_W010_Product_Detail_Activeportlet_INSTANCE_ ...
+
+
+
+		LINEA: 10, COLUMNA: 47952: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_Gxj2mDz7 ...
+
+
+
+		LINEA: 10, COLUMNA: 48371: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_Gxj2mDz7 ...
+
+
+
+		LINEA: 10, COLUMNA: 48833: <input type="hidden" name="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_Gxj2mD ...
+
+
+
+		LINEA: 10, COLUMNA: 49049: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_Gxj2mDz7 ...
+
+
+
+		LINEA: 10, COLUMNA: 49195: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_Gxj2mDz7 ...
+
+
+
+		LINEA: 10, COLUMNA: 50628: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_AuQ5zNEt ...
+
+
+
+		LINEA: 10, COLUMNA: 51042: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_AuQ5zNEt ...
+
+
+
+		LINEA: 10, COLUMNA: 51515: <input type="hidden" name="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_AuQ5zN ...
+
+
+
+		LINEA: 10, COLUMNA: 51731: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_AuQ5zNEt ...
+
+
+
+		LINEA: 10, COLUMNA: 51877: <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_AuQ5zNEt ...
+
+
+
+		LINEA: 10, COLUMNA: 58954: <input type="hidden" name="_W016_Links_Cluster_Grouper_WAR_W016_Links_Cluster_Grouperportlet_INSTANC ...
+
+
+
+		LINEA: 10, COLUMNA: 59186: <input type="hidden" id="_W016_Links_Cluster_Grouper_WAR_W016_Links_Cluster_Grouperportlet_INSTANCE_ ...
+
+
+
+		LINEA: 10, COLUMNA: 59340: <input type="hidden" id="_W016_Links_Cluster_Grouper_WAR_W016_Links_Cluster_Grouperportlet_INSTANCE_ ...
+
+
+
+		LINEA: 10, COLUMNA: 63741: <input type="hidden" name="_W044_Information_Detail_WAR_W044_Information_Detailportlet_INSTANCE_qSy6 ...
+
+
+
+		LINEA: 10, COLUMNA: 63961: <input type="hidden" id="_W044_Information_Detail_WAR_W044_Information_Detailportlet_INSTANCE_qSy6cR ...
+
+
+
+		LINEA: 10, COLUMNA: 64109: <input type="hidden" id="_W044_Information_Detail_WAR_W044_Information_Detailportlet_INSTANCE_qSy6cR ...
+
+
+
+		LINEA: 10, COLUMNA: 64241: <input type="hidden" id="_W044_Information_Detail_WAR_W044_Information_Detailportlet_INSTANCE_qSy6cR ...
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 1, COLUMNA: 21357: <input type="text" title="buscador"		id="_W054_Menu_Cabecera_WAR_W054_Menu_Cabeceraportle ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 1, COLUMNA: 20622: <form class="wlr_searchBox" id="searchHeader" name="searchHeader" autocomplete="off" action="https:/ ...
+
+
+
+		LINEA: 10, COLUMNA: 30837: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_2 ...
+
+
+
+		LINEA: 10, COLUMNA: 33563: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_j ...
+
+
+
+		LINEA: 10, COLUMNA: 47945: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_G ...
+
+
+
+		LINEA: 10, COLUMNA: 50621: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_A ...
+
+
+
+		LINEA: 10, COLUMNA: 64449: <form action="#" id="hrefFm" method="post" name="hrefFm"> <span></span> </form>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 1, COLUMNA: 20622: <form class="wlr_searchBox" id="searchHeader" name="searchHeader" autocomplete="off" action="https:/ ...
+
+
+
+		LINEA: 10, COLUMNA: 30837: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_2 ...
+
+
+
+		LINEA: 10, COLUMNA: 33563: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_j ...
+
+
+
+		LINEA: 10, COLUMNA: 47945: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_G ...
+
+
+
+		LINEA: 10, COLUMNA: 50621: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_A ...
+
+
+
+		LINEA: 10, COLUMNA: 64449: <form action="#" id="hrefFm" method="post" name="hrefFm"> <span></span> </form>
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 1, COLUMNA: 20622: <form class="wlr_searchBox" id="searchHeader" name="searchHeader" autocomplete="off" action="https:/ ...
+
+
+
+		LINEA: 10, COLUMNA: 30837: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_2 ...
+
+
+
+		LINEA: 10, COLUMNA: 33563: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_j ...
+
+
+
+		LINEA: 10, COLUMNA: 47945: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_G ...
+
+
+
+		LINEA: 10, COLUMNA: 50621: <form> <input type="hidden" id="_W042_Multimedia_Detail_WAR_W042_Multimedia_Detailportlet_INSTANCE_A ...
+
+
+
+		LINEA: 10, COLUMNA: 64449: <form action="#" id="hrefFm" method="post" name="hrefFm"> <span></span> </form>
+
+

@@ -1,0 +1,23 @@
+REPORTE PÁGINA WEB: https://www.upv.es/estudios/aula-abierta/index-es.html
+FECHA EVALUACIÓN: 2018-12-08
+
+-PROBLEMAS-
+
+-ALERTAS-
+
+Redundant title text	  VECES ENCONTRADO: 8
+Noscript element	  VECES ENCONTRADO: 2
+Redundant link	  VECES ENCONTRADO: 1
+Device dependent event handler	  VECES ENCONTRADO: 5
+
+
+-CARACTERISTICAS-
+
+Alternative text	  VECES ENCONTRADO: 14
+Linked image with alternative text	  VECES ENCONTRADO: 19
+Long description	  VECES ENCONTRADO: 2
+Element language	  VECES ENCONTRADO: 2
+
+
+-PROBLEMAS DE CONTRASTE-
+

@@ -1,0 +1,688 @@
+REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/es/estadisticas/index.htm
+FECHA EVALUACIÓN: 2018-12-01
+
+-PROBLEMAS CONOCIDOS-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
+
+		LINEA: 254, COLUMNA 152: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 255, COLUMNA 155: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 271, COLUMNA 201: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 277, COLUMNA 140: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 278, COLUMNA 149: <img alt="" src="../img/iconos/ico_pdf.gif" />
+
+	
+
+  
+
+-PROBLEMAS POTENCIALES-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+
+
+		LINEA: 115, COLUMNA 5: <img src="../img/HOME/cabecera/logoGdE.gif" alt="Gobierno de Espa&ntilde;a. Ministerio de Trabajo, M ...       
+
+		LINEA: 254, COLUMNA 152: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 255, COLUMNA 155: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 271, COLUMNA 201: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 277, COLUMNA 140: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 278, COLUMNA 149: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 435, COLUMNA 125: <img src="../img/banners/pnr.jpg" alt="Programa Nacional de Reformas. Estrategia de Lisboa" />       
+
+		LINEA: 436, COLUMNA 101: <img src="../img/banners/060.jpg" alt="administracion.gob.es" />
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 115, COLUMNA 5: <img src="../img/HOME/cabecera/logoGdE.gif" alt="Gobierno de Espa&ntilde;a. Ministerio de Trabajo, M ...       
+
+		LINEA: 435, COLUMNA 125: <img src="../img/banners/pnr.jpg" alt="Programa Nacional de Reformas. Estrategia de Lisboa" />       
+
+		LINEA: 436, COLUMNA 101: <img src="../img/banners/060.jpg" alt="administracion.gob.es" />
+
+  
+
+	REVISAR: 59: Image used for input element may have Alt text that does not identify the purpose or function as the image.
+
+
+
+		LINEA: 125, COLUMNA 10: <input type="image" id="buscar" name="buscar"	src="../img/bg/lupa.gif"	alt="Busc ...
+
+  
+
+	REVISAR: 193: Form submit button image may contain text that is not in Alt text.
+
+
+
+		LINEA: 125, COLUMNA 10: <input type="image" id="buscar" name="buscar"	src="../img/bg/lupa.gif"	alt="Busc ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 124, COLUMNA 10: <input type="text" id="q" size="16" maxlength="60" value="" name="q" />
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 115, COLUMNA 5: <img src="../img/HOME/cabecera/logoGdE.gif" alt="Gobierno de Espa&ntilde;a. Ministerio de Trabajo, M ...       
+
+		LINEA: 254, COLUMNA 152: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 255, COLUMNA 155: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 271, COLUMNA 201: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 277, COLUMNA 140: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 278, COLUMNA 149: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 435, COLUMNA 125: <img src="../img/banners/pnr.jpg" alt="Programa Nacional de Reformas. Estrategia de Lisboa" />       
+
+		LINEA: 436, COLUMNA 101: <img src="../img/banners/060.jpg" alt="administracion.gob.es" />
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 124, COLUMNA 10: <input type="text" id="q" size="16" maxlength="60" value="" name="q" />       
+
+		LINEA: 125, COLUMNA 10: <input type="image" id="buscar" name="buscar"	src="../img/bg/lupa.gif"	alt="Busc ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 58, COLUMNA 2: <script type="text/javascript" src="../../js/funciones.js"></script>       
+
+		LINEA: 59, COLUMNA 2: <script type="text/javascript" src="../../js/HOME/cadena.js"></script>       
+
+		LINEA: 475, COLUMNA 2: <script type="text/javascript">		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]| ...       
+
+		LINEA: 487, COLUMNA 1: <script type="text/javascript">/*<![CDATA[*/(function() {var sz = document.createElement('scrip ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 115, COLUMNA 5: <img src="../img/HOME/cabecera/logoGdE.gif" alt="Gobierno de Espa&ntilde;a. Ministerio de Trabajo, M ...       
+
+		LINEA: 254, COLUMNA 152: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 255, COLUMNA 155: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 271, COLUMNA 201: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 277, COLUMNA 140: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 278, COLUMNA 149: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 435, COLUMNA 125: <img src="../img/banners/pnr.jpg" alt="Programa Nacional de Reformas. Estrategia de Lisboa" />       
+
+		LINEA: 436, COLUMNA 101: <img src="../img/banners/060.jpg" alt="administracion.gob.es" />
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 115, COLUMNA 5: <img src="../img/HOME/cabecera/logoGdE.gif" alt="Gobierno de Espa&ntilde;a. Ministerio de Trabajo, M ...       
+
+		LINEA: 254, COLUMNA 152: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 255, COLUMNA 155: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 271, COLUMNA 201: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 277, COLUMNA 140: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 278, COLUMNA 149: <img alt="" src="../img/iconos/ico_pdf.gif" />       
+
+		LINEA: 435, COLUMNA 125: <img src="../img/banners/pnr.jpg" alt="Programa Nacional de Reformas. Estrategia de Lisboa" />       
+
+		LINEA: 436, COLUMNA 101: <img src="../img/banners/060.jpg" alt="administracion.gob.es" />
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 58, COLUMNA 2: <script type="text/javascript" src="../../js/funciones.js"></script>       
+
+		LINEA: 59, COLUMNA 2: <script type="text/javascript" src="../../js/HOME/cadena.js"></script>       
+
+		LINEA: 475, COLUMNA 2: <script type="text/javascript">		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]| ...       
+
+		LINEA: 487, COLUMNA 1: <script type="text/javascript">/*<![CDATA[*/(function() {var sz = document.createElement('scrip ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 58, COLUMNA 2: <script type="text/javascript" src="../../js/funciones.js"></script>       
+
+		LINEA: 59, COLUMNA 2: <script type="text/javascript" src="../../js/HOME/cadena.js"></script>       
+
+		LINEA: 475, COLUMNA 2: <script type="text/javascript">		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]| ...       
+
+		LINEA: 487, COLUMNA 1: <script type="text/javascript">/*<![CDATA[*/(function() {var sz = document.createElement('scrip ...
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 46, COLUMNA 2: <title>Estadísticas sociolaborales. Ministerio de Trabajo, Migraciones y Seguridad Social</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 102, COLUMNA 32: <a href="../index.htm" hreflang="es" xml:lang="es" lang="es" title="Castellano">Bienvenido</a>       
+
+		LINEA: 103, COLUMNA 9: <a href="../../ca/index.htm" hreflang="ca" xml:lang="ca" lang="ca" title="Catal&aacute;">Benvingut</ ...       
+
+		LINEA: 104, COLUMNA 9: <a href="../../eu/index.htm" hreflang="eu" xml:lang="eu" lang="eu" title="Euskara">Ongi etorri</a>       
+
+		LINEA: 105, COLUMNA 9: <a href="../../gl/index.htm" hreflang="gl" xml:lang="gl" lang="gl" title="Galego">Benvido</a>       
+
+		LINEA: 106, COLUMNA 9: <a href="../../en/index.htm" hreflang="en" xml:lang="en" lang="en" title="English">Welcome</a>       
+
+		LINEA: 114, COLUMNA 11: <a href="../index.htm" hreflang="es" title="Ir a la p&aacute;gina principal">	<img src="../img/H ...       
+
+		LINEA: 140, COLUMNA 9: <a href="../index.htm"><span>Inicio</span></a>       
+
+		LINEA: 141, COLUMNA 9: <a href="../seg_soc/index.htm"><span>Seguridad social</span></a>       
+
+		LINEA: 142, COLUMNA 9: <a href="../sec_trabajo/index.htm"><span>Empleo</span></a>       
+
+		LINEA: 143, COLUMNA 9: <a href="../sec_emi/index.htm"><span>Migraciones</span></a>       
+
+		LINEA: 144, COLUMNA 9: <a href="../sec_sub/index.htm"><span>Salud laboral e Inspecci&oacute;n</span></a>       
+
+		LINEA: 195, COLUMNA 7: <a href="../index.htm">Inicio</a>       
+
+		LINEA: 241, COLUMNA 13: <a title="Enlace externo" href="http://www.ine.es/ss/Satellite?L=es_ES&amp;c=Page&amp;cid=1254735038 ...       
+
+		LINEA: 244, COLUMNA 9: <a href="mercado_trabajo/index.htm">Mercado de trabajo</a>       
+
+		LINEA: 245, COLUMNA 9: <a href="Inmigracion_emigracion/index.htm">Inmigraci&oacute;n y emigraci&oacute;n</a>       
+
+		LINEA: 246, COLUMNA 9: <a href="FP_medidas_apoyo_empleo/index.htm">Pol&iacute;ticas del mercado de trabajo. Formaci&oacute; ...       
+
+		LINEA: 247, COLUMNA 9: <a href="condiciones_trabajo_relac_laborales/index.htm">Condiciones de trabajo y relaciones laborale ...       
+
+		LINEA: 248, COLUMNA 9: <a href="prestaciones_SS_otra_proteccion/index.htm">Prestaciones de Seguridad Social y otra protecci ...       
+
+		LINEA: 249, COLUMNA 9: <a href="Otra_informacion/index.htm">Otra informaci&oacute;n</a>       
+
+		LINEA: 254, COLUMNA 9: <a title="Documento en formato PDF" href="calendario/Calendario_Estadisticas_Coyunturales_MITRAMISS_ ...       
+
+		LINEA: 255, COLUMNA 9: <a title="Documento en formato PDF" href="calendario/Calendario_Publicaciones_Estructurales_MITRAMIS ...       
+
+		LINEA: 267, COLUMNA 13: <a href="novedades/index.htm">&Uacute;ltimos datos publicados</a>       
+
+		LINEA: 271, COLUMNA 9: <a title="Documento en formato PDF" href="http://www.empleo.gob.es/es/estadisticas/resumenweb/RUD.pd ...       
+
+		LINEA: 272, COLUMNA 9: <a href="contenidos/anuario.htm">Anuario de estad&iacute;sticas del Ministerio</a>       
+
+		LINEA: 273, COLUMNA 9: <a href="http://www.empleo.gob.es/estadisticas/bel/welcome.htm">Bolet&iacute;n de Estad&iacute;stica ...       
+
+		LINEA: 274, COLUMNA 9: <a title="Enlace externo" href="https://expinterweb.empleo.gob.es/series">Principales Series <span c ...       
+
+		LINEA: 277, COLUMNA 4: <a title="Documento en formato PDF" href="buenas_practicas/codigobupr.pdf">C&oacute;digo de buenas p ...       
+
+		LINEA: 278, COLUMNA 4: <a title="Documento en formato PDF" href="documentos/TRIPTICO_RecomendacionesCSE.PDF">Recomendacione ...       
+
+		LINEA: 347, COLUMNA 40: <a href="http://prensa.empleo.gob.es/WebPrensa/inicio">Actualidad <span>sala de prensa</span></a>       
+
+		LINEA: 386, COLUMNA 12: <a href="../extras/ministro/ministro.htm">La Ministra</a>       
+
+		LINEA: 387, COLUMNA 12: <a href="../organizacion/index.htm">Organizaci&oacute;n Administrativa</a>       
+
+		LINEA: 388, COLUMNA 12: <a href="../mundo/index.htm">El Ministerio en el mundo</a>       
+
+		LINEA: 392, COLUMNA 12: <a href="../sec_leyes/index.htm">Legislaci&oacute;n</a>       
+
+		LINEA: 393, COLUMNA 12: <a href="../publica/index.htm">Publicaciones</a>       
+
+		LINEA: 394, COLUMNA 12: <a href="../sec_bep/index.htm">Estudios, Bibliotecas y Archivos</a>       
+
+		LINEA: 395, COLUMNA 12: <a href="index.htm">Estad&iacute;sticas</a>       
+
+		LINEA: 396, COLUMNA 61: <a href="../igualdad/index.htm">Igualdad de G&eacute;nero</a>       
+
+		LINEA: 397, COLUMNA 61: <a href="../informacion/patrimonio/index.htm">Patrimonio Sindical Acumulado</a>       
+
+		LINEA: 398, COLUMNA 61: <a href="../informacion/index.htm">Informaci&oacute;n m&aacute;s solicitada</a>       
+
+		LINEA: 402, COLUMNA 12: <a href="../enlaces/enlace-agentes-sociales.htm">Otras Organizaciones e Instituciones</a>       
+
+		LINEA: 403, COLUMNA 12: <a href="../enlaces/enlaces-comunidades.htm">Comunidades Aut&oacute;nomas y Entidades Locales</a>       
+
+		LINEA: 404, COLUMNA 12: <a href="../enlaces/enlaces-unioneuropea.htm">Uni&oacute;n Europea</a>       
+
+		LINEA: 435, COLUMNA 7: <a href="../sec_trabajo/analisis-mercado-trabajo/pnr/index.htm" title="Ir a la web del Programa Naci ...       
+
+		LINEA: 436, COLUMNA 7: <a href="https://administracion.gob.es" title="Portal: administracion.gob.es. Enlace externo"><img s ...       
+
+		LINEA: 467, COLUMNA 25: <a href="../extras/accesibilidad.htm">Accesibilidad</a>       
+
+		LINEA: 468, COLUMNA 9: <a href="../extras/avisolegal.htm">Aviso legal y privacidad</a>       
+
+		LINEA: 469, COLUMNA 9: <a href="../extras/mapaweb.htm">Mapa web</a>
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 102, COLUMNA 32: <a href="../index.htm" hreflang="es" xml:lang="es" lang="es" title="Castellano">Bienvenido</a>       
+
+		LINEA: 103, COLUMNA 9: <a href="../../ca/index.htm" hreflang="ca" xml:lang="ca" lang="ca" title="Catal&aacute;">Benvingut</ ...       
+
+		LINEA: 104, COLUMNA 9: <a href="../../eu/index.htm" hreflang="eu" xml:lang="eu" lang="eu" title="Euskara">Ongi etorri</a>       
+
+		LINEA: 105, COLUMNA 9: <a href="../../gl/index.htm" hreflang="gl" xml:lang="gl" lang="gl" title="Galego">Benvido</a>       
+
+		LINEA: 106, COLUMNA 9: <a href="../../en/index.htm" hreflang="en" xml:lang="en" lang="en" title="English">Welcome</a>       
+
+		LINEA: 114, COLUMNA 11: <a href="../index.htm" hreflang="es" title="Ir a la p&aacute;gina principal">	<img src="../img/H ...       
+
+		LINEA: 140, COLUMNA 9: <a href="../index.htm"><span>Inicio</span></a>       
+
+		LINEA: 141, COLUMNA 9: <a href="../seg_soc/index.htm"><span>Seguridad social</span></a>       
+
+		LINEA: 142, COLUMNA 9: <a href="../sec_trabajo/index.htm"><span>Empleo</span></a>       
+
+		LINEA: 143, COLUMNA 9: <a href="../sec_emi/index.htm"><span>Migraciones</span></a>       
+
+		LINEA: 144, COLUMNA 9: <a href="../sec_sub/index.htm"><span>Salud laboral e Inspecci&oacute;n</span></a>       
+
+		LINEA: 195, COLUMNA 7: <a href="../index.htm">Inicio</a>       
+
+		LINEA: 241, COLUMNA 13: <a title="Enlace externo" href="http://www.ine.es/ss/Satellite?L=es_ES&amp;c=Page&amp;cid=1254735038 ...       
+
+		LINEA: 244, COLUMNA 9: <a href="mercado_trabajo/index.htm">Mercado de trabajo</a>       
+
+		LINEA: 245, COLUMNA 9: <a href="Inmigracion_emigracion/index.htm">Inmigraci&oacute;n y emigraci&oacute;n</a>       
+
+		LINEA: 246, COLUMNA 9: <a href="FP_medidas_apoyo_empleo/index.htm">Pol&iacute;ticas del mercado de trabajo. Formaci&oacute; ...       
+
+		LINEA: 247, COLUMNA 9: <a href="condiciones_trabajo_relac_laborales/index.htm">Condiciones de trabajo y relaciones laborale ...       
+
+		LINEA: 248, COLUMNA 9: <a href="prestaciones_SS_otra_proteccion/index.htm">Prestaciones de Seguridad Social y otra protecci ...       
+
+		LINEA: 249, COLUMNA 9: <a href="Otra_informacion/index.htm">Otra informaci&oacute;n</a>       
+
+		LINEA: 254, COLUMNA 9: <a title="Documento en formato PDF" href="calendario/Calendario_Estadisticas_Coyunturales_MITRAMISS_ ...       
+
+		LINEA: 255, COLUMNA 9: <a title="Documento en formato PDF" href="calendario/Calendario_Publicaciones_Estructurales_MITRAMIS ...       
+
+		LINEA: 267, COLUMNA 13: <a href="novedades/index.htm">&Uacute;ltimos datos publicados</a>       
+
+		LINEA: 271, COLUMNA 9: <a title="Documento en formato PDF" href="http://www.empleo.gob.es/es/estadisticas/resumenweb/RUD.pd ...       
+
+		LINEA: 272, COLUMNA 9: <a href="contenidos/anuario.htm">Anuario de estad&iacute;sticas del Ministerio</a>       
+
+		LINEA: 273, COLUMNA 9: <a href="http://www.empleo.gob.es/estadisticas/bel/welcome.htm">Bolet&iacute;n de Estad&iacute;stica ...       
+
+		LINEA: 274, COLUMNA 9: <a title="Enlace externo" href="https://expinterweb.empleo.gob.es/series">Principales Series <span c ...       
+
+		LINEA: 277, COLUMNA 4: <a title="Documento en formato PDF" href="buenas_practicas/codigobupr.pdf">C&oacute;digo de buenas p ...       
+
+		LINEA: 278, COLUMNA 4: <a title="Documento en formato PDF" href="documentos/TRIPTICO_RecomendacionesCSE.PDF">Recomendacione ...       
+
+		LINEA: 347, COLUMNA 40: <a href="http://prensa.empleo.gob.es/WebPrensa/inicio">Actualidad <span>sala de prensa</span></a>       
+
+		LINEA: 386, COLUMNA 12: <a href="../extras/ministro/ministro.htm">La Ministra</a>       
+
+		LINEA: 387, COLUMNA 12: <a href="../organizacion/index.htm">Organizaci&oacute;n Administrativa</a>       
+
+		LINEA: 388, COLUMNA 12: <a href="../mundo/index.htm">El Ministerio en el mundo</a>       
+
+		LINEA: 392, COLUMNA 12: <a href="../sec_leyes/index.htm">Legislaci&oacute;n</a>       
+
+		LINEA: 393, COLUMNA 12: <a href="../publica/index.htm">Publicaciones</a>       
+
+		LINEA: 394, COLUMNA 12: <a href="../sec_bep/index.htm">Estudios, Bibliotecas y Archivos</a>       
+
+		LINEA: 395, COLUMNA 12: <a href="index.htm">Estad&iacute;sticas</a>       
+
+		LINEA: 396, COLUMNA 61: <a href="../igualdad/index.htm">Igualdad de G&eacute;nero</a>       
+
+		LINEA: 397, COLUMNA 61: <a href="../informacion/patrimonio/index.htm">Patrimonio Sindical Acumulado</a>       
+
+		LINEA: 398, COLUMNA 61: <a href="../informacion/index.htm">Informaci&oacute;n m&aacute;s solicitada</a>       
+
+		LINEA: 402, COLUMNA 12: <a href="../enlaces/enlace-agentes-sociales.htm">Otras Organizaciones e Instituciones</a>       
+
+		LINEA: 403, COLUMNA 12: <a href="../enlaces/enlaces-comunidades.htm">Comunidades Aut&oacute;nomas y Entidades Locales</a>       
+
+		LINEA: 404, COLUMNA 12: <a href="../enlaces/enlaces-unioneuropea.htm">Uni&oacute;n Europea</a>       
+
+		LINEA: 435, COLUMNA 7: <a href="../sec_trabajo/analisis-mercado-trabajo/pnr/index.htm" title="Ir a la web del Programa Naci ...       
+
+		LINEA: 436, COLUMNA 7: <a href="https://administracion.gob.es" title="Portal: administracion.gob.es. Enlace externo"><img s ...       
+
+		LINEA: 467, COLUMNA 25: <a href="../extras/accesibilidad.htm">Accesibilidad</a>       
+
+		LINEA: 468, COLUMNA 9: <a href="../extras/avisolegal.htm">Aviso legal y privacidad</a>       
+
+		LINEA: 469, COLUMNA 9: <a href="../extras/mapaweb.htm">Mapa web</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 99, COLUMNA 3: <h1 class="oculto">Ministerio de Trabajo, Migraciones y Seguridad Social. Estadísticas sociolaboral ...       
+
+		LINEA: 233, COLUMNA 6: <h1>Estad&iacute;sticas</h1>       
+
+		LINEA: 345, COLUMNA 5: <h1 class="oculto">Actualidad</h1>       
+
+		LINEA: 383, COLUMNA 7: <h1><span>Destacados</span></h1>       
+
+		LINEA: 433, COLUMNA 2: <h1 class="oculto">De inter&eacute;s...</h1>       
+
+		LINEA: 465, COLUMNA 4: <h1 class="oculto">Pie de p&aacute;gina</h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 242, COLUMNA 1: <h2>Informaci&oacute;n estad&iacute;stica</h2>       
+
+		LINEA: 252, COLUMNA 1: <h2>Calendario de difusi&oacute;n de las Estad&iacute;sticas del <abbr title="Ministerio de Trabajo, ...       
+
+		LINEA: 269, COLUMNA 1: <h2>Publicaciones de s&iacute;ntesis</h2>       
+
+		LINEA: 384, COLUMNA 7: <h2>El Ministerio</h2>       
+
+		LINEA: 390, COLUMNA 7: <h2>M&aacute;s Informaci&oacute;n</h2>       
+
+		LINEA: 400, COLUMNA 7: <h2>Enlaces</h2>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 118, COLUMNA 5: <form method="get" action="../extras/buscador/resultados.htm" id="formulario-busqueda">		<div id ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 97, COLUMNA 1: <body>	<div id="contenedor" class="es">		<h1 class="oculto">Ministerio de Trabajo, Migraciones y S ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 118, COLUMNA 5: <form method="get" action="../extras/buscador/resultados.htm" id="formulario-busqueda">		<div id ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 118, COLUMNA 5: <form method="get" action="../extras/buscador/resultados.htm" id="formulario-busqueda">		<div id ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 124, COLUMNA 10: <input type="text" id="q" size="16" maxlength="60" value="" name="q" />       
+
+		LINEA: 125, COLUMNA 10: <input type="image" id="buscar" name="buscar"	src="../img/bg/lupa.gif"	alt="Busc ...       
+
+		LINEA: 130, COLUMNA 10: <input type="hidden" name="hl" value="es"/>
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 124, COLUMNA 10: <input type="text" id="q" size="16" maxlength="60" value="" name="q" />
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 118, COLUMNA 5: <form method="get" action="../extras/buscador/resultados.htm" id="formulario-busqueda">		<div id ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 118, COLUMNA 5: <form method="get" action="../extras/buscador/resultados.htm" id="formulario-busqueda">		<div id ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 118, COLUMNA 5: <form method="get" action="../extras/buscador/resultados.htm" id="formulario-busqueda">		<div id ...
+
+	

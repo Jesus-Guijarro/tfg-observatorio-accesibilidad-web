@@ -1,0 +1,32 @@
+REPORTE PÁGINA WEB: https://www.uv.es/uvweb/universitat/ca/estudis-grau/matricula/novetats-1285861954633.html
+FECHA EVALUACIÓN: 2018-12-23
+
+-PROBLEMAS-
+
+Empty link	  VECES ENCONTRADO: 7
+Missing alternative text	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Noscript element	  VECES ENCONTRADO: 5
+Link to PDF document	  VECES ENCONTRADO: 2
+Redundant title text	  VECES ENCONTRADO: 53
+Accesskey	  VECES ENCONTRADO: 1
+Justified text	  VECES ENCONTRADO: 6
+Very small text	  VECES ENCONTRADO: 4
+Redundant link	  VECES ENCONTRADO: 1
+
+
+-CARACTERISTICAS-
+
+Form label	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 3
+Linked image with alternative text	  VECES ENCONTRADO: 18
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 3
+
+

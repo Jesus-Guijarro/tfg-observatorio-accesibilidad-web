@@ -1,0 +1,37 @@
+REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/cultura-mecd/areas-cultura/artesescenicas/portada.html;jsessionid=29CC98D31A66B3C0C8FC8940F5E60435
+FECHA EVALUACIÓN: 2018-12-14
+
+-PROBLEMAS-
+
+Empty heading	  VECES ENCONTRADO: 2
+Empty button	  VECES ENCONTRADO: 4
+
+
+-ALERTAS-
+
+Redundant alternative text	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 4
+Justified text	  VECES ENCONTRADO: 10
+Link to PDF document	  VECES ENCONTRADO: 5
+Noscript element	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Redundant title text	  VECES ENCONTRADO: 3
+Broken same-page link	  VECES ENCONTRADO: 1
+
+
+-CARACTERISTICAS-
+
+Fieldset	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 41
+Alternative text	  VECES ENCONTRADO: 7
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
+Element language	  VECES ENCONTRADO: 6
+Null or empty alternative text	  VECES ENCONTRADO: 8
+Form label	  VECES ENCONTRADO: 1
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+

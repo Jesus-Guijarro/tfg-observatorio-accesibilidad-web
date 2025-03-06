@@ -1,0 +1,24 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/home.nsf/(Portadas1)/?opendocument&lang=1
+FECHA EVALUACIÓN: 2018-10-31
+
+PROBLEMAS
+Document language missing	  VECES ENCONTRADO: 1
+Missing alternative text	  VECES ENCONTRADO: 2
+
+
+
+ALERTAS
+No heading structure	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 24
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+
+

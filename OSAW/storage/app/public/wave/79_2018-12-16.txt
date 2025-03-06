@@ -1,0 +1,34 @@
+REPORTE PÁGINA WEB: https://web.ua.es/es/recursos-universitarios.html
+FECHA EVALUACIÓN: 2018-12-16
+
+-PROBLEMAS-
+
+Linked image missing alternative text	  VECES ENCONTRADO: 7
+Empty link	  VECES ENCONTRADO: 40
+Missing alternative text	  VECES ENCONTRADO: 26
+
+
+-ALERTAS-
+
+Redundant alternative text	  VECES ENCONTRADO: 7
+Tabindex	  VECES ENCONTRADO: 3
+Broken same-page link	  VECES ENCONTRADO: 2
+Missing fieldset	  VECES ENCONTRADO: 2
+Possible heading	  VECES ENCONTRADO: 2
+Redundant link	  VECES ENCONTRADO: 6
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+
+
+-CARACTERISTICAS-
+
+Null or empty alternative text	  VECES ENCONTRADO: 12
+Linked image with alternative text	  VECES ENCONTRADO: 12
+Alternative text	  VECES ENCONTRADO: 5
+Form label	  VECES ENCONTRADO: 12
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 66
+
+

@@ -1,0 +1,1366 @@
+REPORTE PÁGINA WEB: https://www.upv.es/admision/traslados-e-intercambios/index-es.html
+FECHA EVALUACIÓN: 2018-12-22
+
+-PROBLEMAS CONOCIDOS-
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)  
+
+	REVISAR: 49: Document has invalid language code.  
+
+	REPARAR:> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
+
+		LINEA: 19, COLUMNA: 1: <html version="-//W3C//DTD XHTML 1.1//EN"xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="htt ...
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 82: p element may be misused (could be a header).
+
+ 
+
+		LINEA: 560, COLUMNA: 4: <p class="texto_bloque"><strong>Quiero continuar un grado en la UPV</strong></p>
+
+
+
+		LINEA: 568, COLUMNA: 4: <p class="texto_bloque"><strong>Quiero hacer una estancia en la UPV</strong></p>
+
+
+
+		LINEA: 578, COLUMNA: 4: <p class="texto_bloque"><strong>Lo tengo todo en un clic</strong></p>
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 181, COLUMNA: 31: <a href="/index-es.html"><img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escu ...
+
+
+
+		LINEA: 186, COLUMNA: 16: <a href="https://www.upv.es/pls/soalu/est_intranet.Ni_portal_n?P_IDIOMA=c" title="Mi UPV" class="men ...
+
+
+
+		LINEA: 220, COLUMNA: 19: <a class="menuHerramientas" href="/bin2/idiacc/va/es?/admision/traslados-e-intercambios/index-es.htm ...
+
+
+
+		LINEA: 226, COLUMNA: 19: <a class="menuHerramientas" href="/bin2/idiacc/en/es?/admision/traslados-e-intercambios/index-es.htm ...
+
+
+
+		LINEA: 231, COLUMNA: 44: <a href="?tl=a" title="Reducir texto" onclick="return cambia_tipografia(tipo1);return false;" class= ...
+
+
+
+		LINEA: 231, COLUMNA: 171: <a href="?tl=A" onclick="return cambia_tipografia(tipo2);return false;" title="Agrandar texto" class ...
+
+
+
+		LINEA: 232, COLUMNA: 44: <a href="/otros/accesibilidad-es.html" title="Accesibilidad" class="menuHerramientas">Accesibilidad< ...
+
+
+
+		LINEA: 233, COLUMNA: 44: <a href="/otros/mapa-web-es.html" title="Mapa web" class="menuHerramientas">Mapa web</a>
+
+
+
+		LINEA: 234, COLUMNA: 44: <a href="/pls/oalu/sic_mag.MetaBus?ie=utf8&P_IDIOMA=c&q=polilupa" title="Buscador" class="menuHerram ...
+
+
+
+		LINEA: 235, COLUMNA: 44: <a href="/pls/oalu/sic_per.Busca_Persona?P_IDIOMA=c" title="Directorio" class="menuHerramientas">Dir ...
+
+
+
+		LINEA: 240, COLUMNA: 43: <a href="https://www.upv.es/pls/soalu/est_intranet.Ni_portal_n?P_IDIOMA=c" title="Mi UPV" class="men ...
+
+
+
+		LINEA: 256, COLUMNA: 13:
+
+ 
+
+		LINEA: 263, COLUMNA: 13: <a href="#">ESTUDIOS</a>
+
+
+
+		LINEA: 270, COLUMNA: 13:
+
+ 
+
+		LINEA: 277, COLUMNA: 13:
+
+ 
+
+		LINEA: 285, COLUMNA: 13: <a href="#">PERFILES</a>
+
+
+
+		LINEA: 289, COLUMNA: 12: <a class="menu_close" id="menu_close_tablet" title="Open/close" style="display:none;"href="#">		 ...
+
+
+
+		LINEA: 313, COLUMNA: 22: <a href="/admision/empezar-en-la-universidad/index-es.html">Empezar en la universidad</a>
+
+
+
+		LINEA: 314, COLUMNA: 22: <a href="/admision/traslados-e-intercambios/index-es.html">Traslados e intercambios</a>
+
+
+
+		LINEA: 315, COLUMNA: 22:
+
+ 
+
+		LINEA: 326, COLUMNA: 22: <a href="/estudios/grado/index-es.html">Estudios de grado</a>
+
+
+
+		LINEA: 327, COLUMNA: 22: <a href="/estudios/posgrado/index-es.html">Estudios de posgrado</a>
+
+
+
+		LINEA: 328, COLUMNA: 22: <a href="/estudios/aula-abierta/index-es.html">Aula abierta</a>
+
+
+
+		LINEA: 339, COLUMNA: 22: <a href="/investigacion/estructuras/index-es.html">Estructuras de Investigaci&oacute;n</a>
+
+
+
+		LINEA: 340, COLUMNA: 22: <a href="/investigacion/iniciativas-idi/index-es.html">Iniciativas de I+D+i</a>
+
+
+
+		LINEA: 341, COLUMNA: 22:
+
+ 
+
+		LINEA: 353, COLUMNA: 22: <a href="/organizacion/la-institucion/index-es.html">La instituci&oacute;n</a>
+
+
+
+		LINEA: 354, COLUMNA: 22: <a href="/organizacion/vida-universitaria/index-es.html">Vida universitaria</a>
+
+
+
+		LINEA: 355, COLUMNA: 22: <a href="/organizacion/escuelas-facultades/index-es.html">Escuelas y facultades</a>
+
+
+
+		LINEA: 356, COLUMNA: 22: <a href="/organizacion/departamentos/index-es.html">Departamentos</a>
+
+
+
+		LINEA: 357, COLUMNA: 22: <a href="/organizacion/servicios-universitarios/index-es.html">Servicios universitarios</a>
+
+
+
+		LINEA: 368, COLUMNA: 16: <a href="/perfiles/futuro-alumno/index-es.html">Futuro alumno</a>
+
+
+
+		LINEA: 369, COLUMNA: 16: <a href="/perfiles/orientador/index-es.html">Orientador</a>
+
+
+
+		LINEA: 370, COLUMNA: 16: <a href="/perfiles/estudiante/index-es.html">Estudiante</a>
+
+
+
+		LINEA: 371, COLUMNA: 16: <a href="/perfiles/pas-pdi/index-es.html">PAS y PDI</a>
+
+
+
+		LINEA: 372, COLUMNA: 16: <a href="/perfiles/prensa/index-es.html">Prensa</a>
+
+
+
+		LINEA: 373, COLUMNA: 16: <a href="/perfiles/titulados/index-es.html">Titulados</a>
+
+
+
+		LINEA: 409, COLUMNA: 13:
+
+ 
+
+		LINEA: 422, COLUMNA: 22: <a href="/admision/empezar-en-la-universidad/index-es.html">Empezar en la universidad</a>
+
+
+
+		LINEA: 423, COLUMNA: 22: <a href="/admision/traslados-e-intercambios/index-es.html">Traslados e intercambios</a>
+
+
+
+		LINEA: 424, COLUMNA: 22:
+
+ 
+
+		LINEA: 435, COLUMNA: 13: <a href="#">ESTUDIOS</a>
+
+
+
+		LINEA: 447, COLUMNA: 22: <a href="/estudios/grado/index-es.html">Estudios de grado</a>
+
+
+
+		LINEA: 448, COLUMNA: 22: <a href="/estudios/posgrado/index-es.html">Estudios de posgrado</a>
+
+
+
+		LINEA: 449, COLUMNA: 22: <a href="/estudios/aula-abierta/index-es.html">Aula abierta</a>
+
+
+
+		LINEA: 461, COLUMNA: 13:
+
+ 
+
+		LINEA: 473, COLUMNA: 22: <a href="/investigacion/estructuras/index-es.html">Estructuras de Investigaci&oacute;n</a>
+
+
+
+		LINEA: 474, COLUMNA: 22: <a href="/investigacion/iniciativas-idi/index-es.html">Iniciativas de I+D+i</a>
+
+
+
+		LINEA: 475, COLUMNA: 22:
+
+ 
+
+		LINEA: 487, COLUMNA: 13:
+
+ 
+
+		LINEA: 499, COLUMNA: 22: <a href="/organizacion/la-institucion/index-es.html">La instituci&oacute;n</a>
+
+
+
+		LINEA: 500, COLUMNA: 22: <a href="/organizacion/vida-universitaria/index-es.html">Vida universitaria</a>
+
+
+
+		LINEA: 501, COLUMNA: 22: <a href="/organizacion/escuelas-facultades/index-es.html">Escuelas y facultades</a>
+
+
+
+		LINEA: 502, COLUMNA: 22: <a href="/organizacion/departamentos/index-es.html">Departamentos</a>
+
+
+
+		LINEA: 503, COLUMNA: 22: <a href="/organizacion/servicios-universitarios/index-es.html">Servicios universitarios</a>
+
+
+
+		LINEA: 515, COLUMNA: 13: <a href="#">PERFILES</a>
+
+
+
+		LINEA: 527, COLUMNA: 16: <a href="/perfiles/futuro-alumno/index-es.html">Futuro alumno</a>
+
+
+
+		LINEA: 528, COLUMNA: 16: <a href="/perfiles/orientador/index-es.html">Orientador</a>
+
+
+
+		LINEA: 529, COLUMNA: 16: <a href="/perfiles/estudiante/index-es.html">Estudiante</a>
+
+
+
+		LINEA: 530, COLUMNA: 16: <a href="/perfiles/pas-pdi/index-es.html">PAS y PDI</a>
+
+
+
+		LINEA: 531, COLUMNA: 16: <a href="/perfiles/prensa/index-es.html">Prensa</a>
+
+
+
+		LINEA: 532, COLUMNA: 16: <a href="/perfiles/titulados/index-es.html">Titulados</a>
+
+
+
+		LINEA: 561, COLUMNA: 9: <a href="/perfiles/futuro-alumno/estudios-desde-otra-universidad-es.html" title="Vengo de otra unive ...
+
+
+
+		LINEA: 562, COLUMNA: 9: <a href="https://www.upv.es/pls/soalu/sic_cont_est.sol_cont_est?p_vista=normal&amp;P_IDIOMA=c" title ...
+
+
+
+		LINEA: 563, COLUMNA: 9: <a href="/entidades/SA/ciclos/528837normalc.html" title="Normativa de progreso y permanencia">Normat ...
+
+
+
+		LINEA: 569, COLUMNA: 9: <a href="/entidades/OPII/infoweb/pi/info/804017normalc.html" title="Estudio en una universidad extra ...
+
+
+
+		LINEA: 570, COLUMNA: 9: <a href="http://www.opii.upv.es/default.asp?menu=142&amp;web=10" title="Estudio en otra universidad...
+
+
+
+		LINEA: 571, COLUMNA: 9: <a href="/admision/traslados-e-intercambios/documentos/alumno-visitante.pdf" target="_blank" title=" ...
+
+
+
+		LINEA: 572, COLUMNA: 9: <a href="/entidades/OPII/infoweb/pi/info/758137normalc.html" title="Soy PDI">Soy PDI</a>
+
+
+
+		LINEA: 573, COLUMNA: 9: <a href="/entidades/OPII/infoweb/pi/info/760229normalc.html" title="Soy PAS">Soy PAS</a>
+
+
+
+		LINEA: 579, COLUMNA: 9: <a href="/perfiles/futuro-alumno/veinte-razones-es.html" title="25 razones para decidirte">25 razone ...
+
+
+
+		LINEA: 580, COLUMNA: 9: <a href="/perfiles/estudiante/introduccion-becas-es.html" title="Becas y ayudas">Becas y ayudas</a>
+
+
+
+		LINEA: 581, COLUMNA: 9: <a href="/perfiles/estudiante/alojamientos-upv-es.html" title="Alojamientos">Alojamientos</a>
+
+
+
+		LINEA: 582, COLUMNA: 9:
+
+ 
+
+		LINEA: 583, COLUMNA: 9:
+
+ 
+
+		LINEA: 584, COLUMNA: 9:
+
+ 
+
+		LINEA: 601, COLUMNA: 10: <a href="/entidades/AMAPUOC/" alt="EMAS"><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33"...
+
+
+
+		LINEA: 605, COLUMNA: 9: <a href="http://www.vlc-campus.com/" title="VLC-CAMPUS (abre ventana nueva)" rel="external" 		onc ...
+
+
+
+		LINEA: 608, COLUMNA: 9: <a href="http://www.campushabitat5u.com/" title="CAMPUS HABITAT (abre ventana nueva)" rel="external" ...
+
+
+
+		LINEA: 615, COLUMNA: 33: <a href="/otros/como-llegar-upv/index-es.html" title="Llegar" class="menuCAB">C&oacute;mo llegar</a>
+
+
+
+		LINEA: 616, COLUMNA: 33: <a href="/plano/plano-2d-es.html" title="Planos" class="menuCAB">Planos</a>
+
+
+
+		LINEA: 617, COLUMNA: 33: <a href="/otros/contacto-es.html" title="Contacto" class="menuCAB">Contacto</a>
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 176, COLUMNA: 9: <img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"/>
+
+
+
+		LINEA: 177, COLUMNA: 9: <img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;"/>
+
+
+
+		LINEA: 181, COLUMNA: 56: <img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt"/>
+
+
+
+		LINEA: 186, COLUMNA: 122: <img src="/imagenes/img_identif.png" alt="Mi UPV"/>
+
+
+
+		LINEA: 191, COLUMNA: 4: <img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas"/>
+
+
+
+		LINEA: 194, COLUMNA: 4:
+
+ 
+
+		LINEA: 240, COLUMNA: 183: <img src="/imagenes/espacio2.png" alt="espacio" width="23" height="5"/>
+
+
+
+		LINEA: 290, COLUMNA: 6: <img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;positio ...
+
+
+
+		LINEA: 291, COLUMNA: 6: <img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position ...
+
+
+
+		LINEA: 341, COLUMNA: 154: <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"/>
+
+
+
+		LINEA: 414, COLUMNA: 22: <imgid="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height ...
+
+
+
+		LINEA: 439, COLUMNA: 22: <imgid="menuimg2"alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;heigh ...
+
+
+
+		LINEA: 465, COLUMNA: 22: <img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 475, COLUMNA: 154: <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"/>
+
+
+
+		LINEA: 491, COLUMNA: 22: <img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 519, COLUMNA: 22: <img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 555, COLUMNA: 35: <img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/im ...
+
+
+
+		LINEA: 571, COLUMNA: 176:
+
+ 
+
+		LINEA: 584, COLUMNA: 117:
+
+ 
+
+		LINEA: 598, COLUMNA: 10: <img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;"/>
+
+
+
+		LINEA: 601, COLUMNA: 51: <img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62" />
+
+
+
+		LINEA: 606, COLUMNA: 29: <img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS"		style="float:right;vertical-align ...
+
+
+
+		LINEA: 609, COLUMNA: 29: <img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT"		style="float:right;vertical-alig ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 176, COLUMNA: 9: <img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"/>
+
+
+
+		LINEA: 177, COLUMNA: 9: <img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;"/>
+
+
+
+		LINEA: 191, COLUMNA: 4: <img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas"/>
+
+
+
+		LINEA: 194, COLUMNA: 4:
+
+ 
+
+		LINEA: 240, COLUMNA: 183: <img src="/imagenes/espacio2.png" alt="espacio" width="23" height="5"/>
+
+
+
+		LINEA: 414, COLUMNA: 22: <imgid="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height ...
+
+
+
+		LINEA: 439, COLUMNA: 22: <imgid="menuimg2"alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;heigh ...
+
+
+
+		LINEA: 465, COLUMNA: 22: <img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 491, COLUMNA: 22: <img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 519, COLUMNA: 22: <img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 555, COLUMNA: 35: <img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/im ...
+
+
+
+		LINEA: 598, COLUMNA: 10: <img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;"/>
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 176, COLUMNA: 9: <img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"/>
+
+
+
+		LINEA: 177, COLUMNA: 9: <img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;"/>
+
+
+
+		LINEA: 181, COLUMNA: 56: <img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt"/>
+
+
+
+		LINEA: 186, COLUMNA: 122: <img src="/imagenes/img_identif.png" alt="Mi UPV"/>
+
+
+
+		LINEA: 191, COLUMNA: 4: <img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas"/>
+
+
+
+		LINEA: 194, COLUMNA: 4:
+
+ 
+
+		LINEA: 240, COLUMNA: 183: <img src="/imagenes/espacio2.png" alt="espacio" width="23" height="5"/>
+
+
+
+		LINEA: 290, COLUMNA: 6: <img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;positio ...
+
+
+
+		LINEA: 291, COLUMNA: 6: <img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position ...
+
+
+
+		LINEA: 341, COLUMNA: 154: <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"/>
+
+
+
+		LINEA: 414, COLUMNA: 22: <imgid="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height ...
+
+
+
+		LINEA: 439, COLUMNA: 22: <imgid="menuimg2"alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;heigh ...
+
+
+
+		LINEA: 465, COLUMNA: 22: <img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 475, COLUMNA: 154: <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"/>
+
+
+
+		LINEA: 491, COLUMNA: 22: <img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 519, COLUMNA: 22: <img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 555, COLUMNA: 35: <img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/im ...
+
+
+
+		LINEA: 571, COLUMNA: 176:
+
+ 
+
+		LINEA: 584, COLUMNA: 117:
+
+ 
+
+		LINEA: 598, COLUMNA: 10: <img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;"/>
+
+
+
+		LINEA: 601, COLUMNA: 51: <img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62" />
+
+
+
+		LINEA: 606, COLUMNA: 29: <img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS"		style="float:right;vertical-align ...
+
+
+
+		LINEA: 609, COLUMNA: 29: <img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT"		style="float:right;vertical-alig ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 35, COLUMNA: 1: <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+
+
+
+		LINEA: 36, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+
+
+
+		LINEA: 37, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.easing.js"></script>
+
+
+
+		LINEA: 38, COLUMNA: 1: <script type="text/javascript" src="/js/tipografia.min.js"></script>
+
+
+
+		LINEA: 39, COLUMNA: 1: <script type="text/javascript" src="/js/idioma.min.js"></script>
+
+
+
+		LINEA: 46, COLUMNA: 1: <script type="text/javascript">$(document).ready(function() {establecer_tipografia();});</script>
+
+
+
+		LINEA: 49, COLUMNA: 5: <script type="text/javascript">function cerrarSubmenus() {$("#submenu1").sli ...
+
+
+
+		LINEA: 148, COLUMNA: 5: <script type="text/javascript">$(document).ready(function () {$(".div- ...
+
+
+
+		LINEA: 200, COLUMNA: 17: <script type="text/javascript">//<![CDATA[var idioma_va="va"; ...
+
+
+
+		LINEA: 640, COLUMNA: 5: <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 181, COLUMNA: 56: <img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt"/>
+
+
+
+		LINEA: 555, COLUMNA: 35: <img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/im ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 176, COLUMNA: 9: <img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"/>
+
+
+
+		LINEA: 177, COLUMNA: 9: <img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;"/>
+
+
+
+		LINEA: 181, COLUMNA: 56: <img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt"/>
+
+
+
+		LINEA: 186, COLUMNA: 122: <img src="/imagenes/img_identif.png" alt="Mi UPV"/>
+
+
+
+		LINEA: 191, COLUMNA: 4: <img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas"/>
+
+
+
+		LINEA: 194, COLUMNA: 4:
+
+ 
+
+		LINEA: 240, COLUMNA: 183: <img src="/imagenes/espacio2.png" alt="espacio" width="23" height="5"/>
+
+
+
+		LINEA: 290, COLUMNA: 6: <img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;positio ...
+
+
+
+		LINEA: 291, COLUMNA: 6: <img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position ...
+
+
+
+		LINEA: 341, COLUMNA: 154: <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"/>
+
+
+
+		LINEA: 414, COLUMNA: 22: <imgid="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height ...
+
+
+
+		LINEA: 439, COLUMNA: 22: <imgid="menuimg2"alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;heigh ...
+
+
+
+		LINEA: 465, COLUMNA: 22: <img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 475, COLUMNA: 154: <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"/>
+
+
+
+		LINEA: 491, COLUMNA: 22: <img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 519, COLUMNA: 22: <img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height: ...
+
+
+
+		LINEA: 555, COLUMNA: 35: <img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/im ...
+
+
+
+		LINEA: 571, COLUMNA: 176:
+
+ 
+
+		LINEA: 584, COLUMNA: 117:
+
+ 
+
+		LINEA: 598, COLUMNA: 10: <img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;"/>
+
+
+
+		LINEA: 601, COLUMNA: 51: <img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62" />
+
+
+
+		LINEA: 606, COLUMNA: 29: <img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS"		style="float:right;vertical-align ...
+
+
+
+		LINEA: 609, COLUMNA: 29: <img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT"		style="float:right;vertical-alig ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 35, COLUMNA: 1: <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+
+
+
+		LINEA: 36, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+
+
+
+		LINEA: 37, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.easing.js"></script>
+
+
+
+		LINEA: 38, COLUMNA: 1: <script type="text/javascript" src="/js/tipografia.min.js"></script>
+
+
+
+		LINEA: 39, COLUMNA: 1: <script type="text/javascript" src="/js/idioma.min.js"></script>
+
+
+
+		LINEA: 46, COLUMNA: 1: <script type="text/javascript">$(document).ready(function() {establecer_tipografia();});</script>
+
+
+
+		LINEA: 49, COLUMNA: 5: <script type="text/javascript">function cerrarSubmenus() {$("#submenu1").sli ...
+
+
+
+		LINEA: 148, COLUMNA: 5: <script type="text/javascript">$(document).ready(function () {$(".div- ...
+
+
+
+		LINEA: 200, COLUMNA: 17: <script type="text/javascript">//<![CDATA[var idioma_va="va"; ...
+
+
+
+		LINEA: 640, COLUMNA: 5: <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 35, COLUMNA: 1: <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+
+
+
+		LINEA: 36, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+
+
+
+		LINEA: 37, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.easing.js"></script>
+
+
+
+		LINEA: 38, COLUMNA: 1: <script type="text/javascript" src="/js/tipografia.min.js"></script>
+
+
+
+		LINEA: 39, COLUMNA: 1: <script type="text/javascript" src="/js/idioma.min.js"></script>
+
+
+
+		LINEA: 46, COLUMNA: 1: <script type="text/javascript">$(document).ready(function() {establecer_tipografia();});</script>
+
+
+
+		LINEA: 49, COLUMNA: 5: <script type="text/javascript">function cerrarSubmenus() {$("#submenu1").sli ...
+
+
+
+		LINEA: 148, COLUMNA: 5: <script type="text/javascript">$(document).ready(function () {$(".div- ...
+
+
+
+		LINEA: 200, COLUMNA: 17: <script type="text/javascript">//<![CDATA[var idioma_va="va"; ...
+
+
+
+		LINEA: 640, COLUMNA: 5: <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 30, COLUMNA: 1:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 181, COLUMNA: 31: <a href="/index-es.html"><img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escu ...
+
+
+
+		LINEA: 186, COLUMNA: 16: <a href="https://www.upv.es/pls/soalu/est_intranet.Ni_portal_n?P_IDIOMA=c" title="Mi UPV" class="men ...
+
+
+
+		LINEA: 220, COLUMNA: 19: <a class="menuHerramientas" href="/bin2/idiacc/va/es?/admision/traslados-e-intercambios/index-es.htm ...
+
+
+
+		LINEA: 226, COLUMNA: 19: <a class="menuHerramientas" href="/bin2/idiacc/en/es?/admision/traslados-e-intercambios/index-es.htm ...
+
+
+
+		LINEA: 231, COLUMNA: 44: <a href="?tl=a" title="Reducir texto" onclick="return cambia_tipografia(tipo1);return false;" class= ...
+
+
+
+		LINEA: 231, COLUMNA: 171: <a href="?tl=A" onclick="return cambia_tipografia(tipo2);return false;" title="Agrandar texto" class ...
+
+
+
+		LINEA: 232, COLUMNA: 44: <a href="/otros/accesibilidad-es.html" title="Accesibilidad" class="menuHerramientas">Accesibilidad< ...
+
+
+
+		LINEA: 233, COLUMNA: 44: <a href="/otros/mapa-web-es.html" title="Mapa web" class="menuHerramientas">Mapa web</a>
+
+
+
+		LINEA: 234, COLUMNA: 44: <a href="/pls/oalu/sic_mag.MetaBus?ie=utf8&P_IDIOMA=c&q=polilupa" title="Buscador" class="menuHerram ...
+
+
+
+		LINEA: 235, COLUMNA: 44: <a href="/pls/oalu/sic_per.Busca_Persona?P_IDIOMA=c" title="Directorio" class="menuHerramientas">Dir ...
+
+
+
+		LINEA: 240, COLUMNA: 43: <a href="https://www.upv.es/pls/soalu/est_intranet.Ni_portal_n?P_IDIOMA=c" title="Mi UPV" class="men ...
+
+
+
+		LINEA: 256, COLUMNA: 13:
+
+ 
+
+		LINEA: 263, COLUMNA: 13: <a href="#">ESTUDIOS</a>
+
+
+
+		LINEA: 270, COLUMNA: 13:
+
+ 
+
+		LINEA: 277, COLUMNA: 13:
+
+ 
+
+		LINEA: 285, COLUMNA: 13: <a href="#">PERFILES</a>
+
+
+
+		LINEA: 289, COLUMNA: 12: <a class="menu_close" id="menu_close_tablet" title="Open/close" style="display:none;"href="#">		 ...
+
+
+
+		LINEA: 313, COLUMNA: 22: <a href="/admision/empezar-en-la-universidad/index-es.html">Empezar en la universidad</a>
+
+
+
+		LINEA: 314, COLUMNA: 22: <a href="/admision/traslados-e-intercambios/index-es.html">Traslados e intercambios</a>
+
+
+
+		LINEA: 315, COLUMNA: 22:
+
+ 
+
+		LINEA: 326, COLUMNA: 22: <a href="/estudios/grado/index-es.html">Estudios de grado</a>
+
+
+
+		LINEA: 327, COLUMNA: 22: <a href="/estudios/posgrado/index-es.html">Estudios de posgrado</a>
+
+
+
+		LINEA: 328, COLUMNA: 22: <a href="/estudios/aula-abierta/index-es.html">Aula abierta</a>
+
+
+
+		LINEA: 339, COLUMNA: 22: <a href="/investigacion/estructuras/index-es.html">Estructuras de Investigaci&oacute;n</a>
+
+
+
+		LINEA: 340, COLUMNA: 22: <a href="/investigacion/iniciativas-idi/index-es.html">Iniciativas de I+D+i</a>
+
+
+
+		LINEA: 341, COLUMNA: 22:
+
+ 
+
+		LINEA: 353, COLUMNA: 22: <a href="/organizacion/la-institucion/index-es.html">La instituci&oacute;n</a>
+
+
+
+		LINEA: 354, COLUMNA: 22: <a href="/organizacion/vida-universitaria/index-es.html">Vida universitaria</a>
+
+
+
+		LINEA: 355, COLUMNA: 22: <a href="/organizacion/escuelas-facultades/index-es.html">Escuelas y facultades</a>
+
+
+
+		LINEA: 356, COLUMNA: 22: <a href="/organizacion/departamentos/index-es.html">Departamentos</a>
+
+
+
+		LINEA: 357, COLUMNA: 22: <a href="/organizacion/servicios-universitarios/index-es.html">Servicios universitarios</a>
+
+
+
+		LINEA: 368, COLUMNA: 16: <a href="/perfiles/futuro-alumno/index-es.html">Futuro alumno</a>
+
+
+
+		LINEA: 369, COLUMNA: 16: <a href="/perfiles/orientador/index-es.html">Orientador</a>
+
+
+
+		LINEA: 370, COLUMNA: 16: <a href="/perfiles/estudiante/index-es.html">Estudiante</a>
+
+
+
+		LINEA: 371, COLUMNA: 16: <a href="/perfiles/pas-pdi/index-es.html">PAS y PDI</a>
+
+
+
+		LINEA: 372, COLUMNA: 16: <a href="/perfiles/prensa/index-es.html">Prensa</a>
+
+
+
+		LINEA: 373, COLUMNA: 16: <a href="/perfiles/titulados/index-es.html">Titulados</a>
+
+
+
+		LINEA: 409, COLUMNA: 13:
+
+ 
+
+		LINEA: 422, COLUMNA: 22: <a href="/admision/empezar-en-la-universidad/index-es.html">Empezar en la universidad</a>
+
+
+
+		LINEA: 423, COLUMNA: 22: <a href="/admision/traslados-e-intercambios/index-es.html">Traslados e intercambios</a>
+
+
+
+		LINEA: 424, COLUMNA: 22:
+
+ 
+
+		LINEA: 435, COLUMNA: 13: <a href="#">ESTUDIOS</a>
+
+
+
+		LINEA: 447, COLUMNA: 22: <a href="/estudios/grado/index-es.html">Estudios de grado</a>
+
+
+
+		LINEA: 448, COLUMNA: 22: <a href="/estudios/posgrado/index-es.html">Estudios de posgrado</a>
+
+
+
+		LINEA: 449, COLUMNA: 22: <a href="/estudios/aula-abierta/index-es.html">Aula abierta</a>
+
+
+
+		LINEA: 461, COLUMNA: 13:
+
+ 
+
+		LINEA: 473, COLUMNA: 22: <a href="/investigacion/estructuras/index-es.html">Estructuras de Investigaci&oacute;n</a>
+
+
+
+		LINEA: 474, COLUMNA: 22: <a href="/investigacion/iniciativas-idi/index-es.html">Iniciativas de I+D+i</a>
+
+
+
+		LINEA: 475, COLUMNA: 22:
+
+ 
+
+		LINEA: 487, COLUMNA: 13:
+
+ 
+
+		LINEA: 499, COLUMNA: 22: <a href="/organizacion/la-institucion/index-es.html">La instituci&oacute;n</a>
+
+
+
+		LINEA: 500, COLUMNA: 22: <a href="/organizacion/vida-universitaria/index-es.html">Vida universitaria</a>
+
+
+
+		LINEA: 501, COLUMNA: 22: <a href="/organizacion/escuelas-facultades/index-es.html">Escuelas y facultades</a>
+
+
+
+		LINEA: 502, COLUMNA: 22: <a href="/organizacion/departamentos/index-es.html">Departamentos</a>
+
+
+
+		LINEA: 503, COLUMNA: 22: <a href="/organizacion/servicios-universitarios/index-es.html">Servicios universitarios</a>
+
+
+
+		LINEA: 515, COLUMNA: 13: <a href="#">PERFILES</a>
+
+
+
+		LINEA: 527, COLUMNA: 16: <a href="/perfiles/futuro-alumno/index-es.html">Futuro alumno</a>
+
+
+
+		LINEA: 528, COLUMNA: 16: <a href="/perfiles/orientador/index-es.html">Orientador</a>
+
+
+
+		LINEA: 529, COLUMNA: 16: <a href="/perfiles/estudiante/index-es.html">Estudiante</a>
+
+
+
+		LINEA: 530, COLUMNA: 16: <a href="/perfiles/pas-pdi/index-es.html">PAS y PDI</a>
+
+
+
+		LINEA: 531, COLUMNA: 16: <a href="/perfiles/prensa/index-es.html">Prensa</a>
+
+
+
+		LINEA: 532, COLUMNA: 16: <a href="/perfiles/titulados/index-es.html">Titulados</a>
+
+
+
+		LINEA: 561, COLUMNA: 9: <a href="/perfiles/futuro-alumno/estudios-desde-otra-universidad-es.html" title="Vengo de otra unive ...
+
+
+
+		LINEA: 562, COLUMNA: 9: <a href="https://www.upv.es/pls/soalu/sic_cont_est.sol_cont_est?p_vista=normal&amp;P_IDIOMA=c" title ...
+
+
+
+		LINEA: 563, COLUMNA: 9: <a href="/entidades/SA/ciclos/528837normalc.html" title="Normativa de progreso y permanencia">Normat ...
+
+
+
+		LINEA: 569, COLUMNA: 9: <a href="/entidades/OPII/infoweb/pi/info/804017normalc.html" title="Estudio en una universidad extra ...
+
+
+
+		LINEA: 570, COLUMNA: 9: <a href="http://www.opii.upv.es/default.asp?menu=142&amp;web=10" title="Estudio en otra universidad...
+
+
+
+		LINEA: 571, COLUMNA: 9: <a href="/admision/traslados-e-intercambios/documentos/alumno-visitante.pdf" target="_blank" title=" ...
+
+
+
+		LINEA: 572, COLUMNA: 9: <a href="/entidades/OPII/infoweb/pi/info/758137normalc.html" title="Soy PDI">Soy PDI</a>
+
+
+
+		LINEA: 573, COLUMNA: 9: <a href="/entidades/OPII/infoweb/pi/info/760229normalc.html" title="Soy PAS">Soy PAS</a>
+
+
+
+		LINEA: 579, COLUMNA: 9: <a href="/perfiles/futuro-alumno/veinte-razones-es.html" title="25 razones para decidirte">25 razone ...
+
+
+
+		LINEA: 580, COLUMNA: 9: <a href="/perfiles/estudiante/introduccion-becas-es.html" title="Becas y ayudas">Becas y ayudas</a>
+
+
+
+		LINEA: 581, COLUMNA: 9: <a href="/perfiles/estudiante/alojamientos-upv-es.html" title="Alojamientos">Alojamientos</a>
+
+
+
+		LINEA: 582, COLUMNA: 9:
+
+ 
+
+		LINEA: 583, COLUMNA: 9:
+
+ 
+
+		LINEA: 584, COLUMNA: 9:
+
+ 
+
+		LINEA: 601, COLUMNA: 10: <a href="/entidades/AMAPUOC/" alt="EMAS"><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33"...
+
+
+
+		LINEA: 605, COLUMNA: 9: <a href="http://www.vlc-campus.com/" title="VLC-CAMPUS (abre ventana nueva)" rel="external" 		onc ...
+
+
+
+		LINEA: 608, COLUMNA: 9: <a href="http://www.campushabitat5u.com/" title="CAMPUS HABITAT (abre ventana nueva)" rel="external" ...
+
+
+
+		LINEA: 615, COLUMNA: 33: <a href="/otros/como-llegar-upv/index-es.html" title="Llegar" class="menuCAB">C&oacute;mo llegar</a>
+
+
+
+		LINEA: 616, COLUMNA: 33: <a href="/plano/plano-2d-es.html" title="Planos" class="menuCAB">Planos</a>
+
+
+
+		LINEA: 617, COLUMNA: 33: <a href="/otros/contacto-es.html" title="Contacto" class="menuCAB">Contacto</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 553, COLUMNA: 1: <h1>Traslados e intercambios</h1>
+
+
+
+		LINEA: 555, COLUMNA: 2: <h1>Traslados e intercambios</h1>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 170, COLUMNA: 1: <body><div id="body"><div id="DIVpag"><!-- cabecera pagina --><div id="DIVcab"> ...
+
+

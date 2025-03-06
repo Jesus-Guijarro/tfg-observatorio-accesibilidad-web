@@ -1,0 +1,32 @@
+REPORTE PÁGINA WEB: https://www.uv.es/recull
+FECHA EVALUACIÓN: 2018-11-11
+
+PROBLEMAS
+Empty button	  VECES ENCONTRADO: 3
+Missing form label	  VECES ENCONTRADO: 2
+Image map area missing alternative text	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Orphaned form label	  VECES ENCONTRADO: 1
+Very small text	  VECES ENCONTRADO: 1
+Fieldset missing legend	  VECES ENCONTRADO: 3
+Redundant title text	  VECES ENCONTRADO: 32
+
+
+
+CARACTERISTICAS
+Fieldset	  VECES ENCONTRADO: 2
+Image map with alternative text	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 51
+Linked image with alternative text	  VECES ENCONTRADO: 20
+Alternative text	  VECES ENCONTRADO: 3
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 51
+
+
+

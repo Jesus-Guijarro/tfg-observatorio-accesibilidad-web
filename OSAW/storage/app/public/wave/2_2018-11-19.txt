@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano
+FECHA EVALUACIÓN: 2018-11-19
+
+ALERTAS
+Accesskey	  VECES ENCONTRADO: 9
+Device dependent event handler	  VECES ENCONTRADO: 1
+Long alternative text	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 2
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 2
+Fieldset	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 2
+Element language	  VECES ENCONTRADO: 7
+Form label	  VECES ENCONTRADO: 7
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 14
+
+
+

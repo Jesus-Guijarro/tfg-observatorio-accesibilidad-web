@@ -1,0 +1,15 @@
+REPORTE PÁGINA WEB: https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Vivienda/Vivienda.shtml
+FECHA EVALUACIÓN: 2018-11-26
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 5 imágenes en las que la leyenda es un espacio vacío
+Se encontraron 6 elementos de encabezado
+Se han encontrado 2 enlaces con el mismo texto que apuntan a destinos diferentes
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se constató que todos los formularios tienen un botón de envío
+No hay errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"

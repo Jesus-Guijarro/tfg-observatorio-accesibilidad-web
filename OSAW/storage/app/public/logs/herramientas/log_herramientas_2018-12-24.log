@@ -1,0 +1,10 @@
+12/24/2018 01:45:54 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "observatorio"
+	PAGINA WEB: 89
+	INFORMACION: "ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='observatorioweb.ups.edu.ec', port=80): Read timed out. (read timeout=60)",),)"
+
+12/24/2018 02:04:06 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "observatorio"
+	PAGINA WEB: 224
+	INFORMACION: "ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='observatorioweb.ups.edu.ec', port=80): Read timed out. (read timeout=60)",),)"
+

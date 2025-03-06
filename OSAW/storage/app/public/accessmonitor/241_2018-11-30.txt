@@ -1,0 +1,35 @@
+REPORTE PÁGINA WEB: https://www.movistar.es/
+FECHA EVALUACIÓN: 2018-11-30
+
+Se han encontrado 23 imágenes que no tienen leyenda
+Se encontraron 24 imágenes en las que la leyenda es un espacio vacío
+Se encontró un elemento <iframe> sin título
+Se identificaron 3 casos en que se asocian eventos a elementos no interactivos
+Se encontraron 4 casos en que los encabezados no respetan la cadena jerárquica
+Se han encontrado 71 elementos encabezado
+Se encontró un enlace en el que el contenido se compone sólo de una imagen no subtitulada
+Se han encontrado 56 enlaces con el mismo texto que apuntan a destinos diferentes
+Se han encontrado 81 elementos de lista fuera de la estructura de listas
+Se identificaron 142 casos en los que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se encontró 1 grupo de enlaces compuesto por 10 o más enlaces no agrupados por elementos estructurales
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se han encontrado 2 enlaces para eludir bloques de contenido
+Se identificaron 2 formularios sin botón de envío
+Se ha identificado 1 control de formulario sin etiquetas asociadas y sin el atributo title
+Se encontró 1 control de formulario sin etiqueta asociada
+Se han encontrado 6 valores repetidos del atributo id
+Se encontraron 98 errores de validación en el lenguaje de marcado
+Se han encontrado 4 atributos para controlar la presentación visual
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se identificaron 116 casos en que se usan unidades de medida expresadas en valores absolutos en el tamaño de letra
+Se constató que en 1 caso, se hace uso de unidades de medida absolutas
+Se identificaron 15 casos en que se utilizan unidades de medida absoluta en la definición de la anchura de los elementos
+Se constató que todas las unidades de medida existentes en la CSS se expresan en valores relativos
+Se han encontrado 9 elementos <link> para navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es_ES"
+Se constató que el código "es_ES" es incorrecto
+El tipo de documento no permite el uso del atributo xml: lang
+Se identificaron 2 casos en que en las CSS se especifica un espaciamiento entre líneas menor a 1.5
+Se identificaron 168 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo
+Se han encontrado 13 combinaciones de color cuya relación de contraste es inferior a 3: 1

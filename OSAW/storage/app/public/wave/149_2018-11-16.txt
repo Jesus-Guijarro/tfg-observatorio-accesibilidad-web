@@ -1,0 +1,38 @@
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/cultura-mecd/areas-cultura/industriasculturales.html
+FECHA EVALUACIÓN: 2018-11-16
+
+PROBLEMAS
+Empty button	  VECES ENCONTRADO: 4
+Empty link	  VECES ENCONTRADO: 2
+
+
+
+ALERTAS
+Redundant title text	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Long alternative text	  VECES ENCONTRADO: 1
+Justified text	  VECES ENCONTRADO: 2
+Accesskey	  VECES ENCONTRADO: 1
+Broken same-page link	  VECES ENCONTRADO: 4
+Noscript element	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 11
+Link to PowerPoint document	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 6
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
+Form label	  VECES ENCONTRADO: 1
+Null or empty alternative text	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 32
+Alternative text	  VECES ENCONTRADO: 4
+Fieldset	  VECES ENCONTRADO: 1
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+
+

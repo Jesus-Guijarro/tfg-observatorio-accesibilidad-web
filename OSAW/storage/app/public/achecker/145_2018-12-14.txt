@@ -1,0 +1,1384 @@
+REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/cultura-mecd/areas-cultura/artesescenicas/portada.html;jsessionid=29CC98D31A66B3C0C8FC8940F5E60435
+FECHA EVALUACIÓN: 2018-12-14
+
+-PROBLEMAS CONOCIDOS-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
+
+		LINEA: 103, COLUMNA: 180: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 105, COLUMNA: 76: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 106, COLUMNA: 102: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 107, COLUMNA: 87: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 108, COLUMNA: 75: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...
+
+	
+
+
+
+-PROBLEMAS POTENCIALES-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+
+
+		LINEA: 96, COLUMNA: 165: <img alt="Enlace al portal de la transparencia" src="/dms/mecd/mecd-admin/mecd-adminBanners/08-banne ...       
+
+		LINEA: 102, COLUMNA: 175: <img src="/.imaging/mecd-imgtotal-jpg/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/logo-inaem- ...       
+
+		LINEA: 109, COLUMNA: 1693: <img alt="Programa estatal de artes escénicas. Platea" src="/dms/mecd/cultura-mecd/areas-cultura/ar ...       
+
+		LINEA: 109, COLUMNA: 2000: <img alt="Enlace a Entradas INAEM" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-e ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 63, COLUMNA: 121: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 63, COLUMNA: 333: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 65, COLUMNA: 1160: <img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/>       
+
+		LINEA: 65, COLUMNA: 1498: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 65, COLUMNA: 1860: <img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/>       
+
+		LINEA: 65, COLUMNA: 2215: <img src="/docroot/mecd/img/iconos/24/ico-instagram.png" alt="Instagram"/>       
+
+		LINEA: 65, COLUMNA: 2552: <img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/>       
+
+		LINEA: 86, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 92, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 94, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 96, COLUMNA: 165: <img alt="Enlace al portal de la transparencia" src="/dms/mecd/mecd-admin/mecd-adminBanners/08-banne ...       
+
+		LINEA: 97, COLUMNA: 225: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 102, COLUMNA: 175: <img src="/.imaging/mecd-imgtotal-jpg/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/logo-inaem- ...       
+
+		LINEA: 104, COLUMNA: 139: <img title="beca de Investigación CIOF-INAEM 2018" alt="beca de Investigación CIOF-INAEM 2018" src ...       
+
+		LINEA: 109, COLUMNA: 148: <img title="Inclusión de las empresas de cultura en el Plan de Pago a Proveedores" alt="Inclusión...       
+
+		LINEA: 109, COLUMNA: 1693: <img alt="Programa estatal de artes escénicas. Platea" src="/dms/mecd/cultura-mecd/areas-cultura/ar ...       
+
+		LINEA: 109, COLUMNA: 2000: <img alt="Enlace a Entradas INAEM" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-e ...       
+
+		LINEA: 111, COLUMNA: 153: <img alt="Logo del Auditorio Nacional de Música" src="/dms/mecd/cultura-mecd/areas-cultura/artesesc ...       
+
+		LINEA: 111, COLUMNA: 478: <img alt="Logo de la Orquesta y Coro Nacionales de España" src="/dms/mecd/cultura-mecd/areas-cultur ...       
+
+		LINEA: 111, COLUMNA: 805: <img alt="Logo de la Joven Orquesta Nacional de España" src="/dms/mecd/cultura-mecd/areas-cultura/a ...       
+
+		LINEA: 111, COLUMNA: 1137: <img alt="Logo del Centro Nacional de Difusión Musical" src="/dms/mecd/cultura-mecd/areas-cultura/a ...       
+
+		LINEA: 111, COLUMNA: 1479: <img alt="Logo del Teatro de la Zarzuela" src="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/4 ...       
+
+		LINEA: 111, COLUMNA: 1770: <img alt="Logo del Centro Dramático Nacional" src="/dms/mecd/cultura-mecd/areas-cultura/artesesceni ...       
+
+		LINEA: 111, COLUMNA: 2087: <img alt="Logo de la Compañía Nacional de Teatro Clásico" src="/dms/mecd/cultura-mecd/areas-cultu ...       
+
+		LINEA: 111, COLUMNA: 2416: <img alt="Logo de la Compañía Nacional de Danza" src="/dms/mecd/cultura-mecd/areas-cultura/arteses ...       
+
+		LINEA: 111, COLUMNA: 2737: <img alt="Logo del Ballet Nacional de España" src="/dms/mecd/cultura-mecd/areas-cultura/artesesceni ...       
+
+		LINEA: 111, COLUMNA: 3062: <img alt="Logo del Centro de Documentación de Música y Danza" src="/dms/mecd/cultura-mecd/areas-cu ...       
+
+		LINEA: 111, COLUMNA: 3422: <img alt="Logo del Centro de Documentación Teatral" src="/dms/mecd/cultura-mecd/areas-cultura/artes ...       
+
+		LINEA: 111, COLUMNA: 3758: <img alt="Logo del Centro de Tecnología del Espectáculo" src="/dms/mecd/cultura-mecd/areas-cultura ...       
+
+		LINEA: 111, COLUMNA: 4082: <img alt="Logo del Museo Nacional del Teatro" src="/dms/mecd/cultura-mecd/areas-cultura/artesescenic ...       
+
+		LINEA: 111, COLUMNA: 4373: <img alt="Logo delPalacio de Magalia" src="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/40x ...       
+
+		LINEA: 112, COLUMNA: 491: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 112, COLUMNA: 1394: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 112, COLUMNA: 1686: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 112, COLUMNA: 1938: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 112, COLUMNA: 2311: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 113, COLUMNA: 154: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 115, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 117, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 117, COLUMNA: 309: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...       
+
+		LINEA: 117, COLUMNA: 644: <img alt="Este documento es valido XHTML 1.0 Strict" src="/docroot/mecd/img/logo-xhtml1.png"/>       
+
+		LINEA: 117, COLUMNA: 909: <img alt="Este documento CSS es valido" src="/docroot/mecd/img/logo-css.png"/>
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 97, COLUMNA: 225: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 109, COLUMNA: 891: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1054: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1218: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1382: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 112, COLUMNA: 257: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="" />       
+
+		LINEA: 112, COLUMNA: 491: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 112, COLUMNA: 778: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="" />       
+
+		LINEA: 112, COLUMNA: 1061: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="" />       
+
+		LINEA: 112, COLUMNA: 1394: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 112, COLUMNA: 1686: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 112, COLUMNA: 1938: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 112, COLUMNA: 2311: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+
+
+		LINEA: 63, COLUMNA: 121: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 63, COLUMNA: 333: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 102, COLUMNA: 175: <img src="/.imaging/mecd-imgtotal-jpg/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/logo-inaem- ...       
+
+		LINEA: 104, COLUMNA: 139: <img title="beca de Investigación CIOF-INAEM 2018" alt="beca de Investigación CIOF-INAEM 2018" src ...       
+
+		LINEA: 109, COLUMNA: 148: <img title="Inclusión de las empresas de cultura en el Plan de Pago a Proveedores" alt="Inclusión...       
+
+		LINEA: 117, COLUMNA: 309: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...
+
+  
+
+	REVISAR: 80: object may be missing a text equivalent.
+
+
+
+		LINEA: 59, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+1.2 Time-based Media: Provide alternatives for time-based media
+
+CRITERIO DE CONFORMIDAD: 1.2.3 Audio Description or Media Alternative (Prerecorded) (A)  
+
+	REVISAR: 160: object may require a long description.
+
+
+
+		LINEA: 59, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 79, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 63, COLUMNA: 121: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 63, COLUMNA: 333: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 65, COLUMNA: 1160: <img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/>       
+
+		LINEA: 65, COLUMNA: 1498: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 65, COLUMNA: 1860: <img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/>       
+
+		LINEA: 65, COLUMNA: 2215: <img src="/docroot/mecd/img/iconos/24/ico-instagram.png" alt="Instagram"/>       
+
+		LINEA: 65, COLUMNA: 2552: <img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/>       
+
+		LINEA: 86, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 92, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 94, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 96, COLUMNA: 165: <img alt="Enlace al portal de la transparencia" src="/dms/mecd/mecd-admin/mecd-adminBanners/08-banne ...       
+
+		LINEA: 97, COLUMNA: 225: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 102, COLUMNA: 175: <img src="/.imaging/mecd-imgtotal-jpg/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/logo-inaem- ...       
+
+		LINEA: 103, COLUMNA: 180: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 104, COLUMNA: 139: <img title="beca de Investigación CIOF-INAEM 2018" alt="beca de Investigación CIOF-INAEM 2018" src ...       
+
+		LINEA: 105, COLUMNA: 76: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 106, COLUMNA: 102: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 107, COLUMNA: 87: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 108, COLUMNA: 75: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 109, COLUMNA: 148: <img title="Inclusión de las empresas de cultura en el Plan de Pago a Proveedores" alt="Inclusión...       
+
+		LINEA: 109, COLUMNA: 891: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1054: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1218: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1382: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1693: <img alt="Programa estatal de artes escénicas. Platea" src="/dms/mecd/cultura-mecd/areas-cultura/ar ...       
+
+		LINEA: 109, COLUMNA: 2000: <img alt="Enlace a Entradas INAEM" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-e ...       
+
+		LINEA: 111, COLUMNA: 153: <img alt="Logo del Auditorio Nacional de Música" src="/dms/mecd/cultura-mecd/areas-cultura/artesesc ...       
+
+		LINEA: 111, COLUMNA: 478: <img alt="Logo de la Orquesta y Coro Nacionales de España" src="/dms/mecd/cultura-mecd/areas-cultur ...       
+
+		LINEA: 111, COLUMNA: 805: <img alt="Logo de la Joven Orquesta Nacional de España" src="/dms/mecd/cultura-mecd/areas-cultura/a ...       
+
+		LINEA: 111, COLUMNA: 1137: <img alt="Logo del Centro Nacional de Difusión Musical" src="/dms/mecd/cultura-mecd/areas-cultura/a ...       
+
+		LINEA: 111, COLUMNA: 1479: <img alt="Logo del Teatro de la Zarzuela" src="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/4 ...       
+
+		LINEA: 111, COLUMNA: 1770: <img alt="Logo del Centro Dramático Nacional" src="/dms/mecd/cultura-mecd/areas-cultura/artesesceni ...       
+
+		LINEA: 111, COLUMNA: 2087: <img alt="Logo de la Compañía Nacional de Teatro Clásico" src="/dms/mecd/cultura-mecd/areas-cultu ...       
+
+		LINEA: 111, COLUMNA: 2416: <img alt="Logo de la Compañía Nacional de Danza" src="/dms/mecd/cultura-mecd/areas-cultura/arteses ...       
+
+		LINEA: 111, COLUMNA: 2737: <img alt="Logo del Ballet Nacional de España" src="/dms/mecd/cultura-mecd/areas-cultura/artesesceni ...       
+
+		LINEA: 111, COLUMNA: 3062: <img alt="Logo del Centro de Documentación de Música y Danza" src="/dms/mecd/cultura-mecd/areas-cu ...       
+
+		LINEA: 111, COLUMNA: 3422: <img alt="Logo del Centro de Documentación Teatral" src="/dms/mecd/cultura-mecd/areas-cultura/artes ...       
+
+		LINEA: 111, COLUMNA: 3758: <img alt="Logo del Centro de Tecnología del Espectáculo" src="/dms/mecd/cultura-mecd/areas-cultura ...       
+
+		LINEA: 111, COLUMNA: 4082: <img alt="Logo del Museo Nacional del Teatro" src="/dms/mecd/cultura-mecd/areas-cultura/artesescenic ...       
+
+		LINEA: 111, COLUMNA: 4373: <img alt="Logo delPalacio de Magalia" src="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/40x ...       
+
+		LINEA: 112, COLUMNA: 257: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="" />       
+
+		LINEA: 112, COLUMNA: 491: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 112, COLUMNA: 778: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="" />       
+
+		LINEA: 112, COLUMNA: 1061: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="" />       
+
+		LINEA: 112, COLUMNA: 1394: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 112, COLUMNA: 1686: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 112, COLUMNA: 1938: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 112, COLUMNA: 2311: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 113, COLUMNA: 154: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 115, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 117, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 117, COLUMNA: 309: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...       
+
+		LINEA: 117, COLUMNA: 644: <img alt="Este documento es valido XHTML 1.0 Strict" src="/docroot/mecd/img/logo-xhtml1.png"/>       
+
+		LINEA: 117, COLUMNA: 909: <img alt="Este documento CSS es valido" src="/docroot/mecd/img/logo-css.png"/>
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 79, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...       
+
+		LINEA: 79, COLUMNA: 463: <input type="submit" name="mec" id="boton_buscar" class="botonbuscar" value=""/>
+
+  
+
+	REVISAR: 73: object may be using color alone.
+
+
+
+		LINEA: 59, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 21, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/w_jquery.js"></script>       
+
+		LINEA: 22, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/dropdown.js"></script>       
+
+		LINEA: 23, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/seleccionar.js"></script>       
+
+		LINEA: 25, COLUMNA: 4: <script type="text/javascript">var textoEnlaceExterno = "Enlace externo, se abre en ventana nueva";< ...       
+
+		LINEA: 26, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jstarget.js"></script>       
+
+		LINEA: 28, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 29, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery.colorbox.js"></script>       
+
+		LINEA: 30, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides.min.jquery.js"></script>       
+
+		LINEA: 31, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides-contenido.js"></script>       
+
+		LINEA: 37, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/jquery-ui.min.js"></script>       
+
+		LINEA: 38, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/agenda.js"></script>       
+
+		LINEA: 40, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/js.cookie-2.1.3.min.js"></script>       
+
+		LINEA: 42, COLUMNA: 3: <script type="text/javascript">window.onload = function(){	ExternalLinks.init();}		 ...       
+
+		LINEA: 48, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/gestion-cookies.js"></script>       
+
+		LINEA: 61, COLUMNA: 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...       
+
+		LINEA: 65, COLUMNA: 2841: <script type="text/javascript">dropdown('nav', 'hover', 25);</script>       
+
+		LINEA: 119, COLUMNA: 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
+
+		LINEA: 126, COLUMNA: 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 63, COLUMNA: 121: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 63, COLUMNA: 333: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 96, COLUMNA: 165: <img alt="Enlace al portal de la transparencia" src="/dms/mecd/mecd-admin/mecd-adminBanners/08-banne ...       
+
+		LINEA: 102, COLUMNA: 175: <img src="/.imaging/mecd-imgtotal-jpg/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/logo-inaem- ...       
+
+		LINEA: 103, COLUMNA: 180: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 104, COLUMNA: 139: <img title="beca de Investigación CIOF-INAEM 2018" alt="beca de Investigación CIOF-INAEM 2018" src ...       
+
+		LINEA: 105, COLUMNA: 76: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 106, COLUMNA: 102: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 107, COLUMNA: 87: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 108, COLUMNA: 75: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 109, COLUMNA: 148: <img title="Inclusión de las empresas de cultura en el Plan de Pago a Proveedores" alt="Inclusión...       
+
+		LINEA: 109, COLUMNA: 1693: <img alt="Programa estatal de artes escénicas. Platea" src="/dms/mecd/cultura-mecd/areas-cultura/ar ...       
+
+		LINEA: 109, COLUMNA: 2000: <img alt="Enlace a Entradas INAEM" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-e ...       
+
+		LINEA: 111, COLUMNA: 478: <img alt="Logo de la Orquesta y Coro Nacionales de España" src="/dms/mecd/cultura-mecd/areas-cultur ...       
+
+		LINEA: 111, COLUMNA: 2416: <img alt="Logo de la Compañía Nacional de Danza" src="/dms/mecd/cultura-mecd/areas-cultura/arteses ...       
+
+		LINEA: 111, COLUMNA: 2737: <img alt="Logo del Ballet Nacional de España" src="/dms/mecd/cultura-mecd/areas-cultura/artesesceni ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 63, COLUMNA: 121: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 63, COLUMNA: 333: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 65, COLUMNA: 1160: <img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/>       
+
+		LINEA: 65, COLUMNA: 1498: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 65, COLUMNA: 1860: <img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/>       
+
+		LINEA: 65, COLUMNA: 2215: <img src="/docroot/mecd/img/iconos/24/ico-instagram.png" alt="Instagram"/>       
+
+		LINEA: 65, COLUMNA: 2552: <img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/>       
+
+		LINEA: 86, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 92, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 94, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 96, COLUMNA: 165: <img alt="Enlace al portal de la transparencia" src="/dms/mecd/mecd-admin/mecd-adminBanners/08-banne ...       
+
+		LINEA: 97, COLUMNA: 225: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 102, COLUMNA: 175: <img src="/.imaging/mecd-imgtotal-jpg/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/logo-inaem- ...       
+
+		LINEA: 103, COLUMNA: 180: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 104, COLUMNA: 139: <img title="beca de Investigación CIOF-INAEM 2018" alt="beca de Investigación CIOF-INAEM 2018" src ...       
+
+		LINEA: 105, COLUMNA: 76: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 106, COLUMNA: 102: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 107, COLUMNA: 87: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 108, COLUMNA: 75: <img title="" alt="" src="/.imaging/mecd-imglmlogo/dms/mecd/cultura-mecd/areas-cultura/artesescenica ...       
+
+		LINEA: 109, COLUMNA: 148: <img title="Inclusión de las empresas de cultura en el Plan de Pago a Proveedores" alt="Inclusión...       
+
+		LINEA: 109, COLUMNA: 891: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1054: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1218: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1382: <img alt="" src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" />       
+
+		LINEA: 109, COLUMNA: 1693: <img alt="Programa estatal de artes escénicas. Platea" src="/dms/mecd/cultura-mecd/areas-cultura/ar ...       
+
+		LINEA: 109, COLUMNA: 2000: <img alt="Enlace a Entradas INAEM" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-e ...       
+
+		LINEA: 111, COLUMNA: 153: <img alt="Logo del Auditorio Nacional de Música" src="/dms/mecd/cultura-mecd/areas-cultura/artesesc ...       
+
+		LINEA: 111, COLUMNA: 478: <img alt="Logo de la Orquesta y Coro Nacionales de España" src="/dms/mecd/cultura-mecd/areas-cultur ...       
+
+		LINEA: 111, COLUMNA: 805: <img alt="Logo de la Joven Orquesta Nacional de España" src="/dms/mecd/cultura-mecd/areas-cultura/a ...       
+
+		LINEA: 111, COLUMNA: 1137: <img alt="Logo del Centro Nacional de Difusión Musical" src="/dms/mecd/cultura-mecd/areas-cultura/a ...       
+
+		LINEA: 111, COLUMNA: 1479: <img alt="Logo del Teatro de la Zarzuela" src="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/4 ...       
+
+		LINEA: 111, COLUMNA: 1770: <img alt="Logo del Centro Dramático Nacional" src="/dms/mecd/cultura-mecd/areas-cultura/artesesceni ...       
+
+		LINEA: 111, COLUMNA: 2087: <img alt="Logo de la Compañía Nacional de Teatro Clásico" src="/dms/mecd/cultura-mecd/areas-cultu ...       
+
+		LINEA: 111, COLUMNA: 2416: <img alt="Logo de la Compañía Nacional de Danza" src="/dms/mecd/cultura-mecd/areas-cultura/arteses ...       
+
+		LINEA: 111, COLUMNA: 2737: <img alt="Logo del Ballet Nacional de España" src="/dms/mecd/cultura-mecd/areas-cultura/artesesceni ...       
+
+		LINEA: 111, COLUMNA: 3062: <img alt="Logo del Centro de Documentación de Música y Danza" src="/dms/mecd/cultura-mecd/areas-cu ...       
+
+		LINEA: 111, COLUMNA: 3422: <img alt="Logo del Centro de Documentación Teatral" src="/dms/mecd/cultura-mecd/areas-cultura/artes ...       
+
+		LINEA: 111, COLUMNA: 3758: <img alt="Logo del Centro de Tecnología del Espectáculo" src="/dms/mecd/cultura-mecd/areas-cultura ...       
+
+		LINEA: 111, COLUMNA: 4082: <img alt="Logo del Museo Nacional del Teatro" src="/dms/mecd/cultura-mecd/areas-cultura/artesescenic ...       
+
+		LINEA: 111, COLUMNA: 4373: <img alt="Logo delPalacio de Magalia" src="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/40x ...       
+
+		LINEA: 112, COLUMNA: 257: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="" />       
+
+		LINEA: 112, COLUMNA: 491: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 112, COLUMNA: 778: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="" />       
+
+		LINEA: 112, COLUMNA: 1061: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="" />       
+
+		LINEA: 112, COLUMNA: 1394: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 112, COLUMNA: 1686: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 112, COLUMNA: 1938: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 112, COLUMNA: 2311: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-pdf.gif" alt="PDF" />       
+
+		LINEA: 113, COLUMNA: 154: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 115, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 117, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 117, COLUMNA: 309: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...       
+
+		LINEA: 117, COLUMNA: 644: <img alt="Este documento es valido XHTML 1.0 Strict" src="/docroot/mecd/img/logo-xhtml1.png"/>       
+
+		LINEA: 117, COLUMNA: 909: <img alt="Este documento CSS es valido" src="/docroot/mecd/img/logo-css.png"/>
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 21, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/w_jquery.js"></script>       
+
+		LINEA: 22, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/dropdown.js"></script>       
+
+		LINEA: 23, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/seleccionar.js"></script>       
+
+		LINEA: 25, COLUMNA: 4: <script type="text/javascript">var textoEnlaceExterno = "Enlace externo, se abre en ventana nueva";< ...       
+
+		LINEA: 26, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jstarget.js"></script>       
+
+		LINEA: 28, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 29, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery.colorbox.js"></script>       
+
+		LINEA: 30, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides.min.jquery.js"></script>       
+
+		LINEA: 31, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides-contenido.js"></script>       
+
+		LINEA: 37, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/jquery-ui.min.js"></script>       
+
+		LINEA: 38, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/agenda.js"></script>       
+
+		LINEA: 40, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/js.cookie-2.1.3.min.js"></script>       
+
+		LINEA: 42, COLUMNA: 3: <script type="text/javascript">window.onload = function(){	ExternalLinks.init();}		 ...       
+
+		LINEA: 48, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/gestion-cookies.js"></script>       
+
+		LINEA: 61, COLUMNA: 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...       
+
+		LINEA: 65, COLUMNA: 2841: <script type="text/javascript">dropdown('nav', 'hover', 25);</script>       
+
+		LINEA: 119, COLUMNA: 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
+
+		LINEA: 126, COLUMNA: 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.1.2 No Keyboard Trap (A)  
+
+	REVISAR: 259: object may not provide a keyboard mechanism to return focus to the parent window.
+
+
+
+		LINEA: 59, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 30: object may flicker.
+
+
+
+		LINEA: 59, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 21, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/w_jquery.js"></script>       
+
+		LINEA: 22, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/dropdown.js"></script>       
+
+		LINEA: 23, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/seleccionar.js"></script>       
+
+		LINEA: 25, COLUMNA: 4: <script type="text/javascript">var textoEnlaceExterno = "Enlace externo, se abre en ventana nueva";< ...       
+
+		LINEA: 26, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jstarget.js"></script>       
+
+		LINEA: 28, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 29, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery.colorbox.js"></script>       
+
+		LINEA: 30, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides.min.jquery.js"></script>       
+
+		LINEA: 31, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides-contenido.js"></script>       
+
+		LINEA: 37, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/jquery-ui.min.js"></script>       
+
+		LINEA: 38, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/agenda.js"></script>       
+
+		LINEA: 40, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/js.cookie-2.1.3.min.js"></script>       
+
+		LINEA: 42, COLUMNA: 3: <script type="text/javascript">window.onload = function(){	ExternalLinks.init();}		 ...       
+
+		LINEA: 48, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/gestion-cookies.js"></script>       
+
+		LINEA: 61, COLUMNA: 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...       
+
+		LINEA: 65, COLUMNA: 2841: <script type="text/javascript">dropdown('nav', 'hover', 25);</script>       
+
+		LINEA: 119, COLUMNA: 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
+
+		LINEA: 126, COLUMNA: 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 8, COLUMNA: 3: <title>portada - Ministerio de Educación, Cultura y Deporte</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 63, COLUMNA: 77: <a href="http://www.culturaydeporte.gob.es"><img src="/docroot/utils/img/escudo-mcd.gif" alt="Minist ...       
+
+		LINEA: 63, COLUMNA: 280: <a href="https://constitucion40.com/" rel="external"><img src="/docroot/utils/img/constitucion.jpg"...       
+
+		LINEA: 65, COLUMNA: 53: <a href="/ministerio-mecd/direcciones-y-telefonos.html">Direcciones y teléfonos</a>       
+
+		LINEA: 65, COLUMNA: 195: <a href="/cultura-mecd/areas-cultura/artesescenicas/portada.html"><span title="Castellano" xml:lang= ...       
+
+		LINEA: 65, COLUMNA: 340: <a href="/cultura-mecd/ca/areas-cultura/artesescenicas/portada.html"><span title="Català" xml:lang= ...       
+
+		LINEA: 65, COLUMNA: 484: <a href="/cultura-mecd/gl/areas-cultura/artesescenicas/portada.html"><span title="Galego" xml:lang=" ...       
+
+		LINEA: 65, COLUMNA: 625: <a href="/cultura-mecd/eu/areas-cultura/artesescenicas/portada.html"><span title="Euskera" xml:lang= ...       
+
+		LINEA: 65, COLUMNA: 771: <a href="/cultura-mecd/va/areas-cultura/artesescenicas/portada.html"><span title="Valencià" xml:lan ...       
+
+		LINEA: 65, COLUMNA: 932: <a href="/cultura-mecd/en/areas-cultura/artesescenicas/portada.html"><span title="English" xml:lang= ...       
+
+		LINEA: 65, COLUMNA: 1148: <a href="#"><img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/></a>       
+
+		LINEA: 65, COLUMNA: 1244: <a rel="external" href="https://www.facebook.com/MinisterioDeEducacionCulturaYDeporte">Educación y...       
+
+		LINEA: 65, COLUMNA: 1364: <a rel="external" href="https://www.facebook.com/ConsejoSuperiordeDeportes">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 1470: <a title="Twitter" href="#"><img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/></ ...       
+
+		LINEA: 65, COLUMNA: 1580: <a rel="external" href="http://www.twitter.com/educaciongob">Educación</a>       
+
+		LINEA: 65, COLUMNA: 1664: <a rel="external" href="http://www.twitter.com/culturagob">Cultura</a>       
+
+		LINEA: 65, COLUMNA: 1743: <a rel="external" href="http://www.twitter.com/deportegob">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 1832: <a title="Youtube" href="#"><img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/></ ...       
+
+		LINEA: 65, COLUMNA: 1942: <a rel="external" href="http://www.youtube.com/educacion2p0">Educación</a>       
+
+		LINEA: 65, COLUMNA: 2026: <a rel="external" href="http://www.youtube.com/CanalMCU">Cultura</a>       
+
+		LINEA: 65, COLUMNA: 2103: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 2185: <a title="Instagram" href="#"><img src="/docroot/mecd/img/iconos/24/ico-instagram.png" alt="Instagra ...       
+
+		LINEA: 65, COLUMNA: 2301: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 2373: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 2445: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 2527: <a title="RSS" href="#3"><img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/></a>       
+
+		LINEA: 65, COLUMNA: 2626: <a rel="external" href="http://www.mecd.gob.es/mecd/rss.html">Prensa</a>       
+
+		LINEA: 65, COLUMNA: 2707: <a href="">Cultura</a>       
+
+		LINEA: 65, COLUMNA: 2738: <a rel="external" href="http://www.csd.gob.es/csd/sindicacionrss">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 3009: <a href="/portada-mecd/">	Inicio</a>       
+
+		LINEA: 67, COLUMNA: 20: <a href="/ministerio-mecd/">	Ministerios</a>       
+
+		LINEA: 69, COLUMNA: 20: <a href="/servicios-al-ciudadano-mecd/">	Servicios al ciudadano</a>       
+
+		LINEA: 71, COLUMNA: 20: <a href="/prensa-mecd/">	Prensa</a>       
+
+		LINEA: 73, COLUMNA: 20: <a href="/educacion-mecd/">	Educación</a>       
+
+		LINEA: 75, COLUMNA: 41: <a href="/cultura-mecd/">	Cultura</a>       
+
+		LINEA: 77, COLUMNA: 20: <a href="/deporte-mecd/">	Deporte</a>       
+
+		LINEA: 79, COLUMNA: 678: <a href="http://www.culturaydeporte.gob.es/portada-mecd/">Inicio</a>       
+
+		LINEA: 79, COLUMNA: 755: <a href="/cultura-mecd/">Cultura</a>       
+
+		LINEA: 79, COLUMNA: 800: <a href="/cultura-mecd/areas-cultura.html">Áreas de Cultura</a>       
+
+		LINEA: 79, COLUMNA: 873: <a href="/cultura-mecd/areas-cultura/artesescenicas.html">Artes Escénicasy Música</a>       
+
+		LINEA: 80, COLUMNA: 111: <a href="/cultura-mecd/areas-cultura/artesescenicas.html">Artes Escénicasy Música</a>       
+
+		LINEA: 80, COLUMNA: 212: <a href="/cultura-mecd/areas-cultura/artesescenicas/informacion-general.html" >Informaci&oacute;n ge ...       
+
+		LINEA: 80, COLUMNA: 331: <a href="/cultura-mecd/areas-cultura/artesescenicas/centros-artisticos.html" >Centros Art&iacute;sti ...       
+
+		LINEA: 80, COLUMNA: 448: <a href="/cultura-mecd/areas-cultura/artesescenicas/planes-generales-y-nuevos-estatutos.html" >Plane ...       
+
+		LINEA: 80, COLUMNA: 592: <a href="/cultura-mecd/areas-cultura/artesescenicas/consejo-estatal.html" >Consejo Estatal de las Ar ...       
+
+		LINEA: 80, COLUMNA: 748: <a href="/cultura-mecd/areas-cultura/artesescenicas/artes-escenicas-e-inclusion-social.html" >Artes...       
+
+		LINEA: 80, COLUMNA: 904: <a href="/cultura-mecd/areas-cultura/artesescenicas/festivales.html" >Festivales y Circuitos </a>       
+
+		LINEA: 80, COLUMNA: 1010: <a href="/cultura-mecd/areas-cultura/artesescenicas/premios.html" >Premios </a>       
+
+		LINEA: 80, COLUMNA: 1098: <a href="/cultura-mecd/areas-cultura/artesescenicas/venta-de-entradas.html" >Venta de entradas </a>       
+
+		LINEA: 80, COLUMNA: 1206: <a href="/cultura-mecd/areas-cultura/artesescenicas/quejas-y-sugerencias.html" >Quejas y sugerencias ...       
+
+		LINEA: 80, COLUMNA: 1320: <a href="/cultura-mecd/areas-cultura/artesescenicas/prensa-del-inaem.html" >Prensa del INAEM </a>       
+
+		LINEA: 80, COLUMNA: 1426: <a href="http://www.entradasinaem.es/Mecenazgo.aspx" rel="external" >Mecenazgo INAEM </a>       
+
+		LINEA: 80, COLUMNA: 1524: <a href="/cultura-mecd/areas-cultura/artesescenicas/cuentas-del-organismo.html" >Cuentas del Organis ...       
+
+		LINEA: 80, COLUMNA: 1640: <a href="/cultura-mecd/areas-cultura/artesescenicas/memorias-anuales.html" >Memorias Anuales </a>       
+
+		LINEA: 80, COLUMNA: 1853: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/sc/becas-ayudas-subvenciones.html">	Ayud ...       
+
+		LINEA: 82, COLUMNA: 24: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/sc/cartas-de-servicios.html">	Cartas de...       
+
+		LINEA: 84, COLUMNA: 24: <a rel="external" href="http://www.mecd.gob.es/legislacionconvenio/loadSearchAgreement.do?cache=init ...       
+
+		LINEA: 86, COLUMNA: 118: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/sc/empleo-publico.html">	Empleo público ...       
+
+		LINEA: 88, COLUMNA: 24: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/in/estadisticas.html">	Estadísticas 	< ...       
+
+		LINEA: 90, COLUMNA: 24: <a rel="external" href="http://www.mecd.gob.es/legislacionconvenio/loadSearchLegislation.do?cache=in ...       
+
+		LINEA: 92, COLUMNA: 118: <a rel="external" href="http://www.mecd.gob.es/suscripciones/loadAlertForm.do?cache=init&amp;layout= ...       
+
+		LINEA: 94, COLUMNA: 126: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/in/publicaciones.html">	Publicaciones 	 ...       
+
+		LINEA: 96, COLUMNA: 55: <a id="beli08" href="http://transparencia.gob.es" title="Enlace al portal de la transparencia" rel=" ...       
+
+		LINEA: 97, COLUMNA: 6: <a href="https://contrataciondelestado.es/wps/portal/!ut/p/b0/DccxCoAwDADAJwUcpAgO6u6qzRZslGCbhhL0-3 ...       
+
+		LINEA: 99, COLUMNA: 6: <a href="/cultura-mecd/areas-cultura/artesescenicas/contacte-con-artes-escenicas-y-musica.html">Cont ...       
+
+		LINEA: 100, COLUMNA: 78: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/proteccion-datos.html">	Protección de d ...       
+
+		LINEA: 102, COLUMNA: 128: <a class="imagen" title="Logotipo del INAEM"><img src="/.imaging/mecd-imgtotal-jpg/dms/mecd/cultur ...       
+
+		LINEA: 103, COLUMNA: 11: <a href="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/destacados/certificado-impto-sociedades ...       
+
+		LINEA: 104, COLUMNA: 11: <a href="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/beca-ciof-2018/beca-cioff-2018/beca-cio ...       
+
+		LINEA: 105, COLUMNA: 11: <a href="http://cdn.mcu.es/espectaculo/caligula/" rel="external"><img title="" alt="" src="/.imaging ...       
+
+		LINEA: 106, COLUMNA: 11: <a href="http://teatroclasico.mcu.es/2018/06/28/el-castigo-sin-venganza-2/" rel="external"><img titl ...       
+
+		LINEA: 107, COLUMNA: 11: <a href="http://cdn.mcu.es/espectaculo/elogio-de-la-pereza/" rel="external"><img title="" alt="" src ...       
+
+		LINEA: 108, COLUMNA: 11: <a href="http://cdn.mcu.es/espectaculo/el-mago/" rel="external"><img title="" alt="" src="/.imaging/ ...       
+
+		LINEA: 109, COLUMNA: 11: <a href="/cultura-mecd/areas-cultura/principal/novedades/general/2012/inclusion-empresas-de-cultura- ...       
+
+		LINEA: 109, COLUMNA: 833: <a rel="external" href="http://www.danza.es/">Danza.es</a>       
+
+		LINEA: 109, COLUMNA: 989: <a rel="external" href="http://teatro.es/es/inicio">Teatro.es</a>       
+
+		LINEA: 109, COLUMNA: 1152: <a rel="external" href="http://musicadanza.es/">Musicadanza.es</a>       
+
+		LINEA: 109, COLUMNA: 1316: <a rel="external" href="http://www.iberescena.org/">Iberescena</a>       
+
+		LINEA: 109, COLUMNA: 1537: <a id="bsld03" href="/cultura-mecd/areas-cultura/artesescenicas/destacados/platea.html" title="Progr ...       
+
+		LINEA: 109, COLUMNA: 1901: <a id="beld017" href="http://www.entradasinaem.es/" title="Enlace a Entradas INAEM" rel="external">< ...       
+
+		LINEA: 110, COLUMNA: 6: <a href="http://www.mecd.gob.es/suscripciones/loadAlertForm.do?cache=init&amp;layout=alertasArtesEsc ...       
+
+		LINEA: 111, COLUMNA: 45: <a href="http://www.auditorionacional.mcu.es" rel="external" title="Logo del Auditorio Nacional de M ...       
+
+		LINEA: 111, COLUMNA: 376: <a href="http://ocne.mcu.es/" rel="external" title="Logo de la Orquesta y Coro Nacionales de España ...       
+
+		LINEA: 111, COLUMNA: 705: <a href="http://jonde.mcu.es/" rel="external" title="Logo de la Joven Orquesta Nacional de España"> ...       
+
+		LINEA: 111, COLUMNA: 1034: <a href="http://www.cndm.mcu.es/" rel="external" title="Logo del Centro Nacional de Difusión Musica ...       
+
+		LINEA: 111, COLUMNA: 1382: <a href="http://teatrodelazarzuela.mcu.es" rel="external" title="Logo del Teatro de la Zarzuela"><im ...       
+
+		LINEA: 111, COLUMNA: 1682: <a href="http://cdn.mcu.es/" rel="external" title="Logo del Centro Dramático Nacional"><img alt="Lo ...       
+
+		LINEA: 111, COLUMNA: 1975: <a href="http://teatroclasico.mcu.es/" rel="external" title="Logo de la Compañía Nacional de Teatr ...       
+
+		LINEA: 111, COLUMNA: 2320: <a href="http://cndanza.mcu.es/" rel="external" title="Logo de la Compañía Nacional de Danza"><img ...       
+
+		LINEA: 111, COLUMNA: 2638: <a href="http://balletnacional.mcu.es/" rel="external" title="Logo del Ballet Nacional de España">< ...       
+
+		LINEA: 111, COLUMNA: 2953: <a href="http://musicadanza.es/" rel="external" title="Logo del Centro de Documentación de Música...       
+
+		LINEA: 111, COLUMNA: 3329: <a href="http://teatro.es/" rel="external" title="Logo del Centro de Documentación Teatral"><img al ...       
+
+		LINEA: 111, COLUMNA: 3658: <a href="http://cte.mcu.es/" rel="external" title="Logo del Centro de Tecnología del Espectáculo"> ...       
+
+		LINEA: 111, COLUMNA: 3987: <a href="http://museoteatro.mcu.es/" rel="external" title="Logo del Museo Nacional del Teatro"><img...       
+
+		LINEA: 111, COLUMNA: 4289: <a href="http://magalia.mcu.es" rel="external" title="Logo delPalacio de Magalia"><img alt="Logo d ...       
+
+		LINEA: 112, COLUMNA: 35: <a href="/cultura-mecd/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/destacados/mensaje-dia/201 ...       
+
+		LINEA: 112, COLUMNA: 373: <a href="" rel="external">Convocatoria del XXIII Premio de Composici&oacute;n del Colegio de Espa&nt ...       
+
+		LINEA: 112, COLUMNA: 610: <a href="/cultura-mecd/areas-cultura/artesescenicas/destacados/audiciones-euyo.html" rel="external"> ...       
+
+		LINEA: 112, COLUMNA: 899: <a href="/cultura-mecd/areas-cultura/artesescenicas/destacados/audiciones-mahler.html" rel="external ...       
+
+		LINEA: 112, COLUMNA: 1182: <a href="/cultura-mecd/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/destacados/mensaje-dia/201 ...       
+
+		LINEA: 112, COLUMNA: 1513: <a href="https://www.assitej.net/dia-mundial-assitej-2018/" rel="external">Mensaje del D&iacute;a Mu ...       
+
+		LINEA: 112, COLUMNA: 1819: <a href="http://www.unima.es/" rel="external">Mensaje del D&iacute;a Mundial de la Marioneta, 21 de...       
+
+		LINEA: 112, COLUMNA: 2071: <a href="/cultura-mecd/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/destacados/colegio_espana_ ...       
+
+		LINEA: 113, COLUMNA: 95: <a rel="external" href="https://twitter.com/INAEM_Cultura"><img src="/docroot/mecd/img/iconos/24/ico ...       
+
+		LINEA: 113, COLUMNA: 315: <a rel="external" href="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/versiones-logotipo-inaem ...       
+
+		LINEA: 115, COLUMNA: 126: <a rel="external" href="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/Manual_Uso_Logotipo_INAE ...       
+
+		LINEA: 117, COLUMNA: 242: <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" rel="external"><img src="/docroot/mecd/img/logo- ...       
+
+		LINEA: 117, COLUMNA: 493: <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.mecd.gob.es%2Fcultura-mecd%2Fareas-cultu ...       
+
+		LINEA: 117, COLUMNA: 743: <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.mecd.gob.es%2Fcultura-mec ...       
+
+		LINEA: 117, COLUMNA: 1021: <a rel="" href="/mapa-web-mecd/">Mapa web</a>       
+
+		LINEA: 117, COLUMNA: 1092: <a rel="" href="/aviso-legal-mcd/">Aviso legal</a>       
+
+		LINEA: 117, COLUMNA: 1166: <a rel="" href="/accesibilidad-mcd/">Accesibilidad</a>       
+
+		LINEA: 131, COLUMNA: 59: <a href="http://www.mecd.gob.es/aviso-legal-mecd/">política de cookies</a>
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 63, COLUMNA: 77: <a href="http://www.culturaydeporte.gob.es"><img src="/docroot/utils/img/escudo-mcd.gif" alt="Minist ...       
+
+		LINEA: 63, COLUMNA: 280: <a href="https://constitucion40.com/" rel="external"><img src="/docroot/utils/img/constitucion.jpg"...       
+
+		LINEA: 65, COLUMNA: 53: <a href="/ministerio-mecd/direcciones-y-telefonos.html">Direcciones y teléfonos</a>       
+
+		LINEA: 65, COLUMNA: 195: <a href="/cultura-mecd/areas-cultura/artesescenicas/portada.html"><span title="Castellano" xml:lang= ...       
+
+		LINEA: 65, COLUMNA: 340: <a href="/cultura-mecd/ca/areas-cultura/artesescenicas/portada.html"><span title="Català" xml:lang= ...       
+
+		LINEA: 65, COLUMNA: 484: <a href="/cultura-mecd/gl/areas-cultura/artesescenicas/portada.html"><span title="Galego" xml:lang=" ...       
+
+		LINEA: 65, COLUMNA: 625: <a href="/cultura-mecd/eu/areas-cultura/artesescenicas/portada.html"><span title="Euskera" xml:lang= ...       
+
+		LINEA: 65, COLUMNA: 771: <a href="/cultura-mecd/va/areas-cultura/artesescenicas/portada.html"><span title="Valencià" xml:lan ...       
+
+		LINEA: 65, COLUMNA: 932: <a href="/cultura-mecd/en/areas-cultura/artesescenicas/portada.html"><span title="English" xml:lang= ...       
+
+		LINEA: 65, COLUMNA: 1148: <a href="#"><img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/></a>       
+
+		LINEA: 65, COLUMNA: 1244: <a rel="external" href="https://www.facebook.com/MinisterioDeEducacionCulturaYDeporte">Educación y...       
+
+		LINEA: 65, COLUMNA: 1364: <a rel="external" href="https://www.facebook.com/ConsejoSuperiordeDeportes">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 1470: <a title="Twitter" href="#"><img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/></ ...       
+
+		LINEA: 65, COLUMNA: 1580: <a rel="external" href="http://www.twitter.com/educaciongob">Educación</a>       
+
+		LINEA: 65, COLUMNA: 1664: <a rel="external" href="http://www.twitter.com/culturagob">Cultura</a>       
+
+		LINEA: 65, COLUMNA: 1743: <a rel="external" href="http://www.twitter.com/deportegob">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 1832: <a title="Youtube" href="#"><img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/></ ...       
+
+		LINEA: 65, COLUMNA: 1942: <a rel="external" href="http://www.youtube.com/educacion2p0">Educación</a>       
+
+		LINEA: 65, COLUMNA: 2026: <a rel="external" href="http://www.youtube.com/CanalMCU">Cultura</a>       
+
+		LINEA: 65, COLUMNA: 2103: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 2185: <a title="Instagram" href="#"><img src="/docroot/mecd/img/iconos/24/ico-instagram.png" alt="Instagra ...       
+
+		LINEA: 65, COLUMNA: 2301: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 2373: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 2445: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 2527: <a title="RSS" href="#3"><img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/></a>       
+
+		LINEA: 65, COLUMNA: 2626: <a rel="external" href="http://www.mecd.gob.es/mecd/rss.html">Prensa</a>       
+
+		LINEA: 65, COLUMNA: 2707: <a href="">Cultura</a>       
+
+		LINEA: 65, COLUMNA: 2738: <a rel="external" href="http://www.csd.gob.es/csd/sindicacionrss">Deporte</a>       
+
+		LINEA: 65, COLUMNA: 3009: <a href="/portada-mecd/">	Inicio</a>       
+
+		LINEA: 67, COLUMNA: 20: <a href="/ministerio-mecd/">	Ministerios</a>       
+
+		LINEA: 69, COLUMNA: 20: <a href="/servicios-al-ciudadano-mecd/">	Servicios al ciudadano</a>       
+
+		LINEA: 71, COLUMNA: 20: <a href="/prensa-mecd/">	Prensa</a>       
+
+		LINEA: 73, COLUMNA: 20: <a href="/educacion-mecd/">	Educación</a>       
+
+		LINEA: 75, COLUMNA: 41: <a href="/cultura-mecd/">	Cultura</a>       
+
+		LINEA: 77, COLUMNA: 20: <a href="/deporte-mecd/">	Deporte</a>       
+
+		LINEA: 79, COLUMNA: 678: <a href="http://www.culturaydeporte.gob.es/portada-mecd/">Inicio</a>       
+
+		LINEA: 79, COLUMNA: 755: <a href="/cultura-mecd/">Cultura</a>       
+
+		LINEA: 79, COLUMNA: 800: <a href="/cultura-mecd/areas-cultura.html">Áreas de Cultura</a>       
+
+		LINEA: 79, COLUMNA: 873: <a href="/cultura-mecd/areas-cultura/artesescenicas.html">Artes Escénicasy Música</a>       
+
+		LINEA: 80, COLUMNA: 111: <a href="/cultura-mecd/areas-cultura/artesescenicas.html">Artes Escénicasy Música</a>       
+
+		LINEA: 80, COLUMNA: 212: <a href="/cultura-mecd/areas-cultura/artesescenicas/informacion-general.html" >Informaci&oacute;n ge ...       
+
+		LINEA: 80, COLUMNA: 331: <a href="/cultura-mecd/areas-cultura/artesescenicas/centros-artisticos.html" >Centros Art&iacute;sti ...       
+
+		LINEA: 80, COLUMNA: 448: <a href="/cultura-mecd/areas-cultura/artesescenicas/planes-generales-y-nuevos-estatutos.html" >Plane ...       
+
+		LINEA: 80, COLUMNA: 592: <a href="/cultura-mecd/areas-cultura/artesescenicas/consejo-estatal.html" >Consejo Estatal de las Ar ...       
+
+		LINEA: 80, COLUMNA: 748: <a href="/cultura-mecd/areas-cultura/artesescenicas/artes-escenicas-e-inclusion-social.html" >Artes...       
+
+		LINEA: 80, COLUMNA: 904: <a href="/cultura-mecd/areas-cultura/artesescenicas/festivales.html" >Festivales y Circuitos </a>       
+
+		LINEA: 80, COLUMNA: 1010: <a href="/cultura-mecd/areas-cultura/artesescenicas/premios.html" >Premios </a>       
+
+		LINEA: 80, COLUMNA: 1098: <a href="/cultura-mecd/areas-cultura/artesescenicas/venta-de-entradas.html" >Venta de entradas </a>       
+
+		LINEA: 80, COLUMNA: 1206: <a href="/cultura-mecd/areas-cultura/artesescenicas/quejas-y-sugerencias.html" >Quejas y sugerencias ...       
+
+		LINEA: 80, COLUMNA: 1320: <a href="/cultura-mecd/areas-cultura/artesescenicas/prensa-del-inaem.html" >Prensa del INAEM </a>       
+
+		LINEA: 80, COLUMNA: 1426: <a href="http://www.entradasinaem.es/Mecenazgo.aspx" rel="external" >Mecenazgo INAEM </a>       
+
+		LINEA: 80, COLUMNA: 1524: <a href="/cultura-mecd/areas-cultura/artesescenicas/cuentas-del-organismo.html" >Cuentas del Organis ...       
+
+		LINEA: 80, COLUMNA: 1640: <a href="/cultura-mecd/areas-cultura/artesescenicas/memorias-anuales.html" >Memorias Anuales </a>       
+
+		LINEA: 80, COLUMNA: 1853: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/sc/becas-ayudas-subvenciones.html">	Ayud ...       
+
+		LINEA: 82, COLUMNA: 24: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/sc/cartas-de-servicios.html">	Cartas de...       
+
+		LINEA: 84, COLUMNA: 24: <a rel="external" href="http://www.mecd.gob.es/legislacionconvenio/loadSearchAgreement.do?cache=init ...       
+
+		LINEA: 86, COLUMNA: 118: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/sc/empleo-publico.html">	Empleo público ...       
+
+		LINEA: 88, COLUMNA: 24: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/in/estadisticas.html">	Estadísticas 	< ...       
+
+		LINEA: 90, COLUMNA: 24: <a rel="external" href="http://www.mecd.gob.es/legislacionconvenio/loadSearchLegislation.do?cache=in ...       
+
+		LINEA: 92, COLUMNA: 118: <a rel="external" href="http://www.mecd.gob.es/suscripciones/loadAlertForm.do?cache=init&amp;layout= ...       
+
+		LINEA: 94, COLUMNA: 126: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/in/publicaciones.html">	Publicaciones 	 ...       
+
+		LINEA: 96, COLUMNA: 55: <a id="beli08" href="http://transparencia.gob.es" title="Enlace al portal de la transparencia" rel=" ...       
+
+		LINEA: 97, COLUMNA: 6: <a href="https://contrataciondelestado.es/wps/portal/!ut/p/b0/DccxCoAwDADAJwUcpAgO6u6qzRZslGCbhhL0-3 ...       
+
+		LINEA: 99, COLUMNA: 6: <a href="/cultura-mecd/areas-cultura/artesescenicas/contacte-con-artes-escenicas-y-musica.html">Cont ...       
+
+		LINEA: 100, COLUMNA: 78: <a rel="" href="/cultura-mecd/areas-cultura/artesescenicas/proteccion-datos.html">	Protección de d ...       
+
+		LINEA: 103, COLUMNA: 11: <a href="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/destacados/certificado-impto-sociedades ...       
+
+		LINEA: 104, COLUMNA: 11: <a href="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/beca-ciof-2018/beca-cioff-2018/beca-cio ...       
+
+		LINEA: 105, COLUMNA: 11: <a href="http://cdn.mcu.es/espectaculo/caligula/" rel="external"><img title="" alt="" src="/.imaging ...       
+
+		LINEA: 106, COLUMNA: 11: <a href="http://teatroclasico.mcu.es/2018/06/28/el-castigo-sin-venganza-2/" rel="external"><img titl ...       
+
+		LINEA: 107, COLUMNA: 11: <a href="http://cdn.mcu.es/espectaculo/elogio-de-la-pereza/" rel="external"><img title="" alt="" src ...       
+
+		LINEA: 108, COLUMNA: 11: <a href="http://cdn.mcu.es/espectaculo/el-mago/" rel="external"><img title="" alt="" src="/.imaging/ ...       
+
+		LINEA: 109, COLUMNA: 11: <a href="/cultura-mecd/areas-cultura/principal/novedades/general/2012/inclusion-empresas-de-cultura- ...       
+
+		LINEA: 109, COLUMNA: 833: <a rel="external" href="http://www.danza.es/">Danza.es</a>       
+
+		LINEA: 109, COLUMNA: 989: <a rel="external" href="http://teatro.es/es/inicio">Teatro.es</a>       
+
+		LINEA: 109, COLUMNA: 1152: <a rel="external" href="http://musicadanza.es/">Musicadanza.es</a>       
+
+		LINEA: 109, COLUMNA: 1316: <a rel="external" href="http://www.iberescena.org/">Iberescena</a>       
+
+		LINEA: 109, COLUMNA: 1537: <a id="bsld03" href="/cultura-mecd/areas-cultura/artesescenicas/destacados/platea.html" title="Progr ...       
+
+		LINEA: 109, COLUMNA: 1901: <a id="beld017" href="http://www.entradasinaem.es/" title="Enlace a Entradas INAEM" rel="external">< ...       
+
+		LINEA: 110, COLUMNA: 6: <a href="http://www.mecd.gob.es/suscripciones/loadAlertForm.do?cache=init&amp;layout=alertasArtesEsc ...       
+
+		LINEA: 111, COLUMNA: 45: <a href="http://www.auditorionacional.mcu.es" rel="external" title="Logo del Auditorio Nacional de M ...       
+
+		LINEA: 111, COLUMNA: 376: <a href="http://ocne.mcu.es/" rel="external" title="Logo de la Orquesta y Coro Nacionales de España ...       
+
+		LINEA: 111, COLUMNA: 705: <a href="http://jonde.mcu.es/" rel="external" title="Logo de la Joven Orquesta Nacional de España"> ...       
+
+		LINEA: 111, COLUMNA: 1034: <a href="http://www.cndm.mcu.es/" rel="external" title="Logo del Centro Nacional de Difusión Musica ...       
+
+		LINEA: 111, COLUMNA: 1382: <a href="http://teatrodelazarzuela.mcu.es" rel="external" title="Logo del Teatro de la Zarzuela"><im ...       
+
+		LINEA: 111, COLUMNA: 1682: <a href="http://cdn.mcu.es/" rel="external" title="Logo del Centro Dramático Nacional"><img alt="Lo ...       
+
+		LINEA: 111, COLUMNA: 1975: <a href="http://teatroclasico.mcu.es/" rel="external" title="Logo de la Compañía Nacional de Teatr ...       
+
+		LINEA: 111, COLUMNA: 2320: <a href="http://cndanza.mcu.es/" rel="external" title="Logo de la Compañía Nacional de Danza"><img ...       
+
+		LINEA: 111, COLUMNA: 2638: <a href="http://balletnacional.mcu.es/" rel="external" title="Logo del Ballet Nacional de España">< ...       
+
+		LINEA: 111, COLUMNA: 2953: <a href="http://musicadanza.es/" rel="external" title="Logo del Centro de Documentación de Música...       
+
+		LINEA: 111, COLUMNA: 3329: <a href="http://teatro.es/" rel="external" title="Logo del Centro de Documentación Teatral"><img al ...       
+
+		LINEA: 111, COLUMNA: 3658: <a href="http://cte.mcu.es/" rel="external" title="Logo del Centro de Tecnología del Espectáculo"> ...       
+
+		LINEA: 111, COLUMNA: 3987: <a href="http://museoteatro.mcu.es/" rel="external" title="Logo del Museo Nacional del Teatro"><img...       
+
+		LINEA: 111, COLUMNA: 4289: <a href="http://magalia.mcu.es" rel="external" title="Logo delPalacio de Magalia"><img alt="Logo d ...       
+
+		LINEA: 112, COLUMNA: 35: <a href="/cultura-mecd/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/destacados/mensaje-dia/201 ...       
+
+		LINEA: 112, COLUMNA: 373: <a href="" rel="external">Convocatoria del XXIII Premio de Composici&oacute;n del Colegio de Espa&nt ...       
+
+		LINEA: 112, COLUMNA: 610: <a href="/cultura-mecd/areas-cultura/artesescenicas/destacados/audiciones-euyo.html" rel="external"> ...       
+
+		LINEA: 112, COLUMNA: 899: <a href="/cultura-mecd/areas-cultura/artesescenicas/destacados/audiciones-mahler.html" rel="external ...       
+
+		LINEA: 112, COLUMNA: 1182: <a href="/cultura-mecd/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/destacados/mensaje-dia/201 ...       
+
+		LINEA: 112, COLUMNA: 1513: <a href="https://www.assitej.net/dia-mundial-assitej-2018/" rel="external">Mensaje del D&iacute;a Mu ...       
+
+		LINEA: 112, COLUMNA: 1819: <a href="http://www.unima.es/" rel="external">Mensaje del D&iacute;a Mundial de la Marioneta, 21 de...       
+
+		LINEA: 112, COLUMNA: 2071: <a href="/cultura-mecd/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/destacados/colegio_espana_ ...       
+
+		LINEA: 113, COLUMNA: 95: <a rel="external" href="https://twitter.com/INAEM_Cultura"><img src="/docroot/mecd/img/iconos/24/ico ...       
+
+		LINEA: 113, COLUMNA: 315: <a rel="external" href="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/versiones-logotipo-inaem ...       
+
+		LINEA: 115, COLUMNA: 126: <a rel="external" href="/dms/mecd/cultura-mecd/areas-cultura/artesescenicas/Manual_Uso_Logotipo_INAE ...       
+
+		LINEA: 117, COLUMNA: 242: <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" rel="external"><img src="/docroot/mecd/img/logo- ...       
+
+		LINEA: 117, COLUMNA: 493: <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.mecd.gob.es%2Fcultura-mecd%2Fareas-cultu ...       
+
+		LINEA: 117, COLUMNA: 743: <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.mecd.gob.es%2Fcultura-mec ...       
+
+		LINEA: 117, COLUMNA: 1021: <a rel="" href="/mapa-web-mecd/">Mapa web</a>       
+
+		LINEA: 117, COLUMNA: 1092: <a rel="" href="/aviso-legal-mcd/">Aviso legal</a>       
+
+		LINEA: 117, COLUMNA: 1166: <a rel="" href="/accesibilidad-mcd/">Accesibilidad</a>       
+
+		LINEA: 131, COLUMNA: 59: <a href="http://www.mecd.gob.es/aviso-legal-mecd/">política de cookies</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 102, COLUMNA: 46: <h1 class="oculto">Artes Escénicasy Música</h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 80, COLUMNA: 1778: <h2>Servicios al ciudadano Artes Escénicas y Música</h2>       
+
+		LINEA: 100, COLUMNA: 44: <h2></h2>       
+
+		LINEA: 109, COLUMNA: 761: <h2 class="subrayado">Portales dependientes del INAEM</h2>       
+
+		LINEA: 109, COLUMNA: 2177: <h2> </h2>       
+
+		LINEA: 113, COLUMNA: 40: <h2>Síguenos en</h2>       
+
+		LINEA: 113, COLUMNA: 269: <h2>Imagen institucional</h2>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.1 On Focus (A)  
+
+	REVISAR: 275: Loading web page may cause new window to open.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 79, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 55, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+
+
+		LINEA: 79, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 79, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 79, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 79, COLUMNA: 181: <input type="hidden" name="cx" value="006043202724820927248:lkl0norxzhk"/>       
+
+		LINEA: 79, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...       
+
+		LINEA: 79, COLUMNA: 463: <input type="submit" name="mec" id="boton_buscar" class="botonbuscar" value=""/>
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 79, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 79, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 79, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 79, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+	

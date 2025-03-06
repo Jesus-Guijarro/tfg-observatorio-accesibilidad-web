@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: http://www.mscbs.gob.es/ciudadanos/portada/home.htm
+FECHA EVALUACIÓN: 2018-11-28
+
+PROBLEMAS
+Empty button	  VECES ENCONTRADO: 4
+
+
+
+ALERTAS
+Redundant link	  VECES ENCONTRADO: 9
+Noscript element	  VECES ENCONTRADO: 1
+Orphaned form label	  VECES ENCONTRADO: 1
+Device dependent event handler	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 3
+Link to PDF document	  VECES ENCONTRADO: 2
+
+
+
+CARACTERISTICAS
+Linked image with alternative text	  VECES ENCONTRADO: 23
+Null or empty alternative text	  VECES ENCONTRADO: 19
+Element language	  VECES ENCONTRADO: 12
+
+
+

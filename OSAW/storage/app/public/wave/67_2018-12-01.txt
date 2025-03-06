@@ -1,0 +1,22 @@
+REPORTE PÁGINA WEB: https://www.upv.es/investigacion/estructuras/index-es.html
+FECHA EVALUACIÓN: 2018-12-01
+
+-PROBLEMAS-
+
+-ALERTAS-
+
+Redundant title text	  VECES ENCONTRADO: 14
+Device dependent event handler	  VECES ENCONTRADO: 5
+Noscript element	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Linked image with alternative text	  VECES ENCONTRADO: 7
+Alternative text	  VECES ENCONTRADO: 14
+Long description	  VECES ENCONTRADO: 2
+Element language	  VECES ENCONTRADO: 2
+
+
+-PROBLEMAS DE CONTRASTE-
+

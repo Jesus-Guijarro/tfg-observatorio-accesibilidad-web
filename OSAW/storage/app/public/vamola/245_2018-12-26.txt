@@ -1,0 +1,2584 @@
+REPORTE PÁGINA WEB: https://www.movistar.es/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta?filter=fusion
+FECHA EVALUACIÓN: 2018-12-26
+
+-PROBLEMAS CONOCIDOS-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 1: img element missing alt attribute.  
+
+	REPARAR:> Add an alt attribute to your img element.      
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR:> Add Alt text that identifies the purpose or function of the image.      
+
+		LINEA: 1950, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">(triangulo-accederResp)
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 204: input element, type of "radio", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+  
+
+	REVISAR: 213: input element, type of "text", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 1950, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(triangulo-accederResp)
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)  
+
+	REVISAR: 116: b (bold) element used.  
+
+	REPARAR:> Replace your b (bold) elements with em or strong.      
+
+		LINEA: 1950, COLUMNA: 6: <b>Fusión </b>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <b>Internet y Fijo</b>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <b>Móvil</b>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <b>Televisión</b>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <b>Tienda electrónica</b>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <b>Apps y servicios digitales</b>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <b>Consultas</b>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <b>Gestiones</b>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <b>Soporte técnico</b>(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR:> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+
+		LINEA: 1950, COLUMNA: 8: <span class="textoHeaderLink" style="		color: white;		margin-right: 10px;	 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 110: <span class="title-item-guia-contratacion">Tarifas m&oacute;viles</span>(triangulo-accederResp)    Fixed size example: color contrast exampleReal size example (12.12 points): color contrast exampleCSS rules for the element: 	Internal CSS:		 #GW_guiaContratacion.background2-guia-contratacion{		height:auto;	display:inline-block;	width:auto;	padding:5px;	margin-left:5px;	}		#GW_guiaContratacion.background0-guia-contratacion{		background:#f7f7f8;	width:auto;	height:auto;	padding-top:50px;	}		#GW_guiaContratacion.title-item-guia-contratacion{		vertical-align:middle;	font-size:16px;	color:#0086C3;	margin-left:5px;	}    
+
+		LINEA: 1950, COLUMNA: 1: <p class="BodyCajaCarac">Te ofrecemos distintos tipos de tarifas y modalidades, tanto de contrato co ...(triangulo-accederResp)    Fixed size example: color contrast exampleReal size example (18 points): color contrast exampleCSS rules for the element: 	Internal CSS:		 .BodyCajaCarac{		font-size:1.5em;	line-height:1.2em;	padding-right:4%;	color:#87888a;	padding:0px 50px 0px 20px;	}    
+
+		LINEA: 1950, COLUMNA: 1: <p class="BodyCajaCarac">Podr&aacute;s hablar y/o navegar con cualquiera de las dos y controlar tu g ...(triangulo-accederResp)    Fixed size example: color contrast exampleReal size example (18 points): color contrast exampleCSS rules for the element: 	Internal CSS:		 .BodyCajaCarac{		font-size:1.5em;	line-height:1.2em;	padding-right:4%;	color:#87888a;	padding:0px 50px 0px 20px;	}    
+
+		LINEA: 1950, COLUMNA: 1: <p class="BodyCajaCarac">El cambio es gratuito y pr&aacute;cticamente inmediato, con tarifas mucho m ...(triangulo-accederResp)    Fixed size example: color contrast exampleReal size example (18 points): color contrast exampleCSS rules for the element: 	Internal CSS:		 .BodyCajaCarac{		font-size:1.5em;	line-height:1.2em;	padding-right:4%;	color:#87888a;	padding:0px 50px 0px 20px;	}    
+
+		LINEA: 1950, COLUMNA: 1: <p class="BodyCajaCarac">En el paso de tarjeta prepago a contrato, no s&oacute;lo conservar&aacute;s ...(triangulo-accederResp)    Fixed size example: color contrast exampleReal size example (18 points): color contrast exampleCSS rules for the element: 	Internal CSS:		 .BodyCajaCarac{		font-size:1.5em;	line-height:1.2em;	padding-right:4%;	color:#87888a;	padding:0px 50px 0px 20px;	}    2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 174: Anchor contains no text.  
+
+	REPARAR:> Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.      
+
+		LINEA: 1950, COLUMNA: 30: <a href="#" class=" white icon-buscar" onclick="javaScript:filtroXSS();"><img class="hidden" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a class="link-logo-menu" href="/" target="_self" style="">	<div id="logo-respo-M" class="ic ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 10: <a href="javascript:void(0);" data-toggle="collapse" data-target="#miMovistar"><span id="iconConecta ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#segmentos"><span class="icon icon ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#buscador"> <span class="icon icon ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#desplegable"> <span class="icon i ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="/mimovistar-cliente/publico/acceso/privado/home" id="usernamemovile" target="_self" title=" ...(triangulo-accederResp)
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)  
+
+	REVISAR: 49: Document has invalid language code.  
+
+	REPARAR:> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
+
+		LINEA: 5, COLUMNA: 1: <htmlclass="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es_ES" lang="es_ES">	<!--[if l ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR:> Add text to the label element.      
+
+		LINEA: 1950, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)  
+
+	REVISAR: 185: id attribute is not unique.  
+
+	REPARAR:> Modify the id attribute value so it is unique.      
+
+		LINEA: 1950, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 1950, COLUMNA: 5: <a onclick="logoutConvergente();" style="display:none" id="logoutURLSaludo"></a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/autonomos/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','autonomos',4,'/',null,null) ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','empresas',4,'/',null,null);" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/grandes-empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','grandes-empresas',4, ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="https://www.movistar.es/particulares/atencion-cliente/escribenos/?pid=cabecera_enlace_escri ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a href="#" lang="es_ES">Castellano</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/ca/particulars/mobil/tarifas-moviles/tarifas-contrato-tarjeta/?lng=ca_ES&amp;d=idiomasResp ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/gl/particulares/mobil/tarifas-moviles/tarifas-contrato-tarjeta/?lng=gl_ES&amp;d=idiomasRes ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 30: <a href="#" class=" white icon-buscar" onclick="javaScript:filtroXSS();"><img class="hidden" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 10: <a href="javascript:void(0);" data-toggle="collapse" data-target="#miMovistar"><span id="iconConecta ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#segmentos"><span class="icon icon ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#buscador"> <span class="icon icon ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#desplegable"> <span class="icon i ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Televisión">Televisión ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Tienda">Tienda<span c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Atención al cliente">Aten ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a id="accederdesktop" data-toggle="collapse" data-target="#miMovistar">Acceso Mi Movistar<span clas ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 34: <a id="usernamedesktop" data-toggle="collapse" data-target="#miMovistar"></a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 10: <a href="#" class="c_a_desconectar_desk" id="a_desconectar" onclick="document.getElementById('logout ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 27: <a href="/particulares/movil/tarifas-moviles/" class="item ">Portada</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta/" class="item active">Tarifas...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/particulares/movil/tarifas-moviles/tengo-movil/" class="item ">Servicios para tu móvil</a ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 68: <a itemprop="url" href="http://www.movistar.es/particulares/"><span itemprop="title">Particulares</s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 68: <a itemprop="url" href="https://www.movistar.es/particulares/movil/"><span itemprop="title">Movil</s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 68: <a itemprop="url" href="https://www.movistar.es/particulares/movil/tarifas-moviles/"><span itemprop= ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 68: <a itemprop="url" href="https://www.movistar.es/particulares/movil/tarifas-moviles/tarifas-contrato- ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a class="GW_linkOverBox" href="/particulares/movil/tarifas-moviles/tarifas-internacionales/?lng=es_ ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 34: <a class="GW_linkOverBox" href="/particulares/movil/tarifas-moviles/tarifas-internacionales/?lng=es_ ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <a href="/particulares/movil/tarifas-moviles/mejor-tarifa-movil/"><div class="col-xs-12 padding0 b ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a title="Extra Datos" class="fill-div" href="/particulares/movil/tarifas-moviles/mas-megas">&nbsp;< ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a title="Multisim" class="fill-div" href="/particulares/movil/servicios/multisim">&nbsp;</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a class="fill-div" title="Tarifas internacionales" href="/particulares/movil/llamadas-internacional ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a class="fill-div" title="Tarifas de roaming" href="/particulares/movil/viajar-al-extranjero-roamin ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 129: <a class="sc-telefono num900" href="">&nbsp;</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a itemprop="description" id="call-free-header" href="javascript:;" class="GW_linkOverBox sc-btn-c2c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 49: <a href="http://trustivity.es/movistar.es-opiniones"> <!-- Trustivity -- ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 14: <a href="/particulares/movil/tarifas-moviles/">Tarifas móvil y teléfonos móviles</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="https://www.facebook.com/movistar.es" target="_blank" title="Facebook"><span class="icon ic ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="https://twitter.com/movistar_es" target="_blank" title="Twitter"><span class="icon icon-twi ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="http://www.youtube.com/movistar" target="_blank" title="Youtube"><span class="icon icon-you ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="https://plus.google.com/+movistarespana/" target="_blank" title="Google +"><span class="ico ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="http://comunidad.movistar.es/" target="_blank" title="Comunidad Movistar"><span class="icon ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="http://www.telefonica.es/" target="_blank">Telefónica España</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=ES" target= ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="http://comunicacion.movistarplus.es/" target="_blank">Comunicación</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="https://dialogando.com.es/" target="_blank" title="Dialogando" alt="Dialo ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://www.confianzaonline.org/empresas/movistar.htm" target="_blank" tit ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="https://www.telefonica.es/es/acerca_de_telefonica/calidad/calidad-servici ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://www.msssi.gob.es/campannas/campanas13/haySalida.htm" target="_blan ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="Fundación Telefónica" href="http://www.fundaciontelefonica.com" target="_blank" title="F ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://www.tuenti.es" target="_blank" title="Tuenti" alt="Tuenti" rel="no ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://www.movistar.es/particulares/movil/servicios/app-mimovistar?pid=ic ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://likes.movistar.es" target="_blank" title="Movistar Likes" alt="Mov ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 22: <a class="link-logo-pie" href="http://www.telefonica.es/" target="_blank" title="Telefónica" ><span ...(triangulo-accederResp)
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 1950, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6:
+
+ 
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(triangulo-accederResp)
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 1950, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6:
+
+ 
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(triangulo-accederResp)
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 1950, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6:
+
+ 
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />(triangulo-accederResp)
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+ 
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6:
+
+ 
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...(triangulo-accederResp)
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 1950, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 1950, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 125: input element label, type of "radio", is not positioned close to control.
+
+ 
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 1950, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 1950, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6:
+
+ 
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(triangulo-accederResp)
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 1950, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 195: <input type="radio" style="height: 25px;width: 25px;margin: 0 5px 0 0;vertical-align: bottom;" />(triangulo-accederResp)
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 12, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 107, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 124, COLUMNA: 1: <script src="/estaticos/js/checkout.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 64: <script src="/estaticos/GridResp/js/googlejsapi.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 139: <script src="/estaticos/FusionProcess/configTV/js/configTvManager.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 232: <script src="/estaticos/GridResp/js/includeGrid.js"></script>
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/logout.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <script> 	function getCookieL(cname) {		var name = cname + "=";		var dec ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {	var tipoUsuarioLogadoHidde ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script>$(window).load(function () {var nameuser='';var urlhomeprivada = '';		 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 3: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 127: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 260: <script src="/estaticos/Componentes/plantilla/componentsApp.js" type="text/javascript"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 372: <script src="/estaticos/Componentes/plantilla/dpi.js" type="text/javascript"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 95: <script type="text/javascript"src="/estaticos/Catalogos/js/genericTariffListGrid.js"></s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <script type="text/javascript"src="/estaticos/Catalogos/js/customTarifasMoviles_test.js"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <script type="text/javascript"src="/estaticos/PagoConTarjeta/js/funciones_PT.js"></scrip ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script>$(document).ready(function() {var catalanStrs = {}; ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 12: <script type="text/javascript"src="/estaticos/PagoConTarjeta/js/BuyProcStorage.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 12: <script type="text/javascript"src="/estaticos/PagoConTarjeta/js/buyProcessInfo.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 12: <script type="text/javascript">$(document).ready(function() {$(".GW_tarifaAddPhone").hide(); ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 10: <script type="text/javascript" src="/estaticos/Componentes/biblioteca/stickyBarFichasTI/js/stickyBar ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 23: <script>s.products = "tarifas-voz-movil;distributiva-tarifas-moviles";</script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 47: <script type="text/javascript" src="/estaticos/js/include-sc.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 136: <script>$(document).ready(function(){$('#c2c-sc').detach().appendTo('.cabecera_producto' ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 130: <script type='text/javascript'>$.ajax({dataType: "jsonp",url: "htt ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 1950, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6:
+
+ 
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 1950, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6:
+
+ 
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(triangulo-accederResp)
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 12, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 107, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 124, COLUMNA: 1: <script src="/estaticos/js/checkout.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 64: <script src="/estaticos/GridResp/js/googlejsapi.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 139: <script src="/estaticos/FusionProcess/configTV/js/configTvManager.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 232: <script src="/estaticos/GridResp/js/includeGrid.js"></script>
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/logout.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <script> 	function getCookieL(cname) {		var name = cname + "=";		var dec ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {	var tipoUsuarioLogadoHidde ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script>$(window).load(function () {var nameuser='';var urlhomeprivada = '';		 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 3: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 127: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 260: <script src="/estaticos/Componentes/plantilla/componentsApp.js" type="text/javascript"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 372: <script src="/estaticos/Componentes/plantilla/dpi.js" type="text/javascript"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 95: <script type="text/javascript"src="/estaticos/Catalogos/js/genericTariffListGrid.js"></s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <script type="text/javascript"src="/estaticos/Catalogos/js/customTarifasMoviles_test.js"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <script type="text/javascript"src="/estaticos/PagoConTarjeta/js/funciones_PT.js"></scrip ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script>$(document).ready(function() {var catalanStrs = {}; ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 12: <script type="text/javascript"src="/estaticos/PagoConTarjeta/js/BuyProcStorage.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 12: <script type="text/javascript"src="/estaticos/PagoConTarjeta/js/buyProcessInfo.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 12: <script type="text/javascript">$(document).ready(function() {$(".GW_tarifaAddPhone").hide(); ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 10: <script type="text/javascript" src="/estaticos/Componentes/biblioteca/stickyBarFichasTI/js/stickyBar ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 23: <script>s.products = "tarifas-voz-movil;distributiva-tarifas-moviles";</script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 47: <script type="text/javascript" src="/estaticos/js/include-sc.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 136: <script>$(document).ready(function(){$('#c2c-sc').detach().appendTo('.cabecera_producto' ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 130: <script type='text/javascript'>$.ajax({dataType: "jsonp",url: "htt ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>(triangulo-accederResp)
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 12, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 107, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 124, COLUMNA: 1: <script src="/estaticos/js/checkout.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 64: <script src="/estaticos/GridResp/js/googlejsapi.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 139: <script src="/estaticos/FusionProcess/configTV/js/configTvManager.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 232: <script src="/estaticos/GridResp/js/includeGrid.js"></script>
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/logout.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <script> 	function getCookieL(cname) {		var name = cname + "=";		var dec ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {	var tipoUsuarioLogadoHidde ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 2: <script>$(window).load(function () {var nameuser='';var urlhomeprivada = '';		 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 3: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 127: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 260: <script src="/estaticos/Componentes/plantilla/componentsApp.js" type="text/javascript"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 372: <script src="/estaticos/Componentes/plantilla/dpi.js" type="text/javascript"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 95: <script type="text/javascript"src="/estaticos/Catalogos/js/genericTariffListGrid.js"></s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <script type="text/javascript"src="/estaticos/Catalogos/js/customTarifasMoviles_test.js"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <script type="text/javascript"src="/estaticos/PagoConTarjeta/js/funciones_PT.js"></scrip ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script>$(document).ready(function() {var catalanStrs = {}; ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 12: <script type="text/javascript"src="/estaticos/PagoConTarjeta/js/BuyProcStorage.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 12: <script type="text/javascript"src="/estaticos/PagoConTarjeta/js/buyProcessInfo.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 12: <script type="text/javascript">$(document).ready(function() {$(".GW_tarifaAddPhone").hide(); ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 10: <script type="text/javascript" src="/estaticos/Componentes/biblioteca/stickyBarFichasTI/js/stickyBar ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 23: <script>s.products = "tarifas-voz-movil;distributiva-tarifas-moviles";</script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 47: <script type="text/javascript" src="/estaticos/js/include-sc.js"></script>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 136: <script>$(document).ready(function(){$('#c2c-sc').detach().appendTo('.cabecera_producto' ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 130: <script type='text/javascript'>$.ajax({dataType: "jsonp",url: "htt ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>(triangulo-accederResp)
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 39, COLUMNA: 2: <title>Ofertas Tarifas Contrato,Tarjeta. 900104263- Movistar</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 1950, COLUMNA: 2: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/autonomos/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','autonomos',4,'/',null,null) ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','empresas',4,'/',null,null);" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/grandes-empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','grandes-empresas',4, ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="http://comunidad.movistar.es/" target="_self" title="Comunidad">		 <span class= ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="https://www.movistar.es/particulares/atencion-cliente/escribenos/?pid=cabecera_enlace_escri ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a href="#" lang="es_ES">Castellano</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/ca/particulars/mobil/tarifas-moviles/tarifas-contrato-tarjeta/?lng=ca_ES&amp;d=idiomasResp ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/gl/particulares/mobil/tarifas-moviles/tarifas-contrato-tarjeta/?lng=gl_ES&amp;d=idiomasRes ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 30: <a href="#" class=" white icon-buscar" onclick="javaScript:filtroXSS();"><img class="hidden" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a class="link-logo-menu" href="/" target="_self" style="">	<div id="logo-respo-M" class="ic ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 10: <a href="javascript:void(0);" data-toggle="collapse" data-target="#miMovistar"><span id="iconConecta ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#segmentos"><span class="icon icon ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#buscador"> <span class="icon icon ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#desplegable"> <span class="icon i ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 3: <a class="link-logo-menu" href="/" target="_self"><span>Logo</span></a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Televisión">Televisión ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/futbol" target="_self" title="Todo el Fútbol ">	 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus" target="_self" title="Destacados">	<span c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="http://originales.movistarplus.es" target="_self" title="Originales Movistar+" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="http://www.movistarplus.es/cero" target="_self" title="#0">	<span clas ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/estrenos-cine" target="_self" title="Cine"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/series" target="_self" title="Series ">	<sp ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="http://www.movistarplus.es/vamos?_ga=2.3188595.252901027.1537768252-1643678454 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/deportes" target="_self" title="Deportes">	 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/infantil" target="_self" title="Infantil "> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/documentales" target="_self" title="Documentales "> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/programas" target="_self" title="Programas ">	 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/toros" target="_self" title="Toros ">	<span ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="http://www.movistarplus.es/programacion-tv" target="_self" title="Guía TV"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/calendarios-deportivos" target="_self" title="Calen ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/television/movistar-imagenio/" target="_self" title="Oferta TV"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/funcionalidades" target="_self" title="Funcionalida ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/guia-rapida" target="_self" title="Guía rápida"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/Aura/ " target="_self" title="Aura">	<span class="icon-c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/contenidos/yomvi" target="_self" title="Qué es "> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/contenidos/yomvi?origen=activar" target="_self" tit ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="http://ver.movistarplus.es/" target="_self" title="Ver ahora ">	<span...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="http://www.movistar.es/particulares/movistar-junior" target="_self" title="Mov ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="https://www.movistar.es/Privada/DesafioMC/?xxxurixxx=https://www.movistar.es/p ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/autonomos/fusion/paquete-movistar-fusion/bares" target="_self" title="TV para ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/television/otros-canales-tv" target="_self" title="Canales a la...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/netflix" target="_self" title="Fusión con Netflix">	<sp ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Tienda">Tienda<span c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/oferta-combinada/fusion/ " target="_self" title="Oferta Fusión" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/tienda/comparador-tarifas-fusion" target="_self" title="Tarifas...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta?filter=fusion" ta ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/solucioneswifi" target="_self" title="Dispositivos y servicios"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/internet/adsl-fibra-optica/ " target="_self" title="Oferta Inter ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/tienda/comparador-tarifas-internet/?filter=baf" target="_self" t ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/internet/adsl-fibra-optica/fibra-optica/ " target="_self" title= ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles/hgu" target="_self" title="Router Smart WiFi">		 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/fijo/ " target="_self" title="Tarifas Fijo y servicios"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/ " target="_self" title="Oferta Móvil"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta/" target="_self"...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles?prefilter99=smartphones" target="_self"  title=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tengo-movil/ " target="_self" title="Servi ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/viajar-al-extranjero-roaming/" target="_self" title="Movis ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/llamadas-internacionales/" target="_self" title="Llamar al ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/television/movistar-imagenio/ " target="_self" title="Oferta Tel ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/television/tv-futbol/ " target="_self" title="FÚTBOL">	 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/television/seleccion-deportes " target="_self" title="DEPORTES " ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/television/motor" target="_self" title="MOTOR">	<span cl ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/television/cine " target="_self" title="CINE">	<span cla ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/television/movistar-imagenio/movistar-series/ " target="_self" t ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/netflix" target="_self" title="Fusión con Netflix">	<sp ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="https://www.movistar.es/Privada/DesafioMC/?xxxurixxx=https://www.movistar.es/p ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles?prefilter99=ofertas" target="_self" title="Ofertas ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles?prefilter99=smartphones" target="_self"  title=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles/?prefilter99=equipamiento_hogar" target="_self" ti ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/tienda/servicios-digitales/" target="_self" title="Todos los ser ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="http://www.movistar.es/appmovistares" target="_self" title="App Mi Movistar"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/servicios/app-smartwifi/" target="_self" title="App Smart...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/servicios/nubico-premium" target="_self" title="Nubico"> ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/conexion-segura" target="_self" title="Conexión Segura">		 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/tienda/servicios-digitales/cloud" target="_self" title="Movistar ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/tienda/servicios-digitales/protege" target="_self" title="Movist ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movistar-car" target="_self" title="Movistar Car">	<span ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Atención al cliente">Aten ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="//atencionalcliente.movistar.es" target="_self" title="Resolver dudas">		 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="https://atencionalcliente.movistar.es?f=320" target="_self" title="Entender mi ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/contratos" target="_self" title="Contratos de Movistar">	<span class= ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/atencion-cliente/buscador-de-tiendas/" target="_self" title="Loc ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/viajar-al-extranjero-roaming/" target="_self" title="Roami ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="https://atencionalcliente.movistar.es/pregunta-frecuente/fibra-optica-300-mbps ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="https://atencionalcliente.movistar.es/?f=584,166,583,571,677" target="_self" h ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/atencion-cliente/pedidos" target="_self" title="Seguimiento de p ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" tar ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta/ " target="_self" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/Privada/DesafioMC/?xxxurixxx=/particulares/Aplicaciones/Orquestador/procesoCo ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/Privada/DesafioMC/?xxxurixxx=/particulares/Aplicaciones/Orquestador/procesoCo ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/estaticos/m/es/webApp/MiMovistarApp_inteligente.html?origen=particulares&cont ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/soporte-tecnico/ " target="_self" title="Averías">	<spa ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/test-de-velocidad" target="_self" title="Test de velocidad">		 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/internet/adsl-fibra-optica/clientes/configuracion-routers-portal ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="https://www.movistar.es/particulares/atencion-cliente/telefonia-movil/catalogo ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7:
+
+ 
+
+		LINEA: 1950, COLUMNA: 7: <a class="link" href="/particulares/solucioneswifi" target="_self" title="Mejorar mi wifi">	 ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/ver-mi-factura/ " target="_self" c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/no-se-si-estoy-registrado-en-mi-mo ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 7: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/modificar-datos-personales/" targe ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a id="accederdesktop" data-toggle="collapse" data-target="#miMovistar">Acceso Mi Movistar<span clas ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 8: <a target="_top" id="enlace_cesta" href="#"><span class="white icon-compra">&nbsp;</span></a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://sitioseguro.movistarplus.es/zonacliente/misdatospersonales.html" target="_self" cla ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 10: <a href="javascript:getUrlHome();" class="c_a_desconectar_desk" id="a_acceso_satelites" target="_sel ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self" c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones" target=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self" c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones " target= ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas " target="_ ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self" c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones" target=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 10: <a href="#" class="c_a_desconectar_desk" id="a_desconectar" onclick="document.getElementById('logout ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 27: <a href="/particulares/movil/tarifas-moviles/" class="item ">Portada</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/particulares/movil/moviles?prefilter99=smartphones" target="_self" class="item ">Móviles< ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta/" class="item active">Tarifas...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <a href="/particulares/movil/tarifas-moviles/tengo-movil/" class="item ">Servicios para tu móvil</a ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 68: <a itemprop="url" href="http://www.movistar.es/particulares/"><span itemprop="title">Particulares</s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 68: <a itemprop="url" href="https://www.movistar.es/particulares/movil/"><span itemprop="title">Movil</s ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 68: <a itemprop="url" href="https://www.movistar.es/particulares/movil/tarifas-moviles/"><span itemprop= ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 68: <a itemprop="url" href="https://www.movistar.es/particulares/movil/tarifas-moviles/tarifas-contrato- ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a class="GW_linkOverBox" href="/particulares/movil/tarifas-moviles/tarifas-internacionales/?lng=es_ ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 34: <a class="GW_linkOverBox" href="/particulares/movil/tarifas-moviles/tarifas-internacionales/?lng=es_ ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <a href="/particulares/movil/tarifas-moviles/mejor-tarifa-movil/"><div class="col-xs-12 padding0 b ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a title="Extra Datos" class="fill-div" href="/particulares/movil/tarifas-moviles/mas-megas">&nbsp;< ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a title="Multisim" class="fill-div" href="/particulares/movil/servicios/multisim">&nbsp;</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a class="fill-div" title="Tarifas internacionales" href="/particulares/movil/llamadas-internacional ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 33: <a class="fill-div" title="Tarifas de roaming" href="/particulares/movil/viajar-al-extranjero-roamin ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 129: <a class="sc-telefono num900" href="">&nbsp;</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a itemprop="description" id="call-free-header" href="javascript:;" class="GW_linkOverBox sc-btn-c2c ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 49: <a href="http://trustivity.es/movistar.es-opiniones"> <!-- Trustivity -- ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 14: <a href="/particulares/movil/tarifas-moviles/">Tarifas móvil y teléfonos móviles</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="https://www.facebook.com/movistar.es" target="_blank" title="Facebook"><span class="icon ic ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="https://twitter.com/movistar_es" target="_blank" title="Twitter"><span class="icon icon-twi ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="http://www.youtube.com/movistar" target="_blank" title="Youtube"><span class="icon icon-you ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="https://plus.google.com/+movistarespana/" target="_blank" title="Google +"><span class="ico ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="/particulares/instagram" target="_self" title="Instagram"><span class="icon icon-instagram" ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 11: <a href="http://comunidad.movistar.es/" target="_blank" title="Comunidad Movistar"><span class="icon ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="/particulares/aviso-legal/" target="_self" title="Aviso legal">Aviso legal</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="/particulares/accesibilidad/" target="_self">Accesibilidad</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="http://www.telefonica.es/" target="_blank">Telefónica España</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="/contratos" target="_self">Condiciones legales</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="/empresas/centro-de-privacidad/?optionSelected=privacidadEmpresas" target="_self">Privacida ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=ES" target= ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="http://comunicacion.movistarplus.es/" target="_blank">Comunicación</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="/GaliciaPDBL" target="_self">Fondos públicos</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 21: <a href="#" target="_self" class="optanon-toggle-display">Cookies</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 34: <a href="/particulares/centro-de-seguridad/" target="_self">Seguridad</a>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="https://dialogando.com.es/" target="_blank" title="Dialogando" alt="Dialo ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://www.confianzaonline.org/empresas/movistar.htm" target="_blank" tit ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="https://www.telefonica.es/es/acerca_de_telefonica/calidad/calidad-servici ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://www.msssi.gob.es/campannas/campanas13/haySalida.htm" target="_blan ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="Fundación Telefónica" href="http://www.fundaciontelefonica.com" target="_blank" title="F ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://www.tuenti.es" target="_blank" title="Tuenti" alt="Tuenti" rel="no ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://www.movistar.es/particulares/movil/servicios/app-mimovistar?pid=ic ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 6: <a class="hidden-xs" href="http://likes.movistar.es" target="_blank" title="Movistar Likes" alt="Mov ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 22: <a class="link-logo-pie" href="http://www.telefonica.es/" target="_blank" title="Telefónica" ><span ...(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 1950, COLUMNA: 1: <h1 class="bold" tabindex="-1">Tarifas M&oacute;viles</h1>(triangulo-accederResp)
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 1950, COLUMNA: 1: <h2 style="margin-top:12px;" class="TitSec20pxMargin">Tanto si eres de contrato o de tar ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h2 title="Tarifas de m&oacute;vil" class="GW_tarifasTitle margin0"><span style="display: inline-fle ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h2 class="GW_titleSection GW_separatorTop">Tambi&eacute;n te puede interesar...</h2>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h2 class="GW_titleSection GW_separatorTop">Ventajas de nuestras tarifas de M&oacute;vil</h2>(triangulo-accederResp)
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 1950, COLUMNA: 1: <h3 class="h3-white">Extra Datos</h3>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h3 class="h3-white">MultiSIM</h3>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h3 class="h3-white">Tarifas internacionales</h3>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h3 class="h3-white">Tarifas de roaming</h3>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h3 class="TitSec4">Se adaptan a tus necesidades</h3>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h3 class="TitSec4">Tarjeta prepago o contrato</h3>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h3 class="TitSec4">Y si te pasas a contrato...</h3>(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <h3 class="TitSec4">&iexcl;Con el mismo n&uacute;mero de tel&eacute;fono!</h3>(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 1950, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 1950, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+ 
+
+		LINEA: 1950, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(triangulo-accederResp)
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 1950, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 1950, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 1950, COLUMNA: 3: <input id="urlLogoutCOLX" type="hidden" value="https://www.movistar.es/portal/site/COL10/template.CO ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 3: <input id="urlLogoutCCLI" type="hidden" value="https://www.movistar.es/mimovistar-cliente/publico/de ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 3: <input id="urlHomeCCLI" type="hidden" value="https://www.movistar.es/mimovistar-cliente/publico/acce ...(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 5: <input id="tipoUsuarioLogadoHidden" type="hidden" value="NOLOGADO" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <input id="hiddenPageName" type="hidden" value="Particulares:movil:tarifas-moviles:tarifas">(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <input type="hidden" name="vgnextoid" value="" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <input type="hidden" name="action" value="resultadosBusqueda">(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <input type="hidden" name="controlBusqueda" value="avanzada">(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <input type="hidden" name="num_resultados" value="10">(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 4: <input type="hidden" name="segmento" value="0">(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <input id="timehide" type="hidden" value="10000" />(triangulo-accederResp)
+
+
+
+		LINEA: 1950, COLUMNA: 1: <input id="timehold" type="hidden" value="400" />(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 1950, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 1950, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...(triangulo-accederResp)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 1950, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...(triangulo-accederResp)
+
+

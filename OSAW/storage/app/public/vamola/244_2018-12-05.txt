@@ -1,0 +1,2420 @@
+REPORTE PÁGINA WEB: https://www.movistar.es/particulares/ofertas-movistar
+FECHA EVALUACIÓN: 2018-12-05
+
+-PROBLEMAS CONOCIDOS-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 1: img element missing alt attribute.  
+
+	REPARAR:> Add an alt attribute to your img element.      
+
+		LINEA: 718, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />
+
+  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR:> Add Alt text that identifies the purpose or function of the image.      
+
+		LINEA: 1800, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 213: input element, type of "text", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 715, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)  
+
+	REVISAR: 116: b (bold) element used.  
+
+	REPARAR:> Replace your b (bold) elements with em or strong.      
+
+		LINEA: 1253, COLUMNA: 6: <b>Fusión </b>
+
+
+
+		LINEA: 1298, COLUMNA: 6: <b>Internet y Fijo</b>
+
+
+
+		LINEA: 1350, COLUMNA: 6: <b>Móvil</b>
+
+
+
+		LINEA: 1410, COLUMNA: 6: <b>Televisión</b>
+
+
+
+		LINEA: 1476, COLUMNA: 6: <b>Tienda electrónica</b>
+
+
+
+		LINEA: 1515, COLUMNA: 6: <b>Apps y servicios digitales</b>
+
+
+
+		LINEA: 1604, COLUMNA: 6: <b>Consultas</b>
+
+
+
+		LINEA: 1663, COLUMNA: 6: <b>Gestiones</b>
+
+
+
+		LINEA: 1729, COLUMNA: 6: <b>Soporte técnico</b>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR:> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+
+		LINEA: 629, COLUMNA: 8: <span class="textoHeaderLink" style="		color: white;		margin-right: 10px;	 ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 174: Anchor contains no text.  
+
+	REPARAR:> Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.      
+
+		LINEA: 718, COLUMNA: 30: <a href="#" class=" white icon-buscar" onclick="javaScript:filtroXSS();"><img class="hidden" ...
+
+
+
+		LINEA: 801, COLUMNA: 5: <a class="link-logo-menu" href="/" target="_self" style="">	<div id="logo-respo-M" class="ic ...
+
+
+
+		LINEA: 810, COLUMNA: 10: <a href="javascript:void(0);" data-toggle="collapse" data-target="#miMovistar"><span id="iconConecta ...
+
+
+
+		LINEA: 813, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#segmentos"><span class="icon icon ...
+
+
+
+		LINEA: 816, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#buscador"> <span class="icon icon ...
+
+
+
+		LINEA: 819, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#desplegable"> <span class="icon i ...
+
+
+
+		LINEA: 1933, COLUMNA: 8: <a href="/mimovistar-cliente/publico/acceso/privado/home" id="usernamemovile" target="_self" title=" ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)  
+
+	REVISAR: 49: Document has invalid language code.  
+
+	REPARAR:> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
+
+		LINEA: 5, COLUMNA: 1: <htmlclass="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es_ES" lang="es_ES">	<!--[if l ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR:> Add text to the label element.      
+
+		LINEA: 715, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)  
+
+	REVISAR: 185: id attribute is not unique.  
+
+	REPARAR:> Modify the id attribute value so it is unique.      
+
+		LINEA: 1929, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 2: Image has suspicious Alt text (same as filename).
+
+ 
+
+		LINEA: 2349, COLUMNA: 33: <img src="" onerror='IC.findPlaceholdersCtz()' alt="" />
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 224, COLUMNA: 5: <a onclick="logoutConvergente();" style="display:none" id="logoutURLSaludo"></a>
+
+
+
+		LINEA: 581, COLUMNA: 2: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...
+
+
+
+		LINEA: 586, COLUMNA: 4: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...
+
+
+
+		LINEA: 591, COLUMNA: 5: <a href="/autonomos/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','autonomos',4,'/',null,null) ...
+
+
+
+		LINEA: 596, COLUMNA: 5: <a href="/empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','empresas',4,'/',null,null);" ...
+
+
+
+		LINEA: 601, COLUMNA: 5: <a href="/grandes-empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','grandes-empresas',4, ...
+
+
+
+		LINEA: 639, COLUMNA: 5: <a href="https://www.movistar.es/particulares/atencion-cliente/escribenos/?pid=cabecera_enlace_escri ...
+
+
+
+		LINEA: 675, COLUMNA: 4: <a href="#" lang="es_ES">Castellano</a>
+
+
+
+		LINEA: 680, COLUMNA: 5: <a href="/ca/particulars/ofertas-movistar/?lng=ca_ES&amp;d=idiomasRespon" lang="ca_ES">CatalÃ¡n</a ...
+
+
+
+		LINEA: 686, COLUMNA: 5: <a href="/gl/particulares/ofertas-movistar/?lng=gl_ES&amp;d=idiomasRespon" lang="gl_ES">Gallego</a>
+
+
+
+		LINEA: 718, COLUMNA: 30: <a href="#" class=" white icon-buscar" onclick="javaScript:filtroXSS();"><img class="hidden" ...
+
+
+
+		LINEA: 810, COLUMNA: 10: <a href="javascript:void(0);" data-toggle="collapse" data-target="#miMovistar"><span id="iconConecta ...
+
+
+
+		LINEA: 813, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#segmentos"><span class="icon icon ...
+
+
+
+		LINEA: 816, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#buscador"> <span class="icon icon ...
+
+
+
+		LINEA: 819, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#desplegable"> <span class="icon i ...
+
+
+
+		LINEA: 935, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Televisión">Televisión ...
+
+
+
+		LINEA: 1235, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Tienda">Tienda<span c ...
+
+
+
+		LINEA: 1586, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Atención al cliente">Aten ...
+
+
+
+		LINEA: 1855, COLUMNA: 5: <a id="accederdesktop" data-toggle="collapse" data-target="#miMovistar">Acceso Mi Movistar<span clas ...
+
+
+
+		LINEA: 1858, COLUMNA: 34: <a id="usernamedesktop" data-toggle="collapse" data-target="#miMovistar"></a>
+
+
+
+		LINEA: 2043, COLUMNA: 10: <a href="#" class="c_a_desconectar_desk" id="a_desconectar" onclick="document.getElementById('logout ...
+
+
+
+		LINEA: 2473, COLUMNA: 25: <a title="Tel&eacute;fono Atenci&oacute;n al cliente" target="_blank" href="https://atencionalclient ...
+
+
+
+		LINEA: 2677, COLUMNA: 49: <a href="http://trustivity.es/movistar.es-opiniones"> <script src="//aja ...
+
+
+
+		LINEA: 2840, COLUMNA: 11: <a href="https://www.facebook.com/movistar.es" target="_blank" title="Facebook"><span class="icon ic ...
+
+
+
+		LINEA: 2844, COLUMNA: 11: <a href="https://twitter.com/movistar_es" target="_blank" title="Twitter"><span class="icon icon-twi ...
+
+
+
+		LINEA: 2848, COLUMNA: 11: <a href="http://www.youtube.com/movistar" target="_blank" title="Youtube"><span class="icon icon-you ...
+
+
+
+		LINEA: 2852, COLUMNA: 11: <a href="https://plus.google.com/+movistarespana/" target="_blank" title="Google +"><span class="ico ...
+
+
+
+		LINEA: 2860, COLUMNA: 11: <a href="http://comunidad.movistar.es/" target="_blank" title="Comunidad Movistar"><span class="icon ...
+
+
+
+		LINEA: 2897, COLUMNA: 21: <a href="http://www.telefonica.es/" target="_blank">Telefónica España</a>
+
+
+
+		LINEA: 2900, COLUMNA: 21: <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=ES" target= ...
+
+
+
+		LINEA: 2901, COLUMNA: 21: <a href="http://comunicacion.movistarplus.es/" target="_blank">Comunicación</a>
+
+
+
+		LINEA: 2935, COLUMNA: 6: <a class="hidden-xs" href="https://dialogando.com.es/" target="_blank" title="Dialogando" alt="Dialo ...
+
+
+
+		LINEA: 2937, COLUMNA: 6: <a class="hidden-xs" href="http://www.confianzaonline.org/empresas/movistar.htm" target="_blank" tit ...
+
+
+
+		LINEA: 2939, COLUMNA: 6: <a class="hidden-xs" href="https://www.telefonica.es/es/acerca_de_telefonica/calidad/calidad-servici ...
+
+
+
+		LINEA: 2941, COLUMNA: 6: <a class="hidden-xs" href="http://www.msssi.gob.es/campannas/campanas13/haySalida.htm" target="_blan ...
+
+
+
+		LINEA: 2943, COLUMNA: 6: <a class="hidden-xs" href="http://esports.movistar.es" target="_blank" title="Movistar eSports" alt= ...
+
+
+
+		LINEA: 2945, COLUMNA: 6: <a class="Fundación Telefónica" href="http://www.fundaciontelefonica.com" target="_blank" title="F ...
+
+
+
+		LINEA: 2947, COLUMNA: 6: <a class="hidden-xs" href="http://www.tuenti.es" target="_blank" title="Tuenti" alt="Tuenti" rel="no ...
+
+
+
+		LINEA: 2949, COLUMNA: 6: <a class="hidden-xs" href="http://www.movistar.es/particulares/movil/servicios/app-mimovistar?pid=ic ...
+
+
+
+		LINEA: 2951, COLUMNA: 6: <a class="hidden-xs" href="http://likes.movistar.es" target="_blank" title="Movistar Likes" alt="Mov ...
+
+
+
+		LINEA: 2980, COLUMNA: 22: <a class="link-logo-pie" href="http://www.telefonica.es/" target="_blank" title="Telefónica" ><span ...
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 203, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 951, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1076, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1107, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1152, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1190, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1251, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1296, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1348, COLUMNA: 6:
+
+ 
+
+		LINEA: 1408, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1474, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1513, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1602, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1661, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1727, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 1800, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+
+
+		LINEA: 2349, COLUMNA: 33: <img src="" onerror='IC.findPlaceholdersCtz()' alt="" />
+
+
+
+		LINEA: 2723, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+
+
+		LINEA: 2935, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 2937, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 2939, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 2941, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 2943, COLUMNA: 140: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />
+
+
+
+		LINEA: 2945, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 2947, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 2949, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 2951, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 203, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 1251, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1296, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1348, COLUMNA: 6:
+
+ 
+
+		LINEA: 1408, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1474, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1513, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1602, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1661, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1727, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 2935, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 2937, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 2939, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 2941, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 2943, COLUMNA: 140: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />
+
+
+
+		LINEA: 2945, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 2947, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 2949, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 2951, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 203, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 951, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1076, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1107, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1152, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1190, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1251, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1296, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1348, COLUMNA: 6:
+
+ 
+
+		LINEA: 1408, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1474, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1513, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1602, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1661, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1727, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 2349, COLUMNA: 33: <img src="" onerror='IC.findPlaceholdersCtz()' alt="" />
+
+
+
+		LINEA: 2723, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+ 
+
+		LINEA: 1251, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1296, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1348, COLUMNA: 6:
+
+ 
+
+		LINEA: 1408, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1474, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1513, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1602, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1661, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1727, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 1929, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 1929, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 715, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 1929, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 203, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 718, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />
+
+
+
+		LINEA: 951, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1076, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1107, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1152, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1190, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1251, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1296, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1348, COLUMNA: 6:
+
+ 
+
+		LINEA: 1408, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1474, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1513, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1602, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1661, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1727, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 1800, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+
+
+		LINEA: 2349, COLUMNA: 33: <img src="" onerror='IC.findPlaceholdersCtz()' alt="" />
+
+
+
+		LINEA: 2723, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+
+
+		LINEA: 2935, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 2937, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 2939, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 2941, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 2943, COLUMNA: 140: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />
+
+
+
+		LINEA: 2945, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 2947, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 2949, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 2951, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 715, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 12, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 107, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 124, COLUMNA: 1: <script src="/estaticos/js/checkout.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 64: <script src="/estaticos/GridResp/js/googlejsapi.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 139: <script src="/estaticos/FusionProcess/configTV/js/configTvManager.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 232: <script src="/estaticos/GridResp/js/includeGrid.js"></script>
+
+
+
+		LINEA: 196, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...
+
+
+
+		LINEA: 221, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/logout.js"></script>
+
+
+
+		LINEA: 273, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...
+
+
+
+		LINEA: 440, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...
+
+
+
+		LINEA: 497, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...
+
+
+
+		LINEA: 733, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...
+
+
+
+		LINEA: 771, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...
+
+
+
+		LINEA: 1891, COLUMNA: 7: <script> 	function getCookieL(cname) {		var name = cname + "=";		var dec ...
+
+
+
+		LINEA: 2049, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {	var tipoUsuarioLogadoHidde ...
+
+
+
+		LINEA: 2097, COLUMNA: 2: <script>$(window).load(function () {var nameuser='';var urlhomeprivada = '';		 ...
+
+
+
+		LINEA: 2255, COLUMNA: 3: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"> ...
+
+
+
+		LINEA: 2255, COLUMNA: 127: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize ...
+
+
+
+		LINEA: 2255, COLUMNA: 260: <script src="/estaticos/Componentes/plantilla/componentsApp.js" type="text/javascript"></script>
+
+
+
+		LINEA: 2255, COLUMNA: 372: <script src="/estaticos/Componentes/plantilla/dpi.js" type="text/javascript"></script>
+
+
+
+		LINEA: 2349, COLUMNA: 1: <script>IC.findPlaceholdersCtzFirst();</script>
+
+
+
+		LINEA: 2350, COLUMNA: 23: <script type="text/javascript">$("h1").text("Disfruta de ofertas exclusivas");$("h1").ad ...
+
+
+
+		LINEA: 2353, COLUMNA: 12: <script>s.products = "generico-todosproductos;ofertas-movistar";</script>
+
+
+
+		LINEA: 2501, COLUMNA: 100: <script src="/estaticos/js/pie-enlaces-responsive.js"></script>
+
+
+
+		LINEA: 2677, COLUMNA: 131: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
+		LINEA: 2678, COLUMNA: 130: <script type='text/javascript'>$.ajax({dataType: "jsonp",url: "htt ...
+
+
+
+		LINEA: 3025, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 203, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 951, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1076, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1107, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1152, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1190, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1251, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1296, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1348, COLUMNA: 6:
+
+ 
+
+		LINEA: 1408, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1474, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1513, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1602, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1661, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1727, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 1800, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+
+
+		LINEA: 2349, COLUMNA: 33: <img src="" onerror='IC.findPlaceholdersCtz()' alt="" />
+
+
+
+		LINEA: 2723, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+
+
+		LINEA: 2935, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 2937, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 2939, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 2941, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 2943, COLUMNA: 140: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />
+
+
+
+		LINEA: 2945, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 2947, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 2949, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 2951, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 203, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 718, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />
+
+
+
+		LINEA: 951, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1076, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1107, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1152, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1190, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1251, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1296, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1348, COLUMNA: 6:
+
+ 
+
+		LINEA: 1408, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1474, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1513, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1602, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1661, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1727, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 1800, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+
+
+		LINEA: 2349, COLUMNA: 33: <img src="" onerror='IC.findPlaceholdersCtz()' alt="" />
+
+
+
+		LINEA: 2723, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+
+
+		LINEA: 2935, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 2937, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 2939, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 2941, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 2943, COLUMNA: 140: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />
+
+
+
+		LINEA: 2945, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 2947, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 2949, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 2951, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 12, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 107, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 124, COLUMNA: 1: <script src="/estaticos/js/checkout.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 64: <script src="/estaticos/GridResp/js/googlejsapi.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 139: <script src="/estaticos/FusionProcess/configTV/js/configTvManager.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 232: <script src="/estaticos/GridResp/js/includeGrid.js"></script>
+
+
+
+		LINEA: 196, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...
+
+
+
+		LINEA: 221, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/logout.js"></script>
+
+
+
+		LINEA: 273, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...
+
+
+
+		LINEA: 440, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...
+
+
+
+		LINEA: 497, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...
+
+
+
+		LINEA: 733, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...
+
+
+
+		LINEA: 771, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...
+
+
+
+		LINEA: 1891, COLUMNA: 7: <script> 	function getCookieL(cname) {		var name = cname + "=";		var dec ...
+
+
+
+		LINEA: 2049, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {	var tipoUsuarioLogadoHidde ...
+
+
+
+		LINEA: 2097, COLUMNA: 2: <script>$(window).load(function () {var nameuser='';var urlhomeprivada = '';		 ...
+
+
+
+		LINEA: 2255, COLUMNA: 3: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"> ...
+
+
+
+		LINEA: 2255, COLUMNA: 127: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize ...
+
+
+
+		LINEA: 2255, COLUMNA: 260: <script src="/estaticos/Componentes/plantilla/componentsApp.js" type="text/javascript"></script>
+
+
+
+		LINEA: 2255, COLUMNA: 372: <script src="/estaticos/Componentes/plantilla/dpi.js" type="text/javascript"></script>
+
+
+
+		LINEA: 2349, COLUMNA: 1: <script>IC.findPlaceholdersCtzFirst();</script>
+
+
+
+		LINEA: 2350, COLUMNA: 23: <script type="text/javascript">$("h1").text("Disfruta de ofertas exclusivas");$("h1").ad ...
+
+
+
+		LINEA: 2353, COLUMNA: 12: <script>s.products = "generico-todosproductos;ofertas-movistar";</script>
+
+
+
+		LINEA: 2501, COLUMNA: 100: <script src="/estaticos/js/pie-enlaces-responsive.js"></script>
+
+
+
+		LINEA: 2677, COLUMNA: 131: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
+		LINEA: 2678, COLUMNA: 130: <script type='text/javascript'>$.ajax({dataType: "jsonp",url: "htt ...
+
+
+
+		LINEA: 3025, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 12, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 107, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 124, COLUMNA: 1: <script src="/estaticos/js/checkout.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 64: <script src="/estaticos/GridResp/js/googlejsapi.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 139: <script src="/estaticos/FusionProcess/configTV/js/configTvManager.js"></script>
+
+
+
+		LINEA: 124, COLUMNA: 232: <script src="/estaticos/GridResp/js/includeGrid.js"></script>
+
+
+
+		LINEA: 196, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...
+
+
+
+		LINEA: 221, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/logout.js"></script>
+
+
+
+		LINEA: 273, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...
+
+
+
+		LINEA: 440, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...
+
+
+
+		LINEA: 497, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...
+
+
+
+		LINEA: 733, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...
+
+
+
+		LINEA: 771, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...
+
+
+
+		LINEA: 1891, COLUMNA: 7: <script> 	function getCookieL(cname) {		var name = cname + "=";		var dec ...
+
+
+
+		LINEA: 2049, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {	var tipoUsuarioLogadoHidde ...
+
+
+
+		LINEA: 2097, COLUMNA: 2: <script>$(window).load(function () {var nameuser='';var urlhomeprivada = '';		 ...
+
+
+
+		LINEA: 2255, COLUMNA: 3: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"> ...
+
+
+
+		LINEA: 2255, COLUMNA: 127: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize ...
+
+
+
+		LINEA: 2255, COLUMNA: 260: <script src="/estaticos/Componentes/plantilla/componentsApp.js" type="text/javascript"></script>
+
+
+
+		LINEA: 2255, COLUMNA: 372: <script src="/estaticos/Componentes/plantilla/dpi.js" type="text/javascript"></script>
+
+
+
+		LINEA: 2349, COLUMNA: 1: <script>IC.findPlaceholdersCtzFirst();</script>
+
+
+
+		LINEA: 2350, COLUMNA: 23: <script type="text/javascript">$("h1").text("Disfruta de ofertas exclusivas");$("h1").ad ...
+
+
+
+		LINEA: 2353, COLUMNA: 12: <script>s.products = "generico-todosproductos;ofertas-movistar";</script>
+
+
+
+		LINEA: 2501, COLUMNA: 100: <script src="/estaticos/js/pie-enlaces-responsive.js"></script>
+
+
+
+		LINEA: 2677, COLUMNA: 131: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
+		LINEA: 2678, COLUMNA: 130: <script type='text/javascript'>$.ajax({dataType: "jsonp",url: "htt ...
+
+
+
+		LINEA: 3025, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 1929, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 39, COLUMNA: 2: <title>Ofertas Movistar &iexcl;S&uacute;per Oferta ADSL 14,9&euro;! 900 104 871 - Movistar</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 581, COLUMNA: 2: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...
+
+
+
+		LINEA: 586, COLUMNA: 4: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...
+
+
+
+		LINEA: 591, COLUMNA: 5: <a href="/autonomos/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','autonomos',4,'/',null,null) ...
+
+
+
+		LINEA: 596, COLUMNA: 5: <a href="/empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','empresas',4,'/',null,null);" ...
+
+
+
+		LINEA: 601, COLUMNA: 5: <a href="/grandes-empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','grandes-empresas',4, ...
+
+
+
+		LINEA: 627, COLUMNA: 5: <a href="http://comunidad.movistar.es/" target="_self" title="Comunidad">		 <span class= ...
+
+
+
+		LINEA: 639, COLUMNA: 5: <a href="https://www.movistar.es/particulares/atencion-cliente/escribenos/?pid=cabecera_enlace_escri ...
+
+
+
+		LINEA: 675, COLUMNA: 4: <a href="#" lang="es_ES">Castellano</a>
+
+
+
+		LINEA: 680, COLUMNA: 5: <a href="/ca/particulars/ofertas-movistar/?lng=ca_ES&amp;d=idiomasRespon" lang="ca_ES">CatalÃ¡n</a ...
+
+
+
+		LINEA: 686, COLUMNA: 5: <a href="/gl/particulares/ofertas-movistar/?lng=gl_ES&amp;d=idiomasRespon" lang="gl_ES">Gallego</a>
+
+
+
+		LINEA: 718, COLUMNA: 30: <a href="#" class=" white icon-buscar" onclick="javaScript:filtroXSS();"><img class="hidden" ...
+
+
+
+		LINEA: 801, COLUMNA: 5: <a class="link-logo-menu" href="/" target="_self" style="">	<div id="logo-respo-M" class="ic ...
+
+
+
+		LINEA: 810, COLUMNA: 10: <a href="javascript:void(0);" data-toggle="collapse" data-target="#miMovistar"><span id="iconConecta ...
+
+
+
+		LINEA: 813, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#segmentos"><span class="icon icon ...
+
+
+
+		LINEA: 816, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#buscador"> <span class="icon icon ...
+
+
+
+		LINEA: 819, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#desplegable"> <span class="icon i ...
+
+
+
+		LINEA: 890, COLUMNA: 3: <a class="link-logo-menu" href="/" target="_self"><span>Logo</span></a>
+
+
+
+		LINEA: 935, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Televisión">Televisión ...
+
+
+
+		LINEA: 961, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/futbol" target="_self" title="Todo el Fútbol ">	 ...
+
+
+
+		LINEA: 968, COLUMNA: 7: <a class="link" href="/particulares/movistarplus" target="_self" title="Destacados">	<span c ...
+
+
+
+		LINEA: 975, COLUMNA: 7: <a class="link" href="http://originales.movistarplus.es" target="_self" title="Originales Movistar+" ...
+
+
+
+		LINEA: 982, COLUMNA: 7: <a class="link" href="http://www.movistarplus.es/cero" target="_self" title="#0">	<span clas ...
+
+
+
+		LINEA: 989, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/estrenos-cine" target="_self" title="Cine"> ...
+
+
+
+		LINEA: 996, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/series" target="_self" title="Series ">	<sp ...
+
+
+
+		LINEA: 1020, COLUMNA: 7: <a class="link" href="http://www.movistarplus.es/vamos?_ga=2.3188595.252901027.1537768252-1643678454 ...
+
+
+
+		LINEA: 1027, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/deportes" target="_self" title="Deportes">	 ...
+
+
+
+		LINEA: 1034, COLUMNA: 7: <a class="link" href="https://esports.movistar.es/" target="_self" title="eSports">	<span cl ...
+
+
+
+		LINEA: 1041, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/infantil" target="_self" title="Infantil "> ...
+
+
+
+		LINEA: 1048, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/documentales" target="_self" title="Documentales "> ...
+
+
+
+		LINEA: 1055, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/programas" target="_self" title="Programas ">	 ...
+
+
+
+		LINEA: 1062, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/toros" target="_self" title="Toros ">	<span ...
+
+
+
+		LINEA: 1086, COLUMNA: 7: <a class="link" href="http://www.movistarplus.es/programacion-tv" target="_self" title="Guía TV"> ...
+
+
+
+		LINEA: 1093, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/calendarios-deportivos" target="_self" title="Calen ...
+
+
+
+		LINEA: 1117, COLUMNA: 7: <a class="link" href="/particulares/television/movistar-imagenio/" target="_self" title="Oferta TV"> ...
+
+
+
+		LINEA: 1124, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/funcionalidades" target="_self" title="Funcionalida ...
+
+
+
+		LINEA: 1131, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/guia-rapida" target="_self" title="Guía rápida"> ...
+
+
+
+		LINEA: 1138, COLUMNA: 7: <a class="link" href="/particulares/Aura/ " target="_self" title="Aura">	<span class="icon-c ...
+
+
+
+		LINEA: 1162, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/contenidos/yomvi" target="_self" title="Qué es "> ...
+
+
+
+		LINEA: 1169, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/contenidos/yomvi?origen=activar" target="_self" tit ...
+
+
+
+		LINEA: 1176, COLUMNA: 7: <a class="link" href="http://ver.movistarplus.es/" target="_self" title="Ver ahora ">	<span...
+
+
+
+		LINEA: 1200, COLUMNA: 7: <a class="link" href="https://www.movistar.es/Privada/DesafioMC/?xxxurixxx=https://www.movistar.es/p ...
+
+
+
+		LINEA: 1207, COLUMNA: 7: <a class="link" href="/autonomos/fusion/paquete-movistar-fusion/bares" target="_self" title="TV para ...
+
+
+
+		LINEA: 1214, COLUMNA: 7: <a class="link" href="/particulares/television/otros-canales-tv" target="_self" title="Canales a la...
+
+
+
+		LINEA: 1235, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Tienda">Tienda<span c ...
+
+
+
+		LINEA: 1261, COLUMNA: 7: <a class="link" href="/particulares/oferta-combinada/fusion/ " target="_self" title="Oferta Fusión" ...
+
+
+
+		LINEA: 1268, COLUMNA: 7: <a class="link" href="/particulares/tienda/comparador-tarifas-fusion" target="_self" title="Tarifas...
+
+
+
+		LINEA: 1275, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta?filter=fusion" ta ...
+
+
+
+		LINEA: 1282, COLUMNA: 7: <a class="link" href="/particulares/solucioneswifi" target="_self" title="Dispositivos y servicios"> ...
+
+
+
+		LINEA: 1306, COLUMNA: 7: <a class="link" href="/particulares/internet/adsl-fibra-optica/ " target="_self" title="Oferta Inter ...
+
+
+
+		LINEA: 1313, COLUMNA: 7: <a class="link" href="/particulares/tienda/comparador-tarifas-internet/?filter=baf" target="_self" t ...
+
+
+
+		LINEA: 1320, COLUMNA: 7: <a class="link" href="/particulares/internet/adsl-fibra-optica/fibra-optica/ " target="_self" title= ...
+
+
+
+		LINEA: 1327, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles/hgu" target="_self" title="Router Smart WiFi">		 ...
+
+
+
+		LINEA: 1334, COLUMNA: 7: <a class="link" href="/particulares/fijo/ " target="_self" title="Tarifas Fijo y servicios"> ...
+
+
+
+		LINEA: 1358, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/ " target="_self" title="Oferta Móvil"> ...
+
+
+
+		LINEA: 1365, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta/" target="_self"...
+
+
+
+		LINEA: 1372, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles?prefilter99=smartphones" target="_self"  title=" ...
+
+
+
+		LINEA: 1380, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tengo-movil/ " target="_self" title="Servi ...
+
+
+
+		LINEA: 1387, COLUMNA: 7: <a class="link" href="/particulares/movil/viajar-al-extranjero-roaming/" target="_self" title="Movis ...
+
+
+
+		LINEA: 1394, COLUMNA: 7: <a class="link" href="/particulares/movil/llamadas-internacionales/" target="_self" title="Llamar al ...
+
+
+
+		LINEA: 1418, COLUMNA: 7: <a class="link" href="/particulares/television/movistar-imagenio/ " target="_self" title="Oferta Tel ...
+
+
+
+		LINEA: 1425, COLUMNA: 7: <a class="link" href="/particulares/television/tv-futbol/ " target="_self" title="FÚTBOL">	 ...
+
+
+
+		LINEA: 1432, COLUMNA: 7: <a class="link" href="/particulares/television/seleccion-deportes " target="_self" title="DEPORTES " ...
+
+
+
+		LINEA: 1439, COLUMNA: 7: <a class="link" href="/particulares/television/motor" target="_self" title="MOTOR">	<span cl ...
+
+
+
+		LINEA: 1446, COLUMNA: 7: <a class="link" href="/particulares/television/cine " target="_self" title="CINE">	<span cla ...
+
+
+
+		LINEA: 1453, COLUMNA: 7: <a class="link" href="/particulares/television/movistar-imagenio/movistar-series/ " target="_self" t ...
+
+
+
+		LINEA: 1460, COLUMNA: 7: <a class="link" href="https://www.movistar.es/Privada/DesafioMC/?xxxurixxx=https://www.movistar.es/p ...
+
+
+
+		LINEA: 1484, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles?prefilter99=ofertas" target="_self" title="Ofertas ...
+
+
+
+		LINEA: 1491, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles?prefilter99=smartphones" target="_self"  title=" ...
+
+
+
+		LINEA: 1499, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles/?prefilter99=equipamiento_hogar" target="_self" ti ...
+
+
+
+		LINEA: 1523, COLUMNA: 7: <a class="link" href="/particulares/tienda/servicios-digitales/" target="_self" title="Todos los ser ...
+
+
+
+		LINEA: 1530, COLUMNA: 7: <a class="link" href="http://www.movistar.es/appmovistares" target="_self" title="App Mi Movistar"> ...
+
+
+
+		LINEA: 1537, COLUMNA: 7: <a class="link" href="/particulares/movil/servicios/app-smartwifi/" target="_self" title="App Smart...
+
+
+
+		LINEA: 1544, COLUMNA: 7: <a class="link" href="/particulares/movil/servicios/nubico-premium" target="_self" title="Nubico"> ...
+
+
+
+		LINEA: 1551, COLUMNA: 7: <a class="link" href="/particulares/conexion-segura" target="_self" title="Conexión Segura">		 ...
+
+
+
+		LINEA: 1558, COLUMNA: 7: <a class="link" href="/particulares/tienda/servicios-digitales/cloud" target="_self" title="Movistar ...
+
+
+
+		LINEA: 1565, COLUMNA: 7: <a class="link" href="/particulares/tienda/servicios-digitales/protege" target="_self" title="Movist ...
+
+
+
+		LINEA: 1586, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Atención al cliente">Aten ...
+
+
+
+		LINEA: 1612, COLUMNA: 7: <a class="link" href="//atencionalcliente.movistar.es" target="_self" title="Resolver dudas">		 ...
+
+
+
+		LINEA: 1619, COLUMNA: 7: <a class="link" href="https://atencionalcliente.movistar.es?f=320" target="_self" title="Entender mi ...
+
+
+
+		LINEA: 1626, COLUMNA: 7: <a class="link" href="/contratos" target="_self" title="Contratos de Movistar">	<span class= ...
+
+
+
+		LINEA: 1633, COLUMNA: 7: <a class="link" href="/particulares/atencion-cliente/buscador-de-tiendas/" target="_self" title="Loc ...
+
+
+
+		LINEA: 1640, COLUMNA: 7: <a class="link" href="/particulares/movil/viajar-al-extranjero-roaming/" target="_self" title="Roami ...
+
+
+
+		LINEA: 1647, COLUMNA: 7: <a class="link" href="https://atencionalcliente.movistar.es/pregunta-frecuente/fibra-optica-300-mbps ...
+
+
+
+		LINEA: 1671, COLUMNA: 7: <a class="link" href="https://atencionalcliente.movistar.es/?f=584,166,583,571,677" target="_self" h ...
+
+
+
+		LINEA: 1678, COLUMNA: 7: <a class="link" href="/particulares/atencion-cliente/pedidos" target="_self" title="Seguimiento de p ...
+
+
+
+		LINEA: 1685, COLUMNA: 7: <a class="link" href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" tar ...
+
+
+
+		LINEA: 1692, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta/ " target="_self" ...
+
+
+
+		LINEA: 1699, COLUMNA: 7: <a class="link" href="/Privada/DesafioMC/?xxxurixxx=/particulares/Aplicaciones/Orquestador/procesoCo ...
+
+
+
+		LINEA: 1706, COLUMNA: 7: <a class="link" href="/Privada/DesafioMC/?xxxurixxx=/particulares/Aplicaciones/Orquestador/procesoCo ...
+
+
+
+		LINEA: 1713, COLUMNA: 7: <a class="link" href="/estaticos/m/es/webApp/MiMovistarApp_inteligente.html?origen=particulares&cont ...
+
+
+
+		LINEA: 1737, COLUMNA: 7: <a class="link" href="/particulares/soporte-tecnico/ " target="_self" title="Averías">	<spa ...
+
+
+
+		LINEA: 1744, COLUMNA: 7: <a class="link" href="/particulares/test-de-velocidad" target="_self" title="Test de velocidad">		 ...
+
+
+
+		LINEA: 1751, COLUMNA: 7: <a class="link" href="/particulares/internet/adsl-fibra-optica/clientes/configuracion-routers-portal ...
+
+
+
+		LINEA: 1758, COLUMNA: 7: <a class="link" href="https://www.movistar.es/particulares/atencion-cliente/telefonia-movil/catalogo ...
+
+
+
+		LINEA: 1765, COLUMNA: 7:
+
+ 
+
+		LINEA: 1772, COLUMNA: 7: <a class="link" href="/particulares/solucioneswifi" target="_self" title="Mejorar mi wifi">	 ...
+
+
+
+		LINEA: 1784, COLUMNA: 7: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/ver-mi-factura/ " target="_self" c ...
+
+
+
+		LINEA: 1798, COLUMNA: 7: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/no-se-si-estoy-registrado-en-mi-mo ...
+
+
+
+		LINEA: 1811, COLUMNA: 7: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/modificar-datos-personales/" targe ...
+
+
+
+		LINEA: 1855, COLUMNA: 5: <a id="accederdesktop" data-toggle="collapse" data-target="#miMovistar">Acceso Mi Movistar<span clas ...
+
+
+
+		LINEA: 1862, COLUMNA: 8: <a target="_top" id="enlace_cesta" href="#"><span class="white icon-compra">&nbsp;</span></a>
+
+
+
+		LINEA: 1871, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 1875, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...
+
+
+
+		LINEA: 1879, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 1883, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 1887, COLUMNA: 24: <a href="https://sitioseguro.movistarplus.es/zonacliente/misdatospersonales.html" target="_self" cla ...
+
+
+
+		LINEA: 1922, COLUMNA: 10: <a href="javascript:getUrlHome();" class="c_a_desconectar_desk" id="a_acceso_satelites" target="_sel ...
+
+
+
+		LINEA: 1939, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 1943, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...
+
+
+
+		LINEA: 1947, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self" c ...
+
+
+
+		LINEA: 1951, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 1955, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 1959, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones" target=" ...
+
+
+
+		LINEA: 1967, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 1971, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...
+
+
+
+		LINEA: 1975, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self" c ...
+
+
+
+		LINEA: 1979, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 1983, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 1987, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones " target= ...
+
+
+
+		LINEA: 1995, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 1999, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas " target="_ ...
+
+
+
+		LINEA: 2003, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self" c ...
+
+
+
+		LINEA: 2007, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 2011, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 2015, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones" target=" ...
+
+
+
+		LINEA: 2023, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 2027, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...
+
+
+
+		LINEA: 2031, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 2035, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 2043, COLUMNA: 10: <a href="#" class="c_a_desconectar_desk" id="a_desconectar" onclick="document.getElementById('logout ...
+
+
+
+		LINEA: 2409, COLUMNA: 25: <a title="Ofertas ADSL" target="_self" href="/particulares/internet/adsl-fibra-optica/?pid=PA-home-q ...
+
+
+
+		LINEA: 2410, COLUMNA: 25: <a title="Oferta Fibra &Oacute;ptica Barata" target="_self" href="/particulares/internet/adsl-fibra- ...
+
+
+
+		LINEA: 2411, COLUMNA: 25: <a title="Tarifas Internet" target="_self" href="/particulares/tienda/comparador-tarifas-internet/?p ...
+
+
+
+		LINEA: 2412, COLUMNA: 25: <a title="ADSL Barato" target="_self" href="/particulares/internet/adsl-fibra-optica/oferta-fibra-op ...
+
+
+
+		LINEA: 2413, COLUMNA: 25: <a title="Internet en casa" target="_self" href="/particulares/internet/adsl-fibra-optica/?pid=PA-ho ...
+
+
+
+		LINEA: 2419, COLUMNA: 25: <a title="Ofertas Fusi&oacute;n" target="_self" href="http://www.movistar.es/particulares/oferta-com ...
+
+
+
+		LINEA: 2420, COLUMNA: 25: <a title="Tarifas Fusi&oacute;n" target="_self" href="/particulares/fusion/base-100Mb/?pid=PA-home-q ...
+
+
+
+		LINEA: 2421, COLUMNA: 25: <a title="Fusi&oacute;n #0" target="_self" href="/particulares/fusion/seleccion-partidazo-champions- ...
+
+
+
+		LINEA: 2422, COLUMNA: 25: <a title="Fusi&oacute;n+ Ocio" target="_self" href="/particulares/fusion/total?pid=PA-home-ql2d">Fus ...
+
+
+
+		LINEA: 2423, COLUMNA: 25: <a title="Fusion+ Series" target="_self" href="/particulares/fusion/total-plus/?pid=PA-home-ql2d">Fu ...
+
+
+
+		LINEA: 2429, COLUMNA: 25: <a title="Tarifas Contrato y Prepago" target="_self" href="/particulares/movil/tarifas-moviles/?pid= ...
+
+
+
+		LINEA: 2430, COLUMNA: 25: <a title="Seguro M&oacute;vil" target="_self" href="/particulares/movil/servicios/seguro-movil?pid=P ...
+
+
+
+		LINEA: 2431, COLUMNA: 25: <a title="M&oacute;viles libres" target="_self" href="/particulares/movil/moviles/?prefilter99=smart ...
+
+
+
+		LINEA: 2432, COLUMNA: 25: <a title="M&oacute;viles contrato" target="_self" href="/particulares/movil/tarifas-moviles/tarjeta- ...
+
+
+
+		LINEA: 2433, COLUMNA: 25: <a title="Llamadas internacionales" target="_self" href="/particulares/movil/llamadas-internacionale ...
+
+
+
+		LINEA: 2439, COLUMNA: 25: <a title="Oferta F&uacute;tbol" target="_self" href="/particulares/television/tv-futbol/?pid=PA-home ...
+
+
+
+		LINEA: 2440, COLUMNA: 25: <a title="Oferta Deportes" target="_self" href="/particulares/television/seleccion-deportes/?pid=PA- ...
+
+
+
+		LINEA: 2441, COLUMNA: 25: <a title="Motor" target="_self" href="/particulares/television/motor/?pid=PA-home-ql4c">Motor</a>
+
+
+
+		LINEA: 2442, COLUMNA: 25: <a title="Estrenos de cine" target="_self" href="/particulares/movistarplus/estrenos-cine/?pid=PA-ho ...
+
+
+
+		LINEA: 2443, COLUMNA: 25: <a title="Series" target="_self" href="/particulares/television/movistar-imagenio/movistar-series/?p ...
+
+
+
+		LINEA: 2451, COLUMNA: 25: <a title="Manuales de precios y tarifas" target="_self" href="/particulares/atencion-cliente/ficha-a ...
+
+
+
+		LINEA: 2452, COLUMNA: 25: <a title="Contratar Internet" target="_self" href="/particulares/internet/adsl-fibra-optica/contrata ...
+
+
+
+		LINEA: 2453, COLUMNA: 25: <a title="Cobertura Fibra &oacute;ptica" target="_self" href="/particulares/internet/fibra-optica/co ...
+
+
+
+		LINEA: 2454, COLUMNA: 25: <a title="Router Smart WiFi" target="_self" href="/particulares/movil/moviles/equipamiento_hogar/fic ...
+
+
+
+		LINEA: 2455, COLUMNA: 25: <a title="Desco UHD" target="_self" href="/particulares/movil/moviles/descodificador-uhd/?pid=PA-hom ...
+
+
+
+		LINEA: 2461, COLUMNA: 25: <a title="Oferta Televisi&oacute;n" target="_self" href="/particulares/television/movistar-imagenio/ ...
+
+
+
+		LINEA: 2462, COLUMNA: 25: <a title="Ofertas Movistar" target="_self" href="/particulares/ofertas-movistar/?pid=PA-home-ql6b">O ...
+
+
+
+		LINEA: 2463, COLUMNA: 25: <a title="Ofertas Móviles Libres" target="_self" href="/particulares/movil/moviles?prefilter99=smar ...
+
+
+
+		LINEA: 2464, COLUMNA: 25: <a title="Ofertas Fusi&oacute;n" target="_self" href="https://www.movistarfusion.es/fusion-cero/?pid ...
+
+
+
+		LINEA: 2465, COLUMNA: 25: <a title="Ofertas Tarifas M&oacute;vil" target="_self" href="http://www.movistaronline.es/tarifas-mo ...
+
+
+
+		LINEA: 2471, COLUMNA: 25: <a title="Test de velocidad" target="_self" href="/particulares/test-de-velocidad/?pid=PA-home-ql7a" ...
+
+
+
+		LINEA: 2472, COLUMNA: 25: <a title="Router y Descodificador Smart WiFi" target="_self" href="/particulares/movil/moviles/?pref ...
+
+
+
+		LINEA: 2473, COLUMNA: 25: <a title="Tel&eacute;fono Atenci&oacute;n al cliente" target="_blank" href="https://atencionalclient ...
+
+
+
+		LINEA: 2474, COLUMNA: 25: <a title="Promociones Movistar" target="_self" href="/particulares/ofertas-movistar/?pid=origen-seo& ...
+
+
+
+		LINEA: 2475, COLUMNA: 25: <a title="Preguntas frecuentes" target="_self" href="https://atencionalcliente.movistar.es/preguntas ...
+
+
+
+		LINEA: 2481, COLUMNA: 25: <a title="iPhone XS" target="_self" href="/particulares/movil/moviles/iphone-xs?pid=origen-seo&amp;P ...
+
+
+
+		LINEA: 2482, COLUMNA: 25: <a title="iPhone X" target="_self" href="/particulares/movil/moviles/iphone-x?pid=origen-seo&amp;PA- ...
+
+
+
+		LINEA: 2483, COLUMNA: 25: <a title="iPhone 8" target="_self" href="/particulares/movil/moviles/iphone-8/?pid=origen-seo&amp;PA ...
+
+
+
+		LINEA: 2484, COLUMNA: 25: <a title="iPhone 8 Plus" target="_self" href="/particulares/movil/moviles/iphone-8-plus/?pid=origen- ...
+
+
+
+		LINEA: 2485, COLUMNA: 25: <a title="Samsung Galaxy S9" target="_self" href="/particulares/movil/moviles/samsung-galaxy-s9?pid= ...
+
+
+
+		LINEA: 2677, COLUMNA: 49: <a href="http://trustivity.es/movistar.es-opiniones"> <script src="//aja ...
+
+
+
+		LINEA: 2840, COLUMNA: 11: <a href="https://www.facebook.com/movistar.es" target="_blank" title="Facebook"><span class="icon ic ...
+
+
+
+		LINEA: 2844, COLUMNA: 11: <a href="https://twitter.com/movistar_es" target="_blank" title="Twitter"><span class="icon icon-twi ...
+
+
+
+		LINEA: 2848, COLUMNA: 11: <a href="http://www.youtube.com/movistar" target="_blank" title="Youtube"><span class="icon icon-you ...
+
+
+
+		LINEA: 2852, COLUMNA: 11: <a href="https://plus.google.com/+movistarespana/" target="_blank" title="Google +"><span class="ico ...
+
+
+
+		LINEA: 2856, COLUMNA: 11: <a href="/particulares/instagram" target="_self" title="Instagram"><span class="icon icon-instagram" ...
+
+
+
+		LINEA: 2860, COLUMNA: 11: <a href="http://comunidad.movistar.es/" target="_blank" title="Comunidad Movistar"><span class="icon ...
+
+
+
+		LINEA: 2895, COLUMNA: 21: <a href="/particulares/aviso-legal/" target="_self" title="Aviso legal">Aviso legal</a>
+
+
+
+		LINEA: 2896, COLUMNA: 21: <a href="/particulares/accesibilidad/" target="_self">Accesibilidad</a>
+
+
+
+		LINEA: 2897, COLUMNA: 21: <a href="http://www.telefonica.es/" target="_blank">Telefónica España</a>
+
+
+
+		LINEA: 2898, COLUMNA: 21: <a href="/particulares/telefonica-en-el-mundo/" target="_self">Telefónica mundo</a>
+
+
+
+		LINEA: 2899, COLUMNA: 21: <a href="/empresas/centro-de-privacidad/?optionSelected=privacidadEmpresas" target="_self">Privacida ...
+
+
+
+		LINEA: 2900, COLUMNA: 21: <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=ES" target= ...
+
+
+
+		LINEA: 2901, COLUMNA: 21: <a href="http://comunicacion.movistarplus.es/" target="_blank">Comunicación</a>
+
+
+
+		LINEA: 2902, COLUMNA: 21: <a href="/GaliciaPDBL" target="_self">Fondos públicos</a>
+
+
+
+		LINEA: 2903, COLUMNA: 21: <a href="#" target="_self" class="optanon-toggle-display">Cookies</a>
+
+
+
+		LINEA: 2904, COLUMNA: 34: <a href="/particulares/centro-de-seguridad/" target="_self">Seguridad</a>
+
+
+
+		LINEA: 2935, COLUMNA: 6: <a class="hidden-xs" href="https://dialogando.com.es/" target="_blank" title="Dialogando" alt="Dialo ...
+
+
+
+		LINEA: 2937, COLUMNA: 6: <a class="hidden-xs" href="http://www.confianzaonline.org/empresas/movistar.htm" target="_blank" tit ...
+
+
+
+		LINEA: 2939, COLUMNA: 6: <a class="hidden-xs" href="https://www.telefonica.es/es/acerca_de_telefonica/calidad/calidad-servici ...
+
+
+
+		LINEA: 2941, COLUMNA: 6: <a class="hidden-xs" href="http://www.msssi.gob.es/campannas/campanas13/haySalida.htm" target="_blan ...
+
+
+
+		LINEA: 2943, COLUMNA: 6: <a class="hidden-xs" href="http://esports.movistar.es" target="_blank" title="Movistar eSports" alt= ...
+
+
+
+		LINEA: 2945, COLUMNA: 6: <a class="Fundación Telefónica" href="http://www.fundaciontelefonica.com" target="_blank" title="F ...
+
+
+
+		LINEA: 2947, COLUMNA: 6: <a class="hidden-xs" href="http://www.tuenti.es" target="_blank" title="Tuenti" alt="Tuenti" rel="no ...
+
+
+
+		LINEA: 2949, COLUMNA: 6: <a class="hidden-xs" href="http://www.movistar.es/particulares/movil/servicios/app-mimovistar?pid=ic ...
+
+
+
+		LINEA: 2951, COLUMNA: 6: <a class="hidden-xs" href="http://likes.movistar.es" target="_blank" title="Movistar Likes" alt="Mov ...
+
+
+
+		LINEA: 2980, COLUMNA: 22: <a class="link-logo-pie" href="http://www.telefonica.es/" target="_blank" title="Telefónica" ><span ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 2341, COLUMNA: 1: <h1 class="bold h1_offertas" tabindex="-1">Disfruta de ofertas exclusivas</h1>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 1929, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 1929, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 710, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 137, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+ 
+
+		LINEA: 715, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 710, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 710, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 217, COLUMNA: 3: <input id="urlLogoutCOLX" type="hidden" value="https://www.movistar.es/portal/site/COL10/template.CO ...
+
+
+
+		LINEA: 218, COLUMNA: 3: <input id="urlLogoutCCLI" type="hidden" value="https://www.movistar.es/mimovistar-cliente/publico/de ...
+
+
+
+		LINEA: 219, COLUMNA: 3: <input id="urlHomeCCLI" type="hidden" value="https://www.movistar.es/mimovistar-cliente/publico/acce ...
+
+
+
+		LINEA: 225, COLUMNA: 5: <input id="tipoUsuarioLogadoHidden" type="hidden" value="NOLOGADO" />
+
+
+
+		LINEA: 453, COLUMNA: 1: <input id="hiddenPageName" type="hidden" value="Particulares:ofertas-movistar">
+
+
+
+		LINEA: 722, COLUMNA: 4: <input type="hidden" name="vgnextoid" value="" />
+
+
+
+		LINEA: 723, COLUMNA: 4: <input type="hidden" name="action" value="resultadosBusqueda">
+
+
+
+		LINEA: 724, COLUMNA: 4: <input type="hidden" name="controlBusqueda" value="avanzada">
+
+
+
+		LINEA: 725, COLUMNA: 4: <input type="hidden" name="num_resultados" value="10">
+
+
+
+		LINEA: 726, COLUMNA: 4: <input type="hidden" name="segmento" value="0">
+
+
+
+		LINEA: 795, COLUMNA: 1: <input id="timehide" type="hidden" value="10000" />
+
+
+
+		LINEA: 796, COLUMNA: 1: <input id="timehold" type="hidden" value="400" />
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 710, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 710, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 710, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+

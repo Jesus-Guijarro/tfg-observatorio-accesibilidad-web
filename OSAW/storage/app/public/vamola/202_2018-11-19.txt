@@ -1,0 +1,2788 @@
+REPORTE PÁGINA WEB: https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-1286020074544.html
+FECHA EVALUACIÓN: 2018-11-19
+
+-PROBLEMAS CONOCIDOS-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 1: img element missing alt attribute.  
+
+	REPARAR:> Add an alt attribute to your img element.      
+
+		LINEA: 524, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/165/209/becas,9.jpg"/>
+
+
+
+		LINEA: 556, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/699/995/Alumnes4,0.png"/>
+
+
+
+		LINEA: 578, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/536/342/Rectorat3,0.png"/>
+
+
+
+		LINEA: 622, COLUMNA: 196: <img src="/recursos/fatwirepub/ccurl/158/167/beca.jpg"/>
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)  
+
+	REVISAR: 116: b (bold) element used.  
+
+	REPARAR:> Replace your b (bold) elements with em or strong.      
+
+		LINEA: 524, COLUMNA: 169: <b>Resolució de 30 d'octubre de 2018</b>
+
+
+
+		LINEA: 524, COLUMNA: 255: <b>ajudes</b>
+
+
+
+		LINEA: 524, COLUMNA: 388: <b>2017-2018</b>
+
+  
+
+	REVISAR: 117: i (italic) element used.  
+
+	REPARAR:> Replace your i elements with em or strong.      
+
+		LINEA: 108, COLUMNA: 3094: <i class="fa fa-user"></i>
+
+
+
+		LINEA: 108, COLUMNA: 4038: <i class="fa fa-share-alt"></i>
+
+
+
+		LINEA: 108, COLUMNA: 4202: <i style="font-size:1.5em" class="fa fa-facebook fa-2x" aria-hidden="true" ></i>
+
+
+
+		LINEA: 108, COLUMNA: 4359: <i style="font-size:1.5em" class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+
+
+
+		LINEA: 108, COLUMNA: 4528: <i style="font-size:1.5em" class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+
+
+
+		LINEA: 108, COLUMNA: 4698: <i style="font-size:1.5em" class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i>
+
+
+
+		LINEA: 108, COLUMNA: 4880: <i style="font-size:1.5em" class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+
+
+
+		LINEA: 108, COLUMNA: 5058: <i style="font-size:1.5em" class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+
+
+
+		LINEA: 108, COLUMNA: 5303: <i class="fa fa-envelope"></i>
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 174: Anchor contains no text.  
+
+	REPARAR:> Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.      
+
+		LINEA: 622, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/convocato ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)  
+
+	REVISAR: 49: Document has invalid language code.  
+
+	REPARAR:> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
+
+		LINEA: 24, COLUMNA: 2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca_ES" lang="ca" xmlns:og="http://ogp.me/ns#" ...
+
+
+
+ -------------- 
+
+-PROBLEMAS POTENCIALES-
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 107, COLUMNA: 133: <a href="http://www.uv.es/uvweb/futuros-estudiantes/ca/novetats-1285852326437.html" title = "Enllaç ...
+
+
+
+		LINEA: 107, COLUMNA: 298: <a href="http://www.uv.es/uvweb/estudiantes-uv/ca/novetats-1285852853619.html" title = "Enllaç al p ...
+
+
+
+		LINEA: 107, COLUMNA: 512: <a href="http://www.uv.es/pdi" title = "Enllaç a la pàgina del Servei de Recursos Humans - PDI" >S ...
+
+
+
+		LINEA: 107, COLUMNA: 640: <a href="http://www.uv.es/uvweb/servei-investigacio/ca/servei-investigacio-1285906397400.html" title ...
+
+
+
+		LINEA: 107, COLUMNA: 880: <a href="http://www.uv.es/uvweb/servei-recursos-humans-pas/ca/servei-recursos-humans--1285910936596. ...
+
+
+
+		LINEA: 107, COLUMNA: 1059: <a href="http://gdh.uv.es" title = "Gestió de la dedicació horària" >GDH</a>
+
+
+
+		LINEA: 107, COLUMNA: 1157: <a href="http://www.uv.es/uvweb/empresa/ca/introduccio-1285853486272.html" title = "Enllaç al perfi ...
+
+
+
+		LINEA: 108, COLUMNA: 32: <a href="https://www.uv.es/uvweb/universidad/es/estudios-postgrado/masteres-oficiales/novedades-1286 ...
+
+
+
+		LINEA: 108, COLUMNA: 259: <a href="https://www.uv.es/uvweb/college/en/postgraduate-courses/official-master-s-degrees/news-1286 ...
+
+
+
+		LINEA: 108, COLUMNA: 540: <a href="https://www.uv.es/uvweb/universitat/ca/directori/facultats-escoles-1285846794920.html" titl ...
+
+
+
+		LINEA: 108, COLUMNA: 700: <a href="https://www.uv.es/uvweb/universitat/ca/directori/departaments-1285846794927.html" title = " ...
+
+
+
+		LINEA: 108, COLUMNA: 841: <a href="https://www.uv.es/uvweb/universitat/ca/directori/serveis-1285846794934.html" title = "Enlla ...
+
+
+
+		LINEA: 108, COLUMNA: 977: <a href="https://www.uv.es/uvweb/universitat/ca/directori/instituts-investigacio-eri-1285846795127.h ...
+
+
+
+		LINEA: 108, COLUMNA: 1156: <a href="https://www.uv.es/uvweb/universitat/ca/directori/grups-investigacio-1285956741406.html" tit ...
+
+
+
+		LINEA: 108, COLUMNA: 1323: <a href="https://www.uv.es/uvweb/universitat/ca/directori/altres-entitats/centres-singulars-12858471 ...
+
+
+
+		LINEA: 108, COLUMNA: 1501: <a href="https://www.uv.es/uvweb/universitat/ca/directori/consell-direccio/consell-direccio-12860414 ...
+
+
+
+		LINEA: 108, COLUMNA: 1689: <a href="https://www.uv.es/uvweb/universitat/ca/directori/altres-organs-universitat/altres-organs-un ...
+
+
+
+		LINEA: 108, COLUMNA: 1911: <a href="https://www.uv.es/uvweb/universitat/ca/directori/fundacions-entitats-associades/fundacio-ge ...
+
+
+
+		LINEA: 108, COLUMNA: 2140: <a href="https://www.uv.es/uvweb/universitat/ca/directori/catedres-institucionals-1285846794956.html ...
+
+
+
+		LINEA: 108, COLUMNA: 2326: <a href="https://www.uv.es/uvweb/universitat/ca/directori/cercador-persones-1285866527763.html" titl ...
+
+
+
+		LINEA: 108, COLUMNA: 2498: <a href="https://www.uv.es/uvweb/universitat/ca/directori/planols-1285973759558.html" title = "Enlla ...
+
+
+
+		LINEA: 108, COLUMNA: 2636: <a href="https://www.uv.es/uvweb/universitat/ca/directori/directori-telefonic/cercador-telefons-1285 ...
+
+
+
+		LINEA: 108, COLUMNA: 2828: <a href="https://www.uv.es/uvweb/universitat/ca/directori/emergencies-seguretat/emergencies-dins-hor ...
+
+
+
+		LINEA: 108, COLUMNA: 3167: <a href="http://correo.uv.es/" title = "Enllaç entorno" >Entorn d'usuari UV</a>
+
+
+
+		LINEA: 108, COLUMNA: 3257: <a href="https://entreu.uv.es" title = "Enllaç entreu" >Entreu - seu electrònica</a>
+
+
+
+		LINEA: 108, COLUMNA: 3353: <a href="https://aulavirtual.uv.es/" title = "Enllaç aula virtual" >Aula Virtual</a>
+
+
+
+		LINEA: 108, COLUMNA: 3448: <a href="http://tauler.uv.es/" title = "Enllaç tablon oficial" >Tauler Oficial d'anuncis UV</a>
+
+
+
+		LINEA: 108, COLUMNA: 3554: <a href="https://contrataciondelestado.es/wps/portal/!ut/p/b1/hY3bCoJAFEW_xQ-Qc0bH2-OU18jSzFHnRaQkRr ...
+
+
+
+		LINEA: 108, COLUMNA: 4116: <a href="https://www.facebook.com/universitatdevalencia/" title = "Enllaç facebook" ><i style="font ...
+
+
+
+		LINEA: 108, COLUMNA: 4296: <a href="https://twitter.com/UV_EG" title = "Enllaç twitter" ><i style="font-size:1.5em" class="fa...
+
+
+
+		LINEA: 108, COLUMNA: 4451: <a href="https://www.linkedin.com/company/19168" title = "Enllaç linkedin" ><i style="font-size:1.5 ...
+
+
+
+		LINEA: 108, COLUMNA: 4621: <a href="https://es.pinterest.com/valenciaedu/" title = "Enllaç pinterest" ><i style="font-size:1.5 ...
+
+
+
+		LINEA: 108, COLUMNA: 4794: <a href="https://www.youtube.com/user/UniversitatValencia" title = "Enllaç youtube" ><i style="font ...
+
+
+
+		LINEA: 108, COLUMNA: 4972: <a href="https://www.instagram.com/universitatvalencia/" title = "Enllaç instagram" ><i style="font ...
+
+
+
+		LINEA: 108, COLUMNA: 5196: <a href="https://www.uv.es/uvweb/universitat/ca/bustia-uv/contacta-1285850036774.html" title = "Cont ...
+
+
+
+		LINEA: 128, COLUMNA: 5: <a href='https://www.uv.es/uvweb/universitat/ca/universitat-valencia-1285845048380.html' title='Enll ...
+
+
+
+		LINEA: 158, COLUMNA: 8: <a class="pagenum menu2nivel" rel="1" href="https://www.uv.es/uvweb/universitat/ca/universitat-12858 ...
+
+
+
+		LINEA: 162, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/missio-visio-valors/missio-1285924490521 ...
+
+
+
+		LINEA: 162, COLUMNA: 218: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/calendaris/calendari-academic-1285952763 ...
+
+
+
+		LINEA: 162, COLUMNA: 373: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/organs-govern/introduccio-1285853449734. ...
+
+
+
+		LINEA: 162, COLUMNA: 538: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/estructura-organitzativa-1285853446013.h ...
+
+
+
+		LINEA: 162, COLUMNA: 716: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/delegacio-proteccio-dades-lpd-/delegacio ...
+
+
+
+		LINEA: 162, COLUMNA: 934: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/pla-estrategic-uv/pla-estrategic-2016-20 ...
+
+
+
+		LINEA: 162, COLUMNA: 1130: <a href="https://www.uv.es/uvweb/transparencia-uv/ca/portal-transparencia-1285924287697.html" title= ...
+
+
+
+		LINEA: 162, COLUMNA: 1277: <a href="https://www.uv.es/uvweb/cultura/ca/cultura-1285865909702.html" title="Cultura"> Cultura</ ...
+
+
+
+		LINEA: 162, COLUMNA: 1388: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/territori/presentacio-1286034543205.html ...
+
+
+
+		LINEA: 162, COLUMNA: 1533: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/viure-universitat/allotjament/borsa-vive ...
+
+
+
+		LINEA: 180, COLUMNA: 8: <a class="pagenum menu2nivel" rel="2" href="https://www.uv.es/uvweb/universitat/ca/estudis-grau-1285 ...
+
+
+
+		LINEA: 184, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/oferta-graus/oferta-graus-1285846094474 ...
+
+
+
+		LINEA: 184, COLUMNA: 200: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/admissio/novetats-1285852992253.html" t ...
+
+
+
+		LINEA: 184, COLUMNA: 342: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/matricula/novetats-1285861954633.html"...
+
+
+
+		LINEA: 184, COLUMNA: 487: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/beques-ajudes/novetats-1285862473803.ht ...
+
+
+
+		LINEA: 184, COLUMNA: 646: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/informacio-academica-administrativa/cal ...
+
+
+
+		LINEA: 202, COLUMNA: 8: <a class="pagenum menu2nivel active" rel="3" href="https://www.uv.es/uvweb/universitat/ca/estudis-po ...
+
+
+
+		LINEA: 206, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-128602007 ...
+
+
+
+		LINEA: 206, COLUMNA: 223: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/doctorats/novetats-1285962349493.ht ...
+
+
+
+		LINEA: 206, COLUMNA: 370: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/titols-propis-postgrau/oferta-titol ...
+
+
+
+		LINEA: 206, COLUMNA: 576: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/informacio-administrativa-postgrau/ ...
+
+
+
+		LINEA: 224, COLUMNA: 8: <a class="pagenum menu2nivel" rel="4" href="https://www.uv.es/uvweb/universitat/ca/recerca-transfere ...
+
+
+
+		LINEA: 228, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/novetats/novetats-128585527116 ...
+
+
+
+		LINEA: 228, COLUMNA: 187: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/recerca-uv/presentacio-1285946 ...
+
+
+
+		LINEA: 228, COLUMNA: 361: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/financament/presentacio-noveta ...
+
+
+
+		LINEA: 228, COLUMNA: 533: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/internacionalitzacio/presentac ...
+
+
+
+		LINEA: 228, COLUMNA: 732: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/col-laboracio-empresa/presenta ...
+
+
+
+		LINEA: 228, COLUMNA: 944: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/emprenedoria/presentacio-novet ...
+
+
+
+		LINEA: 228, COLUMNA: 1117: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/parc-cientific/presentacio-128 ...
+
+
+
+		LINEA: 228, COLUMNA: 1289: <a href="https://www.uv.es/uvweb/servei-investigacio/ca/servei-investigacio-1285906397400.html" titl ...
+
+
+
+		LINEA: 246, COLUMNA: 8: <a class="pagenum menu2nivel" rel="5" href="https://www.uv.es/uvweb/universitat/ca/relacions-interna ...
+
+
+
+		LINEA: 250, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/relacions-internacionals/relacions-internacionals/an ...
+
+
+
+		LINEA: 250, COLUMNA: 251: <a href="https://www.uv.es/uvweb/universitat/ca/relacions-internacionals/cooperacio/novetats-1285936 ...
+
+
+
+		LINEA: 393, COLUMNA: 6: <a href='https://www.uv.es/uvweb/universitat/ca/universitat-valencia-1285845048380.html' title='Inic ...
+
+
+
+		LINEA: 398, COLUMNA: 6: <a href='#' title='Estudis de Postgrau'>Estudis de Postgrau</a>
+
+
+
+		LINEA: 403, COLUMNA: 6: <a href='https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-128602007 ...
+
+
+
+		LINEA: 449, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/oferta-masters-ofi ...
+
+
+
+		LINEA: 453, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/preinscripcio-/-ad ...
+
+
+
+		LINEA: 457, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/matricula/matricul ...
+
+
+
+		LINEA: 461, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/beques-ajudes-/uni ...
+
+
+
+		LINEA: 465, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/treball-fi-master- ...
+
+
+
+		LINEA: 469, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/login/estudis-postgrau/masters-oficials/gestio-maste ...
+
+
+
+		LINEA: 473, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/informacio-contact ...
+
+
+
+		LINEA: 477, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-128602007 ...
+
+
+
+		LINEA: 526, COLUMNA: 16: <a href='https://webges.uv.es/uvTaeWeb/MuestraInformacionEdictoPublicoFrontAction.do?accion=inicio&i ...
+
+
+
+		LINEA: 536, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resultats ...
+
+
+
+		LINEA: 536, COLUMNA: 362: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resultats ...
+
+
+
+		LINEA: 536, COLUMNA: 876: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resultats ...
+
+
+
+		LINEA: 546, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 546, COLUMNA: 338: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 546, COLUMNA: 738: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 556, COLUMNA: 545: <a href='https://www.uv.es/graus/beques/C_fi_estudis_18_19.pdf' title='RESOLUCIÓ'>RESOLUCIÓ</a>
+
+
+
+		LINEA: 568, COLUMNA: 80: <a href='https://www.uv.es/graus/beques/beques_ministeri_18_19.pdf' title='Resolució de la convocat ...
+
+
+
+		LINEA: 591, COLUMNA: 297: <a href='https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/matricula/carnet-u ...
+
+
+
+		LINEA: 601, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 601, COLUMNA: 328: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 602, COLUMNA: 9: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 612, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/preparar- ...
+
+
+
+		LINEA: 612, COLUMNA: 365: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/preparar- ...
+
+
+
+		LINEA: 612, COLUMNA: 951: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/preparar- ...
+
+
+
+		LINEA: 622, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/convocato ...
+
+
+
+		LINEA: 622, COLUMNA: 295: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/convocato ...
+
+
+
+		LINEA: 624, COLUMNA: 9: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/convocato ...
+
+
+
+		LINEA: 641, COLUMNA: 106: <a href='https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-128602007 ...
+
+
+
+		LINEA: 644, COLUMNA: 9: <a class="addthis_button_preferred_1"></a>
+
+
+
+		LINEA: 645, COLUMNA: 9: <a class="addthis_button_preferred_2"></a>
+
+
+
+		LINEA: 646, COLUMNA: 9: <a class="addthis_button_preferred_3"></a>
+
+
+
+		LINEA: 647, COLUMNA: 9: <a class="addthis_button_preferred_4"></a>
+
+
+
+		LINEA: 648, COLUMNA: 9: <a class="addthis_button_compact"></a>
+
+
+
+		LINEA: 649, COLUMNA: 9: <a class="addthis_counter addthis_bubble_style"></a>
+
+
+
+		LINEA: 682, COLUMNA: 8: <a href="#" title="Guia de Postgrau" >		<img alt="Guia de Postgrau" src="/recursos/fatwirepu ...
+
+
+
+		LINEA: 693, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Ingenieria.pdf" title="Branca d'arquitectura i engi ...
+
+
+
+		LINEA: 697, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Humanidades.pdf" title="Branca d'arts i humanitats" ...
+
+
+
+		LINEA: 701, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Ciencias.pdf" title="Branca de ciències" >Guia Bra ...
+
+
+
+		LINEA: 705, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Salud.pdf" title="Branca de ciències de la salut"...
+
+
+
+		LINEA: 709, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Sociales.pdf" title="Branca de ciències socials i...
+
+
+
+		LINEA: 721, COLUMNA: 9: <a href="http://www.uv.es/secundaria/" title="Enllac a la pàgina pròpia del Màster de Professor/a ...
+
+
+
+		LINEA: 725, COLUMNA: 9: <a href="http://www.uv.es/uvweb/universidad/ca/estudios-postgrado/informacio-academica-administrativ ...
+
+
+
+		LINEA: 729, COLUMNA: 9: <a href="http://www.uv.es/postgrau/doc/2012_informe_gestio.pdf" title="Informe de Gestió" >Informe...
+
+
+
+		LINEA: 768, COLUMNA: 11: <a title="Pàgina de la Universitat de València en Facebook" href="https://www.facebook.com/univers ...
+
+
+
+		LINEA: 791, COLUMNA: 11: <a title="Segueix a la Universitat de València en Twitter" href="http://twitter.com/UV_EG"><img cla ...
+
+
+
+		LINEA: 809, COLUMNA: 10: <a title="Linkedin UV" href="https://www.linkedin.com/company/19168"><img class="linkedin" alt="Link ...
+
+
+
+		LINEA: 827, COLUMNA: 10: <a title="Pinterest UV" href="https://www.pinterest.com/valenciaedu/"><img class="PinterestUV" alt=" ...
+
+
+
+		LINEA: 850, COLUMNA: 11: <a title="Canal YouTube de la Universitat de València" href="http://www.youtube.com/user/Universita ...
+
+
+
+		LINEA: 873, COLUMNA: 11: <a title="Instagram de la Universitat de València" href="https://www.instagram.com/universitatvalen ...
+
+
+
+		LINEA: 891, COLUMNA: 39: <a title="Googleplus" href="https://plus.google.com/u/0/b/109103335404534938571/+universidadvalencia ...
+
+
+
+		LINEA: 909, COLUMNA: 10: <a title="Servidor Multimèdia de la UV" href="http://mmedia.uv.es" target="_blank"><img class="mmed ...
+
+
+
+		LINEA: 927, COLUMNA: 10: <a title="Mediauni" href="http://mediauni.uv.es/"><img class="Mediauni" alt="Mediauni" src="//www.uv ...
+
+
+
+		LINEA: 950, COLUMNA: 11: <a title="RSS UV" href="http://www.uv.es/fatwirepub/Satellite?pagename=UV/Page/TPGContenidoSindicado ...
+
+
+
+		LINEA: 968, COLUMNA: 10: <a title="Aplicació de la Universitat de València per a dispositius Iphone" href="https://uvapp.uv ...
+
+
+
+		LINEA: 986, COLUMNA: 10: <a title="Aplicació de la Universitat de València per a dispositius android" href="https://uvapp.u ...
+
+
+
+		LINEA: 992, COLUMNA: 13: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/pla-estrategic-uv/pla-estrategic-2016-20 ...
+
+
+
+		LINEA: 996, COLUMNA: 13: <a href="http://tauler.uv.es/" title="Tauler Oficial d'anuncis UV" >Tauler Oficial d'anuncis UV</a>
+
+
+
+		LINEA: 1003, COLUMNA: 13: <a href="http://aulavirtual.uv.es" title = "Enllaç a la pàgina de l' Aula virtual" >Aula virtual</ ...
+
+
+
+		LINEA: 1010, COLUMNA: 13: <a href="http://www.uv.es/igualtat" title = "Enllaç a la pàgina del Plad'Igualtat" >Pla d'Igualt ...
+
+
+
+		LINEA: 1017, COLUMNA: 13: <a href="http://entreu.uv.es/" title = "Entreu seu electrònicaUV" >Entreu - seu electrònica</a>
+
+
+
+		LINEA: 1024, COLUMNA: 13: <a href="http://www.uv.es/contratacion" title = "Enllaç a la pàgina Perfil de contractant" >Perfil ...
+
+
+
+		LINEA: 1044, COLUMNA: 10: <atitle="Logo de VLC" href="http://www.vlc-campus.com/?lang=va" target="_blank"><img class="vlcpeu ...
+
+
+
+		LINEA: 1067, COLUMNA: 12: <atitle="Logo de campus habitat" href="http://www.campushabitat5u.org" target="_blank"><img class= ...
+
+
+
+		LINEA: 1090, COLUMNA: 12: <atitle="Logo de la xarxa d'universitats Xarxa Vives" href="http://www.vives.org" target="_blank"> ...
+
+
+
+		LINEA: 1108, COLUMNA: 10: <atitle="Universia. Portal de les Universitats espanyoles" href="http://www.uv.es/webuv/universia/ ...
+
+
+
+		LINEA: 1131, COLUMNA: 12: <atitle="Human Resources Strategy for Researchers" href="https://euraxess.ec.europa.eu/jobs/hrs4r" ...
+
+
+
+		LINEA: 1134, COLUMNA: 27: <a href="https://www.uv.es/uvweb/universitat/ca/avis-legal/avis-legal-1285919088090.html" title = "E ...
+
+
+
+		LINEA: 1134, COLUMNA: 169: <a href="https://www.uv.es/uvweb/universitat/ca/accessibilitat/accessibilitat-1285917448966.html" ti ...
+
+
+
+		LINEA: 1134, COLUMNA: 325: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/responsable-identificacio-titula ...
+
+
+
+		LINEA: 1134, COLUMNA: 533: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/politica-cookies/son-galetes--12 ...
+
+
+
+		LINEA: 1134, COLUMNA: 708: <a href="http://www.uv.es/transparencia" title = "Enllaç al portal de transparència" >Transparènc ...
+
+
+
+		LINEA: 1134, COLUMNA: 818: <a href="https://www.uv.es/uvweb/universitat/ca/bustia-uv/contacta-1285850036774.html" title = "Bús ...
+
+
+
+		LINEA: 1150, COLUMNA: 307: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/politica-cookies/son-galetes--12 ...
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 128, COLUMNA: 161: <img alt="Logo del portal" src='/recursos/fatwirepub/ccurl/873/273/logoUVvect.svg' />
+
+
+
+		LINEA: 365, COLUMNA: 7: <img src="https://www.uv.es/uwm/Spots/int_MASTERS_vl.jpg" alt="" />
+
+
+
+		LINEA: 536, COLUMNA: 238: <img src="/recursos/fatwirepub/ccurl/628/743/Hemeroteca,1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 546, COLUMNA: 214: <img src="/recursos/fatwirepub/ccurl/736/913/06 (Copiar).jpg" alt="Resoluciones" />
+
+
+
+		LINEA: 566, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/5/779/Llibres1.png" alt="Llibres" />
+
+
+
+		LINEA: 591, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/543/6/08 (Copiar).jpg" alt="carnet" />
+
+
+
+		LINEA: 601, COLUMNA: 213: <img src="/recursos/fatwirepub/ccurl/411/222/en1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 612, COLUMNA: 252: <img src="/recursos/fatwirepub/ccurl/876/157/en6.jpg" alt="MATRICULA" />
+
+
+
+		LINEA: 683, COLUMNA: 9: <img alt="Guia de Postgrau" src="/recursos/fatwirepub/ccurl/572/741/guia_postgrados_es.jpg" />
+
+
+
+		LINEA: 745, COLUMNA: 26: <img src="/recursos/fatwirepub/css/logoPeu.png" alt="Logo del portal"/>
+
+
+
+		LINEA: 768, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 791, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 809, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 827, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 850, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 873, COLUMNA: 117: <img class="instagram" alt="Instagram de la Universitat de València" src="//www.uv.es/uwm/xarxes_so ...
+
+
+
+		LINEA: 891, COLUMNA: 163: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+
+
+		LINEA: 909, COLUMNA: 94: <img class="mmedia" alt="Servidor Multimèdia de la UV" src="//www.uv.es/uwm/xarxes_socials/mmedia_i ...
+
+
+
+		LINEA: 927, COLUMNA: 60: <img class="Mediauni" alt="Mediauni" src="//www.uv.es/uwm/xarxes_socials/mediauni_inactivo.png" />
+
+
+
+		LINEA: 950, COLUMNA: 227: <img class="RSS" alt="RSS UV" src="//www.uv.es/uwm/xarxes_socials/rss_inactivo.png" />
+
+
+
+		LINEA: 968, COLUMNA: 132: <img class="iphone" alt="Aplicació de la Universitat de València per a dispositius Iphone" src="// ...
+
+
+
+		LINEA: 986, COLUMNA: 133: <img class="android" alt="Aplicació de la Universitat de València per a dispositius android" src=" ...
+
+
+
+		LINEA: 1044, COLUMNA: 92: <img class="vlcpeu" alt="Logo de VLC" src="//www.uv.es/uwm/segells/VLC_CAMPUS_gris.png" />
+
+
+
+		LINEA: 1067, COLUMNA: 101: <img class="campushabitatpeu" alt="Logo de campus habitat" src="//www.uv.es/uwm/segells/CAMPUS_HABIT ...
+
+
+
+		LINEA: 1090, COLUMNA: 112: <img class="xarxapeu" alt="Logo de la xarxa d'universitats Xarxa Vives" src="//www.uv.es/uwm/segells ...
+
+
+
+		LINEA: 1108, COLUMNA: 142: <img class="universiapeu" alt="Universia. Portal de les Universitats espanyoles" src=" //www.uv.es/u ...
+
+
+
+		LINEA: 1131, COLUMNA: 113: <img class="hrs4rpeu" alt="Human Resources Strategy for Researchers" src=" //www.uv.es/uwm/segells/E ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 128, COLUMNA: 161: <img alt="Logo del portal" src='/recursos/fatwirepub/ccurl/873/273/logoUVvect.svg' />
+
+
+
+		LINEA: 536, COLUMNA: 238: <img src="/recursos/fatwirepub/ccurl/628/743/Hemeroteca,1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 546, COLUMNA: 214: <img src="/recursos/fatwirepub/ccurl/736/913/06 (Copiar).jpg" alt="Resoluciones" />
+
+
+
+		LINEA: 566, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/5/779/Llibres1.png" alt="Llibres" />
+
+
+
+		LINEA: 591, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/543/6/08 (Copiar).jpg" alt="carnet" />
+
+
+
+		LINEA: 601, COLUMNA: 213: <img src="/recursos/fatwirepub/ccurl/411/222/en1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 612, COLUMNA: 252: <img src="/recursos/fatwirepub/ccurl/876/157/en6.jpg" alt="MATRICULA" />
+
+
+
+		LINEA: 683, COLUMNA: 9: <img alt="Guia de Postgrau" src="/recursos/fatwirepub/ccurl/572/741/guia_postgrados_es.jpg" />
+
+
+
+		LINEA: 745, COLUMNA: 26: <img src="/recursos/fatwirepub/css/logoPeu.png" alt="Logo del portal"/>
+
+
+
+		LINEA: 768, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 791, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 809, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 827, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 850, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 873, COLUMNA: 117: <img class="instagram" alt="Instagram de la Universitat de València" src="//www.uv.es/uwm/xarxes_so ...
+
+
+
+		LINEA: 891, COLUMNA: 163: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+
+
+		LINEA: 909, COLUMNA: 94: <img class="mmedia" alt="Servidor Multimèdia de la UV" src="//www.uv.es/uwm/xarxes_socials/mmedia_i ...
+
+
+
+		LINEA: 927, COLUMNA: 60: <img class="Mediauni" alt="Mediauni" src="//www.uv.es/uwm/xarxes_socials/mediauni_inactivo.png" />
+
+
+
+		LINEA: 950, COLUMNA: 227: <img class="RSS" alt="RSS UV" src="//www.uv.es/uwm/xarxes_socials/rss_inactivo.png" />
+
+
+
+		LINEA: 968, COLUMNA: 132: <img class="iphone" alt="Aplicació de la Universitat de València per a dispositius Iphone" src="// ...
+
+
+
+		LINEA: 986, COLUMNA: 133: <img class="android" alt="Aplicació de la Universitat de València per a dispositius android" src=" ...
+
+
+
+		LINEA: 1044, COLUMNA: 92: <img class="vlcpeu" alt="Logo de VLC" src="//www.uv.es/uwm/segells/VLC_CAMPUS_gris.png" />
+
+
+
+		LINEA: 1067, COLUMNA: 101: <img class="campushabitatpeu" alt="Logo de campus habitat" src="//www.uv.es/uwm/segells/CAMPUS_HABIT ...
+
+
+
+		LINEA: 1090, COLUMNA: 112: <img class="xarxapeu" alt="Logo de la xarxa d'universitats Xarxa Vives" src="//www.uv.es/uwm/segells ...
+
+
+
+		LINEA: 1108, COLUMNA: 142: <img class="universiapeu" alt="Universia. Portal de les Universitats espanyoles" src=" //www.uv.es/u ...
+
+
+
+		LINEA: 1131, COLUMNA: 113: <img class="hrs4rpeu" alt="Human Resources Strategy for Researchers" src=" //www.uv.es/uwm/segells/E ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 365, COLUMNA: 7: <img src="https://www.uv.es/uwm/Spots/int_MASTERS_vl.jpg" alt="" />
+
+
+
+		LINEA: 566, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/5/779/Llibres1.png" alt="Llibres" />
+
+
+
+		LINEA: 591, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/543/6/08 (Copiar).jpg" alt="carnet" />
+
+
+
+		LINEA: 745, COLUMNA: 26: <img src="/recursos/fatwirepub/css/logoPeu.png" alt="Logo del portal"/>
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 116, COLUMNA: 64: <input value="Cercar" name="p3" id="p3" class="form-text" type="text" size="20" onfocus="javascript: ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 128, COLUMNA: 161: <img alt="Logo del portal" src='/recursos/fatwirepub/ccurl/873/273/logoUVvect.svg' />
+
+
+
+		LINEA: 365, COLUMNA: 7: <img src="https://www.uv.es/uwm/Spots/int_MASTERS_vl.jpg" alt="" />
+
+
+
+		LINEA: 524, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/165/209/becas,9.jpg"/>
+
+
+
+		LINEA: 536, COLUMNA: 238: <img src="/recursos/fatwirepub/ccurl/628/743/Hemeroteca,1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 546, COLUMNA: 214: <img src="/recursos/fatwirepub/ccurl/736/913/06 (Copiar).jpg" alt="Resoluciones" />
+
+
+
+		LINEA: 556, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/699/995/Alumnes4,0.png"/>
+
+
+
+		LINEA: 566, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/5/779/Llibres1.png" alt="Llibres" />
+
+
+
+		LINEA: 578, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/536/342/Rectorat3,0.png"/>
+
+
+
+		LINEA: 591, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/543/6/08 (Copiar).jpg" alt="carnet" />
+
+
+
+		LINEA: 601, COLUMNA: 213: <img src="/recursos/fatwirepub/ccurl/411/222/en1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 612, COLUMNA: 252: <img src="/recursos/fatwirepub/ccurl/876/157/en6.jpg" alt="MATRICULA" />
+
+
+
+		LINEA: 622, COLUMNA: 196: <img src="/recursos/fatwirepub/ccurl/158/167/beca.jpg"/>
+
+
+
+		LINEA: 683, COLUMNA: 9: <img alt="Guia de Postgrau" src="/recursos/fatwirepub/ccurl/572/741/guia_postgrados_es.jpg" />
+
+
+
+		LINEA: 745, COLUMNA: 26: <img src="/recursos/fatwirepub/css/logoPeu.png" alt="Logo del portal"/>
+
+
+
+		LINEA: 768, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 791, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 809, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 827, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 850, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 873, COLUMNA: 117: <img class="instagram" alt="Instagram de la Universitat de València" src="//www.uv.es/uwm/xarxes_so ...
+
+
+
+		LINEA: 891, COLUMNA: 163: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+
+
+		LINEA: 909, COLUMNA: 94: <img class="mmedia" alt="Servidor Multimèdia de la UV" src="//www.uv.es/uwm/xarxes_socials/mmedia_i ...
+
+
+
+		LINEA: 927, COLUMNA: 60: <img class="Mediauni" alt="Mediauni" src="//www.uv.es/uwm/xarxes_socials/mediauni_inactivo.png" />
+
+
+
+		LINEA: 950, COLUMNA: 227: <img class="RSS" alt="RSS UV" src="//www.uv.es/uwm/xarxes_socials/rss_inactivo.png" />
+
+
+
+		LINEA: 968, COLUMNA: 132: <img class="iphone" alt="Aplicació de la Universitat de València per a dispositius Iphone" src="// ...
+
+
+
+		LINEA: 986, COLUMNA: 133: <img class="android" alt="Aplicació de la Universitat de València per a dispositius android" src=" ...
+
+
+
+		LINEA: 1044, COLUMNA: 92: <img class="vlcpeu" alt="Logo de VLC" src="//www.uv.es/uwm/segells/VLC_CAMPUS_gris.png" />
+
+
+
+		LINEA: 1067, COLUMNA: 101: <img class="campushabitatpeu" alt="Logo de campus habitat" src="//www.uv.es/uwm/segells/CAMPUS_HABIT ...
+
+
+
+		LINEA: 1090, COLUMNA: 112: <img class="xarxapeu" alt="Logo de la xarxa d'universitats Xarxa Vives" src="//www.uv.es/uwm/segells ...
+
+
+
+		LINEA: 1108, COLUMNA: 142: <img class="universiapeu" alt="Universia. Portal de les Universitats espanyoles" src=" //www.uv.es/u ...
+
+
+
+		LINEA: 1131, COLUMNA: 113: <img class="hrs4rpeu" alt="Human Resources Strategy for Researchers" src=" //www.uv.es/uwm/segells/E ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 116, COLUMNA: 64: <input value="Cercar" name="p3" id="p3" class="form-text" type="text" size="20" onfocus="javascript: ...
+
+
+
+		LINEA: 119, COLUMNA: 8: <input type="submit" class="form-submit" value="&nbsp;"/>
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 54, COLUMNA: 3: <script type="text/javascript" src="/recursos/fatwirepub/js/paracepas.js"></script>
+
+
+
+		LINEA: 55, COLUMNA: 3: <script type="text/javascript" src="/recursos/fatwirepub/js/jquery-1.7.2.min.js"></script>
+
+
+
+		LINEA: 57, COLUMNA: 2: <script type="text/javascript" src="/recursos/fatwirepub/js/html5lightbox.js"></script>
+
+
+
+		LINEA: 58, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery-ui-1.8.16.custom.min.js'></script ...
+
+
+
+		LINEA: 59, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.tinycarousel.js'></script>
+
+
+
+		LINEA: 60, COLUMNA: 3: <script type="text/javascript" src="/recursos/fatwirepub/js/slider.js" ></script>
+
+
+
+		LINEA: 61, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.ui.datepicker-ca.js'></script>
+
+
+
+		LINEA: 62, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.ui.datepicker-es.js'></script>
+
+
+
+		LINEA: 63, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery-ui-timepicker-addon.js'></script>
+
+
+
+		LINEA: 64, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.imgCrossfade.min.js'></script>
+
+
+
+		LINEA: 65, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/website.js'></script>
+
+
+
+		LINEA: 66, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/flexcroll.js'></script>
+
+
+
+		LINEA: 67, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/tab.js'></script>
+
+
+
+		LINEA: 68, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/dropdown.js'></script>
+
+
+
+		LINEA: 69, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/collapse.js'></script>
+
+
+
+		LINEA: 71, COLUMNA: 3: <script>	 (function() {		var cx = '011592280532160877737:lsblopbqyde';		var gcse = ...
+
+
+
+		LINEA: 79, COLUMNA: 10: <script type="text/javascript">	var _gaq = _gaq || [];	_gaq.push(['_setAccount', 'UA-30665 ...
+
+
+
+		LINEA: 152, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 174, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 196, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 218, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 240, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 265, COLUMNA: 9: <script type="text/javascript">		// <![CDATA[ 		document.write("<ul class='menu-prim-movil ...
+
+
+
+		LINEA: 272, COLUMNA: 13: <script type="text/javascript">		// <![CDATA[ function menu (n) { ...
+
+
+
+		LINEA: 335, COLUMNA: 4: <script type="text/javascript">// <![CDATA[ 	document.write("<div class='nou-submenu'><spa ...
+
+
+
+		LINEA: 488, COLUMNA: 24: <script type="text/javascript">	$( ".boton-menu-izquierda" ).click(function() {	$( ".menu-sideba ...
+
+
+
+		LINEA: 651, COLUMNA: 9: <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6c56ca09632 ...
+
+
+
+		LINEA: 753, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.faceb ...
+
+
+
+		LINEA: 776, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.twitt ...
+
+
+
+		LINEA: 799, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.linke ...
+
+
+
+		LINEA: 817, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Pinte ...
+
+
+
+		LINEA: 835, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.youtu ...
+
+
+
+		LINEA: 858, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.insta ...
+
+
+
+		LINEA: 881, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Googl ...
+
+
+
+		LINEA: 899, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.mmedi ...
+
+
+
+		LINEA: 917, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Media ...
+
+
+
+		LINEA: 935, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.RSS"...
+
+
+
+		LINEA: 958, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.iphon ...
+
+
+
+		LINEA: 976, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.andro ...
+
+
+
+		LINEA: 1034, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.vlc ...
+
+
+
+		LINEA: 1052, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.cam ...
+
+
+
+		LINEA: 1075, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.xar ...
+
+
+
+		LINEA: 1098, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.uni ...
+
+
+
+		LINEA: 1116, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.hrs ...
+
+
+
+		LINEA: 1153, COLUMNA: 2: <script type="text/javascript">	// <![CDATA[ 	document.write("<a href='javascript:void(0);' styl ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 128, COLUMNA: 161: <img alt="Logo del portal" src='/recursos/fatwirepub/ccurl/873/273/logoUVvect.svg' />
+
+
+
+		LINEA: 365, COLUMNA: 7: <img src="https://www.uv.es/uwm/Spots/int_MASTERS_vl.jpg" alt="" />
+
+
+
+		LINEA: 536, COLUMNA: 238: <img src="/recursos/fatwirepub/ccurl/628/743/Hemeroteca,1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 546, COLUMNA: 214: <img src="/recursos/fatwirepub/ccurl/736/913/06 (Copiar).jpg" alt="Resoluciones" />
+
+
+
+		LINEA: 566, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/5/779/Llibres1.png" alt="Llibres" />
+
+
+
+		LINEA: 591, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/543/6/08 (Copiar).jpg" alt="carnet" />
+
+
+
+		LINEA: 601, COLUMNA: 213: <img src="/recursos/fatwirepub/ccurl/411/222/en1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 612, COLUMNA: 252: <img src="/recursos/fatwirepub/ccurl/876/157/en6.jpg" alt="MATRICULA" />
+
+
+
+		LINEA: 683, COLUMNA: 9: <img alt="Guia de Postgrau" src="/recursos/fatwirepub/ccurl/572/741/guia_postgrados_es.jpg" />
+
+
+
+		LINEA: 745, COLUMNA: 26: <img src="/recursos/fatwirepub/css/logoPeu.png" alt="Logo del portal"/>
+
+
+
+		LINEA: 768, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 791, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 809, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 827, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 850, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 873, COLUMNA: 117: <img class="instagram" alt="Instagram de la Universitat de València" src="//www.uv.es/uwm/xarxes_so ...
+
+
+
+		LINEA: 891, COLUMNA: 163: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+
+
+		LINEA: 909, COLUMNA: 94: <img class="mmedia" alt="Servidor Multimèdia de la UV" src="//www.uv.es/uwm/xarxes_socials/mmedia_i ...
+
+
+
+		LINEA: 927, COLUMNA: 60: <img class="Mediauni" alt="Mediauni" src="//www.uv.es/uwm/xarxes_socials/mediauni_inactivo.png" />
+
+
+
+		LINEA: 950, COLUMNA: 227: <img class="RSS" alt="RSS UV" src="//www.uv.es/uwm/xarxes_socials/rss_inactivo.png" />
+
+
+
+		LINEA: 968, COLUMNA: 132: <img class="iphone" alt="Aplicació de la Universitat de València per a dispositius Iphone" src="// ...
+
+
+
+		LINEA: 986, COLUMNA: 133: <img class="android" alt="Aplicació de la Universitat de València per a dispositius android" src=" ...
+
+
+
+		LINEA: 1044, COLUMNA: 92: <img class="vlcpeu" alt="Logo de VLC" src="//www.uv.es/uwm/segells/VLC_CAMPUS_gris.png" />
+
+
+
+		LINEA: 1067, COLUMNA: 101: <img class="campushabitatpeu" alt="Logo de campus habitat" src="//www.uv.es/uwm/segells/CAMPUS_HABIT ...
+
+
+
+		LINEA: 1090, COLUMNA: 112: <img class="xarxapeu" alt="Logo de la xarxa d'universitats Xarxa Vives" src="//www.uv.es/uwm/segells ...
+
+
+
+		LINEA: 1108, COLUMNA: 142: <img class="universiapeu" alt="Universia. Portal de les Universitats espanyoles" src=" //www.uv.es/u ...
+
+
+
+		LINEA: 1131, COLUMNA: 113: <img class="hrs4rpeu" alt="Human Resources Strategy for Researchers" src=" //www.uv.es/uwm/segells/E ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 128, COLUMNA: 161: <img alt="Logo del portal" src='/recursos/fatwirepub/ccurl/873/273/logoUVvect.svg' />
+
+
+
+		LINEA: 365, COLUMNA: 7: <img src="https://www.uv.es/uwm/Spots/int_MASTERS_vl.jpg" alt="" />
+
+
+
+		LINEA: 524, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/165/209/becas,9.jpg"/>
+
+
+
+		LINEA: 536, COLUMNA: 238: <img src="/recursos/fatwirepub/ccurl/628/743/Hemeroteca,1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 546, COLUMNA: 214: <img src="/recursos/fatwirepub/ccurl/736/913/06 (Copiar).jpg" alt="Resoluciones" />
+
+
+
+		LINEA: 556, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/699/995/Alumnes4,0.png"/>
+
+
+
+		LINEA: 566, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/5/779/Llibres1.png" alt="Llibres" />
+
+
+
+		LINEA: 578, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/536/342/Rectorat3,0.png"/>
+
+
+
+		LINEA: 591, COLUMNA: 8: <img src="/recursos/fatwirepub/ccurl/543/6/08 (Copiar).jpg" alt="carnet" />
+
+
+
+		LINEA: 601, COLUMNA: 213: <img src="/recursos/fatwirepub/ccurl/411/222/en1.jpg" alt="Resolucions" />
+
+
+
+		LINEA: 612, COLUMNA: 252: <img src="/recursos/fatwirepub/ccurl/876/157/en6.jpg" alt="MATRICULA" />
+
+
+
+		LINEA: 622, COLUMNA: 196: <img src="/recursos/fatwirepub/ccurl/158/167/beca.jpg"/>
+
+
+
+		LINEA: 683, COLUMNA: 9: <img alt="Guia de Postgrau" src="/recursos/fatwirepub/ccurl/572/741/guia_postgrados_es.jpg" />
+
+
+
+		LINEA: 745, COLUMNA: 26: <img src="/recursos/fatwirepub/css/logoPeu.png" alt="Logo del portal"/>
+
+
+
+		LINEA: 768, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 791, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 809, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 827, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 850, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 873, COLUMNA: 117: <img class="instagram" alt="Instagram de la Universitat de València" src="//www.uv.es/uwm/xarxes_so ...
+
+
+
+		LINEA: 891, COLUMNA: 163: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+
+
+		LINEA: 909, COLUMNA: 94: <img class="mmedia" alt="Servidor Multimèdia de la UV" src="//www.uv.es/uwm/xarxes_socials/mmedia_i ...
+
+
+
+		LINEA: 927, COLUMNA: 60: <img class="Mediauni" alt="Mediauni" src="//www.uv.es/uwm/xarxes_socials/mediauni_inactivo.png" />
+
+
+
+		LINEA: 950, COLUMNA: 227: <img class="RSS" alt="RSS UV" src="//www.uv.es/uwm/xarxes_socials/rss_inactivo.png" />
+
+
+
+		LINEA: 968, COLUMNA: 132: <img class="iphone" alt="Aplicació de la Universitat de València per a dispositius Iphone" src="// ...
+
+
+
+		LINEA: 986, COLUMNA: 133: <img class="android" alt="Aplicació de la Universitat de València per a dispositius android" src=" ...
+
+
+
+		LINEA: 1044, COLUMNA: 92: <img class="vlcpeu" alt="Logo de VLC" src="//www.uv.es/uwm/segells/VLC_CAMPUS_gris.png" />
+
+
+
+		LINEA: 1067, COLUMNA: 101: <img class="campushabitatpeu" alt="Logo de campus habitat" src="//www.uv.es/uwm/segells/CAMPUS_HABIT ...
+
+
+
+		LINEA: 1090, COLUMNA: 112: <img class="xarxapeu" alt="Logo de la xarxa d'universitats Xarxa Vives" src="//www.uv.es/uwm/segells ...
+
+
+
+		LINEA: 1108, COLUMNA: 142: <img class="universiapeu" alt="Universia. Portal de les Universitats espanyoles" src=" //www.uv.es/u ...
+
+
+
+		LINEA: 1131, COLUMNA: 113: <img class="hrs4rpeu" alt="Human Resources Strategy for Researchers" src=" //www.uv.es/uwm/segells/E ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 54, COLUMNA: 3: <script type="text/javascript" src="/recursos/fatwirepub/js/paracepas.js"></script>
+
+
+
+		LINEA: 55, COLUMNA: 3: <script type="text/javascript" src="/recursos/fatwirepub/js/jquery-1.7.2.min.js"></script>
+
+
+
+		LINEA: 57, COLUMNA: 2: <script type="text/javascript" src="/recursos/fatwirepub/js/html5lightbox.js"></script>
+
+
+
+		LINEA: 58, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery-ui-1.8.16.custom.min.js'></script ...
+
+
+
+		LINEA: 59, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.tinycarousel.js'></script>
+
+
+
+		LINEA: 60, COLUMNA: 3: <script type="text/javascript" src="/recursos/fatwirepub/js/slider.js" ></script>
+
+
+
+		LINEA: 61, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.ui.datepicker-ca.js'></script>
+
+
+
+		LINEA: 62, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.ui.datepicker-es.js'></script>
+
+
+
+		LINEA: 63, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery-ui-timepicker-addon.js'></script>
+
+
+
+		LINEA: 64, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.imgCrossfade.min.js'></script>
+
+
+
+		LINEA: 65, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/website.js'></script>
+
+
+
+		LINEA: 66, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/flexcroll.js'></script>
+
+
+
+		LINEA: 67, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/tab.js'></script>
+
+
+
+		LINEA: 68, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/dropdown.js'></script>
+
+
+
+		LINEA: 69, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/collapse.js'></script>
+
+
+
+		LINEA: 71, COLUMNA: 3: <script>	 (function() {		var cx = '011592280532160877737:lsblopbqyde';		var gcse = ...
+
+
+
+		LINEA: 79, COLUMNA: 10: <script type="text/javascript">	var _gaq = _gaq || [];	_gaq.push(['_setAccount', 'UA-30665 ...
+
+
+
+		LINEA: 152, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 174, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 196, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 218, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 240, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 265, COLUMNA: 9: <script type="text/javascript">		// <![CDATA[ 		document.write("<ul class='menu-prim-movil ...
+
+
+
+		LINEA: 272, COLUMNA: 13: <script type="text/javascript">		// <![CDATA[ function menu (n) { ...
+
+
+
+		LINEA: 335, COLUMNA: 4: <script type="text/javascript">// <![CDATA[ 	document.write("<div class='nou-submenu'><spa ...
+
+
+
+		LINEA: 488, COLUMNA: 24: <script type="text/javascript">	$( ".boton-menu-izquierda" ).click(function() {	$( ".menu-sideba ...
+
+
+
+		LINEA: 651, COLUMNA: 9: <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6c56ca09632 ...
+
+
+
+		LINEA: 753, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.faceb ...
+
+
+
+		LINEA: 776, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.twitt ...
+
+
+
+		LINEA: 799, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.linke ...
+
+
+
+		LINEA: 817, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Pinte ...
+
+
+
+		LINEA: 835, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.youtu ...
+
+
+
+		LINEA: 858, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.insta ...
+
+
+
+		LINEA: 881, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Googl ...
+
+
+
+		LINEA: 899, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.mmedi ...
+
+
+
+		LINEA: 917, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Media ...
+
+
+
+		LINEA: 935, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.RSS"...
+
+
+
+		LINEA: 958, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.iphon ...
+
+
+
+		LINEA: 976, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.andro ...
+
+
+
+		LINEA: 1034, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.vlc ...
+
+
+
+		LINEA: 1052, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.cam ...
+
+
+
+		LINEA: 1075, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.xar ...
+
+
+
+		LINEA: 1098, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.uni ...
+
+
+
+		LINEA: 1116, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.hrs ...
+
+
+
+		LINEA: 1153, COLUMNA: 2: <script type="text/javascript">	// <![CDATA[ 	document.write("<a href='javascript:void(0);' styl ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 54, COLUMNA: 3: <script type="text/javascript" src="/recursos/fatwirepub/js/paracepas.js"></script>
+
+
+
+		LINEA: 55, COLUMNA: 3: <script type="text/javascript" src="/recursos/fatwirepub/js/jquery-1.7.2.min.js"></script>
+
+
+
+		LINEA: 57, COLUMNA: 2: <script type="text/javascript" src="/recursos/fatwirepub/js/html5lightbox.js"></script>
+
+
+
+		LINEA: 58, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery-ui-1.8.16.custom.min.js'></script ...
+
+
+
+		LINEA: 59, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.tinycarousel.js'></script>
+
+
+
+		LINEA: 60, COLUMNA: 3: <script type="text/javascript" src="/recursos/fatwirepub/js/slider.js" ></script>
+
+
+
+		LINEA: 61, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.ui.datepicker-ca.js'></script>
+
+
+
+		LINEA: 62, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.ui.datepicker-es.js'></script>
+
+
+
+		LINEA: 63, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery-ui-timepicker-addon.js'></script>
+
+
+
+		LINEA: 64, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/jquery.imgCrossfade.min.js'></script>
+
+
+
+		LINEA: 65, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/website.js'></script>
+
+
+
+		LINEA: 66, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/flexcroll.js'></script>
+
+
+
+		LINEA: 67, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/tab.js'></script>
+
+
+
+		LINEA: 68, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/dropdown.js'></script>
+
+
+
+		LINEA: 69, COLUMNA: 3: <script type="text/javascript" src='/recursos/fatwirepub/js/collapse.js'></script>
+
+
+
+		LINEA: 71, COLUMNA: 3: <script>	 (function() {		var cx = '011592280532160877737:lsblopbqyde';		var gcse = ...
+
+
+
+		LINEA: 79, COLUMNA: 10: <script type="text/javascript">	var _gaq = _gaq || [];	_gaq.push(['_setAccount', 'UA-30665 ...
+
+
+
+		LINEA: 152, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 174, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 196, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 218, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 240, COLUMNA: 7: <script type="text/javascript">// <![CDATA[ 	document.write("<a class='pagenum menu2 ...
+
+
+
+		LINEA: 265, COLUMNA: 9: <script type="text/javascript">		// <![CDATA[ 		document.write("<ul class='menu-prim-movil ...
+
+
+
+		LINEA: 272, COLUMNA: 13: <script type="text/javascript">		// <![CDATA[ function menu (n) { ...
+
+
+
+		LINEA: 335, COLUMNA: 4: <script type="text/javascript">// <![CDATA[ 	document.write("<div class='nou-submenu'><spa ...
+
+
+
+		LINEA: 488, COLUMNA: 24: <script type="text/javascript">	$( ".boton-menu-izquierda" ).click(function() {	$( ".menu-sideba ...
+
+
+
+		LINEA: 651, COLUMNA: 9: <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6c56ca09632 ...
+
+
+
+		LINEA: 753, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.faceb ...
+
+
+
+		LINEA: 776, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.twitt ...
+
+
+
+		LINEA: 799, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.linke ...
+
+
+
+		LINEA: 817, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Pinte ...
+
+
+
+		LINEA: 835, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.youtu ...
+
+
+
+		LINEA: 858, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.insta ...
+
+
+
+		LINEA: 881, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Googl ...
+
+
+
+		LINEA: 899, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.mmedi ...
+
+
+
+		LINEA: 917, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Media ...
+
+
+
+		LINEA: 935, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.RSS"...
+
+
+
+		LINEA: 958, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.iphon ...
+
+
+
+		LINEA: 976, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.andro ...
+
+
+
+		LINEA: 1034, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.vlc ...
+
+
+
+		LINEA: 1052, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.cam ...
+
+
+
+		LINEA: 1075, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.xar ...
+
+
+
+		LINEA: 1098, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.uni ...
+
+
+
+		LINEA: 1116, COLUMNA: 10: <script type="text/javascript">		$(document).ready(function() { $( "img.hrs ...
+
+
+
+		LINEA: 1153, COLUMNA: 2: <script type="text/javascript">	// <![CDATA[ 	document.write("<a href='javascript:void(0);' styl ...
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 34, COLUMNA: 44: <title>Novetats</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 107, COLUMNA: 133: <a href="http://www.uv.es/uvweb/futuros-estudiantes/ca/novetats-1285852326437.html" title = "Enllaç ...
+
+
+
+		LINEA: 107, COLUMNA: 298: <a href="http://www.uv.es/uvweb/estudiantes-uv/ca/novetats-1285852853619.html" title = "Enllaç al p ...
+
+
+
+		LINEA: 107, COLUMNA: 512: <a href="http://www.uv.es/pdi" title = "Enllaç a la pàgina del Servei de Recursos Humans - PDI" >S ...
+
+
+
+		LINEA: 107, COLUMNA: 640: <a href="http://www.uv.es/uvweb/servei-investigacio/ca/servei-investigacio-1285906397400.html" title ...
+
+
+
+		LINEA: 107, COLUMNA: 880: <a href="http://www.uv.es/uvweb/servei-recursos-humans-pas/ca/servei-recursos-humans--1285910936596. ...
+
+
+
+		LINEA: 107, COLUMNA: 1059: <a href="http://gdh.uv.es" title = "Gestió de la dedicació horària" >GDH</a>
+
+
+
+		LINEA: 107, COLUMNA: 1157: <a href="http://www.uv.es/uvweb/empresa/ca/introduccio-1285853486272.html" title = "Enllaç al perfi ...
+
+
+
+		LINEA: 108, COLUMNA: 32: <a href="https://www.uv.es/uvweb/universidad/es/estudios-postgrado/masteres-oficiales/novedades-1286 ...
+
+
+
+		LINEA: 108, COLUMNA: 259: <a href="https://www.uv.es/uvweb/college/en/postgraduate-courses/official-master-s-degrees/news-1286 ...
+
+
+
+		LINEA: 108, COLUMNA: 540: <a href="https://www.uv.es/uvweb/universitat/ca/directori/facultats-escoles-1285846794920.html" titl ...
+
+
+
+		LINEA: 108, COLUMNA: 700: <a href="https://www.uv.es/uvweb/universitat/ca/directori/departaments-1285846794927.html" title = " ...
+
+
+
+		LINEA: 108, COLUMNA: 841: <a href="https://www.uv.es/uvweb/universitat/ca/directori/serveis-1285846794934.html" title = "Enlla ...
+
+
+
+		LINEA: 108, COLUMNA: 977: <a href="https://www.uv.es/uvweb/universitat/ca/directori/instituts-investigacio-eri-1285846795127.h ...
+
+
+
+		LINEA: 108, COLUMNA: 1156: <a href="https://www.uv.es/uvweb/universitat/ca/directori/grups-investigacio-1285956741406.html" tit ...
+
+
+
+		LINEA: 108, COLUMNA: 1323: <a href="https://www.uv.es/uvweb/universitat/ca/directori/altres-entitats/centres-singulars-12858471 ...
+
+
+
+		LINEA: 108, COLUMNA: 1501: <a href="https://www.uv.es/uvweb/universitat/ca/directori/consell-direccio/consell-direccio-12860414 ...
+
+
+
+		LINEA: 108, COLUMNA: 1689: <a href="https://www.uv.es/uvweb/universitat/ca/directori/altres-organs-universitat/altres-organs-un ...
+
+
+
+		LINEA: 108, COLUMNA: 1911: <a href="https://www.uv.es/uvweb/universitat/ca/directori/fundacions-entitats-associades/fundacio-ge ...
+
+
+
+		LINEA: 108, COLUMNA: 2140: <a href="https://www.uv.es/uvweb/universitat/ca/directori/catedres-institucionals-1285846794956.html ...
+
+
+
+		LINEA: 108, COLUMNA: 2326: <a href="https://www.uv.es/uvweb/universitat/ca/directori/cercador-persones-1285866527763.html" titl ...
+
+
+
+		LINEA: 108, COLUMNA: 2498: <a href="https://www.uv.es/uvweb/universitat/ca/directori/planols-1285973759558.html" title = "Enlla ...
+
+
+
+		LINEA: 108, COLUMNA: 2636: <a href="https://www.uv.es/uvweb/universitat/ca/directori/directori-telefonic/cercador-telefons-1285 ...
+
+
+
+		LINEA: 108, COLUMNA: 2828: <a href="https://www.uv.es/uvweb/universitat/ca/directori/emergencies-seguretat/emergencies-dins-hor ...
+
+
+
+		LINEA: 108, COLUMNA: 3167: <a href="http://correo.uv.es/" title = "Enllaç entorno" >Entorn d'usuari UV</a>
+
+
+
+		LINEA: 108, COLUMNA: 3257: <a href="https://entreu.uv.es" title = "Enllaç entreu" >Entreu - seu electrònica</a>
+
+
+
+		LINEA: 108, COLUMNA: 3353: <a href="https://aulavirtual.uv.es/" title = "Enllaç aula virtual" >Aula Virtual</a>
+
+
+
+		LINEA: 108, COLUMNA: 3448: <a href="http://tauler.uv.es/" title = "Enllaç tablon oficial" >Tauler Oficial d'anuncis UV</a>
+
+
+
+		LINEA: 108, COLUMNA: 3554: <a href="https://contrataciondelestado.es/wps/portal/!ut/p/b1/hY3bCoJAFEW_xQ-Qc0bH2-OU18jSzFHnRaQkRr ...
+
+
+
+		LINEA: 108, COLUMNA: 4116: <a href="https://www.facebook.com/universitatdevalencia/" title = "Enllaç facebook" ><i style="font ...
+
+
+
+		LINEA: 108, COLUMNA: 4296: <a href="https://twitter.com/UV_EG" title = "Enllaç twitter" ><i style="font-size:1.5em" class="fa...
+
+
+
+		LINEA: 108, COLUMNA: 4451: <a href="https://www.linkedin.com/company/19168" title = "Enllaç linkedin" ><i style="font-size:1.5 ...
+
+
+
+		LINEA: 108, COLUMNA: 4621: <a href="https://es.pinterest.com/valenciaedu/" title = "Enllaç pinterest" ><i style="font-size:1.5 ...
+
+
+
+		LINEA: 108, COLUMNA: 4794: <a href="https://www.youtube.com/user/UniversitatValencia" title = "Enllaç youtube" ><i style="font ...
+
+
+
+		LINEA: 108, COLUMNA: 4972: <a href="https://www.instagram.com/universitatvalencia/" title = "Enllaç instagram" ><i style="font ...
+
+
+
+		LINEA: 108, COLUMNA: 5196: <a href="https://www.uv.es/uvweb/universitat/ca/bustia-uv/contacta-1285850036774.html" title = "Cont ...
+
+
+
+		LINEA: 128, COLUMNA: 5: <a href='https://www.uv.es/uvweb/universitat/ca/universitat-valencia-1285845048380.html' title='Enll ...
+
+
+
+		LINEA: 158, COLUMNA: 8: <a class="pagenum menu2nivel" rel="1" href="https://www.uv.es/uvweb/universitat/ca/universitat-12858 ...
+
+
+
+		LINEA: 162, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/missio-visio-valors/missio-1285924490521 ...
+
+
+
+		LINEA: 162, COLUMNA: 218: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/calendaris/calendari-academic-1285952763 ...
+
+
+
+		LINEA: 162, COLUMNA: 373: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/organs-govern/introduccio-1285853449734. ...
+
+
+
+		LINEA: 162, COLUMNA: 538: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/estructura-organitzativa-1285853446013.h ...
+
+
+
+		LINEA: 162, COLUMNA: 716: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/delegacio-proteccio-dades-lpd-/delegacio ...
+
+
+
+		LINEA: 162, COLUMNA: 934: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/pla-estrategic-uv/pla-estrategic-2016-20 ...
+
+
+
+		LINEA: 162, COLUMNA: 1130: <a href="https://www.uv.es/uvweb/transparencia-uv/ca/portal-transparencia-1285924287697.html" title= ...
+
+
+
+		LINEA: 162, COLUMNA: 1277: <a href="https://www.uv.es/uvweb/cultura/ca/cultura-1285865909702.html" title="Cultura"> Cultura</ ...
+
+
+
+		LINEA: 162, COLUMNA: 1388: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/territori/presentacio-1286034543205.html ...
+
+
+
+		LINEA: 162, COLUMNA: 1533: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/viure-universitat/allotjament/borsa-vive ...
+
+
+
+		LINEA: 180, COLUMNA: 8: <a class="pagenum menu2nivel" rel="2" href="https://www.uv.es/uvweb/universitat/ca/estudis-grau-1285 ...
+
+
+
+		LINEA: 184, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/oferta-graus/oferta-graus-1285846094474 ...
+
+
+
+		LINEA: 184, COLUMNA: 200: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/admissio/novetats-1285852992253.html" t ...
+
+
+
+		LINEA: 184, COLUMNA: 342: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/matricula/novetats-1285861954633.html"...
+
+
+
+		LINEA: 184, COLUMNA: 487: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/beques-ajudes/novetats-1285862473803.ht ...
+
+
+
+		LINEA: 184, COLUMNA: 646: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-grau/informacio-academica-administrativa/cal ...
+
+
+
+		LINEA: 202, COLUMNA: 8: <a class="pagenum menu2nivel active" rel="3" href="https://www.uv.es/uvweb/universitat/ca/estudis-po ...
+
+
+
+		LINEA: 206, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-128602007 ...
+
+
+
+		LINEA: 206, COLUMNA: 223: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/doctorats/novetats-1285962349493.ht ...
+
+
+
+		LINEA: 206, COLUMNA: 370: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/titols-propis-postgrau/oferta-titol ...
+
+
+
+		LINEA: 206, COLUMNA: 576: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/informacio-administrativa-postgrau/ ...
+
+
+
+		LINEA: 224, COLUMNA: 8: <a class="pagenum menu2nivel" rel="4" href="https://www.uv.es/uvweb/universitat/ca/recerca-transfere ...
+
+
+
+		LINEA: 228, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/novetats/novetats-128585527116 ...
+
+
+
+		LINEA: 228, COLUMNA: 187: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/recerca-uv/presentacio-1285946 ...
+
+
+
+		LINEA: 228, COLUMNA: 361: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/financament/presentacio-noveta ...
+
+
+
+		LINEA: 228, COLUMNA: 533: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/internacionalitzacio/presentac ...
+
+
+
+		LINEA: 228, COLUMNA: 732: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/col-laboracio-empresa/presenta ...
+
+
+
+		LINEA: 228, COLUMNA: 944: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/emprenedoria/presentacio-novet ...
+
+
+
+		LINEA: 228, COLUMNA: 1117: <a href="https://www.uv.es/uvweb/universitat/ca/recerca-transferencia/parc-cientific/presentacio-128 ...
+
+
+
+		LINEA: 228, COLUMNA: 1289: <a href="https://www.uv.es/uvweb/servei-investigacio/ca/servei-investigacio-1285906397400.html" titl ...
+
+
+
+		LINEA: 246, COLUMNA: 8: <a class="pagenum menu2nivel" rel="5" href="https://www.uv.es/uvweb/universitat/ca/relacions-interna ...
+
+
+
+		LINEA: 250, COLUMNA: 38: <a href="https://www.uv.es/uvweb/universitat/ca/relacions-internacionals/relacions-internacionals/an ...
+
+
+
+		LINEA: 250, COLUMNA: 251: <a href="https://www.uv.es/uvweb/universitat/ca/relacions-internacionals/cooperacio/novetats-1285936 ...
+
+
+
+		LINEA: 393, COLUMNA: 6: <a href='https://www.uv.es/uvweb/universitat/ca/universitat-valencia-1285845048380.html' title='Inic ...
+
+
+
+		LINEA: 398, COLUMNA: 6: <a href='#' title='Estudis de Postgrau'>Estudis de Postgrau</a>
+
+
+
+		LINEA: 403, COLUMNA: 6: <a href='https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-128602007 ...
+
+
+
+		LINEA: 449, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/oferta-masters-ofi ...
+
+
+
+		LINEA: 453, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/preinscripcio-/-ad ...
+
+
+
+		LINEA: 457, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/matricula/matricul ...
+
+
+
+		LINEA: 461, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/beques-ajudes-/uni ...
+
+
+
+		LINEA: 465, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/treball-fi-master- ...
+
+
+
+		LINEA: 469, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/login/estudis-postgrau/masters-oficials/gestio-maste ...
+
+
+
+		LINEA: 473, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/informacio-contact ...
+
+
+
+		LINEA: 477, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-128602007 ...
+
+
+
+		LINEA: 526, COLUMNA: 16: <a href='https://webges.uv.es/uvTaeWeb/MuestraInformacionEdictoPublicoFrontAction.do?accion=inicio&i ...
+
+
+
+		LINEA: 536, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resultats ...
+
+
+
+		LINEA: 536, COLUMNA: 362: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resultats ...
+
+
+
+		LINEA: 536, COLUMNA: 876: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resultats ...
+
+
+
+		LINEA: 546, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 546, COLUMNA: 338: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 546, COLUMNA: 738: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 556, COLUMNA: 545: <a href='https://www.uv.es/graus/beques/C_fi_estudis_18_19.pdf' title='RESOLUCIÓ'>RESOLUCIÓ</a>
+
+
+
+		LINEA: 568, COLUMNA: 80: <a href='https://www.uv.es/graus/beques/beques_ministeri_18_19.pdf' title='Resolució de la convocat ...
+
+
+
+		LINEA: 591, COLUMNA: 297: <a href='https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/matricula/carnet-u ...
+
+
+
+		LINEA: 601, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 601, COLUMNA: 328: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 602, COLUMNA: 9: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/resolucio ...
+
+
+
+		LINEA: 612, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/preparar- ...
+
+
+
+		LINEA: 612, COLUMNA: 365: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/preparar- ...
+
+
+
+		LINEA: 612, COLUMNA: 951: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/preparar- ...
+
+
+
+		LINEA: 622, COLUMNA: 8: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/convocato ...
+
+
+
+		LINEA: 622, COLUMNA: 295: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/convocato ...
+
+
+
+		LINEA: 624, COLUMNA: 9: <a href="https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats/convocato ...
+
+
+
+		LINEA: 641, COLUMNA: 106: <a href='https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-128602007 ...
+
+
+
+		LINEA: 682, COLUMNA: 8: <a href="#" title="Guia de Postgrau" >		<img alt="Guia de Postgrau" src="/recursos/fatwirepu ...
+
+
+
+		LINEA: 693, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Ingenieria.pdf" title="Branca d'arquitectura i engi ...
+
+
+
+		LINEA: 697, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Humanidades.pdf" title="Branca d'arts i humanitats" ...
+
+
+
+		LINEA: 701, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Ciencias.pdf" title="Branca de ciències" >Guia Bra ...
+
+
+
+		LINEA: 705, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Salud.pdf" title="Branca de ciències de la salut"...
+
+
+
+		LINEA: 709, COLUMNA: 9: <a href="https://www.uv.es/pop/docs-M/GUIA/18-19/Sociales.pdf" title="Branca de ciències socials i...
+
+
+
+		LINEA: 721, COLUMNA: 9: <a href="http://www.uv.es/secundaria/" title="Enllac a la pàgina pròpia del Màster de Professor/a ...
+
+
+
+		LINEA: 725, COLUMNA: 9: <a href="http://www.uv.es/uvweb/universidad/ca/estudios-postgrado/informacio-academica-administrativ ...
+
+
+
+		LINEA: 729, COLUMNA: 9: <a href="http://www.uv.es/postgrau/doc/2012_informe_gestio.pdf" title="Informe de Gestió" >Informe...
+
+
+
+		LINEA: 768, COLUMNA: 11: <a title="Pàgina de la Universitat de València en Facebook" href="https://www.facebook.com/univers ...
+
+
+
+		LINEA: 791, COLUMNA: 11: <a title="Segueix a la Universitat de València en Twitter" href="http://twitter.com/UV_EG"><img cla ...
+
+
+
+		LINEA: 809, COLUMNA: 10: <a title="Linkedin UV" href="https://www.linkedin.com/company/19168"><img class="linkedin" alt="Link ...
+
+
+
+		LINEA: 827, COLUMNA: 10: <a title="Pinterest UV" href="https://www.pinterest.com/valenciaedu/"><img class="PinterestUV" alt=" ...
+
+
+
+		LINEA: 850, COLUMNA: 11: <a title="Canal YouTube de la Universitat de València" href="http://www.youtube.com/user/Universita ...
+
+
+
+		LINEA: 873, COLUMNA: 11: <a title="Instagram de la Universitat de València" href="https://www.instagram.com/universitatvalen ...
+
+
+
+		LINEA: 891, COLUMNA: 39: <a title="Googleplus" href="https://plus.google.com/u/0/b/109103335404534938571/+universidadvalencia ...
+
+
+
+		LINEA: 909, COLUMNA: 10: <a title="Servidor Multimèdia de la UV" href="http://mmedia.uv.es" target="_blank"><img class="mmed ...
+
+
+
+		LINEA: 927, COLUMNA: 10: <a title="Mediauni" href="http://mediauni.uv.es/"><img class="Mediauni" alt="Mediauni" src="//www.uv ...
+
+
+
+		LINEA: 950, COLUMNA: 11: <a title="RSS UV" href="http://www.uv.es/fatwirepub/Satellite?pagename=UV/Page/TPGContenidoSindicado ...
+
+
+
+		LINEA: 968, COLUMNA: 10: <a title="Aplicació de la Universitat de València per a dispositius Iphone" href="https://uvapp.uv ...
+
+
+
+		LINEA: 986, COLUMNA: 10: <a title="Aplicació de la Universitat de València per a dispositius android" href="https://uvapp.u ...
+
+
+
+		LINEA: 992, COLUMNA: 13: <a href="https://www.uv.es/uvweb/universitat/ca/universitat/pla-estrategic-uv/pla-estrategic-2016-20 ...
+
+
+
+		LINEA: 996, COLUMNA: 13: <a href="http://tauler.uv.es/" title="Tauler Oficial d'anuncis UV" >Tauler Oficial d'anuncis UV</a>
+
+
+
+		LINEA: 1003, COLUMNA: 13: <a href="http://aulavirtual.uv.es" title = "Enllaç a la pàgina de l' Aula virtual" >Aula virtual</ ...
+
+
+
+		LINEA: 1010, COLUMNA: 13: <a href="http://www.uv.es/igualtat" title = "Enllaç a la pàgina del Plad'Igualtat" >Pla d'Igualt ...
+
+
+
+		LINEA: 1017, COLUMNA: 13: <a href="http://entreu.uv.es/" title = "Entreu seu electrònicaUV" >Entreu - seu electrònica</a>
+
+
+
+		LINEA: 1024, COLUMNA: 13: <a href="http://www.uv.es/contratacion" title = "Enllaç a la pàgina Perfil de contractant" >Perfil ...
+
+
+
+		LINEA: 1044, COLUMNA: 10: <atitle="Logo de VLC" href="http://www.vlc-campus.com/?lang=va" target="_blank"><img class="vlcpeu ...
+
+
+
+		LINEA: 1067, COLUMNA: 12: <atitle="Logo de campus habitat" href="http://www.campushabitat5u.org" target="_blank"><img class= ...
+
+
+
+		LINEA: 1090, COLUMNA: 12: <atitle="Logo de la xarxa d'universitats Xarxa Vives" href="http://www.vives.org" target="_blank"> ...
+
+
+
+		LINEA: 1108, COLUMNA: 10: <atitle="Universia. Portal de les Universitats espanyoles" href="http://www.uv.es/webuv/universia/ ...
+
+
+
+		LINEA: 1131, COLUMNA: 12: <atitle="Human Resources Strategy for Researchers" href="https://euraxess.ec.europa.eu/jobs/hrs4r" ...
+
+
+
+		LINEA: 1134, COLUMNA: 27: <a href="https://www.uv.es/uvweb/universitat/ca/avis-legal/avis-legal-1285919088090.html" title = "E ...
+
+
+
+		LINEA: 1134, COLUMNA: 169: <a href="https://www.uv.es/uvweb/universitat/ca/accessibilitat/accessibilitat-1285917448966.html" ti ...
+
+
+
+		LINEA: 1134, COLUMNA: 325: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/responsable-identificacio-titula ...
+
+
+
+		LINEA: 1134, COLUMNA: 533: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/politica-cookies/son-galetes--12 ...
+
+
+
+		LINEA: 1134, COLUMNA: 708: <a href="http://www.uv.es/transparencia" title = "Enllaç al portal de transparència" >Transparènc ...
+
+
+
+		LINEA: 1134, COLUMNA: 818: <a href="https://www.uv.es/uvweb/universitat/ca/bustia-uv/contacta-1285850036774.html" title = "Bús ...
+
+
+
+		LINEA: 1150, COLUMNA: 307: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/politica-cookies/son-galetes--12 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 127, COLUMNA: 4: <h1 id="logo">	<a href='https://www.uv.es/uvweb/universitat/ca/universitat-valencia-12858450483 ...
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 481, COLUMNA: 5: <h2 class="titulo-alternatiu">Postgrau</h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 524, COLUMNA: 106: <h3 >Resolució provisional ajudes a l'estudi 2017-2018</h3>
+
+
+
+		LINEA: 536, COLUMNA: 592: <h3 >Resultats d’adjudicació de places de la crida de llista d’espera per a l’accés a estudi ...
+
+
+
+		LINEA: 546, COLUMNA: 544: <h3 >Resolucions admissió màsters oficials curs 2018-2019 (Fase II)</h3>
+
+
+
+		LINEA: 556, COLUMNA: 109: <h3 >Convocatòria GV beques finalització estudis curs 2018/2019</h3>
+
+
+
+		LINEA: 566, COLUMNA: 118: <h3 >Convocatòria Beques Ministeri per al curs 2018/2019</h3>
+
+
+
+		LINEA: 578, COLUMNA: 110: <h3 >Periode de vacances d’estiu</h3>
+
+
+
+		LINEA: 591, COLUMNA: 120: <h3 >Emisió carnet universitari per a alumnes de nou ingrés</h3>
+
+
+
+		LINEA: 601, COLUMNA: 533: <h3 >Resolucions admissió màsters oficials curs 2018-2019 (Fase I)</h3>
+
+
+
+		LINEA: 612, COLUMNA: 609: <h3 >Preparar Matrícula 2018-19(per a estudiants de Màster de la Universitat de València que no ...
+
+
+
+		LINEA: 622, COLUMNA: 483: <h3 >Convocatòria Beca Postgrau en el Col·legi Europa</h3>
+
+
+
+		LINEA: 665, COLUMNA: 7: <h3> </h3>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 110, COLUMNA: 7: <form action="https://www.uv.es:443/fatwirepub/Satellite/universitat/ca/estudis-postgrau/masters-ofi ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 92, COLUMNA: 17: <body><div id="wrap"><div id="containerCab"><div id="pre-cabecera">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+ 
+
+		LINEA: 116, COLUMNA: 64: <input value="Cercar" name="p3" id="p3" class="form-text" type="text" size="20" onfocus="javascript: ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 110, COLUMNA: 7: <form action="https://www.uv.es:443/fatwirepub/Satellite/universitat/ca/estudis-postgrau/masters-ofi ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 110, COLUMNA: 7: <form action="https://www.uv.es:443/fatwirepub/Satellite/universitat/ca/estudis-postgrau/masters-ofi ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 111, COLUMNA: 8: <input type="hidden" name="pagename" value="UV/Page/TPGListat"/>
+
+
+
+		LINEA: 112, COLUMNA: 8: <input type="hidden" name="cid" value="1285847436342"/>
+
+
+
+		LINEA: 113, COLUMNA: 8: <input type="hidden" name="site" value="UV"/>
+
+
+
+		LINEA: 114, COLUMNA: 8: <input type="hidden" name="locale" value="ca_ES"/>
+
+
+
+		LINEA: 115, COLUMNA: 8: <input type="hidden" name="p1" value="Cercador"/>
+
+
+
+		LINEA: 116, COLUMNA: 64: <input value="Cercar" name="p3" id="p3" class="form-text" type="text" size="20" onfocus="javascript: ...
+
+
+
+		LINEA: 119, COLUMNA: 8: <input type="submit" class="form-submit" value="&nbsp;"/>
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 116, COLUMNA: 64: <input value="Cercar" name="p3" id="p3" class="form-text" type="text" size="20" onfocus="javascript: ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 110, COLUMNA: 7: <form action="https://www.uv.es:443/fatwirepub/Satellite/universitat/ca/estudis-postgrau/masters-ofi ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 110, COLUMNA: 7: <form action="https://www.uv.es:443/fatwirepub/Satellite/universitat/ca/estudis-postgrau/masters-ofi ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 110, COLUMNA: 7: <form action="https://www.uv.es:443/fatwirepub/Satellite/universitat/ca/estudis-postgrau/masters-ofi ...
+
+

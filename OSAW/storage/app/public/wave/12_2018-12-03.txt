@@ -1,0 +1,27 @@
+REPORTE PÁGINA WEB: https://www.agenciatributaria.es/AEAT.internet/Renta.shtml
+FECHA EVALUACIÓN: 2018-12-03
+
+-PROBLEMAS-
+
+-ALERTAS-
+
+Redundant alternative text	  VECES ENCONTRADO: 1
+Unlabeled form element with title	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 29
+Noscript element	  VECES ENCONTRADO: 6
+
+
+-CARACTERISTICAS-
+
+Element language	  VECES ENCONTRADO: 5
+Linked image with alternative text	  VECES ENCONTRADO: 12
+Null or empty alternative text	  VECES ENCONTRADO: 9
+Form label	  VECES ENCONTRADO: 2
+Alternative text	  VECES ENCONTRADO: 13
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 4
+
+

@@ -1,0 +1,1346 @@
+REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/ca/index.htm
+FECHA EVALUACIÓN: 2018-12-22
+
+-PROBLEMAS CONOCIDOS-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
+
+		LINEA: 584, COLUMNA: 54: <img src="../img2/iconos/ico_sedeElectronica_cent.png" alt="" />       
+
+		LINEA: 586, COLUMNA: 54: <img src="../img2/iconos/ico_empleoPublico.png" alt="" />       
+
+		LINEA: 588, COLUMNA: 44: <img src="../img2/iconos/ico_portalTransparencia.png" alt="" />       
+
+		LINEA: 590, COLUMNA: 52: <img src="../img2/iconos/ico_atencionCiudadano.png" alt="" />       
+
+		LINEA: 592, COLUMNA: 43: <img src="../img2/iconos/ico_loMasBuscado.png" alt="" />       
+
+		LINEA: 643, COLUMNA: 10: <img alt="" src="../img2/logos/logo_activa_banner.png" />       
+
+		LINEA: 662, COLUMNA: 108: <img src="../img2/iconos/ico_planDirector.png" alt="" />       
+
+		LINEA: 663, COLUMNA: 46: <img src="../img2/destacados/participacion.png" alt="" />       
+
+		LINEA: 664, COLUMNA: 256: <img src="../img2/destacados/tuSegSoc.png" alt="" />       
+
+		LINEA: 665, COLUMNA: 36: <img src="../img2/destacados/rse.png" alt="" />       
+
+		LINEA: 666, COLUMNA: 95: <img src="../img2/destacados/extranjeros.png" alt="" />       
+
+		LINEA: 667, COLUMNA: 106: <img src="../img2/destacados/movilidad.png" alt="" />       
+
+		LINEA: 668, COLUMNA: 83: <img src="../img2/destacados/empleate.png" alt="" />       
+
+		LINEA: 669, COLUMNA: 237: <img src="../img2/destacados/estrategia.png" alt="" />       
+
+		LINEA: 670, COLUMNA: 43: <img src="../img2/destacados/guialaboral.png" alt="" />       
+
+		LINEA: 671, COLUMNA: 54: <img src="../img2/destacados/hogarfamiliar.png" alt="" />       
+
+		LINEA: 710, COLUMNA: 52: <img src="../img2/iconos/ico_estadistica.png" alt="" />       
+
+		LINEA: 712, COLUMNA: 76: <img src="../img2/iconos/ico_analisis.png" alt="" />       
+
+		LINEA: 714, COLUMNA: 56: <img src="../img2/iconos/ico_estudios.png" alt="" />       
+
+		LINEA: 716, COLUMNA: 47: <img src="../img2/iconos/ico_informes.png" alt="" />       
+
+		LINEA: 718, COLUMNA: 47: <img src="../img2/iconos/ico_biblioteca.png" alt="" />       
+
+		LINEA: 836, COLUMNA: 78: <img alt="" src="../img2/logos/img_revista.png" />       
+
+		LINEA: 837, COLUMNA: 69: <img alt="" src="../img2/logos/logo_carta.png" />       
+
+		LINEA: 838, COLUMNA: 119: <img alt="" src="../img2/logos/logo_marISM.png" />       
+
+		LINEA: 839, COLUMNA: 240: <img alt="" src="../img2/logos/logo_erga.png" />       
+
+		LINEA: 853, COLUMNA: 68: <img alt="" src="../img2/logos/logo_sepe.png" />       
+
+		LINEA: 854, COLUMNA: 104: <img alt="" src="../img2/logos/logo_inss.png" />       
+
+		LINEA: 855, COLUMNA: 96: <img alt="" src="../img2/logos/logo_itss.png" />       
+
+		LINEA: 856, COLUMNA: 70: <img alt="" src="../img2/logos/logo_insst.png" />       
+
+		LINEA: 857, COLUMNA: 96: <img alt="" src="../img2/logos/logo_fogasa.png" />       
+
+		LINEA: 858, COLUMNA: 68: <img alt="" src="../img2/logos/logo_ism.png" />       
+
+		LINEA: 859, COLUMNA: 68: <img alt="" src="../img2/logos/logo_tgss.png" />
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 244: Data table with both row and column headers does not use scope to identify cells.  
+
+	REPARAR: Add scope attributes to header cells so they identify the cells that relate to the header.     
+
+		LINEA: 750, COLUMNA: 9: <table id="indicadoresParo"><caption>Principals indicadors de l'atur</caption><t ...
+
+	
+
+
+
+-PROBLEMAS POTENCIALES-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+
+
+		LINEA: 78, COLUMNA: 33: <img src="../img2/cabecera/logoGdE.png" alt="Govern d'Espanya. Ministeri de Treball, Migracions i Se ...       
+
+		LINEA: 124, COLUMNA: 6: <img class="bandera" src="../img2/iconos/ico_ca.png" alt="Benvingut (ca)" />       
+
+		LINEA: 129, COLUMNA: 79: <img src="../img2/iconos/ico_es.png" alt="Bienvenido" />       
+
+		LINEA: 131, COLUMNA: 76: <img src="../img2/iconos/ico_eu.png" alt="Ongi etorri" />       
+
+		LINEA: 133, COLUMNA: 75: <img src="../img2/iconos/ico_gl.png" alt="Benvido" />       
+
+		LINEA: 135, COLUMNA: 76: <img src="../img2/iconos/ico_en.png" alt="Welcome" />       
+
+		LINEA: 137, COLUMNA: 85: <img src="../img2/iconos/ico_fr.png" alt="Bienvenue" />       
+
+		LINEA: 181, COLUMNA: 36: <img src="../img2/iconos/menu.png" alt="Men&uacute; principal" />       
+
+		LINEA: 455, COLUMNA: 64: <img src="../img2/iconos/tw.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 459, COLUMNA: 91: <img src="../img2/iconos/yt.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 582, COLUMNA: 98: <img class="unBanner" src="../es/img/HOME2/banners/banner_constituci40n.png" alt="Enlla&ccedil; al p ...       
+
+		LINEA: 584, COLUMNA: 54: <img src="../img2/iconos/ico_sedeElectronica_cent.png" alt="" />       
+
+		LINEA: 586, COLUMNA: 54: <img src="../img2/iconos/ico_empleoPublico.png" alt="" />       
+
+		LINEA: 588, COLUMNA: 44: <img src="../img2/iconos/ico_portalTransparencia.png" alt="" />       
+
+		LINEA: 590, COLUMNA: 52: <img src="../img2/iconos/ico_atencionCiudadano.png" alt="" />       
+
+		LINEA: 592, COLUMNA: 43: <img src="../img2/iconos/ico_loMasBuscado.png" alt="" />       
+
+		LINEA: 643, COLUMNA: 10: <img alt="" src="../img2/logos/logo_activa_banner.png" />       
+
+		LINEA: 662, COLUMNA: 108: <img src="../img2/iconos/ico_planDirector.png" alt="" />       
+
+		LINEA: 663, COLUMNA: 46: <img src="../img2/destacados/participacion.png" alt="" />       
+
+		LINEA: 664, COLUMNA: 256: <img src="../img2/destacados/tuSegSoc.png" alt="" />       
+
+		LINEA: 665, COLUMNA: 36: <img src="../img2/destacados/rse.png" alt="" />       
+
+		LINEA: 666, COLUMNA: 95: <img src="../img2/destacados/extranjeros.png" alt="" />       
+
+		LINEA: 667, COLUMNA: 106: <img src="../img2/destacados/movilidad.png" alt="" />       
+
+		LINEA: 668, COLUMNA: 83: <img src="../img2/destacados/empleate.png" alt="" />       
+
+		LINEA: 669, COLUMNA: 237: <img src="../img2/destacados/estrategia.png" alt="" />       
+
+		LINEA: 670, COLUMNA: 43: <img src="../img2/destacados/guialaboral.png" alt="" />       
+
+		LINEA: 671, COLUMNA: 54: <img src="../img2/destacados/hogarfamiliar.png" alt="" />       
+
+		LINEA: 710, COLUMNA: 52: <img src="../img2/iconos/ico_estadistica.png" alt="" />       
+
+		LINEA: 712, COLUMNA: 76: <img src="../img2/iconos/ico_analisis.png" alt="" />       
+
+		LINEA: 714, COLUMNA: 56: <img src="../img2/iconos/ico_estudios.png" alt="" />       
+
+		LINEA: 716, COLUMNA: 47: <img src="../img2/iconos/ico_informes.png" alt="" />       
+
+		LINEA: 718, COLUMNA: 47: <img src="../img2/iconos/ico_biblioteca.png" alt="" />       
+
+		LINEA: 836, COLUMNA: 78: <img alt="" src="../img2/logos/img_revista.png" />       
+
+		LINEA: 837, COLUMNA: 69: <img alt="" src="../img2/logos/logo_carta.png" />       
+
+		LINEA: 838, COLUMNA: 119: <img alt="" src="../img2/logos/logo_marISM.png" />       
+
+		LINEA: 839, COLUMNA: 240: <img alt="" src="../img2/logos/logo_erga.png" />       
+
+		LINEA: 853, COLUMNA: 68: <img alt="" src="../img2/logos/logo_sepe.png" />       
+
+		LINEA: 854, COLUMNA: 104: <img alt="" src="../img2/logos/logo_inss.png" />       
+
+		LINEA: 855, COLUMNA: 96: <img alt="" src="../img2/logos/logo_itss.png" />       
+
+		LINEA: 856, COLUMNA: 70: <img alt="" src="../img2/logos/logo_insst.png" />       
+
+		LINEA: 857, COLUMNA: 96: <img alt="" src="../img2/logos/logo_fogasa.png" />       
+
+		LINEA: 858, COLUMNA: 68: <img alt="" src="../img2/logos/logo_ism.png" />       
+
+		LINEA: 859, COLUMNA: 68: <img alt="" src="../img2/logos/logo_tgss.png" />
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 78, COLUMNA: 33: <img src="../img2/cabecera/logoGdE.png" alt="Govern d'Espanya. Ministeri de Treball, Migracions i Se ...       
+
+		LINEA: 124, COLUMNA: 6: <img class="bandera" src="../img2/iconos/ico_ca.png" alt="Benvingut (ca)" />       
+
+		LINEA: 129, COLUMNA: 79: <img src="../img2/iconos/ico_es.png" alt="Bienvenido" />       
+
+		LINEA: 131, COLUMNA: 76: <img src="../img2/iconos/ico_eu.png" alt="Ongi etorri" />       
+
+		LINEA: 133, COLUMNA: 75: <img src="../img2/iconos/ico_gl.png" alt="Benvido" />       
+
+		LINEA: 135, COLUMNA: 76: <img src="../img2/iconos/ico_en.png" alt="Welcome" />       
+
+		LINEA: 137, COLUMNA: 85: <img src="../img2/iconos/ico_fr.png" alt="Bienvenue" />       
+
+		LINEA: 181, COLUMNA: 36: <img src="../img2/iconos/menu.png" alt="Men&uacute; principal" />       
+
+		LINEA: 455, COLUMNA: 64: <img src="../img2/iconos/tw.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 459, COLUMNA: 91: <img src="../img2/iconos/yt.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 582, COLUMNA: 98: <img class="unBanner" src="../es/img/HOME2/banners/banner_constituci40n.png" alt="Enlla&ccedil; al p ...
+
+  
+
+	REVISAR: 59: Image used for input element may have Alt text that does not identify the purpose or function as the image.
+
+
+
+		LINEA: 148, COLUMNA: 6: <input type="image"id="buscar1"class="buscar"name="buscar"src="../img2/i ...       
+
+		LINEA: 189, COLUMNA: 9: <input type="image"id="buscar2"class="buscar"name="buscar"sr ...
+
+  
+
+	REVISAR: 193: Form submit button image may contain text that is not in Alt text.
+
+
+
+		LINEA: 148, COLUMNA: 6: <input type="image"id="buscar1"class="buscar"name="buscar"src="../img2/i ...       
+
+		LINEA: 189, COLUMNA: 9: <input type="image"id="buscar2"class="buscar"name="buscar"sr ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+  
+
+	REVISAR: 242: Table caption may not identify the table.
+
+
+
+		LINEA: 751, COLUMNA: 10: <caption>Principals indicadors de l'atur</caption>
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 146, COLUMNA: 6: <input type="text"id="q1" name="q" placeholder="Introdueixi text" title="Introdueixi text"/>       
+
+		LINEA: 187, COLUMNA: 9: <input type="text"id="q2" name="q" placeholder="Introduzca texto" title="Introduzca texto" ...
+
+  
+
+	REVISAR: 111: Table may require a summary.
+
+
+
+		LINEA: 750, COLUMNA: 9: <table id="indicadoresParo"><caption>Principals indicadors de l'atur</caption><t ...
+
+  
+
+	REVISAR: 137: Layout table may be misusing th elements.
+
+
+
+		LINEA: 750, COLUMNA: 9: <table id="indicadoresParo"><caption>Principals indicadors de l'atur</caption><t ...
+
+  
+
+	REVISAR: 230: Table may require thead, tfoot and tbody elements to group repeated table row structures.
+
+
+
+		LINEA: 750, COLUMNA: 9: <table id="indicadoresParo"><caption>Principals indicadors de l'atur</caption><t ...
+
+  
+
+	REVISAR: 231: Table may require colgroup and col elements to group table columns.
+
+
+
+		LINEA: 750, COLUMNA: 9: <table id="indicadoresParo"><caption>Principals indicadors de l'atur</caption><t ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 78, COLUMNA: 33: <img src="../img2/cabecera/logoGdE.png" alt="Govern d'Espanya. Ministeri de Treball, Migracions i Se ...       
+
+		LINEA: 124, COLUMNA: 6: <img class="bandera" src="../img2/iconos/ico_ca.png" alt="Benvingut (ca)" />       
+
+		LINEA: 129, COLUMNA: 79: <img src="../img2/iconos/ico_es.png" alt="Bienvenido" />       
+
+		LINEA: 131, COLUMNA: 76: <img src="../img2/iconos/ico_eu.png" alt="Ongi etorri" />       
+
+		LINEA: 133, COLUMNA: 75: <img src="../img2/iconos/ico_gl.png" alt="Benvido" />       
+
+		LINEA: 135, COLUMNA: 76: <img src="../img2/iconos/ico_en.png" alt="Welcome" />       
+
+		LINEA: 137, COLUMNA: 85: <img src="../img2/iconos/ico_fr.png" alt="Bienvenue" />       
+
+		LINEA: 181, COLUMNA: 36: <img src="../img2/iconos/menu.png" alt="Men&uacute; principal" />       
+
+		LINEA: 455, COLUMNA: 64: <img src="../img2/iconos/tw.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 459, COLUMNA: 91: <img src="../img2/iconos/yt.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 582, COLUMNA: 98: <img class="unBanner" src="../es/img/HOME2/banners/banner_constituci40n.png" alt="Enlla&ccedil; al p ...       
+
+		LINEA: 584, COLUMNA: 54: <img src="../img2/iconos/ico_sedeElectronica_cent.png" alt="" />       
+
+		LINEA: 586, COLUMNA: 54: <img src="../img2/iconos/ico_empleoPublico.png" alt="" />       
+
+		LINEA: 588, COLUMNA: 44: <img src="../img2/iconos/ico_portalTransparencia.png" alt="" />       
+
+		LINEA: 590, COLUMNA: 52: <img src="../img2/iconos/ico_atencionCiudadano.png" alt="" />       
+
+		LINEA: 592, COLUMNA: 43: <img src="../img2/iconos/ico_loMasBuscado.png" alt="" />       
+
+		LINEA: 643, COLUMNA: 10: <img alt="" src="../img2/logos/logo_activa_banner.png" />       
+
+		LINEA: 662, COLUMNA: 108: <img src="../img2/iconos/ico_planDirector.png" alt="" />       
+
+		LINEA: 663, COLUMNA: 46: <img src="../img2/destacados/participacion.png" alt="" />       
+
+		LINEA: 664, COLUMNA: 256: <img src="../img2/destacados/tuSegSoc.png" alt="" />       
+
+		LINEA: 665, COLUMNA: 36: <img src="../img2/destacados/rse.png" alt="" />       
+
+		LINEA: 666, COLUMNA: 95: <img src="../img2/destacados/extranjeros.png" alt="" />       
+
+		LINEA: 667, COLUMNA: 106: <img src="../img2/destacados/movilidad.png" alt="" />       
+
+		LINEA: 668, COLUMNA: 83: <img src="../img2/destacados/empleate.png" alt="" />       
+
+		LINEA: 669, COLUMNA: 237: <img src="../img2/destacados/estrategia.png" alt="" />       
+
+		LINEA: 670, COLUMNA: 43: <img src="../img2/destacados/guialaboral.png" alt="" />       
+
+		LINEA: 671, COLUMNA: 54: <img src="../img2/destacados/hogarfamiliar.png" alt="" />       
+
+		LINEA: 710, COLUMNA: 52: <img src="../img2/iconos/ico_estadistica.png" alt="" />       
+
+		LINEA: 712, COLUMNA: 76: <img src="../img2/iconos/ico_analisis.png" alt="" />       
+
+		LINEA: 714, COLUMNA: 56: <img src="../img2/iconos/ico_estudios.png" alt="" />       
+
+		LINEA: 716, COLUMNA: 47: <img src="../img2/iconos/ico_informes.png" alt="" />       
+
+		LINEA: 718, COLUMNA: 47: <img src="../img2/iconos/ico_biblioteca.png" alt="" />       
+
+		LINEA: 836, COLUMNA: 78: <img alt="" src="../img2/logos/img_revista.png" />       
+
+		LINEA: 837, COLUMNA: 69: <img alt="" src="../img2/logos/logo_carta.png" />       
+
+		LINEA: 838, COLUMNA: 119: <img alt="" src="../img2/logos/logo_marISM.png" />       
+
+		LINEA: 839, COLUMNA: 240: <img alt="" src="../img2/logos/logo_erga.png" />       
+
+		LINEA: 853, COLUMNA: 68: <img alt="" src="../img2/logos/logo_sepe.png" />       
+
+		LINEA: 854, COLUMNA: 104: <img alt="" src="../img2/logos/logo_inss.png" />       
+
+		LINEA: 855, COLUMNA: 96: <img alt="" src="../img2/logos/logo_itss.png" />       
+
+		LINEA: 856, COLUMNA: 70: <img alt="" src="../img2/logos/logo_insst.png" />       
+
+		LINEA: 857, COLUMNA: 96: <img alt="" src="../img2/logos/logo_fogasa.png" />       
+
+		LINEA: 858, COLUMNA: 68: <img alt="" src="../img2/logos/logo_ism.png" />       
+
+		LINEA: 859, COLUMNA: 68: <img alt="" src="../img2/logos/logo_tgss.png" />
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 146, COLUMNA: 6: <input type="text"id="q1" name="q" placeholder="Introdueixi text" title="Introdueixi text"/>       
+
+		LINEA: 148, COLUMNA: 6: <input type="image"id="buscar1"class="buscar"name="buscar"src="../img2/i ...       
+
+		LINEA: 187, COLUMNA: 9: <input type="text"id="q2" name="q" placeholder="Introduzca texto" title="Introduzca texto" ...       
+
+		LINEA: 189, COLUMNA: 9: <input type="image"id="buscar2"class="buscar"name="buscar"sr ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 634, COLUMNA: 8: <script type="text/javascript">		!function(d,s,id){var js,fjs=d.getElementsByTagNam ...       
+
+		LINEA: 906, COLUMNA: 3: <script type="text/javascript" src="../js/HOME/jquery-1.8.2.min.js"></script>       
+
+		LINEA: 907, COLUMNA: 3: <script>$.ajax({	url:		'http://prensa.mitramiss.gob.es/WebPrensa/carrusel/iframe.htm',	t ...       
+
+		LINEA: 918, COLUMNA: 2: <script type="text/javascript">		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]| ...       
+
+		LINEA: 931, COLUMNA: 1: <script type="text/javascript">/*<![CDATA[*/(function() {var sz = document.createElement('scrip ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 78, COLUMNA: 33: <img src="../img2/cabecera/logoGdE.png" alt="Govern d'Espanya. Ministeri de Treball, Migracions i Se ...       
+
+		LINEA: 124, COLUMNA: 6: <img class="bandera" src="../img2/iconos/ico_ca.png" alt="Benvingut (ca)" />       
+
+		LINEA: 129, COLUMNA: 79: <img src="../img2/iconos/ico_es.png" alt="Bienvenido" />       
+
+		LINEA: 131, COLUMNA: 76: <img src="../img2/iconos/ico_eu.png" alt="Ongi etorri" />       
+
+		LINEA: 133, COLUMNA: 75: <img src="../img2/iconos/ico_gl.png" alt="Benvido" />       
+
+		LINEA: 135, COLUMNA: 76: <img src="../img2/iconos/ico_en.png" alt="Welcome" />       
+
+		LINEA: 137, COLUMNA: 85: <img src="../img2/iconos/ico_fr.png" alt="Bienvenue" />       
+
+		LINEA: 181, COLUMNA: 36: <img src="../img2/iconos/menu.png" alt="Men&uacute; principal" />       
+
+		LINEA: 455, COLUMNA: 64: <img src="../img2/iconos/tw.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 459, COLUMNA: 91: <img src="../img2/iconos/yt.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 582, COLUMNA: 98: <img class="unBanner" src="../es/img/HOME2/banners/banner_constituci40n.png" alt="Enlla&ccedil; al p ...       
+
+		LINEA: 584, COLUMNA: 54: <img src="../img2/iconos/ico_sedeElectronica_cent.png" alt="" />       
+
+		LINEA: 586, COLUMNA: 54: <img src="../img2/iconos/ico_empleoPublico.png" alt="" />       
+
+		LINEA: 588, COLUMNA: 44: <img src="../img2/iconos/ico_portalTransparencia.png" alt="" />       
+
+		LINEA: 590, COLUMNA: 52: <img src="../img2/iconos/ico_atencionCiudadano.png" alt="" />       
+
+		LINEA: 592, COLUMNA: 43: <img src="../img2/iconos/ico_loMasBuscado.png" alt="" />       
+
+		LINEA: 643, COLUMNA: 10: <img alt="" src="../img2/logos/logo_activa_banner.png" />       
+
+		LINEA: 662, COLUMNA: 108: <img src="../img2/iconos/ico_planDirector.png" alt="" />       
+
+		LINEA: 663, COLUMNA: 46: <img src="../img2/destacados/participacion.png" alt="" />       
+
+		LINEA: 664, COLUMNA: 256: <img src="../img2/destacados/tuSegSoc.png" alt="" />       
+
+		LINEA: 665, COLUMNA: 36: <img src="../img2/destacados/rse.png" alt="" />       
+
+		LINEA: 666, COLUMNA: 95: <img src="../img2/destacados/extranjeros.png" alt="" />       
+
+		LINEA: 667, COLUMNA: 106: <img src="../img2/destacados/movilidad.png" alt="" />       
+
+		LINEA: 668, COLUMNA: 83: <img src="../img2/destacados/empleate.png" alt="" />       
+
+		LINEA: 669, COLUMNA: 237: <img src="../img2/destacados/estrategia.png" alt="" />       
+
+		LINEA: 670, COLUMNA: 43: <img src="../img2/destacados/guialaboral.png" alt="" />       
+
+		LINEA: 671, COLUMNA: 54: <img src="../img2/destacados/hogarfamiliar.png" alt="" />       
+
+		LINEA: 710, COLUMNA: 52: <img src="../img2/iconos/ico_estadistica.png" alt="" />       
+
+		LINEA: 712, COLUMNA: 76: <img src="../img2/iconos/ico_analisis.png" alt="" />       
+
+		LINEA: 714, COLUMNA: 56: <img src="../img2/iconos/ico_estudios.png" alt="" />       
+
+		LINEA: 716, COLUMNA: 47: <img src="../img2/iconos/ico_informes.png" alt="" />       
+
+		LINEA: 718, COLUMNA: 47: <img src="../img2/iconos/ico_biblioteca.png" alt="" />       
+
+		LINEA: 836, COLUMNA: 78: <img alt="" src="../img2/logos/img_revista.png" />       
+
+		LINEA: 837, COLUMNA: 69: <img alt="" src="../img2/logos/logo_carta.png" />       
+
+		LINEA: 838, COLUMNA: 119: <img alt="" src="../img2/logos/logo_marISM.png" />       
+
+		LINEA: 839, COLUMNA: 240: <img alt="" src="../img2/logos/logo_erga.png" />       
+
+		LINEA: 853, COLUMNA: 68: <img alt="" src="../img2/logos/logo_sepe.png" />       
+
+		LINEA: 854, COLUMNA: 104: <img alt="" src="../img2/logos/logo_inss.png" />       
+
+		LINEA: 855, COLUMNA: 96: <img alt="" src="../img2/logos/logo_itss.png" />       
+
+		LINEA: 856, COLUMNA: 70: <img alt="" src="../img2/logos/logo_insst.png" />       
+
+		LINEA: 857, COLUMNA: 96: <img alt="" src="../img2/logos/logo_fogasa.png" />       
+
+		LINEA: 858, COLUMNA: 68: <img alt="" src="../img2/logos/logo_ism.png" />       
+
+		LINEA: 859, COLUMNA: 68: <img alt="" src="../img2/logos/logo_tgss.png" />
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 78, COLUMNA: 33: <img src="../img2/cabecera/logoGdE.png" alt="Govern d'Espanya. Ministeri de Treball, Migracions i Se ...       
+
+		LINEA: 124, COLUMNA: 6: <img class="bandera" src="../img2/iconos/ico_ca.png" alt="Benvingut (ca)" />       
+
+		LINEA: 129, COLUMNA: 79: <img src="../img2/iconos/ico_es.png" alt="Bienvenido" />       
+
+		LINEA: 131, COLUMNA: 76: <img src="../img2/iconos/ico_eu.png" alt="Ongi etorri" />       
+
+		LINEA: 133, COLUMNA: 75: <img src="../img2/iconos/ico_gl.png" alt="Benvido" />       
+
+		LINEA: 135, COLUMNA: 76: <img src="../img2/iconos/ico_en.png" alt="Welcome" />       
+
+		LINEA: 137, COLUMNA: 85: <img src="../img2/iconos/ico_fr.png" alt="Bienvenue" />       
+
+		LINEA: 181, COLUMNA: 36: <img src="../img2/iconos/menu.png" alt="Men&uacute; principal" />       
+
+		LINEA: 455, COLUMNA: 64: <img src="../img2/iconos/tw.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 459, COLUMNA: 91: <img src="../img2/iconos/yt.png" alt="Acc&eacute;s al Ministeri de Treball, Migracions i Seguretat S ...       
+
+		LINEA: 582, COLUMNA: 98: <img class="unBanner" src="../es/img/HOME2/banners/banner_constituci40n.png" alt="Enlla&ccedil; al p ...       
+
+		LINEA: 584, COLUMNA: 54: <img src="../img2/iconos/ico_sedeElectronica_cent.png" alt="" />       
+
+		LINEA: 586, COLUMNA: 54: <img src="../img2/iconos/ico_empleoPublico.png" alt="" />       
+
+		LINEA: 588, COLUMNA: 44: <img src="../img2/iconos/ico_portalTransparencia.png" alt="" />       
+
+		LINEA: 590, COLUMNA: 52: <img src="../img2/iconos/ico_atencionCiudadano.png" alt="" />       
+
+		LINEA: 592, COLUMNA: 43: <img src="../img2/iconos/ico_loMasBuscado.png" alt="" />       
+
+		LINEA: 643, COLUMNA: 10: <img alt="" src="../img2/logos/logo_activa_banner.png" />       
+
+		LINEA: 662, COLUMNA: 108: <img src="../img2/iconos/ico_planDirector.png" alt="" />       
+
+		LINEA: 663, COLUMNA: 46: <img src="../img2/destacados/participacion.png" alt="" />       
+
+		LINEA: 664, COLUMNA: 256: <img src="../img2/destacados/tuSegSoc.png" alt="" />       
+
+		LINEA: 665, COLUMNA: 36: <img src="../img2/destacados/rse.png" alt="" />       
+
+		LINEA: 666, COLUMNA: 95: <img src="../img2/destacados/extranjeros.png" alt="" />       
+
+		LINEA: 667, COLUMNA: 106: <img src="../img2/destacados/movilidad.png" alt="" />       
+
+		LINEA: 668, COLUMNA: 83: <img src="../img2/destacados/empleate.png" alt="" />       
+
+		LINEA: 669, COLUMNA: 237: <img src="../img2/destacados/estrategia.png" alt="" />       
+
+		LINEA: 670, COLUMNA: 43: <img src="../img2/destacados/guialaboral.png" alt="" />       
+
+		LINEA: 671, COLUMNA: 54: <img src="../img2/destacados/hogarfamiliar.png" alt="" />       
+
+		LINEA: 710, COLUMNA: 52: <img src="../img2/iconos/ico_estadistica.png" alt="" />       
+
+		LINEA: 712, COLUMNA: 76: <img src="../img2/iconos/ico_analisis.png" alt="" />       
+
+		LINEA: 714, COLUMNA: 56: <img src="../img2/iconos/ico_estudios.png" alt="" />       
+
+		LINEA: 716, COLUMNA: 47: <img src="../img2/iconos/ico_informes.png" alt="" />       
+
+		LINEA: 718, COLUMNA: 47: <img src="../img2/iconos/ico_biblioteca.png" alt="" />       
+
+		LINEA: 836, COLUMNA: 78: <img alt="" src="../img2/logos/img_revista.png" />       
+
+		LINEA: 837, COLUMNA: 69: <img alt="" src="../img2/logos/logo_carta.png" />       
+
+		LINEA: 838, COLUMNA: 119: <img alt="" src="../img2/logos/logo_marISM.png" />       
+
+		LINEA: 839, COLUMNA: 240: <img alt="" src="../img2/logos/logo_erga.png" />       
+
+		LINEA: 853, COLUMNA: 68: <img alt="" src="../img2/logos/logo_sepe.png" />       
+
+		LINEA: 854, COLUMNA: 104: <img alt="" src="../img2/logos/logo_inss.png" />       
+
+		LINEA: 855, COLUMNA: 96: <img alt="" src="../img2/logos/logo_itss.png" />       
+
+		LINEA: 856, COLUMNA: 70: <img alt="" src="../img2/logos/logo_insst.png" />       
+
+		LINEA: 857, COLUMNA: 96: <img alt="" src="../img2/logos/logo_fogasa.png" />       
+
+		LINEA: 858, COLUMNA: 68: <img alt="" src="../img2/logos/logo_ism.png" />       
+
+		LINEA: 859, COLUMNA: 68: <img alt="" src="../img2/logos/logo_tgss.png" />
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 634, COLUMNA: 8: <script type="text/javascript">		!function(d,s,id){var js,fjs=d.getElementsByTagNam ...       
+
+		LINEA: 906, COLUMNA: 3: <script type="text/javascript" src="../js/HOME/jquery-1.8.2.min.js"></script>       
+
+		LINEA: 907, COLUMNA: 3: <script>$.ajax({	url:		'http://prensa.mitramiss.gob.es/WebPrensa/carrusel/iframe.htm',	t ...       
+
+		LINEA: 918, COLUMNA: 2: <script type="text/javascript">		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]| ...       
+
+		LINEA: 931, COLUMNA: 1: <script type="text/javascript">/*<![CDATA[*/(function() {var sz = document.createElement('scrip ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 634, COLUMNA: 8: <script type="text/javascript">		!function(d,s,id){var js,fjs=d.getElementsByTagNam ...       
+
+		LINEA: 906, COLUMNA: 3: <script type="text/javascript" src="../js/HOME/jquery-1.8.2.min.js"></script>       
+
+		LINEA: 907, COLUMNA: 3: <script>$.ajax({	url:		'http://prensa.mitramiss.gob.es/WebPrensa/carrusel/iframe.htm',	t ...       
+
+		LINEA: 918, COLUMNA: 2: <script type="text/javascript">		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]| ...       
+
+		LINEA: 931, COLUMNA: 1: <script type="text/javascript">/*<![CDATA[*/(function() {var sz = document.createElement('scrip ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 37, COLUMNA: 3: <title>Página principal. Ministeri de Treball, Migracions i Seguretat Social</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 78, COLUMNA: 10: <a href="../index.htm"><img src="../img2/cabecera/logoGdE.png" alt="Govern d'Espanya. Ministeri de T ...       
+
+		LINEA: 79, COLUMNA: 26: <a href="../index.htm">Treball, Migracions i Seguretat Social</a>       
+
+		LINEA: 106, COLUMNA: 10: <a href="../es/index.htm" hreflang="es" lang="es" title="Castellano">Bienvenido</a>       
+
+		LINEA: 108, COLUMNA: 25: <a href="index.htm" hreflang="ca" lang="ca" title="Catal&aacute;">Benvingut</a>       
+
+		LINEA: 110, COLUMNA: 10: <a href="../eu/index.htm" hreflang="eu" lang="eu" title="Euskara">Ongi etorri</a>       
+
+		LINEA: 112, COLUMNA: 10: <a href="../gl/index.htm" hreflang="gl" lang="gl" title="Galego">Benvido</a>       
+
+		LINEA: 114, COLUMNA: 10: <a href="../en/index.htm" hreflang="en" lang="en" title="English">Welcome</a>       
+
+		LINEA: 116, COLUMNA: 10: <a href="../fr/index.htm" hreflang="fr" lang="fr" title="Fran&ccedil;aise">Bienvenue</a>       
+
+		LINEA: 122, COLUMNA: 5: <a href="index.htm" hreflang="ca" lang="ca" title="Catal&aacute;">		<span class="ca texto">Benvi ...       
+
+		LINEA: 129, COLUMNA: 10: <a href="../es/index.htm" hreflang="es" lang="es" title="Castellano"><img src="../img2/iconos/ico_es ...       
+
+		LINEA: 131, COLUMNA: 10: <a href="../eu/index.htm" hreflang="eu" lang="eu" title="Euskara"><img src="../img2/iconos/ico_eu.pn ...       
+
+		LINEA: 133, COLUMNA: 10: <a href="../gl/index.htm" hreflang="gl" lang="gl" title="Galego"><img src="../img2/iconos/ico_gl.png ...       
+
+		LINEA: 135, COLUMNA: 10: <a href="../en/index.htm" hreflang="en" lang="en" title="English"><img src="../img2/iconos/ico_en.pn ...       
+
+		LINEA: 137, COLUMNA: 10: <a href="../fr/index.htm" hreflang="fr" lang="fr" title="Fran&ccedil;aise"><img src="../img2/iconos/ ...       
+
+		LINEA: 181, COLUMNA: 6: <a class="botonmenu" href="#"><img src="../img2/iconos/menu.png" alt="Men&uacute; principal" /> <spa ...       
+
+		LINEA: 200, COLUMNA: 8: <a href="../index.htm">Inici</a>       
+
+		LINEA: 205, COLUMNA: 10: <a href="../es/el_ministerio/index.htm" class="bold">El Ministeri</a>       
+
+		LINEA: 210, COLUMNA: 12: <a href="../es/extras/ministro/ministro.htm">La ministra</a>       
+
+		LINEA: 215, COLUMNA: 12: <a href="../es/organizacion/index.htm">Organitzaci&oacute; administrativa</a>       
+
+		LINEA: 220, COLUMNA: 12: <a href="../es/el_ministerio/index.htm">El ministeri a Espanya</a>       
+
+		LINEA: 225, COLUMNA: 12: <a href="../es/mundo/index.htm">El ministeri al m&oacute;n</a>       
+
+		LINEA: 237, COLUMNA: 10: <a class="bold" href="../es/sec_trabajo/index.htm">Treball</a>       
+
+		LINEA: 242, COLUMNA: 12: <a href="../es/organizacion/empleo/index.htm">Organigrama</a>       
+
+		LINEA: 247, COLUMNA: 12: <a href="https://empleate.gob.es/empleo/#/" title="Enlla&ccedil; extern. ">Portal Ocupaci&oacute;</a ...       
+
+		LINEA: 252, COLUMNA: 12: <a href="../es/sec_trabajo/ccncc/J_MNC/index.htm">Mapa de Negociaci&oacute; Col&middot;lectiva</a>       
+
+		LINEA: 257, COLUMNA: 12: <a href="../es/sec_trabajo/analisis-mercado-trabajo/index.htm">An&agrave;lisi del mercat de treball< ...       
+
+		LINEA: 262, COLUMNA: 12: <a href="../es/sec_trabajo/formacion/index.htm">Formaci&oacute; per a l'ocupaci&oacute;</a>       
+
+		LINEA: 270, COLUMNA: 10: <a class="bold" href="../es/sec_emi/index.htm">Migracions</a>       
+
+		LINEA: 275, COLUMNA: 12: <a href="../es/organizacion/inmigracion/index.htm">Organigrama</a>       
+
+		LINEA: 280, COLUMNA: 12: <a href="../es/sec_emi/areas/inmigracion/index.htm">Inmigraci&oacute;</a>       
+
+		LINEA: 285, COLUMNA: 12: <a href="../es/sec_emi/areas/emigracion/index.htm">Emigraci&oacute;</a>       
+
+		LINEA: 290, COLUMNA: 12: <a href="http://www.mitramiss.gob.es/movilidadinternacional/index.htm" title="Enlla&ccedil; extern....       
+
+		LINEA: 295, COLUMNA: 12: <a href="http://extranjeros.mitramiss.gob.es/es/index.html" title="Enlla&ccedil; extern. ">Portal d' ...       
+
+		LINEA: 303, COLUMNA: 10: <a class="bold" href="../es/seg_soc/index.htm">Seguretat Social</a>       
+
+		LINEA: 308, COLUMNA: 12: <a href="../es/organizacion/seg_social/index.htm">Organigrama</a>       
+
+		LINEA: 313, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Trabajadores/Afiliacion/index.htm" title="Enlla&ccedil; ...       
+
+		LINEA: 318, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Normativa/index.htm?C1=1001&C2=2005" title="Enlla&ccedi ...       
+
+		LINEA: 323, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Oficinas/index.htm" title="Enlla&ccedil; extern. ">Dire ...       
+
+		LINEA: 328, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Masinformacion/SistemaRed/RedInternetnuev/Informacion/i ...       
+
+		LINEA: 333, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Trabajadores/Afiliacion/Conveniosespeciales/Otrosconven ...       
+
+		LINEA: 341, COLUMNA: 10: <a class="bold" href="http://www.mitramiss.gob.es/itss/web/index.html" title="Enlla&ccedil; extern....       
+
+		LINEA: 346, COLUMNA: 12: <a href="http://www.mitramiss.gob.es/itss/web/Quienes_somos/Organigrama/index.html" title="Enlla&cce ...       
+
+		LINEA: 351, COLUMNA: 12: <a href="http://www.mitramiss.gob.es/itss/web/Que_hacemos/Funciones_ITSS/index.html" title="Enlla&cc ...       
+
+		LINEA: 356, COLUMNA: 12: <a href="http://www.mitramiss.gob.es/itss/web/Sala_de_comunicaciones/Noticias/index.html" title="Enl ...       
+
+		LINEA: 364, COLUMNA: 10: <a class="bold" href="http://prensa.mitramiss.gob.es/WebPrensa/inicio" title="Enlla&ccedil; extern....       
+
+		LINEA: 369, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/ministro" title="Enlla&ccedil; extern. "> ...       
+
+		LINEA: 374, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/laboral" title="Enlla&ccedil; extern. ">L ...       
+
+		LINEA: 379, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/seguridadsocial" title="Enlla&ccedil; ext ...       
+
+		LINEA: 384, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/inmigracionemigracion" title="Enlla&ccedi ...       
+
+		LINEA: 389, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/archivo" title="Enlla&ccedil; extern. ">N ...       
+
+		LINEA: 394, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/salamultimedia/index.html" title="Enlla&ccedil; ex ...       
+
+		LINEA: 402, COLUMNA: 10: <a class="bold" href="../es/sede_electronica_menu/index.htm">Seu Electr&ograve;nica</a>       
+
+		LINEA: 407, COLUMNA: 12: <a href="https://sede.mitramiss.gob.es" title="Enlla&ccedil; extern. ">Ministeri: serveis centrals</ ...       
+
+		LINEA: 412, COLUMNA: 12: <a href="https://sede.mitramiss.gob.es/es/sede_electronica/tramites/index.htm" title="Enlla&ccedil;...       
+
+		LINEA: 417, COLUMNA: 12: <a href="https://sede.fogasa.mitramiss.gob.es" title="Enlla&ccedil; extern. ">Subseu electr&ograve;n ...       
+
+		LINEA: 422, COLUMNA: 12: <a href="https://sede.seg-social.gob.es/Sede_1/index.htm" title="Enlla&ccedil; extern. ">Seguretat S ...       
+
+		LINEA: 455, COLUMNA: 8: <a href="https://twitter.com/empleogob" title="Twitter"><img src="../img2/iconos/tw.png" alt="Acc&ea ...       
+
+		LINEA: 459, COLUMNA: 8: <a href="https://www.youtube.com/channel/UCUharbH_KVLUpHl6MUsKhyw" title="Youtube"><img src="../img2 ...       
+
+		LINEA: 496, COLUMNA: 10: <a href="../es/el_ministerio/index.htm">El Ministeri</a>       
+
+		LINEA: 501, COLUMNA: 10: <a href="../es/sec_trabajo/index.htm">Treball</a>       
+
+		LINEA: 506, COLUMNA: 10: <a href="../es/sec_emi/index.htm">Migracions</a>       
+
+		LINEA: 511, COLUMNA: 10: <a href="../es/seg_soc/index.htm">Seguretat Social</a>       
+
+		LINEA: 516, COLUMNA: 10: <a href="http://www.mitramiss.gob.es/itss/web/index.html" title="Enlla&ccedil; extern. ">Inspecci&oa ...       
+
+		LINEA: 582, COLUMNA: 6: <a href="https://constitucion40.com" title="40&egrave; aniversari de la Constituci&oacute;"><img cla ...       
+
+		LINEA: 584, COLUMNA: 6: <a href="../es/sede_electronica_menu/index.htm"><img src="../img2/iconos/ico_sedeElectronica_cent.pn ...       
+
+		LINEA: 586, COLUMNA: 6: <a href="../es/informacion/oposicion/index.htm"><img src="../img2/iconos/ico_empleoPublico.png" alt= ...       
+
+		LINEA: 588, COLUMNA: 6: <a href="http://transparencia.gob.es"><img src="../img2/iconos/ico_portalTransparencia.png" alt="" / ...       
+
+		LINEA: 590, COLUMNA: 6: <a href="../es/contacto_ministerio/index.htm"><img src="../img2/iconos/ico_atencionCiudadano.png" al ...       
+
+		LINEA: 592, COLUMNA: 6: <a href="../es/masbuscado/index.htm"><img src="../img2/iconos/ico_loMasBuscado.png" alt="" /> <span> ...       
+
+		LINEA: 624, COLUMNA: 28: <a href="http://prensa.mitramiss.gob.es/WebPrensa/inicio">Gabinet de Comunicaci&oacute;</a>       
+
+		LINEA: 628, COLUMNA: 111: <a href="http://prensa.empleo.gob.es/WebPrensa/inicio">noticias destacadas</a>       
+
+		LINEA: 633, COLUMNA: 8: <a class="twitter-timeline" href="https://twitter.com/Empleogob" data-widget-id="350141184510930944" ...       
+
+		LINEA: 642, COLUMNA: 9: <a href="https://revista.seg-social.es" title="Enlla&ccedil; extern"><img alt="" src="../i ...       
+
+		LINEA: 650, COLUMNA: 28: <a href="http://prensa.mitramiss.gob.es/WebPrensa/salamultimedia/index.html">Sala Multim&egrave;dia< ...       
+
+		LINEA: 662, COLUMNA: 6: <a href="../es/destacados/HOME/plan-director-por-un-trabajo-digno.pdf" title="Document en format PDF ...       
+
+		LINEA: 663, COLUMNA: 6: <a href="../es/participacion/index.htm"><img src="../img2/destacados/participacion.png" alt="" /> Pa ...       
+
+		LINEA: 664, COLUMNA: 6: <a href="https://tu.seg-social.gob.es/wps/portal/tuss/tuss/Login/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAf ...       
+
+		LINEA: 665, COLUMNA: 6: <a href="../es/rse/index.htm"><img src="../img2/destacados/rse.png" alt="" /> Responsabilitat Social ...       
+
+		LINEA: 666, COLUMNA: 6: <a href="http://extranjeros.mitramiss.gob.es/es/index.html" title="Enlla&ccedil; extern"><img src=". ...       
+
+		LINEA: 667, COLUMNA: 6: <a href="http://www.mitramiss.gob.es/movilidadinternacional/index.htm" title="Enlla&ccedil; extern"> ...       
+
+		LINEA: 668, COLUMNA: 6: <a href="https://www.empleate.gob.es/empleo/#/" title="Enlla&ccedil; extern"><img src="../img2/desta ...       
+
+		LINEA: 669, COLUMNA: 6: <a href="http://www.inssbt.es/portal/site/Insht/menuitem.1f1a3bc79ab34c578c2e8884060961ca/?vgnextoid ...       
+
+		LINEA: 670, COLUMNA: 6: <a href="../es/Guia/texto/index.htm"><img src="../img2/destacados/guialaboral.png" alt="" /> Gu&iacu ...       
+
+		LINEA: 671, COLUMNA: 6: <a href="../es/portada/serviciohogar/index.htm"><img src="../img2/destacados/hogarfamiliar.png" alt= ...       
+
+		LINEA: 710, COLUMNA: 13: <a href="../es/estadisticas/index.htm"><img src="../img2/iconos/ico_estadistica.png" alt="" /> <span ...       
+
+		LINEA: 712, COLUMNA: 13: <a href="../es/sec_trabajo/analisis-mercado-trabajo/index.htm"><img src="../img2/iconos/ico_analisis ...       
+
+		LINEA: 714, COLUMNA: 13: <a href="../es/sec_bep/estudios/index.htm"><img src="../img2/iconos/ico_estudios.png" alt="" /> <spa ...       
+
+		LINEA: 716, COLUMNA: 13: <a href="../es/publica/index.htm"><img src="../img2/iconos/ico_informes.png" alt="" /> <span>Publica ...       
+
+		LINEA: 718, COLUMNA: 13: <a href="../es/sec_bep/index.htm"><img src="../img2/iconos/ico_biblioteca.png" alt="" /> <span>Estud ...       
+
+		LINEA: 836, COLUMNA: 9: <a href="http://www.mitramiss.gob.es/es/revistaministerio/index.htm"><img alt="" src="../img2/logos/ ...       
+
+		LINEA: 837, COLUMNA: 9: <a href="http://www.mitramiss.gob.es/cartaespana/index.htm"><img alt="" src="../img2/logos/logo_cart ...       
+
+		LINEA: 838, COLUMNA: 9: <a href="http://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/2131/" title="Enlla&ccedil ...       
+
+		LINEA: 839, COLUMNA: 9: <a href="http://www.inssbt.es/portal/site/Insht/menuitem.1f1a3bc79ab34c578c2e8884060961ca/?vgnextoid ...       
+
+		LINEA: 853, COLUMNA: 9: <a href="http://www.sepe.es/" title="Enlla&ccedil; extern"><img alt="" src="../img2/logos/logo_sepe. ...       
+
+		LINEA: 854, COLUMNA: 9: <a href="http://www.seg-social.es/wps/portal/wss/internet/Inicio" title="Enlla&ccedil; extern"><img...       
+
+		LINEA: 855, COLUMNA: 9: <a href="http://www.mitramiss.gob.es/itss/web/index.html" title="Enlla&ccedil; extern"><img alt="" s ...       
+
+		LINEA: 856, COLUMNA: 9: <a href="http://www.inssbt.es/" title="Enlla&ccedil; extern"><img alt="" src="../img2/logos/logo_ins ...       
+
+		LINEA: 857, COLUMNA: 9: <a href="http://www.mitramiss.gob.es/fogasa/default.html" title="Enlla&ccedil; extern"><img alt="" s ...       
+
+		LINEA: 858, COLUMNA: 9: <a href="../es/organizacion/seg_social/contenido/om13.htm"><img alt="" src="../img2/logos/logo_ism.p ...       
+
+		LINEA: 859, COLUMNA: 9: <a href="../es/organizacion/seg_social/contenido/om14.htm"><img alt="" src="../img2/logos/logo_tgss. ...       
+
+		LINEA: 892, COLUMNA: 6: <a href="../es/extras/accesibilidad.htm">Accesibilitat</a>       
+
+		LINEA: 896, COLUMNA: 6: <a href="../es/extras/avisolegal.htm">Av&iacute;s legal y privacitat</a>       
+
+		LINEA: 900, COLUMNA: 6: <a href="../es/extras/mapaweb.htm">Mapa del sitio</a>
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 78, COLUMNA: 10: <a href="../index.htm"><img src="../img2/cabecera/logoGdE.png" alt="Govern d'Espanya. Ministeri de T ...       
+
+		LINEA: 79, COLUMNA: 26: <a href="../index.htm">Treball, Migracions i Seguretat Social</a>       
+
+		LINEA: 106, COLUMNA: 10: <a href="../es/index.htm" hreflang="es" lang="es" title="Castellano">Bienvenido</a>       
+
+		LINEA: 108, COLUMNA: 25: <a href="index.htm" hreflang="ca" lang="ca" title="Catal&aacute;">Benvingut</a>       
+
+		LINEA: 110, COLUMNA: 10: <a href="../eu/index.htm" hreflang="eu" lang="eu" title="Euskara">Ongi etorri</a>       
+
+		LINEA: 112, COLUMNA: 10: <a href="../gl/index.htm" hreflang="gl" lang="gl" title="Galego">Benvido</a>       
+
+		LINEA: 114, COLUMNA: 10: <a href="../en/index.htm" hreflang="en" lang="en" title="English">Welcome</a>       
+
+		LINEA: 116, COLUMNA: 10: <a href="../fr/index.htm" hreflang="fr" lang="fr" title="Fran&ccedil;aise">Bienvenue</a>       
+
+		LINEA: 122, COLUMNA: 5: <a href="index.htm" hreflang="ca" lang="ca" title="Catal&aacute;">		<span class="ca texto">Benvi ...       
+
+		LINEA: 129, COLUMNA: 10: <a href="../es/index.htm" hreflang="es" lang="es" title="Castellano"><img src="../img2/iconos/ico_es ...       
+
+		LINEA: 131, COLUMNA: 10: <a href="../eu/index.htm" hreflang="eu" lang="eu" title="Euskara"><img src="../img2/iconos/ico_eu.pn ...       
+
+		LINEA: 133, COLUMNA: 10: <a href="../gl/index.htm" hreflang="gl" lang="gl" title="Galego"><img src="../img2/iconos/ico_gl.png ...       
+
+		LINEA: 135, COLUMNA: 10: <a href="../en/index.htm" hreflang="en" lang="en" title="English"><img src="../img2/iconos/ico_en.pn ...       
+
+		LINEA: 137, COLUMNA: 10: <a href="../fr/index.htm" hreflang="fr" lang="fr" title="Fran&ccedil;aise"><img src="../img2/iconos/ ...       
+
+		LINEA: 181, COLUMNA: 6: <a class="botonmenu" href="#"><img src="../img2/iconos/menu.png" alt="Men&uacute; principal" /> <spa ...       
+
+		LINEA: 200, COLUMNA: 8: <a href="../index.htm">Inici</a>       
+
+		LINEA: 205, COLUMNA: 10: <a href="../es/el_ministerio/index.htm" class="bold">El Ministeri</a>       
+
+		LINEA: 210, COLUMNA: 12: <a href="../es/extras/ministro/ministro.htm">La ministra</a>       
+
+		LINEA: 215, COLUMNA: 12: <a href="../es/organizacion/index.htm">Organitzaci&oacute; administrativa</a>       
+
+		LINEA: 220, COLUMNA: 12: <a href="../es/el_ministerio/index.htm">El ministeri a Espanya</a>       
+
+		LINEA: 225, COLUMNA: 12: <a href="../es/mundo/index.htm">El ministeri al m&oacute;n</a>       
+
+		LINEA: 237, COLUMNA: 10: <a class="bold" href="../es/sec_trabajo/index.htm">Treball</a>       
+
+		LINEA: 242, COLUMNA: 12: <a href="../es/organizacion/empleo/index.htm">Organigrama</a>       
+
+		LINEA: 247, COLUMNA: 12: <a href="https://empleate.gob.es/empleo/#/" title="Enlla&ccedil; extern. ">Portal Ocupaci&oacute;</a ...       
+
+		LINEA: 252, COLUMNA: 12: <a href="../es/sec_trabajo/ccncc/J_MNC/index.htm">Mapa de Negociaci&oacute; Col&middot;lectiva</a>       
+
+		LINEA: 257, COLUMNA: 12: <a href="../es/sec_trabajo/analisis-mercado-trabajo/index.htm">An&agrave;lisi del mercat de treball< ...       
+
+		LINEA: 262, COLUMNA: 12: <a href="../es/sec_trabajo/formacion/index.htm">Formaci&oacute; per a l'ocupaci&oacute;</a>       
+
+		LINEA: 270, COLUMNA: 10: <a class="bold" href="../es/sec_emi/index.htm">Migracions</a>       
+
+		LINEA: 275, COLUMNA: 12: <a href="../es/organizacion/inmigracion/index.htm">Organigrama</a>       
+
+		LINEA: 280, COLUMNA: 12: <a href="../es/sec_emi/areas/inmigracion/index.htm">Inmigraci&oacute;</a>       
+
+		LINEA: 285, COLUMNA: 12: <a href="../es/sec_emi/areas/emigracion/index.htm">Emigraci&oacute;</a>       
+
+		LINEA: 290, COLUMNA: 12: <a href="http://www.mitramiss.gob.es/movilidadinternacional/index.htm" title="Enlla&ccedil; extern....       
+
+		LINEA: 295, COLUMNA: 12: <a href="http://extranjeros.mitramiss.gob.es/es/index.html" title="Enlla&ccedil; extern. ">Portal d' ...       
+
+		LINEA: 303, COLUMNA: 10: <a class="bold" href="../es/seg_soc/index.htm">Seguretat Social</a>       
+
+		LINEA: 308, COLUMNA: 12: <a href="../es/organizacion/seg_social/index.htm">Organigrama</a>       
+
+		LINEA: 313, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Trabajadores/Afiliacion/index.htm" title="Enlla&ccedil; ...       
+
+		LINEA: 318, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Normativa/index.htm?C1=1001&C2=2005" title="Enlla&ccedi ...       
+
+		LINEA: 323, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Oficinas/index.htm" title="Enlla&ccedil; extern. ">Dire ...       
+
+		LINEA: 328, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Masinformacion/SistemaRed/RedInternetnuev/Informacion/i ...       
+
+		LINEA: 333, COLUMNA: 12: <a href="http://www.seg-social.es/Internet_1/Trabajadores/Afiliacion/Conveniosespeciales/Otrosconven ...       
+
+		LINEA: 341, COLUMNA: 10: <a class="bold" href="http://www.mitramiss.gob.es/itss/web/index.html" title="Enlla&ccedil; extern....       
+
+		LINEA: 346, COLUMNA: 12: <a href="http://www.mitramiss.gob.es/itss/web/Quienes_somos/Organigrama/index.html" title="Enlla&cce ...       
+
+		LINEA: 351, COLUMNA: 12: <a href="http://www.mitramiss.gob.es/itss/web/Que_hacemos/Funciones_ITSS/index.html" title="Enlla&cc ...       
+
+		LINEA: 356, COLUMNA: 12: <a href="http://www.mitramiss.gob.es/itss/web/Sala_de_comunicaciones/Noticias/index.html" title="Enl ...       
+
+		LINEA: 364, COLUMNA: 10: <a class="bold" href="http://prensa.mitramiss.gob.es/WebPrensa/inicio" title="Enlla&ccedil; extern....       
+
+		LINEA: 369, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/ministro" title="Enlla&ccedil; extern. "> ...       
+
+		LINEA: 374, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/laboral" title="Enlla&ccedil; extern. ">L ...       
+
+		LINEA: 379, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/seguridadsocial" title="Enlla&ccedil; ext ...       
+
+		LINEA: 384, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/inmigracionemigracion" title="Enlla&ccedi ...       
+
+		LINEA: 389, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/noticias/archivo" title="Enlla&ccedil; extern. ">N ...       
+
+		LINEA: 394, COLUMNA: 12: <a href="http://prensa.mitramiss.gob.es/WebPrensa/salamultimedia/index.html" title="Enlla&ccedil; ex ...       
+
+		LINEA: 402, COLUMNA: 10: <a class="bold" href="../es/sede_electronica_menu/index.htm">Seu Electr&ograve;nica</a>       
+
+		LINEA: 407, COLUMNA: 12: <a href="https://sede.mitramiss.gob.es" title="Enlla&ccedil; extern. ">Ministeri: serveis centrals</ ...       
+
+		LINEA: 412, COLUMNA: 12: <a href="https://sede.mitramiss.gob.es/es/sede_electronica/tramites/index.htm" title="Enlla&ccedil;...       
+
+		LINEA: 417, COLUMNA: 12: <a href="https://sede.fogasa.mitramiss.gob.es" title="Enlla&ccedil; extern. ">Subseu electr&ograve;n ...       
+
+		LINEA: 422, COLUMNA: 12: <a href="https://sede.seg-social.gob.es/Sede_1/index.htm" title="Enlla&ccedil; extern. ">Seguretat S ...       
+
+		LINEA: 455, COLUMNA: 8: <a href="https://twitter.com/empleogob" title="Twitter"><img src="../img2/iconos/tw.png" alt="Acc&ea ...       
+
+		LINEA: 459, COLUMNA: 8: <a href="https://www.youtube.com/channel/UCUharbH_KVLUpHl6MUsKhyw" title="Youtube"><img src="../img2 ...       
+
+		LINEA: 496, COLUMNA: 10: <a href="../es/el_ministerio/index.htm">El Ministeri</a>       
+
+		LINEA: 501, COLUMNA: 10: <a href="../es/sec_trabajo/index.htm">Treball</a>       
+
+		LINEA: 506, COLUMNA: 10: <a href="../es/sec_emi/index.htm">Migracions</a>       
+
+		LINEA: 511, COLUMNA: 10: <a href="../es/seg_soc/index.htm">Seguretat Social</a>       
+
+		LINEA: 516, COLUMNA: 10: <a href="http://www.mitramiss.gob.es/itss/web/index.html" title="Enlla&ccedil; extern. ">Inspecci&oa ...       
+
+		LINEA: 582, COLUMNA: 6: <a href="https://constitucion40.com" title="40&egrave; aniversari de la Constituci&oacute;"><img cla ...       
+
+		LINEA: 584, COLUMNA: 6: <a href="../es/sede_electronica_menu/index.htm"><img src="../img2/iconos/ico_sedeElectronica_cent.pn ...       
+
+		LINEA: 586, COLUMNA: 6: <a href="../es/informacion/oposicion/index.htm"><img src="../img2/iconos/ico_empleoPublico.png" alt= ...       
+
+		LINEA: 588, COLUMNA: 6: <a href="http://transparencia.gob.es"><img src="../img2/iconos/ico_portalTransparencia.png" alt="" / ...       
+
+		LINEA: 590, COLUMNA: 6: <a href="../es/contacto_ministerio/index.htm"><img src="../img2/iconos/ico_atencionCiudadano.png" al ...       
+
+		LINEA: 592, COLUMNA: 6: <a href="../es/masbuscado/index.htm"><img src="../img2/iconos/ico_loMasBuscado.png" alt="" /> <span> ...       
+
+		LINEA: 624, COLUMNA: 28: <a href="http://prensa.mitramiss.gob.es/WebPrensa/inicio">Gabinet de Comunicaci&oacute;</a>       
+
+		LINEA: 628, COLUMNA: 111: <a href="http://prensa.empleo.gob.es/WebPrensa/inicio">noticias destacadas</a>       
+
+		LINEA: 633, COLUMNA: 8: <a class="twitter-timeline" href="https://twitter.com/Empleogob" data-widget-id="350141184510930944" ...       
+
+		LINEA: 642, COLUMNA: 9: <a href="https://revista.seg-social.es" title="Enlla&ccedil; extern"><img alt="" src="../i ...       
+
+		LINEA: 650, COLUMNA: 28: <a href="http://prensa.mitramiss.gob.es/WebPrensa/salamultimedia/index.html">Sala Multim&egrave;dia< ...       
+
+		LINEA: 662, COLUMNA: 6: <a href="../es/destacados/HOME/plan-director-por-un-trabajo-digno.pdf" title="Document en format PDF ...       
+
+		LINEA: 663, COLUMNA: 6: <a href="../es/participacion/index.htm"><img src="../img2/destacados/participacion.png" alt="" /> Pa ...       
+
+		LINEA: 664, COLUMNA: 6: <a href="https://tu.seg-social.gob.es/wps/portal/tuss/tuss/Login/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAf ...       
+
+		LINEA: 665, COLUMNA: 6: <a href="../es/rse/index.htm"><img src="../img2/destacados/rse.png" alt="" /> Responsabilitat Social ...       
+
+		LINEA: 666, COLUMNA: 6: <a href="http://extranjeros.mitramiss.gob.es/es/index.html" title="Enlla&ccedil; extern"><img src=". ...       
+
+		LINEA: 667, COLUMNA: 6: <a href="http://www.mitramiss.gob.es/movilidadinternacional/index.htm" title="Enlla&ccedil; extern"> ...       
+
+		LINEA: 668, COLUMNA: 6: <a href="https://www.empleate.gob.es/empleo/#/" title="Enlla&ccedil; extern"><img src="../img2/desta ...       
+
+		LINEA: 669, COLUMNA: 6: <a href="http://www.inssbt.es/portal/site/Insht/menuitem.1f1a3bc79ab34c578c2e8884060961ca/?vgnextoid ...       
+
+		LINEA: 670, COLUMNA: 6: <a href="../es/Guia/texto/index.htm"><img src="../img2/destacados/guialaboral.png" alt="" /> Gu&iacu ...       
+
+		LINEA: 671, COLUMNA: 6: <a href="../es/portada/serviciohogar/index.htm"><img src="../img2/destacados/hogarfamiliar.png" alt= ...       
+
+		LINEA: 710, COLUMNA: 13: <a href="../es/estadisticas/index.htm"><img src="../img2/iconos/ico_estadistica.png" alt="" /> <span ...       
+
+		LINEA: 712, COLUMNA: 13: <a href="../es/sec_trabajo/analisis-mercado-trabajo/index.htm"><img src="../img2/iconos/ico_analisis ...       
+
+		LINEA: 714, COLUMNA: 13: <a href="../es/sec_bep/estudios/index.htm"><img src="../img2/iconos/ico_estudios.png" alt="" /> <spa ...       
+
+		LINEA: 716, COLUMNA: 13: <a href="../es/publica/index.htm"><img src="../img2/iconos/ico_informes.png" alt="" /> <span>Publica ...       
+
+		LINEA: 718, COLUMNA: 13: <a href="../es/sec_bep/index.htm"><img src="../img2/iconos/ico_biblioteca.png" alt="" /> <span>Estud ...       
+
+		LINEA: 836, COLUMNA: 9: <a href="http://www.mitramiss.gob.es/es/revistaministerio/index.htm"><img alt="" src="../img2/logos/ ...       
+
+		LINEA: 837, COLUMNA: 9: <a href="http://www.mitramiss.gob.es/cartaespana/index.htm"><img alt="" src="../img2/logos/logo_cart ...       
+
+		LINEA: 838, COLUMNA: 9: <a href="http://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/2131/" title="Enlla&ccedil ...       
+
+		LINEA: 839, COLUMNA: 9: <a href="http://www.inssbt.es/portal/site/Insht/menuitem.1f1a3bc79ab34c578c2e8884060961ca/?vgnextoid ...       
+
+		LINEA: 853, COLUMNA: 9: <a href="http://www.sepe.es/" title="Enlla&ccedil; extern"><img alt="" src="../img2/logos/logo_sepe. ...       
+
+		LINEA: 854, COLUMNA: 9: <a href="http://www.seg-social.es/wps/portal/wss/internet/Inicio" title="Enlla&ccedil; extern"><img...       
+
+		LINEA: 855, COLUMNA: 9: <a href="http://www.mitramiss.gob.es/itss/web/index.html" title="Enlla&ccedil; extern"><img alt="" s ...       
+
+		LINEA: 856, COLUMNA: 9: <a href="http://www.inssbt.es/" title="Enlla&ccedil; extern"><img alt="" src="../img2/logos/logo_ins ...       
+
+		LINEA: 857, COLUMNA: 9: <a href="http://www.mitramiss.gob.es/fogasa/default.html" title="Enlla&ccedil; extern"><img alt="" s ...       
+
+		LINEA: 858, COLUMNA: 9: <a href="../es/organizacion/seg_social/contenido/om13.htm"><img alt="" src="../img2/logos/logo_ism.p ...       
+
+		LINEA: 859, COLUMNA: 9: <a href="../es/organizacion/seg_social/contenido/om14.htm"><img alt="" src="../img2/logos/logo_tgss. ...       
+
+		LINEA: 892, COLUMNA: 6: <a href="../es/extras/accesibilidad.htm">Accesibilitat</a>       
+
+		LINEA: 896, COLUMNA: 6: <a href="../es/extras/avisolegal.htm">Av&iacute;s legal y privacitat</a>       
+
+		LINEA: 900, COLUMNA: 6: <a href="../es/extras/mapaweb.htm">Mapa del sitio</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 72, COLUMNA: 4: <h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina principal. Ministeri d ...       
+
+		LINEA: 79, COLUMNA: 22: <h1><a href="../index.htm">Treball, Migracions i Seguretat Social</a></h1>       
+
+		LINEA: 888, COLUMNA: 4: <h1 class="oculto">Pie de p&aacute;gina</h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 553, COLUMNA: 6: <h2 class="oculto">Accesos directos</h2>       
+
+		LINEA: 622, COLUMNA: 6: <h2>El Ministeri</h2>       
+
+		LINEA: 658, COLUMNA: 6: <h2>Destacat</h2>       
+
+		LINEA: 681, COLUMNA: 6: <h2>Dades i publicacions</h2>       
+
+		LINEA: 833, COLUMNA: 7: <h2>Revistes</h2>       
+
+		LINEA: 850, COLUMNA: 7: <h2>Organismes aut&ograve;noms</h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+
+
+		LINEA: 749, COLUMNA: 9: <h3>Dades d'inter&egrave;s</h3>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 144, COLUMNA: 5: <form method="get" action="../es/extras/buscador/resultados.htm" id="buscador">		<label for="q1" ...       
+
+		LINEA: 185, COLUMNA: 8: <form method="get" action="../es/extras/buscador/resultados.htm" id="formBuscadorMenu">		<lab ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 70, COLUMNA: 2: <body>		<header><h1 class="oculto">Ministeri de Treball, Migracions i Seguretat SocialPágina p ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 144, COLUMNA: 5: <form method="get" action="../es/extras/buscador/resultados.htm" id="buscador">		<label for="q1" ...       
+
+		LINEA: 185, COLUMNA: 8: <form method="get" action="../es/extras/buscador/resultados.htm" id="formBuscadorMenu">		<lab ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 144, COLUMNA: 5: <form method="get" action="../es/extras/buscador/resultados.htm" id="buscador">		<label for="q1" ...       
+
+		LINEA: 185, COLUMNA: 8: <form method="get" action="../es/extras/buscador/resultados.htm" id="formBuscadorMenu">		<lab ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 146, COLUMNA: 6: <input type="text"id="q1" name="q" placeholder="Introdueixi text" title="Introdueixi text"/>       
+
+		LINEA: 148, COLUMNA: 6: <input type="image"id="buscar1"class="buscar"name="buscar"src="../img2/i ...       
+
+		LINEA: 155, COLUMNA: 6: <input type="hidden" name="hl" value="es"/>       
+
+		LINEA: 187, COLUMNA: 9: <input type="text"id="q2" name="q" placeholder="Introduzca texto" title="Introduzca texto" ...       
+
+		LINEA: 189, COLUMNA: 9: <input type="image"id="buscar2"class="buscar"name="buscar"sr ...       
+
+		LINEA: 196, COLUMNA: 9: <input type="hidden" name="hl" value="es"/>
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 146, COLUMNA: 6: <input type="text"id="q1" name="q" placeholder="Introdueixi text" title="Introdueixi text"/>       
+
+		LINEA: 187, COLUMNA: 9: <input type="text"id="q2" name="q" placeholder="Introduzca texto" title="Introduzca texto" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 144, COLUMNA: 5: <form method="get" action="../es/extras/buscador/resultados.htm" id="buscador">		<label for="q1" ...       
+
+		LINEA: 185, COLUMNA: 8: <form method="get" action="../es/extras/buscador/resultados.htm" id="formBuscadorMenu">		<lab ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 144, COLUMNA: 5: <form method="get" action="../es/extras/buscador/resultados.htm" id="buscador">		<label for="q1" ...       
+
+		LINEA: 185, COLUMNA: 8: <form method="get" action="../es/extras/buscador/resultados.htm" id="formBuscadorMenu">		<lab ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 144, COLUMNA: 5: <form method="get" action="../es/extras/buscador/resultados.htm" id="buscador">		<label for="q1" ...       
+
+		LINEA: 185, COLUMNA: 8: <form method="get" action="../es/extras/buscador/resultados.htm" id="formBuscadorMenu">		<lab ...
+
+	

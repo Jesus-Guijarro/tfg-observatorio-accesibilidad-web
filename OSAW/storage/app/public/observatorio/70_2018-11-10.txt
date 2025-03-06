@@ -1,0 +1,664 @@
+REPORTE PÁGINA WEB: https://www.upv.es/organizacion/departamentos/index-es.html
+FECHA EVALUACIÓN: 2018-11-10
+
+
+Principio: 1.Perceptible
+Descripcion: La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+	Pauta: 1.1..Alternativas textuales
+	Descripcion: Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple
+
+		Criterio: 1.1.1..Contenido no textual
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H35-Proporcionando textos alternativos a elementos applet
+			Criticidad: Alta
+			Observación: No se han encontrado elementos applet en la p&aacute;gina.<br/>
+			Recomendación: Se recomienda colocar una alternativa textual a los elementos applet, para tener conocimiento de su funci&oacute;n.<br/>
+			Número de errores: 0
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos de formularios que requieran etiquetas..<br/>
+			Recomendación: En el caso de hacer uso de formularios en la estructura y diseño de p&aacute;gina, no olvide asociar un identificador(etiqueta) a cada campo de entrada del formulario..<br/>
+			Número de errores: 0
+
+			Código: H45-Usando longdesc
+			Criticidad: Baja
+			Observación: Las im&aacute;genes de p&aacute;gina que hacen uso del atributo longdesc tiene una URI valida, verifique que el contenido en el objetivo de ese URI contiene una descripci&oacute;n larga que describe el contenido no textual asociado a la im&aacute;gen. Las im&aacute;genes con atributo longdesc son: <pre><ul><li><xmp><img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt"></xmp></li><li><xmp><img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/imagenes/portales/ban_departamentos-es.png"></xmp></li></ul></pre>.<br/>
+			Recomendación: Use el atributo longdesc en una im&aacute;gen cuando una alternativa textual breve no transmite adecuadamente la funci&oacute;n o la informaci&oacute;n proporcionada en la im&aacute;gen.<br/>
+			Número de errores: 0
+
+			Código: H37-Usando atributos alt en elementos img
+			Criticidad: Media
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong>, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;"></xmp></li><li><xmp><img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt"></xmp></li><li><xmp><img src="/imagenes/img_identif.png" alt="Mi UPV"></xmp></li><li><xmp><img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas"></xmp></li><li><xmp><img src="/imagenes/menu-hamburguesa.png" alt="Menú"></xmp></li><li><xmp><img src="/imagenes/espacio2.png" alt="espacio" width="23" height="5"></xmp></li><li><xmp><img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;position:relative;top:0px;"></xmp></li><li><xmp><img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position:relative;top:0px;display:none;"></xmp></li><li><xmp><img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"></xmp></li><li><xmp><img id="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg2" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"></xmp></li><li><xmp><img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/imagenes/portales/ban_departamentos-es.png"></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;"></xmp></li><li><xmp><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62"></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS" style="float:right;vertical-align:top;"></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT" style="float:right;vertical-align:top;"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H67-Usando texto alternativo nulo y no el atributo title en el elemento img para imágenes que AT puedan ignorar
+			Criticidad: Media
+			Observación: 21 im&aacute;genes en la p&aacute;gina tienen alternativas textuales, verifique que esten acorde al contenido de las mismas.<pre><ul><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;"></xmp></li><li><xmp><img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt"></xmp></li><li><xmp><img src="/imagenes/img_identif.png" alt="Mi UPV"></xmp></li><li><xmp><img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas"></xmp></li><li><xmp><img src="/imagenes/menu-hamburguesa.png" alt="Menú"></xmp></li><li><xmp><img src="/imagenes/espacio2.png" alt="espacio" width="23" height="5"></xmp></li><li><xmp><img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;position:relative;top:0px;"></xmp></li><li><xmp><img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position:relative;top:0px;display:none;"></xmp></li><li><xmp><img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"></xmp></li><li><xmp><img id="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg2" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"></xmp></li><li><xmp><img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/imagenes/portales/ban_departamentos-es.png"></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;"></xmp></li><li><xmp><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62"></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS" style="float:right;vertical-align:top;"></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT" style="float:right;vertical-align:top;"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+			Código: C18-Usando reglas margin y padding en lugar de imágenes de espaciador para diseñar un layout
+			Criticidad: Baja
+			Observación: Existen 3 celdas de tablas que no consideran el separador de contenido de los bordes.<br/>
+			Recomendación: Se debe tener en cuenta la separaci&oacute;n del texto respecto a las celdas en las tablas.<br/>
+			Número de errores: 3
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H36-Usando atributos alt en imágenes que se utilizan como botones de envio
+			Criticidad: Alta
+			Observación: No se han encontrado botones de tipo im&aacute;gen en la p&aacute;gina..<br/>
+			Recomendación: En el caso de hacer uso de botones de tipo im&aacute;gen, estos deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la acci&oacute;n del bot&oacute;n)..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: OAW1-Usando videos decorativos
+			Criticidad: Media
+			Observación: No se han encontrado videos en esta p&aacute;gina..<br/>
+			Recomendación: En caso de tener v&iacute;deos decorativos, es recomendable marcarlos como tal con atributos ARIA, esto evita que los usuarios con tecnolog&iacute;as de asistencia tengan dificultades al encontrar videos sin altenativas textuales..<br/>
+			Número de errores: 0
+
+			Código: H88-Usando HTML de acuerdo a la especificación
+			Criticidad: Alta
+			Observación: No se han encontrado elementos obsoletos dentro de la p&aacute;gina..<br/>
+			Recomendación: Ciertas etiquetas y atributos viejos de HTML han sido suspendidos para utilizar en su lugar alternativas m&aacute;s flexibles (como HTML o CSS). Es recomendable siempre adoptar los est&aacute;ndares HTML..<br/>
+			Número de errores: 0
+
+	Pauta: 1.2..Medios tempodependientes
+	Descripcion: Proporcionar alternativas para los medios tempodependientes
+
+		Criterio: 1.2.1..Sólo audio y sólo vídeo (grabado)
+		Nivel: A
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.4..Subtítulos (en directo)
+		Nivel: AA
+
+		Criterio: 1.2.3..Audiodescripción o Medio Alternativo (grabado)
+		Nivel: A
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.8..Medio alternativo (grabado)
+		Nivel: AAA
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.2..Subtítulos (grabados)
+		Nivel: A
+
+			Código: G87-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado videos en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los videos, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+			Código: G87B-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado audios en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los audios, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+	Pauta: 1.3..Adaptable
+	Descripcion: Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura
+
+		Criterio: 1.3.2..Secuencia con significado
+		Nivel: A
+
+			Código: C27A-Haciendo el DOM ordenado para marcar el orden visual: A) Elementos con posicionamiento flotante sin especificar
+			Criticidad: Media
+			Observación: De las 448 reglas CSS en la p&aacute;gina, 68 de ellas usan declaraciones de elementos de forma flotante (float:inherit|none|left|rigth).<pre><ul><li><xmp>#DIVescudo { vertical-align: top; width: 341px; height: 95px !important; float: left; }</xmp></li><li><xmp>#DIVescudoN2 { vertical-align: top; width: 341px; height: 95px !important; float: left; }</xmp></li><li><xmp>#DIVescudoN3 { vertical-align: top; width: 341px; height: 63px !important; float: left; }</xmp></li><li><xmp>#DIVmenuHerramientas ul li { display: inline; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 2px; padding-bottom: 0px; padding-left: 2px; float: left; }</xmp></li><li><xmp>#DIVaccesoDirecto { float: right; margin-top: 41px !important; }</xmp></li><li><xmp>#DIVaccesoDirectoN2 { float: right; margin-top: 32px !important; margin-right: 8px !important; }</xmp></li><li><xmp>#DIVaccesoDirectoN3 { float: right; margin-top: 14px !important; margin-right: 6px !important; }</xmp></li><li><xmp>#DIVrotativo { width: 767px; height: 280px; float: left; }</xmp></li><li><xmp>#DIVtvupv { vertical-align: top; text-align: center; float: right; width: 183px; height: 280px; background-image: url(https://www.upv.es/imagenes/fondo_col_der_h2on.png); background-repeat: no-repeat repeat; }</xmp></li><li><xmp>#DIVpanelNoticias { vertical-align: top; text-align: left; width: 759px; margin-top: 0px; margin-right: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-color: rgb(255, 255, 255); margin-left: 13px; float: left; margin-bottom: 20px; }</xmp></li><li><xmp>#DIVpanelNoticias div.noticia1, #DIVpanelNoticias div.noticia2, #DIVpanelNoticias div.noticia3 { float: left; }</xmp></li><li><xmp>#DIVpanelEnlaces { float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; vertical-align: top; width: 178px; text-align: center; background-image: url(https://www.upv.es/imagenes/puntos_men_double.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: 0% 0%; background-repeat: no-repeat repeat; }</xmp></li><li><xmp>#main-nav { float: right; line-height: 1; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 18px; margin-left: 0px; }</xmp></li><li><xmp>.noticia1 img, .noticia2 img, .noticia3 img, .noticia4 img { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 13px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.imgDer1 { float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 13px; }</xmp></li><li><xmp>ul.boton li.menun1 { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(51, 51, 51); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(74, 74, 74); width: 153px; height: auto; line-height: 25px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; float: left; margin-left: 3px; padding-left: 8px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.div_BLOQ1 { background-color: rgb(0, 80, 114); padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; width: 547px; text-align: left; border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; float: left; }</xmp></li><li><xmp>.image_bloque { border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-color: initial; margin-left: 35px; margin-bottom: 35px; float: right; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.div_BLOQ2 { background-color: rgb(74, 62, 61); padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; width: 290px; text-align: left; border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; float: right; }</xmp></li><li><xmp>.div_BLOQUE { padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; height: 100%; width: 270px; text-align: left; border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; float: left; position: relative; }</xmp></li><li><xmp>.div_derecho { float: right; }</xmp></li><li><xmp>.img_bloque { border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-color: initial; float: left; margin-right: 10px; margin-bottom: 15px; }</xmp></li><li><xmp>.DIVdestacadoIZQ, .DIVdestacadoDER { vertical-align: top; width: 440px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 10px; text-align: left; float: left; padding-bottom: 15px; }</xmp></li><li><xmp>.DIVimagenDER { float: right; width: 18%; vertical-align: top; }</xmp></li><li><xmp>#DIVpanelIZQN3 { background-color: rgb(255, 255, 255); padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; height: 90%; width: 595px; text-align: left; float: left; }</xmp></li><li><xmp>#DIVpanelDERN3 { margin-top: 18px; background-color: rgb(234, 234, 234); padding-top: 4px; padding-right: 8px; padding-bottom: 4px; padding-left: 8px; height: 90% !important; width: 280px; text-align: left; border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; float: right; }</xmp></li><li><xmp>.NoticiaFotoTit { float: left; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>.imgColumnaNotis { float: left; width: 40px; height: 35px; margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 10px; padding-bottom: 15px; padding-left: 0px; margin-bottom: 10px; }</xmp></li><li><xmp>ul.lista1 { float: left; width: 48%; font-family: Arial, Helvetica, sans-serif; font-size: 95%; color: rgb(75, 75, 75); list-style-type: none; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 2px; margin-bottom: 2px; margin-left: 2px; margin-right: 10px; }</xmp></li><li><xmp>.separa { float: right; font-size: 1em; }</xmp></li><li><xmp>.div_pastilla-10 { width: 440px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; height: 100%; text-align: left; border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; float: left; position: relative; }</xmp></li><li><xmp>.n_seccionN0Logo_ico { padding-right: 20px; float: left; }</xmp></li><li><xmp>.RS_icono { float: right; padding-top: 6px; padding-right: 6px; padding-bottom: 6px; padding-left: 6px; width: 28px; height: 28px; }</xmp></li><li><xmp>#DIVpanelDERN3 { margin-top: 15px; margin-right: 0px; margin-bottom: 20px; margin-left: 0px; padding-top: 16px; padding-right: 8px; padding-bottom: 16px; padding-left: 8px; min-height: 600px; height: 90% !important; float: right; background-color: rgb(234, 234, 234); border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; text-align: left; width: 235px !important; }</xmp></li><li><xmp>.wrap-col-21, .wrap-col-22 { margin-top: 18px; margin-right: 7px; margin-bottom: 0px; margin-left: 7px; padding-top: 4px; padding-right: 8px; padding-bottom: 4px; padding-left: 8px; width: 260px; text-align: left; float: left; }</xmp></li><li><xmp>.imgPer2 { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 35px; padding-bottom: 25px; padding-left: 0px; }</xmp></li><li><xmp>.pastilla-1 img { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; float: left; margin-right: 10px; }</xmp></li><li><xmp>.pastilla-2 img { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; float: left; margin-right: 10px; }</xmp></li><li><xmp>.pastilla-3 img { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; float: left; margin-right: 10px; }</xmp></li><li><xmp>.pastilla-4 img { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; float: left; margin-right: 10px; }</xmp></li><li><xmp>img.img-float-left { float: left; }</xmp></li><li><xmp>.pastilla-4 img.img-float-left, .pastilla-3 img.img-float-right, .pastilla-2 img.img-float-right, .pastilla-1 img.img-float-right { float: right; }</xmp></li><li><xmp>#columna1 { float: left; padding-top: 10px; width: 430px; }</xmp></li><li><xmp>#columna2 { float: right; padding-top: 10px; width: 430px; }</xmp></li><li><xmp>.foto-not { float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 10px; margin-left: 0px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; }</xmp></li><li><xmp>.RS_Binterior_T_BAJO a { float: right; color: rgb(89, 119, 172); font-weight: bold; }</xmp></li><li><xmp>.div_BLOQUE_T { border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; float: left; min-height: 246px; position: relative; text-align: left; width: 286px; }</xmp></li><li><xmp>.div_BLOQUE_T_X2 { border-top-left-radius: 7px 7px; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0px 0px; border-bottom-left-radius: 7px 7px; float: left; height: 194px; position: relative; text-align: left; width: 560px; background-color: rgb(44, 47, 86); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; color: rgb(255, 255, 255); font-size: 13px; }</xmp></li><li><xmp>.div_BLOQUE_T3 { background-color: rgb(48, 48, 48); height: 214px; border-top-left-radius: 0px 0px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 0px 0px; float: left; position: relative; text-align: left; width: 302px; }</xmp></li><li><xmp>.T5_I img { float: right; }</xmp></li><li><xmp>.T5_D { float: right; }</xmp></li><li><xmp>.T5_I { float: left; }</xmp></li><li><xmp>.n_seccionLogo { float: left; width: 80%; }</xmp></li><li><xmp>.n_seccionIcoFolleto { float: right; height: 33px; padding-top: 7px; width: 40px; }</xmp></li><li><xmp>#DIVmenuHerramientas ul li { display: inline; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 2px; padding-bottom: 0px; padding-left: 2px; }</xmp></li><li><xmp>.separa { float: right; font-size: 1em; }</xmp></li><li><xmp>.div_BLOQUE { float: none !important; width: 100% !important; padding-top: 0px !important; padding-right: 0px !important; padding-bottom: 0px !important; padding-left: 0px !important; }</xmp></li><li><xmp>.div_BLOQUE { float: left !important; padding-top: 8px !important; padding-right: 8px !important; padding-bottom: 8px !important; padding-left: 8px !important; width: 270px !important; }</xmp></li><li><xmp>#DIVbarraMenutog ul.boton li.menun1 { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(51, 51, 51); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(74, 74, 74); width: 153px; height: auto; line-height: 25px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; float: left; margin-left: 3px; padding-left: 8px; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#menu_close_tablet { display: block !important; padding-top: 6px; padding-left: 6px; float: left; }</xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;"></xmp></li><li><xmp><img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;position:relative;top:0px;"></xmp></li><li><xmp><img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position:relative;top:0px;display:none;"></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;"></xmp></li><li><xmp><div style="float:right;margin-right:15px;">         <a href="/entidades/AMAPUOC/" alt="EMAS"><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62"></a>      </div></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS" style="float:right;vertical-align:top;"></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT" style="float:right;vertical-align:top;"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 68
+
+			Código: H56-Usando el atributo dir en un elemento en linea para resolver problemas con secuencias direccionales anidadas 
+			Criticidad: Baja
+			Observación: Existen 2 segmentos de texto que declaran usar un idioma espec&iacute;fico. Verifique que estos textos corresponda al idioma que se indica, sea un valor valido y as&iacute; tambien que no se requiera indicar la dirrecci&oacute;n de lectura (dir=rtl).<pre><ul><li><xmp><a class="menuHerramientas" href="javascript:cambio_idioma(idioma_va)" title="Versió en valencià" lang="es-CA">Valencià</a></xmp></li><li><xmp><a class="menuHerramientas" href="javascript:cambio_idioma(idioma_en)" title="English version" lang="en">English</a></xmp></li></ul></pre>.<br/>
+			Recomendación: En caso de que un texto necesite ser leido en sentido contrario al de defecto (izquierda-derecha), se debe especificar utilizando el atributo dir.  Para mayor informaci&oacute;n refierase a <a haref="https://www.w3.org/TR/html4/struct/dirlang.html">Informaci&oacute;n sobre el idioma y la direcci&oacute;n de lectura de un texto</a>.<br/>
+			Número de errores: 2
+
+			Código: C6-Proporcionando contenido basado en marcadores estructurales
+			Criticidad: Baja
+			Observación: De las 447 reglas CSS en la p&aacute;gina, 1 de ellas usan declaraciones de elementos de forma absoluta (position:asolute).<pre><ul><li><xmp>.lista_MS, .lista_MS ul { list-style-type: none; list-style-position: outside; list-style-image: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 1
+
+			Código: C8-Usando la propiedad letter-spacing de CSS para controlar el espacio dentro de una palabra
+			Criticidad: Baja
+			Observación: No se han detectado textos sospechosos en los que palabras se han formado usando espacios en blanco..<br/>
+			Recomendación: En el caso de requerir por efectos visuales el destarcar cada letra de una palabra por medio de separaciones, utilice la propiedad CSS <code>letter-spacing</code>.<br/>
+			Número de errores: 0
+
+			Código: C27B-Haciendo el DOM ordenado para marcar el orden visual: B) Elementos con posicionamiento absoluto
+			Criticidad: Media
+			Observación: De las 435 reglas CSS en la p&aacute;gina, 13 de ellas usan declaraciones de elementos de forma absoluta (position:asolute|relative|fix).<pre><ul><li><xmp>#body { background-color: rgb(255, 255, 255); margin-bottom: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 950px; min-height: 100%; height: 100%; position: relative; margin-top: 0px; margin-left: auto; margin-right: auto; }</xmp></li><li><xmp>.boton div { position: relative; width: 150px; margin-left: -8px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(35, 35, 35); text-align: left; padding-top: 12px; padding-right: 2px; padding-bottom: 10px; padding-left: 10px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; z-index: 100; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>.div_BLOQUET1 { background-color: rgb(74, 62, 61); padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; height: 147px; width: 865px; text-align: left; border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; position: relative; }</xmp></li><li><xmp>.div_BLOQUE { padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; height: 100%; width: 270px; text-align: left; border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; float: left; position: relative; }</xmp></li><li><xmp>.div_pastilla-10 { width: 440px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; height: 100%; text-align: left; border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; float: left; position: relative; }</xmp></li><li><xmp>.n_seccionN0Logo { margin-top: 10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: left; border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; position: relative; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.div_BLOQUE_T { border-top-left-radius: 7px 7px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 7px 7px; float: left; min-height: 246px; position: relative; text-align: left; width: 286px; }</xmp></li><li><xmp>.div_BLOQUE_T_X2 { border-top-left-radius: 7px 7px; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0px 0px; border-bottom-left-radius: 7px 7px; float: left; height: 194px; position: relative; text-align: left; width: 560px; background-color: rgb(44, 47, 86); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; color: rgb(255, 255, 255); font-size: 13px; }</xmp></li><li><xmp>.div_BLOQUE_T3 { background-color: rgb(48, 48, 48); height: 214px; border-top-left-radius: 0px 0px; border-top-right-radius: 7px 7px; border-bottom-right-radius: 7px 7px; border-bottom-left-radius: 0px 0px; float: left; position: relative; text-align: left; width: 302px; }</xmp></li><li><xmp>.boton div { display: block; position: relative; width: 150px; text-align: left; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(35, 35, 35); padding-top: 12px; padding-right: 2px; padding-bottom: 10px; padding-left: 0px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; z-index: 100; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp>#DIVbarraMenutog ul.boton li div { position: relative; text-align: left; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(35, 35, 35); padding-top: 12px; padding-right: 2px; padding-bottom: 10px; padding-left: 0px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; z-index: 100; background-position: initial initial; background-repeat: initial initial; }</xmp></li><li><xmp><img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;position:relative;top:0px;"></xmp></li><li><xmp><img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position:relative;top:0px;display:none;"></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 13
+
+		Criterio: 1.3.1..Información y relaciones
+		Nivel: A
+
+			Código: G140-Separando la información y la estructura de la presentación para permitir diferentes presentaciones
+			Criticidad: Alta
+			Observación: El sitio se ha estructurado mezclando el contenido con la presentaci&oacute;n por medio de la definici&oacute;n de estilos CSS en el contenido HTML. Los componentes que presentan este problema son: <pre><code><ul><li><xmp><body style="font-size:80%;"><div id="body">  <div id="DIVpag">    <!-- cabecera pagina -->      <div id="DIVcab">      <div id="DIVsep1N2">        <img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;">        <img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;">      </div>      <div id="DIVcab1N2">        <div id="DIVescudoN2"><a href="/index-es.html"><img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt"></a></div>        <!-- Icono del menú Hamburguesa -->        <div class="menu_movil" style="display:none;"><div class="div-identif">                 <a href="https://www.upv.es/pls/soalu/est_intranet.Ni_portal_n?P_IDIOMA=c" title="Mi UPV" class="menuAD2"><img src="/imagenes/img_identif.png" alt="Mi UPV"></a>              </div><div class="div-hgsa2"><img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas"></div><div class="div-hgsa"><img src="/imagenes/menu-hamburguesa.png" alt="Menú"></div></div>        <div id="DIVmenuHerramientas">          <ul>              <li class="menuHerramientas">                <script type="text/javascript">//<![CDATA[                                  var idioma_va="va";                  var va=String.fromCharCode(60) + "a class='menuHerramientas' href='javascript:cambio_idioma(idioma_va)' title='Versió en valencià' lang='es-CA'>Valencià" + String.fromCharCode(60) + "/a>";                  document.writeln(va);                                    document.writeln("·");                                                                                                                      var idioma_en="en";                  var en=String.fromCharCode(60) + "a class='menuHerramientas' href='javascript:cambio_idioma(idioma_en)' title='English version' lang='en'>English" + String.fromCharCode(60) + "/a>";                  document.writeln(en);                               // ]]></script><a class="menuHerramientas" href="javascript:cambio_idioma(idioma_va)" title="Versió en valencià" lang="es-CA">Valencià</a>·<a class="menuHerramientas" href="javascript:cambio_idioma(idioma_en)" title="English version" lang="en">English</a>                <noscript>                                    &lt;a class="menuHerramientas" href="/bin2/idiacc/va/es?/organizacion/departamentos/index-es.html" title="Versió en valencià" lang="es-CA"&gt;Valencià&lt;/a&gt;&amp;nbsp;&amp;middot;                                                                                                              &lt;a class="menuHerramientas" href="/bin2/idiacc/en/es?/organizacion/departamentos/index-es.html" title="English version" lang="en"&gt;English&lt;/a&gt;                                  </noscript>              &nbsp;<div class="separa">I</div></li>                            <li class="menuHerramientas"><a href="?tl=a" title="Reducir texto" onclick="return cambia_tipografia(tipo1);return false;" class="menuHerramientas">a</a> · <a href="?tl=A" onclick="return cambia_tipografia(tipo2);return false;" title="Agrandar texto" class="menuHerramientas">A</a> &nbsp;<div class="separa">I</div></li>              <li class="menuHerramientas"><a href="/otros/accesibilidad-es.html" title="Accesibilidad" class="menuHerramientas">Accesibilidad</a> &nbsp;<div class="separa">I</div></li>              <li class="menuHerramientas"><a href="/otros/mapa-web-es.html" title="Mapa web" class="menuHerramientas">Mapa web</a> &nbsp;<div class="separa">I</div></li>              <li class="menuHerramientas"><a href="/pls/oalu/sic_mag.MetaBus?ie=utf8&amp;P_IDIOMA=c&amp;q=polilupa" title="Buscador" class="menuHerramientas">Buscar</a> &nbsp;<div class="separa">I</div></li>              <li class="menuHerramientas"><a href="/pls/oalu/sic_per.Busca_Persona?P_IDIOMA=c" title="Directorio" class="menuHerramientas">Directorio</a></li>                        </ul>          <ul id="DIVaccesoDirectoN2">                            <li class="menuAD">::&nbsp; <a href="https://www.upv.es/pls/soalu/est_intranet.Ni_portal_n?P_IDIOMA=c" title="Mi UPV" class="menuAD2N2">Iniciar sesión</a>&nbsp;::&nbsp;<img src="/imagenes/espacio2.png" alt="espacio" width="23" height="5"></li>                        </ul>        </div>        <div class="estabilizador">&nbsp; </div>      </div>    </div> <!-- /cabecera pagina --><!-- MENU -->    <div id="div_MENUH">      <div id="DIVbarraMenu">        <ul class="boton">          <!-- 1 -->          <li class="menun1 menuM2">                        <a href="#">ADMISIÓN</a> <!--  <span class="menuflechacab"></span> -->                      </li>          <!-- 2 -->          <li class="menun1">                        <a href="#">ESTUDIOS</a>                      </li>          <!-- 3 -->          <li class="menun1">                        <a href="#">INVESTIGACIÓN</a>                      </li>          <!-- 4 -->          <li class="menun1 menuM2">                        <a href="#">ORGANIZACIÓN</a>                      </li>          <!-- 5 -->          <li class="menun1 menuM2">                        <a href="#">PERFILES</a>                      </li>  <li>           <a class="menu_close" id="menu_close_tablet" title="Open/close" style="display:none;" href="#">   <img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;position:relative;top:0px;">   <img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position:relative;top:0px;display:none;">          </a>  </li>        </ul>        <div class="estabilizador"> </div>      </div>      <div class="estabilizador"> </div><!-- fin menu horizontal --><!-- Menú intermedio //////////////////////////////////////////////////////////////////////////  -->      <div id="DIVbarraMenutog">        <ul class="boton">          <li class="menun1 menuM2">            <!-- 1 -->            <div>              <ul>                                <li> <a href="/admision/empezar-en-la-universidad/index-es.html">Empezar en la universidad</a> </li>                <li> <a href="/admision/traslados-e-intercambios/index-es.html">Traslados e intercambios</a> </li>                <li> <a href="/admision/despues-del-grado/index-es.html">Después del grado</a> </li>                              </ul>            </div>          </li>          <li class="menun1">            <!-- 2 -->            <div>              <ul>                                <li> <a href="/estudios/grado/index-es.html">Estudios de grado</a> </li>                <li> <a href="/estudios/posgrado/index-es.html">Estudios de posgrado</a> </li>                <li> <a href="/estudios/aula-abierta/index-es.html">Aula abierta</a> </li>                              </ul>            </div>          </li>          <li class="menun1">            <!-- 3 -->            <div>              <ul>                                <li> <a href="/investigacion/estructuras/index-es.html">Estructuras de Investigación</a> </li>                <li> <a href="/investigacion/iniciativas-idi/index-es.html">Iniciativas de I+D+i</a> </li>                <li> <a href="https://innovacion.upv.es/es" title="Innovación (abre en ventana nueva)" rel="external" onclick="target='_new'">Innovación <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"></a> </li>                              </ul>            </div>          </li>          <li class="menun1 menuM2">            <!-- 4 -->            <div>              <ul>                                <li> <a href="/organizacion/la-institucion/index-es.html">La institución</a> </li>                <li> <a href="/organizacion/vida-universitaria/index-es.html">Vida universitaria</a> </li>                <li> <a href="/organizacion/escuelas-facultades/index-es.html">Escuelas y facultades</a> </li>                <li> <a href="/organizacion/departamentos/index-es.html">Departamentos</a> </li>                <li> <a href="/organizacion/servicios-universitarios/index-es.html">Servicios universitarios</a> </li>                              </ul>            </div>          </li>          <li class="menun1 menuM2">      <!-- 5 -->      <div>        <ul>                    <li> <a href="/perfiles/futuro-alumno/index-es.html">Futuro alumno</a> </li>          <li> <a href="/perfiles/orientador/index-es.html">Orientador</a> </li>          <li> <a href="/perfiles/estudiante/index-es.html">Estudiante</a> </li>          <li> <a href="/perfiles/pas-pdi/index-es.html">PAS y PDI</a> </li>          <li> <a href="/perfiles/prensa/index-es.html">Prensa</a> </li>          <li> <a href="/perfiles/titulados/index-es.html">Titulados</a> </li>                  </ul>      </div>    </li><!-- <li>          <a class="menu_close" id="menu_close" title="Cerrar menú"  href="#"><img src="/imagenes/close-gris.png" alt="Open/close" style="float:right;position:relative;top:0px;"/>          </a></li> -->        </ul>        <div class="estabilizador"> </div>      </div>    </div><!--Menú Móvil--><!-- MENU -->    <div id="div_MENUHMovil" style="display:none;">      <div id="DIVbarraMenuMovil">        <ul class="boton">          <!-- 1 -->          <li id="menu1" class="menun1 menuM2" onclick="showOnOff('menuimg1','submenu1');">            <div id="enlamenu1">            <a href="#">ADMISIÓN <!--  <span class="menuflechacab"></span> --></a>            &nbsp;</div><!--<div id="divimg1"><img  id="menuimg1" alt="Desplegar/plegar" src="//www.upv.es/yansu/images/ico_plus.gif" style="width:15;height:9;"/></div>--><div id="divimg1"><img id="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div>            <ul id="submenu1" class="boton">          <li class="menun1 menuM2">            <!-- 1 -->            <div>              <ul>                                <li> <a href="/admision/empezar-en-la-universidad/index-es.html">Empezar en la universidad</a> </li>                <li> <a href="/admision/traslados-e-intercambios/index-es.html">Traslados e intercambios</a> </li>                <li> <a href="/admision/despues-del-grado/index-es.html">Después del grado</a> </li>                              </ul>            </div>          </li>  </ul>          </li>          <!-- 2 -->          <li id="menu2" class="menun1 menuM2" onclick="showOnOff('menuimg2','submenu2');">            <div id="enlamenu2">            <a href="#">ESTUDIOS</a>            &nbsp;</div><div id="divimg2"><img id="menuimg2" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div><ul id="submenu2" class="boton"><li class="menun1">            <!-- 2 -->            <div>              <ul>                                <li> <a href="/estudios/grado/index-es.html">Estudios de grado</a> </li>                <li> <a href="/estudios/posgrado/index-es.html">Estudios de posgrado</a> </li>                <li> <a href="/estudios/aula-abierta/index-es.html">Aula abierta</a> </li>                              </ul>            </div>          </li>  </ul>          </li>          <!-- 3 -->          <li id="menu3" class="menun1 menuM2" onclick="showOnOff('menuimg3','submenu3');">  <div id="enlamenu3">                        <a href="#">INVESTIGACIÓN</a>            &nbsp;</div><div id="divimg3"><img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div><ul id="submenu3" class="boton"><li class="menun1">            <!-- 3 -->            <div>              <ul>                                <li> <a href="/investigacion/estructuras/index-es.html">Estructuras de Investigación</a> </li>                <li> <a href="/investigacion/iniciativas-idi/index-es.html">Iniciativas de I+D+i</a> </li>                <li> <a href="https://innovacion.upv.es/es" title="Innovación (abre en ventana nueva)" rel="external" onclick="target='_new'">Innovación <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"></a> </li>                              </ul>            </div>          </li>  </ul>          </li>          <!-- 4 -->          <li id="menu4" class="menun1 menuM2" onclick="showOnOff('menuimg4','submenu4');">            <div id="enlamenu4">            <a href="#">ORGANIZACIÓN</a>            &nbsp;</div><div id="divimg4"><img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div><ul id="submenu4" class="boton"><li class="menun1 menuM2">            <!-- 4 -->            <div>              <ul>                                <li> <a href="/organizacion/la-institucion/index-es.html">La institución</a> </li>                <li> <a href="/organizacion/vida-universitaria/index-es.html">Vida universitaria</a> </li>                <li> <a href="/organizacion/escuelas-facultades/index-es.html">Escuelas y facultades</a> </li>                <li> <a href="/organizacion/departamentos/index-es.html">Departamentos</a> </li>                <li> <a href="/organizacion/servicios-universitarios/index-es.html">Servicios universitarios</a> </li>                              </ul>            </div>          </li>  </ul>          </li>                   <!-- 5 -->          <li id="menu5" class="menun1 menuM2" onclick="showOnOff('menuimg5','submenu5');">    <div id="enlamenu5">                        <a href="#">PERFILES</a>            </div>&nbsp;<div id="divimg5"><img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div><ul id="submenu5" class="boton"><li class="menun1 menuM2">      <!-- 5 -->      <div>        <ul>                    <li> <a href="/perfiles/futuro-alumno/index-es.html">Futuro alumno</a> </li>          <li> <a href="/perfiles/orientador/index-es.html">Orientador</a> </li>          <li> <a href="/perfiles/estudiante/index-es.html">Estudiante</a> </li>          <li> <a href="/perfiles/pas-pdi/index-es.html">PAS y PDI</a> </li>          <li> <a href="/perfiles/prensa/index-es.html">Prensa</a> </li>          <li> <a href="/perfiles/titulados/index-es.html">Titulados</a> </li>                  </ul>      </div>    </li></ul>          </li>                   </ul>        <div class="estabilizador"> </div>      </div>      <div class="estabilizador"> </div><!-- fin menu horizontal --></div><!-- contenidos pagina -->     <h1>Departamentos</h1><div id="DIVbannerN2"><h1>Departamentos</h1><img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/imagenes/portales/ban_departamentos-es.png"></div><div class="estabilizador">  </div><div id="div_contenidoN2" style="width:950px; height:auto;"><div id="DIVpanelCentralN2"><div class="seccion_lista"><div class="titulares_seccionesL">Departamentos (Listado alfabético)</div><ul class="lista1"><li><a href="/entidades/DB/index-es.html" title="Dpto. de Biotecnología">Dpto. de Biotecnología</a></li><li><a href="/entidades/DCAN/index-es.html" title="Dpto. de Ciencia Animal">Dpto. de Ciencia Animal</a></li><li><a href="/entidades/DCMA/index-es.html" title="Dpto. de Composición Arquitectónica">Dpto. de Composición Arquitectónica</a></li><li><a href="/entidades/DCADHA/index-es.html" title="Dpto. de Comunicación Audiovisual, Documentación e Historia del Arte">Dpto. de Comunicación Audiovisual, Documentación e Historia del Arte</a></li><li><a href="/entidades/DC/index-es.html" title="Dpto. de Comunicaciones">Dpto. de Comunicaciones</a></li><li><a href="/entidades/DCRBC/index-es.html" title="Dpto. de Conservación y Restauración de Bienes Culturales">Dpto. de Conservación y Restauración de Bienes Culturales</a></li><li><a href="/entidades/DCAR/index-es.html" title="Dpto. de Construcciones Arquitectónicas">Dpto. de Construcciones Arquitectónicas</a></li><li><a href="/entidades/DD/index-es.html" title="Dpto. de Dibujo">Dpto. de Dibujo</a></li><li><a href="/entidades/DECS/index-es.html" title="Dpto. de Economía y Ciencias Sociales">Dpto. de Economía y Ciencias Sociales</a></li><li><a href="/entidades/DEAF/index-es.html" title="Dpto. de Ecosistemas Agroforestales">Dpto. de Ecosistemas Agroforestales</a></li><li><a href="/entidades/DE/index-es.html" title="Dpto. de Escultura">Dpto. de Escultura</a></li><li><a href="/entidades/DEIO/index-es.html" title="Dpto. de Estadística e Investigación Operativa Aplicadas y Calidad">Dpto. de Estadística e Investigación Operativa Aplicadas y Calidad</a></li><li><a href="/entidades/DEGA/index-es.html" title="Dpto. de Expresión Gráfica Arquitectónica">Dpto. de Expresión Gráfica Arquitectónica</a></li><li><a href="/entidades/DFA/index-es.html" title="Dpto. de Física Aplicada">Dpto. de Física Aplicada</a></li><li><a href="/entidades/DISCA/index-es.html" title="Dpto. de Informática de Sistemas y Computadores">Dpto. de Informática de Sistemas y Computadores</a></li><li><a href="/entidades/DICGF/index-es.html" title="Dpto. de Ingeniería Cartográfica Geodesia y Fotogrametría">Dpto. de Ingeniería Cartográfica Geodesia y Fotogrametría</a></li><li><a href="/entidades/DIC/index-es.html" title="Dpto. de Ingeniería de la Construcción y de Proyectos de Ingeniería Civil">Dpto. de Ingeniería de la Construcción y de Proyectos de Ingeniería Civil</a></li><li><a href="/entidades/DIIT/index-es.html" title="Dpto. de Ingeniería e Infraestructura de los Transportes">Dpto. de Ingeniería e Infraestructura de los Transportes</a></li><li><a href="/entidades/DIEI/index-es.html" title="Dpto. de Ingeniería Eléctrica">Dpto. de Ingeniería Eléctrica</a></li><li><a href="/entidades/DIEO/index-es.html" title="Dpto. de Ingeniería Electrónica">Dpto. de Ingeniería Electrónica</a></li><li><a href="/entidades/DIG/index-es.html" title="Dpto. de Ingeniería Gráfica ">Dpto. de Ingeniería Gráfica </a></li></ul><ul class="lista1"><li><a href="/entidades/DIHMA/index-es.html" title="Dpto. de Ingeniería Hidráulica y Medio Ambiente">Dpto. de Ingeniería Hidráulica y Medio Ambiente</a></li><li><a href="/entidades/DIMM/index-es.html" title="Dpto. de Ingeniería Mecánica y de Materiales">Dpto. de Ingeniería Mecánica y de Materiales</a></li><li><a href="/entidades/DIQN/index-es.html" title="Dpto. de Ingeniería Química y Nuclear">Dpto. de Ingeniería Química y Nuclear</a></li><li><a href="/entidades/DIRA/index-es.html" title="Dpto. de Ingeniería Rural y Agroalimentaria">Dpto. de Ingeniería Rural y Agroalimentaria</a></li><li><a href="/entidades/DISA/index-es.html" title="Dpto. de Ingeniería de Sistemas y Automática">Dpto. de Ingeniería de Sistemas y Automática</a></li><li><a href="/entidades/DIT/index-es.html" title="Dpto. de Ingeniería del Terreno">Dpto. de Ingeniería del Terreno</a></li><li><a href="/entidades/DITP/index-es.html" title="Dpto. de Ingeniería Textil y Papelera">Dpto. de Ingeniería Textil y Papelera</a></li><li><a href="/entidades/DLA/index-es.html" title="Dpto. de Lingüística Aplicada">Dpto. de Lingüística Aplicada</a></li><li><a href="/entidades/DMMT/index-es.html" title="Dpto. de Máquinas y Motores Térmicos">Dpto. de Máquinas y Motores Térmicos</a></li><li><a href="/entidades/DMAA/index-es.html" title="Dpto. de Matemática Aplicada">Dpto. de Matemática Aplicada</a></li><li><a href="/entidades/DMMCTE/index-es.html" title="Dpto. de Mecánica de los Medios Continuos y Teoría de Estructuras">Dpto. de Mecánica de los Medios Continuos y Teoría de Estructuras</a></li><li><a href="/entidades/DOE/index-es.html" title="Dpto. de Organización de Empresas">Dpto. de Organización de Empresas</a></li><li><a href="/entidades/DP/index-es.html" title="Dpto. de Pintura">Dpto. de Pintura</a></li><li><a href="/entidades/DPV/index-es.html" title="Dpto. de Producción Vegetal">Dpto. de Producción Vegetal</a></li><li><a href="/entidades/DPA/index-es.html" title="Dpto. de Proyectos Arquitectónicos">Dpto. de Proyectos Arquitectónicos</a></li><li><a href="/entidades/DPI/index-es.html" title="Dpto. de Proyectos de Ingeniería ">Dpto. de Proyectos de Ingeniería </a></li><li><a href="/entidades/DQ/index-es.html" title="Dpto. de Química">Dpto. de Química</a></li><li><a href="/entidades/DSIC/index-es.html" title="Dpto. de Sistemas Informáticos y Computación">Dpto. de Sistemas Informáticos y Computación</a></li><li><a href="/entidades/DTEA/index-es.html" title="Dpto. de Tecnología de Alimentos">Dpto. de Tecnología de Alimentos</a></li><li><a href="/entidades/DTRA/index-es.html" title="Dpto. de Termodinámica Aplicada">Dpto. de Termodinámica Aplicada</a></li><li><a href="/entidades/DU/index-es.html" title="Dpto. de Urbanismo">Dpto. de Urbanismo</a></li></ul></div><div class="estabilizador">  </div></div><!-- panel central --><div class="estabilizador">  </div><div class="separador"><br></div><div class="separador"><br></div><div class="separador"><br></div></div>    <!-- pie pagina -->      <div class="estabilizador"> </div>    <div id="DIVpiePagina">      <div id="DIVsepPie1N2">         <img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;">      </div>      <div style="float:right;margin-right:15px;">         <a href="/entidades/AMAPUOC/" alt="EMAS"><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62"></a>      </div>      <div class="texto_pie menuPieN2">                   <a href="http://www.vlc-campus.com/" title="VLC-CAMPUS (abre ventana nueva)" rel="external" onclick="target='_blank'"><img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS" style="float:right;vertical-align:top;"></a>        <a href="http://www.campushabitat5u.com/" title="CAMPUS HABITAT (abre ventana nueva)" rel="external" onclick="target='_blank'"><img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT" style="float:right;vertical-align:top;"></a>                    <div id="DIVpieMenu">          <ul>                          <li class="menuCAB"><a href="/otros/como-llegar-upv/index-es.html" title="Llegar" class="menuCAB">Cómo llegar</a>&nbsp;I</li>            <li class="menuCAB"><a href="/plano/plano-2d-es.html" title="Planos" class="menuCAB">Planos</a>&nbsp;I</li>            <li class="menuCAB"><a href="/otros/contacto-es.html" title="Contacto" class="menuCAB">Contacto</a></li>                      </ul>          <div class="texto_contacto">            Universitat Politècnica de València © 2017 · Tel. (+34) 96 387 70 00 <!-- ·            <a href="mailto:informacion@upv.es">informacion@upv.es</a> -->          </div>        </div>      </div>      <div class="estabilizador"> </div>    </div>    <div class="estabilizador"> </div>  </div>  <div class="estabilizador"> </div></div>    <script>        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');        ga('create', 'UA-1686067-1', 'auto');        ga('send', 'pageview');    </script>    </body></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;"></xmp></li><li><xmp><div class="menu_movil" style="display:none;"><div class="div-identif">                 <a href="https://www.upv.es/pls/soalu/est_intranet.Ni_portal_n?P_IDIOMA=c" title="Mi UPV" class="menuAD2"><img src="/imagenes/img_identif.png" alt="Mi UPV"></a>              </div><div class="div-hgsa2"><img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas"></div><div class="div-hgsa"><img src="/imagenes/menu-hamburguesa.png" alt="Menú"></div></div></xmp></li><li><xmp><a class="menu_close" id="menu_close_tablet" title="Open/close" style="display:none;" href="#">   <img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;position:relative;top:0px;">   <img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position:relative;top:0px;display:none;">          </a></xmp></li><li><xmp><img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;position:relative;top:0px;"></xmp></li><li><xmp><img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position:relative;top:0px;display:none;"></xmp></li><li><xmp><div id="div_MENUHMovil" style="display:none;">      <div id="DIVbarraMenuMovil">        <ul class="boton">          <!-- 1 -->          <li id="menu1" class="menun1 menuM2" onclick="showOnOff('menuimg1','submenu1');">            <div id="enlamenu1">            <a href="#">ADMISIÓN <!--  <span class="menuflechacab"></span> --></a>            &nbsp;</div><!--<div id="divimg1"><img  id="menuimg1" alt="Desplegar/plegar" src="//www.upv.es/yansu/images/ico_plus.gif" style="width:15;height:9;"/></div>--><div id="divimg1"><img id="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div>            <ul id="submenu1" class="boton">          <li class="menun1 menuM2">            <!-- 1 -->            <div>              <ul>                                <li> <a href="/admision/empezar-en-la-universidad/index-es.html">Empezar en la universidad</a> </li>                <li> <a href="/admision/traslados-e-intercambios/index-es.html">Traslados e intercambios</a> </li>                <li> <a href="/admision/despues-del-grado/index-es.html">Después del grado</a> </li>                              </ul>            </div>          </li>  </ul>          </li>          <!-- 2 -->          <li id="menu2" class="menun1 menuM2" onclick="showOnOff('menuimg2','submenu2');">            <div id="enlamenu2">            <a href="#">ESTUDIOS</a>            &nbsp;</div><div id="divimg2"><img id="menuimg2" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div><ul id="submenu2" class="boton"><li class="menun1">            <!-- 2 -->            <div>              <ul>                                <li> <a href="/estudios/grado/index-es.html">Estudios de grado</a> </li>                <li> <a href="/estudios/posgrado/index-es.html">Estudios de posgrado</a> </li>                <li> <a href="/estudios/aula-abierta/index-es.html">Aula abierta</a> </li>                              </ul>            </div>          </li>  </ul>          </li>          <!-- 3 -->          <li id="menu3" class="menun1 menuM2" onclick="showOnOff('menuimg3','submenu3');">  <div id="enlamenu3">                        <a href="#">INVESTIGACIÓN</a>            &nbsp;</div><div id="divimg3"><img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div><ul id="submenu3" class="boton"><li class="menun1">            <!-- 3 -->            <div>              <ul>                                <li> <a href="/investigacion/estructuras/index-es.html">Estructuras de Investigación</a> </li>                <li> <a href="/investigacion/iniciativas-idi/index-es.html">Iniciativas de I+D+i</a> </li>                <li> <a href="https://innovacion.upv.es/es" title="Innovación (abre en ventana nueva)" rel="external" onclick="target='_new'">Innovación <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"></a> </li>                              </ul>            </div>          </li>  </ul>          </li>          <!-- 4 -->          <li id="menu4" class="menun1 menuM2" onclick="showOnOff('menuimg4','submenu4');">            <div id="enlamenu4">            <a href="#">ORGANIZACIÓN</a>            &nbsp;</div><div id="divimg4"><img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div><ul id="submenu4" class="boton"><li class="menun1 menuM2">            <!-- 4 -->            <div>              <ul>                                <li> <a href="/organizacion/la-institucion/index-es.html">La institución</a> </li>                <li> <a href="/organizacion/vida-universitaria/index-es.html">Vida universitaria</a> </li>                <li> <a href="/organizacion/escuelas-facultades/index-es.html">Escuelas y facultades</a> </li>                <li> <a href="/organizacion/departamentos/index-es.html">Departamentos</a> </li>                <li> <a href="/organizacion/servicios-universitarios/index-es.html">Servicios universitarios</a> </li>                              </ul>            </div>          </li>  </ul>          </li>                   <!-- 5 -->          <li id="menu5" class="menun1 menuM2" onclick="showOnOff('menuimg5','submenu5');">    <div id="enlamenu5">                        <a href="#">PERFILES</a>            </div>&nbsp;<div id="divimg5"><img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></div><ul id="submenu5" class="boton"><li class="menun1 menuM2">      <!-- 5 -->      <div>        <ul>                    <li> <a href="/perfiles/futuro-alumno/index-es.html">Futuro alumno</a> </li>          <li> <a href="/perfiles/orientador/index-es.html">Orientador</a> </li>          <li> <a href="/perfiles/estudiante/index-es.html">Estudiante</a> </li>          <li> <a href="/perfiles/pas-pdi/index-es.html">PAS y PDI</a> </li>          <li> <a href="/perfiles/prensa/index-es.html">Prensa</a> </li>          <li> <a href="/perfiles/titulados/index-es.html">Titulados</a> </li>                  </ul>      </div>    </li></ul>          </li>                   </ul>        <div class="estabilizador"> </div>      </div>      <div class="estabilizador"> </div><!-- fin menu horizontal --></div></xmp></li><li><xmp><img id="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg2" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><div id="div_contenidoN2" style="width:950px; height:auto;"><div id="DIVpanelCentralN2"><div class="seccion_lista"><div class="titulares_seccionesL">Departamentos (Listado alfabético)</div><ul class="lista1"><li><a href="/entidades/DB/index-es.html" title="Dpto. de Biotecnología">Dpto. de Biotecnología</a></li><li><a href="/entidades/DCAN/index-es.html" title="Dpto. de Ciencia Animal">Dpto. de Ciencia Animal</a></li><li><a href="/entidades/DCMA/index-es.html" title="Dpto. de Composición Arquitectónica">Dpto. de Composición Arquitectónica</a></li><li><a href="/entidades/DCADHA/index-es.html" title="Dpto. de Comunicación Audiovisual, Documentación e Historia del Arte">Dpto. de Comunicación Audiovisual, Documentación e Historia del Arte</a></li><li><a href="/entidades/DC/index-es.html" title="Dpto. de Comunicaciones">Dpto. de Comunicaciones</a></li><li><a href="/entidades/DCRBC/index-es.html" title="Dpto. de Conservación y Restauración de Bienes Culturales">Dpto. de Conservación y Restauración de Bienes Culturales</a></li><li><a href="/entidades/DCAR/index-es.html" title="Dpto. de Construcciones Arquitectónicas">Dpto. de Construcciones Arquitectónicas</a></li><li><a href="/entidades/DD/index-es.html" title="Dpto. de Dibujo">Dpto. de Dibujo</a></li><li><a href="/entidades/DECS/index-es.html" title="Dpto. de Economía y Ciencias Sociales">Dpto. de Economía y Ciencias Sociales</a></li><li><a href="/entidades/DEAF/index-es.html" title="Dpto. de Ecosistemas Agroforestales">Dpto. de Ecosistemas Agroforestales</a></li><li><a href="/entidades/DE/index-es.html" title="Dpto. de Escultura">Dpto. de Escultura</a></li><li><a href="/entidades/DEIO/index-es.html" title="Dpto. de Estadística e Investigación Operativa Aplicadas y Calidad">Dpto. de Estadística e Investigación Operativa Aplicadas y Calidad</a></li><li><a href="/entidades/DEGA/index-es.html" title="Dpto. de Expresión Gráfica Arquitectónica">Dpto. de Expresión Gráfica Arquitectónica</a></li><li><a href="/entidades/DFA/index-es.html" title="Dpto. de Física Aplicada">Dpto. de Física Aplicada</a></li><li><a href="/entidades/DISCA/index-es.html" title="Dpto. de Informática de Sistemas y Computadores">Dpto. de Informática de Sistemas y Computadores</a></li><li><a href="/entidades/DICGF/index-es.html" title="Dpto. de Ingeniería Cartográfica Geodesia y Fotogrametría">Dpto. de Ingeniería Cartográfica Geodesia y Fotogrametría</a></li><li><a href="/entidades/DIC/index-es.html" title="Dpto. de Ingeniería de la Construcción y de Proyectos de Ingeniería Civil">Dpto. de Ingeniería de la Construcción y de Proyectos de Ingeniería Civil</a></li><li><a href="/entidades/DIIT/index-es.html" title="Dpto. de Ingeniería e Infraestructura de los Transportes">Dpto. de Ingeniería e Infraestructura de los Transportes</a></li><li><a href="/entidades/DIEI/index-es.html" title="Dpto. de Ingeniería Eléctrica">Dpto. de Ingeniería Eléctrica</a></li><li><a href="/entidades/DIEO/index-es.html" title="Dpto. de Ingeniería Electrónica">Dpto. de Ingeniería Electrónica</a></li><li><a href="/entidades/DIG/index-es.html" title="Dpto. de Ingeniería Gráfica ">Dpto. de Ingeniería Gráfica </a></li></ul><ul class="lista1"><li><a href="/entidades/DIHMA/index-es.html" title="Dpto. de Ingeniería Hidráulica y Medio Ambiente">Dpto. de Ingeniería Hidráulica y Medio Ambiente</a></li><li><a href="/entidades/DIMM/index-es.html" title="Dpto. de Ingeniería Mecánica y de Materiales">Dpto. de Ingeniería Mecánica y de Materiales</a></li><li><a href="/entidades/DIQN/index-es.html" title="Dpto. de Ingeniería Química y Nuclear">Dpto. de Ingeniería Química y Nuclear</a></li><li><a href="/entidades/DIRA/index-es.html" title="Dpto. de Ingeniería Rural y Agroalimentaria">Dpto. de Ingeniería Rural y Agroalimentaria</a></li><li><a href="/entidades/DISA/index-es.html" title="Dpto. de Ingeniería de Sistemas y Automática">Dpto. de Ingeniería de Sistemas y Automática</a></li><li><a href="/entidades/DIT/index-es.html" title="Dpto. de Ingeniería del Terreno">Dpto. de Ingeniería del Terreno</a></li><li><a href="/entidades/DITP/index-es.html" title="Dpto. de Ingeniería Textil y Papelera">Dpto. de Ingeniería Textil y Papelera</a></li><li><a href="/entidades/DLA/index-es.html" title="Dpto. de Lingüística Aplicada">Dpto. de Lingüística Aplicada</a></li><li><a href="/entidades/DMMT/index-es.html" title="Dpto. de Máquinas y Motores Térmicos">Dpto. de Máquinas y Motores Térmicos</a></li><li><a href="/entidades/DMAA/index-es.html" title="Dpto. de Matemática Aplicada">Dpto. de Matemática Aplicada</a></li><li><a href="/entidades/DMMCTE/index-es.html" title="Dpto. de Mecánica de los Medios Continuos y Teoría de Estructuras">Dpto. de Mecánica de los Medios Continuos y Teoría de Estructuras</a></li><li><a href="/entidades/DOE/index-es.html" title="Dpto. de Organización de Empresas">Dpto. de Organización de Empresas</a></li><li><a href="/entidades/DP/index-es.html" title="Dpto. de Pintura">Dpto. de Pintura</a></li><li><a href="/entidades/DPV/index-es.html" title="Dpto. de Producción Vegetal">Dpto. de Producción Vegetal</a></li><li><a href="/entidades/DPA/index-es.html" title="Dpto. de Proyectos Arquitectónicos">Dpto. de Proyectos Arquitectónicos</a></li><li><a href="/entidades/DPI/index-es.html" title="Dpto. de Proyectos de Ingeniería ">Dpto. de Proyectos de Ingeniería </a></li><li><a href="/entidades/DQ/index-es.html" title="Dpto. de Química">Dpto. de Química</a></li><li><a href="/entidades/DSIC/index-es.html" title="Dpto. de Sistemas Informáticos y Computación">Dpto. de Sistemas Informáticos y Computación</a></li><li><a href="/entidades/DTEA/index-es.html" title="Dpto. de Tecnología de Alimentos">Dpto. de Tecnología de Alimentos</a></li><li><a href="/entidades/DTRA/index-es.html" title="Dpto. de Termodinámica Aplicada">Dpto. de Termodinámica Aplicada</a></li><li><a href="/entidades/DU/index-es.html" title="Dpto. de Urbanismo">Dpto. de Urbanismo</a></li></ul></div><div class="estabilizador">  </div></div><!-- panel central --><div class="estabilizador">  </div><div class="separador"><br></div><div class="separador"><br></div><div class="separador"><br></div></div></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;"></xmp></li><li><xmp><div style="float:right;margin-right:15px;">         <a href="/entidades/AMAPUOC/" alt="EMAS"><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62"></a>      </div></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS" style="float:right;vertical-align:top;"></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT" style="float:right;vertical-align:top;"></xmp></li></ul></code></pre>.<br/>
+			Recomendación: El separar el contenido de la presentaci&oacute;n facilita la adaptaci&oacute;n de los contenidos a diferentes dispositivos. Se recomienda el uso de hojas de estilo para definir la presentaci&oacute;n de los componentes indicados..<br/>
+			Número de errores: 18
+
+			Código: F87-Fallo en el criterio 1.3.1 debido a la inserción de contenidos no decorativos mediante el uso de :before y :after pseudo-elementos y la propiedad content de los CSS
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H39-Usando elementos caption para asociar títulos de las tablas de datos a los datos de la tabla
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas..<br/>
+			Recomendación: En el caso de hacer uso de tablas estas deben ser identificadas por medio del elemento caption, siempre que no sean utilizadas para maquetaci&oacute;n (layout)..<br/>
+			Número de errores: 0
+
+			Código: H63-Usando el atributo scope para asociar las celdas de encabezado con las celdas de datos en las tablas
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H73-Usando el atributo summary del elemento table para dar una visión general de las tablas de datos
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas con un atriuto summary..<br/>
+			Recomendación: En el caso de hacer uso de tablas e identificarlas con el atributo summary este debe ser valido para identificar la tabla o explicar su estructura en caso de tablas de datos complejas..<br/>
+			Número de errores: 0
+
+			Código: H48-Usando ol, ul y dl para listas o grupos de enlaces
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H85-Usando OPTIONGROUP para agrupar elementos OPTION dentro de un SELECT
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H49-Usando marcas semánticas para marcar textos enfatizados o textos especiales
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H51-Usando tabla de marcado para presentar información tabular
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Al utilizar tablas de datos para presentar informaci&oacute;n tabular use los elementos th (encabezados) y td (datos)..<br/>
+			Número de errores: 0
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Departamentos</li><li>[H1] [OK] Departamentos</li></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: OAW3-Usando elementos legend correctamente
+			Criticidad: Baja
+			Observación: No se han encontrado elementos <code>fieldset</code>.<br/>
+			Recomendación: Es importante que el primer elemento de un fieldset sea un elemento legend que describa el tipo de informaci&oacute;n que se est&aacute; agrupando..<br/>
+			Número de errores: 0
+
+			Código: OAW4-Comprobando el uso de cabeceras múltiples dentro de una fila
+			Criticidad: Media
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Los elementos <code>th</code> deben emplearse correctamente para que el usuario identifique sin dificultades los contenidos de las tablas.<br/>
+			Número de errores: 0
+
+			Código: OAW5-Comprobando la validez de los roles ARIA
+			Criticidad: Alta
+			Observación: No se han encontrado elementos con atributo role..<br/>
+			Recomendación: Es recomendable apegarse a la la especificaci&oacute;n WAI-ARIA, que define un conjunto de atributos HTML adicionales que se pueden aplicar a los elementos para proporcionar sem&aacute;ntica adicional y mejorar la accesibilidad donde sea que falte.<br/>
+			Número de errores: 0
+
+			Código: OAW6-Comprobando que las celdas de la tabla tengan datos
+			Criticidad: Baja
+			Observación: No se han encontrado tablas en la p&aacute;gina..<br/>
+			Recomendación: Las celdas vac&iacute;as en las tablas suelen causar problemas para los usuarios que ocupan tecnolog&iacute;as de accesibilidad..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.3..Características sensoriales
+		Nivel: A
+
+	Pauta: 1.4..Distinguible
+	Descripcion: Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo
+
+		Criterio: 1.4.2..Control del audio
+		Nivel: A
+
+		Criterio: 1.4.4..Redimensionamiento del texto
+		Nivel: AA
+
+			Código: C28-Especificando el tamaño de un contenedor de texto usando unidades em
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C14-Usando unidades em para tamaños de fuente
+			Criticidad: Alta
+			Observación: De las 48 reglas CSS en la p&aacute;gina para definir el tamaño de letra (font-size), 15 de ellas usan declaraciones de elementos de forma absoluta (position:asolute) o tiene un valor incorrecto.<pre><ul><li><xmp>.menuAD, .menuAD2, .menuAD2N2, .menuAD2N3 { font-size: 11px; }</xmp></li><li><xmp>.menuW { margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: rgb(102, 102, 102); font-style: normal; text-decoration: none; text-align: left; line-height: normal; margin-top: 0px; }</xmp></li><li><xmp>ul.boton { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; height: 25px; text-align: left; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; }</xmp></li><li><xmp>#DIVrutaN3 { width: 950px; border-top-style: none; border-right-style: none; border-left-style: none; border-width: initial; border-color: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; vertical-align: top; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(136, 136, 136); background-color: rgb(255, 255, 255); color: rgb(85, 85, 85); text-align: left; font-size: 11px; font-family: Arial, Helvetica, sans-serif; padding-top: 3px; padding-right: 0px; padding-bottom: 3px; padding-left: 0px; text-indent: 20px; z-index: 10; }</xmp></li><li><xmp>.titulares1_linea { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(102, 102, 102); color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; margin-top: 2px; margin-right: 0px; margin-left: 0px; overflow-x: hidden; overflow-y: hidden; padding-top: 2px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px; text-align: left; text-decoration: none; width: 100%; display: block !important; margin-bottom: 10px; }</xmp></li><li><xmp>.RS_titular_blanco { padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; display: block; }</xmp></li><li><xmp>.lista_submenuE { font-size: 12px; list-style-type: none; padding-top: 0px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; margin-top: 0px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px; color: rgb(84, 75, 70); }</xmp></li><li><xmp>.lista_submenuE li { font-size: 12px; color: rgb(84, 75, 70); text-decoration: none; padding-top: 0px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 10px; list-style-image: url(https://www.upv.es/imagenes/ilista_1b.png); background-image: url(https://www.upv.es/imagenes/puntos_men.gif); background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.lista_submenuE li a { font-size: 12px; color: rgb(84, 75, 70); text-decoration: none; }</xmp></li><li><xmp>.lista_submenuE li a:hover { color: rgb(0, 0, 0); text-decoration: none; font-size: 12px; }</xmp></li><li><xmp>.n-lista2Bainfo li { color: rgb(75, 75, 75); font-family: Arial, Helvetica, sans-serif; font-size: 12px; list-style-image: url(https://www.upv.es/imagenes/ilista_2.png); margin-bottom: 2px; margin-left: 30px; margin-top: 3px; padding-bottom: 2px; text-decoration: none; }</xmp></li><li><xmp>.div_BLOQUE_T_X2 { border-top-left-radius: 7px 7px; border-top-right-radius: 0px 0px; border-bottom-right-radius: 0px 0px; border-bottom-left-radius: 7px 7px; float: left; height: 194px; position: relative; text-align: left; width: 560px; background-color: rgb(44, 47, 86); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; color: rgb(255, 255, 255); font-size: 13px; }</xmp></li><li><xmp>.RS_titular_negro { display: block; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 14px; padding-top: 8px; padding-bottom: 8px; padding-left: 8px; color: white; width: 293px; text-align: center; padding-right: 0px; }</xmp></li><li><xmp>.lista_MS li { background-image: url(https://www.upv.es/imagenes/puntos_men.gif); font-size: 12px; margin-top: 0px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#DIVbarraMenutog ul.boton { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; height: 25px; text-align: left; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS para definir el tamaño de letra del contenido, utilice valores relativos por medio de unidades "em", % o valores  xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, o larger. Al usar medidas de fuente absolutas, se limita el contenido textual de la p&aacute;gina ya que no se podr&iacute;a adaptar a diferentes resoluciones de pantalla..<br/>
+			Número de errores: 15
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C13-Usando tamaños de fuente nombrados
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C12-Usando porcentajes para tamaños de fuente
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 1.4.8..Presentación visual
+		Nivel: AAA
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C20-Usando medidas relativas para establecer anchos de columna para que las líneas puedan promediar 80 caracteres o menos cuando se cambia el tamaño del navegador
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C19-Especificar la alineación, ya sea a la izquierda o a la derecha en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C21-Especificando espacio entre líneas en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 2.Operable
+Descripcion: Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+	Pauta: 2.1..Accesible por teclado
+	Descripcion: Proporcionar acceso a toda la funcionalidad mediante el teclado
+
+		Criterio: 2.1.1..Teclado
+		Nivel: A
+
+	Pauta: 2.2..Tiempo suficiente
+	Descripcion: Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido
+
+		Criterio: 2.2.2..Pausar, detener, ocultar
+		Nivel: A
+
+			Código: G11A-Creando contenido que parpadea al menos 5 segundos: A) Elementos con animación blink
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>blink</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: G11B-Creando contenido que parpadea al menos 5 segundos: B) Elementos con animación marquee
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>marquee</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+	Pauta: 2.3..Convulsiones
+	Descripcion: No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones
+
+	Pauta: 2.4..Navegable
+	Descripcion: Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran
+
+		Criterio: 2.4.1..Evitar bloques
+		Nivel: A
+
+		Criterio: 2.4.2..Páginas tituladas
+		Nivel: A
+
+			Código: G88-Proporcionar títulos descriptivos para páginas web
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H25-Proporcionando un título usando el elemento title
+			Criticidad: Alta
+			Observación: La p&aacute;gina tiene un t&iacute;tulo, aseg&uacute;rese que sea descriptivo y que est&eacute; acorde al contenido de la p&aacute;gina. <pre><ul><title>Departamentos | UPV - Universitat Politècnica de València</title></ul></pre>.<br/>
+			Recomendación: El t&iacute;tulo de la p&aacute;gina debe ser descriptivo y brindar una persepci&oacute;n del contenido de la misma..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.3..Orden del foco
+		Nivel: A
+
+			Código: H4-Creando un orden lógico en el orden del tabulador a través de los enlaces, controles de formulario, y objetos
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.4..Propósito de los enlaces (En contexto)
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H33-Complementando el texto del enlace con el atributo title
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C7-Usando CSS para ocultar una porcion de texto de un enlace
+			Criticidad: Baja
+			Observación: En la p&aacute;gina se est&aacute; utilizando en 44 ocaci&oacute;n(es) la opci&oacute;n para ocultar contenido, verifique que este sea relevante, o que sea facilmente accesible.<br/>
+			Recomendación: Al ocultar una parte de informaci&oacute;n de la p&aacute;gina, se puede llegar a confundir al usuario.<br/>
+			Número de errores: 44
+
+			Código: H30-Proporcionar un texto de enlace que describa el propósito del enlace para los elemtos de anclaje (a)
+			Criticidad: Alta
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong> diferente de nulo o vacio, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;"></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;"></xmp></li><li><xmp><img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt"></xmp></li><li><xmp><img src="/imagenes/img_identif.png" alt="Mi UPV"></xmp></li><li><xmp><img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas"></xmp></li><li><xmp><img src="/imagenes/menu-hamburguesa.png" alt="Menú"></xmp></li><li><xmp><img src="/imagenes/espacio2.png" alt="espacio" width="23" height="5"></xmp></li><li><xmp><img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;position:relative;top:0px;"></xmp></li><li><xmp><img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position:relative;top:0px;display:none;"></xmp></li><li><xmp><img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"></xmp></li><li><xmp><img id="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg2" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva"></xmp></li><li><xmp><img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;"></xmp></li><li><xmp><img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/imagenes/portales/ban_departamentos-es.png"></xmp></li><li><xmp><img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;"></xmp></li><li><xmp><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62"></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS" style="float:right;vertical-align:top;"></xmp></li><li><xmp><img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT" style="float:right;vertical-align:top;"></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: No se han encontrado segmentos de contenido con enlaces adyacentes con el mismo destino..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 0
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.6..Encabezados y etiquetas
+		Nivel: AA
+
+			Código: G130-Proporcionar títulos descriptivos
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.5..Re-autentificación
+		Nivel: AA
+
+			Código: H59-Usando el elemneto link y herramientas de navegación
+			Criticidad: Alta
+			Observación: Los 3 links de relacion que tiene la p&aacute;gina se han definido correctamente.<br/>
+			Recomendación: Es importante colocar la etiqueta link &uacute;nicamente dentro del encabezado de la p&aacute;gina, e indicar la relaci&oacute;n que guarda con la misma.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.7..Foco visible
+		Nivel: AA
+
+			Código: C15-Usando CSS para cambiar la presentación de un componente de interfaz de usuario cuando recibe el foco
+			Criticidad: Baja
+			Observación: No se han detectado declaraciones del foco de teclado.<br/>
+			Recomendación: Verificar que el foco sea visible y que este en correcto posicionamiento en la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.10..Encabezados se sección
+		Nivel: AAA
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><li>[H1] [OK] Departamentos</li><li>[H1] [OK] Departamentos</li></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+
+Principio: 3.Comprensible
+Descripcion: La información y el manejo de la interfaz de usuario deben ser comprensibles
+
+	Pauta: 3.1..Legible
+	Descripcion: Hacer que los contenidos textuales resulten legibles y comprensibles
+
+		Criterio: 3.1.1..Idioma de la página
+		Nivel: A
+
+			Código: H57-Usando el atributo language en el elemento html
+			Criticidad: Alta
+			Observación: La definici&oacute;n de lenguaje en la p&aacute;gina se ha realizado exitosamente.<br/>
+			Recomendación: Verificar la especificaci&oacute;n del lenguaje, es importante especificar en que idioma se est&aacute; presentando la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.3..Palabras inusuales
+		Nivel: AAA
+
+			Código: H60-Usando el elemento link para enlazar a un glosario
+			Criticidad: Baja
+			Observación: La p&aacute;gina podr&iacute;a requerir un link a un glosario de palabras complejas.<br/>
+			Recomendación: Cuando se utiliza palabras complejas es recomendable colocar un glosario que las defina.<br/>
+			Número de errores: 1
+
+			Código: H40-Usando listas de definición
+			Criticidad: Baja
+			Observación: No se han encontrado listas dentro de la p&aacute;gina.<br/>
+			Recomendación: La estructura de la lista de definici&oacute;n, deben ser empleadas correctamente, colocando cada uno de sus componentes sin descartar ninguno.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.6..Pronunciación
+		Nivel: AAA
+
+			Código: H62-Usando el elemento ruby
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado etiquetas ruby.<br/>
+			Recomendación: Es importante supervisar el correcto uso de esta etiqueta para caracteres especiales.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.4..Abreviaturas
+		Nivel: AAA
+
+			Código: H70-Usando elementos frame para agrupar bloques de material repetido
+			Criticidad: Alta
+			Observación: La p&aacute;gina no tiene etiquetas frame.<br/>
+			Recomendación: Los elementos frame no deben usarse para maquetar contenido en la p&aacute;gina, se debe utilizar hojas de estilo.<br/>
+			Número de errores: 0
+
+	Pauta: 3.2..Predecible
+	Descripcion: Hacer que las páginas web aparezcan y operen de manera predecible
+
+		Criterio: 3.2.2..Al introducir datos
+		Nivel: A
+
+			Código: H32-Proporcionar botones de envio
+			Criticidad: Media
+			Observación: Verificar que el formulario tenga m&eacute;todo de env&iacute;o.<br/>
+			Recomendación: No se han encontrado formularios dentro de la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.2.5..Cambios a petición
+		Nivel: AAA
+
+			Código: H83-Usando el atributo target para abrir una nueva ventana a petición del usuario e indicando en ventana a petición del usuario e indicando en el texto de este enlace
+			Criticidad: Media
+			Observación: No se han encontrado enlaces en la p&aacute;gina que abran una nueva ventana..<br/>
+			Recomendación: En el caso de enlaces que se vayan a abrir en una nueva ventana, se debe informar al usuario de dicho comportamiento..<br/>
+			Número de errores: 0
+
+			Código: H76-Usando meta refresh para crear un redireccionamiento de cliente instantánea
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se ha detectado el uso de la etiqueta meta conjuntamente con el atributo refresh para actualizaci&oacute;n de la p&aacute;gina..<br/>
+			Recomendación: En el caso de quere hacer uso de la misma, considerar que la continua actualizaci&oacute;n de la p&aacute;gina no es recomendable, puede causar confusi&oacute;n en el usuario..<br/>
+			Número de errores: 0
+
+	Pauta: 3.3..Entrada de datos asistida
+	Descripcion: Ayudar a los usuarios a evitar y corregir los errores
+
+		Criterio: 3.3.1..Identificación de errores
+		Nivel: A
+
+		Criterio: 3.3.2..Etiquetas o instrucciones
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos de formularios que requieran etiquetas..<br/>
+			Recomendación: En el caso de hacer uso de formularios en la estructura y diseño de p&aacute;gina, no olvide asociar un identificador(etiqueta) a cada campo de entrada del formulario..<br/>
+			Número de errores: 0
+
+			Código: H71-Proporcionando una descripcion para grupos de controles de formularios usando los elementos fieldset y legend
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: OAW2-Proporcionando contenido en todos los elementos
+			Criticidad: Baja
+			Observación: No se encontraron elementos vac&iacute;os..<br/>
+			Recomendación: Es importante evitar declarar elementos sin contenido.<br/>
+			Número de errores: 0
+
+		Criterio: 3.3.5..Ayuda
+		Nivel: AAA
+
+			Código: G71-Proporcionando un enlace de ayuda en cada pagina web
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H89-Usando el atributo title para proporcionar ayuda contextual
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 4.Robusto
+Descripcion: El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+	Pauta: 4.1..Compatible
+Descripcion: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas
+
+		Criterio: 4.1.1..Procesamiento
+		Nivel: A
+
+			Código: G134-Validación de páginas web
+			Criticidad: Alta
+			Observación: Se ha producido un error al intentar validar la pagina </strong> en <a href='https://validator.w3.org/' target='_blank'>https://validator.w3.org/</a>.   Puede revisar usted manualmente por medio del siguiente enlace: <a href='https://validator.w3.org/nu/?doc=https://www.upv.es/organizacion/departamentos/index-es.html' target='_blank'>Validación W3C</a>.<br/>
+			Recomendación: .<br/>
+			Número de errores: 1
+
+		Criterio: 4.1.2..Nombre, función, valor
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos de formularios que requieran etiquetas..<br/>
+			Recomendación: En el caso de hacer uso de formularios en la estructura y diseño de p&aacute;gina, no olvide asociar un identificador(etiqueta) a cada campo de entrada del formulario..<br/>
+			Número de errores: 0
+
+			Código: H64-Usando el atributo title en los elementos frame e iframe 
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos frames..<br/>
+			Recomendación: En caso de usar elementos frame o iframe acompañelos por una descripci&oacute;n del mismo a travez del atributo <code>title</code>..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+

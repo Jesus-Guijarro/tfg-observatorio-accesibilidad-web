@@ -1,0 +1,17 @@
+REPORTE PÁGINA WEB: https://web.ua.es/es/recursos-universitarios.html
+FECHA EVALUACIÓN: 2018-12-09
+
+CRITERIO DE CONFORMIDAD: 1.1.1: Contenido no textual       
+	TÉCNICA H37: Uso de <&alt> en elementos <&img>		 
+	VECES ENCONTRADO: 32
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA G131: Proporcionar etiquetas descriptivas		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      Elementos con un atributo de identificación definido único		 
+	VECES ENCONTRADO: 11
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	FALLO F89: Fallo de los Criterios de Conformidad 2.4.4, 2.4.9 y 4.1.2 debido a que no se proporciona un nombre accesible para una imagen que es el único contenido en un enlace		 
+	VECES ENCONTRADO: 7
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	TÉCNICA H91: Usar controles de formulario HTML y enlaces		 
+	VECES ENCONTRADO: 40

@@ -1,0 +1,14 @@
+REPORTE PÁGINA WEB: http://www.renfe.com
+FECHA EVALUACIÓN: 2018-11-08
+
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <&fieldset> y <&legend>		 
+	VECES ENCONTRADO: 4
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA G131: Proporcionar etiquetas descriptivas		 
+	VECES ENCONTRADO: 3
+CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	TÉCNICA H91: Usar controles de formulario HTML y enlaces		 
+	VECES ENCONTRADO: 2

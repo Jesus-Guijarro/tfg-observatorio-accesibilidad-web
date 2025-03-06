@@ -1,0 +1,19 @@
+REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/inicio
+FECHA EVALUACIÓN: 2018-11-04
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 10 imágenes en las que la leyenda es un espacio vacío
+Se encontró 1 imagen en la que el alt tiene más de 100 caracteres
+Se encontraron 12 elementos de encabezado
+Se han encontrado 4 enlaces con el mismo texto que apuntan a destinos diferentes
+Se identificaron 3 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página nos conduce hasta el área del contenido principal
+Se ha encontrado 1 enlace para eludir bloques de contenido
+Se constató que todos los formularios tienen un botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se ha encontrado 1 elemento <link> para la navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+Se ha identificado una regla de CSS en la que no se especifica o el color de fondo o el color de fondo

@@ -1,0 +1,18 @@
+REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=8&MS=128&MN=2&r=1536*864
+FECHA EVALUACIÓN: 2018-11-16
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se constató que todos los botones gráficos tienen un título
+Se identificó 1 caso en que se asocian eventos a elementos no interactivos
+Se han encontrado 4 elementos encabezado
+Se identificaron 14 casos en los que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se han encontrado 2 enlaces para eludir bloques de contenido
+Se identificó 1 formulario sin botón de envío
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se encontraron 31 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+El título de la página contiene 97 caracteres
+Se constató que se identifica el idioma principal de la página con el código "es"
+Se identificaron 2 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo

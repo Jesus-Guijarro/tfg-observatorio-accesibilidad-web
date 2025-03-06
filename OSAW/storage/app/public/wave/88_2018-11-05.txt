@@ -1,0 +1,35 @@
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/factura-electronica.html
+FECHA EVALUACIÓN: 2018-11-05
+
+PROBLEMAS
+Missing form label	  VECES ENCONTRADO: 1
+Missing alternative text	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Possible heading	  VECES ENCONTRADO: 6
+Redundant link	  VECES ENCONTRADO: 1
+Redundant alternative text	  VECES ENCONTRADO: 3
+Redundant title text	  VECES ENCONTRADO: 18
+A nearby image has the same alternative text	  VECES ENCONTRADO: 5
+Very small text	  VECES ENCONTRADO: 6
+Noscript element	  VECES ENCONTRADO: 1
+Skipped heading level	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 8
+Form label	  VECES ENCONTRADO: 2
+Null or empty alternative text	  VECES ENCONTRADO: 14
+Fieldset	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 2
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 14
+
+
+

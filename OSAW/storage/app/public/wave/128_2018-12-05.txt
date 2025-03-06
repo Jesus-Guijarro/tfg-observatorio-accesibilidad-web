@@ -1,0 +1,27 @@
+REPORTE PÁGINA WEB: http://www.mscbs.gob.es/ssi/discapacidad/home.htm
+FECHA EVALUACIÓN: 2018-12-05
+
+-PROBLEMAS-
+
+Empty button	  VECES ENCONTRADO: 4
+
+
+-ALERTAS-
+
+Device dependent event handler	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 1
+Orphaned form label	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 8
+Link to PDF document	  VECES ENCONTRADO: 2
+Redundant title text	  VECES ENCONTRADO: 3
+
+
+-CARACTERISTICAS-
+
+Element language	  VECES ENCONTRADO: 12
+Linked image with alternative text	  VECES ENCONTRADO: 23
+Null or empty alternative text	  VECES ENCONTRADO: 19
+
+
+-PROBLEMAS DE CONTRASTE-
+

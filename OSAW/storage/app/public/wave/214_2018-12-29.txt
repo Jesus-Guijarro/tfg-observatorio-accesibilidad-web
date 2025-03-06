@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: http://www.mitramiss.gob.es/en/index.htm
+FECHA EVALUACIÓN: 2018-12-29
+
+-PROBLEMAS-
+
+-ALERTAS-
+
+Redundant link	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 1
+
+
+-CARACTERISTICAS-
+
+Image button with alternative text	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 11
+Element language	  VECES ENCONTRADO: 12
+Null or empty alternative text	  VECES ENCONTRADO: 33
+Form label	  VECES ENCONTRADO: 2
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 3
+
+

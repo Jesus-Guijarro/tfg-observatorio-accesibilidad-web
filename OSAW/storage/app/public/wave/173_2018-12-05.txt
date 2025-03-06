@@ -1,0 +1,20 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/Contratacion/pdc_universidad.nsf/fCategoriaVistaExpedientes?readForm&Vista=vLicitaciones_encursov&Categoria=Servici%20de%20Contractaci%F3&titulo=Licitacions%20en%20curs&lang=2&nivel=1
+FECHA EVALUACIÓN: 2018-12-05
+
+PROBLEMAS
+Missing or uninformative page title	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Skipped heading level	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 9
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 1
+Null or empty alternative text	  VECES ENCONTRADO: 1
+
+
+

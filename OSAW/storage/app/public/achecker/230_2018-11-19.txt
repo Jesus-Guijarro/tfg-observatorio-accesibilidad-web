@@ -1,0 +1,1802 @@
+REPORTE PÁGINA WEB: http://www.aemet.es/es/conocenos/congresos_y_conferencias/congresos
+FECHA EVALUACIÓN: 2018-11-19
+
+-PROBLEMAS CONOCIDOS-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 238: input element has alt attribute.  
+
+	REPARAR: Remove the alt attribute from all input elements except those with a type attribute value of "image".     
+
+		LINEA: 166, COLUMNA: 149: <input type="submit" value=" " class="boton_buscar_cabecera" title="Buscar" alt="Buscar" />
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 206: input element, type of "checkbox", has no text in label.  
+
+	REPARAR: Add text to the input element's associated label that describes the purpose or function of the control.     
+
+		LINEA: 162, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
+
+		LINEA: 174, COLUMNA: 27: <input class="checkbox_menu" type="checkbox" id="nav" />
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR: Add text to the label element.     
+
+		LINEA: 162, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
+
+		LINEA: 165, COLUMNA: 9: <input class="texto_buscador" value="Introduzca texto" aria-label ="Introduzca texto" name="str" id= ...       
+
+		LINEA: 174, COLUMNA: 27: <input class="checkbox_menu" type="checkbox" id="nav" />
+
+	
+
+ -------------- 
+
+-PROBLEMAS POTENCIALES-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 126, COLUMNA: 4:
+
+
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...       
+
+		LINEA: 480, COLUMNA: 25: <imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="Mi Web" title="Mi Web" />       
+
+		LINEA: 482, COLUMNA: 38:
+
+
+
+		LINEA: 484, COLUMNA: 58:
+
+
+
+		LINEA: 486, COLUMNA: 26: <imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Mapa web" title="Mapa web" />       
+
+		LINEA: 488, COLUMNA: 76:
+
+
+
+		LINEA: 490, COLUMNA: 74:
+
+
+
+		LINEA: 492, COLUMNA: 62: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 494, COLUMNA: 74:
+
+
+
+		LINEA: 496, COLUMNA: 46: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 556, COLUMNA: 246: <img src="/imagenes/png/redes_sociales/Email.png" alt="Email"/>       
+
+		LINEA: 561, COLUMNA: 6: <img class="vertical_align_mid" src="/imagenes/png/redes_sociales/Facebook.png" alt="Compartir en Fa ...       
+
+		LINEA: 567, COLUMNA: 138: <img src="/imagenes/png/redes_sociales/Twitter.png" alt="Compartir en Twitter"/>       
+
+		LINEA: 572, COLUMNA: 4: <img class="vertical_align_mid" src="/imagenes/png/redes_sociales/Whatsapp.png" alt="Whatsapp"/>       
+
+		LINEA: 578, COLUMNA: 5:
+
+
+
+		LINEA: 583, COLUMNA: 4:
+
+
+
+		LINEA: 667, COLUMNA: 39:
+
+
+
+		LINEA: 670, COLUMNA: 77:
+
+
+
+		LINEA: 672, COLUMNA: 75:
+
+
+
+		LINEA: 674, COLUMNA: 63: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 676, COLUMNA: 75:
+
+
+
+		LINEA: 678, COLUMNA: 47: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 685, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Valida XHTML 1.0 Transicional. (se abr ...       
+
+		LINEA: 690, COLUMNA: 7:
+
+
+
+		LINEA: 695, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icono de conformidad con el Nivel Doble-A ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 126, COLUMNA: 4:
+
+
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+
+
+		LINEA: 126, COLUMNA: 4:
+
+
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...       
+
+		LINEA: 480, COLUMNA: 25: <imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="Mi Web" title="Mi Web" />       
+
+		LINEA: 482, COLUMNA: 38:
+
+
+
+		LINEA: 484, COLUMNA: 58:
+
+
+
+		LINEA: 486, COLUMNA: 26: <imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Mapa web" title="Mapa web" />       
+
+		LINEA: 488, COLUMNA: 76:
+
+
+
+		LINEA: 490, COLUMNA: 74:
+
+
+
+		LINEA: 492, COLUMNA: 62: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 494, COLUMNA: 74:
+
+
+
+		LINEA: 496, COLUMNA: 46: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 578, COLUMNA: 5:
+
+
+
+		LINEA: 583, COLUMNA: 4:
+
+
+
+		LINEA: 667, COLUMNA: 39:
+
+
+
+		LINEA: 670, COLUMNA: 77:
+
+
+
+		LINEA: 672, COLUMNA: 75:
+
+
+
+		LINEA: 674, COLUMNA: 63: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 676, COLUMNA: 75:
+
+
+
+		LINEA: 678, COLUMNA: 47: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 685, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Valida XHTML 1.0 Transicional. (se abr ...       
+
+		LINEA: 690, COLUMNA: 7:
+
+
+
+		LINEA: 695, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icono de conformidad con el Nivel Doble-A ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 123: input element label, type of "checkbox" is not positioned close to control.
+
+
+
+		LINEA: 132, COLUMNA: 7: <input type="checkbox" id="idiomas_mini" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 147, COLUMNA: 7: <input type="checkbox" id="idiomas" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 162, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
+
+		LINEA: 174, COLUMNA: 27: <input class="checkbox_menu" type="checkbox" id="nav" />
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 126, COLUMNA: 4:
+
+
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...       
+
+		LINEA: 480, COLUMNA: 25: <imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="Mi Web" title="Mi Web" />       
+
+		LINEA: 482, COLUMNA: 38:
+
+
+
+		LINEA: 484, COLUMNA: 58:
+
+
+
+		LINEA: 486, COLUMNA: 26: <imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Mapa web" title="Mapa web" />       
+
+		LINEA: 488, COLUMNA: 76:
+
+
+
+		LINEA: 490, COLUMNA: 74:
+
+
+
+		LINEA: 492, COLUMNA: 62: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 494, COLUMNA: 74:
+
+
+
+		LINEA: 496, COLUMNA: 46: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 556, COLUMNA: 246: <img src="/imagenes/png/redes_sociales/Email.png" alt="Email"/>       
+
+		LINEA: 561, COLUMNA: 6: <img class="vertical_align_mid" src="/imagenes/png/redes_sociales/Facebook.png" alt="Compartir en Fa ...       
+
+		LINEA: 567, COLUMNA: 138: <img src="/imagenes/png/redes_sociales/Twitter.png" alt="Compartir en Twitter"/>       
+
+		LINEA: 572, COLUMNA: 4: <img class="vertical_align_mid" src="/imagenes/png/redes_sociales/Whatsapp.png" alt="Whatsapp"/>       
+
+		LINEA: 578, COLUMNA: 5:
+
+
+
+		LINEA: 583, COLUMNA: 4:
+
+
+
+		LINEA: 667, COLUMNA: 39:
+
+
+
+		LINEA: 670, COLUMNA: 77:
+
+
+
+		LINEA: 672, COLUMNA: 75:
+
+
+
+		LINEA: 674, COLUMNA: 63: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 676, COLUMNA: 75:
+
+
+
+		LINEA: 678, COLUMNA: 47: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 685, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Valida XHTML 1.0 Transicional. (se abr ...       
+
+		LINEA: 690, COLUMNA: 7:
+
+
+
+		LINEA: 695, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icono de conformidad con el Nivel Doble-A ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 132, COLUMNA: 7: <input type="checkbox" id="idiomas_mini" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 147, COLUMNA: 7: <input type="checkbox" id="idiomas" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 162, COLUMNA: 9: <input type="checkbox" id="buscador_oculto" class="checkbox_oculto_buscador" />       
+
+		LINEA: 165, COLUMNA: 9: <input class="texto_buscador" value="Introduzca texto" aria-label ="Introduzca texto" name="str" id= ...       
+
+		LINEA: 166, COLUMNA: 149: <input type="submit" value=" " class="boton_buscar_cabecera" title="Buscar" alt="Buscar" />       
+
+		LINEA: 174, COLUMNA: 27: <input class="checkbox_menu" type="checkbox" id="nav" />
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 60, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.min.js"></script>       
+
+		LINEA: 61, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.cookie.js"></script>       
+
+		LINEA: 63, COLUMNA: 1: <script type="text/javascript" src="/js/owl-carousel/owl.carousel.min.js"></script>       
+
+		LINEA: 64, COLUMNA: 1: <script type="text/javascript" src="/js/wow/wow.min.js" ></script>       
+
+		LINEA: 589, COLUMNA: 1: <script type="text/javascript">	var API_URL = "http://cdn.api.twitter.com/1/urls/count.json",	TW ...       
+
+		LINEA: 610, COLUMNA: 1: <script type="text/javascript">	var FB_API_URL = "http://api.facebook.com/restserver.php";		 ...       
+
+		LINEA: 626, COLUMNA: 1: <script type="text/javascript">	var link1 = document.getElementById("link1_imprimir");	var link2 ...       
+
+		LINEA: 704, COLUMNA: 1: <script type="text/javascript">	function aceptaCookies() 	{ 		 $.cookie("accept_cookies", "ok" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 126, COLUMNA: 4:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 126, COLUMNA: 4:
+
+
+
+		LINEA: 465, COLUMNA: 7: <img class="icono_avisos_cabecera" src="/imagenes/png/iconos/ico-avisos.png" alt="METEOALERTA" title ...       
+
+		LINEA: 480, COLUMNA: 25: <imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="Mi Web" title="Mi Web" />       
+
+		LINEA: 482, COLUMNA: 38:
+
+
+
+		LINEA: 484, COLUMNA: 58:
+
+
+
+		LINEA: 486, COLUMNA: 26: <imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Mapa web" title="Mapa web" />       
+
+		LINEA: 488, COLUMNA: 76:
+
+
+
+		LINEA: 490, COLUMNA: 74:
+
+
+
+		LINEA: 492, COLUMNA: 62: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 494, COLUMNA: 74:
+
+
+
+		LINEA: 496, COLUMNA: 46: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 556, COLUMNA: 246: <img src="/imagenes/png/redes_sociales/Email.png" alt="Email"/>       
+
+		LINEA: 561, COLUMNA: 6: <img class="vertical_align_mid" src="/imagenes/png/redes_sociales/Facebook.png" alt="Compartir en Fa ...       
+
+		LINEA: 567, COLUMNA: 138: <img src="/imagenes/png/redes_sociales/Twitter.png" alt="Compartir en Twitter"/>       
+
+		LINEA: 572, COLUMNA: 4: <img class="vertical_align_mid" src="/imagenes/png/redes_sociales/Whatsapp.png" alt="Whatsapp"/>       
+
+		LINEA: 578, COLUMNA: 5:
+
+
+
+		LINEA: 583, COLUMNA: 4:
+
+
+
+		LINEA: 667, COLUMNA: 39:
+
+
+
+		LINEA: 670, COLUMNA: 77:
+
+
+
+		LINEA: 672, COLUMNA: 75:
+
+
+
+		LINEA: 674, COLUMNA: 63: <imgsrc="/imagenes/png/iconos/ico-blog2.png" alt="AEMET blog.es" title="AEMET blog.es" />       
+
+		LINEA: 676, COLUMNA: 75:
+
+
+
+		LINEA: 678, COLUMNA: 47: <img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS" title="RSS"/>       
+
+		LINEA: 685, COLUMNA: 7: <imgsrc="/imagenes/png/certificados/w3c_xhtml10.png" title="Valida XHTML 1.0 Transicional. (se abr ...       
+
+		LINEA: 690, COLUMNA: 7:
+
+
+
+		LINEA: 695, COLUMNA: 7: <img src="/imagenes/png/certificados/w3c_waiAA.gif" title="Icono de conformidad con el Nivel Doble-A ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 60, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.min.js"></script>       
+
+		LINEA: 61, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.cookie.js"></script>       
+
+		LINEA: 63, COLUMNA: 1: <script type="text/javascript" src="/js/owl-carousel/owl.carousel.min.js"></script>       
+
+		LINEA: 64, COLUMNA: 1: <script type="text/javascript" src="/js/wow/wow.min.js" ></script>       
+
+		LINEA: 589, COLUMNA: 1: <script type="text/javascript">	var API_URL = "http://cdn.api.twitter.com/1/urls/count.json",	TW ...       
+
+		LINEA: 610, COLUMNA: 1: <script type="text/javascript">	var FB_API_URL = "http://api.facebook.com/restserver.php";		 ...       
+
+		LINEA: 626, COLUMNA: 1: <script type="text/javascript">	var link1 = document.getElementById("link1_imprimir");	var link2 ...       
+
+		LINEA: 704, COLUMNA: 1: <script type="text/javascript">	function aceptaCookies() 	{ 		 $.cookie("accept_cookies", "ok" ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 60, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.min.js"></script>       
+
+		LINEA: 61, COLUMNA: 1: <script type="text/javascript" src="/js/jquery.cookie.js"></script>       
+
+		LINEA: 63, COLUMNA: 1: <script type="text/javascript" src="/js/owl-carousel/owl.carousel.min.js"></script>       
+
+		LINEA: 64, COLUMNA: 1: <script type="text/javascript" src="/js/wow/wow.min.js" ></script>       
+
+		LINEA: 589, COLUMNA: 1: <script type="text/javascript">	var API_URL = "http://cdn.api.twitter.com/1/urls/count.json",	TW ...       
+
+		LINEA: 610, COLUMNA: 1: <script type="text/javascript">	var FB_API_URL = "http://api.facebook.com/restserver.php";		 ...       
+
+		LINEA: 626, COLUMNA: 1: <script type="text/javascript">	var link1 = document.getElementById("link1_imprimir");	var link2 ...       
+
+		LINEA: 704, COLUMNA: 1: <script type="text/javascript">	function aceptaCookies() 	{ 		 $.cookie("accept_cookies", "ok" ...
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 48, COLUMNA: 1:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 92, COLUMNA: 5:
+
+
+
+		LINEA: 105, COLUMNA: 7: <a href="#contenido" accesskey="c">C&nbsp;-&nbsp;Ir a contenido</a>       
+
+		LINEA: 108, COLUMNA: 9: <a href="/es/accesibilidad" accesskey="0">0&nbsp;-&nbsp;Accesibilidad Web</a>       
+
+		LINEA: 110, COLUMNA: 9: <a href="/es/portada" accesskey="1">1&nbsp;-&nbsp;Inicio</a>       
+
+		LINEA: 112, COLUMNA: 9: <a href="/es/mapaweb" accesskey="2">2&nbsp;-&nbsp;Mapa web</a>       
+
+		LINEA: 114, COLUMNA: 9: <a href="/es/ayuda" accesskey="3">3&nbsp;-&nbsp;Ayuda web</a>       
+
+		LINEA: 116, COLUMNA: 2:
+
+
+
+		LINEA: 118, COLUMNA: 9: <a href="/es/eltiempo/prediccion/municipios" accesskey="5">5&nbsp;-&nbsp;Municipios</a>       
+
+		LINEA: 120, COLUMNA: 9: <a href="/es/eltiempo/prediccion/avisos" accesskey="6">6&nbsp;-&nbsp;Avisos</a>       
+
+		LINEA: 137, COLUMNA: 12: <a class="separador_idiomas" lang="es" hreflang="es" href="http://www.aemet.es/es/conocenos/congreso ...       
+
+		LINEA: 138, COLUMNA: 12: <a class="separador_idiomas" lang="ca" hreflang="ca" href="http://www.aemet.es/ca/conocenos/congreso ...       
+
+		LINEA: 139, COLUMNA: 12: <a class="separador_idiomas" lang="gl" hreflang="gl" href="http://www.aemet.es/gl/conocenos/congreso ...       
+
+		LINEA: 140, COLUMNA: 12: <a class="separador_idiomas" lang="va" hreflang="va" href="http://www.aemet.es/va/conocenos/congreso ...       
+
+		LINEA: 141, COLUMNA: 12: <a class="separador_idiomas" lang="eu" hreflang="eu" href="http://www.aemet.es/eu/conocenos/congreso ...       
+
+		LINEA: 142, COLUMNA: 12: <a class="separador_idiomas" lang="en" hreflang="en" href="http://www.aemet.es/en/conocenos/congreso ...       
+
+		LINEA: 143, COLUMNA: 12: <a class="separador_idiomas" lang="fr" hreflang="fr" href="http://www.aemet.es/fr/conocenos/congreso ...       
+
+		LINEA: 150, COLUMNA: 12: <a class="separador_idiomas" lang="es" hreflang="es" href="http://www.aemet.es/es/conocenos/congreso ...       
+
+		LINEA: 151, COLUMNA: 12: <a class="separador_idiomas" lang="ca" hreflang="ca" href="http://www.aemet.es/ca/conocenos/congreso ...       
+
+		LINEA: 152, COLUMNA: 12: <a class="separador_idiomas" lang="gl" hreflang="gl" href="http://www.aemet.es/gl/conocenos/congreso ...       
+
+		LINEA: 153, COLUMNA: 12: <a class="separador_idiomas" lang="va" hreflang="va" href="http://www.aemet.es/va/conocenos/congreso ...       
+
+		LINEA: 154, COLUMNA: 12: <a class="separador_idiomas" lang="eu" hreflang="eu" href="http://www.aemet.es/eu/conocenos/congreso ...       
+
+		LINEA: 155, COLUMNA: 12: <a class="separador_idiomas" lang="en" hreflang="en" href="http://www.aemet.es/en/conocenos/congreso ...       
+
+		LINEA: 156, COLUMNA: 12: <a class="separador_idiomas" lang="fr" hreflang="fr" href="http://www.aemet.es/fr/conocenos/congreso ...       
+
+		LINEA: 178, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/es/eltiempo">El tiempo</a>       
+
+		LINEA: 178, COLUMNA: 75: <a class="enlace_menumovil_1er_nvl" href="#">El tiempo</a>       
+
+		LINEA: 180, COLUMNA: 32:
+
+
+
+		LINEA: 180, COLUMNA: 112:
+
+
+
+		LINEA: 182, COLUMNA: 5:
+
+
+
+		LINEA: 184, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/observacion/sinobas">SINOBAS</a>       
+
+		LINEA: 186, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/observacion/radar">Radar</a>       
+
+		LINEA: 188, COLUMNA: 5:
+
+
+
+		LINEA: 190, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/observacion/rayos">Rayos</a>       
+
+		LINEA: 192, COLUMNA: 5:
+
+
+
+		LINEA: 194, COLUMNA: 5:
+
+
+
+		LINEA: 198, COLUMNA: 32:
+
+
+
+		LINEA: 198, COLUMNA: 110:
+
+
+
+		LINEA: 200, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/avisos">Avisos</a>       
+
+		LINEA: 202, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/municipios">Municipios</a>       
+
+		LINEA: 204, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/playas">Playas</a>       
+
+		LINEA: 206, COLUMNA: 5:
+
+
+
+		LINEA: 208, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/provincias">Provincias</a>       
+
+		LINEA: 210, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/comunidades">CC. AA.</a>       
+
+		LINEA: 212, COLUMNA: 5:
+
+
+
+		LINEA: 214, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/mundo">Ciudades del mundo</a>       
+
+		LINEA: 216, COLUMNA: 5:
+
+
+
+		LINEA: 218, COLUMNA: 5:
+
+
+
+		LINEA: 220, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/mapa_frentes">Mapas con frentes</a>       
+
+		LINEA: 222, COLUMNA: 5:
+
+
+
+		LINEA: 224, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/modelosnumericos/harmonie_arome">Modelos n ...       
+
+		LINEA: 226, COLUMNA: 5:
+
+
+
+		LINEA: 228, COLUMNA: 5:
+
+
+
+		LINEA: 230, COLUMNA: 5:
+
+
+
+		LINEA: 232, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/incendios">Incendios</a>       
+
+		LINEA: 234, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/meteoruta">MeteoRuta</a>       
+
+		LINEA: 236, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/polvo_mineral">Polvo mineral</a>       
+
+		LINEA: 246, COLUMNA: 8:
+
+
+
+		LINEA: 246, COLUMNA: 97:
+
+
+
+		LINEA: 248, COLUMNA: 32:
+
+
+
+		LINEA: 248, COLUMNA: 140:
+
+
+
+		LINEA: 250, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos" ...       
+
+		LINEA: 252, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/efemerides_extremos">V ...       
+
+		LINEA: 254, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/superacion_umbrales">S ...       
+
+		LINEA: 256, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/efemerides_sucesos">Ef ...       
+
+		LINEA: 258, COLUMNA: 5:
+
+
+
+		LINEA: 260, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/atlas_climatico">Atlas ...       
+
+		LINEA: 264, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/serviciosclimaticos/vigilancia_clima">Vigilancia del clim ...       
+
+		LINEA: 264, COLUMNA: 137: <a class="enlace_menumovil_2o_nvl" href="#">Vigilancia del clima</a>       
+
+		LINEA: 266, COLUMNA: 5:
+
+
+
+		LINEA: 268, COLUMNA: 5:
+
+
+
+		LINEA: 270, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/vigilancia_clima/vigilancia_sequia">Vigila ...       
+
+		LINEA: 272, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/vigilancia_clima/balancehidrico">Balance h ...       
+
+		LINEA: 274, COLUMNA: 5:
+
+
+
+		LINEA: 278, COLUMNA: 5:
+
+
+
+		LINEA: 280, COLUMNA: 32:
+
+
+
+		LINEA: 280, COLUMNA: 155:
+
+
+
+		LINEA: 282, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/cambio_climat/result_graficos">Resultados...       
+
+		LINEA: 284, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/cambio_climat/datos_diarios">Datos diarios ...       
+
+		LINEA: 286, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/cambio_climat/datos_mensuales">Datos mensu ...       
+
+		LINEA: 296, COLUMNA: 8:
+
+
+
+		LINEA: 296, COLUMNA: 76:
+
+
+
+		LINEA: 298, COLUMNA: 5:
+
+
+
+		LINEA: 300, COLUMNA: 5:
+
+
+
+		LINEA: 302, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/recursos">Nuestros recursos</a>       
+
+		LINEA: 304, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/nuestra_historia">Nuestra historia</a>       
+
+		LINEA: 306, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/conocenos/congresos_y_conferencias">Congresos y conferenc ...       
+
+		LINEA: 306, COLUMNA: 139: <a class="enlace_menumovil_2o_nvl" href="#">Congresos y conferencias</a>       
+
+		LINEA: 308, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/congresos_y_conferencias/congresos">Anuncios</a>       
+
+		LINEA: 310, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/congresos_y_conferencias/reuniones">Reuniones y conf ...       
+
+		LINEA: 314, COLUMNA: 5:
+
+
+
+		LINEA: 316, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/cursos">Cursos</a>       
+
+		LINEA: 324, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/es/idi">I+D+i</a>       
+
+		LINEA: 324, COLUMNA: 66: <a class="enlace_menumovil_1er_nvl" href="#">I+D+i</a>       
+
+		LINEA: 326, COLUMNA: 5:
+
+
+
+		LINEA: 328, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/clima">Clima </a>       
+
+		LINEA: 330, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/medio_ambiente">Medio ambiente</a>       
+
+		LINEA: 332, COLUMNA: 5:
+
+
+
+		LINEA: 334, COLUMNA: 5:
+
+
+
+		LINEA: 336, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/SAF_Nowcasting">SAF de Nowcasting</a>       
+
+		LINEA: 338, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/CIAI">CIAI</a>       
+
+		LINEA: 340, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/SDS-WAS">SDS-WAS</a>       
+
+		LINEA: 348, COLUMNA: 8:
+
+
+
+		LINEA: 348, COLUMNA: 79:
+
+
+
+		LINEA: 350, COLUMNA: 5:
+
+
+
+		LINEA: 352, COLUMNA: 5:
+
+
+
+		LINEA: 354, COLUMNA: 5:
+
+
+
+		LINEA: 356, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/archivo_documental_Arcimis">Archivo documental Arci ...       
+
+		LINEA: 358, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/conocermas/biblioteca">Biblioteca</a>       
+
+		LINEA: 358, COLUMNA: 112: <a class="enlace_menumovil_2o_nvl" href="#">Biblioteca</a>       
+
+		LINEA: 360, COLUMNA: 5:
+
+
+
+		LINEA: 362, COLUMNA: 5:
+
+
+
+		LINEA: 364, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/biblioteca/exposiciones">Exposiciones</a>       
+
+		LINEA: 368, COLUMNA: 32:
+
+
+
+		LINEA: 368, COLUMNA: 126:
+
+
+
+		LINEA: 370, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/recursos_en_linea/publicaciones_y_estudios">Publica ...       
+
+		LINEA: 372, COLUMNA: 5:
+
+
+
+		LINEA: 374, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/recursos_en_linea/elobservador">El Observador</a>       
+
+		LINEA: 378, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/conocermas/meteoeduca">Meteoeduca</a>       
+
+		LINEA: 378, COLUMNA: 112: <a class="enlace_menumovil_2o_nvl" href="#">Meteoeduca</a>       
+
+		LINEA: 380, COLUMNA: 5:
+
+
+
+		LINEA: 382, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/meteoeduca/juegos">Juegos educativos</a>       
+
+		LINEA: 384, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/meteoeduca/cuentos_infantiles">Cuentos infantiles</ ...       
+
+		LINEA: 386, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/meteoeduca/la_familia_meteo">La familia Meteo</a>       
+
+		LINEA: 390, COLUMNA: 5:
+
+
+
+		LINEA: 392, COLUMNA: 5:
+
+
+
+		LINEA: 394, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/meteo_glosario_visual">MeteoGlosario Visual</a>       
+
+		LINEA: 396, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/borrascas/2018-2019">Borrascas con gran impacto</a>       
+
+		LINEA: 404, COLUMNA: 8:
+
+
+
+		LINEA: 404, COLUMNA: 94:
+
+
+
+		LINEA: 406, COLUMNA: 32:
+
+
+
+		LINEA: 406, COLUMNA: 124:
+
+
+
+		LINEA: 408, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/ingresar_en_la_aemet">Ingresar e ...       
+
+		LINEA: 410, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/oposiciones">Oposiciones</a>       
+
+		LINEA: 412, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/funcionarios_interinos">Funciona ...       
+
+		LINEA: 414, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/personal_laboral">Personal labor ...       
+
+		LINEA: 416, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/condiciones_de_trabajo">Condicio ...       
+
+		LINEA: 420, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/concursos">Concursos</a>       
+
+		LINEA: 422, COLUMNA: 5:
+
+
+
+		LINEA: 424, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/empleo_y_becas/becas">Becas</a>       
+
+		LINEA: 424, COLUMNA: 106: <a class="enlace_menumovil_2o_nvl" href="#">Becas</a>       
+
+		LINEA: 426, COLUMNA: 5:
+
+
+
+		LINEA: 428, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/becas/convocatorias">Convocatorias</a>       
+
+		LINEA: 438, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/es/datos_abiertos">Datos abiertos</a>       
+
+		LINEA: 438, COLUMNA: 86: <a class="enlace_menumovil_1er_nvl" href="#">Datos abiertos</a>       
+
+		LINEA: 440, COLUMNA: 5:
+
+
+
+		LINEA: 442, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/datos_abiertos/AEMET_OpenData">AEMET OpenData</a>       
+
+		LINEA: 444, COLUMNA: 5:
+
+
+
+		LINEA: 452, COLUMNA: 8:
+
+
+
+		LINEA: 468, COLUMNA: 5:
+
+
+
+		LINEA: 471, COLUMNA: 5:
+
+
+
+		LINEA: 474, COLUMNA: 5:
+
+
+
+		LINEA: 480, COLUMNA: 4: <a href="/es/mi_web"><imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="Mi Web" title="Mi Web" /></ ...       
+
+		LINEA: 482, COLUMNA: 4:
+
+
+
+		LINEA: 484, COLUMNA: 4: <a href="/es/lineas_de_interes/atencion_al_ciudadano"><imgsrc="/imagenes/png/iconos/ico-contacto.p ...       
+
+		LINEA: 486, COLUMNA: 4: <a href="/es/mapaweb"><imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Mapa web" title="Mapa w ...       
+
+		LINEA: 488, COLUMNA: 4: <a href="/es/redes_sociales/facebook/AEMET_facebook" class="red_social"><imgsrc="/imagenes/png/red ...       
+
+		LINEA: 490, COLUMNA: 4: <a href="/es/redes_sociales/twitter/AEMET_twitter" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 492, COLUMNA: 4: <a href="https://aemetblog.wordpress.com" target="_blank"><imgsrc="/imagenes/png/iconos/ico-blog2. ...       
+
+		LINEA: 494, COLUMNA: 4: <a href="/es/redes_sociales/youtube/AEMET_YouTube" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 496, COLUMNA: 4: <a href="/es/rss_info" class="red_social"><img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS"...       
+
+		LINEA: 502, COLUMNA: 4: <a href="/es/portada">Inicio</a>       
+
+		LINEA: 502, COLUMNA: 59:
+
+
+
+		LINEA: 502, COLUMNA: 119: <a href="/es/conocenos/congresos_y_conferencias">Congresos y conferencias</a>       
+
+		LINEA: 502, COLUMNA: 219: <a href="/es/conocenos/congresos_y_conferencias/congresos">Anuncios</a>       
+
+		LINEA: 521, COLUMNA: 15: <a href="http://www.issw2018.com/en/" target="_blank">http://www.issw2018.com/en/</a>       
+
+		LINEA: 527, COLUMNA: 15: <a href="http://www.meteorologicaltechnologyworldexpo.com/en/" target="_blank">http://www.meteorolog ...       
+
+		LINEA: 533, COLUMNA: 15: <a href="http://www.cenamet.org.ar/destacado-home/nueva-publicacion-de-la-revista-meteorologica/" ta ...       
+
+		LINEA: 539, COLUMNA: 15: <a href="http://aeclim.org/11-congreso-internacional-aec-cartagena-17-19-octubre-2018/" target="_bla ...       
+
+		LINEA: 545, COLUMNA: 15: <a href="/es/conocenos/congresos_y_conferencias/reuniones/SRNWPEPS_workshop_BCN" target="_blank">htt ...       
+
+		LINEA: 556, COLUMNA: 5: <a href="mailto:?subject=&amp;body=:%20http%3A%2F%2Fwww.aemet.es" target="_blank" title="Email" oncl ...       
+
+		LINEA: 560, COLUMNA: 5: <a class="message" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.aemet.es&amp; ...       
+
+		LINEA: 567, COLUMNA: 4: <a href="#" class="message vertical_align_mid" title="Compartir en Twitter" data-via="AEMET_Esp" dat ...       
+
+		LINEA: 571, COLUMNA: 4: <a href="whatsapp://send?text=http://www.aemet.es/es/conocenos/congresos_y_conferencias/congresos" c ...       
+
+		LINEA: 577, COLUMNA: 4: <a href="/es/rss/es/conocenos/congresos_y_conferencias/congresos.rss">	<img src="/imagenes/png/ ...       
+
+		LINEA: 582, COLUMNA: 3: <a id="link_img_imprimir" onkeypress="if(window.event.keyCode!=13)return false;javascript:window.ope ...       
+
+		LINEA: 652, COLUMNA: 10: <a href="/es/nota_legal">Nota Legal</a>       
+
+		LINEA: 654, COLUMNA: 12: <a href="/es/accesibilidad">Accesibilidad Web</a>       
+
+		LINEA: 657, COLUMNA: 7: <a href="/es/enlaces">Enlaces</a>       
+
+		LINEA: 660, COLUMNA: 9: <a href="/es/ayuda">Ayuda web</a>       
+
+		LINEA: 667, COLUMNA: 5:
+
+
+
+		LINEA: 670, COLUMNA: 5: <a href="/es/redes_sociales/facebook/AEMET_facebook" class="red_social"><imgsrc="/imagenes/png/red ...       
+
+		LINEA: 672, COLUMNA: 5: <a href="/es/redes_sociales/twitter/AEMET_twitter" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 674, COLUMNA: 5: <a href="https://aemetblog.wordpress.com" target="_blank"><imgsrc="/imagenes/png/iconos/ico-blog2. ...       
+
+		LINEA: 676, COLUMNA: 5: <a href="/es/redes_sociales/youtube/AEMET_YouTube" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 678, COLUMNA: 5: <a href="/es/rss_info" class="red_social"><img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS"...       
+
+		LINEA: 684, COLUMNA: 6: <a target="_blank" href="http://validator.w3.org/check?uri=referer" ><imgsrc="/imagenes/pn ...       
+
+		LINEA: 689, COLUMNA: 6: <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3&amp;usermediu ...       
+
+		LINEA: 694, COLUMNA: 6: <a target="_blank" href="http://www.w3.org/WAI/WCAG1AA-Conformance"	><img src="/imagenes/png ...
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 92, COLUMNA: 5:
+
+
+
+		LINEA: 105, COLUMNA: 7: <a href="#contenido" accesskey="c">C&nbsp;-&nbsp;Ir a contenido</a>       
+
+		LINEA: 108, COLUMNA: 9: <a href="/es/accesibilidad" accesskey="0">0&nbsp;-&nbsp;Accesibilidad Web</a>       
+
+		LINEA: 110, COLUMNA: 9: <a href="/es/portada" accesskey="1">1&nbsp;-&nbsp;Inicio</a>       
+
+		LINEA: 112, COLUMNA: 9: <a href="/es/mapaweb" accesskey="2">2&nbsp;-&nbsp;Mapa web</a>       
+
+		LINEA: 114, COLUMNA: 9: <a href="/es/ayuda" accesskey="3">3&nbsp;-&nbsp;Ayuda web</a>       
+
+		LINEA: 116, COLUMNA: 2:
+
+
+
+		LINEA: 118, COLUMNA: 9: <a href="/es/eltiempo/prediccion/municipios" accesskey="5">5&nbsp;-&nbsp;Municipios</a>       
+
+		LINEA: 120, COLUMNA: 9: <a href="/es/eltiempo/prediccion/avisos" accesskey="6">6&nbsp;-&nbsp;Avisos</a>       
+
+		LINEA: 124, COLUMNA: 4:
+
+
+
+		LINEA: 125, COLUMNA: 4:
+
+
+
+		LINEA: 137, COLUMNA: 12: <a class="separador_idiomas" lang="es" hreflang="es" href="http://www.aemet.es/es/conocenos/congreso ...       
+
+		LINEA: 138, COLUMNA: 12: <a class="separador_idiomas" lang="ca" hreflang="ca" href="http://www.aemet.es/ca/conocenos/congreso ...       
+
+		LINEA: 139, COLUMNA: 12: <a class="separador_idiomas" lang="gl" hreflang="gl" href="http://www.aemet.es/gl/conocenos/congreso ...       
+
+		LINEA: 140, COLUMNA: 12: <a class="separador_idiomas" lang="va" hreflang="va" href="http://www.aemet.es/va/conocenos/congreso ...       
+
+		LINEA: 141, COLUMNA: 12: <a class="separador_idiomas" lang="eu" hreflang="eu" href="http://www.aemet.es/eu/conocenos/congreso ...       
+
+		LINEA: 142, COLUMNA: 12: <a class="separador_idiomas" lang="en" hreflang="en" href="http://www.aemet.es/en/conocenos/congreso ...       
+
+		LINEA: 143, COLUMNA: 12: <a class="separador_idiomas" lang="fr" hreflang="fr" href="http://www.aemet.es/fr/conocenos/congreso ...       
+
+		LINEA: 150, COLUMNA: 12: <a class="separador_idiomas" lang="es" hreflang="es" href="http://www.aemet.es/es/conocenos/congreso ...       
+
+		LINEA: 151, COLUMNA: 12: <a class="separador_idiomas" lang="ca" hreflang="ca" href="http://www.aemet.es/ca/conocenos/congreso ...       
+
+		LINEA: 152, COLUMNA: 12: <a class="separador_idiomas" lang="gl" hreflang="gl" href="http://www.aemet.es/gl/conocenos/congreso ...       
+
+		LINEA: 153, COLUMNA: 12: <a class="separador_idiomas" lang="va" hreflang="va" href="http://www.aemet.es/va/conocenos/congreso ...       
+
+		LINEA: 154, COLUMNA: 12: <a class="separador_idiomas" lang="eu" hreflang="eu" href="http://www.aemet.es/eu/conocenos/congreso ...       
+
+		LINEA: 155, COLUMNA: 12: <a class="separador_idiomas" lang="en" hreflang="en" href="http://www.aemet.es/en/conocenos/congreso ...       
+
+		LINEA: 156, COLUMNA: 12: <a class="separador_idiomas" lang="fr" hreflang="fr" href="http://www.aemet.es/fr/conocenos/congreso ...       
+
+		LINEA: 178, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/es/eltiempo">El tiempo</a>       
+
+		LINEA: 178, COLUMNA: 75: <a class="enlace_menumovil_1er_nvl" href="#">El tiempo</a>       
+
+		LINEA: 180, COLUMNA: 32:
+
+
+
+		LINEA: 180, COLUMNA: 112:
+
+
+
+		LINEA: 182, COLUMNA: 5:
+
+
+
+		LINEA: 184, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/observacion/sinobas">SINOBAS</a>       
+
+		LINEA: 186, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/observacion/radar">Radar</a>       
+
+		LINEA: 188, COLUMNA: 5:
+
+
+
+		LINEA: 190, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/observacion/rayos">Rayos</a>       
+
+		LINEA: 192, COLUMNA: 5:
+
+
+
+		LINEA: 194, COLUMNA: 5:
+
+
+
+		LINEA: 198, COLUMNA: 32:
+
+
+
+		LINEA: 198, COLUMNA: 110:
+
+
+
+		LINEA: 200, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/avisos">Avisos</a>       
+
+		LINEA: 202, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/municipios">Municipios</a>       
+
+		LINEA: 204, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/playas">Playas</a>       
+
+		LINEA: 206, COLUMNA: 5:
+
+
+
+		LINEA: 208, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/provincias">Provincias</a>       
+
+		LINEA: 210, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/comunidades">CC. AA.</a>       
+
+		LINEA: 212, COLUMNA: 5:
+
+
+
+		LINEA: 214, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/mundo">Ciudades del mundo</a>       
+
+		LINEA: 216, COLUMNA: 5:
+
+
+
+		LINEA: 218, COLUMNA: 5:
+
+
+
+		LINEA: 220, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/mapa_frentes">Mapas con frentes</a>       
+
+		LINEA: 222, COLUMNA: 5:
+
+
+
+		LINEA: 224, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/modelosnumericos/harmonie_arome">Modelos n ...       
+
+		LINEA: 226, COLUMNA: 5:
+
+
+
+		LINEA: 228, COLUMNA: 5:
+
+
+
+		LINEA: 230, COLUMNA: 5:
+
+
+
+		LINEA: 232, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/incendios">Incendios</a>       
+
+		LINEA: 234, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/meteoruta">MeteoRuta</a>       
+
+		LINEA: 236, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/eltiempo/prediccion/polvo_mineral">Polvo mineral</a>       
+
+		LINEA: 246, COLUMNA: 8:
+
+
+
+		LINEA: 246, COLUMNA: 97:
+
+
+
+		LINEA: 248, COLUMNA: 32:
+
+
+
+		LINEA: 248, COLUMNA: 140:
+
+
+
+		LINEA: 250, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos" ...       
+
+		LINEA: 252, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/efemerides_extremos">V ...       
+
+		LINEA: 254, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/superacion_umbrales">S ...       
+
+		LINEA: 256, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/efemerides_sucesos">Ef ...       
+
+		LINEA: 258, COLUMNA: 5:
+
+
+
+		LINEA: 260, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/datosclimatologicos/atlas_climatico">Atlas ...       
+
+		LINEA: 264, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/serviciosclimaticos/vigilancia_clima">Vigilancia del clim ...       
+
+		LINEA: 264, COLUMNA: 137: <a class="enlace_menumovil_2o_nvl" href="#">Vigilancia del clima</a>       
+
+		LINEA: 266, COLUMNA: 5:
+
+
+
+		LINEA: 268, COLUMNA: 5:
+
+
+
+		LINEA: 270, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/vigilancia_clima/vigilancia_sequia">Vigila ...       
+
+		LINEA: 272, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/vigilancia_clima/balancehidrico">Balance h ...       
+
+		LINEA: 274, COLUMNA: 5:
+
+
+
+		LINEA: 278, COLUMNA: 5:
+
+
+
+		LINEA: 280, COLUMNA: 32:
+
+
+
+		LINEA: 280, COLUMNA: 155:
+
+
+
+		LINEA: 282, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/cambio_climat/result_graficos">Resultados...       
+
+		LINEA: 284, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/cambio_climat/datos_diarios">Datos diarios ...       
+
+		LINEA: 286, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/serviciosclimaticos/cambio_climat/datos_mensuales">Datos mensu ...       
+
+		LINEA: 296, COLUMNA: 8:
+
+
+
+		LINEA: 296, COLUMNA: 76:
+
+
+
+		LINEA: 298, COLUMNA: 5:
+
+
+
+		LINEA: 300, COLUMNA: 5:
+
+
+
+		LINEA: 302, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/recursos">Nuestros recursos</a>       
+
+		LINEA: 304, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/nuestra_historia">Nuestra historia</a>       
+
+		LINEA: 306, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/conocenos/congresos_y_conferencias">Congresos y conferenc ...       
+
+		LINEA: 306, COLUMNA: 139: <a class="enlace_menumovil_2o_nvl" href="#">Congresos y conferencias</a>       
+
+		LINEA: 308, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/congresos_y_conferencias/congresos">Anuncios</a>       
+
+		LINEA: 310, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/congresos_y_conferencias/reuniones">Reuniones y conf ...       
+
+		LINEA: 314, COLUMNA: 5:
+
+
+
+		LINEA: 316, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocenos/cursos">Cursos</a>       
+
+		LINEA: 324, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/es/idi">I+D+i</a>       
+
+		LINEA: 324, COLUMNA: 66: <a class="enlace_menumovil_1er_nvl" href="#">I+D+i</a>       
+
+		LINEA: 326, COLUMNA: 5:
+
+
+
+		LINEA: 328, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/clima">Clima </a>       
+
+		LINEA: 330, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/medio_ambiente">Medio ambiente</a>       
+
+		LINEA: 332, COLUMNA: 5:
+
+
+
+		LINEA: 334, COLUMNA: 5:
+
+
+
+		LINEA: 336, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/SAF_Nowcasting">SAF de Nowcasting</a>       
+
+		LINEA: 338, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/CIAI">CIAI</a>       
+
+		LINEA: 340, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/idi/SDS-WAS">SDS-WAS</a>       
+
+		LINEA: 348, COLUMNA: 8:
+
+
+
+		LINEA: 348, COLUMNA: 79:
+
+
+
+		LINEA: 350, COLUMNA: 5:
+
+
+
+		LINEA: 352, COLUMNA: 5:
+
+
+
+		LINEA: 354, COLUMNA: 5:
+
+
+
+		LINEA: 356, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/archivo_documental_Arcimis">Archivo documental Arci ...       
+
+		LINEA: 358, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/conocermas/biblioteca">Biblioteca</a>       
+
+		LINEA: 358, COLUMNA: 112: <a class="enlace_menumovil_2o_nvl" href="#">Biblioteca</a>       
+
+		LINEA: 360, COLUMNA: 5:
+
+
+
+		LINEA: 362, COLUMNA: 5:
+
+
+
+		LINEA: 364, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/biblioteca/exposiciones">Exposiciones</a>       
+
+		LINEA: 368, COLUMNA: 32:
+
+
+
+		LINEA: 368, COLUMNA: 126:
+
+
+
+		LINEA: 370, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/recursos_en_linea/publicaciones_y_estudios">Publica ...       
+
+		LINEA: 372, COLUMNA: 5:
+
+
+
+		LINEA: 374, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/recursos_en_linea/elobservador">El Observador</a>       
+
+		LINEA: 378, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/conocermas/meteoeduca">Meteoeduca</a>       
+
+		LINEA: 378, COLUMNA: 112: <a class="enlace_menumovil_2o_nvl" href="#">Meteoeduca</a>       
+
+		LINEA: 380, COLUMNA: 5:
+
+
+
+		LINEA: 382, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/meteoeduca/juegos">Juegos educativos</a>       
+
+		LINEA: 384, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/meteoeduca/cuentos_infantiles">Cuentos infantiles</ ...       
+
+		LINEA: 386, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/meteoeduca/la_familia_meteo">La familia Meteo</a>       
+
+		LINEA: 390, COLUMNA: 5:
+
+
+
+		LINEA: 392, COLUMNA: 5:
+
+
+
+		LINEA: 394, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/meteo_glosario_visual">MeteoGlosario Visual</a>       
+
+		LINEA: 396, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/conocermas/borrascas/2018-2019">Borrascas con gran impacto</a>       
+
+		LINEA: 404, COLUMNA: 8:
+
+
+
+		LINEA: 404, COLUMNA: 94:
+
+
+
+		LINEA: 406, COLUMNA: 32:
+
+
+
+		LINEA: 406, COLUMNA: 124:
+
+
+
+		LINEA: 408, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/ingresar_en_la_aemet">Ingresar e ...       
+
+		LINEA: 410, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/oposiciones">Oposiciones</a>       
+
+		LINEA: 412, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/funcionarios_interinos">Funciona ...       
+
+		LINEA: 414, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/personal_laboral">Personal labor ...       
+
+		LINEA: 416, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/empleo_publico/condiciones_de_trabajo">Condicio ...       
+
+		LINEA: 420, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/concursos">Concursos</a>       
+
+		LINEA: 422, COLUMNA: 5:
+
+
+
+		LINEA: 424, COLUMNA: 32: <a class="enlace_menuweb_2o_nvl" href="/es/empleo_y_becas/becas">Becas</a>       
+
+		LINEA: 424, COLUMNA: 106: <a class="enlace_menumovil_2o_nvl" href="#">Becas</a>       
+
+		LINEA: 426, COLUMNA: 5:
+
+
+
+		LINEA: 428, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/empleo_y_becas/becas/convocatorias">Convocatorias</a>       
+
+		LINEA: 438, COLUMNA: 8: <a class="enlace_menuweb_1er_nvl" href="/es/datos_abiertos">Datos abiertos</a>       
+
+		LINEA: 438, COLUMNA: 86: <a class="enlace_menumovil_1er_nvl" href="#">Datos abiertos</a>       
+
+		LINEA: 440, COLUMNA: 5:
+
+
+
+		LINEA: 442, COLUMNA: 5: <a class="enlace_3er_nvl" href="/es/datos_abiertos/AEMET_OpenData">AEMET OpenData</a>       
+
+		LINEA: 444, COLUMNA: 5:
+
+
+
+		LINEA: 452, COLUMNA: 8:
+
+
+
+		LINEA: 468, COLUMNA: 5:
+
+
+
+		LINEA: 471, COLUMNA: 5:
+
+
+
+		LINEA: 474, COLUMNA: 5:
+
+
+
+		LINEA: 480, COLUMNA: 4: <a href="/es/mi_web"><imgsrc="/imagenes/png/iconos/ico-miweb.png" alt="Mi Web" title="Mi Web" /></ ...       
+
+		LINEA: 482, COLUMNA: 4:
+
+
+
+		LINEA: 484, COLUMNA: 4: <a href="/es/lineas_de_interes/atencion_al_ciudadano"><imgsrc="/imagenes/png/iconos/ico-contacto.p ...       
+
+		LINEA: 486, COLUMNA: 4: <a href="/es/mapaweb"><imgsrc="/imagenes/png/iconos/ico-mapa-web.png" alt="Mapa web" title="Mapa w ...       
+
+		LINEA: 488, COLUMNA: 4: <a href="/es/redes_sociales/facebook/AEMET_facebook" class="red_social"><imgsrc="/imagenes/png/red ...       
+
+		LINEA: 490, COLUMNA: 4: <a href="/es/redes_sociales/twitter/AEMET_twitter" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 492, COLUMNA: 4: <a href="https://aemetblog.wordpress.com" target="_blank"><imgsrc="/imagenes/png/iconos/ico-blog2. ...       
+
+		LINEA: 494, COLUMNA: 4: <a href="/es/redes_sociales/youtube/AEMET_YouTube" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 496, COLUMNA: 4: <a href="/es/rss_info" class="red_social"><img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS"...       
+
+		LINEA: 502, COLUMNA: 4: <a href="/es/portada">Inicio</a>       
+
+		LINEA: 502, COLUMNA: 59:
+
+
+
+		LINEA: 502, COLUMNA: 119: <a href="/es/conocenos/congresos_y_conferencias">Congresos y conferencias</a>       
+
+		LINEA: 502, COLUMNA: 219: <a href="/es/conocenos/congresos_y_conferencias/congresos">Anuncios</a>       
+
+		LINEA: 521, COLUMNA: 15: <a href="http://www.issw2018.com/en/" target="_blank">http://www.issw2018.com/en/</a>       
+
+		LINEA: 527, COLUMNA: 15: <a href="http://www.meteorologicaltechnologyworldexpo.com/en/" target="_blank">http://www.meteorolog ...       
+
+		LINEA: 533, COLUMNA: 15: <a href="http://www.cenamet.org.ar/destacado-home/nueva-publicacion-de-la-revista-meteorologica/" ta ...       
+
+		LINEA: 539, COLUMNA: 15: <a href="http://aeclim.org/11-congreso-internacional-aec-cartagena-17-19-octubre-2018/" target="_bla ...       
+
+		LINEA: 545, COLUMNA: 15: <a href="/es/conocenos/congresos_y_conferencias/reuniones/SRNWPEPS_workshop_BCN" target="_blank">htt ...       
+
+		LINEA: 556, COLUMNA: 5: <a href="mailto:?subject=&amp;body=:%20http%3A%2F%2Fwww.aemet.es" target="_blank" title="Email" oncl ...       
+
+		LINEA: 560, COLUMNA: 5: <a class="message" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.aemet.es&amp; ...       
+
+		LINEA: 567, COLUMNA: 4: <a href="#" class="message vertical_align_mid" title="Compartir en Twitter" data-via="AEMET_Esp" dat ...       
+
+		LINEA: 571, COLUMNA: 4: <a href="whatsapp://send?text=http://www.aemet.es/es/conocenos/congresos_y_conferencias/congresos" c ...       
+
+		LINEA: 577, COLUMNA: 4: <a href="/es/rss/es/conocenos/congresos_y_conferencias/congresos.rss">	<img src="/imagenes/png/ ...       
+
+		LINEA: 582, COLUMNA: 3: <a id="link_img_imprimir" onkeypress="if(window.event.keyCode!=13)return false;javascript:window.ope ...       
+
+		LINEA: 652, COLUMNA: 10: <a href="/es/nota_legal">Nota Legal</a>       
+
+		LINEA: 654, COLUMNA: 12: <a href="/es/accesibilidad">Accesibilidad Web</a>       
+
+		LINEA: 657, COLUMNA: 7: <a href="/es/enlaces">Enlaces</a>       
+
+		LINEA: 660, COLUMNA: 9: <a href="/es/ayuda">Ayuda web</a>       
+
+		LINEA: 667, COLUMNA: 5:
+
+
+
+		LINEA: 670, COLUMNA: 5: <a href="/es/redes_sociales/facebook/AEMET_facebook" class="red_social"><imgsrc="/imagenes/png/red ...       
+
+		LINEA: 672, COLUMNA: 5: <a href="/es/redes_sociales/twitter/AEMET_twitter" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 674, COLUMNA: 5: <a href="https://aemetblog.wordpress.com" target="_blank"><imgsrc="/imagenes/png/iconos/ico-blog2. ...       
+
+		LINEA: 676, COLUMNA: 5: <a href="/es/redes_sociales/youtube/AEMET_YouTube" class="red_social"><imgsrc="/imagenes/png/redes ...       
+
+		LINEA: 678, COLUMNA: 5: <a href="/es/rss_info" class="red_social"><img src="/imagenes/png/redes_sociales/Rss.png" alt="RSS"...       
+
+		LINEA: 684, COLUMNA: 6: <a target="_blank" href="http://validator.w3.org/check?uri=referer" ><imgsrc="/imagenes/pn ...       
+
+		LINEA: 689, COLUMNA: 6: <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3&amp;usermediu ...       
+
+		LINEA: 694, COLUMNA: 6: <a target="_blank" href="http://www.w3.org/WAI/WCAG1AA-Conformance"	><img src="/imagenes/png ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 101, COLUMNA: 4:
+
+   
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 505, COLUMNA: 1: <h2 class="titulo">Conferencias y simposios mas relevantes sobre meteorolog&iacute;a y climatolog&ia ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/es/buscador"><div class="contenedor_buscador"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 81, COLUMNA: 1: <body><div id="capa_global"></div><div id="popup_cookies" class="pop_up_cookies">	<div>		<di ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+
+
+		LINEA: 165, COLUMNA: 9: <input class="texto_buscador" value="Introduzca texto" aria-label ="Introduzca texto" name="str" id= ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/es/buscador"><div class="contenedor_buscador"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/es/buscador"><div class="contenedor_buscador"> ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 132, COLUMNA: 7: <input type="checkbox" id="idiomas_mini" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 147, COLUMNA: 7: <input type="checkbox" id="idiomas" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 166, COLUMNA: 9: <input type="hidden" name="modo" value="and" />       
+
+		LINEA: 166, COLUMNA: 56: <input type="hidden" name="orden" value="n" />       
+
+		LINEA: 166, COLUMNA: 102: <input type="hidden" name="tipo" value="sta" />       
+
+		LINEA: 166, COLUMNA: 149: <input type="submit" value=" " class="boton_buscar_cabecera" title="Buscar" alt="Buscar" />
+
+  
+
+	REVISAR: 219: input element, type of "checkbox", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 132, COLUMNA: 7: <input type="checkbox" id="idiomas_mini" class="checkbox_oculto_idiomas" />       
+
+		LINEA: 147, COLUMNA: 7: <input type="checkbox" id="idiomas" class="checkbox_oculto_idiomas" />
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/es/buscador"><div class="contenedor_buscador"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/es/buscador"><div class="contenedor_buscador"> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 164, COLUMNA: 7: <form id="FrmBuscador" method="get" action="/es/buscador"><div class="contenedor_buscador"> ...
+
+	

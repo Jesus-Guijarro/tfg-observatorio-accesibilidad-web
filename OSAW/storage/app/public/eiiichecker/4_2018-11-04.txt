@@ -1,0 +1,9 @@
+REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/organismos-entidades
+FECHA EVALUACIÓN: 2018-11-04
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         
+	FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	FALLO F59: Fallo del Criterio de Conformidad 4.1.2 debido al uso de secuencias de comandos para hacer que los elementos <&div> o <&span> sean un control de la interfaz de usuario en HTML sin proporcionar una función para el control		 
+	VECES ENCONTRADO: 1

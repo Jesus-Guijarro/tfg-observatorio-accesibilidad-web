@@ -1,0 +1,28 @@
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/hogares/atencion-cliente.html
+FECHA EVALUACIÓN: 2018-11-05
+
+Se han encontrado 2 imágenes que no tienen leyenda
+Se encontraron 7 imágenes en las que la leyenda es un espacio vacío
+Se encontró un elemento <iframe> sin título
+Se encontraron 2 casos en que los encabezados no respetan la cadena jerárquica
+Se encontraron 16 elementos de encabezado
+Se han encontrado 2 enlaces en los que el contenido está compuesto sólo por una imagen no subtitulada
+Se han encontrado 2 enlaces con el mismo texto que apuntan a destinos diferentes
+Se identificaron 41 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se ha encontrado 1 enlace para eludir bloques de contenido
+Se identificaron 3 formularios sin botón de envío
+Se identificaron 4 controles de formulario sin etiquetas asociadas y sin el atributo title
+Se encontró un elemento <label> sin contenido
+Se encontraron 5 controles de formulario sin etiqueta asociada
+Se encontró 1 valor repetido del atributo id
+Se encontraron 20 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificaron 3 casos en que se usan unidades de medida expresadas en valores absolutos en el tamaño de letra
+Se constató que todas las unidades de medida existentes en la CSS se expresan en valores relativos
+Se han encontrado 3 elementos <link> para navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+El tipo de documento no permite el uso del atributo xml: lang
+Se identificaron 7 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo

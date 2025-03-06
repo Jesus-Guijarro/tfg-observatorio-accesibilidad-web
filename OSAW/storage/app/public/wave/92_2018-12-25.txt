@@ -1,0 +1,39 @@
+REPORTE PÁGINA WEB: https://www.iberdrola.es/atencion-cliente
+FECHA EVALUACIÓN: 2018-12-25
+
+-PROBLEMAS-
+
+Missing form label	  VECES ENCONTRADO: 1
+Linked image missing alternative text	  VECES ENCONTRADO: 8
+Empty link	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Underlined text	  VECES ENCONTRADO: 7
+A nearby image has the same alternative text	  VECES ENCONTRADO: 8
+Fieldset missing legend	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 9
+Redundant alternative text	  VECES ENCONTRADO: 8
+Justified text	  VECES ENCONTRADO: 3
+Orphaned form label	  VECES ENCONTRADO: 10
+Redundant title text	  VECES ENCONTRADO: 25
+Noscript element	  VECES ENCONTRADO: 3
+Link to PDF document	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Alternative text	  VECES ENCONTRADO: 7
+Null or empty alternative text	  VECES ENCONTRADO: 33
+Fieldset	  VECES ENCONTRADO: 1
+Element language	  VECES ENCONTRADO: 3
+Linked image with alternative text	  VECES ENCONTRADO: 16
+Form label	  VECES ENCONTRADO: 12
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 35
+
+

@@ -1,0 +1,36 @@
+REPORTE PÁGINA WEB: https://www.uv.es/uvweb/universitat/ca/estudis-postgrau/masters-oficials/novetats-1286020074544.html
+FECHA EVALUACIÓN: 2018-11-25
+
+PROBLEMAS
+Empty heading	  VECES ENCONTRADO: 1
+Missing alternative text	  VECES ENCONTRADO: 3
+Linked image missing alternative text	  VECES ENCONTRADO: 1
+Empty link	  VECES ENCONTRADO: 7
+
+
+
+ALERTAS
+Noscript element	  VECES ENCONTRADO: 5
+Redundant link	  VECES ENCONTRADO: 11
+Redundant title text	  VECES ENCONTRADO: 63
+Justified text	  VECES ENCONTRADO: 33
+Accesskey	  VECES ENCONTRADO: 1
+Very small text	  VECES ENCONTRADO: 4
+Redundant alternative text	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 8
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 3
+Linked image with alternative text	  VECES ENCONTRADO: 23
+Form label	  VECES ENCONTRADO: 1
+Null or empty alternative text	  VECES ENCONTRADO: 1
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 11
+
+
+

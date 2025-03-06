@@ -1,0 +1,27 @@
+REPORTE PÁGINA WEB: https://www.movistar.es/Privada/DesafioUnico
+FECHA EVALUACIÓN: 2018-12-05
+
+Se encontró 1 imagen que no tiene leyenda
+Se encontró una imagen en la que la leyenda es un espacio vacío
+Se han encontrado 2 elementos <iframe> sin título
+Se encontró 1 elemento de encabezado
+Se encontró un enlace en el que el contenido se compone sólo de una imagen no subtitulada
+Se han encontrado 7 enlaces con el mismo texto que apuntan a destinos diferentes
+Se identificaron 2 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se identificó 1 formulario sin botón de envío
+Se encontró un elemento <label> sin contenido
+Se constató que todos los controles de formulario tienen una etiqueta asociada
+Se encontraron 31 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificaron 6 casos en que se usan unidades de medida expresadas en valores absolutos en el tamaño de letra
+Se constató que en 1 caso, se hace uso de unidades de medida absolutas
+Se constató que todas las unidades de medida existentes en la CSS se expresan en valores relativos
+Se han encontrado 7 elementos <link> para la navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es_ES"
+Se constató que el código "es_ES" es incorrecto
+El tipo de documento no permite el uso del atributo xml: lang
+Se identificaron 5 reglas de CSS en las que no se especifica o el color de letra o el color de fondo

@@ -1,0 +1,11 @@
+REPORTE PÁGINA WEB: https://www.iberdrola.es/servicios/vehiculo-electrico/punto-recarga
+FECHA EVALUACIÓN: 2018-11-27
+
+CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      Elementos con un atributo de identificación definido único		 
+	VECES ENCONTRADO: 6
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	FALLO F89: Fallo de los Criterios de Conformidad 2.4.4, 2.4.9 y 4.1.2 debido a que no se proporciona un nombre accesible para una imagen que es el único contenido en un enlace		 
+	VECES ENCONTRADO: 3
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	TÉCNICA H91: Usar controles de formulario HTML y enlaces		 
+	VECES ENCONTRADO: 1

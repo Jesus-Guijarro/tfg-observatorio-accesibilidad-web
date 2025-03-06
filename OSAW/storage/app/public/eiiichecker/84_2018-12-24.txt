@@ -1,0 +1,7 @@
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/ver-factura
+FECHA EVALUACIÓN: 2018-12-24
+
+CRITERIO DE CONFORMIDAD: 2.4.6: Encabezados y etiquetas       TÉCNICA G130: Proporcionar encabezados descriptivos		 VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <&fieldset> y <&legend>		 VECES ENCONTRADO: 7
+CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      Elementos con un atributo de identificación definido único		 VECES ENCONTRADO: 6
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      TÉCNICA H91: Usar controles de formulario HTML y enlaces		 VECES ENCONTRADO: 8

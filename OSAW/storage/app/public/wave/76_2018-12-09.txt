@@ -1,0 +1,35 @@
+REPORTE PÁGINA WEB: https://web.ua.es/es/investiga-en-la-ua.html
+FECHA EVALUACIÓN: 2018-12-09
+
+-PROBLEMAS-
+
+Empty link	  VECES ENCONTRADO: 43
+Missing alternative text	  VECES ENCONTRADO: 3
+
+
+-ALERTAS-
+
+Redundant link	  VECES ENCONTRADO: 6
+Broken same-page link	  VECES ENCONTRADO: 2
+Missing fieldset	  VECES ENCONTRADO: 2
+Redundant alternative text	  VECES ENCONTRADO: 7
+Redundant title text	  VECES ENCONTRADO: 3
+Skipped heading level	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Tabindex	  VECES ENCONTRADO: 3
+Link to PDF document	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Form label	  VECES ENCONTRADO: 12
+Linked image with alternative text	  VECES ENCONTRADO: 12
+Alternative text	  VECES ENCONTRADO: 5
+Null or empty alternative text	  VECES ENCONTRADO: 21
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 65
+
+

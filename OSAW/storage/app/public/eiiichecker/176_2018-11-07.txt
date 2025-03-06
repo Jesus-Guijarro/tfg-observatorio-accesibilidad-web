@@ -1,0 +1,6 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/ConsejosDisAct.nsf/fCategoriaVista2?readForm&Vista=vComisionesTodasVal&Categoria=Consejos&lang=2&nivel=3%5f5&nivelExpandido=1&bdorigen=ayuntamiento/ayuntamiento.nsf&idapoyo=9A0B3E8F6AB1CDBAC12582410042C735
+FECHA EVALUACIÓN: 2018-11-07
+
+CRITERIO DE CONFORMIDAD: 2.4.6: Encabezados y etiquetas       
+	TÉCNICA G130: Proporcionar encabezados descriptivos		 
+	VECES ENCONTRADO: 3

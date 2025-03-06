@@ -1,0 +1,20 @@
+REPORTE PÁGINA WEB: https://www.umh.es/?lang=VAL
+FECHA EVALUACIÓN: 2018-12-29
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se han encontrado 2 imágenes en las que el alt tiene más de 100 caracteres
+Se encontraron 9 elementos de encabezado
+Se han identificado 46 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se encontró 1 secuencia de 3 o más elementos, que se pueden utilizar para representar los elementos de una lista
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se constató que todos los formularios tienen un botón de envío
+Se encontraron 7 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que todas las unidades de medida existentes en la CSS se expresan en valores relativos
+Se ha encontrado 1 elemento <link> para la navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "ca"
+Se identificaron 3 casos en que se justifica el texto a través de CSS
+Se han identificado 8 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo

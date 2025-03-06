@@ -1,0 +1,23 @@
+REPORTE PÁGINA WEB: https://www.icex.es/icex/es/
+FECHA EVALUACIÓN: 2018-11-02
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 10 imágenes en las que la leyenda es un espacio vacío
+Se encontró 1 caso en que los encabezados no respetan la cadena jerárquica
+Se encontraron 322 elementos de encabezado
+Se han encontrado 8 enlaces en los que el contenido está compuesto sólo por una imagen no subtitulada
+Se han encontrado 218 enlaces con el mismo texto que apuntan a destinos diferentes
+Se encontró 1 grupo de enlaces compuesto por 10 o más enlaces no agrupados por elementos estructurales
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se identificaron 2 formularios sin botón de envío
+Se ha identificado 1 control de formulario sin etiquetas asociadas y sin el atributo title
+Se han encontrado 4 controles de formulario sin etiqueta asociada
+Se encontraron 2 valores repetidos del atributo id
+Se han encontrado 46 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que en 1 caso, se hace uso de unidades de medida absolutas
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+Se identificaron 4 reglas de CSS en las que no se especifica o el color de fondo o el color de fondo

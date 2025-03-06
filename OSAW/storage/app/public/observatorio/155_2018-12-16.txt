@@ -1,0 +1,676 @@
+REPORTE PÁGINA WEB: https://www.aemps.gob.es/cosmeticosHigiene/portada/home.htm
+FECHA EVALUACIÓN: 2018-12-16
+
+
+Principio: 1.Perceptible
+Descripcion: La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.
+
+	Pauta: 1.1..Alternativas textuales
+	Descripcion: Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple
+
+		Criterio: 1.1.1..Contenido no textual
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H35-Proporcionando textos alternativos a elementos applet
+			Criticidad: Alta
+			Observación: No se han encontrado elementos applet en la p&aacute;gina.<br/>
+			Recomendación: Se recomienda colocar una alternativa textual a los elementos applet, para tener conocimiento de su funci&oacute;n.<br/>
+			Número de errores: 0
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H45-Usando longdesc
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado im&aacute;genes que usen el atributo longdesc para referirse a una larga descripci&oacute;n contenida en un recurso independiente, que sean necesarias como alternativa no textual para una im&aacute;gen.<br/>
+			Recomendación: Use el atributo longdesc en una im&aacute;gen cuando una alternativa textual breve no transmite adecuadamente la funci&oacute;n o la informaci&oacute;n proporcionada en la im&aacute;gen.<br/>
+			Número de errores: 0
+
+			Código: H37-Usando atributos alt en elementos img
+			Criticidad: Media
+			Observación: Todas las im&aacute;genes de p&aacute;gina tiene un texto alternativo en el atributo <strong>alt</strong>, verifique que sea descriptivo y vaya acorde al contenido de la im&aacute;gen.<pre><ul><li><xmp><img src="../../diseno/img/logo_Ministerio.jpg" alt="Ministerio de Sanidad, Consumo y Bienestar Social. Acceso a la página principal del MSCBS"></xmp></li><li><xmp><img src="../../diseno/img/logo_aemps.jpg" alt="Agencia Española de Medicamentos y Productos Sanitarios. Acceso a la página principal"></xmp></li><li><xmp><img src="/diseno/img/e-mail-icon.gif" alt="Suscríbase a las listas de correo"></xmp></li><li><xmp><img src="/diseno/img/twitter_icon.gif" alt="Síguenos en Twitter. Se abre en una nueva ventana"></xmp></li><li><xmp><img src="/diseno/img/rss_icon.gif" alt="RSS"></xmp></li><li><xmp><img src="/diseno/img/youtube_icon.gif" alt="Canal de Youtube de la AEMPS. Se abre en una nueva ventana"></xmp></li><li><xmp><img src="/diseno/img/opcion_select.gif" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_Cosmeticos.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_ProdHigiene.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_Cosmetovigilancia.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_NotasInfo.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_notaSeguridad.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_Circulares.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/banners/bol-ps-cos.jpg" alt=""></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&iacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H67-Usando texto alternativo nulo y no el atributo title en el elemento img para imágenes que AT puedan ignorar
+			Criticidad: Media
+			Observación: De un total de 14 im&aacute;genes que se encontraron en la p&aacute;gina con texto alternativo, 8 tienen un valor nulo o sin contenido. Verifique que correspondan a imagenes decorativas. <pre><ul><li><xmp><img src="/diseno/img/opcion_select.gif" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_Cosmeticos.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_ProdHigiene.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_Cosmetovigilancia.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_NotasInfo.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_notaSeguridad.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_Circulares.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/banners/bol-ps-cos.jpg" alt=""></xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 8
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+			Código: C18-Usando reglas margin y padding en lugar de imágenes de espaciador para diseñar un layout
+			Criticidad: Baja
+			Observación: Existen 37 celdas de tablas que no consideran el separador de contenido de los bordes.<br/>
+			Recomendación: Se debe tener en cuenta la separaci&oacute;n del texto respecto a las celdas en las tablas.<br/>
+			Número de errores: 37
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+			Código: H36-Usando atributos alt en imágenes que se utilizan como botones de envio
+			Criticidad: Alta
+			Observación: No se han encontrado botones de tipo im&aacute;gen en la p&aacute;gina..<br/>
+			Recomendación: En el caso de hacer uso de botones de tipo im&aacute;gen, estos deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la acci&oacute;n del bot&oacute;n)..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: En 1 segmento de contenido se han encontrado enlaces adyacentes que tienen un mismo destino, lo cual puede producir reduncacia de informaci&oacute;n y confusion para los usuarios que hacen uso de tecnolog&iacute;as de apoyo. Los enlaces que presentan este inconveniente son:<pre><ul><li><xmp><a href="../../home.htm"><img src="../../diseno/img/logo_aemps.jpg" alt="Agencia Española de Medicamentos y Productos Sanitarios. Acceso a la página principal"></a><a href="../../home.htm"><h1 id="aempsh1">Agencia Española de Medicamentos y Productos Sanitarios - AEMPS</h1></a></xmp></li></ul></pre>.<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 1
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+			Código: OAW1-Usando videos decorativos
+			Criticidad: Media
+			Observación: No se han encontrado videos en esta p&aacute;gina..<br/>
+			Recomendación: En caso de tener v&iacute;deos decorativos, es recomendable marcarlos como tal con atributos ARIA, esto evita que los usuarios con tecnolog&iacute;as de asistencia tengan dificultades al encontrar videos sin altenativas textuales..<br/>
+			Número de errores: 0
+
+			Código: H88-Usando HTML de acuerdo a la especificación
+			Criticidad: Alta
+			Observación: No se han encontrado elementos obsoletos dentro de la p&aacute;gina..<br/>
+			Recomendación: Ciertas etiquetas y atributos viejos de HTML han sido suspendidos para utilizar en su lugar alternativas m&aacute;s flexibles (como HTML o CSS). Es recomendable siempre adoptar los est&aacute;ndares HTML..<br/>
+			Número de errores: 0
+
+	Pauta: 1.2..Medios tempodependientes
+	Descripcion: Proporcionar alternativas para los medios tempodependientes
+
+		Criterio: 1.2.1..Sólo audio y sólo vídeo (grabado)
+		Nivel: A
+
+			Código: F30-Fallo en el criterio 1.1.1 y 1.2.1 debido al uso de alternativas textuales que no son adecuadas (por ejemplo: nombres de archivos o marcador de texto)
+			Criticidad: Alta
+			Observación: No se han identificado im&aacute;genes con textos alternativos sospechosos (nombres de archivos)..<br/>
+			Recomendación: En el caso de hacer uso de im&aacute;genes en la p&aacute;ginas, estas deber&aacute;n tener una alternativa textual valida (informativa y relacionada a la im&aacute;gen o nula en el caso de ser una im&aacute;gen decorativa)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.4..Subtítulos (en directo)
+		Nivel: AA
+
+		Criterio: 1.2.3..Audiodescripción o Medio Alternativo (grabado)
+		Nivel: A
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.8..Medio alternativo (grabado)
+		Nivel: AAA
+
+			Código: H53-Usando el cuerpo del elemento object
+			Criticidad: Media
+			Observación: No existe contenido renderizado usando el elemento object que requieran una alternativa textual..<br/>
+			Recomendación: Al insertar objetos multimedia se debe colocar otros medios de comprensi&oacute;n del mismo como un texto alternativo, esto para el caso de que el elemento no pueda ser renderizado por el agente (navegador)..<br/>
+			Número de errores: 0
+
+			Código: H46-Usando noembed con embed
+			Criticidad: Media
+			Observación: No existen elementos multimedia en la p&aacute;gina colocados a trav&eacute;s de etiquetas embed y noembed.<br/>
+			Recomendación: Verifique el uso correcto de las etiquetas reservadas embed y noembed.<br/>
+			Número de errores: 0
+
+		Criterio: 1.2.2..Subtítulos (grabados)
+		Nivel: A
+
+			Código: G87-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado videos en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los videos, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+			Código: G87B-Proporcionar subtítulos
+			Criticidad: Media
+			Observación: No se han encontrado audios en la p&aacute;gina.<br/>
+			Recomendación: Es recomendable utilizar pistas de alternativas textuales en los audios, ya que no todos los usuarios tienen la misma persepci&oacute;n. Las pistas tipo captions no se deben confundir con las pistas de tipo subtitles. Los subt&iacute;tulos proporcionan texto de solo el di&aacute;logo y no incluyen sonidos importantes..<br/>
+			Número de errores: 0
+
+	Pauta: 1.3..Adaptable
+	Descripcion: Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura
+
+		Criterio: 1.3.2..Secuencia con significado
+		Nivel: A
+
+			Código: C27A-Haciendo el DOM ordenado para marcar el orden visual: A) Elementos con posicionamiento flotante sin especificar
+			Criticidad: Media
+			Observación: De las 533 reglas CSS en la p&aacute;gina, 97 de ellas usan declaraciones de elementos de forma flotante (float:inherit|none|left|rigth).<pre><ul><li><xmp>#contenedor_principal { float: left; width: 95%; padding-left: 2.5%; }</xmp></li><li><xmp>#contenedor_izq { float: left; width: 100%; background-image: url(https://www.aemps.gob.es/diseno/img/sombra_izquierda_p.jpg); background-position: 0% 0%; background-repeat: no-repeat repeat; }</xmp></li><li><xmp>#sombra_izq { float: left; width: 100%; background-image: url(https://www.aemps.gob.es/diseno/img/sombra_izquierda.jpg); background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenedor_drch { background-image: url(https://www.aemps.gob.es/diseno/img/sombra_derecha_p.jpg); float: right; width: 99.3%; background-position: 100% 0%; background-repeat: no-repeat repeat; }</xmp></li><li><xmp>#sombra_drch { background-image: url(https://www.aemps.gob.es/diseno/img/sombra_derecha.jpg); float: right; width: 100%; background-position: 100% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenedor_centro { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; width: 99.3%; }</xmp></li><li><xmp>#cabecera { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; float: left; background-image: url(https://www.aemps.gob.es/diseno/img/fondoCab.jpg); background-color: rgb(255, 255, 255); width: 100%; padding-bottom: 1%; background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#idiomas { float: right; margin-top: 0px; margin-right: 0px; margin-left: 0px; width: 100%; margin-bottom: 0.2%; position: relative; }</xmp></li><li><xmp>.menuIdiomas { margin-top: 0.5%; margin-right: 1%; margin-bottom: 0px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; float: right; width: auto; }</xmp></li><li><xmp>.menuIdiomas li { display: inline; list-style-type: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; float: left; font-size: 0.8em; border-left-color: rgb(0, 0, 0); border-left-style: solid; border-left-width: 0.1em; padding-top: 0px; padding-right: 0.3em; padding-bottom: 0px; padding-left: 0.3em; text-align: center; height: 20%; line-height: 1.2em; }</xmp></li><li><xmp>#cabIzq { float: left; width: 67%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 1%; overflow-x: hidden; overflow-y: hidden; margin-top: -25px; }</xmp></li><li><xmp>#cabIzq img { float: left; width: auto; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>#cabDrch { float: right; width: 29%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 1%; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#zona_buscador { vertical-align: middle; width: 100%; padding-top: 0.5em; padding-right: 0px; padding-bottom: 1%; padding-left: 0px; float: right; text-align: right; margin-top: 0.1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }</xmp></li><li><xmp>#zona_buscador table { text-align: right; width: auto; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; float: right; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }</xmp></li><li><xmp>#canalesInfo { float: right; margin-right: 0.5em; width: auto; font-size: 0.9em; }</xmp></li><li><xmp>#canalesInfo ul { float: left; width: auto; padding-top: 0%; padding-right: 0%; padding-bottom: 0%; padding-left: 0%; margin-top: 0%; margin-right: 0%; margin-bottom: 0%; margin-left: 0%; }</xmp></li><li><xmp>#informacion #canalesCompartir { float: right; margin-bottom: 1.5em; width: auto; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; background-image: url(https://www.aemps.gob.es/diseno/img/fndAplicacion.jpg); background-color: rgb(255, 255, 255); border-top-width: thin; border-right-width: thin; border-bottom-width: thin; border-left-width: thin; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(220, 220, 220); border-right-color: rgb(220, 220, 220); border-bottom-color: rgb(220, 220, 220); border-left-color: rgb(220, 220, 220); background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#informacion #canalesCompartir ul { float: left; width: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 1em; margin-top: -1em; margin-right: -0.5em; margin-bottom: -0.5em; margin-left: -1em; }</xmp></li><li><xmp>#informacion #canalesCompartir ul li { display: inline; float: left; margin-bottom: 0.5em; margin-right: 0.4em; list-style-type: none; }</xmp></li><li><xmp>#accesos ul { list-style-type: none; color: rgb(58, 62, 65); margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; float: right; width: auto; }</xmp></li><li><xmp>#accesos ul li { display: inline; float: left; padding-top: 0.1em; padding-right: 0.5em; padding-bottom: 0.1em; padding-left: 0.5em; margin-left: 0.5em; background-color: rgb(138, 138, 138); text-align: center; margin-bottom: 0.5em; }</xmp></li><li><xmp>#categorias { float: left; width: 99.7%; overflow-x: hidden; overflow-y: hidden; background-image: url(https://www.aemps.gob.es/diseno/img/fndCategorias.jpg); background-color: rgb(63, 137, 199); background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.menuCategoria { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; float: left; width: 100%; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; }</xmp></li><li><xmp>.menuCategoria li { display: inline; border-right-width: 0.08em; border-right-style: solid; border-right-color: rgb(255, 255, 255); float: left; font-size: 0.95em; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>.menuCategoria a:link, .menuCategoria a:visited { color: rgb(255, 255, 255); text-decoration: none; float: left; }</xmp></li><li><xmp>#cuerpo { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; background-image: url(https://www.aemps.gob.es/diseno/img/fcuerpo.jpg); background-color: rgb(255, 255, 255); width: 100%; padding-top: 1.5%; padding-right: 0px; padding-bottom: 1.5%; padding-left: 0px; clear: both; background-position: 50% 0%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#zonaOpciones { float: left; width: 20%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>#menuOpciones { width: 93%; float: right; border-top-width: 0.08em; border-right-width: 0.08em; border-bottom-width: 0.08em; border-left-width: 0.08em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 138, 185); border-right-color: rgb(51, 138, 185); border-bottom-color: rgb(51, 138, 185); border-left-color: rgb(51, 138, 185); padding-top: 1%; padding-right: 1%; padding-bottom: 1%; padding-left: 1%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>.opcionesMn { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 18%; padding-left: 0px; width: 100%; background-color: rgb(178, 203, 233); background-image: url(https://www.aemps.gob.es/diseno/img/fondoOpciones.jpg); background-position: 50% 0%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.opcionesMn li { list-style-type: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; width: 94%; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; border-bottom-width: 0.08em; border-bottom-style: solid; border-bottom-color: rgb(51, 138, 185); font-size: 0.8em; float: left; }</xmp></li><li><xmp>.opcionesMn li a { text-decoration: none; width: 92%; padding-left: 8%; color: rgb(59, 63, 66); float: left; background-image: url(https://www.aemps.gob.es/diseno/img/opcion_no_selMn.gif); background-position: 0% 50%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#contenido { width: 58% !important; float: left; padding-top: 0px !important; padding-right: 1% !important; padding-bottom: 0px !important; padding-left: 1% !important; }</xmp></li><li><xmp>#migas_uno { color: rgb(34, 94, 154); float: left; }</xmp></li><li><xmp>#migas_dos { color: rgb(34, 94, 154); float: left; }</xmp></li><li><xmp>#informacion { width: 100%; float: left; font-size: 0.8em; text-align: justify; }</xmp></li><li><xmp>#titulo { width: 98.5%; border-bottom-width: thin; border-bottom-style: solid; border-bottom-color: rgb(51, 138, 185); float: left; margin-bottom: 2em !important; padding-left: 1%; }</xmp></li><li><xmp>#titulo h1 { font-size: 1.2em; color: rgb(40, 109, 147); font-weight: bold; padding-top: 0.5%; padding-right: 0px; padding-bottom: 0.5%; padding-left: 0px; float: left; }</xmp></li><li><xmp>#info_relacionada { float: left; width: 95.5%; background-color: rgb(204, 221, 239); border-top-width: 0.08em; border-right-width: 0.08em; border-bottom-width: 0.08em; border-left-width: 0.08em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(51, 138, 185); border-right-color: rgb(51, 138, 185); border-bottom-color: rgb(51, 138, 185); border-left-color: rgb(51, 138, 185); padding-top: 1%; padding-right: 2%; padding-bottom: 1%; padding-left: 2%; margin-top: 2%; }</xmp></li><li><xmp>#flechas { margin-top: 1%; margin-bottom: 1%; width: 100%; float: left; }</xmp></li><li><xmp>#flecha_atras { width: 0.8em; float: right; }</xmp></li><li><xmp>#flecha_inicio { width: 0.8em; float: right; margin-left: 0.35em; }</xmp></li><li><xmp>#zona_drch { float: left; width: 19%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>#imagen_categoria { float: left; width: 100%; padding-bottom: 2%; }</xmp></li><li><xmp>#zona_drch img { float: left; width: 98%; padding-bottom: 0.5em; }</xmp></li><li><xmp>#pie { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; float: left; width: 100%; background-image: url(https://www.aemps.gob.es/diseno/img/pie_central.jpg); background-color: rgb(255, 255, 255); line-height: 1em; background-position: 50% 0%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#pie_izq { float: left; width: 100%; background-image: url(https://www.aemps.gob.es/diseno/img/pie_izquierda.jpg); background-position: 0% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>#pie_drch { text-align: center; float: left; width: 100%; font-size: 0.7em; background-image: url(https://www.aemps.gob.es/diseno/img/pie_derecha.jpg); padding-top: 0.2%; padding-right: 0px; padding-bottom: 0.4%; padding-left: 0px; background-position: 100% 0%; background-repeat: no-repeat no-repeat; }</xmp></li><li><xmp>dl.abrevs dt { font-weight: bold; float: left; }</xmp></li><li><xmp>.imagen_texto { float: left; width: 100%; margin-top: 0.5em; clear: both; }</xmp></li><li><xmp>.imagen_drch { float: right; margin-left: 0.5em; }</xmp></li><li><xmp>.imagen_izq { float: left; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; margin-top: 0.5em; margin-right: 0.5em; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>ul.enLineaDcha { display: table; float: right; }</xmp></li><li><xmp>.Bloque_enLineaDcha { float: right; }</xmp></li><li><xmp>ul.enLinea li { float: left; }</xmp></li><li><xmp>ul.enLineaCentro li { float: none; margin-right: -0.25em; }</xmp></li><li><xmp>ul.enLineaDcha li { float: left; }</xmp></li><li><xmp>#informacion #indice ul.enLinea2 li, ul.enLinea2 li { display: inline-table; list-style-type: none; margin-top: 1em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; border-right-color: rgb(0, 0, 0); border-right-style: solid; border-right-width: 0.1em; padding-top: 0px; padding-right: 0.5em; padding-bottom: 0px; padding-left: 0.5em; text-align: center; line-height: 1.2em; float: left; }</xmp></li><li><xmp>#informacion ul.fichaServicio { font-size: 1em; margin-top: 0%; margin-right: 0%; margin-bottom: 2.5%; margin-left: 0%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; width: 100%; float: left; }</xmp></li><li><xmp>.fichaImg { display: inline; background-image: url(https://www.aemps.gob.es/diseno/img/fondo_ficha.jpg); border-top-width: 0.08em; border-right-width: 0.08em; border-bottom-width: 0.08em; border-left-width: 0.08em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(212, 212, 212); border-right-color: rgb(212, 212, 212); border-bottom-color: rgb(212, 212, 212); border-left-color: rgb(212, 212, 212); list-style-type: none; float: left; width: 29% !important; text-align: left; padding-top: 1% !important; padding-right: 1% !important; padding-bottom: 1% !important; padding-left: 1% !important; margin-top: 0% !important; margin-right: 1% !important; margin-bottom: 2% !important; margin-left: 1% !important; background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.posicionImg { border-top-width: 0.1em; border-right-width: 0.1em; border-bottom-width: 0.1em; border-left-width: 0.1em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(212, 212, 212); border-right-color: rgb(212, 212, 212); border-bottom-color: rgb(212, 212, 212); border-left-color: rgb(212, 212, 212); float: left; margin-right: 4% !important; }</xmp></li><li><xmp>#mesAnioPort { float: left; width: 23%; color: rgb(40, 109, 147); font-size: 1.5em; font-weight: bold; }</xmp></li><li><xmp>#menuInfMensual { float: left; width: 40% !important; border-right-width: thin; border-right-style: solid; border-right-color: rgb(40, 109, 147); border-left-width: thin; border-left-style: solid; border-left-color: rgb(40, 109, 147); margin-bottom: 5%; }</xmp></li><li><xmp>#menuInfMensual li { background-image: url(https://www.aemps.gob.es/diseno/img/fondo_ficha.jpg); border-top-width: 0.08em; border-right-width: 0.08em; border-bottom-width: 0.08em; border-left-width: 0.08em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(212, 212, 212); border-right-color: rgb(212, 212, 212); border-bottom-color: rgb(212, 212, 212); border-left-color: rgb(212, 212, 212); list-style-type: none; float: left; width: 90%; text-align: center; padding-top: 5%; padding-right: 5%; padding-bottom: 5%; padding-left: 5%; margin-top: 0%; margin-right: 1%; margin-bottom: 2%; margin-left: 1%; background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#listadoInfMensual { float: left; width: 35% !important; text-align: left; }</xmp></li><li><xmp>.celdaHistorico { background-color: rgb(41, 95, 142); margin-left: 1%; margin-top: 1%; padding-top: 1%; padding-right: 0px; padding-bottom: 1%; padding-left: 0px; float: left; width: 10%; text-align: center; }</xmp></li><li><xmp>@media print {   #idiomas { display: none; }  #cabDrch { display: none; }  #categorias { display: none; }  #zonaOpciones { display: none; }  #imagen_categoria { display: none; }  #flechas { display: none; }  #pie_drch ul { display: none; }  #contenido { width: 95%; }  #contenido.sinFoto { width: 95%; }  #cabecera { display: inline; float: none; }  #cabIzq { display: inline; float: none; }  #cabIzq img { display: inline; float: none; }  #logosMspsiAemps { display: inline; float: none; }  #migas_pan { display: inline; float: none; }  #migas_uno { display: inline; float: none; }  #migas_dos { display: inline; float: none; }  #pie { display: inline; float: none; }  #pie_izq { display: inline; float: none; }  #contenedor_principal { float: none; }  #contenedor_izq { float: none; }  #sombra_izq { float: none; }  #contenedor_centro { float: none; }  #contenido { float: none; }  #informacion { float: none; }  #titulo { float: none; }  #info_relacionada { float: none; }}</xmp></li><li><xmp>#avisoCookies { float: left; width: 97.8%; background-image: url(http://www.msssi.gob.es/diseno/img/fnd_cookies.jpg); background-color: rgb(206, 206, 206); padding-top: 0.15%; padding-right: 1%; padding-bottom: 0.15%; padding-left: 1%; color: rgb(255, 255, 255); border-bottom-width: 0.05em; border-bottom-style: solid; border-bottom-color: rgb(255, 255, 255); display: none; font-size: 0.8em; background-position: 0% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>table { border-top-width: 0.08em; border-right-width: 0.08em; border-bottom-width: 0.08em; border-left-width: 0.08em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-collapse: collapse; float: none; margin-left: auto; margin-right: auto; background-color: rgb(206, 218, 234); clear: both; margin-top: 3%; margin-bottom: 3%; }</xmp></li><li><xmp>.divFila { display: table-row; border-top-width: 0.1em; border-right-width: 0.1em; border-bottom-width: 0.1em; border-left-width: 0.1em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(40, 109, 147); border-right-color: rgb(40, 109, 147); border-bottom-color: rgb(40, 109, 147); border-left-color: rgb(40, 109, 147); padding-top: 0.5%; padding-right: 0.5%; padding-bottom: 0.5%; padding-left: 0.5%; width: 98.8%; float: left; margin-bottom: 1%; background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.divCelda100, .divCelda98, .divCelda95, .divCelda90, .divCelda85, .divCelda80, .divCelda75, .divCelda70, .divCelda65, .divCelda60, .divCelda55, .divCelda50, .divCelda45, .divCelda40, .divCelda35, .divCelda33, .divCelda30, .divCelda25, .divCelda20, .divCelda15, .divCelda10, .divCelda5 { display: table-cell; float: left; }</xmp></li><li><xmp>.separador { display: block; margin-top: 1%; margin-bottom: 1%; border-bottom-width: 0.15em; border-bottom-style: solid; border-bottom-color: rgb(51, 102, 153); float: left; width: 100%; line-height: 0.1em; }</xmp></li><li><xmp>.flotarIzq { float: left; }</xmp></li><li><xmp>.flotarDch { float: right; }</xmp></li><li><xmp>.flotarNo { float: none; }</xmp></li><li><xmp>.fotopieD25, .fotopieD50, .fotopieD75 { float: right; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 1.5em; }</xmp></li><li><xmp>.fotopieI25, .fotopieI50, .fotopieI75 { float: left; margin-top: 0px; margin-right: 1.5em; margin-bottom: 0px; margin-left: 0px; }</xmp></li><li><xmp>.bloqueInfo { margin-top: 0px; margin-bottom: 1em; margin-left: 0.5em; float: left; display: block; width: 80%; }</xmp></li><li><xmp>#cuerpo #informacion .bannerIlegalesBloque { width: 20%; float: left; display: block; margin-right: 2%; }</xmp></li><li><xmp>#cuerpo #informacion .bannerIlegales, #cuerpo #informacion .bannerIlegales100 { background-color: rgb(255, 255, 255); background-image: url(https://www.aemps.gob.es/diseno/img/fndAplicacion.jpg); border-top-width: 0.2em; border-right-width: 0.2em; border-bottom-width: 0.2em; border-left-width: 0.2em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(235, 235, 235); border-right-color: rgb(235, 235, 235); border-bottom-color: rgb(235, 235, 235); border-left-color: rgb(235, 235, 235); margin-left: auto; margin-right: auto; margin-bottom: 1em; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; float: left; clear: both; width: 93%; font-size: 1em; font-weight: bold; text-align: left; background-position: 0% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.imgBannerIlegales { border-top-width: 0.15em; border-right-width: 0.15em; border-bottom-width: 0.15em; border-left-width: 0.15em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(235, 235, 235); border-right-color: rgb(235, 235, 235); border-bottom-color: rgb(235, 235, 235); border-left-color: rgb(235, 235, 235); width: 40%; float: left; margin-right: 5%; }</xmp></li><li><xmp>#cuerpo #informacion .texbannerIlegales { float: left; display: block; width: 50%; margin-top: 2%; }</xmp></li><li><xmp>#cuerpo #informacion #categoriasIlegales { display: block; float: left; width: 77%; overflow-x: hidden; overflow-y: hidden; margin-bottom: 2%; }</xmp></li><li><xmp>#cuerpo #informacion .menuIlegales { float: left; margin-top: 0%; margin-right: 0%; margin-bottom: 0%; margin-left: 0%; padding-top: 0%; padding-right: 0%; padding-bottom: 0%; padding-left: 8%; width: 100%; list-style-type: none; list-style-position: initial; list-style-image: initial; }</xmp></li><li><xmp>#cuerpo #informacion .menuIlegales li { float: left; text-align: center; margin-top: 0%; margin-right: 3%; margin-bottom: 1%; margin-left: -1.5%; }</xmp></li><li><xmp>.textoIlegales { float: left; display: block; width: 77%; }</xmp></li><li><xmp>.BannerIntDcha { float: right; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0.1em; border-right-width: 0.1em; border-bottom-width: 0.1em; border-left-width: 0.1em; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; margin-left: 1em; background-image: url(https://www.aemps.gob.es/diseno/img/fondo_ficha.jpg); background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>.BannerIntDcha img { float: left; margin-right: 3%; border-top-color: rgb(212, 212, 212); border-right-color: rgb(212, 212, 212); border-bottom-color: rgb(212, 212, 212); border-left-color: rgb(212, 212, 212); border-top-width: 0.1em; border-right-width: 0.1em; border-bottom-width: 0.1em; border-left-width: 0.1em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; }</xmp></li><li><xmp>.BannerIntDcha img.icono-ancla { float: none; }</xmp></li><li><xmp>#cuerpo #informacion ul.bannerInt li, ul.bannerInt li { width: 100%; float: left; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0.1em; border-right-width: 0.1em; border-bottom-width: 0.1em; border-left-width: 0.1em; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; background-color: rgb(255, 255, 255); background-image: url(https://www.aemps.gob.es/diseno/img/fondo_ficha.jpg); margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: -1em; background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#cuerpo #informacion ul.bannerInt li img, ul.bannerInt li img { float: left; margin-top: 1%; margin-right: 3%; margin-bottom: 1%; margin-left: 0px; border-top-color: rgb(212, 212, 212); border-right-color: rgb(212, 212, 212); border-bottom-color: rgb(212, 212, 212); border-left-color: rgb(212, 212, 212); border-top-width: 0.1em; border-right-width: 0.1em; border-bottom-width: 0.1em; border-left-width: 0.1em; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; vertical-align: middle; }</xmp></li><li><xmp>#cuerpo #informacion ul.bannerInt li img.icono-ancla, ul.bannerInt li img.icono-ancla { float: none; }</xmp></li><li><xmp>#cuerpo #informacion ul.botonLista li { background-color: rgb(255, 255, 255); margin-top: 2%; margin-right: 2%; margin-bottom: 2%; margin-left: 2%; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; float: left; height: auto; min-height: 3em; width: 40%; list-style-type: none; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0.1em; border-right-width: 0.1em; border-bottom-width: 0.1em; border-left-width: 0.1em; display: inline; text-align: center; line-height: 1.5em; background-image: url(https://www.aemps.gob.es/diseno/img/fondo_ficha.jpg); background-position: 0% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#informacion #indice ul.columnas2 li, #informacion #indice ul.columnas3 li, #informacion #indice ul.columnas4 li, #informacion #indice ul.columnas5 li, #informacion ul.columnas2 li, #informacion ul.columnas3 li, #informacion ul.columnas4 li, #informacion ul.columnas5 li { float: left; line-height: 1.5em; margin-top: 0.5%; margin-right: 1.5%; margin-bottom: 0.5%; margin-left: 0.5%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>#informacion #indice ul.columnas2boton li, #informacion #indice ul.columnas3boton li, #informacion #indice ul.columnas4boton li, #informacion #indice ul.columnas5boton li, #informacion ul.columnas2boton li, #informacion ul.columnas3boton li, #informacion ul.columnas4boton li, #informacion ul.columnas5boton li { float: left; line-height: 1.5em; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-image: url(https://www.aemps.gob.es/diseno/img/fondo_ficha.jpg); padding-top: 1.5%; padding-right: 1.5%; padding-bottom: 1.5%; padding-left: 1.5%; display: block; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0.1em; border-right-width: 0.1em; border-bottom-width: 0.1em; border-left-width: 0.1em; margin-top: 0.5%; margin-right: 1%; margin-bottom: 0.5%; margin-left: 0%; min-height: 3em; vertical-align: middle; background-position: 50% 100%; background-repeat: repeat no-repeat; }</xmp></li><li><xmp>#cuerpo #informacion .bloque-nav-eventoHMA { margin-right: 2%; float: left; width: 20%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }</xmp></li><li><xmp>.formularioHMA { width: 74%; margin-top: 0%; margin-right: 0%; margin-bottom: 0%; margin-left: 0%; padding-top: 0px; padding-right: 1.5%; padding-bottom: 1.5%; padding-left: 1.5%; float: left; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 97
+
+			Código: H56-Usando el atributo dir en un elemento en linea para resolver problemas con secuencias direccionales anidadas 
+			Criticidad: Baja
+			Observación: Existen 6 segmentos de texto que declaran usar un idioma espec&iacute;fico. Verifique que estos textos corresponda al idioma que se indica, sea un valor valido y as&iacute; tambien que no se requiera indicar la dirrecci&oacute;n de lectura (dir=rtl).<pre><ul><li><xmp><span lang="es">Bienvenidos</span></xmp></li><li><xmp><span lang="ca">Benvinguts</span></xmp></li><li><xmp><span lang="eu">Ongi etorri</span></xmp></li><li><xmp><span lang="gl">Benvidos</span></xmp></li><li><xmp><span lang="va">Benvinguts</span></xmp></li><li><xmp><span lang="en">Welcome</span></xmp></li></ul></pre>.<br/>
+			Recomendación: En caso de que un texto necesite ser leido en sentido contrario al de defecto (izquierda-derecha), se debe especificar utilizando el atributo dir.  Para mayor informaci&oacute;n refierase a <a haref="https://www.w3.org/TR/html4/struct/dirlang.html">Informaci&oacute;n sobre el idioma y la direcci&oacute;n de lectura de un texto</a>.<br/>
+			Número de errores: 6
+
+			Código: C6-Proporcionando contenido basado en marcadores estructurales
+			Criticidad: Baja
+			Observación: De las 531 reglas CSS en la p&aacute;gina, 2 de ellas usan declaraciones de elementos de forma absoluta (position:asolute).<pre><ul><li><xmp>@media (max-width: 1200px) { 
+  #aempsh1 { font-size: 1.2em; position: absolute; left: 4%; top: 70px; line-height: 22px; margin-top: 20px; }
+  #cabIzq { margin-top: -10px; }
+  #accesos ul li a { font-size: 0.9em; }
+  .logo40 { position: absolute; top: 11%; left: 6.8%; z-index: 99999999999999; }
+}</xmp></li><li><xmp>table ul li { list-style-position: outside; list-style-type: disc; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 2
+
+			Código: C8-Usando la propiedad letter-spacing de CSS para controlar el espacio dentro de una palabra
+			Criticidad: Baja
+			Observación: No se han detectado textos sospechosos en los que palabras se han formado usando espacios en blanco..<br/>
+			Recomendación: En el caso de requerir por efectos visuales el destarcar cada letra de una palabra por medio de separaciones, utilice la propiedad CSS <code>letter-spacing</code>.<br/>
+			Número de errores: 0
+
+			Código: C27B-Haciendo el DOM ordenado para marcar el orden visual: B) Elementos con posicionamiento absoluto
+			Criticidad: Media
+			Observación: De las 529 reglas CSS en la p&aacute;gina, 4 de ellas usan declaraciones de elementos de forma absoluta (position:asolute|relative|fix).<pre><ul><li><xmp>#idiomas { float: right; margin-top: 0px; margin-right: 0px; margin-left: 0px; width: 100%; margin-bottom: 0.2%; position: relative; }</xmp></li><li><xmp>@media (max-width: 1200px) { 
+  #aempsh1 { font-size: 1.2em; position: absolute; left: 4%; top: 70px; line-height: 22px; margin-top: 20px; }
+  #cabIzq { margin-top: -10px; }
+  #accesos ul li a { font-size: 0.9em; }
+  .logo40 { position: absolute; top: 11%; left: 6.8%; z-index: 99999999999999; }
+}</xmp></li><li><xmp>fieldset { margin-right: auto; margin-left: auto; position: relative; background-color: rgb(231, 234, 241); border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(213, 213, 213); border-right-color: rgb(213, 213, 213); border-bottom-color: rgb(213, 213, 213); border-left-color: rgb(213, 213, 213); border-top-width: thin; border-right-width: thin; border-bottom-width: thin; border-left-width: thin; padding-top: 0px; padding-right: 1%; padding-bottom: 1%; padding-left: 1%; clear: both; text-align: left; }</xmp></li><li><xmp>fieldset legend { position: relative; top: -0.5em; left: 0.2em; text-align: left; color: rgb(34, 94, 154); font-size: 1.2em; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS, estos no deben estructurarse de tal manera que al momento de obviarlos, la secuencia y significado del contenido se vea alterado.  Para las reglas indicadas anteriormente verificar..<br/>
+			Número de errores: 4
+
+		Criterio: 1.3.1..Información y relaciones
+		Nivel: A
+
+			Código: G140-Separando la información y la estructura de la presentación para permitir diferentes presentaciones
+			Criticidad: Alta
+			Observación: El sitio se ha estructurado mezclando el contenido con la presentaci&oacute;n por medio de la definici&oacute;n de estilos CSS en el contenido HTML. Los componentes que presentan este problema son: <pre><code><ul><li><xmp><div id="avisoCookies" style="overflow-x: hidden; overflow-y: hidden; display: block; height: 145.1022502334067px; margin-top: 0px; margin-bottom: 0px; padding-top: 0.7917706056780587px; padding-bottom: 0.7917706056780587px; "><h2>Información importante sobre cookies</h2><p>La web de la Agencia Española de Medicamentos y Productos Sanitarios utiliza cookies propias y de terceros para mejorar la navegación. Las cookies utilizadas no contienen ningún tipo de información de carácter personal. Si continua navegando entendemos que acepta su uso.</p><p>Dispone de más información acerca de las cookies y cómo impedir su uso en nuestra <a href="/avisoLegal/home.htm#cookies">Política de cookies</a>.</p><p class="texto_derecha"><input type="button" name="aceptarCookie" id="aceptarCookie" value="Aceptar"></p></div></xmp></li></ul></code></pre>.<br/>
+			Recomendación: El separar el contenido de la presentaci&oacute;n facilita la adaptaci&oacute;n de los contenidos a diferentes dispositivos. Se recomienda el uso de hojas de estilo para definir la presentaci&oacute;n de los componentes indicados..<br/>
+			Número de errores: 1
+
+			Código: F87-Fallo en el criterio 1.3.1 debido a la inserción de contenidos no decorativos mediante el uso de :before y :after pseudo-elementos y la propiedad content de los CSS
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H39-Usando elementos caption para asociar títulos de las tablas de datos a los datos de la tabla
+			Criticidad: Media
+			Observación: Se han encontrado 1 tabla(s) en la p&aacute;gina que no ha(n) sido identificada(s) por medio del elemento caption o el atributo summary.  Las tablas que presentan este inconveniente son:<pre><ul><li><xmp>Buscar 	</xmp></li></ul></pre>.<br/>
+			Recomendación: El uso del elemento caption en una tabla permite a los lectores de pantalla navegar directamente al caption si este esta presente..<br/>
+			Número de errores: 1
+
+			Código: H63-Usando el atributo scope para asociar las celdas de encabezado con las celdas de datos en las tablas
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H73-Usando el atributo summary del elemento table para dar una visión general de las tablas de datos
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se han encontrado tablas con un atriuto summary..<br/>
+			Recomendación: En el caso de hacer uso de tablas e identificarlas con el atributo summary este debe ser valido para identificar la tabla o explicar su estructura en caso de tablas de datos complejas..<br/>
+			Número de errores: 0
+
+			Código: H48-Usando ol, ul y dl para listas o grupos de enlaces
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H85-Usando OPTIONGROUP para agrupar elementos OPTION dentro de un SELECT
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H49-Usando marcas semánticas para marcar textos enfatizados o textos especiales
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H51-Usando tabla de marcado para presentar información tabular
+			Criticidad: Baja
+			Observación: En 1 tabla(s) no se ha(n) sido definido correctamente, no se hace uso de elementos td, tr, th o alg&uacute;no de ellos no esta presente.  Las tablas que presentan este inconveniente son:<pre><ul><li><xmp><table>					<tbody><tr>						<td><label for="search">Buscar</label> <input type="text" size="18" id="search" name="search"></td>						<td><input type="submit" class="buscadorBoton" value="Aceptar"></td>					</tr>				</tbody></table></xmp></li></ul></pre>.<br/>
+			Recomendación: Al utilizar tablas de datos para presentar informaci&oacute;n tabular use los elementos th (encabezados) y td (datos)..<br/>
+			Número de errores: 1
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><ul><li>[H2] [OK] Información importante sobre cookies</li></ul><ul><li>[H1] [OK] Agencia Española de Medicamentos y Productos Sanitarios - AEMPS</li><li>[H1] [OK] 
+                                                    Portada Cosméticos e higiene</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: OAW3-Usando elementos legend correctamente
+			Criticidad: Baja
+			Observación: No se han encontrado elementos <code>fieldset</code>.<br/>
+			Recomendación: Es importante que el primer elemento de un fieldset sea un elemento legend que describa el tipo de informaci&oacute;n que se est&aacute; agrupando..<br/>
+			Número de errores: 0
+
+			Código: OAW4-Comprobando el uso de cabeceras múltiples dentro de una fila
+			Criticidad: Media
+			Observación: Las tablas encontradas en la p&aacute;gina han sido estructuradas adecuadamente utilizando elementos th(encabezados).<br/>
+			Recomendación: Los elementos <code>th</code> deben emplearse correctamente para que el usuario identifique sin dificultades los contenidos de las tablas.<br/>
+			Número de errores: 0
+
+			Código: OAW5-Comprobando la validez de los roles ARIA
+			Criticidad: Alta
+			Observación: No se han encontrado elementos con atributo role..<br/>
+			Recomendación: Es recomendable apegarse a la la especificaci&oacute;n WAI-ARIA, que define un conjunto de atributos HTML adicionales que se pueden aplicar a los elementos para proporcionar sem&aacute;ntica adicional y mejorar la accesibilidad donde sea que falte.<br/>
+			Número de errores: 0
+
+			Código: OAW6-Comprobando que las celdas de la tabla tengan datos
+			Criticidad: Baja
+			Observación: Dentro de las tablas encontradas en la p&aacute;gina no se detectaron celdas sin contenido..<br/>
+			Recomendación: Las celdas vac&iacute;as en las tablas suelen causar problemas para los usuarios que ocupan tecnolog&iacute;as de accesibilidad..<br/>
+			Número de errores: 0
+
+		Criterio: 1.3.3..Características sensoriales
+		Nivel: A
+
+	Pauta: 1.4..Distinguible
+	Descripcion: Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo
+
+		Criterio: 1.4.2..Control del audio
+		Nivel: A
+
+		Criterio: 1.4.4..Redimensionamiento del texto
+		Nivel: AA
+
+			Código: C28-Especificando el tamaño de un contenedor de texto usando unidades em
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C14-Usando unidades em para tamaños de fuente
+			Criticidad: Alta
+			Observación: De las 38 reglas CSS en la p&aacute;gina para definir el tamaño de letra (font-size), 6 de ellas usan declaraciones de elementos de forma absoluta (position:asolute) o tiene un valor incorrecto.<pre><ul><li><xmp>#zona_buscador table label { font-size: 0.75em; color: rgb(34, 94, 154); font-weight: bold; margin-right: 0.5em; }</xmp></li><li><xmp>.menuCategoria li { display: inline; border-right-width: 0.08em; border-right-style: solid; border-right-color: rgb(255, 255, 255); float: left; font-size: 0.95em; overflow-x: hidden; overflow-y: hidden; }</xmp></li><li><xmp>h4 { font-size: 1.05em; }</xmp></li><li><xmp>h6 { font-size: 0.85em; }</xmp></li><li><xmp>.bibliogInfMensual { font-size: smaller; }</xmp></li><li><xmp>select { font-size: 0.72em; }</xmp></li></ul></pre>.<br/>
+			Recomendación: En el caso de hacer uso de estilos CSS para definir el tamaño de letra del contenido, utilice valores relativos por medio de unidades "em", % o valores  xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, o larger. Al usar medidas de fuente absolutas, se limita el contenido textual de la p&aacute;gina ya que no se podr&iacute;a adaptar a diferentes resoluciones de pantalla..<br/>
+			Número de errores: 6
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C13-Usando tamaños de fuente nombrados
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C12-Usando porcentajes para tamaños de fuente
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 1.4.8..Presentación visual
+		Nivel: AAA
+
+			Código: G146-Usando diseño líquido
+			Criticidad: Media
+			Observación: La dimensi&oacute;n de ancho de la p&aacute;gina NO supera a la del navegador..<br/>
+			Recomendación: Es recomendable que la p&aacute;gina presente un diseño liquido y no haga necesrio el uso de SCROLL HORIZONTAL.  Pruebe el comportamiento de los contenidos en diferentes resoluciones de pantalla..<br/>
+			Número de errores: 0
+
+			Código: C20-Usando medidas relativas para establecer anchos de columna para que las líneas puedan promediar 80 caracteres o menos cuando se cambia el tamaño del navegador
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C19-Especificar la alineación, ya sea a la izquierda o a la derecha en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C21-Especificando espacio entre líneas en CSS
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 2.Operable
+Descripcion: Los componentes de la interfaz de usuario y la navegación deben ser operables.
+
+	Pauta: 2.1..Accesible por teclado
+	Descripcion: Proporcionar acceso a toda la funcionalidad mediante el teclado
+
+		Criterio: 2.1.1..Teclado
+		Nivel: A
+
+	Pauta: 2.2..Tiempo suficiente
+	Descripcion: Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido
+
+		Criterio: 2.2.2..Pausar, detener, ocultar
+		Nivel: A
+
+			Código: G11A-Creando contenido que parpadea al menos 5 segundos: A) Elementos con animación blink
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>blink</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+			Código: G11B-Creando contenido que parpadea al menos 5 segundos: B) Elementos con animación marquee
+			Criticidad: Alta
+			Observación: En el sitio no se han encontrado elementos <code>marquee</code> que puedan producir distracci&oacute;n al usuario..<br/>
+			Recomendación: El uso de elementos que est&aacute;n en constante movimiento en la p&aacute;gina no es recomendable.  El parpadeo de texto o texto en movimiento es un problema para personas de ciertos tipos de dificultades de aprendisaje y personas con baja visi&oacute;n..<br/>
+			Número de errores: 0
+
+	Pauta: 2.3..Convulsiones
+	Descripcion: No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones
+
+	Pauta: 2.4..Navegable
+	Descripcion: Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran
+
+		Criterio: 2.4.1..Evitar bloques
+		Nivel: A
+
+		Criterio: 2.4.2..Páginas tituladas
+		Nivel: A
+
+			Código: G88-Proporcionar títulos descriptivos para páginas web
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H25-Proporcionando un título usando el elemento title
+			Criticidad: Alta
+			Observación: La p&aacute;gina tiene un t&iacute;tulo, aseg&uacute;rese que sea descriptivo y que est&eacute; acorde al contenido de la p&aacute;gina. <pre><ul><title>Agencia Española de Medicamentos y Productos Sanitarios - Cosméticos e higiene - Portada</title></ul></pre>.<br/>
+			Recomendación: El t&iacute;tulo de la p&aacute;gina debe ser descriptivo y brindar una persepci&oacute;n del contenido de la misma..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.3..Orden del foco
+		Nivel: A
+
+			Código: H4-Creando un orden lógico en el orden del tabulador a través de los enlaces, controles de formulario, y objetos
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.4..Propósito de los enlaces (En contexto)
+		Nivel: A
+
+			Código: H24-Proporcionar texto alternativo para el elemento área de un mapa de imágenes
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado mapas de imagen.<br/>
+			Recomendación: Es indispensable el uso de la alternativa textual en un mapa de im&aacute;genes y cada una de sus &aacute;reas.<br/>
+			Número de errores: 0
+
+			Código: H2C-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: C) Verificar que elementos adyacentes dentro de una tabla no redireccionen al mismo lugar 
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H33-Complementando el texto del enlace con el atributo title
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: C7-Usando CSS para ocultar una porcion de texto de un enlace
+			Criticidad: Baja
+			Observación: En la p&aacute;gina se est&aacute; utilizando en 78 ocaci&oacute;n(es) la opci&oacute;n para ocultar contenido, verifique que este sea relevante, o que sea facilmente accesible.<br/>
+			Recomendación: Al ocultar una parte de informaci&oacute;n de la p&aacute;gina, se puede llegar a confundir al usuario.<br/>
+			Número de errores: 78
+
+			Código: H30-Proporcionar un texto de enlace que describa el propósito del enlace para los elemtos de anclaje (a)
+			Criticidad: Alta
+			Observación: En 8 im&aacute;gen(es) de las 14 que hay en la p&aacute;gina, tiene un valor nulo o vacio verifique que corresponda a im&aacute;genes decorativas.  Las im&aacute;genes que presentan este inconveniente son:<pre><ul><li><xmp><img src="/diseno/img/opcion_select.gif" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_Cosmeticos.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_ProdHigiene.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_Cosmetovigilancia.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_NotasInfo.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_notaSeguridad.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/port_Circulares.jpg" alt=""></xmp></li><li><xmp><img class="posicionImg" src="../../diseno/img/banners/bol-ps-cos.jpg" alt=""></xmp></li></ul></pre>.<br/>
+			Recomendación: Al hacer uso de im&aacute;genes en la estructura y diseño de p&aacute;gina, cada im&aacute;gen deber&aacute;a tener un atributo de texto alternativo <strong>alt</strong> y este debe describir lo que representa la im&aacute;gen..<br/>
+			Número de errores: 8
+
+			Código: H2B-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: B) Verificar qu enlaces de elementos adyacentes no redireccionen al mismo lugar
+			Criticidad: Alta
+			Observación: En 1 segmento de contenido se han encontrado enlaces adyacentes que tienen un mismo destino, lo cual puede producir reduncacia de informaci&oacute;n y confusion para los usuarios que hacen uso de tecnolog&iacute;as de apoyo. Los enlaces que presentan este inconveniente son:<pre><ul><li><xmp><a href="../../home.htm"><img src="../../diseno/img/logo_aemps.jpg" alt="Agencia Española de Medicamentos y Productos Sanitarios. Acceso a la página principal"></a><a href="../../home.htm"><h1 id="aempsh1">Agencia Española de Medicamentos y Productos Sanitarios - AEMPS</h1></a></xmp></li></ul></pre>.<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante por medio enlaces que esten dirigiendo a un mismo destino en un mismo segmento de contenido..<br/>
+			Número de errores: 1
+
+			Código: H2A-Combinando imagenes y textos adyacentes en un enlace para un mismo recurso: A) Verificar que el contenido de lenlace y elatributo  alt de la imagen no sean iguales
+			Criticidad: Alta
+			Observación: Los enlaces con im&aacute;genes internas no presentan informaci&oacute;n redundante..<br/>
+			Recomendación: Se debe evitar informaci&oacute;n redudante en enlaces que tenga una representaci&oacute;n ic&oacute;nica, esto por ejemplo al repetir el contenido textual del enlace con el del alt de la im&aacute;gen..<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.6..Encabezados y etiquetas
+		Nivel: AA
+
+			Código: G130-Proporcionar títulos descriptivos
+			Criticidad: Alta
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+		Criterio: 2.4.5..Re-autentificación
+		Nivel: AA
+
+			Código: H59-Usando el elemneto link y herramientas de navegación
+			Criticidad: Alta
+			Observación: Los 2 links de relacion que tiene la p&aacute;gina se han definido correctamente.<br/>
+			Recomendación: Es importante colocar la etiqueta link &uacute;nicamente dentro del encabezado de la p&aacute;gina, e indicar la relaci&oacute;n que guarda con la misma.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.7..Foco visible
+		Nivel: AA
+
+			Código: C15-Usando CSS para cambiar la presentación de un componente de interfaz de usuario cuando recibe el foco
+			Criticidad: Baja
+			Observación: No se han detectado declaraciones del foco de teclado.<br/>
+			Recomendación: Verificar que el foco sea visible y que este en correcto posicionamiento en la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 2.4.10..Encabezados se sección
+		Nivel: AAA
+
+			Código: G141-Organizar una página usando encabezados
+			Criticidad: Alta
+			Observación: El sitio ha sido estructurado correctamente por medio de encabezamientos, facilitando la navegaci&oacute;n.  La navegaci&oacute;n detectada es:<pre><ul><ul><li>[H2] [OK] Información importante sobre cookies</li></ul><ul><li>[H1] [OK] Agencia Española de Medicamentos y Productos Sanitarios - AEMPS</li><li>[H1] [OK] 
+                                                    Portada Cosméticos e higiene</li></ul></ul></pre>.<br/>
+			Recomendación: Estos permiten a los agentes de usuario identificar autom&aacute;ticamente los encabezados de secci&oacute;n..<br/>
+			Número de errores: 0
+
+
+Principio: 3.Comprensible
+Descripcion: La información y el manejo de la interfaz de usuario deben ser comprensibles
+
+	Pauta: 3.1..Legible
+	Descripcion: Hacer que los contenidos textuales resulten legibles y comprensibles
+
+		Criterio: 3.1.1..Idioma de la página
+		Nivel: A
+
+			Código: H57-Usando el atributo language en el elemento html
+			Criticidad: Alta
+			Observación: La definici&oacute;n de lenguaje en la p&aacute;gina se ha realizado exitosamente.<br/>
+			Recomendación: Verificar la especificaci&oacute;n del lenguaje, es importante especificar en que idioma se est&aacute; presentando la p&aacute;gina.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.3..Palabras inusuales
+		Nivel: AAA
+
+			Código: H60-Usando el elemento link para enlazar a un glosario
+			Criticidad: Baja
+			Observación: La p&aacute;gina podr&iacute;a requerir un link a un glosario de palabras complejas.<br/>
+			Recomendación: Cuando se utiliza palabras complejas es recomendable colocar un glosario que las defina.<br/>
+			Número de errores: 1
+
+			Código: H40-Usando listas de definición
+			Criticidad: Baja
+			Observación: No se han encontrado listas dentro de la p&aacute;gina.<br/>
+			Recomendación: La estructura de la lista de definici&oacute;n, deben ser empleadas correctamente, colocando cada uno de sus componentes sin descartar ninguno.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.6..Pronunciación
+		Nivel: AAA
+
+			Código: H62-Usando el elemento ruby
+			Criticidad: Baja
+			Observación: En la p&aacute;gina no se han encontrado etiquetas ruby.<br/>
+			Recomendación: Es importante supervisar el correcto uso de esta etiqueta para caracteres especiales.<br/>
+			Número de errores: 0
+
+		Criterio: 3.1.4..Abreviaturas
+		Nivel: AAA
+
+			Código: H70-Usando elementos frame para agrupar bloques de material repetido
+			Criticidad: Alta
+			Observación: La p&aacute;gina no tiene etiquetas frame.<br/>
+			Recomendación: Los elementos frame no deben usarse para maquetar contenido en la p&aacute;gina, se debe utilizar hojas de estilo.<br/>
+			Número de errores: 0
+
+	Pauta: 3.2..Predecible
+	Descripcion: Hacer que las páginas web aparezcan y operen de manera predecible
+
+		Criterio: 3.2.2..Al introducir datos
+		Nivel: A
+
+			Código: H32-Proporcionar botones de envio
+			Criticidad: Media
+			Observación: Verificar que el formulario tenga m&eacute;todo de env&iacute;o.<br/>
+			Recomendación: De los 2 formularios de la p&aacute;gina, existen 1 que no tienen m&eacute;todo de env&iacute;o.<br/>
+			Número de errores: 1
+
+		Criterio: 3.2.5..Cambios a petición
+		Nivel: AAA
+
+			Código: H83-Usando el atributo target para abrir una nueva ventana a petición del usuario e indicando en ventana a petición del usuario e indicando en el texto de este enlace
+			Criticidad: Media
+			Observación: 3 enlace(s) indica(n) como destino una nueva ventana, verifique que el enlace contiene informaci&oacute;n que indica que el enlace se abrir&aacute; en una nueva ventana. <pre><ul><li><xmp><a href="http://www.mscbs.gob.es/home.htm" target="_blank"><img src="../../diseno/img/logo_Ministerio.jpg" alt="Ministerio de Sanidad, Consumo y Bienestar Social. Acceso a la página principal del MSCBS"></a></xmp></li><li><xmp><a href="http://twitter.com/#!/AEMPSGOB" target="_blank"><img src="/diseno/img/twitter_icon.gif" alt="Síguenos en Twitter. Se abre en una nueva ventana"></a></xmp></li><li><xmp><a href="https://www.youtube.com/c/AempsGobEsinfo" target="_blank"><img src="/diseno/img/youtube_icon.gif" alt="Canal de Youtube de la AEMPS. Se abre en una nueva ventana"></a></xmp></li></ul></pre>.<br/>
+			Recomendación: Un ejemplo podr&iacute;a ser: <code><xmp><a href="ayuda.html" target="_blank">Mostrar ayuda (abre nueva ventana)</a></xmp></code>..<br/>
+			Número de errores: 3
+
+			Código: H76-Usando meta refresh para crear un redireccionamiento de cliente instantánea
+			Criticidad: Media
+			Observación: En la p&aacute;gina no se ha detectado el uso de la etiqueta meta conjuntamente con el atributo refresh para actualizaci&oacute;n de la p&aacute;gina..<br/>
+			Recomendación: En el caso de quere hacer uso de la misma, considerar que la continua actualizaci&oacute;n de la p&aacute;gina no es recomendable, puede causar confusi&oacute;n en el usuario..<br/>
+			Número de errores: 0
+
+	Pauta: 3.3..Entrada de datos asistida
+	Descripcion: Ayudar a los usuarios a evitar y corregir los errores
+
+		Criterio: 3.3.1..Identificación de errores
+		Nivel: A
+
+		Criterio: 3.3.2..Etiquetas o instrucciones
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H71-Proporcionando una descripcion para grupos de controles de formularios usando los elementos fieldset y legend
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: OAW2-Proporcionando contenido en todos los elementos
+			Criticidad: Baja
+			Observación: En la p&aacute;gina existen 1 elementos sin contenido. <pre><ul><li><xmp><a name="inicio"> </a></xmp></li</ul></pre>.<br/>
+			Recomendación: Es importante evitar declarar elementos sin contenido.<br/>
+			Número de errores: 1
+
+		Criterio: 3.3.5..Ayuda
+		Nivel: AAA
+
+			Código: G71-Proporcionando un enlace de ayuda en cada pagina web
+			Criticidad: Baja
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+			Código: H89-Usando el atributo title para proporcionar ayuda contextual
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+
+
+Principio: 4.Robusto
+Descripcion: El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.
+
+	Pauta: 4.1..Compatible
+Descripcion: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas
+
+		Criterio: 4.1.1..Procesamiento
+		Nivel: A
+
+			Código: G134-Validación de páginas web
+			Criticidad: Alta
+			Observación: Se ha producido un error al intentar validar la pagina </strong> en <a href='https://validator.w3.org/' target='_blank'>https://validator.w3.org/</a>.   Puede revisar usted manualmente por medio del siguiente enlace: <a href='https://validator.w3.org/nu/?doc=https://www.aemps.gob.es/cosmeticosHigiene/portada/home.htm' target='_blank'>Validación W3C</a>.<br/>
+			Recomendación: .<br/>
+			Número de errores: 1
+
+		Criterio: 4.1.2..Nombre, función, valor
+		Nivel: A
+
+			Código: H44-Usando elementos label para asociar etiquetas de texto con controles de formulario
+			Criticidad: Alta
+			Observación: Los <strong>1</strong> elementos de entrada (input|select|textarea) presentes en la p&aacute;gina tienen una etiqueta asociada (label|title)..<br/>
+			Recomendación: .<br/>
+			Número de errores: 0
+
+			Código: H64-Usando el atributo title en los elementos frame e iframe 
+			Criticidad: Alta
+			Observación: En la p&aacute;gina no se han encontrado elementos frames..<br/>
+			Recomendación: En caso de usar elementos frame o iframe acompañelos por una descripci&oacute;n del mismo a travez del atributo <code>title</code>..<br/>
+			Número de errores: 0
+
+			Código: H65-Usando el atributo title para identificar controles de formulario cuando el elemento label no puede ser utilizado
+			Criticidad: Media
+			Observación: 
+			Recomendación: 
+			Número de errores: 0
+

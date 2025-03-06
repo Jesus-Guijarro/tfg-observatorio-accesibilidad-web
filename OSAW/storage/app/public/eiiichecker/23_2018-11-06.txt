@@ -1,0 +1,17 @@
+REPORTE PÁGINA WEB: http://www.gva.es/es/inicio/ciudadanos
+FECHA EVALUACIÓN: 2018-11-06
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         
+	FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función		 
+	VECES ENCONTRADO: 2
+CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      
+	TÉCNICA G13: Describir lo que sucederá antes de que se realice un cambio en un control de formulario que cause que ocurra un cambio de contexto		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA G167: Usar un botón adyacente para etiquetar el propósito de un campo		 
+	VECES ENCONTRADO: 2
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA G131: Proporcionar etiquetas descriptivas		 
+	VECES ENCONTRADO: 2
+CRITERIO DE CONFORMIDAD: 4.1.1: Procesamiento      		 
+	VECES ENCONTRADO: 6

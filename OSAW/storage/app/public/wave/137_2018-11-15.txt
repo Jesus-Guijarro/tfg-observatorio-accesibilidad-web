@@ -1,0 +1,34 @@
+REPORTE PÁGINA WEB: http://www.ciencia.gob.es/portal/site/MICINN/menuitem.00d7c011ca2a3753222b7d1001432ea0/?vgnextoid=f4c81f4368aef110VgnVCM1000001034e20aRCRD
+FECHA EVALUACIÓN: 2018-11-15
+
+PROBLEMAS
+Empty link	  VECES ENCONTRADO: 2
+Missing alternative text	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Redundant link	  VECES ENCONTRADO: 3
+Long alternative text	  VECES ENCONTRADO: 5
+Broken same-page link	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 10
+Redundant title text	  VECES ENCONTRADO: 16
+Justified text	  VECES ENCONTRADO: 38
+Redundant alternative text	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 5
+Linked image with alternative text	  VECES ENCONTRADO: 19
+Form label	  VECES ENCONTRADO: 1
+Image button with alternative text	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 3
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 20
+
+
+

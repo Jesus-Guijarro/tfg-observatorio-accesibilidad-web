@@ -1,0 +1,6 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Inicio?opendocument&lang=2&nivel=1
+FECHA EVALUACIÓN: 2018-12-19
+
+CRITERIO DE CONFORMIDAD: 2.4.6: Encabezados y etiquetas       
+	TÉCNICA G130: Proporcionar encabezados descriptivos		 
+	VECES ENCONTRADO: 4

@@ -1,0 +1,27 @@
+REPORTE PÁGINA WEB: https://www.agenciatributaria.es
+FECHA EVALUACIÓN: 2018-11-05
+
+ALERTAS
+Noscript element	  VECES ENCONTRADO: 11
+Long alternative text	  VECES ENCONTRADO: 1
+Justified text	  VECES ENCONTRADO: 2
+Link to PDF document	  VECES ENCONTRADO: 2
+Redundant alternative text	  VECES ENCONTRADO: 1
+Unlabeled form element with title	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 28
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 5
+Null or empty alternative text	  VECES ENCONTRADO: 6
+Alternative text	  VECES ENCONTRADO: 13
+Linked image with alternative text	  VECES ENCONTRADO: 35
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 4
+
+
+

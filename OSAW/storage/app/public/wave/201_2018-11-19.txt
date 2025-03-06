@@ -1,0 +1,41 @@
+REPORTE PÁGINA WEB: https://www.uv.es/
+FECHA EVALUACIÓN: 2018-11-19
+
+PROBLEMAS
+Missing alternative text	  VECES ENCONTRADO: 427
+Empty link	  VECES ENCONTRADO: 10
+Missing form label	  VECES ENCONTRADO: 11
+Linked image missing alternative text	  VECES ENCONTRADO: 8
+Empty button	  VECES ENCONTRADO: 4
+Empty heading	  VECES ENCONTRADO: 2
+
+
+
+ALERTAS
+Accesskey	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 5
+Redundant link	  VECES ENCONTRADO: 56
+A nearby image has the same alternative text	  VECES ENCONTRADO: 3
+Redundant alternative text	  VECES ENCONTRADO: 10
+Skipped heading level	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 63
+Long alternative text	  VECES ENCONTRADO: 3
+JavaScript jump menu	  VECES ENCONTRADO: 11
+Very small text	  VECES ENCONTRADO: 4
+Missing fieldset	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Form label	  VECES ENCONTRADO: 1
+Null or empty alternative text	  VECES ENCONTRADO: 15
+Linked image with alternative text	  VECES ENCONTRADO: 80
+Alternative text	  VECES ENCONTRADO: 2
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 50
+
+
+

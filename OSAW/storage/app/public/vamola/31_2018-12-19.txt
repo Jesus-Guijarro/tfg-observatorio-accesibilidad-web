@@ -1,0 +1,4142 @@
+REPORTE PÁGINA WEB: https://www.alicante.es/es
+FECHA EVALUACIÓN: 2018-12-19
+
+-PROBLEMAS CONOCIDOS-
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 57: input element, type of "text", missing an associated label.  
+
+	REPARAR:> Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.      
+
+		LINEA: 191, COLUMNA: 2: <input placeholder="Introduzca texto a buscar" type="text" id="edit-busqueda" name="busqueda" value= ...
+
+  
+
+	REVISAR: 213: input element, type of "text", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 191, COLUMNA: 2: <input placeholder="Introduzca texto a buscar" type="text" id="edit-busqueda" name="busqueda" value= ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)  
+
+	REVISAR: 117: i (italic) element used.  
+
+	REPARAR:> Replace your i elements with em or strong.      
+
+		LINEA: 154, COLUMNA: 19: <i class="fa fa-chevron-up"></i>
+
+
+
+		LINEA: 250, COLUMNA: 7: <i class="icon-align-justify"></i>
+
+
+
+		LINEA: 257, COLUMNA: 11: <i class="icon-home"></i>
+
+
+
+		LINEA: 1133, COLUMNA: 54: <i class="fa fa-circle fa-stack-2x"></i>
+
+
+
+		LINEA: 1133, COLUMNA: 94: <i class="fa fa-trophy fa-inverse fa-stack-1x"></i>
+
+
+
+		LINEA: 1144, COLUMNA: 54: <i class="fa fa-circle fa-stack-2x"></i>
+
+
+
+		LINEA: 1144, COLUMNA: 94: <i class="fa fa-music fa-inverse fa-stack-1x"></i>
+
+
+
+		LINEA: 1155, COLUMNA: 54: <i class="fa fa-circle fa-stack-2x"></i>
+
+
+
+		LINEA: 1155, COLUMNA: 94: <i class="fa fa-eur fa-inverse fa-stack-1x"></i>
+
+
+
+		LINEA: 1166, COLUMNA: 54: <i class="fa fa-circle fa-stack-2x"></i>
+
+
+
+		LINEA: 1166, COLUMNA: 94: <i class="fa fa-book fa-inverse fa-stack-1x"></i>
+
+
+
+		LINEA: 1177, COLUMNA: 54: <i class="fa fa-circle fa-stack-2x"></i>
+
+
+
+		LINEA: 1177, COLUMNA: 94: <i class="fa fa-users fa-inverse fa-stack-1x"></i>
+
+
+
+		LINEA: 1188, COLUMNA: 54: <i class="fa fa-circle fa-stack-2x"></i>
+
+
+
+		LINEA: 1188, COLUMNA: 94: <i class="fa fa-camera fa-inverse fa-stack-1x"></i>
+
+
+
+		LINEA: 1252, COLUMNA: 137: <i class="fa fa-square fa-stack-2x"></i>
+
+
+
+		LINEA: 1252, COLUMNA: 177: <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+
+
+
+		LINEA: 1253, COLUMNA: 118: <i class="fa fa-square fa-stack-2x"></i>
+
+
+
+		LINEA: 1253, COLUMNA: 158: <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+
+
+
+		LINEA: 1254, COLUMNA: 123: <i class="fa fa-square fa-stack-2x"></i>
+
+
+
+		LINEA: 1254, COLUMNA: 163: <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+
+
+
+		LINEA: 1255, COLUMNA: 165: <i class="fa fa-square fa-stack-2x"></i>
+
+
+
+		LINEA: 1255, COLUMNA: 205: <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+
+
+
+		LINEA: 1256, COLUMNA: 124: <i class="fa fa-square fa-stack-2x"></i>
+
+
+
+		LINEA: 1256, COLUMNA: 164: <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+
+
+
+		LINEA: 1257, COLUMNA: 124: <i class="fa fa-square fa-stack-2x"></i>
+
+
+
+		LINEA: 1257, COLUMNA: 164: <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR:> Add text to the label element.      
+
+		LINEA: 191, COLUMNA: 2: <input placeholder="Introduzca texto a buscar" type="text" id="edit-busqueda" name="busqueda" value= ...
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 152, COLUMNA: 5: <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+
+
+
+		LINEA: 165, COLUMNA: 7: <a href="https://www--alicante--es.accesible.inclusite.com/es" id="inclusite" title="Web ADaptada a...
+
+
+
+		LINEA: 175, COLUMNA: 76: <a href="/es" class="language-link active" xml:lang="es" lang="es">Castellano</a>
+
+
+
+		LINEA: 176, COLUMNA: 21: <a href="/va" class="language-link" xml:lang="ca" lang="ca">Valencià</a>
+
+
+
+		LINEA: 208, COLUMNA: 15: <a class="rrss facebook" href="http://www.facebook.com/AyuntamientoAlicante" title="Síguenos en Fac ...
+
+
+
+		LINEA: 209, COLUMNA: 6: <a class="rrss twitter" href="http://www.twitter.com/alicanteayto" title="Síguenos en Twitter">Twit ...
+
+
+
+		LINEA: 210, COLUMNA: 6: <a class="rrss youtube" href="http://www.youtube.com/user/AytoAlicante" title="Canal oficial de Yout ...
+
+
+
+		LINEA: 211, COLUMNA: 6: <a class="rrss googleplus" href="https://plus.google.com/u/0/b/117242322143820566612/117242322143820 ...
+
+
+
+		LINEA: 212, COLUMNA: 6: <a class="rrss pinterest" href="http://www.pinterest.com/alicanteayto" title="Síguenos en Pinterest ...
+
+
+
+		LINEA: 213, COLUMNA: 6: <a class="rrss instagram" href="http://www.instagram.com/alicanteayto" title="Síguenos en Instagram ...
+
+
+
+		LINEA: 224, COLUMNA: 9: <a href="/es" rel="home" title="Ayuntamiento de Alicante" class="active"><img src="https://www.alica ...
+
+
+
+		LINEA: 227, COLUMNA: 49: <a href="/es" title="Inicio" class="active">Ayuntamiento de Alicante</a>
+
+
+
+		LINEA: 237, COLUMNA: 47: <a href="/es" title="Ir a la página inicial del Portal" class="active">Inicio</a>
+
+
+
+		LINEA: 238, COLUMNA: 23: <a href="/es/area-tematica/la-ciudad" title="Información sobre la Ciudad de Alicante">La Ciudad</a>
+
+
+
+		LINEA: 239, COLUMNA: 23: <a href="/es/area-tematica/el-ayuntamiento" title="Información sobre el Ayuntamiento de Alicante">E ...
+
+
+
+		LINEA: 240, COLUMNA: 18: <a href="/es/tramites">Trámites</a>
+
+
+
+		LINEA: 241, COLUMNA: 23: <a href="/es/areas-tematicas" title="Toda la información del Ayuntamiento clasificada por áreas te ...
+
+
+
+		LINEA: 256, COLUMNA: 3: <a href="/es" class=""><i class="icon-home"></i>Inicio</a>
+
+
+
+		LINEA: 263, COLUMNA: 3: <a href="/es/area-tematica/la-ciudad" class="dropdown-toggle">La Ciudad<span ...
+
+
+
+		LINEA: 274, COLUMNA: 3: <a href="/es/contenidos/ciudad-alicante" class="">Información general</a>
+
+
+
+		LINEA: 280, COLUMNA: 3: <a href="/es/patrimonio_cultural" class="">Patrimonio cultural</a>
+
+
+
+		LINEA: 286, COLUMNA: 3: <a href="http://www.alicanteturismo.com/" class="">Información turística</ ...
+
+
+
+		LINEA: 292, COLUMNA: 3: <a href="/es/galerias_imagen" class="">Galería multimedia</a>
+
+
+
+		LINEA: 298, COLUMNA: 3: <a href="https://guiaurbana.alicante.es" class="">Guía Urbana</a>
+
+
+
+		LINEA: 304, COLUMNA: 3: <a href="/es/contenidos/banda-sinfonica-municipal" class="">Banda Sinfónica Municipal ...
+
+
+
+		LINEA: 310, COLUMNA: 3: <a href="/es/area-tematica/la-ciudad" class="">Más información</a>
+
+
+
+		LINEA: 355, COLUMNA: 3: <a href="/es/area-tematica/el-ayuntamiento" class="dropdown-toggle">El Ayuntamiento...
+
+
+
+		LINEA: 366, COLUMNA: 3: <a href="/es/contenidos/pleno-del-ayuntamiento" class="">El Pleno</a>
+
+
+
+		LINEA: 372, COLUMNA: 3: <a href="/es/contenidos/junta-gobierno-local" class="">Junta de Gobierno Local ...
+
+
+
+		LINEA: 378, COLUMNA: 3: <a href="/es/contenidos/organizacion-y-funcionamiento-del-ayuntamiento" class="">Organ ...
+
+
+
+		LINEA: 384, COLUMNA: 3: <a href="/es/normativa" class="">Normativa municipal</a>
+
+
+
+		LINEA: 390, COLUMNA: 3: <a href="/es/sala-de-prensa" class="">Sala de Prensa</a>
+
+
+
+		LINEA: 396, COLUMNA: 3: <a href="/es/contenidos/transparencia-municipal" class="">Transparencia municipal...
+
+
+
+		LINEA: 402, COLUMNA: 3: <a href="/es/area-tematica/el-ayuntamiento" class="">Más información</a>
+
+
+
+		LINEA: 447, COLUMNA: 3: <a href="/es/tramites" class="dropdown-toggle">Trámites<span class="caret"> ...
+
+
+
+		LINEA: 470, COLUMNA: 11: <a href="/es/tramites/certificado-empadronamiento">Certificado de empadronamiento</a>
+
+
+
+		LINEA: 472, COLUMNA: 11: <a href="/es/tramites/pagos-line">Pagos On-line</a>
+
+
+
+		LINEA: 474, COLUMNA: 11: <a href="/es/tramites/altas-y-cambios-domicilio-padron-habitantes">Altas y cambios de domicilio en e ...
+
+
+
+		LINEA: 476, COLUMNA: 11: <a href="/es/tramites/volante-empadronamiento-obtencion-forma-inmediata">Volante de empadronamiento...
+
+
+
+		LINEA: 478, COLUMNA: 11: <a href="/es/tramites/instancia-general-del-ayuntamiento-alicante">Instancia general del Ayuntamient ...
+
+
+
+		LINEA: 480, COLUMNA: 11: <a href="/es/tramites/declaracion-habitabilidad-y-segunda-ocupacion-viviendas-y-autorizaciones-local ...
+
+
+
+		LINEA: 482, COLUMNA: 11: <a href="/es/tramites/licencia-obra-menor-acondicionamiento-o-restauracion-muros-y-vallados-casas-pr ...
+
+
+
+		LINEA: 484, COLUMNA: 11: <a href="/es/tramites/ocupacion-publica">Ocupación de vía pública</a>
+
+
+
+		LINEA: 491, COLUMNA: 42: <a href="/es/tramites">Todos los trámites</a>
+
+
+
+		LINEA: 506, COLUMNA: 3: <a href="/es/areas-tematicas" class="dropdown-toggle">Áreas Temáticas<span ...
+
+
+
+		LINEA: 532, COLUMNA: 81: <a href="/es/area-tematica/asociacionismo-y-participacion">Asociacionismo y participación</a>
+
+
+
+		LINEA: 535, COLUMNA: 81: <a href="/es/area-tematica/hacienda">Hacienda</a>
+
+
+
+		LINEA: 540, COLUMNA: 81: <a href="/es/area-tematica/comercio-consumo-sanidad">Comercio Consumo Sanidad</a>
+
+
+
+		LINEA: 543, COLUMNA: 81: <a href="/es/area-tematica/medio-ambiente">Medio ambiente</a>
+
+
+
+		LINEA: 548, COLUMNA: 81: <a href="/es/area-tematica/cultura-y-ocio">Cultura y ocio</a>
+
+
+
+		LINEA: 551, COLUMNA: 81: <a href="/es/area-tematica/nuevas-tecnologias">Nuevas tecnologías</a>
+
+
+
+		LINEA: 556, COLUMNA: 81: <a href="/es/area-tematica/deportes">Deportes</a>
+
+
+
+		LINEA: 559, COLUMNA: 81: <a href="/es/area-tematica/seguridad-ciudadana">Seguridad ciudadana</a>
+
+
+
+		LINEA: 564, COLUMNA: 81: <a href="/es/area-tematica/educacion">Educación</a>
+
+
+
+		LINEA: 567, COLUMNA: 81: <a href="/es/area-tematica/servicios-sociales">Servicios sociales</a>
+
+
+
+		LINEA: 572, COLUMNA: 81: <a href="/es/area-tematica/empleo-y-empresa">Empleo y empresa</a>
+
+
+
+		LINEA: 575, COLUMNA: 81: <a href="/es/area-tematica/trafico-y-transportes">Tráfico y transportes</a>
+
+
+
+		LINEA: 580, COLUMNA: 81: <a href="/es/area-tematica/espacios-urbanos">Espacios urbanos</a>
+
+
+
+		LINEA: 583, COLUMNA: 81: <a href="/es/area-tematica/turismo">Turismo</a>
+
+
+
+		LINEA: 588, COLUMNA: 81: <a href="/es/area-tematica/fiestas-de-la-ciudad">Fiestas de la Ciudad</a>
+
+
+
+		LINEA: 591, COLUMNA: 81: <a href="/es/area-tematica/urbanismo-y-vivienda">Urbanismo y vivienda</a>
+
+
+
+		LINEA: 596, COLUMNA: 81: <a href="/es/area-tematica/gente-joven">Gente joven</a>
+
+
+
+		LINEA: 644, COLUMNA: 107: <a href="https://www.alicante.es/es/noticias/emision-streaming-del-pleno-municipal-20-diciembre-2018 ...
+
+
+
+		LINEA: 646, COLUMNA: 107: <a href="https://www.alicante.es/es/noticias/programa-navidad-2018-2019"><img typeof="foaf:Image" sr ...
+
+
+
+		LINEA: 648, COLUMNA: 107: <a href="https://premiosdecomercio.alicante.es"><img typeof="foaf:Image" src="https://www.alicante.e ...
+
+
+
+		LINEA: 650, COLUMNA: 107: <a href="http://ciudadano.alicantelimpia.com/"><img typeof="foaf:Image" src="https://www.alicante.es ...
+
+
+
+		LINEA: 652, COLUMNA: 107: <a href="https://www.agendacultural.org"><img typeof="foaf:Image" src="https://www.alicante.es/sites ...
+
+
+
+		LINEA: 654, COLUMNA: 107: <a href="http://www.alicante.es/es/area-tematica/servicio-de-atencion-integral-a-la-ciudadania---sai ...
+
+
+
+		LINEA: 656, COLUMNA: 107: <a href="http://www.alicante.es/es/area-tematica/alicante-se-mueve"><img typeof="foaf:Image" src="ht ...
+
+
+
+		LINEA: 658, COLUMNA: 107: <a href="http://www.alicante.es/es/area-tematica/fondos-feder---dusi-alicante-area-las-cigarreras">< ...
+
+
+
+		LINEA: 699, COLUMNA: 11: <a href="/es/noticias/espana-solicita-gva-cesion-sala-estacion-tram-del-mercado"><img typeof="foaf:I ...
+
+
+
+		LINEA: 700, COLUMNA: 15: <a href="/es/noticias/espana-solicita-gva-cesion-sala-estacion-tram-del-mercado">De España solicita ...
+
+
+
+		LINEA: 706, COLUMNA: 11: <a href="/es/noticias/ayuntamiento-aprueba-proyecto-recuperar-antigua-fabrica-tabacos"><img typeof=" ...
+
+
+
+		LINEA: 707, COLUMNA: 15: <a href="/es/noticias/ayuntamiento-aprueba-proyecto-recuperar-antigua-fabrica-tabacos">El Ayuntamien ...
+
+
+
+		LINEA: 713, COLUMNA: 11: <a href="/es/noticias/van-gogh-alive-se-despide-16-diciembre-conquistar-60000-visitantes"><img typeo ...
+
+
+
+		LINEA: 714, COLUMNA: 15: <a href="/es/noticias/van-gogh-alive-se-despide-16-diciembre-conquistar-60000-visitantes">‘Van Gog ...
+
+
+
+		LINEA: 720, COLUMNA: 11: <a href="/es/noticias/alicante-se-prepara-ser-capital-navidad"><img typeof="foaf:Image" src="https:/ ...
+
+
+
+		LINEA: 721, COLUMNA: 15: <a href="/es/noticias/alicante-se-prepara-ser-capital-navidad">Alicante se prepara para ser capital...
+
+
+
+		LINEA: 727, COLUMNA: 11: <a href="/es/noticias/alicante-se-prepara-celebrar-mejor-cabalgata-solidaria-reyes-magos"><img typeo ...
+
+
+
+		LINEA: 728, COLUMNA: 15: <a href="/es/noticias/alicante-se-prepara-celebrar-mejor-cabalgata-solidaria-reyes-magos">Alicante s ...
+
+
+
+		LINEA: 734, COLUMNA: 11: <a href="/es/noticias/mesa-trabajo-operacion-plan-movilidad-e-intervencion-viaria-territorio-edusi"> ...
+
+
+
+		LINEA: 735, COLUMNA: 15: <a href="/es/noticias/mesa-trabajo-operacion-plan-movilidad-e-intervencion-viaria-territorio-edusi"> ...
+
+
+
+		LINEA: 741, COLUMNA: 11: <a href="/es/noticias/trescientos-escolares-alicante-tendran-protagonismo-i-jornada-cohesion-social" ...
+
+
+
+		LINEA: 742, COLUMNA: 15: <a href="/es/noticias/trescientos-escolares-alicante-tendran-protagonismo-i-jornada-cohesion-social" ...
+
+
+
+		LINEA: 748, COLUMNA: 11: <a href="/es/noticias/impulsa-cultura-proyecta-2019-edusi-alicante-presenta-bases-segunda-edicion">< ...
+
+
+
+		LINEA: 749, COLUMNA: 15: <a href="/es/noticias/impulsa-cultura-proyecta-2019-edusi-alicante-presenta-bases-segunda-edicion">...
+
+
+
+		LINEA: 758, COLUMNA: 3: <a href="/es/noticias">Más noticias</a>
+
+
+
+		LINEA: 774, COLUMNA: 47: <a href="/es/estructura-politica" title="Información sobre las distintas concejalías del Ayuntamie ...
+
+
+
+		LINEA: 775, COLUMNA: 18: <a href="https://sedeelectronica.alicante.es/" title="Portal de servicios electrónicos: Perfil de C ...
+
+
+
+		LINEA: 776, COLUMNA: 18: <a href="/es/contenidos/transparencia-municipal" title="Toda la información municipal a su disposic ...
+
+
+
+		LINEA: 777, COLUMNA: 18: <a href="/es/contenidos/cita-previa-online" title="Reserve su cita desde aquí" class="fa fa-calenda ...
+
+
+
+		LINEA: 778, COLUMNA: 18: <a href="http://www.alicante.es/es/area-tematica/servicio-atencion-integral-ciudadania-saic" title=" ...
+
+
+
+		LINEA: 779, COLUMNA: 18: <a href="/es/area-tematica/turismo" title="Información turística de la Ciudad" class="fa fa-briefc ...
+
+
+
+		LINEA: 780, COLUMNA: 18: <a href="/es/noticias/actualizacion-del-espacio-participacion-ciudadana" class="fa fa-comments" titl ...
+
+
+
+		LINEA: 781, COLUMNA: 23: <a href="https://www.agendacultural.org/" class="fa fa-book" title="Conozca la actividad cultural de ...
+
+
+
+		LINEA: 789, COLUMNA: 47: <a href="http://trafico.alicante.es/es/trafico/vista1.asp" title="Estado del tráfico e incidencias...
+
+
+
+		LINEA: 790, COLUMNA: 18: <a href="/es/contenidos/transporte-alicante-metropolitano-tam" title="Líneas, horarios, paradas y t ...
+
+
+
+		LINEA: 791, COLUMNA: 18: <a href="https://guiaurbana.alicante.es" title="Mapa interactivo de la Ciudad proporcionado por el S ...
+
+
+
+		LINEA: 792, COLUMNA: 18: <a href="http://www.aemet.es/es/eltiempo/prediccion/municipios/alacant-alicante-id03014" title="Cond ...
+
+
+
+		LINEA: 793, COLUMNA: 18: <a href="https://guiaurbana.alicante.es/?capa=farmacias,guiaurbana" title="Información detallada de ...
+
+
+
+		LINEA: 794, COLUMNA: 23: <a href="/es/contenidos/servicios-emergencia" class="fa fa-phone">Servicios de emergencia</a>
+
+
+
+		LINEA: 814, COLUMNA: 11: <a href="/es/contenidos/actividades-cursos-y-talleres-centro-14-2019"><img typeof="foaf:Image" src=" ...
+
+
+
+		LINEA: 816, COLUMNA: 11: <a href="/es/noticias/programacion-educacion-ambiental-plaza-nueva"><img typeof="foaf:Image" src="ht ...
+
+
+
+		LINEA: 818, COLUMNA: 11: <a href="/es/noticias/navidad-papel-alicante-centro-14"><img typeof="foaf:Image" src="https://www.al ...
+
+
+
+		LINEA: 820, COLUMNA: 11: <a href="/es/noticias/navidad-zona-norte-2018-2019"><img typeof="foaf:Image" src="https://www.alican ...
+
+
+
+		LINEA: 822, COLUMNA: 11: <a href="/es/noticias/pleno-ordinario-del-mes-diciembre"><img typeof="foaf:Image" src="https://www.a ...
+
+
+
+		LINEA: 824, COLUMNA: 11: <a href="/es/noticias/horario-navidad-oac-y-010"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 826, COLUMNA: 11: <a href="/es/agenda/paca-vintage-market-navideno-paseo-campoamor-alicante"><img typeof="foaf:Image"...
+
+
+
+		LINEA: 828, COLUMNA: 11: <a href="/es/noticias/concursos-navidad-2018"><img typeof="foaf:Image" src="https://www.alicante.es/ ...
+
+
+
+		LINEA: 830, COLUMNA: 11: <a href="/es/noticias/programa-navidad-2018-2019"><img typeof="foaf:Image" src="https://www.alicante ...
+
+
+
+		LINEA: 832, COLUMNA: 11: <a href="/es/concursos/premios-ciudad-alicante-al-comercio-2018"><img typeof="foaf:Image" src="https ...
+
+
+
+		LINEA: 834, COLUMNA: 11: <a href="/es/contenidos/actividades-fondos-feder-edusi-area-cigarreras"><img typeof="foaf:Image" src ...
+
+
+
+		LINEA: 836, COLUMNA: 11: <a href="/es/contenidos/programacion-actividades-concejalia-igualdad-octubre-2018-enero-2019"><img t ...
+
+
+
+		LINEA: 838, COLUMNA: 11: <a href="/es/noticias/aplicacion-ley-memoria-historica-cambios-callejero-ciudad"><img typeof="foaf:I ...
+
+
+
+		LINEA: 840, COLUMNA: 11: <a href="/es/contenidos/mapa-cultural-alicante"><img typeof="foaf:Image" src="https://www.alicante.e ...
+
+
+
+		LINEA: 842, COLUMNA: 11: <a href="/es/noticias/recursos-zona-norte"><img typeof="foaf:Image" src="https://www.alicante.es/sit ...
+
+
+
+		LINEA: 844, COLUMNA: 11: <a href="/es/contenidos/banda-sinfonica-municipal"><img typeof="foaf:Image" src="https://www.alicant ...
+
+
+
+		LINEA: 846, COLUMNA: 11: <a href="/es/noticias/mas-6000-inmigrantes-se-beneficiaran-subvenciones-aprobadas-ayuntamiento"><img ...
+
+
+
+		LINEA: 848, COLUMNA: 11: <a href="/es/contenidos/servicio-pangea-oficina-atencion-personas-migradas"><img typeof="foaf:Image" ...
+
+
+
+		LINEA: 850, COLUMNA: 11: <a href="/es/noticias/cita-previa-departamento-estadistica"><img typeof="foaf:Image" src="https://ww ...
+
+
+
+		LINEA: 852, COLUMNA: 11: <a href="/es/contenidos/actividades-formativas-del-ayuntamiento-alicante"><img typeof="foaf:Image" s ...
+
+
+
+		LINEA: 854, COLUMNA: 11: <a href="/es/noticias/acceso-mapas-concejalia-urbanismo"><img typeof="foaf:Image" src="https://www.a ...
+
+
+
+		LINEA: 856, COLUMNA: 11: <a href="/es/documentos/inventario-caminos-publicos-rurales-municipales"><img typeof="foaf:Image" sr ...
+
+
+
+		LINEA: 858, COLUMNA: 11: <a href="/es/noticias/convocatoria-subvenciones-entidades-interes-social-ano-2018-accion-social"><im ...
+
+
+
+		LINEA: 860, COLUMNA: 11: <a href="/es/tramites/preinscripcion-agrupacion-voluntarios-proteccion-civil"><img typeof="foaf:Imag ...
+
+
+
+		LINEA: 862, COLUMNA: 11: <a href="/es/equipamientos/medios-informacion-concejalia-urbanismo-y-conservacion-inmuebles"><img ty ...
+
+
+
+		LINEA: 864, COLUMNA: 11: <a href="/es/tramites/matriculacion-escolar"><img typeof="foaf:Image" src="https://www.alicante.es/s ...
+
+
+
+		LINEA: 866, COLUMNA: 11: <a href="/es/tramites/participacion-actividades-escolares"><img typeof="foaf:Image" src="https://www ...
+
+
+
+		LINEA: 868, COLUMNA: 11: <a href="/es/documentos/centros-escolares"><img typeof="foaf:Image" src="https://www.alicante.es/sit ...
+
+
+
+		LINEA: 870, COLUMNA: 11: <a href="/es/equipamientos/centro-asociaciones-y-voluntariado-alicante"><img typeof="foaf:Image" src ...
+
+
+
+		LINEA: 892, COLUMNA: 194: <a href="/es/node?qt-tabs_home_agenda=0#qt-tabs_home_agenda" id="quicktabs-tab-tabs_home_agenda-0" c ...
+
+
+
+		LINEA: 892, COLUMNA: 324: <a href="/es/node?qt-tabs_home_agenda=1#qt-tabs_home_agenda" id="quicktabs-tab-tabs_home_agenda-1" c ...
+
+
+
+		LINEA: 892, COLUMNA: 475: <a href="/es/node?qt-tabs_home_agenda=2#qt-tabs_home_agenda" id="quicktabs-tab-tabs_home_agenda-2" c ...
+
+
+
+		LINEA: 904, COLUMNA: 88: <a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018"><img typeof="foaf:Image" src="http ...
+
+
+
+		LINEA: 905, COLUMNA: 80: <a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018">Concierto de Navidad y Nacimiento...
+
+
+
+		LINEA: 913, COLUMNA: 88: <a href="/es/agenda/danza-contemporanea-maca"><img typeof="foaf:Image" src="https://www.alicante.es/ ...
+
+
+
+		LINEA: 914, COLUMNA: 80: <a href="/es/agenda/danza-contemporanea-maca">Danza contemporánea en el MACA</a>
+
+
+
+		LINEA: 921, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-anem-biblio-20"><img typeof="foaf:Image" src="https://www.alican ...
+
+
+
+		LINEA: 922, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-anem-biblio-20">Cultura en barrios. Anem a la Biblio</a>
+
+
+
+		LINEA: 929, COLUMNA: 88: <a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec-0"><img typeof="foaf:Image" src="https: ...
+
+
+
+		LINEA: 930, COLUMNA: 80: <a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec-0">Curso de Mezcla de Sonido. Miguel Al ...
+
+
+
+		LINEA: 938, COLUMNA: 88: <a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec"><img typeof="foaf:Image" src="https:// ...
+
+
+
+		LINEA: 939, COLUMNA: 80: <a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec">Curso de Mezcla de Sonido. Miguel Alse ...
+
+
+
+		LINEA: 947, COLUMNA: 88: <a href="/es/agenda/curso-sintesis-sonido"><img typeof="foaf:Image" src="https://www.alicante.es/sit ...
+
+
+
+		LINEA: 948, COLUMNA: 80: <a href="/es/agenda/curso-sintesis-sonido">Curso de Síntesis de Sonido</a>
+
+
+
+		LINEA: 959, COLUMNA: 7: <a href="https://www.agendacultural.org/es" class="banner_agenda_cultura" title="Conozca la activida ...
+
+
+
+		LINEA: 976, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-anem-biblio-19"><img typeof="foaf:Image" src="https://www.alican ...
+
+
+
+		LINEA: 977, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-anem-biblio-19">Cultura en barrios. Anem a la Biblio</a>
+
+
+
+		LINEA: 984, COLUMNA: 88: <a href="/es/agenda/danza-contemporanea-maca"><img typeof="foaf:Image" src="https://www.alicante.es/ ...
+
+
+
+		LINEA: 985, COLUMNA: 80: <a href="/es/agenda/danza-contemporanea-maca">Danza contemporánea en el MACA</a>
+
+
+
+		LINEA: 992, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-anem-biblio-20"><img typeof="foaf:Image" src="https://www.alican ...
+
+
+
+		LINEA: 993, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-anem-biblio-20">Cultura en barrios. Anem a la Biblio</a>
+
+
+
+		LINEA: 1000, COLUMNA: 88: <a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018"><img typeof="foaf:Image" src="http ...
+
+
+
+		LINEA: 1001, COLUMNA: 80: <a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018">Concierto de Navidad y Nacimiento...
+
+
+
+		LINEA: 1009, COLUMNA: 88: <a href="/es/agenda/patas-y-libros-4"><img typeof="foaf:Image" src="https://www.alicante.es/sites/de ...
+
+
+
+		LINEA: 1010, COLUMNA: 80: <a href="/es/agenda/patas-y-libros-4">Patas y libros</a>
+
+
+
+		LINEA: 1017, COLUMNA: 88: <a href="/es/agenda/mestiza-iii-festival-teatro-clasico"><img typeof="foaf:Image" src="https://www.a ...
+
+
+
+		LINEA: 1018, COLUMNA: 80: <a href="/es/agenda/mestiza-iii-festival-teatro-clasico">Mestiza. III Festival Teatro Clásico</a>
+
+
+
+		LINEA: 1028, COLUMNA: 7: <a href="https://www.agendacultural.org/es" class="banner_agenda_cultura" title="Conozca la activida ...
+
+
+
+		LINEA: 1045, COLUMNA: 88: <a href="/es/agenda/fabrica-arte-talleres-infantiles-cigareras"><img typeof="foaf:Image" src="https: ...
+
+
+
+		LINEA: 1046, COLUMNA: 80: <a href="/es/agenda/fabrica-arte-talleres-infantiles-cigareras">&quot;Fábrica de arte&quot;. Taller ...
+
+
+
+		LINEA: 1054, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-5"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1055, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-5">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1063, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-6"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1064, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-6">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1072, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-8"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1073, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-8">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1081, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-7"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1082, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-7">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1090, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-9"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1091, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-9">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1102, COLUMNA: 7: <a href="https://www.agendacultural.org/es" class="banner_agenda_cultura" title="Conozca la activida ...
+
+
+
+		LINEA: 1116, COLUMNA: 7: <a href="https://twitter.com/@alicanteayto" class="twitter-timeline" data-widget-id="581366074064658 ...
+
+
+
+		LINEA: 1130, COLUMNA: 3: <a href="concursos"><div class="block-box-white"><div class="block-top-icons-icon"> ...
+
+
+
+		LINEA: 1141, COLUMNA: 3: <a href="festivales"><div class="block-box-white"><div class="block-top-icons-icon">...
+
+
+
+		LINEA: 1152, COLUMNA: 3: <a href="subvenciones"><div class="block-box-white"><div class="block-top-icons-icon">...
+
+
+
+		LINEA: 1163, COLUMNA: 3: <a href="/es/contenidos/actividades-formativas-del-ayuntamiento-alicante"><div class="block-box ...
+
+
+
+		LINEA: 1174, COLUMNA: 3: <a href="perfil"><div class="block-box-white"><div class="block-top-icons-icon">...
+
+
+
+		LINEA: 1185, COLUMNA: 3: <a href="galerias_imagen"><div class="block-box-white"><div class="block-top-icons-icon" ...
+
+
+
+		LINEA: 1210, COLUMNA: 52: <a href="https://www.google.es/maps/place/Ayuntamiento+de+Alicante/">Plaza del Ayuntamiento, 1 03002 ...
+
+
+
+		LINEA: 1212, COLUMNA: 48: <a href="tel:010">010</a>
+
+
+
+		LINEA: 1212, COLUMNA: 78: <a href="tel:966900886">966 900 886</a>
+
+
+
+		LINEA: 1214, COLUMNA: 46: <a href="/es/directorio">Directorio Municipal</a>
+
+
+
+		LINEA: 1226, COLUMNA: 26: <a href="/area-tematica/la-ciudad">La Ciudad</a>
+
+
+
+		LINEA: 1227, COLUMNA: 23: <a href="/area-tematica/el-ayuntamiento">El Ayuntamiento</a>
+
+
+
+		LINEA: 1228, COLUMNA: 23: <a href="/tramites">Trámites</a>
+
+
+
+		LINEA: 1229, COLUMNA: 23: <a href="/areas-tematicas">Áreas Temáticas</a>
+
+
+
+		LINEA: 1230, COLUMNA: 23: <a href="/noticias">Noticias</a>
+
+
+
+		LINEA: 1231, COLUMNA: 23: <a href="/agenda">Agenda</a>
+
+
+
+		LINEA: 1232, COLUMNA: 23: <a href="/estructura-politica">Concejalías</a>
+
+
+
+		LINEA: 1233, COLUMNA: 23: <a href="https://sedeelectronica.alicante.es/">Sede Electrónica</a>
+
+
+
+		LINEA: 1234, COLUMNA: 29: <a href="/contenidos/transparencia-municipal">Transparencia Municipal</a>
+
+
+
+		LINEA: 1235, COLUMNA: 23: <a href="/es/contenidos/cita-previa-online">Cita Previa</a>
+
+
+
+		LINEA: 1236, COLUMNA: 23:
+
+ 
+
+		LINEA: 1237, COLUMNA: 23: <a href="http://www.alicanteturismo.com/">Turismo</a>
+
+
+
+		LINEA: 1238, COLUMNA: 23: <a href="/es/noticias/actualizacion-del-espacio-participacion-ciudadana">Espacio Participación Ciud ...
+
+
+
+		LINEA: 1239, COLUMNA: 23: <a href="https://w2.alicante.es/profesionales">Para empresas y organismos</a>
+
+
+
+		LINEA: 1240, COLUMNA: 23: <a href="https://www--alicante--es.accesible.inclusite.com">Web accesible</a>
+
+
+
+		LINEA: 1241, COLUMNA: 23: <a href="/sitemap">Mapa del sitio Web</a>
+
+
+
+		LINEA: 1252, COLUMNA: 15: <a class="rrss facebook fa-stack fa-3x" href="http://www.facebook.com/AyuntamientoAlicante" title="S ...
+
+
+
+		LINEA: 1253, COLUMNA: 7: <a class="rrss twitter fa-stack fa-3x" href="http://www.twitter.com/alicanteayto" title="Síguenos e ...
+
+
+
+		LINEA: 1254, COLUMNA: 7: <a class="rrss youtube fa-stack fa-3x" href="http://www.youtube.com/user/AytoAlicante" title="Sígue ...
+
+
+
+		LINEA: 1255, COLUMNA: 7: <a class="rrss googleplus fa-stack fa-3x" href="https://plus.google.com/u/0/b/117242322143820566612/ ...
+
+
+
+		LINEA: 1256, COLUMNA: 7: <a class="rrss pinterest fa-stack fa-3x" href="http://www.pinterest.com/alicanteayto" title="Síguen ...
+
+
+
+		LINEA: 1257, COLUMNA: 7: <a class="rrss instagram fa-stack fa-3x" href="http://www.instagram.com/alicanteayto" title="Síguen ...
+
+
+
+		LINEA: 1280, COLUMNA: 10: <a href="/es/contenidos/aviso-legal">Aviso legal</a>
+
+
+
+		LINEA: 1280, COLUMNA: 67: <a href="/es/contenidos/proteccion-datos">Protección de datos</a>
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 3: Image Alt text may be too long.
+
+ 
+
+		LINEA: 748, COLUMNA: 110: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 334, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 426, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 644, COLUMNA: 209: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 646, COLUMNA: 180: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 648, COLUMNA: 155: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 650, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 652, COLUMNA: 148: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 654, COLUMNA: 210: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 656, COLUMNA: 175: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 658, COLUMNA: 206: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 814, COLUMNA: 81: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 816, COLUMNA: 79: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 818, COLUMNA: 67: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 820, COLUMNA: 63: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 822, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 824, COLUMNA: 60: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 826, COLUMNA: 86: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 828, COLUMNA: 57: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 830, COLUMNA: 61: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 832, COLUMNA: 76: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 834, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 836, COLUMNA: 105: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 838, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 840, COLUMNA: 59: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 842, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 844, COLUMNA: 62: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 846, COLUMNA: 107: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 848, COLUMNA: 87: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 850, COLUMNA: 71: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 852, COLUMNA: 85: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 854, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 856, COLUMNA: 84: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 858, COLUMNA: 108: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 860, COLUMNA: 89: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 862, COLUMNA: 104: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 864, COLUMNA: 56: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 866, COLUMNA: 70: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 868, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 870, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 224, COLUMNA: 82: <img src="https://www.alicante.es/sites/all/themes/aytoalicante/images/aytoalicante/logo.png" alt="A ...
+
+
+
+		LINEA: 334, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 426, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 644, COLUMNA: 209: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 646, COLUMNA: 180: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 648, COLUMNA: 155: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 650, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 652, COLUMNA: 148: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 654, COLUMNA: 210: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 656, COLUMNA: 175: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 658, COLUMNA: 206: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 699, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 706, COLUMNA: 98: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 713, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 720, COLUMNA: 74: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 727, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 734, COLUMNA: 111: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 741, COLUMNA: 112: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 748, COLUMNA: 110: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 814, COLUMNA: 81: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 816, COLUMNA: 79: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 818, COLUMNA: 67: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 820, COLUMNA: 63: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 822, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 824, COLUMNA: 60: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 826, COLUMNA: 86: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 828, COLUMNA: 57: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 830, COLUMNA: 61: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 832, COLUMNA: 76: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 834, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 836, COLUMNA: 105: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 838, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 840, COLUMNA: 59: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 842, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 844, COLUMNA: 62: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 846, COLUMNA: 107: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 848, COLUMNA: 87: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 850, COLUMNA: 71: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 852, COLUMNA: 85: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 854, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 856, COLUMNA: 84: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 858, COLUMNA: 108: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 860, COLUMNA: 89: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 862, COLUMNA: 104: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 864, COLUMNA: 56: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 866, COLUMNA: 70: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 868, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 870, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 904, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 913, COLUMNA: 134: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 921, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 929, COLUMNA: 152: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 938, COLUMNA: 150: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 947, COLUMNA: 131: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 959, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+
+
+		LINEA: 976, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 984, COLUMNA: 134: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 992, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1000, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1009, COLUMNA: 126: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1017, COLUMNA: 145: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1028, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+
+
+		LINEA: 1045, COLUMNA: 152: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1054, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1063, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1072, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1081, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1090, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1102, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 334, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 426, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+ 
+
+		LINEA: 334, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 426, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 644, COLUMNA: 209: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 646, COLUMNA: 180: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 648, COLUMNA: 155: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 650, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 652, COLUMNA: 148: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 654, COLUMNA: 210: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 656, COLUMNA: 175: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 658, COLUMNA: 206: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 699, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 706, COLUMNA: 98: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 713, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 720, COLUMNA: 74: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 727, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 734, COLUMNA: 111: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 741, COLUMNA: 112: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 748, COLUMNA: 110: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 814, COLUMNA: 81: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 816, COLUMNA: 79: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 818, COLUMNA: 67: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 820, COLUMNA: 63: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 822, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 824, COLUMNA: 60: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 826, COLUMNA: 86: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 828, COLUMNA: 57: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 830, COLUMNA: 61: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 832, COLUMNA: 76: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 834, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 836, COLUMNA: 105: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 838, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 840, COLUMNA: 59: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 842, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 844, COLUMNA: 62: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 846, COLUMNA: 107: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 848, COLUMNA: 87: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 850, COLUMNA: 71: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 852, COLUMNA: 85: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 854, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 856, COLUMNA: 84: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 858, COLUMNA: 108: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 860, COLUMNA: 89: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 862, COLUMNA: 104: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 864, COLUMNA: 56: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 866, COLUMNA: 70: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 868, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 870, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 904, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 913, COLUMNA: 134: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 921, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 929, COLUMNA: 152: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 938, COLUMNA: 150: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 947, COLUMNA: 131: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 976, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 984, COLUMNA: 134: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 992, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1000, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1009, COLUMNA: 126: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1017, COLUMNA: 145: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1045, COLUMNA: 152: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1054, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1063, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1072, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1081, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1090, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 191, COLUMNA: 2: <input placeholder="Introduzca texto a buscar" type="text" id="edit-busqueda" name="busqueda" value= ...
+
+  
+
+	REVISAR: 136: Data table may require th elements.
+
+ 
+
+		LINEA: 526, COLUMNA: 7: <table class="views-view-grid"><tbody><tr ><td > ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+  
+
+	REVISAR: 133: Layout table may not linearize.
+
+ 
+
+		LINEA: 526, COLUMNA: 7: <table class="views-view-grid"><tbody><tr ><td > ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 224, COLUMNA: 82: <img src="https://www.alicante.es/sites/all/themes/aytoalicante/images/aytoalicante/logo.png" alt="A ...
+
+
+
+		LINEA: 334, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 426, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 644, COLUMNA: 209: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 646, COLUMNA: 180: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 648, COLUMNA: 155: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 650, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 652, COLUMNA: 148: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 654, COLUMNA: 210: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 656, COLUMNA: 175: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 658, COLUMNA: 206: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 699, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 706, COLUMNA: 98: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 713, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 720, COLUMNA: 74: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 727, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 734, COLUMNA: 111: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 741, COLUMNA: 112: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 748, COLUMNA: 110: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 814, COLUMNA: 81: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 816, COLUMNA: 79: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 818, COLUMNA: 67: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 820, COLUMNA: 63: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 822, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 824, COLUMNA: 60: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 826, COLUMNA: 86: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 828, COLUMNA: 57: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 830, COLUMNA: 61: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 832, COLUMNA: 76: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 834, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 836, COLUMNA: 105: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 838, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 840, COLUMNA: 59: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 842, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 844, COLUMNA: 62: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 846, COLUMNA: 107: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 848, COLUMNA: 87: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 850, COLUMNA: 71: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 852, COLUMNA: 85: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 854, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 856, COLUMNA: 84: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 858, COLUMNA: 108: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 860, COLUMNA: 89: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 862, COLUMNA: 104: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 864, COLUMNA: 56: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 866, COLUMNA: 70: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 868, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 870, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 904, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 913, COLUMNA: 134: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 921, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 929, COLUMNA: 152: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 938, COLUMNA: 150: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 947, COLUMNA: 131: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 959, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+
+
+		LINEA: 976, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 984, COLUMNA: 134: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 992, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1000, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1009, COLUMNA: 126: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1017, COLUMNA: 145: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1028, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+
+
+		LINEA: 1045, COLUMNA: 152: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1054, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1063, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1072, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1081, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1090, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1102, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 191, COLUMNA: 2: <input placeholder="Introduzca texto a buscar" type="text" id="edit-busqueda" name="busqueda" value= ...
+
+
+
+		LINEA: 196, COLUMNA: 7: <input type="submit" id="edit-submit-busqueda-facetada" name="" value="Buscar" class="form-submit" / ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 1286, COLUMNA: 3: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></sc ...
+
+
+
+		LINEA: 1287, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--window.jQuery || document.write("<script s ...
+
+
+
+		LINEA: 1292, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/misc/jquery.once.js?v=1.2"></script>
+
+
+
+		LINEA: 1293, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/misc/drupal.js?pjqc81"></script>
+
+
+
+		LINEA: 1294, COLUMNA: 1: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js ...
+
+
+
+		LINEA: 1295, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--window.jQuery.ui || document.write("<scrip ...
+
+
+
+		LINEA: 1300, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/admin_menu/admin_devel ...
+
+
+
+		LINEA: 1301, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/misc/progress.js?pjqc81"></script>
+
+
+
+		LINEA: 1302, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/default/files/languages/es_93m6QCY ...
+
+
+
+		LINEA: 1303, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/colorbox/jquery.colo ...
+
+
+
+		LINEA: 1304, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/colorbox/js/colorbox.j ...
+
+
+
+		LINEA: 1305, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/colorbox/styles/defaul ...
+
+
+
+		LINEA: 1306, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/jreject/js/jquery.re ...
+
+
+
+		LINEA: 1307, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--(function($) {Drupal.behaviors. ...
+
+
+
+		LINEA: 1326, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/tb_megamenu/js/tb-mega ...
+
+
+
+		LINEA: 1327, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/tb_megamenu/js/tb-mega ...
+
+
+
+		LINEA: 1328, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/flexslider/jquery.fl ...
+
+
+
+		LINEA: 1329, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/responsive_menus/style ...
+
+
+
+		LINEA: 1330, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/sidr/jquery.sidr.min ...
+
+
+
+		LINEA: 1331, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/google_analytics/googl ...
+
+
+
+		LINEA: 1332, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--(function(i,s,o,g,r,a,m){i["GoogleAnalytic ...
+
+
+
+		LINEA: 1337, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/quicktabs/js/quicktabs ...
+
+
+
+		LINEA: 1338, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/default/files/twitter_block/widget ...
+
+
+
+		LINEA: 1339, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--jQuery(document).ready(function($) {		$(w ...
+
+
+
+		LINEA: 1357, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/omega/omega/js/jquery.f ...
+
+
+
+		LINEA: 1358, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/omega/omega/js/omega-me ...
+
+
+
+		LINEA: 1359, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/aytoalicante/js/moderni ...
+
+
+
+		LINEA: 1360, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/aytoalicante/js/sticky. ...
+
+
+
+		LINEA: 1361, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/aytoalicante/js/custom. ...
+
+
+
+		LINEA: 1362, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--jQuery.extend(Drupal.settings, {"basePath" ...
+
+
+
+		LINEA: 1370, COLUMNA: 7: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/eu_cookie_compliance/j ...
+
+
+
+		LINEA: 1371, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/flexslider/assets/js/f ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 224, COLUMNA: 82: <img src="https://www.alicante.es/sites/all/themes/aytoalicante/images/aytoalicante/logo.png" alt="A ...
+
+
+
+		LINEA: 334, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 426, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 644, COLUMNA: 209: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 646, COLUMNA: 180: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 648, COLUMNA: 155: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 650, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 652, COLUMNA: 148: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 654, COLUMNA: 210: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 656, COLUMNA: 175: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 658, COLUMNA: 206: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 699, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 706, COLUMNA: 98: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 713, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 720, COLUMNA: 74: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 727, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 734, COLUMNA: 111: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 741, COLUMNA: 112: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 748, COLUMNA: 110: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 814, COLUMNA: 81: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 816, COLUMNA: 79: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 818, COLUMNA: 67: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 820, COLUMNA: 63: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 822, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 824, COLUMNA: 60: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 826, COLUMNA: 86: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 828, COLUMNA: 57: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 830, COLUMNA: 61: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 832, COLUMNA: 76: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 834, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 836, COLUMNA: 105: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 838, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 840, COLUMNA: 59: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 842, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 844, COLUMNA: 62: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 846, COLUMNA: 107: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 848, COLUMNA: 87: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 850, COLUMNA: 71: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 852, COLUMNA: 85: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 854, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 856, COLUMNA: 84: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 858, COLUMNA: 108: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 860, COLUMNA: 89: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 862, COLUMNA: 104: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 864, COLUMNA: 56: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 866, COLUMNA: 70: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 868, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 870, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 959, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+
+
+		LINEA: 1028, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+
+
+		LINEA: 1102, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 224, COLUMNA: 82: <img src="https://www.alicante.es/sites/all/themes/aytoalicante/images/aytoalicante/logo.png" alt="A ...
+
+
+
+		LINEA: 334, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 426, COLUMNA: 96: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_menu_principal_ ...
+
+
+
+		LINEA: 644, COLUMNA: 209: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 646, COLUMNA: 180: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 648, COLUMNA: 155: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 650, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 652, COLUMNA: 148: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 654, COLUMNA: 210: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 656, COLUMNA: 175: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 658, COLUMNA: 206: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/imagenes/carrusel-principa ...
+
+
+
+		LINEA: 699, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 706, COLUMNA: 98: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 713, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 720, COLUMNA: 74: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 727, COLUMNA: 101: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 734, COLUMNA: 111: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 741, COLUMNA: 112: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 748, COLUMNA: 110: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_noticias-resume ...
+
+
+
+		LINEA: 814, COLUMNA: 81: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 816, COLUMNA: 79: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 818, COLUMNA: 67: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 820, COLUMNA: 63: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 822, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 824, COLUMNA: 60: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 826, COLUMNA: 86: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 828, COLUMNA: 57: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 830, COLUMNA: 61: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 832, COLUMNA: 76: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 834, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 836, COLUMNA: 105: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 838, COLUMNA: 92: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 840, COLUMNA: 59: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 842, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 844, COLUMNA: 62: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 846, COLUMNA: 107: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 848, COLUMNA: 87: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 850, COLUMNA: 71: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 852, COLUMNA: 85: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 854, COLUMNA: 68: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 856, COLUMNA: 84: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 858, COLUMNA: 108: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 860, COLUMNA: 89: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 862, COLUMNA: 104: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 864, COLUMNA: 56: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 866, COLUMNA: 70: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 868, COLUMNA: 54: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 870, COLUMNA: 83: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_destacado/publi ...
+
+
+
+		LINEA: 904, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 913, COLUMNA: 134: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 921, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 929, COLUMNA: 152: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 938, COLUMNA: 150: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 947, COLUMNA: 131: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 959, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+
+
+		LINEA: 976, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 984, COLUMNA: 134: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 992, COLUMNA: 140: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1000, COLUMNA: 154: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1009, COLUMNA: 126: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1017, COLUMNA: 145: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1028, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+
+
+		LINEA: 1045, COLUMNA: 152: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1054, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1063, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1072, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1081, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1090, COLUMNA: 137: <img typeof="foaf:Image" src="https://www.alicante.es/sites/default/files/styles/img_agenda_home/pub ...
+
+
+
+		LINEA: 1102, COLUMNA: 158: <img src="/sites/all//themes/aytoalicante/images/aytoalicante/banner_agenda_cultural.jpg" alt="Agend ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 1286, COLUMNA: 3: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></sc ...
+
+
+
+		LINEA: 1287, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--window.jQuery || document.write("<script s ...
+
+
+
+		LINEA: 1292, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/misc/jquery.once.js?v=1.2"></script>
+
+
+
+		LINEA: 1293, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/misc/drupal.js?pjqc81"></script>
+
+
+
+		LINEA: 1294, COLUMNA: 1: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js ...
+
+
+
+		LINEA: 1295, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--window.jQuery.ui || document.write("<scrip ...
+
+
+
+		LINEA: 1300, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/admin_menu/admin_devel ...
+
+
+
+		LINEA: 1301, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/misc/progress.js?pjqc81"></script>
+
+
+
+		LINEA: 1302, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/default/files/languages/es_93m6QCY ...
+
+
+
+		LINEA: 1303, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/colorbox/jquery.colo ...
+
+
+
+		LINEA: 1304, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/colorbox/js/colorbox.j ...
+
+
+
+		LINEA: 1305, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/colorbox/styles/defaul ...
+
+
+
+		LINEA: 1306, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/jreject/js/jquery.re ...
+
+
+
+		LINEA: 1307, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--(function($) {Drupal.behaviors. ...
+
+
+
+		LINEA: 1326, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/tb_megamenu/js/tb-mega ...
+
+
+
+		LINEA: 1327, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/tb_megamenu/js/tb-mega ...
+
+
+
+		LINEA: 1328, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/flexslider/jquery.fl ...
+
+
+
+		LINEA: 1329, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/responsive_menus/style ...
+
+
+
+		LINEA: 1330, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/sidr/jquery.sidr.min ...
+
+
+
+		LINEA: 1331, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/google_analytics/googl ...
+
+
+
+		LINEA: 1332, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--(function(i,s,o,g,r,a,m){i["GoogleAnalytic ...
+
+
+
+		LINEA: 1337, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/quicktabs/js/quicktabs ...
+
+
+
+		LINEA: 1338, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/default/files/twitter_block/widget ...
+
+
+
+		LINEA: 1339, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--jQuery(document).ready(function($) {		$(w ...
+
+
+
+		LINEA: 1357, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/omega/omega/js/jquery.f ...
+
+
+
+		LINEA: 1358, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/omega/omega/js/omega-me ...
+
+
+
+		LINEA: 1359, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/aytoalicante/js/moderni ...
+
+
+
+		LINEA: 1360, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/aytoalicante/js/sticky. ...
+
+
+
+		LINEA: 1361, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/aytoalicante/js/custom. ...
+
+
+
+		LINEA: 1362, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--jQuery.extend(Drupal.settings, {"basePath" ...
+
+
+
+		LINEA: 1370, COLUMNA: 7: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/eu_cookie_compliance/j ...
+
+
+
+		LINEA: 1371, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/flexslider/assets/js/f ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 1286, COLUMNA: 3: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></sc ...
+
+
+
+		LINEA: 1287, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--window.jQuery || document.write("<script s ...
+
+
+
+		LINEA: 1292, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/misc/jquery.once.js?v=1.2"></script>
+
+
+
+		LINEA: 1293, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/misc/drupal.js?pjqc81"></script>
+
+
+
+		LINEA: 1294, COLUMNA: 1: <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js ...
+
+
+
+		LINEA: 1295, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--window.jQuery.ui || document.write("<scrip ...
+
+
+
+		LINEA: 1300, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/admin_menu/admin_devel ...
+
+
+
+		LINEA: 1301, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/misc/progress.js?pjqc81"></script>
+
+
+
+		LINEA: 1302, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/default/files/languages/es_93m6QCY ...
+
+
+
+		LINEA: 1303, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/colorbox/jquery.colo ...
+
+
+
+		LINEA: 1304, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/colorbox/js/colorbox.j ...
+
+
+
+		LINEA: 1305, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/colorbox/styles/defaul ...
+
+
+
+		LINEA: 1306, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/jreject/js/jquery.re ...
+
+
+
+		LINEA: 1307, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--(function($) {Drupal.behaviors. ...
+
+
+
+		LINEA: 1326, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/tb_megamenu/js/tb-mega ...
+
+
+
+		LINEA: 1327, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/tb_megamenu/js/tb-mega ...
+
+
+
+		LINEA: 1328, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/flexslider/jquery.fl ...
+
+
+
+		LINEA: 1329, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/responsive_menus/style ...
+
+
+
+		LINEA: 1330, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/libraries/sidr/jquery.sidr.min ...
+
+
+
+		LINEA: 1331, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/google_analytics/googl ...
+
+
+
+		LINEA: 1332, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--(function(i,s,o,g,r,a,m){i["GoogleAnalytic ...
+
+
+
+		LINEA: 1337, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/quicktabs/js/quicktabs ...
+
+
+
+		LINEA: 1338, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/default/files/twitter_block/widget ...
+
+
+
+		LINEA: 1339, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--jQuery(document).ready(function($) {		$(w ...
+
+
+
+		LINEA: 1357, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/omega/omega/js/jquery.f ...
+
+
+
+		LINEA: 1358, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/omega/omega/js/omega-me ...
+
+
+
+		LINEA: 1359, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/aytoalicante/js/moderni ...
+
+
+
+		LINEA: 1360, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/aytoalicante/js/sticky. ...
+
+
+
+		LINEA: 1361, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/themes/aytoalicante/js/custom. ...
+
+
+
+		LINEA: 1362, COLUMNA: 1: <script type="text/javascript"><!--//--><![CDATA[//><!--jQuery.extend(Drupal.settings, {"basePath" ...
+
+
+
+		LINEA: 1370, COLUMNA: 7: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/eu_cookie_compliance/j ...
+
+
+
+		LINEA: 1371, COLUMNA: 1: <script type="text/javascript" src="https://www.alicante.es/sites/all/modules/flexslider/assets/js/f ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 16, COLUMNA: 3: <title>Ayuntamiento de Alicante</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 152, COLUMNA: 5: <a href="#main-content" class="element-invisible element-focusable">Pasar al contenido principal</a>
+
+
+
+		LINEA: 165, COLUMNA: 7: <a href="https://www--alicante--es.accesible.inclusite.com/es" id="inclusite" title="Web ADaptada a...
+
+
+
+		LINEA: 175, COLUMNA: 76: <a href="/es" class="language-link active" xml:lang="es" lang="es">Castellano</a>
+
+
+
+		LINEA: 176, COLUMNA: 21: <a href="/va" class="language-link" xml:lang="ca" lang="ca">Valencià</a>
+
+
+
+		LINEA: 208, COLUMNA: 15: <a class="rrss facebook" href="http://www.facebook.com/AyuntamientoAlicante" title="Síguenos en Fac ...
+
+
+
+		LINEA: 209, COLUMNA: 6: <a class="rrss twitter" href="http://www.twitter.com/alicanteayto" title="Síguenos en Twitter">Twit ...
+
+
+
+		LINEA: 210, COLUMNA: 6: <a class="rrss youtube" href="http://www.youtube.com/user/AytoAlicante" title="Canal oficial de Yout ...
+
+
+
+		LINEA: 211, COLUMNA: 6: <a class="rrss googleplus" href="https://plus.google.com/u/0/b/117242322143820566612/117242322143820 ...
+
+
+
+		LINEA: 212, COLUMNA: 6: <a class="rrss pinterest" href="http://www.pinterest.com/alicanteayto" title="Síguenos en Pinterest ...
+
+
+
+		LINEA: 213, COLUMNA: 6: <a class="rrss instagram" href="http://www.instagram.com/alicanteayto" title="Síguenos en Instagram ...
+
+
+
+		LINEA: 224, COLUMNA: 9: <a href="/es" rel="home" title="Ayuntamiento de Alicante" class="active"><img src="https://www.alica ...
+
+
+
+		LINEA: 227, COLUMNA: 49: <a href="/es" title="Inicio" class="active">Ayuntamiento de Alicante</a>
+
+
+
+		LINEA: 237, COLUMNA: 47: <a href="/es" title="Ir a la página inicial del Portal" class="active">Inicio</a>
+
+
+
+		LINEA: 238, COLUMNA: 23: <a href="/es/area-tematica/la-ciudad" title="Información sobre la Ciudad de Alicante">La Ciudad</a>
+
+
+
+		LINEA: 239, COLUMNA: 23: <a href="/es/area-tematica/el-ayuntamiento" title="Información sobre el Ayuntamiento de Alicante">E ...
+
+
+
+		LINEA: 240, COLUMNA: 18: <a href="/es/tramites">Trámites</a>
+
+
+
+		LINEA: 241, COLUMNA: 23: <a href="/es/areas-tematicas" title="Toda la información del Ayuntamiento clasificada por áreas te ...
+
+
+
+		LINEA: 256, COLUMNA: 3: <a href="/es" class=""><i class="icon-home"></i>Inicio</a>
+
+
+
+		LINEA: 263, COLUMNA: 3: <a href="/es/area-tematica/la-ciudad" class="dropdown-toggle">La Ciudad<span ...
+
+
+
+		LINEA: 274, COLUMNA: 3: <a href="/es/contenidos/ciudad-alicante" class="">Información general</a>
+
+
+
+		LINEA: 280, COLUMNA: 3: <a href="/es/patrimonio_cultural" class="">Patrimonio cultural</a>
+
+
+
+		LINEA: 286, COLUMNA: 3: <a href="http://www.alicanteturismo.com/" class="">Información turística</ ...
+
+
+
+		LINEA: 292, COLUMNA: 3: <a href="/es/galerias_imagen" class="">Galería multimedia</a>
+
+
+
+		LINEA: 298, COLUMNA: 3: <a href="https://guiaurbana.alicante.es" class="">Guía Urbana</a>
+
+
+
+		LINEA: 304, COLUMNA: 3: <a href="/es/contenidos/banda-sinfonica-municipal" class="">Banda Sinfónica Municipal ...
+
+
+
+		LINEA: 310, COLUMNA: 3: <a href="/es/area-tematica/la-ciudad" class="">Más información</a>
+
+
+
+		LINEA: 355, COLUMNA: 3: <a href="/es/area-tematica/el-ayuntamiento" class="dropdown-toggle">El Ayuntamiento...
+
+
+
+		LINEA: 366, COLUMNA: 3: <a href="/es/contenidos/pleno-del-ayuntamiento" class="">El Pleno</a>
+
+
+
+		LINEA: 372, COLUMNA: 3: <a href="/es/contenidos/junta-gobierno-local" class="">Junta de Gobierno Local ...
+
+
+
+		LINEA: 378, COLUMNA: 3: <a href="/es/contenidos/organizacion-y-funcionamiento-del-ayuntamiento" class="">Organ ...
+
+
+
+		LINEA: 384, COLUMNA: 3: <a href="/es/normativa" class="">Normativa municipal</a>
+
+
+
+		LINEA: 390, COLUMNA: 3: <a href="/es/sala-de-prensa" class="">Sala de Prensa</a>
+
+
+
+		LINEA: 396, COLUMNA: 3: <a href="/es/contenidos/transparencia-municipal" class="">Transparencia municipal...
+
+
+
+		LINEA: 402, COLUMNA: 3: <a href="/es/area-tematica/el-ayuntamiento" class="">Más información</a>
+
+
+
+		LINEA: 447, COLUMNA: 3: <a href="/es/tramites" class="dropdown-toggle">Trámites<span class="caret"> ...
+
+
+
+		LINEA: 470, COLUMNA: 11: <a href="/es/tramites/certificado-empadronamiento">Certificado de empadronamiento</a>
+
+
+
+		LINEA: 472, COLUMNA: 11: <a href="/es/tramites/pagos-line">Pagos On-line</a>
+
+
+
+		LINEA: 474, COLUMNA: 11: <a href="/es/tramites/altas-y-cambios-domicilio-padron-habitantes">Altas y cambios de domicilio en e ...
+
+
+
+		LINEA: 476, COLUMNA: 11: <a href="/es/tramites/volante-empadronamiento-obtencion-forma-inmediata">Volante de empadronamiento...
+
+
+
+		LINEA: 478, COLUMNA: 11: <a href="/es/tramites/instancia-general-del-ayuntamiento-alicante">Instancia general del Ayuntamient ...
+
+
+
+		LINEA: 480, COLUMNA: 11: <a href="/es/tramites/declaracion-habitabilidad-y-segunda-ocupacion-viviendas-y-autorizaciones-local ...
+
+
+
+		LINEA: 482, COLUMNA: 11: <a href="/es/tramites/licencia-obra-menor-acondicionamiento-o-restauracion-muros-y-vallados-casas-pr ...
+
+
+
+		LINEA: 484, COLUMNA: 11: <a href="/es/tramites/ocupacion-publica">Ocupación de vía pública</a>
+
+
+
+		LINEA: 491, COLUMNA: 42: <a href="/es/tramites">Todos los trámites</a>
+
+
+
+		LINEA: 506, COLUMNA: 3: <a href="/es/areas-tematicas" class="dropdown-toggle">Áreas Temáticas<span ...
+
+
+
+		LINEA: 532, COLUMNA: 81: <a href="/es/area-tematica/asociacionismo-y-participacion">Asociacionismo y participación</a>
+
+
+
+		LINEA: 535, COLUMNA: 81: <a href="/es/area-tematica/hacienda">Hacienda</a>
+
+
+
+		LINEA: 540, COLUMNA: 81: <a href="/es/area-tematica/comercio-consumo-sanidad">Comercio Consumo Sanidad</a>
+
+
+
+		LINEA: 543, COLUMNA: 81: <a href="/es/area-tematica/medio-ambiente">Medio ambiente</a>
+
+
+
+		LINEA: 548, COLUMNA: 81: <a href="/es/area-tematica/cultura-y-ocio">Cultura y ocio</a>
+
+
+
+		LINEA: 551, COLUMNA: 81: <a href="/es/area-tematica/nuevas-tecnologias">Nuevas tecnologías</a>
+
+
+
+		LINEA: 556, COLUMNA: 81: <a href="/es/area-tematica/deportes">Deportes</a>
+
+
+
+		LINEA: 559, COLUMNA: 81: <a href="/es/area-tematica/seguridad-ciudadana">Seguridad ciudadana</a>
+
+
+
+		LINEA: 564, COLUMNA: 81: <a href="/es/area-tematica/educacion">Educación</a>
+
+
+
+		LINEA: 567, COLUMNA: 81: <a href="/es/area-tematica/servicios-sociales">Servicios sociales</a>
+
+
+
+		LINEA: 572, COLUMNA: 81: <a href="/es/area-tematica/empleo-y-empresa">Empleo y empresa</a>
+
+
+
+		LINEA: 575, COLUMNA: 81: <a href="/es/area-tematica/trafico-y-transportes">Tráfico y transportes</a>
+
+
+
+		LINEA: 580, COLUMNA: 81: <a href="/es/area-tematica/espacios-urbanos">Espacios urbanos</a>
+
+
+
+		LINEA: 583, COLUMNA: 81: <a href="/es/area-tematica/turismo">Turismo</a>
+
+
+
+		LINEA: 588, COLUMNA: 81: <a href="/es/area-tematica/fiestas-de-la-ciudad">Fiestas de la Ciudad</a>
+
+
+
+		LINEA: 591, COLUMNA: 81: <a href="/es/area-tematica/urbanismo-y-vivienda">Urbanismo y vivienda</a>
+
+
+
+		LINEA: 596, COLUMNA: 81: <a href="/es/area-tematica/gente-joven">Gente joven</a>
+
+
+
+		LINEA: 644, COLUMNA: 107: <a href="https://www.alicante.es/es/noticias/emision-streaming-del-pleno-municipal-20-diciembre-2018 ...
+
+
+
+		LINEA: 646, COLUMNA: 107: <a href="https://www.alicante.es/es/noticias/programa-navidad-2018-2019"><img typeof="foaf:Image" sr ...
+
+
+
+		LINEA: 648, COLUMNA: 107: <a href="https://premiosdecomercio.alicante.es"><img typeof="foaf:Image" src="https://www.alicante.e ...
+
+
+
+		LINEA: 650, COLUMNA: 107: <a href="http://ciudadano.alicantelimpia.com/"><img typeof="foaf:Image" src="https://www.alicante.es ...
+
+
+
+		LINEA: 652, COLUMNA: 107: <a href="https://www.agendacultural.org"><img typeof="foaf:Image" src="https://www.alicante.es/sites ...
+
+
+
+		LINEA: 654, COLUMNA: 107: <a href="http://www.alicante.es/es/area-tematica/servicio-de-atencion-integral-a-la-ciudadania---sai ...
+
+
+
+		LINEA: 656, COLUMNA: 107: <a href="http://www.alicante.es/es/area-tematica/alicante-se-mueve"><img typeof="foaf:Image" src="ht ...
+
+
+
+		LINEA: 658, COLUMNA: 107: <a href="http://www.alicante.es/es/area-tematica/fondos-feder---dusi-alicante-area-las-cigarreras">< ...
+
+
+
+		LINEA: 699, COLUMNA: 11: <a href="/es/noticias/espana-solicita-gva-cesion-sala-estacion-tram-del-mercado"><img typeof="foaf:I ...
+
+
+
+		LINEA: 700, COLUMNA: 15: <a href="/es/noticias/espana-solicita-gva-cesion-sala-estacion-tram-del-mercado">De España solicita ...
+
+
+
+		LINEA: 706, COLUMNA: 11: <a href="/es/noticias/ayuntamiento-aprueba-proyecto-recuperar-antigua-fabrica-tabacos"><img typeof=" ...
+
+
+
+		LINEA: 707, COLUMNA: 15: <a href="/es/noticias/ayuntamiento-aprueba-proyecto-recuperar-antigua-fabrica-tabacos">El Ayuntamien ...
+
+
+
+		LINEA: 713, COLUMNA: 11: <a href="/es/noticias/van-gogh-alive-se-despide-16-diciembre-conquistar-60000-visitantes"><img typeo ...
+
+
+
+		LINEA: 714, COLUMNA: 15: <a href="/es/noticias/van-gogh-alive-se-despide-16-diciembre-conquistar-60000-visitantes">‘Van Gog ...
+
+
+
+		LINEA: 720, COLUMNA: 11: <a href="/es/noticias/alicante-se-prepara-ser-capital-navidad"><img typeof="foaf:Image" src="https:/ ...
+
+
+
+		LINEA: 721, COLUMNA: 15: <a href="/es/noticias/alicante-se-prepara-ser-capital-navidad">Alicante se prepara para ser capital...
+
+
+
+		LINEA: 727, COLUMNA: 11: <a href="/es/noticias/alicante-se-prepara-celebrar-mejor-cabalgata-solidaria-reyes-magos"><img typeo ...
+
+
+
+		LINEA: 728, COLUMNA: 15: <a href="/es/noticias/alicante-se-prepara-celebrar-mejor-cabalgata-solidaria-reyes-magos">Alicante s ...
+
+
+
+		LINEA: 734, COLUMNA: 11: <a href="/es/noticias/mesa-trabajo-operacion-plan-movilidad-e-intervencion-viaria-territorio-edusi"> ...
+
+
+
+		LINEA: 735, COLUMNA: 15: <a href="/es/noticias/mesa-trabajo-operacion-plan-movilidad-e-intervencion-viaria-territorio-edusi"> ...
+
+
+
+		LINEA: 741, COLUMNA: 11: <a href="/es/noticias/trescientos-escolares-alicante-tendran-protagonismo-i-jornada-cohesion-social" ...
+
+
+
+		LINEA: 742, COLUMNA: 15: <a href="/es/noticias/trescientos-escolares-alicante-tendran-protagonismo-i-jornada-cohesion-social" ...
+
+
+
+		LINEA: 748, COLUMNA: 11: <a href="/es/noticias/impulsa-cultura-proyecta-2019-edusi-alicante-presenta-bases-segunda-edicion">< ...
+
+
+
+		LINEA: 749, COLUMNA: 15: <a href="/es/noticias/impulsa-cultura-proyecta-2019-edusi-alicante-presenta-bases-segunda-edicion">...
+
+
+
+		LINEA: 758, COLUMNA: 3: <a href="/es/noticias">Más noticias</a>
+
+
+
+		LINEA: 774, COLUMNA: 47: <a href="/es/estructura-politica" title="Información sobre las distintas concejalías del Ayuntamie ...
+
+
+
+		LINEA: 775, COLUMNA: 18: <a href="https://sedeelectronica.alicante.es/" title="Portal de servicios electrónicos: Perfil de C ...
+
+
+
+		LINEA: 776, COLUMNA: 18: <a href="/es/contenidos/transparencia-municipal" title="Toda la información municipal a su disposic ...
+
+
+
+		LINEA: 777, COLUMNA: 18: <a href="/es/contenidos/cita-previa-online" title="Reserve su cita desde aquí" class="fa fa-calenda ...
+
+
+
+		LINEA: 778, COLUMNA: 18: <a href="http://www.alicante.es/es/area-tematica/servicio-atencion-integral-ciudadania-saic" title=" ...
+
+
+
+		LINEA: 779, COLUMNA: 18: <a href="/es/area-tematica/turismo" title="Información turística de la Ciudad" class="fa fa-briefc ...
+
+
+
+		LINEA: 780, COLUMNA: 18: <a href="/es/noticias/actualizacion-del-espacio-participacion-ciudadana" class="fa fa-comments" titl ...
+
+
+
+		LINEA: 781, COLUMNA: 23: <a href="https://www.agendacultural.org/" class="fa fa-book" title="Conozca la actividad cultural de ...
+
+
+
+		LINEA: 789, COLUMNA: 47: <a href="http://trafico.alicante.es/es/trafico/vista1.asp" title="Estado del tráfico e incidencias...
+
+
+
+		LINEA: 790, COLUMNA: 18: <a href="/es/contenidos/transporte-alicante-metropolitano-tam" title="Líneas, horarios, paradas y t ...
+
+
+
+		LINEA: 791, COLUMNA: 18: <a href="https://guiaurbana.alicante.es" title="Mapa interactivo de la Ciudad proporcionado por el S ...
+
+
+
+		LINEA: 792, COLUMNA: 18: <a href="http://www.aemet.es/es/eltiempo/prediccion/municipios/alacant-alicante-id03014" title="Cond ...
+
+
+
+		LINEA: 793, COLUMNA: 18: <a href="https://guiaurbana.alicante.es/?capa=farmacias,guiaurbana" title="Información detallada de ...
+
+
+
+		LINEA: 794, COLUMNA: 23: <a href="/es/contenidos/servicios-emergencia" class="fa fa-phone">Servicios de emergencia</a>
+
+
+
+		LINEA: 814, COLUMNA: 11: <a href="/es/contenidos/actividades-cursos-y-talleres-centro-14-2019"><img typeof="foaf:Image" src=" ...
+
+
+
+		LINEA: 816, COLUMNA: 11: <a href="/es/noticias/programacion-educacion-ambiental-plaza-nueva"><img typeof="foaf:Image" src="ht ...
+
+
+
+		LINEA: 818, COLUMNA: 11: <a href="/es/noticias/navidad-papel-alicante-centro-14"><img typeof="foaf:Image" src="https://www.al ...
+
+
+
+		LINEA: 820, COLUMNA: 11: <a href="/es/noticias/navidad-zona-norte-2018-2019"><img typeof="foaf:Image" src="https://www.alican ...
+
+
+
+		LINEA: 822, COLUMNA: 11: <a href="/es/noticias/pleno-ordinario-del-mes-diciembre"><img typeof="foaf:Image" src="https://www.a ...
+
+
+
+		LINEA: 824, COLUMNA: 11: <a href="/es/noticias/horario-navidad-oac-y-010"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 826, COLUMNA: 11: <a href="/es/agenda/paca-vintage-market-navideno-paseo-campoamor-alicante"><img typeof="foaf:Image"...
+
+
+
+		LINEA: 828, COLUMNA: 11: <a href="/es/noticias/concursos-navidad-2018"><img typeof="foaf:Image" src="https://www.alicante.es/ ...
+
+
+
+		LINEA: 830, COLUMNA: 11: <a href="/es/noticias/programa-navidad-2018-2019"><img typeof="foaf:Image" src="https://www.alicante ...
+
+
+
+		LINEA: 832, COLUMNA: 11: <a href="/es/concursos/premios-ciudad-alicante-al-comercio-2018"><img typeof="foaf:Image" src="https ...
+
+
+
+		LINEA: 834, COLUMNA: 11: <a href="/es/contenidos/actividades-fondos-feder-edusi-area-cigarreras"><img typeof="foaf:Image" src ...
+
+
+
+		LINEA: 836, COLUMNA: 11: <a href="/es/contenidos/programacion-actividades-concejalia-igualdad-octubre-2018-enero-2019"><img t ...
+
+
+
+		LINEA: 838, COLUMNA: 11: <a href="/es/noticias/aplicacion-ley-memoria-historica-cambios-callejero-ciudad"><img typeof="foaf:I ...
+
+
+
+		LINEA: 840, COLUMNA: 11: <a href="/es/contenidos/mapa-cultural-alicante"><img typeof="foaf:Image" src="https://www.alicante.e ...
+
+
+
+		LINEA: 842, COLUMNA: 11: <a href="/es/noticias/recursos-zona-norte"><img typeof="foaf:Image" src="https://www.alicante.es/sit ...
+
+
+
+		LINEA: 844, COLUMNA: 11: <a href="/es/contenidos/banda-sinfonica-municipal"><img typeof="foaf:Image" src="https://www.alicant ...
+
+
+
+		LINEA: 846, COLUMNA: 11: <a href="/es/noticias/mas-6000-inmigrantes-se-beneficiaran-subvenciones-aprobadas-ayuntamiento"><img ...
+
+
+
+		LINEA: 848, COLUMNA: 11: <a href="/es/contenidos/servicio-pangea-oficina-atencion-personas-migradas"><img typeof="foaf:Image" ...
+
+
+
+		LINEA: 850, COLUMNA: 11: <a href="/es/noticias/cita-previa-departamento-estadistica"><img typeof="foaf:Image" src="https://ww ...
+
+
+
+		LINEA: 852, COLUMNA: 11: <a href="/es/contenidos/actividades-formativas-del-ayuntamiento-alicante"><img typeof="foaf:Image" s ...
+
+
+
+		LINEA: 854, COLUMNA: 11: <a href="/es/noticias/acceso-mapas-concejalia-urbanismo"><img typeof="foaf:Image" src="https://www.a ...
+
+
+
+		LINEA: 856, COLUMNA: 11: <a href="/es/documentos/inventario-caminos-publicos-rurales-municipales"><img typeof="foaf:Image" sr ...
+
+
+
+		LINEA: 858, COLUMNA: 11: <a href="/es/noticias/convocatoria-subvenciones-entidades-interes-social-ano-2018-accion-social"><im ...
+
+
+
+		LINEA: 860, COLUMNA: 11: <a href="/es/tramites/preinscripcion-agrupacion-voluntarios-proteccion-civil"><img typeof="foaf:Imag ...
+
+
+
+		LINEA: 862, COLUMNA: 11: <a href="/es/equipamientos/medios-informacion-concejalia-urbanismo-y-conservacion-inmuebles"><img ty ...
+
+
+
+		LINEA: 864, COLUMNA: 11: <a href="/es/tramites/matriculacion-escolar"><img typeof="foaf:Image" src="https://www.alicante.es/s ...
+
+
+
+		LINEA: 866, COLUMNA: 11: <a href="/es/tramites/participacion-actividades-escolares"><img typeof="foaf:Image" src="https://www ...
+
+
+
+		LINEA: 868, COLUMNA: 11: <a href="/es/documentos/centros-escolares"><img typeof="foaf:Image" src="https://www.alicante.es/sit ...
+
+
+
+		LINEA: 870, COLUMNA: 11: <a href="/es/equipamientos/centro-asociaciones-y-voluntariado-alicante"><img typeof="foaf:Image" src ...
+
+
+
+		LINEA: 892, COLUMNA: 194: <a href="/es/node?qt-tabs_home_agenda=0#qt-tabs_home_agenda" id="quicktabs-tab-tabs_home_agenda-0" c ...
+
+
+
+		LINEA: 892, COLUMNA: 324: <a href="/es/node?qt-tabs_home_agenda=1#qt-tabs_home_agenda" id="quicktabs-tab-tabs_home_agenda-1" c ...
+
+
+
+		LINEA: 892, COLUMNA: 475: <a href="/es/node?qt-tabs_home_agenda=2#qt-tabs_home_agenda" id="quicktabs-tab-tabs_home_agenda-2" c ...
+
+
+
+		LINEA: 904, COLUMNA: 88: <a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018"><img typeof="foaf:Image" src="http ...
+
+
+
+		LINEA: 905, COLUMNA: 80: <a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018">Concierto de Navidad y Nacimiento...
+
+
+
+		LINEA: 913, COLUMNA: 88: <a href="/es/agenda/danza-contemporanea-maca"><img typeof="foaf:Image" src="https://www.alicante.es/ ...
+
+
+
+		LINEA: 914, COLUMNA: 80: <a href="/es/agenda/danza-contemporanea-maca">Danza contemporánea en el MACA</a>
+
+
+
+		LINEA: 921, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-anem-biblio-20"><img typeof="foaf:Image" src="https://www.alican ...
+
+
+
+		LINEA: 922, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-anem-biblio-20">Cultura en barrios. Anem a la Biblio</a>
+
+
+
+		LINEA: 929, COLUMNA: 88: <a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec-0"><img typeof="foaf:Image" src="https: ...
+
+
+
+		LINEA: 930, COLUMNA: 80: <a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec-0">Curso de Mezcla de Sonido. Miguel Al ...
+
+
+
+		LINEA: 938, COLUMNA: 88: <a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec"><img typeof="foaf:Image" src="https:// ...
+
+
+
+		LINEA: 939, COLUMNA: 80: <a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec">Curso de Mezcla de Sonido. Miguel Alse ...
+
+
+
+		LINEA: 947, COLUMNA: 88: <a href="/es/agenda/curso-sintesis-sonido"><img typeof="foaf:Image" src="https://www.alicante.es/sit ...
+
+
+
+		LINEA: 948, COLUMNA: 80: <a href="/es/agenda/curso-sintesis-sonido">Curso de Síntesis de Sonido</a>
+
+
+
+		LINEA: 959, COLUMNA: 7: <a href="https://www.agendacultural.org/es" class="banner_agenda_cultura" title="Conozca la activida ...
+
+
+
+		LINEA: 976, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-anem-biblio-19"><img typeof="foaf:Image" src="https://www.alican ...
+
+
+
+		LINEA: 977, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-anem-biblio-19">Cultura en barrios. Anem a la Biblio</a>
+
+
+
+		LINEA: 984, COLUMNA: 88: <a href="/es/agenda/danza-contemporanea-maca"><img typeof="foaf:Image" src="https://www.alicante.es/ ...
+
+
+
+		LINEA: 985, COLUMNA: 80: <a href="/es/agenda/danza-contemporanea-maca">Danza contemporánea en el MACA</a>
+
+
+
+		LINEA: 992, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-anem-biblio-20"><img typeof="foaf:Image" src="https://www.alican ...
+
+
+
+		LINEA: 993, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-anem-biblio-20">Cultura en barrios. Anem a la Biblio</a>
+
+
+
+		LINEA: 1000, COLUMNA: 88: <a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018"><img typeof="foaf:Image" src="http ...
+
+
+
+		LINEA: 1001, COLUMNA: 80: <a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018">Concierto de Navidad y Nacimiento...
+
+
+
+		LINEA: 1009, COLUMNA: 88: <a href="/es/agenda/patas-y-libros-4"><img typeof="foaf:Image" src="https://www.alicante.es/sites/de ...
+
+
+
+		LINEA: 1010, COLUMNA: 80: <a href="/es/agenda/patas-y-libros-4">Patas y libros</a>
+
+
+
+		LINEA: 1017, COLUMNA: 88: <a href="/es/agenda/mestiza-iii-festival-teatro-clasico"><img typeof="foaf:Image" src="https://www.a ...
+
+
+
+		LINEA: 1018, COLUMNA: 80: <a href="/es/agenda/mestiza-iii-festival-teatro-clasico">Mestiza. III Festival Teatro Clásico</a>
+
+
+
+		LINEA: 1028, COLUMNA: 7: <a href="https://www.agendacultural.org/es" class="banner_agenda_cultura" title="Conozca la activida ...
+
+
+
+		LINEA: 1045, COLUMNA: 88: <a href="/es/agenda/fabrica-arte-talleres-infantiles-cigareras"><img typeof="foaf:Image" src="https: ...
+
+
+
+		LINEA: 1046, COLUMNA: 80: <a href="/es/agenda/fabrica-arte-talleres-infantiles-cigareras">&quot;Fábrica de arte&quot;. Taller ...
+
+
+
+		LINEA: 1054, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-5"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1055, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-5">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1063, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-6"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1064, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-6">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1072, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-8"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1073, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-8">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1081, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-7"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1082, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-7">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1090, COLUMNA: 88: <a href="/es/agenda/cultura-barrios-juganadal-9"><img typeof="foaf:Image" src="https://www.alicante. ...
+
+
+
+		LINEA: 1091, COLUMNA: 80: <a href="/es/agenda/cultura-barrios-juganadal-9">Cultura en barrios. JugaNadal</a>
+
+
+
+		LINEA: 1102, COLUMNA: 7: <a href="https://www.agendacultural.org/es" class="banner_agenda_cultura" title="Conozca la activida ...
+
+
+
+		LINEA: 1116, COLUMNA: 7: <a href="https://twitter.com/@alicanteayto" class="twitter-timeline" data-widget-id="581366074064658 ...
+
+
+
+		LINEA: 1130, COLUMNA: 3: <a href="concursos"><div class="block-box-white"><div class="block-top-icons-icon"> ...
+
+
+
+		LINEA: 1141, COLUMNA: 3: <a href="festivales"><div class="block-box-white"><div class="block-top-icons-icon">...
+
+
+
+		LINEA: 1152, COLUMNA: 3: <a href="subvenciones"><div class="block-box-white"><div class="block-top-icons-icon">...
+
+
+
+		LINEA: 1163, COLUMNA: 3: <a href="/es/contenidos/actividades-formativas-del-ayuntamiento-alicante"><div class="block-box ...
+
+
+
+		LINEA: 1174, COLUMNA: 3: <a href="perfil"><div class="block-box-white"><div class="block-top-icons-icon">...
+
+
+
+		LINEA: 1185, COLUMNA: 3: <a href="galerias_imagen"><div class="block-box-white"><div class="block-top-icons-icon" ...
+
+
+
+		LINEA: 1210, COLUMNA: 52: <a href="https://www.google.es/maps/place/Ayuntamiento+de+Alicante/">Plaza del Ayuntamiento, 1 03002 ...
+
+
+
+		LINEA: 1212, COLUMNA: 48: <a href="tel:010">010</a>
+
+
+
+		LINEA: 1212, COLUMNA: 78: <a href="tel:966900886">966 900 886</a>
+
+
+
+		LINEA: 1214, COLUMNA: 46: <a href="/es/directorio">Directorio Municipal</a>
+
+
+
+		LINEA: 1226, COLUMNA: 26: <a href="/area-tematica/la-ciudad">La Ciudad</a>
+
+
+
+		LINEA: 1227, COLUMNA: 23: <a href="/area-tematica/el-ayuntamiento">El Ayuntamiento</a>
+
+
+
+		LINEA: 1228, COLUMNA: 23: <a href="/tramites">Trámites</a>
+
+
+
+		LINEA: 1229, COLUMNA: 23: <a href="/areas-tematicas">Áreas Temáticas</a>
+
+
+
+		LINEA: 1230, COLUMNA: 23: <a href="/noticias">Noticias</a>
+
+
+
+		LINEA: 1231, COLUMNA: 23: <a href="/agenda">Agenda</a>
+
+
+
+		LINEA: 1232, COLUMNA: 23: <a href="/estructura-politica">Concejalías</a>
+
+
+
+		LINEA: 1233, COLUMNA: 23: <a href="https://sedeelectronica.alicante.es/">Sede Electrónica</a>
+
+
+
+		LINEA: 1234, COLUMNA: 29: <a href="/contenidos/transparencia-municipal">Transparencia Municipal</a>
+
+
+
+		LINEA: 1235, COLUMNA: 23: <a href="/es/contenidos/cita-previa-online">Cita Previa</a>
+
+
+
+		LINEA: 1236, COLUMNA: 23:
+
+ 
+
+		LINEA: 1237, COLUMNA: 23: <a href="http://www.alicanteturismo.com/">Turismo</a>
+
+
+
+		LINEA: 1238, COLUMNA: 23: <a href="/es/noticias/actualizacion-del-espacio-participacion-ciudadana">Espacio Participación Ciud ...
+
+
+
+		LINEA: 1239, COLUMNA: 23: <a href="https://w2.alicante.es/profesionales">Para empresas y organismos</a>
+
+
+
+		LINEA: 1240, COLUMNA: 23: <a href="https://www--alicante--es.accesible.inclusite.com">Web accesible</a>
+
+
+
+		LINEA: 1241, COLUMNA: 23: <a href="/sitemap">Mapa del sitio Web</a>
+
+
+
+		LINEA: 1252, COLUMNA: 15: <a class="rrss facebook fa-stack fa-3x" href="http://www.facebook.com/AyuntamientoAlicante" title="S ...
+
+
+
+		LINEA: 1253, COLUMNA: 7: <a class="rrss twitter fa-stack fa-3x" href="http://www.twitter.com/alicanteayto" title="Síguenos e ...
+
+
+
+		LINEA: 1254, COLUMNA: 7: <a class="rrss youtube fa-stack fa-3x" href="http://www.youtube.com/user/AytoAlicante" title="Sígue ...
+
+
+
+		LINEA: 1255, COLUMNA: 7: <a class="rrss googleplus fa-stack fa-3x" href="https://plus.google.com/u/0/b/117242322143820566612/ ...
+
+
+
+		LINEA: 1256, COLUMNA: 7: <a class="rrss pinterest fa-stack fa-3x" href="http://www.pinterest.com/alicanteayto" title="Síguen ...
+
+
+
+		LINEA: 1257, COLUMNA: 7: <a class="rrss instagram fa-stack fa-3x" href="http://www.instagram.com/alicanteayto" title="Síguen ...
+
+
+
+		LINEA: 1280, COLUMNA: 10: <a href="/es/contenidos/aviso-legal">Aviso legal</a>
+
+
+
+		LINEA: 1280, COLUMNA: 67: <a href="/es/contenidos/proteccion-datos">Protección de datos</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 227, COLUMNA: 9: <h1 class="site-name element-invisible"><a href="/es" title="Inicio" class="active">Ayuntamiento de...
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 688, COLUMNA: 15: <h2 class="block-title">Noticias</h2>
+
+
+
+		LINEA: 771, COLUMNA: 15: <h2 class="block-title">Te interesa</h2>
+
+
+
+		LINEA: 786, COLUMNA: 15: <h2 class="block-title">Alicante al minuto</h2>
+
+
+
+		LINEA: 889, COLUMNA: 15: <h2 class="block-title">Alicante Cultural</h2>
+
+
+
+		LINEA: 1128, COLUMNA: 7: <h2 class="block-title">Otros contenidos</h2>
+
+
+
+		LINEA: 1207, COLUMNA: 15: <h2 class="block-title">Ayuntamiento de Alicante</h2>
+
+
+
+		LINEA: 1224, COLUMNA: 7: <h2 class="block-title">Secciones principales</h2>
+
+
+
+		LINEA: 1249, COLUMNA: 15: <h2 class="block-title">Síguenos en</h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 700, COLUMNA: 11: <h3><a href="/es/noticias/espana-solicita-gva-cesion-sala-estacion-tram-del-mercado">De España soli ...
+
+
+
+		LINEA: 707, COLUMNA: 11: <h3><a href="/es/noticias/ayuntamiento-aprueba-proyecto-recuperar-antigua-fabrica-tabacos">El Ayunta ...
+
+
+
+		LINEA: 714, COLUMNA: 11: <h3><a href="/es/noticias/van-gogh-alive-se-despide-16-diciembre-conquistar-60000-visitantes">‘Van ...
+
+
+
+		LINEA: 721, COLUMNA: 11: <h3><a href="/es/noticias/alicante-se-prepara-ser-capital-navidad">Alicante se prepara para ser capi ...
+
+
+
+		LINEA: 728, COLUMNA: 11: <h3><a href="/es/noticias/alicante-se-prepara-celebrar-mejor-cabalgata-solidaria-reyes-magos">Alican ...
+
+
+
+		LINEA: 735, COLUMNA: 11: <h3><a href="/es/noticias/mesa-trabajo-operacion-plan-movilidad-e-intervencion-viaria-territorio-edu ...
+
+
+
+		LINEA: 742, COLUMNA: 11: <h3><a href="/es/noticias/trescientos-escolares-alicante-tendran-protagonismo-i-jornada-cohesion-soc ...
+
+
+
+		LINEA: 749, COLUMNA: 11: <h3><a href="/es/noticias/impulsa-cultura-proyecta-2019-edusi-alicante-presenta-bases-segunda-edicio ...
+
+
+
+		LINEA: 905, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018">Conciert ...
+
+
+
+		LINEA: 914, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/danza-contemporanea-maca">Danza contemporánea en el M ...
+
+
+
+		LINEA: 922, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/cultura-barrios-anem-biblio-20">Cultura en barrios. An ...
+
+
+
+		LINEA: 930, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec-0">Curso de M ...
+
+
+
+		LINEA: 939, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/curso-mezcla-sonido-miguel-alsem-momutec">Curso de Mez ...
+
+
+
+		LINEA: 948, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/curso-sintesis-sonido">Curso de Síntesis de Sonido</a ...
+
+
+
+		LINEA: 977, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/cultura-barrios-anem-biblio-19">Cultura en barrios. An ...
+
+
+
+		LINEA: 985, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/danza-contemporanea-maca">Danza contemporánea en el M ...
+
+
+
+		LINEA: 993, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/cultura-barrios-anem-biblio-20">Cultura en barrios. An ...
+
+
+
+		LINEA: 1001, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/concierto-navidad-y-nacimiento-viviente-2018">Conciert ...
+
+
+
+		LINEA: 1010, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/patas-y-libros-4">Patas y libros</a></h3>
+
+
+
+		LINEA: 1018, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/mestiza-iii-festival-teatro-clasico">Mestiza. III Fest ...
+
+
+
+		LINEA: 1046, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/fabrica-arte-talleres-infantiles-cigareras">&quot;Fáb ...
+
+
+
+		LINEA: 1055, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/cultura-barrios-juganadal-5">Cultura en barrios. JugaN ...
+
+
+
+		LINEA: 1064, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/cultura-barrios-juganadal-6">Cultura en barrios. JugaN ...
+
+
+
+		LINEA: 1073, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/cultura-barrios-juganadal-8">Cultura en barrios. JugaN ...
+
+
+
+		LINEA: 1082, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/cultura-barrios-juganadal-7">Cultura en barrios. JugaN ...
+
+
+
+		LINEA: 1091, COLUMNA: 54: <h3 class="field-content"><a href="/es/agenda/cultura-barrios-juganadal-9">Cultura en barrios. JugaN ...
+
+
+
+		LINEA: 1135, COLUMNA: 7: <h3>Concursos</h3>
+
+
+
+		LINEA: 1146, COLUMNA: 7: <h3>Festivales</h3>
+
+
+
+		LINEA: 1157, COLUMNA: 7: <h3>Subvenciones</h3>
+
+
+
+		LINEA: 1168, COLUMNA: 7: <h3>Actividades formativas</h3>
+
+
+
+		LINEA: 1179, COLUMNA: 7: <h3>Por perfiles</h3>
+
+
+
+		LINEA: 1190, COLUMNA: 7: <h3>Galerías multimedia</h3>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 186, COLUMNA: 7: <form action="/es/buscar" method="get" id="views-exposed-form-busqueda-facetada-page" accept-charset ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 150, COLUMNA: 1: <body class="html front not-logged-in page-node i18n-es no-sidebars"><div id="skip-link">< ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 186, COLUMNA: 7: <form action="/es/buscar" method="get" id="views-exposed-form-busqueda-facetada-page" accept-charset ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 186, COLUMNA: 7: <form action="/es/buscar" method="get" id="views-exposed-form-busqueda-facetada-page" accept-charset ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 196, COLUMNA: 7: <input type="submit" id="edit-submit-busqueda-facetada" name="" value="Buscar" class="form-submit" / ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 186, COLUMNA: 7: <form action="/es/buscar" method="get" id="views-exposed-form-busqueda-facetada-page" accept-charset ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 186, COLUMNA: 7: <form action="/es/buscar" method="get" id="views-exposed-form-busqueda-facetada-page" accept-charset ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 186, COLUMNA: 7: <form action="/es/buscar" method="get" id="views-exposed-form-busqueda-facetada-page" accept-charset ...
+
+

@@ -1,0 +1,10 @@
+12/15/2018 01:31:39 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "observatorio"
+	PAGINA WEB: 211
+	INFORMACION: "ConnectTimeout(MaxRetryError("HTTPConnectionPool(host='observatorioweb.ups.edu.ec', port=80): Max retries exceeded with url: /oaw/srv/wcag/json/conformidad/?url=http://www.mitramiss.gob.es/&key=**** (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x7f9225ac9a20>, 'Connection to observatorioweb.ups.edu.ec timed out. (connect timeout=60)'))",),)"
+
+12/15/2018 02:05:13 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "wave"
+	PAGINA WEB: 196
+	INFORMACION: "ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='wave.webaim.org', port=80): Read timed out. (read timeout=15)",),)"
+

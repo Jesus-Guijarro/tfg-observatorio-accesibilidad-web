@@ -1,0 +1,35 @@
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/dar-lectura
+FECHA EVALUACIÓN: 2018-11-12
+
+PROBLEMAS
+Missing form label	  VECES ENCONTRADO: 2
+Missing alternative text	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Redundant title text	  VECES ENCONTRADO: 19
+Skipped heading level	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 5
+Orphaned form label	  VECES ENCONTRADO: 1
+Very small text	  VECES ENCONTRADO: 6
+Possible heading	  VECES ENCONTRADO: 5
+Fieldset missing legend	  VECES ENCONTRADO: 2
+
+
+
+CARACTERISTICAS
+Fieldset	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 2
+Alternative text	  VECES ENCONTRADO: 8
+Form label	  VECES ENCONTRADO: 6
+Null or empty alternative text	  VECES ENCONTRADO: 9
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 17
+
+
+

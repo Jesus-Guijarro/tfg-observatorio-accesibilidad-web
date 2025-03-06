@@ -1,0 +1,25 @@
+12/19/2018 01:03:56 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 31
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/19/2018 01:08:47 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 32
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/19/2018 02:06:14 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 176
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/19/2018 02:32:54 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "vamola"
+	PAGINA WEB: 241
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/19/2018 02:35:39 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "vamola"
+	PAGINA WEB: 242
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+

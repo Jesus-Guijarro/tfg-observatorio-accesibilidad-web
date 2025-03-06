@@ -1,0 +1,41 @@
+REPORTE PÁGINA WEB: https://www.uv.es/uvweb/college/en/university-valencia-1285845048380.html
+FECHA EVALUACIÓN: 2018-11-11
+
+PROBLEMAS
+Empty link	  VECES ENCONTRADO: 10
+Empty heading	  VECES ENCONTRADO: 2
+Missing form label	  VECES ENCONTRADO: 11
+Missing alternative text	  VECES ENCONTRADO: 417
+Linked image missing alternative text	  VECES ENCONTRADO: 7
+Empty button	  VECES ENCONTRADO: 4
+
+
+
+ALERTAS
+Noscript element	  VECES ENCONTRADO: 5
+Very small text	  VECES ENCONTRADO: 4
+JavaScript jump menu	  VECES ENCONTRADO: 11
+Long alternative text	  VECES ENCONTRADO: 2
+A nearby image has the same alternative text	  VECES ENCONTRADO: 2
+Missing fieldset	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 1
+Redundant alternative text	  VECES ENCONTRADO: 5
+Redundant title text	  VECES ENCONTRADO: 63
+Skipped heading level	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 50
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 73
+Form label	  VECES ENCONTRADO: 1
+Null or empty alternative text	  VECES ENCONTRADO: 15
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 44
+
+
+

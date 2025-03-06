@@ -1,0 +1,637 @@
+<!--?xml version="1.0" encoding="ISO-8859-1"?--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://www.w3.org/1999/xhtml http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd" xml:lang="es-ES" lang="es"><head>
+<meta http-equiv="content-type" content="text/html;charset=ISO-8859-15" />
+<meta http-equiv="content-type" content="text/html;charset=ISO-8859-15" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Script-Type" content="type" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Traslados e intercambios | UPV - Universitat Politècnica de València</title>    
+<meta name="description" content="Información sobre cómo realizar estancias o continuar estudios en la Universitat Politècnica de València como alumno visitante, PDI o PAS desde instituciones nacionales o extranjeras. Todo lo necesario para convalidar estudios, trasladar expedientes, acceder a becas..." />
+<meta name="keywords" content="upv, estudios, grado, estudiar, extranjero, estancias, convalidar, estudios, visitante, alumno, expedientes, traslado, alojamiento, politècnica, universitat, valencia" />
+<link rel="stylesheet" href="/css/home.css" media="screen" />    
+<link rel="stylesheet" href="/css/n-paginas.css" media="screen" />
+<script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.js"></script>
+<script type="text/javascript" src="/js/tipografia.min.js"></script>
+<script type="text/javascript" src="/js/idioma.min.js"></script>
+<link href="/css/n23-normal.css" rel="stylesheet" type="text/css" />
+
+
+<link href="/css/n23-tablet.css" rel="stylesheet" type="text/css" />
+<link href="/css/n23-movil.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript">$(document).ready(function() {establecer_tipografia();});</script>
+    <!-- Bloque de menú -->
+
+    <script type="text/javascript">
+        function cerrarSubmenus() {
+            $("#submenu1").slideUp();
+            $("#submenu2").slideUp();
+            $("#submenu3").slideUp();
+            $("#submenu4").slideUp();
+            $("#submenu5").slideUp();
+        }
+
+        function showOnOff(imgElemId, divElemId) {
+            var divElem = document.getElementById(divElemId);
+            var imgElem = document.getElementById(imgElemId);
+            // Abrimos o cerramos el item seleccionado
+            if (divElem.style.display == "none" || divElem.style.display == "") {
+                divElem.style.display = "block";
+                imgElem.src = "/imagenes/icon-plegar.png";
+                /*opensubs[indice]=1*/
+            } else {
+                divElem.style.display = "none";
+                imgElem.src = "/imagenes/icon-desplegar.png";
+                /*opensubs[indice]=0*/
+            }
+            return false;
+            /* true if opera 6 */
+        }
+
+        var timer;
+
+        function menu() {
+            $("#div_MENUH").hover(
+                function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $("#DIVbarraMenutog").css({"display": "block"});
+                    $("#img_close_tablet").css({"display": "block"});
+                    $("#img_open_tablet").css({"display": "none"});
+                    if (timer) {
+                        clearTimeout(timer);
+                        timer = null
+                    }
+                },
+
+                function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    timer = setTimeout(function () {
+                        $("#DIVbarraMenutog").slideUp(1000);
+                        $("#img_close_tablet").css({"display": "none"});
+                        $("#img_open_tablet").css({"display": "block"});
+
+                    }, 1000);
+
+                }
+            );
+        }
+
+        $(document).ready(function () {
+            menu();
+            $("#desplegarSubmenu1").on("click",
+                function () {
+                    cerrarSubmenus();
+                    $("#submenu1").css({"display": "block"});
+                    $("#plegarSubmenu1").css({"display": "block"});
+                    $("#desplegarSubmenu1").css({"display": "none"});
+                }
+            );
+            $("#plegarSubmenu1").on("click",
+                function () {
+                    $("#submenu1").css({"display": "none"});
+                    $("#plegarSubmenu1").css({"display": "none"});
+                    $("#desplegarSubmenu1").css({"display": "block"});
+                }
+            );
+
+            $("#menu_close_tablet").on("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                //alert(document.getElementById("DIVbarraMenutog").style.display);
+                if (document.getElementById("DIVbarraMenutog").style.display == 'block') {
+                    $("#DIVbarraMenutog").slideUp();
+                    $("#img_close_tablet").css({"display": "none"});
+                    $("#img_open_tablet").css({"display": "block"});
+                } else if (document.getElementById("DIVbarraMenutog").style.display == '') {
+                    $("#DIVbarraMenutog").slideUp();
+                    $("#img_close_tablet").css({"display": "none"});
+                    $("#img_open_tablet").css({"display": "block"});
+                }
+                else if (document.getElementById("DIVbarraMenutog").style.display == 'none') {
+                    $("#DIVbarraMenutog").css({"display": "block"});
+                    $("#img_close_tablet").css({"display": "block"});
+                    $("#img_open_tablet").css({"display": "none"});
+                }
+            });
+        });
+
+        //setInterval(menu, 1000);
+    </script>
+
+    <!-- Para el menú herramientas -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+                $(".div-hgsa2").on('click', function () {
+                        $("#div_MENUHMovil").slideUp();
+                        $("#DIVmenuHerramientas").toggle();
+                    }
+                )
+
+                $(".div-hgsa").on('click', function () {
+                        $("#DIVmenuHerramientas").slideUp();
+                        $("#div_MENUHMovil").toggle();
+                    }
+                )
+            }
+        );
+
+    </script>
+    <noscript>
+    
+    </noscript>
+</head>
+<body style="font-size:80%;">
+<div id="body">
+  <div id="DIVpag">
+    <!-- cabecera pagina -->  
+    <div id="DIVcab">
+      <div id="DIVsep1N2">
+        <img alt="-" src="/imagenes/NGR.png" style="float:left;width:342px;height:10px;" />
+        <img alt="-" src="/imagenes/NGR.png" style="width:138px;height:10px;float:right;" />
+      </div>
+
+      <div id="DIVcab1N2">
+        <div id="DIVescudoN2"><a href="/index-es.html"><img src="/imagenes/marcaUPVN1.png" id="escudoN2" alt="UPV" longdesc="/escudo-es.txt" /></a></div>
+        <!-- Icono del menú Hamburguesa -->
+        <div class="menu_movil" style="display:none;">
+			<div class="div-identif">
+			  
+               <a href="https://www.upv.es/pls/soalu/est_intranet.Ni_portal_n?P_IDIOMA=c" title="Mi UPV" class="menuAD2"><img src="/imagenes/img_identif.png" alt="Mi UPV" /></a>
+              
+			
+			</div>
+			<div class="div-hgsa2">
+			<img src="/imagenes/menu-hamburguesa2.png" alt="Herramientas" />
+			</div>
+			<div class="div-hgsa">
+			<img src="/imagenes/menu-hamburguesa.png" alt="Menú" />
+			</div>
+		</div>
+        <div id="DIVmenuHerramientas">
+          <ul>
+              <li class="menuHerramientas">
+                <script type="text/javascript">//&lt;![CDATA[
+                
+                  var idioma_va="va";
+                  var va=String.fromCharCode(60) + "a class='menuHerramientas' href='javascript:cambio_idioma(idioma_va)' title='Versió en valencià' lang='es-CA'&gt;Valencià" + String.fromCharCode(60) + "/a&gt;";
+                  document.writeln(va);
+                  
+                  document.writeln("·");
+                  
+                
+                
+                  
+                
+                
+                  var idioma_en="en";
+                  var en=String.fromCharCode(60) + "a class='menuHerramientas' href='javascript:cambio_idioma(idioma_en)' title='English version' lang='en'&gt;English" + String.fromCharCode(60) + "/a&gt;";
+                  document.writeln(en);
+                
+               // ]]&gt;</script><a class="menuHerramientas" href="javascript:cambio_idioma(idioma_va)" title="Versió en valencià" lang="es-CA">Valencià</a>
+·
+<a class="menuHerramientas" href="javascript:cambio_idioma(idioma_en)" title="English version" lang="en">English</a>
+
+                <noscript>
+                  
+                  &lt;a class="menuHerramientas" href="/bin2/idiacc/va/es?/admision/traslados-e-intercambios/index-es.html" title="Versió en valencià" lang="es-CA"&gt;Valencià&lt;/a&gt;&amp;nbsp;&amp;middot;
+                  
+                  
+                    
+                  
+                  
+                  &lt;a class="menuHerramientas" href="/bin2/idiacc/en/es?/admision/traslados-e-intercambios/index-es.html" title="English version" lang="en"&gt;English&lt;/a&gt;
+                  
+                </noscript>
+               <div class="separa">I</div></li>
+              
+              <li class="menuHerramientas"><a href="?tl=a" title="Reducir texto" onclick="return cambia_tipografia(tipo1);return false;" class="menuHerramientas">a</a> · <a href="?tl=A" onclick="return cambia_tipografia(tipo2);return false;" title="Agrandar texto" class="menuHerramientas">A</a>  <div class="separa">I</div></li>
+              <li class="menuHerramientas"><a href="/otros/accesibilidad-es.html" title="Accesibilidad" class="menuHerramientas">Accesibilidad</a>  <div class="separa">I</div></li>
+              <li class="menuHerramientas"><a href="/otros/mapa-web-es.html" title="Mapa web" class="menuHerramientas">Mapa web</a>  <div class="separa">I</div></li>
+              <li class="menuHerramientas"><a href="/pls/oalu/sic_mag.MetaBus?ie=utf8&amp;P_IDIOMA=c&amp;q=polilupa" title="Buscador" class="menuHerramientas">Buscar</a>  <div class="separa">I</div></li>
+              <li class="menuHerramientas"><a href="/pls/oalu/sic_per.Busca_Persona?P_IDIOMA=c" title="Directorio" class="menuHerramientas">Directorio</a></li>
+              
+          </ul>
+          <ul id="DIVaccesoDirectoN2">
+              
+              <li class="menuAD">::  <a href="https://www.upv.es/pls/soalu/est_intranet.Ni_portal_n?P_IDIOMA=c" title="Mi UPV" class="menuAD2N2">Iniciar sesión</a> :: <img src="/imagenes/espacio2.png" alt="espacio" width="23" height="5" /></li>
+              
+          </ul>
+        </div>
+        <div class="estabilizador">  </div>
+      </div>
+    </div> <!-- /cabecera pagina -->
+
+
+<!-- MENU -->
+    <div id="div_MENUH">
+      <div id="DIVbarraMenu">
+        <ul class="boton">
+          <!-- 1 -->
+          <li class="menun1 menuM2">
+            
+            <a href="#">ADMISIÓN</a> <!--  <span class="menuflechacab"></span> -->
+            
+
+          </li>
+          <!-- 2 -->
+          <li class="menun1">
+            
+            <a href="#">ESTUDIOS</a>
+            
+          </li>
+
+          <!-- 3 -->
+          <li class="menun1">
+            
+            <a href="#">INVESTIGACIÓN</a>
+            
+          </li>
+
+          <!-- 4 -->
+          <li class="menun1 menuM2">
+            
+            <a href="#">ORGANIZACIÓN</a>
+            
+          </li>
+
+
+          <!-- 5 -->
+          <li class="menun1 menuM2">
+            
+            <a href="#">PERFILES</a>
+            
+          </li>
+		  <li>
+           <a class="menu_close" id="menu_close_tablet" title="Open/close" style="display:none;" href="#">
+		   <img id="img_open_tablet" src="/imagenes/icon-desplegar_GR.png" alt="Open" style="float:left;position:relative;top:0px;" />
+		   <img id="img_close_tablet" src="/imagenes/icon-plegar_GR.png" alt="Close" style="float:left;position:relative;top:0px;display:none;" />
+          </a>
+		  </li>
+        </ul>
+
+        <div class="estabilizador"> </div>
+      </div>
+      <div class="estabilizador"> </div>
+
+<!-- fin menu horizontal -->
+
+
+<!-- Menú intermedio //////////////////////////////////////////////////////////////////////////  -->
+
+      <div id="DIVbarraMenutog">
+
+        <ul class="boton">
+          <li class="menun1 menuM2">
+            <!-- 1 -->
+            <div>
+              <ul>
+                
+                <li> <a href="/admision/empezar-en-la-universidad/index-es.html">Empezar en la universidad</a> </li>
+                <li> <a href="/admision/traslados-e-intercambios/index-es.html">Traslados e intercambios</a> </li>
+                <li> <a href="/admision/despues-del-grado/index-es.html">Después del grado</a> </li>
+                
+              </ul>
+            </div>
+          </li>
+
+          <li class="menun1">
+            <!-- 2 -->
+            <div>
+              <ul>
+                
+                <li> <a href="/estudios/grado/index-es.html">Estudios de grado</a> </li>
+                <li> <a href="/estudios/posgrado/index-es.html">Estudios de posgrado</a> </li>
+                <li> <a href="/estudios/aula-abierta/index-es.html">Aula abierta</a> </li>
+                
+              </ul>
+            </div>
+          </li>
+
+          <li class="menun1">
+            <!-- 3 -->
+            <div>
+              <ul>
+                
+                <li> <a href="/investigacion/estructuras/index-es.html">Estructuras de Investigación</a> </li>
+                <li> <a href="/investigacion/iniciativas-idi/index-es.html">Iniciativas de I+D+i</a> </li>
+                <li> <a href="https://innovacion.upv.es/es" title="Innovación (abre en ventana nueva)" rel="external" onclick="target='_new'">Innovación <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva" /></a> </li>
+
+                
+              </ul>
+            </div>
+          </li>
+
+          <li class="menun1 menuM2">
+            <!-- 4 -->
+            <div>
+              <ul>
+                
+                <li> <a href="/organizacion/la-institucion/index-es.html">La institución</a> </li>
+                <li> <a href="/organizacion/vida-universitaria/index-es.html">Vida universitaria</a> </li>
+                <li> <a href="/organizacion/escuelas-facultades/index-es.html">Escuelas y facultades</a> </li>
+                <li> <a href="/organizacion/departamentos/index-es.html">Departamentos</a> </li>
+                <li> <a href="/organizacion/servicios-universitarios/index-es.html">Servicios universitarios</a> </li>
+                
+              </ul>
+            </div>
+          </li>
+
+          <li class="menun1 menuM2">
+      <!-- 5 -->
+      <div>
+        <ul>
+          
+          <li> <a href="/perfiles/futuro-alumno/index-es.html">Futuro alumno</a> </li>
+          <li> <a href="/perfiles/orientador/index-es.html">Orientador</a> </li>
+          <li> <a href="/perfiles/estudiante/index-es.html">Estudiante</a> </li>
+          <li> <a href="/perfiles/pas-pdi/index-es.html">PAS y PDI</a> </li>
+          <li> <a href="/perfiles/prensa/index-es.html">Prensa</a> </li>
+          <li> <a href="/perfiles/titulados/index-es.html">Titulados</a> </li>
+          
+        </ul>
+      </div>
+    </li>
+	<!-- <li>
+          <a class="menu_close" id="menu_close" title="Cerrar menú"  href="#"><img src="/imagenes/close-gris.png" alt="Open/close" style="float:right;position:relative;top:0px;"/>
+          </a>
+	</li> -->
+        </ul>
+        <div class="estabilizador"> </div>
+
+      </div>
+
+    </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--Menú Móvil-->
+
+
+<!-- MENU -->
+    <div id="div_MENUHMovil" style="display:none;">
+      <div id="DIVbarraMenuMovil">
+        <ul class="boton">
+          <!-- 1 -->
+          <li id="menu1" class="menun1 menuM2" onclick="showOnOff('menuimg1','submenu1');">
+            <div id="enlamenu1">
+			
+            <a href="#">ADMISIÓN <!--  <span class="menuflechacab"></span> --></a>
+            
+			 
+			</div>
+			<!--<div id="divimg1"><img  id="menuimg1" alt="Desplegar/plegar" src="//www.upv.es/yansu/images/ico_plus.gif" style="width:15;height:9;"/></div>-->
+			<div id="divimg1"><img id="menuimg1" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;" /></div>
+			
+            <ul id="submenu1" class="boton">
+          <li class="menun1 menuM2">
+            <!-- 1 -->
+            <div>
+              <ul>
+                
+                <li> <a href="/admision/empezar-en-la-universidad/index-es.html">Empezar en la universidad</a> </li>
+                <li> <a href="/admision/traslados-e-intercambios/index-es.html">Traslados e intercambios</a> </li>
+                <li> <a href="/admision/despues-del-grado/index-es.html">Después del grado</a> </li>
+                
+              </ul>
+            </div>
+          </li>
+		  </ul>
+          </li>
+          <!-- 2 -->
+          <li id="menu2" class="menun1 menuM2" onclick="showOnOff('menuimg2','submenu2');">
+            <div id="enlamenu2">
+			
+            <a href="#">ESTUDIOS</a>
+            
+			 
+			</div>
+			<div id="divimg2"><img id="menuimg2" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;" /></div>
+			
+			<ul id="submenu2" class="boton">
+			<li class="menun1">
+            <!-- 2 -->
+            <div>
+              <ul>
+                
+                <li> <a href="/estudios/grado/index-es.html">Estudios de grado</a> </li>
+                <li> <a href="/estudios/posgrado/index-es.html">Estudios de posgrado</a> </li>
+                <li> <a href="/estudios/aula-abierta/index-es.html">Aula abierta</a> </li>
+                
+              </ul>
+            </div>
+          </li>
+		  </ul>
+          </li>
+
+          <!-- 3 -->
+          <li id="menu3" class="menun1 menuM2" onclick="showOnOff('menuimg3','submenu3');">
+		  <div id="enlamenu3">
+            
+            <a href="#">INVESTIGACIÓN</a>
+            
+			 
+			</div>
+			<div id="divimg3"><img id="menuimg3" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;" /></div>
+			
+			<ul id="submenu3" class="boton">
+			<li class="menun1">
+            <!-- 3 -->
+            <div>
+              <ul>
+                
+                <li> <a href="/investigacion/estructuras/index-es.html">Estructuras de Investigación</a> </li>
+                <li> <a href="/investigacion/iniciativas-idi/index-es.html">Iniciativas de I+D+i</a> </li>
+                <li> <a href="https://innovacion.upv.es/es" title="Innovación (abre en ventana nueva)" rel="external" onclick="target='_new'">Innovación <img alt="abre nueva ventana" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva" /></a> </li>
+                
+              </ul>
+            </div>
+          </li>
+		  </ul>
+          </li>
+
+          <!-- 4 -->
+          <li id="menu4" class="menun1 menuM2" onclick="showOnOff('menuimg4','submenu4');">
+            <div id="enlamenu4">
+			
+            <a href="#">ORGANIZACIÓN</a>
+            
+			 
+			</div>
+			<div id="divimg4"><img id="menuimg4" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;" /></div>
+			
+			<ul id="submenu4" class="boton">
+			<li class="menun1 menuM2">
+            <!-- 4 -->
+            <div>
+              <ul>
+                
+                <li> <a href="/organizacion/la-institucion/index-es.html">La institución</a> </li>
+                <li> <a href="/organizacion/vida-universitaria/index-es.html">Vida universitaria</a> </li>
+                <li> <a href="/organizacion/escuelas-facultades/index-es.html">Escuelas y facultades</a> </li>
+                <li> <a href="/organizacion/departamentos/index-es.html">Departamentos</a> </li>
+                <li> <a href="/organizacion/servicios-universitarios/index-es.html">Servicios universitarios</a> </li>
+                
+              </ul>
+            </div>
+          </li>
+		  </ul>
+          </li>
+         
+          <!-- 5 -->
+          <li id="menu5" class="menun1 menuM2" onclick="showOnOff('menuimg5','submenu5');">
+		    <div id="enlamenu5">
+            
+            <a href="#">PERFILES</a>
+            
+			</div>
+			 
+			<div id="divimg5"><img id="menuimg5" alt="Desplegar/plegar" src="/imagenes/icon-desplegar.png" style="width:15;height:9;" /></div>
+			
+			<ul id="submenu5" class="boton">
+			<li class="menun1 menuM2">
+      <!-- 5 -->
+      <div>
+        <ul>
+          
+          <li> <a href="/perfiles/futuro-alumno/index-es.html">Futuro alumno</a> </li>
+          <li> <a href="/perfiles/orientador/index-es.html">Orientador</a> </li>
+          <li> <a href="/perfiles/estudiante/index-es.html">Estudiante</a> </li>
+          <li> <a href="/perfiles/pas-pdi/index-es.html">PAS y PDI</a> </li>
+          <li> <a href="/perfiles/prensa/index-es.html">Prensa</a> </li>
+          <li> <a href="/perfiles/titulados/index-es.html">Titulados</a> </li>
+          
+        </ul>
+      </div>
+    </li>
+		</ul>	
+          </li>
+           
+        </ul>
+
+        <div class="estabilizador"> </div>
+      </div>
+      <div class="estabilizador"> </div>
+
+<!-- fin menu horizontal -->
+
+</div>
+
+<!-- contenidos pagina -->     
+
+
+<h1>Traslados e intercambios</h1>
+<div id="DIVbannerN2">
+	<h1>Traslados e intercambios</h1><img id="banner_sec" width="950" height="152" longdesc="banner-n2-es.html" alt="banner UPV" src="/imagenes/portales/ban_traslados-e-intercambios-es.png" /></div>
+<div class="estabilizador">  </div>
+<div id="div_contenidoN2" style="width:950px; height:auto;">
+	<div id="DIVpanelCentralN2" style="height:180px;">
+		<div class="div_BLOQUE  CE_B1">
+			<p class="texto_bloque"><strong>Quiero continuar un grado en la UPV</strong></p><br /><ul class="lista3bloque">
+				<li><a href="/perfiles/futuro-alumno/estudios-desde-otra-universidad-es.html" title="Vengo de otra universidad">Vengo de otra universidad</a></li>
+				<li><a href="https://www.upv.es/pls/soalu/sic_cont_est.sol_cont_est?p_vista=normal&amp;P_IDIOMA=c" title="Solicitud de admisión">Solicitud de admisión</a></li>
+				<li><a href="/entidades/SA/ciclos/528837normalc.html" title="Normativa de progreso y permanencia">Normativa de progreso y permanencia</a></li>
+			</ul>
+			<div class="estabilizador">  </div>
+		</div>
+		<div class="div_BLOQUE  CE_B2">
+			<p class="texto_bloque"><strong>Quiero hacer una estancia en la UPV</strong></p><br /><ul class="lista3bloque">
+				<li><a href="/entidades/OPII/infoweb/pi/info/804017normalc.html" title="Estudio en una universidad extranjera">Estudio en una universidad extranjera</a></li>
+				<li><a href="http://www.opii.upv.es/default.asp?menu=142&amp;web=10" title="Estudio en otra universidad española">Estudio en otra universidad española</a></li>
+				<li><a href="/admision/traslados-e-intercambios/documentos/alumno-visitante.pdf" target="_blank" title="Soy alumno visitante (abre en nueva ventana)">Soy alumno visitante <img alt="Soy alumno visitante (abre en nueva ventana)" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva" /></a></li>
+				<li><a href="/entidades/OPII/infoweb/pi/info/758137normalc.html" title="Soy PDI">Soy PDI</a></li>
+				<li><a href="/entidades/OPII/infoweb/pi/info/760229normalc.html" title="Soy PAS">Soy PAS</a></li>
+			</ul>
+			<div class="estabilizador">  </div>
+		</div>
+		<div class="div_BLOQUE  CE_B3">
+			<p class="texto_bloque"><strong>Lo tengo todo en un clic</strong></p><br /><ul class="lista3bloque">
+				<li><a href="/perfiles/futuro-alumno/veinte-razones-es.html" title="25 razones para decidirte">25 razones para decidirte</a></li>
+				<li><a href="/perfiles/estudiante/introduccion-becas-es.html" title="Becas y ayudas">Becas y ayudas</a></li>
+				<li><a href="/perfiles/estudiante/alojamientos-upv-es.html" title="Alojamientos">Alojamientos</a></li>
+				<li><a href="/perfiles/futuro-alumno/galeria-imagenes-upv-es.html" title="Galería de imágenes">Galería de imágenes</a></li>
+				<li><a href="/organizacion/la-institucion/video-upv-es.html" title="Vídeo de presentación">Vídeo de presentación</a></li>
+				<li><a href="/plano/plano-3d-es.html" target="_blank" title="La UPV en 3D (abre en nueva ventana)">La UPV en 3D <img alt="La UPV en 3D (abre en nueva ventana)" src="/imagenes/ico_nueva_ventana.png" class="ven_nueva" /></a></li>
+			</ul>
+			<div class="estabilizador">  </div>
+		</div>
+		<div class="estabilizador">  </div>
+	</div><!-- panel central -->
+	<div class="estabilizador">  </div>
+	<div id="div_FOR">  </div>
+	<div class="estabilizador">  </div>
+</div>
+    <!-- pie pagina -->  
+    <div class="estabilizador"> </div>
+    <div id="DIVpiePagina">
+      <div id="DIVsepPie1N2">
+         <img alt="-" src="/imagenes/NGR.png" style="float:left;width:715px;height:2px;" />
+      </div>
+      <div style="float:right;margin-right:15px;">
+         <a href="/entidades/AMAPUOC/" alt="EMAS"><img src="/imagenes/EMASupv.png" alt="EMAS upv" width="33" height="62" /></a>
+      </div>
+      <div class="texto_pie menuPieN2">
+           
+        <a href="http://www.vlc-campus.com/" title="VLC-CAMPUS (abre ventana nueva)" rel="external" onclick="target='_blank'"><img src="/imagenes/campus_excelenciaVLC.png" alt="VLC-CAMPUS" style="float:right;vertical-align:top;" /></a>
+        <a href="http://www.campushabitat5u.com/" title="CAMPUS HABITAT (abre ventana nueva)" rel="external" onclick="target='_blank'"><img src="/imagenes/campus_excelenciaH5.png" alt="CAMPUS HABITAT" style="float:right;vertical-align:top;" /></a>
+            
+        <div id="DIVpieMenu">
+          <ul>
+              
+            <li class="menuCAB"><a href="/otros/como-llegar-upv/index-es.html" title="Llegar" class="menuCAB">Cómo llegar</a> I</li>
+            <li class="menuCAB"><a href="/plano/plano-2d-es.html" title="Planos" class="menuCAB">Planos</a> I</li>
+            <li class="menuCAB"><a href="/otros/contacto-es.html" title="Contacto" class="menuCAB">Contacto</a></li>
+            
+          </ul>
+          <div class="texto_contacto">
+            Universitat Politècnica de València © 2017 · Tel. (+34) 96 387 70 00 <!-- ·
+            <a href="mailto:informacion@upv.es">informacion@upv.es</a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="estabilizador"> </div>
+    </div>
+
+
+    <div class="estabilizador"> </div>
+  </div>
+  <div class="estabilizador"> </div>
+</div>
+
+
+
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-1686067-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+
+    
+
+
+
+
+
+</body></html>

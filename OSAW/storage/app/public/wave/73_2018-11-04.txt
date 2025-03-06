@@ -1,0 +1,33 @@
+REPORTE PÁGINA WEB: https://web.ua.es/es/orientacion-y-empleo.html
+FECHA EVALUACIÓN: 2018-11-04
+
+PROBLEMAS
+Missing alternative text	  VECES ENCONTRADO: 7
+Linked image missing alternative text	  VECES ENCONTRADO: 5
+Empty link	  VECES ENCONTRADO: 40
+
+
+
+ALERTAS
+Redundant alternative text	  VECES ENCONTRADO: 7
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Missing fieldset	  VECES ENCONTRADO: 2
+Tabindex	  VECES ENCONTRADO: 3
+Broken same-page link	  VECES ENCONTRADO: 2
+Redundant link	  VECES ENCONTRADO: 5
+
+
+
+CARACTERISTICAS
+Form label	  VECES ENCONTRADO: 12
+Alternative text	  VECES ENCONTRADO: 5
+Null or empty alternative text	  VECES ENCONTRADO: 13
+Linked image with alternative text	  VECES ENCONTRADO: 12
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 47
+
+
+

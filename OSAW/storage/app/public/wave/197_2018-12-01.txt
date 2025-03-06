@@ -1,0 +1,27 @@
+REPORTE PÁGINA WEB: https://www.umh.es/contenido/Alumni/:none/datos_es.html
+FECHA EVALUACIÓN: 2018-12-01
+
+-PROBLEMAS-
+
+Empty button	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Noscript element	  VECES ENCONTRADO: 1
+Unlabeled form element with title	  VECES ENCONTRADO: 2
+Redundant title text	  VECES ENCONTRADO: 17
+
+
+-CARACTERISTICAS-
+
+Element language	  VECES ENCONTRADO: 6
+Linked image with alternative text	  VECES ENCONTRADO: 4
+Alternative text	  VECES ENCONTRADO: 3
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 2
+
+

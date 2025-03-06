@@ -1,0 +1,3536 @@
+REPORTE PÁGINA WEB: https://www.movistar.es/particulares/movil/moviles?prefilter99=ofertas
+FECHA EVALUACIÓN: 2018-12-26
+
+-PROBLEMAS CONOCIDOS-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 1: img element missing alt attribute.  
+
+	REPARAR:> Add an alt attribute to your img element.      
+
+		LINEA: 722, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />
+
+  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR:> Add Alt text that identifies the purpose or function of the image.      
+
+		LINEA: 1825, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 204: input element, type of "radio", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 2421, COLUMNA: 68: <input name="brand" ng-click="changeBrandSelected(brand)" ng-value="brand.value" ng-model="filterMar ...
+
+
+
+		LINEA: 2445, COLUMNA: 68: <input name="operativesystem" ng-click="changeOSSelected(operativeSystem)" ng-value="operativeSystem ...
+
+  
+
+	REVISAR: 206: input element, type of "checkbox", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 2457, COLUMNA: 68: <input name="advantages" value="{{advantage.value}}" ng-model="advantage.selected" ng-disabled="(adv ...
+
+
+
+		LINEA: 2691, COLUMNA: 160: <input name="gw_comparecheck" value="{{compareButton.value}}" ng-model="term.toCompare" data-ng-chan ...
+
+  
+
+	REVISAR: 213: input element, type of "text", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 719, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+  
+
+	REVISAR: 91: select element missing an associated label.  
+
+	REPARAR:> Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.      
+
+		LINEA: 2610, COLUMNA: 129: <select data-ng-change="changeOrder()" data-ng-model="orderingFilterSelected" data-ng-options="order ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)  
+
+	REVISAR: 116: b (bold) element used.  
+
+	REPARAR:> Replace your b (bold) elements with em or strong.      
+
+		LINEA: 1264, COLUMNA: 6: <b>Fusión </b>
+
+
+
+		LINEA: 1309, COLUMNA: 6: <b>Internet y Fijo</b>
+
+
+
+		LINEA: 1361, COLUMNA: 6: <b>Móvil</b>
+
+
+
+		LINEA: 1421, COLUMNA: 6: <b>Televisión</b>
+
+
+
+		LINEA: 1494, COLUMNA: 6: <b>Tienda electrónica</b>
+
+
+
+		LINEA: 1533, COLUMNA: 6: <b>Apps y servicios digitales</b>
+
+
+
+		LINEA: 1629, COLUMNA: 6: <b>Consultas</b>
+
+
+
+		LINEA: 1688, COLUMNA: 6: <b>Gestiones</b>
+
+
+
+		LINEA: 1754, COLUMNA: 6: <b>Soporte técnico</b>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR:> Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head      
+
+		LINEA: 633, COLUMNA: 8: <span class="textoHeaderLink" style="		color: white;		margin-right: 10px;	 ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 174: Anchor contains no text.  
+
+	REPARAR:> Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.      
+
+		LINEA: 722, COLUMNA: 30: <a href="#" class=" white icon-buscar" onclick="javaScript:filtroXSS();"><img class="hidden" ...
+
+
+
+		LINEA: 805, COLUMNA: 5: <a class="link-logo-menu" href="/" target="_self" style="">	<div id="logo-respo-M" class="ic ...
+
+
+
+		LINEA: 814, COLUMNA: 10: <a href="javascript:void(0);" data-toggle="collapse" data-target="#miMovistar"><span id="iconConecta ...
+
+
+
+		LINEA: 817, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#segmentos"><span class="icon icon ...
+
+
+
+		LINEA: 820, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#buscador"> <span class="icon icon ...
+
+
+
+		LINEA: 823, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#desplegable"> <span class="icon i ...
+
+
+
+		LINEA: 1958, COLUMNA: 8: <a href="/mimovistar-cliente/publico/acceso/privado/home" id="usernamemovile" target="_self" title=" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 37: Header nesting - header following h1 is incorrect.  
+
+	REPARAR:> Modify the header levels so only an h1 or h2 follows h1.      
+
+		LINEA: 2276, COLUMNA: 4: <h1 class="bold">Móviles libres</h1>
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)  
+
+	REVISAR: 49: Document has invalid language code.  
+
+	REPARAR:> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
+
+		LINEA: 5, COLUMNA: 1: <htmlclass="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es_ES" lang="es_ES">	<!--[if l ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR:> Add text to the label element.      
+
+		LINEA: 719, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+
+
+		LINEA: 2421, COLUMNA: 68: <input name="brand" ng-click="changeBrandSelected(brand)" ng-value="brand.value" ng-model="filterMar ...
+
+
+
+		LINEA: 2445, COLUMNA: 68: <input name="operativesystem" ng-click="changeOSSelected(operativeSystem)" ng-value="operativeSystem ...
+
+
+
+		LINEA: 2457, COLUMNA: 68: <input name="advantages" value="{{advantage.value}}" ng-model="advantage.selected" ng-disabled="(adv ...
+
+
+
+		LINEA: 2691, COLUMNA: 160: <input name="gw_comparecheck" value="{{compareButton.value}}" ng-model="term.toCompare" data-ng-chan ...
+
+4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)  
+
+	REVISAR: 185: id attribute is not unique.  
+
+	REPARAR:> Modify the id attribute value so it is unique.      
+
+		LINEA: 1954, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 228, COLUMNA: 5: <a onclick="logoutConvergente();" style="display:none" id="logoutURLSaludo"></a>
+
+
+
+		LINEA: 585, COLUMNA: 2: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...
+
+
+
+		LINEA: 590, COLUMNA: 4: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...
+
+
+
+		LINEA: 595, COLUMNA: 5: <a href="/autonomos/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','autonomos',4,'/',null,null) ...
+
+
+
+		LINEA: 600, COLUMNA: 5: <a href="/empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','empresas',4,'/',null,null);" ...
+
+
+
+		LINEA: 605, COLUMNA: 5: <a href="/grandes-empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','grandes-empresas',4, ...
+
+
+
+		LINEA: 643, COLUMNA: 5: <a href="https://www.movistar.es/particulares/atencion-cliente/escribenos/?pid=cabecera_enlace_escri ...
+
+
+
+		LINEA: 679, COLUMNA: 4: <a href="#" lang="es_ES">Castellano</a>
+
+
+
+		LINEA: 684, COLUMNA: 5: <a href="/ca/particulars/mobil/mobils/?lng=ca_ES&amp;d=idiomasRespon" lang="ca_ES">CatalÃ¡n</a>
+
+
+
+		LINEA: 690, COLUMNA: 5: <a href="/gl/particulares/mobil/mobiles/?lng=gl_ES&amp;d=idiomasRespon" lang="gl_ES">Gallego</a>
+
+
+
+		LINEA: 722, COLUMNA: 30: <a href="#" class=" white icon-buscar" onclick="javaScript:filtroXSS();"><img class="hidden" ...
+
+
+
+		LINEA: 814, COLUMNA: 10: <a href="javascript:void(0);" data-toggle="collapse" data-target="#miMovistar"><span id="iconConecta ...
+
+
+
+		LINEA: 817, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#segmentos"><span class="icon icon ...
+
+
+
+		LINEA: 820, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#buscador"> <span class="icon icon ...
+
+
+
+		LINEA: 823, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#desplegable"> <span class="icon i ...
+
+
+
+		LINEA: 939, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Televisión">Televisión ...
+
+
+
+		LINEA: 1246, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Tienda">Tienda<span c ...
+
+
+
+		LINEA: 1611, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Atención al cliente">Aten ...
+
+
+
+		LINEA: 1880, COLUMNA: 5: <a id="accederdesktop" data-toggle="collapse" data-target="#miMovistar">Acceso Mi Movistar<span clas ...
+
+
+
+		LINEA: 1883, COLUMNA: 34: <a id="usernamedesktop" data-toggle="collapse" data-target="#miMovistar"></a>
+
+
+
+		LINEA: 2068, COLUMNA: 10: <a href="#" class="c_a_desconectar_desk" id="a_desconectar" onclick="document.getElementById('logout ...
+
+
+
+		LINEA: 2368, COLUMNA: 129: <a class="sc-telefono num900" href="">&nbsp;</a>
+
+
+
+		LINEA: 2371, COLUMNA: 21: <a title="Te llamamos gratis" class="GW_linkOverBox sc-btn-c2c" id="call-free-header" href="javascri ...
+
+
+
+		LINEA: 2494, COLUMNA: 14: <a class="visible-lg visible-md col-xs-12" href="/particulares/movil/moviles/iphone-xr" ng-if="selec ...
+
+
+
+		LINEA: 2495, COLUMNA: 120: <a href="/particulares/solucioneswifi"><div class="visible-lg visible-md col-xs-12" ng-sty ...
+
+
+
+		LINEA: 2621, COLUMNA: 170: <a title="Comprar {{term.name}}" class="GW_listRequestButton" data-ng-click="saveOfferIdToSession(te ...
+
+
+
+		LINEA: 2622, COLUMNA: 34: <a title="Comprar {{term.name}}" class="GW_listRequestButton" data-ng-click="saveOfferIdToSession(te ...
+
+
+
+		LINEA: 2634, COLUMNA: 49: <a title="{{term.name}}" class="GW_termNom_a" data-ng-click="saveOfferIdToSession(term,$event)" data ...
+
+
+
+		LINEA: 2691, COLUMNA: 335: <a title="Comprar {{term.name}}" class="GW_listRequestButton" data-ng-click="saveOfferIdToSession(te ...
+
+
+
+		LINEA: 2693, COLUMNA: 43: <a href="/particulares/solucioneswifi"><div class="hidden-md hidden-lg col-xs-12" id="bann ...
+
+
+
+		LINEA: 2700, COLUMNA: 47: <a title="Ver m&aacute;s terminal" class="GW_viewMoreButton" href="javascript:void(0)" data-ng-click ...
+
+
+
+		LINEA: 2708, COLUMNA: 50: <a class="COE_comparatorAddOther" href="javascript:void(0)" ng-click="hideComparator()"> Volver al l ...
+
+
+
+		LINEA: 2711, COLUMNA: 50: <a title="{{terminal.name}}" class="COE_comparatorProdName" data-ng-href="{{decodeUrl(terminal.dataM ...
+
+
+
+		LINEA: 2712, COLUMNA: 49: <a href="{{decodeUrl(terminal.dataMap.url)}}"><img title="{{terminal.name}}" class="COE_comparatorPr ...
+
+
+
+		LINEA: 2713, COLUMNA: 9: <a title="Comprar {{terminal.name}}" class="COE_requestButton" data-ng-href="{{decodeUrl(terminal.da ...
+
+
+
+		LINEA: 2982, COLUMNA: 50: <a class="COE_comparatorAddOther" href="javascript:void(0)" ng-click="hideComparator()"> Volver al l ...
+
+
+
+		LINEA: 3249, COLUMNA: 68: <a href="https://www.movistar.es/particulares/" itemprop="url" title="Tel&eacute;fonos m&oacute;vile ...
+
+
+
+		LINEA: 3250, COLUMNA: 68: <a href="https://www.movistar.es/particulares/movil/" itemprop="url" title="Comprar m&oacute;viles"> ...
+
+
+
+		LINEA: 3251, COLUMNA: 68: <a href="https://www.movistar.es/particulares/movil/moviles/" itemprop="url" title="Comprar m&oacute ...
+
+
+
+		LINEA: 3420, COLUMNA: 143: <a href="/particulares/movil/servicios/seguro-movil">M&aacute;s info</a>
+
+
+
+		LINEA: 3446, COLUMNA: 42: <a title="Gu&iacute;a accesibilidad" href="/particulares/guia-moviles-personas-discapacidad/">esta g ...
+
+
+
+		LINEA: 3584, COLUMNA: 49: <a href="https://trustivity.es/movistar.es-opiniones"><!-- Trustivity --><link hre ...
+
+
+
+		LINEA: 3719, COLUMNA: 11: <a href="https://www.facebook.com/movistar.es" target="_blank" title="Facebook"><span class="icon ic ...
+
+
+
+		LINEA: 3723, COLUMNA: 11: <a href="https://twitter.com/movistar_es" target="_blank" title="Twitter"><span class="icon icon-twi ...
+
+
+
+		LINEA: 3727, COLUMNA: 11: <a href="http://www.youtube.com/movistar" target="_blank" title="Youtube"><span class="icon icon-you ...
+
+
+
+		LINEA: 3731, COLUMNA: 11: <a href="https://plus.google.com/+movistarespana/" target="_blank" title="Google +"><span class="ico ...
+
+
+
+		LINEA: 3739, COLUMNA: 11: <a href="http://comunidad.movistar.es/" target="_blank" title="Comunidad Movistar"><span class="icon ...
+
+
+
+		LINEA: 3780, COLUMNA: 21: <a href="http://www.telefonica.es/" target="_blank">Telefónica España</a>
+
+
+
+		LINEA: 3783, COLUMNA: 21: <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=ES" target= ...
+
+
+
+		LINEA: 3784, COLUMNA: 21: <a href="http://comunicacion.movistarplus.es/" target="_blank">Comunicación</a>
+
+
+
+		LINEA: 3816, COLUMNA: 6: <a class="hidden-xs" href="https://dialogando.com.es/" target="_blank" title="Dialogando" alt="Dialo ...
+
+
+
+		LINEA: 3818, COLUMNA: 6: <a class="hidden-xs" href="http://www.confianzaonline.org/empresas/movistar.htm" target="_blank" tit ...
+
+
+
+		LINEA: 3820, COLUMNA: 6: <a class="hidden-xs" href="https://www.telefonica.es/es/acerca_de_telefonica/calidad/calidad-servici ...
+
+
+
+		LINEA: 3822, COLUMNA: 6: <a class="hidden-xs" href="http://www.msssi.gob.es/campannas/campanas13/haySalida.htm" target="_blan ...
+
+
+
+		LINEA: 3824, COLUMNA: 6: <a class="Fundación Telefónica" href="http://www.fundaciontelefonica.com" target="_blank" title="F ...
+
+
+
+		LINEA: 3826, COLUMNA: 6: <a class="hidden-xs" href="http://www.tuenti.es" target="_blank" title="Tuenti" alt="Tuenti" rel="no ...
+
+
+
+		LINEA: 3828, COLUMNA: 6: <a class="hidden-xs" href="http://www.movistar.es/particulares/movil/servicios/app-mimovistar?pid=ic ...
+
+
+
+		LINEA: 3830, COLUMNA: 6: <a class="hidden-xs" href="http://likes.movistar.es" target="_blank" title="Movistar Likes" alt="Mov ...
+
+
+
+		LINEA: 3859, COLUMNA: 22: <a class="link-logo-pie" href="http://www.telefonica.es/" target="_blank" title="Telefónica" ><span ...
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 207, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 955, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1073, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1104, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1149, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1194, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1262, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1307, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1359, COLUMNA: 6:
+
+ 
+
+		LINEA: 1419, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1492, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1531, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1627, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1686, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1752, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 1825, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+
+
+		LINEA: 2494, COLUMNA: 202: <img alt="tienda de m&oacute;viles libres" src="/estaticos/Personalizacion/imagenes/particulares/cat ...
+
+
+
+		LINEA: 2585, COLUMNA: 38: <img title="{{terminalsToCompare[n].name}}" class="COE_compareTermImg" data-ng-src="{{terminalsToCom ...
+
+
+
+		LINEA: 2587, COLUMNA: 44: <img title="eliminar" ng-click="removeTermFromCompare(terminalsToCompare[n])" alt="m&oacute;vil libr ...
+
+
+
+		LINEA: 2616, COLUMNA: 72: <img class="GW_imagePreload img-responsive" style="width: 75%;" alt="tienda de m&oacute;viles libres ...
+
+
+
+		LINEA: 2625, COLUMNA: 128: <img class="hidden-xs" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top: 0;position: absolute ...
+
+
+
+		LINEA: 2625, COLUMNA: 403: <img class="hidden-sm hidden-md hidden-lg" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top:...
+
+
+
+		LINEA: 2628, COLUMNA: 266: <img class="hidden-xs" ng-style="(term.oferta.dataMap.img_corner !=undefined &amp;&amp; term.oferta. ...
+
+
+
+		LINEA: 2628, COLUMNA: 748: <img class="hidden-sm hidden-md hidden-lg" ng-style="(term.oferta.dataMap.img_corner !=undefined &am ...
+
+
+
+		LINEA: 2712, COLUMNA: 95: <img title="{{terminal.name}}" class="COE_comparatorProdImg" data-ng-src="{{terminal.dataMap.imagenp ...
+
+
+
+		LINEA: 2766, COLUMNA: 317: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_03__subcarac_01__4g || terminal.dataMap.c ...
+
+
+
+		LINEA: 2766, COLUMNA: 573: <img title="No" data-ng-if="terminal.dataMap.carac__carac_03__subcarac_01__4g=='true'" alt="tienda d ...
+
+
+
+		LINEA: 2841, COLUMNA: 367: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2841, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2847, COLUMNA: 365: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2847, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2853, COLUMNA: 329: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_03__flash || terminal.dataMa ...
+
+
+
+		LINEA: 2853, COLUMNA: 608: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_03__flash=='true'" alt="m&oac ...
+
+
+
+		LINEA: 2870, COLUMNA: 369: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa || termi ...
+
+
+
+		LINEA: 2870, COLUMNA: 678: <img title="No" data-ng-if="terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa=='true'"...
+
+
+
+		LINEA: 2916, COLUMNA: 377: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi || ter ...
+
+
+
+		LINEA: 2916, COLUMNA: 684: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi=='true' ...
+
+
+
+		LINEA: 2922, COLUMNA: 353: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct || terminal. ...
+
+
+
+		LINEA: 2922, COLUMNA: 635: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct=='true'" alt= ...
+
+
+
+		LINEA: 2928, COLUMNA: 345: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi || terminal.da ...
+
+
+
+		LINEA: 2928, COLUMNA: 625: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi=='true'" alt="t ...
+
+
+
+		LINEA: 2934, COLUMNA: 420: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_04__bluetooth || terminal.da ...
+
+
+
+		LINEA: 2934, COLUMNA: 701: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_04__bluetooth=='true'" alt="m ...
+
+
+
+		LINEA: 2940, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2940, COLUMNA: 592: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="moviles ...
+
+
+
+		LINEA: 2946, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2946, COLUMNA: 580: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="tienda...
+
+
+
+		LINEA: 2952, COLUMNA: 341: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_07__radio_fm || terminal.dat ...
+
+
+
+		LINEA: 2952, COLUMNA: 600: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_07__radio_fm=='true'" alt="No ...
+
+
+
+		LINEA: 2969, COLUMNA: 385: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos || t ...
+
+
+
+		LINEA: 2969, COLUMNA: 692: <img title="No" data-ng-if="terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos=='tru ...
+
+
+
+		LINEA: 3630, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+
+
+		LINEA: 3816, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 3818, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 3820, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 3822, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 3824, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 3826, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 3828, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 3830, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 207, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 1262, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1307, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1359, COLUMNA: 6:
+
+ 
+
+		LINEA: 1419, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1492, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1531, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1627, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1686, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1752, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 2494, COLUMNA: 202: <img alt="tienda de m&oacute;viles libres" src="/estaticos/Personalizacion/imagenes/particulares/cat ...
+
+
+
+		LINEA: 2585, COLUMNA: 38: <img title="{{terminalsToCompare[n].name}}" class="COE_compareTermImg" data-ng-src="{{terminalsToCom ...
+
+
+
+		LINEA: 2587, COLUMNA: 44: <img title="eliminar" ng-click="removeTermFromCompare(terminalsToCompare[n])" alt="m&oacute;vil libr ...
+
+
+
+		LINEA: 2616, COLUMNA: 72: <img class="GW_imagePreload img-responsive" style="width: 75%;" alt="tienda de m&oacute;viles libres ...
+
+
+
+		LINEA: 2625, COLUMNA: 128: <img class="hidden-xs" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top: 0;position: absolute ...
+
+
+
+		LINEA: 2625, COLUMNA: 403: <img class="hidden-sm hidden-md hidden-lg" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top:...
+
+
+
+		LINEA: 2628, COLUMNA: 266: <img class="hidden-xs" ng-style="(term.oferta.dataMap.img_corner !=undefined &amp;&amp; term.oferta. ...
+
+
+
+		LINEA: 2628, COLUMNA: 748: <img class="hidden-sm hidden-md hidden-lg" ng-style="(term.oferta.dataMap.img_corner !=undefined &am ...
+
+
+
+		LINEA: 2712, COLUMNA: 95: <img title="{{terminal.name}}" class="COE_comparatorProdImg" data-ng-src="{{terminal.dataMap.imagenp ...
+
+
+
+		LINEA: 2766, COLUMNA: 317: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_03__subcarac_01__4g || terminal.dataMap.c ...
+
+
+
+		LINEA: 2766, COLUMNA: 573: <img title="No" data-ng-if="terminal.dataMap.carac__carac_03__subcarac_01__4g=='true'" alt="tienda d ...
+
+
+
+		LINEA: 2841, COLUMNA: 367: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2841, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2847, COLUMNA: 365: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2847, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2853, COLUMNA: 329: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_03__flash || terminal.dataMa ...
+
+
+
+		LINEA: 2853, COLUMNA: 608: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_03__flash=='true'" alt="m&oac ...
+
+
+
+		LINEA: 2870, COLUMNA: 369: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa || termi ...
+
+
+
+		LINEA: 2870, COLUMNA: 678: <img title="No" data-ng-if="terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa=='true'"...
+
+
+
+		LINEA: 2916, COLUMNA: 377: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi || ter ...
+
+
+
+		LINEA: 2916, COLUMNA: 684: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi=='true' ...
+
+
+
+		LINEA: 2922, COLUMNA: 353: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct || terminal. ...
+
+
+
+		LINEA: 2922, COLUMNA: 635: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct=='true'" alt= ...
+
+
+
+		LINEA: 2928, COLUMNA: 345: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi || terminal.da ...
+
+
+
+		LINEA: 2928, COLUMNA: 625: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi=='true'" alt="t ...
+
+
+
+		LINEA: 2934, COLUMNA: 420: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_04__bluetooth || terminal.da ...
+
+
+
+		LINEA: 2934, COLUMNA: 701: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_04__bluetooth=='true'" alt="m ...
+
+
+
+		LINEA: 2940, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2940, COLUMNA: 592: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="moviles ...
+
+
+
+		LINEA: 2946, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2946, COLUMNA: 580: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="tienda...
+
+
+
+		LINEA: 2952, COLUMNA: 341: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_07__radio_fm || terminal.dat ...
+
+
+
+		LINEA: 2952, COLUMNA: 600: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_07__radio_fm=='true'" alt="No ...
+
+
+
+		LINEA: 2969, COLUMNA: 385: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos || t ...
+
+
+
+		LINEA: 2969, COLUMNA: 692: <img title="No" data-ng-if="terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos=='tru ...
+
+
+
+		LINEA: 3816, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 3818, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 3820, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 3822, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 3824, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 3826, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 3828, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 3830, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 207, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 955, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1073, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1104, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1149, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1194, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1262, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1307, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1359, COLUMNA: 6:
+
+ 
+
+		LINEA: 1419, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1492, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1531, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1627, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1686, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1752, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 2585, COLUMNA: 38: <img title="{{terminalsToCompare[n].name}}" class="COE_compareTermImg" data-ng-src="{{terminalsToCom ...
+
+
+
+		LINEA: 2587, COLUMNA: 44: <img title="eliminar" ng-click="removeTermFromCompare(terminalsToCompare[n])" alt="m&oacute;vil libr ...
+
+
+
+		LINEA: 2616, COLUMNA: 72: <img class="GW_imagePreload img-responsive" style="width: 75%;" alt="tienda de m&oacute;viles libres ...
+
+
+
+		LINEA: 2766, COLUMNA: 317: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_03__subcarac_01__4g || terminal.dataMap.c ...
+
+
+
+		LINEA: 2766, COLUMNA: 573: <img title="No" data-ng-if="terminal.dataMap.carac__carac_03__subcarac_01__4g=='true'" alt="tienda d ...
+
+
+
+		LINEA: 2841, COLUMNA: 367: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2841, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2847, COLUMNA: 365: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2847, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2853, COLUMNA: 329: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_03__flash || terminal.dataMa ...
+
+
+
+		LINEA: 2853, COLUMNA: 608: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_03__flash=='true'" alt="m&oac ...
+
+
+
+		LINEA: 2870, COLUMNA: 369: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa || termi ...
+
+
+
+		LINEA: 2870, COLUMNA: 678: <img title="No" data-ng-if="terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa=='true'"...
+
+
+
+		LINEA: 2916, COLUMNA: 377: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi || ter ...
+
+
+
+		LINEA: 2916, COLUMNA: 684: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi=='true' ...
+
+
+
+		LINEA: 2922, COLUMNA: 353: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct || terminal. ...
+
+
+
+		LINEA: 2922, COLUMNA: 635: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct=='true'" alt= ...
+
+
+
+		LINEA: 2928, COLUMNA: 345: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi || terminal.da ...
+
+
+
+		LINEA: 2928, COLUMNA: 625: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi=='true'" alt="t ...
+
+
+
+		LINEA: 2934, COLUMNA: 420: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_04__bluetooth || terminal.da ...
+
+
+
+		LINEA: 2934, COLUMNA: 701: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_04__bluetooth=='true'" alt="m ...
+
+
+
+		LINEA: 2940, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2940, COLUMNA: 592: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="moviles ...
+
+
+
+		LINEA: 2946, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2946, COLUMNA: 580: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="tienda...
+
+
+
+		LINEA: 2952, COLUMNA: 341: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_07__radio_fm || terminal.dat ...
+
+
+
+		LINEA: 2952, COLUMNA: 600: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_07__radio_fm=='true'" alt="No ...
+
+
+
+		LINEA: 2969, COLUMNA: 385: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos || t ...
+
+
+
+		LINEA: 2969, COLUMNA: 692: <img title="No" data-ng-if="terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos=='tru ...
+
+
+
+		LINEA: 3630, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+ 
+
+		LINEA: 1262, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1307, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1359, COLUMNA: 6:
+
+ 
+
+		LINEA: 1419, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1492, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1531, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1627, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1686, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1752, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 2585, COLUMNA: 38: <img title="{{terminalsToCompare[n].name}}" class="COE_compareTermImg" data-ng-src="{{terminalsToCom ...
+
+
+
+		LINEA: 2587, COLUMNA: 44: <img title="eliminar" ng-click="removeTermFromCompare(terminalsToCompare[n])" alt="m&oacute;vil libr ...
+
+
+
+		LINEA: 2712, COLUMNA: 95: <img title="{{terminal.name}}" class="COE_comparatorProdImg" data-ng-src="{{terminal.dataMap.imagenp ...
+
+
+
+		LINEA: 2766, COLUMNA: 317: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_03__subcarac_01__4g || terminal.dataMap.c ...
+
+
+
+		LINEA: 2766, COLUMNA: 573: <img title="No" data-ng-if="terminal.dataMap.carac__carac_03__subcarac_01__4g=='true'" alt="tienda d ...
+
+
+
+		LINEA: 2841, COLUMNA: 367: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2841, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2847, COLUMNA: 365: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2847, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2853, COLUMNA: 329: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_03__flash || terminal.dataMa ...
+
+
+
+		LINEA: 2853, COLUMNA: 608: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_03__flash=='true'" alt="m&oac ...
+
+
+
+		LINEA: 2870, COLUMNA: 369: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa || termi ...
+
+
+
+		LINEA: 2870, COLUMNA: 678: <img title="No" data-ng-if="terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa=='true'"...
+
+
+
+		LINEA: 2916, COLUMNA: 377: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi || ter ...
+
+
+
+		LINEA: 2916, COLUMNA: 684: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi=='true' ...
+
+
+
+		LINEA: 2922, COLUMNA: 353: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct || terminal. ...
+
+
+
+		LINEA: 2922, COLUMNA: 635: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct=='true'" alt= ...
+
+
+
+		LINEA: 2928, COLUMNA: 345: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi || terminal.da ...
+
+
+
+		LINEA: 2928, COLUMNA: 625: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi=='true'" alt="t ...
+
+
+
+		LINEA: 2934, COLUMNA: 420: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_04__bluetooth || terminal.da ...
+
+
+
+		LINEA: 2934, COLUMNA: 701: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_04__bluetooth=='true'" alt="m ...
+
+
+
+		LINEA: 2940, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2940, COLUMNA: 592: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="moviles ...
+
+
+
+		LINEA: 2946, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2946, COLUMNA: 580: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="tienda...
+
+
+
+		LINEA: 2952, COLUMNA: 341: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_07__radio_fm || terminal.dat ...
+
+
+
+		LINEA: 2952, COLUMNA: 600: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_07__radio_fm=='true'" alt="No ...
+
+
+
+		LINEA: 2969, COLUMNA: 385: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos || t ...
+
+
+
+		LINEA: 2969, COLUMNA: 692: <img title="No" data-ng-if="terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos=='tru ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 1954, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 141, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 1954, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 1954, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 123: input element label, type of "checkbox" is not positioned close to control.
+
+ 
+
+		LINEA: 2457, COLUMNA: 68: <input name="advantages" value="{{advantage.value}}" ng-model="advantage.selected" ng-disabled="(adv ...
+
+
+
+		LINEA: 2691, COLUMNA: 160: <input name="gw_comparecheck" value="{{compareButton.value}}" ng-model="term.toCompare" data-ng-chan ...
+
+  
+
+	REVISAR: 125: input element label, type of "radio", is not positioned close to control.
+
+ 
+
+		LINEA: 2421, COLUMNA: 68: <input name="brand" ng-click="changeBrandSelected(brand)" ng-value="brand.value" ng-model="filterMar ...
+
+
+
+		LINEA: 2445, COLUMNA: 68: <input name="operativesystem" ng-click="changeOSSelected(operativeSystem)" ng-value="operativeSystem ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 719, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 1954, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 207, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 722, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />
+
+
+
+		LINEA: 955, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1073, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1104, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1149, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1194, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1262, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1307, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1359, COLUMNA: 6:
+
+ 
+
+		LINEA: 1419, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1492, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1531, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1627, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1686, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1752, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 1825, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+
+
+		LINEA: 2494, COLUMNA: 202: <img alt="tienda de m&oacute;viles libres" src="/estaticos/Personalizacion/imagenes/particulares/cat ...
+
+
+
+		LINEA: 2585, COLUMNA: 38: <img title="{{terminalsToCompare[n].name}}" class="COE_compareTermImg" data-ng-src="{{terminalsToCom ...
+
+
+
+		LINEA: 2587, COLUMNA: 44: <img title="eliminar" ng-click="removeTermFromCompare(terminalsToCompare[n])" alt="m&oacute;vil libr ...
+
+
+
+		LINEA: 2616, COLUMNA: 72: <img class="GW_imagePreload img-responsive" style="width: 75%;" alt="tienda de m&oacute;viles libres ...
+
+
+
+		LINEA: 2625, COLUMNA: 128: <img class="hidden-xs" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top: 0;position: absolute ...
+
+
+
+		LINEA: 2625, COLUMNA: 403: <img class="hidden-sm hidden-md hidden-lg" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top:...
+
+
+
+		LINEA: 2628, COLUMNA: 266: <img class="hidden-xs" ng-style="(term.oferta.dataMap.img_corner !=undefined &amp;&amp; term.oferta. ...
+
+
+
+		LINEA: 2628, COLUMNA: 748: <img class="hidden-sm hidden-md hidden-lg" ng-style="(term.oferta.dataMap.img_corner !=undefined &am ...
+
+
+
+		LINEA: 2712, COLUMNA: 95: <img title="{{terminal.name}}" class="COE_comparatorProdImg" data-ng-src="{{terminal.dataMap.imagenp ...
+
+
+
+		LINEA: 2766, COLUMNA: 317: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_03__subcarac_01__4g || terminal.dataMap.c ...
+
+
+
+		LINEA: 2766, COLUMNA: 573: <img title="No" data-ng-if="terminal.dataMap.carac__carac_03__subcarac_01__4g=='true'" alt="tienda d ...
+
+
+
+		LINEA: 2841, COLUMNA: 367: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2841, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2847, COLUMNA: 365: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2847, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2853, COLUMNA: 329: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_03__flash || terminal.dataMa ...
+
+
+
+		LINEA: 2853, COLUMNA: 608: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_03__flash=='true'" alt="m&oac ...
+
+
+
+		LINEA: 2870, COLUMNA: 369: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa || termi ...
+
+
+
+		LINEA: 2870, COLUMNA: 678: <img title="No" data-ng-if="terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa=='true'"...
+
+
+
+		LINEA: 2916, COLUMNA: 377: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi || ter ...
+
+
+
+		LINEA: 2916, COLUMNA: 684: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi=='true' ...
+
+
+
+		LINEA: 2922, COLUMNA: 353: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct || terminal. ...
+
+
+
+		LINEA: 2922, COLUMNA: 635: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct=='true'" alt= ...
+
+
+
+		LINEA: 2928, COLUMNA: 345: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi || terminal.da ...
+
+
+
+		LINEA: 2928, COLUMNA: 625: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi=='true'" alt="t ...
+
+
+
+		LINEA: 2934, COLUMNA: 420: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_04__bluetooth || terminal.da ...
+
+
+
+		LINEA: 2934, COLUMNA: 701: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_04__bluetooth=='true'" alt="m ...
+
+
+
+		LINEA: 2940, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2940, COLUMNA: 592: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="moviles ...
+
+
+
+		LINEA: 2946, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2946, COLUMNA: 580: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="tienda...
+
+
+
+		LINEA: 2952, COLUMNA: 341: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_07__radio_fm || terminal.dat ...
+
+
+
+		LINEA: 2952, COLUMNA: 600: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_07__radio_fm=='true'" alt="No ...
+
+
+
+		LINEA: 2969, COLUMNA: 385: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos || t ...
+
+
+
+		LINEA: 2969, COLUMNA: 692: <img title="No" data-ng-if="terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos=='tru ...
+
+
+
+		LINEA: 3630, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+
+
+		LINEA: 3816, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 3818, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 3820, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 3822, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 3824, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 3826, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 3828, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 3830, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 719, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+
+
+		LINEA: 2421, COLUMNA: 68: <input name="brand" ng-click="changeBrandSelected(brand)" ng-value="brand.value" ng-model="filterMar ...
+
+
+
+		LINEA: 2445, COLUMNA: 68: <input name="operativesystem" ng-click="changeOSSelected(operativeSystem)" ng-value="operativeSystem ...
+
+
+
+		LINEA: 2457, COLUMNA: 68: <input name="advantages" value="{{advantage.value}}" ng-model="advantage.selected" ng-disabled="(adv ...
+
+
+
+		LINEA: 2691, COLUMNA: 160: <input name="gw_comparecheck" value="{{compareButton.value}}" ng-model="term.toCompare" data-ng-chan ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 12, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 111, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 128, COLUMNA: 1: <script src="/estaticos/js/checkout.js"></script>
+
+
+
+		LINEA: 128, COLUMNA: 64: <script src="/estaticos/GridResp/js/googlejsapi.js"></script>
+
+
+
+		LINEA: 128, COLUMNA: 139: <script src="/estaticos/FusionProcess/configTV/js/configTvManager.js"></script>
+
+
+
+		LINEA: 128, COLUMNA: 232: <script src="/estaticos/GridResp/js/includeGrid.js"></script>
+
+
+
+		LINEA: 200, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...
+
+
+
+		LINEA: 225, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/logout.js"></script>
+
+
+
+		LINEA: 277, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...
+
+
+
+		LINEA: 444, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...
+
+
+
+		LINEA: 501, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...
+
+
+
+		LINEA: 737, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...
+
+
+
+		LINEA: 775, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...
+
+
+
+		LINEA: 1916, COLUMNA: 7: <script> 	function getCookieL(cname) {		var name = cname + "=";		var dec ...
+
+
+
+		LINEA: 2074, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {	var tipoUsuarioLogadoHidde ...
+
+
+
+		LINEA: 2122, COLUMNA: 2: <script>$(window).load(function () {var nameuser='';var urlhomeprivada = '';		 ...
+
+
+
+		LINEA: 2337, COLUMNA: 5: <script src="/estaticos/js/jquery-ui-1.9.2.js"></script>
+
+
+
+		LINEA: 2337, COLUMNA: 76: <script src="/estaticos/js/jquery.ui.touch-punch.min.js"></script>
+
+
+
+		LINEA: 2375, COLUMNA: 23: <script>$(document).ready(function(){SC.onReady(function() { ...
+
+
+
+		LINEA: 2382, COLUMNA: 11: <script src="/estaticos/js/jquery-ui-1.9.2.js"></script>
+
+
+
+		LINEA: 2382, COLUMNA: 82: <script src="/estaticos/js/jquery.ui.touch-punch.min.js"></script>
+
+
+
+		LINEA: 2992, COLUMNA: 9: <script type="text/javascript" src="/estaticos/PagoConTarjeta/js/BuyProcStorage.js"></script>
+
+
+
+		LINEA: 2993, COLUMNA: 11: <script type="text/javascript" src="/estaticos/PagoConTarjeta/js/buyProcessInfo.js"></script>
+
+
+
+		LINEA: 2994, COLUMNA: 21: <script type="text/javascript" src="/estaticos/PagoConTarjeta/js/funciones_PT.js"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 11: <script src="//mov-record-dot-mov-prod1.appspot.com/js/storageservice.js"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 109: <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 216: <script type="text/javascript" src="/estaticos/Catalogos/js/server/createPhoneList.js?v=1227"></scri ...
+
+
+
+		LINEA: 2995, COLUMNA: 334: <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=start"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 445: <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angu ...
+
+
+
+		LINEA: 2996, COLUMNA: 11: <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-sanitize.js"></scr ...
+
+
+
+		LINEA: 3144, COLUMNA: 10: <script type="text/javascript">/*$(".headercabecera").append("<h2 id='renuevaH2' style='display: n ...
+
+
+
+		LINEA: 3502, COLUMNA: 1: <script> s.products = "terminales-moviles;distributiva-moviles-otros";</script>
+
+
+
+		LINEA: 3585, COLUMNA: 130: <script type='text/javascript'>$.ajax({dataType: "jsonp",url: "htt ...
+
+
+
+		LINEA: 3903, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 207, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 955, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1073, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1104, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1149, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1194, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1262, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1307, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1359, COLUMNA: 6:
+
+ 
+
+		LINEA: 1419, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1492, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1531, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1627, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1686, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1752, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 1825, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+
+
+		LINEA: 2494, COLUMNA: 202: <img alt="tienda de m&oacute;viles libres" src="/estaticos/Personalizacion/imagenes/particulares/cat ...
+
+
+
+		LINEA: 2585, COLUMNA: 38: <img title="{{terminalsToCompare[n].name}}" class="COE_compareTermImg" data-ng-src="{{terminalsToCom ...
+
+
+
+		LINEA: 2587, COLUMNA: 44: <img title="eliminar" ng-click="removeTermFromCompare(terminalsToCompare[n])" alt="m&oacute;vil libr ...
+
+
+
+		LINEA: 2616, COLUMNA: 72: <img class="GW_imagePreload img-responsive" style="width: 75%;" alt="tienda de m&oacute;viles libres ...
+
+
+
+		LINEA: 2625, COLUMNA: 128: <img class="hidden-xs" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top: 0;position: absolute ...
+
+
+
+		LINEA: 2625, COLUMNA: 403: <img class="hidden-sm hidden-md hidden-lg" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top:...
+
+
+
+		LINEA: 2628, COLUMNA: 266: <img class="hidden-xs" ng-style="(term.oferta.dataMap.img_corner !=undefined &amp;&amp; term.oferta. ...
+
+
+
+		LINEA: 2628, COLUMNA: 748: <img class="hidden-sm hidden-md hidden-lg" ng-style="(term.oferta.dataMap.img_corner !=undefined &am ...
+
+
+
+		LINEA: 2712, COLUMNA: 95: <img title="{{terminal.name}}" class="COE_comparatorProdImg" data-ng-src="{{terminal.dataMap.imagenp ...
+
+
+
+		LINEA: 2766, COLUMNA: 317: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_03__subcarac_01__4g || terminal.dataMap.c ...
+
+
+
+		LINEA: 2766, COLUMNA: 573: <img title="No" data-ng-if="terminal.dataMap.carac__carac_03__subcarac_01__4g=='true'" alt="tienda d ...
+
+
+
+		LINEA: 2841, COLUMNA: 367: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2841, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2847, COLUMNA: 365: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2847, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2853, COLUMNA: 329: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_03__flash || terminal.dataMa ...
+
+
+
+		LINEA: 2853, COLUMNA: 608: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_03__flash=='true'" alt="m&oac ...
+
+
+
+		LINEA: 2870, COLUMNA: 369: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa || termi ...
+
+
+
+		LINEA: 2870, COLUMNA: 678: <img title="No" data-ng-if="terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa=='true'"...
+
+
+
+		LINEA: 2916, COLUMNA: 377: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi || ter ...
+
+
+
+		LINEA: 2916, COLUMNA: 684: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi=='true' ...
+
+
+
+		LINEA: 2922, COLUMNA: 353: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct || terminal. ...
+
+
+
+		LINEA: 2922, COLUMNA: 635: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct=='true'" alt= ...
+
+
+
+		LINEA: 2928, COLUMNA: 345: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi || terminal.da ...
+
+
+
+		LINEA: 2928, COLUMNA: 625: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi=='true'" alt="t ...
+
+
+
+		LINEA: 2934, COLUMNA: 420: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_04__bluetooth || terminal.da ...
+
+
+
+		LINEA: 2934, COLUMNA: 701: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_04__bluetooth=='true'" alt="m ...
+
+
+
+		LINEA: 2940, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2940, COLUMNA: 592: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="moviles ...
+
+
+
+		LINEA: 2946, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2946, COLUMNA: 580: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="tienda...
+
+
+
+		LINEA: 2952, COLUMNA: 341: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_07__radio_fm || terminal.dat ...
+
+
+
+		LINEA: 2952, COLUMNA: 600: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_07__radio_fm=='true'" alt="No ...
+
+
+
+		LINEA: 2969, COLUMNA: 385: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos || t ...
+
+
+
+		LINEA: 2969, COLUMNA: 692: <img title="No" data-ng-if="terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos=='tru ...
+
+
+
+		LINEA: 3630, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+
+
+		LINEA: 3816, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 3818, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 3820, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 3822, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 3824, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 3826, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 3828, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 3830, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 207, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...
+
+
+
+		LINEA: 722, COLUMNA: 103: <img class="hidden"	src="/estaticos/img/btnsearch.gif" />
+
+
+
+		LINEA: 955, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-que-ver-33x27.png" t ...
+
+
+
+		LINEA: 1073, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-programacion-33x27.p ...
+
+
+
+		LINEA: 1104, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/logo-movistarplus-33x27. ...
+
+
+
+		LINEA: 1149, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-multidispositivo-33x ...
+
+
+
+		LINEA: 1194, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/nuevo-despl-tv/ico-contratar-33x27.png" ...
+
+
+
+		LINEA: 1262, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/fusion-31x25.png" title="Fusión" alt=" ...
+
+
+
+		LINEA: 1307, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/internet-fijo-31x25.png" title="Interne ...
+
+
+
+		LINEA: 1359, COLUMNA: 6:
+
+ 
+
+		LINEA: 1419, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/television-31x25.png" title="Televsión ...
+
+
+
+		LINEA: 1492, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/tienda-electronica-31x25.png" title="Ti ...
+
+
+
+		LINEA: 1531, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps-y-servicios-31x25.png" title="Apps ...
+
+
+
+		LINEA: 1627, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/asistente-virtual-31x25.png" title="¿T ...
+
+
+
+		LINEA: 1686, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/gestiones-frecuentes-31x25.png" title=" ...
+
+
+
+		LINEA: 1752, COLUMNA: 6: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/te-puede-interesar-31x25.png" title="Te ...
+
+
+
+		LINEA: 1825, COLUMNA: 7: <img class="GW_headerImg hidden-xs" src="/estaticos/img/grid/apps.png" title="" alt="">
+
+
+
+		LINEA: 2494, COLUMNA: 202: <img alt="tienda de m&oacute;viles libres" src="/estaticos/Personalizacion/imagenes/particulares/cat ...
+
+
+
+		LINEA: 2585, COLUMNA: 38: <img title="{{terminalsToCompare[n].name}}" class="COE_compareTermImg" data-ng-src="{{terminalsToCom ...
+
+
+
+		LINEA: 2587, COLUMNA: 44: <img title="eliminar" ng-click="removeTermFromCompare(terminalsToCompare[n])" alt="m&oacute;vil libr ...
+
+
+
+		LINEA: 2616, COLUMNA: 72: <img class="GW_imagePreload img-responsive" style="width: 75%;" alt="tienda de m&oacute;viles libres ...
+
+
+
+		LINEA: 2625, COLUMNA: 128: <img class="hidden-xs" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top: 0;position: absolute ...
+
+
+
+		LINEA: 2625, COLUMNA: 403: <img class="hidden-sm hidden-md hidden-lg" ng-if="term.oferta.dataMap.stock_todos=='0'" style="top:...
+
+
+
+		LINEA: 2628, COLUMNA: 266: <img class="hidden-xs" ng-style="(term.oferta.dataMap.img_corner !=undefined &amp;&amp; term.oferta. ...
+
+
+
+		LINEA: 2628, COLUMNA: 748: <img class="hidden-sm hidden-md hidden-lg" ng-style="(term.oferta.dataMap.img_corner !=undefined &am ...
+
+
+
+		LINEA: 2712, COLUMNA: 95: <img title="{{terminal.name}}" class="COE_comparatorProdImg" data-ng-src="{{terminal.dataMap.imagenp ...
+
+
+
+		LINEA: 2766, COLUMNA: 317: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_03__subcarac_01__4g || terminal.dataMap.c ...
+
+
+
+		LINEA: 2766, COLUMNA: 573: <img title="No" data-ng-if="terminal.dataMap.carac__carac_03__subcarac_01__4g=='true'" alt="tienda d ...
+
+
+
+		LINEA: 2841, COLUMNA: 367: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2841, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2847, COLUMNA: 365: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal || termin ...
+
+
+
+		LINEA: 2847, COLUMNA: 659: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_02__camara_frontal=='true'" a ...
+
+
+
+		LINEA: 2853, COLUMNA: 329: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_06__subcarac_03__flash || terminal.dataMa ...
+
+
+
+		LINEA: 2853, COLUMNA: 608: <img title="No" data-ng-if="terminal.dataMap.carac__carac_06__subcarac_03__flash=='true'" alt="m&oac ...
+
+
+
+		LINEA: 2870, COLUMNA: 369: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa || termi ...
+
+
+
+		LINEA: 2870, COLUMNA: 678: <img title="No" data-ng-if="terminal.dataMap.carac__carac_07__subcarac_02__memoria_externa=='true'"...
+
+
+
+		LINEA: 2916, COLUMNA: 377: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi || ter ...
+
+
+
+		LINEA: 2916, COLUMNA: 684: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_01__conectividad_wifi=='true' ...
+
+
+
+		LINEA: 2922, COLUMNA: 353: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct || terminal. ...
+
+
+
+		LINEA: 2922, COLUMNA: 635: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_02__wifi_direct=='true'" alt= ...
+
+
+
+		LINEA: 2928, COLUMNA: 345: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi || terminal.da ...
+
+
+
+		LINEA: 2928, COLUMNA: 625: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_03__zona_wifi=='true'" alt="t ...
+
+
+
+		LINEA: 2934, COLUMNA: 420: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_04__bluetooth || terminal.da ...
+
+
+
+		LINEA: 2934, COLUMNA: 701: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_04__bluetooth=='true'" alt="m ...
+
+
+
+		LINEA: 2940, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2940, COLUMNA: 592: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="moviles ...
+
+
+
+		LINEA: 2946, COLUMNA: 321: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_06__gps || terminal.dataMap. ...
+
+
+
+		LINEA: 2946, COLUMNA: 580: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_06__gps=='true'" alt="tienda...
+
+
+
+		LINEA: 2952, COLUMNA: 341: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_09__subcarac_07__radio_fm || terminal.dat ...
+
+
+
+		LINEA: 2952, COLUMNA: 600: <img title="No" data-ng-if="terminal.dataMap.carac__carac_09__subcarac_07__radio_fm=='true'" alt="No ...
+
+
+
+		LINEA: 2969, COLUMNA: 385: <img title="No" data-ng-if="!terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos || t ...
+
+
+
+		LINEA: 2969, COLUMNA: 692: <img title="No" data-ng-if="terminal.dataMap.carac__carac_10__subcarac_02__idiomas_autonomicos=='tru ...
+
+
+
+		LINEA: 3630, COLUMNA: 82: <img src="/estaticos/imagenes/logo-trustivity.png" alt="" />
+
+
+
+		LINEA: 3816, COLUMNA: 128: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />
+
+
+
+		LINEA: 3818, COLUMNA: 143: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />
+
+
+
+		LINEA: 3820, COLUMNA: 169: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />
+
+
+
+		LINEA: 3822, COLUMNA: 250: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...
+
+
+
+		LINEA: 3824, COLUMNA: 191: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />
+
+
+
+		LINEA: 3826, COLUMNA: 114: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />
+
+
+
+		LINEA: 3828, COLUMNA: 206: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />
+
+
+
+		LINEA: 3830, COLUMNA: 119: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 12, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 111, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 128, COLUMNA: 1: <script src="/estaticos/js/checkout.js"></script>
+
+
+
+		LINEA: 128, COLUMNA: 64: <script src="/estaticos/GridResp/js/googlejsapi.js"></script>
+
+
+
+		LINEA: 128, COLUMNA: 139: <script src="/estaticos/FusionProcess/configTV/js/configTvManager.js"></script>
+
+
+
+		LINEA: 128, COLUMNA: 232: <script src="/estaticos/GridResp/js/includeGrid.js"></script>
+
+
+
+		LINEA: 200, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...
+
+
+
+		LINEA: 225, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/logout.js"></script>
+
+
+
+		LINEA: 277, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...
+
+
+
+		LINEA: 444, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...
+
+
+
+		LINEA: 501, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...
+
+
+
+		LINEA: 737, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...
+
+
+
+		LINEA: 775, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...
+
+
+
+		LINEA: 1916, COLUMNA: 7: <script> 	function getCookieL(cname) {		var name = cname + "=";		var dec ...
+
+
+
+		LINEA: 2074, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {	var tipoUsuarioLogadoHidde ...
+
+
+
+		LINEA: 2122, COLUMNA: 2: <script>$(window).load(function () {var nameuser='';var urlhomeprivada = '';		 ...
+
+
+
+		LINEA: 2337, COLUMNA: 5: <script src="/estaticos/js/jquery-ui-1.9.2.js"></script>
+
+
+
+		LINEA: 2337, COLUMNA: 76: <script src="/estaticos/js/jquery.ui.touch-punch.min.js"></script>
+
+
+
+		LINEA: 2375, COLUMNA: 23: <script>$(document).ready(function(){SC.onReady(function() { ...
+
+
+
+		LINEA: 2382, COLUMNA: 11: <script src="/estaticos/js/jquery-ui-1.9.2.js"></script>
+
+
+
+		LINEA: 2382, COLUMNA: 82: <script src="/estaticos/js/jquery.ui.touch-punch.min.js"></script>
+
+
+
+		LINEA: 2992, COLUMNA: 9: <script type="text/javascript" src="/estaticos/PagoConTarjeta/js/BuyProcStorage.js"></script>
+
+
+
+		LINEA: 2993, COLUMNA: 11: <script type="text/javascript" src="/estaticos/PagoConTarjeta/js/buyProcessInfo.js"></script>
+
+
+
+		LINEA: 2994, COLUMNA: 21: <script type="text/javascript" src="/estaticos/PagoConTarjeta/js/funciones_PT.js"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 11: <script src="//mov-record-dot-mov-prod1.appspot.com/js/storageservice.js"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 109: <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 216: <script type="text/javascript" src="/estaticos/Catalogos/js/server/createPhoneList.js?v=1227"></scri ...
+
+
+
+		LINEA: 2995, COLUMNA: 334: <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=start"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 445: <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angu ...
+
+
+
+		LINEA: 2996, COLUMNA: 11: <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-sanitize.js"></scr ...
+
+
+
+		LINEA: 3144, COLUMNA: 10: <script type="text/javascript">/*$(".headercabecera").append("<h2 id='renuevaH2' style='display: n ...
+
+
+
+		LINEA: 3502, COLUMNA: 1: <script> s.products = "terminales-moviles;distributiva-moviles-otros";</script>
+
+
+
+		LINEA: 3585, COLUMNA: 130: <script type='text/javascript'>$.ajax({dataType: "jsonp",url: "htt ...
+
+
+
+		LINEA: 3903, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 12, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 111, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 128, COLUMNA: 1: <script src="/estaticos/js/checkout.js"></script>
+
+
+
+		LINEA: 128, COLUMNA: 64: <script src="/estaticos/GridResp/js/googlejsapi.js"></script>
+
+
+
+		LINEA: 128, COLUMNA: 139: <script src="/estaticos/FusionProcess/configTV/js/configTvManager.js"></script>
+
+
+
+		LINEA: 128, COLUMNA: 232: <script src="/estaticos/GridResp/js/includeGrid.js"></script>
+
+
+
+		LINEA: 200, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...
+
+
+
+		LINEA: 225, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/logout.js"></script>
+
+
+
+		LINEA: 277, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...
+
+
+
+		LINEA: 444, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...
+
+
+
+		LINEA: 501, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...
+
+
+
+		LINEA: 737, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...
+
+
+
+		LINEA: 775, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...
+
+
+
+		LINEA: 1916, COLUMNA: 7: <script> 	function getCookieL(cname) {		var name = cname + "=";		var dec ...
+
+
+
+		LINEA: 2074, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {	var tipoUsuarioLogadoHidde ...
+
+
+
+		LINEA: 2122, COLUMNA: 2: <script>$(window).load(function () {var nameuser='';var urlhomeprivada = '';		 ...
+
+
+
+		LINEA: 2337, COLUMNA: 5: <script src="/estaticos/js/jquery-ui-1.9.2.js"></script>
+
+
+
+		LINEA: 2337, COLUMNA: 76: <script src="/estaticos/js/jquery.ui.touch-punch.min.js"></script>
+
+
+
+		LINEA: 2375, COLUMNA: 23: <script>$(document).ready(function(){SC.onReady(function() { ...
+
+
+
+		LINEA: 2382, COLUMNA: 11: <script src="/estaticos/js/jquery-ui-1.9.2.js"></script>
+
+
+
+		LINEA: 2382, COLUMNA: 82: <script src="/estaticos/js/jquery.ui.touch-punch.min.js"></script>
+
+
+
+		LINEA: 2992, COLUMNA: 9: <script type="text/javascript" src="/estaticos/PagoConTarjeta/js/BuyProcStorage.js"></script>
+
+
+
+		LINEA: 2993, COLUMNA: 11: <script type="text/javascript" src="/estaticos/PagoConTarjeta/js/buyProcessInfo.js"></script>
+
+
+
+		LINEA: 2994, COLUMNA: 21: <script type="text/javascript" src="/estaticos/PagoConTarjeta/js/funciones_PT.js"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 11: <script src="//mov-record-dot-mov-prod1.appspot.com/js/storageservice.js"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 109: <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 216: <script type="text/javascript" src="/estaticos/Catalogos/js/server/createPhoneList.js?v=1227"></scri ...
+
+
+
+		LINEA: 2995, COLUMNA: 334: <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=start"></script>
+
+
+
+		LINEA: 2995, COLUMNA: 445: <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angu ...
+
+
+
+		LINEA: 2996, COLUMNA: 11: <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-sanitize.js"></scr ...
+
+
+
+		LINEA: 3144, COLUMNA: 10: <script type="text/javascript">/*$(".headercabecera").append("<h2 id='renuevaH2' style='display: n ...
+
+
+
+		LINEA: 3502, COLUMNA: 1: <script> s.products = "terminales-moviles;distributiva-moviles-otros";</script>
+
+
+
+		LINEA: 3585, COLUMNA: 130: <script type='text/javascript'>$.ajax({dataType: "jsonp",url: "htt ...
+
+
+
+		LINEA: 3903, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 1954, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 141, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 141, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 39, COLUMNA: 2: <title>M&oacute;viles libres &iexcl;Las mejores ofertas en tel&eacute;fonos m&oacute;viles! - Movist ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 585, COLUMNA: 2: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...
+
+
+
+		LINEA: 590, COLUMNA: 4: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...
+
+
+
+		LINEA: 595, COLUMNA: 5: <a href="/autonomos/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','autonomos',4,'/',null,null) ...
+
+
+
+		LINEA: 600, COLUMNA: 5: <a href="/empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','empresas',4,'/',null,null);" ...
+
+
+
+		LINEA: 605, COLUMNA: 5: <a href="/grandes-empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','grandes-empresas',4, ...
+
+
+
+		LINEA: 631, COLUMNA: 5: <a href="http://comunidad.movistar.es/" target="_self" title="Comunidad">		 <span class= ...
+
+
+
+		LINEA: 643, COLUMNA: 5: <a href="https://www.movistar.es/particulares/atencion-cliente/escribenos/?pid=cabecera_enlace_escri ...
+
+
+
+		LINEA: 679, COLUMNA: 4: <a href="#" lang="es_ES">Castellano</a>
+
+
+
+		LINEA: 684, COLUMNA: 5: <a href="/ca/particulars/mobil/mobils/?lng=ca_ES&amp;d=idiomasRespon" lang="ca_ES">CatalÃ¡n</a>
+
+
+
+		LINEA: 690, COLUMNA: 5: <a href="/gl/particulares/mobil/mobiles/?lng=gl_ES&amp;d=idiomasRespon" lang="gl_ES">Gallego</a>
+
+
+
+		LINEA: 722, COLUMNA: 30: <a href="#" class=" white icon-buscar" onclick="javaScript:filtroXSS();"><img class="hidden" ...
+
+
+
+		LINEA: 805, COLUMNA: 5: <a class="link-logo-menu" href="/" target="_self" style="">	<div id="logo-respo-M" class="ic ...
+
+
+
+		LINEA: 814, COLUMNA: 10: <a href="javascript:void(0);" data-toggle="collapse" data-target="#miMovistar"><span id="iconConecta ...
+
+
+
+		LINEA: 817, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#segmentos"><span class="icon icon ...
+
+
+
+		LINEA: 820, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#buscador"> <span class="icon icon ...
+
+
+
+		LINEA: 823, COLUMNA: 8: <a href="javascript:void(0);" data-toggle="collapse" data-target="#desplegable"> <span class="icon i ...
+
+
+
+		LINEA: 894, COLUMNA: 3: <a class="link-logo-menu" href="/" target="_self"><span>Logo</span></a>
+
+
+
+		LINEA: 939, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Televisión">Televisión ...
+
+
+
+		LINEA: 965, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/futbol" target="_self" title="Todo el Fútbol ">	 ...
+
+
+
+		LINEA: 972, COLUMNA: 7: <a class="link" href="/particulares/movistarplus" target="_self" title="Destacados">	<span c ...
+
+
+
+		LINEA: 979, COLUMNA: 7: <a class="link" href="http://originales.movistarplus.es" target="_self" title="Originales Movistar+" ...
+
+
+
+		LINEA: 986, COLUMNA: 7: <a class="link" href="http://www.movistarplus.es/cero" target="_self" title="#0">	<span clas ...
+
+
+
+		LINEA: 993, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/estrenos-cine" target="_self" title="Cine"> ...
+
+
+
+		LINEA: 1000, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/series" target="_self" title="Series ">	<sp ...
+
+
+
+		LINEA: 1024, COLUMNA: 7: <a class="link" href="http://www.movistarplus.es/vamos?_ga=2.3188595.252901027.1537768252-1643678454 ...
+
+
+
+		LINEA: 1031, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/deportes" target="_self" title="Deportes">	 ...
+
+
+
+		LINEA: 1038, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/infantil" target="_self" title="Infantil "> ...
+
+
+
+		LINEA: 1045, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/documentales" target="_self" title="Documentales "> ...
+
+
+
+		LINEA: 1052, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/programas" target="_self" title="Programas ">	 ...
+
+
+
+		LINEA: 1059, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/toros" target="_self" title="Toros ">	<span ...
+
+
+
+		LINEA: 1083, COLUMNA: 7: <a class="link" href="http://www.movistarplus.es/programacion-tv" target="_self" title="Guía TV"> ...
+
+
+
+		LINEA: 1090, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/calendarios-deportivos" target="_self" title="Calen ...
+
+
+
+		LINEA: 1114, COLUMNA: 7: <a class="link" href="/particulares/television/movistar-imagenio/" target="_self" title="Oferta TV"> ...
+
+
+
+		LINEA: 1121, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/funcionalidades" target="_self" title="Funcionalida ...
+
+
+
+		LINEA: 1128, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/guia-rapida" target="_self" title="Guía rápida"> ...
+
+
+
+		LINEA: 1135, COLUMNA: 7: <a class="link" href="/particulares/Aura/ " target="_self" title="Aura">	<span class="icon-c ...
+
+
+
+		LINEA: 1159, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/contenidos/yomvi" target="_self" title="Qué es "> ...
+
+
+
+		LINEA: 1166, COLUMNA: 7: <a class="link" href="/particulares/movistarplus/contenidos/yomvi?origen=activar" target="_self" tit ...
+
+
+
+		LINEA: 1173, COLUMNA: 7: <a class="link" href="http://ver.movistarplus.es/" target="_self" title="Ver ahora ">	<span...
+
+
+
+		LINEA: 1180, COLUMNA: 7: <a class="link" href="http://www.movistar.es/particulares/movistar-junior" target="_self" title="Mov ...
+
+
+
+		LINEA: 1204, COLUMNA: 7: <a class="link" href="https://www.movistar.es/Privada/DesafioMC/?xxxurixxx=https://www.movistar.es/p ...
+
+
+
+		LINEA: 1211, COLUMNA: 7: <a class="link" href="/autonomos/fusion/paquete-movistar-fusion/bares" target="_self" title="TV para ...
+
+
+
+		LINEA: 1218, COLUMNA: 7: <a class="link" href="/particulares/television/otros-canales-tv" target="_self" title="Canales a la...
+
+
+
+		LINEA: 1225, COLUMNA: 7: <a class="link" href="/particulares/netflix" target="_self" title="Fusión con Netflix">	<sp ...
+
+
+
+		LINEA: 1246, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Tienda">Tienda<span c ...
+
+
+
+		LINEA: 1272, COLUMNA: 7: <a class="link" href="/particulares/oferta-combinada/fusion/ " target="_self" title="Oferta Fusión" ...
+
+
+
+		LINEA: 1279, COLUMNA: 7: <a class="link" href="/particulares/tienda/comparador-tarifas-fusion" target="_self" title="Tarifas...
+
+
+
+		LINEA: 1286, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta?filter=fusion" ta ...
+
+
+
+		LINEA: 1293, COLUMNA: 7: <a class="link" href="/particulares/solucioneswifi" target="_self" title="Dispositivos y servicios"> ...
+
+
+
+		LINEA: 1317, COLUMNA: 7: <a class="link" href="/particulares/internet/adsl-fibra-optica/ " target="_self" title="Oferta Inter ...
+
+
+
+		LINEA: 1324, COLUMNA: 7: <a class="link" href="/particulares/tienda/comparador-tarifas-internet/?filter=baf" target="_self" t ...
+
+
+
+		LINEA: 1331, COLUMNA: 7: <a class="link" href="/particulares/internet/adsl-fibra-optica/fibra-optica/ " target="_self" title= ...
+
+
+
+		LINEA: 1338, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles/hgu" target="_self" title="Router Smart WiFi">		 ...
+
+
+
+		LINEA: 1345, COLUMNA: 7: <a class="link" href="/particulares/fijo/ " target="_self" title="Tarifas Fijo y servicios"> ...
+
+
+
+		LINEA: 1369, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/ " target="_self" title="Oferta Móvil"> ...
+
+
+
+		LINEA: 1376, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta/" target="_self"...
+
+
+
+		LINEA: 1383, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles?prefilter99=smartphones" target="_self"  title=" ...
+
+
+
+		LINEA: 1391, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tengo-movil/ " target="_self" title="Servi ...
+
+
+
+		LINEA: 1398, COLUMNA: 7: <a class="link" href="/particulares/movil/viajar-al-extranjero-roaming/" target="_self" title="Movis ...
+
+
+
+		LINEA: 1405, COLUMNA: 7: <a class="link" href="/particulares/movil/llamadas-internacionales/" target="_self" title="Llamar al ...
+
+
+
+		LINEA: 1429, COLUMNA: 7: <a class="link" href="/particulares/television/movistar-imagenio/ " target="_self" title="Oferta Tel ...
+
+
+
+		LINEA: 1436, COLUMNA: 7: <a class="link" href="/particulares/television/tv-futbol/ " target="_self" title="FÚTBOL">	 ...
+
+
+
+		LINEA: 1443, COLUMNA: 7: <a class="link" href="/particulares/television/seleccion-deportes " target="_self" title="DEPORTES " ...
+
+
+
+		LINEA: 1450, COLUMNA: 7: <a class="link" href="/particulares/television/motor" target="_self" title="MOTOR">	<span cl ...
+
+
+
+		LINEA: 1457, COLUMNA: 7: <a class="link" href="/particulares/television/cine " target="_self" title="CINE">	<span cla ...
+
+
+
+		LINEA: 1464, COLUMNA: 7: <a class="link" href="/particulares/television/movistar-imagenio/movistar-series/ " target="_self" t ...
+
+
+
+		LINEA: 1471, COLUMNA: 7: <a class="link" href="/particulares/netflix" target="_self" title="Fusión con Netflix">	<sp ...
+
+
+
+		LINEA: 1478, COLUMNA: 7: <a class="link" href="https://www.movistar.es/Privada/DesafioMC/?xxxurixxx=https://www.movistar.es/p ...
+
+
+
+		LINEA: 1502, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles?prefilter99=ofertas" target="_self" title="Ofertas ...
+
+
+
+		LINEA: 1509, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles?prefilter99=smartphones" target="_self"  title=" ...
+
+
+
+		LINEA: 1517, COLUMNA: 7: <a class="link" href="/particulares/movil/moviles/?prefilter99=equipamiento_hogar" target="_self" ti ...
+
+
+
+		LINEA: 1541, COLUMNA: 7: <a class="link" href="/particulares/tienda/servicios-digitales/" target="_self" title="Todos los ser ...
+
+
+
+		LINEA: 1548, COLUMNA: 7: <a class="link" href="http://www.movistar.es/appmovistares" target="_self" title="App Mi Movistar"> ...
+
+
+
+		LINEA: 1555, COLUMNA: 7: <a class="link" href="/particulares/movil/servicios/app-smartwifi/" target="_self" title="App Smart...
+
+
+
+		LINEA: 1562, COLUMNA: 7: <a class="link" href="/particulares/movil/servicios/nubico-premium" target="_self" title="Nubico"> ...
+
+
+
+		LINEA: 1569, COLUMNA: 7: <a class="link" href="/particulares/conexion-segura" target="_self" title="Conexión Segura">		 ...
+
+
+
+		LINEA: 1576, COLUMNA: 7: <a class="link" href="/particulares/tienda/servicios-digitales/cloud" target="_self" title="Movistar ...
+
+
+
+		LINEA: 1583, COLUMNA: 7: <a class="link" href="/particulares/tienda/servicios-digitales/protege" target="_self" title="Movist ...
+
+
+
+		LINEA: 1590, COLUMNA: 7: <a class="link" href="/particulares/movistar-car" target="_self" title="Movistar Car">	<span ...
+
+
+
+		LINEA: 1611, COLUMNA: 4: <a class="dropdown-toggle " data-toggle="dropdown" href="#" title="Atención al cliente">Aten ...
+
+
+
+		LINEA: 1637, COLUMNA: 7: <a class="link" href="//atencionalcliente.movistar.es" target="_self" title="Resolver dudas">		 ...
+
+
+
+		LINEA: 1644, COLUMNA: 7: <a class="link" href="https://atencionalcliente.movistar.es?f=320" target="_self" title="Entender mi ...
+
+
+
+		LINEA: 1651, COLUMNA: 7: <a class="link" href="/contratos" target="_self" title="Contratos de Movistar">	<span class= ...
+
+
+
+		LINEA: 1658, COLUMNA: 7: <a class="link" href="/particulares/atencion-cliente/buscador-de-tiendas/" target="_self" title="Loc ...
+
+
+
+		LINEA: 1665, COLUMNA: 7: <a class="link" href="/particulares/movil/viajar-al-extranjero-roaming/" target="_self" title="Roami ...
+
+
+
+		LINEA: 1672, COLUMNA: 7: <a class="link" href="https://atencionalcliente.movistar.es/pregunta-frecuente/fibra-optica-300-mbps ...
+
+
+
+		LINEA: 1696, COLUMNA: 7: <a class="link" href="https://atencionalcliente.movistar.es/?f=584,166,583,571,677" target="_self" h ...
+
+
+
+		LINEA: 1703, COLUMNA: 7: <a class="link" href="/particulares/atencion-cliente/pedidos" target="_self" title="Seguimiento de p ...
+
+
+
+		LINEA: 1710, COLUMNA: 7: <a class="link" href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" tar ...
+
+
+
+		LINEA: 1717, COLUMNA: 7: <a class="link" href="/particulares/movil/tarifas-moviles/tarifas-contrato-tarjeta/ " target="_self" ...
+
+
+
+		LINEA: 1724, COLUMNA: 7: <a class="link" href="/Privada/DesafioMC/?xxxurixxx=/particulares/Aplicaciones/Orquestador/procesoCo ...
+
+
+
+		LINEA: 1731, COLUMNA: 7: <a class="link" href="/Privada/DesafioMC/?xxxurixxx=/particulares/Aplicaciones/Orquestador/procesoCo ...
+
+
+
+		LINEA: 1738, COLUMNA: 7: <a class="link" href="/estaticos/m/es/webApp/MiMovistarApp_inteligente.html?origen=particulares&cont ...
+
+
+
+		LINEA: 1762, COLUMNA: 7: <a class="link" href="/particulares/soporte-tecnico/ " target="_self" title="Averías">	<spa ...
+
+
+
+		LINEA: 1769, COLUMNA: 7: <a class="link" href="/particulares/test-de-velocidad" target="_self" title="Test de velocidad">		 ...
+
+
+
+		LINEA: 1776, COLUMNA: 7: <a class="link" href="/particulares/internet/adsl-fibra-optica/clientes/configuracion-routers-portal ...
+
+
+
+		LINEA: 1783, COLUMNA: 7: <a class="link" href="https://www.movistar.es/particulares/atencion-cliente/telefonia-movil/catalogo ...
+
+
+
+		LINEA: 1790, COLUMNA: 7:
+
+ 
+
+		LINEA: 1797, COLUMNA: 7: <a class="link" href="/particulares/solucioneswifi" target="_self" title="Mejorar mi wifi">	 ...
+
+
+
+		LINEA: 1809, COLUMNA: 7: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/ver-mi-factura/ " target="_self" c ...
+
+
+
+		LINEA: 1823, COLUMNA: 7: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/no-se-si-estoy-registrado-en-mi-mo ...
+
+
+
+		LINEA: 1836, COLUMNA: 7: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/modificar-datos-personales/" targe ...
+
+
+
+		LINEA: 1880, COLUMNA: 5: <a id="accederdesktop" data-toggle="collapse" data-target="#miMovistar">Acceso Mi Movistar<span clas ...
+
+
+
+		LINEA: 1887, COLUMNA: 8: <a target="_top" id="enlace_cesta" href="#"><span class="white icon-compra">&nbsp;</span></a>
+
+
+
+		LINEA: 1896, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 1900, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...
+
+
+
+		LINEA: 1904, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 1908, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 1912, COLUMNA: 24: <a href="https://sitioseguro.movistarplus.es/zonacliente/misdatospersonales.html" target="_self" cla ...
+
+
+
+		LINEA: 1947, COLUMNA: 10: <a href="javascript:getUrlHome();" class="c_a_desconectar_desk" id="a_acceso_satelites" target="_sel ...
+
+
+
+		LINEA: 1964, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 1968, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...
+
+
+
+		LINEA: 1972, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self" c ...
+
+
+
+		LINEA: 1976, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 1980, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 1984, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones" target=" ...
+
+
+
+		LINEA: 1992, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 1996, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...
+
+
+
+		LINEA: 2000, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self" c ...
+
+
+
+		LINEA: 2004, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 2008, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 2012, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones " target= ...
+
+
+
+		LINEA: 2020, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 2024, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas " target="_ ...
+
+
+
+		LINEA: 2028, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self" c ...
+
+
+
+		LINEA: 2032, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 2036, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 2040, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones" target=" ...
+
+
+
+		LINEA: 2048, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...
+
+
+
+		LINEA: 2052, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...
+
+
+
+		LINEA: 2056, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...
+
+
+
+		LINEA: 2060, COLUMNA: 24: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self" c ...
+
+
+
+		LINEA: 2068, COLUMNA: 10: <a href="#" class="c_a_desconectar_desk" id="a_desconectar" onclick="document.getElementById('logout ...
+
+
+
+		LINEA: 2368, COLUMNA: 129: <a class="sc-telefono num900" href="">&nbsp;</a>
+
+
+
+		LINEA: 2371, COLUMNA: 21: <a title="Te llamamos gratis" class="GW_linkOverBox sc-btn-c2c" id="call-free-header" href="javascri ...
+
+
+
+		LINEA: 2494, COLUMNA: 14: <a class="visible-lg visible-md col-xs-12" href="/particulares/movil/moviles/iphone-xr" ng-if="selec ...
+
+
+
+		LINEA: 2495, COLUMNA: 120: <a href="/particulares/solucioneswifi"><div class="visible-lg visible-md col-xs-12" ng-sty ...
+
+
+
+		LINEA: 2621, COLUMNA: 170: <a title="Comprar {{term.name}}" class="GW_listRequestButton" data-ng-click="saveOfferIdToSession(te ...
+
+
+
+		LINEA: 2622, COLUMNA: 34: <a title="Comprar {{term.name}}" class="GW_listRequestButton" data-ng-click="saveOfferIdToSession(te ...
+
+
+
+		LINEA: 2634, COLUMNA: 49: <a title="{{term.name}}" class="GW_termNom_a" data-ng-click="saveOfferIdToSession(term,$event)" data ...
+
+
+
+		LINEA: 2691, COLUMNA: 335: <a title="Comprar {{term.name}}" class="GW_listRequestButton" data-ng-click="saveOfferIdToSession(te ...
+
+
+
+		LINEA: 2693, COLUMNA: 43: <a href="/particulares/solucioneswifi"><div class="hidden-md hidden-lg col-xs-12" id="bann ...
+
+
+
+		LINEA: 2700, COLUMNA: 47: <a title="Ver m&aacute;s terminal" class="GW_viewMoreButton" href="javascript:void(0)" data-ng-click ...
+
+
+
+		LINEA: 2708, COLUMNA: 50: <a class="COE_comparatorAddOther" href="javascript:void(0)" ng-click="hideComparator()"> Volver al l ...
+
+
+
+		LINEA: 2711, COLUMNA: 50: <a title="{{terminal.name}}" class="COE_comparatorProdName" data-ng-href="{{decodeUrl(terminal.dataM ...
+
+
+
+		LINEA: 2712, COLUMNA: 49: <a href="{{decodeUrl(terminal.dataMap.url)}}"><img title="{{terminal.name}}" class="COE_comparatorPr ...
+
+
+
+		LINEA: 2713, COLUMNA: 9: <a title="Comprar {{terminal.name}}" class="COE_requestButton" data-ng-href="{{decodeUrl(terminal.da ...
+
+
+
+		LINEA: 2982, COLUMNA: 50: <a class="COE_comparatorAddOther" href="javascript:void(0)" ng-click="hideComparator()"> Volver al l ...
+
+
+
+		LINEA: 3249, COLUMNA: 68: <a href="https://www.movistar.es/particulares/" itemprop="url" title="Tel&eacute;fonos m&oacute;vile ...
+
+
+
+		LINEA: 3250, COLUMNA: 68: <a href="https://www.movistar.es/particulares/movil/" itemprop="url" title="Comprar m&oacute;viles"> ...
+
+
+
+		LINEA: 3251, COLUMNA: 68: <a href="https://www.movistar.es/particulares/movil/moviles/" itemprop="url" title="Comprar m&oacute ...
+
+
+
+		LINEA: 3420, COLUMNA: 143: <a href="/particulares/movil/servicios/seguro-movil">M&aacute;s info</a>
+
+
+
+		LINEA: 3446, COLUMNA: 42: <a title="Gu&iacute;a accesibilidad" href="/particulares/guia-moviles-personas-discapacidad/">esta g ...
+
+
+
+		LINEA: 3584, COLUMNA: 49: <a href="https://trustivity.es/movistar.es-opiniones"><!-- Trustivity --><link hre ...
+
+
+
+		LINEA: 3719, COLUMNA: 11: <a href="https://www.facebook.com/movistar.es" target="_blank" title="Facebook"><span class="icon ic ...
+
+
+
+		LINEA: 3723, COLUMNA: 11: <a href="https://twitter.com/movistar_es" target="_blank" title="Twitter"><span class="icon icon-twi ...
+
+
+
+		LINEA: 3727, COLUMNA: 11: <a href="http://www.youtube.com/movistar" target="_blank" title="Youtube"><span class="icon icon-you ...
+
+
+
+		LINEA: 3731, COLUMNA: 11: <a href="https://plus.google.com/+movistarespana/" target="_blank" title="Google +"><span class="ico ...
+
+
+
+		LINEA: 3735, COLUMNA: 11: <a href="/particulares/instagram" target="_self" title="Instagram"><span class="icon icon-instagram" ...
+
+
+
+		LINEA: 3739, COLUMNA: 11: <a href="http://comunidad.movistar.es/" target="_blank" title="Comunidad Movistar"><span class="icon ...
+
+
+
+		LINEA: 3778, COLUMNA: 21: <a href="/particulares/aviso-legal/" target="_self" title="Aviso legal">Aviso legal</a>
+
+
+
+		LINEA: 3779, COLUMNA: 21: <a href="/particulares/accesibilidad/" target="_self">Accesibilidad</a>
+
+
+
+		LINEA: 3780, COLUMNA: 21: <a href="http://www.telefonica.es/" target="_blank">Telefónica España</a>
+
+
+
+		LINEA: 3781, COLUMNA: 21: <a href="/contratos" target="_self">Condiciones legales</a>
+
+
+
+		LINEA: 3782, COLUMNA: 21: <a href="/empresas/centro-de-privacidad/?optionSelected=privacidadEmpresas" target="_self">Privacida ...
+
+
+
+		LINEA: 3783, COLUMNA: 21: <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=ES" target= ...
+
+
+
+		LINEA: 3784, COLUMNA: 21: <a href="http://comunicacion.movistarplus.es/" target="_blank">Comunicación</a>
+
+
+
+		LINEA: 3785, COLUMNA: 21: <a href="/GaliciaPDBL" target="_self">Fondos públicos</a>
+
+
+
+		LINEA: 3786, COLUMNA: 21: <a href="#" target="_self" class="optanon-toggle-display">Cookies</a>
+
+
+
+		LINEA: 3787, COLUMNA: 34: <a href="/particulares/centro-de-seguridad/" target="_self">Seguridad</a>
+
+
+
+		LINEA: 3816, COLUMNA: 6: <a class="hidden-xs" href="https://dialogando.com.es/" target="_blank" title="Dialogando" alt="Dialo ...
+
+
+
+		LINEA: 3818, COLUMNA: 6: <a class="hidden-xs" href="http://www.confianzaonline.org/empresas/movistar.htm" target="_blank" tit ...
+
+
+
+		LINEA: 3820, COLUMNA: 6: <a class="hidden-xs" href="https://www.telefonica.es/es/acerca_de_telefonica/calidad/calidad-servici ...
+
+
+
+		LINEA: 3822, COLUMNA: 6: <a class="hidden-xs" href="http://www.msssi.gob.es/campannas/campanas13/haySalida.htm" target="_blan ...
+
+
+
+		LINEA: 3824, COLUMNA: 6: <a class="Fundación Telefónica" href="http://www.fundaciontelefonica.com" target="_blank" title="F ...
+
+
+
+		LINEA: 3826, COLUMNA: 6: <a class="hidden-xs" href="http://www.tuenti.es" target="_blank" title="Tuenti" alt="Tuenti" rel="no ...
+
+
+
+		LINEA: 3828, COLUMNA: 6: <a class="hidden-xs" href="http://www.movistar.es/particulares/movil/servicios/app-mimovistar?pid=ic ...
+
+
+
+		LINEA: 3830, COLUMNA: 6: <a class="hidden-xs" href="http://likes.movistar.es" target="_blank" title="Movistar Likes" alt="Mov ...
+
+
+
+		LINEA: 3859, COLUMNA: 22: <a class="link-logo-pie" href="http://www.telefonica.es/" target="_blank" title="Telefónica" ><span ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 141, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 2276, COLUMNA: 4: <h1 class="bold">Móviles libres</h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 2573, COLUMNA: 9: <h2>Comparador de M&oacute;viles</h2>
+
+
+
+		LINEA: 2601, COLUMNA: 9: <h2 title="Productos encontrados" class="GW_numOfItemsFound margin0" ng-style="isMicroSite &amp;&amp ...
+
+
+
+		LINEA: 3397, COLUMNA: 1: <h2 class="TitSec20px" style="margin-top:0.5em;">&iquest;Por qu&eacute; comprar tu m&oacute;vil libr ...
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 2389, COLUMNA: 1: <h3 class="GW_categoryTitle" ng-style="selectedCategory==categories[4].id &amp;&amp; {'cursor': 'poi ...
+
+
+
+		LINEA: 2396, COLUMNA: 5: <h3 class="GW_categoryTitle" style="">Promociones</h3>
+
+
+
+		LINEA: 3403, COLUMNA: 1: <h3>M&oacute;viles libres sin compromiso y con un precio especial</h3>
+
+
+
+		LINEA: 3411, COLUMNA: 1: <h3>Pago a plazos</h3>
+
+
+
+		LINEA: 3419, COLUMNA: 1: <h3>Seguro M&oacute;vil</h3>
+
+
+
+		LINEA: 3427, COLUMNA: 1: <h3>Facilidades de entrega</h3>
+
+
+
+		LINEA: 3436, COLUMNA: 1: <h3>Descuento por tu m&oacute;vil usado</h3>
+
+
+
+		LINEA: 3444, COLUMNA: 1: <h3>Comprometidos con la accesibilidad</h3>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 1954, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 141, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 1954, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...(triangulo-accederResp)
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 141, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 141, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 714, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 141, COLUMNA: 2: <body prueba>		<!-- Carlos Casado Barrantes - Migración huella Tealium a GTM -->		<!-- Google T ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+ 
+
+		LINEA: 719, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 714, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 714, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 221, COLUMNA: 3: <input id="urlLogoutCOLX" type="hidden" value="https://www.movistar.es/portal/site/COL10/template.CO ...
+
+
+
+		LINEA: 222, COLUMNA: 3: <input id="urlLogoutCCLI" type="hidden" value="https://www.movistar.es/mimovistar-cliente/publico/de ...
+
+
+
+		LINEA: 223, COLUMNA: 3: <input id="urlHomeCCLI" type="hidden" value="https://www.movistar.es/mimovistar-cliente/publico/acce ...
+
+
+
+		LINEA: 229, COLUMNA: 5: <input id="tipoUsuarioLogadoHidden" type="hidden" value="NOLOGADO" />
+
+
+
+		LINEA: 457, COLUMNA: 1: <input id="hiddenPageName" type="hidden" value="Particulares:movil:moviles">
+
+
+
+		LINEA: 726, COLUMNA: 4: <input type="hidden" name="vgnextoid" value="" />
+
+
+
+		LINEA: 727, COLUMNA: 4: <input type="hidden" name="action" value="resultadosBusqueda">
+
+
+
+		LINEA: 728, COLUMNA: 4: <input type="hidden" name="controlBusqueda" value="avanzada">
+
+
+
+		LINEA: 729, COLUMNA: 4: <input type="hidden" name="num_resultados" value="10">
+
+
+
+		LINEA: 730, COLUMNA: 4: <input type="hidden" name="segmento" value="0">
+
+
+
+		LINEA: 799, COLUMNA: 1: <input id="timehide" type="hidden" value="10000" />
+
+
+
+		LINEA: 800, COLUMNA: 1: <input id="timehold" type="hidden" value="400" />
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 714, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 714, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 714, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="post"><fieldset>	<legend>Buscar e ...
+
+

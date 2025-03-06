@@ -1,0 +1,25 @@
+12/17/2018 01:02:44 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 11
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/17/2018 01:35:41 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 83
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/17/2018 01:47:20 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "observatorio"
+	PAGINA WEB: 89
+	INFORMACION: "ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='observatorioweb.ups.edu.ec', port=80): Read timed out. (read timeout=60)",),)"
+
+12/17/2018 02:03:37 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "observatorio"
+	PAGINA WEB: 224
+	INFORMACION: "ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='observatorioweb.ups.edu.ec', port=80): Read timed out. (read timeout=60)",),)"
+
+12/17/2018 02:33:10 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 102
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+

@@ -1,0 +1,36 @@
+REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/cultura-mecd/areas-cultura/cooperacion/portada.html;jsessionid=1A68102914AF8A9C2ED287083D3BA795
+FECHA EVALUACIÓN: 2018-12-14
+
+-PROBLEMAS-
+
+Empty button	  VECES ENCONTRADO: 4
+
+
+-ALERTAS-
+
+Justified text	  VECES ENCONTRADO: 2
+A nearby image has the same alternative text	  VECES ENCONTRADO: 2
+Long alternative text	  VECES ENCONTRADO: 1
+Broken same-page link	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 3
+Noscript element	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 4
+Redundant alternative text	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Element language	  VECES ENCONTRADO: 6
+Alternative text	  VECES ENCONTRADO: 1
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
+Null or empty alternative text	  VECES ENCONTRADO: 5
+Fieldset	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 36
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+

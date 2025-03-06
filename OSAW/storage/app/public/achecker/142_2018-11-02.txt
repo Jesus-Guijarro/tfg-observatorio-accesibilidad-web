@@ -1,0 +1,840 @@
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/aviso-legal-mecd/
+FECHA EVALUACIÓN: 2018-11-02
+
+-PROBLEMAS CONOCIDOS-
+
+		Ningún problema conocido encontrado.		
+
+  
+
+-PROBLEMAS POTENCIALES-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 66, COLUMNA 129: <img src="/docroot/utils/img/escudo-mefp-mcd.gif" alt="Ministerio de Educación y Formación Profesi ...       
+
+		LINEA: 66, COLUMNA 450: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 68, COLUMNA 938: <img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/>       
+
+		LINEA: 68, COLUMNA 1276: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 68, COLUMNA 1638: <img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/>       
+
+		LINEA: 68, COLUMNA 1988: <img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/>       
+
+		LINEA: 94, COLUMNA 9001: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 94, COLUMNA 16103: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...       
+
+		LINEA: 94, COLUMNA 16397: <img alt="Este documento es valido XHTML 1.0 Strict" src="/docroot/mecd/img/logo-xhtml1.png"/>       
+
+		LINEA: 94, COLUMNA 16621: <img alt="Este documento CSS es valido" src="/docroot/mecd/img/logo-css.png"/>
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 94, COLUMNA 9001: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+
+
+		LINEA: 66, COLUMNA 129: <img src="/docroot/utils/img/escudo-mefp-mcd.gif" alt="Ministerio de Educación y Formación Profesi ...       
+
+		LINEA: 66, COLUMNA 450: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 94, COLUMNA 16103: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...
+
+  
+
+	REVISAR: 80: object may be missing a text equivalent.
+
+
+
+		LINEA: 62, COLUMNA 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+1.2 Time-based Media: Provide alternatives for time-based media
+
+CRITERIO DE CONFORMIDAD: 1.2.3 Audio Description or Media Alternative (Prerecorded) (A)  
+
+	REVISAR: 160: object may require a long description.
+
+
+
+		LINEA: 62, COLUMNA 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 82, COLUMNA 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...
+
+  
+
+	REVISAR: 111: Table may require a summary.
+
+
+
+		LINEA: 94, COLUMNA 14334: <table><thead><tr class="gris"><th id="cab020">Nombre</th><th id="cab021">Finalidad</th></tr></thead ...
+
+  
+
+	REVISAR: 137: Layout table may be misusing th elements.
+
+
+
+		LINEA: 94, COLUMNA 14334: <table><thead><tr class="gris"><th id="cab020">Nombre</th><th id="cab021">Finalidad</th></tr></thead ...
+
+  
+
+	REVISAR: 151: Data table may require a caption.
+
+
+
+		LINEA: 94, COLUMNA 14334: <table><thead><tr class="gris"><th id="cab020">Nombre</th><th id="cab021">Finalidad</th></tr></thead ...
+
+  
+
+	REVISAR: 230: Table may require thead, tfoot and tbody elements to group repeated table row structures.
+
+
+
+		LINEA: 94, COLUMNA 14334: <table><thead><tr class="gris"><th id="cab020">Nombre</th><th id="cab021">Finalidad</th></tr></thead ...
+
+  
+
+	REVISAR: 231: Table may require colgroup and col elements to group table columns.
+
+
+
+		LINEA: 94, COLUMNA 14334: <table><thead><tr class="gris"><th id="cab020">Nombre</th><th id="cab021">Finalidad</th></tr></thead ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 66, COLUMNA 129: <img src="/docroot/utils/img/escudo-mefp-mcd.gif" alt="Ministerio de Educación y Formación Profesi ...       
+
+		LINEA: 66, COLUMNA 450: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 68, COLUMNA 938: <img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/>       
+
+		LINEA: 68, COLUMNA 1276: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 68, COLUMNA 1638: <img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/>       
+
+		LINEA: 68, COLUMNA 1988: <img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/>       
+
+		LINEA: 94, COLUMNA 9001: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 94, COLUMNA 16103: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...       
+
+		LINEA: 94, COLUMNA 16397: <img alt="Este documento es valido XHTML 1.0 Strict" src="/docroot/mecd/img/logo-xhtml1.png"/>       
+
+		LINEA: 94, COLUMNA 16621: <img alt="Este documento CSS es valido" src="/docroot/mecd/img/logo-css.png"/>
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 82, COLUMNA 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...       
+
+		LINEA: 82, COLUMNA 463: <input type="submit" name="mec" id="boton_buscar" class="botonbuscar" value=""/>
+
+  
+
+	REVISAR: 73: object may be using color alone.
+
+
+
+		LINEA: 62, COLUMNA 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 22, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/w_jquery.js"></script>       
+
+		LINEA: 23, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/dropdown.js"></script>       
+
+		LINEA: 24, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/seleccionar.js"></script>       
+
+		LINEA: 26, COLUMNA 4: <script type="text/javascript">var textoEnlaceExterno = "Enlace externo, se abre en ventana nueva";< ...       
+
+		LINEA: 27, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/jstarget.js"></script>       
+
+		LINEA: 29, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 30, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/jquery.colorbox.js"></script>       
+
+		LINEA: 31, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/slides.min.jquery.js"></script>       
+
+		LINEA: 32, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/slides-contenido.js"></script>       
+
+		LINEA: 38, COLUMNA 13: <script type="text/javascript" src="/docroot/utils/js/jquery-ui.min.js"></script>       
+
+		LINEA: 39, COLUMNA 13: <script type="text/javascript" src="/docroot/utils/js/agenda.js"></script>       
+
+		LINEA: 41, COLUMNA 3: <script type="text/javascript" src="/docroot/utils/js/cookies/js.cookie-2.1.3.min.js"></script>       
+
+		LINEA: 43, COLUMNA 3: <script type="text/javascript">window.onload = function(){	ExternalLinks.init();}		 ...       
+
+		LINEA: 50, COLUMNA 3: <script src="//f1-eu.readspeaker.com/script/5295/ReadSpeaker.js?pids=embhl" type="text/javascript">< ...       
+
+		LINEA: 51, COLUMNA 3: <script type="text/javascript" src="/docroot/utils/js/cookies/gestion-cookies.js"></script>       
+
+		LINEA: 64, COLUMNA 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...       
+
+		LINEA: 68, COLUMNA 2363: <script type="text/javascript">dropdown('nav', 'hover', 25);</script>       
+
+		LINEA: 96, COLUMNA 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
+
+		LINEA: 103, COLUMNA 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 66, COLUMNA 129: <img src="/docroot/utils/img/escudo-mefp-mcd.gif" alt="Ministerio de Educación y Formación Profesi ...       
+
+		LINEA: 66, COLUMNA 450: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 66, COLUMNA 129: <img src="/docroot/utils/img/escudo-mefp-mcd.gif" alt="Ministerio de Educación y Formación Profesi ...       
+
+		LINEA: 66, COLUMNA 450: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 68, COLUMNA 938: <img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/>       
+
+		LINEA: 68, COLUMNA 1276: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 68, COLUMNA 1638: <img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/>       
+
+		LINEA: 68, COLUMNA 1988: <img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/>       
+
+		LINEA: 94, COLUMNA 9001: <img src="/docroot/fckeditor/images/smiley/educacion-ico/ico-internet.gif" alt="Link externo" />       
+
+		LINEA: 94, COLUMNA 16103: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...       
+
+		LINEA: 94, COLUMNA 16397: <img alt="Este documento es valido XHTML 1.0 Strict" src="/docroot/mecd/img/logo-xhtml1.png"/>       
+
+		LINEA: 94, COLUMNA 16621: <img alt="Este documento CSS es valido" src="/docroot/mecd/img/logo-css.png"/>
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 22, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/w_jquery.js"></script>       
+
+		LINEA: 23, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/dropdown.js"></script>       
+
+		LINEA: 24, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/seleccionar.js"></script>       
+
+		LINEA: 26, COLUMNA 4: <script type="text/javascript">var textoEnlaceExterno = "Enlace externo, se abre en ventana nueva";< ...       
+
+		LINEA: 27, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/jstarget.js"></script>       
+
+		LINEA: 29, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 30, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/jquery.colorbox.js"></script>       
+
+		LINEA: 31, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/slides.min.jquery.js"></script>       
+
+		LINEA: 32, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/slides-contenido.js"></script>       
+
+		LINEA: 38, COLUMNA 13: <script type="text/javascript" src="/docroot/utils/js/jquery-ui.min.js"></script>       
+
+		LINEA: 39, COLUMNA 13: <script type="text/javascript" src="/docroot/utils/js/agenda.js"></script>       
+
+		LINEA: 41, COLUMNA 3: <script type="text/javascript" src="/docroot/utils/js/cookies/js.cookie-2.1.3.min.js"></script>       
+
+		LINEA: 43, COLUMNA 3: <script type="text/javascript">window.onload = function(){	ExternalLinks.init();}		 ...       
+
+		LINEA: 50, COLUMNA 3: <script src="//f1-eu.readspeaker.com/script/5295/ReadSpeaker.js?pids=embhl" type="text/javascript">< ...       
+
+		LINEA: 51, COLUMNA 3: <script type="text/javascript" src="/docroot/utils/js/cookies/gestion-cookies.js"></script>       
+
+		LINEA: 64, COLUMNA 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...       
+
+		LINEA: 68, COLUMNA 2363: <script type="text/javascript">dropdown('nav', 'hover', 25);</script>       
+
+		LINEA: 96, COLUMNA 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
+
+		LINEA: 103, COLUMNA 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.1.2 No Keyboard Trap (A)  
+
+	REVISAR: 259: object may not provide a keyboard mechanism to return focus to the parent window.
+
+
+
+		LINEA: 62, COLUMNA 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 30: object may flicker.
+
+
+
+		LINEA: 62, COLUMNA 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 22, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/w_jquery.js"></script>       
+
+		LINEA: 23, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/dropdown.js"></script>       
+
+		LINEA: 24, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/seleccionar.js"></script>       
+
+		LINEA: 26, COLUMNA 4: <script type="text/javascript">var textoEnlaceExterno = "Enlace externo, se abre en ventana nueva";< ...       
+
+		LINEA: 27, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/jstarget.js"></script>       
+
+		LINEA: 29, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 30, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/jquery.colorbox.js"></script>       
+
+		LINEA: 31, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/slides.min.jquery.js"></script>       
+
+		LINEA: 32, COLUMNA 4: <script type="text/javascript" src="/docroot/mecd/js/slides-contenido.js"></script>       
+
+		LINEA: 38, COLUMNA 13: <script type="text/javascript" src="/docroot/utils/js/jquery-ui.min.js"></script>       
+
+		LINEA: 39, COLUMNA 13: <script type="text/javascript" src="/docroot/utils/js/agenda.js"></script>       
+
+		LINEA: 41, COLUMNA 3: <script type="text/javascript" src="/docroot/utils/js/cookies/js.cookie-2.1.3.min.js"></script>       
+
+		LINEA: 43, COLUMNA 3: <script type="text/javascript">window.onload = function(){	ExternalLinks.init();}		 ...       
+
+		LINEA: 50, COLUMNA 3: <script src="//f1-eu.readspeaker.com/script/5295/ReadSpeaker.js?pids=embhl" type="text/javascript">< ...       
+
+		LINEA: 51, COLUMNA 3: <script type="text/javascript" src="/docroot/utils/js/cookies/gestion-cookies.js"></script>       
+
+		LINEA: 64, COLUMNA 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...       
+
+		LINEA: 68, COLUMNA 2363: <script type="text/javascript">dropdown('nav', 'hover', 25);</script>       
+
+		LINEA: 96, COLUMNA 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
+
+		LINEA: 103, COLUMNA 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 9, COLUMNA 3: <title>Aviso legal - Ministerio de Educación, Cultura y Deporte</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 66, COLUMNA 82: <a href="http://www.mecd.gob.es/portada-mecd/"><img src="/docroot/utils/img/escudo-mefp-mcd.gif" alt ...       
+
+		LINEA: 66, COLUMNA 397: <a href="https://constitucion40.com/" rel="external"><img src="/docroot/utils/img/constitucion.jpg"...       
+
+		LINEA: 68, COLUMNA 53: <a href="/ministerio-mecd/direcciones-y-telefonos.html">Direcciones y teléfonos</a>       
+
+		LINEA: 68, COLUMNA 195: <a href="/aviso-legal-mecd/"><span title="Castellano" xml:lang="es" lang="es">Bienvenido</span></a>       
+
+		LINEA: 68, COLUMNA 303: <a href="/aviso-legal-mecd/ca/"><span title="Català" xml:lang="ca" lang="ca">Benvingut</span></a>       
+
+		LINEA: 68, COLUMNA 410: <a href="/aviso-legal-mecd/gl/"><span title="Galego" xml:lang="gl" lang="gl">Benvido</span></a>       
+
+		LINEA: 68, COLUMNA 514: <a href="/aviso-legal-mecd/eu/"><span title="Euskera" xml:lang="eu" lang="eu">Ongi etorri</span></a>       
+
+		LINEA: 68, COLUMNA 623: <a href="/aviso-legal-mecd/va/"><span title="Valencià" xml:lang="va" lang="va">Benvingut</span></a>       
+
+		LINEA: 68, COLUMNA 747: <a href="/aviso-legal-mecd/en/"><span title="English" xml:lang="en" lang="en">Welcome</span></a>       
+
+		LINEA: 68, COLUMNA 926: <a href="#"><img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/></a>       
+
+		LINEA: 68, COLUMNA 1022: <a rel="external" href="https://www.facebook.com/MinisterioDeEducacionCulturaYDeporte">Educación y...       
+
+		LINEA: 68, COLUMNA 1142: <a rel="external" href="https://www.facebook.com/ConsejoSuperiordeDeportes">Deporte</a>       
+
+		LINEA: 68, COLUMNA 1248: <a title="Twitter" href="#"><img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/></ ...       
+
+		LINEA: 68, COLUMNA 1358: <a rel="external" href="http://www.twitter.com/educaciongob">Educación</a>       
+
+		LINEA: 68, COLUMNA 1442: <a rel="external" href="http://www.twitter.com/culturagob">Cultura</a>       
+
+		LINEA: 68, COLUMNA 1521: <a rel="external" href="http://www.twitter.com/deportegob">Deporte</a>       
+
+		LINEA: 68, COLUMNA 1610: <a title="Youtube" href="#"><img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/></ ...       
+
+		LINEA: 68, COLUMNA 1720: <a rel="external" href="http://www.youtube.com/educacion2p0">Educación</a>       
+
+		LINEA: 68, COLUMNA 1804: <a rel="external" href="http://www.youtube.com/CanalMCU">Cultura</a>       
+
+		LINEA: 68, COLUMNA 1881: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 68, COLUMNA 1963: <a title="RSS" href="#3"><img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/></a>       
+
+		LINEA: 68, COLUMNA 2062: <a rel="external" href="http://www.mecd.gob.es/mecd/rss.html">Prensa</a>       
+
+		LINEA: 68, COLUMNA 2143: <a href="/servicios-al-ciudadano-mecd/catalogo/cultura/atencion-al-ciudadano/suscripciones.html">Cul ...       
+
+		LINEA: 68, COLUMNA 2260: <a rel="external" href="http://www.csd.gob.es/csd/sindicacionrss">Deporte</a>       
+
+		LINEA: 68, COLUMNA 2531: <a href="/portada-mecd/">	Inicio</a>       
+
+		LINEA: 70, COLUMNA 20: <a href="/ministerio-mecd/">	Ministerios</a>       
+
+		LINEA: 72, COLUMNA 20: <a href="/servicios-al-ciudadano-mecd/">	Servicios al ciudadano</a>       
+
+		LINEA: 74, COLUMNA 20: <a href="/prensa-mecd/">	Prensa</a>       
+
+		LINEA: 76, COLUMNA 20: <a href="/educacion-mecd/">	Educación</a>       
+
+		LINEA: 78, COLUMNA 20: <a href="/cultura-mecd/">	Cultura</a>       
+
+		LINEA: 80, COLUMNA 20: <a href="/deporte-mecd/">	Deporte</a>       
+
+		LINEA: 82, COLUMNA 678: <a href="http://www.mecd.gob.es/portada-mecd/">Inicio</a>       
+
+		LINEA: 85, COLUMNA 6: <a class="rsbtn_play" accesskey="L" title="Escucha esta página utilizando ReadSpeaker" href="//app- ...       
+
+		LINEA: 94, COLUMNA 338: <a href="http://www.mecd.gob.es" rel="external">www.mecd.gob.es</a>       
+
+		LINEA: 94, COLUMNA 8478: <a href="http://www.mecd.gob.es/servicios-al-ciudadano-mecd/catalogo/mecd/varios/proteccion-datos.ht ...       
+
+		LINEA: 94, COLUMNA 8897: <a href="https://www.aepd.es/" rel="external">Agencia Espa&ntilde;ola de Protecci&oacute;n de Datos< ...       
+
+		LINEA: 94, COLUMNA 16036: <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" rel="external"><img src="/docroot/mecd/img/logo- ...       
+
+		LINEA: 94, COLUMNA 16287: <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.mecd.gob.es%2Faviso-legal-mecd%2F" rel=" ...       
+
+		LINEA: 94, COLUMNA 16496: <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.mecd.gob.es%2Faviso-legal ...       
+
+		LINEA: 94, COLUMNA 16725: <a rel="" href="/mapa-web-mecd/">Mapa web</a>       
+
+		LINEA: 94, COLUMNA 16788: <a rel="" href="/aviso-legal-mecd/">Aviso legal</a>       
+
+		LINEA: 94, COLUMNA 16863: <a rel="" href="/accesibilidad-mecd/">Accesibilidad</a>       
+
+		LINEA: 108, COLUMNA 59: <a href="http://www.mecd.gob.es/aviso-legal-mecd/">política de cookies</a>
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 66, COLUMNA 82: <a href="http://www.mecd.gob.es/portada-mecd/"><img src="/docroot/utils/img/escudo-mefp-mcd.gif" alt ...       
+
+		LINEA: 66, COLUMNA 397: <a href="https://constitucion40.com/" rel="external"><img src="/docroot/utils/img/constitucion.jpg"...       
+
+		LINEA: 68, COLUMNA 53: <a href="/ministerio-mecd/direcciones-y-telefonos.html">Direcciones y teléfonos</a>       
+
+		LINEA: 68, COLUMNA 195: <a href="/aviso-legal-mecd/"><span title="Castellano" xml:lang="es" lang="es">Bienvenido</span></a>       
+
+		LINEA: 68, COLUMNA 303: <a href="/aviso-legal-mecd/ca/"><span title="Català" xml:lang="ca" lang="ca">Benvingut</span></a>       
+
+		LINEA: 68, COLUMNA 410: <a href="/aviso-legal-mecd/gl/"><span title="Galego" xml:lang="gl" lang="gl">Benvido</span></a>       
+
+		LINEA: 68, COLUMNA 514: <a href="/aviso-legal-mecd/eu/"><span title="Euskera" xml:lang="eu" lang="eu">Ongi etorri</span></a>       
+
+		LINEA: 68, COLUMNA 623: <a href="/aviso-legal-mecd/va/"><span title="Valencià" xml:lang="va" lang="va">Benvingut</span></a>       
+
+		LINEA: 68, COLUMNA 747: <a href="/aviso-legal-mecd/en/"><span title="English" xml:lang="en" lang="en">Welcome</span></a>       
+
+		LINEA: 68, COLUMNA 926: <a href="#"><img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/></a>       
+
+		LINEA: 68, COLUMNA 1022: <a rel="external" href="https://www.facebook.com/MinisterioDeEducacionCulturaYDeporte">Educación y...       
+
+		LINEA: 68, COLUMNA 1142: <a rel="external" href="https://www.facebook.com/ConsejoSuperiordeDeportes">Deporte</a>       
+
+		LINEA: 68, COLUMNA 1248: <a title="Twitter" href="#"><img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/></ ...       
+
+		LINEA: 68, COLUMNA 1358: <a rel="external" href="http://www.twitter.com/educaciongob">Educación</a>       
+
+		LINEA: 68, COLUMNA 1442: <a rel="external" href="http://www.twitter.com/culturagob">Cultura</a>       
+
+		LINEA: 68, COLUMNA 1521: <a rel="external" href="http://www.twitter.com/deportegob">Deporte</a>       
+
+		LINEA: 68, COLUMNA 1610: <a title="Youtube" href="#"><img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/></ ...       
+
+		LINEA: 68, COLUMNA 1720: <a rel="external" href="http://www.youtube.com/educacion2p0">Educación</a>       
+
+		LINEA: 68, COLUMNA 1804: <a rel="external" href="http://www.youtube.com/CanalMCU">Cultura</a>       
+
+		LINEA: 68, COLUMNA 1881: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 68, COLUMNA 1963: <a title="RSS" href="#3"><img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/></a>       
+
+		LINEA: 68, COLUMNA 2062: <a rel="external" href="http://www.mecd.gob.es/mecd/rss.html">Prensa</a>       
+
+		LINEA: 68, COLUMNA 2143: <a href="/servicios-al-ciudadano-mecd/catalogo/cultura/atencion-al-ciudadano/suscripciones.html">Cul ...       
+
+		LINEA: 68, COLUMNA 2260: <a rel="external" href="http://www.csd.gob.es/csd/sindicacionrss">Deporte</a>       
+
+		LINEA: 68, COLUMNA 2531: <a href="/portada-mecd/">	Inicio</a>       
+
+		LINEA: 70, COLUMNA 20: <a href="/ministerio-mecd/">	Ministerios</a>       
+
+		LINEA: 72, COLUMNA 20: <a href="/servicios-al-ciudadano-mecd/">	Servicios al ciudadano</a>       
+
+		LINEA: 74, COLUMNA 20: <a href="/prensa-mecd/">	Prensa</a>       
+
+		LINEA: 76, COLUMNA 20: <a href="/educacion-mecd/">	Educación</a>       
+
+		LINEA: 78, COLUMNA 20: <a href="/cultura-mecd/">	Cultura</a>       
+
+		LINEA: 80, COLUMNA 20: <a href="/deporte-mecd/">	Deporte</a>       
+
+		LINEA: 82, COLUMNA 678: <a href="http://www.mecd.gob.es/portada-mecd/">Inicio</a>       
+
+		LINEA: 85, COLUMNA 6: <a class="rsbtn_play" accesskey="L" title="Escucha esta página utilizando ReadSpeaker" href="//app- ...       
+
+		LINEA: 94, COLUMNA 338: <a href="http://www.mecd.gob.es" rel="external">www.mecd.gob.es</a>       
+
+		LINEA: 94, COLUMNA 8478: <a href="http://www.mecd.gob.es/servicios-al-ciudadano-mecd/catalogo/mecd/varios/proteccion-datos.ht ...       
+
+		LINEA: 94, COLUMNA 8897: <a href="https://www.aepd.es/" rel="external">Agencia Espa&ntilde;ola de Protecci&oacute;n de Datos< ...       
+
+		LINEA: 94, COLUMNA 16036: <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" rel="external"><img src="/docroot/mecd/img/logo- ...       
+
+		LINEA: 94, COLUMNA 16287: <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.mecd.gob.es%2Faviso-legal-mecd%2F" rel=" ...       
+
+		LINEA: 94, COLUMNA 16496: <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.mecd.gob.es%2Faviso-legal ...       
+
+		LINEA: 94, COLUMNA 16725: <a rel="" href="/mapa-web-mecd/">Mapa web</a>       
+
+		LINEA: 94, COLUMNA 16788: <a rel="" href="/aviso-legal-mecd/">Aviso legal</a>       
+
+		LINEA: 94, COLUMNA 16863: <a rel="" href="/accesibilidad-mecd/">Accesibilidad</a>       
+
+		LINEA: 108, COLUMNA 59: <a href="http://www.mecd.gob.es/aviso-legal-mecd/">política de cookies</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 94, COLUMNA 53: <h1 >Aviso legal</h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 94, COLUMNA 74: <h2>Condiciones generales de uso del portal</h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+
+
+		LINEA: 94, COLUMNA 2959: <h3 id="al-derechos">1. Derechos de propiedad intelectual y de propiedad industrial</h3>       
+
+		LINEA: 94, COLUMNA 4897: <h3 id="al-privacidad">2. Privacidad</h3>       
+
+		LINEA: 94, COLUMNA 9102: <h3 id="al-ley">3. Ley aplicable y jurisdicci&oacute;n</h3>       
+
+		LINEA: 94, COLUMNA 9821: <h3 id="al-links">4. Links o hiperenlaces</h3>       
+
+		LINEA: 94, COLUMNA 12981: <h3 id="al-frames">5. Frames</h3>       
+
+		LINEA: 94, COLUMNA 13403: <h3 id="al-estadisticas">6. Estad&iacute;sticas de uso</h3>       
+
+		LINEA: 94, COLUMNA 13701: <h3 id="al-cookies">7. Cookies</h3>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.1 On Focus (A)  
+
+	REVISAR: 275: Loading web page may cause new window to open.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 82, COLUMNA 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 58, COLUMNA 33: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+
+
+		LINEA: 82, COLUMNA 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 82, COLUMNA 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 82, COLUMNA 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 82, COLUMNA 181: <input type="hidden" name="cx" value="006043202724820927248:lkl0norxzhk"/>       
+
+		LINEA: 82, COLUMNA 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...       
+
+		LINEA: 82, COLUMNA 463: <input type="submit" name="mec" id="boton_buscar" class="botonbuscar" value=""/>
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 82, COLUMNA 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 82, COLUMNA 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 82, COLUMNA 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 82, COLUMNA 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+	

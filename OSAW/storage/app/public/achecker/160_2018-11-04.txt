@@ -1,0 +1,1298 @@
+REPORTE PÁGINA WEB: https://www.aemps.gob.es/home.htm
+FECHA EVALUACIÓN: 2018-11-04
+
+-PROBLEMAS CONOCIDOS-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
+
+		LINEA: 201, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 205, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 209, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 213, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 307, COLUMNA 196: <img alt="" src="/diseno/img/ico_pdf.gif" class="icono-ancla" />       
+
+		LINEA: 405, COLUMNA 352: <img alt="" src="/diseno/img/ico_pdf.gif" class="icono-ancla" />
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 307: The contrast between the colour of visited link text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+
+		LINEA: 106, COLUMNA 53: <a href="javascript:window.print()">Imprimir</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:visited{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}   
+
+		LINEA: 109, COLUMNA 53: <a href="/mapaWeb/cargar.do">Mapa Web</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:visited{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}   
+
+		LINEA: 112, COLUMNA 53: <a href="/informa/info-atencion-ciudadano/home.htm">Contactar</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:visited{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}   
+
+		LINEA: 115, COLUMNA 53: <a href="/laAEMPS/enlaces/home.htm">Enlaces</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:visited{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}      
+
+	REVISAR: 310: Link text colour must provide high contrast with its background colour.  
+
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+
+		LINEA: 106, COLUMNA 53: <a href="javascript:window.print()">Imprimir</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:link{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}   
+
+		LINEA: 109, COLUMNA 53: <a href="/mapaWeb/cargar.do">Mapa Web</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:link{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}   
+
+		LINEA: 112, COLUMNA 53: <a href="/informa/info-atencion-ciudadano/home.htm">Contactar</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:link{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}   
+
+		LINEA: 115, COLUMNA 53: <a href="/laAEMPS/enlaces/home.htm">Enlaces</a>    Fixed size example: color contrast exampleReal size example (8.64 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/diseno/css/home.css):		#accesos ul li{		display:inline;	float:left;	padding:.1em .5em;	margin-left:.5em;	background-color:#8A8A8A;	text-align:center;	margin-bottom:.5em;	}		#accesos a:link{		#accesos a:link,#accesos a;	color:#ffffff;	}		#accesos ul li a{		font-size:0.9em;	}		#accesos{		width:auto;	font-size:0.8em;	line-height:1.5em;	margin-top:3.5em;	}      
+
+	REVISAR: 306: The contrast between the colour of text and its background is not sufficient to meet WCAG2.0 Level AAA.  
+
+	REPARAR: Use a colour contrast evaluator to determine if text and background colours provide a contrast ratio of 7:1 for standard text, or 4.5:1 for larger text. Change colour codes to produce sufficient contrast.http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head     
+
+		LINEA: 334, COLUMNA 61: <span class="etqMuh">MUH</span>    Fixed size example: color contrast exampleReal size example (8.16 points): color contrast exampleCSS rules for the element: 	External CSS (https://www.aemps.gob.es/diseno/css/home.css):		.etqMuh{		width:6em;	text-align:center;	display:block;	float:left;	}		.txtVentana{		float:left;	width:71%;	padding:1em 2% 0 1%;	font-size:0.8em;	}    	
+
+  
+
+-PROBLEMAS POTENCIALES-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 80, COLUMNA 49: <img src="/diseno/img/logo_Ministerio.jpg" alt="Logotipo del Ministerio de Sanidad, Consumo y Bienes ...       
+
+		LINEA: 83, COLUMNA 49:
+
+
+
+		LINEA: 124, COLUMNA 57:
+
+
+
+		LINEA: 129, COLUMNA 57:
+
+
+
+		LINEA: 134, COLUMNA 57: <img alt="Canales RSS" src="/diseno/img/rss_icon.gif" />       
+
+		LINEA: 139, COLUMNA 57: <img alt="Canal de Youtube de la AEMPS. Se abre en una nueva ventana" src="/diseno/img/youtube_icon. ...       
+
+		LINEA: 186, COLUMNA 49:
+
+
+
+		LINEA: 220, COLUMNA 53:
+
+
+
+		LINEA: 225, COLUMNA 53: <img src="/diseno/img/banners/orgNotificado-banner.jpg" class="banner1_img" alt="Organismo Notificad ...       
+
+		LINEA: 230, COLUMNA 53: <img src="/diseno/img/banners/ofi-apoyo-innova-med-banner.jpg" class="banner1_img" alt="Oficina de a ...       
+
+		LINEA: 235, COLUMNA 53:
+
+
+
+		LINEA: 240, COLUMNA 53:
+
+
+
+		LINEA: 245, COLUMNA 53: <img src="/diseno/img/banners/plan-estrategico-antibioticos-banner.jpg" class="banner1_img" alt="Pla ...       
+
+		LINEA: 250, COLUMNA 53:
+
+
+
+		LINEA: 255, COLUMNA 53:
+
+
+
+		LINEA: 260, COLUMNA 53: <img src="/diseno/img/banners/pro-sumi-banner.jpg" class="banner1_img" alt="Problemas de suministro...       
+
+		LINEA: 265, COLUMNA 53: <img src="/diseno/img/banners/reg-labo-banner.jpg" class="banner1_img" alt="Registro de Laboratorios ...       
+
+		LINEA: 270, COLUMNA 53: <img src="/diseno/img/banners/banner-implanPS.jpg" class="banner1_img" alt="Registros de productos s ...       
+
+		LINEA: 275, COLUMNA 53: <img src="/diseno/img/banners/med-ilegales-banner.jpg" class="banner1_img" alt="Medicamentos ilegale ...       
+
+		LINEA: 280, COLUMNA 53: <img src="/diseno/img/banners/banner-perfil-contratante.jpg" class="banner1_img" alt="Perfil del con ...       
+
+		LINEA: 285, COLUMNA 53:
+
+
+
+		LINEA: 291, COLUMNA 53:
+
+
+
+		LINEA: 297, COLUMNA 53: <img src="/diseno/img/banners/banner-venta-online.jpg" class="banner1_img" alt="Venta legal de medic ...       
+
+		LINEA: 302, COLUMNA 53: <img src="/diseno/img/banners/banner-venta-online-MVET.jpg" class="banner1_img" alt="Venta legal de...       
+
+		LINEA: 307, COLUMNA 53: <img src="/diseno/img/banners/HMA_banner.jpg" class="banner1_img" alt="Red de autoridades nacionales ...       
+
+		LINEA: 311, COLUMNA 53: <img src="/diseno/img/banners/EAMI_banner.png" class="banner1_img" alt="Red EAMI. Red de Autoridades ...       
+
+		LINEA: 316, COLUMNA 53: <img src="/diseno/img/banners/portal-transparencia_banner.jpg" class="banner1_img" alt="Portal de la ...       
+
+		LINEA: 500, COLUMNA 49:
+
+
+
+		LINEA: 503, COLUMNA 49:
+
+
+
+		LINEA: 506, COLUMNA 49: <img src="/diseno/img/wcag1AA_home.gif" alt="Icono de conformidad con el Nivel Doble-A, de las Direc ...       
+
+		LINEA: 509, COLUMNA 49:
+
+
+
+		LINEA: 512, COLUMNA 49:
+
+   
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 172, COLUMNA 49: <img src="/diseno/img/cima_home.jpg" alt="" />       
+
+		LINEA: 181, COLUMNA 49: <img src="/diseno/img/cima-vet_home.jpg" alt="" />       
+
+		LINEA: 190, COLUMNA 45: <img src="/diseno/img/listasCorreo_home.jpg" alt="" />       
+
+		LINEA: 401, COLUMNA 61: <img src="/diseno/img/port_MemAnuales_des.jpg" alt="" />       
+
+		LINEA: 412, COLUMNA 61: <img src="/diseno/img/banners/cartaSer.jpg" alt="" />       
+
+		LINEA: 423, COLUMNA 61: <img src="/informa/campannas/campana-antibioticos/Banners/otros/campana-antibioticos-2017-81x81.jpg" ...       
+
+		LINEA: 435, COLUMNA 61: <img src="/diseno/img/destacados/portadaestrategia2016-2019-desta.jpg" alt="" />       
+
+		LINEA: 460, COLUMNA 65: <img src="/diseno/img/calendario.jpg" alt="" />       
+
+		LINEA: 477, COLUMNA 65: <img src="/diseno/img/calendario.jpg" alt="" />
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 94, COLUMNA 61: <input name="search" id="search" size="18" type="text" />
+
+  
+
+	REVISAR: 136: Data table may require th elements.
+
+
+
+		LINEA: 90, COLUMNA 49: <table><tr>...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+  
+
+	REVISAR: 133: Layout table may not linearize.
+
+
+
+		LINEA: 90, COLUMNA 49: <table><tr>...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 80, COLUMNA 49: <img src="/diseno/img/logo_Ministerio.jpg" alt="Logotipo del Ministerio de Sanidad, Consumo y Bienes ...       
+
+		LINEA: 83, COLUMNA 49:
+
+
+
+		LINEA: 124, COLUMNA 57:
+
+
+
+		LINEA: 129, COLUMNA 57:
+
+
+
+		LINEA: 134, COLUMNA 57: <img alt="Canales RSS" src="/diseno/img/rss_icon.gif" />       
+
+		LINEA: 139, COLUMNA 57: <img alt="Canal de Youtube de la AEMPS. Se abre en una nueva ventana" src="/diseno/img/youtube_icon. ...       
+
+		LINEA: 172, COLUMNA 49: <img src="/diseno/img/cima_home.jpg" alt="" />       
+
+		LINEA: 181, COLUMNA 49: <img src="/diseno/img/cima-vet_home.jpg" alt="" />       
+
+		LINEA: 186, COLUMNA 49:
+
+
+
+		LINEA: 190, COLUMNA 45: <img src="/diseno/img/listasCorreo_home.jpg" alt="" />       
+
+		LINEA: 201, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 205, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 209, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 213, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 220, COLUMNA 53:
+
+
+
+		LINEA: 225, COLUMNA 53: <img src="/diseno/img/banners/orgNotificado-banner.jpg" class="banner1_img" alt="Organismo Notificad ...       
+
+		LINEA: 230, COLUMNA 53: <img src="/diseno/img/banners/ofi-apoyo-innova-med-banner.jpg" class="banner1_img" alt="Oficina de a ...       
+
+		LINEA: 235, COLUMNA 53:
+
+
+
+		LINEA: 240, COLUMNA 53:
+
+
+
+		LINEA: 245, COLUMNA 53: <img src="/diseno/img/banners/plan-estrategico-antibioticos-banner.jpg" class="banner1_img" alt="Pla ...       
+
+		LINEA: 250, COLUMNA 53:
+
+
+
+		LINEA: 255, COLUMNA 53:
+
+
+
+		LINEA: 260, COLUMNA 53: <img src="/diseno/img/banners/pro-sumi-banner.jpg" class="banner1_img" alt="Problemas de suministro...       
+
+		LINEA: 265, COLUMNA 53: <img src="/diseno/img/banners/reg-labo-banner.jpg" class="banner1_img" alt="Registro de Laboratorios ...       
+
+		LINEA: 270, COLUMNA 53: <img src="/diseno/img/banners/banner-implanPS.jpg" class="banner1_img" alt="Registros de productos s ...       
+
+		LINEA: 275, COLUMNA 53: <img src="/diseno/img/banners/med-ilegales-banner.jpg" class="banner1_img" alt="Medicamentos ilegale ...       
+
+		LINEA: 280, COLUMNA 53: <img src="/diseno/img/banners/banner-perfil-contratante.jpg" class="banner1_img" alt="Perfil del con ...       
+
+		LINEA: 285, COLUMNA 53:
+
+
+
+		LINEA: 291, COLUMNA 53:
+
+
+
+		LINEA: 297, COLUMNA 53: <img src="/diseno/img/banners/banner-venta-online.jpg" class="banner1_img" alt="Venta legal de medic ...       
+
+		LINEA: 302, COLUMNA 53: <img src="/diseno/img/banners/banner-venta-online-MVET.jpg" class="banner1_img" alt="Venta legal de...       
+
+		LINEA: 307, COLUMNA 53: <img src="/diseno/img/banners/HMA_banner.jpg" class="banner1_img" alt="Red de autoridades nacionales ...       
+
+		LINEA: 307, COLUMNA 196: <img alt="" src="/diseno/img/ico_pdf.gif" class="icono-ancla" />       
+
+		LINEA: 311, COLUMNA 53: <img src="/diseno/img/banners/EAMI_banner.png" class="banner1_img" alt="Red EAMI. Red de Autoridades ...       
+
+		LINEA: 316, COLUMNA 53: <img src="/diseno/img/banners/portal-transparencia_banner.jpg" class="banner1_img" alt="Portal de la ...       
+
+		LINEA: 401, COLUMNA 61: <img src="/diseno/img/port_MemAnuales_des.jpg" alt="" />       
+
+		LINEA: 405, COLUMNA 352: <img alt="" src="/diseno/img/ico_pdf.gif" class="icono-ancla" />       
+
+		LINEA: 412, COLUMNA 61: <img src="/diseno/img/banners/cartaSer.jpg" alt="" />       
+
+		LINEA: 423, COLUMNA 61: <img src="/informa/campannas/campana-antibioticos/Banners/otros/campana-antibioticos-2017-81x81.jpg" ...       
+
+		LINEA: 435, COLUMNA 61: <img src="/diseno/img/destacados/portadaestrategia2016-2019-desta.jpg" alt="" />       
+
+		LINEA: 460, COLUMNA 65: <img src="/diseno/img/calendario.jpg" alt="" />       
+
+		LINEA: 477, COLUMNA 65: <img src="/diseno/img/calendario.jpg" alt="" />       
+
+		LINEA: 500, COLUMNA 49:
+
+
+
+		LINEA: 503, COLUMNA 49:
+
+
+
+		LINEA: 506, COLUMNA 49: <img src="/diseno/img/wcag1AA_home.gif" alt="Icono de conformidad con el Nivel Doble-A, de las Direc ...       
+
+		LINEA: 509, COLUMNA 49:
+
+
+
+		LINEA: 512, COLUMNA 49:
+
+   
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 94, COLUMNA 61: <input name="search" id="search" size="18" type="text" />       
+
+		LINEA: 97, COLUMNA 61: <input value="Aceptar" class="buscadorBoton" type="submit" />
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 14, COLUMNA 9: <script type="text/javascript">		var _gaq = _gaq || [];	_gaq.push(['_setAccount', 'UA ...       
+
+		LINEA: 39, COLUMNA 12: <script type="text/javascript" src="/diseno/js/utiles.js"></script>       
+
+		LINEA: 40, COLUMNA 12: <script type="text/javascript" src="/diseno/js/header/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 41, COLUMNA 12: <script type="text/javascript" src="/diseno/js/header/aceptacion-cookies.js"></script>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 80, COLUMNA 49: <img src="/diseno/img/logo_Ministerio.jpg" alt="Logotipo del Ministerio de Sanidad, Consumo y Bienes ...       
+
+		LINEA: 83, COLUMNA 49:
+
+
+
+		LINEA: 172, COLUMNA 49: <img src="/diseno/img/cima_home.jpg" alt="" />       
+
+		LINEA: 181, COLUMNA 49: <img src="/diseno/img/cima-vet_home.jpg" alt="" />       
+
+		LINEA: 186, COLUMNA 49:
+
+
+
+		LINEA: 190, COLUMNA 45: <img src="/diseno/img/listasCorreo_home.jpg" alt="" />       
+
+		LINEA: 220, COLUMNA 53:
+
+
+
+		LINEA: 225, COLUMNA 53: <img src="/diseno/img/banners/orgNotificado-banner.jpg" class="banner1_img" alt="Organismo Notificad ...       
+
+		LINEA: 230, COLUMNA 53: <img src="/diseno/img/banners/ofi-apoyo-innova-med-banner.jpg" class="banner1_img" alt="Oficina de a ...       
+
+		LINEA: 235, COLUMNA 53:
+
+
+
+		LINEA: 240, COLUMNA 53:
+
+
+
+		LINEA: 245, COLUMNA 53: <img src="/diseno/img/banners/plan-estrategico-antibioticos-banner.jpg" class="banner1_img" alt="Pla ...       
+
+		LINEA: 250, COLUMNA 53:
+
+
+
+		LINEA: 255, COLUMNA 53:
+
+
+
+		LINEA: 260, COLUMNA 53: <img src="/diseno/img/banners/pro-sumi-banner.jpg" class="banner1_img" alt="Problemas de suministro...       
+
+		LINEA: 265, COLUMNA 53: <img src="/diseno/img/banners/reg-labo-banner.jpg" class="banner1_img" alt="Registro de Laboratorios ...       
+
+		LINEA: 270, COLUMNA 53: <img src="/diseno/img/banners/banner-implanPS.jpg" class="banner1_img" alt="Registros de productos s ...       
+
+		LINEA: 275, COLUMNA 53: <img src="/diseno/img/banners/med-ilegales-banner.jpg" class="banner1_img" alt="Medicamentos ilegale ...       
+
+		LINEA: 280, COLUMNA 53: <img src="/diseno/img/banners/banner-perfil-contratante.jpg" class="banner1_img" alt="Perfil del con ...       
+
+		LINEA: 285, COLUMNA 53:
+
+
+
+		LINEA: 291, COLUMNA 53:
+
+
+
+		LINEA: 297, COLUMNA 53: <img src="/diseno/img/banners/banner-venta-online.jpg" class="banner1_img" alt="Venta legal de medic ...       
+
+		LINEA: 302, COLUMNA 53: <img src="/diseno/img/banners/banner-venta-online-MVET.jpg" class="banner1_img" alt="Venta legal de...       
+
+		LINEA: 307, COLUMNA 53: <img src="/diseno/img/banners/HMA_banner.jpg" class="banner1_img" alt="Red de autoridades nacionales ...       
+
+		LINEA: 311, COLUMNA 53: <img src="/diseno/img/banners/EAMI_banner.png" class="banner1_img" alt="Red EAMI. Red de Autoridades ...       
+
+		LINEA: 316, COLUMNA 53: <img src="/diseno/img/banners/portal-transparencia_banner.jpg" class="banner1_img" alt="Portal de la ...       
+
+		LINEA: 401, COLUMNA 61: <img src="/diseno/img/port_MemAnuales_des.jpg" alt="" />       
+
+		LINEA: 412, COLUMNA 61: <img src="/diseno/img/banners/cartaSer.jpg" alt="" />       
+
+		LINEA: 423, COLUMNA 61: <img src="/informa/campannas/campana-antibioticos/Banners/otros/campana-antibioticos-2017-81x81.jpg" ...       
+
+		LINEA: 435, COLUMNA 61: <img src="/diseno/img/destacados/portadaestrategia2016-2019-desta.jpg" alt="" />
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 80, COLUMNA 49: <img src="/diseno/img/logo_Ministerio.jpg" alt="Logotipo del Ministerio de Sanidad, Consumo y Bienes ...       
+
+		LINEA: 83, COLUMNA 49:
+
+
+
+		LINEA: 124, COLUMNA 57:
+
+
+
+		LINEA: 129, COLUMNA 57:
+
+
+
+		LINEA: 134, COLUMNA 57: <img alt="Canales RSS" src="/diseno/img/rss_icon.gif" />       
+
+		LINEA: 139, COLUMNA 57: <img alt="Canal de Youtube de la AEMPS. Se abre en una nueva ventana" src="/diseno/img/youtube_icon. ...       
+
+		LINEA: 172, COLUMNA 49: <img src="/diseno/img/cima_home.jpg" alt="" />       
+
+		LINEA: 181, COLUMNA 49: <img src="/diseno/img/cima-vet_home.jpg" alt="" />       
+
+		LINEA: 186, COLUMNA 49:
+
+
+
+		LINEA: 190, COLUMNA 45: <img src="/diseno/img/listasCorreo_home.jpg" alt="" />       
+
+		LINEA: 201, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 205, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 209, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 213, COLUMNA 57: <img src="/diseno/img/opcion_select.gif" alt="" />       
+
+		LINEA: 220, COLUMNA 53:
+
+
+
+		LINEA: 225, COLUMNA 53: <img src="/diseno/img/banners/orgNotificado-banner.jpg" class="banner1_img" alt="Organismo Notificad ...       
+
+		LINEA: 230, COLUMNA 53: <img src="/diseno/img/banners/ofi-apoyo-innova-med-banner.jpg" class="banner1_img" alt="Oficina de a ...       
+
+		LINEA: 235, COLUMNA 53:
+
+
+
+		LINEA: 240, COLUMNA 53:
+
+
+
+		LINEA: 245, COLUMNA 53: <img src="/diseno/img/banners/plan-estrategico-antibioticos-banner.jpg" class="banner1_img" alt="Pla ...       
+
+		LINEA: 250, COLUMNA 53:
+
+
+
+		LINEA: 255, COLUMNA 53:
+
+
+
+		LINEA: 260, COLUMNA 53: <img src="/diseno/img/banners/pro-sumi-banner.jpg" class="banner1_img" alt="Problemas de suministro...       
+
+		LINEA: 265, COLUMNA 53: <img src="/diseno/img/banners/reg-labo-banner.jpg" class="banner1_img" alt="Registro de Laboratorios ...       
+
+		LINEA: 270, COLUMNA 53: <img src="/diseno/img/banners/banner-implanPS.jpg" class="banner1_img" alt="Registros de productos s ...       
+
+		LINEA: 275, COLUMNA 53: <img src="/diseno/img/banners/med-ilegales-banner.jpg" class="banner1_img" alt="Medicamentos ilegale ...       
+
+		LINEA: 280, COLUMNA 53: <img src="/diseno/img/banners/banner-perfil-contratante.jpg" class="banner1_img" alt="Perfil del con ...       
+
+		LINEA: 285, COLUMNA 53:
+
+
+
+		LINEA: 291, COLUMNA 53:
+
+
+
+		LINEA: 297, COLUMNA 53: <img src="/diseno/img/banners/banner-venta-online.jpg" class="banner1_img" alt="Venta legal de medic ...       
+
+		LINEA: 302, COLUMNA 53: <img src="/diseno/img/banners/banner-venta-online-MVET.jpg" class="banner1_img" alt="Venta legal de...       
+
+		LINEA: 307, COLUMNA 53: <img src="/diseno/img/banners/HMA_banner.jpg" class="banner1_img" alt="Red de autoridades nacionales ...       
+
+		LINEA: 307, COLUMNA 196: <img alt="" src="/diseno/img/ico_pdf.gif" class="icono-ancla" />       
+
+		LINEA: 311, COLUMNA 53: <img src="/diseno/img/banners/EAMI_banner.png" class="banner1_img" alt="Red EAMI. Red de Autoridades ...       
+
+		LINEA: 316, COLUMNA 53: <img src="/diseno/img/banners/portal-transparencia_banner.jpg" class="banner1_img" alt="Portal de la ...       
+
+		LINEA: 401, COLUMNA 61: <img src="/diseno/img/port_MemAnuales_des.jpg" alt="" />       
+
+		LINEA: 405, COLUMNA 352: <img alt="" src="/diseno/img/ico_pdf.gif" class="icono-ancla" />       
+
+		LINEA: 412, COLUMNA 61: <img src="/diseno/img/banners/cartaSer.jpg" alt="" />       
+
+		LINEA: 423, COLUMNA 61: <img src="/informa/campannas/campana-antibioticos/Banners/otros/campana-antibioticos-2017-81x81.jpg" ...       
+
+		LINEA: 435, COLUMNA 61: <img src="/diseno/img/destacados/portadaestrategia2016-2019-desta.jpg" alt="" />       
+
+		LINEA: 460, COLUMNA 65: <img src="/diseno/img/calendario.jpg" alt="" />       
+
+		LINEA: 477, COLUMNA 65: <img src="/diseno/img/calendario.jpg" alt="" />       
+
+		LINEA: 500, COLUMNA 49:
+
+
+
+		LINEA: 503, COLUMNA 49:
+
+
+
+		LINEA: 506, COLUMNA 49: <img src="/diseno/img/wcag1AA_home.gif" alt="Icono de conformidad con el Nivel Doble-A, de las Direc ...       
+
+		LINEA: 509, COLUMNA 49:
+
+
+
+		LINEA: 512, COLUMNA 49:
+
+ 2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 14, COLUMNA 9: <script type="text/javascript">		var _gaq = _gaq || [];	_gaq.push(['_setAccount', 'UA ...       
+
+		LINEA: 39, COLUMNA 12: <script type="text/javascript" src="/diseno/js/utiles.js"></script>       
+
+		LINEA: 40, COLUMNA 12: <script type="text/javascript" src="/diseno/js/header/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 41, COLUMNA 12: <script type="text/javascript" src="/diseno/js/header/aceptacion-cookies.js"></script>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 14, COLUMNA 9: <script type="text/javascript">		var _gaq = _gaq || [];	_gaq.push(['_setAccount', 'UA ...       
+
+		LINEA: 39, COLUMNA 12: <script type="text/javascript" src="/diseno/js/utiles.js"></script>       
+
+		LINEA: 40, COLUMNA 12: <script type="text/javascript" src="/diseno/js/header/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 41, COLUMNA 12: <script type="text/javascript" src="/diseno/js/header/aceptacion-cookies.js"></script>
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 4, COLUMNA 9:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 48, COLUMNA 49:
+
+
+
+		LINEA: 51, COLUMNA 49:
+
+
+
+		LINEA: 56, COLUMNA 49: <a href="/eu/home.htm" title="Ongi etorri: Acceso a la web en euskera"> ...       
+
+		LINEA: 61, COLUMNA 49: <a href="/gl/home.htm" title="Benvidos: Acceso a la web en gallego">...       
+
+		LINEA: 66, COLUMNA 49:
+
+
+
+		LINEA: 71, COLUMNA 49:
+
+
+
+		LINEA: 79, COLUMNA 45: <a href="http://www.mscbs.gob.es/home.htm" target="_blank"> ...       
+
+		LINEA: 82, COLUMNA 45: <a href="/home.htm"><img src="/diseno/img/logo_aemp ...       
+
+		LINEA: 106, COLUMNA 53: <a href="javascript:window.print()">Imprimir</a>       
+
+		LINEA: 109, COLUMNA 53: <a href="/mapaWeb/cargar.do">Mapa Web</a>       
+
+		LINEA: 112, COLUMNA 53: <a href="/informa/info-atencion-ciudadano/home.htm">Contactar</a>       
+
+		LINEA: 115, COLUMNA 53: <a href="/laAEMPS/enlaces/home.htm">Enlaces</a>       
+
+		LINEA: 123, COLUMNA 53: <a href="/informa/listasCorreo/home.htm"><i ...       
+
+		LINEA: 128, COLUMNA 53: <a target="_blank" href="http://twitter.com/#!/AEMPSGOB"> ...       
+
+		LINEA: 133, COLUMNA 53: <a href="/informa/rss/home.htm"><img alt="C ...       
+
+		LINEA: 138, COLUMNA 53: <a target="_blank" href="https://www.youtube.com/c/AempsGobEsinfo"> ...       
+
+		LINEA: 149, COLUMNA 45: <a href="/laAEMPS/portada/home.htm">La AEMPS</a>       
+
+		LINEA: 152, COLUMNA 45: <a href="/medicamentosUsoHumano/portada/home.htm">Medicamentos de uso humano</a>       
+
+		LINEA: 155, COLUMNA 45: <a href="/medicamentosVeterinarios/portada/home.htm">Medicamentos veterinarios</a>       
+
+		LINEA: 158, COLUMNA 45: <a href="/productosSanitarios/portada/home.htm">Productos sanitarios</a>       
+
+		LINEA: 161, COLUMNA 45:
+
+
+
+		LINEA: 164, COLUMNA 45: <a href="/industria/portada/home.htm">Industria</a>       
+
+		LINEA: 174, COLUMNA 53:
+
+
+
+		LINEA: 179, COLUMNA 53:
+
+
+
+		LINEA: 185, COLUMNA 45: <a title="Se abre en una nueva ventana. https://sede.aemps.gob.es" target="_blank" href="https://sed ...       
+
+		LINEA: 192, COLUMNA 49:
+
+
+
+		LINEA: 200, COLUMNA 53: <a href="/vigilancia/portada/home.htm"><img ...       
+
+		LINEA: 204, COLUMNA 53: <a href="/investigacionClinica/portada/home.htm"> ...       
+
+		LINEA: 208, COLUMNA 53: <a href="/legislacion/portada/home.htm"><im ...       
+
+		LINEA: 212, COLUMNA 53: <a href="/publicaciones/portada/home.htm">< ...       
+
+		LINEA: 219, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/presentacionAemps'])" href="/laAEMPS/presentacion/ ...       
+
+		LINEA: 224, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/onc13485'])" href="/productosSanitarios/organismoN ...       
+
+		LINEA: 229, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/ofiApoyoInnovacion'])" href="/medicamentosUsoHuman ...       
+
+		LINEA: 234, COLUMNA 49: <a href="https://reec.aemps.es" onclick="_gaq.push(['_trackPageview', '/banner/reec'])" target="_bla ...       
+
+		LINEA: 239, COLUMNA 49: <a href="https://www.notificaRAM.es" onclick="_gaq.push(['_trackPageview', '/banner/notificaRAM'])"...       
+
+		LINEA: 244, COLUMNA 49: <a href="http://www.resistenciaantibioticos.es/es" onclick="_gaq.push(['_trackPageview', '/banner/pl ...       
+
+		LINEA: 249, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/diaAntibioticos'])" href="/laAEMPS/eventos/AEMPS/2 ...       
+
+		LINEA: 254, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/distribucionMedicamentos'])" href="/industria/dist ...       
+
+		LINEA: 259, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/problemasSuministroMedicamentos'])" href="/medicam ...       
+
+		LINEA: 264, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/registroLaboratoriosFarmaceuticos'])" href="/indus ...       
+
+		LINEA: 269, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/banner-regimplanPS'])" href="/productosSanitarios/ ...       
+
+		LINEA: 274, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/medIlegales'])" href="/medicamentosUsoHumano/medIl ...       
+
+		LINEA: 279, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/perfilContratante'])" href="/laAEMPS/licitacionPub ...       
+
+		LINEA: 284, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/infoAtencionCiudadano'])" href="/informa/info-aten ...       
+
+		LINEA: 290, COLUMNA 49: <a href="https://encuestas.msssi.gob.es/limesurvey/index.php/722229?lang=es" onclick="_gaq.push(['_t ...       
+
+		LINEA: 296, COLUMNA 49: <a href="https://distafarma.aemps.es/" onclick="_gaq.push(['_trackPageview', '/banner/websVentaOnlin ...       
+
+		LINEA: 301, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/websVentaOnline-MVET'])" href="/medicamentosVeteri ...       
+
+		LINEA: 306, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/laAEMPS/docs/presentacion-web-HMA.pdf'])" target="_blank" ...       
+
+		LINEA: 310, COLUMNA 49: <a href="https://www.redeami.net/" onclick="_gaq.push(['_trackPageview', '/banner/eami'])" target="_ ...       
+
+		LINEA: 315, COLUMNA 49: <a href="http://transparencia.gob.es/" onclick="_gaq.push(['_trackPageview', '/banner/transparencia' ...       
+
+		LINEA: 327, COLUMNA 61: <a href="/informa/portada/home.htm">La AEMPS informa</a>       
+
+		LINEA: 338, COLUMNA 65: <a href="/informa/notasInformativas/medicamentosUsoHumano/problemasSuministro/2018/NI_ICM-CONT_16-20 ...       
+
+		LINEA: 348, COLUMNA 65: <a href="/informa/notasInformativas/productosSanitarios/controlMercado/2018/NI-PS_23-2018-arandano-r ...       
+
+		LINEA: 358, COLUMNA 61:
+
+
+
+		LINEA: 361, COLUMNA 61: <a href="/informa/notasInformativas/home.htm">Notas informativas</a>       
+
+		LINEA: 364, COLUMNA 61: <a href="/informa/notasSeguridad/home.htm">Notas de seguridad</a>       
+
+		LINEA: 367, COLUMNA 61: <a href="/informa/alertas/home.htm">Alertas</a>       
+
+		LINEA: 370, COLUMNA 61: <a href="/informa/boletines-AEMPS/home.htm">Boletines de la AEMPS</a>       
+
+		LINEA: 373, COLUMNA 61:
+
+
+
+		LINEA: 376, COLUMNA 61: <a href="/informa/circulares/home.htm">Circulares</a>       
+
+		LINEA: 379, COLUMNA 61:
+
+
+
+		LINEA: 382, COLUMNA 61: <a href="/informa/preguntas-respuestas/home.htm">Preguntas y respuestas frecuentes</a>       
+
+		LINEA: 385, COLUMNA 61:
+
+
+
+		LINEA: 405, COLUMNA 65: <a target="_blank" href="/laAEMPS/memoria/docs/memoria-2017.pdf" title="Archivo PDF (4489 KB) . Se a ...       
+
+		LINEA: 416, COLUMNA 65: <a href="/laAEMPS/cartaDeServicios/cartaDeServicios.htm">Carta de servicios 2018-2021</a>       
+
+		LINEA: 427, COLUMNA 65:
+
+
+
+		LINEA: 439, COLUMNA 65: <a href="/publicaciones/publica/home.htm#EFMF">Estrategia frente a Medicamentos Falsificados 2016-20 ...       
+
+		LINEA: 452, COLUMNA 61: <a href="/laAEMPS/eventos/home.htm">Eventos</a>       
+
+		LINEA: 463, COLUMNA 69: <a href="/laAEMPS/eventos/AEMPS/2018/J-control-antibioticos-PRAN-2018.htm">Taller internacional sobr ...       
+
+		LINEA: 480, COLUMNA 69: <a href="/laAEMPS/eventos/AEMPS/2018/J-dia-europeo-uso-prudente-antibioticos-2018.htm">Jornada del D ...       
+
+		LINEA: 499, COLUMNA 45:
+
+
+
+		LINEA: 502, COLUMNA 45:
+
+
+
+		LINEA: 505, COLUMNA 45:
+
+
+
+		LINEA: 508, COLUMNA 45:
+
+
+
+		LINEA: 511, COLUMNA 45:
+
+
+
+		LINEA: 528, COLUMNA 33:
+
+
+
+		LINEA: 532, COLUMNA 33: <a href="/avisoLegal/home.htm">Aviso legal</a>       
+
+		LINEA: 536, COLUMNA 33: <a href="/accesibilidad/home.htm">Accesibilidad</a>
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 48, COLUMNA 49:
+
+
+
+		LINEA: 51, COLUMNA 49:
+
+
+
+		LINEA: 56, COLUMNA 49: <a href="/eu/home.htm" title="Ongi etorri: Acceso a la web en euskera"> ...       
+
+		LINEA: 61, COLUMNA 49: <a href="/gl/home.htm" title="Benvidos: Acceso a la web en gallego">...       
+
+		LINEA: 66, COLUMNA 49:
+
+
+
+		LINEA: 71, COLUMNA 49:
+
+
+
+		LINEA: 79, COLUMNA 45: <a href="http://www.mscbs.gob.es/home.htm" target="_blank"> ...       
+
+		LINEA: 82, COLUMNA 45: <a href="/home.htm"><img src="/diseno/img/logo_aemp ...       
+
+		LINEA: 106, COLUMNA 53: <a href="javascript:window.print()">Imprimir</a>       
+
+		LINEA: 109, COLUMNA 53: <a href="/mapaWeb/cargar.do">Mapa Web</a>       
+
+		LINEA: 112, COLUMNA 53: <a href="/informa/info-atencion-ciudadano/home.htm">Contactar</a>       
+
+		LINEA: 115, COLUMNA 53: <a href="/laAEMPS/enlaces/home.htm">Enlaces</a>       
+
+		LINEA: 123, COLUMNA 53: <a href="/informa/listasCorreo/home.htm"><i ...       
+
+		LINEA: 128, COLUMNA 53: <a target="_blank" href="http://twitter.com/#!/AEMPSGOB"> ...       
+
+		LINEA: 133, COLUMNA 53: <a href="/informa/rss/home.htm"><img alt="C ...       
+
+		LINEA: 138, COLUMNA 53: <a target="_blank" href="https://www.youtube.com/c/AempsGobEsinfo"> ...       
+
+		LINEA: 149, COLUMNA 45: <a href="/laAEMPS/portada/home.htm">La AEMPS</a>       
+
+		LINEA: 152, COLUMNA 45: <a href="/medicamentosUsoHumano/portada/home.htm">Medicamentos de uso humano</a>       
+
+		LINEA: 155, COLUMNA 45: <a href="/medicamentosVeterinarios/portada/home.htm">Medicamentos veterinarios</a>       
+
+		LINEA: 158, COLUMNA 45: <a href="/productosSanitarios/portada/home.htm">Productos sanitarios</a>       
+
+		LINEA: 161, COLUMNA 45:
+
+
+
+		LINEA: 164, COLUMNA 45: <a href="/industria/portada/home.htm">Industria</a>       
+
+		LINEA: 174, COLUMNA 53:
+
+
+
+		LINEA: 179, COLUMNA 53:
+
+
+
+		LINEA: 185, COLUMNA 45: <a title="Se abre en una nueva ventana. https://sede.aemps.gob.es" target="_blank" href="https://sed ...       
+
+		LINEA: 192, COLUMNA 49:
+
+
+
+		LINEA: 200, COLUMNA 53: <a href="/vigilancia/portada/home.htm"><img ...       
+
+		LINEA: 204, COLUMNA 53: <a href="/investigacionClinica/portada/home.htm"> ...       
+
+		LINEA: 208, COLUMNA 53: <a href="/legislacion/portada/home.htm"><im ...       
+
+		LINEA: 212, COLUMNA 53: <a href="/publicaciones/portada/home.htm">< ...       
+
+		LINEA: 219, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/presentacionAemps'])" href="/laAEMPS/presentacion/ ...       
+
+		LINEA: 224, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/onc13485'])" href="/productosSanitarios/organismoN ...       
+
+		LINEA: 229, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/ofiApoyoInnovacion'])" href="/medicamentosUsoHuman ...       
+
+		LINEA: 234, COLUMNA 49: <a href="https://reec.aemps.es" onclick="_gaq.push(['_trackPageview', '/banner/reec'])" target="_bla ...       
+
+		LINEA: 239, COLUMNA 49: <a href="https://www.notificaRAM.es" onclick="_gaq.push(['_trackPageview', '/banner/notificaRAM'])"...       
+
+		LINEA: 244, COLUMNA 49: <a href="http://www.resistenciaantibioticos.es/es" onclick="_gaq.push(['_trackPageview', '/banner/pl ...       
+
+		LINEA: 249, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/diaAntibioticos'])" href="/laAEMPS/eventos/AEMPS/2 ...       
+
+		LINEA: 254, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/distribucionMedicamentos'])" href="/industria/dist ...       
+
+		LINEA: 259, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/problemasSuministroMedicamentos'])" href="/medicam ...       
+
+		LINEA: 264, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/registroLaboratoriosFarmaceuticos'])" href="/indus ...       
+
+		LINEA: 269, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/banner-regimplanPS'])" href="/productosSanitarios/ ...       
+
+		LINEA: 274, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/medIlegales'])" href="/medicamentosUsoHumano/medIl ...       
+
+		LINEA: 279, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/perfilContratante'])" href="/laAEMPS/licitacionPub ...       
+
+		LINEA: 284, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/infoAtencionCiudadano'])" href="/informa/info-aten ...       
+
+		LINEA: 290, COLUMNA 49: <a href="https://encuestas.msssi.gob.es/limesurvey/index.php/722229?lang=es" onclick="_gaq.push(['_t ...       
+
+		LINEA: 296, COLUMNA 49: <a href="https://distafarma.aemps.es/" onclick="_gaq.push(['_trackPageview', '/banner/websVentaOnlin ...       
+
+		LINEA: 301, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/banner/websVentaOnline-MVET'])" href="/medicamentosVeteri ...       
+
+		LINEA: 306, COLUMNA 49: <a onclick="_gaq.push(['_trackPageview', '/laAEMPS/docs/presentacion-web-HMA.pdf'])" target="_blank" ...       
+
+		LINEA: 310, COLUMNA 49: <a href="https://www.redeami.net/" onclick="_gaq.push(['_trackPageview', '/banner/eami'])" target="_ ...       
+
+		LINEA: 315, COLUMNA 49: <a href="http://transparencia.gob.es/" onclick="_gaq.push(['_trackPageview', '/banner/transparencia' ...       
+
+		LINEA: 327, COLUMNA 61: <a href="/informa/portada/home.htm">La AEMPS informa</a>       
+
+		LINEA: 338, COLUMNA 65: <a href="/informa/notasInformativas/medicamentosUsoHumano/problemasSuministro/2018/NI_ICM-CONT_16-20 ...       
+
+		LINEA: 348, COLUMNA 65: <a href="/informa/notasInformativas/productosSanitarios/controlMercado/2018/NI-PS_23-2018-arandano-r ...       
+
+		LINEA: 358, COLUMNA 61:
+
+
+
+		LINEA: 361, COLUMNA 61: <a href="/informa/notasInformativas/home.htm">Notas informativas</a>       
+
+		LINEA: 364, COLUMNA 61: <a href="/informa/notasSeguridad/home.htm">Notas de seguridad</a>       
+
+		LINEA: 367, COLUMNA 61: <a href="/informa/alertas/home.htm">Alertas</a>       
+
+		LINEA: 370, COLUMNA 61: <a href="/informa/boletines-AEMPS/home.htm">Boletines de la AEMPS</a>       
+
+		LINEA: 373, COLUMNA 61:
+
+
+
+		LINEA: 376, COLUMNA 61: <a href="/informa/circulares/home.htm">Circulares</a>       
+
+		LINEA: 379, COLUMNA 61:
+
+
+
+		LINEA: 382, COLUMNA 61: <a href="/informa/preguntas-respuestas/home.htm">Preguntas y respuestas frecuentes</a>       
+
+		LINEA: 385, COLUMNA 61:
+
+
+
+		LINEA: 405, COLUMNA 65: <a target="_blank" href="/laAEMPS/memoria/docs/memoria-2017.pdf" title="Archivo PDF (4489 KB) . Se a ...       
+
+		LINEA: 416, COLUMNA 65: <a href="/laAEMPS/cartaDeServicios/cartaDeServicios.htm">Carta de servicios 2018-2021</a>       
+
+		LINEA: 427, COLUMNA 65:
+
+
+
+		LINEA: 439, COLUMNA 65: <a href="/publicaciones/publica/home.htm#EFMF">Estrategia frente a Medicamentos Falsificados 2016-20 ...       
+
+		LINEA: 452, COLUMNA 61: <a href="/laAEMPS/eventos/home.htm">Eventos</a>       
+
+		LINEA: 463, COLUMNA 69: <a href="/laAEMPS/eventos/AEMPS/2018/J-control-antibioticos-PRAN-2018.htm">Taller internacional sobr ...       
+
+		LINEA: 480, COLUMNA 69: <a href="/laAEMPS/eventos/AEMPS/2018/J-dia-europeo-uso-prudente-antibioticos-2018.htm">Jornada del D ...       
+
+		LINEA: 499, COLUMNA 45:
+
+
+
+		LINEA: 502, COLUMNA 45:
+
+
+
+		LINEA: 505, COLUMNA 45:
+
+
+
+		LINEA: 508, COLUMNA 45:
+
+
+
+		LINEA: 511, COLUMNA 45:
+
+
+
+		LINEA: 528, COLUMNA 33:
+
+
+
+		LINEA: 532, COLUMNA 33: <a href="/avisoLegal/home.htm">Aviso legal</a>       
+
+		LINEA: 536, COLUMNA 33: <a href="/accesibilidad/home.htm">Accesibilidad</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 325, COLUMNA 53: <h1><span class="centroTitVentana">...
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 394, COLUMNA 53: <h2><span class="centroTitVentana">Destacad ...       
+
+		LINEA: 450, COLUMNA 53: <h2><span class="centroTitVentana">...
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+
+
+		LINEA: 404, COLUMNA 61: <h3 class="tituloEncabezado"><a tar ...       
+
+		LINEA: 415, COLUMNA 61: <h3 class="tituloEncabezado"><a hre ...       
+
+		LINEA: 426, COLUMNA 61: <h3><a href="/informa/campannas/cam ...       
+
+		LINEA: 438, COLUMNA 61: <h3 class="tituloEncabezado"><a hre ...       
+
+		LINEA: 459, COLUMNA 61: <h3><img src="/diseno/img/calendari ...       
+
+		LINEA: 476, COLUMNA 61: <h3><img src="/diseno/img/calendari ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 28, COLUMNA 9: <form action="" name="formulario"><input name="nivel" type="hidden" value="1" /> ...       
+
+		LINEA: 89, COLUMNA 45: <form method="post" action="/buscador/iniciar.do" name="formBuscador">...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 27, COLUMNA 5: <body xmlns:xalan-nodeset="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java" ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 28, COLUMNA 9: <form action="" name="formulario"><input name="nivel" type="hidden" value="1" /> ...       
+
+		LINEA: 89, COLUMNA 45: <form method="post" action="/buscador/iniciar.do" name="formBuscador">...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 28, COLUMNA 9: <form action="" name="formulario"><input name="nivel" type="hidden" value="1" /> ...       
+
+		LINEA: 89, COLUMNA 45: <form method="post" action="/buscador/iniciar.do" name="formBuscador">...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 29, COLUMNA 13: <input name="nivel" type="hidden" value="1" />       
+
+		LINEA: 30, COLUMNA 13: <input name="lang" type="hidden" value="es" />       
+
+		LINEA: 94, COLUMNA 61: <input name="search" id="search" size="18" type="text" />       
+
+		LINEA: 97, COLUMNA 61: <input value="Aceptar" class="buscadorBoton" type="submit" />
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 94, COLUMNA 61: <input name="search" id="search" size="18" type="text" />
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 28, COLUMNA 9: <form action="" name="formulario"><input name="nivel" type="hidden" value="1" /> ...       
+
+		LINEA: 89, COLUMNA 45: <form method="post" action="/buscador/iniciar.do" name="formBuscador">...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 28, COLUMNA 9: <form action="" name="formulario"><input name="nivel" type="hidden" value="1" /> ...       
+
+		LINEA: 89, COLUMNA 45: <form method="post" action="/buscador/iniciar.do" name="formBuscador">...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 28, COLUMNA 9: <form action="" name="formulario"><input name="nivel" type="hidden" value="1" /> ...       
+
+		LINEA: 89, COLUMNA 45: <form method="post" action="/buscador/iniciar.do" name="formBuscador">...
+
+	

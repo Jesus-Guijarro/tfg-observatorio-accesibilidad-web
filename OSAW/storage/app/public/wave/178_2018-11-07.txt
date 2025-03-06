@@ -1,0 +1,24 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/OMIDC.nsf/vDocumentosTituloAux/Inicio?opendocument&lang=2&nivel=1
+FECHA EVALUACIÓN: 2018-11-07
+
+PROBLEMAS
+Empty heading	  VECES ENCONTRADO: 4
+
+
+
+ALERTAS
+Redundant title text	  VECES ENCONTRADO: 86
+Skipped heading level	  VECES ENCONTRADO: 1
+Broken same-page link	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 1
+Redundant alternative text	  VECES ENCONTRADO: 3
+
+
+
+CARACTERISTICAS
+Linked image with alternative text	  VECES ENCONTRADO: 7
+Element language	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 3
+
+
+

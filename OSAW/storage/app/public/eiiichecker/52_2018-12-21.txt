@@ -1,0 +1,9 @@
+REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=6&MS=5&MN=1&r=1536*864
+FECHA EVALUACIÓN: 2018-12-21
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Teclado         
+	FALLO F54: Fallo del Criterio de Conformidad 2.1.1 debido a que solo se utilizan controladores de eventos específicos del dispositivo señalador (incluido el gesto) para una función		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      
+	TÉCNICA G13: Describir lo que sucederá antes de que se realice un cambio en un control de formulario que cause que ocurra un cambio de contexto		 
+	VECES ENCONTRADO: 1

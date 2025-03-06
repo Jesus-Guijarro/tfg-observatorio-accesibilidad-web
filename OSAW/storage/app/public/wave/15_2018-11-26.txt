@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Ciudadanos.shtml
+FECHA EVALUACIÓN: 2018-11-26
+
+ALERTAS
+Link to PDF document	  VECES ENCONTRADO: 1
+Redundant alternative text	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 14
+Unlabeled form element with title	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 6
+
+
+
+CARACTERISTICAS
+Linked image with alternative text	  VECES ENCONTRADO: 4
+Alternative text	  VECES ENCONTRADO: 14
+Null or empty alternative text	  VECES ENCONTRADO: 6
+Element language	  VECES ENCONTRADO: 5
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 4
+
+
+

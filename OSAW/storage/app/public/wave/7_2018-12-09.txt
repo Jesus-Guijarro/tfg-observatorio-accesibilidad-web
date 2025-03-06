@@ -1,0 +1,24 @@
+REPORTE PÁGINA WEB: http://www.mjusticia.gob.es/cs/Satellite/Portal/es/servicios-ciudadano/empleo-publico
+FECHA EVALUACIÓN: 2018-12-09
+
+-PROBLEMAS-
+
+-ALERTAS-
+
+Accesskey	  VECES ENCONTRADO: 9
+Device dependent event handler	  VECES ENCONTRADO: 1
+Long alternative text	  VECES ENCONTRADO: 1
+
+
+-CARACTERISTICAS-
+
+Element language	  VECES ENCONTRADO: 5
+Linked image with alternative text	  VECES ENCONTRADO: 3
+Form label	  VECES ENCONTRADO: 1
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 14
+
+

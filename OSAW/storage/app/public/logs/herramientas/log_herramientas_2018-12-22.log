@@ -1,0 +1,5 @@
+12/22/2018 02:05:52 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "wave"
+	PAGINA WEB: 197
+	INFORMACION: "ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='wave.webaim.org', port=80): Read timed out. (read timeout=15)",),)"
+

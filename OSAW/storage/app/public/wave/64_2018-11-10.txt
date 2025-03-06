@@ -1,0 +1,19 @@
+REPORTE PÁGINA WEB: https://www.upv.es/admision/traslados-e-intercambios/index-es.html
+FECHA EVALUACIÓN: 2018-11-10
+
+ALERTAS
+Redundant title text	  VECES ENCONTRADO: 17
+Link to PDF document	  VECES ENCONTRADO: 1
+Noscript element	  VECES ENCONTRADO: 2
+Device dependent event handler	  VECES ENCONTRADO: 5
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 14
+Linked image with alternative text	  VECES ENCONTRADO: 9
+Element language	  VECES ENCONTRADO: 2
+Long description	  VECES ENCONTRADO: 2
+
+
+

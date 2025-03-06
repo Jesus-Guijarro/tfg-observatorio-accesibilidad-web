@@ -1,0 +1,11 @@
+REPORTE PÁGINA WEB: http://www.idae.es/ahorra-energia
+FECHA EVALUACIÓN: 2018-11-08
+
+CRITERIO DE CONFORMIDAD: 3.1.1: Idioma de la página      		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	TÉCNICA H64: Usando el atributo <&title> de los elementos <&frame> y <&iframe>		 
+	VECES ENCONTRADO: 2
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	TÉCNICA H91: Usar controles de formulario HTML y enlaces		 
+	VECES ENCONTRADO: 3

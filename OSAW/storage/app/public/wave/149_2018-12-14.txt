@@ -1,0 +1,38 @@
+REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/cultura-mecd/areas-cultura/industriasculturales/portada.html
+FECHA EVALUACIÓN: 2018-12-14
+
+-PROBLEMAS-
+
+Empty button	  VECES ENCONTRADO: 4
+Empty link	  VECES ENCONTRADO: 2
+
+
+-ALERTAS-
+
+Redundant title text	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Long alternative text	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 4
+Noscript element	  VECES ENCONTRADO: 1
+Broken same-page link	  VECES ENCONTRADO: 4
+Link to PowerPoint document	  VECES ENCONTRADO: 1
+Justified text	  VECES ENCONTRADO: 2
+Link to PDF document	  VECES ENCONTRADO: 11
+
+
+-CARACTERISTICAS-
+
+Form label	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 4
+Linked image with alternative text	  VECES ENCONTRADO: 33
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
+Null or empty alternative text	  VECES ENCONTRADO: 2
+Element language	  VECES ENCONTRADO: 6
+Fieldset	  VECES ENCONTRADO: 1
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+

@@ -1,0 +1,2586 @@
+REPORTE PÁGINA WEB: https://www.iberia.com/es/iberiaplus/condiciones/
+FECHA EVALUACIÓN: 2018-12-18
+
+-PROBLEMAS CONOCIDOS-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR:> Add Alt text that identifies the purpose or function of the image.      
+
+		LINEA: 368, COLUMNA: 338: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+
+
+		LINEA: 368, COLUMNA: 2713: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 57: input element, type of "text", missing an associated label.  
+
+	REPARAR:> Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.      
+
+		LINEA: 367, COLUMNA: 5235: <input id="search" name="search" maxlength="100" type="text" placeholder="Escribe aquí tus dudas" c ...
+
+  
+
+	REVISAR: 213: input element, type of "text", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 367, COLUMNA: 5235: <input id="search" name="search" maxlength="100" type="text" placeholder="Escribe aquí tus dudas" c ...
+
+  
+
+	REVISAR: 208: Label text is empty for select element.  
+
+	REPARAR:> Add text to the label associated with the select element.      
+
+		LINEA: 367, COLUMNA: 1601: <select id="mercado" name="mercado" data-selectmenu-edit="data-selectmenu-edit" data-placeholder="Pa ...
+
+
+
+		LINEA: 367, COLUMNA: 3405: <select id="idioma" name="idioma" data-selectmenu-edit="data-selectmenu-edit" data-placeholder="Idio ...
+
+
+
+		LINEA: 448, COLUMNA: 7: <select id="mercadoMobile" name="mercadoMobile" data-selectmenu-edit="data-selectmenu-edit" data-pla ...
+
+
+
+		LINEA: 451, COLUMNA: 75: <select id="idiomaMobile" name="idiomaMobile" data-selectmenu-edit="data-selectmenu-edit" data-place ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 37: Header nesting - header following h1 is incorrect.  
+
+	REPARAR:> Modify the header levels so only an h1 or h2 follows h1.      
+
+		LINEA: 560, COLUMNA: 107: <h1 class="title title__h1 ibe-infocheckin__header-primary">Condiciones del Programa Iberia Plus</h1 ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR:> Add text to the label element.      
+
+		LINEA: 367, COLUMNA: 5235: <input id="search" name="search" maxlength="100" type="text" placeholder="Escribe aquí tus dudas" c ...
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 366, COLUMNA: 88: <a href="#" title="Cerrar" data-cookies="close" class="ibe-cookies__close"><span class="hideAccessib ...
+
+
+
+		LINEA: 366, COLUMNA: 481: <ahref='#' title='Política de cookies'target='_blank' data-contenttype='CustomLink_C' data-cont ...
+
+
+
+		LINEA: 367, COLUMNA: 622: <a title="Vuelos baratos Iberia" class="ibe-header-new__logo-link" href='/es/ '><figure class="ibe-h ...
+
+
+
+		LINEA: 367, COLUMNA: 1043: <a href="#" title="" data-toggle="collapse" data-target="#tool_lang" class="ibe-header-new__link ibe ...
+
+
+
+		LINEA: 367, COLUMNA: 3906: <a href='/es/empresas/cliente-on-business/' title="Ir a: Empresas" class="ibe-header-new__link ibe-h ...
+
+
+
+		LINEA: 367, COLUMNA: 4202: <a href='/es/atencion-al-cliente/' title='Ir a Centro de Ayuda' class="ibe-header-new__link ibe-head ...
+
+
+
+		LINEA: 367, COLUMNA: 5483: <a data-dudes="dudes" title="¿Tienes dudas?" class="ibe-header-new__link ibe-header-new__link-icon...
+
+
+
+		LINEA: 367, COLUMNA: 5779: <a href="#" title="" data-toggle="collapse" data-target="#tool_login" class="ibe-header-new__link ib ...
+
+
+
+		LINEA: 367, COLUMNA: 6026: <a href="#" title="" data-modal="button" data-modal-view=".fc-dialog-login" class="ibe-header-new__l ...
+
+
+
+		LINEA: 368, COLUMNA: 126: <a href="#" title="User" data-toggle="collapse" data-target="#tool_logged" data-focusin="data-focusi ...
+
+
+
+		LINEA: 368, COLUMNA: 1462: <a id ="loggedUserAviosNew" href='/es/iberiaplus/mis-avios/' title="Ir a tus Avios" class="link link ...
+
+
+
+		LINEA: 368, COLUMNA: 1709: <a href="/es/iberiaplus/mi-iberia-plus/" title="Mi Iberia Plus">Mi Iberia Plus</a>
+
+
+
+		LINEA: 368, COLUMNA: 2201: <a href="#" title="Cerrar Sesión">Cerrar Sesión</a>
+
+
+
+		LINEA: 368, COLUMNA: 2452: <a id ='OBHeader' href="#" title="User" data-toggle="collapse" data-focusin="data-focusin" data-targ ...
+
+
+
+		LINEA: 373, COLUMNA: 130: <a href='https://www.iberia.com/web/ciplistadoTarjetas.do?tabId=&menuId=IBHMPI' title='Gestión de t ...
+
+
+
+		LINEA: 373, COLUMNA: 328: <a href='https://www.iberia.com/web/redemptionFromCIPPTS.do?menuId=CIPPTS' title='Reservar vuelos co ...
+
+
+
+		LINEA: 373, COLUMNA: 565: <a href="#" title="Cerrar Sesión">Cerrar Sesión</a>
+
+
+
+		LINEA: 374, COLUMNA: 171: <a href="#" title="Ir a: Viaja" aria-expanded="false" data-link="menu" data-open-menu-new="145436000 ...
+
+
+
+		LINEA: 374, COLUMNA: 606: <a href="#" title="Ir a: Viaja" aria-expanded="false" data-link="menu" data-close-menu-new="14543600 ...
+
+
+
+		LINEA: 374, COLUMNA: 845: <a href="#" title="Ir a: Buscar" aria-expanded="false" data-link="menu" data-open-menu-new="14543600 ...
+
+
+
+		LINEA: 375, COLUMNA: 60: <a href="#" title="Ir a: Buscar" aria-expanded="false" data-link="menu" data-close-menu-new="1454360 ...
+
+
+
+		LINEA: 375, COLUMNA: 323: <a href='/es/buscador-vuelos/' title="Ir a: Buscar vuelos" class="ibe-menu-new__link--submenu"><span ...
+
+
+
+		LINEA: 375, COLUMNA: 545: <a href='/es/puente-aereo/' title="Ir a: Puente Aéreo" class="ibe-menu-new__link--submenu"><span cl ...
+
+
+
+		LINEA: 375, COLUMNA: 765: <a href='/es/vuelo+hotel/' title="Ir a: Vuelo + Hotel" class="ibe-menu-new__link--submenu"><span cla ...
+
+
+
+		LINEA: 375, COLUMNA: 984: <a href='/es/coches/' title="Ir a: Vuelo + Coche" class="ibe-menu-new__link--submenu"><span class="i ...
+
+
+
+		LINEA: 375, COLUMNA: 1179: <a href='http://hotel.iberia.com/index.html?aid=380264;lang=es;label=ibeair-homepage-header' title=" ...
+
+
+
+		LINEA: 375, COLUMNA: 1467: <a href='https://www.rentacar-iberia.com/?CID=pcaeses-20180625-paginadeinicio-001' title="Coches [Ab ...
+
+
+
+		LINEA: 375, COLUMNA: 1759: <a href='https://www.magroup-online.com/wl/iba/es/' title="Seguros de viaje [Abre en ventana nueva]" ...
+
+
+
+		LINEA: 375, COLUMNA: 2041: <a href='/es/parking-aeropuerto-aena/' title="Ir a: Parking en aeropuerto" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 375, COLUMNA: 2269: <a href='https://www.iberiacards.es/web/solicitariberiasendooro/l1/?utm_source=iberia.com&utm_medium ...
+
+
+
+		LINEA: 375, COLUMNA: 2664: <a href="#" title="Ir a: Ideas para viajar" aria-expanded="false" data-link="menu" data-open-menu-ne ...
+
+
+
+		LINEA: 376, COLUMNA: 60: <a href="#" title="Ir a: Ideas para viajar" aria-expanded="false" data-link="menu" data-close-menu-n ...
+
+
+
+		LINEA: 376, COLUMNA: 346: <a href='/es/vuelos-baratos/' title="Ir a: Vuelos baratos" class="ibe-menu-new__link--submenu"><span ...
+
+
+
+		LINEA: 376, COLUMNA: 551: <a href='/es/vuelos-baratos/meses/' title="Ir a: Buscar por meses" class="ibe-menu-new__link--submen ...
+
+
+
+		LINEA: 376, COLUMNA: 783: <a href='/web/obsmenu.do?menuId=LANDPR&language=es' title="Ir a: Vuelos baratos" class="ibe-menu-new ...
+
+
+
+		LINEA: 376, COLUMNA: 1010: <a href='/es/guia-de-destinos/' title="Ir a: Guía de destinos" class="ibe-menu-new__link--submenu"> ...
+
+
+
+		LINEA: 376, COLUMNA: 1223: <a href='/es/vuelos-baratos/festividades/' title="Ir a: Próximas fiestas" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 376, COLUMNA: 1447: <a href='/es/vuelos-baratos/temporadas/' title="Ir a: Estaciones del año" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 376, COLUMNA: 1673: <a href='/es/vuelos-baratos/experiencias/' title="Ir a: Experiencias" class="ibe-menu-new__link--sub ...
+
+
+
+		LINEA: 376, COLUMNA: 1887: <a href='/es/bonos-descuento/' title="Ir a: Códigos descuento" class="ibe-menu-new__link--submenu"> ...
+
+
+
+		LINEA: 376, COLUMNA: 2101: <a href='/es/grupos/' title="Ir a: Reserva de grupos" class="ibe-menu-new__link--submenu"><span clas ...
+
+
+
+		LINEA: 376, COLUMNA: 2315: <a href='/tarjeta-regalo/' title="Tarjetas regalo [Abre una nueva ventana]"target="_blank" class=" ...
+
+
+
+		LINEA: 376, COLUMNA: 2572: <a href="#" title="Ir a: Iberia Joven" aria-expanded="false" data-link="menu" data-open-menu-new="14 ...
+
+
+
+		LINEA: 377, COLUMNA: 60: <a href="#" title="Ir a: Iberia Joven" aria-expanded="false" data-link="menu" data-close-menu-new="1 ...
+
+
+
+		LINEA: 377, COLUMNA: 1126: <a href="#" title="Ir a: Más que vuelos" aria-expanded="false" data-link="menu" data-open-menu-new= ...
+
+
+
+		LINEA: 378, COLUMNA: 60: <a href="#" title="Ir a: Más que vuelos" aria-expanded="false" data-link="menu" data-close-menu-new ...
+
+
+
+		LINEA: 378, COLUMNA: 329: <a href='/es/bus-and-fly/' title="Ir a: Bus & Fly" class="ibe-menu-new__link--submenu"><span class=" ...
+
+
+
+		LINEA: 378, COLUMNA: 521: <a href='/es/billete-combinado-tren-avion/' title="Ir a: Train & Fly" class="ibe-menu-new__link--sub ...
+
+
+
+		LINEA: 378, COLUMNA: 734: <a href='/es/vuelos-especiales/' title="Ir a: Vuelos especiales" class="ibe-menu-new__link--submenu" ...
+
+
+
+		LINEA: 378, COLUMNA: 967: <a href="#" title="Ir a: Tus vuelos" aria-expanded="false" data-link="menu" data-open-menu-new="1454 ...
+
+
+
+		LINEA: 378, COLUMNA: 1412: <a href="#" title="Ir a: Tus vuelos" aria-expanded="false" data-link="menu" data-close-menu-new="145 ...
+
+
+
+		LINEA: 378, COLUMNA: 1661: <a href="#" title="Ir a: 
+
+	REVISAR:-in online" aria-expanded="false" data-link="menu" data-open-menu-new= ...
+
+
+
+		LINEA: 379, COLUMNA: 60: <a href="#" title="Ir a: 
+
+	REVISAR:-in online" aria-expanded="false" data-link="menu" data-close-menu-new ...
+
+
+
+		LINEA: 379, COLUMNA: 334: <a href='/es/autocheckin-online/' title="Ir a: 
+
+	REVISAR:-in online" class="ibe-menu-new__link--submenu"> ...
+
+
+
+		LINEA: 379, COLUMNA: 545: <a href='/es/informacion-checkin/' title="Ir a: Información" class="ibe-menu-new__link--submenu"><s ...
+
+
+
+		LINEA: 379, COLUMNA: 762: <a href="#" title="Ir a: Reservas" aria-expanded="false" data-link="menu" data-open-menu-new="146295 ...
+
+
+
+		LINEA: 380, COLUMNA: 60: <a href="#" title="Ir a: Reservas" aria-expanded="false" data-link="menu" data-close-menu-new="14629 ...
+
+
+
+		LINEA: 380, COLUMNA: 320: <a href='/es/gestion-de-reservas/' title="Ir a: Gestiona tu reserva" class="ibe-menu-new__link--subm ...
+
+
+
+		LINEA: 380, COLUMNA: 792: <a href="#" title="Ir a: Información sobre vuelos" aria-expanded="false" data-link="menu" data-open ...
+
+
+
+		LINEA: 381, COLUMNA: 60: <a href="#" title="Ir a: Información sobre vuelos" aria-expanded="false" data-link="menu" data-clos ...
+
+
+
+		LINEA: 381, COLUMNA: 354: <a href='/es/llegadas-y-salidas/' title="Ir a: Estado de vuelos" class="ibe-menu-new__link--submenu" ...
+
+
+
+		LINEA: 381, COLUMNA: 567: <a href='/es/horarios/' title="Ir a: Horarios de vuelos" class="ibe-menu-new__link--submenu"><span c ...
+
+
+
+		LINEA: 381, COLUMNA: 774: <a href='/es/ultima-hora-de-nuestros-vuelos/' title="Ir a: Última hora de nuestros vuelos" class="i ...
+
+
+
+		LINEA: 381, COLUMNA: 1048: <a href="#" title="Ir a: Antes de viajar" aria-expanded="false" data-link="menu" data-open-menu-new= ...
+
+
+
+		LINEA: 381, COLUMNA: 1503: <a href="#" title="Ir a: Antes de viajar" aria-expanded="false" data-link="menu" data-close-menu-new ...
+
+
+
+		LINEA: 381, COLUMNA: 1762: <a href="#" title="Ir a: Todo sobre equipaje" aria-expanded="false" data-link="menu" data-open-menu- ...
+
+
+
+		LINEA: 382, COLUMNA: 60: <a href="#" title="Ir a: Todo sobre equipaje" aria-expanded="false" data-link="menu" data-close-menu ...
+
+
+
+		LINEA: 382, COLUMNA: 347: <a href='/es/equipajes/' title="Ir a: Prepara tu equipaje" class="ibe-menu-new__link--submenu"><span ...
+
+
+
+		LINEA: 382, COLUMNA: 557: <a href='/es/equipajes/de-mano/' title="Ir a: Equipaje de mano" class="ibe-menu-new__link--submenu"> ...
+
+
+
+		LINEA: 382, COLUMNA: 769: <a href='/es/equipajes/franquicia-bodega/' title="Ir a: Equipaje facturable" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 382, COLUMNA: 997: <a href='/es/equipajes/articulos-peligrosos/' title="Ir a: Equipajes peligrosos" class="ibe-menu-new ...
+
+
+
+		LINEA: 382, COLUMNA: 1230: <a href='/es/equipajes/dispositivos-electronicos/' title="Ir a: Dispositivos electrónicos" class="i ...
+
+
+
+		LINEA: 382, COLUMNA: 1480: <a href='/es/equipajes/especiales/' title="Ir a: Equipajes especiales" class="ibe-menu-new__link--su ...
+
+
+
+		LINEA: 382, COLUMNA: 1703: <a href='/es/equipajes/valor-declarado/' title="Ir a: Equipaje de valor declarado" class="ibe-menu-n ...
+
+
+
+		LINEA: 382, COLUMNA: 1956: <a href="#" title="Ir a: Preparación del viaje" aria-expanded="false" data-link="menu" data-open-me ...
+
+
+
+		LINEA: 383, COLUMNA: 60: <a href="#" title="Ir a: Preparación del viaje" aria-expanded="false" data-link="menu" data-close-m ...
+
+
+
+		LINEA: 383, COLUMNA: 353: <a href='/es/viajar-con-iberia/menores/' title="Ir a: Menores viajando solos" class="ibe-menu-new__l ...
+
+
+
+		LINEA: 383, COLUMNA: 585: <a href='/es/viajar-con-iberia/documentacion/' title="Ir a: Documentación" class="ibe-menu-new__lin ...
+
+
+
+		LINEA: 383, COLUMNA: 807: <a href='/es/viajar-con-iberia/ninos-y-bebes/' title="Ir a: Niños y bebés" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 383, COLUMNA: 1031: <a href='/es/viajar-con-iberia/embarazo/' title="Ir a: Mujeres embarazadas" class="ibe-menu-new__lin ...
+
+
+
+		LINEA: 383, COLUMNA: 1258: <a href='/es/viajar-con-iberia/animales/' title="Ir a: Animales domésticos" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 383, COLUMNA: 1487: <a href='/es/viajar-con-iberia/necesidades-especiales/' title="Ir a: Pasajeros con necesidades espec ...
+
+
+
+		LINEA: 383, COLUMNA: 1762: <a href='/es/reserva-de-asientos/' title="Ir a: Reserva anticipada asientos" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 383, COLUMNA: 2009: <a href="#" title="Ir a: En el aeropuerto" aria-expanded="false" data-link="menu" data-open-menu-new ...
+
+
+
+		LINEA: 384, COLUMNA: 60: <a href="#" title="Ir a: En el aeropuerto" aria-expanded="false" data-link="menu" data-close-menu-ne ...
+
+
+
+		LINEA: 384, COLUMNA: 341: <a href='/es/hora-limite/' title="Ir a: Hora Límite" class="ibe-menu-new__link--submenu"><span clas ...
+
+
+
+		LINEA: 384, COLUMNA: 539: <a href='/es/servicios-vip/' title="Ir a: Servicios VIP" class="ibe-menu-new__link--submenu"><span c ...
+
+
+
+		LINEA: 384, COLUMNA: 741: <a href='/es/viajar-con-iberia/aeropuerto-de-madrid/' title="Ir a: Aeropuerto de Madrid" class="ibe- ...
+
+
+
+		LINEA: 384, COLUMNA: 982: <a href='/es/viajar-con-iberia/aeropuerto-de-barcelona/' title="Ir a: Aeropuerto de Barcelona" class ...
+
+
+
+		LINEA: 384, COLUMNA: 1251: <a href="#" title="Ir a: Experiencia Iberia" aria-expanded="false" data-link="menu" data-open-menu-n ...
+
+
+
+		LINEA: 384, COLUMNA: 1712: <a href="#" title="Ir a: Experiencia Iberia" aria-expanded="false" data-link="menu" data-close-menu- ...
+
+
+
+		LINEA: 384, COLUMNA: 1977: <a href="#" title="Ir a: Viajar con clase" aria-expanded="false" data-link="menu" data-open-menu-new ...
+
+
+
+		LINEA: 385, COLUMNA: 60: <a href="#" title="Ir a: Viajar con clase" aria-expanded="false" data-link="menu" data-close-menu-ne ...
+
+
+
+		LINEA: 385, COLUMNA: 1813: <a href="#" title="Ir a: A bordo" aria-expanded="false" data-link="menu" data-open-menu-new="1462955 ...
+
+
+
+		LINEA: 386, COLUMNA: 60: <a href="#" title="Ir a: A bordo" aria-expanded="false" data-link="menu" data-close-menu-new="146295 ...
+
+
+
+		LINEA: 386, COLUMNA: 1827: <a href="#" title="Ir a: Flota" aria-expanded="false" data-link="menu" data-open-menu-new="146295584 ...
+
+
+
+		LINEA: 387, COLUMNA: 60: <a href="#" title="Ir a: Flota" aria-expanded="false" data-link="menu" data-close-menu-new="14629558 ...
+
+
+
+		LINEA: 387, COLUMNA: 1342: <a href="#" title="Ir a: Nuestras alianzas" aria-expanded="false" data-link="menu" data-open-menu-ne ...
+
+
+
+		LINEA: 388, COLUMNA: 60: <a href="#" title="Ir a: Nuestras alianzas" aria-expanded="false" data-link="menu" data-close-menu-n ...
+
+
+
+		LINEA: 388, COLUMNA: 1218: <a href="#" title="Ir a: Iberia Plus" aria-expanded="false" data-link="menu" data-open-menu-new="145 ...
+
+
+
+		LINEA: 388, COLUMNA: 1665: <a href="#" title="Ir a: Iberia Plus" aria-expanded="false" data-link="menu" data-close-menu-new="14 ...
+
+
+
+		LINEA: 388, COLUMNA: 1916: <a href='/es/iberiaplus/disfrutar-avios/' title="Ir a: Calculadora de Avios" class="ibe-menu-new__ti ...
+
+
+
+		LINEA: 388, COLUMNA: 2179: <a href="#" title="Ir a: Mi Perfil" aria-expanded="false" data-link="menu" data-open-menu-new="14543 ...
+
+
+
+		LINEA: 389, COLUMNA: 77: <a href="#" title="Ir a: Mi Perfil" aria-expanded="false" data-link="menu" data-close-menu-new="1454 ...
+
+
+
+		LINEA: 389, COLUMNA: 592: <a href='/es/iberiaplus/datos-personales/' title="Ir a: Datos de usuario" class="ibe-menu-new__link- ...
+
+
+
+		LINEA: 389, COLUMNA: 1317: <a href='/es/iberiaplus/preferencias/' title="Ir a: Preferencias" class="ibe-menu-new__link--submenu ...
+
+
+
+		LINEA: 389, COLUMNA: 2291: <a href="#" title="Ir a: Conoce Iberia Plus" aria-expanded="false" data-link="menu" data-open-menu-n ...
+
+
+
+		LINEA: 390, COLUMNA: 60: <a href="#" title="Ir a: Conoce Iberia Plus" aria-expanded="false" data-link="menu" data-close-menu- ...
+
+
+
+		LINEA: 390, COLUMNA: 341: <a href='/es/iberiaplus/' title="Ir a: Todo Iberia Plus" class="ibe-menu-new__link--submenu"><span c ...
+
+
+
+		LINEA: 390, COLUMNA: 546: <a href='/es/iberiaplus/que-es/' title="Ir a: Qué es" class="ibe-menu-new__link--submenu"><span cla ...
+
+
+
+		LINEA: 390, COLUMNA: 740: <a href='/es/iberiaplus/ventajas/' title="Ir a: Tarjetas Iberia Plus" class="ibe-menu-new__link--sub ...
+
+
+
+		LINEA: 390, COLUMNA: 962: <a href='/es/iberiaplus/kids/' title="Ir a: Iberia Plus Kids" class="ibe-menu-new__link--submenu"><s ...
+
+
+
+		LINEA: 390, COLUMNA: 1172: <a href='/es/iberiaplus/ayuda/dudas/' title="Ir a: Ayuda de Iberia Plus" class="ibe-menu-new__link-- ...
+
+
+
+		LINEA: 390, COLUMNA: 1652: <a href='https://www.iberia.com/navidad2018/?language=es' title="Navidad 2018"target="_blank" clas ...
+
+
+
+		LINEA: 390, COLUMNA: 1919: <a href="#" title="Ir a: Avios y Puntos Elite" aria-expanded="false" data-link="menu" data-open-menu ...
+
+
+
+		LINEA: 391, COLUMNA: 60: <a href="#" title="Ir a: Avios y Puntos Elite" aria-expanded="false" data-link="menu" data-close-men ...
+
+
+
+		LINEA: 391, COLUMNA: 345: <a href='/es/iberiaplus/como-funciona/' title="Ir a: Cómo funciona Avios" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 391, COLUMNA: 572: <a href='/es/iberiaplus/comprar-transferir-avios/' title="Ir a: Comprar, regalar y transferir Avios" ...
+
+
+
+		LINEA: 391, COLUMNA: 840: <a href='/es/iberiaplus/obtener-avios/' title="Ir a: Obtener Avios" class="ibe-menu-new__link--subme ...
+
+
+
+		LINEA: 391, COLUMNA: 1053: <a href='/es/iberiaplus/utilizar-mis-avios/' title="Ir a: Utilizar mis Avios" class="ibe-menu-new__l ...
+
+
+
+		LINEA: 391, COLUMNA: 1281: <a href='/es/hoteles-con-avios/' title="Ir a: Hoteles, coches y experiencias" class="ibe-menu-new__l ...
+
+
+
+		LINEA: 391, COLUMNA: 1521: <a href='/es/iberiaplus/avios-no-anotados/' title="Ir a: Avios no anotados" class="ibe-menu-new__lin ...
+
+
+
+		LINEA: 391, COLUMNA: 1746: <a href='/es/iberiaplus/que-son/' title="Ir a: Qué son Puntos Elite" class="ibe-menu-new__link--sub ...
+
+
+
+		LINEA: 391, COLUMNA: 1969: <a href='/es/iberiaplus/obtener-puntos-elite/' title="Ir a: Obtener Puntos Elite" class="ibe-menu-ne ...
+
+
+
+		LINEA: 391, COLUMNA: 2214: <a href="#" title="Ir a: Partners Iberia Plus" aria-expanded="false" data-link="menu" data-open-menu ...
+
+
+
+		LINEA: 392, COLUMNA: 60: <a href="#" title="Ir a: Partners Iberia Plus" aria-expanded="false" data-link="menu" data-close-men ...
+
+
+
+		LINEA: 392, COLUMNA: 345: <a href='/es/iberiaplus/partners/ofertas/' title="Ir a: Partners" class="ibe-menu-new__link--submenu ...
+
+
+
+		LINEA: 392, COLUMNA: 551: <a href='/es/iberiaplus/partners/vuelos/' title="Ir a: Vuelos" class="ibe-menu-new__link--submenu">< ...
+
+
+
+		LINEA: 392, COLUMNA: 752: <a href='/es/iberiaplus/partners/hoteles/' title="Ir a: Hoteles" class="ibe-menu-new__link--submenu" ...
+
+
+
+		LINEA: 392, COLUMNA: 956: <a href='/es/iberiaplus/partners/finanzas/' title="Ir a: Financiero" class="ibe-menu-new__link--subm ...
+
+
+
+		LINEA: 392, COLUMNA: 1167: <a href='/es/iberiaplus/partners/ocio-compras/' title="Ir a: Ocio y compras" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 392, COLUMNA: 1390: <a href='/es/iberiaplus/partners/gasolineras/' title="Ir a: Gasolineras" class="ibe-menu-new__link-- ...
+
+
+
+		LINEA: 392, COLUMNA: 1606: <a href='/es/iberiaplus/partners/coches/' title="Ir a: Coches y Movilidad" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 392, COLUMNA: 1831: <a href='/es/iberiaplus/partners/gastronomia/' title="Ir a: Gastronomía" class="ibe-menu-new__link- ...
+
+
+
+		LINEA: 392, COLUMNA: 2049: <a href='/es/iberiaplus/partners/seguros/' title="Ir a: Seguros" class="ibe-menu-new__link--submenu" ...
+
+
+
+		LINEA: 392, COLUMNA: 2253: <a href='/web/obsmenu.do?menuId=ESTORE' title="IberiaPluStore" class="ibe-menu-new__link--submenu" r ...
+
+
+
+		LINEA: 392, COLUMNA: 2869: <a href='/es/buscador-vuelos/' title="Reserva tu vuelo" class="ibe-menu-new__link--links icon-vuelos ...
+
+
+
+		LINEA: 392, COLUMNA: 3080: <a href='/es/autocheckin-online/' title="Accede al 
+
+	REVISAR:-in" class="ibe-menu-new__link--links icon-c ...
+
+
+
+		LINEA: 392, COLUMNA: 3307: <a href='/es/gestion-de-reservas/' title="Gestiona tu reserva" class="ibe-menu-new__link--links icon ...
+
+
+
+		LINEA: 392, COLUMNA: 3541: <a href='/es/llegadas-y-salidas/' title="Llegadas y Salidas" class="ibe-menu-new__link--links icon-s ...
+
+
+
+		LINEA: 393, COLUMNA: 5: <a href="#" title="Ir a:País/Idioma" data-menu-new="modal" data-modal="button" data-modal-view=".fc ...
+
+
+
+		LINEA: 394, COLUMNA: 110: <a href='/es/empresas/cliente-on-business/' title="Ir a: Empresas" class="ibe-menu-new__link--tools...
+
+
+
+		LINEA: 394, COLUMNA: 338: <a href='/es/atencion-al-cliente/' title='Ir a Centro de Ayuda' class="ibe-menu-new__link--tools ico ...
+
+
+
+		LINEA: 394, COLUMNA: 545: <a href="#" title="¿Tienes dudas?" data-menu-new="modal" data-modal="button" data-modal-view=".fc-d ...
+
+
+
+		LINEA: 491, COLUMNA: 8: <a class="link link__regular" data-inforcheckin="unlock" title="Ver mas" href="#">		<span cl ...
+
+
+
+		LINEA: 499, COLUMNA: 13: <a class="link link__regular icon-inicio" href="/es/">	<span class="hideAccessible"> ...
+
+
+
+		LINEA: 512, COLUMNA: 8: <a class="link link__regular icon-compartir" data-placement="bottom" data-toggle="popover" title=""...
+
+
+
+		LINEA: 520, COLUMNA: 12: <a class="link link__regular facebook" title="Compartir en Facebook (Abre una ventana nueva)" 	 ...
+
+
+
+		LINEA: 524, COLUMNA: 12: <a class="link link__regular twitter" title="Compartir en Twitter (Abre una ventana nueva)"  ...
+
+
+
+		LINEA: 528, COLUMNA: 12: <a class="link link__regular linkedin" title="Compartir en LinkedIn (Abre una ventana nueva)" 	 ...
+
+
+
+		LINEA: 532, COLUMNA: 12: <a class="link link__regular google" title="Compartir en Google+ (Abre una ventana nueva)" 	 ...
+
+
+
+		LINEA: 538, COLUMNA: 9: <a class="link link__regular facebook" title="Compartir en Facebook (Abre una ventana nueva)"		 ...
+
+
+
+		LINEA: 542, COLUMNA: 9: <a class="link link__regular twitter" title="Compartir en Twitter (Abre una ventana nueva)"	 ...
+
+
+
+		LINEA: 546, COLUMNA: 9: <a class="link link__regular linkedin" title="Compartir en LinkedIn (Abre una ventana nueva)"		 ...
+
+
+
+		LINEA: 550, COLUMNA: 9: <a class="link link__regular google" title="Compartir en Google+ (Abre una ventana nueva)"		 ...
+
+
+
+		LINEA: 568, COLUMNA: 7: <a href="#" title="I. Participación en el programa" class="link">	I. Participación en el p ...
+
+
+
+		LINEA: 646, COLUMNA: 7: <a href="#" title="I. Obtención de Avios y Puntos Elite" class="link">	I. Obtención de Avi ...
+
+
+
+		LINEA: 708, COLUMNA: 7: <a href="#" title="II. Utilización de Avios" class="link">	II. Utilización de Avios</a>
+
+
+
+		LINEA: 790, COLUMNA: 37: <a href='/es/condiciones-transporte/' title='Condiciones Transporte'class="ibe-lat-menu__link" > ...
+
+
+
+		LINEA: 791, COLUMNA: 60: <a href='/es/recomendaciones-seguridad/' title='Tu seguridad es lo primero'class="ibe-lat-menu__li ...
+
+
+
+		LINEA: 792, COLUMNA: 113: <a href='/es/iberiaplus/condiciones/' title='Condiciones Generales del Programa Iberia Plus'class= ...
+
+
+
+		LINEA: 793, COLUMNA: 84: <a href='/es/precio-minimo-garantizado/' title='Mejor precio garantizado'class="ibe-lat-menu__link ...
+
+
+
+		LINEA: 794, COLUMNA: 62: <a href='/es/compromiso-servicio/' title='Compromiso de servicio'class="ibe-lat-menu__link" >		C ...
+
+
+
+		LINEA: 795, COLUMNA: 60: <a href='/es/derechos-pasajero/' title='Derechos del pasajero'class="ibe-lat-menu__link" >		Dere ...
+
+
+
+		LINEA: 796, COLUMNA: 59: <a href='/es/declaracion-de-accesibilidad/' title='Accesibilidad'class="ibe-lat-menu__link" >		A ...
+
+
+
+		LINEA: 797, COLUMNA: 51: <a href='/es/informacion-legal/' title='Información Legal'class="ibe-lat-menu__link" >		Informa ...
+
+
+
+		LINEA: 798, COLUMNA: 56: <a href='/es/informacion-sobre-privacidad/' title='Política de protección de datos personales'cl ...
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 367, COLUMNA: 739: <img src='/wcs/logos/iberia/logo-iberia.svg' alt='IBERIA.COM: los mejores precios para vuelos de Ibe ...
+
+
+
+		LINEA: 368, COLUMNA: 338: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+
+
+		LINEA: 368, COLUMNA: 1045: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 2713: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+
+
+		LINEA: 368, COLUMNA: 3293: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 3616: <img src='/wcs_statics/images/modules/ibe_header/business.png' alt='Icono On Business' title='Icono...
+
+
+
+		LINEA: 815, COLUMNA: 553: <img src='/wcs_statics/images/modules/ibe_footer/ico_iberia_joven.png' alt='Iberia Joven' title='Ibe ...
+
+
+
+		LINEA: 815, COLUMNA: 1072: <img src='/wcs/imagenes/iconos/ico_rrss.png' alt='Iberia Redes Sociales' title='IberiaRRSS-Footer-ES ...
+
+
+
+		LINEA: 815, COLUMNA: 1597: <img src='/wcs/imagenes/iconos/ico_bubble.png' alt='Tu opinión' title='TuOpinion-Footer-ES' class=' ...
+
+
+
+		LINEA: 826, COLUMNA: 2: <img src="/wcs/imagenes/experiencia_iberia/puntualidad/sello_puntualidad_es.svg" 		alt=" Puntualid ...
+
+
+
+		LINEA: 832, COLUMNA: 281: <img src='/wcs/logos/iberia/logo_iberia_pos.svg' alt='Logo de Iberia' title='Iberia' class='ibe-foot ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 367, COLUMNA: 739: <img src='/wcs/logos/iberia/logo-iberia.svg' alt='IBERIA.COM: los mejores precios para vuelos de Ibe ...
+
+
+
+		LINEA: 368, COLUMNA: 3616: <img src='/wcs_statics/images/modules/ibe_header/business.png' alt='Icono On Business' title='Icono...
+
+
+
+		LINEA: 815, COLUMNA: 553: <img src='/wcs_statics/images/modules/ibe_footer/ico_iberia_joven.png' alt='Iberia Joven' title='Ibe ...
+
+
+
+		LINEA: 815, COLUMNA: 1072: <img src='/wcs/imagenes/iconos/ico_rrss.png' alt='Iberia Redes Sociales' title='IberiaRRSS-Footer-ES ...
+
+
+
+		LINEA: 815, COLUMNA: 1597: <img src='/wcs/imagenes/iconos/ico_bubble.png' alt='Tu opinión' title='TuOpinion-Footer-ES' class=' ...
+
+
+
+		LINEA: 826, COLUMNA: 2: <img src="/wcs/imagenes/experiencia_iberia/puntualidad/sello_puntualidad_es.svg" 		alt=" Puntualid ...
+
+
+
+		LINEA: 832, COLUMNA: 281: <img src='/wcs/logos/iberia/logo_iberia_pos.svg' alt='Logo de Iberia' title='Iberia' class='ibe-foot ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 368, COLUMNA: 1045: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 3293: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 3616: <img src='/wcs_statics/images/modules/ibe_header/business.png' alt='Icono On Business' title='Icono...
+
+
+
+		LINEA: 815, COLUMNA: 553: <img src='/wcs_statics/images/modules/ibe_footer/ico_iberia_joven.png' alt='Iberia Joven' title='Ibe ...
+
+
+
+		LINEA: 815, COLUMNA: 1072: <img src='/wcs/imagenes/iconos/ico_rrss.png' alt='Iberia Redes Sociales' title='IberiaRRSS-Footer-ES ...
+
+
+
+		LINEA: 815, COLUMNA: 1597: <img src='/wcs/imagenes/iconos/ico_bubble.png' alt='Tu opinión' title='TuOpinion-Footer-ES' class=' ...
+
+
+
+		LINEA: 826, COLUMNA: 2: <img src="/wcs/imagenes/experiencia_iberia/puntualidad/sello_puntualidad_es.svg" 		alt=" Puntualid ...
+
+
+
+		LINEA: 832, COLUMNA: 281: <img src='/wcs/logos/iberia/logo_iberia_pos.svg' alt='Logo de Iberia' title='Iberia' class='ibe-foot ...
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+ 
+
+		LINEA: 367, COLUMNA: 739: <img src='/wcs/logos/iberia/logo-iberia.svg' alt='IBERIA.COM: los mejores precios para vuelos de Ibe ...
+
+
+
+		LINEA: 368, COLUMNA: 3616: <img src='/wcs_statics/images/modules/ibe_header/business.png' alt='Icono On Business' title='Icono...
+
+
+
+		LINEA: 815, COLUMNA: 553: <img src='/wcs_statics/images/modules/ibe_footer/ico_iberia_joven.png' alt='Iberia Joven' title='Ibe ...
+
+
+
+		LINEA: 815, COLUMNA: 1072: <img src='/wcs/imagenes/iconos/ico_rrss.png' alt='Iberia Redes Sociales' title='IberiaRRSS-Footer-ES ...
+
+
+
+		LINEA: 815, COLUMNA: 1597: <img src='/wcs/imagenes/iconos/ico_bubble.png' alt='Tu opinión' title='TuOpinion-Footer-ES' class=' ...
+
+
+
+		LINEA: 826, COLUMNA: 2: <img src="/wcs/imagenes/experiencia_iberia/puntualidad/sello_puntualidad_es.svg" 		alt=" Puntualid ...
+
+
+
+		LINEA: 832, COLUMNA: 281: <img src='/wcs/logos/iberia/logo_iberia_pos.svg' alt='Logo de Iberia' title='Iberia' class='ibe-foot ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+  
+
+	REVISAR: 122: input element label, type of "password" is not positioned close to control.
+
+ 
+
+		LINEA: 367, COLUMNA: 7243: <input name="pin" id="id_pin2" type="password" placeholder="PIN:" class="ibe_form__input-text" requi ...
+
+
+
+		LINEA: 416, COLUMNA: 8: <input id="pinMenuMobile" name="pin" type="password" placeholder="PIN:" class="ibe_form__input-text" ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 367, COLUMNA: 5235: <input id="search" name="search" maxlength="100" type="text" placeholder="Escribe aquí tus dudas" c ...
+
+
+
+		LINEA: 367, COLUMNA: 7007: <input name="user" id="id_number2" type="text" placeholder="Nº IB Plus:" class="ibe_form__input-tex ...
+
+
+
+		LINEA: 412, COLUMNA: 8: <input id="userMenuMobile" name="user" type="text" placeholder="Nº IB Plus:" class="ibe_form__input ...
+
+
+
+		LINEA: 474, COLUMNA: 37: <input name="search" id="dudes" type="text" placeholder="" class="ibe_form__input-text"/>
+
+  
+
+	REVISAR: 209: select element's label is not positioned close to control.
+
+ 
+
+		LINEA: 367, COLUMNA: 1601: <select id="mercado" name="mercado" data-selectmenu-edit="data-selectmenu-edit" data-placeholder="Pa ...
+
+
+
+		LINEA: 367, COLUMNA: 3405: <select id="idioma" name="idioma" data-selectmenu-edit="data-selectmenu-edit" data-placeholder="Idio ...
+
+
+
+		LINEA: 448, COLUMNA: 7: <select id="mercadoMobile" name="mercadoMobile" data-selectmenu-edit="data-selectmenu-edit" data-pla ...
+
+
+
+		LINEA: 451, COLUMNA: 75: <select id="idiomaMobile" name="idiomaMobile" data-selectmenu-edit="data-selectmenu-edit" data-place ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 367, COLUMNA: 739: <img src='/wcs/logos/iberia/logo-iberia.svg' alt='IBERIA.COM: los mejores precios para vuelos de Ibe ...
+
+
+
+		LINEA: 368, COLUMNA: 338: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+
+
+		LINEA: 368, COLUMNA: 1045: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 2713: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+
+
+		LINEA: 368, COLUMNA: 3293: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 3616: <img src='/wcs_statics/images/modules/ibe_header/business.png' alt='Icono On Business' title='Icono...
+
+
+
+		LINEA: 815, COLUMNA: 553: <img src='/wcs_statics/images/modules/ibe_footer/ico_iberia_joven.png' alt='Iberia Joven' title='Ibe ...
+
+
+
+		LINEA: 815, COLUMNA: 1072: <img src='/wcs/imagenes/iconos/ico_rrss.png' alt='Iberia Redes Sociales' title='IberiaRRSS-Footer-ES ...
+
+
+
+		LINEA: 815, COLUMNA: 1597: <img src='/wcs/imagenes/iconos/ico_bubble.png' alt='Tu opinión' title='TuOpinion-Footer-ES' class=' ...
+
+
+
+		LINEA: 826, COLUMNA: 2: <img src="/wcs/imagenes/experiencia_iberia/puntualidad/sello_puntualidad_es.svg" 		alt=" Puntualid ...
+
+
+
+		LINEA: 832, COLUMNA: 281: <img src='/wcs/logos/iberia/logo_iberia_pos.svg' alt='Logo de Iberia' title='Iberia' class='ibe-foot ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 367, COLUMNA: 5235: <input id="search" name="search" maxlength="100" type="text" placeholder="Escribe aquí tus dudas" c ...
+
+
+
+		LINEA: 367, COLUMNA: 7007: <input name="user" id="id_number2" type="text" placeholder="Nº IB Plus:" class="ibe_form__input-tex ...
+
+
+
+		LINEA: 367, COLUMNA: 7243: <input name="pin" id="id_pin2" type="password" placeholder="PIN:" class="ibe_form__input-text" requi ...
+
+
+
+		LINEA: 412, COLUMNA: 8: <input id="userMenuMobile" name="user" type="text" placeholder="Nº IB Plus:" class="ibe_form__input ...
+
+
+
+		LINEA: 416, COLUMNA: 8: <input id="pinMenuMobile" name="pin" type="password" placeholder="PIN:" class="ibe_form__input-text" ...
+
+
+
+		LINEA: 474, COLUMNA: 37: <input name="search" id="dudes" type="text" placeholder="" class="ibe_form__input-text"/>
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 2, COLUMNA: 74: <script type="text/javascript" src="//www.iberia.com/ibcomv3/rbrand/scripts/libs/iberialib.js"> </sc ...
+
+
+
+		LINEA: 27, COLUMNA: 2: <script type="text/javascript" src="/cs/ruxitagentjs_ICA2SVfqr_10157181213164340.js" data-dtconfig=" ...
+
+
+
+		LINEA: 27, COLUMNA: 512: <script src="https://service.maxymiser.net/cdn/iberia.com/js/mmapi.js"></script>
+
+
+
+		LINEA: 29, COLUMNA: 2: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':	new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 35, COLUMNA: 403: <script type="text/javascript">	var localeg = 'es';	var marketg = 'ES';	var quadrigam = 'CGPIB ...
+
+
+
+		LINEA: 52, COLUMNA: 2: <script type="text/javascript" src="/wcs_statics/js/libs.dependencies.js?v=2.40.0"></script>
+
+
+
+		LINEA: 53, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/init.js?v=2.40.0"></script>
+
+
+
+		LINEA: 54, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/manage-iberia-services.js?v=2.40.0"></scri ...
+
+
+
+		LINEA: 55, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/main.js?v=2.40.0"></script>
+
+
+
+		LINEA: 56, COLUMNA: 2: <script type="text/javascript" async defer src="/wcs_statics/js/core.js?v=2.40.0"></script>
+
+
+
+		LINEA: 57, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/localization/messages_es.js?v=2.40.0"></sc ...
+
+
+
+		LINEA: 58, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/localization/datepicker-locales/datepicker ...
+
+
+
+		LINEA: 60, COLUMNA: 2: <script type="text/javascript">		var jsonDLG, jsonDLG_NL;		function paintLoggedInfo(userMenuIbPl ...
+
+
+
+		LINEA: 349, COLUMNA: 2: <script type="text/javascript" src="/wcs_statics/js/satisfly.js?v=2.40.0" async></script>
+
+
+
+		LINEA: 350, COLUMNA: 2: <script type="text/javascript">		/*Inicialización de los objetos JSON*/		if(typeof(datalayer_ge ...
+
+
+
+		LINEA: 367, COLUMNA: 4421: <script type="text/javascript" src="//ayuda.iberia.com/av/jsonp/header_autocompleter.js"></script>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 367, COLUMNA: 739: <img src='/wcs/logos/iberia/logo-iberia.svg' alt='IBERIA.COM: los mejores precios para vuelos de Ibe ...
+
+
+
+		LINEA: 368, COLUMNA: 338: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+
+
+		LINEA: 368, COLUMNA: 1045: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 2713: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+
+
+		LINEA: 368, COLUMNA: 3293: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 3616: <img src='/wcs_statics/images/modules/ibe_header/business.png' alt='Icono On Business' title='Icono...
+
+
+
+		LINEA: 815, COLUMNA: 553: <img src='/wcs_statics/images/modules/ibe_footer/ico_iberia_joven.png' alt='Iberia Joven' title='Ibe ...
+
+
+
+		LINEA: 815, COLUMNA: 1072: <img src='/wcs/imagenes/iconos/ico_rrss.png' alt='Iberia Redes Sociales' title='IberiaRRSS-Footer-ES ...
+
+
+
+		LINEA: 815, COLUMNA: 1597: <img src='/wcs/imagenes/iconos/ico_bubble.png' alt='Tu opinión' title='TuOpinion-Footer-ES' class=' ...
+
+
+
+		LINEA: 826, COLUMNA: 2: <img src="/wcs/imagenes/experiencia_iberia/puntualidad/sello_puntualidad_es.svg" 		alt=" Puntualid ...
+
+
+
+		LINEA: 832, COLUMNA: 281: <img src='/wcs/logos/iberia/logo_iberia_pos.svg' alt='Logo de Iberia' title='Iberia' class='ibe-foot ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 367, COLUMNA: 739: <img src='/wcs/logos/iberia/logo-iberia.svg' alt='IBERIA.COM: los mejores precios para vuelos de Ibe ...
+
+
+
+		LINEA: 368, COLUMNA: 338: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+
+
+		LINEA: 368, COLUMNA: 1045: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 2713: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-header-new ...
+
+
+
+		LINEA: 368, COLUMNA: 3293: <img src="/wcs_statics/images/modules/icons/svgs/editar_perfil_red.svg" alt="" class="ibe-login__log ...
+
+
+
+		LINEA: 368, COLUMNA: 3616: <img src='/wcs_statics/images/modules/ibe_header/business.png' alt='Icono On Business' title='Icono...
+
+
+
+		LINEA: 815, COLUMNA: 553: <img src='/wcs_statics/images/modules/ibe_footer/ico_iberia_joven.png' alt='Iberia Joven' title='Ibe ...
+
+
+
+		LINEA: 815, COLUMNA: 1072: <img src='/wcs/imagenes/iconos/ico_rrss.png' alt='Iberia Redes Sociales' title='IberiaRRSS-Footer-ES ...
+
+
+
+		LINEA: 815, COLUMNA: 1597: <img src='/wcs/imagenes/iconos/ico_bubble.png' alt='Tu opinión' title='TuOpinion-Footer-ES' class=' ...
+
+
+
+		LINEA: 826, COLUMNA: 2: <img src="/wcs/imagenes/experiencia_iberia/puntualidad/sello_puntualidad_es.svg" 		alt=" Puntualid ...
+
+
+
+		LINEA: 832, COLUMNA: 281: <img src='/wcs/logos/iberia/logo_iberia_pos.svg' alt='Logo de Iberia' title='Iberia' class='ibe-foot ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 2, COLUMNA: 74: <script type="text/javascript" src="//www.iberia.com/ibcomv3/rbrand/scripts/libs/iberialib.js"> </sc ...
+
+
+
+		LINEA: 27, COLUMNA: 2: <script type="text/javascript" src="/cs/ruxitagentjs_ICA2SVfqr_10157181213164340.js" data-dtconfig=" ...
+
+
+
+		LINEA: 27, COLUMNA: 512: <script src="https://service.maxymiser.net/cdn/iberia.com/js/mmapi.js"></script>
+
+
+
+		LINEA: 29, COLUMNA: 2: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':	new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 35, COLUMNA: 403: <script type="text/javascript">	var localeg = 'es';	var marketg = 'ES';	var quadrigam = 'CGPIB ...
+
+
+
+		LINEA: 52, COLUMNA: 2: <script type="text/javascript" src="/wcs_statics/js/libs.dependencies.js?v=2.40.0"></script>
+
+
+
+		LINEA: 53, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/init.js?v=2.40.0"></script>
+
+
+
+		LINEA: 54, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/manage-iberia-services.js?v=2.40.0"></scri ...
+
+
+
+		LINEA: 55, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/main.js?v=2.40.0"></script>
+
+
+
+		LINEA: 56, COLUMNA: 2: <script type="text/javascript" async defer src="/wcs_statics/js/core.js?v=2.40.0"></script>
+
+
+
+		LINEA: 57, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/localization/messages_es.js?v=2.40.0"></sc ...
+
+
+
+		LINEA: 58, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/localization/datepicker-locales/datepicker ...
+
+
+
+		LINEA: 60, COLUMNA: 2: <script type="text/javascript">		var jsonDLG, jsonDLG_NL;		function paintLoggedInfo(userMenuIbPl ...
+
+
+
+		LINEA: 349, COLUMNA: 2: <script type="text/javascript" src="/wcs_statics/js/satisfly.js?v=2.40.0" async></script>
+
+
+
+		LINEA: 350, COLUMNA: 2: <script type="text/javascript">		/*Inicialización de los objetos JSON*/		if(typeof(datalayer_ge ...
+
+
+
+		LINEA: 367, COLUMNA: 4421: <script type="text/javascript" src="//ayuda.iberia.com/av/jsonp/header_autocompleter.js"></script>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 2, COLUMNA: 74: <script type="text/javascript" src="//www.iberia.com/ibcomv3/rbrand/scripts/libs/iberialib.js"> </sc ...
+
+
+
+		LINEA: 27, COLUMNA: 2: <script type="text/javascript" src="/cs/ruxitagentjs_ICA2SVfqr_10157181213164340.js" data-dtconfig=" ...
+
+
+
+		LINEA: 27, COLUMNA: 512: <script src="https://service.maxymiser.net/cdn/iberia.com/js/mmapi.js"></script>
+
+
+
+		LINEA: 29, COLUMNA: 2: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':	new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 35, COLUMNA: 403: <script type="text/javascript">	var localeg = 'es';	var marketg = 'ES';	var quadrigam = 'CGPIB ...
+
+
+
+		LINEA: 52, COLUMNA: 2: <script type="text/javascript" src="/wcs_statics/js/libs.dependencies.js?v=2.40.0"></script>
+
+
+
+		LINEA: 53, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/init.js?v=2.40.0"></script>
+
+
+
+		LINEA: 54, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/manage-iberia-services.js?v=2.40.0"></scri ...
+
+
+
+		LINEA: 55, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/main.js?v=2.40.0"></script>
+
+
+
+		LINEA: 56, COLUMNA: 2: <script type="text/javascript" async defer src="/wcs_statics/js/core.js?v=2.40.0"></script>
+
+
+
+		LINEA: 57, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/localization/messages_es.js?v=2.40.0"></sc ...
+
+
+
+		LINEA: 58, COLUMNA: 2: <script type="text/javascript" defer src="/wcs_statics/js/localization/datepicker-locales/datepicker ...
+
+
+
+		LINEA: 60, COLUMNA: 2: <script type="text/javascript">		var jsonDLG, jsonDLG_NL;		function paintLoggedInfo(userMenuIbPl ...
+
+
+
+		LINEA: 349, COLUMNA: 2: <script type="text/javascript" src="/wcs_statics/js/satisfly.js?v=2.40.0" async></script>
+
+
+
+		LINEA: 350, COLUMNA: 2: <script type="text/javascript">		/*Inicialización de los objetos JSON*/		if(typeof(datalayer_ge ...
+
+
+
+		LINEA: 367, COLUMNA: 4421: <script type="text/javascript" src="//ayuda.iberia.com/av/jsonp/header_autocompleter.js"></script>
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 5, COLUMNA: 2: <title>Condiciones generales del programa Iberia Plus - Iberia</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 366, COLUMNA: 88: <a href="#" title="Cerrar" data-cookies="close" class="ibe-cookies__close"><span class="hideAccessib ...
+
+
+
+		LINEA: 366, COLUMNA: 481: <ahref='#' title='Política de cookies'target='_blank' data-contenttype='CustomLink_C' data-cont ...
+
+
+
+		LINEA: 367, COLUMNA: 622: <a title="Vuelos baratos Iberia" class="ibe-header-new__logo-link" href='/es/ '><figure class="ibe-h ...
+
+
+
+		LINEA: 367, COLUMNA: 1043: <a href="#" title="" data-toggle="collapse" data-target="#tool_lang" class="ibe-header-new__link ibe ...
+
+
+
+		LINEA: 367, COLUMNA: 3906: <a href='/es/empresas/cliente-on-business/' title="Ir a: Empresas" class="ibe-header-new__link ibe-h ...
+
+
+
+		LINEA: 367, COLUMNA: 4202: <a href='/es/atencion-al-cliente/' title='Ir a Centro de Ayuda' class="ibe-header-new__link ibe-head ...
+
+
+
+		LINEA: 367, COLUMNA: 5483: <a data-dudes="dudes" title="¿Tienes dudas?" class="ibe-header-new__link ibe-header-new__link-icon...
+
+
+
+		LINEA: 367, COLUMNA: 5779: <a href="#" title="" data-toggle="collapse" data-target="#tool_login" class="ibe-header-new__link ib ...
+
+
+
+		LINEA: 367, COLUMNA: 6026: <a href="#" title="" data-modal="button" data-modal-view=".fc-dialog-login" class="ibe-header-new__l ...
+
+
+
+		LINEA: 367, COLUMNA: 7460: <a href="/web/forgetPin.do" title="¿Has olvidado o no tienes un PIN?" target="_self">¿Has olvidado ...
+
+
+
+		LINEA: 367, COLUMNA: 8703: <a href="/es/iberiaplus/registrese/" title="Regístrate ahora en Iberia Plus" target="_self">Regíst ...
+
+
+
+		LINEA: 368, COLUMNA: 126: <a href="#" title="User" data-toggle="collapse" data-target="#tool_logged" data-focusin="data-focusi ...
+
+
+
+		LINEA: 368, COLUMNA: 1709: <a href="/es/iberiaplus/mi-iberia-plus/" title="Mi Iberia Plus">Mi Iberia Plus</a>
+
+
+
+		LINEA: 368, COLUMNA: 1855: <a href="/es/iberiaplus/mis-avios/" title="Ir a tus Avios" target="_self">Tus Avios</a>
+
+
+
+		LINEA: 368, COLUMNA: 2006: <a href="/es/iberiaplus/disfrutar-avios/" title="Ir a reservar vuelo con Avios" target="_self">Reser ...
+
+
+
+		LINEA: 368, COLUMNA: 2201: <a href="#" title="Cerrar Sesión">Cerrar Sesión</a>
+
+
+
+		LINEA: 368, COLUMNA: 2452: <a id ='OBHeader' href="#" title="User" data-toggle="collapse" data-focusin="data-focusin" data-targ ...
+
+
+
+		LINEA: 373, COLUMNA: 130: <a href='https://www.iberia.com/web/ciplistadoTarjetas.do?tabId=&menuId=IBHMPI' title='Gestión de t ...
+
+
+
+		LINEA: 373, COLUMNA: 328: <a href='https://www.iberia.com/web/redemptionFromCIPPTS.do?menuId=CIPPTS' title='Reservar vuelos co ...
+
+
+
+		LINEA: 373, COLUMNA: 565: <a href="#" title="Cerrar Sesión">Cerrar Sesión</a>
+
+
+
+		LINEA: 374, COLUMNA: 171: <a href="#" title="Ir a: Viaja" aria-expanded="false" data-link="menu" data-open-menu-new="145436000 ...
+
+
+
+		LINEA: 374, COLUMNA: 606: <a href="#" title="Ir a: Viaja" aria-expanded="false" data-link="menu" data-close-menu-new="14543600 ...
+
+
+
+		LINEA: 374, COLUMNA: 845: <a href="#" title="Ir a: Buscar" aria-expanded="false" data-link="menu" data-open-menu-new="14543600 ...
+
+
+
+		LINEA: 375, COLUMNA: 60: <a href="#" title="Ir a: Buscar" aria-expanded="false" data-link="menu" data-close-menu-new="1454360 ...
+
+
+
+		LINEA: 375, COLUMNA: 323: <a href='/es/buscador-vuelos/' title="Ir a: Buscar vuelos" class="ibe-menu-new__link--submenu"><span ...
+
+
+
+		LINEA: 375, COLUMNA: 545: <a href='/es/puente-aereo/' title="Ir a: Puente Aéreo" class="ibe-menu-new__link--submenu"><span cl ...
+
+
+
+		LINEA: 375, COLUMNA: 765: <a href='/es/vuelo+hotel/' title="Ir a: Vuelo + Hotel" class="ibe-menu-new__link--submenu"><span cla ...
+
+
+
+		LINEA: 375, COLUMNA: 984: <a href='/es/coches/' title="Ir a: Vuelo + Coche" class="ibe-menu-new__link--submenu"><span class="i ...
+
+
+
+		LINEA: 375, COLUMNA: 1179: <a href='http://hotel.iberia.com/index.html?aid=380264;lang=es;label=ibeair-homepage-header' title=" ...
+
+
+
+		LINEA: 375, COLUMNA: 1467: <a href='https://www.rentacar-iberia.com/?CID=pcaeses-20180625-paginadeinicio-001' title="Coches [Ab ...
+
+
+
+		LINEA: 375, COLUMNA: 1759: <a href='https://www.magroup-online.com/wl/iba/es/' title="Seguros de viaje [Abre en ventana nueva]" ...
+
+
+
+		LINEA: 375, COLUMNA: 2041: <a href='/es/parking-aeropuerto-aena/' title="Ir a: Parking en aeropuerto" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 375, COLUMNA: 2269: <a href='https://www.iberiacards.es/web/solicitariberiasendooro/l1/?utm_source=iberia.com&utm_medium ...
+
+
+
+		LINEA: 375, COLUMNA: 2664: <a href="#" title="Ir a: Ideas para viajar" aria-expanded="false" data-link="menu" data-open-menu-ne ...
+
+
+
+		LINEA: 376, COLUMNA: 60: <a href="#" title="Ir a: Ideas para viajar" aria-expanded="false" data-link="menu" data-close-menu-n ...
+
+
+
+		LINEA: 376, COLUMNA: 346: <a href='/es/vuelos-baratos/' title="Ir a: Vuelos baratos" class="ibe-menu-new__link--submenu"><span ...
+
+
+
+		LINEA: 376, COLUMNA: 551: <a href='/es/vuelos-baratos/meses/' title="Ir a: Buscar por meses" class="ibe-menu-new__link--submen ...
+
+
+
+		LINEA: 376, COLUMNA: 783: <a href='/web/obsmenu.do?menuId=LANDPR&language=es' title="Ir a: Vuelos baratos" class="ibe-menu-new ...
+
+
+
+		LINEA: 376, COLUMNA: 1010: <a href='/es/guia-de-destinos/' title="Ir a: Guía de destinos" class="ibe-menu-new__link--submenu"> ...
+
+
+
+		LINEA: 376, COLUMNA: 1223: <a href='/es/vuelos-baratos/festividades/' title="Ir a: Próximas fiestas" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 376, COLUMNA: 1447: <a href='/es/vuelos-baratos/temporadas/' title="Ir a: Estaciones del año" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 376, COLUMNA: 1673: <a href='/es/vuelos-baratos/experiencias/' title="Ir a: Experiencias" class="ibe-menu-new__link--sub ...
+
+
+
+		LINEA: 376, COLUMNA: 1887: <a href='/es/bonos-descuento/' title="Ir a: Códigos descuento" class="ibe-menu-new__link--submenu"> ...
+
+
+
+		LINEA: 376, COLUMNA: 2101: <a href='/es/grupos/' title="Ir a: Reserva de grupos" class="ibe-menu-new__link--submenu"><span clas ...
+
+
+
+		LINEA: 376, COLUMNA: 2315: <a href='/tarjeta-regalo/' title="Tarjetas regalo [Abre una nueva ventana]"target="_blank" class=" ...
+
+
+
+		LINEA: 376, COLUMNA: 2572: <a href="#" title="Ir a: Iberia Joven" aria-expanded="false" data-link="menu" data-open-menu-new="14 ...
+
+
+
+		LINEA: 377, COLUMNA: 60: <a href="#" title="Ir a: Iberia Joven" aria-expanded="false" data-link="menu" data-close-menu-new="1 ...
+
+
+
+		LINEA: 377, COLUMNA: 1126: <a href="#" title="Ir a: Más que vuelos" aria-expanded="false" data-link="menu" data-open-menu-new= ...
+
+
+
+		LINEA: 378, COLUMNA: 60: <a href="#" title="Ir a: Más que vuelos" aria-expanded="false" data-link="menu" data-close-menu-new ...
+
+
+
+		LINEA: 378, COLUMNA: 329: <a href='/es/bus-and-fly/' title="Ir a: Bus & Fly" class="ibe-menu-new__link--submenu"><span class=" ...
+
+
+
+		LINEA: 378, COLUMNA: 521: <a href='/es/billete-combinado-tren-avion/' title="Ir a: Train & Fly" class="ibe-menu-new__link--sub ...
+
+
+
+		LINEA: 378, COLUMNA: 734: <a href='/es/vuelos-especiales/' title="Ir a: Vuelos especiales" class="ibe-menu-new__link--submenu" ...
+
+
+
+		LINEA: 378, COLUMNA: 967: <a href="#" title="Ir a: Tus vuelos" aria-expanded="false" data-link="menu" data-open-menu-new="1454 ...
+
+
+
+		LINEA: 378, COLUMNA: 1412: <a href="#" title="Ir a: Tus vuelos" aria-expanded="false" data-link="menu" data-close-menu-new="145 ...
+
+
+
+		LINEA: 378, COLUMNA: 1661: <a href="#" title="Ir a: 
+
+	REVISAR:-in online" aria-expanded="false" data-link="menu" data-open-menu-new= ...
+
+
+
+		LINEA: 379, COLUMNA: 60: <a href="#" title="Ir a: 
+
+	REVISAR:-in online" aria-expanded="false" data-link="menu" data-close-menu-new ...
+
+
+
+		LINEA: 379, COLUMNA: 334: <a href='/es/autocheckin-online/' title="Ir a: 
+
+	REVISAR:-in online" class="ibe-menu-new__link--submenu"> ...
+
+
+
+		LINEA: 379, COLUMNA: 545: <a href='/es/informacion-checkin/' title="Ir a: Información" class="ibe-menu-new__link--submenu"><s ...
+
+
+
+		LINEA: 379, COLUMNA: 762: <a href="#" title="Ir a: Reservas" aria-expanded="false" data-link="menu" data-open-menu-new="146295 ...
+
+
+
+		LINEA: 380, COLUMNA: 60: <a href="#" title="Ir a: Reservas" aria-expanded="false" data-link="menu" data-close-menu-new="14629 ...
+
+
+
+		LINEA: 380, COLUMNA: 320: <a href='/es/gestion-de-reservas/' title="Ir a: Gestiona tu reserva" class="ibe-menu-new__link--subm ...
+
+
+
+		LINEA: 380, COLUMNA: 792: <a href="#" title="Ir a: Información sobre vuelos" aria-expanded="false" data-link="menu" data-open ...
+
+
+
+		LINEA: 381, COLUMNA: 60: <a href="#" title="Ir a: Información sobre vuelos" aria-expanded="false" data-link="menu" data-clos ...
+
+
+
+		LINEA: 381, COLUMNA: 354: <a href='/es/llegadas-y-salidas/' title="Ir a: Estado de vuelos" class="ibe-menu-new__link--submenu" ...
+
+
+
+		LINEA: 381, COLUMNA: 567: <a href='/es/horarios/' title="Ir a: Horarios de vuelos" class="ibe-menu-new__link--submenu"><span c ...
+
+
+
+		LINEA: 381, COLUMNA: 774: <a href='/es/ultima-hora-de-nuestros-vuelos/' title="Ir a: Última hora de nuestros vuelos" class="i ...
+
+
+
+		LINEA: 381, COLUMNA: 1048: <a href="#" title="Ir a: Antes de viajar" aria-expanded="false" data-link="menu" data-open-menu-new= ...
+
+
+
+		LINEA: 381, COLUMNA: 1503: <a href="#" title="Ir a: Antes de viajar" aria-expanded="false" data-link="menu" data-close-menu-new ...
+
+
+
+		LINEA: 381, COLUMNA: 1762: <a href="#" title="Ir a: Todo sobre equipaje" aria-expanded="false" data-link="menu" data-open-menu- ...
+
+
+
+		LINEA: 382, COLUMNA: 60: <a href="#" title="Ir a: Todo sobre equipaje" aria-expanded="false" data-link="menu" data-close-menu ...
+
+
+
+		LINEA: 382, COLUMNA: 347: <a href='/es/equipajes/' title="Ir a: Prepara tu equipaje" class="ibe-menu-new__link--submenu"><span ...
+
+
+
+		LINEA: 382, COLUMNA: 557: <a href='/es/equipajes/de-mano/' title="Ir a: Equipaje de mano" class="ibe-menu-new__link--submenu"> ...
+
+
+
+		LINEA: 382, COLUMNA: 769: <a href='/es/equipajes/franquicia-bodega/' title="Ir a: Equipaje facturable" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 382, COLUMNA: 997: <a href='/es/equipajes/articulos-peligrosos/' title="Ir a: Equipajes peligrosos" class="ibe-menu-new ...
+
+
+
+		LINEA: 382, COLUMNA: 1230: <a href='/es/equipajes/dispositivos-electronicos/' title="Ir a: Dispositivos electrónicos" class="i ...
+
+
+
+		LINEA: 382, COLUMNA: 1480: <a href='/es/equipajes/especiales/' title="Ir a: Equipajes especiales" class="ibe-menu-new__link--su ...
+
+
+
+		LINEA: 382, COLUMNA: 1703: <a href='/es/equipajes/valor-declarado/' title="Ir a: Equipaje de valor declarado" class="ibe-menu-n ...
+
+
+
+		LINEA: 382, COLUMNA: 1956: <a href="#" title="Ir a: Preparación del viaje" aria-expanded="false" data-link="menu" data-open-me ...
+
+
+
+		LINEA: 383, COLUMNA: 60: <a href="#" title="Ir a: Preparación del viaje" aria-expanded="false" data-link="menu" data-close-m ...
+
+
+
+		LINEA: 383, COLUMNA: 353: <a href='/es/viajar-con-iberia/menores/' title="Ir a: Menores viajando solos" class="ibe-menu-new__l ...
+
+
+
+		LINEA: 383, COLUMNA: 585: <a href='/es/viajar-con-iberia/documentacion/' title="Ir a: Documentación" class="ibe-menu-new__lin ...
+
+
+
+		LINEA: 383, COLUMNA: 807: <a href='/es/viajar-con-iberia/ninos-y-bebes/' title="Ir a: Niños y bebés" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 383, COLUMNA: 1031: <a href='/es/viajar-con-iberia/embarazo/' title="Ir a: Mujeres embarazadas" class="ibe-menu-new__lin ...
+
+
+
+		LINEA: 383, COLUMNA: 1258: <a href='/es/viajar-con-iberia/animales/' title="Ir a: Animales domésticos" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 383, COLUMNA: 1487: <a href='/es/viajar-con-iberia/necesidades-especiales/' title="Ir a: Pasajeros con necesidades espec ...
+
+
+
+		LINEA: 383, COLUMNA: 1762: <a href='/es/reserva-de-asientos/' title="Ir a: Reserva anticipada asientos" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 383, COLUMNA: 2009: <a href="#" title="Ir a: En el aeropuerto" aria-expanded="false" data-link="menu" data-open-menu-new ...
+
+
+
+		LINEA: 384, COLUMNA: 60: <a href="#" title="Ir a: En el aeropuerto" aria-expanded="false" data-link="menu" data-close-menu-ne ...
+
+
+
+		LINEA: 384, COLUMNA: 341: <a href='/es/hora-limite/' title="Ir a: Hora Límite" class="ibe-menu-new__link--submenu"><span clas ...
+
+
+
+		LINEA: 384, COLUMNA: 539: <a href='/es/servicios-vip/' title="Ir a: Servicios VIP" class="ibe-menu-new__link--submenu"><span c ...
+
+
+
+		LINEA: 384, COLUMNA: 741: <a href='/es/viajar-con-iberia/aeropuerto-de-madrid/' title="Ir a: Aeropuerto de Madrid" class="ibe- ...
+
+
+
+		LINEA: 384, COLUMNA: 982: <a href='/es/viajar-con-iberia/aeropuerto-de-barcelona/' title="Ir a: Aeropuerto de Barcelona" class ...
+
+
+
+		LINEA: 384, COLUMNA: 1251: <a href="#" title="Ir a: Experiencia Iberia" aria-expanded="false" data-link="menu" data-open-menu-n ...
+
+
+
+		LINEA: 384, COLUMNA: 1712: <a href="#" title="Ir a: Experiencia Iberia" aria-expanded="false" data-link="menu" data-close-menu- ...
+
+
+
+		LINEA: 384, COLUMNA: 1977: <a href="#" title="Ir a: Viajar con clase" aria-expanded="false" data-link="menu" data-open-menu-new ...
+
+
+
+		LINEA: 385, COLUMNA: 60: <a href="#" title="Ir a: Viajar con clase" aria-expanded="false" data-link="menu" data-close-menu-ne ...
+
+
+
+		LINEA: 385, COLUMNA: 1813: <a href="#" title="Ir a: A bordo" aria-expanded="false" data-link="menu" data-open-menu-new="1462955 ...
+
+
+
+		LINEA: 386, COLUMNA: 60: <a href="#" title="Ir a: A bordo" aria-expanded="false" data-link="menu" data-close-menu-new="146295 ...
+
+
+
+		LINEA: 386, COLUMNA: 1827: <a href="#" title="Ir a: Flota" aria-expanded="false" data-link="menu" data-open-menu-new="146295584 ...
+
+
+
+		LINEA: 387, COLUMNA: 60: <a href="#" title="Ir a: Flota" aria-expanded="false" data-link="menu" data-close-menu-new="14629558 ...
+
+
+
+		LINEA: 387, COLUMNA: 1342: <a href="#" title="Ir a: Nuestras alianzas" aria-expanded="false" data-link="menu" data-open-menu-ne ...
+
+
+
+		LINEA: 388, COLUMNA: 60: <a href="#" title="Ir a: Nuestras alianzas" aria-expanded="false" data-link="menu" data-close-menu-n ...
+
+
+
+		LINEA: 388, COLUMNA: 1218: <a href="#" title="Ir a: Iberia Plus" aria-expanded="false" data-link="menu" data-open-menu-new="145 ...
+
+
+
+		LINEA: 388, COLUMNA: 1665: <a href="#" title="Ir a: Iberia Plus" aria-expanded="false" data-link="menu" data-close-menu-new="14 ...
+
+
+
+		LINEA: 388, COLUMNA: 1916: <a href='/es/iberiaplus/disfrutar-avios/' title="Ir a: Calculadora de Avios" class="ibe-menu-new__ti ...
+
+
+
+		LINEA: 388, COLUMNA: 2179: <a href="#" title="Ir a: Mi Perfil" aria-expanded="false" data-link="menu" data-open-menu-new="14543 ...
+
+
+
+		LINEA: 389, COLUMNA: 77: <a href="#" title="Ir a: Mi Perfil" aria-expanded="false" data-link="menu" data-close-menu-new="1454 ...
+
+
+
+		LINEA: 389, COLUMNA: 592: <a href='/es/iberiaplus/datos-personales/' title="Ir a: Datos de usuario" class="ibe-menu-new__link- ...
+
+
+
+		LINEA: 389, COLUMNA: 1317: <a href='/es/iberiaplus/preferencias/' title="Ir a: Preferencias" class="ibe-menu-new__link--submenu ...
+
+
+
+		LINEA: 389, COLUMNA: 2291: <a href="#" title="Ir a: Conoce Iberia Plus" aria-expanded="false" data-link="menu" data-open-menu-n ...
+
+
+
+		LINEA: 390, COLUMNA: 60: <a href="#" title="Ir a: Conoce Iberia Plus" aria-expanded="false" data-link="menu" data-close-menu- ...
+
+
+
+		LINEA: 390, COLUMNA: 341: <a href='/es/iberiaplus/' title="Ir a: Todo Iberia Plus" class="ibe-menu-new__link--submenu"><span c ...
+
+
+
+		LINEA: 390, COLUMNA: 546: <a href='/es/iberiaplus/que-es/' title="Ir a: Qué es" class="ibe-menu-new__link--submenu"><span cla ...
+
+
+
+		LINEA: 390, COLUMNA: 740: <a href='/es/iberiaplus/ventajas/' title="Ir a: Tarjetas Iberia Plus" class="ibe-menu-new__link--sub ...
+
+
+
+		LINEA: 390, COLUMNA: 962: <a href='/es/iberiaplus/kids/' title="Ir a: Iberia Plus Kids" class="ibe-menu-new__link--submenu"><s ...
+
+
+
+		LINEA: 390, COLUMNA: 1172: <a href='/es/iberiaplus/ayuda/dudas/' title="Ir a: Ayuda de Iberia Plus" class="ibe-menu-new__link-- ...
+
+
+
+		LINEA: 390, COLUMNA: 1652: <a href='https://www.iberia.com/navidad2018/?language=es' title="Navidad 2018"target="_blank" clas ...
+
+
+
+		LINEA: 390, COLUMNA: 1919: <a href="#" title="Ir a: Avios y Puntos Elite" aria-expanded="false" data-link="menu" data-open-menu ...
+
+
+
+		LINEA: 391, COLUMNA: 60: <a href="#" title="Ir a: Avios y Puntos Elite" aria-expanded="false" data-link="menu" data-close-men ...
+
+
+
+		LINEA: 391, COLUMNA: 345: <a href='/es/iberiaplus/como-funciona/' title="Ir a: Cómo funciona Avios" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 391, COLUMNA: 572: <a href='/es/iberiaplus/comprar-transferir-avios/' title="Ir a: Comprar, regalar y transferir Avios" ...
+
+
+
+		LINEA: 391, COLUMNA: 840: <a href='/es/iberiaplus/obtener-avios/' title="Ir a: Obtener Avios" class="ibe-menu-new__link--subme ...
+
+
+
+		LINEA: 391, COLUMNA: 1053: <a href='/es/iberiaplus/utilizar-mis-avios/' title="Ir a: Utilizar mis Avios" class="ibe-menu-new__l ...
+
+
+
+		LINEA: 391, COLUMNA: 1281: <a href='/es/hoteles-con-avios/' title="Ir a: Hoteles, coches y experiencias" class="ibe-menu-new__l ...
+
+
+
+		LINEA: 391, COLUMNA: 1521: <a href='/es/iberiaplus/avios-no-anotados/' title="Ir a: Avios no anotados" class="ibe-menu-new__lin ...
+
+
+
+		LINEA: 391, COLUMNA: 1746: <a href='/es/iberiaplus/que-son/' title="Ir a: Qué son Puntos Elite" class="ibe-menu-new__link--sub ...
+
+
+
+		LINEA: 391, COLUMNA: 1969: <a href='/es/iberiaplus/obtener-puntos-elite/' title="Ir a: Obtener Puntos Elite" class="ibe-menu-ne ...
+
+
+
+		LINEA: 391, COLUMNA: 2214: <a href="#" title="Ir a: Partners Iberia Plus" aria-expanded="false" data-link="menu" data-open-menu ...
+
+
+
+		LINEA: 392, COLUMNA: 60: <a href="#" title="Ir a: Partners Iberia Plus" aria-expanded="false" data-link="menu" data-close-men ...
+
+
+
+		LINEA: 392, COLUMNA: 345: <a href='/es/iberiaplus/partners/ofertas/' title="Ir a: Partners" class="ibe-menu-new__link--submenu ...
+
+
+
+		LINEA: 392, COLUMNA: 551: <a href='/es/iberiaplus/partners/vuelos/' title="Ir a: Vuelos" class="ibe-menu-new__link--submenu">< ...
+
+
+
+		LINEA: 392, COLUMNA: 752: <a href='/es/iberiaplus/partners/hoteles/' title="Ir a: Hoteles" class="ibe-menu-new__link--submenu" ...
+
+
+
+		LINEA: 392, COLUMNA: 956: <a href='/es/iberiaplus/partners/finanzas/' title="Ir a: Financiero" class="ibe-menu-new__link--subm ...
+
+
+
+		LINEA: 392, COLUMNA: 1167: <a href='/es/iberiaplus/partners/ocio-compras/' title="Ir a: Ocio y compras" class="ibe-menu-new__li ...
+
+
+
+		LINEA: 392, COLUMNA: 1390: <a href='/es/iberiaplus/partners/gasolineras/' title="Ir a: Gasolineras" class="ibe-menu-new__link-- ...
+
+
+
+		LINEA: 392, COLUMNA: 1606: <a href='/es/iberiaplus/partners/coches/' title="Ir a: Coches y Movilidad" class="ibe-menu-new__link ...
+
+
+
+		LINEA: 392, COLUMNA: 1831: <a href='/es/iberiaplus/partners/gastronomia/' title="Ir a: Gastronomía" class="ibe-menu-new__link- ...
+
+
+
+		LINEA: 392, COLUMNA: 2049: <a href='/es/iberiaplus/partners/seguros/' title="Ir a: Seguros" class="ibe-menu-new__link--submenu" ...
+
+
+
+		LINEA: 392, COLUMNA: 2253: <a href='/web/obsmenu.do?menuId=ESTORE' title="IberiaPluStore" class="ibe-menu-new__link--submenu" r ...
+
+
+
+		LINEA: 392, COLUMNA: 2869: <a href='/es/buscador-vuelos/' title="Reserva tu vuelo" class="ibe-menu-new__link--links icon-vuelos ...
+
+
+
+		LINEA: 392, COLUMNA: 3080: <a href='/es/autocheckin-online/' title="Accede al 
+
+	REVISAR:-in" class="ibe-menu-new__link--links icon-c ...
+
+
+
+		LINEA: 392, COLUMNA: 3307: <a href='/es/gestion-de-reservas/' title="Gestiona tu reserva" class="ibe-menu-new__link--links icon ...
+
+
+
+		LINEA: 392, COLUMNA: 3541: <a href='/es/llegadas-y-salidas/' title="Llegadas y Salidas" class="ibe-menu-new__link--links icon-s ...
+
+
+
+		LINEA: 393, COLUMNA: 5: <a href="#" title="Ir a:País/Idioma" data-menu-new="modal" data-modal="button" data-modal-view=".fc ...
+
+
+
+		LINEA: 394, COLUMNA: 110: <a href='/es/empresas/cliente-on-business/' title="Ir a: Empresas" class="ibe-menu-new__link--tools...
+
+
+
+		LINEA: 394, COLUMNA: 338: <a href='/es/atencion-al-cliente/' title='Ir a Centro de Ayuda' class="ibe-menu-new__link--tools ico ...
+
+
+
+		LINEA: 394, COLUMNA: 545: <a href="#" title="¿Tienes dudas?" data-menu-new="modal" data-modal="button" data-modal-view=".fc-d ...
+
+
+
+		LINEA: 419, COLUMNA: 35: <a href="/web/forgetPin.do" title="¿Has olvidado o no tienes un PIN?" target="_self">¿Has olvidado ...
+
+
+
+		LINEA: 421, COLUMNA: 91: <a href="/es/iberiaplus/registrese/" title="Regístrate ahora en Iberia Plus" target="_self">Regíst ...
+
+
+
+		LINEA: 491, COLUMNA: 8: <a class="link link__regular" data-inforcheckin="unlock" title="Ver mas" href="#">		<span cl ...
+
+
+
+		LINEA: 499, COLUMNA: 13: <a class="link link__regular icon-inicio" href="/es/">	<span class="hideAccessible"> ...
+
+
+
+		LINEA: 512, COLUMNA: 8: <a class="link link__regular icon-compartir" data-placement="bottom" data-toggle="popover" title=""...
+
+
+
+		LINEA: 520, COLUMNA: 12: <a class="link link__regular facebook" title="Compartir en Facebook (Abre una ventana nueva)" 	 ...
+
+
+
+		LINEA: 524, COLUMNA: 12: <a class="link link__regular twitter" title="Compartir en Twitter (Abre una ventana nueva)"  ...
+
+
+
+		LINEA: 528, COLUMNA: 12: <a class="link link__regular linkedin" title="Compartir en LinkedIn (Abre una ventana nueva)" 	 ...
+
+
+
+		LINEA: 532, COLUMNA: 12: <a class="link link__regular google" title="Compartir en Google+ (Abre una ventana nueva)" 	 ...
+
+
+
+		LINEA: 538, COLUMNA: 9: <a class="link link__regular facebook" title="Compartir en Facebook (Abre una ventana nueva)"		 ...
+
+
+
+		LINEA: 542, COLUMNA: 9: <a class="link link__regular twitter" title="Compartir en Twitter (Abre una ventana nueva)"	 ...
+
+
+
+		LINEA: 546, COLUMNA: 9: <a class="link link__regular linkedin" title="Compartir en LinkedIn (Abre una ventana nueva)"		 ...
+
+
+
+		LINEA: 550, COLUMNA: 9: <a class="link link__regular google" title="Compartir en Google+ (Abre una ventana nueva)"		 ...
+
+
+
+		LINEA: 568, COLUMNA: 7: <a href="#" title="I. Participación en el programa" class="link">	I. Participación en el p ...
+
+
+
+		LINEA: 646, COLUMNA: 7: <a href="#" title="I. Obtención de Avios y Puntos Elite" class="link">	I. Obtención de Avi ...
+
+
+
+		LINEA: 708, COLUMNA: 7: <a href="#" title="II. Utilización de Avios" class="link">	II. Utilización de Avios</a>
+
+
+
+		LINEA: 790, COLUMNA: 37: <a href='/es/condiciones-transporte/' title='Condiciones Transporte'class="ibe-lat-menu__link" > ...
+
+
+
+		LINEA: 791, COLUMNA: 60: <a href='/es/recomendaciones-seguridad/' title='Tu seguridad es lo primero'class="ibe-lat-menu__li ...
+
+
+
+		LINEA: 792, COLUMNA: 113: <a href='/es/iberiaplus/condiciones/' title='Condiciones Generales del Programa Iberia Plus'class= ...
+
+
+
+		LINEA: 793, COLUMNA: 84: <a href='/es/precio-minimo-garantizado/' title='Mejor precio garantizado'class="ibe-lat-menu__link ...
+
+
+
+		LINEA: 794, COLUMNA: 62: <a href='/es/compromiso-servicio/' title='Compromiso de servicio'class="ibe-lat-menu__link" >		C ...
+
+
+
+		LINEA: 795, COLUMNA: 60: <a href='/es/derechos-pasajero/' title='Derechos del pasajero'class="ibe-lat-menu__link" >		Dere ...
+
+
+
+		LINEA: 796, COLUMNA: 59: <a href='/es/declaracion-de-accesibilidad/' title='Accesibilidad'class="ibe-lat-menu__link" >		A ...
+
+
+
+		LINEA: 797, COLUMNA: 51: <a href='/es/informacion-legal/' title='Información Legal'class="ibe-lat-menu__link" >		Informa ...
+
+
+
+		LINEA: 798, COLUMNA: 56: <a href='/es/informacion-sobre-privacidad/' title='Política de protección de datos personales'cl ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 435, COLUMNA: 4: <h1 class="title title__h1 ibe-modal__title-primary">Selección de país</h1>
+
+
+
+		LINEA: 465, COLUMNA: 5: <h1 class="title title__h1 ibe-modal__title-primary">¿Tienes dudas?</h1>
+
+
+
+		LINEA: 560, COLUMNA: 107: <h1 class="title title__h1 ibe-infocheckin__header-primary">Condiciones del Programa Iberia Plus</h1 ...
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 400, COLUMNA: 4: <h2 class="title title__h1 ibe-modal__title-primary ibe-login__title">Acceso a Iberia Plus</h2>
+
+
+
+		LINEA: 436, COLUMNA: 4: <h2 class="title title__h4 ibe-modal__title-primary--h4">Accede a ofertas especiales y contenidos de ...
+
+
+
+		LINEA: 805, COLUMNA: 162: <h2 class="title title__h1 ibe-modal__title-primary" id="modalTitle"></h2>
+
+
+
+		LINEA: 815, COLUMNA: 56: <h2 class="ibe-footer-title" data-target="#group_01_footer_01" data-toggle="accordion">En la red</h2 ...
+
+
+
+		LINEA: 816, COLUMNA: 43: <h2 class="ibe-footer-title" data-target="#group_01_footer_2" data-toggle="accordion">De tu interés ...
+
+
+
+		LINEA: 819, COLUMNA: 44: <h2 class="ibe-footer-title" data-target="#group_01_footer_3" data-toggle="accordion">Iberia es más ...
+
+
+
+		LINEA: 822, COLUMNA: 44: <h2 class="ibe-footer-title" data-target="#group_01_footer_4" data-toggle="accordion">Transparencia< ...
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 368, COLUMNA: 1164: <h3 class="ibe-login__logged-title">Hola&nbsp;<span class="bold loggedUserName"></span></h3>
+
+
+
+		LINEA: 368, COLUMNA: 3412: <h3 class="ibe-login__logged-title inte-obUsername">Hola&nbsp;<span class="ibe-header-new__logged-tx ...
+
+
+
+		LINEA: 401, COLUMNA: 4: <h3 class="title title__h4 ibe-modal__title-primary--h4 ibe-login__text">Inicia sesión para ver pro ...
+
+  
+
+	REVISAR: 45: h4 may be used for formatting.
+
+ 
+
+		LINEA: 566, COLUMNA: 95: <h4 data-target='#group_1_accordion_1454366316598' data-outer-click="true" data-toggle="acco ...
+
+
+
+		LINEA: 644, COLUMNA: 76: <h4 data-target='#group_1_accordion_1454366316889' data-outer-click="true" data-toggle="acco ...
+
+
+
+		LINEA: 706, COLUMNA: 78: <h4 data-target='#group_2_accordion_1454366316889' data-outer-click="true" data-toggle="acco ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.1 On Focus (A)  
+
+	REVISAR: 275: Loading web page may cause new window to open.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 367, COLUMNA: 1356: <form id="localeMarketForm" action="#" method="get" class="ibe_form"><fieldset><legend class="hideAc ...
+
+
+
+		LINEA: 367, COLUMNA: 4737: <form action='/es/asistente/' method="get" class="ibe_form"><fieldset><legend class="hideAccessible" ...
+
+
+
+		LINEA: 367, COLUMNA: 6596: <form method="post" action='https://www.iberia.com/web/newCKILogin.do' id="top-login" class="ibe_for ...
+
+
+
+		LINEA: 409, COLUMNA: 5: <form class="ibe_form validation-form" autocomplete="off" id="loginFMobile" name="loginForm" method= ...
+
+
+
+		LINEA: 443, COLUMNA: 6: <form id="localeMarketFormMobile" action="#" method="get" class="ibe_form">	<fieldset>	< ...
+
+
+
+		LINEA: 471, COLUMNA: 38: <form action='/es/asistente/' method="get" class="ibe_form">		<fieldset>		<legend class= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 362, COLUMNA: 8: <body data-contentid='1454366314936' data-contenttype='Page'><!-- Google Tag Manager (noscript) --> ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 367, COLUMNA: 1356: <form id="localeMarketForm" action="#" method="get" class="ibe_form"><fieldset><legend class="hideAc ...
+
+
+
+		LINEA: 367, COLUMNA: 4737: <form action='/es/asistente/' method="get" class="ibe_form"><fieldset><legend class="hideAccessible" ...
+
+
+
+		LINEA: 367, COLUMNA: 6596: <form method="post" action='https://www.iberia.com/web/newCKILogin.do' id="top-login" class="ibe_for ...
+
+
+
+		LINEA: 409, COLUMNA: 5: <form class="ibe_form validation-form" autocomplete="off" id="loginFMobile" name="loginForm" method= ...
+
+
+
+		LINEA: 443, COLUMNA: 6: <form id="localeMarketFormMobile" action="#" method="get" class="ibe_form">	<fieldset>	< ...
+
+
+
+		LINEA: 471, COLUMNA: 38: <form action='/es/asistente/' method="get" class="ibe_form">		<fieldset>		<legend class= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 367, COLUMNA: 1356: <form id="localeMarketForm" action="#" method="get" class="ibe_form"><fieldset><legend class="hideAc ...
+
+
+
+		LINEA: 367, COLUMNA: 4737: <form action='/es/asistente/' method="get" class="ibe_form"><fieldset><legend class="hideAccessible" ...
+
+
+
+		LINEA: 367, COLUMNA: 6596: <form method="post" action='https://www.iberia.com/web/newCKILogin.do' id="top-login" class="ibe_for ...
+
+
+
+		LINEA: 409, COLUMNA: 5: <form class="ibe_form validation-form" autocomplete="off" id="loginFMobile" name="loginForm" method= ...
+
+
+
+		LINEA: 443, COLUMNA: 6: <form id="localeMarketFormMobile" action="#" method="get" class="ibe_form">	<fieldset>	< ...
+
+
+
+		LINEA: 471, COLUMNA: 38: <form action='/es/asistente/' method="get" class="ibe_form">		<fieldset>		<legend class= ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 367, COLUMNA: 5001: <input type="hidden" name="menuId" value="IBASVI">
+
+
+
+		LINEA: 367, COLUMNA: 5051: <input type="hidden" name="quadrigam" value="">
+
+
+
+		LINEA: 367, COLUMNA: 5098: <input type="hidden" name="isPopup" value="">
+
+
+
+		LINEA: 367, COLUMNA: 5143: <input type="hidden" name="menuRP" value="">
+
+
+
+		LINEA: 367, COLUMNA: 5187: <input type="hidden" name="language" value='es'>
+
+
+
+		LINEA: 367, COLUMNA: 7007: <input name="user" id="id_number2" type="text" placeholder="Nº IB Plus:" class="ibe_form__input-tex ...
+
+
+
+		LINEA: 367, COLUMNA: 7243: <input name="pin" id="id_pin2" type="password" placeholder="PIN:" class="ibe_form__input-text" requi ...
+
+
+
+		LINEA: 412, COLUMNA: 8: <input id="userMenuMobile" name="user" type="text" placeholder="Nº IB Plus:" class="ibe_form__input ...
+
+
+
+		LINEA: 416, COLUMNA: 8: <input id="pinMenuMobile" name="pin" type="password" placeholder="PIN:" class="ibe_form__input-text" ...
+
+
+
+		LINEA: 474, COLUMNA: 37: <input name="search" id="dudes" type="text" placeholder="" class="ibe_form__input-text"/>
+
+
+
+		LINEA: 474, COLUMNA: 126: <input type="hidden" name="menuId" value="IBASVI">
+
+
+
+		LINEA: 474, COLUMNA: 176: <input type="hidden" name="quadrigam" value="">
+
+
+
+		LINEA: 474, COLUMNA: 223: <input type="hidden" name="isPopup" value="">
+
+
+
+		LINEA: 474, COLUMNA: 268: <input type="hidden" name="menuRP" value="">
+
+
+
+		LINEA: 474, COLUMNA: 312: <input type="hidden" name="language" value='es'>
+
+  
+
+	REVISAR: 217: input element, type of "password", label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 367, COLUMNA: 7243: <input name="pin" id="id_pin2" type="password" placeholder="PIN:" class="ibe_form__input-text" requi ...
+
+
+
+		LINEA: 416, COLUMNA: 8: <input id="pinMenuMobile" name="pin" type="password" placeholder="PIN:" class="ibe_form__input-text" ...
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 367, COLUMNA: 7007: <input name="user" id="id_number2" type="text" placeholder="Nº IB Plus:" class="ibe_form__input-tex ...
+
+
+
+		LINEA: 412, COLUMNA: 8: <input id="userMenuMobile" name="user" type="text" placeholder="Nº IB Plus:" class="ibe_form__input ...
+
+
+
+		LINEA: 474, COLUMNA: 37: <input name="search" id="dudes" type="text" placeholder="" class="ibe_form__input-text"/>
+
+  
+
+	REVISAR: 210: select element's label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 367, COLUMNA: 1601: <select id="mercado" name="mercado" data-selectmenu-edit="data-selectmenu-edit" data-placeholder="Pa ...
+
+
+
+		LINEA: 367, COLUMNA: 3405: <select id="idioma" name="idioma" data-selectmenu-edit="data-selectmenu-edit" data-placeholder="Idio ...
+
+
+
+		LINEA: 448, COLUMNA: 7: <select id="mercadoMobile" name="mercadoMobile" data-selectmenu-edit="data-selectmenu-edit" data-pla ...
+
+
+
+		LINEA: 451, COLUMNA: 75: <select id="idiomaMobile" name="idiomaMobile" data-selectmenu-edit="data-selectmenu-edit" data-place ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 367, COLUMNA: 1356: <form id="localeMarketForm" action="#" method="get" class="ibe_form"><fieldset><legend class="hideAc ...
+
+
+
+		LINEA: 367, COLUMNA: 4737: <form action='/es/asistente/' method="get" class="ibe_form"><fieldset><legend class="hideAccessible" ...
+
+
+
+		LINEA: 367, COLUMNA: 6596: <form method="post" action='https://www.iberia.com/web/newCKILogin.do' id="top-login" class="ibe_for ...
+
+
+
+		LINEA: 409, COLUMNA: 5: <form class="ibe_form validation-form" autocomplete="off" id="loginFMobile" name="loginForm" method= ...
+
+
+
+		LINEA: 443, COLUMNA: 6: <form id="localeMarketFormMobile" action="#" method="get" class="ibe_form">	<fieldset>	< ...
+
+
+
+		LINEA: 471, COLUMNA: 38: <form action='/es/asistente/' method="get" class="ibe_form">		<fieldset>		<legend class= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 367, COLUMNA: 1356: <form id="localeMarketForm" action="#" method="get" class="ibe_form"><fieldset><legend class="hideAc ...
+
+
+
+		LINEA: 367, COLUMNA: 4737: <form action='/es/asistente/' method="get" class="ibe_form"><fieldset><legend class="hideAccessible" ...
+
+
+
+		LINEA: 367, COLUMNA: 6596: <form method="post" action='https://www.iberia.com/web/newCKILogin.do' id="top-login" class="ibe_for ...
+
+
+
+		LINEA: 409, COLUMNA: 5: <form class="ibe_form validation-form" autocomplete="off" id="loginFMobile" name="loginForm" method= ...
+
+
+
+		LINEA: 443, COLUMNA: 6: <form id="localeMarketFormMobile" action="#" method="get" class="ibe_form">	<fieldset>	< ...
+
+
+
+		LINEA: 471, COLUMNA: 38: <form action='/es/asistente/' method="get" class="ibe_form">		<fieldset>		<legend class= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 367, COLUMNA: 1356: <form id="localeMarketForm" action="#" method="get" class="ibe_form"><fieldset><legend class="hideAc ...
+
+
+
+		LINEA: 367, COLUMNA: 4737: <form action='/es/asistente/' method="get" class="ibe_form"><fieldset><legend class="hideAccessible" ...
+
+
+
+		LINEA: 367, COLUMNA: 6596: <form method="post" action='https://www.iberia.com/web/newCKILogin.do' id="top-login" class="ibe_for ...
+
+
+
+		LINEA: 409, COLUMNA: 5: <form class="ibe_form validation-form" autocomplete="off" id="loginFMobile" name="loginForm" method= ...
+
+
+
+		LINEA: 443, COLUMNA: 6: <form id="localeMarketFormMobile" action="#" method="get" class="ibe_form">	<fieldset>	< ...
+
+
+
+		LINEA: 471, COLUMNA: 38: <form action='/es/asistente/' method="get" class="ibe_form">		<fieldset>		<legend class= ...
+
+

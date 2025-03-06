@@ -1,0 +1,15 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/ayuntamiento/WebCiudano.nsf/Registro?ReadForm&lang=2&id=0F3E93B421616BDEC1257F46002D260A&estado=0&nivel=2_2&bdorigen=ayuntamiento/ayuntamiento.nsf
+FECHA EVALUACIÓN: 2018-11-28
+
+CRITERIO DE CONFORMIDAD: 2.4.6: Encabezados y etiquetas       
+	TÉCNICA G130: Proporcionar encabezados descriptivos		 
+	VECES ENCONTRADO: 2
+CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      
+	TÉCNICA G13: Describir lo que sucederá antes de que se realice un cambio en un control de formulario que cause que ocurra un cambio de contexto		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 3.3.2: Etiquetas o instrucciones      
+	TÉCNICA H71: Proporcionar una descripción para grupos de controles de formulario utilizando los elementos <&fieldset> y <&legend>		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 4.1.2: Nombre, función, valor      
+	TÉCNICA H91: Usar controles de formulario HTML y enlaces		 
+	VECES ENCONTRADO: 1

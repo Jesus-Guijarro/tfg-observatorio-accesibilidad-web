@@ -1,0 +1,21 @@
+REPORTE PÁGINA WEB: https://www.bancosantander.es/es/particulares/hazte-cliente
+FECHA EVALUACIÓN: 2018-11-26
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se encontraron 6 imágenes en las que la leyenda es un espacio vacío
+Se encontró un elemento <iframe> sin título
+Se encontró 1 caso en que los encabezados no respetan la cadena jerárquica
+Se encontraron 6 elementos de encabezado
+Se han encontrado 5 enlaces en los que el contenido se compone sólo de una imagen no subtitulada
+Se han encontrado 20 enlaces con el mismo texto que apuntan a destinos diferentes
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se encontró 1 tabla sin celdas de encabezado
+Se identificó 1 formulario sin botón de envío
+Se ha encontrado 1 atributo para controlar la presentación visual
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que todos los atributos se expresan en unidades de medida relativas
+Se constató que todas las unidades de medida existentes en la CSS se expresan en valores relativos
+Se ha encontrado 1 elemento <link> para la navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es-ES"

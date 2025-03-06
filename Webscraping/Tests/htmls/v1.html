@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<title>Vamolà, validatore e monitor per l'accessibilità : Web Accessibility Checker</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Generator" content="VaMoLà Validator, Validatore e Monitor per l'accessibilità. Regione Emilia-Romagna" />
+	<meta name="keywords" content="validatore, validazione, applicazione, web, legge, accessibilità, linee, guida, WCAG2, STANCA, Allegato A, a11y, disabilità" />
+	<meta name="description" content="VaMoLà Validator, il validatore e Monitor per l'accessibilità sviluppato per controllare che il contenuto dei siti web sia accessibile a tutti secondo la normativa vigente" />
+	<base href="http://www.validatore.it/vamola_validator/" />
+	<link rel="shortcut icon" href="http://www.validatore.it/vamola_validator/images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="http://www.validatore.it/vamola_validator/themes/default-ita/forms.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.validatore.it/vamola_validator/themes/default-ita/css/jquery.ui.core.min.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.validatore.it/vamola_validator/themes/default-ita/css/jquery.ui.tabs.min.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.validatore.it/vamola_validator/themes/default-ita/css/jquery.ui.theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="http://www.validatore.it/vamola_validator/themes/default-ita/styles.css" type="text/css" />
+	<!--[if IE]>
+	  <link rel="stylesheet" href="http://www.validatore.it/vamola_validator/themes/default-ita/ie_styles.css" type="text/css" />
+	<![endif]-->
+    <script src="http://www.validatore.it/vamola_validator/jscripts/lib/jquery.js" type="text/javascript"></script>
+	<script src="http://www.validatore.it/vamola_validator/jscripts/lib/jquery-URLEncode.js" type="text/javascript"></script>
+	<script src="http://www.validatore.it/vamola_validator/jscripts/AChecker.js" type="text/javascript"></script>
+    <script src="http://www.validatore.it/vamola_validator/themes/default-ita/js/jquery.ui.core.min.js" type="text/javascript"></script>
+    <script src="http://www.validatore.it/vamola_validator/themes/default-ita/js/jquery.ui.widget.min.js" type="text/javascript"></script>
+    <script src="http://www.validatore.it/vamola_validator/themes/default-ita/js/jquery.ui.tabs.min.js" type="text/javascript"></script>
+	<link rel="icon" type="image/x-icon" href="http://www.validatore.it/vamola_validator/themes/default-ita/images/favicon.ico" />
+
+    	
+	<script language="javascript" type="text/javascript">
+	//<!--
+
+var AChecker = AChecker || {};
+AChecker.lang = AChecker.lang || {};
+
+(function () {
+
+    // Define langauge translations that are used in checker.js
+    // @ see checker/js/checker.js
+    AChecker.lang.provide_uri = "Please provide a uri!";
+    AChecker.lang.provide_html_file = "Please provide a html file!";
+    AChecker.lang.provide_upload_file = "Please upload html (or htm) file only!";
+    AChecker.lang.provide_html_input = "Please provide a html input!";
+    AChecker.lang.wait = "Please wait ...";
+    AChecker.lang.get_file = "Get File";
+    AChecker.lang.error_occur = "An error occured:";
+    AChecker.lang.pass_decision = "Pass Decision Made";
+    AChecker.lang.warning = "Warning: Confirmation Required";
+    AChecker.lang.manual_check = "Manual Check Required";
+    AChecker.lang.get_seal = '&nbsp;&nbsp;<span style="color:#E41B17;;border:thin solid #E41B17;"><a href="checker/index.php#seals_div">Conformance seal now issued.</a></span>';
+    AChecker.lang.congrats_likely = '<img src="http://www.validatore.it/vamola_validator/images/feedback.gif" alt="Feedback" />  Congratulations! No likely problems.';
+    AChecker.lang.congrats_potential = '<img src="http://www.validatore.it/vamola_validator/images/feedback.gif" alt="Feedback" />  Congratulations! No potential problems.';
+
+})();
+	//-->
+	</script>
+	<script src="http://www.validatore.it/vamola_validator/checker/js/checker.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#tabvalidate').tabs({active: 1});
+            $('#tabresults').tabs({active: 1});
+        });
+//        $("html, body").animate({ scrollTop: $('#tabresults').offset().top }, 1000);
+    </script>
+</head>
+
+<body onload="AChecker.input.initialize('AC_by_uri', 'by_guideline');">
+<div id="liquid-round"><div class="top"><span></span></div>
+<div class="center-content" id="center-content">
+		<div id="logo">
+			<a href="http://www.validatore.it/vamola_validator/"><img src="http://www.validatore.it/vamola_validator/themes/default-ita/images/logoheader.jpg"  alt="Vamolà, validatore e monitor per l'accessibilità" /></a>
+		</div>
+
+	<!-- the sub navigation and guide -->
+	<div id="sub-menu">
+		<div id="sub-navigation">
+					&nbsp;
+				</div>
+	</div>
+
+
+<a id="content" title="Start Content"></a>
+
+
+
+<div class="center-input-form">
+<form name="input_form" enctype="multipart/form-data" method="post" action="/vamola_validator/checker/index.php#tabresults" >
+
+	
+	<div id="tabvalidate" class="topnavlistcontainer">
+		<ul>
+			<li><a href="#AC_by_uri" role="button"  title="Web Page URL Alt+1" id="AC_menu_by_uri" onclick="return AChecker.input.onClickTab('AC_by_uri');" class="active">Web Page URL</a></li>
+			<li><a  href="#AC_by_upload" role="button"   title="HTML File Upload Alt+2" id="AC_menu_by_upload" onclick="return AChecker.input.onClickTab('AC_by_upload');" >HTML File Upload</a></li>
+			<li><a  href="#AC_by_paste" role="button" title="Paste HTML Markup Alt+3" id="AC_menu_by_paste" onclick="return AChecker.input.onClickTab('AC_by_paste');" >Paste HTML Markup</a></li>
+			</ul>
+	
+	<!--div class="left-column" -->
+	<fieldset class="group_form">
+	<legend class="group_form hidden">Check Accessibility By:</legend>
+        <!--label class="hidden" for="once">Codice univoco</label-->
+        <input type="hidden" id="once" name="once" value="a2183dc98b5e8c7cc01d470f48f555f7">
+
+		<div id="AC_by_uri"  >
+			
+				<label for="checkuri">Address:</label>
+				<input type="text" name="uri" id="checkuri" value=""   />
+				<div class="validation_submit_div">
+					<div class="spinner_div">
+						<img class="spinner_img" id="AC_spinner_by_uri" style="display:none" src="http://www.validatore.it/vamola_validator/themes/default-ita/images/spinner.gif" alt="Accessibility Validation in Progress" />
+						&nbsp;
+					</div>
+					<input class="validation_button" type="submit" name="validate_uri" id="validate_uri" value="Check It" onclick="return AChecker.input.validateURI();" />
+				</div>
+		
+		</div>
+		
+		<div id="AC_by_upload" >
+            <!--label class="hidden" for="max_file_size">Dimensioni massime del file</label-->
+            <input type="hidden" name="MAX_FILE_SIZE" id="max_file_size" value="52428800" />
+            <label for="checkfile">File:</label>
+            <input type="file" id="checkfile" name="uploadfile"  />
+            <div class="validation_submit_div">
+                <div class="spinner_div">
+                    <img class="spinner_img" id="AC_spinner_by_upload" style="display:none" src="http://www.validatore.it/vamola_validator/themes/default-ita/images/spinner.gif" alt="Accessibility Validation in Progress" />
+                    &nbsp;
+                </div>
+                <input class="validation_button" type="submit" name="validate_file" id="validate_file" value="Check It" onclick="return AChecker.input.validateUpload();"  />
+            </div>
+		</div>
+		
+		<div id="AC_by_paste" >
+			<label for="checkpaste">Paste from clipboard complete HTML source:</label>
+			<div style="text-align:center;">
+				<textarea rows="5" cols="75" name="pastehtml" id="checkpaste"></textarea>
+				<div class="validation_submit_div">
+					<div class="spinner_div">
+						<img class="spinner_img" id="AC_spinner_by_paste" style="display:none" src="http://www.validatore.it/vamola_validator/themes/default-ita/images/spinner.gif" alt="Accessibility Validation in Progress" />
+						&nbsp;
+					</div>
+					<input class="validation_button" type="submit" name="validate_paste" id="validate_paste" value="Check It" onclick="return AChecker.input.validatePaste();" />
+				</div>
+			</div>
+		</div>
+
+<div id="div_opzioni">
+			
+<h3>Guidelines to Check Against</h3>
+<!-- <ul class="thirds">
+
+							<li >
+					<input type="checkbox" name="gid[]" id='gid_10' value='10'  />
+					<label for='gid_10'>Allegato A L.4/04</label>
+				</li>
+				<li >
+					<input type="checkbox" name="gid[]" id='gid_7' value='7'  />
+					<label for='gid_7'>WCAG 2.0 (Level A)</label>
+				</li>
+				<li >
+					<input type="checkbox" name="gid[]" id='gid_8' value='8'  />
+					<label for='gid_8'>WCAG 2.0 (Level AA)</label>
+				</li>
+										<li >
+					<input type="checkbox" name="gid[]" id='gid_9' value='9'  />
+					<label for='gid_9'>WCAG 2.0 (Level AAA)</label>
+				</li>
+
+			
+
+			
+</ul> -->
+				<div id="guideline_in_radio">
+				<ul class="thirds">
+											<li >							<input type="radio" name="radio_gid[]" id="radio_gid_10" value="10" checked="checked" />
+							<label for="radio_gid_10">Allegato A L.4/04</label>
+						</li>
+						<li >							<input type="radio" name="radio_gid[]" id="radio_gid_7" value="7" />
+							<label for="radio_gid_7">WCAG 2.0 (Level A)</label>
+						</li>
+						<li >							<input type="radio" name="radio_gid[]" id="radio_gid_8" value="8" />
+							<label for="radio_gid_8">WCAG 2.0 (Level AA)</label>
+						</li>
+																<li >							<input type="radio" name="radio_gid[]" id="radio_gid_9" value="9" />
+							<label for="radio_gid_9">WCAG 2.0 (Level AAA)</label>
+						</li>
+				</ul>
+			</div>
+				<div id="guideline_in_checkbox" style="display:none">
+				<ul class="thirds">
+											<li >							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_10" value="10" checked="checked" />
+							<label for="checkbox_gid_10">Allegato A L.4/04</label>
+						</li>
+						<li >							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_7" value="7" />
+							<label for="checkbox_gid_7">WCAG 2.0 (Level A)</label>
+						</li>
+						<li >							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_8" value="8" />
+							<label for="checkbox_gid_8">WCAG 2.0 (Level AA)</label>
+						</li>
+																<li >							<input type="checkbox" name="checkbox_gid[]" id="checkbox_gid_9" value="9" />
+							<label for="checkbox_gid_9">WCAG 2.0 (Level AAA)</label>
+						</li>
+				</ul>
+			</div>
+
+            <input type="hidden" name="rpt_format" value="1" />
+		    <div class="clear"></div>
+		    </div>
+	    </fieldset>
+	</div>
+</form>
+
+</div>
+</div>
+    <div class="center-content" id="footer">
+        <ul>
+            <li><a href="http://www.validatore.it/vamola_validator/page/about.php">About</a></li>
+            <li><a href="http://www.validatore.it/vamola_validator/page/credits.php">Credits</a></li>
+        </ul>
+    </div>
+    <div class="bottom"><span></span></div><!--  bottom for liquid-round theme -->
+    </div> <!--  end center-content div -->
+    <!--/div>  end liquid-round div -->
+
+    <!-- Piwik Prod New Tracking Code -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        var index1 = location.href.indexOf("applicazioni.regione.emilia-romagna.it");
+        var index2 = location.href.indexOf("applicazionitest.regione.emilia-romagna.it");
+        var index3 = location.href.indexOf("cm.regione.emilia-romagna.it");
+        var index4 = location.href.indexOf("test-www.regione.emilia-romagna.it");
+        var index5 = location.href.indexOf("internostest.regione.emilia-romagna.it");
+        (function(){ var u="https://statisticheweb.regione.emilia-romagna.it/analytics/";
+            if (index1==-1 && index2==-1 && index3==-1 && index4==-1 && index5==-1){
+                _paq.push(['setSiteId', 56]);
+                _paq.push(['setTrackerUrl', u+'piwik.php']);
+                _paq.push(['setDocumentTitle', document.domain + "/" + document.title]);
+                _paq.push(['trackPageView']);
+                _paq.push(['enableLinkTracking']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.defer=true; g.async=true; g.src=u+'piwik.js';
+                s.parentNode.insertBefore(g,s); }})();
+    </script>
+    <noscript><p><img src="https://statisticheweb.regione.emilia-romagna.it/analytics/piwik.php?idsite=56" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Prod New Tracking Code -->
+    </body>
+</html>
+

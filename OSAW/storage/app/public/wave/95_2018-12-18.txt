@@ -1,0 +1,36 @@
+REPORTE PÁGINA WEB: https://www.iberdrola.es/ahorrar-energia/calcular-potencia-electrica-optima
+FECHA EVALUACIÓN: 2018-12-18
+
+-PROBLEMAS-
+
+Empty link	  VECES ENCONTRADO: 1
+Missing form label	  VECES ENCONTRADO: 24
+Linked image missing alternative text	  VECES ENCONTRADO: 6
+
+
+-ALERTAS-
+
+Underlined text	  VECES ENCONTRADO: 6
+Orphaned form label	  VECES ENCONTRADO: 9
+Redundant link	  VECES ENCONTRADO: 9
+Unlabeled form element with title	  VECES ENCONTRADO: 2
+Noscript element	  VECES ENCONTRADO: 2
+A nearby image has the same alternative text	  VECES ENCONTRADO: 4
+Redundant title text	  VECES ENCONTRADO: 14
+Redundant alternative text	  VECES ENCONTRADO: 7
+
+
+-CARACTERISTICAS-
+
+Element language	  VECES ENCONTRADO: 3
+Null or empty alternative text	  VECES ENCONTRADO: 45
+Alternative text	  VECES ENCONTRADO: 4
+Linked image with alternative text	  VECES ENCONTRADO: 11
+Form label	  VECES ENCONTRADO: 2
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 28
+
+

@@ -1,0 +1,33 @@
+REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/portada.html
+FECHA EVALUACIÓN: 2018-12-21
+
+-PROBLEMAS-
+
+Missing alternative text	  VECES ENCONTRADO: 10
+
+
+-ALERTAS-
+
+Suspicious link text	  VECES ENCONTRADO: 1
+Device dependent event handler	  VECES ENCONTRADO: 2
+Redundant title text	  VECES ENCONTRADO: 2
+Noscript element	  VECES ENCONTRADO: 2
+Redundant alternative text	  VECES ENCONTRADO: 1
+Possible heading	  VECES ENCONTRADO: 2
+Unlabeled form element with title	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Alternative text	  VECES ENCONTRADO: 16
+Null or empty alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 41
+Form label	  VECES ENCONTRADO: 1
+Fieldset	  VECES ENCONTRADO: 1
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 70
+
+

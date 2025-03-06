@@ -1,0 +1,1810 @@
+REPORTE PÁGINA WEB: https://www.movistar.es/particulares/accesibilidad/
+FECHA EVALUACIÓN: 2018-12-19
+
+-PROBLEMAS CONOCIDOS-
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 213: input element, type of "text", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 979, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(singoutButton)
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)  
+
+	REVISAR: 116: b (bold) element used.  
+
+	REPARAR:> Replace your b (bold) elements with em or strong.      
+
+		LINEA: 979, COLUMNA: 94: <b>Fusión </b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 203: <b>Internet y Fijo</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 300: <b>Móvil</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 409: <b>Televisión</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 494: <b>Tienda electrónica</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 614: <b>Apps y servicios digitales</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 57: <b>Consultas</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 160: <b>Gestiones</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 250: <b>Soporte técnico</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1374: <b>Otras consultas...</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2295: <b>Soporte técnico y averías</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 109: <b>gratuita</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <b>Terminal SPC 3293B </b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <b>Acciones</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <b>Centro de intermediaci&oacute;n para personas con discapacidad auditiva y/o fonaci&oacute;n.</b>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <b>Facturas e informaci&oacute;n.</b>(singoutButton)
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.1 Language of Page (A)  
+
+	REVISAR: 49: Document has invalid language code.  
+
+	REPARAR:> Add a valid 2 letter or 3 letter language code as defined in the ISO 639 specification to the HTML 'lang' attribute. For XHTML, both 'lang' and 'xml:lang' must be set.      
+
+		LINEA: 6, COLUMNA: 1: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es_ES" lang="es_ES">	<head>		<!-- M ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR:> Add text to the label element.      
+
+		LINEA: 979, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <input type="image" src="/estaticos/img/btnsearch.gif" alt="???navigation.configuracion.buscar.img?? ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <input type="image" src="/estaticos/img/btnsearch.gif" alt="???navigation.configuracion.buscar.img?? ...(singoutButton)
+
+4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)  
+
+	REVISAR: 185: id attribute is not unique.  
+
+	REPARAR:> Modify the id attribute value so it is unique.      
+
+		LINEA: 979, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...(singoutButton)
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 82: p element may be misused (could be a header).
+
+ 
+
+		LINEA: 979, COLUMNA: 1: <p><b>Terminal SPC 3293B </b></p>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <p><b>Acciones</b></p>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <p><b>Centro de intermediaci&oacute;n para personas con discapacidad auditiva y/o fonaci&oacute;n.</ ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <p><b>Facturas e informaci&oacute;n.</b></p>(singoutButton)
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 979, COLUMNA: 5: <a onclick="logoutConvergente();" style="display:none" id="logoutURLSaludo" class="logout" title="de ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 17: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 9: <a href="/autonomos/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','autonomos',4,'/',null,null) ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 9: <a href="/empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','empresas',4,'/',null,null);" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 9: <a href="/grandes-empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','grandes-empresas',4, ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <a href="#" lang="es_ES">Castellano</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 5: <a href="/ca/particulars/accessible/?lng=ca_ES&amp;d=config" lang="ca_ES">CatalÃ¡n</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 5: <a href="/gl/particulares/accesibilidad/?lng=gl_ES&amp;d=config" lang="gl_ES">Gallego</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <a href="#" id="enlace_cesta">Cesta</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <a class="home" href="/particulares/"><img src="/estaticos/img/es_ES/btn_home_sel.gif" alt="Inicio"...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 115: <a href="/particulares/movistar-plus/contenidos-II/">&nbsp; </a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 100: <a href="/particulares/atencion-cliente/atsoporteyaverias/"><b>Gestiones</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 189: <a href="/particulares/atencion-cliente/attepuedeinteresar/"><b>Soporte técnico</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 600: <a href="/particulares/atencion-cliente/Fijo/">Fijo</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1412: <a href="/particulares/atencion-cliente/correo/">Correo</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1494: <a href="/particulares/atencion-cliente/consulta-puk/">consulta-puk</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1574: <a href="/particulares/atencion-cliente/outlet/">outlet</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1656: <a href="/particulares/atencion-cliente/TelefonosAtencionParticularesyEmpresas/">Teléfonos de atenc ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1782: <a href="/particulares/atencion-cliente/soportetecnico/">soportetecnico</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1880: <a href="/particulares/atencion-cliente/aterrizaje-app/">aterrizaje-app</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1964: <a href="/particulares/atencion-cliente/aterrizaje-factura/">aterrizaje-factura</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2070: <a href="/particulares/atencion-cliente/escribenos-simplificado/">escribenos-simplificado</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2172: <a href="/particulares/atencion-cliente/eventos/">eventos</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <a href="/" id="enlacelogo"><span>Logotipo Movistar</span></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 9: <a href="/particulares/" class="enlacerastro" itemprop="url"><div itemprop="title" style= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 23: <a href="#" class="print">Imprimir</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <a href="https://www.atam.es/" title="enlace a la web de Atam">Ir a la web de Atam</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 130: <a href="http://www.boe.es/legislacion/codigos/" title="enlace a la p&aacute;gina de descarga"> www. ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <a href="http://www.movistar.es/particulares/movil/servicios/guia-telefonica-paginas-blancas/" title ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <a href="http://blancas.paginasamarillas.es/jsp/guia_servicio.jsp" title="Gu&iacute;a servicio unive ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <a href="http://www.msssi.gob.es/ssi/discapacidad/serviciosPersonasDiscapacidad/centroIntermediacion ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="http://www.telefonica.es/" target="_blank">Telefónica España</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=ES" target= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="http://comunicacion.movistarplus.es/" target="_blank">Comunicación</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <a href="http://info.telefonica.es"><img src="/estaticos/img/logo_footer.gif" alt="navigation.enlace ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="https://dialogando.com.es/" target="_blank" title="Dialogando" alt="Dialogando" rel="nofoll ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.confianzaonline.org/empresas/movistar.htm" target="_blank" title="Confianza Onli ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="https://www.telefonica.es/es/acerca_de_telefonica/calidad/calidad-servicio" target="_blank" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.msssi.gob.es/campannas/campanas13/haySalida.htm" target="_blank" rel='nofollow'...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://esports.movistar.es" target="_blank" title="Movistar eSports" alt="Movistar eSports" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.fundaciontelefonica.com" target="_blank" title="Fundación Telefónica" alt="Fun ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.tuenti.es" target="_blank" title="Tuenti" alt="Tuenti" rel="nofollow"><img src=" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.movistar.es/particulares/movil/servicios/app-mimovistar?pid=ico-home" target="_b ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://likes.movistar.es" target="_blank" title="Movistar Likes" alt="Movistar Likes"><img...(singoutButton)
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 979, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 41: <img src="/estaticos/img/es_ES/btn_home_sel.gif" alt="Inicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus.gif" alt="Televisión" id="img_subMenu_1menu_02" style= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus_over.gif" alt="Televisión" id="img_subMenu_2menu_02" s ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda.gif" alt="Tienda" id="img_subMenu_1menu_03" style=""/>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda_over.gif" alt="Tienda" id="img_subMenu_2menu_03" style="displa ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente.gif" alt="Atención al cliente" id="img_subMenu_1men ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente_over.gif" alt="Atención al cliente" id="img_subMenu ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar.gif" alt="Mi Movistar" id="img_subMenu_1menu_05" style="" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar_over.gif" alt="Mi Movistar" id="img_subMenu_2menu_05" sty ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 40: <img src="/estaticos/img/logo_footer.gif" alt="navigation.enlaces.logo.img.alt" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 110: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 125: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 151: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 232: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 122: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 173: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 96: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 188: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 101: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(singoutButton)
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 979, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 41: <img src="/estaticos/img/es_ES/btn_home_sel.gif" alt="Inicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus.gif" alt="Televisión" id="img_subMenu_1menu_02" style= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus_over.gif" alt="Televisión" id="img_subMenu_2menu_02" s ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda.gif" alt="Tienda" id="img_subMenu_1menu_03" style=""/>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda_over.gif" alt="Tienda" id="img_subMenu_2menu_03" style="displa ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente.gif" alt="Atención al cliente" id="img_subMenu_1men ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente_over.gif" alt="Atención al cliente" id="img_subMenu ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar.gif" alt="Mi Movistar" id="img_subMenu_1menu_05" style="" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar_over.gif" alt="Mi Movistar" id="img_subMenu_2menu_05" sty ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 40: <img src="/estaticos/img/logo_footer.gif" alt="navigation.enlaces.logo.img.alt" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 110: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 125: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 151: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 232: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 122: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 173: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 96: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 188: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 101: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(singoutButton)
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 979, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(singoutButton)
+
+  
+
+	REVISAR: 59: Image used for input element may have Alt text that does not identify the purpose or function as the image.
+
+ 
+
+		LINEA: 979, COLUMNA: 6: <input type="image" src="/estaticos/img/btnsearch.gif" alt="???navigation.configuracion.buscar.img?? ...(singoutButton)
+
+  
+
+	REVISAR: 193: Form submit button image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 979, COLUMNA: 6: <input type="image" src="/estaticos/img/btnsearch.gif" alt="???navigation.configuracion.buscar.img?? ...(singoutButton)
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 979, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...(singoutButton)
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 153, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 153, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 979, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...(singoutButton)
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 979, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 979, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...(singoutButton)
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 979, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 41: <img src="/estaticos/img/es_ES/btn_home_sel.gif" alt="Inicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus.gif" alt="Televisión" id="img_subMenu_1menu_02" style= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus_over.gif" alt="Televisión" id="img_subMenu_2menu_02" s ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda.gif" alt="Tienda" id="img_subMenu_1menu_03" style=""/>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda_over.gif" alt="Tienda" id="img_subMenu_2menu_03" style="displa ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente.gif" alt="Atención al cliente" id="img_subMenu_1men ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente_over.gif" alt="Atención al cliente" id="img_subMenu ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar.gif" alt="Mi Movistar" id="img_subMenu_1menu_05" style="" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar_over.gif" alt="Mi Movistar" id="img_subMenu_2menu_05" sty ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 40: <img src="/estaticos/img/logo_footer.gif" alt="navigation.enlaces.logo.img.alt" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 110: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 125: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 151: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 232: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 122: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 173: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 96: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 188: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 101: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(singoutButton)
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 979, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <input type="image" src="/estaticos/img/btnsearch.gif" alt="???navigation.configuracion.buscar.img?? ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 7: <input type="submit" value="Desconectar"	id="singoutButton" onclick="document.getElementById ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 7: <input type="submit" value="Desconectar"	id="singoutButton" onclick="document.getElementById ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 7: <input type="submit" value="Desconectar"	id="singoutButton" onclick="document.getElementById ...(singoutButton)
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 14, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 112, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 133, COLUMNA: 2: <scripttype="text/javascript" src="/estaticos/js/include.js"></script>
+
+
+
+		LINEA: 134, COLUMNA: 2: <script type="text/javascript">	var ruta_icoPlay = "/estaticos/img/ico_play.png"	var ruta_icoPla ...
+
+
+
+		LINEA: 979, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <script type="text/javascript"src="/estaticos/js/logout.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript"	src="/estaticos/js/modernizr-2.7.1.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {		var urlSR = $('#urlSR');		var...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 5: <script type="text/javascript">		imprimef("impresora");	</script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/funciones.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 91: <script type="text/javascript" src="/estaticos/js/iframe/cookie.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 183: <script> function Abrir_Contacto() { var segmento = getSegmento(); var url = ''; switch(segmento) {...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 979, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 41: <img src="/estaticos/img/es_ES/btn_home_sel.gif" alt="Inicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus.gif" alt="Televisión" id="img_subMenu_1menu_02" style= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus_over.gif" alt="Televisión" id="img_subMenu_2menu_02" s ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda.gif" alt="Tienda" id="img_subMenu_1menu_03" style=""/>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda_over.gif" alt="Tienda" id="img_subMenu_2menu_03" style="displa ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente.gif" alt="Atención al cliente" id="img_subMenu_1men ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente_over.gif" alt="Atención al cliente" id="img_subMenu ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar.gif" alt="Mi Movistar" id="img_subMenu_1menu_05" style="" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar_over.gif" alt="Mi Movistar" id="img_subMenu_2menu_05" sty ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 40: <img src="/estaticos/img/logo_footer.gif" alt="navigation.enlaces.logo.img.alt" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 110: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 125: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 151: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 232: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 122: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 173: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 96: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 188: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 101: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 979, COLUMNA: 5: <img src="/COLX_ARQ_Agil_WebApp/jsp/escribirCookies.jsp?SegmentoNav=AHOG&amp;idChannel=5e097abb1da86 ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 41: <img src="/estaticos/img/es_ES/btn_home_sel.gif" alt="Inicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus.gif" alt="Televisión" id="img_subMenu_1menu_02" style= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/movistar-plus_over.gif" alt="Televisión" id="img_subMenu_2menu_02" s ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda.gif" alt="Tienda" id="img_subMenu_1menu_03" style=""/>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/tienda_over.gif" alt="Tienda" id="img_subMenu_2menu_03" style="displa ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente.gif" alt="Atención al cliente" id="img_subMenu_1men ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/atencion-cliente_over.gif" alt="Atención al cliente" id="img_subMenu ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar.gif" alt="Mi Movistar" id="img_subMenu_1menu_05" style="" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <img src="/estaticos/img/es_ES/mi_movistar_over.gif" alt="Mi Movistar" id="img_subMenu_2menu_05" sty ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 40: <img src="/estaticos/img/logo_footer.gif" alt="navigation.enlaces.logo.img.alt" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 110: <img src="/estaticos/img/pie-particulares/dialogando.png" alt="Dialogando" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 125: <img src="/estaticos/img/confianza-online.png" alt="Confianza online" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 151: <img src="/estaticos/img/caldad-del-servicio.png" alt="Calidad del servicio" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 232: <img src="/estaticos/img/pie-particulares/violencia-genero.png" alt="Sociedad libre de violencia de...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 122: <img src="/estaticos/img/pie-particulares/movistar_esports1.png" alt="eSports" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 173: <img src="/estaticos/img/pie-particulares/telefonica-fundacion.png" alt="Fundación Telefónica" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 96: <img src="/estaticos/img/pie-particulares/tuenti.png" alt="Tuenti" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 188: <img src="/estaticos/img/pie-particulares/app-mi-movistar.png" alt="App Mi Movistar" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 101: <img src="/estaticos/img/pie-particulares/movistar-like.png" alt="movistar likes" />(singoutButton)
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 14, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 112, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 133, COLUMNA: 2: <scripttype="text/javascript" src="/estaticos/js/include.js"></script>
+
+
+
+		LINEA: 134, COLUMNA: 2: <script type="text/javascript">	var ruta_icoPlay = "/estaticos/img/ico_play.png"	var ruta_icoPla ...
+
+
+
+		LINEA: 979, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <script type="text/javascript"src="/estaticos/js/logout.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript"	src="/estaticos/js/modernizr-2.7.1.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {		var urlSR = $('#urlSR');		var...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 5: <script type="text/javascript">		imprimef("impresora");	</script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/funciones.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 91: <script type="text/javascript" src="/estaticos/js/iframe/cookie.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 183: <script> function Abrir_Contacto() { var segmento = getSegmento(); var url = ''; switch(segmento) {...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>(singoutButton)
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 14, COLUMNA: 1: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm ...
+
+
+
+		LINEA: 112, COLUMNA: 3: <script type="text/javascript">L= new Object();L["form.obligatorio"]="Falta campo obligatorio";L["fo ...
+
+
+
+		LINEA: 133, COLUMNA: 2: <scripttype="text/javascript" src="/estaticos/js/include.js"></script>
+
+
+
+		LINEA: 134, COLUMNA: 2: <script type="text/javascript">	var ruta_icoPlay = "/estaticos/img/ico_play.png"	var ruta_icoPla ...
+
+
+
+		LINEA: 979, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */		var valorCookieMiMovistar = "NABAGNLNN";	/* ] ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <script type="text/javascript"src="/estaticos/js/logout.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function HTMLEncode(d){		var a=d.split(""),b=a ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <script type="text/javascript">	/* <![CDATA[ */	function imprimef(identificador){		var imprime ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var userInfoDireccion = "";var userInfoTelefono...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */var activa = false;function filtroXSS(){	var c ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">/* <![CDATA[ */		userInfoSegmentoNav = "AHOG";		userI ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript"	src="/estaticos/js/modernizr-2.7.1.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript">	$(document).ready(function() {		var urlSR = $('#urlSR');		var...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 5: <script type="text/javascript">		imprimef("impresora");	</script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <script type="text/javascript" src="/estaticos/js/funciones.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 91: <script type="text/javascript" src="/estaticos/js/iframe/cookie.js"></script>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 183: <script> function Abrir_Contacto() { var segmento = getSegmento(); var url = ''; switch(segmento) {...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <script type="text/javascript" src="/estaticos/Waterfall/js/includeGridFooter.js"></script>(singoutButton)
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 979, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...(singoutButton)
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 153, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 153, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 34, COLUMNA: 2: <title>Telef&oacute;nica Accesible | Particulares | Movistar</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 979, COLUMNA: 5: <a onclick="logoutConvergente();" style="display:none" id="logoutURLSaludo" class="logout" title="de ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 17: <a href="/particulares/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','particulares',4,'/',null ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 9: <a href="/autonomos/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','autonomos',4,'/',null,null) ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 9: <a href="/empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','empresas',4,'/',null,null);" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 9: <a href="/grandes-empresas/" onclick="javascript:Cookie.setCookie('SEG_NAV_ES','grandes-empresas',4, ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <a href="#" lang="es_ES">Castellano</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 5: <a href="/ca/particulars/accessible/?lng=ca_ES&amp;d=config" lang="ca_ES">CatalÃ¡n</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 5: <a href="/gl/particulares/accesibilidad/?lng=gl_ES&amp;d=config" lang="gl_ES">Gallego</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <a href="http://comunidad.movistar.es" target="_self"> comunidad</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <a href="#" id="enlace_cesta">Cesta</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <a class="home" href="/particulares/"><img src="/estaticos/img/es_ES/btn_home_sel.gif" alt="Inicio"...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <a class="submenu" href="#" target="_self">		<img src="/estaticos/img/es_ES/movistar-plus.g ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 30: <a href="/particulares/ver-tv/" target="_self">Contenidos </a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 115: <a href="/particulares/movistar-plus/contenidos-II/">&nbsp; </a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 188: <a href="/particulares/internet/adsl-fibra-optica/" target="_self">Conoce MOVISTAR+</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 298: <a href="movil/tarifas-moviles/" target="_self">Dispositivos</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 371: <a href="/particulares/television/movistar-imagenio/" target="_self">Contratar </a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 489: <a href="http://www.movistarplus.es/programacion-tv" target="_self">Guía TV</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 578: <a href="/particulares/movistarplus/calendarios-deportivos" target="_self">Calendarios deportivos</a ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <a class="submenu" href="#" target="_self">		<img src="/estaticos/img/es_ES/tienda.gif" alt ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 30: <a href="/particulares/oferta-combinada/fusion/" target="_self"><b>Fusión </b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 136: <a href="/particulares/internet/adsl-fibra-optica/" target="_self"><b>Internet y Fijo</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 238: <a href="/particulares/movil/tarifas-moviles/" target="_self"><b>Móvil</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 340: <a href="/particulares/television/movistar-imagenio/" target="_self"><b>Televisión</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 440: <a href="/particulares/movil/moviles/" target="_self"><b>Tienda electrónica</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 547: <a href="/particulares/tienda/servicios-digitales/" target="_self"><b>Apps y servicios digitales</b> ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 686: <a href="/particulares/internet/adsl-fibra-optica/fibra-optica/ " target="_self"></b></b>&nbsp;&nbsp ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 833: <a href="/particulares/solucioneswifi" target="_self"></b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <a class="submenu" href="#" target="_self">		<img src="/estaticos/img/es_ES/atencion-client ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 30: <a href="#" target="_self"><b>Consultas</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 100: <a href="/particulares/atencion-cliente/atsoporteyaverias/"><b>Gestiones</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 189: <a href="/particulares/atencion-cliente/attepuedeinteresar/"><b>Soporte técnico</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 300: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/ver-mi-factura/ " target="_self">V ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 426: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/no-se-si-estoy-registrado-en-mi-mo ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 600: <a href="/particulares/atencion-cliente/Fijo/">Fijo</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 664: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/modificar-datos-personales/" targe ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 825: <a href="https://atencionalcliente.movistar.es/pregunta-frecuente/consulta-tu-codigo-puk/ " target=" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 960: <a href="/particulares/atencion-cliente/asistente/?f=206" target="_self">Movistar TV Multidispositiv ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1088: <a href="https://atencionalcliente.movistar.es/?support=1" target="_self">Soporte técnico y Avería ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1202: <a href="https://atencionalcliente.movistar.es/" target="_self">Otras consultas</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1308: <a href="/particulares/atencion-cliente/asistente/" target="_top"><b>Otras consultas...</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1412: <a href="/particulares/atencion-cliente/correo/">Correo</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1494: <a href="/particulares/atencion-cliente/consulta-puk/">consulta-puk</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1574: <a href="/particulares/atencion-cliente/outlet/">outlet</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1656: <a href="/particulares/atencion-cliente/TelefonosAtencionParticularesyEmpresas/">Teléfonos de atenc ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1782: <a href="/particulares/atencion-cliente/soportetecnico/">soportetecnico</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1880: <a href="/particulares/atencion-cliente/aterrizaje-app/">aterrizaje-app</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1964: <a href="/particulares/atencion-cliente/aterrizaje-factura/">aterrizaje-factura</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2070: <a href="/particulares/atencion-cliente/escribenos-simplificado/">escribenos-simplificado</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2172: <a href="/particulares/atencion-cliente/eventos/">eventos</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2268: <a href="#" target="_self"><b>Soporte técnico y averías</b></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2342: <a href="http://configuratumovil.movistar.es" target="_self"></b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;& ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2475: <a href="/particulares/internet/movistar-adsl/ya-tengo-adsl/servicios/ficha/configuracion-routers-po ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2679: <a href="/particulares/test-de-velocidad/" target="_self" title="Test de velocidad"></b></b>&nbsp;&n ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2833: <a href="/particulares/atencion-cliente/asistente/?f=270" target="_self"></b></b>&nbsp;&nbsp;&nbsp;& ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2981: <a href="https://atencionalcliente.movistar.es/" target="_self"></b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbs ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 2: <a class="submenu" href="#" target="_self">		<img src="/estaticos/img/es_ES/mi_movistar.gif ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self">O ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://sitioseguro.movistarplus.es/zonacliente/misdatospersonales.html" target="_self">Acc ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 9: <a href="/mi-movistar/acceso-unico" id="a_acceder" style="width: 100%;padding-top: 10px;text-align:...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self">C ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self">O ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones" target=" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/consumo" target="_self">C ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self">O ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrgestiones " target= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="/mimovistar-cliente/publico/acceso/privado/home" target="_self" title="Resumen de mis líne ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/datosPersonales" target=" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/facturastodas" target="_s ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/cclivrmisproductos" targe ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 15: <a href="https://www.movistar.es/mimovistar-cliente/publico/acceso/privado/ofertas" target="_self">O ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <a href="/particulares/movil/servicios/app-mimovistar/" target="_self">App Mi Movistar:usa tus clave ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <a href="/" id="enlacelogo"><span>Logotipo Movistar</span></a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 9: <a href="/particulares/" class="enlacerastro" itemprop="url"><div itemprop="title" style= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 23: <a href="#" class="print">Imprimir</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <a href="https://www.atam.es/" title="enlace a la web de Atam">Ir a la web de Atam</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 130: <a href="http://www.boe.es/legislacion/codigos/" title="enlace a la p&aacute;gina de descarga"> www. ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <a href="http://www.movistar.es/particulares/movil/servicios/guia-telefonica-paginas-blancas/" title ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <a href="http://blancas.paginasamarillas.es/jsp/guia_servicio.jsp" title="Gu&iacute;a servicio unive ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <a href="http://www.msssi.gob.es/ssi/discapacidad/serviciosPersonasDiscapacidad/centroIntermediacion ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="/particulares/aviso-legal/" target="_self" title="Aviso legal">Aviso legal</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="/particulares/accesibilidad/" target="_self">Accesibilidad</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="http://www.telefonica.es/" target="_blank">Telefónica España</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="/contratos" target="_self">Condiciones legales</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="/empresas/centro-de-privacidad/?optionSelected=privacidadEmpresas" target="_self">Privacida ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=ES" target= ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="http://comunicacion.movistarplus.es/" target="_blank">Comunicación</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="/GaliciaPDBL" target="_self">Fondos públicos</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 10: <a href="#" target="_self" class="optanon-toggle-display">Cookies</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 23: <a href="/particulares/centro-de-seguridad/" target="_self">Seguridad</a>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <a href="http://info.telefonica.es"><img src="/estaticos/img/logo_footer.gif" alt="navigation.enlace ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="https://dialogando.com.es/" target="_blank" title="Dialogando" alt="Dialogando" rel="nofoll ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.confianzaonline.org/empresas/movistar.htm" target="_blank" title="Confianza Onli ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="https://www.telefonica.es/es/acerca_de_telefonica/calidad/calidad-servicio" target="_blank" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.msssi.gob.es/campannas/campanas13/haySalida.htm" target="_blank" rel='nofollow'...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://esports.movistar.es" target="_blank" title="Movistar eSports" alt="Movistar eSports" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.fundaciontelefonica.com" target="_blank" title="Fundación Telefónica" alt="Fun ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.tuenti.es" target="_blank" title="Tuenti" alt="Tuenti" rel="nofollow"><img src=" ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://www.movistar.es/particulares/movil/servicios/app-mimovistar?pid=ico-home" target="_b ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 6: <a href="http://likes.movistar.es" target="_blank" title="Movistar Likes" alt="Movistar Likes"><img...(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 153, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 979, COLUMNA: 4: <h1 class="bold">Telefónica Accesible</h1>(singoutButton)
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 979, COLUMNA: 1: <h2><span>Telco Digital accesible/ Discapacidad</span></h2>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <h2><span>Telef&oacute;nica colabora con</span></h2>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <h2><span>Legislaci&oacute;n</span></h2>(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <h2><span>Servicio Universal</span></h2>(singoutButton)
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 979, COLUMNA: 1: <h3>SERVICIO UNIVERSAL PARA PERSONAS CON DISCAPACIDAD</h3>(singoutButton)
+
+  
+
+	REVISAR: 45: h4 may be used for formatting.
+
+ 
+
+		LINEA: 979, COLUMNA: 1: <h4>Gu&iacute;a telef&oacute;nica del SU y Servicio de consulta telef&oacute;nica sobre n&uacute;mer ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <h4>Terminales.</h4>(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 979, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...(singoutButton)
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 153, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 979, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...(singoutButton)
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 153, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 153, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 979, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="get"><fieldset>	<legend>Buscar en ...(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 100: blockquote may be used for indentation.
+
+ 
+
+		LINEA: 979, COLUMNA: 1: <blockquote> Art&iacute;culo 27. Concepto y delimitaci&oacute;n de los servicios que se incluyen en...(singoutButton)
+
+  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 153, COLUMNA: 2: <body>		<!-- Migración huella Tealium a GTM : 10.11.17 : Carlos Casado Barrantes -->		<!-- Goog ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+ 
+
+		LINEA: 979, COLUMNA: 8: <input type="text" name="searchGSA" id="search" class="" value="" onchange="javaScript:activaBusqued ...(singoutButton)
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 979, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="get"><fieldset>	<legend>Buscar en ...(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 979, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="get"><fieldset>	<legend>Buscar en ...(singoutButton)
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 979, COLUMNA: 3: <input id="urlLogoutCOLX" type="hidden" value="https://www.movistar.es/portal/site/COL10/template.CO ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 3: <input id="urlLogoutCCLI" type="hidden" value="https://www.movistar.es/mimovistar-cliente/publico/de ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <input id="tipoUsuarioLogadoHidden" type="hidden" value="NOLOGADO" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 1: <input id="hiddenPageName" type="hidden" value="Particulares:Accesibilidad">(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 4: <input type="hidden" name="vgnextoid" value="" />(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 7: <input type="submit" value="Desconectar"	id="singoutButton" onclick="document.getElementById ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 7: <input type="submit" value="Desconectar"	id="singoutButton" onclick="document.getElementById ...(singoutButton)
+
+
+
+		LINEA: 979, COLUMNA: 7: <input type="submit" value="Desconectar"	id="singoutButton" onclick="document.getElementById ...(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 979, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="get"><fieldset>	<legend>Buscar en ...(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 979, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="get"><fieldset>	<legend>Buscar en ...(singoutButton)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 979, COLUMNA: 3: <form name="frmSearch" id="frmSearch" action="#" method="get"><fieldset>	<legend>Buscar en ...(singoutButton)
+
+

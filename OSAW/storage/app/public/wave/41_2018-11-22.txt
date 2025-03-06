@@ -1,0 +1,37 @@
+REPORTE PÁGINA WEB: http://www.renfe.com
+FECHA EVALUACIÓN: 2018-11-22
+
+PROBLEMAS
+Broken ARIA reference	  VECES ENCONTRADO: 11
+
+
+
+ALERTAS
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 4
+Very small text	  VECES ENCONTRADO: 16
+Fieldset missing legend	  VECES ENCONTRADO: 2
+Underlined text	  VECES ENCONTRADO: 1
+Missing fieldset	  VECES ENCONTRADO: 2
+Noscript element	  VECES ENCONTRADO: 1
+Possible heading	  VECES ENCONTRADO: 1
+Tabindex	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 11
+
+
+
+CARACTERISTICAS
+Null or empty alternative text	  VECES ENCONTRADO: 13
+Linked image with alternative text	  VECES ENCONTRADO: 19
+Fieldset	  VECES ENCONTRADO: 4
+Form label	  VECES ENCONTRADO: 18
+Alternative text	  VECES ENCONTRADO: 10
+Element language	  VECES ENCONTRADO: 7
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 21
+
+
+

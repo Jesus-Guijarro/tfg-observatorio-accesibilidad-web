@@ -1,0 +1,1688 @@
+REPORTE PÁGINA WEB: http://www.ciencia.gob.es/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=0b6ac76c760d4610VgnVCM1000001d04140aRCRD
+FECHA EVALUACIÓN: 2018-11-01
+
+-PROBLEMAS CONOCIDOS-
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR: Add text to the label element.     
+
+		LINEA: 147, 
+
+		COLUMNA 4: <input type="image" alt="Buscador" value="Buscador" id="btn_busq_gnral" src="/recursos_micinn/img/lu ...
+
+	
+
+  
+
+-PROBLEMAS POTENCIALES-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 116, 
+
+		COLUMNA 1: <img alt="Ministerio de Ciencia, Innovación y Universidades- Gobierno de España" src="/stfls/com ...       
+
+		LINEA: 153, 
+
+		COLUMNA 1: <img alt="Ir a 'Twitter', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Twitter_Logo_Cien ...       
+
+		LINEA: 158, 
+
+		COLUMNA 1: <img alt="Ir a 'Facebook', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Facebook.png"/>       
+
+		LINEA: 163, 
+
+		COLUMNA 1: <img alt="Ir a 'Instagram', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Instagram.png"/ ...       
+
+		LINEA: 168, 
+
+		COLUMNA 1: <img alt="Ir a 'Youtube', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Youtube.png"/>       
+
+		LINEA: 173, 
+
+		COLUMNA 1: <img alt="RSS" src="/stfls/MICINN/Comun/ENLACES_CANAL/RSS.png"/>       
+
+		LINEA: 178, 
+
+		COLUMNA 1: <img alt="Comunidades I+D+i" src="/stfls/MICINN/Comun/ENLACES_CANAL/ico_comunidades.gif"/>       
+
+		LINEA: 428, 
+
+		COLUMNA 1: <img alt="Enlace BOE" src="/stfls/MICINN/Comun/Repositorios_Etiquetas/ico_boe.gif"/>       
+
+		LINEA: 440, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/informacion.jpg" alt="Información y atención a ...       
+
+		LINEA: 445, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/sede.jpg" alt="Sede Electrónica"/>       
+
+		LINEA: 451, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/FondosUnionEuropea.png" alt="Fondos Europeos"/>       
+
+		LINEA: 456, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/banner_aei_es.jpg" alt="Agencia Estatal de Investigación ...       
+
+		LINEA: 461, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Investigacion/IMAGENES/BannerEsHorizonte2020.jpg" alt="Horizonte 2020"/>       
+
+		LINEA: 485, 
+
+		COLUMNA 16: <img src="/recursos_micinn/img/ico_rss_inn.gif" width="16" height="16" alt="RSS" />
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 428, 
+
+		COLUMNA 1: <img alt="Enlace BOE" src="/stfls/MICINN/Comun/Repositorios_Etiquetas/ico_boe.gif"/>       
+
+		LINEA: 485, 
+
+		COLUMNA 16: <img src="/recursos_micinn/img/ico_rss_inn.gif" width="16" height="16" alt="RSS" />
+
+  
+
+	REVISAR: 59: Image used for input element may have Alt text that does not identify the purpose or function as the image.
+
+
+
+		LINEA: 147, 
+
+		COLUMNA 4: <input type="image" alt="Buscador" value="Buscador" id="btn_busq_gnral" src="/recursos_micinn/img/lu ...
+
+  
+
+	REVISAR: 193: Form submit button image may contain text that is not in Alt text.
+
+
+
+		LINEA: 147, 
+
+		COLUMNA 4: <input type="image" alt="Buscador" value="Buscador" id="btn_busq_gnral" src="/recursos_micinn/img/lu ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 146, 
+
+		COLUMNA 4: <input type="text" value="" class="conborde" id="campobusq" name="javax.portlet.prp_a9b8ca1584ba21a9 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 116, 
+
+		COLUMNA 1: <img alt="Ministerio de Ciencia, Innovación y Universidades- Gobierno de España" src="/stfls/com ...       
+
+		LINEA: 153, 
+
+		COLUMNA 1: <img alt="Ir a 'Twitter', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Twitter_Logo_Cien ...       
+
+		LINEA: 158, 
+
+		COLUMNA 1: <img alt="Ir a 'Facebook', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Facebook.png"/>       
+
+		LINEA: 163, 
+
+		COLUMNA 1: <img alt="Ir a 'Instagram', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Instagram.png"/ ...       
+
+		LINEA: 168, 
+
+		COLUMNA 1: <img alt="Ir a 'Youtube', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Youtube.png"/>       
+
+		LINEA: 173, 
+
+		COLUMNA 1: <img alt="RSS" src="/stfls/MICINN/Comun/ENLACES_CANAL/RSS.png"/>       
+
+		LINEA: 178, 
+
+		COLUMNA 1: <img alt="Comunidades I+D+i" src="/stfls/MICINN/Comun/ENLACES_CANAL/ico_comunidades.gif"/>       
+
+		LINEA: 428, 
+
+		COLUMNA 1: <img alt="Enlace BOE" src="/stfls/MICINN/Comun/Repositorios_Etiquetas/ico_boe.gif"/>       
+
+		LINEA: 440, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/informacion.jpg" alt="Información y atención a ...       
+
+		LINEA: 445, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/sede.jpg" alt="Sede Electrónica"/>       
+
+		LINEA: 451, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/FondosUnionEuropea.png" alt="Fondos Europeos"/>       
+
+		LINEA: 456, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/banner_aei_es.jpg" alt="Agencia Estatal de Investigación ...       
+
+		LINEA: 461, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Investigacion/IMAGENES/BannerEsHorizonte2020.jpg" alt="Horizonte 2020"/>       
+
+		LINEA: 485, 
+
+		COLUMNA 16: <img src="/recursos_micinn/img/ico_rss_inn.gif" width="16" height="16" alt="RSS" />
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 146, 
+
+		COLUMNA 4: <input type="text" value="" class="conborde" id="campobusq" name="javax.portlet.prp_a9b8ca1584ba21a9 ...       
+
+		LINEA: 147, 
+
+		COLUMNA 4: <input type="image" alt="Buscador" value="Buscador" id="btn_busq_gnral" src="/recursos_micinn/img/lu ...
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 30, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/jquery-1.8.0.min.js"></script>       
+
+		LINEA: 31, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/jquery.smoothDivScroll.js" type="text/javascript"></script>       
+
+		LINEA: 32, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/scripts.js" type="text/javascript"></script>       
+
+		LINEA: 33, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/jquery.accessible-news-slider.js" type="text/javascript"></script>       
+
+		LINEA: 34, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/calendario.js" type="text/javascript"></script>       
+
+		LINEA: 35, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/gallerific.js" type="text/javascript"></script>       
+
+		LINEA: 43, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/utils.js" ></script>       
+
+		LINEA: 44, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/sessvars.js" ></script>       
+
+		LINEA: 46, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/mapa.js" ></script>       
+
+		LINEA: 55, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/Lightbox/lightbox_2.0.js"></script>       
+
+		LINEA: 58, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/video.js" type="text/javascript" charset="utf-8"></script>       
+
+		LINEA: 60, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/checkIE.js" ></script>       
+
+		LINEA: 61, 
+
+		COLUMNA 2: <script type="text/javascript">	VideoJS.setupAllWhenReady();</script>       
+
+		LINEA: 64, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/Fancybox/jquery.fancybox.js"></script>       
+
+		LINEA: 66, 
+
+		COLUMNA 2: <script type="text/javascript">	$(document).ready(function() {	$('a[rel="iframe:420:356"]').addC ...       
+
+		LINEA: 82, 
+
+		COLUMNA 1: <script type="text/javascript">$(document).ready(function(){// SLIDE MAPA WEB //	//ocultamos c ...       
+
+		LINEA: 649, 
+
+		COLUMNA 1: <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-9874985-1 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 116, 
+
+		COLUMNA 1: <img alt="Ministerio de Ciencia, Innovación y Universidades- Gobierno de España" src="/stfls/com ...       
+
+		LINEA: 440, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/informacion.jpg" alt="Información y atención a ...       
+
+		LINEA: 445, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/sede.jpg" alt="Sede Electrónica"/>       
+
+		LINEA: 451, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/FondosUnionEuropea.png" alt="Fondos Europeos"/>       
+
+		LINEA: 456, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/banner_aei_es.jpg" alt="Agencia Estatal de Investigación ...       
+
+		LINEA: 461, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Investigacion/IMAGENES/BannerEsHorizonte2020.jpg" alt="Horizonte 2020"/>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 116, 
+
+		COLUMNA 1: <img alt="Ministerio de Ciencia, Innovación y Universidades- Gobierno de España" src="/stfls/com ...       
+
+		LINEA: 153, 
+
+		COLUMNA 1: <img alt="Ir a 'Twitter', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Twitter_Logo_Cien ...       
+
+		LINEA: 158, 
+
+		COLUMNA 1: <img alt="Ir a 'Facebook', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Facebook.png"/>       
+
+		LINEA: 163, 
+
+		COLUMNA 1: <img alt="Ir a 'Instagram', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Instagram.png"/ ...       
+
+		LINEA: 168, 
+
+		COLUMNA 1: <img alt="Ir a 'Youtube', en ventana nueva" src="/stfls/MICINN/Comun/ENLACES_CANAL/Youtube.png"/>       
+
+		LINEA: 173, 
+
+		COLUMNA 1: <img alt="RSS" src="/stfls/MICINN/Comun/ENLACES_CANAL/RSS.png"/>       
+
+		LINEA: 178, 
+
+		COLUMNA 1: <img alt="Comunidades I+D+i" src="/stfls/MICINN/Comun/ENLACES_CANAL/ico_comunidades.gif"/>       
+
+		LINEA: 428, 
+
+		COLUMNA 1: <img alt="Enlace BOE" src="/stfls/MICINN/Comun/Repositorios_Etiquetas/ico_boe.gif"/>       
+
+		LINEA: 440, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/informacion.jpg" alt="Información y atención a ...       
+
+		LINEA: 445, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/sede.jpg" alt="Sede Electrónica"/>       
+
+		LINEA: 451, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/MOSAICOS/FondosUnionEuropea.png" alt="Fondos Europeos"/>       
+
+		LINEA: 456, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Comun/ENLACES_DCHO/banner_aei_es.jpg" alt="Agencia Estatal de Investigación ...       
+
+		LINEA: 461, 
+
+		COLUMNA 1: <img src="/stfls/MICINN/Investigacion/IMAGENES/BannerEsHorizonte2020.jpg" alt="Horizonte 2020"/>       
+
+		LINEA: 485, 
+
+		COLUMNA 16: <img src="/recursos_micinn/img/ico_rss_inn.gif" width="16" height="16" alt="RSS" />
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 30, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/jquery-1.8.0.min.js"></script>       
+
+		LINEA: 31, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/jquery.smoothDivScroll.js" type="text/javascript"></script>       
+
+		LINEA: 32, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/scripts.js" type="text/javascript"></script>       
+
+		LINEA: 33, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/jquery.accessible-news-slider.js" type="text/javascript"></script>       
+
+		LINEA: 34, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/calendario.js" type="text/javascript"></script>       
+
+		LINEA: 35, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/gallerific.js" type="text/javascript"></script>       
+
+		LINEA: 43, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/utils.js" ></script>       
+
+		LINEA: 44, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/sessvars.js" ></script>       
+
+		LINEA: 46, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/mapa.js" ></script>       
+
+		LINEA: 55, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/Lightbox/lightbox_2.0.js"></script>       
+
+		LINEA: 58, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/video.js" type="text/javascript" charset="utf-8"></script>       
+
+		LINEA: 60, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/checkIE.js" ></script>       
+
+		LINEA: 61, 
+
+		COLUMNA 2: <script type="text/javascript">	VideoJS.setupAllWhenReady();</script>       
+
+		LINEA: 64, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/Fancybox/jquery.fancybox.js"></script>       
+
+		LINEA: 66, 
+
+		COLUMNA 2: <script type="text/javascript">	$(document).ready(function() {	$('a[rel="iframe:420:356"]').addC ...       
+
+		LINEA: 82, 
+
+		COLUMNA 1: <script type="text/javascript">$(document).ready(function(){// SLIDE MAPA WEB //	//ocultamos c ...       
+
+		LINEA: 649, 
+
+		COLUMNA 1: <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-9874985-1 ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 30, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/jquery-1.8.0.min.js"></script>       
+
+		LINEA: 31, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/jquery.smoothDivScroll.js" type="text/javascript"></script>       
+
+		LINEA: 32, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/scripts.js" type="text/javascript"></script>       
+
+		LINEA: 33, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/jquery.accessible-news-slider.js" type="text/javascript"></script>       
+
+		LINEA: 34, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/calendario.js" type="text/javascript"></script>       
+
+		LINEA: 35, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/gallerific.js" type="text/javascript"></script>       
+
+		LINEA: 43, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/utils.js" ></script>       
+
+		LINEA: 44, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/sessvars.js" ></script>       
+
+		LINEA: 46, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/mapa.js" ></script>       
+
+		LINEA: 55, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/Lightbox/lightbox_2.0.js"></script>       
+
+		LINEA: 58, 
+
+		COLUMNA 2: <script src="/recursos_micinn/js/video.js" type="text/javascript" charset="utf-8"></script>       
+
+		LINEA: 60, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/checkIE.js" ></script>       
+
+		LINEA: 61, 
+
+		COLUMNA 2: <script type="text/javascript">	VideoJS.setupAllWhenReady();</script>       
+
+		LINEA: 64, 
+
+		COLUMNA 2: <script type="text/javascript" src="/recursos_micinn/js/Fancybox/jquery.fancybox.js"></script>       
+
+		LINEA: 66, 
+
+		COLUMNA 2: <script type="text/javascript">	$(document).ready(function() {	$('a[rel="iframe:420:356"]').addC ...       
+
+		LINEA: 82, 
+
+		COLUMNA 1: <script type="text/javascript">$(document).ready(function(){// SLIDE MAPA WEB //	//ocultamos c ...       
+
+		LINEA: 649, 
+
+		COLUMNA 1: <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-9874985-1 ...
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 7, 
+
+		COLUMNA 2: <title xmlns:xalan="http://xml.apache.org/xalan" xmlns:java="http://xml.apache.org/xslt/java">Inform ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 115, 
+
+		COLUMNA 1: <a title="Ministerio de Ciencia, Innovación y Universidades- Gobierno de España" href="http://ww ...       
+
+		LINEA: 122, 
+
+		COLUMNA 1: <a xml:lang="en" lang="en" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgne ...       
+
+		LINEA: 125, 
+
+		COLUMNA 1: <a xml:lang="ca" lang="ca" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgne ...       
+
+		LINEA: 128, 
+
+		COLUMNA 1: <a xml:lang="eu" lang="eu" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgne ...       
+
+		LINEA: 131, 
+
+		COLUMNA 1: <a xml:lang="gl" lang="gl" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgne ...       
+
+		LINEA: 134, 
+
+		COLUMNA 1: <a xml:lang="ca-va" lang="ca-va" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0 ...       
+
+		LINEA: 152, 
+
+		COLUMNA 1: <a href="https://twitter.com/CienciaGob" title="Ir a 'Twitter', en ventana nueva" target="_blank">< ...       
+
+		LINEA: 157, 
+
+		COLUMNA 1: <a href="https://www.facebook.com/CienciaGob/" title="Ir a 'Facebook', en ventana nueva" target="_bl ...       
+
+		LINEA: 162, 
+
+		COLUMNA 1: <a href="https://www.instagram.com/cienciagob/" title="Ir a 'Instagram', en ventana nueva" target="_ ...       
+
+		LINEA: 167, 
+
+		COLUMNA 1: <a href="https://www.youtube.com/user/cienciagob" title="Ir a 'Youtube', en ventana nueva" target="_ ...       
+
+		LINEA: 172, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.c6cbd58c7193283b112d3c1001432ea0/?vgnextoid=d4ad56bc1aea0210Vg ...       
+
+		LINEA: 177, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=7006dc0b13e23210Vg ...       
+
+		LINEA: 192, 
+
+		COLUMNA 1: <a accesskey="1" title="Inicio" href="/portal/site/MICINN/menuitem.abd9b51cad64425c8674c210a14041a0/ ...       
+
+		LINEA: 197, 
+
+		COLUMNA 1: <a accesskey="2" title="Ministerio" href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432 ...       
+
+		LINEA: 202, 
+
+		COLUMNA 1: <a accesskey="3" title="Ciencia" href="/portal/site/MICINN/menuitem.00d7c011ca2a3753222b7d1001432ea0 ...       
+
+		LINEA: 207, 
+
+		COLUMNA 1: <a accesskey="4" title="Innovación" href="/portal/site/MICINN/menuitem.00d7c011ca2a3753222b7d100143 ...       
+
+		LINEA: 212, 
+
+		COLUMNA 1: <a accesskey="5" title="Universidades" href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001 ...       
+
+		LINEA: 217, 
+
+		COLUMNA 1: <a accesskey="8" title="Convocatorias" href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001 ...       
+
+		LINEA: 225, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.abd9b51cad64425c8674c210a14041a0/?vgnextoid=d9581f4368aef110Vg ...       
+
+		LINEA: 228, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.00d7c011ca2a3753222b7d1001432ea0/?vgnextoid=33881f4368aef110Vg ...       
+
+		LINEA: 231, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=0b6ac76c760d4610Vg ...       
+
+		LINEA: 241, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=c7fd8357ad4cb210Vg ...       
+
+		LINEA: 248, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=700e94273d0d4610Vg ...       
+
+		LINEA: 254, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=bcd9c5e1876f5610Vg ...       
+
+		LINEA: 257, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=1387571a3db06610Vg ...       
+
+		LINEA: 260, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=8f4057127e510410Vg ...       
+
+		LINEA: 263, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=a6cbc18d48530210Vg ...       
+
+		LINEA: 266, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=cba733a6368c2310Vg ...       
+
+		LINEA: 269, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=c778fcac1f0d4610Vg ...       
+
+		LINEA: 276, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.eed4570ef37d2c8fbaa777b9026041a0/?vgnextoid=928d5ef3677c4610Vg ...       
+
+		LINEA: 282, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.ae4a355f9f39004f0a8b0c10026041a0/?vgnextoid=9c6d26d50d1d4610Vg ...       
+
+		LINEA: 285, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.6f2062042f6a5bc43b3f6810d14041a0/?vgnextoid=5a2826d50d1d4610Vg ...       
+
+		LINEA: 288, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=72b681d0bb1d4610Vg ...       
+
+		LINEA: 291, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=ff2181d0bb1d4610Vg ...       
+
+		LINEA: 294, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=010b26d50d1d4610Vg ...       
+
+		LINEA: 297, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=f45926d50d1d4610Vg ...       
+
+		LINEA: 300, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.8c7b21bf4d10094b7b381d10026041a0/?vgnextoid=bb4418ef1a553510Vg ...       
+
+		LINEA: 307, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=047ce2cf7a9f4610Vg ...       
+
+		LINEA: 313, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=8bc79b75fa076210Vg ...       
+
+		LINEA: 316, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=506a853773585610Vg ...       
+
+		LINEA: 319, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=3a812a27bf188210Vg ...       
+
+		LINEA: 326, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=25c55ef3677c4610Vg ...       
+
+		LINEA: 333, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=8cf8c18d48530210Vg ...       
+
+		LINEA: 339, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=719e15ffeae51410Vg ...       
+
+		LINEA: 342, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=999640226bca4610Vg ...       
+
+		LINEA: 345, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=89e215ffeae51410Vg ...       
+
+		LINEA: 348, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=c01ef40e27556510Vg ...       
+
+		LINEA: 355, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=0b6ac76c760d4610Vg ...       
+
+		LINEA: 361, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=a1cbc76c760d4610Vg ...       
+
+		LINEA: 368, 
+
+		COLUMNA 1: <a href="http://www.ciencia.gob.es/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgn ...       
+
+		LINEA: 375, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=3838afa1353a0510Vg ...       
+
+		LINEA: 401, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.8ce192e94ba842bea3bc811001432ea0/?vgnextoid=6e79215bd90c4410Vg ...       
+
+		LINEA: 409, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.8ce192e94ba842bea3bc811001432ea0/?vgnextoid=c71a215bd90c4410Vg ...       
+
+		LINEA: 432, 
+
+		COLUMNA 1: <a href="http://www.boe.es/diario_boe/txt.php?id=BOE-A-2013-10074" title="Ir a 'Ley de Apoyo a Empre ...       
+
+		LINEA: 439, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/contacto" title="Información y atención al ciudadano"><img src="/stf ...       
+
+		LINEA: 444, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=f0c992106a8a3210Vg ...       
+
+		LINEA: 450, 
+
+		COLUMNA 1: <a href="http://www.fondos.ciencia.gob.es" title="Fondos Europeos"><img src="/stfls/MICINN/Comun/EN ...       
+
+		LINEA: 455, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.8d78849a34f1cd28d0c9d910026041a0/?vgnextoid=664cfb7e04195510Vg ...       
+
+		LINEA: 460, 
+
+		COLUMNA 1: <a href="http://www.eshorizonte2020.es " title="Ir a 'Horizonte 2020', en ventana nueva" target="_ ...       
+
+		LINEA: 479, 
+
+		COLUMNA 28: <a href="#tab1" class="rss">RSS</a>       
+
+		LINEA: 485, 
+
+		COLUMNA 99: <a href="http://www.idi.mineco.gob.es/portal/site/MICINN/menuitem.c6cbd58c7193283b112d3c1001432ea0/? ...       
+
+		LINEA: 503, 
+
+		COLUMNA 47: <a href="#abre">Mapa web</a>       
+
+		LINEA: 510, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=6c29837762673410Vg ...       
+
+		LINEA: 513, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=4346846085f90210Vg ...       
+
+		LINEA: 516, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7cf9da9986bcce05b2a420cd223041a0/?vgnextoid=321eacd3abe36610Vg ...       
+
+		LINEA: 519, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=9b467c285ba85610Vg ...       
+
+		LINEA: 527, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=c7fd8357ad4cb210Vg ...       
+
+		LINEA: 530, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=700e94273d0d4610Vg ...       
+
+		LINEA: 533, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.eed4570ef37d2c8fbaa777b9026041a0/?vgnextoid=928d5ef3677c4610Vg ...       
+
+		LINEA: 536, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=047ce2cf7a9f4610Vg ...       
+
+		LINEA: 539, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=25c55ef3677c4610Vg ...       
+
+		LINEA: 542, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=8cf8c18d48530210Vg ...       
+
+		LINEA: 545, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=0b6ac76c760d4610Vg ...       
+
+		LINEA: 548, 
+
+		COLUMNA 1: <a href="http://www.ciencia.gob.es/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgn ...       
+
+		LINEA: 551, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=3838afa1353a0510Vg ...       
+
+		LINEA: 559, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=bb0705d38ead4610Vg ...       
+
+		LINEA: 562, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=04dbc4d659ecb210Vg ...       
+
+		LINEA: 565, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=6d95364d83431210Vg ...       
+
+		LINEA: 568, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=7acb12c94d364410Vg ...       
+
+		LINEA: 571, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=f4f93a1375bb4410Vg ...       
+
+		LINEA: 574, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=89a3364d83431210Vg ...       
+
+		LINEA: 582, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=7cfa38c5ad6c4610Vg ...       
+
+		LINEA: 585, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=a600988b5c3a4610Vg ...       
+
+		LINEA: 588, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=1305a6685d2b4610Vg ...       
+
+		LINEA: 591, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=0d21f6c0b37b4610Vg ...       
+
+		LINEA: 599, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=35365d99c09b2610Vg ...       
+
+		LINEA: 602, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=b3342149d5c76610Vg ...       
+
+		LINEA: 605, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=28e9db814a686610Vg ...       
+
+		LINEA: 608, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=f95505e42afee310Vg ...       
+
+		LINEA: 611, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=db55b9746e160210Vg ...       
+
+		LINEA: 614, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=a8b701c63c792210Vg ...       
+
+		LINEA: 617, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.898bcbf35a940b9b31299810223041a0/?vgnextoid=f3dac2e1a8be0210Vg ...       
+
+		LINEA: 627, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=0bfd56bc1aea0210Vg ...       
+
+		LINEA: 630, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=f42ed437d1293610Vg ...       
+
+		LINEA: 633, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=919c282978ea0210Vg ...       
+
+		LINEA: 638, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.c6cbd58c7193283b112d3c1001432ea0/?vgnextoid=d4ad56bc1aea0210Vg ...       
+
+		LINEA: 641, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.d024d9022c9f2136672ffeb801432ea0/?vgnextoid=41dbdaa8a3860210Vg ...       
+
+		LINEA: 644, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.89edac14a49f7be269d430a1a14041a0/?vgnextoid=aebb6de155008210Vg ...
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 115, 
+
+		COLUMNA 1: <a title="Ministerio de Ciencia, Innovación y Universidades- Gobierno de España" href="http://ww ...       
+
+		LINEA: 122, 
+
+		COLUMNA 1: <a xml:lang="en" lang="en" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgne ...       
+
+		LINEA: 125, 
+
+		COLUMNA 1: <a xml:lang="ca" lang="ca" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgne ...       
+
+		LINEA: 128, 
+
+		COLUMNA 1: <a xml:lang="eu" lang="eu" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgne ...       
+
+		LINEA: 131, 
+
+		COLUMNA 1: <a xml:lang="gl" lang="gl" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgne ...       
+
+		LINEA: 134, 
+
+		COLUMNA 1: <a xml:lang="ca-va" lang="ca-va" href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0 ...       
+
+		LINEA: 152, 
+
+		COLUMNA 1: <a href="https://twitter.com/CienciaGob" title="Ir a 'Twitter', en ventana nueva" target="_blank">< ...       
+
+		LINEA: 157, 
+
+		COLUMNA 1: <a href="https://www.facebook.com/CienciaGob/" title="Ir a 'Facebook', en ventana nueva" target="_bl ...       
+
+		LINEA: 162, 
+
+		COLUMNA 1: <a href="https://www.instagram.com/cienciagob/" title="Ir a 'Instagram', en ventana nueva" target="_ ...       
+
+		LINEA: 167, 
+
+		COLUMNA 1: <a href="https://www.youtube.com/user/cienciagob" title="Ir a 'Youtube', en ventana nueva" target="_ ...       
+
+		LINEA: 172, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.c6cbd58c7193283b112d3c1001432ea0/?vgnextoid=d4ad56bc1aea0210Vg ...       
+
+		LINEA: 177, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=7006dc0b13e23210Vg ...       
+
+		LINEA: 192, 
+
+		COLUMNA 1: <a accesskey="1" title="Inicio" href="/portal/site/MICINN/menuitem.abd9b51cad64425c8674c210a14041a0/ ...       
+
+		LINEA: 197, 
+
+		COLUMNA 1: <a accesskey="2" title="Ministerio" href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432 ...       
+
+		LINEA: 202, 
+
+		COLUMNA 1: <a accesskey="3" title="Ciencia" href="/portal/site/MICINN/menuitem.00d7c011ca2a3753222b7d1001432ea0 ...       
+
+		LINEA: 207, 
+
+		COLUMNA 1: <a accesskey="4" title="Innovación" href="/portal/site/MICINN/menuitem.00d7c011ca2a3753222b7d100143 ...       
+
+		LINEA: 212, 
+
+		COLUMNA 1: <a accesskey="5" title="Universidades" href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001 ...       
+
+		LINEA: 217, 
+
+		COLUMNA 1: <a accesskey="8" title="Convocatorias" href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001 ...       
+
+		LINEA: 225, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.abd9b51cad64425c8674c210a14041a0/?vgnextoid=d9581f4368aef110Vg ...       
+
+		LINEA: 228, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.00d7c011ca2a3753222b7d1001432ea0/?vgnextoid=33881f4368aef110Vg ...       
+
+		LINEA: 231, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=0b6ac76c760d4610Vg ...       
+
+		LINEA: 241, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=c7fd8357ad4cb210Vg ...       
+
+		LINEA: 248, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=700e94273d0d4610Vg ...       
+
+		LINEA: 254, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=bcd9c5e1876f5610Vg ...       
+
+		LINEA: 257, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=1387571a3db06610Vg ...       
+
+		LINEA: 260, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=8f4057127e510410Vg ...       
+
+		LINEA: 263, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=a6cbc18d48530210Vg ...       
+
+		LINEA: 266, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=cba733a6368c2310Vg ...       
+
+		LINEA: 269, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=c778fcac1f0d4610Vg ...       
+
+		LINEA: 276, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.eed4570ef37d2c8fbaa777b9026041a0/?vgnextoid=928d5ef3677c4610Vg ...       
+
+		LINEA: 282, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.ae4a355f9f39004f0a8b0c10026041a0/?vgnextoid=9c6d26d50d1d4610Vg ...       
+
+		LINEA: 285, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.6f2062042f6a5bc43b3f6810d14041a0/?vgnextoid=5a2826d50d1d4610Vg ...       
+
+		LINEA: 288, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=72b681d0bb1d4610Vg ...       
+
+		LINEA: 291, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=ff2181d0bb1d4610Vg ...       
+
+		LINEA: 294, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=010b26d50d1d4610Vg ...       
+
+		LINEA: 297, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=f45926d50d1d4610Vg ...       
+
+		LINEA: 300, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.8c7b21bf4d10094b7b381d10026041a0/?vgnextoid=bb4418ef1a553510Vg ...       
+
+		LINEA: 307, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=047ce2cf7a9f4610Vg ...       
+
+		LINEA: 313, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=8bc79b75fa076210Vg ...       
+
+		LINEA: 316, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=506a853773585610Vg ...       
+
+		LINEA: 319, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=3a812a27bf188210Vg ...       
+
+		LINEA: 326, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=25c55ef3677c4610Vg ...       
+
+		LINEA: 333, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=8cf8c18d48530210Vg ...       
+
+		LINEA: 339, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=719e15ffeae51410Vg ...       
+
+		LINEA: 342, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=999640226bca4610Vg ...       
+
+		LINEA: 345, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=89e215ffeae51410Vg ...       
+
+		LINEA: 348, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=c01ef40e27556510Vg ...       
+
+		LINEA: 355, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=0b6ac76c760d4610Vg ...       
+
+		LINEA: 361, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=a1cbc76c760d4610Vg ...       
+
+		LINEA: 368, 
+
+		COLUMNA 1: <a href="http://www.ciencia.gob.es/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgn ...       
+
+		LINEA: 375, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=3838afa1353a0510Vg ...       
+
+		LINEA: 401, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.8ce192e94ba842bea3bc811001432ea0/?vgnextoid=6e79215bd90c4410Vg ...       
+
+		LINEA: 409, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.8ce192e94ba842bea3bc811001432ea0/?vgnextoid=c71a215bd90c4410Vg ...       
+
+		LINEA: 432, 
+
+		COLUMNA 1: <a href="http://www.boe.es/diario_boe/txt.php?id=BOE-A-2013-10074" title="Ir a 'Ley de Apoyo a Empre ...       
+
+		LINEA: 439, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/contacto" title="Información y atención al ciudadano"><img src="/stf ...       
+
+		LINEA: 444, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=f0c992106a8a3210Vg ...       
+
+		LINEA: 450, 
+
+		COLUMNA 1: <a href="http://www.fondos.ciencia.gob.es" title="Fondos Europeos"><img src="/stfls/MICINN/Comun/EN ...       
+
+		LINEA: 455, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.8d78849a34f1cd28d0c9d910026041a0/?vgnextoid=664cfb7e04195510Vg ...       
+
+		LINEA: 460, 
+
+		COLUMNA 1: <a href="http://www.eshorizonte2020.es " title="Ir a 'Horizonte 2020', en ventana nueva" target="_ ...       
+
+		LINEA: 479, 
+
+		COLUMNA 28: <a href="#tab1" class="rss">RSS</a>       
+
+		LINEA: 485, 
+
+		COLUMNA 99: <a href="http://www.idi.mineco.gob.es/portal/site/MICINN/menuitem.c6cbd58c7193283b112d3c1001432ea0/? ...       
+
+		LINEA: 503, 
+
+		COLUMNA 47: <a href="#abre">Mapa web</a>       
+
+		LINEA: 510, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=6c29837762673410Vg ...       
+
+		LINEA: 513, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=4346846085f90210Vg ...       
+
+		LINEA: 516, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7cf9da9986bcce05b2a420cd223041a0/?vgnextoid=321eacd3abe36610Vg ...       
+
+		LINEA: 519, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=9b467c285ba85610Vg ...       
+
+		LINEA: 527, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=c7fd8357ad4cb210Vg ...       
+
+		LINEA: 530, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=700e94273d0d4610Vg ...       
+
+		LINEA: 533, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.eed4570ef37d2c8fbaa777b9026041a0/?vgnextoid=928d5ef3677c4610Vg ...       
+
+		LINEA: 536, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=047ce2cf7a9f4610Vg ...       
+
+		LINEA: 539, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=25c55ef3677c4610Vg ...       
+
+		LINEA: 542, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=8cf8c18d48530210Vg ...       
+
+		LINEA: 545, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.26172fcf4eb029fa6ec7da6901432ea0/?vgnextoid=0b6ac76c760d4610Vg ...       
+
+		LINEA: 548, 
+
+		COLUMNA 1: <a href="http://www.ciencia.gob.es/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgn ...       
+
+		LINEA: 551, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=3838afa1353a0510Vg ...       
+
+		LINEA: 559, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=bb0705d38ead4610Vg ...       
+
+		LINEA: 562, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=04dbc4d659ecb210Vg ...       
+
+		LINEA: 565, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=6d95364d83431210Vg ...       
+
+		LINEA: 568, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=7acb12c94d364410Vg ...       
+
+		LINEA: 571, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=f4f93a1375bb4410Vg ...       
+
+		LINEA: 574, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=89a3364d83431210Vg ...       
+
+		LINEA: 582, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.4a63d244c1df380a84276c1001432ea0/?vgnextoid=7cfa38c5ad6c4610Vg ...       
+
+		LINEA: 585, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.7eeac5cd345b4f34f09dfd1001432ea0/?vgnextoid=a600988b5c3a4610Vg ...       
+
+		LINEA: 588, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=1305a6685d2b4610Vg ...       
+
+		LINEA: 591, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29451c2ac1391f1febebed1001432ea0/?vgnextoid=0d21f6c0b37b4610Vg ...       
+
+		LINEA: 599, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=35365d99c09b2610Vg ...       
+
+		LINEA: 602, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=b3342149d5c76610Vg ...       
+
+		LINEA: 605, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=28e9db814a686610Vg ...       
+
+		LINEA: 608, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=f95505e42afee310Vg ...       
+
+		LINEA: 611, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=db55b9746e160210Vg ...       
+
+		LINEA: 614, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.29bfd64be21cddc5f09dfd1001432ea0/?vgnextoid=a8b701c63c792210Vg ...       
+
+		LINEA: 617, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.898bcbf35a940b9b31299810223041a0/?vgnextoid=f3dac2e1a8be0210Vg ...       
+
+		LINEA: 627, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=0bfd56bc1aea0210Vg ...       
+
+		LINEA: 630, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=f42ed437d1293610Vg ...       
+
+		LINEA: 633, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.b153148dd6857ccd7010721001432ea0/?vgnextoid=919c282978ea0210Vg ...       
+
+		LINEA: 638, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.c6cbd58c7193283b112d3c1001432ea0/?vgnextoid=d4ad56bc1aea0210Vg ...       
+
+		LINEA: 641, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.d024d9022c9f2136672ffeb801432ea0/?vgnextoid=41dbdaa8a3860210Vg ...       
+
+		LINEA: 644, 
+
+		COLUMNA 1: <a href="/portal/site/MICINN/menuitem.89edac14a49f7be269d430a1a14041a0/?vgnextoid=aebb6de155008210Vg ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 114, 
+
+		COLUMNA 4: <h1><a title="Ministerio de Ciencia, Innovación y Universidades- Gobierno de España" href="http ...
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 236, 
+
+		COLUMNA 1: <h2 class="titu1">Ciencia</h2>       
+
+		LINEA: 384, 
+
+		COLUMNA 1: <h2 class="titu9">Información de Interés para Investigadores</h2>       
+
+		LINEA: 422, 
+
+		COLUMNA 1: <h2 class="titu2">Enlaces</h2>       
+
+		LINEA: 471, 
+
+		COLUMNA 11: <h2>Síguenos en ...</h2>       
+
+		LINEA: 507, 
+
+		COLUMNA 1: <h2>Ministerio</h2>       
+
+		LINEA: 524, 
+
+		COLUMNA 1: <h2>Ciencia</h2>       
+
+		LINEA: 556, 
+
+		COLUMNA 1: <h2>Innovación</h2>       
+
+		LINEA: 579, 
+
+		COLUMNA 1: <h2>Universidades</h2>       
+
+		LINEA: 596, 
+
+		COLUMNA 1: <h2>Convocatorias</h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+
+
+		LINEA: 483, 
+
+		COLUMNA 13: <h3>Canales RSS</h3>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 139, 
+
+		COLUMNA 3: <form action="/portal/site/MICINN/template.PAGE/menuitem.b61fe1fe5573b2a973b5c41001432ea0/?javax.por ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 111, 
+
+		COLUMNA 8: <body style="background-image:url(/stfls/MICINN/Comun/CABECERAS/fnd_body_11.jpg)"><div id="pagina" ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 139, 
+
+		COLUMNA 3: <form action="/portal/site/MICINN/template.PAGE/menuitem.b61fe1fe5573b2a973b5c41001432ea0/?javax.por ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 139, 
+
+		COLUMNA 3: <form action="/portal/site/MICINN/template.PAGE/menuitem.b61fe1fe5573b2a973b5c41001432ea0/?javax.por ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 140, 
+
+		COLUMNA 4: <input type="hidden" name="javax.portlet.prp_a9b8ca1584ba21a9df64691001432ea0_pageIndex" value="0"/>       
+
+		LINEA: 141, 
+
+		COLUMNA 4: <input type="hidden" name="javax.portlet.prp_a9b8ca1584ba21a9df64691001432ea0_vgnextoid" value="c183 ...       
+
+		LINEA: 142, 
+
+		COLUMNA 4: <input type="hidden" name="javax.portlet.prp_a9b8ca1584ba21a9df64691001432ea0_pageSize" value="10"/>       
+
+		LINEA: 143, 
+
+		COLUMNA 4: <input type="hidden" name="vgnextoid" value="c183102a4e790210VgnVCM1000001034e20aRCRD"/>       
+
+		LINEA: 144, 
+
+		COLUMNA 4: <input type="hidden" name="lang_choosen" value="en"/>       
+
+		LINEA: 146, 
+
+		COLUMNA 4: <input type="text" value="" class="conborde" id="campobusq" name="javax.portlet.prp_a9b8ca1584ba21a9 ...
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 146, 
+
+		COLUMNA 4: <input type="text" value="" class="conborde" id="campobusq" name="javax.portlet.prp_a9b8ca1584ba21a9 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 139, 
+
+		COLUMNA 3: <form action="/portal/site/MICINN/template.PAGE/menuitem.b61fe1fe5573b2a973b5c41001432ea0/?javax.por ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 139, 
+
+		COLUMNA 3: <form action="/portal/site/MICINN/template.PAGE/menuitem.b61fe1fe5573b2a973b5c41001432ea0/?javax.por ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 139, 
+
+		COLUMNA 3: <form action="/portal/site/MICINN/template.PAGE/menuitem.b61fe1fe5573b2a973b5c41001432ea0/?javax.por ...
+
+	

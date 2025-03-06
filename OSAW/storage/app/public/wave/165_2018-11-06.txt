@@ -1,0 +1,32 @@
+REPORTE PÁGINA WEB: http://www.raspeig.es/actualidad/bicisanvi-incorpora-30-unidades-con-marchas-y-luces/
+FECHA EVALUACIÓN: 2018-11-06
+
+PROBLEMAS
+Missing form label	  VECES ENCONTRADO: 1
+Empty link	  VECES ENCONTRADO: 2
+
+
+
+ALERTAS
+Redundant title text	  VECES ENCONTRADO: 55
+Possible heading	  VECES ENCONTRADO: 1
+Fieldset missing legend	  VECES ENCONTRADO: 1
+Device dependent event handler	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 2
+
+
+
+CARACTERISTICAS
+Linked image with alternative text	  VECES ENCONTRADO: 3
+Alternative text	  VECES ENCONTRADO: 2
+Image button with alternative text	  VECES ENCONTRADO: 1
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 10
+
+
+

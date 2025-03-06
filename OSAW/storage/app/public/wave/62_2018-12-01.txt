@@ -1,0 +1,18 @@
+REPORTE PÁGINA WEB: https://www.upv.es/perfiles/futuro-alumno/index-es.html
+FECHA EVALUACIÓN: 2018-12-01
+
+ALERTAS
+Device dependent event handler	  VECES ENCONTRADO: 5
+Redundant title text	  VECES ENCONTRADO: 27
+Noscript element	  VECES ENCONTRADO: 2
+
+
+
+CARACTERISTICAS
+Long description	  VECES ENCONTRADO: 2
+Element language	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 10
+Alternative text	  VECES ENCONTRADO: 14
+
+
+

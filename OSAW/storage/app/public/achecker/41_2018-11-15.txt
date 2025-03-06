@@ -1,0 +1,1384 @@
+REPORTE PÁGINA WEB: http://www.renfe.com
+FECHA EVALUACIÓN: 2018-11-15
+
+-PROBLEMAS CONOCIDOS-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 7: Image used as anchor is missing valid Alt text.  
+
+	REPARAR: Add Alt text that identifies the purpose or function of the image.     
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ticket.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/cercanias.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 6: <img src="imgHome/horarios.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/tarjetas_bis.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-cercanias_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-ofertas_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-horarios_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-tarifasdescuentos.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-family_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-trenesturisticos01.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-info_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 95: <img src="imgHome/hico16_atendo.png" alt="" />(opc10)
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 168: Form missing fieldset and legend to group multiple radio buttons.  
+
+	REPARAR: Add a fieldset and legend element to the form for each group of radio buttons.     
+
+		LINEA: 692, COLUMNA: 6: <form method="post" action="https://venta.renfe.com/vol/buscarTren.do" id="datosBusqueda"> ...(opc10)
+
+4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)  
+
+	REVISAR: 185: id attribute is not unique.  
+
+	REPARAR: Modify the id attribute value so it is unique.     
+
+		LINEA: 692, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...(opc10)
+
+	
+
+  
+
+-PROBLEMAS POTENCIALES-
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+
+
+		LINEA: 692, COLUMNA: 20: <img class="img-responsive" alt="Logo Renfe" src="imgHome/logo.png">(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_DestinosOtono2018.jpg" alt="Destinos de Otoño" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome_MadBcn.jpg" alt="Madrid-Barcelona" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome _trenlab.jpg" alt="Primera convocatoria de startups de Renfe. TrenLab ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_bonoave.jpg" alt="BonoAVE. Si viajas con frecuencia en AVE, este es t ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_nuestraspromociones_07_11_2018.jpg" alt="Descubre nuestras Promocione ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img src="imgHome/chat_irene01_primavera.png" alt="Soy Irene. ¿Necesitas ayuda? :: Se abre nueva ve ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ticket.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/cercanias.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 6: <img src="imgHome/horarios.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 131: <img class="img-responsive" src="imgHome/facebook.png" alt="Facebook">(opc10)       
+
+		LINEA: 692, COLUMNA: 125: <img class="img-responsive" src="imgHome/twitter.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 137: <img class="img-responsive" src="imgHome/twitter_inforenfe.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 134: <img class="img-responsive" src="imgHome/youtube.png" alt="Youtube">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/flicker.png" alt="Flickr">(opc10)       
+
+		LINEA: 692, COLUMNA: 120: <img class="img-responsive" src="imgHome/blog.png" alt="Blog">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/Instagram.png" alt="Instagram">(opc10)       
+
+		LINEA: 692, COLUMNA: 149: <img class="img-responsive" src="imgHome/linkedin.png" alt="LinkedIn">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/tarjetas_bis.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-cercanias_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-ofertas_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-horarios_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-tarifasdescuentos.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-family_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-trenesturisticos01.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-info_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 95: <img src="imgHome/hico16_atendo.png" alt="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ico_info_70x70.png" alt="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 35: <img src="imgHome/f-renfe2.png" alt="Renfe">(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <img src="https://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" alt=""...(opc10)
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 692, COLUMNA: 44: <img class="img-responsive" alt="Logo ministerio fomento" src="img/logo_gob.jpg">(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img class="img-responsive" alt="Logo Renfe" src="imgHome/logo.png">(opc10)       
+
+		LINEA: 692, COLUMNA: 206: <img class="rv_logo" alt="renfe viajes" src="img/logo_renfeviajes_blanco.png">(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_DestinosOtono2018.jpg" alt="Destinos de Otoño" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome_MadBcn.jpg" alt="Madrid-Barcelona" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome _trenlab.jpg" alt="Primera convocatoria de startups de Renfe. TrenLab ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_bonoave.jpg" alt="BonoAVE. Si viajas con frecuencia en AVE, este es t ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_nuestraspromociones_07_11_2018.jpg" alt="Descubre nuestras Promocione ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img src="imgHome/chat_irene01_primavera.png" alt="Soy Irene. ¿Necesitas ayuda? :: Se abre nueva ve ...(opc10)       
+
+		LINEA: 692, COLUMNA: 131: <img class="img-responsive" src="imgHome/facebook.png" alt="Facebook">(opc10)       
+
+		LINEA: 692, COLUMNA: 125: <img class="img-responsive" src="imgHome/twitter.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 137: <img class="img-responsive" src="imgHome/twitter_inforenfe.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 134: <img class="img-responsive" src="imgHome/youtube.png" alt="Youtube">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/flicker.png" alt="Flickr">(opc10)       
+
+		LINEA: 692, COLUMNA: 120: <img class="img-responsive" src="imgHome/blog.png" alt="Blog">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/Instagram.png" alt="Instagram">(opc10)       
+
+		LINEA: 692, COLUMNA: 149: <img class="img-responsive" src="imgHome/linkedin.png" alt="LinkedIn">(opc10)       
+
+		LINEA: 692, COLUMNA: 35: <img src="imgHome/f-renfe2.png" alt="Renfe">(opc10)
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 692, COLUMNA: 44: <img class="img-responsive" alt="Logo ministerio fomento" src="img/logo_gob.jpg">(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img class="img-responsive" alt="Logo Renfe" src="imgHome/logo.png">(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_DestinosOtono2018.jpg" alt="Destinos de Otoño" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome_MadBcn.jpg" alt="Madrid-Barcelona" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome _trenlab.jpg" alt="Primera convocatoria de startups de Renfe. TrenLab ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_bonoave.jpg" alt="BonoAVE. Si viajas con frecuencia en AVE, este es t ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_nuestraspromociones_07_11_2018.jpg" alt="Descubre nuestras Promocione ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ico_info_70x70.png" alt="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 35: <img src="imgHome/f-renfe2.png" alt="Renfe">(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <img src="https://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" alt=""...(opc10)
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 692, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...(opc10)
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 58, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 58, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 692, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...(opc10)
+
+  
+
+	REVISAR: 242: Table caption may not identify the table.
+
+
+
+		LINEA: 692, COLUMNA: 21: <caption class="aa_hidden">Fechas y horarios</caption>(opc10)
+
+  
+
+	REVISAR: 123: input element label, type of "checkbox" is not positioned close to control.
+
+
+
+		LINEA: 692, COLUMNA: 25: <input type="checkbox" name="mascota" id="__mascota" data-id="mascota" />(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <input type="checkbox" name="bici" id="__bicicleta" data-id="bicicleta" />(opc10)
+
+  
+
+	REVISAR: 125: input element label, type of "radio", is not positioned close to control.
+
+
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaManana" name="HoraIda" value="M">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaMediodia" name="HoraIda" value="T">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaNoche" name="HoraIda" value="N">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaManana" name="HoraVuelta" value="M">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaMediodia" name="HoraVuelta" value="T">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaNoche" name="HoraVuelta" value="N">(opc10)
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 692, COLUMNA: 23: <input type='text' id='IdOrigen' name='desOrigen' tab="0" />(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <input type='text' id='IdDestino' name='desDestino' tab="1" />(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="text" class="datapicker" name="__fechaIdaVisual" id="__fechaIdaVisual" data-id="FechaId ...(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="text" class="datapicker" name="__fechaVueltaVisual" id="__fechaVueltaVisual" data-id="F ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <input type="text" name="codPromocional" id="__codPromocional" data-id="codPromocional"/>(opc10)
+
+  
+
+	REVISAR: 137: Layout table may be misusing th elements.
+
+
+
+		LINEA: 692, COLUMNA: 23: <table summary="Fechas y horarios del viaje">	<caption class="aa_hidden">Fechas ...(opc10)
+
+  
+
+	REVISAR: 203: Data table summary may not describe navigation and structure of the table.
+
+
+
+		LINEA: 692, COLUMNA: 23: <table summary="Fechas y horarios del viaje">	<caption class="aa_hidden">Fechas ...(opc10)
+
+  
+
+	REVISAR: 230: Table may require thead, tfoot and tbody elements to group repeated table row structures.
+
+
+
+		LINEA: 692, COLUMNA: 23: <table summary="Fechas y horarios del viaje">	<caption class="aa_hidden">Fechas ...(opc10)
+
+  
+
+	REVISAR: 231: Table may require colgroup and col elements to group table columns.
+
+
+
+		LINEA: 692, COLUMNA: 23: <table summary="Fechas y horarios del viaje">	<caption class="aa_hidden">Fechas ...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 692, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...(opc10)
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 692, COLUMNA: 44: <img class="img-responsive" alt="Logo ministerio fomento" src="img/logo_gob.jpg">(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img class="img-responsive" alt="Logo Renfe" src="imgHome/logo.png">(opc10)       
+
+		LINEA: 692, COLUMNA: 206: <img class="rv_logo" alt="renfe viajes" src="img/logo_renfeviajes_blanco.png">(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_DestinosOtono2018.jpg" alt="Destinos de Otoño" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome_MadBcn.jpg" alt="Madrid-Barcelona" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome _trenlab.jpg" alt="Primera convocatoria de startups de Renfe. TrenLab ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_bonoave.jpg" alt="BonoAVE. Si viajas con frecuencia en AVE, este es t ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_nuestraspromociones_07_11_2018.jpg" alt="Descubre nuestras Promocione ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img src="imgHome/chat_irene01_primavera.png" alt="Soy Irene. ¿Necesitas ayuda? :: Se abre nueva ve ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ticket.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/cercanias.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 6: <img src="imgHome/horarios.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 131: <img class="img-responsive" src="imgHome/facebook.png" alt="Facebook">(opc10)       
+
+		LINEA: 692, COLUMNA: 125: <img class="img-responsive" src="imgHome/twitter.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 137: <img class="img-responsive" src="imgHome/twitter_inforenfe.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 134: <img class="img-responsive" src="imgHome/youtube.png" alt="Youtube">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/flicker.png" alt="Flickr">(opc10)       
+
+		LINEA: 692, COLUMNA: 120: <img class="img-responsive" src="imgHome/blog.png" alt="Blog">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/Instagram.png" alt="Instagram">(opc10)       
+
+		LINEA: 692, COLUMNA: 149: <img class="img-responsive" src="imgHome/linkedin.png" alt="LinkedIn">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/tarjetas_bis.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-cercanias_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-ofertas_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-horarios_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-tarifasdescuentos.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-family_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-trenesturisticos01.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-info_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 95: <img src="imgHome/hico16_atendo.png" alt="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ico_info_70x70.png" alt="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 35: <img src="imgHome/f-renfe2.png" alt="Renfe">(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <img src="https://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" alt=""...(opc10)
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 692, COLUMNA: 23: <input type='text' id='IdOrigen' name='desOrigen' tab="0" />(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <input type='text' id='IdDestino' name='desDestino' tab="1" />(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="text" class="datapicker" name="__fechaIdaVisual" id="__fechaIdaVisual" data-id="FechaId ...(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaManana" name="HoraIda" value="M">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaMediodia" name="HoraIda" value="T">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaNoche" name="HoraIda" value="N">(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="text" class="datapicker" name="__fechaVueltaVisual" id="__fechaVueltaVisual" data-id="F ...(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaManana" name="HoraVuelta" value="M">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaMediodia" name="HoraVuelta" value="T">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaNoche" name="HoraVuelta" value="N">(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <inputtype="number" name="adultos_" id="__numAdultos" data-id="numAdultos_" value="1" min="0" max= ...(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <inputtype="number" name="ninos_" id="__numNinos" data-id="numNinos_" value="0" min="0" max="9" pa ...(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <inputtype="number" name="ninosMenores" id="__numBebe" data-id="ninosMenores" value="0" max="9" mi ...(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="number" name="numJoven" id="__tarjetaJoven" data-id="tarjetaJoven" value="0" min="0" ma ...(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="number" name="numDorada" id="__tarjetaDorada" data-id="tarjetaDorada" value="0" min="0" ...(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="checkbox" name="mascota" id="__mascota" data-id="mascota" />(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <input type="checkbox" name="bici" id="__bicicleta" data-id="bicicleta" />(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <input type="text" name="codPromocional" id="__codPromocional" data-id="codPromocional"/>(opc10)
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 24, COLUMNA: 9: <script src="/js/estadisticas_util.js"></script>       
+
+		LINEA: 26, COLUMNA: 8: <script src="jsHome/vendor/jquery.min.js"></script>       
+
+		LINEA: 27, COLUMNA: 8: <script src="jsHome/vendor/jquery-ui.min.js"></script>       
+
+		LINEA: 28, COLUMNA: 8: <script src="jsHome/script.js"></script>       
+
+		LINEA: 29, COLUMNA: 8: <script src="jsHome/vendor/jquery-ui-datepicker.min.js"></script>       
+
+		LINEA: 30, COLUMNA: 8: <script src="jsHome/vendor/bootstrap.min.js"></script>       
+
+		LINEA: 31, COLUMNA: 8: <script src="jsHome/vendor/modernizr.min.js"></script>       
+
+		LINEA: 32, COLUMNA: 8: <script src="jsHome/vendor/slick.min.js"></script>       
+
+		LINEA: 34, COLUMNA: 8: <script language="JavaScript" type="text/javascript" src="js/VisitorAPI.js"></script>       
+
+		LINEA: 35, COLUMNA: 9: <script type='text/javascript' src='/js/mbox.js'></script>       
+
+		LINEA: 36, COLUMNA: 9: <script language="JavaScript" type="text/javascript" src="js/VisitorAPI_AppMesaurements.js"></script ...       
+
+		LINEA: 39, COLUMNA: 8: <script type='text/javascript' src='jsHome/estaciones.js'></script>       
+
+		LINEA: 40, COLUMNA: 8: <script type='text/javascript' src='jsHome/funcionesB4.js'></script>       
+
+		LINEA: 41, COLUMNA: 8: <script type='text/javascript' src='jsHome/formateadores.js'></script>       
+
+		LINEA: 45, COLUMNA: 8: <script type='text/javascript' src="jsHome/vendor/awesomplete.min.js"></script>       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript">//<![CDATA[	for (var i = 1; i <= 16; i++)	{		link = document. ...(opc10)       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript" src="/js/s_code.js"></script>(opc10)       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript"><!--/* You may give each page an identifying name, server, and ch ...(opc10)       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unesc ...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 692, COLUMNA: 44: <img class="img-responsive" alt="Logo ministerio fomento" src="img/logo_gob.jpg">(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img class="img-responsive" alt="Logo Renfe" src="imgHome/logo.png">(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_DestinosOtono2018.jpg" alt="Destinos de Otoño" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome_MadBcn.jpg" alt="Madrid-Barcelona" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome _trenlab.jpg" alt="Primera convocatoria de startups de Renfe. TrenLab ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_bonoave.jpg" alt="BonoAVE. Si viajas con frecuencia en AVE, este es t ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_nuestraspromociones_07_11_2018.jpg" alt="Descubre nuestras Promocione ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img src="imgHome/chat_irene01_primavera.png" alt="Soy Irene. ¿Necesitas ayuda? :: Se abre nueva ve ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ticket.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/cercanias.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 6: <img src="imgHome/horarios.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 131: <img class="img-responsive" src="imgHome/facebook.png" alt="Facebook">(opc10)       
+
+		LINEA: 692, COLUMNA: 125: <img class="img-responsive" src="imgHome/twitter.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 137: <img class="img-responsive" src="imgHome/twitter_inforenfe.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 134: <img class="img-responsive" src="imgHome/youtube.png" alt="Youtube">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/flicker.png" alt="Flickr">(opc10)       
+
+		LINEA: 692, COLUMNA: 120: <img class="img-responsive" src="imgHome/blog.png" alt="Blog">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/Instagram.png" alt="Instagram">(opc10)       
+
+		LINEA: 692, COLUMNA: 149: <img class="img-responsive" src="imgHome/linkedin.png" alt="LinkedIn">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/tarjetas_bis.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-cercanias_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-ofertas_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-horarios_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-tarifasdescuentos.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-family_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-trenesturisticos01.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-info_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 95: <img src="imgHome/hico16_atendo.png" alt="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ico_info_70x70.png" alt="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 35: <img src="imgHome/f-renfe2.png" alt="Renfe">(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <img src="https://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" alt=""...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 692, COLUMNA: 44: <img class="img-responsive" alt="Logo ministerio fomento" src="img/logo_gob.jpg">(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img class="img-responsive" alt="Logo Renfe" src="imgHome/logo.png">(opc10)       
+
+		LINEA: 692, COLUMNA: 206: <img class="rv_logo" alt="renfe viajes" src="img/logo_renfeviajes_blanco.png">(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_DestinosOtono2018.jpg" alt="Destinos de Otoño" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome_MadBcn.jpg" alt="Madrid-Barcelona" />(opc10)       
+
+		LINEA: 692, COLUMNA: 16: <img src="imgHome/banner/bHome _trenlab.jpg" alt="Primera convocatoria de startups de Renfe. TrenLab ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_bonoave.jpg" alt="BonoAVE. Si viajas con frecuencia en AVE, este es t ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <img src="imgHome/banner/bHome_nuestraspromociones_07_11_2018.jpg" alt="Descubre nuestras Promocione ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <img src="imgHome/chat_irene01_primavera.png" alt="Soy Irene. ¿Necesitas ayuda? :: Se abre nueva ve ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ticket.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/cercanias.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 6: <img src="imgHome/horarios.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 131: <img class="img-responsive" src="imgHome/facebook.png" alt="Facebook">(opc10)       
+
+		LINEA: 692, COLUMNA: 125: <img class="img-responsive" src="imgHome/twitter.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 137: <img class="img-responsive" src="imgHome/twitter_inforenfe.png" alt="Twitter">(opc10)       
+
+		LINEA: 692, COLUMNA: 134: <img class="img-responsive" src="imgHome/youtube.png" alt="Youtube">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/flicker.png" alt="Flickr">(opc10)       
+
+		LINEA: 692, COLUMNA: 120: <img class="img-responsive" src="imgHome/blog.png" alt="Blog">(opc10)       
+
+		LINEA: 692, COLUMNA: 144: <img class="img-responsive" src="imgHome/Instagram.png" alt="Instagram">(opc10)       
+
+		LINEA: 692, COLUMNA: 149: <img class="img-responsive" src="imgHome/linkedin.png" alt="LinkedIn">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/tarjetas_bis.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-cercanias_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-ofertas_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-horarios_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-tarifasdescuentos.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-family_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-trenesturisticos01.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <img src="imgHome/m-info_v02.png" alt="">(opc10)       
+
+		LINEA: 692, COLUMNA: 95: <img src="imgHome/hico16_atendo.png" alt="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <img src="imgHome/ico_info_70x70.png" alt="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 35: <img src="imgHome/f-renfe2.png" alt="Renfe">(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <img src="https://renfe.d3.sc.omtrdc.net/b/ss/renfedev/1/H.23.8--NS/0"height="1" width="1" alt=""...(opc10)
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 24, COLUMNA: 9: <script src="/js/estadisticas_util.js"></script>       
+
+		LINEA: 26, COLUMNA: 8: <script src="jsHome/vendor/jquery.min.js"></script>       
+
+		LINEA: 27, COLUMNA: 8: <script src="jsHome/vendor/jquery-ui.min.js"></script>       
+
+		LINEA: 28, COLUMNA: 8: <script src="jsHome/script.js"></script>       
+
+		LINEA: 29, COLUMNA: 8: <script src="jsHome/vendor/jquery-ui-datepicker.min.js"></script>       
+
+		LINEA: 30, COLUMNA: 8: <script src="jsHome/vendor/bootstrap.min.js"></script>       
+
+		LINEA: 31, COLUMNA: 8: <script src="jsHome/vendor/modernizr.min.js"></script>       
+
+		LINEA: 32, COLUMNA: 8: <script src="jsHome/vendor/slick.min.js"></script>       
+
+		LINEA: 34, COLUMNA: 8: <script language="JavaScript" type="text/javascript" src="js/VisitorAPI.js"></script>       
+
+		LINEA: 35, COLUMNA: 9: <script type='text/javascript' src='/js/mbox.js'></script>       
+
+		LINEA: 36, COLUMNA: 9: <script language="JavaScript" type="text/javascript" src="js/VisitorAPI_AppMesaurements.js"></script ...       
+
+		LINEA: 39, COLUMNA: 8: <script type='text/javascript' src='jsHome/estaciones.js'></script>       
+
+		LINEA: 40, COLUMNA: 8: <script type='text/javascript' src='jsHome/funcionesB4.js'></script>       
+
+		LINEA: 41, COLUMNA: 8: <script type='text/javascript' src='jsHome/formateadores.js'></script>       
+
+		LINEA: 45, COLUMNA: 8: <script type='text/javascript' src="jsHome/vendor/awesomplete.min.js"></script>       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript">//<![CDATA[	for (var i = 1; i <= 16; i++)	{		link = document. ...(opc10)       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript" src="/js/s_code.js"></script>(opc10)       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript"><!--/* You may give each page an identifying name, server, and ch ...(opc10)       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unesc ...(opc10)
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 24, COLUMNA: 9: <script src="/js/estadisticas_util.js"></script>       
+
+		LINEA: 26, COLUMNA: 8: <script src="jsHome/vendor/jquery.min.js"></script>       
+
+		LINEA: 27, COLUMNA: 8: <script src="jsHome/vendor/jquery-ui.min.js"></script>       
+
+		LINEA: 28, COLUMNA: 8: <script src="jsHome/script.js"></script>       
+
+		LINEA: 29, COLUMNA: 8: <script src="jsHome/vendor/jquery-ui-datepicker.min.js"></script>       
+
+		LINEA: 30, COLUMNA: 8: <script src="jsHome/vendor/bootstrap.min.js"></script>       
+
+		LINEA: 31, COLUMNA: 8: <script src="jsHome/vendor/modernizr.min.js"></script>       
+
+		LINEA: 32, COLUMNA: 8: <script src="jsHome/vendor/slick.min.js"></script>       
+
+		LINEA: 34, COLUMNA: 8: <script language="JavaScript" type="text/javascript" src="js/VisitorAPI.js"></script>       
+
+		LINEA: 35, COLUMNA: 9: <script type='text/javascript' src='/js/mbox.js'></script>       
+
+		LINEA: 36, COLUMNA: 9: <script language="JavaScript" type="text/javascript" src="js/VisitorAPI_AppMesaurements.js"></script ...       
+
+		LINEA: 39, COLUMNA: 8: <script type='text/javascript' src='jsHome/estaciones.js'></script>       
+
+		LINEA: 40, COLUMNA: 8: <script type='text/javascript' src='jsHome/funcionesB4.js'></script>       
+
+		LINEA: 41, COLUMNA: 8: <script type='text/javascript' src='jsHome/formateadores.js'></script>       
+
+		LINEA: 45, COLUMNA: 8: <script type='text/javascript' src="jsHome/vendor/awesomplete.min.js"></script>       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript">//<![CDATA[	for (var i = 1; i <= 16; i++)	{		link = document. ...(opc10)       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript" src="/js/s_code.js"></script>(opc10)       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript"><!--/* You may give each page an identifying name, server, and ch ...(opc10)       
+
+		LINEA: 692, COLUMNA: 1: <script type="text/javascript"><!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unesc ...(opc10)
+
+
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 58, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 692, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 58, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 4, COLUMNA: 9: <title>Renfe</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 692, COLUMNA: 114: <a href="https://venta.renfe.com/vol/login.do?Idioma=es&Pais=ES&inirenfe=SI" class="link" target="_b ...(opc10)       
+
+		LINEA: 692, COLUMNA: 37: <a href="" title="Spanish" lang="es-ES">Bienvenido</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/EN/viajeros/index.html" title="English" lang="en-US">Welcome</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/FR/viajeros/index.html" title="Français" lang="fr-FR">Bienvenue</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/CA/viajeros/index.html" title="Català" lang="ca-ES">Benvingut (C)</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/EU/viajeros/index.html" title="Euskera" lang="eu-ES">Ongi etorri</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/GA/viajeros/index.html" title="Galego" lang="gl-ES">Benvido</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 38: <a href="/VA/viajeros/index.html" title="Valencià" lang="ca-ES">Benvingut (V)</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 38: <a href="/empresa/index.html" title="Grupo Renfe" target="_self">Grupo Renfe</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="/empresa/alquilerdematerial/index.html" title="Alquiler" target="_self">Alquiler</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 14: <a href="/empresa/integria/index.html" target="_self" title="Fabricación y mantenimiento">Fabricaci ...(opc10)       
+
+		LINEA: 692, COLUMNA: 32: <a href="/empresa/mercancias/index.html" target="_self" title="Mercancías">Mercancías</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 39: <a href="/viajeros/index.html" title="Viajeros" target="_self">Viajeros</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 76: <a href="http://coches.renfe.com/?clientId=681685" class="rv_a_blanco" onclick="fEstadisticas_anotar ...(opc10)       
+
+		LINEA: 692, COLUMNA: 76: <a href="http://hoteles.renfe.com?label=renfe-sb-home-rcom" class="rv_a_blanco" onclick="fEstadistic ...(opc10)       
+
+		LINEA: 692, COLUMNA: 61: <a href="http://trenmashotel.renfe.com/" class="rv_a_blanco" onclick="fEstadisticas_anotarClickBanne ...(opc10)       
+
+		LINEA: 692, COLUMNA: 76: <a href="https://ocio.renfe.com?lang=ES" class="rv_a_blanco" onclick="fEstadisticas_anotarClickBanne ...(opc10)       
+
+		LINEA: 692, COLUMNA: 76: <a href="http://coches.renfe.com/gt/" class="rv_a_blanco" onclick="fEstadisticas_anotarClickBanner(' ...(opc10)       
+
+		LINEA: 692, COLUMNA: 72: <a href="http://viajes.renfe.com" class="rv_a_rosa" onclick="fEstadisticas_anotarClickBanner('event3 ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="/ofertas/DestinodeOtono2018.html?icid=HDestinosOtono2018"><span class=" ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="#"><span class="text">Siempre hay un tren esperando</span><br />  ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="https://www.trenlab.com/calls/i_convocatoria_startups_trenlab" target="_blank" title="Prime ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="/viajeros/tarifas/bonoave.html?icid=HBonoAVE"><span class="text">Si ere ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="/WebOfertaComercial/jsp/homeOfertaComercial.jsp?destacado=S&icid=HNuestrasPromociones" clas ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">Destinos de Otoño</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">Madrid-Barcelona</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">TrenLab</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">BonoAVE</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">Nuevas Promociones</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="/asistente.html"onclick="window.open(this.href, 'popupwindow', ''); return false;" title= ...(opc10)       
+
+		LINEA: 692, COLUMNA: 33: <a href="https://venta.renfe.com/vol/home.do" class="icon-suitcase" target="_top"><span >Otras opera ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/accesoCambio.do?Idioma=es&Pais=ES&inirenfe=SI" title="Se abre e ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/inicioAnulacion.do?Idioma=es&Pais=ES&inirenfe=SI" title="Se abr ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/indiceAbonos.do?Idioma=es&Pais=ES&inirenfe=SI" title="Se abre e ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/formViajes.do" title="Se abre en nueva ventana" onclick="window ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/operReservas.do" title="Se abre en nueva ventana" onclick="wind ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="/viajeros/info/factura.html">Factura online</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/infoPuntualidadTrenes.do" title="Se abre en nueva ventana" targ ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="https://venta.renfe.com/vol/ttlHome.do" title="Se abre en nueva ventana" onclick="window.op ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="/viajeros/viajes_internacionales/index.html">Viajes internacionales</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="https://venta.renfe.com/vol/index2.jsp?U=SP2S" title="Se abre en nueva ventana" onclick="wi ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="/trenesturisticos/index.html">Trenes Turísticos</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="https://venta.renfe.com/vol/trenesTuriIni.do?cdgoIdentificador=OCNT&Idioma=es&Pais=ES&inire ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <a href="/viajeros/movilidad/index.html"><h2>Descárgate nuestras App</h2></a>(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="/viajeros/movilidad/renfeticket/descarga.html" onclick="fLinkDependienteDispositivo ('/viaj ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="/viajeros/movilidad/app_cercanias.html" onclick="fLinkDependienteDispositivo ('/viajeros/mo ...(opc10)       
+
+		LINEA: 692, COLUMNA: 9: <a href="/viajeros/movilidad/index.html" id="renfehorarios" title="Renfe Horarios">		<img src=" ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="https://www.facebook.com/Renfe" target="_blank" title="Renfe en Facebook :: Se abre nueva v ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="https://twitter.com/renfe" target="_blank" title="Renfe en Twitter :: Se abre nueva ventana ...(opc10)       
+
+		LINEA: 692, COLUMNA: 27: <a href="https://twitter.com/inforenfe" target="_blank" title="InfoRenfe en Twitter :: Se abre nueva ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="https://www.youtube.com/user/renfe" target="_blank" title="Renfe en Youtube :: Se abre nuev ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="https://www.flickr.com/photos/renfeoperadora/" target="_blank" title="Renfe en Flickr :: Se ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href=" http://blog.renfe.com/" target="_blank" title="Blog de Renfe :: Se abre nueva ventana"><im ...(opc10)       
+
+		LINEA: 692, COLUMNA: 33: <a href="https://www.instagram.com/renfe/" target="_blank" title="Instagram de Renfe :: Se abre nuev ...(opc10)       
+
+		LINEA: 692, COLUMNA: 33: <a href="https://www.linkedin.com/company/renfe" target="_blank" title="LinkedIn de Renfe :: Se abre ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/tarjetas/index.html" class="content">	<img src="imgHome/tarje ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/cercanias/index.html" class="content">	<img src="imgHome/m-ce ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/WebOfertaComercial/jsp/homeOfertaComercial.jsp?destacado=S" class="content">...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/index.html" class="content">	<img src="imgHome/m-horarios_v02 ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/tarifas/index.html" class="content">	<img src="imgHome/m-tari ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/viajarenfamilia/index.html" class="content">	<img src="imgHom ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/trenesturisticos/index.html" class="content">	<img src="imgHome/m-tren ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/info/index.html" class="content">	<img src="imgHome/m-info_v0 ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/viajeros/atendo/index.html" class="link2" title="Atendo">Atendo <img src="imgHome/hico16_a ...(opc10)       
+
+		LINEA: 692, COLUMNA: 27: <a href="/viajeros/tarifas/grupos.html" class="link2" title="Grupos">Grupos</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/empresa/comunicacion/incidencias.html" class="link2" title="Avisos">Avisos</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/empresa/comunicacion/index.html" class="link2" title="Gabinete de prensa">Gabinete de pren ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/empresa/atencion_cliente/index.html" class="link2" title="Atención al cliente">Atención...(opc10)       
+
+		LINEA: 692, COLUMNA: 37:
+
+
+
+		LINEA: 692, COLUMNA: 24: <a class="link2" href="/empresa/empleo_y_formacion/index.html" title="Oferta de Empleo">OFERTA DE EM ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/empresa/comunicacion/incidencias.html" target="_blank" title="Se abre en nueva ventana"> ...(opc10)       
+
+		LINEA: 692, COLUMNA: 57: <a href="/empresa/informacion_legal/index.html">Información legal</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 70: <a href="/empresa/informacion_legal/privacidad.html">Política Privacidad de Datos</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 62: <a href="/empresa/informacion_legal/politica_cookies.html">Política de cookies</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 57: <a href="/empresa/informacion_legal/accesibilidad_web.html">Accesibilidad</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 40: <a href="/mapa.html">Mapa web</a>(opc10)
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 692, COLUMNA: 114: <a href="https://venta.renfe.com/vol/login.do?Idioma=es&Pais=ES&inirenfe=SI" class="link" target="_b ...(opc10)       
+
+		LINEA: 692, COLUMNA: 37: <a href="" title="Spanish" lang="es-ES">Bienvenido</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/EN/viajeros/index.html" title="English" lang="en-US">Welcome</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/FR/viajeros/index.html" title="Français" lang="fr-FR">Bienvenue</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/CA/viajeros/index.html" title="Català" lang="ca-ES">Benvingut (C)</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/EU/viajeros/index.html" title="Euskera" lang="eu-ES">Ongi etorri</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <a href="/GA/viajeros/index.html" title="Galego" lang="gl-ES">Benvido</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 38: <a href="/VA/viajeros/index.html" title="Valencià" lang="ca-ES">Benvingut (V)</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 38: <a href="/empresa/index.html" title="Grupo Renfe" target="_self">Grupo Renfe</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="/empresa/alquilerdematerial/index.html" title="Alquiler" target="_self">Alquiler</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 14: <a href="/empresa/integria/index.html" target="_self" title="Fabricación y mantenimiento">Fabricaci ...(opc10)       
+
+		LINEA: 692, COLUMNA: 32: <a href="/empresa/mercancias/index.html" target="_self" title="Mercancías">Mercancías</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 39: <a href="/viajeros/index.html" title="Viajeros" target="_self">Viajeros</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 76: <a href="http://coches.renfe.com/?clientId=681685" class="rv_a_blanco" onclick="fEstadisticas_anotar ...(opc10)       
+
+		LINEA: 692, COLUMNA: 76: <a href="http://hoteles.renfe.com?label=renfe-sb-home-rcom" class="rv_a_blanco" onclick="fEstadistic ...(opc10)       
+
+		LINEA: 692, COLUMNA: 61: <a href="http://trenmashotel.renfe.com/" class="rv_a_blanco" onclick="fEstadisticas_anotarClickBanne ...(opc10)       
+
+		LINEA: 692, COLUMNA: 76: <a href="https://ocio.renfe.com?lang=ES" class="rv_a_blanco" onclick="fEstadisticas_anotarClickBanne ...(opc10)       
+
+		LINEA: 692, COLUMNA: 76: <a href="http://coches.renfe.com/gt/" class="rv_a_blanco" onclick="fEstadisticas_anotarClickBanner(' ...(opc10)       
+
+		LINEA: 692, COLUMNA: 72: <a href="http://viajes.renfe.com" class="rv_a_rosa" onclick="fEstadisticas_anotarClickBanner('event3 ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="/ofertas/DestinodeOtono2018.html?icid=HDestinosOtono2018"><span class=" ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="#"><span class="text">Siempre hay un tren esperando</span><br />  ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="https://www.trenlab.com/calls/i_convocatoria_startups_trenlab" target="_blank" title="Prime ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="/viajeros/tarifas/bonoave.html?icid=HBonoAVE"><span class="text">Si ere ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="/WebOfertaComercial/jsp/homeOfertaComercial.jsp?destacado=S&icid=HNuestrasPromociones" clas ...(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">Destinos de Otoño</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">Madrid-Barcelona</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">TrenLab</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">BonoAVE</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <a href="javascript:void(0)">Nuevas Promociones</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="/asistente.html"onclick="window.open(this.href, 'popupwindow', ''); return false;" title= ...(opc10)       
+
+		LINEA: 692, COLUMNA: 33: <a href="https://venta.renfe.com/vol/home.do" class="icon-suitcase" target="_top"><span >Otras opera ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/accesoCambio.do?Idioma=es&Pais=ES&inirenfe=SI" title="Se abre e ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/inicioAnulacion.do?Idioma=es&Pais=ES&inirenfe=SI" title="Se abr ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/indiceAbonos.do?Idioma=es&Pais=ES&inirenfe=SI" title="Se abre e ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/formViajes.do" title="Se abre en nueva ventana" onclick="window ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/operReservas.do" title="Se abre en nueva ventana" onclick="wind ...(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="/viajeros/info/factura.html">Factura online</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <a href="https://venta.renfe.com/vol/infoPuntualidadTrenes.do" title="Se abre en nueva ventana" targ ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="https://venta.renfe.com/vol/ttlHome.do" title="Se abre en nueva ventana" onclick="window.op ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="/viajeros/viajes_internacionales/index.html">Viajes internacionales</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="https://venta.renfe.com/vol/index2.jsp?U=SP2S" title="Se abre en nueva ventana" onclick="wi ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="/trenesturisticos/index.html">Trenes Turísticos</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="https://venta.renfe.com/vol/trenesTuriIni.do?cdgoIdentificador=OCNT&Idioma=es&Pais=ES&inire ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <a href="/viajeros/movilidad/index.html"><h2>Descárgate nuestras App</h2></a>(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="/viajeros/movilidad/renfeticket/descarga.html" onclick="fLinkDependienteDispositivo ('/viaj ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <a href="/viajeros/movilidad/app_cercanias.html" onclick="fLinkDependienteDispositivo ('/viajeros/mo ...(opc10)       
+
+		LINEA: 692, COLUMNA: 9: <a href="/viajeros/movilidad/index.html" id="renfehorarios" title="Renfe Horarios">		<img src=" ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="https://www.facebook.com/Renfe" target="_blank" title="Renfe en Facebook :: Se abre nueva v ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="https://twitter.com/renfe" target="_blank" title="Renfe en Twitter :: Se abre nueva ventana ...(opc10)       
+
+		LINEA: 692, COLUMNA: 27: <a href="https://twitter.com/inforenfe" target="_blank" title="InfoRenfe en Twitter :: Se abre nueva ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="https://www.youtube.com/user/renfe" target="_blank" title="Renfe en Youtube :: Se abre nuev ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href="https://www.flickr.com/photos/renfeoperadora/" target="_blank" title="Renfe en Flickr :: Se ...(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <a href=" http://blog.renfe.com/" target="_blank" title="Blog de Renfe :: Se abre nueva ventana"><im ...(opc10)       
+
+		LINEA: 692, COLUMNA: 33: <a href="https://www.instagram.com/renfe/" target="_blank" title="Instagram de Renfe :: Se abre nuev ...(opc10)       
+
+		LINEA: 692, COLUMNA: 33: <a href="https://www.linkedin.com/company/renfe" target="_blank" title="LinkedIn de Renfe :: Se abre ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/tarjetas/index.html" class="content">	<img src="imgHome/tarje ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/cercanias/index.html" class="content">	<img src="imgHome/m-ce ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/WebOfertaComercial/jsp/homeOfertaComercial.jsp?destacado=S" class="content">...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/index.html" class="content">	<img src="imgHome/m-horarios_v02 ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/tarifas/index.html" class="content">	<img src="imgHome/m-tari ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/viajarenfamilia/index.html" class="content">	<img src="imgHom ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/trenesturisticos/index.html" class="content">	<img src="imgHome/m-tren ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <ahref="/viajeros/info/index.html" class="content">	<img src="imgHome/m-info_v0 ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/viajeros/atendo/index.html" class="link2" title="Atendo">Atendo <img src="imgHome/hico16_a ...(opc10)       
+
+		LINEA: 692, COLUMNA: 27: <a href="/viajeros/tarifas/grupos.html" class="link2" title="Grupos">Grupos</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/empresa/comunicacion/incidencias.html" class="link2" title="Avisos">Avisos</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/empresa/comunicacion/index.html" class="link2" title="Gabinete de prensa">Gabinete de pren ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/empresa/atencion_cliente/index.html" class="link2" title="Atención al cliente">Atención...(opc10)       
+
+		LINEA: 692, COLUMNA: 37:
+
+
+
+		LINEA: 692, COLUMNA: 24: <a class="link2" href="/empresa/empleo_y_formacion/index.html" title="Oferta de Empleo">OFERTA DE EM ...(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <a href="/empresa/comunicacion/incidencias.html" target="_blank" title="Se abre en nueva ventana"> ...(opc10)       
+
+		LINEA: 692, COLUMNA: 57: <a href="/empresa/informacion_legal/index.html">Información legal</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 70: <a href="/empresa/informacion_legal/privacidad.html">Política Privacidad de Datos</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 62: <a href="/empresa/informacion_legal/politica_cookies.html">Política de cookies</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 57: <a href="/empresa/informacion_legal/accesibilidad_web.html">Accesibilidad</a>(opc10)       
+
+		LINEA: 692, COLUMNA: 40: <a href="/mapa.html">Mapa web</a>(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 58, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 692, COLUMNA: 16: <h1><img class="img-responsive" alt="Logo Renfe" src="imgHome/logo.png"><span class="hide">Renfe</sp ...(opc10)
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 692, COLUMNA: 19: <h2 class="aa_hidden">Buscador y compra de billetes de tren</h2>(opc10)       
+
+		LINEA: 692, COLUMNA: 11: <h2 class="aa_hidden">Novedades</h2>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <h2 class="box"><a href="https://venta.renfe.com/vol/home.do" class="icon-suitcase" target="_top"><s ...(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <h2 class="box second icon-tarjetas"><span>OTROS PRODUCTOS RENFE</span></h2>(opc10)       
+
+		LINEA: 692, COLUMNA: 59: <h2>Descárgate nuestras App</h2>(opc10)       
+
+		LINEA: 692, COLUMNA: 18: <h2>Síguenos en</h2>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <h2 class="aa_hidden">Productos destacados Renfe</h2>(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <h2>Informacion General</h2>(opc10)       
+
+		LINEA: 692, COLUMNA: 19: <h2>EMPLEO Y FORMACIÓN</h2>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <h2 class="aa_hidden">Información importante</h2>(opc10)       
+
+		LINEA: 692, COLUMNA: 17: <h2 class="modal-title" data-id="myModalLabel" id="myModalLabel">Aviso de trayecto</h2>(opc10)
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+
+
+		LINEA: 692, COLUMNA: 15: <h3 class="claim"><a href="/ofertas/DestinodeOtono2018.html?icid=HDestinos ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <h3 class="claim"><a href="#"><span class="text">Siemp ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <h3 class="claim"><a href="https://www.trenlab.com/calls/i_convocatoria_st ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <h3 class="claim"><a href="/viajeros/tarifas/bonoave.html?icid=HBonoAVE"> ...(opc10)       
+
+		LINEA: 692, COLUMNA: 15: <h3 class="claim"><a href="/WebOfertaComercial/jsp/homeOfertaComercial.jsp ...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 692, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...(opc10)
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 58, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 58, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 692, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...(opc10)
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.1 On Focus (A)  
+
+	REVISAR: 275: Loading web page may cause new window to open.
+
+
+
+		LINEA: 692, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 58, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 692, COLUMNA: 6: <form method="post" action="https://venta.renfe.com/vol/buscarTren.do" id="datosBusqueda"> ...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 58, COLUMNA: 5: <body onload="loadEstaciones();"><div id="avisoNavegador" class="avisoNavegador"> <p ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 692, COLUMNA: 6: <form method="post" action="https://venta.renfe.com/vol/buscarTren.do" id="datosBusqueda"> ...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 692, COLUMNA: 6: <form method="post" action="https://venta.renfe.com/vol/buscarTren.do" id="datosBusqueda"> ...(opc10)
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 692, COLUMNA: 7: <input type="hidden" id="tipoBusqueda" name="tipoBusqueda" value="autocomplete" />(opc10)       
+
+		LINEA: 692, COLUMNA: 7: <input type="hidden" id="currenLocation" name="currenLocation" value="menuBusqueda" />(opc10)       
+
+		LINEA: 692, COLUMNA: 7: <input type="hidden" id="operation" name="operation" value="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 7: <input type="hidden" id="vengoderenfecom" name="vengoderenfecom" value="SI" />(opc10)       
+
+		LINEA: 692, COLUMNA: 7: <input type="hidden" name="cdgoOrigen" id="cdgoOrigen" />(opc10)       
+
+		LINEA: 692, COLUMNA: 7: <input type="hidden" name="cdgoDestino" id="cdgoDestino" />(opc10)       
+
+		LINEA: 692, COLUMNA: 7: <input type="hidden" name="idiomaBusqueda" id="idiomaBusqueda" value="ES"/>(opc10)       
+
+		LINEA: 692, COLUMNA: 7: <input type="hidden" name="HoraIdaSel" id="HoraIdaSel" value="00:00" />(opc10)       
+
+		LINEA: 692, COLUMNA: 7: <input type="hidden" name="HoraVueltaSel" id="HoraVueltaSel" value="00:00" />(opc10)       
+
+		LINEA: 692, COLUMNA: 13: <input type="hidden" name="FechaIdaSel" id="FechaIdaSel" value="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 13: <input type="hidden" name="FechaVueltaSel" id="FechaVueltaSel" value="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <input type='text' id='IdOrigen' name='desOrigen' tab="0" />(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <input type='text' id='IdDestino' name='desDestino' tab="1" />(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="text" class="datapicker" name="__fechaIdaVisual" id="__fechaIdaVisual" data-id="FechaId ...(opc10)       
+
+		LINEA: 692, COLUMNA: 31: <input type="hidden" name="HoraIda" id="HoraIda" value="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaManana" name="HoraIda" value="M">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaMediodia" name="HoraIda" value="T">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaNoche" name="HoraIda" value="N">(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="text" class="datapicker" name="__fechaVueltaVisual" id="__fechaVueltaVisual" data-id="F ...(opc10)       
+
+		LINEA: 692, COLUMNA: 31: <input type="hidden" name="HoraVuelta" id="HoraVuelta" value="" />(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaManana" name="HoraVuelta" value="M">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaMediodia" name="HoraVuelta" value="T">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaNoche" name="HoraVuelta" value="N">(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <inputtype="number" name="adultos_" id="__numAdultos" data-id="numAdultos_" value="1" min="0" max= ...(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <inputtype="number" name="ninos_" id="__numNinos" data-id="numNinos_" value="0" min="0" max="9" pa ...(opc10)       
+
+		LINEA: 692, COLUMNA: 22: <inputtype="number" name="ninosMenores" id="__numBebe" data-id="ninosMenores" value="0" max="9" mi ...(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="number" name="numJoven" id="__tarjetaJoven" data-id="tarjetaJoven" value="0" min="0" ma ...(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="number" name="numDorada" id="__tarjetaDorada" data-id="tarjetaDorada" value="0" min="0" ...(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="checkbox" name="mascota" id="__mascota" data-id="mascota" />(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <input type="checkbox" name="bici" id="__bicicleta" data-id="bicicleta" />(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <input type="text" name="codPromocional" id="__codPromocional" data-id="codPromocional"/>(opc10)
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 692, COLUMNA: 23: <input type='text' id='IdOrigen' name='desOrigen' tab="0" />(opc10)       
+
+		LINEA: 692, COLUMNA: 23: <input type='text' id='IdDestino' name='desDestino' tab="1" />(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="text" class="datapicker" name="__fechaIdaVisual" id="__fechaIdaVisual" data-id="FechaId ...(opc10)       
+
+		LINEA: 692, COLUMNA: 25: <input type="text" class="datapicker" name="__fechaVueltaVisual" id="__fechaVueltaVisual" data-id="F ...(opc10)       
+
+		LINEA: 692, COLUMNA: 20: <input type="text" name="codPromocional" id="__codPromocional" data-id="codPromocional"/>(opc10)
+
+  
+
+	REVISAR: 219: input element, type of "checkbox", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 692, COLUMNA: 25: <input type="checkbox" name="mascota" id="__mascota" data-id="mascota" />(opc10)       
+
+		LINEA: 692, COLUMNA: 21: <input type="checkbox" name="bici" id="__bicicleta" data-id="bicicleta" />(opc10)
+
+  
+
+	REVISAR: 220: input element, type of "radio", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaManana" name="HoraIda" value="M">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaMediodia" name="HoraIda" value="T">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_idaNoche" name="HoraIda" value="N">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaManana" name="HoraVuelta" value="M">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaMediodia" name="HoraVuelta" value="T">(opc10)       
+
+		LINEA: 692, COLUMNA: 24: <input type="radio" id="_vueltaNoche" name="HoraVuelta" value="N">(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 692, COLUMNA: 6: <form method="post" action="https://venta.renfe.com/vol/buscarTren.do" id="datosBusqueda"> ...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 692, COLUMNA: 6: <form method="post" action="https://venta.renfe.com/vol/buscarTren.do" id="datosBusqueda"> ...(opc10)
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 692, COLUMNA: 6: <form method="post" action="https://venta.renfe.com/vol/buscarTren.do" id="datosBusqueda"> ...(opc10)
+
+	

@@ -1,0 +1,34 @@
+REPORTE PÁGINA WEB: http://www.raspeig.es/actualidad/brillante-cierre-del-mig-any-con-el-concierto-de-l-associacio-musical-l-avanc-y-la-entrega-de-los-premios-de-bandas-y-collas-2018/
+FECHA EVALUACIÓN: 2018-12-11
+
+-PROBLEMAS-
+
+Empty link	  VECES ENCONTRADO: 2
+Missing form label	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Long alternative text	  VECES ENCONTRADO: 3
+Possible heading	  VECES ENCONTRADO: 1
+Device dependent event handler	  VECES ENCONTRADO: 1
+Fieldset missing legend	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 54
+A nearby image has the same alternative text	  VECES ENCONTRADO: 2
+Redundant link	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Image button with alternative text	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 5
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 11
+
+

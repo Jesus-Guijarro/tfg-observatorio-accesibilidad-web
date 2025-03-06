@@ -1,0 +1,22 @@
+REPORTE PÁGINA WEB: http://www.valencia.es/Contratacion/pdc_Fallera.nsf/fCategoriaVistaExpedientes?readForm&Vista=vLicitaciones_encurso&Categoria=Servicio%20de%20Contrataci%F3n&titulo=Licitaciones%20en%20curso&lang=2&nivel=1
+FECHA EVALUACIÓN: 2018-12-19
+
+PROBLEMAS
+Missing or uninformative page title	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Very small text	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 10
+Redundant link	  VECES ENCONTRADO: 1
+Skipped heading level	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Null or empty alternative text	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 2
+
+
+

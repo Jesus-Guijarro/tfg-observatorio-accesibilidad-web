@@ -1,0 +1,21 @@
+REPORTE PÁGINA WEB: https://www.bancosantander.es/es/particulares
+FECHA EVALUACIÓN: 2018-12-17
+
+Se encontró 1 imagen que no tiene leyenda
+Se encontraron 6 imágenes en las que la leyenda es un espacio vacío
+Se han encontrado 3 elementos <iframe> sin título
+Se encontró 1 caso en que los encabezados no respetan la cadena jerárquica
+Se encontraron 9 elementos de encabezado
+Se han encontrado 6 enlaces en los que el contenido está compuesto sólo por una imagen no subtitulada
+Se han localizado 22 enlaces con el mismo texto que apuntan a destinos diferentes
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se encontró 1 tabla sin celdas de encabezado
+Se identificaron 4 formularios sin botón de envío
+Se han encontrado 26 errores de validación en el lenguaje de marcado
+Se ha encontrado 1 atributo para controlar la presentación visual
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que en 3 casos, se hace uso de unidades de medida absolutas
+Se ha encontrado 1 elemento <link> para la navegación
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es-ES"

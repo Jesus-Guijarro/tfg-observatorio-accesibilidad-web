@@ -1,0 +1,60 @@
+12/23/2018 01:14:26 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 7
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/23/2018 01:20:37 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 10
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/23/2018 01:31:11 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "observatorio"
+	PAGINA WEB: 71
+	INFORMACION: "KeyError('resultado',)"
+
+12/23/2018 01:32:04 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "wave"
+	PAGINA WEB: 71
+	INFORMACION: "Exception('No se ha podido realizar la evaluación. Formato de respuesta incorrecto',)"
+
+12/23/2018 01:40:22 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 75
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/23/2018 01:43:45 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 76
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/23/2018 01:49:44 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 78
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/23/2018 01:53:15 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 79
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/23/2018 01:56:47 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "eiiichecker"
+	PAGINA WEB: 80
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/23/2018 02:32:21 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "vamola"
+	PAGINA WEB: 201
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/23/2018 02:39:14 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "vamola"
+	PAGINA WEB: 209
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+
+12/23/2018 02:41:36 PM - ERROR - EVALUACION_HERRAMIENTA
+	HERRAMIENTA: "vamola"
+	PAGINA WEB: 210
+	INFORMACION: "Exception('No se ha podido realizar la evaluación',)"
+

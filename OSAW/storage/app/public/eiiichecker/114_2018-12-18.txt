@@ -1,0 +1,9 @@
+REPORTE PÁGINA WEB: https://www.iberia.com/es/vuelo+hotel/
+FECHA EVALUACIÓN: 2018-12-18
+
+CRITERIO DE CONFORMIDAD: 2.4.2: Titulado de páginas       
+	FALLO F25: Fallo del Criterio de Conformidad 2.4.2 debido al título de una página web que no identifica los contenidos		 
+	VECES ENCONTRADO: 1
+CRITERIO DE CONFORMIDAD: 3.2.2: Al recibir entradas      
+	TÉCNICA G13: Describir lo que sucederá antes de que se realice un cambio en un control de formulario que cause que ocurra un cambio de contexto		 
+	VECES ENCONTRADO: 1

@@ -1,0 +1,32 @@
+REPORTE PÁGINA WEB: http://www.alicante.es/es/area-tematica/comercio-consumo-sanidad
+FECHA EVALUACIÓN: 2018-11-21
+
+PROBLEMAS
+Empty link	  VECES ENCONTRADO: 7
+Empty button	  VECES ENCONTRADO: 4
+Missing form label	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Justified text	  VECES ENCONTRADO: 243
+Redundant alternative text	  VECES ENCONTRADO: 16
+Long alternative text	  VECES ENCONTRADO: 2
+Redundant title text	  VECES ENCONTRADO: 36
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 6
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 2
+Alternative text	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 34
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 50
+
+
+

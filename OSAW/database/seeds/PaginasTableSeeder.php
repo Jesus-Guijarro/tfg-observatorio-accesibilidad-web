@@ -1,0 +1,298 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class PaginasTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('paginas')->delete();
+
+        #Ministerio de Justicia
+        DB::table('paginas')->insert([
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/inicio',
+            'sitio_id' => '1'],
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/atencion-ciudadano',
+            'sitio_id' => '1'],
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/funciones-estructura',
+            'sitio_id' => '1'],
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/ministerio/organismos-entidades',
+            'sitio_id' => '1'],
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/administracion-justicia/organizacion-justicia',
+            'sitio_id' => '1'],
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/servicios-ciudadano/tramites-gestiones-personales',
+            'sitio_id' => '1'],
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/servicios-ciudadano/empleo-publico',
+            'sitio_id' => '1'],
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/areas-tematicas/registros',
+            'sitio_id' => '1'],
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/actividad-legislativa/normativa',
+            'sitio_id' => '1'],
+            ['URL' => 'http://www.mjusticia.gob.es/cs/Satellite/Portal/es/justicia-espana/organizacion',
+            'sitio_id' => '1'],
+            ]);
+        
+        #MAgencia Estatal de Administración Tributaria
+        DB::table('paginas')->insert([
+            ['URL' => 'https://www.agenciatributaria.es',
+            'sitio_id' => '2'],
+            ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Renta.shtml',
+            'sitio_id' => '2'],
+            ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Minimos__reducciones_y_deducciones_en_el_IRPF/Minimos__reducciones_y_deducciones_en_el_IRPF.shtml',
+            'sitio_id' => '2'],
+            ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Vivienda/Vivienda.shtml',
+            'sitio_id' => '2'],
+            ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Ciudadanos.shtml',
+            'sitio_id' => '2'],
+            ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Discapacitados/Discapacitados.shtml',
+            'sitio_id' => '2'],
+            ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Tramites_electronicos/Tramites_electronicos.shtml',
+            'sitio_id' => '2'],
+            ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Certificados_tributarios/Certificados_tributarios.shtml',
+            'sitio_id' => '2'],
+            ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Ciudadanos/Limitacion_de_pagos_en_efectivo/Limitacion_de_pagos_en_efectivo.shtml',
+            'sitio_id' => '2'],
+            ['URL' => 'https://www.agenciatributaria.es/AEAT.internet/Inicio/La_Agencia_Tributaria/Campanas/Censos__NIF_y_domicilio_fiscal/Ciudadanos/Ciudadanos.shtml',
+            'sitio_id' => '2'],
+            ]);
+            
+        #Generalitat Valenciana: 
+        DB::table('paginas')->insert([
+            ['URL' => 'http://www.gva.es/es/inicio/presentacion',
+            'sitio_id' => '3'],
+            ['URL' => 'http://www.gva.es/es/inicio/administraciones',
+            'sitio_id' => '3'],
+            ['URL' => 'http://www.gva.es/es/inicio/ciudadanos',
+            'sitio_id' => '3'],
+            ['URL' => 'http://www.gva.es/es/inicio/ciudadanos/ciu_busco_trabajo',
+            'sitio_id' => '3'],
+            ['URL' => 'http://www.gva.es/es/inicio/ciudadanos/ciu_quiero_acceder_a_una_vivienda',
+            'sitio_id' => '3'],
+            ['URL' => 'http://www.gva.es/es/inicio/ciudadanos/ciu_quiero_estudiar_y_formarme',
+            'sitio_id' => '3'],
+            ['URL' => 'http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_ir_al_medico',
+            'sitio_id' => '3'],
+            ['URL' => 'http://www.gva.es/es/inicio/ciudadanos/ciu_necesito_informacion_tributaria',
+            'sitio_id' => '3'],
+            ['URL' => 'http://www.gva.es/es/inicio/administraciones/adm_tramites_y_servicios',
+            'sitio_id' => '3'],
+            ['URL' => 'http://www.gva.es/es/inicio/administraciones/adm_ayudas_y_subvenciones',
+            'sitio_id' => '3'],
+            ]);
+
+
+        #Ayuntamiento de Alicante: 
+        DB::table('paginas')->insert([
+            ['URL' => 'http://www.alicante.es/es',
+            'sitio_id' => '4'],
+            ['URL' => 'http://www.alicante.es/es/contenidos/servicios-emergencia',
+            'sitio_id' => '4'],
+            ['URL' => 'http://www.alicante.es/es/area-tematica/servicio-de-atencion-integral-a-la-ciudadania---saic',
+            'sitio_id' => '4'],
+            ['URL' => 'http://www.alicante.es/es/contenidos/ciudad-alicante',
+            'sitio_id' => '4'],
+            ['URL' => 'http://www.alicante.es/es/galerias_imagen',
+            'sitio_id' => '4'],
+            ['URL' => 'http://www.alicante.es/es/area-tematica/turismo',
+            'sitio_id' => '4'],
+            ['URL' => 'http://www.alicante.es/es/noticias/actualizacion-del-espacio-participacion-ciudadana',
+            'sitio_id' => '4'],
+            ['URL' => 'http://www.alicante.es/es/contenidos/transporte-alicante-metropolitano-tam',
+            'sitio_id' => '4'],
+            ['URL' => 'http://www.alicante.es/es/area-tematica/seguridad-ciudadana',
+            'sitio_id' => '4'],
+            ['URL' => 'http://www.alicante.es/es/area-tematica/comercio-consumo-sanidad',
+            'sitio_id' => '4'],
+            ]);
+        #Red Nacional de los Ferrocarriles Españoles (RENFE): 
+        DB::table('paginas')->insert([
+            ['URL' => 'http://www.renfe.com',
+            'sitio_id' => '5'],
+            ['URL' => 'http://www.renfe.com/empresa/atencion_cliente/index.html',
+            'sitio_id' => '5'],
+            ['URL' => 'http://www.renfe.com/viajeros/atendo/index.html',
+            'sitio_id' => '5'],
+            ['URL' => 'http://www.renfe.com/empresa/comunicacion/incidencias.html',
+            'sitio_id' => '5'],
+            ['URL' => 'http://www.renfe.com/viajeros/atendo/estaciones.html',
+            'sitio_id' => '5'],
+            ['URL' => 'http://www.renfe.com/viajeros/info/index.html',
+            'sitio_id' => '5'],
+            ['URL' => 'http://www.renfe.com/viajeros/tarifas/index.html',
+            'sitio_id' => '5'],
+            ['URL' => 'http://www.renfe.com/viajeros/atendo/informacion_cliente.html',
+            'sitio_id' => '5'],
+            ['URL' => 'http://www.renfe.com/viajeros/movilidad/index.html',
+            'sitio_id' => '5'],
+            ['URL' => 'http://www.renfe.com/viajeros/cercanias/index.html',
+            'sitio_id' => '5'],
+            ]);
+        #Centro para el Desarrollo Tecnológico Industrial(CDTI):  
+        DB::table('paginas')->insert([
+            ['URL' => 'https://www.cdti.es',
+            'sitio_id' => '6'],
+            ['URL' => 'https://www.cdti.es/index.asp?MP=6&MS=5&MN=1&r=1536*864',
+            'sitio_id' => '6'],
+            ['URL' => 'https://www.cdti.es/index.asp?MP=100&MS=802&MN=1&r=1536*864',
+            'sitio_id' => '6'],
+            ['URL' => 'https://www.cdti.es/index.asp?MP=8&MS=128&MN=2&r=1536*864',
+            'sitio_id' => '6'],
+            ['URL' => 'https://www.cdti.es/index.asp?MP=101&MS=821&MN=1&r=1536*864',
+            'sitio_id' => '6'],
+            ['URL' => 'https://www.cdti.es/index.asp?MP=8&MS=69&MN=2&r=1536*864',
+            'sitio_id' => '6'],
+            ['URL' => 'https://www.cdti.es/index.asp?MP=8&MS=129&MN=1&r=1536*864',
+            'sitio_id' => '6'],
+            ['URL' => 'https://www.cdti.es/index.asp?MP=9&MS=31&MN=1&r=1536*864',
+            'sitio_id' => '6'],
+            ['URL' => 'https://www.cdti.es/index.asp?MP=99&MS=0&MN=1&r=1536*864',
+            'sitio_id' => '6'],
+            ['URL' => 'https://www.cdti.es/index.asp?MP=20&MS=0&MN=1',
+            'sitio_id' => '6'],
+            ]);
+        #Universitat Politècnica de València (UPV): 
+        DB::table('paginas')->insert([
+            ['URL' => 'https://www.upv.es',
+            'sitio_id' => '7'],
+            ['URL' => 'https://www.upv.es/perfiles/futuro-alumno/index-es.html',
+            'sitio_id' => '7'],
+            ['URL' => 'https://www.upv.es/admision/empezar-en-la-universidad/index-es.html',
+            'sitio_id' => '7'],
+            ['URL' => 'https://www.upv.es/admision/traslados-e-intercambios/index-es.html',
+            'sitio_id' => '7'],
+            ['URL' => 'https://www.upv.es/estudios/grado/index-es.html',
+            'sitio_id' => '7'],
+            ['URL' => 'https://www.upv.es/estudios/aula-abierta/index-es.html',
+            'sitio_id' => '7'],
+            ['URL' => 'https://www.upv.es/investigacion/estructuras/index-es.html',
+            'sitio_id' => '7'],
+            ['URL' => 'https://www.upv.es/investigacion/iniciativas-idi/index-es.html',
+            'sitio_id' => '7'],
+            ['URL' => 'https://www.upv.es/organizacion/escuelas-facultades/index-es.html',
+            'sitio_id' => '7'],
+            ['URL' => 'https://www.upv.es/organizacion/departamentos/index-es.html',
+            'sitio_id' => '7'],
+            ]);
+        #Universidad de Alicante (UA):  
+        DB::table('paginas')->insert([
+            ['URL' => 'https://www.ua.es/es/',
+            'sitio_id' => '8'],
+            ['URL' => 'https://web.ua.es/es/estudia-en-la-ua.html',
+            'sitio_id' => '8'],
+            ['URL' => 'https://web.ua.es/es/orientacion-y-empleo.html',
+            'sitio_id' => '8'],
+            ['URL' => 'https://web.ua.es/es/grados-oficiales.html',
+            'sitio_id' => '8'],
+            ['URL' => 'https://web.ua.es/es/masteres-oficiales.html',
+            'sitio_id' => '8'],
+            ['URL' => 'https://web.ua.es/es/investiga-en-la-ua.html',
+            'sitio_id' => '8'],
+            ['URL' => 'https://web.ua.es/es/movilidad.html',
+            'sitio_id' => '8'],
+            ['URL' => 'https://web.ua.es/es/centros-departamentos-e-institutos.html',
+            'sitio_id' => '8'],
+            ['URL' => 'https://web.ua.es/es/recursos-universitarios.html',
+            'sitio_id' => '8'],
+            ['URL' => 'https://web.ua.es/es/centro-de-apoyo-al-estudiante.html',
+            'sitio_id' => '8'],
+            ]);
+        #Endesa:
+        DB::table('paginas')->insert([
+            ['URL' => 'https://www.endesaclientes.com',
+            'sitio_id' => '9'],
+            ['URL' => 'https://www.endesaclientes.com/hogares/atencion-cliente.html',
+            'sitio_id' => '9'],
+            ['URL' => 'https://www.endesaclientes.com/facturas-lecturas',
+            'sitio_id' => '9'],
+            ['URL' => 'https://www.endesaclientes.com/facturas-lecturas/ver-factura',
+            'sitio_id' => '9'],
+            ['URL' => 'https://www.endesaclientes.com/facturas-lecturas/pagar-facturas',
+            'sitio_id' => '9'],
+            ['URL' => 'https://www.endesaclientes.com/facturas-lecturas/dar-lectura',
+            'sitio_id' => '9'],
+            ['URL' => 'https://www.endesaclientes.com/explicacion-factura.html',
+            'sitio_id' => '9'],
+            ['URL' => 'https://www.endesaclientes.com/factura-electronica.html',
+            'sitio_id' => '9'],
+            ['URL' => 'https://www.endesaclientes.com/hogares/mantenimiento.html',
+            'sitio_id' => '9'],
+            ['URL' => 'https://www.endesaclientes.com/gestiones-contratos',
+            'sitio_id' => '9'],
+            ]);
+        #Iberdrola:
+        DB::table('paginas')->insert([
+            ['URL' => 'https://www.iberdrola.es',
+            'sitio_id' => '10'],
+            ['URL' => 'https://www.iberdrola.es/atencion-cliente',
+            'sitio_id' => '10'],
+            ['URL' => 'https://www.iberdrola.es/atencion-cliente#form-consultas',
+            'sitio_id' => '10'],
+            ['URL' => 'https://www.iberdrola.es/atencion-cliente#panel-extranjero',
+            'sitio_id' => '10'],
+            ['URL' => 'https://www.iberdrola.es/ahorrar-energia/calcular-potencia-electrica-optima',
+            'sitio_id' => '10'],
+            ['URL' => 'https://www.iberdrola.es/informacion/facturas',
+            'sitio_id' => '10'],
+            ['URL' => 'https://www.iberdrola.es/informacion/alta-nuevo-suministro-electrico',
+            'sitio_id' => '10'],
+            ['URL' => 'https://www.iberdrola.es/informacion/instalacion-electricidad',
+            'sitio_id' => '10'],
+            ['URL' => 'https://www.iberdrola.es/informacion/instalacion-gas',
+            'sitio_id' => '10'],
+            ['URL' => 'https://www.iberdrola.es/informacion/alta-nuevo-suministro-gas',
+            'sitio_id' => '10'],
+            ]);
+        #Banco Santander: 
+        DB::table('paginas')->insert([
+            ['URL' => 'https://www.bancosantander.es/es/particulares',
+            'sitio_id' => '23'],
+            ['URL' => 'https://www.bancosantander.es/es/particulares/prestamos',
+            'sitio_id' => '23'],
+            ['URL' => 'https://www.bancosantander.es/es/particulares/cuentas-y-tarjetas',
+            'sitio_id' => '23'],
+            ['URL' => 'https://www.bancosantander.es/es/particulares/ahorro-e-inversion',
+            'sitio_id' => '23'],
+            ['URL' => 'https://www.bancosantander.es/es/particulares/hipotecas',
+            'sitio_id' => '23'],
+            ['URL' => 'https://www.bancosantander.es/es/particulares/prestamos',
+            'sitio_id' => '23'],
+            ['URL' => 'https://www.bancosantander.es/es/particulares/banca-online',
+            'sitio_id' => '23'],
+            ['URL' => 'https://www.bancosantander.es/es/particulares/hazte-cliente',
+            'sitio_id' => '23'],
+            ['URL' => 'https://www.bancosantander.es/es/particulares/banca-online/clave-online',
+            'sitio_id' => '23'],
+            ['URL' => 'https://www.bancosantander.es/es/particulares/banca-online/internet',
+            'sitio_id' => '23'],
+            ]);
+        #Iberia: 
+        DB::table('paginas')->insert([
+            ['URL' => 'https://www.iberia.com/',
+            'sitio_id' => '24'],
+            ['URL' => 'https://www.iberia.com/es/buscador-vuelos/',
+            'sitio_id' => '24'],
+            ['URL' => 'https://www.iberia.com/es/puente-aereo/',
+            'sitio_id' => '24'],
+            ['URL' => 'https://www.iberia.com/es/vuelo+hotel/',
+            'sitio_id' => '24'],
+            ['URL' => 'https://www.iberia.com/es/atencion-al-cliente/#',
+            'sitio_id' => '24'],
+            ['URL' => 'https://www.iberia.com/es/autocheckin-online/?language=es&market=es#/ibcose',
+            'sitio_id' => '24'],
+            ['URL' => 'https://www.iberia.com/es/informacion-checkin/',
+            'sitio_id' => '24'],
+            ['URL' => 'https://www.iberia.com/es/gestion-de-reservas/?language=es&market=es&channel=COM#!/chktrp',
+            'sitio_id' => '24'],
+            ['URL' => 'https://www.iberia.com/es/facturas/',
+            'sitio_id' => '24'],
+            ['URL' => 'https://www.iberia.com/es/horarios/',
+            'sitio_id' => '24'],
+            ]);
+
+    }
+}

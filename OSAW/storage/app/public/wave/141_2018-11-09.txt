@@ -1,0 +1,36 @@
+REPORTE PÁGINA WEB: http://www.mecd.gob.es/portada-mecd/
+FECHA EVALUACIÓN: 2018-11-09
+
+PROBLEMAS
+Empty button	  VECES ENCONTRADO: 1
+Empty link	  VECES ENCONTRADO: 2
+
+
+
+ALERTAS
+Link to PDF document	  VECES ENCONTRADO: 4
+Justified text	  VECES ENCONTRADO: 9
+Broken same-page link	  VECES ENCONTRADO: 12
+Long alternative text	  VECES ENCONTRADO: 3
+Redundant link	  VECES ENCONTRADO: 3
+Redundant title text	  VECES ENCONTRADO: 18
+Noscript element	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Element language	  VECES ENCONTRADO: 6
+Alternative text	  VECES ENCONTRADO: 9
+Null or empty alternative text	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 1
+Fieldset	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 81
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+
+

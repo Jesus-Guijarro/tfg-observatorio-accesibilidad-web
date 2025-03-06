@@ -1,0 +1,1356 @@
+REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/cultura-mecd/
+FECHA EVALUACIÓN: 2018-12-07
+
+-PROBLEMAS CONOCIDOS-
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 174: Anchor contains no text.  
+
+	REPARAR: Add text to the a element or the title attribute of the a element or, if an image is used within the anchor, add Alt text to the image.     
+
+		LINEA: 89, COLUMNA: 25: <a href="#" class="prev"></a>       
+
+		LINEA: 89, COLUMNA: 54: <a href="#" class="next"></a>
+
+	
+
+
+
+-PROBLEMAS POTENCIALES-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+
+
+		LINEA: 86, COLUMNA: 173: <img alt="Enlace a la agenda cultural" src="/dms/mecd/mecd-admin/mecd-adminBanners/15-banner-agenda- ...       
+
+		LINEA: 86, COLUMNA: 482: <img alt="Acceso al portal Cultura y Ciudadanía" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 87, COLUMNA: 38: <img alt="Acceso a Nuestros Museos en un vistazo" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 88, COLUMNA: 38: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/.imaging/mecd-carrusel/dms/mecd/cultu ...       
+
+		LINEA: 89, COLUMNA: 948: <img class="img-v" alt="Portada del libro José María Blázquez, anarquista de ambos mundos (en Bé ...       
+
+		LINEA: 89, COLUMNA: 1758: <img class="img-v" alt="Portada de la obra premiada" src="/.imaging/crprszlpv/dms/mecd/prensa-mecd/a ...       
+
+		LINEA: 89, COLUMNA: 2750: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/dms/mecd/mecd-admin/mecd-adminBanners ...       
+
+		LINEA: 89, COLUMNA: 3074: <img alt="Acceso al portal e-Biblio" src="/dms/mecd/portada-mecd/portales/ebiblio/ebiblio.jpg"/>       
+
+		LINEA: 89, COLUMNA: 3400: <img alt="Acceso al portal del Encuentro Cultura y Ciudadanía" src="/dms/mecd/mecd-admin/mecd-admin ...       
+
+		LINEA: 89, COLUMNA: 3810: <img alt="Acceso al portal Cultura y mecenazgo" src="/dms/mecd/cultura-mecd/areas-cultura/industrias ...       
+
+		LINEA: 89, COLUMNA: 4142: <img alt="Acceso al portal Bellas Artes" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 89, COLUMNA: 4487: <img alt="Año europeo de Patrimonio 2018" src="/dms/mecd/cultura-mecd/areas-cultura/patrimonio/bann ...       
+
+		LINEA: 89, COLUMNA: 4796: <img alt="Acceso al portal MusaE: Música en los Museos Estatales" src="/dms/mecd/mecd-admin/mecd-ad ...       
+
+		LINEA: 97, COLUMNA: 228: <img alt="Enlace a información administrativa" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefin ...       
+
+		LINEA: 97, COLUMNA: 593: <img alt="Enlace a la Sede electrónica" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 97, COLUMNA: 916: <img alt="Enlace a Estadísticas" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-es ...       
+
+		LINEA: 97, COLUMNA: 1257: <img alt="Enlace a publicaciones del ministerio" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefi ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+
+
+		LINEA: 67, COLUMNA: 124: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 67, COLUMNA: 336: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 69, COLUMNA: 914: <img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/>       
+
+		LINEA: 69, COLUMNA: 1252: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 69, COLUMNA: 1614: <img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/>       
+
+		LINEA: 69, COLUMNA: 1964: <img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/>       
+
+		LINEA: 86, COLUMNA: 173: <img alt="Enlace a la agenda cultural" src="/dms/mecd/mecd-admin/mecd-adminBanners/15-banner-agenda- ...       
+
+		LINEA: 86, COLUMNA: 482: <img alt="Acceso al portal Cultura y Ciudadanía" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 87, COLUMNA: 38: <img alt="Acceso a Nuestros Museos en un vistazo" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 88, COLUMNA: 38: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/.imaging/mecd-carrusel/dms/mecd/cultu ...       
+
+		LINEA: 89, COLUMNA: 948: <img class="img-v" alt="Portada del libro José María Blázquez, anarquista de ambos mundos (en Bé ...       
+
+		LINEA: 89, COLUMNA: 1758: <img class="img-v" alt="Portada de la obra premiada" src="/.imaging/crprszlpv/dms/mecd/prensa-mecd/a ...       
+
+		LINEA: 89, COLUMNA: 2750: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/dms/mecd/mecd-admin/mecd-adminBanners ...       
+
+		LINEA: 89, COLUMNA: 3074: <img alt="Acceso al portal e-Biblio" src="/dms/mecd/portada-mecd/portales/ebiblio/ebiblio.jpg"/>       
+
+		LINEA: 89, COLUMNA: 3400: <img alt="Acceso al portal del Encuentro Cultura y Ciudadanía" src="/dms/mecd/mecd-admin/mecd-admin ...       
+
+		LINEA: 89, COLUMNA: 3810: <img alt="Acceso al portal Cultura y mecenazgo" src="/dms/mecd/cultura-mecd/areas-cultura/industrias ...       
+
+		LINEA: 89, COLUMNA: 4142: <img alt="Acceso al portal Bellas Artes" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 89, COLUMNA: 4487: <img alt="Año europeo de Patrimonio 2018" src="/dms/mecd/cultura-mecd/areas-cultura/patrimonio/bann ...       
+
+		LINEA: 89, COLUMNA: 4796: <img alt="Acceso al portal MusaE: Música en los Museos Estatales" src="/dms/mecd/mecd-admin/mecd-ad ...       
+
+		LINEA: 91, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 93, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 97, COLUMNA: 228: <img alt="Enlace a información administrativa" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefin ...       
+
+		LINEA: 97, COLUMNA: 593: <img alt="Enlace a la Sede electrónica" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 97, COLUMNA: 916: <img alt="Enlace a Estadísticas" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-es ...       
+
+		LINEA: 97, COLUMNA: 1257: <img alt="Enlace a publicaciones del ministerio" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefi ...       
+
+		LINEA: 97, COLUMNA: 1717: <img alt="Logotipo del Museo del Prado" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cultur ...       
+
+		LINEA: 97, COLUMNA: 1943: <img alt="Logotipo del Museo Reina Sofía" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cul ...       
+
+		LINEA: 97, COLUMNA: 2170: <img alt="Logotipo de la Biblioteca Nacional" src="/dms/mecd/portada-mecd/listado-iconos/organismos/ ...       
+
+		LINEA: 97, COLUMNA: 2403: <img alt="Logotipo del Teatro Real" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cultura/te ...       
+
+		LINEA: 97, COLUMNA: 2630: <img alt="Logotipo del Museo Thyssen Bornemisza" src="/dms/mecd/portada-mecd/listado-iconos/organism ...       
+
+		LINEA: 97, COLUMNA: 2849: <img alt="Logotipo de la Fundación Lázaro Galdiano" src="/dms/mecd/portada-mecd/listado-iconos/org ...       
+
+		LINEA: 97, COLUMNA: 3089: <img alt="Instituto del Patrimonio Cultural de España" src="/dms/mecd/portada-mecd/listado-iconos/o ...       
+
+		LINEA: 97, COLUMNA: 3314: <img alt="Orquesta y Coro Nacionales de España " src="/dms/mecd/portada-mecd/listado-iconos/organis ...       
+
+		LINEA: 97, COLUMNA: 3532: <img alt="Centro Dramático Nacional" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cultura/ ...       
+
+		LINEA: 97, COLUMNA: 3991: <img alt="pares" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/pares.png"/>       
+
+		LINEA: 97, COLUMNA: 4228: <img alt="Logotipo Rebeca" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/rebeca.gif"/>       
+
+		LINEA: 97, COLUMNA: 4491: <img alt="Biblioteca Virtual de Prensa Histórica" src="/dms/mecd/portada-mecd/listado-iconos/portal ...       
+
+		LINEA: 97, COLUMNA: 4710: <img alt="Ceres. Colecciones en red" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/cer ...       
+
+		LINEA: 97, COLUMNA: 4950: <img alt="Acceso al Observatoria de la lectura y el libro" src="/dms/mecd/portada-mecd/listado-icono ...       
+
+		LINEA: 97, COLUMNA: 5202: <img alt="Acción Cultural Española" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/ac ...       
+
+		LINEA: 97, COLUMNA: 5447: <img alt="Patrimonio Mundial en España" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura ...       
+
+		LINEA: 97, COLUMNA: 5703: <img alt="Cultura en positivo" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/cultura-e ...       
+
+		LINEA: 97, COLUMNA: 5923: <img alt="Logotipo España es Cultura" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/s ...       
+
+		LINEA: 97, COLUMNA: 6284: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...       
+
+		LINEA: 97, COLUMNA: 6574: <img alt="Este documento es valido XHTML 1.0 Strict" src="/docroot/mecd/img/logo-xhtml1.png"/>       
+
+		LINEA: 97, COLUMNA: 6794: <img alt="Este documento CSS es valido" src="/docroot/mecd/img/logo-css.png"/>
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+
+
+		LINEA: 86, COLUMNA: 482: <img alt="Acceso al portal Cultura y Ciudadanía" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 87, COLUMNA: 38: <img alt="Acceso a Nuestros Museos en un vistazo" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 88, COLUMNA: 38: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/.imaging/mecd-carrusel/dms/mecd/cultu ...
+
+  
+
+	REVISAR: 239: img has title attribute and image may be decorative.
+
+
+
+		LINEA: 67, COLUMNA: 124: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 67, COLUMNA: 336: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 97, COLUMNA: 6284: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...
+
+  
+
+	REVISAR: 80: object may be missing a text equivalent.
+
+
+
+		LINEA: 63, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+1.2 Time-based Media: Provide alternatives for time-based media
+
+CRITERIO DE CONFORMIDAD: 1.2.3 Audio Description or Media Alternative (Prerecorded) (A)  
+
+	REVISAR: 160: object may require a long description.
+
+
+
+		LINEA: 63, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+
+
+		LINEA: 83, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+
+
+		LINEA: 67, COLUMNA: 124: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 67, COLUMNA: 336: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 69, COLUMNA: 914: <img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/>       
+
+		LINEA: 69, COLUMNA: 1252: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 69, COLUMNA: 1614: <img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/>       
+
+		LINEA: 69, COLUMNA: 1964: <img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/>       
+
+		LINEA: 86, COLUMNA: 173: <img alt="Enlace a la agenda cultural" src="/dms/mecd/mecd-admin/mecd-adminBanners/15-banner-agenda- ...       
+
+		LINEA: 86, COLUMNA: 482: <img alt="Acceso al portal Cultura y Ciudadanía" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 87, COLUMNA: 38: <img alt="Acceso a Nuestros Museos en un vistazo" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 88, COLUMNA: 38: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/.imaging/mecd-carrusel/dms/mecd/cultu ...       
+
+		LINEA: 89, COLUMNA: 948: <img class="img-v" alt="Portada del libro José María Blázquez, anarquista de ambos mundos (en Bé ...       
+
+		LINEA: 89, COLUMNA: 1758: <img class="img-v" alt="Portada de la obra premiada" src="/.imaging/crprszlpv/dms/mecd/prensa-mecd/a ...       
+
+		LINEA: 89, COLUMNA: 2750: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/dms/mecd/mecd-admin/mecd-adminBanners ...       
+
+		LINEA: 89, COLUMNA: 3074: <img alt="Acceso al portal e-Biblio" src="/dms/mecd/portada-mecd/portales/ebiblio/ebiblio.jpg"/>       
+
+		LINEA: 89, COLUMNA: 3400: <img alt="Acceso al portal del Encuentro Cultura y Ciudadanía" src="/dms/mecd/mecd-admin/mecd-admin ...       
+
+		LINEA: 89, COLUMNA: 3810: <img alt="Acceso al portal Cultura y mecenazgo" src="/dms/mecd/cultura-mecd/areas-cultura/industrias ...       
+
+		LINEA: 89, COLUMNA: 4142: <img alt="Acceso al portal Bellas Artes" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 89, COLUMNA: 4487: <img alt="Año europeo de Patrimonio 2018" src="/dms/mecd/cultura-mecd/areas-cultura/patrimonio/bann ...       
+
+		LINEA: 89, COLUMNA: 4796: <img alt="Acceso al portal MusaE: Música en los Museos Estatales" src="/dms/mecd/mecd-admin/mecd-ad ...       
+
+		LINEA: 91, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 93, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 97, COLUMNA: 228: <img alt="Enlace a información administrativa" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefin ...       
+
+		LINEA: 97, COLUMNA: 593: <img alt="Enlace a la Sede electrónica" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 97, COLUMNA: 916: <img alt="Enlace a Estadísticas" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-es ...       
+
+		LINEA: 97, COLUMNA: 1257: <img alt="Enlace a publicaciones del ministerio" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefi ...       
+
+		LINEA: 97, COLUMNA: 1717: <img alt="Logotipo del Museo del Prado" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cultur ...       
+
+		LINEA: 97, COLUMNA: 1943: <img alt="Logotipo del Museo Reina Sofía" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cul ...       
+
+		LINEA: 97, COLUMNA: 2170: <img alt="Logotipo de la Biblioteca Nacional" src="/dms/mecd/portada-mecd/listado-iconos/organismos/ ...       
+
+		LINEA: 97, COLUMNA: 2403: <img alt="Logotipo del Teatro Real" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cultura/te ...       
+
+		LINEA: 97, COLUMNA: 2630: <img alt="Logotipo del Museo Thyssen Bornemisza" src="/dms/mecd/portada-mecd/listado-iconos/organism ...       
+
+		LINEA: 97, COLUMNA: 2849: <img alt="Logotipo de la Fundación Lázaro Galdiano" src="/dms/mecd/portada-mecd/listado-iconos/org ...       
+
+		LINEA: 97, COLUMNA: 3089: <img alt="Instituto del Patrimonio Cultural de España" src="/dms/mecd/portada-mecd/listado-iconos/o ...       
+
+		LINEA: 97, COLUMNA: 3314: <img alt="Orquesta y Coro Nacionales de España " src="/dms/mecd/portada-mecd/listado-iconos/organis ...       
+
+		LINEA: 97, COLUMNA: 3532: <img alt="Centro Dramático Nacional" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cultura/ ...       
+
+		LINEA: 97, COLUMNA: 3991: <img alt="pares" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/pares.png"/>       
+
+		LINEA: 97, COLUMNA: 4228: <img alt="Logotipo Rebeca" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/rebeca.gif"/>       
+
+		LINEA: 97, COLUMNA: 4491: <img alt="Biblioteca Virtual de Prensa Histórica" src="/dms/mecd/portada-mecd/listado-iconos/portal ...       
+
+		LINEA: 97, COLUMNA: 4710: <img alt="Ceres. Colecciones en red" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/cer ...       
+
+		LINEA: 97, COLUMNA: 4950: <img alt="Acceso al Observatoria de la lectura y el libro" src="/dms/mecd/portada-mecd/listado-icono ...       
+
+		LINEA: 97, COLUMNA: 5202: <img alt="Acción Cultural Española" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/ac ...       
+
+		LINEA: 97, COLUMNA: 5447: <img alt="Patrimonio Mundial en España" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura ...       
+
+		LINEA: 97, COLUMNA: 5703: <img alt="Cultura en positivo" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/cultura-e ...       
+
+		LINEA: 97, COLUMNA: 5923: <img alt="Logotipo España es Cultura" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/s ...       
+
+		LINEA: 97, COLUMNA: 6284: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...       
+
+		LINEA: 97, COLUMNA: 6574: <img alt="Este documento es valido XHTML 1.0 Strict" src="/docroot/mecd/img/logo-xhtml1.png"/>       
+
+		LINEA: 97, COLUMNA: 6794: <img alt="Este documento CSS es valido" src="/docroot/mecd/img/logo-css.png"/>
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+
+
+		LINEA: 83, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...       
+
+		LINEA: 83, COLUMNA: 463: <input type="submit" name="mec" id="boton_buscar" class="botonbuscar" value=""/>
+
+  
+
+	REVISAR: 73: object may be using color alone.
+
+
+
+		LINEA: 63, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+
+
+		LINEA: 22, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/w_jquery.js"></script>       
+
+		LINEA: 23, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/dropdown.js"></script>       
+
+		LINEA: 24, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/seleccionar.js"></script>       
+
+		LINEA: 26, COLUMNA: 4: <script type="text/javascript">var textoEnlaceExterno = "Enlace externo, se abre en ventana nueva";< ...       
+
+		LINEA: 27, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jstarget.js"></script>       
+
+		LINEA: 29, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 30, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery.colorbox.js"></script>       
+
+		LINEA: 31, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides.min.jquery.js"></script>       
+
+		LINEA: 32, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides-contenido.js"></script>       
+
+		LINEA: 38, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/jquery-ui.min.js"></script>       
+
+		LINEA: 39, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/agenda.js"></script>       
+
+		LINEA: 41, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/js.cookie-2.1.3.min.js"></script>       
+
+		LINEA: 43, COLUMNA: 3: <script type="text/javascript">window.onload = function(){	ExternalLinks.init();}		 ...       
+
+		LINEA: 49, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/gestion-cookies.js"></script>       
+
+		LINEA: 54, COLUMNA: 7: <script type="text/javascript" src="/docroot/mecd/js/script-jcarousellite-areas.js"></script>       
+
+		LINEA: 55, COLUMNA: 5: <script type="text/javascript" src="/docroot/mecd/js/lib-jcarousellite-areas.js"></script>       
+
+		LINEA: 65, COLUMNA: 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...       
+
+		LINEA: 69, COLUMNA: 2253: <script type="text/javascript">dropdown('nav', 'hover', 25);</script>       
+
+		LINEA: 99, COLUMNA: 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
+
+		LINEA: 106, COLUMNA: 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+
+
+		LINEA: 67, COLUMNA: 124: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 67, COLUMNA: 336: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 86, COLUMNA: 173: <img alt="Enlace a la agenda cultural" src="/dms/mecd/mecd-admin/mecd-adminBanners/15-banner-agenda- ...       
+
+		LINEA: 86, COLUMNA: 482: <img alt="Acceso al portal Cultura y Ciudadanía" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 87, COLUMNA: 38: <img alt="Acceso a Nuestros Museos en un vistazo" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 88, COLUMNA: 38: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/.imaging/mecd-carrusel/dms/mecd/cultu ...       
+
+		LINEA: 89, COLUMNA: 948: <img class="img-v" alt="Portada del libro José María Blázquez, anarquista de ambos mundos (en Bé ...       
+
+		LINEA: 89, COLUMNA: 1758: <img class="img-v" alt="Portada de la obra premiada" src="/.imaging/crprszlpv/dms/mecd/prensa-mecd/a ...       
+
+		LINEA: 89, COLUMNA: 2750: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/dms/mecd/mecd-admin/mecd-adminBanners ...       
+
+		LINEA: 89, COLUMNA: 3074: <img alt="Acceso al portal e-Biblio" src="/dms/mecd/portada-mecd/portales/ebiblio/ebiblio.jpg"/>       
+
+		LINEA: 89, COLUMNA: 3400: <img alt="Acceso al portal del Encuentro Cultura y Ciudadanía" src="/dms/mecd/mecd-admin/mecd-admin ...       
+
+		LINEA: 89, COLUMNA: 3810: <img alt="Acceso al portal Cultura y mecenazgo" src="/dms/mecd/cultura-mecd/areas-cultura/industrias ...       
+
+		LINEA: 89, COLUMNA: 4142: <img alt="Acceso al portal Bellas Artes" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 89, COLUMNA: 4487: <img alt="Año europeo de Patrimonio 2018" src="/dms/mecd/cultura-mecd/areas-cultura/patrimonio/bann ...       
+
+		LINEA: 89, COLUMNA: 4796: <img alt="Acceso al portal MusaE: Música en los Museos Estatales" src="/dms/mecd/mecd-admin/mecd-ad ...       
+
+		LINEA: 97, COLUMNA: 228: <img alt="Enlace a información administrativa" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefin ...       
+
+		LINEA: 97, COLUMNA: 593: <img alt="Enlace a la Sede electrónica" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 97, COLUMNA: 916: <img alt="Enlace a Estadísticas" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-es ...       
+
+		LINEA: 97, COLUMNA: 1257: <img alt="Enlace a publicaciones del ministerio" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefi ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+
+
+		LINEA: 67, COLUMNA: 124: <img src="/docroot/utils/img/escudo-mcd.gif" alt="Ministerio de Cultura y Deporte" title="Ministerio ...       
+
+		LINEA: 67, COLUMNA: 336: <img src="/docroot/utils/img/constitucion.jpg" alt="40 aniversario de la constitución" title="40 an ...       
+
+		LINEA: 69, COLUMNA: 914: <img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/>       
+
+		LINEA: 69, COLUMNA: 1252: <img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/>       
+
+		LINEA: 69, COLUMNA: 1614: <img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/>       
+
+		LINEA: 69, COLUMNA: 1964: <img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/>       
+
+		LINEA: 86, COLUMNA: 173: <img alt="Enlace a la agenda cultural" src="/dms/mecd/mecd-admin/mecd-adminBanners/15-banner-agenda- ...       
+
+		LINEA: 86, COLUMNA: 482: <img alt="Acceso al portal Cultura y Ciudadanía" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 87, COLUMNA: 38: <img alt="Acceso a Nuestros Museos en un vistazo" src="/.imaging/mecd-carrusel/dms/mecd/cultura-mecd ...       
+
+		LINEA: 88, COLUMNA: 38: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/.imaging/mecd-carrusel/dms/mecd/cultu ...       
+
+		LINEA: 89, COLUMNA: 948: <img class="img-v" alt="Portada del libro José María Blázquez, anarquista de ambos mundos (en Bé ...       
+
+		LINEA: 89, COLUMNA: 1758: <img class="img-v" alt="Portada de la obra premiada" src="/.imaging/crprszlpv/dms/mecd/prensa-mecd/a ...       
+
+		LINEA: 89, COLUMNA: 2750: <img alt="Acceso a Pares. Portal de Archivos Españoles" src="/dms/mecd/mecd-admin/mecd-adminBanners ...       
+
+		LINEA: 89, COLUMNA: 3074: <img alt="Acceso al portal e-Biblio" src="/dms/mecd/portada-mecd/portales/ebiblio/ebiblio.jpg"/>       
+
+		LINEA: 89, COLUMNA: 3400: <img alt="Acceso al portal del Encuentro Cultura y Ciudadanía" src="/dms/mecd/mecd-admin/mecd-admin ...       
+
+		LINEA: 89, COLUMNA: 3810: <img alt="Acceso al portal Cultura y mecenazgo" src="/dms/mecd/cultura-mecd/areas-cultura/industrias ...       
+
+		LINEA: 89, COLUMNA: 4142: <img alt="Acceso al portal Bellas Artes" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 89, COLUMNA: 4487: <img alt="Año europeo de Patrimonio 2018" src="/dms/mecd/cultura-mecd/areas-cultura/patrimonio/bann ...       
+
+		LINEA: 89, COLUMNA: 4796: <img alt="Acceso al portal MusaE: Música en los Museos Estatales" src="/dms/mecd/mecd-admin/mecd-ad ...       
+
+		LINEA: 91, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 93, COLUMNA: 2: <img src="/docroot/mecd/img/ico-internet.gif" alt="Enlace externo, se abre en ventana nueva"/>       
+
+		LINEA: 97, COLUMNA: 228: <img alt="Enlace a información administrativa" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefin ...       
+
+		LINEA: 97, COLUMNA: 593: <img alt="Enlace a la Sede electrónica" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/ba ...       
+
+		LINEA: 97, COLUMNA: 916: <img alt="Enlace a Estadísticas" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefinidos/banner-es ...       
+
+		LINEA: 97, COLUMNA: 1257: <img alt="Enlace a publicaciones del ministerio" src="/dms/mecd/mecd-admin/mecd-adminBanners/predefi ...       
+
+		LINEA: 97, COLUMNA: 1717: <img alt="Logotipo del Museo del Prado" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cultur ...       
+
+		LINEA: 97, COLUMNA: 1943: <img alt="Logotipo del Museo Reina Sofía" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cul ...       
+
+		LINEA: 97, COLUMNA: 2170: <img alt="Logotipo de la Biblioteca Nacional" src="/dms/mecd/portada-mecd/listado-iconos/organismos/ ...       
+
+		LINEA: 97, COLUMNA: 2403: <img alt="Logotipo del Teatro Real" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cultura/te ...       
+
+		LINEA: 97, COLUMNA: 2630: <img alt="Logotipo del Museo Thyssen Bornemisza" src="/dms/mecd/portada-mecd/listado-iconos/organism ...       
+
+		LINEA: 97, COLUMNA: 2849: <img alt="Logotipo de la Fundación Lázaro Galdiano" src="/dms/mecd/portada-mecd/listado-iconos/org ...       
+
+		LINEA: 97, COLUMNA: 3089: <img alt="Instituto del Patrimonio Cultural de España" src="/dms/mecd/portada-mecd/listado-iconos/o ...       
+
+		LINEA: 97, COLUMNA: 3314: <img alt="Orquesta y Coro Nacionales de España " src="/dms/mecd/portada-mecd/listado-iconos/organis ...       
+
+		LINEA: 97, COLUMNA: 3532: <img alt="Centro Dramático Nacional" src="/dms/mecd/portada-mecd/listado-iconos/organismos/cultura/ ...       
+
+		LINEA: 97, COLUMNA: 3991: <img alt="pares" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/pares.png"/>       
+
+		LINEA: 97, COLUMNA: 4228: <img alt="Logotipo Rebeca" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/rebeca.gif"/>       
+
+		LINEA: 97, COLUMNA: 4491: <img alt="Biblioteca Virtual de Prensa Histórica" src="/dms/mecd/portada-mecd/listado-iconos/portal ...       
+
+		LINEA: 97, COLUMNA: 4710: <img alt="Ceres. Colecciones en red" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/cer ...       
+
+		LINEA: 97, COLUMNA: 4950: <img alt="Acceso al Observatoria de la lectura y el libro" src="/dms/mecd/portada-mecd/listado-icono ...       
+
+		LINEA: 97, COLUMNA: 5202: <img alt="Acción Cultural Española" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/ac ...       
+
+		LINEA: 97, COLUMNA: 5447: <img alt="Patrimonio Mundial en España" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura ...       
+
+		LINEA: 97, COLUMNA: 5703: <img alt="Cultura en positivo" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/cultura-e ...       
+
+		LINEA: 97, COLUMNA: 5923: <img alt="Logotipo España es Cultura" src="/dms/mecd/portada-mecd/listado-iconos/portales/cultura/s ...       
+
+		LINEA: 97, COLUMNA: 6284: <img src="/docroot/mecd/img/logo-w3c.gif" alt="Logotipo W3C/WAI doble A (WCAG 1.0)" title="Este siti ...       
+
+		LINEA: 97, COLUMNA: 6574: <img alt="Este documento es valido XHTML 1.0 Strict" src="/docroot/mecd/img/logo-xhtml1.png"/>       
+
+		LINEA: 97, COLUMNA: 6794: <img alt="Este documento CSS es valido" src="/docroot/mecd/img/logo-css.png"/>
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+
+
+		LINEA: 22, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/w_jquery.js"></script>       
+
+		LINEA: 23, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/dropdown.js"></script>       
+
+		LINEA: 24, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/seleccionar.js"></script>       
+
+		LINEA: 26, COLUMNA: 4: <script type="text/javascript">var textoEnlaceExterno = "Enlace externo, se abre en ventana nueva";< ...       
+
+		LINEA: 27, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jstarget.js"></script>       
+
+		LINEA: 29, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 30, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery.colorbox.js"></script>       
+
+		LINEA: 31, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides.min.jquery.js"></script>       
+
+		LINEA: 32, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides-contenido.js"></script>       
+
+		LINEA: 38, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/jquery-ui.min.js"></script>       
+
+		LINEA: 39, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/agenda.js"></script>       
+
+		LINEA: 41, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/js.cookie-2.1.3.min.js"></script>       
+
+		LINEA: 43, COLUMNA: 3: <script type="text/javascript">window.onload = function(){	ExternalLinks.init();}		 ...       
+
+		LINEA: 49, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/gestion-cookies.js"></script>       
+
+		LINEA: 54, COLUMNA: 7: <script type="text/javascript" src="/docroot/mecd/js/script-jcarousellite-areas.js"></script>       
+
+		LINEA: 55, COLUMNA: 5: <script type="text/javascript" src="/docroot/mecd/js/lib-jcarousellite-areas.js"></script>       
+
+		LINEA: 65, COLUMNA: 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...       
+
+		LINEA: 69, COLUMNA: 2253: <script type="text/javascript">dropdown('nav', 'hover', 25);</script>       
+
+		LINEA: 99, COLUMNA: 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
+
+		LINEA: 106, COLUMNA: 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.1.2 No Keyboard Trap (A)  
+
+	REVISAR: 259: object may not provide a keyboard mechanism to return focus to the parent window.
+
+
+
+		LINEA: 63, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 30: object may flicker.
+
+
+
+		LINEA: 63, COLUMNA: 8: <object data="//www.googletagmanager.com/ns.html?id=GTM-5FKQHR" class="tagmanager"></object>
+
+  
+
+	REVISAR: 87: script may cause screen flicker.
+
+
+
+		LINEA: 22, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/w_jquery.js"></script>       
+
+		LINEA: 23, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/dropdown.js"></script>       
+
+		LINEA: 24, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/seleccionar.js"></script>       
+
+		LINEA: 26, COLUMNA: 4: <script type="text/javascript">var textoEnlaceExterno = "Enlace externo, se abre en ventana nueva";< ...       
+
+		LINEA: 27, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jstarget.js"></script>       
+
+		LINEA: 29, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery-1.7.1.min.js"></script>       
+
+		LINEA: 30, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/jquery.colorbox.js"></script>       
+
+		LINEA: 31, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides.min.jquery.js"></script>       
+
+		LINEA: 32, COLUMNA: 4: <script type="text/javascript" src="/docroot/mecd/js/slides-contenido.js"></script>       
+
+		LINEA: 38, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/jquery-ui.min.js"></script>       
+
+		LINEA: 39, COLUMNA: 13: <script type="text/javascript" src="/docroot/utils/js/agenda.js"></script>       
+
+		LINEA: 41, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/js.cookie-2.1.3.min.js"></script>       
+
+		LINEA: 43, COLUMNA: 3: <script type="text/javascript">window.onload = function(){	ExternalLinks.init();}		 ...       
+
+		LINEA: 49, COLUMNA: 3: <script type="text/javascript" src="/docroot/utils/js/cookies/gestion-cookies.js"></script>       
+
+		LINEA: 54, COLUMNA: 7: <script type="text/javascript" src="/docroot/mecd/js/script-jcarousellite-areas.js"></script>       
+
+		LINEA: 55, COLUMNA: 5: <script type="text/javascript" src="/docroot/mecd/js/lib-jcarousellite-areas.js"></script>       
+
+		LINEA: 65, COLUMNA: 2: <script type="text/javascript"> (function(w,d,s,l,i){w[l]=w[l]||[]; w[l].push({'gtm.start': new Date ...       
+
+		LINEA: 69, COLUMNA: 2253: <script type="text/javascript">dropdown('nav', 'hover', 25);</script>       
+
+		LINEA: 99, COLUMNA: 3: <script type="text/javascript">		function googleTranslateElementInit() {		new google.translate.T ...       
+
+		LINEA: 106, COLUMNA: 3: <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+
+
+		LINEA: 9, COLUMNA: 3: <title>Cultura - Ministerio de Educación, Cultura y Deporte</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+
+
+		LINEA: 67, COLUMNA: 77: <a href="http://www.mecd.gob.es/portada-mecd/"><img src="/docroot/utils/img/escudo-mcd.gif" alt="Min ...       
+
+		LINEA: 67, COLUMNA: 283: <a href="https://constitucion40.com/" rel="external"><img src="/docroot/utils/img/constitucion.jpg"...       
+
+		LINEA: 69, COLUMNA: 53: <a href="/ministerio-mecd/direcciones-y-telefonos.html">Direcciones y teléfonos</a>       
+
+		LINEA: 69, COLUMNA: 195: <a href="/cultura-mecd/"><span title="Castellano" xml:lang="es" lang="es">Bienvenido</span></a>       
+
+		LINEA: 69, COLUMNA: 299: <a href="/cultura-mecd/ca/"><span title="Català" xml:lang="ca" lang="ca">Benvingut</span></a>       
+
+		LINEA: 69, COLUMNA: 402: <a href="/cultura-mecd/gl/"><span title="Galego" xml:lang="gl" lang="gl">Benvido</span></a>       
+
+		LINEA: 69, COLUMNA: 502: <a href="/cultura-mecd/eu/"><span title="Euskera" xml:lang="eu" lang="eu">Ongi etorri</span></a>       
+
+		LINEA: 69, COLUMNA: 607: <a href="/cultura-mecd/va/"><span title="Valencià" xml:lang="va" lang="va">Benvingut</span></a>       
+
+		LINEA: 69, COLUMNA: 727: <a href="/cultura-mecd/en/"><span title="English" xml:lang="en" lang="en">Welcome</span></a>       
+
+		LINEA: 69, COLUMNA: 902: <a href="#"><img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/></a>       
+
+		LINEA: 69, COLUMNA: 998: <a rel="external" href="https://www.facebook.com/MinisterioDeEducacionCulturaYDeporte">Educación y...       
+
+		LINEA: 69, COLUMNA: 1118: <a rel="external" href="https://www.facebook.com/ConsejoSuperiordeDeportes">Deporte</a>       
+
+		LINEA: 69, COLUMNA: 1224: <a title="Twitter" href="#"><img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/></ ...       
+
+		LINEA: 69, COLUMNA: 1334: <a rel="external" href="http://www.twitter.com/educaciongob">Educación</a>       
+
+		LINEA: 69, COLUMNA: 1418: <a rel="external" href="http://www.twitter.com/culturagob">Cultura</a>       
+
+		LINEA: 69, COLUMNA: 1497: <a rel="external" href="http://www.twitter.com/deportegob">Deporte</a>       
+
+		LINEA: 69, COLUMNA: 1586: <a title="Youtube" href="#"><img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/></ ...       
+
+		LINEA: 69, COLUMNA: 1696: <a rel="external" href="http://www.youtube.com/educacion2p0">Educación</a>       
+
+		LINEA: 69, COLUMNA: 1780: <a rel="external" href="http://www.youtube.com/CanalMCU">Cultura</a>       
+
+		LINEA: 69, COLUMNA: 1857: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 69, COLUMNA: 1939: <a title="RSS" href="#3"><img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/></a>       
+
+		LINEA: 69, COLUMNA: 2038: <a rel="external" href="http://www.mecd.gob.es/mecd/rss.html">Prensa</a>       
+
+		LINEA: 69, COLUMNA: 2119: <a href="">Cultura</a>       
+
+		LINEA: 69, COLUMNA: 2150: <a rel="external" href="http://www.csd.gob.es/csd/sindicacionrss">Deporte</a>       
+
+		LINEA: 69, COLUMNA: 2421: <a href="/portada-mecd/">	Inicio</a>       
+
+		LINEA: 71, COLUMNA: 20: <a href="/ministerio-mecd/">	Ministerios</a>       
+
+		LINEA: 73, COLUMNA: 20: <a href="/servicios-al-ciudadano-mecd/">	Servicios al ciudadano</a>       
+
+		LINEA: 75, COLUMNA: 20: <a href="/prensa-mecd/">	Prensa</a>       
+
+		LINEA: 77, COLUMNA: 20: <a href="/educacion-mecd/">	Educación</a>       
+
+		LINEA: 79, COLUMNA: 41: <a href="/cultura-mecd/">	Cultura</a>       
+
+		LINEA: 81, COLUMNA: 20: <a href="/deporte-mecd/">	Deporte</a>       
+
+		LINEA: 83, COLUMNA: 678: <a href="http://www.culturaydeporte.gob.es/portada-mecd/">Inicio</a>       
+
+		LINEA: 84, COLUMNA: 138: <a href="/cultura-mecd/areas-cultura.html">Áreas de Cultura</a>       
+
+		LINEA: 84, COLUMNA: 214: <a href="/cultura-mecd/areas-cultura/archivos.html" >Archivos </a>       
+
+		LINEA: 84, COLUMNA: 289: <a href="/cultura-mecd/areas-cultura/artesescenicas.html" >Artes Esc&eacute;nicasy M&uacute;sica < ...       
+
+		LINEA: 84, COLUMNA: 401: <a href="/cultura-mecd/areas-cultura/bibliotecas.html" >Bibliotecas </a>       
+
+		LINEA: 84, COLUMNA: 482: <a href="/cultura-mecd/areas-cultura/cine.html" >Cine y Audiovisuales </a>       
+
+		LINEA: 84, COLUMNA: 565: <a href="/cultura-mecd/areas-cultura/cooperacion.html" >Cooperaci&oacute;n </a>       
+
+		LINEA: 84, COLUMNA: 653: <a href="/cultura-mecd/areas-cultura/industriasculturales.html" >Industrias Culturales y Mecenazgo < ...       
+
+		LINEA: 84, COLUMNA: 765: <a href="http://www.mecd.gob.es/giec/portada.html" rel="external" >Infraestructuras y Equipamientos...       
+
+		LINEA: 84, COLUMNA: 878: <a href="/cultura-mecd/areas-cultura/libro.html" >Libro </a>       
+
+		LINEA: 84, COLUMNA: 947: <a href="/cultura-mecd/areas-cultura/museos.html" >Museos </a>       
+
+		LINEA: 84, COLUMNA: 1018: <a href="/cultura-mecd/areas-cultura/patrimonio.html" >Patrimonio Cultural </a>       
+
+		LINEA: 84, COLUMNA: 1106: <a href="/cultura-mecd/areas-cultura/promociondelarte.html" >Promoci&oacute;n del Arte </a>       
+
+		LINEA: 84, COLUMNA: 1206: <a href="/cultura-mecd/areas-cultura/propiedadintelectual.html" >Propiedad Intelectual </a>       
+
+		LINEA: 84, COLUMNA: 1306: <a href="/cultura-mecd/areas-cultura/tauromaquia.html" >Tauromaquia </a>       
+
+		LINEA: 85, COLUMNA: 16: <a href="/cultura-mecd/servicios.html">Servicios</a>       
+
+		LINEA: 85, COLUMNA: 82: <a href="/cultura-mecd/prensa.html">Prensa</a>       
+
+		LINEA: 85, COLUMNA: 142: <a href="https://sede.mcu.gob.es/SedeElectronica/index.jsp">Sede electr&oacute;nica</a>       
+
+		LINEA: 85, COLUMNA: 243: <a href="/cultura-mecd/portales-cultura.html">Portales</a>       
+
+		LINEA: 86, COLUMNA: 42: <a id="beli15" href="http://www.mcu.es/cultura20/web/guest/agenda/cultural/mcu" title="Enlace a la a ...       
+
+		LINEA: 86, COLUMNA: 654: <a href="http://www.mecd.gob.es/cultura/areas/cooperacion/mc/encuentro-cultura-ciudadania/encuentro- ...       
+
+		LINEA: 87, COLUMNA: 202: <a href="/cultura-mecd/areas-cultura/museos/museos-cifras/un-vistazo-otras-cifras.html" title="Acces ...       
+
+		LINEA: 88, COLUMNA: 195: <a href="https://pares.mecd.gob.es/inicio.html" title="Acceso a Pares. Portal de Archivos Españoles ...       
+
+		LINEA: 89, COLUMNA: 262: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181114-delpaso.html">José Guirao: Fernan ...       
+
+		LINEA: 89, COLUMNA: 515: <a class="noticia" href="/prensa-mecd/convocatorias/2018/11/20181114-valencia.html">Inauguración de ...       
+
+		LINEA: 89, COLUMNA: 728: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181113-letras.html">Francisca Aguirre, Pr ...       
+
+		LINEA: 89, COLUMNA: 884: <a href="/prensa-mecd/actualidad/2018/11/20181113-memoria.html"><img class="img-v" alt="Portada del...       
+
+		LINEA: 89, COLUMNA: 1214: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181113-memoria.html">Presentación dell ...       
+
+		LINEA: 89, COLUMNA: 1462: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181112-musae.html">El MuseoNacionalde ...       
+
+		LINEA: 89, COLUMNA: 1695: <a href="/prensa-mecd/actualidad/2018/11/20181108-ensayo.html"><img class="img-v" alt="Portada de la ...       
+
+		LINEA: 89, COLUMNA: 1962: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181108-ensayo.html">María Xesús Lama, P ...       
+
+		LINEA: 89, COLUMNA: 2158: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181107-pntauromaquia.html">Juan José Pad ...       
+
+		LINEA: 89, COLUMNA: 2366: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181107-cartas.html">La mediación humanit ...       
+
+		LINEA: 89, COLUMNA: 2634: <a id="beld7" href="https://pares.mecd.gob.es" title="Acceso a Pares. Portal de Archivos Españoles" ...       
+
+		LINEA: 89, COLUMNA: 2932: <a id="bsld1" href="http://www.mecd.gob.es/cultura/areas/bibliotecas/mc/eBiblio/inicio.html" title=" ...       
+
+		LINEA: 89, COLUMNA: 3213: <a id="beld2" href="http://www.culturaydeporte.gob.es/cultura/areas/cooperacion/mc/encuentro-cultura ...       
+
+		LINEA: 89, COLUMNA: 3638: <a id="bsld5" href="http://www.mecd.gob.es/cultura/areas/industriasculturales/mc/cultura-mecenazgo/i ...       
+
+		LINEA: 89, COLUMNA: 4020: <a id="beld1" href="http://www.culturaydeporte.gob.es/cultura/mc/bellasartes.html" title="Acceso al...       
+
+		LINEA: 89, COLUMNA: 4329: <a id="bsld6" href="http://www.mecd.gob.es/cultura/mc/a-europeo-patrimonio-cultural/presentacion.htm ...       
+
+		LINEA: 89, COLUMNA: 4688: <a id="beld09" href="http://www.musae.es/" title="Acceso al portal MusaE: Música en los Museos Esta ...       
+
+		LINEA: 89, COLUMNA: 5017: <a rel="external" href="/dms/mecd/cultura-mecd/areas-cultura/propiedadintelectual/lucha-contra-la-pi ...       
+
+		LINEA: 91, COLUMNA: 118: <a rel="external" href="/dms/mecd/transparencia/sec/plan-cultura-2020.pdf">	Plan Cultura 2020 	<im ...       
+
+		LINEA: 93, COLUMNA: 118: <a rel="" href="http://www.mecd.gob.es/servicios-al-ciudadano/estadisticas/cultura/mc/naec/portada.h ...       
+
+		LINEA: 95, COLUMNA: 32: <a rel="" href="http://www.mecd.gob.es/servicios-al-ciudadano/estadisticas/cultura/mc/ehc/2014-2015. ...       
+
+		LINEA: 97, COLUMNA: 46: <a id="beld011" href="/servicios-al-ciudadano-mecd/informacion-administrativa.html" title="Enlace a...       
+
+		LINEA: 97, COLUMNA: 439: <a id="beld00" href="/servicios-al-ciudadano-mecd/sede-electronica.html" title="Enlace a la Sede ele ...       
+
+		LINEA: 97, COLUMNA: 788: <a id="beld014" href="/servicios-al-ciudadano-mecd/estadisticas.html" title="Enlace a Estadísticas" ...       
+
+		LINEA: 97, COLUMNA: 1087: <a id="beld013" href="/servicios-al-ciudadano-mecd/publicaciones.html" title="Enlace a publicaciones ...       
+
+		LINEA: 97, COLUMNA: 1555: <a class="prev" href="#">&nbsp;</a>       
+
+		LINEA: 97, COLUMNA: 1663: <a rel="external" href="http://www.museodelprado.es/"><img alt="Logotipo del Museo del Prado" src="/ ...       
+
+		LINEA: 97, COLUMNA: 1877: <a rel="external" href="http://www.museoreinasofia.es/index.html"><img alt="Logotipo del Museo Reina ...       
+
+		LINEA: 97, COLUMNA: 2106: <a rel="external" href="http://www.bne.es/es/Inicio/index.html"><img alt="Logotipo de la Biblioteca...       
+
+		LINEA: 97, COLUMNA: 2350: <a rel="external" href="http://www.teatro-real.com/"><img alt="Logotipo del Teatro Real" src="/dms/m ...       
+
+		LINEA: 97, COLUMNA: 2564: <a rel="external" href="http://www.museothyssen.org/thyssen/home"><img alt="Logotipo del Museo Thyss ...       
+
+		LINEA: 97, COLUMNA: 2805: <a rel="external" href="http://www.flg.es/"><img alt="Logotipo de la Fundación Lázaro Galdiano" sr ...       
+
+		LINEA: 97, COLUMNA: 3036: <a rel="" href="http://ipce.mecd.gob.es/inicio.html"><img alt="Instituto del Patrimonio Cultural de...       
+
+		LINEA: 97, COLUMNA: 3269: <a rel="external" href="http://ocne.mcu.es/"><img alt="Orquesta y Coro Nacionales de España " src=" ...       
+
+		LINEA: 97, COLUMNA: 3488: <a rel="external" href="http://cdn.mcu.es/"><img alt="Centro Dramático Nacional" src="/dms/mecd/por ...       
+
+		LINEA: 97, COLUMNA: 3662: <a class="next" href="#">&nbsp;</a>       
+
+		LINEA: 97, COLUMNA: 3832: <a class="prev" href="#">&nbsp;</a>       
+
+		LINEA: 97, COLUMNA: 3945: <a rel="external" href="http://pares.mcu.es/"><img alt="pares" src="/dms/mecd/portada-mecd/listado-i ...       
+
+		LINEA: 97, COLUMNA: 4131: <a rel="external" href="http://www.mecd.gob.es/cultura/areas/bibliotecas/mc/rebeca/portada.html"><im ...       
+
+		LINEA: 97, COLUMNA: 4379: <a rel="external" href="http://prensahistorica.mcu.es/es/estaticos/contenido.cmd?pagina=estaticos/pr ...       
+
+		LINEA: 97, COLUMNA: 4664: <a rel="external" href="http://ceres.mcu.es/"><img alt="Ceres. Colecciones en red" src="/dms/mecd/po ...       
+
+		LINEA: 97, COLUMNA: 4870: <a rel="external" href="http://www.mcu.es/libro/MC/ObservatorioLect/index.html"><img alt="Acceso al...       
+
+		LINEA: 97, COLUMNA: 5147: <a rel="external" href="http://www.accioncultural.es/"><img alt="Acción Cultural Española" src="/d ...       
+
+		LINEA: 97, COLUMNA: 5361: <a rel="external" href="http://www.mcu.es/patrimonio/MC/PatrimonioMundial/index.html"><img alt="Patr ...       
+
+		LINEA: 97, COLUMNA: 5623: <a rel="external" href="http://www.culturaenpositivo.mecd.gob.es/es/index.html"><img alt="Cultura en ...       
+
+		LINEA: 97, COLUMNA: 5866: <a rel="external" href="http://www.españaescultura.es/"><img alt="Logotipo España es Cultura" src= ...       
+
+		LINEA: 97, COLUMNA: 6062: <a class="next" href="#">&nbsp;</a>       
+
+		LINEA: 97, COLUMNA: 6217: <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" rel="external"><img src="/docroot/mecd/img/logo- ...       
+
+		LINEA: 97, COLUMNA: 6468: <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.mecd.gob.es%2Fcultura-mecd%2F" rel="exte ...       
+
+		LINEA: 97, COLUMNA: 6673: <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.mecd.gob.es%2Fcultura-mec ...       
+
+		LINEA: 97, COLUMNA: 6906: <a rel="" href="/mapa-web-mecd/">Mapa web</a>       
+
+		LINEA: 97, COLUMNA: 6977: <a rel="" href="/aviso-legal-mcd/">Aviso legal</a>       
+
+		LINEA: 97, COLUMNA: 7051: <a rel="" href="/accesibilidad-mcd/">Accesibilidad</a>       
+
+		LINEA: 111, COLUMNA: 59: <a href="http://www.mecd.gob.es/aviso-legal-mecd/">política de cookies</a>
+
+  
+
+	REVISAR: 197: Anchor text may not identify the link destination.
+
+
+
+		LINEA: 67, COLUMNA: 77: <a href="http://www.mecd.gob.es/portada-mecd/"><img src="/docroot/utils/img/escudo-mcd.gif" alt="Min ...       
+
+		LINEA: 67, COLUMNA: 283: <a href="https://constitucion40.com/" rel="external"><img src="/docroot/utils/img/constitucion.jpg"...       
+
+		LINEA: 69, COLUMNA: 53: <a href="/ministerio-mecd/direcciones-y-telefonos.html">Direcciones y teléfonos</a>       
+
+		LINEA: 69, COLUMNA: 195: <a href="/cultura-mecd/"><span title="Castellano" xml:lang="es" lang="es">Bienvenido</span></a>       
+
+		LINEA: 69, COLUMNA: 299: <a href="/cultura-mecd/ca/"><span title="Català" xml:lang="ca" lang="ca">Benvingut</span></a>       
+
+		LINEA: 69, COLUMNA: 402: <a href="/cultura-mecd/gl/"><span title="Galego" xml:lang="gl" lang="gl">Benvido</span></a>       
+
+		LINEA: 69, COLUMNA: 502: <a href="/cultura-mecd/eu/"><span title="Euskera" xml:lang="eu" lang="eu">Ongi etorri</span></a>       
+
+		LINEA: 69, COLUMNA: 607: <a href="/cultura-mecd/va/"><span title="Valencià" xml:lang="va" lang="va">Benvingut</span></a>       
+
+		LINEA: 69, COLUMNA: 727: <a href="/cultura-mecd/en/"><span title="English" xml:lang="en" lang="en">Welcome</span></a>       
+
+		LINEA: 69, COLUMNA: 902: <a href="#"><img src="/docroot/mecd/img/iconos/24/ico-facebook.png" alt="Facebook"/></a>       
+
+		LINEA: 69, COLUMNA: 998: <a rel="external" href="https://www.facebook.com/MinisterioDeEducacionCulturaYDeporte">Educación y...       
+
+		LINEA: 69, COLUMNA: 1118: <a rel="external" href="https://www.facebook.com/ConsejoSuperiordeDeportes">Deporte</a>       
+
+		LINEA: 69, COLUMNA: 1224: <a title="Twitter" href="#"><img src="/docroot/mecd/img/iconos/24/ico-twitter.png" alt="Twitter"/></ ...       
+
+		LINEA: 69, COLUMNA: 1334: <a rel="external" href="http://www.twitter.com/educaciongob">Educación</a>       
+
+		LINEA: 69, COLUMNA: 1418: <a rel="external" href="http://www.twitter.com/culturagob">Cultura</a>       
+
+		LINEA: 69, COLUMNA: 1497: <a rel="external" href="http://www.twitter.com/deportegob">Deporte</a>       
+
+		LINEA: 69, COLUMNA: 1586: <a title="Youtube" href="#"><img src="/docroot/mecd/img/iconos/24/ico-youtube.png" alt="Youtube"/></ ...       
+
+		LINEA: 69, COLUMNA: 1696: <a rel="external" href="http://www.youtube.com/educacion2p0">Educación</a>       
+
+		LINEA: 69, COLUMNA: 1780: <a rel="external" href="http://www.youtube.com/CanalMCU">Cultura</a>       
+
+		LINEA: 69, COLUMNA: 1857: <a rel="external" href="http://www.youtube.com/csd">Deporte</a>       
+
+		LINEA: 69, COLUMNA: 1939: <a title="RSS" href="#3"><img src="/docroot/mecd/img/iconos/24/ico-rss.png" alt="RSS"/></a>       
+
+		LINEA: 69, COLUMNA: 2038: <a rel="external" href="http://www.mecd.gob.es/mecd/rss.html">Prensa</a>       
+
+		LINEA: 69, COLUMNA: 2119: <a href="">Cultura</a>       
+
+		LINEA: 69, COLUMNA: 2150: <a rel="external" href="http://www.csd.gob.es/csd/sindicacionrss">Deporte</a>       
+
+		LINEA: 69, COLUMNA: 2421: <a href="/portada-mecd/">	Inicio</a>       
+
+		LINEA: 71, COLUMNA: 20: <a href="/ministerio-mecd/">	Ministerios</a>       
+
+		LINEA: 73, COLUMNA: 20: <a href="/servicios-al-ciudadano-mecd/">	Servicios al ciudadano</a>       
+
+		LINEA: 75, COLUMNA: 20: <a href="/prensa-mecd/">	Prensa</a>       
+
+		LINEA: 77, COLUMNA: 20: <a href="/educacion-mecd/">	Educación</a>       
+
+		LINEA: 79, COLUMNA: 41: <a href="/cultura-mecd/">	Cultura</a>       
+
+		LINEA: 81, COLUMNA: 20: <a href="/deporte-mecd/">	Deporte</a>       
+
+		LINEA: 83, COLUMNA: 678: <a href="http://www.culturaydeporte.gob.es/portada-mecd/">Inicio</a>       
+
+		LINEA: 84, COLUMNA: 138: <a href="/cultura-mecd/areas-cultura.html">Áreas de Cultura</a>       
+
+		LINEA: 84, COLUMNA: 214: <a href="/cultura-mecd/areas-cultura/archivos.html" >Archivos </a>       
+
+		LINEA: 84, COLUMNA: 289: <a href="/cultura-mecd/areas-cultura/artesescenicas.html" >Artes Esc&eacute;nicasy M&uacute;sica < ...       
+
+		LINEA: 84, COLUMNA: 401: <a href="/cultura-mecd/areas-cultura/bibliotecas.html" >Bibliotecas </a>       
+
+		LINEA: 84, COLUMNA: 482: <a href="/cultura-mecd/areas-cultura/cine.html" >Cine y Audiovisuales </a>       
+
+		LINEA: 84, COLUMNA: 565: <a href="/cultura-mecd/areas-cultura/cooperacion.html" >Cooperaci&oacute;n </a>       
+
+		LINEA: 84, COLUMNA: 653: <a href="/cultura-mecd/areas-cultura/industriasculturales.html" >Industrias Culturales y Mecenazgo < ...       
+
+		LINEA: 84, COLUMNA: 765: <a href="http://www.mecd.gob.es/giec/portada.html" rel="external" >Infraestructuras y Equipamientos...       
+
+		LINEA: 84, COLUMNA: 878: <a href="/cultura-mecd/areas-cultura/libro.html" >Libro </a>       
+
+		LINEA: 84, COLUMNA: 947: <a href="/cultura-mecd/areas-cultura/museos.html" >Museos </a>       
+
+		LINEA: 84, COLUMNA: 1018: <a href="/cultura-mecd/areas-cultura/patrimonio.html" >Patrimonio Cultural </a>       
+
+		LINEA: 84, COLUMNA: 1106: <a href="/cultura-mecd/areas-cultura/promociondelarte.html" >Promoci&oacute;n del Arte </a>       
+
+		LINEA: 84, COLUMNA: 1206: <a href="/cultura-mecd/areas-cultura/propiedadintelectual.html" >Propiedad Intelectual </a>       
+
+		LINEA: 84, COLUMNA: 1306: <a href="/cultura-mecd/areas-cultura/tauromaquia.html" >Tauromaquia </a>       
+
+		LINEA: 85, COLUMNA: 16: <a href="/cultura-mecd/servicios.html">Servicios</a>       
+
+		LINEA: 85, COLUMNA: 82: <a href="/cultura-mecd/prensa.html">Prensa</a>       
+
+		LINEA: 85, COLUMNA: 142: <a href="https://sede.mcu.gob.es/SedeElectronica/index.jsp">Sede electr&oacute;nica</a>       
+
+		LINEA: 85, COLUMNA: 243: <a href="/cultura-mecd/portales-cultura.html">Portales</a>       
+
+		LINEA: 86, COLUMNA: 42: <a id="beli15" href="http://www.mcu.es/cultura20/web/guest/agenda/cultural/mcu" title="Enlace a la a ...       
+
+		LINEA: 86, COLUMNA: 654: <a href="http://www.mecd.gob.es/cultura/areas/cooperacion/mc/encuentro-cultura-ciudadania/encuentro- ...       
+
+		LINEA: 87, COLUMNA: 202: <a href="/cultura-mecd/areas-cultura/museos/museos-cifras/un-vistazo-otras-cifras.html" title="Acces ...       
+
+		LINEA: 88, COLUMNA: 195: <a href="https://pares.mecd.gob.es/inicio.html" title="Acceso a Pares. Portal de Archivos Españoles ...       
+
+		LINEA: 89, COLUMNA: 262: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181114-delpaso.html">José Guirao: Fernan ...       
+
+		LINEA: 89, COLUMNA: 515: <a class="noticia" href="/prensa-mecd/convocatorias/2018/11/20181114-valencia.html">Inauguración de ...       
+
+		LINEA: 89, COLUMNA: 728: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181113-letras.html">Francisca Aguirre, Pr ...       
+
+		LINEA: 89, COLUMNA: 884: <a href="/prensa-mecd/actualidad/2018/11/20181113-memoria.html"><img class="img-v" alt="Portada del...       
+
+		LINEA: 89, COLUMNA: 1214: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181113-memoria.html">Presentación dell ...       
+
+		LINEA: 89, COLUMNA: 1462: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181112-musae.html">El MuseoNacionalde ...       
+
+		LINEA: 89, COLUMNA: 1695: <a href="/prensa-mecd/actualidad/2018/11/20181108-ensayo.html"><img class="img-v" alt="Portada de la ...       
+
+		LINEA: 89, COLUMNA: 1962: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181108-ensayo.html">María Xesús Lama, P ...       
+
+		LINEA: 89, COLUMNA: 2158: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181107-pntauromaquia.html">Juan José Pad ...       
+
+		LINEA: 89, COLUMNA: 2366: <a class="noticia" href="/prensa-mecd/actualidad/2018/11/20181107-cartas.html">La mediación humanit ...       
+
+		LINEA: 89, COLUMNA: 2634: <a id="beld7" href="https://pares.mecd.gob.es" title="Acceso a Pares. Portal de Archivos Españoles" ...       
+
+		LINEA: 89, COLUMNA: 2932: <a id="bsld1" href="http://www.mecd.gob.es/cultura/areas/bibliotecas/mc/eBiblio/inicio.html" title=" ...       
+
+		LINEA: 89, COLUMNA: 3213: <a id="beld2" href="http://www.culturaydeporte.gob.es/cultura/areas/cooperacion/mc/encuentro-cultura ...       
+
+		LINEA: 89, COLUMNA: 3638: <a id="bsld5" href="http://www.mecd.gob.es/cultura/areas/industriasculturales/mc/cultura-mecenazgo/i ...       
+
+		LINEA: 89, COLUMNA: 4020: <a id="beld1" href="http://www.culturaydeporte.gob.es/cultura/mc/bellasartes.html" title="Acceso al...       
+
+		LINEA: 89, COLUMNA: 4329: <a id="bsld6" href="http://www.mecd.gob.es/cultura/mc/a-europeo-patrimonio-cultural/presentacion.htm ...       
+
+		LINEA: 89, COLUMNA: 4688: <a id="beld09" href="http://www.musae.es/" title="Acceso al portal MusaE: Música en los Museos Esta ...       
+
+		LINEA: 89, COLUMNA: 5017: <a rel="external" href="/dms/mecd/cultura-mecd/areas-cultura/propiedadintelectual/lucha-contra-la-pi ...       
+
+		LINEA: 91, COLUMNA: 118: <a rel="external" href="/dms/mecd/transparencia/sec/plan-cultura-2020.pdf">	Plan Cultura 2020 	<im ...       
+
+		LINEA: 93, COLUMNA: 118: <a rel="" href="http://www.mecd.gob.es/servicios-al-ciudadano/estadisticas/cultura/mc/naec/portada.h ...       
+
+		LINEA: 95, COLUMNA: 32: <a rel="" href="http://www.mecd.gob.es/servicios-al-ciudadano/estadisticas/cultura/mc/ehc/2014-2015. ...       
+
+		LINEA: 97, COLUMNA: 46: <a id="beld011" href="/servicios-al-ciudadano-mecd/informacion-administrativa.html" title="Enlace a...       
+
+		LINEA: 97, COLUMNA: 439: <a id="beld00" href="/servicios-al-ciudadano-mecd/sede-electronica.html" title="Enlace a la Sede ele ...       
+
+		LINEA: 97, COLUMNA: 788: <a id="beld014" href="/servicios-al-ciudadano-mecd/estadisticas.html" title="Enlace a Estadísticas" ...       
+
+		LINEA: 97, COLUMNA: 1087: <a id="beld013" href="/servicios-al-ciudadano-mecd/publicaciones.html" title="Enlace a publicaciones ...       
+
+		LINEA: 97, COLUMNA: 1555: <a class="prev" href="#">&nbsp;</a>       
+
+		LINEA: 97, COLUMNA: 1663: <a rel="external" href="http://www.museodelprado.es/"><img alt="Logotipo del Museo del Prado" src="/ ...       
+
+		LINEA: 97, COLUMNA: 1877: <a rel="external" href="http://www.museoreinasofia.es/index.html"><img alt="Logotipo del Museo Reina ...       
+
+		LINEA: 97, COLUMNA: 2106: <a rel="external" href="http://www.bne.es/es/Inicio/index.html"><img alt="Logotipo de la Biblioteca...       
+
+		LINEA: 97, COLUMNA: 2350: <a rel="external" href="http://www.teatro-real.com/"><img alt="Logotipo del Teatro Real" src="/dms/m ...       
+
+		LINEA: 97, COLUMNA: 2564: <a rel="external" href="http://www.museothyssen.org/thyssen/home"><img alt="Logotipo del Museo Thyss ...       
+
+		LINEA: 97, COLUMNA: 2805: <a rel="external" href="http://www.flg.es/"><img alt="Logotipo de la Fundación Lázaro Galdiano" sr ...       
+
+		LINEA: 97, COLUMNA: 3036: <a rel="" href="http://ipce.mecd.gob.es/inicio.html"><img alt="Instituto del Patrimonio Cultural de...       
+
+		LINEA: 97, COLUMNA: 3269: <a rel="external" href="http://ocne.mcu.es/"><img alt="Orquesta y Coro Nacionales de España " src=" ...       
+
+		LINEA: 97, COLUMNA: 3488: <a rel="external" href="http://cdn.mcu.es/"><img alt="Centro Dramático Nacional" src="/dms/mecd/por ...       
+
+		LINEA: 97, COLUMNA: 3662: <a class="next" href="#">&nbsp;</a>       
+
+		LINEA: 97, COLUMNA: 3832: <a class="prev" href="#">&nbsp;</a>       
+
+		LINEA: 97, COLUMNA: 3945: <a rel="external" href="http://pares.mcu.es/"><img alt="pares" src="/dms/mecd/portada-mecd/listado-i ...       
+
+		LINEA: 97, COLUMNA: 4131: <a rel="external" href="http://www.mecd.gob.es/cultura/areas/bibliotecas/mc/rebeca/portada.html"><im ...       
+
+		LINEA: 97, COLUMNA: 4379: <a rel="external" href="http://prensahistorica.mcu.es/es/estaticos/contenido.cmd?pagina=estaticos/pr ...       
+
+		LINEA: 97, COLUMNA: 4664: <a rel="external" href="http://ceres.mcu.es/"><img alt="Ceres. Colecciones en red" src="/dms/mecd/po ...       
+
+		LINEA: 97, COLUMNA: 4870: <a rel="external" href="http://www.mcu.es/libro/MC/ObservatorioLect/index.html"><img alt="Acceso al...       
+
+		LINEA: 97, COLUMNA: 5147: <a rel="external" href="http://www.accioncultural.es/"><img alt="Acción Cultural Española" src="/d ...       
+
+		LINEA: 97, COLUMNA: 5361: <a rel="external" href="http://www.mcu.es/patrimonio/MC/PatrimonioMundial/index.html"><img alt="Patr ...       
+
+		LINEA: 97, COLUMNA: 5623: <a rel="external" href="http://www.culturaenpositivo.mecd.gob.es/es/index.html"><img alt="Cultura en ...       
+
+		LINEA: 97, COLUMNA: 5866: <a rel="external" href="http://www.españaescultura.es/"><img alt="Logotipo España es Cultura" src= ...       
+
+		LINEA: 97, COLUMNA: 6062: <a class="next" href="#">&nbsp;</a>       
+
+		LINEA: 97, COLUMNA: 6217: <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" rel="external"><img src="/docroot/mecd/img/logo- ...       
+
+		LINEA: 97, COLUMNA: 6468: <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.mecd.gob.es%2Fcultura-mecd%2F" rel="exte ...       
+
+		LINEA: 97, COLUMNA: 6673: <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.mecd.gob.es%2Fcultura-mec ...       
+
+		LINEA: 97, COLUMNA: 6906: <a rel="" href="/mapa-web-mecd/">Mapa web</a>       
+
+		LINEA: 97, COLUMNA: 6977: <a rel="" href="/aviso-legal-mcd/">Aviso legal</a>       
+
+		LINEA: 97, COLUMNA: 7051: <a rel="" href="/accesibilidad-mcd/">Accesibilidad</a>       
+
+		LINEA: 111, COLUMNA: 59: <a href="http://www.mecd.gob.es/aviso-legal-mecd/">política de cookies</a>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+
+
+		LINEA: 86, COLUMNA: 348: <h1 >Cultura</h1>
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+
+
+		LINEA: 84, COLUMNA: 1419: <h2>Información y servicios de Cultura</h2>       
+
+		LINEA: 89, COLUMNA: 147: <h2>Actualidad del Ministerio</h2>       
+
+		LINEA: 89, COLUMNA: 4981: <h2>Destacados</h2>       
+
+		LINEA: 97, COLUMNA: 1484: <h2>Instituciones de Cultura</h2>       
+
+		LINEA: 97, COLUMNA: 3754: <h2>Portales destacados de Cultura</h2>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.1 On Focus (A)  
+
+	REVISAR: 275: Loading web page may cause new window to open.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+
+
+		LINEA: 83, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+
+
+		LINEA: 59, COLUMNA: 24: <body><!--<![endif]-->		<!-- Google Tag Manager -->	<noscript>		<div><object data="//www.goo ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+
+
+		LINEA: 83, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+
+
+		LINEA: 83, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+
+
+		LINEA: 83, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+
+
+		LINEA: 83, COLUMNA: 181: <input type="hidden" name="cx" value="006043202724820927248:lkl0norxzhk"/>       
+
+		LINEA: 83, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...       
+
+		LINEA: 83, COLUMNA: 463: <input type="submit" name="mec" id="boton_buscar" class="botonbuscar" value=""/>
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+
+
+		LINEA: 83, COLUMNA: 305: <input name="q" type="text" value="Buscar" onfocus="if(value=='Buscar'){value=''}" onblur="if(value= ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+
+
+		LINEA: 83, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+
+
+		LINEA: 83, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+
+
+		LINEA: 83, COLUMNA: 46: <form class="external" action="http://www.google.com/cse" id="cse-search-box"><fieldset><legend clas ...
+
+	

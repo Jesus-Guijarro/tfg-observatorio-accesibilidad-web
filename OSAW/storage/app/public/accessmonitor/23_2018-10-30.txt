@@ -1,0 +1,16 @@
+REPORTE PÁGINA WEB: http://www.gva.es/es/inicio/ciudadanos
+FECHA EVALUACIÓN: 2018-10-30
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se constató que todos los botones gráficos tienen un título
+Se encontraron 5 elementos de encabezado
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se identificó 1 formulario sin botón de envío
+Se encontró 1 <input> con el atributo alt que no es el botón gráfico de envío
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificó 1 caso en que se utilizan unidades de medida absoluta en la definición del ancho de los elementos
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es"
+Se ha identificado una regla de CSS en la que no se especifica o el color de fondo o el color de fondo

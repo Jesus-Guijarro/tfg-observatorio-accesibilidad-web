@@ -1,0 +1,16 @@
+REPORTE PÁGINA WEB: https://www.upv.es/estudios/aula-abierta/index-es.html
+FECHA EVALUACIÓN: 2018-11-10
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se identificaron 5 casos en que se asocian eventos a elementos no interactivos
+Se encontraron 2 elementos de encabezado
+Se identificaron 8 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se encontraron 30 errores de validación en el lenguaje de marcado
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se identificaron 4 casos en que se utilizan unidades de medida absoluta en la definición de la anchura de los elementos
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "es-ES"
+El tipo de documento no permite el uso del atributo lang

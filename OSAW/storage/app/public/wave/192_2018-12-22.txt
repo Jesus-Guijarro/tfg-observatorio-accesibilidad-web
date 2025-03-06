@@ -1,0 +1,30 @@
+REPORTE PÁGINA WEB: https://www.umh.es/?lang=EN
+FECHA EVALUACIÓN: 2018-12-22
+
+-PROBLEMAS-
+
+Empty button	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Noscript element	  VECES ENCONTRADO: 1
+Justified text	  VECES ENCONTRADO: 6
+Redundant title text	  VECES ENCONTRADO: 49
+Redundant alternative text	  VECES ENCONTRADO: 4
+Long alternative text	  VECES ENCONTRADO: 2
+Unlabeled form element with title	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Alternative text	  VECES ENCONTRADO: 3
+Linked image with alternative text	  VECES ENCONTRADO: 4
+Element language	  VECES ENCONTRADO: 6
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 24
+
+

@@ -1,0 +1,1132 @@
+REPORTE PÁGINA WEB: https://www.cdti.es/index.asp?MP=20&MS=0&MN=1
+FECHA EVALUACIÓN: 2018-11-30
+
+-PROBLEMAS CONOCIDOS-
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR:> Add text to the label element.      
+
+		LINEA: 64, COLUMNA: 1201: <input type="image" class="buscar" id="botonbuscador" alt="Buscar" src="../img/css/iconos/botonBusca ...
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 81: List item used to format text.
+
+ 
+
+		LINEA: 79, COLUMNA: 73:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 55, COLUMNA: 311: <a href="index.asp?MP=92&amp;MS=0&amp;MN=1&amp;Hash=985894452018301171">pol&iacute;tica de cookies</ ...
+
+
+
+		LINEA: 57, COLUMNA: 7: <a name="arriba"></a>
+
+
+
+		LINEA: 61, COLUMNA: 3: <a href="#recurso" class="mensaje" accesskey="2" title="Tecla de acceso 2">Saltar navegaci&oacute;n. ...
+
+
+
+		LINEA: 64, COLUMNA: 149: <a href="index.asp"><img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnol&o ...
+
+
+
+		LINEA: 64, COLUMNA: 283: <a href="http://www.micinn.es" rel="external"><img src="img/es/iconos/logoMinisterio.gif" alt="Logo...
+
+
+
+		LINEA: 64, COLUMNA: 522: <a href="index.asp?idioma=2" id="ingles" class="idioma">english</a>
+
+
+
+		LINEA: 64, COLUMNA: 594: <a href="index.asp?idioma=6" id="euskera" class="idioma">euskera</a>
+
+
+
+		LINEA: 64, COLUMNA: 668:
+
+ 
+
+		LINEA: 64, COLUMNA: 741: <a href="index.asp?idioma=8" id="gallego" class="idioma">galego</a>
+
+
+
+		LINEA: 64, COLUMNA: 1358: <a href="index.asp" accesskey="1" title="Inicio (Tecla de acceso 1)"><img src="img/es/iconos/inicio. ...
+
+
+
+		LINEA: 64, COLUMNA: 1513: <a href="index.asp?MP=1&amp;MS=0&amp;MN=1" accesskey="3" title="Mapa web (Tecla de acceso 3 )"><img...
+
+
+
+		LINEA: 64, COLUMNA: 1698: <a href="index.asp?MP=2&amp;MS=0&amp;MN=1" accesskey="9" title="Contacto (Tecla de acceso 9 )"><img...
+
+
+
+		LINEA: 64, COLUMNA: 1884: <a href="index.asp?MP=5&amp;MS=0&amp;MN=1" accesskey="0" title="Accesibilidad (Tecla de acceso 0 )"> ...
+
+
+
+		LINEA: 72, COLUMNA: 105:
+
+ 
+
+		LINEA: 72, COLUMNA: 213:
+
+ 
+
+		LINEA: 72, COLUMNA: 321:
+
+ 
+
+		LINEA: 72, COLUMNA: 437: <a href="index.asp?MP=8&amp;MS=777&amp;MN=1" title="Servicios">Servicios</a>
+
+
+
+		LINEA: 72, COLUMNA: 537:
+
+ 
+
+		LINEA: 72, COLUMNA: 664: <a href="index.asp?MP=99&amp;MS=0&amp;MN=1" title="">Transparencia</a>
+
+
+
+		LINEA: 72, COLUMNA: 758:
+
+ 
+
+		LINEA: 72, COLUMNA: 871: <a href="index.asp?MP=35&amp;MS=0&amp;MN=1" title="Publicaciones">Publicaciones</a>
+
+
+
+		LINEA: 72, COLUMNA: 986:
+
+ 
+
+		LINEA: 73, COLUMNA: 28: <a href="https://sede.cdti.gob.es/AreaPrivada/Expedientes/accesosistema.aspx"><img src="img/es/porta ...
+
+
+
+		LINEA: 74, COLUMNA: 28:
+
+ 
+
+		LINEA: 74, COLUMNA: 359: <a href="/index.asp?MP=20&MS=0&MN=1&TR=A&IDR=18&IDP=97&IDS=11&idioma=1">Neotec Capital Riesgo</a>
+
+
+
+		LINEA: 74, COLUMNA: 469: <a href="/index.asp?MP=20&MS=0&MN=1&TR=C&IDR=15&IDP=32&IDS=272&idioma=1">Comunidades Aut&oacute;noma ...
+
+
+
+		LINEA: 74, COLUMNA: 596: <a href="/index.asp?MP=20&MS=0&MN=1&TR=C&IDR=667&IDP=124&IDS=369&idioma=1">Red de Puntos PI+D+I</a>
+
+
+
+		LINEA: 79, COLUMNA: 103:
+
+ 
+
+		LINEA: 89, COLUMNA: 30: <a href="index.asp?MP=3&amp;MS=0&amp;MN=1" title="Enviar p&aacute;gina"><span>Enviar p&aacute;gina</ ...
+
+
+
+		LINEA: 89, COLUMNA: 240: <a href="#" accesskey="7" title="Imprimir (Tecla de acceso 7)"><span>Imprimir</span><img src="img/es ...
+
+
+
+		LINEA: 89, COLUMNA: 434: <a href="#volver" accesskey="5" title="Regresar al contenido anterior (Tecla de acceso 5)"><img src= ...
+
+
+
+		LINEA: 89, COLUMNA: 638: <a href="#arriba" accesskey="6" title="Ir al comienzo de la p&aacute;gina (Tecla de acceso 6)"><img...
+
+
+
+		LINEA: 98, COLUMNA: 239: <a href="index.asp?MP=18&amp;MS=0&amp;MN=1" accesskey="8" title="tecla acceso 8">Aviso legal</a>
+
+
+
+		LINEA: 98, COLUMNA: 354: <a href="http://validator.w3.org/check/referer" onclick="xt_med('C','1','http://validator.w3.org/che ...
+
+
+
+		LINEA: 98, COLUMNA: 567: <a href="http://jigsaw.w3.org/css-validator/" onclick="xt_med('C','1','http://jigsaw.w3.org/css-vali ...
+
+
+
+		LINEA: 98, COLUMNA: 766: <a href="index.asp?MP=92&amp;MS=0&amp;MN=1" title="Cookies">Cookies</a>
+
+
+
+		LINEA: 98, COLUMNA: 869: <a href="index.asp?MP=31&amp;MS=0&amp;MN=1" title="RSS"><img src="img/es/portal/rss.gif" alt="RSS" c ...
+
+
+
+		LINEA: 98, COLUMNA: 987: <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" onclick="xt_med('C','1','http://www.w3.org/WAI/W ...
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 3: Image Alt text may be too long.
+
+ 
+
+		LINEA: 84, COLUMNA: 683: <img src="img/es/aplicaciones/colaboracion.gif" alt="Bienvenido al &aacute;rea de colaboraci&oacute; ...
+
+  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 84, COLUMNA: 683: <img src="img/es/aplicaciones/colaboracion.gif" alt="Bienvenido al &aacute;rea de colaboraci&oacute; ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 55, COLUMNA: 420: <img class="btn-cookie" src="img/es/iconos/cerrar.png" onclick="cerrarCapaCookies()" alt="Cerrar"/>
+
+
+
+		LINEA: 64, COLUMNA: 169: <img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnol&oacute;gico Industria ...
+
+
+
+		LINEA: 64, COLUMNA: 329:
+
+ 
+
+		LINEA: 64, COLUMNA: 1427: <img src="img/es/iconos/inicio.gif" alt="Inicio (Tecla de acceso 1)"/>
+
+
+
+		LINEA: 64, COLUMNA: 1608: <img src="img/es/iconos/mapaWeb.gif" alt="Mapa web (Tecla de acceso 3 )"/>
+
+
+
+		LINEA: 64, COLUMNA: 1793: <img src="img/es/iconos/contacto.gif" alt="Contacto (Tecla de acceso 9 )"/>
+
+
+
+		LINEA: 64, COLUMNA: 1984: <img src="img/es/iconos/accesibilidad.gif" alt="Accesibilidad (Tecla de acceso 0 )"/>
+
+
+
+		LINEA: 73, COLUMNA: 106:
+
+ 
+
+		LINEA: 74, COLUMNA: 63:
+
+ 
+
+		LINEA: 74, COLUMNA: 224: <img src="img/es/portal/areaColaboracion.gif" alt="&Aacute;rea de colaboraci&oacute;n para" />
+
+
+
+		LINEA: 79, COLUMNA: 277: <img src="recursos/menus/36999_2792792006113325.jpg"	alt="Imagen decorativa" class="" />
+
+
+
+		LINEA: 84, COLUMNA: 683: <img src="img/es/aplicaciones/colaboracion.gif" alt="Bienvenido al &aacute;rea de colaboraci&oacute; ...
+
+
+
+		LINEA: 89, COLUMNA: 135: <img src="img/es/iconos/atajoEnviarpag.gif" alt="Enviar p&aacute;gina"/>
+
+
+
+		LINEA: 89, COLUMNA: 324: <img src="img/es/iconos/atajoImprimir.gif" alt="Imprimir (Tecla de acceso 7)"/>
+
+
+
+		LINEA: 89, COLUMNA: 525: <img src="img/es/iconos/atajoVolver.gif" alt="Regresar al contenido anterior (Tecla de acceso 5)"/>
+
+
+
+		LINEA: 89, COLUMNA: 733: <img src="img/es/iconos/atajoSubir.gif" alt="Ir al comienzo de la p&aacute;gina (Tecla de acceso 6)" ...
+
+
+
+		LINEA: 98, COLUMNA: 925: <img src="img/es/portal/rss.gif" alt="RSS" class="rss" />
+
+
+
+		LINEA: 98, COLUMNA: 1153: <img src="img/es/portal/w3c.gif" alt="W3C - WAI AA" />
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 55, COLUMNA: 420: <img class="btn-cookie" src="img/es/iconos/cerrar.png" onclick="cerrarCapaCookies()" alt="Cerrar"/>
+
+
+
+		LINEA: 74, COLUMNA: 224: <img src="img/es/portal/areaColaboracion.gif" alt="&Aacute;rea de colaboraci&oacute;n para" />
+
+
+
+		LINEA: 79, COLUMNA: 277: <img src="recursos/menus/36999_2792792006113325.jpg"	alt="Imagen decorativa" class="" />
+
+
+
+		LINEA: 84, COLUMNA: 683: <img src="img/es/aplicaciones/colaboracion.gif" alt="Bienvenido al &aacute;rea de colaboraci&oacute; ...
+
+  
+
+	REVISAR: 59: Image used for input element may have Alt text that does not identify the purpose or function as the image.
+
+ 
+
+		LINEA: 64, COLUMNA: 1201: <input type="image" class="buscar" id="botonbuscador" alt="Buscar" src="../img/css/iconos/botonBusca ...
+
+  
+
+	REVISAR: 193: Form submit button image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 64, COLUMNA: 1201: <input type="image" class="buscar" id="botonbuscador" alt="Buscar" src="../img/css/iconos/botonBusca ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+  
+
+	REVISAR: 122: input element label, type of "password" is not positioned close to control.
+
+ 
+
+		LINEA: 84, COLUMNA: 449: <input type="password" id="contrasena2" name="contrasena2" value="" />
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 64, COLUMNA: 1068: <input type="text" name="textobuscado" id="textobusqueda" value="Texto a buscar" onfocus="vaciar(thi ...
+
+
+
+		LINEA: 84, COLUMNA: 301: <input type="text" id="usuario2" name="usuario2" value="" />
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 55, COLUMNA: 420: <img class="btn-cookie" src="img/es/iconos/cerrar.png" onclick="cerrarCapaCookies()" alt="Cerrar"/>
+
+
+
+		LINEA: 64, COLUMNA: 169: <img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnol&oacute;gico Industria ...
+
+
+
+		LINEA: 64, COLUMNA: 329:
+
+ 
+
+		LINEA: 64, COLUMNA: 1427: <img src="img/es/iconos/inicio.gif" alt="Inicio (Tecla de acceso 1)"/>
+
+
+
+		LINEA: 64, COLUMNA: 1608: <img src="img/es/iconos/mapaWeb.gif" alt="Mapa web (Tecla de acceso 3 )"/>
+
+
+
+		LINEA: 64, COLUMNA: 1793: <img src="img/es/iconos/contacto.gif" alt="Contacto (Tecla de acceso 9 )"/>
+
+
+
+		LINEA: 64, COLUMNA: 1984: <img src="img/es/iconos/accesibilidad.gif" alt="Accesibilidad (Tecla de acceso 0 )"/>
+
+
+
+		LINEA: 73, COLUMNA: 106:
+
+ 
+
+		LINEA: 74, COLUMNA: 63:
+
+ 
+
+		LINEA: 74, COLUMNA: 224: <img src="img/es/portal/areaColaboracion.gif" alt="&Aacute;rea de colaboraci&oacute;n para" />
+
+
+
+		LINEA: 79, COLUMNA: 277: <img src="recursos/menus/36999_2792792006113325.jpg"	alt="Imagen decorativa" class="" />
+
+
+
+		LINEA: 84, COLUMNA: 683: <img src="img/es/aplicaciones/colaboracion.gif" alt="Bienvenido al &aacute;rea de colaboraci&oacute; ...
+
+
+
+		LINEA: 89, COLUMNA: 135: <img src="img/es/iconos/atajoEnviarpag.gif" alt="Enviar p&aacute;gina"/>
+
+
+
+		LINEA: 89, COLUMNA: 324: <img src="img/es/iconos/atajoImprimir.gif" alt="Imprimir (Tecla de acceso 7)"/>
+
+
+
+		LINEA: 89, COLUMNA: 525: <img src="img/es/iconos/atajoVolver.gif" alt="Regresar al contenido anterior (Tecla de acceso 5)"/>
+
+
+
+		LINEA: 89, COLUMNA: 733: <img src="img/es/iconos/atajoSubir.gif" alt="Ir al comienzo de la p&aacute;gina (Tecla de acceso 6)" ...
+
+
+
+		LINEA: 98, COLUMNA: 925: <img src="img/es/portal/rss.gif" alt="RSS" class="rss" />
+
+
+
+		LINEA: 98, COLUMNA: 1153: <img src="img/es/portal/w3c.gif" alt="W3C - WAI AA" />
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 64, COLUMNA: 1068: <input type="text" name="textobuscado" id="textobusqueda" value="Texto a buscar" onfocus="vaciar(thi ...
+
+
+
+		LINEA: 64, COLUMNA: 1201: <input type="image" class="buscar" id="botonbuscador" alt="Buscar" src="../img/css/iconos/botonBusca ...
+
+
+
+		LINEA: 84, COLUMNA: 301: <input type="text" id="usuario2" name="usuario2" value="" />
+
+
+
+		LINEA: 84, COLUMNA: 449: <input type="password" id="contrasena2" name="contrasena2" value="" />
+
+
+
+		LINEA: 84, COLUMNA: 550: <input type="submit" name="accionextranet" value="Validar" class="enviar" />
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 17, COLUMNA: 2: <script type="text/javascript">	// <![CDATA[		var iIdioma=1;		var sIdioma="es";		var xtnv...
+
+
+
+		LINEA: 31, COLUMNA: 2: <script type="text/javascript" src="js/portal/alertas.js"></script>
+
+
+
+		LINEA: 32, COLUMNA: 2: <script type="text/javascript" src="js/portal/portal.js"></script>
+
+
+
+		LINEA: 33, COLUMNA: 2: <script type="text/javascript" src="js/portal/funciones.js"></script>
+
+
+
+		LINEA: 34, COLUMNA: 2: <script type="text/javascript" src="js/aplicaciones/swfobject.js"></script>
+
+
+
+		LINEA: 35, COLUMNA: 2: <script type="text/javascript" src="/js/aplicaciones/jquery-1.3.2.min.js"></script>
+
+
+
+		LINEA: 36, COLUMNA: 2: <script type="text/javascript" src="/js/aplicaciones/jquery.cookie.js"></script>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 64, COLUMNA: 169: <img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnol&oacute;gico Industria ...
+
+
+
+		LINEA: 74, COLUMNA: 63:
+
+ 
+
+		LINEA: 79, COLUMNA: 277: <img src="recursos/menus/36999_2792792006113325.jpg"	alt="Imagen decorativa" class="" />
+
+
+
+		LINEA: 84, COLUMNA: 683: <img src="img/es/aplicaciones/colaboracion.gif" alt="Bienvenido al &aacute;rea de colaboraci&oacute; ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 55, COLUMNA: 420: <img class="btn-cookie" src="img/es/iconos/cerrar.png" onclick="cerrarCapaCookies()" alt="Cerrar"/>
+
+
+
+		LINEA: 64, COLUMNA: 169: <img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnol&oacute;gico Industria ...
+
+
+
+		LINEA: 64, COLUMNA: 329:
+
+ 
+
+		LINEA: 64, COLUMNA: 1427: <img src="img/es/iconos/inicio.gif" alt="Inicio (Tecla de acceso 1)"/>
+
+
+
+		LINEA: 64, COLUMNA: 1608: <img src="img/es/iconos/mapaWeb.gif" alt="Mapa web (Tecla de acceso 3 )"/>
+
+
+
+		LINEA: 64, COLUMNA: 1793: <img src="img/es/iconos/contacto.gif" alt="Contacto (Tecla de acceso 9 )"/>
+
+
+
+		LINEA: 64, COLUMNA: 1984: <img src="img/es/iconos/accesibilidad.gif" alt="Accesibilidad (Tecla de acceso 0 )"/>
+
+
+
+		LINEA: 73, COLUMNA: 106:
+
+ 
+
+		LINEA: 74, COLUMNA: 63:
+
+ 
+
+		LINEA: 74, COLUMNA: 224: <img src="img/es/portal/areaColaboracion.gif" alt="&Aacute;rea de colaboraci&oacute;n para" />
+
+
+
+		LINEA: 79, COLUMNA: 277: <img src="recursos/menus/36999_2792792006113325.jpg"	alt="Imagen decorativa" class="" />
+
+
+
+		LINEA: 84, COLUMNA: 683: <img src="img/es/aplicaciones/colaboracion.gif" alt="Bienvenido al &aacute;rea de colaboraci&oacute; ...
+
+
+
+		LINEA: 89, COLUMNA: 135: <img src="img/es/iconos/atajoEnviarpag.gif" alt="Enviar p&aacute;gina"/>
+
+
+
+		LINEA: 89, COLUMNA: 324: <img src="img/es/iconos/atajoImprimir.gif" alt="Imprimir (Tecla de acceso 7)"/>
+
+
+
+		LINEA: 89, COLUMNA: 525: <img src="img/es/iconos/atajoVolver.gif" alt="Regresar al contenido anterior (Tecla de acceso 5)"/>
+
+
+
+		LINEA: 89, COLUMNA: 733: <img src="img/es/iconos/atajoSubir.gif" alt="Ir al comienzo de la p&aacute;gina (Tecla de acceso 6)" ...
+
+
+
+		LINEA: 98, COLUMNA: 925: <img src="img/es/portal/rss.gif" alt="RSS" class="rss" />
+
+
+
+		LINEA: 98, COLUMNA: 1153: <img src="img/es/portal/w3c.gif" alt="W3C - WAI AA" />
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 17, COLUMNA: 2: <script type="text/javascript">	// <![CDATA[		var iIdioma=1;		var sIdioma="es";		var xtnv...
+
+
+
+		LINEA: 31, COLUMNA: 2: <script type="text/javascript" src="js/portal/alertas.js"></script>
+
+
+
+		LINEA: 32, COLUMNA: 2: <script type="text/javascript" src="js/portal/portal.js"></script>
+
+
+
+		LINEA: 33, COLUMNA: 2: <script type="text/javascript" src="js/portal/funciones.js"></script>
+
+
+
+		LINEA: 34, COLUMNA: 2: <script type="text/javascript" src="js/aplicaciones/swfobject.js"></script>
+
+
+
+		LINEA: 35, COLUMNA: 2: <script type="text/javascript" src="/js/aplicaciones/jquery-1.3.2.min.js"></script>
+
+
+
+		LINEA: 36, COLUMNA: 2: <script type="text/javascript" src="/js/aplicaciones/jquery.cookie.js"></script>
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 17, COLUMNA: 2: <script type="text/javascript">	// <![CDATA[		var iIdioma=1;		var sIdioma="es";		var xtnv...
+
+
+
+		LINEA: 31, COLUMNA: 2: <script type="text/javascript" src="js/portal/alertas.js"></script>
+
+
+
+		LINEA: 32, COLUMNA: 2: <script type="text/javascript" src="js/portal/portal.js"></script>
+
+
+
+		LINEA: 33, COLUMNA: 2: <script type="text/javascript" src="js/portal/funciones.js"></script>
+
+
+
+		LINEA: 34, COLUMNA: 2: <script type="text/javascript" src="js/aplicaciones/swfobject.js"></script>
+
+
+
+		LINEA: 35, COLUMNA: 2: <script type="text/javascript" src="/js/aplicaciones/jquery-1.3.2.min.js"></script>
+
+
+
+		LINEA: 36, COLUMNA: 2: <script type="text/javascript" src="/js/aplicaciones/jquery.cookie.js"></script>
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 8, COLUMNA: 2:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 55, COLUMNA: 311: <a href="index.asp?MP=92&amp;MS=0&amp;MN=1&amp;Hash=985894452018301171">pol&iacute;tica de cookies</ ...
+
+
+
+		LINEA: 61, COLUMNA: 3: <a href="#recurso" class="mensaje" accesskey="2" title="Tecla de acceso 2">Saltar navegaci&oacute;n. ...
+
+
+
+		LINEA: 64, COLUMNA: 149: <a href="index.asp"><img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecnol&o ...
+
+
+
+		LINEA: 64, COLUMNA: 283: <a href="http://www.micinn.es" rel="external"><img src="img/es/iconos/logoMinisterio.gif" alt="Logo...
+
+
+
+		LINEA: 64, COLUMNA: 522: <a href="index.asp?idioma=2" id="ingles" class="idioma">english</a>
+
+
+
+		LINEA: 64, COLUMNA: 594: <a href="index.asp?idioma=6" id="euskera" class="idioma">euskera</a>
+
+
+
+		LINEA: 64, COLUMNA: 668:
+
+ 
+
+		LINEA: 64, COLUMNA: 741: <a href="index.asp?idioma=8" id="gallego" class="idioma">galego</a>
+
+
+
+		LINEA: 64, COLUMNA: 1358: <a href="index.asp" accesskey="1" title="Inicio (Tecla de acceso 1)"><img src="img/es/iconos/inicio. ...
+
+
+
+		LINEA: 64, COLUMNA: 1513: <a href="index.asp?MP=1&amp;MS=0&amp;MN=1" accesskey="3" title="Mapa web (Tecla de acceso 3 )"><img...
+
+
+
+		LINEA: 64, COLUMNA: 1698: <a href="index.asp?MP=2&amp;MS=0&amp;MN=1" accesskey="9" title="Contacto (Tecla de acceso 9 )"><img...
+
+
+
+		LINEA: 64, COLUMNA: 1884: <a href="index.asp?MP=5&amp;MS=0&amp;MN=1" accesskey="0" title="Accesibilidad (Tecla de acceso 0 )"> ...
+
+
+
+		LINEA: 72, COLUMNA: 105:
+
+ 
+
+		LINEA: 72, COLUMNA: 213:
+
+ 
+
+		LINEA: 72, COLUMNA: 321:
+
+ 
+
+		LINEA: 72, COLUMNA: 437: <a href="index.asp?MP=8&amp;MS=777&amp;MN=1" title="Servicios">Servicios</a>
+
+
+
+		LINEA: 72, COLUMNA: 537:
+
+ 
+
+		LINEA: 72, COLUMNA: 664: <a href="index.asp?MP=99&amp;MS=0&amp;MN=1" title="">Transparencia</a>
+
+
+
+		LINEA: 72, COLUMNA: 758:
+
+ 
+
+		LINEA: 72, COLUMNA: 871: <a href="index.asp?MP=35&amp;MS=0&amp;MN=1" title="Publicaciones">Publicaciones</a>
+
+
+
+		LINEA: 72, COLUMNA: 986:
+
+ 
+
+		LINEA: 73, COLUMNA: 28: <a href="https://sede.cdti.gob.es/AreaPrivada/Expedientes/accesosistema.aspx"><img src="img/es/porta ...
+
+
+
+		LINEA: 74, COLUMNA: 28:
+
+ 
+
+		LINEA: 74, COLUMNA: 359: <a href="/index.asp?MP=20&MS=0&MN=1&TR=A&IDR=18&IDP=97&IDS=11&idioma=1">Neotec Capital Riesgo</a>
+
+
+
+		LINEA: 74, COLUMNA: 469: <a href="/index.asp?MP=20&MS=0&MN=1&TR=C&IDR=15&IDP=32&IDS=272&idioma=1">Comunidades Aut&oacute;noma ...
+
+
+
+		LINEA: 74, COLUMNA: 596: <a href="/index.asp?MP=20&MS=0&MN=1&TR=C&IDR=667&IDP=124&IDS=369&idioma=1">Red de Puntos PI+D+I</a>
+
+
+
+		LINEA: 79, COLUMNA: 103:
+
+ 
+
+		LINEA: 89, COLUMNA: 30: <a href="index.asp?MP=3&amp;MS=0&amp;MN=1" title="Enviar p&aacute;gina"><span>Enviar p&aacute;gina</ ...
+
+
+
+		LINEA: 89, COLUMNA: 240: <a href="#" accesskey="7" title="Imprimir (Tecla de acceso 7)"><span>Imprimir</span><img src="img/es ...
+
+
+
+		LINEA: 89, COLUMNA: 434: <a href="#volver" accesskey="5" title="Regresar al contenido anterior (Tecla de acceso 5)"><img src= ...
+
+
+
+		LINEA: 89, COLUMNA: 638: <a href="#arriba" accesskey="6" title="Ir al comienzo de la p&aacute;gina (Tecla de acceso 6)"><img...
+
+
+
+		LINEA: 98, COLUMNA: 239: <a href="index.asp?MP=18&amp;MS=0&amp;MN=1" accesskey="8" title="tecla acceso 8">Aviso legal</a>
+
+
+
+		LINEA: 98, COLUMNA: 354: <a href="http://validator.w3.org/check/referer" onclick="xt_med('C','1','http://validator.w3.org/che ...
+
+
+
+		LINEA: 98, COLUMNA: 567: <a href="http://jigsaw.w3.org/css-validator/" onclick="xt_med('C','1','http://jigsaw.w3.org/css-vali ...
+
+
+
+		LINEA: 98, COLUMNA: 766: <a href="index.asp?MP=92&amp;MS=0&amp;MN=1" title="Cookies">Cookies</a>
+
+
+
+		LINEA: 98, COLUMNA: 869: <a href="index.asp?MP=31&amp;MS=0&amp;MN=1" title="RSS"><img src="img/es/portal/rss.gif" alt="RSS" c ...
+
+
+
+		LINEA: 98, COLUMNA: 987: <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" onclick="xt_med('C','1','http://www.w3.org/WAI/W ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 64, COLUMNA: 145: <h1><a href="index.asp"><img src="img/es/portal/logoEmpresa.png" alt="Centro para el Desarrollo Tecn ...
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 74, COLUMNA: 220: <h2><img src="img/es/portal/areaColaboracion.gif" alt="&Aacute;rea de colaboraci&oacute;n para" /></ ...
+
+
+
+		LINEA: 79, COLUMNA: 249:
+
+ 
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.1 On Focus (A)  
+
+	REVISAR: 275: Loading web page may cause new window to open.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 64, COLUMNA: 825: <form id="buscadorGeneralForm" method="post" action="index.asp?MP=4&amp;MS=0&amp;MN=1" onsubmit="if( ...
+
+
+
+		LINEA: 74, COLUMNA: 163: <form id="facceso" method="post" action="">		<div>	 	<h2><img src="img/es/portal/areaColaboracio ...
+
+
+
+		LINEA: 84, COLUMNA: 155: <form id="fValidacion" method="post" action=""><div class="cuerpoform"><label for="usuario2" class ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 53, COLUMNA: 1: <body xml:lang="es" onload="inicio(0,1,'30/11/2018');">	<div class="cc-cookies" style="top: 0; b ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 274: Change of context may occur without user activation.
+
+ 
+
+		LINEA: 64, COLUMNA: 1068: <input type="text" name="textobuscado" id="textobusqueda" value="Texto a buscar" onfocus="vaciar(thi ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 64, COLUMNA: 825: <form id="buscadorGeneralForm" method="post" action="index.asp?MP=4&amp;MS=0&amp;MN=1" onsubmit="if( ...
+
+
+
+		LINEA: 74, COLUMNA: 163: <form id="facceso" method="post" action="">		<div>	 	<h2><img src="img/es/portal/areaColaboracio ...
+
+
+
+		LINEA: 84, COLUMNA: 155: <form id="fValidacion" method="post" action=""><div class="cuerpoform"><label for="usuario2" class ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 64, COLUMNA: 825: <form id="buscadorGeneralForm" method="post" action="index.asp?MP=4&amp;MS=0&amp;MN=1" onsubmit="if( ...
+
+
+
+		LINEA: 74, COLUMNA: 163: <form id="facceso" method="post" action="">		<div>	 	<h2><img src="img/es/portal/areaColaboracio ...
+
+
+
+		LINEA: 84, COLUMNA: 155: <form id="fValidacion" method="post" action=""><div class="cuerpoform"><label for="usuario2" class ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 64, COLUMNA: 1068: <input type="text" name="textobuscado" id="textobusqueda" value="Texto a buscar" onfocus="vaciar(thi ...
+
+
+
+		LINEA: 84, COLUMNA: 301: <input type="text" id="usuario2" name="usuario2" value="" />
+
+
+
+		LINEA: 84, COLUMNA: 449: <input type="password" id="contrasena2" name="contrasena2" value="" />
+
+
+
+		LINEA: 84, COLUMNA: 550: <input type="submit" name="accionextranet" value="Validar" class="enviar" />
+
+  
+
+	REVISAR: 217: input element, type of "password", label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 84, COLUMNA: 449: <input type="password" id="contrasena2" name="contrasena2" value="" />
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 64, COLUMNA: 1068: <input type="text" name="textobuscado" id="textobusqueda" value="Texto a buscar" onfocus="vaciar(thi ...
+
+
+
+		LINEA: 84, COLUMNA: 301: <input type="text" id="usuario2" name="usuario2" value="" />
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 64, COLUMNA: 825: <form id="buscadorGeneralForm" method="post" action="index.asp?MP=4&amp;MS=0&amp;MN=1" onsubmit="if( ...
+
+
+
+		LINEA: 74, COLUMNA: 163: <form id="facceso" method="post" action="">		<div>	 	<h2><img src="img/es/portal/areaColaboracio ...
+
+
+
+		LINEA: 84, COLUMNA: 155: <form id="fValidacion" method="post" action=""><div class="cuerpoform"><label for="usuario2" class ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 64, COLUMNA: 825: <form id="buscadorGeneralForm" method="post" action="index.asp?MP=4&amp;MS=0&amp;MN=1" onsubmit="if( ...
+
+
+
+		LINEA: 74, COLUMNA: 163: <form id="facceso" method="post" action="">		<div>	 	<h2><img src="img/es/portal/areaColaboracio ...
+
+
+
+		LINEA: 84, COLUMNA: 155: <form id="fValidacion" method="post" action=""><div class="cuerpoform"><label for="usuario2" class ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 64, COLUMNA: 825: <form id="buscadorGeneralForm" method="post" action="index.asp?MP=4&amp;MS=0&amp;MN=1" onsubmit="if( ...
+
+
+
+		LINEA: 74, COLUMNA: 163: <form id="facceso" method="post" action="">		<div>	 	<h2><img src="img/es/portal/areaColaboracio ...
+
+
+
+		LINEA: 84, COLUMNA: 155: <form id="fValidacion" method="post" action=""><div class="cuerpoform"><label for="usuario2" class ...
+
+

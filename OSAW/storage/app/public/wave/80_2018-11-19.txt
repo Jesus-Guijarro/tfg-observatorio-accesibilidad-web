@@ -1,0 +1,35 @@
+REPORTE PÁGINA WEB: https://web.ua.es/es/centro-de-apoyo-al-estudiante.html
+FECHA EVALUACIÓN: 2018-11-19
+
+PROBLEMAS
+Empty link	  VECES ENCONTRADO: 40
+Missing alternative text	  VECES ENCONTRADO: 16
+Empty heading	  VECES ENCONTRADO: 1
+
+
+
+ALERTAS
+Skipped heading level	  VECES ENCONTRADO: 1
+Missing fieldset	  VECES ENCONTRADO: 2
+Redundant alternative text	  VECES ENCONTRADO: 7
+Tabindex	  VECES ENCONTRADO: 3
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 3
+Redundant link	  VECES ENCONTRADO: 4
+Broken same-page link	  VECES ENCONTRADO: 2
+
+
+
+CARACTERISTICAS
+Null or empty alternative text	  VECES ENCONTRADO: 12
+Linked image with alternative text	  VECES ENCONTRADO: 12
+Alternative text	  VECES ENCONTRADO: 5
+Form label	  VECES ENCONTRADO: 12
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 52
+
+
+

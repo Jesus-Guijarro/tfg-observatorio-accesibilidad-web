@@ -1,0 +1,23 @@
+REPORTE PÁGINA WEB: https://www.uv.es/recull
+FECHA EVALUACIÓN: 2018-11-04
+
+Se constató que todas las imágenes hacen uso del atributo alt
+Se han encontrado 2 elementos <area> sin texto alternativo
+Se encontraron 14 elementos de encabezado
+Se han encontrado 4 enlaces con el mismo texto que apuntan a destinos diferentes
+Se han identificado 48 casos en que el atributo title del elemento link se limita a repetir el texto existente en el enlace
+Se encontró 1 grupo de enlaces compuesto por 10 o más enlaces no agrupados por elementos estructurales
+Se constató que el primer enlace de la página no nos conduce hasta el área del contenido principal
+Se constató que no hay enlaces para eludir bloques de texto
+Se encontraron 3 elementos <fieldset> sin descripción
+Se identificaron 2 controles de formulario sin etiquetas asociadas y sin el atributo title
+Se constató que todos los formularios tienen un botón de envío
+Se encontraron 2 controles de formulario sin etiqueta asociada
+Se encontró 1 valor repetido del atributo id
+Se encontraron 17 errores de validación en el lenguaje de marcado
+Se han encontrado 7 elementos o atributos de HTML que se utilizan para controlar la presentación visual del texto
+Se constató que no hay elementos a utilizar para el control visual de la presentación
+Se constató que no hay atributos a controlar la presentación visual
+Se constató que la página tiene un elemento <title>
+Se constató que se identifica el idioma principal de la página con el código "ca"
+Se ha identificado una regla de CSS en la que no se especifica o el color de fondo o el color de fondo

@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: https://www.upv.es
+FECHA EVALUACIÓN: 2018-11-17
+
+PROBLEMAS
+Linked image missing alternative text	  VECES ENCONTRADO: 6
+Missing alternative text	  VECES ENCONTRADO: 2
+
+
+
+ALERTAS
+Audio/Video	  VECES ENCONTRADO: 2
+Redundant link	  VECES ENCONTRADO: 22
+Redundant title text	  VECES ENCONTRADO: 8
+A nearby image has the same alternative text	  VECES ENCONTRADO: 6
+Device dependent event handler	  VECES ENCONTRADO: 5
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 12
+Linked image with alternative text	  VECES ENCONTRADO: 39
+Long description	  VECES ENCONTRADO: 1
+
+
+

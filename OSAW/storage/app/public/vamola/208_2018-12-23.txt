@@ -1,0 +1,3378 @@
+REPORTE PÁGINA WEB: https://www.uv.es/recull
+FECHA EVALUACIÓN: 2018-12-23
+
+-PROBLEMAS CONOCIDOS-
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 64: Imagemap area element missing alt attribute.  
+
+	REPARAR:> Add an alt attribute to this area element. The alt attribute should describe the link destination and make sense when read out of context.      
+
+		LINEA: 241, COLUMNA: 4: <areashape="RECT" title="" coords="0,0,450,135" href='https://www.uv.es/uvweb/uv-noticias/ca/uv-no ...
+
+
+
+		LINEA: 242, COLUMNA: 4: <areashape="RECT" title="Enllaç a pàgina principal de la Universitat de València" coords="450,0 ...
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 57: input element, type of "text", missing an associated label.  
+
+	REPARAR:> Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.      
+
+		LINEA: 229, COLUMNA: 9: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data-titol" '>
+
+
+
+		LINEA: 1247, COLUMNA: 3: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data" value=''/>
+
+  
+
+	REVISAR: 213: input element, type of "text", has no text in label.  
+
+	REPARAR:> Add text to the input element's associated label that describes the purpose or function of the control.      
+
+		LINEA: 229, COLUMNA: 9: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data-titol" '>
+
+
+
+		LINEA: 1247, COLUMNA: 3: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data" value=''/>
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.4 Resize text (AA)  
+
+	REVISAR: 116: b (bold) element used.  
+
+	REPARAR:> Replace your b (bold) elements with em or strong.      
+
+		LINEA: 542, COLUMNA: 8: <b class="caret"></b>
+
+
+
+		LINEA: 554, COLUMNA: 8: <b class="caret"></b>
+
+
+
+		LINEA: 566, COLUMNA: 8: <b class="caret"></b>
+
+
+
+		LINEA: 578, COLUMNA: 8: <b class="caret"></b>
+
+
+
+		LINEA: 614, COLUMNA: 8: <b class="caret"></b>
+
+
+
+		LINEA: 626, COLUMNA: 8: <b class="caret"></b>
+
+
+
+		LINEA: 638, COLUMNA: 8: <b class="caret"></b>
+
+  
+
+	REVISAR: 117: i (italic) element used.  
+
+	REPARAR:> Replace your i elements with em or strong.      
+
+		LINEA: 230, COLUMNA: 46: <i class="fa fa-search"></i>
+
+
+
+		LINEA: 847, COLUMNA: 34: <i class="fa fa-bars" aria-hidden="true"></i>
+
+
+
+		LINEA: 866, COLUMNA: 71: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 878, COLUMNA: 71: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 890, COLUMNA: 78: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 902, COLUMNA: 78: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 914, COLUMNA: 78: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 926, COLUMNA: 71: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 938, COLUMNA: 78: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 950, COLUMNA: 77: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 962, COLUMNA: 74: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 974, COLUMNA: 71: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 985, COLUMNA: 71: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 997, COLUMNA: 70: <i class="fa fa-calendar-o"></i>
+
+
+
+		LINEA: 1248, COLUMNA: 40: <i class="fa fa-search"></i>
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 188: Label text is empty.  
+
+	REPARAR:> Add text to the label element.      
+
+		LINEA: 229, COLUMNA: 9: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data-titol" '>
+
+
+
+		LINEA: 1247, COLUMNA: 3: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data" value=''/>
+
+4.1 Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
+
+CRITERIO DE CONFORMIDAD: 4.1.1 Parsing (A)  
+
+	REVISAR: 185: id attribute is not unique.  
+
+	REPARAR:> Modify the id attribute value so it is unique.      
+
+		LINEA: 1247, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...(p3)
+
+
+
+
+
+-PROBLEMAS POTENCIALES-
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.5 Change on Request (AAA)  
+
+	REVISAR: 18: Anchor that opens new window may be missing warning.
+
+ 
+
+		LINEA: 50, COLUMNA: 57: <a href="https://www.uv.es/uvweb/uv-noticies/es/sala-prensa/uv-prensa-1285975255169.html" title="Enl ...
+
+
+
+		LINEA: 50, COLUMNA: 254: <a href="https://www.uv.es/uvweb/uv-news/en/press-section/uv-press-1285975255169.html" title="Link t ...
+
+
+
+		LINEA: 74, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Facebook" href="https://www.facebook.com/universi ...
+
+
+
+		LINEA: 98, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Twitter" href="https://twitter.com/UV_EG" target= ...
+
+
+
+		LINEA: 122, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Linkedin" href="https://www.linkedin.com/company/ ...
+
+
+
+		LINEA: 146, COLUMNA: 10: <a title="Canal de la Universitat de València a Instagram" href="https://www.instagram.com/universi ...
+
+
+
+		LINEA: 170, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Pinterest" href="https://es.pinterest.com/valenci ...
+
+
+
+		LINEA: 194, COLUMNA: 10: <a title="Canal de la Universitat de València a Youtube" href="https://www.youtube.com/user/Univers ...
+
+
+
+		LINEA: 218, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Google+" href="https://plus.google.com/u/0/+unive ...
+
+
+
+		LINEA: 540, COLUMNA: 7: <a class="dropdown-toggle menuHijo1" data-toggle="dropdown"title='Institucional'>Institucion ...
+
+
+
+		LINEA: 544, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/institucional/institucional-1285973297402.html" ...
+
+
+
+		LINEA: 552, COLUMNA: 7: <a class="dropdown-toggle menuHijo2" data-toggle="dropdown"title='Estudis'>Estudis	< ...
+
+
+
+		LINEA: 556, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/estudis/estudis-formacio-complementaria-128597329750 ...
+
+
+
+		LINEA: 564, COLUMNA: 7: <a class="dropdown-toggle menuHijo3" data-toggle="dropdown"title='Recerca'>Recerca	< ...
+
+
+
+		LINEA: 568, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/recerca/recerca-innovacio-transferencia-128597522293 ...
+
+
+
+		LINEA: 576, COLUMNA: 7: <a class="dropdown-toggle menuHijo4" data-toggle="dropdown"title='Cultura'>Cultura	< ...
+
+
+
+		LINEA: 580, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/arts-esceniques-1285975226115.html"	 ...
+
+
+
+		LINEA: 583, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/cinema-1285975225656.html"		title="C ...
+
+
+
+		LINEA: 586, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/conferencies-debats-1285975233782.html" ...
+
+
+
+		LINEA: 589, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/congressos-jornades-1285975242545.html" ...
+
+
+
+		LINEA: 592, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/exposicions-1285975229781.html"		tit ...
+
+
+
+		LINEA: 595, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/lletres-1285975240951.html"		title=" ...
+
+
+
+		LINEA: 598, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/musica-1285975230858.html"		title="M ...
+
+
+
+		LINEA: 601, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/premis-convocatories-1285975238829.html"		 ...
+
+
+
+		LINEA: 604, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/altres-activitats-1285975243438.html"		 ...
+
+
+
+		LINEA: 612, COLUMNA: 7: <a class="dropdown-toggle menuHijo5" data-toggle="dropdown"title='Esports'>Esports	< ...
+
+
+
+		LINEA: 616, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/esports/esports-1285975244746.html"		title=" ...
+
+
+
+		LINEA: 624, COLUMNA: 7: <a class="dropdown-toggle menuHijo6" data-toggle="dropdown"title='Campus'>Campus	<b...
+
+
+
+		LINEA: 628, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/campus/campus-1285975245897.html"		title="Ca ...
+
+
+
+		LINEA: 636, COLUMNA: 7: <a class="dropdown-toggle menuHijo7" data-toggle="dropdown"title='Sala de premsa'>Sala de pr ...
+
+
+
+		LINEA: 640, COLUMNA: 29: <a class="dropdown-toggle" data-toggle="dropdown">Gabinet de premsa</a>
+
+
+
+		LINEA: 644, COLUMNA: 14: <a tabindex="-1" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/presentacio ...
+
+
+
+		LINEA: 647, COLUMNA: 31: <a class="dropdown-toggle" data-toggle="dropdown">Carta de serveis</a>
+
+
+
+		LINEA: 651, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/presentacio ...
+
+
+
+		LINEA: 654, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/missio-1286 ...
+
+
+
+		LINEA: 657, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/organigrama ...
+
+
+
+		LINEA: 660, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/serveis-pre ...
+
+
+
+		LINEA: 663, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/compromisos ...
+
+
+
+		LINEA: 666, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/indicadors- ...
+
+
+
+		LINEA: 669, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/drets-deure ...
+
+
+
+		LINEA: 672, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/formes-part ...
+
+
+
+		LINEA: 675, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/ubicacio-da ...
+
+
+
+		LINEA: 678, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/vigencia-ca ...
+
+
+
+		LINEA: 683, COLUMNA: 31: <a class="dropdown-toggle" data-toggle="dropdown">Informació icontacte</a>
+
+
+
+		LINEA: 687, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/informacio-contacte/ubica ...
+
+
+
+		LINEA: 690, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/informacio-contacte/organ ...
+
+
+
+		LINEA: 693, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/informacio-contacte/envia ...
+
+
+
+		LINEA: 696, COLUMNA: 16: <a href="https://webges.uv.es/uvEntreuWeb/entradaSEU.jsp?perfil=queixes&cambio_idioma=S&idioma=ca_ES ...
+
+
+
+		LINEA: 703, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/notes-premsa-1285975249783.html" ...
+
+
+
+		LINEA: 706, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/agenda-govern-1285975251109.html"		 ...
+
+
+
+		LINEA: 709, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/acords-govern-1285975252264.html"		 ...
+
+
+
+		LINEA: 712, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html"		t ...
+
+
+
+		LINEA: 715, COLUMNA: 29: <a class="dropdown-toggle" data-toggle="dropdown">Informació corporativa</a>
+
+
+
+		LINEA: 719, COLUMNA: 14: <a tabindex="-1" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/uv- ...
+
+
+
+		LINEA: 722, COLUMNA: 14: <a tabindex="-1" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/dos ...
+
+
+
+		LINEA: 725, COLUMNA: 31: <a class="dropdown-toggle" data-toggle="dropdown">Rànquings</a>
+
+
+
+		LINEA: 729, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/ranquings/ranquin ...
+
+
+
+		LINEA: 732, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/ranquings/ranquin ...
+
+
+
+		LINEA: 737, COLUMNA: 31: <a class="dropdown-toggle" data-toggle="dropdown">Directori</a>
+
+
+
+		LINEA: 741, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/faculta ...
+
+
+
+		LINEA: 744, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/departa ...
+
+
+
+		LINEA: 747, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/serveis ...
+
+
+
+		LINEA: 750, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/institu ...
+
+
+
+		LINEA: 753, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/grups-r ...
+
+
+
+		LINEA: 756, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/altres- ...
+
+
+
+		LINEA: 759, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/altres- ...
+
+
+
+		LINEA: 762, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/fundaci ...
+
+
+
+		LINEA: 765, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/catedre ...
+
+
+
+		LINEA: 770, COLUMNA: 14: <a tabindex="-1" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/nos ...
+
+
+
+		LINEA: 851, COLUMNA: 9: <a href="#">Acci&oacute;n #1</a>
+
+
+
+		LINEA: 852, COLUMNA: 9: <a href="#">Acci&oacute;n #2</a>
+
+
+
+		LINEA: 853, COLUMNA: 9: <a href="#">Acci&oacute;n #3</a>
+
+
+
+		LINEA: 862, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/cultura/2018/12/21/rae-elige-director-jurista-s ...
+
+
+
+		LINEA: 874, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/comunitat-valenciana/2018/12/20/laura-mujer-val ...
+
+
+
+		LINEA: 886, COLUMNA: 6: <a target="_blank" href="https://www.lasprovincias.es/comunitat/recuerdo-estudiante-ejemplar-2018122 ...
+
+
+
+		LINEA: 898, COLUMNA: 6: <a target="_blank" href="https://www.lasprovincias.es/comunitat/diez-estudiantes-premios-20181220010 ...
+
+
+
+		LINEA: 910, COLUMNA: 6: <a target="_blank" href="https://www.lasprovincias.es/valencia-ciudad/impulso-registro-tumores-20181 ...
+
+
+
+		LINEA: 922, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/comarcas/2018/12/20/naturaleza-despoblacion/181 ...
+
+
+
+		LINEA: 934, COLUMNA: 6: <a target="_blank" href="https://www.lasprovincias.es/culturas/academia-carlos-reivindica-2018122001 ...
+
+
+
+		LINEA: 946, COLUMNA: 6: <a target="_blank" href="https://www.lavanguardia.com/local/valencia/20181219/453645035516/la-uv-y-e ...
+
+
+
+		LINEA: 958, COLUMNA: 6: <a target="_blank" href="https://www.20minutos.es/noticia/3520301/0/uv-ministerio-sanidad-renuevan-a ...
+
+
+
+		LINEA: 970, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/comunitat-valenciana/2018/12/19/uv-ministerio-s ...
+
+
+
+		LINEA: 981, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/comunitat-valenciana/2018/12/19/salud-mental-si ...
+
+
+
+		LINEA: 993, COLUMNA: 6: <a target="_blank" href="https://economia3.com/2018/12/19/170885-fundacion-once-estudiantes-discapac ...
+
+
+
+		LINEA: 1030, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1037, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1044, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1051, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1058, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1065, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1072, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1079, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1079, COLUMNA: 195: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1301, COLUMNA: 10: <a title="Facebook" href="https://www.facebook.com/pages/Universitat-de-Val%C3%A8ncia/10099979329161 ...
+
+
+
+		LINEA: 1325, COLUMNA: 10: <a title="Twitter" href="https://twitter.com/uv_eg?lang=es"><img class="TwitterNews" alt="Twitter" s ...
+
+
+
+		LINEA: 1349, COLUMNA: 10: <a title="Linkedin" href="https://www.linkedin.com/edu/school?id=12256"><img class="LinkedinNews" al ...
+
+
+
+		LINEA: 1373, COLUMNA: 10: <a title="Pinterest" href="https://es.pinterest.com/valenciaedu/"><img class="PntNews" alt="Pinteres ...
+
+
+
+		LINEA: 1397, COLUMNA: 10: <a title="Youtube" href="https://www.youtube.com/user/UniversitatValencia"><img class="YtNews" alt=" ...
+
+
+
+		LINEA: 1421, COLUMNA: 10: <a title="GooglePlus" href="https://plus.google.com/+universidadvalencia"><img class="GPlusNews" alt ...
+
+
+
+		LINEA: 1445, COLUMNA: 10: <a title="Instagram" href="https://www.instagram.com/universitatvalencia/"><img class="InstagramNews ...
+
+
+
+		LINEA: 1456, COLUMNA: 9: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa/acces-premsa-e-1286017453682.h ...
+
+
+
+		LINEA: 1487, COLUMNA: 11: <a title="Pàgina de la Universitat de València en Facebook" href="https://www.facebook.com/univers ...
+
+
+
+		LINEA: 1510, COLUMNA: 11: <a title="Segueix a la Universitat de València en Twitter" href="http://twitter.com/UV_EG"><img cla ...
+
+
+
+		LINEA: 1528, COLUMNA: 10: <a title="Linkedin UV" href="https://www.linkedin.com/company/19168"><img class="linkedin" alt="Link ...
+
+
+
+		LINEA: 1546, COLUMNA: 10: <a title="Pinterest UV" href="https://www.pinterest.com/valenciaedu/"><img class="PinterestUV" alt=" ...
+
+
+
+		LINEA: 1569, COLUMNA: 11: <a title="Canal YouTube de la Universitat de València" href="http://www.youtube.com/user/Universita ...
+
+
+
+		LINEA: 1587, COLUMNA: 10: <a title="Googleplus" href="https://plus.google.com/u/0/b/109103335404534938571/+universidadvalencia ...
+
+
+
+		LINEA: 1595, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/institucional/institucional-12859732974 ...
+
+
+
+		LINEA: 1610, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/estudis/estudis-formacio-complementaria ...
+
+
+
+		LINEA: 1625, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/recerca/recerca-innovacio-transferencia ...
+
+
+
+		LINEA: 1640, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/arts-esceniques-1285975226115.h ...
+
+
+
+		LINEA: 1646, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/cinema-1285975225656.html">Cine ...
+
+
+
+		LINEA: 1652, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/conferencies-debats-12859752337 ...
+
+
+
+		LINEA: 1658, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/congressos-jornades-12859752425 ...
+
+
+
+		LINEA: 1664, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/exposicions-1285975229781.html" ...
+
+
+
+		LINEA: 1670, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/lletres-1285975240951.html">Lle ...
+
+
+
+		LINEA: 1676, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/musica-1285975230858.html">Mús ...
+
+
+
+		LINEA: 1682, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/premis-convocatories-1285975238 ...
+
+
+
+		LINEA: 1688, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/altres-activitats-1285975243438 ...
+
+
+
+		LINEA: 1703, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/esports/esports-1285975244746.html">Esp ...
+
+
+
+		LINEA: 1718, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/campus/campus-1285975245897.html">Campu ...
+
+
+
+		LINEA: 1733, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/presentacio- ...
+
+
+
+		LINEA: 1739, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/notes-premsa-1285975249783. ...
+
+
+
+		LINEA: 1745, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/agenda-govern-1285975251109 ...
+
+
+
+		LINEA: 1751, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/acords-govern-1285975252264 ...
+
+
+
+		LINEA: 1757, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.htm ...
+
+
+
+		LINEA: 1763, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/uv-x ...
+
+
+
+		LINEA: 1781, COLUMNA: 27: <a href="https://www.uv.es/uvweb/universitat/ca/avis-legal/avis-legal-1285919088090.html" title = "E ...
+
+
+
+		LINEA: 1781, COLUMNA: 169: <a href="https://www.uv.es/uvweb/universitat/ca/accessibilitat/accessibilitat-1285917448966.html" ti ...
+
+
+
+		LINEA: 1781, COLUMNA: 325: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/responsable-identificacio-titula ...
+
+
+
+		LINEA: 1781, COLUMNA: 533: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/politica-cookies/son-galetes--12 ...
+
+
+
+		LINEA: 1781, COLUMNA: 708: <a href="http://www.uv.es/transparencia" title = "Enllaç al portal de transparència" >Transparènc ...
+
+
+
+		LINEA: 1786, COLUMNA: 307: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/politica-cookies/son-galetes--12 ...
+
+1.1 Text Alternatives: Provide text alternatives for all non-text content
+
+CRITERIO DE CONFORMIDAD: 1.1.1 Non-text Content (A)  
+
+	REVISAR: 8: img element may require a long description.
+
+ 
+
+		LINEA: 74, COLUMNA: 142: <img class="head-fb" alt="Pàgina de la Universitat de València a Facebook" src="/recursos/fatwirep ...
+
+
+
+		LINEA: 98, COLUMNA: 119: <img class="head-tw" alt="Pàgina de la Universitat de València a Twitter" src="/recursos/fatwirepu ...
+
+
+
+		LINEA: 122, COLUMNA: 133: <img class="head-lin" alt="Pàgina de la Universitat de València a Linkedin" src="/recursos/fatwire ...
+
+
+
+		LINEA: 146, COLUMNA: 140: <img class="head-insta" alt="Canal de la Universitat de València a Instagram" src="/recursos/fatwir ...
+
+
+
+		LINEA: 170, COLUMNA: 133: <img class="head-pt" alt="Pàgina de la Universitat de València a Pinterest" src="/recursos/fatwire ...
+
+
+
+		LINEA: 194, COLUMNA: 140: <img class="head-yt" alt="Canal de la Universitat de València a Youtube" src="/recursos/fatwirepub/ ...
+
+
+
+		LINEA: 218, COLUMNA: 142: <img class="head-gplus" alt="Pàgina de la Universitat de València a Google+" src="/recursos/fatwir ...
+
+
+
+		LINEA: 245, COLUMNA: 4: <img layout="responsive" src="/recursos/fatwirepub/ccurl/386/807/uvn_es.png" alt="Logo del portal" u ...
+
+
+
+		LINEA: 1301, COLUMNA: 113: <img class="FbNews" alt="Facebook" src="/recursos/fatwirepub/ccurl/1005/183/Pictogrames_RRSS_gris_v...
+
+
+
+		LINEA: 1325, COLUMNA: 70: <img class="TwitterNews" alt="Twitter" src="/recursos/fatwirepub/ccurl/512/911/Pictogrames_RRSS_gris ...
+
+
+
+		LINEA: 1349, COLUMNA: 82: <img class="LinkedinNews" alt="Linkedin" src="/recursos/fatwirepub/ccurl/241/531/Pictogrames_RRSS_gr ...
+
+
+
+		LINEA: 1373, COLUMNA: 76: <img class="PntNews" alt="Pinterest" src="/recursos/fatwirepub/ccurl/692/171/Pinterest_gris-02,0.png ...
+
+
+
+		LINEA: 1397, COLUMNA: 85: <img class="YtNews" alt="Youtube" src="/recursos/fatwirepub/ccurl/639/9/Pictogrames_RRSS_gris_v copi ...
+
+
+
+		LINEA: 1421, COLUMNA: 84: <img class="GPlusNews" alt="GooglePlus" src="/recursos/fatwirepub/ccurl/597/439/Google_gris-02.png"...
+
+
+
+		LINEA: 1445, COLUMNA: 85: <img class="InstagramNews" alt="Instagram" src="/recursos/fatwirepub/ccurl/541/1016/Instagram_gris,0 ...
+
+
+
+		LINEA: 1464, COLUMNA: 64: <img src="/recursos/fatwirepub/css/logoPeuNews.png" alt="Logo del portal">
+
+
+
+		LINEA: 1487, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 1510, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 1528, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 1546, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 1569, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 1587, COLUMNA: 134: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+  
+
+	REVISAR: 16: Alt text is not empty and image may be decorative.
+
+ 
+
+		LINEA: 74, COLUMNA: 142: <img class="head-fb" alt="Pàgina de la Universitat de València a Facebook" src="/recursos/fatwirep ...
+
+
+
+		LINEA: 98, COLUMNA: 119: <img class="head-tw" alt="Pàgina de la Universitat de València a Twitter" src="/recursos/fatwirepu ...
+
+
+
+		LINEA: 122, COLUMNA: 133: <img class="head-lin" alt="Pàgina de la Universitat de València a Linkedin" src="/recursos/fatwire ...
+
+
+
+		LINEA: 146, COLUMNA: 140: <img class="head-insta" alt="Canal de la Universitat de València a Instagram" src="/recursos/fatwir ...
+
+
+
+		LINEA: 170, COLUMNA: 133: <img class="head-pt" alt="Pàgina de la Universitat de València a Pinterest" src="/recursos/fatwire ...
+
+
+
+		LINEA: 194, COLUMNA: 140: <img class="head-yt" alt="Canal de la Universitat de València a Youtube" src="/recursos/fatwirepub/ ...
+
+
+
+		LINEA: 218, COLUMNA: 142: <img class="head-gplus" alt="Pàgina de la Universitat de València a Google+" src="/recursos/fatwir ...
+
+
+
+		LINEA: 245, COLUMNA: 4: <img layout="responsive" src="/recursos/fatwirepub/ccurl/386/807/uvn_es.png" alt="Logo del portal" u ...
+
+
+
+		LINEA: 1301, COLUMNA: 113: <img class="FbNews" alt="Facebook" src="/recursos/fatwirepub/ccurl/1005/183/Pictogrames_RRSS_gris_v...
+
+
+
+		LINEA: 1325, COLUMNA: 70: <img class="TwitterNews" alt="Twitter" src="/recursos/fatwirepub/ccurl/512/911/Pictogrames_RRSS_gris ...
+
+
+
+		LINEA: 1349, COLUMNA: 82: <img class="LinkedinNews" alt="Linkedin" src="/recursos/fatwirepub/ccurl/241/531/Pictogrames_RRSS_gr ...
+
+
+
+		LINEA: 1373, COLUMNA: 76: <img class="PntNews" alt="Pinterest" src="/recursos/fatwirepub/ccurl/692/171/Pinterest_gris-02,0.png ...
+
+
+
+		LINEA: 1397, COLUMNA: 85: <img class="YtNews" alt="Youtube" src="/recursos/fatwirepub/ccurl/639/9/Pictogrames_RRSS_gris_v copi ...
+
+
+
+		LINEA: 1421, COLUMNA: 84: <img class="GPlusNews" alt="GooglePlus" src="/recursos/fatwirepub/ccurl/597/439/Google_gris-02.png"...
+
+
+
+		LINEA: 1445, COLUMNA: 85: <img class="InstagramNews" alt="Instagram" src="/recursos/fatwirepub/ccurl/541/1016/Instagram_gris,0 ...
+
+
+
+		LINEA: 1464, COLUMNA: 64: <img src="/recursos/fatwirepub/css/logoPeuNews.png" alt="Logo del portal">
+
+
+
+		LINEA: 1487, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 1510, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 1528, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 1546, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 1569, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 1587, COLUMNA: 134: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+  
+
+	REVISAR: 178: Alt text does not convey the same information as the image.
+
+ 
+
+		LINEA: 245, COLUMNA: 4: <img layout="responsive" src="/recursos/fatwirepub/ccurl/386/807/uvn_es.png" alt="Logo del portal" u ...
+
+
+
+		LINEA: 1464, COLUMNA: 64: <img src="/recursos/fatwirepub/css/logoPeuNews.png" alt="Logo del portal">
+
+1.3 Adaptable: Create content that can be presented in different ways without losing information or structure.
+
+CRITERIO DE CONFORMIDAD: 1.3.1 Info and Relationships (A)  
+
+	REVISAR: 241: Tabular information may be missing table markup.
+
+ 
+
+		LINEA: 1247, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...(p3)
+
+  
+
+	REVISAR: 248: Visual lists may not be properly marked.
+
+ 
+
+		LINEA: 41, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...
+
+  
+
+	REVISAR: 270: Unicode right-to-left marks or left-to-right marks may be required.
+
+ 
+
+		LINEA: 1247, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...(p3)
+
+  
+
+	REVISAR: 271: dir attribute may be required to identify changes in text direction.
+
+ 
+
+		LINEA: 1247, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...(p3)
+
+  
+
+	REVISAR: 123: input element label, type of "checkbox" is not positioned close to control.
+
+ 
+
+		LINEA: 1255, COLUMNA: 46: <input class="regular-checkbox" type="checkbox" id="p4_0" name="p4" value='1285975300597' />
+
+
+
+		LINEA: 1255, COLUMNA: 167: <input class="regular-checkbox" type="checkbox" id="p4_1" name="p4" value='1285975304164' />
+
+
+
+		LINEA: 1255, COLUMNA: 288: <input class="regular-checkbox" type="checkbox" id="p4_2" name="p4" value='1285975304408' />
+
+
+
+		LINEA: 1255, COLUMNA: 412: <input class="regular-checkbox" type="checkbox" id="p4_3" name="p4" value='1285975305049' />
+
+
+
+		LINEA: 1255, COLUMNA: 533: <input class="regular-checkbox" type="checkbox" id="p4_4" name="p4" value='1285975305346' />
+
+
+
+		LINEA: 1255, COLUMNA: 653: <input class="regular-checkbox" type="checkbox" id="p4_5" name="p4" value='1285975306035' />
+
+
+
+		LINEA: 1255, COLUMNA: 775: <input class="regular-checkbox" type="checkbox" id="p4_6" name="p4" value='1285975306155' />
+
+
+
+		LINEA: 1255, COLUMNA: 908: <input class="regular-checkbox" type="checkbox" id="p4_7" name="p4" value='1285975306292' />
+
+
+
+		LINEA: 1255, COLUMNA: 1037: <input class="regular-checkbox" type="checkbox" id="p4_8" name="p4" value='1286024958350' />
+
+
+
+		LINEA: 1255, COLUMNA: 1166: <input class="regular-checkbox" type="checkbox" id="p4_9" name="p4" value='1286024956761' />
+
+
+
+		LINEA: 1255, COLUMNA: 1308: <input class="regular-checkbox" type="checkbox" id="p4_10" name="p4" value='1285995220206' />
+
+
+
+		LINEA: 1255, COLUMNA: 1442: <input class="regular-checkbox" type="checkbox" id="p4_11" name="p4" value='1286023915908' />
+
+
+
+		LINEA: 1255, COLUMNA: 1574: <input class="regular-checkbox" type="checkbox" id="p4_12" name="p4" value='1286024956081' />
+
+
+
+		LINEA: 1255, COLUMNA: 1706: <input class="regular-checkbox" type="checkbox" id="p4_13" name="p4" value='1285975306423' />
+
+
+
+		LINEA: 1255, COLUMNA: 1841: <input class="regular-checkbox" type="checkbox" id="p4_14" name="p4" value='1285975306590' />
+
+
+
+		LINEA: 1255, COLUMNA: 1970: <input class="regular-checkbox" type="checkbox" id="p4_15" name="p4" value='1285975308238' />
+
+
+
+		LINEA: 1255, COLUMNA: 2101: <input class="regular-checkbox" type="checkbox" id="p4_16" name="p4" value='1285975309403' />
+
+
+
+		LINEA: 1255, COLUMNA: 2229: <input class="regular-checkbox" type="checkbox" id="p4_17" name="p4" value='1285975310608' />
+
+
+
+		LINEA: 1255, COLUMNA: 2357: <input class="regular-checkbox" type="checkbox" id="p4_18" name="p4" value='1286024955223' />
+
+
+
+		LINEA: 1255, COLUMNA: 2489: <input class="regular-checkbox" type="checkbox" id="p4_19" name="p4" value='1285975311801' />
+
+
+
+		LINEA: 1255, COLUMNA: 2622: <input class="regular-checkbox" type="checkbox" id="p4_20" name="p4" value='1285975310906' />
+
+
+
+		LINEA: 1255, COLUMNA: 2766: <input class="regular-checkbox" type="checkbox" id="p4_21" name="p4" value='1285975312193' />
+
+
+
+		LINEA: 1255, COLUMNA: 2895: <input class="regular-checkbox" type="checkbox" id="p4_22" name="p4" value='1285975312616' />
+
+
+
+		LINEA: 1255, COLUMNA: 3023: <input class="regular-checkbox" type="checkbox" id="p4_23" name="p4" value='1285975319099' />
+
+
+
+		LINEA: 1255, COLUMNA: 3155: <input class="regular-checkbox" type="checkbox" id="p4_24" name="p4" value='1285975319683' />
+
+
+
+		LINEA: 1255, COLUMNA: 3285: <input class="regular-checkbox" type="checkbox" id="p4_25" name="p4" value='1285975321018' />
+
+
+
+		LINEA: 1255, COLUMNA: 3420: <input class="regular-checkbox" type="checkbox" id="p4_26" name="p4" value='1285975321626' />
+
+
+
+		LINEA: 1255, COLUMNA: 3549: <input class="regular-checkbox" type="checkbox" id="p4_27" name="p4" value='1285975322612' />
+
+
+
+		LINEA: 1255, COLUMNA: 3678: <input class="regular-checkbox" type="checkbox" id="p4_28" name="p4" value='1285975323044' />
+
+
+
+		LINEA: 1255, COLUMNA: 3812: <input class="regular-checkbox" type="checkbox" id="p4_29" name="p4" value='1285975323780' />
+
+
+
+		LINEA: 1255, COLUMNA: 3964: <input class="regular-checkbox" type="checkbox" id="p4_30" name="p4" value='1285975322449' />
+
+
+
+		LINEA: 1255, COLUMNA: 4097: <input class="regular-checkbox" type="checkbox" id="p4_31" name="p4" value='1285975323011' />
+
+
+
+		LINEA: 1255, COLUMNA: 4223: <input class="regular-checkbox" type="checkbox" id="p4_32" name="p4" value='1285975325072' />
+
+
+
+		LINEA: 1255, COLUMNA: 4350: <input class="regular-checkbox" type="checkbox" id="p4_33" name="p4" value='1285975324339' />
+
+
+
+		LINEA: 1255, COLUMNA: 4495: <input class="regular-checkbox" type="checkbox" id="p4_34" name="p4" value='1285975325479' />
+
+
+
+		LINEA: 1255, COLUMNA: 4621: <input class="regular-checkbox" type="checkbox" id="p4_35" name="p4" value='1285975326955' />
+
+
+
+		LINEA: 1255, COLUMNA: 4762: <input class="regular-checkbox" type="checkbox" id="p4_36" name="p4" value='1285975329225' />
+
+
+
+		LINEA: 1255, COLUMNA: 4897: <input class="regular-checkbox" type="checkbox" id="p4_37" name="p4" value='1285975329681' />
+
+
+
+		LINEA: 1255, COLUMNA: 5030: <input class="regular-checkbox" type="checkbox" id="p4_38" name="p4" value='1285975330049' />
+
+
+
+		LINEA: 1255, COLUMNA: 5165: <input class="regular-checkbox" type="checkbox" id="p4_39" name="p4" value='1285975330661' />
+
+
+
+		LINEA: 1255, COLUMNA: 5293: <input class="regular-checkbox" type="checkbox" id="p4_40" name="p4" value='1285975331723' />
+
+
+
+		LINEA: 1255, COLUMNA: 5422: <input class="regular-checkbox" type="checkbox" id="p4_41" name="p4" value='1285975332802' />
+
+
+
+		LINEA: 1255, COLUMNA: 5551: <input class="regular-checkbox" type="checkbox" id="p4_42" name="p4" value='1285975333409' />
+
+
+
+		LINEA: 1255, COLUMNA: 5683: <input class="regular-checkbox" type="checkbox" id="p4_43" name="p4" value='1286024956549' />
+
+
+
+		LINEA: 1255, COLUMNA: 5823: <input class="regular-checkbox" type="checkbox" id="p4_44" name="p4" value='1285975334664' />
+
+
+
+		LINEA: 1255, COLUMNA: 5952: <input class="regular-checkbox" type="checkbox" id="p4_45" name="p4" value='1285975335340' />
+
+
+
+		LINEA: 1255, COLUMNA: 6085: <input class="regular-checkbox" type="checkbox" id="p4_46" name="p4" value='1285975335892' />
+
+
+
+		LINEA: 1255, COLUMNA: 6219: <input class="regular-checkbox" type="checkbox" id="p4_47" name="p4" value='1285975337841' />
+
+
+
+		LINEA: 1255, COLUMNA: 6346: <input class="regular-checkbox" type="checkbox" id="p4_48" name="p4" value='1285975249887' />
+
+  
+
+	REVISAR: 211: input element label, type of "text", is not positioned close to control.
+
+ 
+
+		LINEA: 229, COLUMNA: 9: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data-titol" '>
+
+
+
+		LINEA: 1247, COLUMNA: 3: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data" value=''/>
+
+
+
+		LINEA: 1261, COLUMNA: 4: <input type="text" id="p5" name="p5"value='' class="form-fecha"/>
+
+
+
+		LINEA: 1264, COLUMNA: 4: <input type="text" id="p6" name="p6"value='' class="form-fecha"/>
+
+
+
+CRITERIO DE CONFORMIDAD: 1.3.3 Sensory Characteristics (A)  
+
+	REVISAR: 250: Text may refer to items by shape, size, or relative position alone.
+
+ 
+
+		LINEA: 1247, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...(p3)
+
+1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.
+
+CRITERIO DE CONFORMIDAD: 1.4.1 Use of Colour (A)  
+
+	REVISAR: 251: Image may contain text with poor contrast.
+
+ 
+
+		LINEA: 74, COLUMNA: 142: <img class="head-fb" alt="Pàgina de la Universitat de València a Facebook" src="/recursos/fatwirep ...
+
+
+
+		LINEA: 98, COLUMNA: 119: <img class="head-tw" alt="Pàgina de la Universitat de València a Twitter" src="/recursos/fatwirepu ...
+
+
+
+		LINEA: 122, COLUMNA: 133: <img class="head-lin" alt="Pàgina de la Universitat de València a Linkedin" src="/recursos/fatwire ...
+
+
+
+		LINEA: 146, COLUMNA: 140: <img class="head-insta" alt="Canal de la Universitat de València a Instagram" src="/recursos/fatwir ...
+
+
+
+		LINEA: 170, COLUMNA: 133: <img class="head-pt" alt="Pàgina de la Universitat de València a Pinterest" src="/recursos/fatwire ...
+
+
+
+		LINEA: 194, COLUMNA: 140: <img class="head-yt" alt="Canal de la Universitat de València a Youtube" src="/recursos/fatwirepub/ ...
+
+
+
+		LINEA: 218, COLUMNA: 142: <img class="head-gplus" alt="Pàgina de la Universitat de València a Google+" src="/recursos/fatwir ...
+
+
+
+		LINEA: 245, COLUMNA: 4: <img layout="responsive" src="/recursos/fatwirepub/ccurl/386/807/uvn_es.png" alt="Logo del portal" u ...
+
+
+
+		LINEA: 1301, COLUMNA: 113: <img class="FbNews" alt="Facebook" src="/recursos/fatwirepub/ccurl/1005/183/Pictogrames_RRSS_gris_v...
+
+
+
+		LINEA: 1325, COLUMNA: 70: <img class="TwitterNews" alt="Twitter" src="/recursos/fatwirepub/ccurl/512/911/Pictogrames_RRSS_gris ...
+
+
+
+		LINEA: 1349, COLUMNA: 82: <img class="LinkedinNews" alt="Linkedin" src="/recursos/fatwirepub/ccurl/241/531/Pictogrames_RRSS_gr ...
+
+
+
+		LINEA: 1373, COLUMNA: 76: <img class="PntNews" alt="Pinterest" src="/recursos/fatwirepub/ccurl/692/171/Pinterest_gris-02,0.png ...
+
+
+
+		LINEA: 1397, COLUMNA: 85: <img class="YtNews" alt="Youtube" src="/recursos/fatwirepub/ccurl/639/9/Pictogrames_RRSS_gris_v copi ...
+
+
+
+		LINEA: 1421, COLUMNA: 84: <img class="GPlusNews" alt="GooglePlus" src="/recursos/fatwirepub/ccurl/597/439/Google_gris-02.png"...
+
+
+
+		LINEA: 1445, COLUMNA: 85: <img class="InstagramNews" alt="Instagram" src="/recursos/fatwirepub/ccurl/541/1016/Instagram_gris,0 ...
+
+
+
+		LINEA: 1464, COLUMNA: 64: <img src="/recursos/fatwirepub/css/logoPeuNews.png" alt="Logo del portal">
+
+
+
+		LINEA: 1487, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 1510, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 1528, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 1546, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 1569, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 1587, COLUMNA: 134: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+  
+
+	REVISAR: 55: input possibly using color alone.
+
+ 
+
+		LINEA: 229, COLUMNA: 9: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data-titol" '>
+
+
+
+		LINEA: 1247, COLUMNA: 3: <input type="text" id="p3" name="p3" placeholder="Cercar" class="form-data" value=''/>
+
+
+
+		LINEA: 1255, COLUMNA: 46: <input class="regular-checkbox" type="checkbox" id="p4_0" name="p4" value='1285975300597' />
+
+
+
+		LINEA: 1255, COLUMNA: 167: <input class="regular-checkbox" type="checkbox" id="p4_1" name="p4" value='1285975304164' />
+
+
+
+		LINEA: 1255, COLUMNA: 288: <input class="regular-checkbox" type="checkbox" id="p4_2" name="p4" value='1285975304408' />
+
+
+
+		LINEA: 1255, COLUMNA: 412: <input class="regular-checkbox" type="checkbox" id="p4_3" name="p4" value='1285975305049' />
+
+
+
+		LINEA: 1255, COLUMNA: 533: <input class="regular-checkbox" type="checkbox" id="p4_4" name="p4" value='1285975305346' />
+
+
+
+		LINEA: 1255, COLUMNA: 653: <input class="regular-checkbox" type="checkbox" id="p4_5" name="p4" value='1285975306035' />
+
+
+
+		LINEA: 1255, COLUMNA: 775: <input class="regular-checkbox" type="checkbox" id="p4_6" name="p4" value='1285975306155' />
+
+
+
+		LINEA: 1255, COLUMNA: 908: <input class="regular-checkbox" type="checkbox" id="p4_7" name="p4" value='1285975306292' />
+
+
+
+		LINEA: 1255, COLUMNA: 1037: <input class="regular-checkbox" type="checkbox" id="p4_8" name="p4" value='1286024958350' />
+
+
+
+		LINEA: 1255, COLUMNA: 1166: <input class="regular-checkbox" type="checkbox" id="p4_9" name="p4" value='1286024956761' />
+
+
+
+		LINEA: 1255, COLUMNA: 1308: <input class="regular-checkbox" type="checkbox" id="p4_10" name="p4" value='1285995220206' />
+
+
+
+		LINEA: 1255, COLUMNA: 1442: <input class="regular-checkbox" type="checkbox" id="p4_11" name="p4" value='1286023915908' />
+
+
+
+		LINEA: 1255, COLUMNA: 1574: <input class="regular-checkbox" type="checkbox" id="p4_12" name="p4" value='1286024956081' />
+
+
+
+		LINEA: 1255, COLUMNA: 1706: <input class="regular-checkbox" type="checkbox" id="p4_13" name="p4" value='1285975306423' />
+
+
+
+		LINEA: 1255, COLUMNA: 1841: <input class="regular-checkbox" type="checkbox" id="p4_14" name="p4" value='1285975306590' />
+
+
+
+		LINEA: 1255, COLUMNA: 1970: <input class="regular-checkbox" type="checkbox" id="p4_15" name="p4" value='1285975308238' />
+
+
+
+		LINEA: 1255, COLUMNA: 2101: <input class="regular-checkbox" type="checkbox" id="p4_16" name="p4" value='1285975309403' />
+
+
+
+		LINEA: 1255, COLUMNA: 2229: <input class="regular-checkbox" type="checkbox" id="p4_17" name="p4" value='1285975310608' />
+
+
+
+		LINEA: 1255, COLUMNA: 2357: <input class="regular-checkbox" type="checkbox" id="p4_18" name="p4" value='1286024955223' />
+
+
+
+		LINEA: 1255, COLUMNA: 2489: <input class="regular-checkbox" type="checkbox" id="p4_19" name="p4" value='1285975311801' />
+
+
+
+		LINEA: 1255, COLUMNA: 2622: <input class="regular-checkbox" type="checkbox" id="p4_20" name="p4" value='1285975310906' />
+
+
+
+		LINEA: 1255, COLUMNA: 2766: <input class="regular-checkbox" type="checkbox" id="p4_21" name="p4" value='1285975312193' />
+
+
+
+		LINEA: 1255, COLUMNA: 2895: <input class="regular-checkbox" type="checkbox" id="p4_22" name="p4" value='1285975312616' />
+
+
+
+		LINEA: 1255, COLUMNA: 3023: <input class="regular-checkbox" type="checkbox" id="p4_23" name="p4" value='1285975319099' />
+
+
+
+		LINEA: 1255, COLUMNA: 3155: <input class="regular-checkbox" type="checkbox" id="p4_24" name="p4" value='1285975319683' />
+
+
+
+		LINEA: 1255, COLUMNA: 3285: <input class="regular-checkbox" type="checkbox" id="p4_25" name="p4" value='1285975321018' />
+
+
+
+		LINEA: 1255, COLUMNA: 3420: <input class="regular-checkbox" type="checkbox" id="p4_26" name="p4" value='1285975321626' />
+
+
+
+		LINEA: 1255, COLUMNA: 3549: <input class="regular-checkbox" type="checkbox" id="p4_27" name="p4" value='1285975322612' />
+
+
+
+		LINEA: 1255, COLUMNA: 3678: <input class="regular-checkbox" type="checkbox" id="p4_28" name="p4" value='1285975323044' />
+
+
+
+		LINEA: 1255, COLUMNA: 3812: <input class="regular-checkbox" type="checkbox" id="p4_29" name="p4" value='1285975323780' />
+
+
+
+		LINEA: 1255, COLUMNA: 3964: <input class="regular-checkbox" type="checkbox" id="p4_30" name="p4" value='1285975322449' />
+
+
+
+		LINEA: 1255, COLUMNA: 4097: <input class="regular-checkbox" type="checkbox" id="p4_31" name="p4" value='1285975323011' />
+
+
+
+		LINEA: 1255, COLUMNA: 4223: <input class="regular-checkbox" type="checkbox" id="p4_32" name="p4" value='1285975325072' />
+
+
+
+		LINEA: 1255, COLUMNA: 4350: <input class="regular-checkbox" type="checkbox" id="p4_33" name="p4" value='1285975324339' />
+
+
+
+		LINEA: 1255, COLUMNA: 4495: <input class="regular-checkbox" type="checkbox" id="p4_34" name="p4" value='1285975325479' />
+
+
+
+		LINEA: 1255, COLUMNA: 4621: <input class="regular-checkbox" type="checkbox" id="p4_35" name="p4" value='1285975326955' />
+
+
+
+		LINEA: 1255, COLUMNA: 4762: <input class="regular-checkbox" type="checkbox" id="p4_36" name="p4" value='1285975329225' />
+
+
+
+		LINEA: 1255, COLUMNA: 4897: <input class="regular-checkbox" type="checkbox" id="p4_37" name="p4" value='1285975329681' />
+
+
+
+		LINEA: 1255, COLUMNA: 5030: <input class="regular-checkbox" type="checkbox" id="p4_38" name="p4" value='1285975330049' />
+
+
+
+		LINEA: 1255, COLUMNA: 5165: <input class="regular-checkbox" type="checkbox" id="p4_39" name="p4" value='1285975330661' />
+
+
+
+		LINEA: 1255, COLUMNA: 5293: <input class="regular-checkbox" type="checkbox" id="p4_40" name="p4" value='1285975331723' />
+
+
+
+		LINEA: 1255, COLUMNA: 5422: <input class="regular-checkbox" type="checkbox" id="p4_41" name="p4" value='1285975332802' />
+
+
+
+		LINEA: 1255, COLUMNA: 5551: <input class="regular-checkbox" type="checkbox" id="p4_42" name="p4" value='1285975333409' />
+
+
+
+		LINEA: 1255, COLUMNA: 5683: <input class="regular-checkbox" type="checkbox" id="p4_43" name="p4" value='1286024956549' />
+
+
+
+		LINEA: 1255, COLUMNA: 5823: <input class="regular-checkbox" type="checkbox" id="p4_44" name="p4" value='1285975334664' />
+
+
+
+		LINEA: 1255, COLUMNA: 5952: <input class="regular-checkbox" type="checkbox" id="p4_45" name="p4" value='1285975335340' />
+
+
+
+		LINEA: 1255, COLUMNA: 6085: <input class="regular-checkbox" type="checkbox" id="p4_46" name="p4" value='1285975335892' />
+
+
+
+		LINEA: 1255, COLUMNA: 6219: <input class="regular-checkbox" type="checkbox" id="p4_47" name="p4" value='1285975337841' />
+
+
+
+		LINEA: 1255, COLUMNA: 6346: <input class="regular-checkbox" type="checkbox" id="p4_48" name="p4" value='1285975249887' />
+
+
+
+		LINEA: 1261, COLUMNA: 4: <input type="text" id="p5" name="p5"value='' class="form-fecha"/>
+
+
+
+		LINEA: 1264, COLUMNA: 4: <input type="text" id="p6" name="p6"value='' class="form-fecha"/>
+
+  
+
+	REVISAR: 86: script may use color alone.
+
+ 
+
+		LINEA: 20, COLUMNA: 1412: <script src="/recursos/fatwirepub/js/jquery-1.12.0.min.js"></script>
+
+
+
+		LINEA: 20, COLUMNA: 1494: <script src="/recursos/fatwirepub/js/html5lightbox.js"></script>
+
+
+
+		LINEA: 20, COLUMNA: 1572: <script src='/recursos/fatwirepub/js/jquery-ui-1.12.0.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1653: <script src='/recursos/fatwirepub/js/jquery.tinycarousel.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1737: <script src="/recursos/fatwirepub/js/slider.js" ></script>
+
+
+
+		LINEA: 20, COLUMNA: 1809: <script src='/recursos/fatwirepub/js/jquery.ui.datepicker-ca.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1897: <script src='/recursos/fatwirepub/js/jquery.ui.datepicker-es.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1985: <script src='/recursos/fatwirepub/js/jquery-ui-timepicker-addon.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2076: <script src='/recursos/fatwirepub/js/website.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2148: <script src='/recursos/fatwirepub/js/flexcroll.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2222: <script src='/recursos/fatwirepub/js/bootstrap.min.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2300: <script>	 (function() {		var cx = '011592280532160877737:lsblopbqyde';		var gcse = ...
+
+
+
+		LINEA: 28, COLUMNA: 10: <script type="text/javascript">	var _gaq = _gaq || [];	_gaq.push(['_setAccount', 'UA-68768 ...
+
+
+
+		LINEA: 64, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 88, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 112, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 136, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 160, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 184, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 208, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 788, COLUMNA: 5: <script>	$('.navbar a.dropdown-toggle').on('click', function(e) {	var $el = $(this);		 ...
+
+
+
+		LINEA: 1204, COLUMNA: 3: <script type="text/javascript">$(function(){	$.datepicker.setDefaults($.datepicker.regional['ca' ...
+
+
+
+		LINEA: 1291, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.FbNews" ).h ...
+
+
+
+		LINEA: 1315, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.TwitterNews ...
+
+
+
+		LINEA: 1339, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.LinkedinNew ...
+
+
+
+		LINEA: 1363, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.PntNews" ). ...
+
+
+
+		LINEA: 1387, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.YtNews" ).h ...
+
+
+
+		LINEA: 1411, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.GPlusNews"...
+
+
+
+		LINEA: 1435, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.InstagramNe ...
+
+
+
+		LINEA: 1472, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.faceb ...
+
+
+
+		LINEA: 1495, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.twitt ...
+
+
+
+		LINEA: 1518, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.linke ...
+
+
+
+		LINEA: 1536, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Pinte ...
+
+
+
+		LINEA: 1554, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.youtu ...
+
+
+
+		LINEA: 1577, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Googl ...
+
+
+
+		LINEA: 1789, COLUMNA: 2: <script type="text/javascript">	// <![CDATA[ 	document.write("<a href='javascript:void(0);' styl ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.5 Images of Text (AA)  
+
+	REVISAR: 11: Image may contain text that is not in Alt text.
+
+ 
+
+		LINEA: 74, COLUMNA: 142: <img class="head-fb" alt="Pàgina de la Universitat de València a Facebook" src="/recursos/fatwirep ...
+
+
+
+		LINEA: 98, COLUMNA: 119: <img class="head-tw" alt="Pàgina de la Universitat de València a Twitter" src="/recursos/fatwirepu ...
+
+
+
+		LINEA: 122, COLUMNA: 133: <img class="head-lin" alt="Pàgina de la Universitat de València a Linkedin" src="/recursos/fatwire ...
+
+
+
+		LINEA: 146, COLUMNA: 140: <img class="head-insta" alt="Canal de la Universitat de València a Instagram" src="/recursos/fatwir ...
+
+
+
+		LINEA: 170, COLUMNA: 133: <img class="head-pt" alt="Pàgina de la Universitat de València a Pinterest" src="/recursos/fatwire ...
+
+
+
+		LINEA: 194, COLUMNA: 140: <img class="head-yt" alt="Canal de la Universitat de València a Youtube" src="/recursos/fatwirepub/ ...
+
+
+
+		LINEA: 218, COLUMNA: 142: <img class="head-gplus" alt="Pàgina de la Universitat de València a Google+" src="/recursos/fatwir ...
+
+
+
+		LINEA: 245, COLUMNA: 4: <img layout="responsive" src="/recursos/fatwirepub/ccurl/386/807/uvn_es.png" alt="Logo del portal" u ...
+
+
+
+		LINEA: 1301, COLUMNA: 113: <img class="FbNews" alt="Facebook" src="/recursos/fatwirepub/ccurl/1005/183/Pictogrames_RRSS_gris_v...
+
+
+
+		LINEA: 1325, COLUMNA: 70: <img class="TwitterNews" alt="Twitter" src="/recursos/fatwirepub/ccurl/512/911/Pictogrames_RRSS_gris ...
+
+
+
+		LINEA: 1349, COLUMNA: 82: <img class="LinkedinNews" alt="Linkedin" src="/recursos/fatwirepub/ccurl/241/531/Pictogrames_RRSS_gr ...
+
+
+
+		LINEA: 1373, COLUMNA: 76: <img class="PntNews" alt="Pinterest" src="/recursos/fatwirepub/ccurl/692/171/Pinterest_gris-02,0.png ...
+
+
+
+		LINEA: 1397, COLUMNA: 85: <img class="YtNews" alt="Youtube" src="/recursos/fatwirepub/ccurl/639/9/Pictogrames_RRSS_gris_v copi ...
+
+
+
+		LINEA: 1421, COLUMNA: 84: <img class="GPlusNews" alt="GooglePlus" src="/recursos/fatwirepub/ccurl/597/439/Google_gris-02.png"...
+
+
+
+		LINEA: 1445, COLUMNA: 85: <img class="InstagramNews" alt="Instagram" src="/recursos/fatwirepub/ccurl/541/1016/Instagram_gris,0 ...
+
+
+
+		LINEA: 1464, COLUMNA: 64: <img src="/recursos/fatwirepub/css/logoPeuNews.png" alt="Logo del portal">
+
+
+
+		LINEA: 1487, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 1510, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 1528, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 1546, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 1569, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 1587, COLUMNA: 134: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+
+
+CRITERIO DE CONFORMIDAD: 1.4.6 Contrast (Enhanced) (AAA)  
+
+	REVISAR: 253: This image may contain text with poor contrast.
+
+ 
+
+		LINEA: 74, COLUMNA: 142: <img class="head-fb" alt="Pàgina de la Universitat de València a Facebook" src="/recursos/fatwirep ...
+
+
+
+		LINEA: 98, COLUMNA: 119: <img class="head-tw" alt="Pàgina de la Universitat de València a Twitter" src="/recursos/fatwirepu ...
+
+
+
+		LINEA: 122, COLUMNA: 133: <img class="head-lin" alt="Pàgina de la Universitat de València a Linkedin" src="/recursos/fatwire ...
+
+
+
+		LINEA: 146, COLUMNA: 140: <img class="head-insta" alt="Canal de la Universitat de València a Instagram" src="/recursos/fatwir ...
+
+
+
+		LINEA: 170, COLUMNA: 133: <img class="head-pt" alt="Pàgina de la Universitat de València a Pinterest" src="/recursos/fatwire ...
+
+
+
+		LINEA: 194, COLUMNA: 140: <img class="head-yt" alt="Canal de la Universitat de València a Youtube" src="/recursos/fatwirepub/ ...
+
+
+
+		LINEA: 218, COLUMNA: 142: <img class="head-gplus" alt="Pàgina de la Universitat de València a Google+" src="/recursos/fatwir ...
+
+
+
+		LINEA: 245, COLUMNA: 4: <img layout="responsive" src="/recursos/fatwirepub/ccurl/386/807/uvn_es.png" alt="Logo del portal" u ...
+
+
+
+		LINEA: 1301, COLUMNA: 113: <img class="FbNews" alt="Facebook" src="/recursos/fatwirepub/ccurl/1005/183/Pictogrames_RRSS_gris_v...
+
+
+
+		LINEA: 1325, COLUMNA: 70: <img class="TwitterNews" alt="Twitter" src="/recursos/fatwirepub/ccurl/512/911/Pictogrames_RRSS_gris ...
+
+
+
+		LINEA: 1349, COLUMNA: 82: <img class="LinkedinNews" alt="Linkedin" src="/recursos/fatwirepub/ccurl/241/531/Pictogrames_RRSS_gr ...
+
+
+
+		LINEA: 1373, COLUMNA: 76: <img class="PntNews" alt="Pinterest" src="/recursos/fatwirepub/ccurl/692/171/Pinterest_gris-02,0.png ...
+
+
+
+		LINEA: 1397, COLUMNA: 85: <img class="YtNews" alt="Youtube" src="/recursos/fatwirepub/ccurl/639/9/Pictogrames_RRSS_gris_v copi ...
+
+
+
+		LINEA: 1421, COLUMNA: 84: <img class="GPlusNews" alt="GooglePlus" src="/recursos/fatwirepub/ccurl/597/439/Google_gris-02.png"...
+
+
+
+		LINEA: 1445, COLUMNA: 85: <img class="InstagramNews" alt="Instagram" src="/recursos/fatwirepub/ccurl/541/1016/Instagram_gris,0 ...
+
+
+
+		LINEA: 1464, COLUMNA: 64: <img src="/recursos/fatwirepub/css/logoPeuNews.png" alt="Logo del portal">
+
+
+
+		LINEA: 1487, COLUMNA: 127: <img class="facebook" alt="Pàgina de la Universitat de València en Facebook" src="//www.uv.es/uwm/ ...
+
+
+
+		LINEA: 1510, COLUMNA: 103: <img class="twitter" alt="Segueix a la Universitat de València en Twitter" src="//www.uv.es/uwm/xar ...
+
+
+
+		LINEA: 1528, COLUMNA: 79: <img class="linkedin" alt="Linkedin UV" src="//www.uv.es/uwm/xarxes_socials/linkedin_inactivo.png" / ...
+
+
+
+		LINEA: 1546, COLUMNA: 80: <img class="PinterestUV" alt="Pinterest UV" src="//www.uv.es/uwm/xarxes_socials/pinterest_inactivo.p ...
+
+
+
+		LINEA: 1569, COLUMNA: 138: <img class="youtube" alt="Canal YouTube de la Universitat de València" src="//www.uv.es/uwm/xarxes_ ...
+
+
+
+		LINEA: 1587, COLUMNA: 134: <img class="Googleplus" alt="Googleplus" src="//www.uv.es/uwm/xarxes_socials/google_plus_inactivo.pn ...
+
+2.1 Keyboard Accessible: Make all functionality available from a keyboard.
+
+CRITERIO DE CONFORMIDAD: 2.1.1 Keyboard (A)  
+
+	REVISAR: 89: script user interface may not be accessible.
+
+ 
+
+		LINEA: 20, COLUMNA: 1412: <script src="/recursos/fatwirepub/js/jquery-1.12.0.min.js"></script>
+
+
+
+		LINEA: 20, COLUMNA: 1494: <script src="/recursos/fatwirepub/js/html5lightbox.js"></script>
+
+
+
+		LINEA: 20, COLUMNA: 1572: <script src='/recursos/fatwirepub/js/jquery-ui-1.12.0.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1653: <script src='/recursos/fatwirepub/js/jquery.tinycarousel.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1737: <script src="/recursos/fatwirepub/js/slider.js" ></script>
+
+
+
+		LINEA: 20, COLUMNA: 1809: <script src='/recursos/fatwirepub/js/jquery.ui.datepicker-ca.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1897: <script src='/recursos/fatwirepub/js/jquery.ui.datepicker-es.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1985: <script src='/recursos/fatwirepub/js/jquery-ui-timepicker-addon.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2076: <script src='/recursos/fatwirepub/js/website.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2148: <script src='/recursos/fatwirepub/js/flexcroll.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2222: <script src='/recursos/fatwirepub/js/bootstrap.min.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2300: <script>	 (function() {		var cx = '011592280532160877737:lsblopbqyde';		var gcse = ...
+
+
+
+		LINEA: 28, COLUMNA: 10: <script type="text/javascript">	var _gaq = _gaq || [];	_gaq.push(['_setAccount', 'UA-68768 ...
+
+
+
+		LINEA: 64, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 88, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 112, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 136, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 160, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 184, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 208, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 788, COLUMNA: 5: <script>	$('.navbar a.dropdown-toggle').on('click', function(e) {	var $el = $(this);		 ...
+
+
+
+		LINEA: 1204, COLUMNA: 3: <script type="text/javascript">$(function(){	$.datepicker.setDefaults($.datepicker.regional['ca' ...
+
+
+
+		LINEA: 1291, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.FbNews" ).h ...
+
+
+
+		LINEA: 1315, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.TwitterNews ...
+
+
+
+		LINEA: 1339, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.LinkedinNew ...
+
+
+
+		LINEA: 1363, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.PntNews" ). ...
+
+
+
+		LINEA: 1387, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.YtNews" ).h ...
+
+
+
+		LINEA: 1411, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.GPlusNews"...
+
+
+
+		LINEA: 1435, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.InstagramNe ...
+
+
+
+		LINEA: 1472, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.faceb ...
+
+
+
+		LINEA: 1495, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.twitt ...
+
+
+
+		LINEA: 1518, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.linke ...
+
+
+
+		LINEA: 1536, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Pinte ...
+
+
+
+		LINEA: 1554, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.youtu ...
+
+
+
+		LINEA: 1577, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Googl ...
+
+
+
+		LINEA: 1789, COLUMNA: 2: <script type="text/javascript">	// <![CDATA[ 	document.write("<a href='javascript:void(0);' styl ...
+
+2.3 Seizures: Do not design content in a way that is known to cause seizures.
+
+CRITERIO DE CONFORMIDAD: 2.3.1 Three Flashes or Below Threshold (A)  
+
+	REVISAR: 87: script may cause screen flicker.
+
+ 
+
+		LINEA: 20, COLUMNA: 1412: <script src="/recursos/fatwirepub/js/jquery-1.12.0.min.js"></script>
+
+
+
+		LINEA: 20, COLUMNA: 1494: <script src="/recursos/fatwirepub/js/html5lightbox.js"></script>
+
+
+
+		LINEA: 20, COLUMNA: 1572: <script src='/recursos/fatwirepub/js/jquery-ui-1.12.0.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1653: <script src='/recursos/fatwirepub/js/jquery.tinycarousel.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1737: <script src="/recursos/fatwirepub/js/slider.js" ></script>
+
+
+
+		LINEA: 20, COLUMNA: 1809: <script src='/recursos/fatwirepub/js/jquery.ui.datepicker-ca.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1897: <script src='/recursos/fatwirepub/js/jquery.ui.datepicker-es.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 1985: <script src='/recursos/fatwirepub/js/jquery-ui-timepicker-addon.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2076: <script src='/recursos/fatwirepub/js/website.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2148: <script src='/recursos/fatwirepub/js/flexcroll.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2222: <script src='/recursos/fatwirepub/js/bootstrap.min.js'></script>
+
+
+
+		LINEA: 20, COLUMNA: 2300: <script>	 (function() {		var cx = '011592280532160877737:lsblopbqyde';		var gcse = ...
+
+
+
+		LINEA: 28, COLUMNA: 10: <script type="text/javascript">	var _gaq = _gaq || [];	_gaq.push(['_setAccount', 'UA-68768 ...
+
+
+
+		LINEA: 64, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 88, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 112, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 136, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 160, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 184, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 208, COLUMNA: 13: <script language="Javascript" type="text/javascript">$(document).ready(function() {  ...
+
+
+
+		LINEA: 788, COLUMNA: 5: <script>	$('.navbar a.dropdown-toggle').on('click', function(e) {	var $el = $(this);		 ...
+
+
+
+		LINEA: 1204, COLUMNA: 3: <script type="text/javascript">$(function(){	$.datepicker.setDefaults($.datepicker.regional['ca' ...
+
+
+
+		LINEA: 1291, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.FbNews" ).h ...
+
+
+
+		LINEA: 1315, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.TwitterNews ...
+
+
+
+		LINEA: 1339, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.LinkedinNew ...
+
+
+
+		LINEA: 1363, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.PntNews" ). ...
+
+
+
+		LINEA: 1387, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.YtNews" ).h ...
+
+
+
+		LINEA: 1411, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.GPlusNews"...
+
+
+
+		LINEA: 1435, COLUMNA: 8: <script type="text/javascript">	$(document).ready(function() { 		$( "img.InstagramNe ...
+
+
+
+		LINEA: 1472, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.faceb ...
+
+
+
+		LINEA: 1495, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.twitt ...
+
+
+
+		LINEA: 1518, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.linke ...
+
+
+
+		LINEA: 1536, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Pinte ...
+
+
+
+		LINEA: 1554, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.youtu ...
+
+
+
+		LINEA: 1577, COLUMNA: 9: <script type="text/javascript">	$(document).ready(function() { 		$( "img.Googl ...
+
+
+
+		LINEA: 1789, COLUMNA: 2: <script type="text/javascript">	// <![CDATA[ 	document.write("<a href='javascript:void(0);' styl ...
+
+2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.
+
+CRITERIO DE CONFORMIDAD: 2.4.1 Bypass Blocks (A)  
+
+	REVISAR: 28: Document may be missing a "skip to content" link.
+
+ 
+
+		LINEA: 1247, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...(p3)
+
+  
+
+	REVISAR: 262: Groups of links with a related purpose are not marked.
+
+ 
+
+		LINEA: 41, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.10 Section Headings (AAA)  
+
+	REVISAR: 261: Sections may not be marked with headers.
+
+ 
+
+		LINEA: 41, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.2 Page Titled (A)  
+
+	REVISAR: 54: title might not describe the document.
+
+ 
+
+		LINEA: 20, COLUMNA: 37: <title>La UV en la premsa</title>
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.4 Link Purpose (In Context) (A)  
+
+	REVISAR: 19: Link text may not be meaningful.
+
+ 
+
+		LINEA: 50, COLUMNA: 57: <a href="https://www.uv.es/uvweb/uv-noticies/es/sala-prensa/uv-prensa-1285975255169.html" title="Enl ...
+
+
+
+		LINEA: 50, COLUMNA: 254: <a href="https://www.uv.es/uvweb/uv-news/en/press-section/uv-press-1285975255169.html" title="Link t ...
+
+
+
+		LINEA: 74, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Facebook" href="https://www.facebook.com/universi ...
+
+
+
+		LINEA: 98, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Twitter" href="https://twitter.com/UV_EG" target= ...
+
+
+
+		LINEA: 122, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Linkedin" href="https://www.linkedin.com/company/ ...
+
+
+
+		LINEA: 146, COLUMNA: 10: <a title="Canal de la Universitat de València a Instagram" href="https://www.instagram.com/universi ...
+
+
+
+		LINEA: 170, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Pinterest" href="https://es.pinterest.com/valenci ...
+
+
+
+		LINEA: 194, COLUMNA: 10: <a title="Canal de la Universitat de València a Youtube" href="https://www.youtube.com/user/Univers ...
+
+
+
+		LINEA: 218, COLUMNA: 10: <a title="Pàgina de la Universitat de València a Google+" href="https://plus.google.com/u/0/+unive ...
+
+
+
+		LINEA: 540, COLUMNA: 7: <a class="dropdown-toggle menuHijo1" data-toggle="dropdown"title='Institucional'>Institucion ...
+
+
+
+		LINEA: 544, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/institucional/institucional-1285973297402.html" ...
+
+
+
+		LINEA: 552, COLUMNA: 7: <a class="dropdown-toggle menuHijo2" data-toggle="dropdown"title='Estudis'>Estudis	< ...
+
+
+
+		LINEA: 556, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/estudis/estudis-formacio-complementaria-128597329750 ...
+
+
+
+		LINEA: 564, COLUMNA: 7: <a class="dropdown-toggle menuHijo3" data-toggle="dropdown"title='Recerca'>Recerca	< ...
+
+
+
+		LINEA: 568, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/recerca/recerca-innovacio-transferencia-128597522293 ...
+
+
+
+		LINEA: 576, COLUMNA: 7: <a class="dropdown-toggle menuHijo4" data-toggle="dropdown"title='Cultura'>Cultura	< ...
+
+
+
+		LINEA: 580, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/arts-esceniques-1285975226115.html"	 ...
+
+
+
+		LINEA: 583, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/cinema-1285975225656.html"		title="C ...
+
+
+
+		LINEA: 586, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/conferencies-debats-1285975233782.html" ...
+
+
+
+		LINEA: 589, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/congressos-jornades-1285975242545.html" ...
+
+
+
+		LINEA: 592, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/exposicions-1285975229781.html"		tit ...
+
+
+
+		LINEA: 595, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/lletres-1285975240951.html"		title=" ...
+
+
+
+		LINEA: 598, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/musica-1285975230858.html"		title="M ...
+
+
+
+		LINEA: 601, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/premis-convocatories-1285975238829.html"		 ...
+
+
+
+		LINEA: 604, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/altres-activitats-1285975243438.html"		 ...
+
+
+
+		LINEA: 612, COLUMNA: 7: <a class="dropdown-toggle menuHijo5" data-toggle="dropdown"title='Esports'>Esports	< ...
+
+
+
+		LINEA: 616, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/esports/esports-1285975244746.html"		title=" ...
+
+
+
+		LINEA: 624, COLUMNA: 7: <a class="dropdown-toggle menuHijo6" data-toggle="dropdown"title='Campus'>Campus	<b...
+
+
+
+		LINEA: 628, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/campus/campus-1285975245897.html"		title="Ca ...
+
+
+
+		LINEA: 636, COLUMNA: 7: <a class="dropdown-toggle menuHijo7" data-toggle="dropdown"title='Sala de premsa'>Sala de pr ...
+
+
+
+		LINEA: 640, COLUMNA: 29: <a class="dropdown-toggle" data-toggle="dropdown">Gabinet de premsa</a>
+
+
+
+		LINEA: 644, COLUMNA: 14: <a tabindex="-1" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/presentacio ...
+
+
+
+		LINEA: 647, COLUMNA: 31: <a class="dropdown-toggle" data-toggle="dropdown">Carta de serveis</a>
+
+
+
+		LINEA: 651, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/presentacio ...
+
+
+
+		LINEA: 654, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/missio-1286 ...
+
+
+
+		LINEA: 657, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/organigrama ...
+
+
+
+		LINEA: 660, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/serveis-pre ...
+
+
+
+		LINEA: 663, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/compromisos ...
+
+
+
+		LINEA: 666, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/indicadors- ...
+
+
+
+		LINEA: 669, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/drets-deure ...
+
+
+
+		LINEA: 672, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/formes-part ...
+
+
+
+		LINEA: 675, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/ubicacio-da ...
+
+
+
+		LINEA: 678, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/carta-serveis/vigencia-ca ...
+
+
+
+		LINEA: 683, COLUMNA: 31: <a class="dropdown-toggle" data-toggle="dropdown">Informació icontacte</a>
+
+
+
+		LINEA: 687, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/informacio-contacte/ubica ...
+
+
+
+		LINEA: 690, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/informacio-contacte/organ ...
+
+
+
+		LINEA: 693, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/informacio-contacte/envia ...
+
+
+
+		LINEA: 696, COLUMNA: 16: <a href="https://webges.uv.es/uvEntreuWeb/entradaSEU.jsp?perfil=queixes&cambio_idioma=S&idioma=ca_ES ...
+
+
+
+		LINEA: 703, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/notes-premsa-1285975249783.html" ...
+
+
+
+		LINEA: 706, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/agenda-govern-1285975251109.html"		 ...
+
+
+
+		LINEA: 709, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/acords-govern-1285975252264.html"		 ...
+
+
+
+		LINEA: 712, COLUMNA: 12: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html"		t ...
+
+
+
+		LINEA: 715, COLUMNA: 29: <a class="dropdown-toggle" data-toggle="dropdown">Informació corporativa</a>
+
+
+
+		LINEA: 719, COLUMNA: 14: <a tabindex="-1" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/uv- ...
+
+
+
+		LINEA: 722, COLUMNA: 14: <a tabindex="-1" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/dos ...
+
+
+
+		LINEA: 725, COLUMNA: 31: <a class="dropdown-toggle" data-toggle="dropdown">Rànquings</a>
+
+
+
+		LINEA: 729, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/ranquings/ranquin ...
+
+
+
+		LINEA: 732, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/ranquings/ranquin ...
+
+
+
+		LINEA: 737, COLUMNA: 31: <a class="dropdown-toggle" data-toggle="dropdown">Directori</a>
+
+
+
+		LINEA: 741, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/faculta ...
+
+
+
+		LINEA: 744, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/departa ...
+
+
+
+		LINEA: 747, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/serveis ...
+
+
+
+		LINEA: 750, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/institu ...
+
+
+
+		LINEA: 753, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/grups-r ...
+
+
+
+		LINEA: 756, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/altres- ...
+
+
+
+		LINEA: 759, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/altres- ...
+
+
+
+		LINEA: 762, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/fundaci ...
+
+
+
+		LINEA: 765, COLUMNA: 16: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/directori/catedre ...
+
+
+
+		LINEA: 770, COLUMNA: 14: <a tabindex="-1" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/nos ...
+
+
+
+		LINEA: 851, COLUMNA: 9: <a href="#">Acci&oacute;n #1</a>
+
+
+
+		LINEA: 852, COLUMNA: 9: <a href="#">Acci&oacute;n #2</a>
+
+
+
+		LINEA: 853, COLUMNA: 9: <a href="#">Acci&oacute;n #3</a>
+
+
+
+		LINEA: 862, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/cultura/2018/12/21/rae-elige-director-jurista-s ...
+
+
+
+		LINEA: 874, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/comunitat-valenciana/2018/12/20/laura-mujer-val ...
+
+
+
+		LINEA: 886, COLUMNA: 6: <a target="_blank" href="https://www.lasprovincias.es/comunitat/recuerdo-estudiante-ejemplar-2018122 ...
+
+
+
+		LINEA: 898, COLUMNA: 6: <a target="_blank" href="https://www.lasprovincias.es/comunitat/diez-estudiantes-premios-20181220010 ...
+
+
+
+		LINEA: 910, COLUMNA: 6: <a target="_blank" href="https://www.lasprovincias.es/valencia-ciudad/impulso-registro-tumores-20181 ...
+
+
+
+		LINEA: 922, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/comarcas/2018/12/20/naturaleza-despoblacion/181 ...
+
+
+
+		LINEA: 934, COLUMNA: 6: <a target="_blank" href="https://www.lasprovincias.es/culturas/academia-carlos-reivindica-2018122001 ...
+
+
+
+		LINEA: 946, COLUMNA: 6: <a target="_blank" href="https://www.lavanguardia.com/local/valencia/20181219/453645035516/la-uv-y-e ...
+
+
+
+		LINEA: 958, COLUMNA: 6: <a target="_blank" href="https://www.20minutos.es/noticia/3520301/0/uv-ministerio-sanidad-renuevan-a ...
+
+
+
+		LINEA: 970, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/comunitat-valenciana/2018/12/19/uv-ministerio-s ...
+
+
+
+		LINEA: 981, COLUMNA: 6: <a target="_blank" href="https://www.levante-emv.com/comunitat-valenciana/2018/12/19/salud-mental-si ...
+
+
+
+		LINEA: 993, COLUMNA: 6: <a target="_blank" href="https://economia3.com/2018/12/19/170885-fundacion-once-estudiantes-discapac ...
+
+
+
+		LINEA: 1030, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1037, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1044, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1051, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1058, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1065, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1072, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1079, COLUMNA: 32: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1079, COLUMNA: 195: <a href='https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.html?p0=true&amp ...
+
+
+
+		LINEA: 1301, COLUMNA: 10: <a title="Facebook" href="https://www.facebook.com/pages/Universitat-de-Val%C3%A8ncia/10099979329161 ...
+
+
+
+		LINEA: 1325, COLUMNA: 10: <a title="Twitter" href="https://twitter.com/uv_eg?lang=es"><img class="TwitterNews" alt="Twitter" s ...
+
+
+
+		LINEA: 1349, COLUMNA: 10: <a title="Linkedin" href="https://www.linkedin.com/edu/school?id=12256"><img class="LinkedinNews" al ...
+
+
+
+		LINEA: 1373, COLUMNA: 10: <a title="Pinterest" href="https://es.pinterest.com/valenciaedu/"><img class="PntNews" alt="Pinteres ...
+
+
+
+		LINEA: 1397, COLUMNA: 10: <a title="Youtube" href="https://www.youtube.com/user/UniversitatValencia"><img class="YtNews" alt=" ...
+
+
+
+		LINEA: 1421, COLUMNA: 10: <a title="GooglePlus" href="https://plus.google.com/+universidadvalencia"><img class="GPlusNews" alt ...
+
+
+
+		LINEA: 1445, COLUMNA: 10: <a title="Instagram" href="https://www.instagram.com/universitatvalencia/"><img class="InstagramNews ...
+
+
+
+		LINEA: 1456, COLUMNA: 9: <a href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa/acces-premsa-e-1286017453682.h ...
+
+
+
+		LINEA: 1487, COLUMNA: 11: <a title="Pàgina de la Universitat de València en Facebook" href="https://www.facebook.com/univers ...
+
+
+
+		LINEA: 1510, COLUMNA: 11: <a title="Segueix a la Universitat de València en Twitter" href="http://twitter.com/UV_EG"><img cla ...
+
+
+
+		LINEA: 1528, COLUMNA: 10: <a title="Linkedin UV" href="https://www.linkedin.com/company/19168"><img class="linkedin" alt="Link ...
+
+
+
+		LINEA: 1546, COLUMNA: 10: <a title="Pinterest UV" href="https://www.pinterest.com/valenciaedu/"><img class="PinterestUV" alt=" ...
+
+
+
+		LINEA: 1569, COLUMNA: 11: <a title="Canal YouTube de la Universitat de València" href="http://www.youtube.com/user/Universita ...
+
+
+
+		LINEA: 1587, COLUMNA: 10: <a title="Googleplus" href="https://plus.google.com/u/0/b/109103335404534938571/+universidadvalencia ...
+
+
+
+		LINEA: 1595, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/institucional/institucional-12859732974 ...
+
+
+
+		LINEA: 1610, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/estudis/estudis-formacio-complementaria ...
+
+
+
+		LINEA: 1625, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/recerca/recerca-innovacio-transferencia ...
+
+
+
+		LINEA: 1640, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/arts-esceniques-1285975226115.h ...
+
+
+
+		LINEA: 1646, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/cinema-1285975225656.html">Cine ...
+
+
+
+		LINEA: 1652, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/conferencies-debats-12859752337 ...
+
+
+
+		LINEA: 1658, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/congressos-jornades-12859752425 ...
+
+
+
+		LINEA: 1664, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/exposicions-1285975229781.html" ...
+
+
+
+		LINEA: 1670, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/lletres-1285975240951.html">Lle ...
+
+
+
+		LINEA: 1676, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/musica-1285975230858.html">Mús ...
+
+
+
+		LINEA: 1682, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/premis-convocatories-1285975238 ...
+
+
+
+		LINEA: 1688, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/cultura/altres-activitats-1285975243438 ...
+
+
+
+		LINEA: 1703, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/esports/esports-1285975244746.html">Esp ...
+
+
+
+		LINEA: 1718, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/campus/campus-1285975245897.html">Campu ...
+
+
+
+		LINEA: 1733, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/gabinet-premsa/presentacio- ...
+
+
+
+		LINEA: 1739, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/notes-premsa-1285975249783. ...
+
+
+
+		LINEA: 1745, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/agenda-govern-1285975251109 ...
+
+
+
+		LINEA: 1751, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/acords-govern-1285975252264 ...
+
+
+
+		LINEA: 1757, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/uv-premsa-1285975255169.htm ...
+
+
+
+		LINEA: 1763, COLUMNA: 13: <a class="lvl2" href="https://www.uv.es/uvweb/uv-noticias/ca/sala-premsa/informacio-corporativa/uv-x ...
+
+
+
+		LINEA: 1781, COLUMNA: 27: <a href="https://www.uv.es/uvweb/universitat/ca/avis-legal/avis-legal-1285919088090.html" title = "E ...
+
+
+
+		LINEA: 1781, COLUMNA: 169: <a href="https://www.uv.es/uvweb/universitat/ca/accessibilitat/accessibilitat-1285917448966.html" ti ...
+
+
+
+		LINEA: 1781, COLUMNA: 325: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/responsable-identificacio-titula ...
+
+
+
+		LINEA: 1781, COLUMNA: 533: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/politica-cookies/son-galetes--12 ...
+
+
+
+		LINEA: 1781, COLUMNA: 708: <a href="http://www.uv.es/transparencia" title = "Enllaç al portal de transparència" >Transparènc ...
+
+
+
+		LINEA: 1786, COLUMNA: 307: <a href="https://www.uv.es/uvweb/universitat/ca/politica-privacitat/politica-cookies/son-galetes--12 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.5 Multiple Ways (AA)  
+
+	REVISAR: 184: Site missing site map.
+
+ 
+
+		LINEA: 41, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.6Headings and Labels (AA)  
+
+	REVISAR: 42: h1 may be used for formatting.
+
+ 
+
+		LINEA: 239, COLUMNA: 42: <h1 id="logo">		<map name="mapa1"><areashape="RECT" title="" coords="0,0,450,135" href='htt ...
+
+  
+
+	REVISAR: 43: h2 may be used for formatting.
+
+ 
+
+		LINEA: 836, COLUMNA: 6: <h2 class="titulo-segundos barra-contenido"><span>La UV en la premsa</span></h2>
+
+  
+
+	REVISAR: 44: h3 may be used for formatting.
+
+ 
+
+		LINEA: 863, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">L’’honoris causa’ i excatedràtic de la Unive ...
+
+
+
+		LINEA: 875, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">Professorat i estudiantat del màster en Secundàri ...
+
+
+
+		LINEA: 887, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">Professorat i estudiantat del màster en Secundàri ...
+
+
+
+		LINEA: 899, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">Deu alumnes de la Universitat guanyen el premi naci ...
+
+
+
+		LINEA: 911, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">La Universitat de València i el Ministeri de Sanit ...
+
+
+
+		LINEA: 923, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">Professorat de la Universitat escriu sobre la Serra ...
+
+
+
+		LINEA: 935, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">La Nau inaugura una exposició amb motiu del 250 an ...
+
+
+
+		LINEA: 947, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">La Universitat de València i el Ministeri de Sanit ...
+
+
+
+		LINEA: 959, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">La Universitat de València i el Ministeri de Sanit ...
+
+
+
+		LINEA: 971, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">La Universitat de València i el Ministeri de Sanit ...
+
+
+
+		LINEA: 982, COLUMNA: 9:
+
+ 
+
+		LINEA: 994, COLUMNA: 9: <h3 class="list-group-item-heading premsa-titol">Fundación Once beca a 12 alumnes amb discapacitat...
+
+
+
+CRITERIO DE CONFORMIDAD: 2.4.8 Location (AAA)  
+
+	REVISAR: 266: Document may require a breadcrumb trail.
+
+ 
+
+		LINEA: 1247, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...(p3)
+
+3.1 Readable: Make text content readable and understandable
+
+CRITERIO DE CONFORMIDAD: 3.1.3 Unusual Words (AAA)  
+
+	REVISAR: 179: Reference to glossary may be missing.
+
+ 
+
+		LINEA: 41, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.1.4 Abbreviations (AAA)  
+
+	REVISAR: 98: Abbreviations may not be marked with abbr element.
+
+ 
+
+		LINEA: 1247, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...(p3)
+
+  
+
+	REVISAR: 99: Acronyms may not be marked with acronym element.
+
+ 
+
+		LINEA: 41, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...
+
+3.2 Predictable: Make Web pages appear and operate in predictable ways.
+
+CRITERIO DE CONFORMIDAD: 3.2.3 Consistent Navigation (AA)  
+
+	REVISAR: 276: Repeated components may not appear in the same relative order each time they appear.
+
+ 
+
+		LINEA: 41, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...
+
+  
+
+	REVISAR: 265: Tab order may not follow logical order.
+
+ 
+
+		LINEA: 221, COLUMNA: 8: <form name="activitat" class="cercador-titol-novetat" action='https://www.uv.es/uvweb/uv-noticias/ca ...
+
+
+
+		LINEA: 1238, COLUMNA: 2: <form name="activitat" class="cercador-novetat" action='/fatwirepub/Satellite' method="get">		<inp ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.2.4Consistent Identification (AA)  
+
+	REVISAR: 131: Long quotations may not be marked using the blockquote element.
+
+ 
+
+		LINEA: 41, COLUMNA: 17: <body data-spy="scroll" data-target=".navbar" data-offset="50"><div id="wrap"><div id="header">	 ...
+
+3.3 Input Assistance: Help users avoid and correct mistakes.
+
+CRITERIO DE CONFORMIDAD: 3.3.1 Error Identification (A)  
+
+	REVISAR: 267: Form submission error messages may not identify empty required fields.
+
+ 
+
+		LINEA: 221, COLUMNA: 8: <form name="activitat" class="cercador-titol-novetat" action='https://www.uv.es/uvweb/uv-noticias/ca ...
+
+
+
+		LINEA: 1238, COLUMNA: 2: <form name="activitat" class="cercador-novetat" action='/fatwirepub/Satellite' method="get">		<inp ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.2 Labels or Instructions (A)  
+
+	REVISAR: 246: All required form fields may not be indicated as required.
+
+ 
+
+		LINEA: 221, COLUMNA: 8: <form name="activitat" class="cercador-titol-novetat" action='https://www.uv.es/uvweb/uv-noticias/ca ...
+
+
+
+		LINEA: 1238, COLUMNA: 2: <form name="activitat" class="cercador-novetat" action='/fatwirepub/Satellite' method="get">		<inp ...
+
+  
+
+	REVISAR: 189: label may not describe its associated control.
+
+ 
+
+		LINEA: 222, COLUMNA: 9: <input type="hidden" name="pagename" value='UV_Noticies/Page/TPGGenericaNews'/>
+
+
+
+		LINEA: 223, COLUMNA: 9: <input type="hidden" name="cid" value='1285973304159'/>
+
+
+
+		LINEA: 224, COLUMNA: 9: <input type="hidden" name="locale" value='ca_ES'/>
+
+
+
+		LINEA: 225, COLUMNA: 9: <input type="hidden" name="site" value='UV_Noticies'/>
+
+
+
+		LINEA: 226, COLUMNA: 9: <input type="hidden" name="p2" value="0"/>
+
+
+
+		LINEA: 1239, COLUMNA: 3: <input type="hidden" name="pagename" value='UV_Noticies/Page/TPGGenericaNews'/>
+
+
+
+		LINEA: 1240, COLUMNA: 3: <input type="hidden" name="cid" value='1285975255169'/>
+
+
+
+		LINEA: 1241, COLUMNA: 3: <input type="hidden" name="locale" value='ca_ES'/>
+
+
+
+		LINEA: 1242, COLUMNA: 3: <input type="hidden" name="site" value='UV_Noticies'/>
+
+
+
+		LINEA: 1243, COLUMNA: 3: <input type="hidden" name="p2" value="0"/>
+
+
+
+		LINEA: 1244, COLUMNA: 3: <input type="hidden" name="p0" value="true"/>
+
+
+
+		LINEA: 1255, COLUMNA: 46: <input class="regular-checkbox" type="checkbox" id="p4_0" name="p4" value='1285975300597' />
+
+
+
+		LINEA: 1255, COLUMNA: 167: <input class="regular-checkbox" type="checkbox" id="p4_1" name="p4" value='1285975304164' />
+
+
+
+		LINEA: 1255, COLUMNA: 288: <input class="regular-checkbox" type="checkbox" id="p4_2" name="p4" value='1285975304408' />
+
+
+
+		LINEA: 1255, COLUMNA: 412: <input class="regular-checkbox" type="checkbox" id="p4_3" name="p4" value='1285975305049' />
+
+
+
+		LINEA: 1255, COLUMNA: 533: <input class="regular-checkbox" type="checkbox" id="p4_4" name="p4" value='1285975305346' />
+
+
+
+		LINEA: 1255, COLUMNA: 653: <input class="regular-checkbox" type="checkbox" id="p4_5" name="p4" value='1285975306035' />
+
+
+
+		LINEA: 1255, COLUMNA: 775: <input class="regular-checkbox" type="checkbox" id="p4_6" name="p4" value='1285975306155' />
+
+
+
+		LINEA: 1255, COLUMNA: 908: <input class="regular-checkbox" type="checkbox" id="p4_7" name="p4" value='1285975306292' />
+
+
+
+		LINEA: 1255, COLUMNA: 1037: <input class="regular-checkbox" type="checkbox" id="p4_8" name="p4" value='1286024958350' />
+
+
+
+		LINEA: 1255, COLUMNA: 1166: <input class="regular-checkbox" type="checkbox" id="p4_9" name="p4" value='1286024956761' />
+
+
+
+		LINEA: 1255, COLUMNA: 1308: <input class="regular-checkbox" type="checkbox" id="p4_10" name="p4" value='1285995220206' />
+
+
+
+		LINEA: 1255, COLUMNA: 1442: <input class="regular-checkbox" type="checkbox" id="p4_11" name="p4" value='1286023915908' />
+
+
+
+		LINEA: 1255, COLUMNA: 1574: <input class="regular-checkbox" type="checkbox" id="p4_12" name="p4" value='1286024956081' />
+
+
+
+		LINEA: 1255, COLUMNA: 1706: <input class="regular-checkbox" type="checkbox" id="p4_13" name="p4" value='1285975306423' />
+
+
+
+		LINEA: 1255, COLUMNA: 1841: <input class="regular-checkbox" type="checkbox" id="p4_14" name="p4" value='1285975306590' />
+
+
+
+		LINEA: 1255, COLUMNA: 1970: <input class="regular-checkbox" type="checkbox" id="p4_15" name="p4" value='1285975308238' />
+
+
+
+		LINEA: 1255, COLUMNA: 2101: <input class="regular-checkbox" type="checkbox" id="p4_16" name="p4" value='1285975309403' />
+
+
+
+		LINEA: 1255, COLUMNA: 2229: <input class="regular-checkbox" type="checkbox" id="p4_17" name="p4" value='1285975310608' />
+
+
+
+		LINEA: 1255, COLUMNA: 2357: <input class="regular-checkbox" type="checkbox" id="p4_18" name="p4" value='1286024955223' />
+
+
+
+		LINEA: 1255, COLUMNA: 2489: <input class="regular-checkbox" type="checkbox" id="p4_19" name="p4" value='1285975311801' />
+
+
+
+		LINEA: 1255, COLUMNA: 2622: <input class="regular-checkbox" type="checkbox" id="p4_20" name="p4" value='1285975310906' />
+
+
+
+		LINEA: 1255, COLUMNA: 2766: <input class="regular-checkbox" type="checkbox" id="p4_21" name="p4" value='1285975312193' />
+
+
+
+		LINEA: 1255, COLUMNA: 2895: <input class="regular-checkbox" type="checkbox" id="p4_22" name="p4" value='1285975312616' />
+
+
+
+		LINEA: 1255, COLUMNA: 3023: <input class="regular-checkbox" type="checkbox" id="p4_23" name="p4" value='1285975319099' />
+
+
+
+		LINEA: 1255, COLUMNA: 3155: <input class="regular-checkbox" type="checkbox" id="p4_24" name="p4" value='1285975319683' />
+
+
+
+		LINEA: 1255, COLUMNA: 3285: <input class="regular-checkbox" type="checkbox" id="p4_25" name="p4" value='1285975321018' />
+
+
+
+		LINEA: 1255, COLUMNA: 3420: <input class="regular-checkbox" type="checkbox" id="p4_26" name="p4" value='1285975321626' />
+
+
+
+		LINEA: 1255, COLUMNA: 3549: <input class="regular-checkbox" type="checkbox" id="p4_27" name="p4" value='1285975322612' />
+
+
+
+		LINEA: 1255, COLUMNA: 3678: <input class="regular-checkbox" type="checkbox" id="p4_28" name="p4" value='1285975323044' />
+
+
+
+		LINEA: 1255, COLUMNA: 3812: <input class="regular-checkbox" type="checkbox" id="p4_29" name="p4" value='1285975323780' />
+
+
+
+		LINEA: 1255, COLUMNA: 3964: <input class="regular-checkbox" type="checkbox" id="p4_30" name="p4" value='1285975322449' />
+
+
+
+		LINEA: 1255, COLUMNA: 4097: <input class="regular-checkbox" type="checkbox" id="p4_31" name="p4" value='1285975323011' />
+
+
+
+		LINEA: 1255, COLUMNA: 4223: <input class="regular-checkbox" type="checkbox" id="p4_32" name="p4" value='1285975325072' />
+
+
+
+		LINEA: 1255, COLUMNA: 4350: <input class="regular-checkbox" type="checkbox" id="p4_33" name="p4" value='1285975324339' />
+
+
+
+		LINEA: 1255, COLUMNA: 4495: <input class="regular-checkbox" type="checkbox" id="p4_34" name="p4" value='1285975325479' />
+
+
+
+		LINEA: 1255, COLUMNA: 4621: <input class="regular-checkbox" type="checkbox" id="p4_35" name="p4" value='1285975326955' />
+
+
+
+		LINEA: 1255, COLUMNA: 4762: <input class="regular-checkbox" type="checkbox" id="p4_36" name="p4" value='1285975329225' />
+
+
+
+		LINEA: 1255, COLUMNA: 4897: <input class="regular-checkbox" type="checkbox" id="p4_37" name="p4" value='1285975329681' />
+
+
+
+		LINEA: 1255, COLUMNA: 5030: <input class="regular-checkbox" type="checkbox" id="p4_38" name="p4" value='1285975330049' />
+
+
+
+		LINEA: 1255, COLUMNA: 5165: <input class="regular-checkbox" type="checkbox" id="p4_39" name="p4" value='1285975330661' />
+
+
+
+		LINEA: 1255, COLUMNA: 5293: <input class="regular-checkbox" type="checkbox" id="p4_40" name="p4" value='1285975331723' />
+
+
+
+		LINEA: 1255, COLUMNA: 5422: <input class="regular-checkbox" type="checkbox" id="p4_41" name="p4" value='1285975332802' />
+
+
+
+		LINEA: 1255, COLUMNA: 5551: <input class="regular-checkbox" type="checkbox" id="p4_42" name="p4" value='1285975333409' />
+
+
+
+		LINEA: 1255, COLUMNA: 5683: <input class="regular-checkbox" type="checkbox" id="p4_43" name="p4" value='1286024956549' />
+
+
+
+		LINEA: 1255, COLUMNA: 5823: <input class="regular-checkbox" type="checkbox" id="p4_44" name="p4" value='1285975334664' />
+
+
+
+		LINEA: 1255, COLUMNA: 5952: <input class="regular-checkbox" type="checkbox" id="p4_45" name="p4" value='1285975335340' />
+
+
+
+		LINEA: 1255, COLUMNA: 6085: <input class="regular-checkbox" type="checkbox" id="p4_46" name="p4" value='1285975335892' />
+
+
+
+		LINEA: 1255, COLUMNA: 6219: <input class="regular-checkbox" type="checkbox" id="p4_47" name="p4" value='1285975337841' />
+
+
+
+		LINEA: 1255, COLUMNA: 6346: <input class="regular-checkbox" type="checkbox" id="p4_48" name="p4" value='1285975249887' />
+
+
+
+		LINEA: 1261, COLUMNA: 4: <input type="text" id="p5" name="p5"value='' class="form-fecha"/>
+
+
+
+		LINEA: 1264, COLUMNA: 4: <input type="text" id="p6" name="p6"value='' class="form-fecha"/>
+
+  
+
+	REVISAR: 218: input element, type of "text", label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 1261, COLUMNA: 4: <input type="text" id="p5" name="p5"value='' class="form-fecha"/>
+
+
+
+		LINEA: 1264, COLUMNA: 4: <input type="text" id="p6" name="p6"value='' class="form-fecha"/>
+
+  
+
+	REVISAR: 219: input element, type of "checkbox", label may not describe the purpose or function of the control.
+
+ 
+
+		LINEA: 1255, COLUMNA: 46: <input class="regular-checkbox" type="checkbox" id="p4_0" name="p4" value='1285975300597' />
+
+
+
+		LINEA: 1255, COLUMNA: 167: <input class="regular-checkbox" type="checkbox" id="p4_1" name="p4" value='1285975304164' />
+
+
+
+		LINEA: 1255, COLUMNA: 288: <input class="regular-checkbox" type="checkbox" id="p4_2" name="p4" value='1285975304408' />
+
+
+
+		LINEA: 1255, COLUMNA: 412: <input class="regular-checkbox" type="checkbox" id="p4_3" name="p4" value='1285975305049' />
+
+
+
+		LINEA: 1255, COLUMNA: 533: <input class="regular-checkbox" type="checkbox" id="p4_4" name="p4" value='1285975305346' />
+
+
+
+		LINEA: 1255, COLUMNA: 653: <input class="regular-checkbox" type="checkbox" id="p4_5" name="p4" value='1285975306035' />
+
+
+
+		LINEA: 1255, COLUMNA: 775: <input class="regular-checkbox" type="checkbox" id="p4_6" name="p4" value='1285975306155' />
+
+
+
+		LINEA: 1255, COLUMNA: 908: <input class="regular-checkbox" type="checkbox" id="p4_7" name="p4" value='1285975306292' />
+
+
+
+		LINEA: 1255, COLUMNA: 1037: <input class="regular-checkbox" type="checkbox" id="p4_8" name="p4" value='1286024958350' />
+
+
+
+		LINEA: 1255, COLUMNA: 1166: <input class="regular-checkbox" type="checkbox" id="p4_9" name="p4" value='1286024956761' />
+
+
+
+		LINEA: 1255, COLUMNA: 1308: <input class="regular-checkbox" type="checkbox" id="p4_10" name="p4" value='1285995220206' />
+
+
+
+		LINEA: 1255, COLUMNA: 1442: <input class="regular-checkbox" type="checkbox" id="p4_11" name="p4" value='1286023915908' />
+
+
+
+		LINEA: 1255, COLUMNA: 1574: <input class="regular-checkbox" type="checkbox" id="p4_12" name="p4" value='1286024956081' />
+
+
+
+		LINEA: 1255, COLUMNA: 1706: <input class="regular-checkbox" type="checkbox" id="p4_13" name="p4" value='1285975306423' />
+
+
+
+		LINEA: 1255, COLUMNA: 1841: <input class="regular-checkbox" type="checkbox" id="p4_14" name="p4" value='1285975306590' />
+
+
+
+		LINEA: 1255, COLUMNA: 1970: <input class="regular-checkbox" type="checkbox" id="p4_15" name="p4" value='1285975308238' />
+
+
+
+		LINEA: 1255, COLUMNA: 2101: <input class="regular-checkbox" type="checkbox" id="p4_16" name="p4" value='1285975309403' />
+
+
+
+		LINEA: 1255, COLUMNA: 2229: <input class="regular-checkbox" type="checkbox" id="p4_17" name="p4" value='1285975310608' />
+
+
+
+		LINEA: 1255, COLUMNA: 2357: <input class="regular-checkbox" type="checkbox" id="p4_18" name="p4" value='1286024955223' />
+
+
+
+		LINEA: 1255, COLUMNA: 2489: <input class="regular-checkbox" type="checkbox" id="p4_19" name="p4" value='1285975311801' />
+
+
+
+		LINEA: 1255, COLUMNA: 2622: <input class="regular-checkbox" type="checkbox" id="p4_20" name="p4" value='1285975310906' />
+
+
+
+		LINEA: 1255, COLUMNA: 2766: <input class="regular-checkbox" type="checkbox" id="p4_21" name="p4" value='1285975312193' />
+
+
+
+		LINEA: 1255, COLUMNA: 2895: <input class="regular-checkbox" type="checkbox" id="p4_22" name="p4" value='1285975312616' />
+
+
+
+		LINEA: 1255, COLUMNA: 3023: <input class="regular-checkbox" type="checkbox" id="p4_23" name="p4" value='1285975319099' />
+
+
+
+		LINEA: 1255, COLUMNA: 3155: <input class="regular-checkbox" type="checkbox" id="p4_24" name="p4" value='1285975319683' />
+
+
+
+		LINEA: 1255, COLUMNA: 3285: <input class="regular-checkbox" type="checkbox" id="p4_25" name="p4" value='1285975321018' />
+
+
+
+		LINEA: 1255, COLUMNA: 3420: <input class="regular-checkbox" type="checkbox" id="p4_26" name="p4" value='1285975321626' />
+
+
+
+		LINEA: 1255, COLUMNA: 3549: <input class="regular-checkbox" type="checkbox" id="p4_27" name="p4" value='1285975322612' />
+
+
+
+		LINEA: 1255, COLUMNA: 3678: <input class="regular-checkbox" type="checkbox" id="p4_28" name="p4" value='1285975323044' />
+
+
+
+		LINEA: 1255, COLUMNA: 3812: <input class="regular-checkbox" type="checkbox" id="p4_29" name="p4" value='1285975323780' />
+
+
+
+		LINEA: 1255, COLUMNA: 3964: <input class="regular-checkbox" type="checkbox" id="p4_30" name="p4" value='1285975322449' />
+
+
+
+		LINEA: 1255, COLUMNA: 4097: <input class="regular-checkbox" type="checkbox" id="p4_31" name="p4" value='1285975323011' />
+
+
+
+		LINEA: 1255, COLUMNA: 4223: <input class="regular-checkbox" type="checkbox" id="p4_32" name="p4" value='1285975325072' />
+
+
+
+		LINEA: 1255, COLUMNA: 4350: <input class="regular-checkbox" type="checkbox" id="p4_33" name="p4" value='1285975324339' />
+
+
+
+		LINEA: 1255, COLUMNA: 4495: <input class="regular-checkbox" type="checkbox" id="p4_34" name="p4" value='1285975325479' />
+
+
+
+		LINEA: 1255, COLUMNA: 4621: <input class="regular-checkbox" type="checkbox" id="p4_35" name="p4" value='1285975326955' />
+
+
+
+		LINEA: 1255, COLUMNA: 4762: <input class="regular-checkbox" type="checkbox" id="p4_36" name="p4" value='1285975329225' />
+
+
+
+		LINEA: 1255, COLUMNA: 4897: <input class="regular-checkbox" type="checkbox" id="p4_37" name="p4" value='1285975329681' />
+
+
+
+		LINEA: 1255, COLUMNA: 5030: <input class="regular-checkbox" type="checkbox" id="p4_38" name="p4" value='1285975330049' />
+
+
+
+		LINEA: 1255, COLUMNA: 5165: <input class="regular-checkbox" type="checkbox" id="p4_39" name="p4" value='1285975330661' />
+
+
+
+		LINEA: 1255, COLUMNA: 5293: <input class="regular-checkbox" type="checkbox" id="p4_40" name="p4" value='1285975331723' />
+
+
+
+		LINEA: 1255, COLUMNA: 5422: <input class="regular-checkbox" type="checkbox" id="p4_41" name="p4" value='1285975332802' />
+
+
+
+		LINEA: 1255, COLUMNA: 5551: <input class="regular-checkbox" type="checkbox" id="p4_42" name="p4" value='1285975333409' />
+
+
+
+		LINEA: 1255, COLUMNA: 5683: <input class="regular-checkbox" type="checkbox" id="p4_43" name="p4" value='1286024956549' />
+
+
+
+		LINEA: 1255, COLUMNA: 5823: <input class="regular-checkbox" type="checkbox" id="p4_44" name="p4" value='1285975334664' />
+
+
+
+		LINEA: 1255, COLUMNA: 5952: <input class="regular-checkbox" type="checkbox" id="p4_45" name="p4" value='1285975335340' />
+
+
+
+		LINEA: 1255, COLUMNA: 6085: <input class="regular-checkbox" type="checkbox" id="p4_46" name="p4" value='1285975335892' />
+
+
+
+		LINEA: 1255, COLUMNA: 6219: <input class="regular-checkbox" type="checkbox" id="p4_47" name="p4" value='1285975337841' />
+
+
+
+		LINEA: 1255, COLUMNA: 6346: <input class="regular-checkbox" type="checkbox" id="p4_48" name="p4" value='1285975249887' />
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.3 Error Suggestion (AA)  
+
+	REVISAR: 268: Form submission error messages may not provide assistance.
+
+ 
+
+		LINEA: 221, COLUMNA: 8: <form name="activitat" class="cercador-titol-novetat" action='https://www.uv.es/uvweb/uv-noticias/ca ...
+
+
+
+		LINEA: 1238, COLUMNA: 2: <form name="activitat" class="cercador-novetat" action='/fatwirepub/Satellite' method="get">		<inp ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.4 Error Prevention (Legal, Financial, Data) (AA)  
+
+	REVISAR: 269: Form submission data may not be presented to the user before final acceptance of an irreversable transaction.
+
+ 
+
+		LINEA: 221, COLUMNA: 8: <form name="activitat" class="cercador-titol-novetat" action='https://www.uv.es/uvweb/uv-noticias/ca ...
+
+
+
+		LINEA: 1238, COLUMNA: 2: <form name="activitat" class="cercador-novetat" action='/fatwirepub/Satellite' method="get">		<inp ...
+
+
+
+CRITERIO DE CONFORMIDAD: 3.3.6 Error Prevention (All) (AAA)  
+
+	REVISAR: 272: Form may delete information without allowing for recovery.
+
+ 
+
+		LINEA: 221, COLUMNA: 8: <form name="activitat" class="cercador-titol-novetat" action='https://www.uv.es/uvweb/uv-noticias/ca ...
+
+
+
+		LINEA: 1238, COLUMNA: 2: <form name="activitat" class="cercador-novetat" action='/fatwirepub/Satellite' method="get">		<inp ...
+
+

@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: http://www.gva.es/es/inicio/presentacion
+FECHA EVALUACIÓN: 2018-11-06
+
+ALERTAS
+Underlined text	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 1
+Unlabeled form element with title	  VECES ENCONTRADO: 2
+Suspicious alternative text	  VECES ENCONTRADO: 1
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 3
+Redundant link	  VECES ENCONTRADO: 1
+Accesskey	  VECES ENCONTRADO: 8
+Justified text	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Null or empty alternative text	  VECES ENCONTRADO: 10
+Image button with alternative text	  VECES ENCONTRADO: 2
+Linked image with alternative text	  VECES ENCONTRADO: 8
+Element language	  VECES ENCONTRADO: 6
+Alternative text	  VECES ENCONTRADO: 4
+
+
+

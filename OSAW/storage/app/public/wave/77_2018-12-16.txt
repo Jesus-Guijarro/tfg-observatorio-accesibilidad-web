@@ -1,0 +1,34 @@
+REPORTE PÁGINA WEB: https://web.ua.es/es/movilidad.html
+FECHA EVALUACIÓN: 2018-12-16
+
+-PROBLEMAS-
+
+Missing alternative text	  VECES ENCONTRADO: 14
+Empty link	  VECES ENCONTRADO: 40
+Linked image missing alternative text	  VECES ENCONTRADO: 2
+
+
+-ALERTAS-
+
+Broken same-page link	  VECES ENCONTRADO: 2
+Link to PDF document	  VECES ENCONTRADO: 1
+Tabindex	  VECES ENCONTRADO: 3
+Missing fieldset	  VECES ENCONTRADO: 2
+A nearby image has the same alternative text	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 3
+Redundant alternative text	  VECES ENCONTRADO: 7
+
+
+-CARACTERISTICAS-
+
+Alternative text	  VECES ENCONTRADO: 5
+Null or empty alternative text	  VECES ENCONTRADO: 22
+Linked image with alternative text	  VECES ENCONTRADO: 12
+Form label	  VECES ENCONTRADO: 12
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 43
+
+

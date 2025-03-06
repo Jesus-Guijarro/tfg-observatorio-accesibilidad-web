@@ -1,0 +1,32 @@
+REPORTE PÁGINA WEB: http://www.raspeig.es/sugerencias/
+FECHA EVALUACIÓN: 2018-11-13
+
+PROBLEMAS
+Empty form label	  VECES ENCONTRADO: 1
+Missing form label	  VECES ENCONTRADO: 1
+Empty link	  VECES ENCONTRADO: 2
+
+
+
+ALERTAS
+Possible heading	  VECES ENCONTRADO: 1
+Redundant link	  VECES ENCONTRADO: 2
+Redundant title text	  VECES ENCONTRADO: 48
+Fieldset missing legend	  VECES ENCONTRADO: 3
+Accesskey	  VECES ENCONTRADO: 1
+Device dependent event handler	  VECES ENCONTRADO: 1
+
+
+
+CARACTERISTICAS
+Alternative text	  VECES ENCONTRADO: 2
+Image button with alternative text	  VECES ENCONTRADO: 1
+Form label	  VECES ENCONTRADO: 4
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 13
+
+
+

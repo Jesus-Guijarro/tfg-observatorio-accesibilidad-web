@@ -1,0 +1,25 @@
+REPORTE PÁGINA WEB: https://www.aemps.gob.es/home.htm
+FECHA EVALUACIÓN: 2018-11-11
+
+ALERTAS
+Long alternative text	  VECES ENCONTRADO: 3
+Redundant link	  VECES ENCONTRADO: 1
+Link to PDF document	  VECES ENCONTRADO: 2
+Justified text	  VECES ENCONTRADO: 29
+
+
+
+CARACTERISTICAS
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 1
+Linked image with alternative text	  VECES ENCONTRADO: 33
+Null or empty alternative text	  VECES ENCONTRADO: 12
+Element language	  VECES ENCONTRADO: 7
+Form label	  VECES ENCONTRADO: 1
+
+
+
+PROBLEMAS DE CONTRASTE
+Very Low Contrast	  VECES ENCONTRADO: 16
+
+
+

@@ -1,0 +1,37 @@
+REPORTE PÁGINA WEB: http://www.culturaydeporte.gob.es/cultura-mecd/areas-cultura/bibliotecas/portada.html
+FECHA EVALUACIÓN: 2018-12-21
+
+-PROBLEMAS-
+
+Empty button	  VECES ENCONTRADO: 4
+Empty link	  VECES ENCONTRADO: 2
+
+
+-ALERTAS-
+
+Redundant alternative text	  VECES ENCONTRADO: 1
+Broken same-page link	  VECES ENCONTRADO: 10
+Link to PDF document	  VECES ENCONTRADO: 2
+A nearby image has the same alternative text	  VECES ENCONTRADO: 2
+Justified text	  VECES ENCONTRADO: 15
+Redundant link	  VECES ENCONTRADO: 4
+Noscript element	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 2
+
+
+-CARACTERISTICAS-
+
+Element language	  VECES ENCONTRADO: 6
+Fieldset	  VECES ENCONTRADO: 1
+Null or empty alternative text	  VECES ENCONTRADO: 4
+Linked image with alternative text	  VECES ENCONTRADO: 34
+Alternative text	  VECES ENCONTRADO: 9
+Null or empty alternative text on spacer	  VECES ENCONTRADO: 2
+Form label	  VECES ENCONTRADO: 1
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 1
+
+

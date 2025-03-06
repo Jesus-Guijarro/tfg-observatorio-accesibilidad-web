@@ -1,0 +1,32 @@
+REPORTE PÁGINA WEB: https://www.endesaclientes.com/facturas-lecturas/pagar-facturas
+FECHA EVALUACIÓN: 2018-12-03
+
+-PROBLEMAS-
+
+Missing form label	  VECES ENCONTRADO: 1
+
+
+-ALERTAS-
+
+Skipped heading level	  VECES ENCONTRADO: 1
+Redundant title text	  VECES ENCONTRADO: 19
+Noscript element	  VECES ENCONTRADO: 1
+Possible heading	  VECES ENCONTRADO: 1
+Very small text	  VECES ENCONTRADO: 6
+A nearby image has the same alternative text	  VECES ENCONTRADO: 5
+
+
+-CARACTERISTICAS-
+
+Linked image with alternative text	  VECES ENCONTRADO: 2
+Fieldset	  VECES ENCONTRADO: 1
+Alternative text	  VECES ENCONTRADO: 8
+Null or empty alternative text	  VECES ENCONTRADO: 14
+Form label	  VECES ENCONTRADO: 2
+
+
+-PROBLEMAS DE CONTRASTE-
+
+Very Low Contrast	  VECES ENCONTRADO: 17
+
+
